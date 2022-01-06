@@ -1,0 +1,142 @@
+.ManageQueueWrapper {
+	@include flex-center-vertically;
+
+	flex-direction: column;
+	margin-top: $sapphire-sizes--xlarge;
+
+	> * {
+		width: 80%;
+	}
+}
+
+.AgendaCalendar {
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	border-radius: $border-radius-medium;
+	overflow: hidden;
+
+	&__Header {
+		display: flex;
+		padding: $sapphire-sizes--medium;
+
+		[ui='data-calendar-navigation'] {
+			@include flex-center-vertically;
+
+			flex: 1;
+			gap: $sapphire-sizes--small;
+
+			.navigation-control {
+				.navigation-control-item a {
+					border: none;
+				}
+			}
+		}
+
+		[ui='data-calendar-totals'] {
+			flex: 2;
+		}
+
+		[ui='data-calendar-actions'] {
+			flex: 1;
+			text-align: end;
+		}
+	}
+
+	&__Content {
+		border-top: 1px solid $light-grey;
+	}
+}
+
+.AgendaFilters {
+	align-items: center;
+	display: inline-flex;
+	gap: $sapphire-sizes--medium;
+}
+
+// Appointment List
+.Lab_Ready__Container {
+	display: flex;
+	font-size: $font-size-heading4;
+	gap: $sapphire-sizes--small;
+	max-width: 80px;
+}
+
+// Referral Letters
+.ContentClinicianData {
+	.BorderBottomLine {
+		&:first-of-type {
+			padding-top: 0;
+		}
+
+		&:last-of-type {
+			border-bottom: none;
+		}
+	}
+}
+
+// Hospitalization
+.HasCriticalValue {
+	position: relative;
+
+	&:before {
+		background-color: $regular-red;
+		clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+		color: $regular-white;
+		content: '!';
+		display: block;
+		font-size: 11px;
+		height: 15px;
+		line-height: 16px;
+		position: absolute;
+		right: -6px;
+		text-align: center;
+		top: -11px;
+		width: 15px;
+		z-index: 1;
+	}
+}
+
+.LocationOptGroup,
+.SpecialtiesSelect {
+	.AR & {
+		min-width: 170px; // Prevent dropdown menu to be outside the screen
+	}
+}
+
+// Used in the patient visit context (e.g. Progress Notes)
+.PageButtonAction {
+	line-height: 36px;
+	margin-top: -58px;
+	min-height: 36px;
+}
+
+.PageAbsoluteButtonAction {
+	position: absolute;
+	right: 0;
+	top: -56px;
+
+	.AR & {
+		left: 0;
+		right: auto;
+	}
+}
+
+.tablet {
+	.FiltersWrapper {
+		flex-direction: column-reverse;
+		gap: $sapphire-sizes--medium;
+
+		> .MultiAlignRight {
+			text-align: left;
+		}
+	}
+}
+
+.tablet,
+.desktop.small {
+	.ManageQueueWrapper {
+		> * {
+			width: 100%;
+		}
+	}
+}

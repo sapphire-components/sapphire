@@ -1,0 +1,74 @@
+.SubLayoutLeftPanel {
+	display: flex;
+	min-height: calc(100vh - 64px); /* Side menu height */
+
+	&__Panel {
+		background-color: $white-grey;
+		padding: $sapphire-sizes--large 0;
+		width: 232px;
+	}
+
+	&__PanelTitle {
+		margin-bottom: $sapphire-sizes--large;
+		padding: 0 $sapphire-sizes--medium;
+		position: sticky;
+		top: 88px;
+		z-index: 1;
+
+		.InlineDropdown_label {
+			@include flex-center-vertically;
+		}
+
+		.InlineDropdown_icon,
+		.InlineDropdown_text {
+			color: $dark-grey;
+		}
+
+		.InlineDropdown_text {
+			font-size: $font-size-heading3;
+		}
+	}
+
+	&__MenuItems {
+		position: sticky;
+		top: 138px;
+
+		> div,
+		> span > div {
+			&::after {
+				background-color: $light-grey;
+				content: '';
+				display: block;
+				height: 1px;
+				margin: $sapphire-sizes--large $sapphire-sizes--medium;
+			}
+
+			&:last-of-type {
+				&::after {
+					display: none;
+				}
+			}
+
+			.PanelMenuItem {
+				margin-bottom: $sapphire-sizes--small;
+
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+	&__Content {
+		flex: 1;
+		padding: 0 $sapphire-sizes--medium $sapphire-sizes--large;
+		position: relative;
+
+		.CollapsibleSidePanel__Content {
+			border-left: 1px solid $light-grey;
+			max-width: 430px;
+			min-height: calc(100vh - 64px);
+			z-index: 2;
+		}
+	}
+}

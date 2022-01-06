@@ -1,0 +1,150 @@
+.ClinicalInformation > div {
+	display: flex;
+	flex-direction: column;
+	gap: $sapphire-sizes--xsmall;
+	height: $sapphire-sizes--largest;
+
+	.ClinicalInformationItem {
+		@include flex-center-vertically;
+
+		border-radius: $border-radius-default;
+		flex-basis: 100%;
+		height: 26px;
+		overflow: hidden;
+
+		&-icon {
+			@include flex-center-total(inline-flex);
+
+			color: $regular-white;
+			height: 26px;
+			min-width: 26px;
+		}
+
+		&-text {
+			color: $text-color-regular;
+			display: flex;
+			font-family: $font-family-latin-bold;
+			font-size: $font-size-tiny;
+			line-height: 26px;
+			max-height: 26px;
+			width: 100%;
+
+			> div:first-of-type {
+				flex: 1;
+				padding: 0 $sapphire-sizes--small;
+			}
+		}
+
+		.SubInfo {
+			padding: 0 $sapphire-sizes--small;
+			white-space: nowrap;
+
+			.tooltipstered {
+				padding-left: $sapphire-sizes--xsmall;
+			}
+
+			.AR & {
+				.tooltipstered {
+					padding-left: 0;
+					padding-right: $sapphire-sizes--xsmall;
+				}
+			}
+		}
+	}
+
+	.ThemeGrey {
+		.ClinicalInformationItem {
+			&-icon {
+				background-color: $regular-grey;
+			}
+
+			&-text {
+				color: $regular-white;
+
+				div:first-of-type {
+					background-color: $mid-light-grey;
+				}
+			}
+
+			.SubInfo {
+				background-color: $regular-grey;
+			}
+		}
+	}
+
+	.EmptyGrey,
+	.EmptyGreen {
+		.ClinicalInformationItem {
+			&-text {
+				background-color: $regular-white;
+				color: $regular-grey;
+				font-family: $font-family-latin-regular;
+				line-height: 24px;
+			}
+		}
+	}
+
+	.EmptyGrey {
+		.ClinicalInformationItem {
+			border: 1px solid $light-grey;
+
+			&-icon {
+				background-color: $light-grey;
+			}
+		}
+	}
+
+	.EmptyGreen {
+		.ClinicalInformationItem {
+			overflow: unset;
+
+			&-icon {
+				background-color: $regular-green;
+				border: 1px solid $regular-green;
+				border-radius: $border-radius-default 0 0 $border-radius-default;
+				border-right: none;
+				color: $regular-white;
+				height: 26px;
+			}
+
+			&-text {
+				background-color: $regular-white;
+				border: 1px solid $light-grey;
+				border-left: none;
+				border-radius: 0 $border-radius-default $border-radius-default 0;
+				color: $regular-grey;
+				height: 26px;
+			}
+		}
+
+		.AR & {
+			.ClinicalInformationItem {
+				&-icon {
+					border-left: none;
+					border-radius: 0 $border-radius-default $border-radius-default 0;
+					border-right: 1px solid $regular-yellow;
+				}
+
+				&-text {
+					border-left: 1px solid $light-grey;
+					border-radius: $border-radius-default 0 0 $border-radius-default;
+					border-right: none;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1083px) {
+	.ClinicalInformation {
+		max-width: 260px;
+
+		> div {
+			flex-direction: column;
+		}
+
+		.ClinicalInformationItem {
+			max-width: unset;
+		}
+	}
+}

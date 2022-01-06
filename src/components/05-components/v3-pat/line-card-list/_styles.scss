@@ -1,0 +1,112 @@
+.LineCardList {
+	@include flex-center-vertically;
+
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	border-radius: $border-radius-default;
+	cursor: pointer;
+	gap: $sapphire-sizes--medium;
+	padding: $sapphire-sizes--medium;
+
+	&__Icon {
+		text-align: center;
+		width: 20px;
+	}
+
+	&__Content {
+		flex: 1;
+	}
+
+	&__Title {
+		font-family: $font-family-latin-bold;
+
+		.AR & {
+			font-family: $font-family-arabic-bold;
+		}
+	}
+
+	&__Subtitle {
+		color: $regular-grey;
+	}
+
+	&__Actions {
+		display: flex;
+		gap: $sapphire-sizes--small;
+	}
+
+	&:hover,
+	&--selected {
+		background-color: $regular-eta;
+		border-color: $regular-alpha;
+	}
+}
+
+.GroupLineCards {
+	background-color: $white-grey;
+
+	.LineCardList {
+		background-color: transparent;
+		border: none;
+		border-bottom: 1px solid transparent;
+		border-radius: 0;
+		border-top: 1px solid transparent;
+		position: relative;
+
+		&::after {
+			background-color: $light-grey;
+			bottom: -1px;
+			content: '';
+			display: block;
+			height: 1px;
+			left: 52px;
+			position: absolute;
+			width: 100%;
+		}
+
+		&:hover,
+		&--selected {
+			background-color: $regular-eta;
+		}
+
+		&--selected {
+			border-bottom-color: $regular-alpha;
+			border-top-color: $regular-alpha;
+
+			&::after {
+				display: none;
+			}
+		}
+
+		.AR & {
+			&::after {
+				left: unset;
+				right: 52px;
+			}
+		}
+	}
+
+	> .LineCardList:last-of-type,
+	> .ListRecords > *:last-of-type .LineCardList {
+		&::after {
+			display: none;
+		}
+	}
+
+	.BadgeCustom {
+		align-items: center;
+		font-size: 13px;
+		gap: $sapphire-sizes--small;
+		height: 26px;
+		max-height: unset;
+		padding: 0 $sapphire-sizes--small;
+
+		.BadgeCustom__Icon {
+			font-size: 16px;
+			height: 16px;
+		}
+
+		.BadgeCustom__Label {
+			color: $dark-grey;
+		}
+	}
+}

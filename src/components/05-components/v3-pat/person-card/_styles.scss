@@ -1,0 +1,785 @@
+/* stylelint-disable no-descending-specificity */
+/* Now called GenericCard, the css classes will remain with their previous name*/
+.PersonCard {
+	&.IsOpen {
+		.PersonCard_header {
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+
+			.PersonCard__expandIcon {
+				transform: rotate(180deg);
+			}
+		}
+
+		.PersonCard_expandable {
+			border-bottom-left-radius: $border-radius-medium;
+			border-bottom-right-radius: $border-radius-medium;
+		}
+
+		.PersonCard__content .PersonExpandableDiv {
+			background-color: $regular-eta;
+		}
+
+		.PersonExpandableDiv:before {
+			content: '\e611';
+		}
+	}
+
+	&_header {
+		align-items: stretch;
+		background-color: $regular-white;
+		border: 1px solid $light-grey;
+		border-radius: $border-radius-medium;
+		display: flex;
+		min-height: 56px;
+
+		&:not(.IsTransparent).PersonCard__content {
+			background-color: $regular-white;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			padding: 10px $sapphire-sizes--medium;
+			width: 100%;
+		}
+
+		&.IsExpandable {
+			.PersonCard__title,
+			.PersonCard__content,
+			.PersonCard__headerLeftInfo {
+				cursor: pointer;
+				pointer-events: auto;
+			}
+
+			.PersonCard__expandIcon {
+				@include arrow-button($dark-grey, 20px, 0.7em);
+
+				min-width: 20px;
+			}
+		}
+
+		&.IsExpandableDisabled {
+			.PersonCard__expandIcon {
+				@include arrow-button($light-grey, 20px, 0.7em);
+
+				min-width: 20px;
+				pointer-events: none;
+			}
+		}
+
+		&.IsTransparent {
+			background-color: transparent;
+			border: none;
+			height: unset;
+			min-height: 0px;
+
+			.PersonCard__actions a.Button {
+				height: auto;
+				line-height: unset;
+			}
+
+			.PersonCard__title,
+			.PersonCard__actions,
+			.PersonCard__content,
+			.PersonCard__headerLeftInfo {
+				background-color: transparent;
+			}
+		}
+
+		&.NonePadding {
+			.PersonCard__actions,
+			.PersonCard__content,
+			.PersonCard__headerLeftInfo {
+				padding: 0;
+			}
+		}
+
+		&.MediumPadding {
+			.PersonCard__headerLeftInfo {
+				gap: $sapphire-sizes--medium;
+				padding: $sapphire-sizes--medium;
+				padding-right: 0;
+			}
+
+			.PersonCard__content {
+				padding: $sapphire-sizes--medium;
+			}
+
+			.PersonCard__actions {
+				padding: $sapphire-sizes--medium;
+				padding-left: 0;
+			}
+		}
+
+		&.SmallPadding {
+			.PersonCard__actions,
+			.PersonCard__content,
+			.PersonCard__headerLeftInfo {
+				padding: 6px $sapphire-sizes--medium;
+			}
+		}
+
+		&.Selected {
+			border: 1px solid $regular-alpha;
+			border-radius: $border-radius-medium;
+
+			.PersonCard__content,
+			.PersonCard__actions,
+			.PersonCard__headerLeftInfo {
+				background-color: $regular-eta;
+			}
+		}
+
+		.PersonCard__content {
+			align-items: center;
+			background-color: $regular-white;
+			border-radius: $border-radius-medium;
+			display: flex;
+			flex: auto;
+			flex-basis: 100%;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			padding: 10px $sapphire-sizes--medium;
+
+			.Patient_Info {
+				> div {
+					width: 200px;
+				}
+			}
+
+			&.MinWidthXSmall > div:first-of-type {
+				min-width: 200px;
+			}
+
+			&.MinWidthSmall > div:first-of-type {
+				min-width: 400px;
+			}
+
+			&.MinWidthMedium > div:first-of-type {
+				min-width: 600px;
+			}
+
+			&.MinWidthLarge > div:first-of-type {
+				min-width: 800px;
+			}
+
+			// Minimun width
+			.MinWidthXSmall {
+				min-width: 50px;
+			}
+
+			.MinWidthSmall {
+				min-width: 200px;
+			}
+
+			.MinWidth300 {
+				min-width: 300px;
+			}
+
+			.MinWidthMedium {
+				min-width: 400px;
+			}
+
+			.MinWidthLarge {
+				min-width: 600px;
+			}
+
+			// Maximum width
+			.MaxWidthXSmall {
+				max-width: 50px;
+			}
+
+			.MaxWidthSmall {
+				max-width: 200px;
+			}
+
+			.MaxWidthMedium {
+				max-width: 400px;
+			}
+
+			.MaxWidthLarge {
+				max-width: 600px;
+			}
+
+			span > div {
+				flex-basis: 100%;
+			}
+
+			span.ListRecords {
+				display: flex;
+				flex-direction: row;
+				width: 100%;
+			}
+		}
+
+		.PersonCard__content,
+		.PersonCard__actions {
+			&.Red {
+				background-color: $light-red;
+				color: inherit;
+			}
+		}
+	}
+
+	&_expandable {
+		box-sizing: content-box;
+		height: 0;
+		overflow: hidden;
+		visibility: visible;
+
+		&.IsExpanded {
+			background-color: $regular-white;
+			border: 1px solid $light-grey;
+			border-bottom-left-radius: $border-radius-medium;
+			border-bottom-right-radius: $border-radius-medium;
+			border-top: none;
+			height: auto;
+		}
+	}
+
+	&__headerLeftInfo {
+		@include flex-center-vertically;
+
+		background-color: $regular-white;
+		border-radius: $border-radius-medium;
+		padding: 10px $sapphire-sizes--medium;
+
+		&.IsLeftSideHide {
+			display: none;
+		}
+
+		// Colors
+		&.Male {
+			.PersonCardIcon {
+				background-color: $regular-blue;
+			}
+
+			&.HasBorder {
+				box-shadow: inset 5px 0px 0 0px $regular-blue;
+
+				.icon {
+					color: $regular-white;
+				}
+			}
+		}
+
+		&.Female {
+			.PersonCardIcon {
+				background-color: $regular-pink;
+			}
+
+			&.HasBorder {
+				box-shadow: inset 5px 0px 0 0px $regular-pink;
+
+				.icon {
+					color: $regular-white;
+				}
+			}
+		}
+
+		&.Unidentified {
+			.PersonCardIcon {
+				background-color: $body-color;
+				color: $dark-grey;
+			}
+
+			&.HasBorder {
+				box-shadow: inset 5px 0px 0 0px $regular-grey;
+
+				.icon {
+					color: $dark-grey;
+				}
+			}
+		}
+
+		&.Red {
+			background-color: $regular-white;
+			color: $dark-grey;
+
+			.PersonCardIcon {
+				background-color: $light-red;
+			}
+
+			&.HasBorder {
+				box-shadow: inset 5px 0px 0 0px $regular-red;
+
+				.icon {
+					color: $dark-red;
+				}
+			}
+		}
+
+		&.Green {
+			background-color: $regular-white;
+			color: $dark-grey;
+
+			.PersonCardIcon {
+				background-color: $light-green;
+				color: $regular-green;
+			}
+
+			.GenericCardBackground & {
+				~ .PersonCard__content,
+				~ .PersonCard__actions {
+					background-color: lighten($regular-green, 46%);
+				}
+			}
+
+			&.HasBorder {
+				box-shadow: inset 5px 0px 0 0px $regular-green;
+
+				.icon {
+					color: $dark-green;
+				}
+			}
+		}
+
+		&.Brown {
+			color: $dark-grey;
+
+			.PersonCardIcon {
+				background-color: $regular-beige;
+			}
+
+			&.HasBorder {
+				box-shadow: inset 5px 0px 0 0px $regular-beige;
+
+				.icon {
+					color: $dark-beige;
+				}
+			}
+		}
+
+		// Sizes
+		&.XSmall {
+			flex-basis: 9%;
+
+			.PersonCard____title {
+				flex-basis: 100%;
+			}
+		}
+
+		&.Small {
+			flex-basis: 20%;
+		}
+
+		&.Medium {
+			flex-basis: 30%;
+		}
+
+		&.Large {
+			flex-basis: 40%;
+		}
+
+		&.XLarge {
+			flex-basis: 50%;
+		}
+
+		&.Full {
+			flex-basis: 100%;
+		}
+
+		.PersonCard____title a {
+			color: $dark-grey;
+		}
+
+		.PersonCard___flag {
+			margin-left: $sapphire-sizes--small;
+
+			.FlagContainer {
+				height: auto;
+			}
+		}
+	}
+
+	&____title {
+		> div.Flex {
+			align-items: center;
+		}
+	}
+
+	&__content {
+		gap: $sapphire-sizes--medium;
+
+		> div {
+			flex-basis: 100%;
+			margin: 0;
+
+			&:first-of-type {
+				padding-left: 0;
+			}
+		}
+	}
+
+	&__title {
+		&:empty ~ .PersonCard__content > div {
+			padding: 0;
+		}
+	}
+
+	&__actions {
+		background-color: $regular-white;
+		border-radius: $border-radius-medium;
+		max-width: 300px;
+		padding: 10px $sapphire-sizes--medium;
+
+		&_width_Small {
+			align-items: center;
+			display: flex;
+			flex-basis: 10%;
+			justify-content: flex-end;
+		}
+
+		&_width_Medium {
+			align-items: center;
+			display: flex;
+			flex-basis: 15%;
+			justify-content: flex-end;
+		}
+
+		&_width_Large {
+			flex-basis: 30%;
+			max-width: unset;
+		}
+	}
+
+	&__Complementary {
+		&:not(:empty) ~ .PersonCard__headerLeftInfo {
+			padding-left: 0;
+		}
+
+		&:not(:empty) ~ .PersonCard__actions_width_Medium {
+			flex-basis: 20%;
+		}
+
+		.PersonCardPreInfo {
+			height: 100%;
+		}
+	}
+
+	/*&___icon {
+		&:not(:empty) + .PersonCard____title {
+			margin-left: $sapphire-sizes--medium;
+		}
+	}*/
+
+	.PersonCardIcon {
+		@include flex-center-total(inline-flex);
+
+		background-color: $sapphire-light;
+		border-radius: $border-radius-medium;
+		height: 48px;
+		max-width: 48px;
+		width: 48px;
+	}
+
+	.CardAll {
+		@include flex-center-vertically;
+
+		.Description {
+			line-height: inherit;
+			overflow: inherit;
+			text-overflow: inherit;
+			white-space: inherit;
+			width: 100%;
+		}
+
+		.DescriptionContainer {
+			align-self: center;
+			display: flex;
+			font-size: inherit;
+			line-height: inherit;
+		}
+
+		.Small_Description {
+			overflow: inherit;
+			text-overflow: inherit;
+			white-space: inherit;
+			width: 100%;
+		}
+	}
+
+	.DescriptionContainer {
+		display: flex;
+		flex-direction: column;
+
+		> .Description,
+		> .Small_Description {
+			align-self: center;
+			flex: 1;
+			padding: 0;
+		}
+	}
+
+	.PersonExpandableDiv:before {
+		content: '\e610';
+	}
+
+	.CardBackgroundGreen & {
+		.PersonCard_header,
+		.PersonCard__content,
+		.PersonCard__actions,
+		.PersonCard__headerLeftInfo {
+			background-color: lighten($regular-green, 48%);
+		}
+	}
+}
+
+.PersonExpandableDiv {
+	position: relative;
+
+	&:before {
+		font-family: $font-family-icons;
+		left: 10px;
+		position: absolute;
+		top: 18px;
+	}
+}
+
+.ColoredBox {
+	height: 100%;
+	padding: 10px;
+}
+
+.CardTableHeader {
+	.PersonCard {
+		font-family: $font-family-latin-bold;
+		font-size: $font-size-small;
+		text-transform: uppercase;
+
+		.AR & {
+			font-family: $font-family-arabic-bold;
+		}
+
+		.PersonCard_header .PersonCard__content,
+		.PersonCard_header .PersonCard__headerLeftInfo {
+			color: $mid-light-grey;
+			padding: 9.5px $sapphire-sizes--medium;
+		}
+	}
+}
+
+.GenericCardEmergency {
+	.PersonCard {
+		.PersonCardPreInfo,
+		.PersonCard_header,
+		.PersonCard__headerLeftInfo {
+			background-color: $light-red;
+		}
+	}
+}
+
+.AR,
+.FA {
+	.PersonCard {
+		&_header {
+			&.MediumPadding {
+				.PersonCard__headerLeftInfo {
+					padding-left: 0;
+					padding-right: $sapphire-sizes--medium;
+				}
+
+				.PersonCard__actions {
+					padding-left: $sapphire-sizes--medium;
+					padding-right: 0;
+				}
+			}
+		}
+
+		&__headerLeftInfo {
+			&.Male.HasBorder {
+				border-left: none;
+				border-right: 2px solid $regular-blue;
+			}
+
+			&.Female.HasBorder {
+				border-left: none;
+				border-right: 2px solid $regular-pink;
+			}
+
+			&.Unidentified.HasBorder {
+				border-left: none;
+				border-right: 2px solid $regular-grey;
+			}
+
+			.PersonCard___flag {
+				margin-left: auto;
+				margin-right: 10px;
+			}
+		}
+
+		&__Complementary {
+			&:not(:empty) ~ .PersonCard__headerLeftInfo {
+				padding-right: 0;
+			}
+		}
+
+		&___icon:not(:empty) + .PersonCard____title {
+			margin-left: 0;
+			margin-right: $sapphire-sizes--medium;
+		}
+	}
+
+	a {
+		.PersonCard {
+			font-family: $font-family-arabic-regular;
+		}
+	}
+
+	.PersonExpandableDiv:before {
+		left: auto;
+		right: 0px;
+	}
+}
+
+/* Adjustements */
+
+.PersonCard {
+	> .PersonCard_header {
+		.PersonCard__content {
+			color: $dark-grey;
+			flex: 4;
+		}
+	}
+}
+
+.ListRecords,
+.ListPersonCard {
+	&,
+	> div:not(:last-of-type),
+	> span:not(:last-of-type) {
+		.PersonCard {
+			margin-bottom: $sapphire-sizes--small;
+		}
+	}
+}
+
+a {
+	.PersonCard {
+		color: $dark-grey;
+		font-family: $font-family-latin-regular;
+
+		&_expandable {
+			display: none !important;
+		}
+	}
+}
+
+.tablet,
+.desktop.small .SideBarOpen {
+	.PersonCard:not(.LeftSideHidden) {
+		.PersonCard {
+			&.IsExpandable {
+				.PersonCard__content {
+					margin-left: 54px;
+				}
+			}
+
+			&__Complementary {
+				&:empty ~ .PersonCard__headerLeftInfo {
+					flex-basis: 100%;
+				}
+
+				&:not(:empty) ~ .PersonCard__headerLeftInfo {
+					padding-left: $sapphire-sizes--medium;
+					padding-right: $sapphire-sizes--medium;
+				}
+			}
+
+			&_header {
+				flex-wrap: wrap;
+
+				.ColoredBox,
+				.PersonCardIcon,
+				.CircledPatient {
+					height: 40px;
+					width: 40px;
+				}
+			}
+
+			&__headerLeftInfo {
+				flex: 1;
+				padding-bottom: $sapphire-sizes--small;
+				padding-top: $sapphire-sizes--small;
+			}
+
+			&__content {
+				border-radius: 0;
+				border-top: 1px solid $light-grey;
+				flex-basis: 100% !important;
+				margin-left: 70px;
+				padding-bottom: $sapphire-sizes--small;
+				padding-left: 0 !important;
+				padding-top: $sapphire-sizes--small;
+			}
+
+			&__actions {
+				background-color: $body-color;
+				border-radius: 0;
+				flex-basis: 100% !important;
+				max-width: none;
+				padding-bottom: $sapphire-sizes--small;
+				padding-top: $sapphire-sizes--small;
+				text-align: right;
+			}
+		}
+	}
+
+	.PersonCard_header .PersonCard__content {
+		.MinWidthLarge,
+		.MinWidthSmall,
+		.MinWidthMedium,
+		.MinWidthXSmall {
+			min-width: auto;
+		}
+
+		.MaxWidthLarge,
+		.MaxWidthSmall,
+		.MaxWidthMedium,
+		.MaxWidthXSmall {
+			max-width: auto;
+		}
+	}
+}
+
+.desktop.hd .PersonCard__content__title,
+.desktop.small .PersonCard__content__title,
+.desktop .PersonCard__content__title,
+.tablet:not(.landscape) .PersonCard__content__title,
+.tablet:not(.portrait) .PersonCard__content__title {
+	display: none;
+}
+
+.phone .PersonCard_header {
+	flex-direction: column;
+}
+
+.phone .PersonCard_header > div {
+	width: 100% !important;
+}
+
+.desktop:not(.hd) .PersonCard_header .PersonCard__content.MinWidthSmall > div:first-of-type {
+	min-width: 250px;
+}
+
+.LayoutPopup__body__content .PersonCard__headerLeftInfo {
+	display: inherit !important;
+}
+
+.LayoutPopup__body__content .PersonCard___icon:not(:empty) + .PersonCard____title {
+	margin-left: 10px;
+}
+
+.PersonCardNoWrap {
+	.PersonCard_header {
+		flex-direction: row !important;
+		flex-wrap: nowrap !important;
+
+		> div {
+			width: auto !important;
+		}
+	}
+
+	.PersonCard__content {
+		border-top: none !important;
+	}
+}

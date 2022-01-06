@@ -1,0 +1,54 @@
+.LineItemStatus {
+	@include flex-center-vertically;
+
+	border-bottom: 1px solid $light-grey;
+	gap: $sapphire-sizes--medium;
+	padding: 8px 0;
+
+	&__Content2 {
+		font-family: $font-family-latin-bold;
+
+		.AR & {
+			font-family: $font-family-arabic-bold;
+		}
+	}
+
+	&__Actions {
+		flex: 1;
+		text-align: end;
+
+		> a {
+			padding: 0 $sapphire-sizes--xxsmall;
+		}
+	}
+
+	> .icon {
+		font-size: $font-size-heading4;
+
+		&.icon-given {
+			color: $regular-green;
+		}
+
+		&.icon-notgiven {
+			color: $regular-red;
+		}
+	}
+
+	&:hover {
+		background-color: $white-grey;
+
+		> .icon {
+			&.icon-given {
+				color: $dark-green;
+			}
+
+			&.icon-notgiven {
+				color: $dark-red;
+			}
+		}
+
+		.NotStartedIcon {
+			border-color: $regular-alpha;
+		}
+	}
+}

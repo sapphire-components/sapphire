@@ -1,0 +1,92 @@
+* {
+	box-sizing: border-box;
+}
+
+body,
+html {
+	scroll-behavior: smooth;
+}
+
+body,
+form,
+html,
+.Page {
+	font-family: $font-family-latin-regular;
+	font-size: 14px;
+	-webkit-font-smoothing: antialiased;
+	height: 100%;
+	position: relative;
+
+	&.AR {
+		font-family: $font-family-arabic-regular;
+	}
+}
+
+body {
+	background-color: $body-color;
+	margin: 0;
+	overflow-x: hidden;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body,
+input,
+select,
+textarea {
+	color: $text-color-regular;
+	font-family: $font-family-latin-regular;
+	font-weight: normal;
+	line-height: 1.43;
+}
+
+.AR {
+	body,
+	input,
+	select,
+	textarea {
+		font-family: $font-family-arabic-regular;
+	}
+}
+
+fieldset,
+textarea,
+option {
+	font-family: $font-family-latin-regular;
+}
+
+.AR {
+	fieldset,
+	textarea,
+	option {
+		font-family: $font-family-arabic-regular;
+	}
+}
+
+a,
+body,
+button,
+div,
+fieldset,
+form,
+html,
+img,
+input,
+li,
+optgroup,
+option,
+select,
+span,
+table,
+tbody,
+td,
+textarea,
+th,
+thead,
+tr,
+ul {
+	outline: 0 !important;
+}
+
+div[onclick] {
+	cursor: pointer;
+}

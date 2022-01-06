@@ -1,0 +1,80 @@
+.ResizeIframeTooltip {
+	&.ResizeWidthTooltip {
+		width: fit-content;
+	}
+
+	&.NoPadding .MainPopup {
+		padding: 0;
+	}
+
+	.ScrollableContent {
+		margin-right: -$sapphire-sizes--small;
+
+		.AR & {
+			margin-left: -$sapphire-sizes--small;
+			margin-right: 0;
+		}
+	}
+}
+
+div.tooltipster-content.tooltipster--noPadding {
+	padding: 0;
+}
+
+// Custom Tooltip
+.LayoutTooltipCustom {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+
+	&__Header {
+		@include flex-center-vertically;
+
+		background-color: $regular-white;
+		border-bottom: 1px solid $light-grey;
+		padding: $sapphire-sizes--medium;
+	}
+
+	&__Content {
+		background-color: $white-grey;
+		flex: 1;
+		padding: $sapphire-sizes--medium;
+	}
+}
+
+.TooltipCustom {
+	iframe {
+		margin-bottom: -3px;
+
+		html,
+		body,
+		form {
+			height: 100% !important;
+		}
+	}
+}
+
+.ListLinks {
+	background-color: $regular-white;
+	display: flex;
+	flex-direction: column;
+	padding: $sapphire-sizes--small 0;
+	min-width: 250px;
+
+	a:link {
+		@include flex-center-vertically;
+
+		color: $dark-grey;
+		gap: $sapphire-sizes--medium;
+		height: 36px;
+		padding: 0 $sapphire-sizes--medium;
+
+		&:hover {
+			background-color: $regular-eta;
+		}
+
+		.icon {
+			font-size: $font-size-heading4;
+		}
+	}
+}

@@ -1,0 +1,77 @@
+.ScaleMainStructure {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+
+	&_hiddingLink {
+		display: none;
+	}
+
+	&_options {
+		.ToggleItemControl {
+			width: fit-content;
+
+			&.disabled {
+				pointer-events: none;
+			}
+
+			&:last-child {
+				margin-right: 0px;
+			}
+		}
+	}
+
+	&_menu {
+		&:empty + .ScaleMainStructure_options:empty {
+			margin-bottom: 0;
+		}
+	}
+
+	&_content {
+		@include component-scroll-root();
+
+		height: 65%;
+	}
+
+	&_footer {
+		align-items: flex-end;
+		background-color: $regular-white;
+		border-top: 1px solid $light-grey;
+		display: flex;
+		flex-shrink: 0;
+		justify-content: space-between;
+		margin-top: $sapphire-sizes--small;
+		padding-top: $sapphire-sizes--small;
+		position: relative;
+		width: 100%;
+	}
+
+	&_footerResult {
+		background-color: $body-color;
+		border-radius: $border-radius-medium;
+		display: flex;
+		flex-direction: column;
+		min-width: 200px;
+		padding: $sapphire-sizes--medium;
+
+		.TotalLabel {
+			font-family: $font-family-latin-bold;
+			font-size: $font-size-heading1;
+		}
+
+		.ScaleMainStructure_totalScore {
+			font-family: $font-family-latin-bold;
+		}
+	}
+
+	.ScaleForm {
+		background-color: $body-color;
+		border-radius: $border-radius-medium;
+		margin-bottom: $sapphire-sizes--medium;
+		padding: $sapphire-sizes--medium;
+	}
+}
+
+.ScaleItemInvisible {
+	opacity: 0;
+}

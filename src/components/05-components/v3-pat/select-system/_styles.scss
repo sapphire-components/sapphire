@@ -1,0 +1,450 @@
+$select-system-height: 36px;
+
+.SelectSystem.select2-container--default .select2-results > .select2-results__options {
+	max-height: 180px;
+}
+
+.select2 {
+	width: 100% !important;
+
+	&.select2-container--disabled {
+		.select2-selection[aria-disabled='true'] {
+			background-color: $background-disabled;
+			border-color: $border-color-disabled;
+
+			&:hover {
+				background-color: $background-disabled;
+				border-color: $border-color-disabled;
+			}
+
+			&:after {
+				filter: grayscale(100%);
+			}
+
+			.select2-selection__rendered {
+				color: $text-color-disabled;
+			}
+		}
+	}
+
+	&.select2-container--focus {
+		.select2-selection {
+			&,
+			&:hover {
+				background-color: $regular-white;
+				border-color: $regular-alpha;
+			}
+		}
+	}
+
+	&.select2-container--open {
+		.select2-selection {
+			&,
+			&:hover {
+				background-color: $regular-eta;
+				border-color: $regular-alpha;
+			}
+		}
+	}
+
+	&.select2-container--open {
+		.select2-selection[aria-disabled='false'] {
+			border-bottom-left-radius: $border-radius-default;
+			border-bottom-right-radius: $border-radius-default;
+		}
+	}
+
+	.select2-selection {
+		border: 1px solid $light-grey;
+		border-radius: $border-radius-default;
+		line-height: 0;
+		min-height: $select-system-height;
+		transition: all 0.1s ease-in;
+
+		&:hover {
+			background-color: $regular-eta;
+			border-color: $regular-alpha;
+		}
+
+		&:after {
+			@include up-down-arrows;
+
+			background-color: transparent;
+			height: 12px;
+			right: 15px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		// TagCustom
+		&.select2-selection--multiple.tagCustom {
+			@include flex-center-vertically;
+
+			border-radius: 100px;
+
+			&:before {
+				color: $regular-grey;
+				content: '\e690';
+				font-family: $font-family-icons;
+				font-size: 1.143em;
+				line-height: 20px;
+				padding-right: 10px;
+				pointer-events: none;
+				top: 8px;
+				transform: rotateY(180deg);
+				z-index: 1;
+			}
+		}
+
+		// Checkbox
+		&.select2-selection--multiple.MultipleSelect {
+			.select2-selection__rendered {
+				> li:nth-child(n + 2) {
+					display: none;
+				}
+
+				.select2-selection__choice:first-child {
+					background-color: transparent;
+					padding-left: 0;
+
+					.select2-selection__choice__remove {
+						display: none;
+					}
+				}
+			}
+		}
+
+		// Multiple Selection
+		&.select2-selection--multiple {
+			.select2-selection__rendered {
+				height: 100%;
+				line-height: inherit;
+			}
+		}
+
+		.select2-selection__rendered {
+			color: $dark-grey;
+			line-height: $select-system-height;
+			padding-left: $sapphire-sizes--medium;
+			padding-right: 36px;
+
+			.select2-search {
+				height: calc(#{$select-system-height} - 2px);
+
+				&:only-child {
+					width: 100%;
+
+					.select2-search__field {
+						min-width: fit-content;
+						padding-left: 0 !important;
+						width: 100% !important;
+					}
+				}
+
+				.select2-search__field {
+					height: $select-system-height;
+					line-height: calc(#{$select-system-height} - 2px);
+					margin-top: -2px;
+					padding-left: 0 !important;
+
+					&::placeholder {
+						color: $mid-light-grey;
+						font-family: $font-family-latin-regular;
+					}
+				}
+			}
+
+			.select2-selection__choice {
+				background-color: $regular-zeta;
+				border: none;
+				border-radius: 0;
+				cursor: default;
+				display: inline-block;
+				font-family: $font-family-latin-bold;
+				line-height: 22px;
+				margin-top: 4px;
+				padding: 2px 25px 2px 15px;
+				position: relative;
+				white-space: normal;
+
+				> div {
+					max-width: 350px;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+				}
+
+				.select2-selection__choice__remove {
+					border-radius: 50%;
+					color: $dark-grey;
+					cursor: pointer;
+					display: inline-block;
+					font-family: $font-family-latin-bold;
+					font-size: 1em;
+					height: 14px;
+					line-height: 13px;
+					margin: 0;
+					padding: 0;
+					position: absolute;
+					right: 6px;
+					text-align: center;
+					top: 50%;
+					transform: translateY(-50%);
+					width: 14px;
+
+					&:hover {
+						background-color: rgba(51, 51, 51, 0.2);
+					}
+				}
+			}
+		}
+
+		.select2-selection__arrow {
+			display: none;
+		}
+	}
+}
+
+// Result/Options
+.select2-container {
+	.select2-dropdown {
+		@include shadow-small;
+
+		border: 1px solid $light-grey;
+		border-radius: $border-radius-default;
+		min-width: 215px;
+		overflow: hidden;
+
+		&--below {
+			margin-top: 4px;
+		}
+
+		&--above {
+			margin-top: -4px;
+		}
+
+		// Checkbox
+		&.MultipleSelect {
+			.select2-results__option {
+				&:before {
+					background-color: $regular-white;
+					border: 1px solid $light-grey;
+					border-radius: $border-radius-default;
+					content: '';
+					display: inline-block;
+					height: 20px;
+					margin-right: $sapphire-sizes--medium;
+					position: relative;
+					vertical-align: middle;
+					width: 20px;
+				}
+
+				&[aria-selected='true'] {
+					background-color: $regular-eta;
+
+					&:before {
+						background-color: $regular-white;
+						color: $regular-beta;
+						content: '\f00c';
+						display: inline-block;
+						font-family: FontAwesome;
+						height: 18px;
+						line-height: 19px;
+						padding: 1px;
+						text-align: center;
+						width: 18px;
+					}
+				}
+			}
+
+			.select2-results__option--highlighted[aria-selected] {
+				background-color: $regular-eta;
+				color: $dark-grey;
+			}
+		}
+
+		.select2-search {
+			padding: 8px;
+
+			.select2-search__field {
+				background: none;
+				border: 1px solid $regular-alpha;
+				border-radius: 100px;
+				padding: 0 36px 0 12px !important;
+			}
+		}
+
+		.select2-search--dropdown {
+			&:after {
+				color: $mid-light-grey;
+				content: '\e690';
+				font-family: $font-family-icons;
+				font-size: $font-size-heading3;
+				position: absolute;
+				right: 22px;
+				top: 12px;
+				transform: rotate(270deg);
+			}
+		}
+
+		.select2-results {
+			.select2-results__options {
+				@include component-scroll-root;
+
+				li.select2-results__option {
+					border-bottom: none;
+					padding: 8px;
+
+					&[aria-selected='true'] {
+						background-color: $regular-alpha;
+						color: $regular-white;
+
+						.fontSelect2Availability {
+							color: $regular-white;
+						}
+					}
+
+					&.select2-results__option--highlighted[aria-selected='false'] {
+						background-color: $regular-eta;
+						color: $dark-grey;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Mandatory
+.Mandatory + .select2.select2-container .select2-selection {
+	border-left: 3px solid $regular-alpha;
+}
+
+// HtmlOptions
+.fontSelect2Title {
+	display: inline-block;
+	font-family: $font-family-latin-bold;
+	font-size: 1em;
+	width: 49%;
+}
+
+.fontSelect2Availability {
+	color: $regular-beta;
+	display: inline-block;
+	font-size: 1em;
+	width: 49%;
+}
+
+.SelectSystemFilter {
+	.select2 {
+		.select2-selection {
+			border-radius: 100px !important;
+		}
+	}
+}
+
+.isTouch {
+	.select2 {
+		.select2-selection {
+			height: 50px;
+
+			.select2-selection__rendered {
+				line-height: 50px;
+			}
+		}
+	}
+}
+
+.AR,
+.FA {
+	.select2 {
+		.select2-selection {
+			direction: rtl;
+
+			&:after {
+				left: 16px;
+				right: auto;
+			}
+
+			// TagCustom
+			&.select2-selection--multiple.tagCustom {
+				&:before {
+					left: unset;
+					padding: 0;
+					position: absolute;
+					right: 14px;
+				}
+
+				.select2-selection__rendered {
+					padding-left: 36px;
+					padding-right: 36px;
+				}
+			}
+
+			// HtmlOptions
+			&.select2-selection--single.customSelect {
+				.select2-selection__rendered {
+					width: 100%;
+				}
+			}
+
+			// TagMultiple
+			&.select2-selection--multiple.tagSystem {
+				.select2-selection__rendered {
+					padding-left: 36px;
+				}
+			}
+
+			.select2-selection__rendered {
+				padding-left: 36px;
+				padding-right: $sapphire-sizes--medium;
+
+				.select2-selection__choice {
+					padding-left: 25px;
+					padding-right: 15px;
+
+					.select2-selection__choice__remove {
+						left: 6px;
+						right: auto;
+					}
+				}
+			}
+		}
+	}
+
+	.select2-container {
+		.select2-dropdown {
+			// Checkbox
+			&.MultipleSelect {
+				.select2-results__option {
+					&:before {
+						margin-left: $sapphire-sizes--medium;
+						margin-right: 0;
+					}
+				}
+			}
+
+			.select2-search {
+				.select2-search__field {
+					direction: rtl;
+					padding: 0 12px 0 36px !important;
+					text-align: right;
+				}
+			}
+
+			.select2-search--dropdown {
+				&:after {
+					left: 22px;
+					right: unset;
+				}
+			}
+
+			.select2-results {
+				direction: rtl;
+
+				.select2-results__option {
+					text-align: right;
+				}
+			}
+		}
+	}
+}

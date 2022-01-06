@@ -1,0 +1,178 @@
+/* stylelint-disable no-descending-specificity */
+.ExpandableLink {
+	&__Header {
+		cursor: pointer;
+	}
+
+	&__Icon {
+		.icon {
+			@include arrow-button($regular-beta, 20px, 0.7em, 90deg);
+
+			transition: transform 0.5s;
+		}
+	}
+
+	&__Link {
+		color: $regular-beta;
+		font-family: $font-family-latin-bold;
+		margin-left: $sapphire-sizes--medium;
+
+		.AR & {
+			margin-left: 0;
+			margin-right: $sapphire-sizes--medium;
+		}
+	}
+
+	&__Content {
+		max-height: 0;
+		overflow: hidden;
+	}
+
+	&--triggerRight & {
+		&__Header {
+			display: flex;
+		}
+
+		&__Icon {
+			order: 2;
+
+			.icon {
+				transform: rotate(0deg);
+			}
+		}
+
+		&__Link {
+			display: flex;
+			flex-basis: 100%;
+			flex-wrap: nowrap;
+			margin: 0;
+		}
+
+		&__Icon,
+		&__Link > div {
+			align-self: center;
+			justify-content: center;
+		}
+	}
+
+	&--expanded & {
+		&__Icon {
+			.icon {
+				transform: rotate(180deg);
+			}
+		}
+
+		&__Content {
+			margin-top: $sapphire-sizes--medium;
+			max-height: 9999px;
+			overflow: auto;
+		}
+	}
+
+	&--expanded.ExpandableLink--triggerRight {
+		.ExpandableLink__Icon .icon {
+			transform: rotate(-180deg);
+		}
+	}
+}
+
+.ExpandableList {
+	border: 1px solid $light-grey;
+	border-radius: $border-radius-medium;
+	overflow: hidden;
+
+	> * {
+		&:not(:first-of-type) .ExpandableLink {
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+		}
+
+		&:not(:last-of-type) .ExpandableLink {
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+
+			.ExpandableLink__Header {
+				border-bottom: 1px solid $light-grey;
+			}
+		}
+
+		&:last-of-type {
+			border-bottom: none;
+
+			.ExpandableLink__Header {
+				display: none;
+			}
+		}
+	}
+
+	.ExpandableLink {
+		&__Header {
+			align-items: center;
+			background-color: $body-color;
+			border-bottom: 1px solid $body-color;
+			display: flex;
+			height: 40px;
+			padding: 0 $sapphire-sizes--medium;
+		}
+
+		&__Link {
+			color: $regular-grey;
+			font-size: $font-size-small;
+		}
+
+		&__Icon {
+			.icon {
+				border-color: $regular-grey;
+
+				&:hover {
+					background-color: rgba($regular-grey, 0.1);
+				}
+
+				&::before {
+					color: $regular-grey;
+				}
+			}
+		}
+
+		&__Content {
+			margin-top: 0;
+			transition: unset;
+		}
+	}
+
+	&--expanded {
+		.ExpandableLink__Header {
+			border-bottom: 1px solid $light-grey;
+		}
+
+		.ExpandableLink__Content {
+			padding: $sapphire-sizes--medium;
+		}
+	}
+}
+
+.CustomExpandableLink {
+	.ExpandableLink {
+		border-bottom: 1px solid $light-grey;
+		margin-bottom: $sapphire-sizes--medium;
+		padding-bottom: $sapphire-sizes--medium;
+	}
+
+	.ExpandableLink__Icon {
+		.icon {
+			border-color: $dark-grey;
+
+			&:hover {
+				background-color: rgba($dark-grey, 0.1);
+			}
+
+			&::before {
+				color: $dark-grey;
+			}
+		}
+	}
+
+	.ExpandableLink__Link {
+		color: inherit;
+	}
+}

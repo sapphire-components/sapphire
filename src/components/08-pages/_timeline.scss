@@ -1,0 +1,113 @@
+$timeline-sticky-top-primary: 125px;
+$timeline-sticky-top-secondary: 185px;
+
+.TimelinePage {
+	display: flex;
+	gap: $sapphire-sizes--large;
+	padding: 0 $sapphire-sizes--large $sapphire-sizes--large;
+
+	&__Title {
+		background-color: $body-color;
+		box-sizing: content-box;
+		height: 36px;
+		padding: 0 $sapphire-sizes--small;
+		padding-top: $sapphire-sizes--large;
+		position: sticky;
+		top: $timeline-sticky-top-primary;
+		z-index: 1;
+	}
+
+	&__Navigation {
+		position: sticky;
+		top: $timeline-sticky-top-secondary;
+
+		.ListRecords {
+			@include component-scroll-root();
+
+			height: calc(100vh - #{$timeline-sticky-top-secondary});
+			overflow-y: scroll;
+			overscroll-behavior: contain;
+			padding-right: $sapphire-sizes--small;
+
+			.AR & {
+				padding-left: $sapphire-sizes--small;
+				padding-right: 0;
+			}
+
+			&::-webkit-scrollbar {
+				background-color: transparent;
+			}
+
+			&::-webkit-scrollbar-thumb {
+				border-color: transparent;
+			}
+
+			&:hover {
+				&::-webkit-scrollbar-thumb {
+					border-color: $light-grey;
+				}
+			}
+		}
+	}
+
+	&__Left {
+		max-width: 400px;
+		min-width: 300px;
+		position: relative;
+	}
+
+	&__Right {
+		flex: 1;
+
+		.TimelinePage__LoadingMore {
+			position: unset;
+		}
+	}
+
+	&__Filters {
+		@include flex-center-vertically();
+
+		background-color: $body-color;
+		gap: $sapphire-sizes--small;
+		padding-top: $sapphire-sizes--large;
+		position: sticky;
+		top: $timeline-sticky-top-primary;
+		z-index: 3;
+
+		.TimeLineSearchHeader {
+			min-width: 420px;
+		}
+	}
+
+	&__Content {
+		overflow: visible;
+
+		.LineTimeLine__Header {
+			position: sticky;
+			top: 227px;
+			//z-index: 1;
+		}
+	}
+
+	&__LoadingMore {
+		align-items: center;
+		background-color: $body-color;
+		display: none;
+		gap: $sapphire-sizes--small;
+		position: fixed;
+		top: calc(100vh - 32px);
+		width: 320px;
+		z-index: 1;
+
+		.lds-ring {
+			position: unset;
+			transform: unset;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.TimelinePage__Left {
+		display: none;
+	}
+}

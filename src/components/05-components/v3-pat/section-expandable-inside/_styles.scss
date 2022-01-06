@@ -1,0 +1,113 @@
+@mixin animation-arrow-button($rotate-degree: 0) {
+	transform: rotate($rotate-degree);
+}
+
+.SectionExpandableInside {
+	background-color: $regular-white;
+
+	&.expanded {
+		.ExapandablePlaceholder.HeaderIcon .icon {
+			@include animation-arrow-button(180deg);
+		}
+
+		.SectionExpandableInside_content {
+			border-bottom: 1px solid $light-grey;
+			height: auto;
+
+			&--noBorder {
+				border-bottom: none;
+			}
+		}
+	}
+
+	&_content {
+		height: 0;
+		overflow: hidden;
+		padding: 0;
+		visibility: initial;
+	}
+
+	&_header {
+		border-bottom: 1px solid $light-grey;
+		color: $dark-grey;
+		cursor: pointer;
+		display: table;
+		height: 35px;
+		padding: 0;
+		width: 100%;
+
+		&--noBorder {
+			border-bottom: none;
+		}
+
+		.HeaderIcon.open .icon {
+			@include animation-arrow-button(180deg);
+		}
+
+		.HeaderIcon.closed .icon {
+			@include animation-arrow-button(90deg);
+		}
+	}
+
+	.RightAllPlaceDiv {
+		display: table-cell;
+		vertical-align: middle;
+		white-space: nowrap;
+
+		> div {
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+
+	.ExapandablePlaceholder {
+		color: $dark-grey;
+		font-family: $font-family-latin-bold;
+		margin-right: $sapphire-sizes--small;
+
+		&.HeaderIcon .icon {
+			@include arrow-down-simple;
+			@include animation-arrow-button(90deg);
+
+			cursor: pointer;
+			display: block;
+			font-size: 0.857em;
+			margin: 0;
+			margin: 0 $sapphire-sizes--medium;
+		}
+	}
+
+	.PlaceHolderActions {
+		display: table-cell;
+		padding-right: 5px;
+		vertical-align: middle;
+
+		> div:not(:first-child) {
+			margin-left: 10px;
+		}
+	}
+
+	.SectionExpandable .SectionExpandableInside_header > div {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+.AR,
+.FA {
+	.SectionExpandableInside .ExapandablePlaceholder {
+		font-family: $font-family-arabic-bold;
+		margin-left: 15px;
+		margin-right: auto;
+	}
+
+	.SectionExpandableInside .PlaceHolderActions > div {
+		padding-left: 10px;
+		padding-right: 0;
+
+		&:not(:first-child) {
+			margin-left: auto;
+			margin-right: 10px;
+		}
+	}
+}

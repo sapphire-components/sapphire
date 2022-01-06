@@ -1,0 +1,28 @@
+.WardTotalContainer {
+	display: flex;
+	gap: $sapphire-sizes--medium;
+	line-height: 36px;
+
+	> div {
+		align-items: center;
+		display: inline-flex;
+	}
+
+	.WardState {
+		line-height: 20px;
+		white-space: nowrap;
+
+		&::after {
+			content: ' \00B7';
+			display: inline-block;
+			font-size: 0.786em;
+			margin: 0 $sapphire-sizes--xsmall;
+		}
+	}
+
+	.WardNumber {
+		color: $dark-grey;
+		font-family: $font-family-latin-bold;
+		font-size: $font-size-heading4;
+	}
+}

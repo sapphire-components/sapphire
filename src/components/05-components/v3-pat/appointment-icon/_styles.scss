@@ -1,0 +1,43 @@
+.Page .Appointment_Icon {
+	border-radius: 50%;
+	height: $sapphire-sizes--medium;
+	line-height: $sapphire-sizes--medium;
+	min-width: $sapphire-sizes--medium;
+	width: $sapphire-sizes--medium;
+
+	&.circleSuccess {
+		background-color: $regular-alpha;
+		border-color: $regular-alpha;
+		color: $regular-white;
+		text-align: center;
+
+		&:before {
+			content: '\e64d';
+			font-family: $font-family-icons;
+			font-size: $font-size-tiny;
+		}
+	}
+
+	&.redCircle {
+		border: 2px solid $regular-red;
+	}
+
+	&.blueCircle {
+		border: 2px solid $regular-blue;
+	}
+
+	&.greenCircle {
+		border: 2px solid $regular-green;
+	}
+
+	&.nopresence {
+		border: none;
+		color: $light-grey;
+
+		&:before {
+			content: '\e699';
+			font-family: $font-family-icons;
+			font-size: $font-size-heading4;
+		}
+	}
+}

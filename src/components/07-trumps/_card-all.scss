@@ -1,0 +1,43 @@
+.CardAll {
+	display: table;
+	white-space: nowrap;
+
+	.Icon_CardAll {
+		background-color: transparent;
+		border-radius: 50%;
+		line-height: 30px;
+		text-align: center;
+		width: auto;
+	}
+
+	.DescriptionContainer {
+		padding-left: $sapphire-sizes--medium;
+		text-align: left;
+
+		.Description {
+			display: block;
+		}
+
+		.Small_Description {
+			min-width: 185px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+	}
+}
+
+.AR,
+.FA {
+	.CardAll {
+		.DescriptionContainer {
+			padding-left: 0;
+			padding-right: $sapphire-sizes--medium;
+			text-align: right;
+
+			.Description {
+				font-family: $font-family-latin-bold;
+			}
+		}
+	}
+}

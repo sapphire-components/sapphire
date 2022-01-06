@@ -1,0 +1,112 @@
+.PatientMedicalFile {
+	@include flex-center-vertically();
+
+	border: 1px solid $light-grey;
+	border-radius: $border-radius-default;
+	height: $sapphire-sizes--largest;
+	overflow: hidden;
+	padding: 12px;
+	padding-right: 0;
+
+	.Multiple & {
+		& .FileInfo {
+			line-height: 32px;
+		}
+	}
+
+	.FileInfo {
+		margin-right: 4px;
+	}
+
+	.FileLocation {
+		.CircleElement {
+			background-color: transparent;
+			font-size: $font-size-small;
+		}
+	}
+
+	.FileNumber {
+		display: flex;
+		font-family: $font-family-latin-bold;
+		gap: $sapphire-sizes--xsmall;
+	}
+
+	.RequestFile {
+		font-size: $font-size-heading4;
+
+		> div {
+			display: flex;
+		}
+
+		.RequestFileOption {
+			&:hover a {
+				background-color: $sapphire-light;
+			}
+
+			a {
+				@include flex-center-total(inline-flex);
+
+				border-radius: 50%;
+				height: 30px;
+				width: 30px;
+
+				> div {
+					height: 20px;
+				}
+			}
+		}
+	}
+
+	.RequestFiles-Menu div[button-style] {
+		@include flex-center-total;
+
+		height: 80px;
+		transform: rotate(180deg);
+		width: 36px;
+
+		&::after {
+			border-radius: 50%;
+			content: '';
+			height: 30px;
+			position: absolute;
+			width: 30px;
+		}
+
+		&:hover {
+			&::after {
+				background-color: $sapphire-light;
+			}
+
+			.icon {
+				z-index: 1;
+			}
+		}
+
+		.icon {
+			@include arrow-down-simple;
+
+			margin-top: -3px;
+		}
+	}
+}
+
+.MFile {
+	font-size: 18px;
+}
+
+.MFileSecond {
+	font-size: 1.143em;
+}
+
+.AR,
+.FA {
+	.PatientMedicalFile {
+		padding-left: 0;
+		padding-right: 12px;
+
+		.FileInfo {
+			margin-left: 4px;
+			margin-right: 0;
+		}
+	}
+}

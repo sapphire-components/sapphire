@@ -1,0 +1,177 @@
+div.ActionsMenu {
+	&-label {
+		display: inline-block;
+	}
+
+	&-trigger {
+		@include flex-center-vertically(inline-flex);
+
+		color: $regular-alpha;
+		cursor: pointer;
+		gap: $sapphire-sizes--small;
+	}
+
+	&-tooltip {
+		@include shadow-medium;
+
+		background-color: $regular-white;
+		border: 0;
+		border-radius: $border-radius-medium;
+		display: none;
+		min-width: 245px;
+
+		// &.Border--None {
+		// 	.tooltipster-content > section > div > div {
+		// 		border: none;
+		// 	}
+		// }
+
+		&.Border--Bottom {
+			.ActionsMenu-item {
+				border-bottom: 1px solid $body-color;
+
+				&:last-child {
+					border-bottom: none;
+				}
+			}
+		}
+
+		&.Padding--None .tooltipster-content > section > div {
+			padding: 0;
+		}
+
+		&.Padding--XSmall .tooltipster-content > section > div {
+			padding: $sapphire-sizes--xsmall;
+		}
+
+		&.Padding--Small .tooltipster-content > section > div {
+			padding: $sapphire-sizes--small;
+		}
+
+		&.Padding--Medium .tooltipster-content > section > div {
+			padding: $sapphire-sizes--medium;
+		}
+
+		&.Padding--Large .tooltipster-content > section > div {
+			padding: $sapphire-sizes--large;
+		}
+
+		&.Padding--XLarge .tooltipster-content > section > div {
+			padding: $sapphire-sizes--xlarge;
+		}
+
+		&.tooltipster-base {
+			display: block;
+			min-width: auto;
+		}
+
+		.tooltipster-content {
+			border: none;
+			border-radius: $border-radius-medium;
+			font-size: 1rem;
+			line-height: 16px;
+			overflow: hidden;
+			padding: 0;
+
+			> section > .ActionsMenu-tooltip {
+				min-width: 130px;
+			}
+
+			.ButtonList {
+				a {
+					text-align: start !important;
+				}
+			}
+		}
+
+		.tooltipster-arrow {
+			&.tooltipster-arrow-left span:after {
+				left: -13px;
+				top: -5px;
+				transform: rotate(-135deg);
+			}
+
+			&.tooltipster-arrow-right span:after {
+				left: 3px;
+				top: -5px;
+				transform: rotate(45deg);
+			}
+
+			&.tooltipster-arrow-top span:after,
+			&.tooltipster-arrow-top-left span:after,
+			&.tooltipster-arrow-top-right span:after {
+				left: -5px;
+				top: -12px;
+				transform: rotate(-45deg);
+			}
+
+			&.tooltipster-arrow-bottom span:after,
+			&.tooltipster-arrow-bottom-left span:after,
+			&.tooltipster-arrow-bottom-right span:after {
+				left: -5px;
+				top: 3px;
+				transform: rotate(135deg);
+			}
+
+			span:after {
+				//box-shadow: -1px 1px 0px 0px rgba(13, 29, 34, 0.18);
+				content: '';
+				display: inline-block;
+				height: 10px;
+				position: absolute;
+				width: 10px;
+			}
+		}
+
+		.MenuLinkItem {
+			color: $text-color-regular;
+			display: block;
+			font-family: $font-family-latin-regular;
+			height: 36px;
+			line-height: 36px;
+			padding: 0 $sapphire-sizes--medium;
+			white-space: nowrap;
+
+			&:hover {
+				background-color: $regular-eta;
+				color: $dark-grey;
+			}
+
+			&.Selected {
+				background-color: $regular-alpha;
+				color: $regular-white;
+			}
+		}
+	}
+
+	&-item {
+		display: block;
+		margin: 3px 0;
+		padding: 3px 0;
+
+		&:first-child {
+			margin-top: none;
+			padding-top: none;
+		}
+
+		&:last-child {
+			margin-bottom: none;
+			padding-bottom: none;
+		}
+	}
+}
+
+.ListBorder {
+	> * {
+		min-width: 250px;
+		padding: $sapphire-sizes--medium 0;
+
+		&:not(:last-of-type) {
+			border-bottom: 1px solid $light-grey;
+		}
+	}
+}
+
+.tooltipster-content > section > .ActionsMenu-tooltip {
+	display: block;
+}

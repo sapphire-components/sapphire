@@ -1,0 +1,110 @@
+@mixin flex-base-style($class-extend) {
+	display: flex;
+
+	&CenterFull {
+		@extend #{$class-extend};
+
+		align-items: center;
+		justify-content: center;
+	}
+
+	&CenterVertical {
+		@extend #{$class-extend};
+
+		align-items: center;
+	}
+
+	&CenterHorizontal {
+		@extend #{$class-extend};
+
+		justify-content: center;
+	}
+
+	&SpaceAround {
+		@extend #{$class-extend};
+
+		justify-content: space-around;
+	}
+
+	&SpaceBetween {
+		@extend #{$class-extend};
+
+		justify-content: space-between;
+	}
+
+	&SpaceEvenly {
+		@extend #{$class-extend};
+
+		justify-content: space-evenly;
+	}
+
+	&Start {
+		@extend #{$class-extend};
+
+		justify-content: flex-start;
+	}
+
+	&End {
+		@extend #{$class-extend};
+
+		justify-content: flex-end;
+	}
+}
+
+.Flex {
+	@include flex-base-style('.Flex');
+
+	&Wrap {
+		flex-wrap: wrap;
+	}
+
+	&Child {
+		flex: 1;
+	}
+}
+
+.InlineFlex {
+	@include flex-base-style('.InlineFlex');
+
+	display: inline-flex;
+}
+
+.FlexColumn {
+	@include flex-base-style('.FlexColumn');
+
+	flex-direction: column;
+}
+
+.FlexList {
+	display: flex;
+	flex-wrap: wrap;
+	gap: $sapphire-sizes--small;
+
+	&SmallGap {
+		@extend .FlexList;
+
+		gap: $sapphire-sizes--small;
+	}
+
+	&MediumGap {
+		@extend .FlexList;
+
+		gap: $sapphire-sizes--medium;
+	}
+
+	&LargeGap {
+		@extend .FlexList;
+
+		gap: $sapphire-sizes--large;
+	}
+}
+
+.InlineFlexList {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: $sapphire-sizes--small;
+}
+
+.FlexNoWrap {
+	flex-wrap: nowrap !important;
+}

@@ -1,0 +1,75 @@
+.CloneExpandable {
+	background-color: $regular-white;
+	width: 100%;
+
+	&.isExpandable {
+		.CloneExpandable_arrow {
+			@include arrow-button($dark-grey, 20px, 0.7em);
+
+			&.IsOpen {
+				transform: rotate(180deg);
+			}
+		}
+
+		.CloneExpandableHeader {
+			@include flex-center-vertically();
+
+			min-height: $sapphire-sizes--largest;
+			padding: 0 $sapphire-sizes--medium;
+			width: 100%;
+		}
+
+		.CloneExpandable_checkbox {
+			display: inline-block;
+			height: 100%;
+			padding: 0 $sapphire-sizes--medium;
+			text-align: center;
+			vertical-align: middle;
+			width: 50px;
+		}
+
+		.CloneExpandable_title {
+			max-width: 55%;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+
+		.CloneExpandable_extraInfo {
+			color: $regular-grey;
+			display: inline-block;
+			padding: 0 $sapphire-sizes--small;
+			vertical-align: middle;
+		}
+	}
+
+	&.notExpandable {
+		background-color: $regular-white;
+		display: table;
+		width: 100%;
+
+		.CloneExpandableHeader {
+			border-bottom: 1px solid $light-grey;
+			min-height: 47px;
+			padding: 0 36px;
+		}
+
+		.CloneExpandable_arrow {
+			opacity: 0;
+			pointer-events: none;
+		}
+
+		.CloneExpandable_title {
+			display: inline-block;
+			max-width: 338px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			vertical-align: middle;
+			white-space: nowrap;
+		}
+	}
+
+	.CloneExpandableContent {
+		display: none;
+	}
+}

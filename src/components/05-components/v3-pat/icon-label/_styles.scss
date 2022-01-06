@@ -1,0 +1,247 @@
+$IconLabel-color-border: $mid-light-grey;
+$IconLabel-color-disabled: $mid-light-grey;
+$IconLabel-color-link: $regular-beta;
+$IconLabel-color-text: $dark-grey;
+
+// .IconVertical and .IconHorizontal
+@mixin common-icons-default-style {
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+// .iconVertical and .iconHorizontal
+@mixin common-icons-second-style {
+	&_icon {
+		color: $IconLabel-color-link;
+		font-weight: 600;
+
+		&.IconGreenColor {
+			color: $IconLabel-color-link;
+		}
+
+		&.IconYellowColor {
+			color: $regular-orange;
+		}
+
+		&.IconRedColor {
+			color: $regular-red;
+		}
+
+		&.IconSapphireWarningColor {
+			color: $dark-red;
+		}
+
+		&.IconOrangeColor {
+			color: $dark-orange;
+		}
+
+		&.IconDarkGreyColor {
+			color: $dark-grey;
+		}
+
+		&.AllGreenIcon .icon {
+			color: $IconLabel-color-link;
+		}
+	}
+
+	&_label {
+		color: $regular-grey;
+		font-family: $font-family-latin-regular;
+		text-decoration: none;
+
+		&.LabelGreen {
+			color: $IconLabel-color-link;
+		}
+
+		&.LabelColorGreen {
+			color: $IconLabel-color-link;
+		}
+
+		&.LabelColorYellow {
+			color: $regular-orange;
+		}
+
+		&.LabelColorRed {
+			color: $regular-red;
+		}
+
+		&.LabelColorSapphireWarning {
+			color: $dark-red;
+		}
+
+		&.LabelColorOrange {
+			color: $dark-orange;
+		}
+
+		&.LabelColorDarkGrey {
+			color: $dark-grey;
+		}
+	}
+}
+
+.IconVertical {
+	@include common-icons-default-style;
+
+	margin-right: 5px;
+	min-width: 50px;
+
+	&.iconBorder {
+		padding: 0 5px 0 10px;
+	}
+}
+
+.iconVertical {
+	@include common-icons-second-style;
+
+	&_icon {
+		margin-bottom: 5px;
+
+		&.IconBlackColor {
+			color: $dark-grey;
+		}
+	}
+}
+
+.IconHorizontal {
+	@include common-icons-default-style;
+}
+
+.iconHorizontal {
+	@include common-icons-second-style;
+
+	font-size: 1em;
+
+	&.iconBorder {
+		padding: 0 5px 0 10px;
+	}
+
+	&_icon {
+		line-height: 1.43;
+		max-width: unset;
+		text-align: center;
+		vertical-align: middle;
+
+		&.IconBlackColor {
+			color: $dark-grey;
+			font-weight: bold;
+		}
+
+		span.icon {
+			display: inline-block;
+			margin-right: 4px;
+			margin-top: 4px;
+		}
+
+		span.icon.icon-lg,
+		span.icon.icon-1x {
+			margin-right: 4px;
+		}
+
+		span.icon.icon-2x {
+			margin-right: 7px;
+		}
+
+		span.icon.icon-3x,
+		span.icon.icon-4x {
+			margin-right: 5px;
+		}
+	}
+
+	&_label {
+		vertical-align: middle;
+	}
+}
+
+.InvertIconLabel {
+	.iconHorizontal {
+		text-align: left;
+		transform: scale(-1, 1);
+
+		&_icon {
+			display: inline-block;
+			margin-right: 10px;
+			vertical-align: middle;
+		}
+
+		> div {
+			transform: scale(-1, 1);
+		}
+	}
+}
+
+.iconBorder {
+	border-left: solid 1px $IconLabel-color-border;
+	border-right: 0;
+}
+
+.iconLabel-disabled {
+	&,
+	.iconVertical_icon,
+	.iconHorizontal_icon,
+	.iconVertical_label.LabelGreen,
+	.iconHorizontal_label.LabelGreen,
+	.iconVertical_icon.AllGreenIcon .icon,
+	.iconHorizontal_icon.AllGreenIcon .icon {
+		color: $IconLabel-color-disabled !important;
+		cursor: auto;
+		pointer-events: none;
+	}
+}
+
+.icon:after {
+	content: 'N/A';
+}
+
+a:link {
+	.IconVertical_label,
+	.iconVertical_label,
+	.IconHorizontal_label,
+	.iconHorizontal_label {
+		font-family: $font-family-latin-bold;
+
+		.AR & {
+			font-family: $font-family-arabic-bold;
+		}
+	}
+}
+
+.AR,
+.FA {
+	.IconVertical {
+		padding: 0 10px 0 5px;
+	}
+
+	.iconHorizontal_label {
+		font-family: $font-family-arabic-regular;
+	}
+
+	.iconHorizontal_icon {
+		margin-right: 0 !important;
+
+		span.icon {
+			margin-left: 4px;
+		}
+
+		span.icon.icon-lg {
+			margin-left: 4px;
+		}
+
+		span.icon.icon-2x {
+			margin-left: 7px;
+		}
+
+		span.icon.icon-3x {
+			margin-left: 5px;
+		}
+
+		span.icon.icon-4x {
+			margin-left: 5px;
+		}
+	}
+
+	.iconBorder {
+		border-left: 0;
+		border-right: solid 1px $IconLabel-color-border;
+	}
+}

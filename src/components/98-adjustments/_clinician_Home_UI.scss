@@ -1,0 +1,33 @@
+.TopSection___Wrapper {
+	font-size: $font-size-heading2;
+	height: 40px;
+	width: 100%;
+
+	.TopSection___Container {
+		align-items: center;
+		display: flex;
+		height: 100%;
+		width: 100%;
+
+		.DropDown___Container {
+			display: flex;
+			font-size: 1rem;
+			margin-left: 5px;
+			width: 250px;
+			> span {
+				display: flex;
+			}
+
+			.selection {
+				.select2-selection.select2-selection--single {
+					height: 100%;
+					width: 250px;
+
+					.select2-selection__arrow b {
+						top: 3px;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,179 @@
+.navigation-control {
+	display: inline-flex;
+	gap: $sapphire-sizes--xsmall;
+	white-space: nowrap;
+
+	&.IsAttached {
+		gap: 0;
+	}
+
+	.navigation-control-item {
+		display: inline-flex;
+		height: 2.572em;
+		line-height: 100%;
+		overflow: hidden;
+		position: relative;
+		vertical-align: top;
+		width: 2.572em;
+
+		&--disabled {
+			pointer-events: none;
+
+			a:link,
+			a:visited {
+				border-color: $border-color-disabled;
+				color: $light-grey;
+
+				&:hover,
+				&:focus {
+					background-color: transparent;
+					border-color: $border-color-disabled;
+				}
+			}
+		}
+
+		a {
+			@include flex-center-total(inline-flex);
+
+			background-color: $regular-white;
+			border: 1px solid $light-grey;
+			border-radius: 100px;
+			color: $dark-grey;
+			transition: all 0.1s ease-in-out;
+			width: 100%;
+
+			&:hover,
+			&:focus {
+				background-color: $sapphire-light;
+			}
+		}
+
+		label {
+			@include flex-center-total;
+
+			cursor: pointer;
+			height: 100%;
+
+			> div.OSInline {
+				height: 14px;
+				width: 14px;
+			}
+
+			> div.MultiMarginLeft5 {
+				display: none;
+			}
+		}
+	}
+}
+
+.AR,
+.FA {
+	.navigation-control {
+		.navigation-control-item {
+			transform: scale(-1, 1);
+		}
+	}
+}
+
+// MultiControl?
+
+.multi-control-item {
+	border-bottom: solid 1px #11455d;
+	border-left: solid 1px #11455d;
+	border-top: solid 1px #11455d;
+	color: #11455d;
+	display: inline-block;
+	font-size: 1.09rem;
+	min-height: 2.917rem;
+	overflow: hidden;
+	position: relative;
+	vertical-align: top;
+}
+
+.AR .multi-control-item {
+	border-left: none;
+	border-right: solid 1px #11455d;
+}
+
+.Vertical .multi-control-item {
+	display: block;
+	margin-top: 5px;
+}
+
+.Vertical .multi-control-item,
+.multi-control-item:first-child {
+	border-bottom-left-radius: $border-radius-default;
+	border-left: solid 1px #11455d;
+	border-top-left-radius: $border-radius-default;
+}
+
+.AR .Vertical .multi-control-item,
+.AR .multi-control-item:first-child {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: $border-radius-default;
+	border-left: none;
+	border-right: solid 1px #11455d;
+	border-top-left-radius: 0;
+	border-top-right-radius: $border-radius-default;
+}
+
+.Vertical .multi-control-item,
+.multi-control-item:last-child {
+	border-bottom-right-radius: $border-radius-default;
+	border-right: solid 1px #11455d;
+	border-top-right-radius: $border-radius-default;
+}
+
+.AR .Vertical .multi-control-item,
+.AR .multi-control-item:last-child {
+	border-bottom-left-radius: $border-radius-default;
+	border-bottom-right-radius: 0;
+	border-left: solid 1px #11455d;
+	border-top-left-radius: $border-radius-default;
+	border-top-right-radius: 0;
+}
+
+.multi-control input {
+	left: -20px;
+	margin: 0 5px 0 0;
+	opacity: 0;
+	padding: 0;
+	position: absolute;
+}
+
+.AR .multi-control input {
+	left: auto;
+	right: -20px;
+}
+
+.multi-control-item label {
+	background-color: rgba(255, 255, 255, 1);
+	cursor: pointer;
+	display: inline-block;
+	line-height: 2.917rem;
+	min-width: 4.583rem;
+	padding: 0 10px;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+
+.multi-control-item label:hover,
+.multi-control-item label:focus {
+	background: #e6f3f5;
+}
+
+.multi-control-item > input[type='radio']:checked ~ label,
+.multi-control-item > input[type='checkbox']:checked ~ label {
+	background: #11455d;
+	box-shadow: inset 2px 1px 3px rgba(100, 100, 100, 0.4);
+	color: #fff;
+}
+
+.multi-control-item > input:disabled ~ label,
+.multi-control-item > input[disabled] ~ label,
+.multi-control-item > input[readonly] ~ label {
+	background: $background-disabled;
+	color: $text-color-disabled;
+	cursor: default;
+}

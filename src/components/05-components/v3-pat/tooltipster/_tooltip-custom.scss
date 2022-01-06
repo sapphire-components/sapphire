@@ -1,0 +1,23 @@
+.tooltipstered {
+	cursor: default;
+	display: inline-block;
+
+	&--pointer {
+		cursor: pointer;
+	}
+}
+
+.TooltipWithCounter {
+	display: block;
+}
+
+.tooltipstered.balloon {
+	cursor: pointer;
+}
+
+.tooltip_style .tooltipster-content {
+	font-size: 14px;
+	line-height: 16px;
+	overflow: hidden;
+	padding: $sapphire-sizes--small $sapphire-sizes--medium;
+}

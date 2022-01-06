@@ -1,0 +1,46 @@
+.ExpandableSmaller {
+	width: 100%;
+
+	&_area {
+		height: auto;
+		width: 100%;
+	}
+
+	&_Title,
+	&_header {
+		color: $text-color-regular;
+		display: inline-block;
+		min-width: 80px;
+	}
+
+	&_header {
+		align-items: center;
+		display: inline-flex;
+	}
+
+	&__headerIcon {
+		cursor: pointer;
+		display: inline-flex;
+		margin: 0 10px;
+		transform: scaleY(-1);
+		vertical-align: middle;
+
+		&.HeaderIconReverse {
+			transform: scaleY(1);
+		}
+
+		.icon {
+			@include arrow-down-simple;
+		}
+	}
+
+	&__headerContent,
+	&__headerContentClose {
+		color: $regular-beta;
+		font-family: $font-family-latin-bold;
+	}
+
+	> div + span {
+		display: block !important;
+	}
+}

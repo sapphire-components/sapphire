@@ -1,0 +1,47 @@
+.SortTableLink {
+	&--ascending {
+		a:link.LinkSelected::after {
+			content: '\e914';
+		}
+	}
+
+	a {
+		color: $mid-light-grey;
+		font-size: $font-size-small;
+		text-transform: uppercase;
+
+		&:hover {
+			color: $regular-beta;
+		}
+
+		&.LinkSelected {
+			color: $dark-grey;
+
+			&::after {
+				content: '\e913';
+				font-family: $font-family-icons;
+				margin: 0 $sapphire-sizes--xsmall;
+			}
+
+			&:hover {
+				color: $regular-beta;
+			}
+		}
+	}
+
+	.FirstLink {
+		margin-left: 64px;
+
+		.AR & {
+			margin-left: 0;
+			margin-right: 64px;
+		}
+	}
+
+	.PersonCard {
+		.PersonCard__content,
+		.PersonCard_header .PersonCard__headerLeftInfo {
+				height: 36px;
+		}
+	}
+}

@@ -1,0 +1,63 @@
+.PatientSummary {
+	padding: $sapphire-sizes--large;
+}
+
+.SummaryCard {
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	border-radius: $border-radius-medium;
+	height: 100%;
+
+	&__Header {
+		@include flex-center-vertically();
+
+		border-bottom: 1px solid $light-grey;
+		gap: $sapphire-sizes--small;
+		padding: $sapphire-sizes--medium;
+	}
+
+	&__HeaderIcon {
+		background-color: transparent;
+		color: $mid-light-grey;
+	}
+
+	&__HeaderTitle {
+		flex: 1;
+	}
+
+	&__Content {
+		@include component-scroll-root();
+
+		max-height: 360px;
+		overflow-y: auto;
+		padding: $sapphire-sizes--medium;
+		padding-right: $sapphire-sizes--medium - $sapphire-sizes--xsmall;
+
+		.AR & {
+			padding-left: $sapphire-sizes--medium - $sapphire-sizes--xsmall;
+			padding-right: $sapphire-sizes--medium;
+		}
+
+		.ExpandableSmaller {
+			display: flex;
+			flex-wrap: wrap;
+
+			> div + span {
+				flex-basis: 100%;
+			}
+
+			.ExpandableSmaller_Title {
+				flex: 1;
+			}
+		}
+
+		p {
+			margin: 0;
+		}
+
+		.ListRecordsMediumGap > *:not(:last-child) {
+			border-bottom: 1px solid $sapphire-light;
+			padding-bottom: $sapphire-sizes--medium;
+		}
+	}
+}

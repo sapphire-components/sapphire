@@ -1,0 +1,294 @@
+@mixin default-button($bgColor: $regular-alpha, $fontSize: $font-size-normal) {
+	background-color: $bgColor;
+	border: 1px solid transparent;
+	border-radius: 100px;
+	color: $regular-white;
+	cursor: pointer;
+	display: inline-block;
+	font-family: $font-family-latin-bold;
+	font-size: $fontSize;
+	height: 2.572em;
+	line-height: 2.572em;
+	min-width: 6.714em;
+	padding: 0 $sapphire-sizes--medium;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.1s ease-in-out;
+	white-space: nowrap;
+}
+
+@mixin disabled-button($background: transparent, $color: $light-grey) {
+	background-color: $background;
+	background-image: none;
+	border: 1px solid $border-color-disabled;
+	color: $color;
+	cursor: default;
+	pointer-events: none;
+	text-shadow: none;
+}
+
+@mixin focus-style($bgColor) {
+	background-color: $bgColor;
+}
+
+@mixin link-style-all {
+	&:hover,
+	&:link,
+	&:active {
+		@content;
+	}
+}
+
+.desktop input.Button.Is_Default,
+.desktop input.Button,
+.desktop input.Button.ButtonDefault,
+.Page a.Button,
+.PanelOpened a.Button,
+.confirm-container a.Button,
+.LayoutPopup a.Button,
+.LayoutBlank a.Button,
+.LayoutBase a.Button,
+a.Button.IsDefault,
+.desktop a.Button.Is_Default,
+.PanelOpened a.Button.Is_Default {
+	@include default-button;
+
+	&:focus {
+		@include focus-style($regular-gamma);
+	}
+
+	&:active,
+	&:hover {
+		background-color: $regular-epsilon;
+		border: 1px solid transparent;
+	}
+
+	&:disabled,
+	&[disabled] {
+		@include disabled-button($light-grey, $regular-white);
+
+		box-shadow: none;
+		cursor: not-allowed;
+	}
+
+	&.Second {
+		background-color: $regular-white;
+		border: 1px solid $regular-alpha;
+		color: $regular-beta;
+
+		&:before {
+			color: $regular-beta;
+		}
+
+		&:active,
+		&:hover {
+			background-color: $regular-eta;
+		}
+
+		&:focus {
+			@include focus-style($regular-zeta);
+		}
+
+		&:disabled,
+		&[disabled] {
+			@include disabled-button($regular-white);
+
+			box-shadow: none;
+
+			&:before {
+				color: $light-grey;
+			}
+		}
+	}
+
+	&.Third,
+	&.Cancel {
+		background-color: $regular-white;
+		border: 1px solid $light-grey;
+		color: $dark-grey;
+
+		&:before {
+			color: $dark-grey;
+		}
+
+		&:active,
+		&:hover {
+			background-color: $sapphire-light;
+			border: 1px solid $light-grey;
+			color: $dark-grey;
+		}
+
+		&:focus {
+			@include focus-style($light-grey);
+		}
+
+		&:disabled,
+		&[disabled] {
+			@include disabled-button($regular-white);
+
+			box-shadow: none;
+
+			&:before {
+				color: $light-grey;
+			}
+		}
+	}
+
+	&.Link {
+		background: none;
+		border: 1px solid transparent;
+		color: $regular-beta;
+
+		&.HideFocus:focus {
+			border-color: transparent;
+		}
+
+		&:hover,
+		&:focus,
+		&:active,
+		&:disabled {
+			border-color: transparent;
+		}
+
+		&:focus {
+			border-radius: unset;
+		}
+
+		&:active,
+		&:hover {
+			background: none;
+			color: $regular-alpha;
+		}
+
+		&:disabled,
+		&[disabled] {
+			@include disabled-button();
+
+			border: 1px solid transparent;
+		}
+	}
+
+	&.Small {
+		font-size: 13px;
+		height: 30px;
+		line-height: 16px;
+		min-width: 76px;
+		padding: 6px 12px;
+	}
+
+	&.Big {
+		font-size: $font-size-big;
+		height: unset;
+		line-height: 1.2;
+		min-width: 55px;
+		padding: $sapphire-sizes--small $sapphire-sizes--large;
+	}
+
+	&.XBig {
+		box-sizing: border-box;
+		font-size: $font-size-heading1;
+		height: 50px;
+		line-height: 0;
+		min-width: 206px;
+		padding: 40px 10px;
+	}
+
+	&.Button.TwoLines,
+	&.Button.twoLines {
+		border-radius: $border-radius-medium;
+		height: auto;
+		line-height: 15px;
+		padding: 8px 10px;
+
+		&:before {
+			line-height: 5px;
+			margin-top: 12px;
+		}
+
+		> div {
+			text-align: right;
+		}
+	}
+
+	&.ClinicalKey_button {
+		background: #ff8200;
+		border: solid 1px #ff8200;
+		border: solid 1px #ff8200;
+		border-color: #ff8200;
+		box-shadow: inset 0 1px 0 #ff8200, 0 2px 2px #ff8200;
+		color: $regular-white;
+		font-family: Arial, sans-serif;
+		font-size: $font-size-small;
+		font-weight: bold;
+
+		&:hover {
+			background-color: #ff9b71 !important;
+			border: solid 1px rgba(255, 130, 0, 0.9);
+			border: solid 1px rgba(255, 130, 0, 0.9);
+			border-color: rgba(255, 130, 0, 0.9);
+			box-shadow: inset 0 1px 0 rgba(255, 130, 0, 0.9), 0 2px 2px rgba(255, 130, 0, 0.9);
+		}
+	}
+}
+
+.LinkHover {
+	color: $dark-grey;
+	transition: color 0.1s ease-in-out !important;
+
+	&:link,
+	&:visited {
+		color: $dark-grey;
+	}
+
+	&:hover {
+		color: $regular-beta;
+	}
+}
+
+.IconHover {
+	color: $regular-beta;
+	transition: all 0.1s ease-in-out;
+
+	&:hover {
+		color: $regular-epsilon;
+	}
+}
+
+.ListButtons {
+	display: flex;
+	flex-direction: column;
+
+	a:link {
+		line-height: 36px;
+		padding: 0 $sapphire-sizes--medium;
+
+		&:hover {
+			background-color: $regular-eta;
+		}
+	}
+}
+
+/*.LinkRed {
+	&:link {
+		color: $regular-red;
+	}
+}*/
+
+a.LinkReset {
+	&:link,
+	&:visited {
+		color: $dark-grey;
+		font-family: $font-family-latin-regular;
+	}
+}
+
+.AR.Page {
+	a.Button,
+	&.LayoutTooltip a.Button,
+	&.LayoutPopup a.Button,
+	&.LayoutBlank a.Button,
+	&.LayoutBase a.Button,
+	a.Button.IsDefault {
+		font-family: $font-family-arabic-bold;
+	}
+}

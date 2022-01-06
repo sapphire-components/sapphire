@@ -1,0 +1,31 @@
+.InputWithClear-container {
+	position: relative;
+}
+
+.InputWithClear-clear {
+	font-size: 16px;
+	line-height: 16px;
+	position: absolute;
+	right: 10px;
+	top: calc(50% - 8px);
+}
+
+.InputWithClear--shield {
+	position: absolute;
+	width: 100%;
+
+	.LineWarns .LineWarns_list {
+		border-radius: $border-radius-default;
+		height: 36px !important;
+		min-height: unset !important;
+		padding: $sapphire-sizes--xsmall $sapphire-sizes--medium !important;
+	}
+}
+
+.AR,
+.FA {
+	.InputWithClear-clear {
+		left: 10px;
+		right: auto;
+	}
+}

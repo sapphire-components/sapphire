@@ -1,0 +1,12 @@
+.InvestigationsAbsoluteActions {
+	display: block;
+	min-width: 325px;
+	position: absolute;
+	right: 0;
+	top: -37px;
+
+	.AR & {
+		left: 0;
+		right: unset;
+	}
+}

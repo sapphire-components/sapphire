@@ -1,0 +1,417 @@
+@mixin common-toolbar-button-style($rotate-degree: 270deg) {
+	@include arrow-button;
+
+	background-color: $regular-white;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) rotate($rotate-degree);
+}
+
+div.Toolbar {
+	width: 100%;
+
+	&--arrows {
+		div.Toolbar {
+			&_container {
+				&:after,
+				&:before {
+					content: '';
+					display: inline-block;
+					height: 100%;
+					position: absolute;
+					top: 0;
+					width: 50px;
+				}
+
+				&:after {
+					background: linear-gradient(270deg, $regular-white 0%, $regular-white 50%, rgba(255, 255, 255, 0) 100%);
+					right: 0;
+				}
+
+				&:before {
+					background: linear-gradient(90deg, $regular-white 0%, $regular-white 50%, rgba(255, 255, 255, 0) 100%);
+					left: 0;
+					z-index: 1;
+				}
+			}
+
+			&__Items {
+				padding-left: 33px;
+				padding-right: 33px;
+
+				.ListRecords {
+					width: initial;
+				}
+
+				.MenuItemWrapper {
+					padding: 10px 20px 15px 20px;
+
+					&__icon {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+
+	&_container {
+		background-color: $regular-white;
+		position: relative;
+
+		&--noarrows {
+			&:before {
+				display: none;
+			}
+		}
+	}
+
+	&__Items {
+		display: block;
+		padding-top: 11px;
+
+		.ListRecords {
+			display: inline-flex;
+			width: 100%;
+
+			a[disabled] {
+				cursor: not-allowed;
+
+				.MenuItemWrapper {
+					&:hover {
+						background-color: transparent;
+					}
+
+					&_Container {
+						color: $light-grey;
+					}
+				}
+			}
+		}
+	}
+
+	&__leftBtn {
+		@include common-toolbar-button-style;
+
+		left: 5px;
+	}
+
+	&__rightBtn {
+		@include common-toolbar-button-style(90deg);
+
+		right: 5px;
+	}
+
+	&__leftBtn.Disabled,
+	&__rightBtn.Disabled {
+		border: 1px solid $light-grey;
+		pointer-events: none;
+
+		&:before {
+			color: $light-grey;
+		}
+	}
+
+	&__MoreOptions {
+		flex: 1;
+		margin: 0;
+		text-align: -webkit-right;
+		width: fit-content;
+
+		&--open {
+			.Toolbar__MoreOptionsIcon {
+				background-color: $body-color;
+				color: $regular-beta;
+
+				&::before {
+					border-color: $body-color;
+				}
+			}
+
+			.Toolbar__MoreOptionsList {
+				border-radius: $border-radius-default;
+				display: block;
+				min-width: 200px;
+				padding: $sapphire-sizes--small 0;
+				right: 0;
+				z-index: 2;
+			}
+		}
+	}
+
+	&__MoreOptionsIcon {
+		@include flex-center-total();
+
+		background-color: transparent;
+		color: $regular-grey;
+		cursor: pointer;
+		flex-direction: column;
+		height: 100%;
+		position: relative;
+		width: 80px;
+
+		&--notification {
+			&:hover::before {
+				border-color: $body-color;
+			}
+
+			&::before {
+				background-color: $regular-red;
+				border: 4px solid $regular-white;
+				border-radius: 50%;
+				content: '';
+				height: 18px;
+				position: absolute;
+				right: 10px;
+				top: 5px;
+				width: 18px;
+			}
+		}
+
+		&:hover {
+			background-color: $body-color;
+			color: $regular-beta;
+		}
+
+		span[ui='more-options-icon'] {
+			font-size: $font-size-heading2;
+			height: 20px;
+			margin-bottom: 6px;
+		}
+	}
+
+	&__MoreOptionsList {
+		@include shadow-large();
+		@include component-scroll-root();
+
+		background-color: $regular-white;
+		display: none;
+		max-height: calc(100vh - 240px);
+		overflow: auto;
+		position: absolute;
+
+		.MenuItemWrapper {
+			border: none;
+			border-radius: 0;
+			padding: 10px 45px 10px 20px;
+
+			&::after,
+			&::before {
+				display: none;
+			}
+
+			&:hover {
+				background-color: $regular-eta;
+			}
+
+			&.Active {
+				.MenuItemWrapper_Container {
+					height: unset;
+					margin: 0;
+				}
+			}
+
+			&_Container {
+				display: flex;
+			}
+
+			&__icon {
+				margin-bottom: 0;
+				margin-right: 10px;
+
+				.icon {
+					font-size: 1em;
+				}
+			}
+
+			&__Label {
+				display: inline-block;
+
+				&::after {
+					display: none;
+				}
+			}
+
+			&_Badge {
+				right: 15px;
+				top: 10px;
+			}
+		}
+	}
+
+	&.Fix {
+		background-color: $regular-white;
+		border-bottom: 4px solid $light-grey;
+		left: 0;
+		margin-left: 10px;
+		position: fixed;
+		z-index: 4;
+
+		.Toolbar__rightBtn {
+			right: 45px;
+		}
+
+		.MenuItemWrapper {
+			padding-bottom: 1px;
+			padding-top: 4px;
+
+			&__Label {
+				margin-top: 0;
+				padding: 6px 0;
+			}
+
+			&__Items {
+				padding-top: 2px;
+			}
+
+			&__icon {
+				display: none;
+			}
+		}
+	}
+}
+
+.MenuItemWrapper {
+	background-color: transparent;
+	font-family: $font-family-latin-regular;
+	padding: $sapphire-sizes--small $sapphire-sizes--medium;
+	position: relative;
+	text-align: center;
+	white-space: nowrap;
+
+	&:hover {
+		background-color: $body-color;
+		border-radius: $border-radius-medium $border-radius-medium 0 0;
+
+		.MenuItemWrapper_Container {
+			color: $regular-beta;
+		}
+	}
+
+	&.Active {
+		background-color: $body-color;
+		border: 1px solid $light-grey;
+		border-bottom: none;
+		border-top-left-radius: 8px;
+		border-top-right-radius: 8px;
+		color: $regular-black;
+		margin-bottom: -4px;
+		z-index: 1;
+
+		&:before,
+		&:after {
+			border: 1px solid $light-grey;
+			bottom: 0;
+			content: ' ';
+			height: 12px;
+			position: absolute;
+			width: 9.5px;
+		}
+
+		&:before {
+			border-bottom-right-radius: 8px;
+			border-width: 0 1px 1px 0;
+			box-shadow: 6px 0 0 $body-color;
+			left: -10.5px;
+		}
+
+		&:after {
+			border-bottom-left-radius: 8px;
+			border-width: 0 0 1px 1px;
+			box-shadow: -6px 0 0 $body-color;
+			right: -10.5px;
+		}
+
+		.MenuItemWrapper_Container {
+			color: $regular-beta;
+			font-family: $font-family-latin-bold;
+			height: 62px;
+			margin-bottom: -16px;
+		}
+	}
+
+	&_Container {
+		color: $regular-grey;
+	}
+
+	&__icon {
+		margin-bottom: 6px;
+
+		.icon {
+			font-size: $font-size-heading2;
+		}
+	}
+
+	&_Badge {
+		background-color: $regular-red;
+		border-radius: 100%;
+		color: $regular-white;
+		font-size: $font-size-tiny;
+		height: 18px;
+		line-height: 18px;
+		position: absolute;
+		right: 0;
+		top: 2px;
+		width: 18px;
+		z-index: 1;
+	}
+}
+
+.AR,
+.FA {
+	.Toolbar {
+		&.Fix {
+			left: auto;
+			right: 0;
+		}
+
+		&__MoreOptions {
+			text-align: -webkit-left;
+
+			&--open {
+				.Toolbar__MoreOptionsList {
+					left: 0;
+					right: unset;
+				}
+			}
+
+			.MenuItemWrapper {
+				&__Label {
+					&::after {
+						margin-left: 0;
+						margin-right: 8px;
+					}
+				}
+			}
+		}
+
+		&__MoreOptionsIcon {
+			&--notification {
+				&::before {
+					left: 10px;
+					right: auto;
+				}
+			}
+		}
+
+		&__MoreOptionsList {
+			.MenuItemWrapper {
+				padding: 10px 20px 10px 45px;
+
+				&__icon {
+					margin-left: 10px;
+					margin-right: 0;
+				}
+
+				&_Badge {
+					left: 15px;
+					right: auto;
+				}
+			}
+		}
+	}
+
+	.MenuItemWrapper_Badge {
+		left: 1px;
+		right: auto;
+	}
+}

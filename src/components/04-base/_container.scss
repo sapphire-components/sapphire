@@ -1,0 +1,70 @@
+.container,
+.Container {
+	border-color: $light-grey;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.WhiteContainer {
+	background: $regular-white;
+	border: 1px solid $light-grey;
+	padding: $sapphire-sizes--medium;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.WhiteContainerDotted {
+	background: $regular-white;
+	border: 1px dotted $light-grey;
+	padding-bottom: 10px;
+}
+
+.WhiteContainerForUnavailability {
+	background: $regular-white;
+	border: 1px solid $light-grey;
+	min-width: 100%;
+	padding: 30px 50px 35px 30px;
+}
+
+.GreyContainer {
+	background: $sapphire-light;
+	border: 1px solid $light-grey;
+	padding: $sapphire-sizes--medium;
+	width: 100%;
+}
+
+.LightGreyContainer {
+	background: $body-color;
+	border: 1px solid $light-grey;
+	padding: $sapphire-sizes--medium;
+	width: 100%;
+}
+
+.SapphireFormBlue {
+	background-color: $light-blue;
+	border-radius: $border-radius-default;
+	margin-top: $sapphire-sizes--large;
+	padding: $sapphire-sizes--medium;
+}
+
+.Card {
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	border-radius: $border-radius-medium;
+	box-shadow: none;
+	padding: $sapphire-sizes--medium;
+}
+
+.EmergencyWarning {
+	@include flex-center-total();
+
+	background-color: $light-red;
+	border: 1px solid $regular-red;
+	border-radius: $border-radius-medium;
+	color: $regular-red;
+	flex-direction: column;
+	font-family: $font-family-latin-bold;
+	font-size: $font-size-heading4;
+	gap: $sapphire-sizes--small;
+	padding: $sapphire-sizes--medium;
+}

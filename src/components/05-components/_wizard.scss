@@ -1,0 +1,220 @@
+// Wizard Parent
+
+@mixin wizard-step-arrow-style {
+	background-color: $regular-white;
+	border: none;
+	border-right: 1px solid $light-grey;
+	border-top: 1px solid $light-grey;
+	border-top-right-radius: 6px;
+	height: 24px;
+	top: 5px;
+	transform: rotate(45deg);
+	width: 24px;
+}
+
+div.WizardParent {
+	border: none;
+	padding-right: 1px;
+	position: relative;
+
+	.AR & {
+		padding-left: 1px;
+		padding-right: 0;
+	}
+
+	> div {
+		display: flex;
+
+		> .ListRecords {
+			display: flex;
+			width: 100%;
+		}
+
+		&::after {
+			background: $regular-white;
+			content: '';
+			display: block;
+			height: 36px;
+			position: absolute;
+			right: 0;
+			width: 18px;
+
+			.AR & {
+				left: 0;
+				right: unset;
+			}
+		}
+
+		.ParentGreyBG & {
+			&::after {
+				background: $body-color;
+			}
+		}
+
+		div.WizardStep {
+			@include flex-center-total();
+
+			border: 1px solid $light-grey;
+			flex: 1;
+			font-family: $font-family-latin-regular;
+			font-weight: unset;
+			height: 36px;
+			margin-left: -18px;
+			padding: 0;
+
+			.AR & {
+				margin-left: 0;
+				margin-right: -18px;
+			}
+
+			&::after {
+				@include wizard-step-arrow-style();
+
+				right: 4px;
+
+				.AR & {
+					border: none;
+					border-bottom: 1px solid $light-grey;
+					border-left: 1px solid $light-grey;
+					border-radius: 0;
+					border-top-left-radius: 6px;
+					height: 26px;
+					left: 3px;
+					right: unset;
+					top: 2px;
+					width: 26px;
+				}
+			}
+
+			&::before {
+				display: none;
+			}
+
+			&:first-of-type {
+				border-bottom-left-radius: $border-radius-default;
+				border-top-left-radius: $border-radius-default;
+				margin-left: 0;
+
+				&::before {
+					display: none !important;
+				}
+
+				.AR & {
+					border-radius: 0;
+					border-bottom-right-radius: $border-radius-default;
+					border-right: 1px solid $light-grey;
+					border-top-right-radius: $border-radius-default;
+					margin-right: 0;
+				}
+			}
+
+			&:last-child {
+				border-right: none;
+
+				.AR & {
+					border-left: none;
+					border-right: 1px solid $light-grey;
+				}
+			}
+
+			&.Past {
+				background-color: $body-color;
+
+				&:after {
+					background-color: $body-color;
+				}
+
+				.IconWizard.IconWizardWhite {
+					background-color: $regular-white;
+					border: 1px solid transparent;
+					color: $regular-beta;
+				}
+			}
+
+			&.ActiveStep {
+				background-color: $regular-eta;
+				border-color: $regular-alpha;
+				color: $dark-grey;
+				font-family: $font-family-latin-bold;
+
+				&::after {
+					background-color: $regular-eta;
+					border-right-color: $regular-alpha;
+					border-top-color: $regular-alpha;
+
+					.AR & {
+						border-bottom-color: $regular-alpha;
+						border-left-color: $regular-alpha;
+					}
+				}
+
+				&::before {
+					@include wizard-step-arrow-style();
+
+					background-color: $body-color;
+					border-color: $regular-alpha;
+					display: block;
+					left: -13px;
+					z-index: 1;
+				}
+
+				a,
+				a:link,
+				a[disabled='disabled'],
+				a[disabled='disabled']:hover {
+					color: inherit;
+					font-family: inherit;
+				}
+
+				.IconWizard.IconWizardWhite {
+					background-color: $regular-white;
+					border: 1px solid $regular-white;
+					color: $regular-beta;
+				}
+
+				.IconWizard {
+					border: 1px solid $regular-white;
+					color: $regular-white;
+				}
+			}
+
+			.IconWizard {
+				border: 1px solid $light-grey;
+				color: $light-grey;
+			}
+
+			a,
+			a:link {
+				font-family: $font-family-latin-regular;
+				width: 100%;
+			}
+
+			a:disabled,
+			a[disabled='disabled'],
+			a[disabled='disabled']:hover {
+				color: $label-color-disabled;
+			}
+		}
+	}
+}
+
+.DesignSystem .IconWizard,
+.LayoutBlank .IconWizard,
+.LayoutBase .IconWizard {
+	border: 1px solid $regular-beta;
+	border-radius: 50%;
+	color: $regular-beta;
+	font-size: 0.857em;
+	height: 20px;
+	line-height: 18px;
+	margin-right: 5px;
+	text-align: center;
+	vertical-align: middle;
+	width: 20px;
+
+	&.IconWizardWhite {
+		background-color: $regular-white;
+		border: 1px solid $regular-beta;
+		color: $regular-beta;
+	}
+}

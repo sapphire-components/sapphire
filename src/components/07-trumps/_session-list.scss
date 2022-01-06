@@ -1,0 +1,151 @@
+.SessionList {
+	&:not(.IsDisable) {
+		.SessionList_Content {
+			border: 1px solid $light-grey;
+			border-top: none;
+		}
+	}
+
+	&.IsDisable {
+		.SessionList_Header {
+			background-color: $regular-white;
+			border: none;
+			border-color: $light-grey;
+		}
+	}
+
+	&_Header {
+		background-color: $regular-white;
+		border: 1px solid $light-grey;
+		border-radius: $border-radius-default;
+		display: table;
+		height: 60px;
+		padding: 5px 10px;
+		width: 100%;
+	}
+
+	&__Wrapper {
+		display: table-cell;
+		vertical-align: middle;
+		width: calc(100% - 40px);
+
+		> div {
+			vertical-align: middle;
+		}
+	}
+
+	&_Content {
+		border-radius: 0 0 $border-radius-default $border-radius-default;
+
+		.SessionList {
+			.SessionList_Content {
+				border: none;
+			}
+
+			&:first-of-type {
+				> .SessionList_Header {
+					&:first-of-type {
+						border-top: none;
+					}
+				}
+			}
+		}
+
+		.SessionList_Header {
+			border: none;
+		}
+
+		.ListRecords {
+			span {
+				&:first-child {
+					.SessionList_Header {
+						border-top: none;
+					}
+				}
+			}
+
+			> div {
+				&:first-of-type {
+					> .SessionList {
+						> .SessionList_Header {
+							border-top: none;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&__Icon {
+		color: $regular-alpha;
+		cursor: pointer;
+		display: table-cell;
+		text-align: center;
+		transform: rotate(-90deg);
+		transition: transform 0.5s;
+		vertical-align: middle;
+		width: 40px;
+
+		&.Rotation {
+			transform: rotate(0deg);
+		}
+	}
+
+	&__Number {
+		color: $dark-grey;
+		display: table-cell;
+		font-size: 1.143em;
+		text-align: center;
+		vertical-align: middle;
+		width: 40px;
+	}
+
+	&___Detail {
+		color: $dark-grey;
+		font-size: 1.143em;
+	}
+
+	&___Actions {
+		text-align: right;
+	}
+
+	&__ExtraInfo {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.ListRecords {
+		.SessionList.IsDisable {
+			.SessionList_Header {
+				border-left: none;
+				border-right: none;
+				border-top: 1px solid $light-grey;
+			}
+
+			&:first-of-type {
+				border-top: 1px solid $light-grey;
+			}
+
+			&:last-of-type {
+				.SessionList_Header {
+					border-bottom: none;
+				}
+			}
+		}
+
+		.SessionList {
+			.SessionList_Header {
+				border-bottom: none;
+				border-left: none;
+				border-right: none;
+				height: 50px;
+			}
+
+			&:last-of-type {
+				.SessionList_Header {
+					border-bottom: none;
+				}
+			}
+		}
+	}
+}

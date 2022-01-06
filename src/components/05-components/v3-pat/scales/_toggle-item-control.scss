@@ -1,0 +1,125 @@
+.ToggleItemControl {
+	cursor: pointer;
+	margin: 2px;
+	position: relative;
+
+	&.active {
+		.ToggleItemControl_label {
+			background: none;
+			background-color: $regular-eta;
+			border: 1px solid $regular-alpha;
+			border-radius: $border-radius-default;
+		}
+	}
+
+	&_radio {
+		input[type='radio'] {
+			height: 16px;
+			left: 6px;
+			position: absolute;
+			top: 14px;
+			width: 16px;
+		}
+	}
+
+	&_label {
+		border: 1px solid $light-grey;
+		border-radius: $border-radius-default;
+		color: $dark-grey;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 2.7rem;
+		padding: 0 10px 0 30px;
+		text-align: center;
+		width: 100%;
+
+		&:hover {
+			background: none;
+			background-color: $regular-eta;
+			border: 1px solid $regular-alpha;
+			border-radius: $border-radius-default;
+		}
+	}
+}
+
+/* ToggleControlItem */
+.ToggleControlItem {
+	display: inline-block;
+	height: 36px;
+	line-height: 18px;
+	margin: 10px 2px;
+	min-height: 36px;
+	overflow: hidden;
+	position: relative;
+	vertical-align: top;
+
+	input {
+		left: -20px;
+		margin: 0 5px 0 0;
+		opacity: 1;
+		padding: 0;
+		position: absolute;
+
+		&:disabled ~ label,
+		&[disabled] ~ label,
+		&[readonly] ~ label {
+			background-color: $sapphire-light !important;
+			border-color: $mid-light-grey !important;
+			color: $mid-light-grey !important;
+			cursor: default;
+		}
+
+		&[type='radio']:checked ~ label {
+			background: none;
+			background-color: $regular-alpha;
+			border: 1px solid $regular-alpha;
+			border-radius: $border-radius-default;
+			color: $regular-white;
+		}
+
+		&[type='radio'] {
+			&,
+			&:hover {
+				background-color: transparent;
+				box-shadow: none;
+				height: 16px;
+				left: 6px;
+				margin: 0;
+				position: absolute;
+				top: 11px;
+				vertical-align: middle;
+				width: 16px;
+				z-index: 1;
+			}
+		}
+	}
+
+	label {
+		border: 1px solid $light-grey;
+		border-radius: $border-radius-default;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 1em;
+		height: 100%;
+		line-height: 34px;
+		padding: 0px 30px 0 30px;
+		text-align: center;
+		width: 100%;
+
+		&:hover {
+			background: none;
+			background-color: $regular-zeta;
+			border: 1px solid $regular-alpha;
+		}
+	}
+}
+
+.AR,
+.FA {
+	.ToggleControlItem input {
+		left: auto;
+		right: -20px;
+	}
+}

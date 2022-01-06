@@ -1,0 +1,498 @@
+.TableRecords {
+	background-color: transparent;
+	border-bottom: none;
+	border-radius: 1px;
+	border-top: none;
+	margin-top: 0;
+	padding: 0;
+
+	&.ExpandableRows {
+		border-collapse: collapse;
+
+		tbody {
+			background-color: $regular-white;
+		}
+
+		.Link.ChangeUp {
+			display: none;
+		}
+
+		.Link.ChangeDown {
+			display: inline-block;
+		}
+
+		.ActiveRow {
+			.TableRecords_OddLine .ExpandLink .fa,
+			.TableRecords_EvenLine .ExpandLink .fa {
+				transform: rotate(0deg);
+			}
+
+			.Link.ChangeUp {
+				display: inline-block;
+			}
+
+			.Link.ChangeDown {
+				display: none;
+			}
+		}
+
+		.TableRecords_OddLine:first-child {
+			width: 60px;
+		}
+
+		.TableRecords_OddLine .ExpandLink .fa,
+		.TableRecords_EvenLine .ExpandLink .fa {
+			transform: rotate(-90deg);
+		}
+	}
+
+	&.CustomTable {
+		border-collapse: separate;
+		border-spacing: 0 $sapphire-sizes--small;
+
+		&.ExpandableRows {
+			> tbody tr.ActiveRow td:first-child {
+				border-bottom-left-radius: 0;
+			}
+
+			> tbody tr.ActiveRow td:last-child {
+				border-bottom-right-radius: 0;
+			}
+		}
+
+		> tbody tr td:first-child {
+			border-bottom-left-radius: $border-radius-medium;
+			border-top-left-radius: $border-radius-medium;
+			padding-left: $sapphire-sizes--medium;
+		}
+
+		> tbody tr td:last-child {
+			border-bottom-right-radius: $border-radius-medium;
+			border-top-right-radius: $border-radius-medium;
+			padding-right: $sapphire-sizes--medium;
+		}
+
+		.TableRecords_OddLine,
+		.TableRecords_EvenLine {
+			border-top: 1px solid $light-grey;
+			padding: $sapphire-sizes--medium $sapphire-sizes--small;
+			vertical-align: middle;
+		}
+
+		.TableRecords_Header {
+			height: 20px;
+			padding: 0 $sapphire-sizes--small;
+
+			&:empty {
+				height: 0;
+				padding: 0;
+			}
+		}
+
+		.TableRecords_ContentExpandable {
+			[ui='data-expandable-table-content'] {
+				border: 1px solid $light-grey;
+				margin-top: -9px;
+				position: relative;
+			}
+		}
+
+		.TableRowExpandable {
+			td {
+				border: none;
+			}
+		}
+
+		.CustomTableIcon {
+			@include flex-center-total;
+
+			background-color: $body-color;
+			border-radius: $border-radius-medium;
+			height: $sapphire-sizes--xxlarge;
+			width: $sapphire-sizes--xxlarge;
+		}
+	}
+
+	&.NoSideBorders {
+		.TableRecords_OddLine:first-child,
+		.TableRecords_EvenLine:first-child,
+		.TableRecords_Header:first-child {
+			padding-left: 0;
+
+			.AR & {
+				padding-left: $sapphire-sizes--medium;
+				padding-right: 0;
+			}
+		}
+
+		.TableRecords_Header:last-child {
+			padding-right: 0;
+
+			.AR & {
+				padding-left: 0;
+				padding-right: $sapphire-sizes--medium !important;
+			}
+		}
+
+		> tbody tr {
+			td {
+				border-left: none !important;
+				border-right: none !important;
+			}
+
+			td:first-child {
+				padding-left: 0 !important;
+
+				.AR & {
+					padding-left: $sapphire-sizes--medium !important;
+					padding-right: 0 !important;
+				}
+			}
+
+			td:last-child {
+				padding-right: 0 !important;
+
+				.AR & {
+					padding-left: 0 !important;
+					padding-right: $sapphire-sizes--medium !important;
+				}
+			}
+		}
+	}
+
+	> tbody > tr:first-child td {
+		border-top: 1px solid $light-grey;
+	}
+
+	> tbody tr {
+		td:first-child {
+			border-left: 1px solid $light-grey;
+			padding-left: $sapphire-sizes--medium !important;
+		}
+
+		td:last-child {
+			border-right: 1px solid $light-grey;
+			padding-right: $sapphire-sizes--medium !important;
+		}
+	}
+
+	&.TableRecordsNotes {
+		tbody {
+			td {
+				font-size: 0.857em;
+			}
+
+			tr:first-child td {
+				border-top: 1px solid $regular-alpha;
+			}
+		}
+
+		.TableRecords_Header {
+			color: $regular-alpha;
+			line-height: 22px;
+		}
+
+		.NewMessage_Warning td {
+			background-color: $light-beige;
+		}
+
+		.TableRecords_OddLine {
+			background-color: unset;
+		}
+	}
+
+	&_Header {
+		background-color: transparent;
+		border-bottom: none;
+		color: $mid-light-grey;
+		font-family: $font-family-latin-bold;
+		font-size: 0.857em;
+		height: 36px;
+		padding: 8px 10px;
+		text-align: left;
+		text-transform: uppercase;
+
+		&:empty {
+			height: 0;
+			line-height: 0;
+			padding: 0;
+		}
+	}
+
+	&_OddLine,
+	&_EvenLine {
+		background-color: $regular-white;
+		border-bottom: 1px solid $light-grey;
+		color: $dark-grey;
+		min-height: 48px;
+		padding: 10px;
+		text-align: left;
+		vertical-align: top;
+	}
+
+	&_Wrapper {
+		&.NoResponsive {
+			th.TableRecords_Header {
+				border-top: 1px solid $light-grey;
+
+				&:first-child {
+					border-left: 1px solid $light-grey;
+				}
+
+				&:last-child {
+					border-right: 1px solid $light-grey;
+				}
+			}
+
+			tr.TableRowExpandable {
+				&.open {
+					td {
+						border-bottom: 1px solid $light-grey;
+					}
+				}
+			}
+
+			tr.ActiveRow {
+				td {
+					border-bottom: 1px solid $regular-alpha;
+					border-top: 1px solid $regular-alpha;
+
+					&:first-child {
+						border-left: 1px solid $regular-alpha;
+					}
+
+					&:last-child {
+						border-right: 1px solid $regular-alpha;
+					}
+				}
+			}
+
+			.ActiveRow {
+				.TableRecords_OddLine .ExpandLink .fa,
+				.TableRecords_EvenLine .ExpandLink .fa {
+					transform: rotate(0deg);
+				}
+			}
+
+			.TableRecords {
+				> tbody > tr:hover {
+					background: $regular-white;
+				}
+
+				thead,
+				tbody {
+					background-color: $regular-white;
+				}
+
+				&_Header {
+					color: $mid-dark-grey;
+					font-weight: normal;
+
+					a,
+					a:link,
+					a:visited {
+						color: $mid-dark-grey;
+					}
+				}
+
+				&_OddLine,
+				&_EvenLine {
+					.ExpandLink .fa {
+						transform: rotate(-90deg);
+					}
+				}
+
+				&_Header:first-child,
+				&_OddLine:first-child,
+				&_EvenLine:first-child {
+					padding-left: 15px;
+				}
+			}
+		}
+	}
+
+	&_ContentExpandable {
+		display: contents;
+	}
+
+	&_BottomNavigation {
+		display: flex;
+		justify-content: space-between;
+		margin-top: $sapphire-sizes--medium;
+	}
+
+	th.SortColumns_Sorted,
+	th.SortColumns_Sortable {
+		&:hover {
+			color: $regular-beta;
+			text-decoration: none;
+		}
+	}
+
+	th.SortColumns_Sorted {
+		color: inherit;
+
+		&::after {
+			content: '\e913';
+			font-family: $font-family-icons;
+			margin: 0 $sapphire-sizes--xsmall;
+		}
+	}
+
+	th.SortColumns {
+		&--ascending {
+			&::after {
+				content: '\e914';
+			}
+		}
+	}
+
+	.LightGreen {
+		color: $dark-grey;
+	}
+
+	.TableRowExpandable {
+		display: none;
+		transition: all 500ms;
+		visibility: hidden;
+
+		&.open {
+			display: table-row;
+			visibility: visible;
+		}
+
+		&.TableContainerExpandable {
+			> td {
+				&,
+				&:first-child,
+				&:last-child {
+					padding: 0 !important;
+				}
+			}
+		}
+	}
+}
+
+.AR,
+.FA {
+	.TableRecords {
+		&.CustomTable {
+			&.ExpandableRows {
+				> tbody tr.ActiveRow td:first-child {
+					border-bottom-right-radius: 0;
+				}
+
+				> tbody tr.ActiveRow td:last-child {
+					border-bottom-left-radius: 0;
+				}
+			}
+
+			> tbody tr td:first-child {
+				border-radius: 0 $border-radius-medium $border-radius-medium 0;
+				padding-left: $sapphire-sizes--small;
+				padding-right: $sapphire-sizes--medium;
+			}
+
+			> tbody tr td:last-child {
+				border-bottom-left-radius: $border-radius-medium;
+				border-left: 1px solid $light-grey;
+				border-top-left-radius: $border-radius-medium;
+				padding-left: $sapphire-sizes--medium;
+				padding-right: $sapphire-sizes--small;
+			}
+
+			.TableRowExpandable.open {
+				td {
+					border: none;
+				}
+			}
+		}
+
+		&_Header {
+			padding: 5px 10px 10px 0;
+		}
+
+		&_Header,
+		&_OddLine,
+		&_EvenLine {
+			&,
+			div {
+				text-align: right;
+			}
+
+			&:last-child {
+				padding-left: $sapphire-sizes--medium;
+				padding-right: 10px !important;
+			}
+
+			&:first-child {
+				padding-left: 0;
+				padding-right: $sapphire-sizes--medium;
+			}
+		}
+
+		&_OddLine,
+		&_EvenLine {
+			&:last-child {
+				border-left: 1px solid $light-grey;
+				border-right: none;
+			}
+
+			&:first-child {
+				border-left: none;
+				border-right: 1px solid $light-grey;
+			}
+		}
+
+		.TableRowExpandable.open {
+			td {
+				border-right: 1px solid $light-grey;
+			}
+		}
+
+		&_Wrapper {
+			&.NoResponsive {
+				.TableRecords_Header {
+					text-align: right;
+				}
+
+				.TableRecords_OddLine,
+				.TableRecords_EvenLine {
+					text-align: right;
+				}
+
+				tr.ActiveRow {
+					td {
+						&:first-child {
+							border-left: none;
+							border-right: 1px solid $regular-alpha;
+						}
+
+						&:last-child {
+							border-left: 1px solid $regular-alpha;
+							border-right: none;
+						}
+					}
+				}
+
+				tr.TableRowExpandable {
+					&.open {
+						.TableRowExpandable_Content.Column {
+							padding-right: 10px;
+							text-align: right;
+						}
+					}
+
+					.TableRowExpandable_Content.Column {
+						padding-right: 10px;
+						text-align: right;
+					}
+				}
+			}
+
+			.TableRecords_Header {
+				padding: 10px;
+			}
+		}
+	}
+}

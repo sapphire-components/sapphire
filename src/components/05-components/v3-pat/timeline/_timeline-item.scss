@@ -1,0 +1,96 @@
+.TimelineItem {
+	@include flex-center-vertically;
+
+	border-radius: $border-radius-default;
+	gap: $sapphire-sizes--medium;
+	min-height: 56px;
+	padding: 0 $sapphire-sizes--small;
+
+	&::after {
+		color: transparent;
+		content: '\e69d';
+		font-family: $font-family-icons;
+	}
+
+	&:hover {
+		background-color: $regular-eta;
+	}
+
+	&--active {
+		background-color: $regular-alpha;
+
+		&::after {
+			color: $regular-white;
+		}
+
+		&:hover {
+			background-color: $regular-alpha;
+		}
+
+		.TimelineItem__Icon {
+			color: $regular-beta;
+		}
+
+		.TimelineItem__Date,
+		.TimelineItem__Description {
+			color: $regular-white;
+		}
+	}
+
+	&__Icon {
+		@include flex-center-total;
+
+		background-color: $regular-white;
+		border-radius: $border-radius-default;
+		color: $text-color-regular;
+		height: 40px;
+		width: 40px;
+	}
+
+	&__Content {
+		flex: 1;
+		font-family: $font-family-latin-regular;
+
+		.AR & {
+			font-family: $font-family-arabic-regular;
+		}
+	}
+
+	&__Date {
+		color: $regular-grey;
+	}
+
+	&__Description {
+		color: $text-color-regular;
+	}
+}
+
+.TimelineItemSection {
+	margin-bottom: $sapphire-sizes--medium;
+}
+
+.TimelineItemHeader {
+	background-color: $body-color;
+	padding: $sapphire-sizes--medium $sapphire-sizes--small $sapphire-sizes--small;
+	position: sticky;
+	top: 0;
+	width: 100%;
+
+	a:link {
+		@include flex-center-vertically;
+
+		color: $text-color-regular;
+		gap: $sapphire-sizes--xsmall;
+	}
+}
+
+.TimelineNoItems {
+	@include blank-state;
+
+	&__icon {
+		&,
+		.icon {
+			display: none !important;
+		}
+	}
+}

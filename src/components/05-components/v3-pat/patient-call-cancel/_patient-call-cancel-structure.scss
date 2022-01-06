@@ -1,0 +1,219 @@
+.PatientCallCancelStructure {
+	@include shadow-small;
+
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	border-radius: 100px;
+	display: inline-flex;
+	width: 100%;
+
+	&--active & {
+		&__ListQueues {
+			background-color: $sapphire-light;
+			border-radius: 100px;
+
+			&:after {
+				opacity: 0;
+			}
+		}
+	}
+
+	&__ListQueues,
+	&__LastCalled,
+	&__Actions {
+		flex: 1;
+		padding: $sapphire-sizes--medium;
+		position: relative;
+
+		&:after {
+			background-color: $light-grey;
+			content: '';
+			display: block;
+			height: calc(100% - 32px);
+			position: absolute;
+			right: 0;
+			top: $sapphire-sizes--medium;
+			width: 1px;
+		}
+
+		&:last-child:after {
+			opacity: 0;
+		}
+	}
+
+	&__ListQueues {
+		cursor: pointer;
+		padding-left: $sapphire-sizes--xlarge;
+		transition: all 0.1s ease-in-out;
+
+		&:hover {
+			background-color: $sapphire-light;
+			border-radius: 100px;
+
+			&:after {
+				opacity: 0;
+			}
+		}
+
+		[ui='data-queue-list-dropdown'] {
+			font-family: $font-family-latin-bold;
+			font-size: $font-size-heading4;
+			margin-top: $sapphire-sizes--xsmall;
+
+			.InlineDropdown {
+				&_text {
+					color: $dark-grey;
+				}
+
+				&_icon {
+					background-color: transparent;
+					color: $dark-grey;
+					height: $sapphire-sizes--large;
+					margin: 0 $sapphire-sizes--small;
+
+					span {
+						font-size: 0.857em;
+					}
+				}
+			}
+		}
+	}
+
+	&__LastCalled {
+		@include flex-center-vertically;
+
+		[ui='data-last-called-number'] {
+			font-family: $font-family-latin-bold;
+			font-size: $font-size-heading3;
+			margin-top: $sapphire-sizes--xsmall;
+		}
+
+		[ui='data-recall-button'] {
+			margin-left: $sapphire-sizes--medium;
+
+			.PatientCallCancel {
+				[ui='data-button-call'] {
+					@extend .Button.Third;
+				}
+			}
+		}
+	}
+
+	&__Actions {
+		@include flex-custom-align(center, flex-end);
+
+		[ui='data-call-next-button'] {
+			height: 44px;
+			margin-left: $sapphire-sizes--small;
+
+			.PatientCallCancel {
+				&__Header {
+					min-height: 44px;
+
+					[ui='data-button-call'] {
+						font-family: $font-family-latin-regular;
+						font-size: $font-size-heading4;
+						height: 44px;
+						line-height: 44px;
+						margin-left: $sapphire-sizes--medium !important;
+						padding: 0 $sapphire-sizes--xlarge;
+					}
+				}
+
+				&__Counter {
+					min-height: 44px;
+				}
+			}
+		}
+	}
+}
+
+.tablet {
+	.PatientCallCancelStructure {
+		&__ListQueues {
+			[ui='data-queue-list-dropdown'] {
+				font-size: $font-size-normal;
+			}
+		}
+
+		&__LastCalled {
+			flex: 2;
+		}
+
+		&__Actions {
+			flex: 2;
+
+			[ui='data-stop-button'],
+			[ui='data-reset-button'] {
+				.Button {
+					font-size: 0;
+					min-width: 36px;
+
+					&:before {
+						font-size: 13px;
+						margin: 0;
+					}
+				}
+			}
+
+			[ui='data-call-next-button'] {
+				height: 36px;
+
+				.PatientCallCancel {
+					&__Header {
+						min-height: 36px;
+
+						[ui='data-button-call'] {
+							font-size: $font-size-normal;
+							height: 36px;
+							line-height: 36px;
+							padding: 0 $sapphire-sizes--medium;
+
+							&:before {
+								display: none;
+							}
+						}
+					}
+
+					&__Counter {
+						min-height: 36px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.AR,
+.FA {
+	.PatientCallCancelStructure {
+		&__ListQueues {
+			padding-left: $sapphire-sizes--medium;
+			padding-right: $sapphire-sizes--xlarge;
+		}
+
+		&__LastCalled {
+			[ui='data-recall-button'] {
+				margin-left: 0;
+				margin-right: $sapphire-sizes--medium;
+			}
+		}
+
+		&__Actions {
+			[ui='data-call-next-button'] {
+				margin-left: 0;
+				margin-right: $sapphire-sizes--small;
+
+				.PatientCallCancel {
+					&__Header {
+
+						[ui='data-button-call'] {
+							margin-left: 0 !important;
+							margin-right: $sapphire-sizes--medium !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}

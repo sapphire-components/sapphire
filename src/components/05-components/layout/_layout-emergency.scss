@@ -1,0 +1,303 @@
+.LayoutEmergency {
+	.SideMenu {
+		&__PageTitle {
+			display: block;
+		}
+
+		&__Tabs {
+			.iframeContainer,
+			> div :first-of-type {
+				display: none;
+			}
+		}
+	}
+}
+
+.CTTASLevelAssessmentMainContainer {
+	border-bottom: 1px solid $light-grey;
+	display: flex;
+
+	.LevelsContainer {
+		padding: $sapphire-sizes--small $sapphire-sizes--medium;
+		width: 67%;
+
+		.CTTASLevelsMainContainer {
+			border-radius: 20px;
+		}
+
+		.CTTASLevelsMainContainer > span {
+			border-radius: 20px;
+			display: flex;
+			height: 36px;
+			width: 100%;
+
+			.CTTASLevelContainer {
+				@include flex-center-total(inline-flex);
+
+				border-radius: 20px;
+				cursor: pointer;
+				flex: 1;
+				font-family: $font-family-latin-bold;
+				font-size: $font-size-heading3;
+
+				.AR & {
+					font-family: $font-family-arabic-bold;
+				}
+			}
+		}
+	}
+
+	.ForwardableContainer {
+		padding: $sapphire-sizes--small $sapphire-sizes--medium;
+		width: 33%;
+
+		.ForwardContainer {
+			height: 36px;
+			width: 100%;
+
+			.SingleLocation,
+			.ForwardLocationsDiv {
+				@include flex-center-vertically();
+
+				border: 1px solid $regular-alpha;
+				border-radius: 20px;
+				color: $regular-beta;
+				cursor: pointer;
+				height: 36px;
+				justify-content: space-between;
+				padding: 0 $sapphire-sizes--medium;
+				user-select: none;
+
+				&:hover {
+					background-color: $regular-eta;
+				}
+			}
+
+			.ForwardLocationsDiv {
+				background-color: $regular-eta;
+			}
+
+			.ForwardLocationsContent {
+				@extend .ShadowSmall;
+
+				background-color: $regular-white;
+				border: 1px solid $light-grey;
+				border-radius: $border-radius-default;
+				margin-top: $sapphire-sizes--small - 1px;
+				padding: $sapphire-sizes--medium;
+				user-select: none;
+			}
+
+			.LocationLabel {
+				@include flex-center-vertically(inline-flex);
+
+				font-family: $font-family-latin-bold;
+				font-size: $font-size-heading4;
+
+				.AR & {
+					font-family: $font-family-arabic-bold;
+				}
+			}
+
+			.ForwardPadding {
+				overflow-y: auto;
+			}
+
+			.ForwardLocContainer {
+				border-radius: $border-radius-default;
+				cursor: pointer;
+			}
+
+			.ForwardLocName {
+				font-family: $font-family-latin-bold;
+
+				.AR & {
+					font-family: $font-family-arabic-bold;
+				}
+			}
+
+			.ForwardLocObservationContainer {
+				border-radius: $border-radius-default $border-radius-default 0 0;
+			}
+
+			.ForwardLocContainer,
+			.ForwardLocObservationContainer {
+				@include flex-center-vertically();
+
+				background-color: $sapphire-light;
+				// border: 1px solid $light-grey;
+				color: $mid-dark-grey;
+				font-size: $font-size-heading4;
+				justify-content: space-between;
+				min-height: 36px;
+				padding: 0 $sapphire-sizes--medium;
+				position: relative;
+				width: 100%;
+
+				&:hover::before {
+					background-color: rgba(158, 158, 158, 0.1);
+					border-radius: $border-radius-default;
+					content: '';
+					display: block;
+					height: 100%;
+					left: 0;
+					position: absolute;
+					width: 100%;
+				}
+
+				&.NoHover::before {
+					display: none;
+				}
+			}
+
+			.ObservationRoomCounters {
+				background-color: rgba($sapphire-light, 0.5);
+				// border: 1px solid $light-grey;
+				border-radius: 0 0 $border-radius-default $border-radius-default;
+				border-top: transparent;
+				padding: $sapphire-sizes--medium;
+			}
+
+			.ObservationCounter {
+				font-family: $font-family-latin-bold;
+				line-height: $sapphire-sizes--large;
+
+				.AR & {
+					font-family: $font-family-arabic-bold;
+				}
+			}
+		}
+
+		.ForwardList {
+			display: flex;
+			flex-direction: column;
+			margin: 0 (-$sapphire-sizes--medium);
+
+			.FowardListItem {
+				@include flex-center-vertically();
+
+				border-bottom: 1px solid $light-grey;
+				height: 36px;
+				justify-content: space-between;
+				padding: 0 $sapphire-sizes--medium;
+
+				&:hover {
+					background-color: rgba(158, 158, 158, 0.1);
+				}
+
+				&:last-of-type {
+					border-bottom: none;
+				}
+
+				.icon {
+					font-size: $font-size-heading4;
+				}
+			}
+		}
+	}
+}
+
+.EmergencySecondaryAside {
+	@include flex-center-vertically();
+
+	height: 100%;
+	padding: 0 $sapphire-sizes--medium;
+
+	.ResumeDetails {
+		padding: 0 !important;
+	}
+
+	.PainLevel {
+		display: flex;
+		flex: 1;
+		justify-content: flex-end;
+	}
+}
+
+.pain-level {
+	@include flex-center-vertically();
+
+	background-color: rgba($regular-orange, 0.2);
+	border-radius: $border-radius-default;
+	overflow: hidden;
+
+	.pain-level-icon {
+		@include flex-center-total();
+
+		background-color: $regular-orange;
+		color: $regular-white;
+		font-size: $font-size-heading3;
+		height: 36px;
+		width: 36px;
+	}
+
+	.pain-level-text {
+		@include flex-center-vertically();
+
+		flex: 1;
+		font-family: $font-family-latin-bold;
+		padding: 0 $sapphire-sizes--medium;
+
+		span {
+			font-size: $font-size-heading4;
+		}
+
+		.AR & {
+			font-family: $font-family-arabic-bold;
+		}
+	}
+}
+
+//WIP
+
+.ObservationRoomCounters .bed-icon {
+	color: #b1b5b6;
+}
+
+div.ForwardLocAction {
+	display: table-cell;
+	width: 99%;
+}
+
+.LocationSelectorAction {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+}
+
+.LocationSelectorAction a.ButtonForward {
+	max-width: 215px;
+	min-width: 215px;
+	text-align: left;
+}
+
+.ForwardSplitter {
+	border: 1px solid #e9ebeb;
+	height: 0;
+	margin: 20px 0;
+}
+
+a.SpecialityButtonForward {
+	text-align: left;
+	width: 100%;
+}
+
+.CursorPointer {
+	cursor: pointer;
+}
+
+.flex-block {
+	display: inline-flex;
+}
+
+.speciality-fwd {
+	color: #5d6b74;
+}
+
+.ForwardOtherOption {
+	border-top: 2px solid #c9cdce;
+	display: table;
+	margin-top: 20px;
+	width: 100%;
+}

@@ -1,0 +1,95 @@
+$line-warning-height: 62px;
+
+.LineWarns {
+	border-radius: $border-radius-default;
+	min-height: $line-warning-height;
+
+	.LineWarns_list {
+		border: 1px solid $light-grey;
+		border-radius: $border-radius-medium;
+		display: flex;
+		gap: $sapphire-sizes--medium;
+		height: 100%;
+		min-height: $line-warning-height;
+		padding: $sapphire-sizes--medium;
+
+		&.ColorBlueBG {
+			background-color: $light-blue;
+			border-color: $regular-blue;
+
+			.LineWarns__icon {
+				color: $regular-blue;
+			}
+		}
+
+		&.ColorGreenBG {
+			background-color: $light-green;
+			border-color: $regular-green;
+
+			.LineWarns__icon {
+				color: $regular-green;
+			}
+		}
+
+		&.ColorOrangeBG {
+			background-color: $light-yellow;
+			border-color: $regular-orange;
+
+			.LineWarns__icon {
+				color: $regular-orange;
+			}
+		}
+
+		&.ColorRedBG {
+			background-color: $light-red;
+			border-color: $regular-red;
+
+			.LineWarns__icon {
+				color: $regular-red;
+			}
+		}
+	}
+
+	.LineWarns__icon {
+		font-size: $font-size-heading3;
+		line-height: 30px;
+		width: $sapphire-sizes--large;
+	}
+
+	.LineWarns__message {
+		flex: 1;
+		padding-top: $sapphire-sizes--xsmall;
+	}
+
+	&__buttonContainer {
+		width: 11%;
+	}
+
+	.LineWarningActions {
+		align-items: flex-end;
+		display: flex;
+		justify-content: flex-end;
+		min-width: 10%;
+	}
+
+	&--small {
+		min-height: 43px;
+
+		.LineWarns_list {
+			min-height: 43px;
+			padding: $sapphire-sizes--small;
+
+			.LineWarns__message {
+				padding: 0;
+				line-height: 25px;
+			}
+		}
+	}
+}
+
+.AR,
+.FA {
+	.LineWarns__buttonContainer {
+		text-align: left;
+	}
+}

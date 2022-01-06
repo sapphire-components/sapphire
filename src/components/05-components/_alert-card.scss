@@ -1,0 +1,11 @@
+.AlertCard {
+	background-color: #fffbfb;
+	border: 1px solid $dark-red;
+	border-radius: $border-radius-default;
+	padding: $sapphire-sizes--medium;
+
+	&.Disabled {
+		background-color: $body-color;
+		border: 1px solid $regular-grey;
+	}
+}

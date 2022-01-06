@@ -1,0 +1,116 @@
+.ClinicianWorkArea {
+	&____resumeDetails {
+		.AppointmentDetails {
+			margin-top: 0 !important;
+
+			.QuickNotes,
+			.QuickProblems,
+			.VisitDetailsContainer {
+				margin-top: $sapphire-sizes--large;
+			}
+
+			.VisitDetailsContainer .SectionExpandableInside {
+				background-color: transparent;
+
+				.SectionExpandableInside_header {
+					background-color: $body-color;
+					border: 1px solid $light-grey;
+					border-bottom: none;
+					border-radius: $border-radius-default;
+					margin-bottom: $sapphire-sizes--medium;
+				}
+
+				.ExapandablePlaceholder {
+					width: $sapphire-sizes--xlarge;
+
+					&.HeaderIcon .icon {
+						border-bottom-color: $dark-grey;
+					}
+				}
+
+				.RightAllPlaceDiv {
+					font-family: $font-family-latin-bold;
+
+					.AR & {
+						font-family: $font-family-arabic-bold;
+					}
+				}
+
+				.TimelineDetail {
+					gap: $sapphire-sizes--medium;
+					margin-bottom: $sapphire-sizes--large;
+				}
+
+				.TimelineDetail_leftContent {
+					padding-left: $sapphire-sizes--small;
+
+					.AR & {
+						padding-left: 0;
+						padding-right: $sapphire-sizes--small;
+					}
+				}
+			}
+
+			.ExpandableContent:hover {
+				background-color: $body-color;
+			}
+
+			.SeparatorBorder:first-of-type {
+				display: none;
+			}
+		}
+
+		.SectionExpandableCustom {
+			&.expanded {
+				.SectionExpandableCustom_content:empty {
+					color: $sapphire-grey-blue;
+					font-size: 1em;
+					padding: 42px;
+					text-align: center;
+
+					&::before {
+						content: 'There are no items yet.';
+					}
+				}
+			}
+
+			&--backgroundTransparent {
+				.BottomBorderGrey {
+					border-bottom: 1px solid transparent;
+				}
+			}
+
+			.SectionExpandable___icon {
+				padding: 0;
+			}
+
+			.SectionExpandable_headerCustom {
+				height: 42px;
+			}
+
+			.SectionExpandableCustom_content:empty {
+				height: auto !important;
+				padding: 0;
+			}
+
+			.SectionExpandableInside {
+				.HeaderIcon span {
+					margin: 5px;
+				}
+
+				.ExapandablePlaceholder {
+					color: $regular-beta;
+
+					&.Counter {
+						margin: 0 10px;
+					}
+				}
+			}
+		}
+	}
+}
+
+div.EditContainerDiv {
+	background-color: transparent;
+	padding: 0;
+}

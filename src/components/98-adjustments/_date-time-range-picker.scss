@@ -1,0 +1,35 @@
+body.PanelOpened .daterangepicker {
+	z-index: 102;
+}
+
+/*Iframe exception*/
+@media (min-width: 564px) {
+	iframe .daterangepicker.single .ranges,
+	.daterangepicker.single .drp-calendar {
+		float: none;
+	}
+}
+
+.isTouch .DateTimeRangePicker-input input[type='text'] {
+	width: 230px;
+}
+
+.isTouch .DateTimeRangePicker.onlyDate .DateTimeRangePicker-input input[type='text'] {
+	width: 165px;
+}
+
+.InputFilter .DateTimeRangePicker {
+	width: 100%;
+
+	.AR & {
+		.DateTimeRangePicker-input:before,
+		.DateTimeRangePicker-displayed:before {
+			right: auto;
+		}
+	}
+
+	.DateTimeRangePicker-input:before,
+	.DateTimeRangePicker-displayed:before {
+		right: $sapphire-sizes--medium;
+	}
+}

@@ -1,0 +1,139 @@
+.AppLine {
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	border-radius: $border-radius-medium;
+	overflow: hidden;
+	position: relative;
+
+	.AppHeader {
+		flex-basis: 40%;
+
+		.AppDate {
+			align-items: center;
+			display: flex;
+
+			> div.Clickable {
+				align-items: center;
+				display: flex;
+			}
+
+			.DoubleText div {
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				width: 110px;
+			}
+		}
+	}
+
+	.AppInfo,
+	.AppStatus {
+		flex: 1;
+	}
+
+	.DragLine {
+		align-items: center;
+		display: inline-flex;
+		gap: $sapphire-sizes--medium;
+		padding: $sapphire-sizes--medium;
+		width: 100%;
+
+		.HeadActions {
+			> a {
+				display: inline-block;
+				text-align: center;
+				text-decoration: none;
+				vertical-align: middle;
+			}
+
+			> a img {
+				display: block;
+				height: auto;
+				margin: 0 auto 5px;
+				width: 16px;
+			}
+		}
+	}
+
+	.MoveLine {
+		align-items: center;
+		cursor: move;
+		display: flex;
+		gap: $sapphire-sizes--small;
+
+		> .icon {
+			color: $mid-light-grey;
+			font-size: 24px;
+			margin-left: -12px;
+		}
+	}
+
+	.LineLines {
+		background: $regular-white;
+		height: 100%;
+		padding: 0 10px;
+	}
+
+	.DragBox {
+		&.Moving {
+			opacity: 0.25;
+		}
+
+		&.Over .dropTop,
+		&.OverBottom .dropBottom {
+			border: 2px solid #0d4965;
+			border-radius: 5px;
+			padding: 0;
+		}
+
+		&.Over .dropTop {
+			margin: 0 0 2px 0;
+		}
+
+		&.OverBottom .dropBottom {
+			margin: 2px 0 0 0;
+		}
+
+		.dropTop {
+			line-height: 0;
+			padding: 0;
+		}
+
+		.dropBottom {
+			line-height: 0;
+			padding: 0;
+		}
+	}
+}
+
+.ListRecords {
+	.AppLine.DragBox:not(:last-of-type) {
+		margin-bottom: $sapphire-sizes--small;
+	}
+}
+
+.AR,
+.FA {
+	.AppLine {
+		.AppInfo {
+			padding-left: 5px;
+			padding-right: 10px;
+		}
+
+		.AppStatus {
+			padding-left: 10px;
+			padding-right: 5px;
+		}
+
+		.DragLine {
+			.HeadActions {
+				text-align: left;
+			}
+		}
+
+		.MoveLine > .icon {
+			margin-left: 0;
+			margin-right: -10px;
+		}
+	}
+}

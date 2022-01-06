@@ -1,0 +1,132 @@
+.ShiftTableRow {
+	background-color: $white-grey;
+	display: flex;
+	padding-left: $sapphire-sizes--large;
+
+	.AR & {
+		padding-left: 0;
+		padding-right: $sapphire-sizes--large;
+	}
+
+	&__Left {
+		border-bottom: 1px solid $light-grey;
+		border-right: 1px solid $light-grey;
+		display: flex;
+		flex-direction: column;
+		gap: $sapphire-sizes--xsmall;
+		padding: $sapphire-sizes--medium $sapphire-sizes--large $sapphire-sizes--medium 0;
+		width: 400px;
+
+		.AR & {
+			border-left: 1px solid $light-grey;
+			border-right: none;
+			padding: $sapphire-sizes--medium 0 $sapphire-sizes--medium $sapphire-sizes--large;
+		}
+	}
+
+	&__Tags {
+		display: flex;
+		gap: $sapphire-sizes--small;
+
+		.BadgeCustom {
+			font-size: $font-size-tiny;
+		}
+	}
+
+	&__Title {
+		font-family: $font-family-latin-bold;
+
+		.AR & {
+			font-family: $font-family-arabic-bold;
+		}
+	}
+
+	&__Info2Container {
+		a {
+			@include flex-center-vertically;
+
+			gap: $sapphire-sizes--small;
+
+			.icon {
+				font-size: 10px;
+			}
+		}
+	}
+
+	&__Info2 {
+		color: $regular-grey;
+		display: flex;
+		flex-direction: column;
+		gap: $sapphire-sizes--xsmall;
+		margin-bottom: $sapphire-sizes--xsmall;
+	}
+
+	&__Content {
+		border-bottom: 1px solid $light-grey;
+
+		&,
+		> .ListRecords {
+			background-color: $regular-white;
+			display: flex;
+			flex: 1;
+			position: relative;
+
+			.ShiftTableCell {
+				border-right: 1px solid $sapphire-light;
+				display: flex;
+				flex: 1;
+				flex-direction: column;
+				gap: $sapphire-sizes--small;
+				min-width: 130px;
+				padding: $sapphire-sizes--medium $sapphire-sizes--small;
+
+				&:last-of-type {
+					border-right-color: transparent;
+				}
+
+				.ListRecords > * {
+					margin-bottom: $sapphire-sizes--small;
+
+					.ShiftTableCard {
+						margin-bottom: $sapphire-sizes--small;
+					}
+
+					&:last-of-type {
+						margin-bottom: 0;
+
+						.ShiftTableCard {
+							margin-bottom: 0;
+						}
+					}
+				}
+
+				.AR & {
+					border-left: 1px solid $light-grey;
+					border-right: none;
+
+					&:last-of-type {
+						border-left-color: transparent;
+					}
+				}
+			}
+
+			.tooltipstered {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.ShiftTableCardEmpty {
+	@include flex-center-total;
+
+	flex-direction: column;
+	gap: $sapphire-sizes--medium;
+	height: calc(100% - #{$sapphire-sizes--xlarge});
+	position: absolute;
+	width: 100%;
+
+	&__Message {
+		color: $regular-grey;
+	}
+}

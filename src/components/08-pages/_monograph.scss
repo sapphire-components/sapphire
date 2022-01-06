@@ -1,0 +1,8 @@
+.MonographWarning {
+	padding: $sapphire-sizes--small 0;
+
+	+ iframe {
+		background-color: $body-color;
+		border-radius: $border-radius-medium;
+	}
+}

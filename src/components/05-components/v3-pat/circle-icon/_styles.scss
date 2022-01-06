@@ -1,0 +1,17 @@
+.CircleElement {
+	align-items: center;
+	background-color: $regular-white;
+	border-radius: 50%;
+	color: $regular-grey;
+	display: flex;
+	font-size: 14px;
+	height: 14px;
+	justify-content: center;
+	width: 14px;
+
+	.EmergencyInfo & {
+		background-color: transparent;
+		color: $regular-alpha;
+		font-size: inherit;
+	}
+}

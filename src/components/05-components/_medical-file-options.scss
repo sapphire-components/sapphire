@@ -1,0 +1,146 @@
+.MedicalFileOptionsLine {
+	display: flex;
+	padding: 5px 10px;
+
+	&.FirstLine {
+		padding-top: 0;
+	}
+
+	&.LastLine {
+		border-bottom: none;
+		padding-bottom: 15px;
+	}
+
+	&_option {
+		cursor: pointer;
+
+		.Button.Link {
+			margin: 0;
+			min-width: auto;
+			padding: 0 5px;
+		}
+	}
+
+	&_options {
+		.IconVertical {
+			padding-right: 0;
+		}
+	}
+
+	&_volumeLocation {
+		.icon {
+			font-size: 0.857em;
+		}
+	}
+
+	> div {
+		display: table-cell;
+		padding: 0 5px;
+		text-align: right;
+		vertical-align: middle;
+
+		&:first-child {
+			flex: 1;
+			margin-right: 8px;
+		}
+
+		&:not(:first-child) {
+			@include flex-center-total;
+
+			border-left: 1px solid $light-grey;
+			width: fit-content;
+		}
+
+		> .VolumeName {
+			color: $dark-grey;
+			font-size: 0.857em;
+			line-height: 17px;
+		}
+	}
+
+	> .NoBorder {
+		border: none;
+	}
+
+	+ .Locations {
+		border-bottom: 1px solid $light-grey;
+		border-top: 1px solid $light-grey;
+		padding: 10px 15px;
+	}
+}
+
+.MedicalFileOptions {
+	&_addVolume {
+		@include flex-center-total;
+
+		background-color: $body-color;
+		padding: 12px 0;
+
+		a {
+			display: inherit;
+		}
+
+		.CircleElement {
+			background-color: transparent;
+		}
+	}
+
+	&_header {
+		@include flex-center-vertically();
+
+		gap: $sapphire-sizes--medium;
+		justify-content: space-between;
+		padding: $sapphire-sizes--large $sapphire-sizes--medium;
+
+		.EditFileNumber {
+			color: $regular-beta;
+			font-size: 1.143em;
+			margin-left: 10px;
+		}
+	}
+
+	&_options {
+		border-top: 1px solid $light-grey;
+		padding: $sapphire-sizes--medium;
+	}
+
+	> .VolumeList {
+		max-height: 180px;
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+}
+
+.MedicalFileAssignHeader {
+	border-bottom: 1px solid $light-grey;
+	display: flex;
+	justify-content: space-between;
+	padding: $sapphire-sizes--large $sapphire-sizes--medium;
+}
+
+.AssignFile {
+	&__Button {
+		border: 1px solid $light-grey;
+		border-radius: $border-radius-default;
+		cursor: pointer;
+		height: 56px;
+		line-height: 56px;
+		padding: 0 $sapphire-sizes--small;
+
+		&:hover {
+			background-color: $sapphire-light;
+		}
+	}
+}
+
+.AR,
+.FA {
+	.MedicalFileOptions {
+		> div:first-child {
+			.EditFileNumber {
+				margin-left: 0;
+				margin-right: 10px;
+			}
+		}
+	}
+}

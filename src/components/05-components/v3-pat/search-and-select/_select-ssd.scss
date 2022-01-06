@@ -1,0 +1,228 @@
+.SelectSD {
+	background-color: $regular-white;
+	width: 100%;
+
+	.SelectSD--disabled {
+		pointer-events: none;
+
+		.SelectSD_actionLink {
+			opacity: 0.5;
+		}
+
+		.SelectSD__starLink {
+			pointer-events: all;
+		}
+	}
+
+	.SelectSD__Header {
+		@include flex-center-vertically;
+
+		min-height: $sapphire-sizes--xxlarge;
+	}
+
+	&.hasFavorite {
+		.SelectSD__starLink {
+			@include flex-center-total();
+
+			color: $light-grey;
+			width: 48px;
+
+			.SelectSD__starWrapper {
+				.icon {
+					font-size: $font-size-heading3;
+				}
+
+				&.starActive {
+					.icon {
+						color: $light-grey;
+
+						&:hover {
+							color: $regular-alpha;
+						}
+					}
+				}
+
+				&.starDisabled {
+					.icon {
+						color: $light-grey;
+					}
+				}
+
+				&.starSelected {
+					.icon {
+						color: $regular-alpha;
+					}
+				}
+			}
+		}
+
+		.SelectSD_contentWrapper {
+			margin-left: 0;
+
+			.AR & {
+				margin-left: 0;
+				margin-right: 0;
+			}
+		}
+	}
+
+	.SelectSD_contentWrapper {
+		flex: 1;
+		margin: 0;
+		padding: $sapphire-sizes--xsmall $sapphire-sizes--medium;
+
+		.SelectSD__contentTitle {
+			color: $dark-grey;
+			font-size: $font-size-normal;
+			margin-right: $sapphire-sizes--small;
+		}
+
+		.SelectSD__contentICD {
+			color: $mid-light-grey;
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+
+	&:last-child {
+		border: 0;
+	}
+
+	&:hover {
+		background-color: $regular-eta;
+		cursor: pointer;
+	}
+
+	.SelectSD__multiple {
+		padding: 0 $sapphire-sizes--small;
+
+		> input[type='checkbox'] {
+			margin-right: 0;
+		}
+	}
+
+	&.MultiSelectActive {
+		.SelectSD_contentWrapper,
+		.SelectSD_contentWrapper + a {
+			pointer-events: none;
+		}
+	}
+
+	.SelectSD-searched-term {
+		color: $dark-grey;
+		font-family: $font-family-latin-bold;
+	}
+
+	.SelectSD__tags {
+		display: inline-block;
+
+		.StatusBadges {
+			margin-right: 10px;
+		}
+	}
+
+	.SelectSD_actionLink {
+		display: table-cell;
+		padding-top: 2px;
+		text-align: center;
+		vertical-align: middle;
+		width: 68px;
+
+		.SelectSD__action {
+			height: 100%;
+			width: 100%;
+
+			.icon {
+				color: $regular-alpha;
+				text-align: center;
+			}
+		}
+
+		&:focus {
+			.SelectSD__action {
+				.icon {
+					border: none;
+					box-shadow: inset 0px 0px 0px 1px $regular-beta, 0px 0px 8px 0px $regular-beta;
+				}
+			}
+		}
+	}
+
+	.SelectSD__ExpandableLink {
+		@include flex-center-vertically();
+
+		background-color: $regular-white;
+		border: 1px solid $light-grey;
+		border-radius: 20px;
+		font-family: $font-family-latin-bold;
+		font-size: 13px;
+		gap: $sapphire-sizes--small;
+		height: 30px;
+		padding: 0 $sapphire-sizes--medium;
+
+		.AR & {
+			font-family: $font-family-arabic-bold;
+		}
+
+		&::after {
+			content: '\e610';
+			display: block;
+			font-family: $font-family-icons;
+			font-size: $font-size-tiny;
+		}
+
+		&--expanded {
+			background-color: $sapphire-light;
+
+			&::after {
+				content: '\e611';
+			}
+		}
+
+		&--alwaysVisible {
+			display: flex !important;
+		}
+	}
+
+	.SelectSD__ExpandableContent {
+		background-color: $white-grey;
+		display: none;
+		flex-basis: 100%;
+		flex-direction: column;
+
+		.SelectSD {
+			background-color: transparent;
+			padding-left: $sapphire-sizes--xxlarge;
+
+			&:hover {
+				background-color: $regular-eta;
+				cursor: pointer;
+			}
+
+			.AR & {
+				padding-left: 0;
+				padding-right: $sapphire-sizes--xxlarge;
+			}
+		}
+
+		&--visible {
+			display: flex;
+		}
+	}
+
+	.SelectableList-EmptyMessage {
+		background-color: $regular-white;
+	}
+}
+
+/*AR and FA*/
+
+.FA,
+.AR {
+	.SelectSD_contentWrapper {
+		.SelectSD__contentTitle {
+			margin-left: 10px;
+			margin-right: auto;
+		}
+	}
+}

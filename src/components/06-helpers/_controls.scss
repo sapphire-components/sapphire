@@ -1,0 +1,16 @@
+.control-read-only {
+	font-family: $font-family-latin-bold;
+	font-weight: 400;
+}
+
+.PointerEventsNone {
+	pointer-events: none;
+}
+
+.AR,
+.FA {
+	.InputPhone {
+		direction: ltr;
+		text-align: end;
+	}
+}

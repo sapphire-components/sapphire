@@ -1,0 +1,14 @@
+.BedInfoContent {
+	.BadgeCustom {
+		align-items: center;
+		font-size: 1em;
+		gap: $sapphire-sizes--small;
+		max-height: unset;
+		padding: $sapphire-sizes--xsmall $sapphire-sizes--medium;
+
+		.BadgeCustom__Icon {
+			font-size: 1.286em;
+			height: unset;
+		}
+	}
+}

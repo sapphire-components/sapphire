@@ -1,0 +1,181 @@
+.ShiftTableCard {
+	@include shadow-xsmall;
+
+	background-color: $sapphire-light;
+	border: 1px solid $light-grey;
+	border-radius: $border-radius-default;
+	cursor: default !important;
+	padding: $sapphire-sizes--small;
+	z-index: 1;
+
+	&__Header,
+	&__Footer {
+		@include flex-center-vertically;
+
+		justify-content: space-between;
+	}
+
+	&__Header {
+		margin-bottom: $sapphire-sizes--xsmall;
+	}
+
+	&__HeaderLeft {
+		@include flex-center-vertically;
+
+		gap: $sapphire-sizes--small;
+	}
+
+	&__HeaderAction {
+		.MoreActions {
+			@include flex-center-total;
+
+			background-color: $regular-white;
+			border-radius: 50%;
+			height: 26px;
+			margin-bottom: -4px;
+			margin-right: -4px;
+			margin-top: -4px;
+			min-width: 26px;
+			position: relative;
+
+			&:hover {
+				background-color: $sapphire-light;
+			}
+		}
+	}
+
+	&__CardStatus {
+		border: 1px solid $light-grey;
+		border-radius: 50%;
+		font-size: $font-size-heading3;
+		height: 18px;
+		line-height: 18px;
+		width: 18px;
+	}
+
+	&__Info {
+		font-family: $font-family-latin-bold;
+		font-size: 13px;
+
+		.AR & {
+			font-family: $font-family-arabic-bold;
+		}
+	}
+
+	&__FooterNotes {
+		position: relative;
+
+		> div:first-of-type {
+			@include flex-center-vertically;
+
+			gap: $sapphire-sizes--xsmall;
+			line-height: 0;
+
+			&:hover {
+				color: $dark-grey;
+			}
+		}
+	}
+
+	&__FooterInfo,
+	&__FooterNotes {
+		color: $regular-grey;
+		font-family: $font-family-latin-bold;
+		font-size: $font-size-small;
+
+		.AR & {
+			font-family: $font-family-arabic-bold;
+		}
+	}
+
+	&--selected {
+		.ShiftTableCard__CardStatus {
+			border-color: $light-grey;
+		}
+
+		.ShiftTableCard__HeaderAction {
+			.MoreActions {
+				background-color: $sapphire-light;
+			}
+		}
+	}
+
+	&--clickable {
+		background-color: $regular-white;
+		cursor: pointer !important;
+		position: relative;
+
+		&:hover {
+			background-color: $regular-eta;
+			border-color: $regular-alpha;
+
+			.ShiftTableCard__CardStatus {
+				border-color: $regular-alpha;
+			}
+		}
+
+		.OpenTooltip {
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+	}
+
+	&--Done {
+		background-color: $light-green;
+		border-color: lighten($regular-green, 20%);
+
+		&.ShiftTableCard--selected {
+			background-color: darken($light-green, 5%);
+		}
+
+		.ShiftTableCard__CardStatus {
+			border: none;
+			color: $regular-green;
+		}
+	}
+
+	&--NotDone {
+		background-color: $light-red;
+		border-color: lighten($regular-red, 20%);
+
+		&.ShiftTableCard--selected {
+			background-color: darken($light-red, 5%);
+		}
+
+		.ShiftTableCard__CardStatus {
+			border: none;
+			color: $regular-red;
+		}
+	}
+
+	&--Overdue {
+		background-color: $light-yellow;
+		border-color: lighten($regular-orange, 20%);
+
+		&.ShiftTableCard--selected {
+			background-color: darken($light-orange, 5%);
+		}
+
+		.ShiftTableCard__CardStatus {
+			border: none;
+			color: $regular-orange;
+		}
+	}
+
+	&--PartiallyDone {
+		background-color: $light-beige;
+		border-color: lighten($regular-beige, 5%);
+
+		&.ShiftTableCard--selected {
+			background-color: darken($light-beige, 5%);
+		}
+
+		.ShiftTableCard__CardStatus {
+			border: none;
+			color: $dark-beige;
+		}
+	}
+}

@@ -1,0 +1,52 @@
+body.PanelById.PanelOpened {
+	overflow: hidden;
+	position: static;
+}
+
+.PanelById {
+	.Panel {
+		display: none;
+
+		.PanelContainer {
+			max-width: 800px;
+			overflow: unset !important;
+			z-index: 100;
+
+			&.done {
+				bottom: 0;
+			}
+		}
+	}
+
+	.PanelMessage {
+		.CheckboxInput {
+			margin-top: 10px;
+		}
+	}
+}
+
+.desktop {
+	&.hd {
+		.PanelById {
+			.PanelContainer {
+				max-height: 700px;
+				top: 50%;
+			}
+		}
+	}
+
+	&.small {
+		.PanelById {
+			.PanelContainer {
+				max-height: 600px;
+				overflow-y: auto;
+				top: 50%;
+			}
+		}
+		.PanelContainer {
+			max-height: 487px;
+			overflow-y: auto;
+			top: 60%;
+		}
+	}
+}

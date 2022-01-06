@@ -1,0 +1,152 @@
+.Counter {
+	&.Highlight {
+		background-color: $regular-red;
+		border-radius: 50%;
+		color: $regular-white;
+		font-size: 0.857em;
+		font-weight: normal;
+		height: 20px;
+		line-height: 19px;
+		text-align: center;
+		width: 20px;
+	}
+
+	&.Min {
+		background-color: $light-green;
+		border-top: 2px solid $dark-green;
+		color: $dark-green;
+	}
+
+	&.Med {
+		background-color: $light-beige;
+		border-top: 2px solid $dark-beige;
+		color: $dark-beige;
+	}
+
+	&.Maj {
+		background-color: $light-red;
+		border-top: 2px solid $dark-red;
+		color: $dark-red;
+	}
+
+	&.Vacant {
+		background: $light-green;
+		border-top: 3px solid $dark-green;
+		color: $dark-green;
+	}
+
+	&.Reserved {
+		background: #e6e2a3;
+		border-top: 3px solid #8c8b53;
+		color: #75742e;
+	}
+
+	&.Planned {
+		background: $light-grey;
+		border-top: 3px solid $regular-grey;
+		color: $regular-grey;
+	}
+
+	&.SapphireColor,
+	.Tile.SapphireColor {
+		background-color: $regular-white;
+		border-bottom: 0;
+		border-top: 2px solid $regular-beta;
+	}
+
+	&.Black,
+	.Tile.Black {
+		background-color: $regular-white;
+		border-bottom-color: $regular-black;
+	}
+
+	&.Blue,
+	.Tile.Blue {
+		background-color: $regular-white;
+		border-bottom-color: $regular-blue;
+	}
+
+	&.DarkBlue,
+	.Tile.DarkBlue {
+		background-color: $regular-white;
+		border-bottom-color: $dark-blue;
+	}
+
+	&.DarkPlum,
+	.Tile.DarkPlum {
+		background-color: $regular-white;
+		border-bottom-color: $dark-pink;
+	}
+
+	&.DarkRed,
+	.Tile.DarkRed {
+		background-color: $regular-white;
+		border-bottom-color: $dark-red;
+	}
+
+	&.Gray,
+	.Tile.Gray {
+		background-color: $regular-white;
+		border-bottom-color: $regular-grey;
+	}
+
+	&.Green,
+	.Tile.Green {
+		background-color: $regular-white;
+		border-bottom-color: $regular-green;
+	}
+
+	&.LightGreen,
+	.Tile.LightGreen {
+		background-color: $regular-white;
+		border-bottom-color: $light-green;
+	}
+
+	&.Orange,
+	.Tile.Orange {
+		background-color: $regular-white;
+		border-bottom-color: $regular-orange;
+	}
+
+	&.Plum,
+	.Tile.Plum {
+		background-color: $regular-white;
+		border-bottom-color: $regular-pink;
+	}
+
+	&.Red,
+	.Tile.Red {
+		background-color: $regular-white;
+		border-bottom-color: $regular-red;
+	}
+
+	&.Silver,
+	.Tile.Silver {
+		background-color: $regular-white;
+		border-bottom-color: $light-grey;
+	}
+
+	&.Transparent,
+	.Tile.Transparent {
+		background-color: $regular-white;
+		border-bottom-color: transparent;
+	}
+
+	&.Turquoise,
+	.Tile.Turquoise {
+		background-color: $regular-white;
+		border-bottom-color: $regular-blue;
+	}
+
+	&.White,
+	.Tile.White {
+		background-color: $regular-white;
+		border-bottom-color: $regular-white;
+	}
+
+	&.Yellow,
+	.Tile.Yellow {
+		background-color: $regular-white;
+		border-bottom-color: $regular-yellow;
+	}
+}

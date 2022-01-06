@@ -1,0 +1,39 @@
+@mixin defaultSettings($borderDirection: border-left) {
+	#{$borderDirection}: 1.9px solid $light-grey;
+	bottom: 0;
+	content: ' ';
+	top: 0;
+}
+@mixin verticalSeparator($after: true, $borderDirection: border-left) {
+	@if ($after) {
+		@include defaultSettings($borderDirection);
+		margin: 0px 8px;
+		position: absolute;
+	} @else {
+		@include defaultSettings($borderDirection);
+		margin-left: $sapphire-sizes--small;
+		padding-left: $sapphire-sizes--small;
+	}
+}
+
+.VerticalSeparatorHelper {
+	position: relative;
+}
+
+.VerticalSeparator:after {
+	@include verticalSeparator();
+}
+
+.VerticalSeparatorBefore {
+	@include verticalSeparator(false);
+}
+
+.AR .VerticalSeparatorBefore {
+	@include verticalSeparator(false, border-right);
+
+	border-left: none;
+	margin-left: 0;
+	margin-right: $sapphire-sizes--small;
+	padding-left: 0;
+	padding-right: $sapphire-sizes--small;
+}

@@ -1,0 +1,16 @@
+.PanelContainer {
+	&.Confirm {
+		.PanelMessage {
+			font-size: $font-size-normal;
+			margin-bottom: 30px;
+		}
+
+		.PanelActions {
+			.ButtonLink {
+				&.Is_Default {
+					padding: 0;
+				}
+			}
+		}
+	}
+}

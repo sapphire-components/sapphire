@@ -1,0 +1,27 @@
+.InputUnitBox {
+	&__Header {
+		color: $mid-light-grey;
+		font-family: $font-family-latin-bold;
+		font-size: $font-size-small;
+		line-height: 36px;
+		padding:0 $sapphire-sizes--medium;
+		text-transform: uppercase;
+	}
+
+	&__Body {
+		align-items: center;
+		display: flex;
+	}
+
+	&__Row {
+		padding: 6px $sapphire-sizes--medium;
+		width: 100%;
+
+		&--greyBackground {
+			background-color: $body-color;
+			border: 1px solid $light-grey;
+			border-radius: $border-radius-default;
+			margin-bottom: 6px;
+		}
+	}
+}

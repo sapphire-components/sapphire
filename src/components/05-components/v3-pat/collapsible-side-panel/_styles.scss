@@ -1,0 +1,246 @@
+.CollapsibleSidePanel {
+	&__Header {
+		@include flex-center-vertically;
+
+		background-color: $regular-white;
+		border: 1px solid $light-grey;
+		border-radius: 100px;
+		cursor: pointer;
+		height: 40px;
+		justify-content: space-between;
+		padding: $sapphire-sizes--small 12px;
+
+		.icon {
+			color: $regular-grey;
+		}
+
+		.AR & {
+			.icon {
+				transform: rotate(180deg);
+			}
+		}
+	}
+
+	&__Content {
+		background-color: $regular-white;
+		display: none;
+		margin: -$sapphire-sizes--medium;
+		min-height: 100vh;
+		position: absolute;
+		right: $sapphire-sizes--medium;
+		top: $sapphire-sizes--medium;
+		/* transition: all 0.4s ease; */
+		visibility: hidden;
+		width: 0;
+		z-index: 1;
+
+		> * {
+			opacity: 0;
+			/* transition: all 0.3s ease; */
+		}
+
+		.PersonCard {
+			margin-bottom: $sapphire-sizes--medium;
+
+			.PersonCard_header {
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: 0;
+				margin-bottom: 0 !important;
+			}
+
+			.PersonCard__headerLeftInfo {
+				max-width: 48px !important;
+			}
+
+			.PersonCard_expandable {
+				background-color: $body-color;
+				padding: $sapphire-sizes--medium;
+
+				.ListRecords > div:not(:last-child) {
+					&::after {
+						background-color: $light-grey;
+						content: '';
+						display: block;
+						height: 1px;
+						margin: $sapphire-sizes--small 0;
+					}
+				}
+			}
+
+			.PersonCardIcon {
+				border-radius: $border-radius-default;
+				color: $dark-grey;
+				height: 32px;
+				width: 32px;
+			}
+		}
+
+		.SectionExpandableInside {
+			border: 1px solid $light-grey;
+			border-radius: $sapphire-sizes--small;
+			margin-bottom: $sapphire-sizes--medium;
+			overflow: hidden;
+
+			.SectionExpandableInside_header {
+				padding: $sapphire-sizes--medium $sapphire-sizes--small;
+
+				.HeaderIcon span.icon {
+					border-bottom-color: $dark-grey;
+				}
+
+				.ExapandablePlaceholder .Counter {
+					border-radius: 80px;
+					font-family: $font-family-latin-bold;
+					font-size: 11px;
+					line-height: initial;
+					min-width: 20px;
+					padding: 3px;
+					width: auto;
+				}
+			}
+
+			.SectionExpandableInside_content {
+				background-color: $body-color;
+				border-bottom: none !important;
+				height: 0 !important;
+				transition: unset;
+
+				.TimelineDetail {
+					display: flex;
+					gap: $sapphire-sizes--medium;
+					padding: 0;
+
+					&:not(:last-child) {
+						margin-bottom: $sapphire-sizes--medium;
+					}
+				}
+
+				.TimelineDetail_leftContent {
+					margin: unset;
+					min-width: 26px;
+					padding: unset;
+					padding-top: 3px;
+				}
+
+				.TimelineDetail_rightContent {
+					padding: unset;
+				}
+			}
+
+			.PlaceHolderActions > div {
+				margin-left: unset !important;
+				padding: unset;
+			}
+
+			.RightAllPlaceDiv > div:empty {
+				display: none;
+			}
+
+			&.expanded .SectionExpandableInside_content {
+				height: auto !important;
+				padding: $sapphire-sizes--medium;
+			}
+		}
+
+		.AR & {
+			left: $sapphire-sizes--medium;
+			right: unset;
+		}
+	}
+
+	&__Title,
+	&__PanelTitle {
+		display: inline-flex;
+		gap: $sapphire-sizes--small;
+
+		.Counter {
+			@include flex-center-total(inline-flex);
+
+			border-radius: 80px;
+			color: $regular-white;
+			font-size: $font-size-tiny;
+			line-height: $font-size-tiny;
+			min-height: 20px;
+			min-width: 20px;
+			padding: 3px;
+
+			&.ColorLightGreyBG {
+				color: $mid-dark-grey;
+			}
+		}
+	}
+
+	&__PanelHeader {
+		@include flex-center-vertically;
+
+		border-bottom: 1px solid $light-grey;
+		justify-content: space-between;
+
+		/* stylelint-disable-next-line no-descending-specificity */
+		.icon {
+			cursor: pointer;
+		}
+	}
+
+	&__PanelTitle {
+		align-items: center;
+		gap: $sapphire-sizes--medium;
+	}
+
+	&__PanelContent {
+		@include component-scroll-root;
+
+		overflow: auto;
+	}
+
+	&__PanelFooter {
+		@include flex-center-vertically;
+
+		min-height: 59px;
+
+		.FooterGreyBG {
+			background-color: $white-grey;
+			padding: $sapphire-sizes--large $sapphire-sizes--medium;
+			width: 100%;
+		}
+
+		.FooterBorderTop {
+			@include flex-center-vertically;
+
+			border-top: 1px solid $light-grey;
+			height: 100%;
+			padding: 0 $sapphire-sizes--medium;
+			width: 100%;
+		}
+	}
+
+	&--open & {
+		&__Content {
+			grid-template-rows: 80px 1fr auto;
+			height: 100%;
+			visibility: visible;
+			width: 100%;
+
+			* {
+				opacity: 1;
+			}
+		}
+
+		&__PanelHeader,
+		&__PanelContent {
+			padding: $sapphire-sizes--medium;
+		}
+	}
+
+	&--headerHidden {
+		height: 0;
+		padding: 0;
+		visibility: hidden;
+	}
+
+	&--hideHeader {
+		.CollapsibleSidePanel__Header {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,41 @@
+.SSDCloneStructure {
+	background-color: $regular-white;
+
+	.SSDCloneStructure_header {
+		border-bottom: 1px solid $light-grey;
+		display: table;
+		height: $sapphire-sizes--xxlarge;
+		padding: 0 $sapphire-sizes--medium;
+		padding-bottom: $sapphire-sizes--small;
+		width: 100%;
+	}
+
+	.SSDCloneStructure_counter {
+		display: table-cell;
+		vertical-align: middle;
+		width: calc(100% - 140px);
+	}
+
+	.SSDCloneStructure_addSelection {
+		display: table-cell;
+		vertical-align: middle;
+		width: 140px;
+		/* display: none; */
+
+		.Button {
+			visibility: hidden;
+
+			&.show {
+				opacity: 1;
+				transition: visibility 0.3s, opacity 0.3s linear;
+				visibility: visible;
+			}
+		}
+	}
+
+	.SSDCloneStructure_content {
+		border-top: none;
+		/* display: table; */
+		width: 100%;
+	}
+}

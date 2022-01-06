@@ -1,0 +1,71 @@
+.RoomBox {
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	border-radius: $border-radius-medium;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+
+	&.Selected {
+		border-color: transparent;
+
+		.DisableRoom {
+			border: 2px solid $regular-alpha;
+		}
+	}
+
+	&.Male {
+		.RoomHeader {
+			background-color: $light-blue;
+		}
+	}
+
+	&.Female {
+		.RoomHeader {
+			background-color: $light-pink;
+		}
+	}
+}
+
+.RoomHeader {
+	@include flex-center-vertically;
+
+	border-bottom: 1px solid $light-grey;
+	gap: $sapphire-sizes--small;
+	justify-content: space-between;
+	padding: $sapphire-sizes--medium;
+
+	> :nth-child(1) {
+		font-family: $font-family-latin-bold;
+	}
+
+	.WardName {
+		color: $regular-grey;
+		font-size: $font-size-small;
+	}
+}
+
+.RoomStatus {
+	padding: 8px $sapphire-sizes--medium;
+	width: 100%;
+
+	&.Free {
+		background-color: $light-green;
+	}
+
+	&.Full {
+		background-color: $sapphire-light;
+	}
+}
+
+.DisableRoom {
+	border: 2px solid transparent;
+	border-radius: $border-radius-medium;
+	display: block;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+}

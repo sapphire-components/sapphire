@@ -1,0 +1,9 @@
+.PanelContainer {
+	&.Confirm {
+		max-width: 400px;
+
+		.PanelActions {
+			white-space: nowrap;
+		}
+	}
+}

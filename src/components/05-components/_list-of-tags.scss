@@ -1,0 +1,24 @@
+.ListOfTags {
+	display: flex;
+	gap: $sapphire-sizes--small;
+
+	.ClickableTag {
+		@include flex-center-vertically();
+
+		background-color: $regular-eta;
+		border: 1px solid $regular-alpha;
+		border-radius: 100px;
+		gap: $sapphire-sizes--small;
+		height: 30px;
+		padding: 0 8px;
+
+		div {
+			line-height: 14px;
+		}
+
+		.icon {
+			color: $mid-light-grey;
+			cursor: pointer;
+		}
+	}
+}

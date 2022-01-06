@@ -1,0 +1,85 @@
+.AddLine {
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+
+	&_HeaderItems {
+		line-height: 36px;
+		padding-left: $sapphire-sizes--medium;
+
+		> div {
+			color: $mid-light-grey;
+			font-family: $font-family-latin-bold;
+			font-size: $font-size-small;
+			margin-left: auto;
+			margin-right: $sapphire-sizes--medium;
+			text-transform: uppercase;
+			white-space: nowrap;
+		}
+	}
+
+	&__ContentContainer {
+		padding: 20px 0;
+	}
+
+	&_FooterItems {
+		div:last-child {
+			float: right;
+			margin-right: 10px;
+		}
+	}
+
+	&__ContentContainer {
+		background: $regular-white;
+		border: 1px solid $light-grey;
+		border-top-left-radius: 2px;
+		border-top-right-radius: 2px;
+		line-height: 33px;
+		min-height: 64px;
+		vertical-align: middle;
+
+		&.TextCenter {
+			text-align: center;
+		}
+	}
+
+	&_SubContentContainer {
+		border-bottom: 1px solid $light-grey;
+		border-left: 1px solid $light-grey;
+		border-right: 1px solid $light-grey;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+		.AddLine__Footer {
+			padding: 20px 0;
+		}
+	}
+}
+
+.desktop.small {
+	.AddLine_HeaderItems > div {
+		margin-right: 5px;
+	}
+}
+
+.AR,
+.FA {
+	.AddLine {
+		&_HeaderItems {
+			padding-left: 0;
+			padding-right: $sapphire-sizes--medium;
+
+			> div {
+				margin-left: $sapphire-sizes--medium;
+				margin-right: auto;
+				vertical-align: middle;
+			}
+		}
+
+		&_FooterItems {
+			div:last-child {
+				float: left;
+				margin-left: 10px;
+				margin-right: auto;
+			}
+		}
+	}
+}

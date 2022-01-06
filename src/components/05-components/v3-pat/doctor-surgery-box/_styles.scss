@@ -1,0 +1,79 @@
+.DoctorBox {
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	border-radius: $border-radius-medium;
+	font-size: 1em;
+	position: relative;
+	width: 230px;
+
+	&.DoctorStatus {
+		border-radius: 0;
+		display: table;
+		padding: $sapphire-sizes--small $sapphire-sizes--medium;
+		text-align: center;
+		width: 100%;
+
+		&.Available {
+			background-color: $regular-green;
+			border: none;
+			color: $regular-white;
+		}
+
+		&.Locked {
+			background-color: $light-grey;
+			border: none;
+		}
+	}
+
+	&_DoctorSurgeryHeader {
+		font-family: $font-family-latin-bold;
+		padding: $sapphire-sizes--medium;
+	}
+
+	.DoctorStatusMessage {
+		font-size: 0.857em;
+	}
+
+	.DoctorStatusMessage,
+	.DoctorStatusLocked {
+		text-align: initial;
+		vertical-align: middle;
+	}
+
+	.AvailableSlotSeverity {
+		display: flex;
+
+		&_Counter {
+			border-left: 1px solid $light-grey;
+			border-top: none;
+			display: inline-block;
+			padding: $sapphire-sizes--small 0;
+			width: 100%;
+
+			&:first-child {
+				border-left: none;
+				border-right: none;
+			}
+
+			> * {
+				&:first-child {
+					font-family: $font-family-latin-bold;
+					font-size: $font-size-heading3;
+				}
+
+				&:last-child {
+					color: $regular-grey;
+					font-size: $font-size-small;
+				}
+			}
+		}
+	}
+}
+
+.AR,
+.FA {
+	.AvailableSlotSeverity_Counter {
+		border-left: none;
+		border-right: 1px solid $light-grey;
+	}
+}

@@ -1,0 +1,162 @@
+$remote-appt-header-size: $sapphire-sizes--xxlarge;
+
+.RemoteAppointment {
+	@include shadow-small;
+
+	background-color: $body-color;
+	border-radius: $border-radius-medium;
+	display: none;
+	height: 260px;
+	overflow: hidden;
+	position: absolute;
+	right: -50%;
+	top: 30%;
+	width: 33%;
+
+	&__Header {
+		@include flex-center-vertically();
+
+		background-color: $mid-dark-grey;
+		cursor: all-scroll;
+		height: $remote-appt-header-size;
+		justify-content: space-between;
+		padding: 0 $sapphire-sizes--medium;
+	}
+
+	&__Title {
+		@include flex-center-vertically();
+
+		color: $regular-white;
+		gap: $sapphire-sizes--small;
+	}
+
+	&__Controls {
+		@include flex-center-vertically();
+
+		gap: $sapphire-sizes--medium;
+
+		.Minimize,
+		.Small,
+		.Medium,
+		.FullScreen {
+			cursor: pointer;
+			height: 20px;
+			width: 20px;
+			z-index: 1;
+		}
+
+		.Minimize {
+			@include flex-center-vertically();
+
+			&::before {
+				background-color: white;
+				content: '';
+				display: block;
+				height: 1px;
+				width: 20px;
+			}
+		}
+
+		.Small,
+		.Medium {
+			border: 1px solid white;
+			display: none;
+			height: $sapphire-sizes--medium;
+		}
+
+		.Small {
+			width: 12px;
+		}
+
+		.FullScreen {
+			border: 1px solid $regular-white;
+			display: none;
+			position: relative;
+
+			&::before,
+			&::after {
+				@include absolute-center();
+
+				background-color: $mid-dark-grey;
+				content: '';
+				display: block;
+
+				position: absolute;
+			}
+
+			&::before {
+				height: 22px;
+				width: $sapphire-sizes--small;
+			}
+
+			&::after {
+				height: $sapphire-sizes--small;
+				width: 22px;
+			}
+		}
+	}
+
+	&__Content {
+		height: calc(100% - #{$remote-appt-header-size});
+		width: 100%;
+
+		> iframe {
+			border: none;
+			height: 100% !important;
+			overflow: hidden;
+			width: 100%;
+		}
+	}
+
+	&__RestoreWindow {
+		display: none;
+	}
+
+	&--minimized {
+		&.RemoteAppointment--callStarted {
+			border-color: transparent;
+
+			.RemoteAppointment__Header {
+				display: none;
+			}
+
+			.RemoteAppointment__Content {
+				height: 100%;
+				position: relative;
+			}
+
+			.RemoteAppointment__RestoreWindow {
+				@include flex-center-total();
+
+				color: #dcdcdc; // Zoom's icon color
+				cursor: pointer;
+				font-size: 20px; // Zoom's icon size
+				height: $remote-appt-header-size;
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: 56px;
+
+				&:hover {
+					background-color: #424345; // Zoom's button hover style
+				}
+
+				.icon {
+					margin-top: -5px;
+				}
+			}
+		}
+	}
+
+	&--callStarted {
+		.RemoteAppointment__Controls {
+			.Small {
+				display: block;
+			}
+
+			.FullScreen {
+				display: block;
+			}
+		}
+	}
+}

@@ -1,0 +1,164 @@
+.SectionExpandableCustom {
+	&:not(.expanded) {
+		.SectionExpandable_headerCustom .icon {
+			transition: transform 0.5s;
+		}
+
+		.SectionExpandableCustom_content {
+			height: 0;
+			overflow: hidden;
+		}
+
+		.SectionExpandable-toggler {
+			display: none;
+		}
+	}
+
+	&.expanded {
+		.SectionExpandable_headerCustom {
+			border-radius: $border-radius-medium $border-radius-medium 0 0;
+		}
+
+		.SectionExpandableCustom_content {
+			background-color: $regular-white;
+			border: 1px solid $light-grey;
+			border-radius: 0 0 $border-radius-medium $border-radius-medium;
+			border-top: none;
+			height: auto !important;
+		}
+
+		.SectionExpandable_headerCustom .SectionExpandable___icon .icon,
+		.SectionExpandable_headerCustom .SectionExpandable__icon .fa {
+			transform: rotate(180deg);
+			transition: transform 0.5s;
+		}
+	}
+
+	&--backgroundTransparent {
+		div.SectionExpandable {
+			&_headerCustom {
+				background-color: transparent;
+				border: 1px solid transparent;
+			}
+		}
+
+		&.expanded {
+			.SectionExpandableCustom_content {
+				background-color: transparent;
+				border: 1px solid transparent;
+			}
+		}
+
+		.SectionExpandableInside {
+			background-color: transparent;
+		}
+	}
+
+	&_content--empty {
+		display: block;
+		font-size: 1em;
+		padding: 10px;
+	}
+
+	.PlaceHolderTitle {
+		font-family: $font-family-latin-bold;
+		font-size: $font-size-heading4;
+		width: 100%;
+	}
+
+	.AR .PlaceHolderTitle {
+		font-family: $font-family-arabic-bold;
+	}
+
+	.SectionExpandable {
+		&__icon {
+			color: $regular-alpha;
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+		&___icon {
+			padding: 0 12px;
+
+			.icon {
+				@include arrow-button($regular-beta, 20px, 0.7em, 90deg);
+			}
+		}
+
+		&_headerCustom {
+			background-color: $regular-white;
+			border: 1px solid $light-grey;
+			border-radius: $border-radius-medium;
+			cursor: pointer;
+			display: table;
+			height: 62px;
+			padding: 8px 0;
+			width: 100%;
+
+			.icon {
+				transition: transform 0.5s;
+			}
+
+			.SectionExpandable___icon,
+			.SectionExpandable__icon .fa {
+				transition: transform 0.5s;
+			}
+		}
+	}
+
+	.SectionExpandable_contentCustom {
+		border-bottom-left-radius: $border-radius-medium;
+		border-bottom-right-radius: $border-radius-medium;
+		border-top: none;
+		box-sizing: content-box;
+		height: 0;
+		margin-top: 0;
+		overflow: hidden;
+		padding: 0 10px;
+		transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1);
+		visibility: visible;
+	}
+
+	.ExpandableHeader {
+		display: table-cell;
+		vertical-align: middle;
+
+		> div {
+			display: table-cell;
+			padding-right: $sapphire-sizes--medium;
+			vertical-align: middle;
+
+			&:first-line {
+				text-transform: capitalize;
+			}
+		}
+	}
+}
+
+.SectionExpandable-toggled {
+	@include flex-center-vertically();
+
+	.TimeLineSearchHeader {
+		flex: 1;
+	}
+}
+
+.AR,
+.FA {
+	.SectionExpandableCustom {
+		.PlaceHolderTitle {
+			padding-left: 0;
+			padding-right: 15px;
+		}
+
+		.SectionExpandable__icon {
+			padding-left: 0;
+			padding-right: 20px;
+		}
+
+		.ExpandableHeader > div {
+			padding-left: 10px;
+			padding-right: 0;
+		}
+	}
+}

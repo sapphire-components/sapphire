@@ -1,0 +1,41 @@
+.ButtonClick {
+	&.click {
+		> a,
+		> div,
+		> span {
+			background-color: $regular-eta;
+			border: 1px solid $regular-beta;
+		}
+	}
+
+	> a,
+	> div,
+	> span {
+		@include flex-center-total;
+
+		background-color: $regular-white;
+		border: 1px solid $light-grey;
+		border-radius: $border-radius-default;
+		color: $regular-beta;
+		cursor: pointer;
+		font-family: $font-family-latin-bold;
+		gap: $sapphire-sizes--small;
+		height: $sapphire-sizes--xxlarge;
+		padding: 0 $sapphire-sizes--xlarge;
+		transition: all 0.1s ease-in-out;
+		width: 100%;
+
+		&:hover {
+			background-color: $regular-eta;
+			border: 1px solid $regular-alpha;
+		}
+
+		&:focus {
+			border: 1px solid $regular-alpha;
+		}
+
+		.icon {
+			font-size: 1.429em;
+		}
+	}
+}

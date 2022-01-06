@@ -1,0 +1,93 @@
+.ClinicalBadge {
+	@include flex-center-total();
+
+	flex-direction: column;
+	border: 1px solid $light-grey;
+	border-radius: $border-radius-default;
+	color: $mid-light-grey;
+	height: 50px;
+	padding: 3px 5px;
+	position: relative;
+	width: 32px;
+
+	&:hover {
+		background-color: $sapphire-light;
+	}
+
+	&--noHover {
+		pointer-events: none;
+	}
+
+	&.ColorZetaBG {
+		border: none;
+		color: $regular-beta;
+
+		&:hover {
+			background-color: darken($regular-zeta, 5%);
+		}
+	}
+
+	&.ColorLightRedBG {
+		border: none;
+		color: $regular-red;
+
+		&:hover {
+			background-color: darken($light-red, 5%);
+		}
+	}
+
+	&.ColorLightGreenBG {
+		border: none;
+		color: $regular-green;
+
+		&:hover {
+			background-color: darken($light-green, 5%);
+		}
+	}
+
+	&.ColorLightBlueBG {
+		border: none;
+		color: $regular-blue;
+
+		&:hover {
+			background-color: darken($light-blue, 5%);
+		}
+	}
+
+	&-label {
+		font-size: $font-size-small;
+	}
+
+	.icon {
+		font-size: $font-size-heading3;
+	}
+}
+
+.ClinicalBadgeWarning {
+	display: block;
+	position: relative;
+
+	&::after {
+		color: $regular-red;
+		content: '\e939';
+		font-family: $font-family-icons;
+		position: absolute;
+		right: -3px;
+		top: -6px;
+
+		.AR & {
+			left: -3px;
+			right: auto;
+		}
+	}
+}
+
+.PatientHabitsContainer {
+	display: flex;
+	gap: $sapphire-sizes--xsmall;
+
+	> .OSInline {
+		display: inline-block;
+		vertical-align: middle;
+	}
+}

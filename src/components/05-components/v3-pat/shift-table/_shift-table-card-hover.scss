@@ -1,0 +1,25 @@
+.ShiftTableCardHover {
+	@include flex-center-total;
+
+	border-radius: $border-radius-default;
+	color: $regular-grey;
+	flex: 1;
+	min-height: $sapphire-sizes--large;
+	width: 100%;
+
+	&:hover {
+		background-color: $sapphire-light;
+	}
+
+	&__Content {
+		@include flex-center-total;
+
+		cursor: pointer;
+		height: 100%;
+		width: 100%;
+	}
+
+	&--selected {
+		background-color: $sapphire-light;
+	}
+}

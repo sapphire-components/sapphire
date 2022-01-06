@@ -1,0 +1,14 @@
+.BlankState {
+	@include blank-state;
+
+	&--onlyMessage {
+		border: none;
+		justify-content: flex-start;
+		min-height: unset;
+	}
+
+	b {
+		font-family: 'LatoBold';
+		padding: 0 3px;
+	}
+}

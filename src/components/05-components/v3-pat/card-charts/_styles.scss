@@ -1,0 +1,259 @@
+$card-charts-prop-width: 226px;
+
+.CardCharts {
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	border-radius: $border-radius-medium;
+	overflow: hidden;
+	position: relative;
+
+	&__LineHover {
+		background-color: $regular-alpha;
+		display: block;
+		display: none;
+		height: calc(100% - #{$sapphire-sizes--largest});
+		left: 0;
+		position: absolute;
+		top: $sapphire-sizes--largest;
+		width: 2px;
+		z-index: 1;
+	}
+
+	&__Header {
+		border-bottom: 1px solid $light-grey;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__HeaderTitle {
+		@include flex-center-vertically;
+
+		border-bottom: 1px solid $light-grey;
+		flex-basis: 100%;
+		min-height: $sapphire-sizes--largest;
+		padding: $sapphire-sizes--medium;
+	}
+
+	&__HeaderMiddle {
+		.CardAll {
+			@include flex-center-vertically;
+		}
+	}
+
+	&__HeaderActions {
+		display: flex;
+		gap: $sapphire-sizes--small;
+		justify-content: flex-end;
+	}
+
+	&__HeaderProperties {
+		@include flex-center-vertically;
+
+		background-color: $white-grey;
+		border-right: 1px solid $light-grey;
+		max-width: $card-charts-prop-width;
+		padding: $sapphire-sizes--small $sapphire-sizes--medium;
+		width: $card-charts-prop-width;
+
+		.ButtonDropdown_button.Button {
+			max-width: 193px;
+		}
+	}
+
+	&__HeaderChart {
+		display: flex;
+		flex: 1;
+
+		> div {
+			display: flex;
+			flex: 1;
+			flex-direction: column;
+			padding: $sapphire-sizes--small;
+			position: relative;
+
+			> div {
+				flex: 1;
+			}
+
+			&::after,
+			.FakeColumns {
+				background-color: $sapphire-light;
+				content: '';
+				display: block;
+				height: 2000px;
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: 1px;
+			}
+
+			&:last-of-type::after {
+				background-image: unset;
+			}
+		}
+	}
+
+	&__Content {
+		display: flex;
+		position: relative;
+	}
+
+	&__Properties {
+		background-color: $white-grey;
+		border-right: 1px solid $light-grey;
+		min-width: $card-charts-prop-width;
+
+		.SmallHeightChart,
+		.ListRecords > div {
+			border-bottom: 1px solid $light-grey;
+			display: flex;
+			flex-direction: column;
+			height: 118px;
+			justify-content: center;
+			margin-top: 1px;
+			padding: $sapphire-sizes--medium;
+		}
+
+		.ListRecords > div {
+			&:last-of-type {
+				border-bottom: none;
+				margin-bottom: -1px;
+			}
+		}
+
+		.SmallHeightChart {
+			height: 72px;
+		}
+
+		.ButtonDropdown_button.Button {
+			max-width: 193px;
+		}
+	}
+
+	&__Charts {
+		flex: 1;
+		margin-bottom: -1px;
+		margin-left: -39px;
+
+		.ListRecords > span,
+		.SmallHeightChart > span {
+			display: block;
+			height: 122px;
+			margin-top: -3px;
+			overflow: hidden;
+
+			.LabelYAxis {
+				color: $dark-grey;
+				font-family: $font-family-latin-regular;
+				font-size: 12px; /* Needs to be set in pixel */
+				text-align: end;
+				width: 24px;
+			}
+
+			.highcharts-xaxis-grid path:last-of-type {
+				display: none;
+			}
+		}
+
+		.SmallHeightChart > span {
+			height: 76px;
+		}
+	}
+
+	&__EmptyState {
+		align-items: center;
+		background-color: $regular-white;
+		display: flex;
+		height: 100%;
+		justify-content: center;
+		margin-left: $card-charts-prop-width;
+		opacity: 80%;
+		position: absolute;
+		width: calc(100% - #{$card-charts-prop-width});
+	}
+}
+
+.ChartsPopup {
+	.LayoutPopup {
+		.LayoutPopup__body__content {
+			overflow: hidden;
+		}
+	}
+
+	.CardCharts {
+		border: none;
+		margin: 0;
+		overflow: visible;
+
+		.CardCharts__Header {
+			background-color: $regular-white;
+			position: sticky;
+			top: 0;
+			transition: all 0.4s ease;
+			z-index: 1;
+		}
+
+		.CardCharts__HeaderChart {
+			> div:after {
+				display: none;
+			}
+		}
+
+		.CardCharts__Content {
+			@include component-scroll-root();
+
+			overflow-x: hidden;
+		}
+
+		.CardCharts__Properties {
+			height: min-content;
+
+			> .ListRecords > div {
+				height: 162px;
+			}
+		}
+
+		.CardCharts__Charts {
+			margin-bottom: 0;
+
+			> .ListRecords > span {
+				height: 166px;
+
+				&:last-of-type {
+					.highcharts-axis,
+					.highcharts-grid path:first-of-type {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+.highcharts-tooltip-container {
+	z-index: 1;
+
+	.tooltipx {
+		font-family: $font-family-latin-regular;
+
+		.tooltipx__title {
+			font-family: $font-family-latin-bold;
+			font-size: 14px; /* Needs to be set in pixel */
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			width: 250px;
+		}
+
+		.tooltipx__values {
+			align-items: center;
+			display: flex;
+			font-size: 14px; /* Needs to be set in pixel */
+			gap: $sapphire-sizes--medium;
+			height: 20px;
+			justify-content: space-between;
+			padding-top: $sapphire-sizes--small;
+			white-space: nowrap;
+		}
+	}
+}

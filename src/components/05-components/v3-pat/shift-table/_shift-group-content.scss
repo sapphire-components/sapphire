@@ -1,0 +1,102 @@
+.ShiftGroupContent {
+	border: 1px solid $light-grey;
+	border-radius: $border-radius-medium;
+	overflow: hidden;
+
+	&__Header {
+		align-items: stretch;
+		background-color: $regular-white;
+		display: flex;
+	}
+
+	&__HeaderLeft {
+		@include flex-center-vertically;
+
+		border-right: 1px solid $light-grey;
+		gap: $sapphire-sizes--medium;
+		padding: $sapphire-sizes--medium $sapphire-sizes--large;
+		width: 424px;
+
+		.AR & {
+			border-left: 1px solid $light-grey;
+			border-right: none;
+		}
+	}
+
+	&__HeaderContent {
+		display: flex;
+		flex: 1;
+
+		> div {
+			@include flex-center-total;
+
+			border-right: 1px solid $sapphire-light;
+			flex: 1;
+			min-width: 130px;
+
+			&:last-of-type {
+				border-right-color: transparent;
+			}
+
+			.AR & {
+				border-left: 1px solid $sapphire-light;
+				border-right: none;
+
+				&:last-of-type {
+					border-left-color: transparent;
+				}
+			}
+		}
+
+		.GreenDot {
+			background-color: $regular-green;
+			border-radius: 50%;
+			height: $sapphire-sizes--small;
+			width: $sapphire-sizes--small;
+		}
+	}
+
+	&__HeaderExpandable {
+		cursor: pointer;
+		transform: rotate(180deg);
+		transition: all 0.1s;
+
+		span.icon {
+			@include arrow-button($dark-grey);
+
+			font-size: $font-size-small;
+			height: 20px;
+			width: 20px;
+		}
+	}
+
+	&__Content {
+		> .ShiftTableRow:last-of-type,
+		.ListRecords > span:last-of-type .ShiftTableRow {
+			.ShiftTableRow__Left,
+			.ShiftTableRow__Content {
+				border-bottom: none;
+			}
+		}
+	}
+
+	&--expandable {
+		.ShiftGroupContent__Content {
+			display: none;
+		}
+	}
+
+	&--expanded {
+		.ShiftGroupContent__Header {
+			border-bottom: 1px solid $light-grey;
+		}
+
+		.ShiftGroupContent__HeaderExpandable {
+			transform: rotate(-90deg);
+		}
+
+		.ShiftGroupContent__Content {
+			display: block;
+		}
+	}
+}

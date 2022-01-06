@@ -1,0 +1,23 @@
+.WorklistPageHeader {
+	background-color: $body-color;
+	padding-bottom: $sapphire-sizes--medium;
+	padding-top: $sapphire-sizes--large;
+	position: sticky;
+	top: 64px;
+	z-index: 2;
+}
+
+.WorklistPageContent {
+	.ShiftTableRow__Left {
+		padding-bottom: $sapphire-sizes--small;
+		padding-top: $sapphire-sizes--small;
+	}
+
+	.ShiftTableCell {
+		padding: $sapphire-sizes--small;
+	}
+
+	.ShiftTableCardEmpty {
+		height: calc(100% - 16px);
+	}
+}

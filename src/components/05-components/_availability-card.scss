@@ -1,0 +1,157 @@
+.AvailabilityCardContainer {
+	border: 1px solid $light-grey;
+	border-radius: $border-radius-default;
+	display: flex;
+	min-height: 50px;
+	overflow: hidden;
+	width: 100%;
+
+	&.AvailabilityCardContainer__bgColor {
+		background-color: $light-grey;
+
+		.AvailabilityCardLeftContainer {
+			background-color: unset;
+		}
+	}
+
+	.AvailabilityCardLeftContainer {
+		align-items: center;
+		background-color: $body-color;
+		color: $dark-grey;
+		display: flex;
+		font-family: $font-family-latin-bold;
+		font-size: 1.143em;
+		justify-content: center;
+		padding: 0 $sapphire-sizes--medium;
+		width: 55px;
+
+		&.AvailabilityCardLeftRed {
+			background-color: $light-red;
+		}
+
+		&.AvailabilityCardLeftGreen {
+			background-color: $light-green;
+		}
+	}
+
+	.AvailabilityCardRightContainer {
+		background-color: $regular-white;
+		border-left: 1px solid $light-grey;
+		display: flex;
+		flex: 1;
+		padding: 5px $sapphire-sizes--medium;
+
+		.ExtraProcedure,
+		.AvailabilityCardRightDate {
+			display: flex;
+			flex: 1;
+		}
+
+		.ExtraProcedure {
+			align-items: center;
+			justify-content: center;
+		}
+
+		.AvailabilityCardRightDate {
+			.ScheduleDate {
+				.DateContainer {
+					display: flex;
+					height: 100%;
+					justify-content: flex-end;
+
+					> div {
+						align-items: center;
+						display: flex;
+						width: 120px;
+
+						a[ui*='ChooseDateTimeLnk'] {
+							display: contents;
+
+							> div {
+								text-align: end;
+								width: 100%;
+							}
+						}
+					}
+
+					&__info {
+						display: flex;
+						justify-content: space-between;
+					}
+				}
+			}
+
+			.ScheduleDateBold {
+				color: $dark-red;
+				font-family: $font-family-latin-bold;
+			}
+
+			.ScheduleAction {
+				align-items: center;
+				display: inline-flex;
+				justify-content: flex-end;
+				min-width: 50px;
+				width: 50px;
+
+				> div {
+					margin-left: 12px;
+				}
+			}
+		}
+	}
+
+	.ActionsMenu-label {
+		display: block;
+	}
+
+	.AvailabilityCardContainer__Wrapper {
+		flex: 1;
+	}
+
+	.AvailabilityCardContainer__ExpandableContent {
+		display: none;
+	}
+
+	&--open {
+		.AvailabilityCardLeftContainer {
+			align-items: flex-start;
+			border-right: 1px solid $light-grey;
+			line-height: 50px;
+		}
+
+		.AvailabilityCardRightContainer {
+			border-left: none;
+		}
+
+		.AvailabilityCardContainer__ExpandableContent {
+			border-top: 1px solid $light-grey;
+			display: block;
+			margin: 0 15px;
+			padding: 15px 0;
+		}
+	}
+}
+
+.AR,
+.FA {
+	.AvailabilityCardContainer .AvailabilityCardLeftContainer {
+		font-family: $font-family-arabic-bold;
+	}
+
+	.AvailabilityCardContainer .AvailabilityCardRightContainer .AvailabilityCardRightDate .ScheduleDateBold {
+		font-family: $font-family-arabic-bold;
+	}
+
+	.AvailabilityCardRightDate {
+		text-align: left;
+	}
+
+	.ScheduleAction {
+		margin-left: 0;
+		margin-right: 30px;
+	}
+
+	.AvailabilityCardRightDate div {
+		text-align: left !important;
+	}
+}

@@ -1,0 +1,37 @@
+@each $size in $sapphire-sizes {
+	$label: nth($size, 1);
+	$value: nth($size, 2);
+
+	.MultiPadding#{$label} {
+		padding: #{$value};
+	}
+
+	.MultiPaddingLeft#{$label} {
+		padding-left: #{$value};
+	}
+
+	.MultiPaddingRight#{$label} {
+		padding-right: #{$value};
+	}
+
+	.MultiPaddingTop#{$label} {
+		padding-top: #{$value};
+	}
+
+	.MultiPaddingBottom#{$label} {
+		padding-bottom: #{$value};
+	}
+
+	.AR,
+	.FA {
+		.MultiPaddingLeft#{$label} {
+			padding-left: auto;
+			padding-right: #{$value};
+		}
+
+		.MultiPaddingRight#{$label} {
+			padding-left: #{$value};
+			padding-right: auto;
+		}
+	}
+}

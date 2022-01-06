@@ -1,0 +1,85 @@
+.CardIcon {
+	@include flex-center-total;
+
+	background-color: $body-color;
+	border-radius: $border-radius-default;
+	height: 32px;
+	width: 32px;
+
+	&.ColorGreen,
+	&.ColorOrange {
+		position: relative;
+
+		.icon:last-of-type {
+			font-size: $font-size-heading2;
+			left: $sapphire-sizes--medium;
+			position: absolute;
+			top: $sapphire-sizes--medium;
+		}
+	}
+
+	&.ColorGreen {
+		background-color: $light-green;
+		color: $dark-green;
+
+		.icon:last-of-type {
+			color: $regular-green;
+		}
+	}
+
+	&.ColorOrange {
+		background-color: $light-yellow;
+		color: $dark-orange;
+
+		.icon:last-of-type {
+			color: $regular-orange;
+		}
+	}
+
+	&.ColorTransparent {
+		background-color: transparent;
+		border: 1px solid $light-grey;
+		color: $mid-light-grey;
+	}
+
+	&Alert {
+		@extend .CardIcon;
+
+		position: relative;
+
+		&:before {
+			bottom: -4px;
+			color: $regular-red;
+			content: '\e952';
+			display: block;
+			font-family: $font-family-icons;
+			position: absolute;
+			right: -2px;
+			text-align: center;
+			width: 15px;
+			z-index: 1;
+		}
+	}
+}
+
+.CardUserInitials {
+	@include flex-center-total;
+
+	background-color: $mid-light-grey;
+	border-radius: 50%;
+	color: $regular-white;
+	font-family: $font-family-latin-bold;
+	height: 32px;
+	width: 32px;
+
+	.AR & {
+		font-family: $font-family-arabic-bold;
+	}
+}
+
+.CardHugeIcon {
+	@include flex-center-total;
+
+	font-size: $font-size-huge;
+	line-height: 32px;
+}

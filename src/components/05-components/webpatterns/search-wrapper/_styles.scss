@@ -1,0 +1,42 @@
+.Page .Search_wrapper {
+	line-height: 1;
+	position: relative;
+
+	&:after {
+		color: $regular-grey;
+		content: '\e690';
+		font-family: $font-family-icons;
+		font-size: $font-size-heading4;
+		left: 1px;
+		padding-right: 10px;
+		pointer-events: none;
+		position: absolute;
+		top: 11px;
+		transform: rotateY(180deg);
+		z-index: 1;
+	}
+
+	input[type='text'] {
+		border-radius: 100px;
+		box-shadow: none;
+		height: 36px;
+		line-height: 36px;
+		padding: 0 $sapphire-sizes--medium 0 35px;
+	}
+}
+
+.AR,
+.FA {
+	div.Search_wrapper {
+		&:after {
+			left: auto;
+			right: 15px;
+		}
+
+		input[type='text'] {
+			border: 1px solid $light-grey;
+			padding-left: $sapphire-sizes--medium;
+			padding-right: 35px;
+		}
+	}
+}

@@ -1,0 +1,149 @@
+.ScaleList {
+	background: none;
+	border-bottom: 1px solid $light-grey;
+	display: flex;
+	padding: $sapphire-sizes--small 0;
+	width: 100%;
+
+	&::only-of-type {
+		background: none;
+	}
+
+	&:not(.CardScale) {
+		.ScaleList_scaleContent {
+			display: flex;
+			flex-direction: row;
+			gap: $sapphire-sizes--small;
+			justify-content: flex-end;
+		}
+	}
+
+	&.SecondaryBackground {
+		background: linear-gradient(
+			to top,
+			$regular-white 0%,
+			$regular-white 29%,
+			$regular-eta 30%,
+			$regular-eta 70%,
+			$regular-white 71%,
+			$regular-white 100%
+		);
+	}
+
+	&.isSubtotal,
+	&.isTitle,
+	&.Ruler {
+		border-bottom: none;
+	}
+
+	&.isTitle {
+		.ScaleList_scaleContent .ScaleCard {
+			margin: 0 $sapphire-sizes--small;
+		}
+	}
+
+	&.MultipleScale {
+		&.SecondaryBackground {
+			background: linear-gradient(
+				to top,
+				$regular-white 0%,
+				$regular-white 11%,
+				$regular-eta 3%,
+				$regular-eta 85%,
+				$regular-white 90%,
+				$regular-white 100%
+			);
+		}
+
+		&.isTitle .ButtonGroupScale {
+			color: $dark-grey;
+			font-family: $font-family-latin-bold;
+			font-size: 1em;
+			text-align: center;
+		}
+
+		&.isSubtotal {
+			border-top: 1px solid $light-grey;
+			font-size: $font-size-heading4;
+		}
+
+		.ScaleList_title:empty + .ScaleList_scaleContent {
+			flex-basis: auto;
+		}
+	}
+
+	&.CardScale {
+		.ScaleList_title:empty + .ScaleList_scaleContent {
+			flex-basis: 70%;
+		}
+	}
+
+	&.EvenLine {
+		background: $regular-white;
+	}
+
+	&.isSubtotal .ButtonGroupScale {
+		align-self: center;
+		font-family: $font-family-latin-bold;
+		font-size: 1em;
+		text-align: center;
+	}
+
+	&_title {
+		align-self: center;
+		flex: 1;
+		flex-basis: 40%;
+		font-family: $font-family-latin-bold;
+		font-size: 1em;
+		text-align: left;
+
+		&:empty + .ScaleList_scaleContent {
+			&,
+			> span.ListRecords {
+				flex-basis: 100%;
+				justify-content: center;
+			}
+		}
+	}
+
+	&_scaleContent {
+		&,
+		> span.ListRecords {
+			flex-basis: 70%;
+		}
+
+		> span.ListRecords {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+		}
+
+		.ScaleCard {
+			margin: 10px;
+			width: 100% !important;
+		}
+
+		.ButtonGroupScale {
+			padding: 12px;
+			width: 155px;
+
+			.ButtonGroup {
+				text-align: center;
+			}
+
+			.ButtonGroup_button {
+				min-width: 40px;
+			}
+		}
+	}
+
+	&_inputValue {
+		display: none;
+	}
+}
+
+.ScaleMainStructure_content {
+	.ListRecords > .ScaleList:last-of-type {
+		border-bottom: none;
+	}
+}

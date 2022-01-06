@@ -1,0 +1,23 @@
+.TooltipWithCounter {
+	display: block;
+}
+
+.tooltipstered.balloon {
+	cursor: pointer;
+}
+
+.tooltip_style {
+	@include shadow-medium;
+
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	color: $mid-dark-grey;
+	padding: $sapphire-sizes--medium !important;
+
+	.tooltipster-content {
+		font-size: $font-size-normal;
+		line-height: 1.2;
+		overflow: hidden;
+		padding: $sapphire-sizes--small $sapphire-sizes--medium;
+	}
+}

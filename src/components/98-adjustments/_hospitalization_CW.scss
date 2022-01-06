@@ -1,0 +1,11 @@
+div[id*='LinkedHospitalizations'] {
+	border-top: none;
+}
+
+span[id*='RelatedVisitsRL'] {
+	:not(:first-child) {
+		.PersonCard_header {
+			border-top: none;
+		}
+	}
+}

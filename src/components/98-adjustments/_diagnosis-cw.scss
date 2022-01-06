@@ -1,0 +1,14 @@
+/* Used only in the Diagnoses Page*/
+.ListRelatedOrder {
+	.MainInteractiveCard {
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
+	.RelatedOrdersTable {
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+		margin-bottom: $sapphire-sizes--small;
+		margin-top: -($sapphire-sizes--small + 1px);
+	}
+}

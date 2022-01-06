@@ -1,0 +1,62 @@
+div.TimelineDetail {
+	display: flex;
+	gap: $sapphire-sizes--large;
+	width: 100%;
+
+	&_content {
+		font-family: $font-family-latin-bold;
+
+		.AR & {
+			font-family: $font-family-arabic-bold;
+		}
+	}
+
+	&_leftContent {
+		min-width: 64px;
+		padding-top: 3px;
+		text-align: center;
+
+		.icon {
+			color: $regular-grey;
+		}
+	}
+
+	&_rightContent {
+		flex: 1;
+
+		.ItemLogDetails {
+			margin-bottom: $sapphire-sizes--xsmall;
+		}
+	}
+
+	&__time {
+		color: $regular-grey;
+		font-size: $font-size-small;
+		margin-top: $sapphire-sizes--xsmall;
+	}
+
+	&__label {
+		text-align: center;
+	}
+}
+
+.AR,
+.FA {
+	.TimelineDetail {
+		&_content {
+			padding-left: auto;
+			padding-right: 20px;
+		}
+
+		&_leftContent {
+			margin-left: auto;
+			margin-right: 5px;
+			padding-left: auto;
+			padding-right: 10px;
+		}
+
+		&_rightContent {
+			padding: 15px 10px 15px 20px;
+		}
+	}
+}

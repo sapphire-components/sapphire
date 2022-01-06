@@ -1,0 +1,136 @@
+.modalPopup {
+	@include flex-center-total;
+
+	display: none;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 20;
+
+	&.Open {
+		display: flex;
+
+		&.showclose {
+			.modalPopup_close {
+				cursor: pointer;
+				display: inline-block;
+				font-family: $font-family-latin-bold;
+				font-size: 1em;
+				max-width: 15px;
+				position: absolute;
+				right: $sapphire-sizes--xlarge;
+				top: 20px;
+			}
+		}
+
+		.modalPopup_container {
+			@include shadow-large;
+
+			background-color: $regular-white;
+			border-radius: $border-radius-medium;
+			display: block;
+			max-height: 80vh;
+			min-width: 250px;
+			padding: $sapphire-sizes--medium $sapphire-sizes--xlarge;
+			position: fixed;
+			width: auto;
+			z-index: 60;
+		}
+
+		.modalPopup_close {
+			display: none;
+		}
+
+		.modalPopup_title {
+			@extend .Heading2;
+
+			border-bottom: 1px solid $light-grey;
+			margin-left: -$sapphire-sizes--xlarge;
+			margin-right: -$sapphire-sizes--xlarge;
+			padding: 0 $sapphire-sizes--xlarge $sapphire-sizes--medium $sapphire-sizes--xlarge;
+
+			&:empty {
+				content: '\00a0';
+			}
+
+			.AR & {
+				font-family: $font-family-arabic-bold;
+			}
+		}
+
+		.modalPopup_content {
+			height: 100%;
+
+			> div {
+				display: flex;
+				flex-direction: column;
+				max-height: calc(80vh - 60px);
+			}
+
+			.Scrollable {
+				margin-right: -$sapphire-sizes--small;
+				max-width: 900px;
+				overscroll-behavior: contain;
+				padding-right: $sapphire-sizes--small;
+
+				.ListRecords > *:first-child {
+					margin-top: $sapphire-sizes--large;
+				}
+
+				.AR & {
+					margin-left: -$sapphire-sizes--small;
+					margin-right: 0;
+					padding-left: $sapphire-sizes--small;
+					padding-right: 0;
+				}
+			}
+		}
+
+		.modalPopup_div {
+			background: rgba(0, 0, 0, 0.3);
+			height: 100%;
+			left: 0;
+			overflow: none;
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: 50;
+		}
+
+		.modalPopup_actions {
+			margin-top: $sapphire-sizes--medium;
+			text-align: right;
+		}
+	}
+}
+
+.CustomModalPopup {
+	margin: -$sapphire-sizes--medium (-$sapphire-sizes--xlarge);
+	text-align: start;
+
+	&__Header,
+	&__Footer {
+		align-items: center;
+		display: inline-flex;
+		justify-content: space-between;
+		padding: $sapphire-sizes--medium $sapphire-sizes--large;
+	}
+
+	&__Header {
+		border-bottom: 1px solid $light-grey;
+		font-size: 14px;
+		width: 100%;
+	}
+
+	&__Content {
+		padding: $sapphire-sizes--large;
+	}
+
+	&__Footer {
+		background-color: $body-color;
+		border-top: 1px solid $light-grey;
+	}
+}

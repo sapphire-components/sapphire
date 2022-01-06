@@ -1,0 +1,41 @@
+@media all and (max-width: 900px) {
+	.PrescriptionContainer .ToggleItemControl {
+		margin: 5px 2px;
+		text-align: initial;
+		width: 100%;
+	}
+
+	.PrescriptionContainer {
+		&_header {
+			flex: 1;
+		}
+
+		&__containerWrapper {
+			flex-direction: column;
+			flex-wrap: inherit;
+
+			.DosePickerContentInfo:first-child {
+				margin-right: 12px;
+			}
+		}
+
+		select {
+			width: 100%;
+		}
+	}
+}
+
+@media all and (max-width: 800px) {
+	.PeriodContainer_dosage {
+		flex-direction: column;
+
+		.PrescriptionBlock {
+			margin-bottom: 6px !important;
+			margin-left: 0 !important;
+		}
+	}
+
+	.ToggleItemControl {
+		width: auto;
+	}
+}

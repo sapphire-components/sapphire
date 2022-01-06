@@ -1,0 +1,78 @@
+.DateNavigationContainer {
+	@include flex-center-vertically;
+
+	.tablet.portrait & {
+		margin-bottom: 10px;
+	}
+
+	.DateNavigation {
+		&_NextDate,
+		&_PreviousDate {
+			.CircledArrow {
+				@include flex-center-total(inline-flex);
+
+				background-color: $regular-white;
+				border: 1px solid $light-grey;
+				border-radius: 100px;
+				color: $dark-grey;
+				height: 36px;
+				transition: all 0.1s ease-in-out;
+				width: 36px;
+
+				&:hover,
+				&:focus {
+					background-color: $sapphire-light;
+				}
+			}
+
+			a:disabled .CircledArrow,
+			a[disabled='disabled'] .CircledArrow {
+				background-color: $regular-white;
+				color: $light-grey;
+				pointer-events: none;
+			}
+		}
+
+		&_Date {
+			@include flex-center-total(inline-flex);
+
+			background-color: $regular-white;
+			border: 1px solid $light-grey;
+			border-radius: 100px;
+			color: $dark-grey;
+			cursor: pointer;
+			font-family: $font-family-latin-regular;
+			height: 36px;
+			min-width: 95px;
+			padding: 0 $sapphire-sizes--medium;
+
+			&:hover,
+			&:focus {
+				background-color: $sapphire-light;
+			}
+
+			.CalendarPanelContainer {
+				> div {
+					a:link,
+					a:visited {
+						color: $dark-grey;
+						font-family: $font-family-latin-regular;
+
+						.AR & {
+							font-family: $font-family-arabic-regular;
+						}
+					}
+				}
+
+				.DateTimeRangePicker-label {
+					color: $dark-grey;
+					font-family: $font-family-latin-regular;
+
+					.AR & {
+						font-family: $font-family-arabic-regular;
+					}
+				}
+			}
+		}
+	}
+}

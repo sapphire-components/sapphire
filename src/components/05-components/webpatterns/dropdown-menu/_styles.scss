@@ -1,0 +1,110 @@
+.DropdownMenu {
+	@include shadow-small();
+	@include component-scroll-root();
+
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	border-radius: $border-radius-default;
+	display: none;
+	font-size: 14px;
+	left: 0;
+	max-height: 250px;
+	min-width: 150px;
+	overflow: auto;
+	position: absolute;
+	text-align: left;
+	z-index: 2;
+
+	.open & {
+		display: block;
+		padding: $sapphire-sizes--small 0;
+	}
+
+	.PH > a,
+	.PH > span a,
+	.PH > span > div,
+	.PH > .MenuLinkItem {
+		color: $text-color-regular;
+		display: block;
+		font-family: $font-family-latin-regular;
+		height: 36px;
+		line-height: 36px;
+		padding: 0 $sapphire-sizes--medium;
+		white-space: nowrap;
+
+		&:hover {
+			background-color: $regular-eta;
+			color: $dark-grey;
+		}
+
+		&.Selected {
+			background-color: $regular-alpha;
+			color: $regular-white;
+		}
+	}
+
+	div.ButtonCheckboxInp {
+		margin: 0;
+
+		.MultipleSelectionButton-label {
+			border: none;
+			border-radius: 0;
+			padding-left: 46px;
+
+			&:hover {
+				border: none;
+				border-radius: 0;
+			}
+
+			.AR & {
+				padding-left: 10px;
+				padding-right: 46px;
+			}
+		}
+
+		.ButtonCheckboxInput_CheckBox {
+			left: 12px;
+			top: 6px;
+
+			.AR & {
+				left: 6px;
+				right: 12px;
+			}
+		}
+	}
+
+	[ui='data-badge-classifications'] {
+		width: 100%;
+
+		.BadgeClassification {
+			@include flex-center-vertically(inline-flex);
+
+			background-color: transparent !important;
+			font-size: 1em;
+			gap: $sapphire-sizes--small;
+			padding: 0;
+			width: 100%;
+
+			> span {
+				color: $dark-grey !important;
+			}
+
+			.IconBadgeClassification {
+				margin: 0;
+			}
+		}
+	}
+}
+
+.AR,
+.FA {
+	.DropdownMenu {
+		left: auto;
+		right: 0;
+
+		a,
+		div {
+			text-align: right;
+		}
+	}
+}

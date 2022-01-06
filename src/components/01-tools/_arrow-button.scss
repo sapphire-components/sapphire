@@ -1,0 +1,58 @@
+@mixin arrow-button($color-base: $regular-beta, $size-base: 22px, $font-size: 0.857em, $rotate: 90deg) {
+	align-items: center;
+	background-color: transparent;
+	border: 2px solid $color-base;
+	border-radius: 50%;
+	cursor: pointer;
+	display: flex;
+	font-size: $font-size-small;
+	height: $size-base;
+	justify-content: center;
+	text-align: center;
+	transform: rotate($rotate);
+	width: $size-base;
+	z-index: 1;
+
+	&:before {
+		color: $color-base;
+		content: '\e611';
+		font-family: $font-family-icons;
+		font-size: $font-size;
+	}
+
+	&:hover {
+		background-color: rgba($color-base, 0.1);
+	}
+}
+
+@mixin arrow-down-simple($color-base: $regular-beta, $size-base: 5px, $clean-icon: true) {
+	border-bottom: $size-base solid $color-base;
+	border-left: $size-base solid transparent;
+	border-right: $size-base solid transparent;
+	height: 0;
+	width: 0;
+
+	@if $clean-icon {
+		&:after,
+		&:before {
+			content: '';
+		}
+	}
+}
+
+@mixin up-down-arrows {
+	background-color: $regular-white;
+	background-image: url($icon-arrow-up-down);
+	background-position-x: center;
+	background-position-y: center;
+	background-repeat: no-repeat;
+	border: none;
+	content: '';
+	height: 30px;
+	left: auto;
+	margin: 0;
+	position: absolute;
+	right: 20px;
+	top: 1px;
+	width: 10px;
+}

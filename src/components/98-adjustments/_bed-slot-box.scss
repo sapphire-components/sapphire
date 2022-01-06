@@ -1,0 +1,19 @@
+.SlotContainer .ListRecords {
+	display: grid;
+	gap: 8px;
+	grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+	justify-content: space-between;
+
+	.tooltip {
+		width: 100%;
+	}
+
+	a[id='selected'] {
+		display: none;
+	}
+}
+
+.SlotsInThreeColumns {
+	margin-top: 6px;
+	width: 100%;
+}

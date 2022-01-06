@@ -1,0 +1,35 @@
+.VacancyCard {
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	color: $sapphire-blue;
+	padding: 0.5em;
+	text-align: center;
+	width: 100%;
+
+	&-title {
+		margin-bottom: 0.5em;
+	}
+
+	&-content {
+		display: flex;
+		font-size: 1em;
+		margin-bottom: 0.5em;
+		overflow-wrap: break-word;
+
+		.VacancyCard-number {
+			display: block;
+			font-size: 1.4em;
+			font-weight: 700;
+			line-height: 1.1em;
+		}
+	}
+
+	&-content-occupied {
+		border-right: 3px solid $sapphire-blue;
+		width: 50%;
+	}
+
+	&-content-vacant {
+		width: 50%;
+	}
+}

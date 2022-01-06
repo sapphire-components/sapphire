@@ -1,0 +1,19 @@
+.GraphStructure {
+	display: flex;
+	gap: $sapphire-sizes--medium;
+
+	&__Box {
+		min-width: 215px;
+		width: 215px;
+	}
+
+	&__Graph {
+		display: flex;
+		flex: 1;
+		justify-content: center;
+	}
+
+	.Card {
+		height: 100%;
+	}
+}

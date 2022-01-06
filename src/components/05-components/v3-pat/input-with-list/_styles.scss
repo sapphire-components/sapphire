@@ -1,0 +1,25 @@
+.InputWithList {
+	position: relative;
+	&__Input {
+		input {
+			width: 100%;
+		}
+	}
+
+	&__List {
+		@extend .DropdownMenu;
+
+		margin-top: $sapphire-sizes--xsmall;
+		width: 100%;
+
+		> div {
+			cursor: pointer;
+			line-height: 36px;
+			padding: 0 $sapphire-sizes--small;
+
+			&:hover {
+				background-color: $regular-eta;
+			}
+		}
+	}
+}

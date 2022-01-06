@@ -1,0 +1,76 @@
+.ShiftTable {
+	@include component-scroll-root;
+
+	overflow-x: auto;
+	position: relative;
+
+	&::-webkit-scrollbar {
+		background-color: transparent;
+	}
+
+	&__Header {
+		display: flex;
+		padding-bottom: $sapphire-sizes--small;
+	}
+
+	&__HeaderLeft {
+		min-width: 424px;
+	}
+
+	&__HeaderTitle {
+		color: $regular-grey;
+		font-family: $font-family-latin-bold;
+		font-size: $font-size-small;
+		padding: 0 $sapphire-sizes--large;
+		text-transform: uppercase;
+	}
+
+	&__HeaderLabels {
+		&,
+		.ListRecords {
+			display: flex;
+			flex: 1;
+
+			> div {
+				color: $regular-grey;
+				flex: 1;
+				font-family: $font-family-latin-bold;
+				font-size: $font-size-small;
+				min-width: 130px;
+				text-align: center;
+
+				.AR & {
+					font-family: $font-family-arabic-bold;
+				}
+			}
+		}
+	}
+
+	&__Content {
+		min-width: fit-content;
+		overflow: hidden;
+		width: 100%;
+	}
+
+	&__CurrentHour {
+		.HourLine {
+			background-color: $regular-red;
+			bottom: 0;
+			justify-content: center;
+			position: absolute;
+			top: 25px;
+			width: 1px;
+			z-index: 0;
+
+			&::before {
+				background-color: $regular-red;
+				border-radius: 50%;
+				content: '';
+				display: block;
+				height: 9px;
+				margin-top: -4px;
+				min-width: 9px;
+			}
+		}
+	}
+}

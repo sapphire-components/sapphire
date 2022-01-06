@@ -1,0 +1,171 @@
+.TabularScroll {
+	display: flex;
+	width: 100%;
+
+	table {
+		box-sizing: border-box;
+		font-size: 0.857em;
+		margin: 0;
+		padding: 0;
+	}
+
+	thead {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+
+	tr {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		visibility: visible;
+	}
+
+	td {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+
+		&:first-child {
+			border-left: none;
+		}
+
+		> span {
+			display: block;
+			overflow: hidden;
+		}
+
+		> div {
+			display: block;
+			overflow: hidden;
+		}
+	}
+
+	&-center {
+		flex-basis: 100%;
+		overflow-x: hidden;
+
+		&-table {
+			overflow-x: auto;
+			overflow-y: hidden;
+			padding-bottom: 1px;
+			padding-top: 1px;
+		}
+
+		thead {
+			font-weight: 700;
+		}
+
+		td {
+			border-bottom: solid 1px $light-grey;
+			min-width: 100px;
+			overflow: hidden;
+			padding: $sapphire-sizes--xsmall;
+
+			&:not(:first-child) {
+				border-left: solid 1px $light-grey;
+			}
+		}
+	}
+
+	&-left {
+		font-family: $font-family-latin-bold;
+		min-width: 200px;
+		padding-top: 22px;
+
+		.TabularScrollItem {
+			border-right: solid thin $light-grey;
+		}
+	}
+
+	&-right {
+		font-family: $font-family-latin-bold;
+		min-width: 200px;
+		padding-top: 22px;
+
+		.TabularScrollItem {
+			border-left: solid thin $light-grey;
+		}
+	}
+
+	.TabularScrollItem {
+		border-bottom: solid thin $light-grey;
+		box-sizing: border-box;
+		display: block;
+		padding: $sapphire-sizes--xsmall;
+
+		> div {
+			line-height: $sapphire-sizes--medium;
+		}
+	}
+
+	.VariationItem-value {
+		display: inline-block;
+		text-align: left;
+	}
+}
+
+.TopScrollWrapper {
+	height: 18px;
+	overflow-x: auto;
+	overflow-y: hidden;
+	visibility: hidden;
+	width: 100%;
+
+	.TopScrollDragger {
+		height: 20px;
+		width: 1000px;
+	}
+}
+
+.TopScrollWrapper,
+.TabularScroll-center-table {
+	&::-webkit-scrollbar {
+		background-color: $regular-white;
+		height: 4px;
+		width: 7px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border: 5px solid $light-grey;
+	}
+}
+
+.TabularScrollCenterContent {
+	.TabularScroll .TabularScrollItem {
+		line-height: 2.3;
+	}
+
+	.TabularScroll-center td {
+		vertical-align: middle;
+	}
+}
+
+.AR,
+.FA {
+	.TabularScroll {
+		&-left {
+			.TabularScrollItem {
+				border-left: solid 1px $light-grey;
+				border-right: none;
+			}
+		}
+
+		&-right {
+			.TabularScrollItem {
+				border-left: none;
+				border-right: solid 1px $light-grey;
+			}
+		}
+
+		&-center {
+			td {
+				&:not(:first-child) {
+					border-left: none;
+					border-right: solid 1px $light-grey;
+				}
+			}
+		}
+	}
+}

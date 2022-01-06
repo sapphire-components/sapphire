@@ -1,0 +1,32 @@
+.popup-wrapper {
+	> .popup-menu {
+		@include shadow-medium;
+
+		background-color: $regular-white;
+		border-radius: $border-radius-medium;
+		position: absolute;
+		z-index: 4;
+
+		> .popup-menu-balloon {
+			border: 12px solid transparent;
+			display: block;
+			height: 1px;
+			left: 5px;
+			position: absolute;
+			top: -24px;
+			width: 1px;
+
+			&:after {
+				border: solid 11px transparent;
+				border-bottom: 10px solid $regular-white;
+				content: '';
+				display: block;
+				height: 1px;
+				left: -8px;
+				position: absolute;
+				top: -9px;
+				width: 1px;
+			}
+		}
+	}
+}

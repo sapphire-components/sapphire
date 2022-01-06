@@ -1,0 +1,485 @@
+.ColorAlpha {
+	&Text {
+		color: $regular-alpha;
+	}
+
+	&BG {
+		background-color: $regular-alpha;
+	}
+
+	&Border {
+		border-color: $regular-alpha;
+	}
+}
+
+.ColorBeta {
+	&Text {
+		color: $regular-beta;
+	}
+
+	&BG {
+		background-color: $regular-beta;
+	}
+}
+
+.ColorGamma {
+	&Text {
+		color: $regular-gamma;
+	}
+
+	&BG {
+		background-color: $regular-gamma;
+	}
+
+	&Border {
+		border-color: $regular-gamma;
+	}
+}
+
+.ColorDelta {
+	&Text {
+		color: $regular-delta;
+	}
+
+	&BG {
+		background-color: $regular-delta;
+	}
+}
+
+.ColorEpsilon {
+	&Text {
+		color: $regular-epsilon;
+	}
+
+	&BG {
+		background-color: $regular-epsilon;
+	}
+}
+
+.ColorZeta {
+	&Text {
+		color: $regular-zeta;
+	}
+
+	&BG {
+		background-color: $regular-zeta;
+	}
+}
+
+.ColorEta {
+	&Text {
+		color: $regular-eta;
+	}
+
+	&BG {
+		background-color: $regular-eta;
+	}
+}
+
+.ColorBlue {
+	&Text {
+		color: $regular-blue;
+	}
+
+	&BG {
+		background-color: $regular-blue;
+	}
+}
+
+.ColorLightBlue {
+	&Text {
+		color: $light-blue;
+	}
+
+	&BG {
+		background-color: $light-blue;
+	}
+}
+
+.ColorLightBlue2 {
+	// Deprecated
+	&Text {
+		color: $light-blue;
+	}
+
+	&BG {
+		background-color: $light-blue;
+	}
+}
+
+.ColorDarkBlue {
+	&Text {
+		color: $dark-blue;
+	}
+
+	&BG {
+		background-color: $dark-blue;
+	}
+}
+
+.ColorRed {
+	&Text {
+		color: $regular-red;
+	}
+
+	&BG {
+		background-color: $regular-red;
+	}
+
+	&Border {
+		border-color: $regular-red;
+	}
+}
+
+.ColorLightRed {
+	&Text {
+		color: $light-red;
+	}
+
+	&BG {
+		background-color: $light-red;
+	}
+
+	&Theme {
+		background-color: $light-red;
+		color: $regular-red;
+	}
+}
+
+.ColorDarkRed {
+	&Text {
+		color: $dark-red;
+	}
+
+	&BG {
+		background-color: $dark-red;
+	}
+
+	&Border {
+		border-color: $dark-red;
+	}
+}
+
+.ColorGreen {
+	&Text {
+		color: $regular-green;
+	}
+
+	&BG {
+		background-color: $regular-green;
+	}
+}
+
+.ColorLightGreen {
+	&Text {
+		color: $light-green;
+	}
+
+	&BG {
+		background-color: $light-green;
+	}
+
+	&Theme {
+		background-color: $light-green;
+		color: $regular-green;
+	}
+}
+
+.ColorDarkGreen {
+	&Text {
+		color: $dark-green;
+	}
+
+	&BG {
+		background-color: $dark-green;
+	}
+}
+
+.ColorYellow {
+	&Text {
+		color: $regular-yellow;
+	}
+
+	&BG {
+		background-color: $regular-yellow;
+	}
+}
+
+.ColorLightYellow {
+	&Text {
+		color: $light-yellow;
+	}
+
+	&BG {
+		background-color: $light-yellow;
+	}
+}
+
+.ColorDarkYellow {
+	&Text {
+		color: $dark-yellow;
+	}
+
+	&BG {
+		background-color: $dark-yellow;
+	}
+}
+
+.ColorOrange {
+	&Text {
+		color: $regular-orange;
+	}
+
+	&BG {
+		background-color: $regular-orange;
+	}
+
+	&Border {
+		border-color: $regular-orange;
+	}
+}
+
+.ColorLightOrange {
+	&Text {
+		color: $light-orange;
+	}
+
+	&BG {
+		background-color: $light-orange;
+	}
+}
+
+.ColorDarkOrange {
+	&Text {
+		color: $dark-orange;
+	}
+
+	&BG {
+		background-color: $dark-orange;
+	}
+}
+
+.ColorPink {
+	&Text {
+		color: $regular-pink;
+	}
+
+	&BG {
+		background-color: $regular-pink;
+	}
+}
+
+.ColorLightPink {
+	&Text {
+		color: $light-pink;
+	}
+
+	&BG {
+		background-color: $light-pink;
+	}
+}
+
+.ColorLightPink2 {
+	// Deprecated
+	&Text {
+		color: $light-pink;
+	}
+
+	&BG {
+		background-color: $light-pink;
+	}
+}
+
+.ColorDarkPink {
+	&Text {
+		color: $dark-pink;
+	}
+
+	&BG {
+		background-color: $dark-pink;
+	}
+}
+
+.ColorBeige {
+	&Text {
+		color: $regular-beige;
+	}
+
+	&BG {
+		background-color: $regular-beige;
+	}
+}
+
+.ColorLightBeige {
+	&Text {
+		color: $light-beige;
+	}
+
+	&BG {
+		background-color: $light-beige;
+	}
+}
+
+.ColorDarkBeige {
+	&Text {
+		color: $dark-beige;
+	}
+
+	&BG {
+		background-color: $dark-beige;
+	}
+}
+
+.ColorWhite {
+	&Text {
+		color: $regular-white;
+	}
+
+	&BG {
+		background-color: $regular-white;
+	}
+}
+
+.ColorWhiteGrey {
+	&Text {
+		color: $white-grey;
+	}
+
+	&BG {
+		background-color: $white-grey;
+	}
+}
+
+.ColorBody {
+	&Text {
+		color: $body-color;
+	}
+
+	&BG {
+		background-color: $body-color;
+	}
+}
+
+.ColorLightContainer {
+	&Text {
+		color: $sapphire-light;
+	}
+
+	&BG {
+		background-color: $sapphire-light;
+	}
+
+	&Border {
+		border-color: $sapphire-light;
+	}
+}
+
+.ColorLightGrey {
+	&Text {
+		color: $light-grey;
+	}
+
+	&BG {
+		background-color: $light-grey;
+	}
+
+	&Border {
+		border-color: $light-grey;
+	}
+}
+
+.ColorMidLightGrey {
+	&Text {
+		color: $mid-light-grey;
+	}
+
+	&BG {
+		background-color: $mid-light-grey;
+	}
+
+	&Border {
+		border-color: $mid-light-grey;
+	}
+}
+
+.ColorGrey {
+	&Text {
+		color: $regular-grey;
+	}
+
+	&BG {
+		background-color: $regular-grey;
+	}
+
+	&Border {
+		border-color: $regular-grey;
+	}
+}
+
+.ColorMidDarkGrey {
+	&Text {
+		color: $mid-dark-grey;
+	}
+
+	&BG {
+		background-color: $mid-dark-grey;
+	}
+
+	&Border {
+		border-color: $mid-dark-grey;
+	}
+}
+
+.ColorDarkGrey {
+	&Text {
+		color: $dark-grey;
+	}
+
+	&BG {
+		background-color: $dark-grey;
+	}
+}
+
+.ColorBlack {
+	&Text {
+		color: $regular-black;
+	}
+
+	&BG {
+		background-color: $regular-black;
+	}
+
+	&Border {
+		border-color: $regular-black;
+	}
+}
+
+.ColorSapphireBlue {
+	&Text {
+		color: $sapphire-blue;
+	}
+
+	&BG {
+		background-color: $sapphire-blue;
+	}
+}
+
+.ColorSapphireDarkBlue {
+	&Text {
+		color: $sapphire-dark-blue;
+	}
+
+	&BG {
+		background-color: $sapphire-dark-blue;
+	}
+}
+
+.ColorSapphireGreyBlue {
+	&Text {
+		color: $sapphire-grey-blue;
+	}
+
+	&BG {
+		background-color: $sapphire-grey-blue;
+	}
+}

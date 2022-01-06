@@ -1,0 +1,57 @@
+.CircledPatient {
+	@include flex-center-total(inline-flex);
+
+	background-color: $sapphire-light;
+	border-radius: 50%;
+	color: $mid-dark-grey;
+	font-size: 14px;
+	height: 48px;
+	padding: 3px 0px;
+	text-align: center;
+	width: 48px;
+
+	&.Male {
+		background-color: $regular-blue;
+		color: $regular-white;
+	}
+
+	&.Female {
+		background-color: $regular-pink;
+		color: $regular-white;
+	}
+}
+
+.CircledPatientSignal {
+	position: relative;
+
+	.CircledPatientSignalIcon {
+		background-color: $regular-alpha;
+		border-radius: 50%;
+		color: $regular-white;
+		font-size: 11px;
+		height: 15px;
+		left: -5px;
+		line-height: 13px;
+		padding: 1px;
+		position: absolute;
+		text-align: center;
+		top: -5px;
+		width: 15px;
+
+		a,
+		a:link,
+		a:visited {
+			color: $regular-white;
+		}
+	}
+}
+
+.AR,
+.FA {
+	.CircledPatientSignal {
+		.CircledPatientSignalIcon {
+			line-height: unset;
+			right: -5px;
+		}
+	}
+}

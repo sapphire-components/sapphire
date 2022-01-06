@@ -1,0 +1,31 @@
+.PatientDetails {
+	&__ActionsWrapper {
+		background-color: $regular-white;
+		border-bottom: 1px solid $light-grey;
+		padding: $sapphire-sizes--xlarge $sapphire-sizes--large;
+		padding-bottom: 0;
+
+		.ButtonsList {
+			a:link,
+			a[disabled] {
+				margin: 0 $sapphire-sizes--small $sapphire-sizes--small 0;
+			}
+		}
+
+		.TabsContainer {
+			margin-top: $sapphire-sizes--small;
+
+			.Tabs {
+				min-height: unset;
+			}
+
+			.Tabs_body {
+				display: none;
+			}
+		}
+	}
+
+	&__ContentWrapper {
+		padding: $sapphire-sizes--medium $sapphire-sizes--large $sapphire-sizes--xlarge;
+	}
+}

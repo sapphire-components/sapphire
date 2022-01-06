@@ -1,0 +1,63 @@
+.FileUpload {
+	@include flex-center-total;
+
+	background-color: transparent;
+	border: 1px dashed $mid-light-grey;
+	border-radius: $border-radius-medium;
+	min-height: $sapphire-sizes--largest;
+	transform: scale(-1, 1);
+	transition: all 0.2s;
+
+	&:hover {
+		background-color: $regular-eta;
+		border: 1px dashed $regular-alpha;
+	}
+
+	> div {
+		font-family: $font-family-latin-regular;
+		transform: scale(-1, 1);
+	}
+
+	&_Label {
+		color: $dark-grey;
+		font-family: $font-family-latin-bold;
+		font-size: 1em;
+	}
+
+	&_Button {
+		.Button {
+			background-color: transparent;
+			border: 1px solid transparent;
+			color: $regular-beta;
+			display: flex;
+			font-family: $font-family-latin-bold;
+			padding: 0;
+
+			&:before {
+				content: '\e698';
+				font-family: $font-family-icons;
+				font-size: $font-size-heading3;
+				margin-left: -6px;
+			}
+		}
+	}
+}
+
+.AR,
+.FA {
+	.FileUpload {
+		> div {
+			font-family: $font-family-arabic-regular;
+			transform: scale(-1, 1);
+		}
+
+		&_Button {
+			.Button {
+				&:before {
+					margin-left: auto;
+					margin-right: -6px;
+				}
+			}
+		}
+	}
+}

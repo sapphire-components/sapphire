@@ -1,0 +1,95 @@
+.RulerScale {
+	display: inline-block;
+	margin: 0%;
+	position: relative;
+	text-align: center;
+	width: 8%;
+
+	&.ScaleImg {
+		width: 12%;
+	}
+
+	&_wrapper {
+		position: relative;
+	}
+
+	&_line {
+		height: 100px;
+		position: relative;
+
+		&.full:before {
+			bottom: 20px;
+			content: '';
+			height: 80px;
+		}
+
+		&:before {
+			background-color: $mid-light-grey;
+			bottom: 40px;
+			content: '';
+			display: block;
+			height: 40px;
+			left: 50%;
+			position: absolute;
+			width: 1px;
+		}
+	}
+
+	&_number {
+		background-color: $regular-white;
+		border: 1px solid $light-grey;
+		border-radius: 4px;
+		color: $mid-dark-grey;
+		cursor: pointer;
+		display: inline-block;
+		font-family: $font-family-latin-bold;
+		font-size: 1em;
+		height: 36px;
+		line-height: 36px;
+		margin: 0;
+		padding: 0;
+		width: 36px;
+
+		&:hover {
+			background-color: $regular-eta;
+			border: 1px solid $regular-alpha;
+			color: $regular-beta;
+		}
+
+		&.active {
+			background-color: $regular-alpha;
+			border: 1px solid $regular-alpha;
+			color: $regular-white;
+		}
+
+		&.viewmode {
+			background-color: transparent;
+			border: 0;
+			color: $mid-dark-grey;
+			pointer-events: none;
+		}
+	}
+
+	&_wrapperLabel {
+		margin-top: $sapphire-sizes--medium;
+		width: 100%;
+	}
+
+	&__label {
+		color: $mid-dark-grey;
+		font-family: $font-family-latin-bold;
+		font-size: $font-size-small;
+		text-align: center;
+		width: 100%;
+	}
+
+	&_image img {
+		height: 94px;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.RulerScale.ScaleImg {
+		width: 15%;
+	}
+}

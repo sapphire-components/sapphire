@@ -1,0 +1,119 @@
+.ButtonCheckboxInp {
+	padding: 0;
+	position: relative;
+
+	&.isFullWidth {
+		display: block;
+
+		> .ButtonCheckboxInput_CheckBox ~ label {
+			display: inline-block;
+			width: 100%;
+		}
+	}
+
+	&.active {
+		.MultipleSelectionButton-label {
+			&,
+			&:hover {
+				background-color: $regular-alpha;
+				border: 1px solid $regular-alpha;
+				color: $regular-white;
+
+				+ .ButtonCheckboxInput_CheckBox input[type='checkbox'] {
+					&::after {
+						border-color: $regular-alpha;
+						left: 3px;
+						top: 4px;
+					}
+
+					&::before {
+						background-color: $regular-white;
+						border: 1px solid $regular-alpha;
+					}
+				}
+			}
+		}
+	}
+
+	&.disabled {
+		.MultipleSelectionButton-label {
+			border-color: $border-color-disabled;
+			color: $light-grey;
+			cursor: default;
+			pointer-events: none;
+			white-space: nowrap;
+		}
+	}
+
+	.ButtonCheckboxInput_CheckBox {
+		left: $sapphire-sizes--small;
+		margin: 0;
+		position: absolute;
+		top: 7px;
+
+		input[type='checkbox'] {
+			margin: 0;
+			transition: all 0.1s ease-in-out;
+		}
+
+		.AR & {
+			left: auto;
+			right: $sapphire-sizes--small;
+		}
+	}
+
+	.MultipleSelectionButton-label {
+		@include flex-center-vertically();
+
+		background-color: $regular-white;
+		border: 1px solid $light-grey;
+		border-radius: $border-radius-default;
+		cursor: pointer;
+		height: 36px;
+		padding: 0 $sapphire-sizes--medium 0 $sapphire-sizes--xlarge;
+		transition: all 0.1s ease-in-out;
+
+		&:hover {
+			background-color: $regular-eta;
+			border: 1px solid $regular-alpha;
+
+			+ .ButtonCheckboxInput_CheckBox input[type='checkbox']::before {
+				border: 1px solid $regular-alpha;
+			}
+		}
+
+		.AR & {
+			padding: 0 $sapphire-sizes--xlarge 0 $sapphire-sizes--medium;
+		}
+	}
+}
+
+.MultipleSelectionFilter,
+.MultipleSelectionFilterSmall {
+	.ButtonCheckboxInp .MultipleSelectionButton-label {
+		border-radius: 80px;
+	}
+}
+
+.MultipleSelectionFilterSmall {
+	.ButtonCheckboxInp .MultipleSelectionButton-label {
+		font-size: 13px;
+		height: 30px;
+		line-height: 30px;
+		padding: 0 $sapphire-sizes--medium 0 40px;
+
+		.AR & {
+			padding: 0 40px 0 $sapphire-sizes--medium;
+		}
+	}
+
+	.ButtonCheckboxInp .ButtonCheckboxInput_CheckBox {
+		left: 12px;
+		top: 4px;
+
+		.AR & {
+			left: auto;
+			right: 12px;
+		}
+	}
+}

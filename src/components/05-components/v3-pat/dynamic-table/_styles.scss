@@ -1,0 +1,156 @@
+.DynamicTable {
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	border-bottom: none;
+
+	&--disabled {
+		background-color: $body-color;
+		cursor: not-allowed;
+
+		.DynamicTable {
+			&__Header {
+				opacity: 0.7;
+				pointer-events: none;
+			}
+
+			&__Rows {
+				pointer-events: none;
+			}
+		}
+	}
+
+	&--hasDelete & {
+		&__Rows,
+		&__Header {
+			padding-right: 35px;
+		}
+	}
+
+	&__Header {
+		border-bottom: 1px solid $light-grey;
+		display: flex;
+		min-height: 36px;
+		padding: $sapphire-sizes--small $sapphire-sizes--medium;
+	}
+
+	&__RowColumn,
+	&__HeaderColumn {
+		@include flex-center-total;
+
+		flex: 1;
+		padding: 0 4px;
+		text-align: center;
+
+		&:last-of-type {
+			padding-right: 0;
+		}
+
+		&--main {
+			@extend .DynamicTable__HeaderColumn;
+
+			flex-basis: 10%;
+			justify-content: flex-start;
+			padding: 0;
+			text-align: left;
+		}
+	}
+
+	&__RowColumn {
+		&--main * {
+			font-size: 14px;
+			text-transform: none;
+		}
+	}
+
+	&__HeaderColumn,
+	&__HeaderColumn--main {
+		color: $mid-light-grey;
+		font-family: $font-family-latin-bold;
+		font-size: $font-size-small;
+		text-transform: uppercase;
+	}
+
+	&__RowsWrapper {
+		border-bottom: 1px solid $light-grey;
+		position: relative;
+	}
+
+	&__Rows {
+		display: flex;
+		min-height: 50px;
+		padding: 0 $sapphire-sizes--medium;
+
+		// PersonCard Adjustments
+		.PersonCard {
+			height: 100%;
+			width: 100%;
+
+			&_header {
+				border: none;
+				margin-left: -$sapphire-sizes--medium;
+				min-height: 100%;
+			}
+
+			&__headerLeftInfo {
+				align-items: center;
+				padding-left: $sapphire-sizes--medium;
+			}
+
+			&____title {
+				width: 100%;
+
+				.DoubleText {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	&__RowAction {
+		position: absolute;
+		right: 8px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+.Card {
+	.DynamicTable {
+		border-left: none;
+		border-right: none;
+	}
+}
+
+.AR,
+.FA {
+	.DynamicTable {
+		&--hasDelete {
+			.DynamicTable {
+				&__Rows,
+				&__Header {
+					padding-left: 35px;
+					padding-right: $sapphire-sizes--medium;
+				}
+			}
+		}
+
+		&__HeaderColumn {
+			&:last-child {
+				padding-left: 0;
+				padding-right: 4px;
+			}
+		}
+
+		&__RowAction {
+			left: 10px;
+			right: auto;
+		}
+
+		&__Rows {
+			.PersonCard {
+				margin-left: auto;
+				margin-right: -$sapphire-sizes--medium;
+			}
+		}
+	}
+}

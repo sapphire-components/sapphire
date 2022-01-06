@@ -1,0 +1,86 @@
+@mixin panel-item-hover {
+	background-color: $regular-eta;
+	border-color: $regular-alpha;
+
+	.icon {
+		color: $regular-beta;
+	}
+}
+
+.PanelMenuItem {
+	&__LinkContent {
+		@include flex-center-vertically;
+
+		border: 1px solid transparent;
+		border-left: none;
+		border-radius: 0 100px 100px 0;
+		cursor: pointer;
+		gap: $sapphire-sizes--medium;
+		min-height: 40px;
+		padding: 0 $sapphire-sizes--medium;
+		user-select: none;
+		width: calc(100% - 8px);
+
+		&:hover {
+			@include panel-item-hover();
+		}
+
+		.AR & {
+			border-left: 1px solid transparent;
+			border-radius: 100px 0 0 100px;
+			border-right: none;
+
+			&:hover {
+				border-color: $regular-alpha;
+			}
+		}
+	}
+
+	&__Title {
+		flex: 1;
+	}
+
+	&__Counter {
+		font-family: $font-family-latin-bold;
+
+		.AR & {
+			font-family: $font-family-arabic-bold;
+		}
+	}
+
+	&__ExpandableContent {
+		display: none;
+		padding: $sapphire-sizes--small ($sapphire-sizes--large + 1);
+		padding-bottom: 0;
+
+		input[type='checkbox'] {
+			margin-top: 0;
+		}
+	}
+
+	.icon {
+		color: $regular-grey;
+		font-size: $font-size-heading4;
+	}
+
+	&--selected {
+		.PanelMenuItem__LinkContent {
+			@include panel-item-hover();
+		}
+
+		.PanelMenuItem__Title {
+			text-shadow: 0 0 1px $dark-grey;
+		}
+
+		.PanelMenuItem__ExpandableContent {
+			display: block;
+		}
+	}
+}
+
+.PanelMenuSubItem {
+	@include flex-center-vertically;
+
+	gap: $sapphire-sizes--small;
+	height: 40px;
+}

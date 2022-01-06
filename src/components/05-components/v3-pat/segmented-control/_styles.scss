@@ -1,0 +1,238 @@
+.SegmentedControl {
+	margin-bottom: 12px;
+
+	&.NoMargin {
+		margin: 0 0 0 1px !important;
+	}
+
+	&.Invalid {
+		.SegmentedControlItem {
+			&:last-child label {
+				border-color: $regular-red;
+			}
+
+			label {
+				border-color: $regular-red;
+			}
+		}
+	}
+
+	&.Vertical {
+		.SegmentedControlItem {
+			display: block;
+
+			&:first-child label {
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: 0;
+				border-top-left-radius: $border-radius-default;
+				border-top-right-radius: $border-radius-default;
+			}
+
+			&:last-child label {
+				border-bottom: 1px solid $light-grey;
+				border-bottom-left-radius: $border-radius-default;
+				border-bottom-right-radius: $border-radius-default;
+				border-top-left-radius: 0;
+				border-top-right-radius: 0;
+			}
+
+			label {
+				border-bottom: 1px solid transparent;
+				border-right: 1px solid $light-grey;
+
+				&:hover,
+				&:focus {
+					border-bottom: 1px solid $regular-alpha;
+				}
+			}
+		}
+	}
+
+	&.Round {
+		.SegmentedControlItem {
+			margin: 0 3px;
+
+			&:first-child {
+				margin-left: 0;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			label {
+				border: 1px solid $light-grey;
+				border-radius: 50% !important;
+				min-width: 36px;
+				padding: 0;
+				width: 36px;
+			}
+		}
+	}
+
+	&.Filters {
+		background-color: $regular-white;
+		border: 1px solid $light-grey;
+		border-radius: 100px;
+
+		.SegmentedControlItem {
+			label {
+				border: none;
+				border-radius: 100px;
+				height: 34px;
+
+				&:first-child,
+				&:last-child {
+					border: none;
+					border-radius: 100px;
+				}
+
+				&:hover,
+				&:focus {
+					background-color: $sapphire-light;
+					border: none;
+				}
+			}
+
+			> input[type='radio']:checked ~ label,
+			> input[type='checkbox']:checked ~ label {
+				background-color: $mid-dark-grey;
+				border: none;
+			}
+		}
+	}
+
+	.SegmentedControlItem {
+		display: inline-block;
+		font-size: 1em;
+		min-height: 1.714em;
+		overflow: hidden;
+		position: relative;
+		vertical-align: top;
+
+		&:first-child label {
+			border-bottom-left-radius: $border-radius-default;
+			border-top-left-radius: $border-radius-default;
+		}
+
+		&:last-child label {
+			border-bottom-right-radius: $border-radius-default;
+			border-right: 1px solid $light-grey;
+			border-top-right-radius: $border-radius-default;
+		}
+
+		label {
+			background-color: $regular-white;
+			border: 1px solid $light-grey;
+			border-right: 1px solid transparent;
+			cursor: pointer;
+			display: block;
+			line-height: 34px;
+			min-width: 54px;
+			padding: 0 $sapphire-sizes--medium;
+			text-align: center;
+			transition: all 0.1s ease-in-out;
+			width: 100%;
+
+			&:hover,
+			&:focus {
+				background-color: $regular-eta;
+				border: 1px solid $regular-alpha;
+			}
+
+			.icon {
+				color: $regular-beta;
+				font-size: $font-size-heading4;
+				padding-right: $sapphire-sizes--xsmall;
+			}
+		}
+
+		> input[type='radio']:checked ~ label,
+		> input[type='checkbox']:checked ~ label {
+			background-color: $regular-alpha;
+			border-color: $regular-alpha;
+			color: $regular-white;
+			text-shadow: 0 0 1px $regular-white;
+
+			.icon {
+				color: $regular-white;
+			}
+
+			&:hover,
+			&:focus {
+				border-color: $regular-alpha;
+			}
+		}
+
+		> input:disabled ~ label,
+		> input[disabled] ~ label,
+		> input[readonly] ~ label {
+			background: $background-disabled;
+			color: $text-color-disabled;
+			cursor: default;
+
+			&:hover,
+			&:focus {
+				border-color: $light-grey;
+			}
+		}
+	}
+}
+
+.AR,
+.FA {
+	.SegmentedControl {
+		&.Round {
+			.SegmentedControlItem {
+				&:first-child {
+					margin-left: 3px;
+					margin-right: 0;
+				}
+
+				&:last-child {
+					margin-left: 0;
+					margin-right: 3px;
+				}
+
+				label {
+					border: 1px solid $light-grey;
+				}
+			}
+		}
+
+		&:not(.Vertical) .SegmentedControlItem {
+			&:last-child label {
+				border-bottom-left-radius: $border-radius-default;
+				border-bottom-right-radius: 0;
+				border-left: 1px solid $light-grey;
+				border-top-left-radius: $border-radius-default;
+				border-top-right-radius: 0;
+			}
+
+			&:first-child label {
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: $border-radius-default;
+
+				border-top-left-radius: 0;
+				border-top-right-radius: $border-radius-default;
+			}
+
+			label {
+				border-left: 1px solid transparent;
+				border-right: 1px solid $light-grey;
+
+				&:hover,
+				&:focus {
+					border: 1px solid $regular-alpha;
+				}
+			}
+		}
+
+		&.Filters {
+			.SegmentedControlItem label[for] {
+				border: none;
+				border-radius: 100px;
+			}
+		}
+	}
+}

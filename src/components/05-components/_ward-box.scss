@@ -1,0 +1,116 @@
+.CounterBox {
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	border-radius: $border-radius-medium;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+
+	.SelectedWardBx &,
+	&.SelectedWardBx {
+		border-color: transparent;
+
+		&::before {
+			border: 2px solid $regular-alpha;
+			border-radius: $border-radius-medium;
+			box-sizing: border-box;
+			content: '';
+			display: block;
+			height: 100%;
+			position: absolute;
+			width: 100%;
+		}
+	}
+
+	&__Header {
+		@include flex-center-vertically;
+
+		border-bottom: 1px solid $light-grey;
+		gap: $sapphire-sizes--small;
+		justify-content: space-between;
+		line-height: 16px;
+		padding: $sapphire-sizes--medium;
+	}
+
+	&__Title {
+		color: $dark-grey;
+		font-family: $font-family-latin-bold;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+
+		.CounterBoxIcon {
+			@include flex-center-total();
+
+			background-color: $body-color;
+			border-radius: $border-radius-medium;
+			height: $sapphire-sizes--xxlarge;
+			min-width: $sapphire-sizes--xxlarge;
+		}
+	}
+
+	&__Other {
+		color: $regular-grey;
+		font-size: $font-size-small;
+		text-align: right;
+	}
+
+	&__Content {
+		display: flex;
+	}
+
+	.Counter {
+		background-color: $body-color;
+		border-top: none;
+		padding: $sapphire-sizes--small $sapphire-sizes--medium;
+		text-align: start;
+		width: 100%;
+
+		> div:first-child {
+			font-family: $font-family-latin-bold;
+			font-size: $font-size-heading4;
+			line-height: 1.09;
+		}
+
+		&.Vacant {
+			background-color: $light-green;
+			color: $dark-green;
+		}
+
+		&.Reserved {
+			background-color: $regular-beige;
+			color: $dark-beige;
+		}
+
+		&.Planned {
+			background-color: $sapphire-light;
+			color: $regular-grey;
+		}
+
+		&.Min {
+			background-color: $light-green;
+			color: $dark-green;
+		}
+
+		&.Med {
+			background-color: $light-beige;
+			color: $dark-beige;
+		}
+
+		&.Maj {
+			background-color: $light-red;
+			color: $dark-red;
+		}
+
+		.TextTiny {
+			font-size: 0.714em;
+		}
+	}
+}
+
+.HasItemSelected {
+	.CounterBox:not(.SelectedWardBx) {
+		opacity: 0.5;
+	}
+}

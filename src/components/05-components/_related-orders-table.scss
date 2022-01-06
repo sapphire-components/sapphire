@@ -1,0 +1,55 @@
+.RelatedOrdersTable {
+	background-color: rgba($regular-white, 0.5);
+	border: 1px solid $light-grey;
+	border-radius: $border-radius-medium;
+	display: table;
+	overflow: hidden;
+	width: 100%;
+
+	.RelatedOrders {
+		&_content {
+			border-left: 1px solid $light-grey;
+			display: table-cell;
+
+			&:first-child {
+				border-left-color: transparent;
+			}
+
+			.AR & {
+				border-left-color: transparent;
+				border-right: 1px solid $light-grey;
+
+				&:first-child {
+					border-right-color: transparent;
+				}
+			}
+		}
+
+		&__title {
+			color: $mid-light-grey;
+			font-family: $font-family-latin-bold;
+			font-size: $font-size-small;
+			padding: 9.5px $sapphire-sizes--medium;
+			text-transform: uppercase;
+
+			.AR & {
+				font-family: $font-family-arabic-bold;
+			}
+		}
+
+		&__value {
+			border-top: 1px solid $light-grey;
+			padding: 9.5px $sapphire-sizes--medium;
+
+			&.NoValue {
+				color: $regular-grey;
+			}
+		}
+
+		&___info {
+			color: $regular-grey;
+			font-size: $font-size-small;
+			margin-top: $sapphire-sizes--small;
+		}
+	}
+}

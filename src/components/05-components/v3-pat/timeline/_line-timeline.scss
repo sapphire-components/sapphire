@@ -1,0 +1,303 @@
+.LineTimeLine {
+	border-radius: $border-radius-medium;
+	margin-bottom: $sapphire-sizes--medium;
+
+	&--disabledExpandable & {
+		&__Expandable {
+			border-color: $light-grey;
+			pointer-events: none;
+
+			&::before {
+				color: $light-grey;
+			}
+		}
+
+		&__Header {
+			border-bottom: 1px solid $light-grey;
+			border-radius: $border-radius-medium $border-radius-medium 0 0;
+			cursor: default;
+		}
+
+		&__ContentWrapper {
+			display: block;
+		}
+	}
+
+	&--expanded & {
+		&__Expandable {
+			transform: rotate(180deg);
+		}
+
+		&__Header {
+			border-radius: $border-radius-medium $border-radius-medium 0 0;
+		}
+
+		&__ContentWrapper {
+			display: block;
+		}
+	}
+
+	&--emptyContent & {
+		&__Header {
+			border-bottom: 1px solid $light-grey;
+			border-radius: $border-radius-medium;
+			cursor: default;
+		}
+
+		&__ContentWrapper {
+			border: none;
+		}
+	}
+
+	&__Expandable {
+		@include arrow-button($dark-grey, 20px, 0.7em, 90deg);
+
+		margin-right: -$sapphire-sizes--small;
+
+		.AR & {
+			margin-left: -$sapphire-sizes--small;
+			margin-right: 0;
+		}
+	}
+
+	&__Header {
+		@include flex-center-vertically;
+
+		background-color: $regular-white;
+		border: 1px solid $light-grey;
+		border-radius: $border-radius-medium;
+		cursor: pointer;
+		gap: $sapphire-sizes--large;
+		min-height: 96px;
+		padding: $sapphire-sizes--medium;
+
+		&::after,
+		&::before {
+			background-color: $body-color;
+			content: '';
+			height: 6px;
+			position: absolute;
+			top: -1px;
+			width: 9px;
+		}
+
+		&::before {
+			left: -7px;
+			transform: rotate(117deg);
+		}
+
+		&::after {
+			right: -7px;
+			transform: rotate(-128deg);
+		}
+	}
+
+	&__HeaderContent {
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+	}
+
+	&__HeaderTitle {
+		font-family: $font-family-latin-bold;
+		font-size: $font-size-heading4;
+		margin-bottom: $sapphire-sizes--small;
+
+		.AR & {
+			font-family: $font-family-arabic-bold;
+		}
+	}
+
+	&__HeaderDescription {
+		display: flex;
+		gap: $sapphire-sizes--xlarge;
+	}
+
+	&__IconDate {
+		@include flex-center-total;
+
+		background-color: $regular-alpha;
+		border-radius: $border-radius-default;
+		color: $regular-white;
+		flex-direction: column;
+		font-family: $font-family-latin-bold;
+		height: 64px;
+		width: 64px;
+
+		.AR & {
+			font-family: $font-family-arabic-bold;
+		}
+	}
+
+	&__Date {
+		display: flex;
+		gap: $sapphire-sizes--xsmall;
+	}
+
+	&__ContentWrapper {
+		border: 1px solid $light-grey;
+		border-radius: 0 0 $border-radius-medium $border-radius-medium;
+		border-top: none;
+		display: none;
+		height: 100%;
+
+		&:not(.TimeLineHideLogs) {
+			> .LineTimeLine__ShowMore {
+				display: none;
+			}
+		}
+	}
+
+	&__Content {
+		background-color: $regular-white;
+		border-radius: 0 0 $border-radius-medium $border-radius-medium;
+		padding: $sapphire-sizes--medium;
+		padding-left: 52px;
+
+		.AR & {
+			padding-left: $sapphire-sizes--medium;
+			padding-right: 52px;
+		}
+
+		.ListRecords .TimelineDetail {
+			margin-bottom: $sapphire-sizes--medium;
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+
+		.TimelineDetail {
+			padding: 0;
+
+			.TimelineDetail_content {
+				background-color: $body-color;
+				border-radius: $border-radius-default;
+				padding: $sapphire-sizes--small;
+				width: 100%;
+			}
+
+			.TimelineDetail_rightContent .PrintDocument {
+				min-width: 80px;
+			}
+		}
+	}
+
+	&__ShowMore {
+		border-bottom: 1px solid $regular-white;
+		color: $regular-beta;
+		font-family: $font-family-latin-bold;
+		font-size: 1em;
+		line-height: 35px;
+		text-align: center;
+	}
+
+	&__Actions {
+		@include flex-center-vertically;
+
+		justify-content: flex-end;
+		min-width: 80px;
+		white-space: nowrap;
+	}
+}
+
+.LineTimelineTitle {
+	background-color: $body-color;
+	padding-bottom: $sapphire-sizes--small;
+	padding-top: $sapphire-sizes--medium;
+	position: sticky;
+	top: 185px;
+	z-index: 2;
+}
+
+.LineSubTimeLine {
+	min-height: 60px;
+	padding: 0 20px;
+
+	&_left {
+		min-width: 140px;
+		width: 200px;
+	}
+
+	&_right {
+		width: calc(100% - 200px);
+
+		&.blueText {
+			color: $dark-blue;
+		}
+
+		&.grayText {
+			color: $regular-grey;
+		}
+
+		&.ItalicText {
+			font-size: 1em;
+			font-style: italic;
+		}
+	}
+
+	&__leftContent {
+		color: $dark-grey;
+		font-family: $font-family-latin-bold;
+		margin: 10px;
+	}
+
+	&__rightContent {
+		margin: 10px;
+	}
+
+	.TimelineItemLineLeftContent {
+		display: inline-flex;
+		width: 100%;
+	}
+
+	.ItemRemoved {
+		color: $regular-grey;
+		text-decoration: line-through;
+	}
+}
+
+.TimelineItemLineLeftContent {
+	&_icon,
+	&_title,
+	&_number {
+		display: inline-block;
+	}
+
+	&___icoLineContent {
+		margin-left: 5px;
+	}
+
+	&__iconBgColor {
+		background-color: $regular-red;
+		border-radius: 10%;
+		color: $regular-white;
+		height: 30px;
+		line-height: 20px;
+		margin-left: 10px;
+		width: 30px;
+	}
+}
+
+.TimelineDescription {
+	line-height: 18px;
+
+	&_title {
+		color: $regular-grey;
+	}
+
+	&_description {
+		color: $dark-grey;
+	}
+}
+
+.TimeLineHideLogs {
+	.LineSubTimeLineHidden {
+		display: none;
+	}
+}
+
+.TimelineShowMore {
+	font-size: 20px;
+	width: 100%;
+}

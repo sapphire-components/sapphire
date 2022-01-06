@@ -1,0 +1,27 @@
+@import '../components/00-settings/import';
+@import '../components/01-tools/import';
+@import '../components/02-generic/import';
+
+@import '01-components/backoffice-pat/styles';
+@import '01-components/layout/layout-backoffice';
+@import '01-components/webpatterns/navigation-bar';
+
+@import '../components/05-components/lds-ring';
+@import '../components/05-components/table-records';
+
+@import '../components/05-components/webpatterns/inline-dropdown/styles';
+
+@import '../components/05-components/v3-pat/country-phone/styles';
+@import '../components/05-components/v3-pat/datetime-range-picker/styles';
+@import '../components/05-components/v3-pat/hour-picker/styles';
+@import '../components/05-components/v3-pat/icon-label/styles';
+@import '../components/05-components/v3-pat/panel/_styles';
+@import '../components/05-components/v3-pat/sapphire-popup/styles';
+@import '../components/05-components/v3-pat/select-system/styles';
+@import '../components/05-components/v3-pat/sapphire-wizard/styles';
+@import '../components/05-components/wizard';
+
+@import '../components/06-helpers/scrollable';
+
+@import '98-adjustments/styles';
+@import '99-legacy/Backoffice_Th';

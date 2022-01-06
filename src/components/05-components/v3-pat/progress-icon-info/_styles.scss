@@ -1,0 +1,54 @@
+.ProgressIconInfo {
+	@include flex-center-vertically;
+
+	gap: $sapphire-sizes--small;
+
+	.icon {
+		font-size: $font-size-heading4;
+	}
+
+	.icon-given {
+		color: $regular-green;
+	}
+
+	.icon-notgiven {
+		color: $regular-red;
+	}
+
+	&--empty {
+		color: $regular-grey;
+
+		.icon {
+			color: $mid-light-grey;
+		}
+	}
+}
+
+.NotStartedIcon,
+.PartiallyDoneIcon {
+	border: 1px solid $mid-light-grey;
+	border-radius: 50%;
+	height: $sapphire-sizes--medium;
+	width: $sapphire-sizes--medium;
+}
+
+.PartiallyDoneIcon {
+	border-color: $regular-green;
+	border-right-width: $sapphire-sizes--small;
+}
+
+.SmallPorgressBar {
+	.ProgressBarWrap {
+		height: 6px;
+
+		.ProgressBar_structure {
+			background-color: $body-color;
+			border: none;
+		}
+
+		.ProgressBar__animation {
+			background-color: $regular-green !important;
+			height: 6px !important;
+		}
+	}
+}

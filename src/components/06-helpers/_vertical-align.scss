@@ -1,0 +1,19 @@
+.VerticalCenter {
+	&:before {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+	}
+}
+
+.VerticalInputLabel {
+	font-family: $font-family-latin-bold;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1;
+}
+
+.VerticalAlignMiddle {
+	vertical-align: middle !important;
+}

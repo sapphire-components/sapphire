@@ -1,0 +1,102 @@
+.HeaderIdentification {
+	align-items: flex-start;
+	display: flex;
+	gap: $sapphire-sizes--large;
+	justify-content: space-between;
+
+	&-photo {
+		align-items: center;
+		display: flex;
+		gap: $sapphire-sizes--small;
+
+		.CircledPatient {
+			font-size: $font-size-heading1;
+			height: $sapphire-sizes--largest;
+			line-height: $sapphire-sizes--largest;
+			padding: 0;
+			width: $sapphire-sizes--largest;
+
+			.PatientGender {
+				color: $regular-white;
+
+				img {
+					border-radius: 50%;
+					height: 56px;
+					object-fit: cover;
+					width: 56px;
+				}
+			}
+		}
+
+		.PatientHeaderPhotoAge {
+			font-family: $font-family-latin-bold;
+		}
+	}
+
+	&-names {
+		display: flex;
+		flex-direction: column;
+		height: 56px;
+		justify-content: center;
+		white-space: nowrap;
+
+		.HeaderIdentification-primary {
+			@include flex-center-vertically();
+
+			gap: $sapphire-sizes--small;
+
+			&-name {
+				font-size: $font-size-heading3;
+				line-height: $sapphire-sizes--large;
+
+				.patient-en-fullname span {
+					display: inline-block;
+					font-family: $font-family-latin-bold;
+					line-height: initial;
+					max-width: 400px;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+
+				.patient-ar-fullname span {
+					font-family: $font-family-arabic-bold;
+				}
+
+				.Ellipsis {
+					display: flex;
+				}
+			}
+		}
+
+		.HeaderIdentification-secondary {
+			@include flex-center-vertically();
+
+			color: $regular-grey;
+			flex-direction: row-reverse;
+			gap: $sapphire-sizes--medium;
+			margin-right: $sapphire-sizes--large;
+
+			.AR & {
+				flex-direction: row;
+				margin: 0;
+			}
+
+			.HeaderIdentification-secondary-name {
+				.patient-ar-fullname {
+					font-family: $font-family-arabic-regular;
+					line-height: initial;
+				}
+			}
+		}
+
+		.HeaderIdentification-primary-otherinformation {
+			height: 16px;
+
+			.CircleElement {
+				font-size: $font-size-heading4;
+				height: $sapphire-sizes--medium;
+				width: $sapphire-sizes--medium;
+			}
+		}
+	}
+}

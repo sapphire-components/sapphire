@@ -1,0 +1,298 @@
+$table-form-header-height-edit: 42px;
+
+.TableForm {
+	@include component-scroll-root;
+
+	display: flex;
+	max-width: 100%;
+	overflow: auto;
+	padding-bottom: $sapphire-sizes--small;
+	padding-top: $table-form-header-height-edit;
+
+	&--scrollDisabled {
+		overflow: hidden;
+	}
+
+	&__Properties {
+		display: inline-flex;
+		flex-direction: column;
+		left: 0;
+		position: sticky;
+		vertical-align: middle;
+		z-index: 1;
+
+		.AR & {
+			left: unset;
+		}
+
+		> .ListRecords {
+			display: contents;
+		}
+
+		> div + .ListRecords > div {
+			&:first-child {
+				border-radius: 0;
+			}
+		}
+
+		> div:not(.TableForm__Properties),
+		> .ListRecords > div {
+			@include flex-center-vertically(inline-flex);
+
+			background-color: $white-grey;
+			border-left: 1px solid $light-grey;
+			border-right: 1px solid $light-grey;
+			border-top: 1px solid $light-grey;
+			height: $sapphire-sizes--xxlarge;
+			padding: 0 $sapphire-sizes--medium;
+			white-space: nowrap;
+			width: 230px;
+
+			&:first-child {
+				border-top-left-radius: $border-radius-medium;
+			}
+
+			&:last-child {
+				border-bottom: 1px solid $light-grey;
+				border-bottom-left-radius: $border-radius-medium;
+			}
+
+			.AR & {
+				&:first-child {
+					border-top-left-radius: 0;
+					border-top-right-radius: $border-radius-medium;
+				}
+
+				&:last-child {
+					border-bottom-left-radius: 0;
+					border-bottom-right-radius: $border-radius-medium;
+				}
+			}
+		}
+
+		.PropertiesTitle {
+			font-family: $font-family-latin-bold;
+			font-size: $font-size-small;
+			text-transform: uppercase;
+			white-space: break-spaces;
+
+			.AR & {
+				font-family: $font-family-arabic-bold;
+			}
+		}
+	}
+
+	&__Columns {
+		&,
+		> span {
+			display: inline-flex;
+			flex-direction: row;
+		}
+
+		> .TableFormColumn:last-child,
+		.TableFormListRecords > span:last-child,
+		> .ListRecords > .TableFormColumn:last-child {
+			.TableFormColumn__Header {
+				border-top-right-radius: $border-radius-medium;
+
+				.AR & {
+					border-left: 1px solid $light-grey;
+					border-top-left-radius: $border-radius-medium;
+					border-top-right-radius: 0;
+				}
+			}
+
+			.TableFormColumn__Fields {
+				border-right: none;
+
+				> div,
+				> .ListRecords > div {
+					border-right: 1px solid $light-grey;
+
+					.AR & {
+						border-left: 1px solid $light-grey;
+					}
+				}
+
+				> div:last-child,
+				> .ListRecords > div:last-child {
+					border-bottom-right-radius: $border-radius-medium;
+
+					.AR & {
+						border-bottom-left-radius: $border-radius-medium;
+						border-bottom-right-radius: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+.TableFormColumn {
+	&--editMode {
+		@include shadow-small;
+
+		background-color: $regular-white;
+		border-radius: $border-radius-medium;
+		margin-top: -$table-form-header-height-edit;
+		overflow: hidden;
+		position: relative;
+		z-index: 1;
+
+		.TableFormColumn__Header {
+			border: none;
+			border-radius: $border-radius-medium $border-radius-medium 0 0;
+			min-height: 40px;
+			padding: $sapphire-sizes--small;
+		}
+
+		.TableFormColumn__Fields {
+			border: none;
+
+			> div,
+			> .ListRecords > div {
+				width: 226px;
+			}
+		}
+
+		.TableFormColumn__Actions {
+			display: block;
+			padding: $sapphire-sizes--small;
+			width: 100%;
+		}
+
+		.pickerPositionDateTime {
+			position: static;
+		}
+	}
+
+	&--disabled {
+		.TableFormColumn__Header,
+		.TableFormColumn__Fields > div {
+			background-color: $body-color;
+			pointer-events: none;
+		}
+	}
+
+	&--greyBackground {
+		&:not(.TableFormColumn--editMode) {
+			.TableFormColumn__Fields > div,
+			.TableFormColumn__Fields > .ListRecords > div {
+				background-color: $regular-white;
+			}
+		}
+	}
+
+	&__TextTag {
+		color: $regular-grey;
+		display: block;
+		font-family: $font-family-latin-bold;
+		font-size: 10px;
+		min-height: 15px;
+
+		.AR & {
+			font-family: $font-family-arabic-bold;
+		}
+	}
+
+	&__Header {
+		@include flex-center-vertically();
+
+		background-color: $regular-white;
+		border-right: 1px solid $light-grey;
+		border-top: 1px solid $light-grey;
+		gap: $sapphire-sizes--small;
+		justify-content: space-between;
+		min-height: 52px;
+		padding: $sapphire-sizes--small $sapphire-sizes--medium;
+	}
+
+	&__Title {
+		flex: 1;
+	}
+
+	&__Fields {
+		border-right: 1px solid $light-grey;
+
+		> div,
+		> .ListRecords > div {
+			@include flex-center-vertically();
+
+			background-color: $regular-white;
+			border-top: 1px solid $light-grey;
+			height: $sapphire-sizes--xxlarge;
+			overflow: hidden;
+			padding: 0 $sapphire-sizes--medium;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			width: 200px;
+
+			&:last-child {
+				border-bottom: 1px solid $light-grey;
+			}
+		}
+	}
+
+	&__Actions {
+		display: none;
+	}
+
+	&__FakeItem {
+		@include flex-center-vertically();
+
+		border-bottom: 1px solid $light-grey;
+		height: $sapphire-sizes--xxlarge;
+		margin-bottom: $sapphire-sizes--small;
+		margin-left: -$sapphire-sizes--small;
+		margin-right: -$sapphire-sizes--small;
+		margin-top: -$sapphire-sizes--small;
+		padding: 0 $sapphire-sizes--small;
+	}
+
+	&__EmptyItem {
+		background-color: $regular-white !important;
+	}
+
+	.Button {
+		margin: 0;
+	}
+
+	input {
+		padding: 0 $sapphire-sizes--small;
+	}
+
+	.InputUnitWrapper {
+		display: flex;
+		width: 100%;
+
+		.InputUnitWrapper_input {
+			flex: 1;
+		}
+	}
+
+	input,
+	.DateTimeRangePicker,
+	.DateTimeRangePicker-input {
+		width: 100%;
+	}
+}
+
+.VitalSignsTable {
+	.TableFormColumn--editMode {
+		margin-top: -22px;
+
+		.TableFormColumn__Fields > div,
+		.TableFormColumn__Fields > .ListRecords > div {
+			overflow: unset;
+			padding: 0 $sapphire-sizes--small;
+
+			.ValidationMessageContainer .ValidationMessage,
+			.ValidationMessageContainer span.ValidationMessage {
+				font-size: 11px;
+				margin-top: 0;
+				text-align: center;
+				width: 100%;
+			}
+		}
+	}
+}

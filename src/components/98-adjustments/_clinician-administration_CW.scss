@@ -1,0 +1,15 @@
+.Administration-PopUp {
+	display: flex;
+
+	:first-child {
+		flex: 1;
+	}
+
+	.Administration-PopUp__Panel {
+		margin-left: 10px;
+
+		.Text_red {
+			display: flex;
+		}
+	}
+}

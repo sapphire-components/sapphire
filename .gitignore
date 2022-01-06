@@ -1,0 +1,9 @@
+node_modules
+
+dist/*
+!dist/dev.app.js*
+!dist/prod.app.*
+!dist/prod.styleguide.*
+!dist/prod.backoffice.*
+
+GB/*

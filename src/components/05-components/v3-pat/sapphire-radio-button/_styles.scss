@@ -1,0 +1,90 @@
+.ButtonRadioInp {
+	height: 36px;
+	position: relative;
+
+	&.isFullWidth {
+		display: block;
+	}
+
+	&.active {
+		.ButtonRadioInp {
+			&_radio {
+				input[type='radio'] {
+					&::after {
+						background: $regular-alpha;
+					}
+
+					&::before {
+						background: $regular-white;
+						border: 1px solid $regular-alpha;
+					}
+				}
+			}
+
+			&_radioText {
+				&,
+				&:hover {
+					background-color: $regular-alpha;
+					color: $regular-white;
+					pointer-events: none;
+				}
+			}
+		}
+	}
+
+	&.disabled {
+		.ButtonRadioInp {
+			&_radioText {
+				border: 1px solid $border-color-disabled;
+				border-radius: $border-radius-default;
+				color: $light-grey;
+				pointer-events: none;
+			}
+		}
+	}
+
+	&_radio {
+		input[type='radio'] {
+			left: 7px;
+			position: absolute;
+			top: 12px;
+		}
+	}
+
+	&_radioText {
+		background-color: $regular-white;
+		border: 1px solid $light-grey;
+		border-radius: $border-radius-default;
+		cursor: pointer;
+		font-size: 1em;
+		height: 36px;
+		line-height: 36px;
+		padding: 0 10px 0 32px;
+		width: 100%;
+
+		&:hover {
+			background-color: $regular-eta;
+			border: 1px solid $regular-alpha;
+
+			+ .ButtonRadioInp_radio input[type='radio']::before {
+				border: 1px solid $regular-alpha;
+			}
+		}
+	}
+}
+
+.AR,
+.FA {
+	.ButtonRadioInp {
+		&_radio {
+			input[type='radio'] {
+				left: auto;
+				right: 7px;
+			}
+		}
+
+		&_radioText {
+			padding: 0 32px 0 10px;
+		}
+	}
+}

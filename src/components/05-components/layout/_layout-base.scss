@@ -1,0 +1,799 @@
+.LayoutBase {
+	&-padding {
+		padding: $sapphire-sizes--xlarge $sapphire-sizes--large;
+		padding-bottom: $sapphire-sizes--large;
+	}
+
+	&-Wrapper {
+		// margin-bottom: 200px;
+
+		&.hasFixedBottom .LayoutBase-bottomfixedcontent {
+			background-color: $regular-white;
+			bottom: 0;
+			box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+			left: 0;
+			padding-left: $sapphire-sizes--medium;
+			padding-right: $sapphire-sizes--medium;
+			position: fixed;
+			z-index: 1;
+		}
+
+		.LayoutBase-Content .PatientDetails_content,
+		.LayoutBase-Content .PatientDetails__MainWorkArea {
+			margin: 0;
+			padding: 0;
+		}
+
+		.LayoutBase-Content .ClinicianWorkArea_wrapper {
+			display: flex;
+			flex-direction: column;
+			min-height: calc(100vh - 80px);
+		}
+	}
+
+	&-MainMenu,
+	&-MainMenu.PatientDetails_Header {
+		height: $default-menubar-height;
+		margin-top: 0;
+		position: fixed;
+		z-index: 29;
+
+		&:empty {
+			display: none;
+			height: 0;
+		}
+	}
+
+	&-spacer {
+		display: block;
+	}
+
+	&-topfixedcontent {
+		background-color: $body-color;
+		position: fixed;
+		width: 100%;
+		z-index: 2;
+	}
+
+	&-bottomfixedcontent {
+		background-color: $body-color;
+		padding-left: $sapphire-sizes--medium;
+	}
+
+	&-iframesidebar {
+		-servicestudio-display: none !important;
+		height: 100vh;
+		position: fixed;
+		right: 0;
+		top: 0;
+		z-index: 70;
+
+		&:before {
+			background-color: $sapphire-grey-blue;
+			content: '';
+			display: block;
+			height: 100vh;
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 40px;
+		}
+
+		&.notExpandable {
+			width: 262px;
+			z-index: 29;
+		}
+
+		&.notExpandable:before {
+			width: 262px;
+		}
+
+		&.isExpandable {
+			width: 40px;
+		}
+
+		.iframeContainer {
+			overflow: hidden !important;
+		}
+
+		.iframeContainer iframe {
+			background: transparent;
+		}
+	}
+
+	&-header {
+		display: block;
+		padding-right: 40px;
+		position: fixed;
+		top: 44px;
+		width: 100%;
+		z-index: 20;
+	}
+
+	&-Content {
+		.LayoutBase-primary-menu {
+			background-color: $regular-white;
+			border-bottom: 1px solid $light-grey;
+			padding: 0 $sapphire-sizes--large;
+			z-index: 2;
+
+			&.isFixed {
+				position: sticky;
+				top: 80px;
+				// z-index: 18;
+
+				~ .LayoutBase-secondary {
+					display: none;
+				}
+			}
+		}
+
+		.LayoutBase-secondary {
+			border-bottom: 1px solid $light-grey;
+			display: flex;
+			position: sticky;
+			top: 80px;
+			z-index: 2;
+
+			&.isFixed {
+				border-bottom: solid 2px $light-grey;
+				border-top: solid 2px $light-grey;
+
+				&.noToolbar {
+					background: none;
+					border-bottom: none;
+				}
+			}
+
+			&.noToolbar {
+				background: #fff;
+				background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 0) 80px);
+				height: 1px;
+				padding-left: $sapphire-sizes--medium;
+
+				.ClinicianWorkArea-columns {
+					background-color: transparent;
+				}
+			}
+
+			&.isFixed .hide-on-scroll {
+				display: none;
+			}
+
+			&.isFixed .Circle.Large {
+				height: 22px;
+				line-height: 22px;
+				width: 22px;
+			}
+
+			&.isFixed .Circle.Large .icon {
+				font-size: 0.857em;
+				line-height: 1;
+				vertical-align: middle;
+			}
+
+			&.isFixed .TopInfo__OrderSet {
+				font-size: 13px;
+			}
+
+			&.isFixed .TopInfo__Actions .SplitButton {
+				height: 26px;
+			}
+
+			&.isFixed .Toolbar {
+				padding-top: $sapphire-sizes--xsmall;
+			}
+
+			&.isFixed .Toolbar_container {
+				margin-top: 0;
+				padding-top: 0;
+			}
+
+			&.isFixed .Toolbar__Items {
+				padding-top: 0;
+			}
+
+			&.isFixed .Toolbar__Items a {
+				display: block;
+				height: 44px;
+				line-height: 41px;
+			}
+
+			&.isFixed .Toolbar__MoreOptions {
+				margin-top: 0;
+
+				.Toolbar__MoreOptionsIcon {
+					padding: 0;
+
+					span[ui='more-options-icon'] {
+						margin-bottom: 0;
+					}
+
+					span[ui='more-options-title'] {
+						display: none;
+					}
+				}
+
+				.Toolbar__MoreOptionsList {
+					a {
+						height: 40px;
+					}
+
+					div.MenuItemWrapper {
+						padding-right: 30px;
+
+						&_Badge {
+							right: 8px !important;
+							top: 14px !important;
+						}
+					}
+				}
+			}
+
+			&.isFixed .LayoutBase-secondary-menu,
+			&.isFixed .LayoutBase-secondary-aside {
+				height: 44px;
+			}
+
+			&.noToolbar .LayoutBase-secondary-menu,
+			&.isFixed.noToolbar .LayoutBase-secondary-menu {
+				border-bottom: none;
+			}
+
+			&.isFixed .Toolbar {
+				.Toolbar__Items a {
+					height: 40px;
+				}
+
+				.MenuItemWrapper {
+					padding-bottom: 0;
+					padding-top: 0;
+
+					&.Active .MenuItemWrapper_Container {
+						height: 41px;
+					}
+
+					.MenuItemWrapper__icon {
+						display: none;
+					}
+
+					.MenuItemWrapper_Badge {
+						font-size: 0.7em;
+						height: 15px;
+						line-height: 15px;
+						right: 2px;
+						top: 7px;
+						width: 15px;
+					}
+				}
+			}
+
+			.Toolbar__MoreOptions {
+				margin-top: -11px;
+
+				.Toolbar__MoreOptionsIcon {
+					padding: 18px 20px 6px;
+				}
+			}
+		}
+
+		.LayoutBase-secondary-menu {
+			background-color: #fff;
+			width: 67%;
+		}
+
+		.LayoutBase-secondary-aside {
+			background-color: $regular-white;
+			border-left: 1px solid $light-grey;
+			width: 33%;
+		}
+
+		.LayoutBase-emergency {
+			background-color: $regular-white;
+			position: sticky;
+			top: 79px;
+			z-index: 3;
+
+			&:not(:empty) + .LayoutBase-secondary {
+				top: 132px;
+			}
+		}
+	}
+
+	&-secondary-aside {
+		.ResumeDetails {
+			height: 100%;
+			padding: 5px 10px;
+		}
+
+		.TopInfo {
+			height: 100%;
+
+			> div.ContextButtons {
+				@include flex-center-vertically();
+
+				height: 100%;
+				overflow: visible;
+
+				&.FlexColumn {
+					flex-direction: column;
+
+					> div {
+						text-align: right;
+						width: 100%;
+					}
+
+					div:first-child {
+						margin-bottom: 5px;
+					}
+				}
+
+				/*.TopInfo__OrderSet {
+					position: sticky;
+					top: 90px;
+				}*/
+			}
+
+			&__Actions {
+				flex: 1;
+				text-align: end;
+			}
+		}
+
+		a .Circle.OSInline {
+			display: table-cell;
+
+			.icon {
+				font-size: 1.1rem;
+			}
+		}
+	}
+}
+
+.LayoutBase--sideMenu {
+	.LayoutBase-MainMenu:not(:empty) ~ .LayoutBase-header {
+		top: 60px;
+	}
+
+	.LayoutBase {
+		&-MainMenu {
+			bottom: 0;
+			top: 0;
+			width: calc(100% - 40px);
+
+			&:not(:empty) {
+				height: 64px;
+			}
+		}
+
+		&-header {
+			top: 0;
+		}
+
+		&-spacer {
+			min-height: 64px;
+		}
+
+		&-topfixedcontent {
+			.ManageQueueContainer {
+				border-radius: 100px;
+				margin: $sapphire-sizes--medium;
+				margin-top: 24px;
+				opacity: 1;
+				position: absolute;
+				transition: all 0.3s ease-out;
+				width: calc(100% - 32px);
+
+				&--closed {
+					opacity: 0;
+					visibility: hidden;
+				}
+
+				.Columns .Column > div {
+					height: 90px;
+				}
+			}
+		}
+
+		&-subLayoutContent {
+			padding-top: 100px;
+		}
+	}
+
+	&.LayoutBase--withTabs {
+		.LayoutBase {
+			// &-spacer {
+			// 	display: none;
+			// }
+
+			&-MainMenu {
+				height: 0;
+				position: absolute;
+			}
+
+			&-MainContent {
+				.FullScreenTabsWrapper {
+					.FullScreenTabsWrapper_Container.Dashboard {
+						height: 60px;
+						padding-left: 60px;
+
+						.TabWrapper {
+							height: 55px;
+							padding: 0 30px;
+
+							&_tab {
+								line-height: normal;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.SideMenu {
+			&__Title {
+				color: $regular-white;
+			}
+
+			&__PageTitle {
+				display: none;
+			}
+
+			.iframeContainer {
+				display: none !important;
+			}
+		}
+	}
+
+	.PatientDetailsLayout.hasHeader {
+		.LayoutBase-spacer {
+			min-height: 80px;
+		}
+	}
+}
+
+.LayoutBase--fixedActions {
+	align-items: center;
+	background-color: $regular-white;
+	border-top: 1px solid $light-grey;
+	bottom: 0;
+	display: flex;
+	justify-content: space-between;
+	margin-left: -$sapphire-sizes--large;
+	padding: $sapphire-sizes--large;
+	position: fixed;
+	width: calc(67% - (#{$sapphire-sizes--large} + 3px)); // Border + 1px
+	z-index: 1;
+
+	.AR & {
+		margin-left: 0;
+		margin-right: -$sapphire-sizes--large;
+	}
+}
+
+body.LayoutBase .os-internal-ui-widget-overlay {
+	z-index: 90 !important;
+}
+
+.AR,
+.FA {
+	.LayoutBase-Wrapper.hasFixedBottom .LayoutBase-bottomfixedcontent {
+		left: auto;
+		right: 0;
+	}
+
+	.LayoutBase-iframesidebar,
+	.LayoutBase-iframesidebar:before {
+		left: 0;
+		right: auto;
+	}
+
+	.LayoutBase-header {
+		padding-left: 40px;
+		padding-right: 0;
+	}
+
+	&.LayoutBase.Page {
+		.LayoutBase-secondary-aside {
+			border-left: none;
+			border-right: 1px solid $light-grey;
+		}
+
+		.Toolbar {
+			padding-left: 0;
+			padding-right: $sapphire-sizes--large;
+		}
+
+		.ClinicianWorkArea-columns-small {
+			border-left: none;
+			border-right: 1px solid $light-grey;
+		}
+	}
+}
+
+.LayoutBase {
+	&.Page {
+		&.tablet .PatientDetails_content {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		.LayoutBase-Content {
+			position: static;
+		}
+
+		.ClinicianWorkArea {
+			.ClinicianWorkArea-columns {
+				align-items: stretch;
+				background-color: $body-color;
+				display: flex;
+				flex: 1;
+				width: 100%;
+			}
+
+			/*&.FullWidth {
+				.ClinicianWorkArea-columns {
+					background: #fff;
+					background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 0) 200px);
+				}
+			}*/
+		}
+
+		.ClinicianWorkArea-columns-big {
+			display: inline-block;
+			padding: 0;
+			vertical-align: top;
+			width: 67%;
+		}
+
+		.ClinicianWorkArea-columns-small {
+			background-color: $sapphire-light;
+			border-left: 1px solid $light-grey;
+			display: inline-block;
+			padding: 0 $sapphire-sizes--medium;
+			position: relative;
+			vertical-align: top;
+			width: 33%;
+		}
+
+		.ClinicianWorkArea.FullWidth .ClinicianWorkArea-columns-big {
+			display: block;
+			padding: 0;
+			width: 100%;
+		}
+
+		.ClinicianWorkArea.FullWidth .ClinicianWorkArea-columns-small {
+			display: none;
+		}
+
+		.Toolbar {
+			padding-left: $sapphire-sizes--large;
+		}
+
+		.Toolbar.Fix {
+			margin-left: 0;
+			padding-right: 8px;
+		}
+	}
+
+	.select2-container--open .select2-dropdown--below {
+		z-index: 101;
+	}
+}
+
+.tablet {
+	.LayoutBase {
+		&-padding {
+			padding: $sapphire-sizes--xlarge $sapphire-sizes--medium;
+			padding-bottom: $sapphire-sizes--medium;
+		}
+	}
+
+	.LayoutBase.Page .ClinicianWorkArea-columns {
+		padding-left: 0;
+	}
+
+	.LayoutBase.Page .ClinicianWorkArea-columns-big,
+	.LayoutBase.Page .ClinicianWorkArea-columns-small {
+		width: 100%;
+	}
+
+	.LayoutBase-Content .LayoutBase-secondary .hide-on-scroll {
+		display: none;
+	}
+
+	.LayoutBase-Content .LayoutBase-secondary .TopInfo .ContextButtons .Cell2 {
+		display: none;
+	}
+}
+
+// @TODO: is it possible to change this?
+.LayoutBase.Page .LayoutBase-Content-MainWorkArea .Content,
+.LayoutBase.Page .SystemWideSidebar ~ .PatientDetails_content .PatientDetails__MainWorkArea .Content,
+.LayoutBase.Page .PatientDetailsLayout .PatientDetails_content .PatientDetails__MainWorkArea > .Content {
+	margin: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	padding-right: 40px;
+	padding-top: 0;
+}
+
+.AR.LayoutBase.Page .LayoutBase-Content-MainWorkArea .Content,
+.AR.LayoutBase.Page .SystemWideSidebar ~ .PatientDetails_content .PatientDetails__MainWorkArea .Content,
+.AR.LayoutBase.Page .PatientDetailsLayout .PatientDetails_content .PatientDetails__MainWorkArea > .Content {
+	padding-left: 40px;
+	padding-right: 0;
+}
+
+.AR.LayoutBase.Page
+	.LayoutBase-iframesidebar.notExpandable
+	~ .LayoutBase-Content
+	.LayoutBase-Content-MainWorkArea
+	.Content {
+	padding-left: 262px !important;
+	padding-right: 0 !important;
+}
+
+.AR .LayoutBase-iframesidebar.notExpandable ~ .LayoutBase-header,
+.AR .LayoutBase-SystemWideSidebar.SystemWideSidebar.Open ~ .LayoutBase-header {
+	padding-left: 262px;
+	padding-right: 0;
+}
+
+.LayoutBase.Page
+	.LayoutBase-iframesidebar.notExpandable
+	~ .LayoutBase-Content
+	.LayoutBase-Content-MainWorkArea
+	.Content {
+	padding-right: 262px !important;
+}
+
+.LayoutBase-iframesidebar.notExpandable ~ .LayoutBase-header,
+.LayoutBase-SystemWideSidebar.SystemWideSidebar.Open ~ .LayoutBase-header {
+	padding-right: 262px;
+}
+
+html .Page .PatientDetailsLayout {
+	padding-top: 0;
+}
+
+.LayoutBase-Content .LayoutBase-secondary .LayoutBase-secondary-aside > a .DisplayInlineBlock {
+	display: block;
+}
+
+.LayoutBase-Content-MainWorkArea.PatientDetails__MainWorkArea .LayoutBase-primary-menu .FullScreenTabsWrapper__Tabs {
+	position: static;
+}
+
+.LayoutBase-secondary-aside .PendingItemsContainer.OSInline,
+.LayoutBase-secondary-aside .PendingItemsContainer.OSInline .OSInline,
+.LayoutBase-secondary-aside > div.OSInline,
+.LayoutBase-secondary-aside a .OSInline,
+.LayoutBase-secondary-aside .ToggleButton.OSInline,
+.LayoutBase-secondary-aside > span > a > .DisplayInlineBlock,
+.LayoutBase-secondary-aside > span > span > a > .DisplayInlineBlock {
+	display: block;
+}
+
+// New Navigation - Testing
+.NewNavigation {
+	.LayoutBase-primary-menu {
+		background-color: $sapphire-light;
+	}
+
+	.FullScreenTabsWrapper {
+		&_Container {
+			background-color: $sapphire-light;
+
+			.TabWrapper {
+				border-top-color: $sapphire-light;
+
+				&:hover {
+					background-color: $sapphire-light;
+					color: $regular-beta;
+				}
+
+				&.Active {
+					border-top-left-radius: 4px;
+					clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
+					padding-right: 30px;
+
+					.TabWrapper_icon .icon {
+						color: $regular-beta;
+					}
+
+					.TabWrapper_tab a {
+						color: $regular-beta;
+					}
+				}
+
+				&_tab {
+					a {
+						color: $regular-grey;
+					}
+				}
+			}
+		}
+	}
+
+	.Toolbar {
+		&__MoreOptionsIcon {
+			background-color: transparent;
+			color: $regular-grey;
+
+			span[ui='more-options-title']::after {
+				color: $regular-grey;
+			}
+		}
+
+		.MenuItemWrapper {
+			&.Active {
+				border-top-left-radius: 4px;
+				clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
+				padding-right: 40px;
+
+				.MenuItemWrapper_Container {
+					color: $regular-beta;
+				}
+			}
+		}
+	}
+}
+
+// New Navigation2 - Testing
+.NewNavigation2 {
+	.Toolbar {
+		&__MoreOptionsIcon {
+			background-color: transparent;
+			color: $regular-grey;
+
+			span[ui='more-options-title']::after {
+				color: $regular-grey;
+			}
+		}
+
+		.MenuItemWrapper {
+			&:hover {
+				border-bottom: 3px solid transparent !important;
+			}
+
+			&.Active {
+				border: 1px solid $light-grey;
+				border-bottom: 3px solid transparent;
+				border-top-left-radius: 8px;
+				border-top-right-radius: 8px;
+				margin-bottom: -4px;
+
+				&:before,
+				&:after {
+					border: 1px solid $light-grey;
+					bottom: -4px;
+					content: ' ';
+					height: 6px;
+					position: absolute;
+					width: 6px;
+				}
+
+				&:before {
+					border-bottom-right-radius: $border-radius-medium;
+					border-width: 0 1px 0px 0;
+					box-shadow: 2px 2px 0 $body-color;
+					left: -7px;
+				}
+
+				&:after {
+					border-bottom-left-radius: $border-radius-medium;
+					border-width: 0 0 0 1px;
+					box-shadow: -2px 2px 0 $body-color;
+					right: -7px;
+				}
+
+				.MenuItemWrapper_Container {
+					color: $regular-beta;
+					height: 64px;
+					margin-bottom: -15px;
+				}
+			}
+		}
+	}
+}

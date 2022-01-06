@@ -1,0 +1,52 @@
+.SapphirePopup {
+	@include flex-center-total;
+
+	height: 100%;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 4012;
+
+	div.os-internal-ui-dialog.os-internal-Popup {
+		border: none;
+		border-radius: $border-radius-medium;
+		box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22) !important;
+		position: relative;
+
+		iframe,
+		.os-internal-ui-dialog-content {
+			border-radius: $border-radius-medium;
+		}
+
+		.os-internal-ui-dialog-titlebar {
+			background: none;
+			display: none;
+			height: 0;
+		}
+
+		.os-internal-ui-dialog-titlebar-close {
+			background: none;
+			cursor: pointer;
+			height: 20px;
+			right: 30px;
+			top: 16px;
+			width: 14px;
+
+			&:after {
+				color: $dark-grey;
+				content: '\e60c';
+				display: block;
+				font-family: $font-family-icons;
+				font-size: 1em;
+				left: 0;
+				position: absolute;
+				top: 0;
+			}
+
+			&:hover {
+				opacity: 1;
+				transform: rotate(0);
+			}
+		}
+	}
+}

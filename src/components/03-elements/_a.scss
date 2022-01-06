@@ -1,0 +1,20 @@
+a {
+
+  &:link,
+  &:visited {
+    color: $regular-beta;
+    font-family: $font-family-latin-bold;
+    text-decoration: none;
+  }
+}
+
+.AR {
+  a {
+
+    &:link,
+    &:visited {
+      font-family: $font-family-arabic-bold;
+    }
+  }
+
+}

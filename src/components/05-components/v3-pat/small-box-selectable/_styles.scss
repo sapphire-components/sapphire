@@ -1,0 +1,176 @@
+.SmallBoxSelectable {
+	@include flex-center-vertically();
+
+	background-color: $regular-white;
+	border: 1px solid $light-grey;
+	border-radius: $border-radius-default;
+	cursor: pointer;
+	gap: $sapphire-sizes--small;
+	padding: $sapphire-sizes--small;
+
+	&:hover {
+		background-color: $regular-eta;
+		border-color: $regular-alpha;
+
+		.SmallBoxSelectable__SelectableIcon {
+			background-color: $regular-eta;
+			border-color: $regular-alpha;
+		}
+	}
+
+	&__SelectableIcon {
+		@include flex-center-total();
+
+		background-color: $regular-white;
+		border: 1px solid $light-grey;
+		border-radius: 50%;
+		height: $sapphire-sizes--medium;
+		width: $sapphire-sizes--medium;
+	}
+
+	&__TitleContainer {
+		@include flex-center-vertically();
+
+		gap: $sapphire-sizes--small;
+	}
+
+	&__IconTitle {
+		display: flex;
+	}
+
+	&__Title {
+		font-family: $font-family-latin-bold;
+
+		.AR & {
+			font-family: $font-family-arabic-bold;
+		}
+	}
+
+	&__Subtitle {
+		color: $regular-grey;
+		font-size: $font-size-small;
+	}
+
+	&--selected {
+		background-color: $regular-eta;
+		border-color: $regular-alpha;
+
+		&:hover {
+			.SmallBoxSelectable__SelectableIcon {
+				background-color: $regular-alpha;
+			}
+		}
+
+		.SmallBoxSelectable__SelectableIcon {
+			background-color: $regular-alpha;
+			border-color: $regular-alpha;
+
+			&::before {
+				background-color: $regular-white;
+				border-radius: 50%;
+				content: '';
+				display: block;
+				height: $sapphire-sizes--small;
+				width: $sapphire-sizes--small;
+			}
+		}
+	}
+
+	&--disabled {
+		background-color: $body-color;
+		pointer-events: none;
+
+		&.SmallBoxSelectable--selected {
+			border-color: $light-grey;
+
+			.SmallBoxSelectable__SelectableIcon {
+				background-color: $body-color;
+				border-color: $light-grey;
+
+				&::before {
+					background-color: $light-grey;
+				}
+			}
+		}
+
+		.SmallBoxSelectable__SelectableIcon {
+			background-color: $body-color;
+		}
+	}
+}
+
+.SmallBoxList {
+	.SmallBoxSelectable {
+		border-color: transparent;
+		border-radius: 0;
+		border-top-color: $light-grey;
+		padding: $sapphire-sizes--small;
+		position: relative;
+
+		&::before {
+			color: $mid-light-grey;
+			content: '\e69d';
+			font-family: $font-family-icons;
+			position: absolute;
+			right: $sapphire-sizes--small;
+		}
+
+		&:last-of-type {
+			border-bottom-color: $light-grey;
+		}
+
+		&:hover {
+			border-color: $regular-alpha;
+			border-radius: $border-radius-default;
+
+			&::after {
+				background-color: $regular-white;
+				bottom: -2px;
+				content: '';
+				display: block;
+				height: 1px;
+				left: 0;
+				position: absolute;
+				width: 100%;
+				z-index: 1;
+			}
+		}
+
+		.SmallBoxSelectable__SelectableIcon {
+			display: none;
+		}
+
+		.SmallBoxSelectable__Subtitle {
+			font-size: $font-size-normal;
+		}
+
+		&--selected {
+			border-color: $regular-alpha !important;
+			border-radius: $border-radius-default;
+
+			&::before {
+				color: $regular-alpha;
+			}
+
+			&::after {
+				background-color: $regular-white;
+				bottom: -2px;
+				content: '';
+				display: block;
+				height: 1px;
+				left: 0;
+				position: absolute;
+				width: 100%;
+				z-index: 1;
+			}
+		}
+
+		.AR & {
+			&::before {
+				content: '\e69c';
+				left: $sapphire-sizes--small;
+				right: auto;
+			}
+		}
+	}
+}
