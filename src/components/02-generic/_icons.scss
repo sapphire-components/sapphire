@@ -1,8 +1,6 @@
 /* SapphireIcon */
 .icon {
 	font-family: 'Sapphire-Icon-Font';
-
-	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-style: normal;
@@ -84,8 +82,6 @@ body .icon:after {
 
 .icon-cancel:before {
 	content: '\e60c';
-	// position: relative;
-	// top: 1px;
 }
 
 .icon-capsule:before {
@@ -423,10 +419,6 @@ body .icon:after {
 .icon-collapsearrow:before {
 	content: '\e65f';
 	display: inline-block;
-	-webkit-transform: rotateX(180deg);
-	-moz-transform: rotateX(180deg);
-	-ms-transform: rotateX(180deg);
-	-o-transform: rotateX(180deg);
 	transform: rotateX(180deg);
 }
 
@@ -566,25 +558,9 @@ body .icon:after {
 	content: '\e68a';
 }
 
-/*** v *** icon-circle-questionmark *** v ***/
-span.icon.icon-circle-questionmark {
-	position: relative;
-}
-
 .icon-circle-questionmark:before {
 	content: '\e68a';
 }
-
-// body .icon-circle-questionmark:after {
-// 	color: #fff;
-// 	content: '?';
-// 	font-family: 'globeregular';
-// 	font-weight: bold;
-// 	left: 0; /*0.04em*/
-// 	position: absolute;
-// 	width: 100%;
-// }
-/*** ^ *** icon-circle-questionmark *** ^ ***/
 
 .icon-referral-letter:before {
 	content: '\e682';
@@ -645,8 +621,6 @@ span.icon.icon-circle-questionmark {
 .icon-clear:before {
 	content: '\e604';
 	display: inline-block;
-	-ms-transform: rotateZ(45deg);
-	-webkit-transform: rotateZ(45deg);
 	transform: rotateZ(45deg);
 }
 
@@ -895,8 +869,6 @@ span.icon.icon-circle-questionmark {
 	content: '\e929';
 }
 
-/*Icons V 03 - 112017*/
-
 .icon-circleopen:before {
 	content: '\e92a';
 }
@@ -929,8 +901,6 @@ span.icon.icon-circle-questionmark {
 	content: '\e930';
 }
 
-/*Icons V 14 - 112017*/
-
 .icon-shapesIcon:before {
 	content: '\e932';
 }
@@ -943,28 +913,22 @@ span.icon.icon-circle-questionmark {
 	content: '\e933';
 }
 
-/*Icons V6 28/11/2017*/
-
 .icon-lines_thickness:before {
 	content: '\e935';
 }
 
-/*Icons V62 16/03/2018*/
 .icon-fontBalance:before {
 	content: '\e936';
 }
 
-/*Icons V63 23/03/2018*/
 .icon-fontDNR:before {
 	content: '\e937';
 }
 
-/*Icons V64 04/04/2018*/
 .icon-fontrefresh:before {
 	content: '\e938';
 }
 
-/*Icons V65 11/04/2018*/
 .icon-fontgoal:before {
 	content: '\e939';
 }
@@ -981,49 +945,33 @@ span.icon.icon-circle-questionmark {
 	content: '\e93c';
 }
 
-/*Icons V66 06/06/2018*/
 .icon-fontpriority:before {
 	content: '\e93d';
 }
 
-/*Icons V67 24/01/2019*/
 .icon-campaign:before {
 	content: '\e93e';
 }
 
-/*Icons V68 03/04/2019*/
-/*
-.icon-getride:before {
-    content: "\e98c";
-} */
-
-/*Icons V68 12/04/2019*/
-/*Change current code*/
 .icon-fontgoal:before {
 	content: '\e93f';
 }
 
-/*Icons V69 18/04/2019*/
 .icon-attention:before {
 	content: '\e939';
 }
 
-/*Icons V70 22/05/2019*/
 .icon-nobed:before {
 	content: '\e940';
 }
 
-/*Icons V71 11/11/2019*/
 .icon-LocationPin:before {
 	content: '\e941';
 }
 
-/*Icons V72 20/11/2019*/
 .icon-BloodTubes:before {
 	content: '\e944';
 }
-
-/*Icons V72 13/12/2019*/
 
 .icon-bloodbag:before {
 	content: '\e943';
@@ -1113,11 +1061,7 @@ span.icon.icon-circle-questionmark {
 	content: '\e95a';
 }
 
-/* makes the font 33% larger relative to the icon container */
-
-/*Sketch Icon Sizes*/
-
-/*Regular icon sizes*/
+/* Regular icon sizes */
 .icon-lg {
 	font-size: 1.3333333333333333em;
 	line-height: 0.75em;
@@ -1172,7 +1116,7 @@ span.icon.icon-circle-questionmark {
 }
 
 .icon-border {
-	border: solid 0.08em #eeeeee;
+	border: solid 0.08em $light-grey;
 	border-radius: 0.1em;
 	padding: 0.2em 0.25em 0.15em;
 }

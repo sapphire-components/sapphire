@@ -71,4 +71,18 @@
 			z-index: 2;
 		}
 	}
+
+	&--isFixedToTop {
+		.SubLayoutLeftPanel__PanelTitle {
+			top: $sapphire-sizes--medium;
+		}
+
+		.SubLayoutLeftPanel__MenuItems {
+			top: 66px;
+		}
+
+		.WorklistPageHeader {
+			top: -5px;
+		}
+	}
 }

@@ -6,7 +6,6 @@
 		// Object to save stats
 		var previewstat = [];
 
-		var transitionEvent = SilkUI.whichTransitionEvent();
 		// set click events
 		function clickEvents(ob) {
 			// store querys in a single var
@@ -54,17 +53,6 @@
 					SectionContent.height('auto');
 					SectionContent.css('overflow', 'visible');
 				}
-
-				// add event transition end to overflow:visible for tooltips and dropdowns issues
-				SectionContent.on(transitionEvent, function() {
-					if (Section.hasClass('expanded')) {
-						SectionContent.css('overflow', 'visible');
-						SectionContent.addClass('noTransition');
-						SectionContent.height('auto');
-						SectionContent[0].offsetHeight; // hack to force a repaint
-						SectionContent.removeClass('noTransition');
-					}
-				});
 
 				if (holder.hasClass('notRenderInteractions')) {
 					holder.find('.CompLine-toggle-interactions').trigger('click');
@@ -213,8 +201,9 @@
 	}
 
 	const create = () => {
-		SilkUI.SectionExpandable = new SectionCompline();
-		SilkUI.Execute(SilkUI.SectionExpandable.init, 'Error on Sapphirev2_Patters/CompLine');
+		const expandable = new SectionCompline();
+
+		expandable.init();
 	};
 
 	SapphireWidgets.CompLine = { create };

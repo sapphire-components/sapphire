@@ -7474,28 +7474,28 @@ a.Button.Icon:hover {
   margin: 0;
 }
 
-.Button.Loading:before,
-.Button.Loading[disabled]:before,
-.Button.Loading:disabled:before {
-  background-image: url(/SilkUIFramework/img/loading_lisbon_white.gif?57934&58326&58328&201984&202697&301693&82460);
-  background-size: 16px 16px;
-  content: '';
-  display: inline-block;
-  height: 16px;
-  margin-right: 5px;
-  margin-top: -2px;
-  vertical-align: middle;
-  width: 16px;
-}
+// .Button.Loading:before,
+// .Button.Loading[disabled]:before,
+// .Button.Loading:disabled:before {
+//   background-image: url(/SilkUIFramework/img/loading_lisbon_white.gif?57934&58326&58328&201984&202697&301693&82460);
+//   background-size: 16px 16px;
+//   content: '';
+//   display: inline-block;
+//   height: 16px;
+//   margin-right: 5px;
+//   margin-top: -2px;
+//   vertical-align: middle;
+//   width: 16px;
+// }
 
-.Button.Is_Default.Loading:before,
-.Button.Is_Default.Loading[disabled]:before,
-.Button.Is_Default.Loading:disabled:before,
-.Button.ButtonDefault.Loading:before,
-.Button.ButtonDefault.Loading[disabled]:before,
-.Button.ButtonDefault.Loading:disabled:before {
-  background-image: url(/SilkUIFramework/img/loading_lisbon_white.gif?57934&58326&58328&201984&202697&301693&82460);
-}
+// .Button.Is_Default.Loading:before,
+// .Button.Is_Default.Loading[disabled]:before,
+// .Button.Is_Default.Loading:disabled:before,
+// .Button.ButtonDefault.Loading:before,
+// .Button.ButtonDefault.Loading[disabled]:before,
+// .Button.ButtonDefault.Loading:disabled:before {
+//   background-image: url(/SilkUIFramework/img/loading_lisbon_white.gif?57934&58326&58328&201984&202697&301693&82460);
+// }
 
 .Button.Small.Loading:before {
   margin-top: 4px;

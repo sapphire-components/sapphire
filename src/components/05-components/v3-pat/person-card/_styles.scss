@@ -2,7 +2,7 @@
 /* Now called GenericCard, the css classes will remain with their previous name*/
 .PersonCard {
 	&.IsOpen {
-		.PersonCard_header {
+		> .PersonCard_header {
 			border-bottom-left-radius: 0;
 			border-bottom-right-radius: 0;
 
@@ -11,12 +11,12 @@
 			}
 		}
 
-		.PersonCard_expandable {
+		> .PersonCard_expandable {
 			border-bottom-left-radius: $border-radius-medium;
 			border-bottom-right-radius: $border-radius-medium;
 		}
 
-		.PersonCard__content .PersonExpandableDiv {
+		> .PersonCard__content .PersonExpandableDiv {
 			background-color: $regular-eta;
 		}
 
@@ -520,6 +520,15 @@
 		.PersonCard__actions,
 		.PersonCard__headerLeftInfo {
 			background-color: lighten($regular-green, 48%);
+		}
+	}
+
+	.CardBackgroundWhite & {
+		.PersonCard_header,
+		.PersonCard__content,
+		.PersonCard__actions,
+		.PersonCard__headerLeftInfo {
+			background-color: $regular-white;
 		}
 	}
 }

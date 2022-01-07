@@ -3,7 +3,6 @@
 	const PrescriptionExpandable = function(config) {
 		const widgetId = config.widgetId;
 		const previewstat = [];
-		const transitionEvent = SilkUI.whichTransitionEvent();
 
 		const $elementWrapper = $(`#${config.widgetId}`);
 
@@ -50,17 +49,6 @@
 				// remove class, set height and save state
 				Section.addClass('expanded');
 				previewstat[id]['client'] = true;
-
-				// add event transition end to overflow:visible for tooltips and dropdowns issues
-				SectionContent.on(transitionEvent, function() {
-					if (Section.hasClass('expanded')) {
-						SectionContent.css('overflow', 'visible');
-						SectionContent.addClass('noTransition');
-						SectionContent.height('auto');
-						SectionContent[0].offsetHeight; // hack to force a repaint
-						SectionContent.removeClass('noTransition');
-					}
-				});
 			}
 		};
 
@@ -145,8 +133,9 @@
 	};
 
 	const create = config => {
-		SilkUI.SectionExpandable = new PrescriptionExpandable(config);
-		SilkUI.Execute(SilkUI.SectionExpandable.init, 'Error on WebPatterns/Content/SectionExpandable');
+		const expandable = new PrescriptionExpandable(config);
+
+		expandable.init();
 	};
 
 	SapphireWidgets.PrescriptionExpandable = { create };
