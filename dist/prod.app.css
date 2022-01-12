@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.127012 || Generated: Wed Jan 12 2022 13:07:26 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.127012 || Generated: Wed Jan 12 2022 16:08:00 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -28510,6 +28510,10 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 
 .BorderRadiusLargest {
   border-radius: 56px; }
+
+.NoBorderRadiusBottom {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0; }
 
 .BorderRadius2 {
   border-radius: 2px; }
