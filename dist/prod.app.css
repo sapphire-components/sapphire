@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.127011 || Generated: Wed Jan 12 2022 12:06:07 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.127011 || Generated: Wed Jan 12 2022 13:06:10 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -29559,6 +29559,12 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 .FA .MultiMarginRight20 {
   margin-left: 20px;
   margin-right: auto; }
+
+.MultiMarginLeft52 {
+  margin-left: 52px; }
+  .AR .MultiMarginLeft52 {
+    margin-left: 0;
+    margin-right: 52px; }
 
 .MultiMarginRight3,
 .AR .MultiMarginLeft3,

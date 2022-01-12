@@ -57,6 +57,15 @@
 	margin-right: auto;
 }
 
+.MultiMarginLeft52 {
+	margin-left: 52px;
+
+	.AR & {
+		margin-left: 0;
+		margin-right: 52px;
+	}
+}
+
 .MultiMarginRight3,
 .AR .MultiMarginLeft3,
 .FA .MultiMarginLeft3 {
