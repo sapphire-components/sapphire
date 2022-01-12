@@ -8,6 +8,14 @@
 }
 
 .WorklistPageContent {
+	.ShiftTableRow:hover {
+		background-color: $regular-eta;
+
+		.ShiftTableRow__Content {
+			background-color: $regular-eta;
+		}
+	}
+
 	.ShiftTableRow__Left {
 		padding-bottom: $sapphire-sizes--small;
 		padding-top: $sapphire-sizes--small;

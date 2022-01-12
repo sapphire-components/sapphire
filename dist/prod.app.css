@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.127012 || Generated: Wed Jan 12 2022 16:08:00 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.127012 || Generated: Wed Jan 12 2022 16:25:52 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -31486,6 +31486,11 @@ ul.os-internal-ui-autocomplete {
   position: sticky;
   top: 64px;
   z-index: 2; }
+
+.WorklistPageContent .ShiftTableRow:hover {
+  background-color: #f2fffd; }
+  .WorklistPageContent .ShiftTableRow:hover .ShiftTableRow__Content {
+    background-color: #f2fffd; }
 
 .WorklistPageContent .ShiftTableRow__Left {
   padding-bottom: 8px;
