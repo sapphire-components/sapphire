@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.127014 || Generated: Wed Jan 12 2022 16:27:25 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.127014 || Generated: Wed Jan 12 2022 16:48:56 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -21553,7 +21553,8 @@ a .PersonCard {
   width: calc(100% / 7);
   border: 1px solid #d6d6d6;
   min-width: 250px;
-  position: absolute; }
+  position: absolute;
+  z-index: 1; }
   .CalendarWb_noOverlap {
     align-items: center;
     background-color: #fff;

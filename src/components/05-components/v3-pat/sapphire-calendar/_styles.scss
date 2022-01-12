@@ -1,4 +1,5 @@
 @mixin common-sapphire-weekdays-style {
+	//z-index: 1;
 	align-items: center;
 	background-color: $regular-white;
 	display: inline-flex;
@@ -6,7 +7,6 @@
 	padding: $sapphire-sizes--xsmall;
 	text-align: center;
 	width: calc(100% / 7);
-	//z-index: 1;
 }
 
 .CalendarWb {
@@ -15,6 +15,7 @@
 	border: 1px solid $light-grey;
 	min-width: 250px;
 	position: absolute;
+	z-index: 1;
 
 	&_noOverlap {
 		@include common-sapphire-weekdays-style;
