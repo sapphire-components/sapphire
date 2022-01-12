@@ -101,6 +101,10 @@ $IconLabel-color-text: $dark-grey;
 			color: $dark-grey;
 		}
 	}
+
+	&_label {
+		font-size: 12px;
+	}
 }
 
 .IconHorizontal {

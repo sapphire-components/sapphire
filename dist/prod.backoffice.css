@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.127009 || Generated: Fri Jan 07 2022 16:40:30 GMT+0000 (Western European Standard Time) */
+/*! prod.backoffice.css || Version: 5.1.127009 || Generated: Wed Jan 12 2022 12:01:29 GMT+0000 (Western European Standard Time) */
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
 /* Header */
@@ -4151,6 +4151,9 @@ div.ui-timepicker-container {
   margin-bottom: 5px; }
   .iconVertical_icon.IconBlackColor {
     color: #333333; }
+
+.iconVertical_label {
+  font-size: 12px; }
 
 .IconHorizontal:hover {
   text-decoration: none; }

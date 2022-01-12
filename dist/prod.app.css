@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.127009 || Generated: Fri Jan 07 2022 16:40:30 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.127009 || Generated: Wed Jan 12 2022 12:01:29 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -18069,6 +18069,9 @@ div.ui-timepicker-container {
   margin-bottom: 5px; }
   .iconVertical_icon.IconBlackColor {
     color: #333333; }
+
+.iconVertical_label {
+  font-size: 12px; }
 
 .IconHorizontal:hover {
   text-decoration: none; }
@@ -39584,20 +39587,6 @@ DAR: Tooltip css from silk UI theme applied in WB so we can use it in pages with
 /*9.159 Sapphire Patterns > MultipleSelectionButton */
 /* 9.160 Sapphire Patterns > WizardParent_Extended */
 /* 9.161 Sapphire Patterns > IconLink */
-.iconLinkWrapper .iconHorizontal_label,
-.iconLinkWrapper .iconVertical_label {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 17px; }
-
-.iconLinkWrapper .iconHorizontal_icon {
-  font-size: 14px; }
-
-.iconLinkWrapper.inverted,
-.iconLinkWrapper.inverted .iconHorizontal_label,
-.iconLinkWrapper.inverted .iconHorizontal_icon {
-  transform: scale(-1, 1); }
-
 /* 9.162 Sapphire Patterns > Related Orders Table CSS */
 /* 9.163 Sapphire Patterns > SessionList */
 /*** 9.164 Sapphire Patterns > MultiSelect ** /
@@ -40400,9 +40389,6 @@ a.NoLink {
 .OrderSetLine .DescritptionC {
   padding-bottom: 5px;
   padding-right: 9px; }
-
-.OrderSetLine .iconVertical_label {
-  font-size: 12px; }
 
 .OrderSetLine .iconVertical_icon {
   font-size: 16px; }
