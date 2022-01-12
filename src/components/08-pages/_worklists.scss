@@ -10,6 +10,7 @@
 .WorklistPageContent {
 	.ShiftTableRow:hover {
 		background-color: $regular-eta;
+		cursor: pointer;
 
 		.ShiftTableRow__Content {
 			background-color: $regular-eta;
