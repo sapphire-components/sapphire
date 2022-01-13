@@ -52,15 +52,17 @@
 		display: flex;
 		flex-direction: column;
 		min-width: 200px;
-		padding: $sapphire-sizes--medium;
 
 		.TotalLabel {
 			font-family: $font-family-latin-bold;
 			font-size: $font-size-heading1;
+			padding: $sapphire-sizes--medium;
 		}
 
 		.ScaleMainStructure_totalScore {
 			font-family: $font-family-latin-bold;
+			padding: $sapphire-sizes--medium;
+			padding-top: 0;
 		}
 	}
 

@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.127018 || Generated: Thu Jan 13 2022 13:19:08 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.127018 || Generated: Thu Jan 13 2022 14:38:28 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -22400,13 +22400,15 @@ div.List-Star {
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    min-width: 200px;
-    padding: 16px; }
+    min-width: 200px; }
     .ScaleMainStructure_footerResult .TotalLabel {
       font-family: "LatoBold";
-      font-size: 1.714em; }
+      font-size: 1.714em;
+      padding: 16px; }
     .ScaleMainStructure_footerResult .ScaleMainStructure_totalScore {
-      font-family: "LatoBold"; }
+      font-family: "LatoBold";
+      padding: 16px;
+      padding-top: 0; }
   .ScaleMainStructure .ScaleForm {
     background-color: #f3f3f3;
     border-radius: 8px;
