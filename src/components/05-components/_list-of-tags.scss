@@ -11,9 +11,10 @@
 		gap: $sapphire-sizes--small;
 		height: 30px;
 		padding: 0 8px;
+		white-space: nowrap;
 
 		div {
-			line-height: 14px;
+			height: 14px;
 		}
 
 		.icon {
