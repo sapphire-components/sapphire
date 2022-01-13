@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.127016 || Generated: Thu Jan 13 2022 09:59:30 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.127016 || Generated: Thu Jan 13 2022 10:00:59 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -29248,9 +29248,9 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   width: 100% !important; }
 
 .MinWidthFit {
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content; }
+  min-width: -webkit-fit-content !important;
+  min-width: -moz-fit-content !important;
+  min-width: fit-content !important; }
 
 .TextUppercase {
   text-transform: uppercase; }
