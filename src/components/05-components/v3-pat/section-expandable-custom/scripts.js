@@ -192,7 +192,7 @@
 			});
 
 			// event ajax
-			osAjaxBackend.BindAfterAjaxRequest(that.ajaxRefresh);
+			osAjaxBackend && osAjaxBackend.BindAfterAjaxRequest(that.ajaxRefresh);
 		};
 	}
 

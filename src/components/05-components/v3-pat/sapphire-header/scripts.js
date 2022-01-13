@@ -75,7 +75,6 @@
 		const informationWidth = this.$information.width();
 		const actionsWidth = this.$actions.width();
 
-
 		this.$demographic.find('.Demographic-item').each(function(index) {
 			itemsTotal += parseInt($(this).outerWidth(true), 10);
 
@@ -115,8 +114,9 @@ $(window).load(function() {
 		window[SapphireWidgets.SapphireHeader.widgetId].handleDemographics();
 	}
 	if (!!$('.SapphireHeader-demographics').length) {
-		osAjaxBackend.BindAfterAjaxRequest(function() {
-			window[SapphireWidgets.SapphireHeader.widgetId].handleDemographics();
-		});
+		osAjaxBackend &&
+			osAjaxBackend.BindAfterAjaxRequest(function() {
+				window[SapphireWidgets.SapphireHeader.widgetId].handleDemographics();
+			});
 	}
 });

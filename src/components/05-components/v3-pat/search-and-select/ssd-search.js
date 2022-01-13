@@ -414,17 +414,18 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 		 *   On Ajax Request hide loading div if the SSD is open then show the
 		 *   ListRecords
 		 */
-		osAjaxBackend.BindAfterAjaxRequest(function() {
-			if ($SSDComponent.hasClass('Open')) {
-				$SSDComponent.find('.SearchSD__loading').hide();
-				$SSDComponentContent.slideDown('1000', function() {
-					$SSDComponent.find('.SearchSD_contentList').show();
-					if ($SSDComponent.find('.SearchSD_showMore a').length > 0) {
-						$SSDComponent.find('.SearchSD_showMore').show();
-					}
-				});
-			}
-		});
+		osAjaxBackend &&
+			osAjaxBackend.BindAfterAjaxRequest(function() {
+				if ($SSDComponent.hasClass('Open')) {
+					$SSDComponent.find('.SearchSD__loading').hide();
+					$SSDComponentContent.slideDown('1000', function() {
+						$SSDComponent.find('.SearchSD_contentList').show();
+						if ($SSDComponent.find('.SearchSD_showMore a').length > 0) {
+							$SSDComponent.find('.SearchSD_showMore').show();
+						}
+					});
+				}
+			});
 
 		$('form').append('<input type="submit" name="ssdInput" onclick="return false;"  style="display:none;" />');
 

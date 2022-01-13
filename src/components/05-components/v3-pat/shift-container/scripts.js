@@ -140,7 +140,7 @@ $(window)
 
 		SapphireWidgets.ShiftContainer.redrawShiftTimeline();
 
-		if (osAjaxBackend) osAjaxBackend.BindAfterAjaxRequest(SapphireWidgets.ShiftContainer.redrawShiftTimeline);
+		osAjaxBackend && osAjaxBackend.BindAfterAjaxRequest(SapphireWidgets.ShiftContainer.redrawShiftTimeline);
 
 		setTimeout(SapphireWidgets.ShiftContainer.checkScroll, 1000);
 

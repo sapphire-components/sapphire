@@ -5,11 +5,12 @@
 			setupScale();
 			bindClicks();
 
-			osAjaxBackend.BindAfterAjaxRequest(function() {
-				setTimeout(function() {
-					bindClicks();
-				}, 1000);
-			});
+			osAjaxBackend &&
+				osAjaxBackend.BindAfterAjaxRequest(function() {
+					setTimeout(function() {
+						bindClicks();
+					}, 1000);
+				});
 		});
 	};
 

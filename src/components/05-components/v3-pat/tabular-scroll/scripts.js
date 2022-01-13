@@ -8,12 +8,13 @@
 		});
 
 		$(window).load(function() {
-			osAjaxBackend.BindAfterAjaxRequest(function() {
-				$('.TabularScroll').each(function(i, el) {
-					setupTabularScroll($(el));
-					resizeRows($(el));
+			osAjaxBackend &&
+				osAjaxBackend.BindAfterAjaxRequest(function() {
+					$('.TabularScroll').each(function(i, el) {
+						setupTabularScroll($(el));
+						resizeRows($(el));
+					});
 				});
-			});
 		});
 
 		$(window).on('resize.tabularscroll', function() {

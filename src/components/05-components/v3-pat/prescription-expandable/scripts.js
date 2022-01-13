@@ -76,7 +76,7 @@
 				event.stopPropagation();
 			});
 
-			osAjaxBackend.BindAfterAjaxRequest(ajaxRefresh);
+			osAjaxBackend && osAjaxBackend.BindAfterAjaxRequest(ajaxRefresh);
 		};
 
 		const ajaxRefresh = function(event) {

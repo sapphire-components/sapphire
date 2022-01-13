@@ -9,11 +9,12 @@
 			this.onComponentInit();
 
 			$(window).load(() => {
-				osAjaxBackend.BindAfterAjaxRequest(() => {
-					setTimeout(() => {
-						$('#' + this.options.inputId).trigger('change');
-					}, 200);
-				});
+				osAjaxBackend &&
+					osAjaxBackend.BindAfterAjaxRequest(() => {
+						setTimeout(() => {
+							$('#' + this.options.inputId).trigger('change');
+						}, 200);
+					});
 			});
 		}
 

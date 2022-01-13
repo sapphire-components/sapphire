@@ -30,31 +30,32 @@ SapphireWidgets.ToggleItemControl = () => {
 				}
 			});
 
-		osAjaxBackend.BindAfterAjaxRequest(function() {
-			$('.ToggleItemControl input[type="radio"]').each(function() {
-				if ($(this).is(':checked')) {
-					$(this)
-						.parent()
-						.parent()
-						.addClass('active');
-				}
-			});
-
-			$('.ToggleItemControl')
-				.off('click')
-				.on('click', function() {
-					$('.ToggleItemControl').removeClass('active');
-
-					if (
+		osAjaxBackend &&
+			osAjaxBackend.BindAfterAjaxRequest(function() {
+				$('.ToggleItemControl input[type="radio"]').each(function() {
+					if ($(this).is(':checked')) {
 						$(this)
-							.find('input[type="radio"]')
-							.is(':checked')
-					) {
-						$(this).addClass('active');
-					} else {
-						$(this).removeClass('active');
+							.parent()
+							.parent()
+							.addClass('active');
 					}
 				});
-		});
+
+				$('.ToggleItemControl')
+					.off('click')
+					.on('click', function() {
+						$('.ToggleItemControl').removeClass('active');
+
+						if (
+							$(this)
+								.find('input[type="radio"]')
+								.is(':checked')
+						) {
+							$(this).addClass('active');
+						} else {
+							$(this).removeClass('active');
+						}
+					});
+			});
 	});
 };
