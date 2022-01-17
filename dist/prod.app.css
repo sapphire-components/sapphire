@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128005 || Generated: Mon Jan 17 2022 16:15:39 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.128005 || Generated: Mon Jan 17 2022 16:24:46 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -25120,11 +25120,6 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
         border-right: none; }
         .AR .ShiftGroupContent__HeaderContent > div:last-of-type {
           border-left-color: transparent; }
-    .ShiftGroupContent__HeaderContent .GreenDot {
-      background-color: #7cb342;
-      border-radius: 50%;
-      height: 8px;
-      width: 8px; }
   .ShiftGroupContent__HeaderExpandable {
     cursor: pointer;
     transform: rotate(180deg);
@@ -25166,6 +25161,18 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     transform: rotate(-90deg); }
   .ShiftGroupContent--expanded .ShiftGroupContent__Content {
     display: block; }
+
+.RedDot,
+.GreenDot {
+  border-radius: 50%;
+  height: 8px;
+  width: 8px; }
+
+.RedDot {
+  background-color: #ff3e2d; }
+
+.GreenDot {
+  background-color: #7cb342; }
 
 .ShiftTableCardHover {
   align-items: center;

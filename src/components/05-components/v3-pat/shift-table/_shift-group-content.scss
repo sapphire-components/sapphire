@@ -47,13 +47,6 @@
 				}
 			}
 		}
-
-		.GreenDot {
-			background-color: $regular-green;
-			border-radius: 50%;
-			height: $sapphire-sizes--small;
-			width: $sapphire-sizes--small;
-		}
 	}
 
 	&__HeaderExpandable {
@@ -99,4 +92,19 @@
 			display: block;
 		}
 	}
+}
+
+.RedDot,
+.GreenDot {
+	border-radius: 50%;
+	height: $sapphire-sizes--small;
+	width: $sapphire-sizes--small;
+}
+
+.RedDot {
+	background-color: $regular-red;
+}
+
+.GreenDot {
+	background-color: $regular-green;
 }
