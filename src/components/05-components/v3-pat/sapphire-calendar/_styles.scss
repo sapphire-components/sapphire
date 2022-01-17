@@ -314,6 +314,16 @@
 	}
 }
 
+.CalendarWrapper {
+	.CalendarWb {
+		@include shadow-small;
+
+		border-radius: $border-radius-medium;
+		margin-top: 7px;
+		min-width: 315px;
+	}
+}
+
 .AR,
 .FA {
 	.CalendarWidget {

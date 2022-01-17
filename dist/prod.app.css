@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128003 || Generated: Mon Jan 17 2022 12:55:47 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.128003 || Generated: Mon Jan 17 2022 13:49:38 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -21804,6 +21804,11 @@ a .PersonCard {
   background-color: #fff !important;
   border: none !important; }
 
+.CalendarWrapper .CalendarWb {
+  border-radius: 8px;
+  margin-top: 7px;
+  min-width: 315px; }
+
 .AR .CalendarWidget___back:after,
 .FA .CalendarWidget___back:after {
   left: auto;
@@ -28673,7 +28678,7 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 .shadow--xsmall {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.16); }
 
-.ShadowSmall, .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ForwardLocationsContent, .DropdownMenu, .InputWithList__List, .sp-container, .daterangepicker, div.ui-timepicker-container, .PatientCallCancelStructure, .select2-container .select2-dropdown, .TableFormColumn--editMode, .RemoteAppointment,
+.ShadowSmall, .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ForwardLocationsContent, .DropdownMenu, .InputWithList__List, .sp-container, .daterangepicker, div.ui-timepicker-container, .PatientCallCancelStructure, .CalendarWrapper .CalendarWb, .select2-container .select2-dropdown, .TableFormColumn--editMode, .RemoteAppointment,
 .shadow--small {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.16); }
 
@@ -36668,14 +36673,6 @@ a.Button.Icon:hover,
   text-decoration: none !important;
   width: 20px; }
 
-.CenteredCalendarWrapper {
-  background-color: #fff;
-  border: 1px solid #d2d1d0;
-  border-radius: 3px;
-  padding: 0px 10px 10px 10px;
-  padding-bottom: 6px;
-  text-align: center; }
-
 .ButtonDisabled {
   filter: alpha(opacity=50);
   opacity: 0.5; }
@@ -40188,9 +40185,6 @@ a.NoLink {
 .desktop .ScheduleBedSlotContainer,
 .tablet .ScheduleBedSlotContainer {
   padding: 10px 0 5px 34px; }
-
-.tablet .CenteredCalendarWrapper {
-  width: 97%; }
 
 .desktop.hd .ClinicBoxColumns .Column.ColFirst {
   width: 55%; }
