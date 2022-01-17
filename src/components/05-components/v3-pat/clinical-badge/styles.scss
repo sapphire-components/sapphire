@@ -1,10 +1,10 @@
 .ClinicalBadge {
 	@include flex-center-total();
-
-	flex-direction: column;
 	border: 1px solid $light-grey;
 	border-radius: $border-radius-default;
 	color: $mid-light-grey;
+
+	flex-direction: column;
 	height: 50px;
 	padding: 3px 5px;
 	position: relative;
@@ -51,6 +51,15 @@
 
 		&:hover {
 			background-color: darken($light-blue, 5%);
+		}
+	}
+
+	&.ColorMidDarkGrey {
+		border: none;
+		color: $regular-white;
+
+		&:hover {
+			background-color: darken($mid-dark-grey, 5%);
 		}
 	}
 

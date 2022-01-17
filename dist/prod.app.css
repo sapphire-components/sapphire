@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.127020 || Generated: Thu Jan 13 2022 17:11:51 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.127020 || Generated: Mon Jan 17 2022 10:16:22 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -14575,10 +14575,10 @@ div.CircledArrow {
   align-items: center;
   display: flex;
   justify-content: center;
-  flex-direction: column;
   border: 1px solid #d6d6d6;
   border-radius: 4px;
   color: #adadad;
+  flex-direction: column;
   height: 50px;
   padding: 3px 5px;
   position: relative;
@@ -14607,6 +14607,11 @@ div.CircledArrow {
     color: #1ba5ec; }
     .ClinicalBadge.ColorLightBlueBG:hover {
       background-color: #bfe6fa; }
+  .ClinicalBadge.ColorMidDarkGrey {
+    border: none;
+    color: #fff; }
+    .ClinicalBadge.ColorMidDarkGrey:hover {
+      background-color: #4f4f4f; }
   .ClinicalBadge-label {
     font-size: 0.857em; }
   .ClinicalBadge .icon {
