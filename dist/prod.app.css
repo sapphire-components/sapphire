@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128002 || Generated: Mon Jan 17 2022 10:44:32 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.128002 || Generated: Mon Jan 17 2022 12:55:23 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -30896,7 +30896,7 @@ ul.os-internal-ui-autocomplete {
   display: flex;
   font-size: 1.143em;
   gap: 8px;
-  max-width: 80px; }
+  max-width: 112px; }
 
 .ContentClinicianData .BorderBottomLine:first-of-type {
   padding-top: 0; }
