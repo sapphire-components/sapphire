@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128001 || Generated: Mon Jan 17 2022 10:42:50 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.128001 || Generated: Mon Jan 17 2022 10:43:59 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -14607,10 +14607,10 @@ div.CircledArrow {
     color: #1ba5ec; }
     .ClinicalBadge.ColorLightBlueBG:hover {
       background-color: #bfe6fa; }
-  .ClinicalBadge.ColorMidDarkGrey {
+  .ClinicalBadge.ColorMidDarkGreyBG {
     border: none;
     color: #fff; }
-    .ClinicalBadge.ColorMidDarkGrey:hover {
+    .ClinicalBadge.ColorMidDarkGreyBG:hover {
       background-color: #4f4f4f; }
   .ClinicalBadge-label {
     font-size: 0.857em; }
