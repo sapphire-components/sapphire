@@ -8,7 +8,7 @@
 }
 
 .WorklistPageContent {
-	.ShiftTableRow:hover {
+	.ShiftTableRow .ShiftTableRow:hover {
 		background-color: $regular-eta;
 		cursor: pointer;
 
