@@ -7,7 +7,8 @@
 		dragDropAreaWidget = window[config.dragDropAreaId];
 
 		$(window).load(function() {
-			osAjaxBackend.BindAfterAjaxRequest(SapphireWidgets.DragDropArea.refreshDragDrop);
+			SapphireWidgets.DragDropArea.refreshDragDrop();
+			//osAjaxBackend.BindAfterAjaxRequest(SapphireWidgets.DragDropArea.refreshDragDrop);
 		});
 	};
 
@@ -103,23 +104,29 @@
 
 	DragDropArea.prototype.attachEvents = function() {
 		var _this = this;
-		this.$area.on('click', '.DragDrop-draggable', function(evt) {
+		this.$area.on('click', '.DragDrop-draggable input', function(evt) {
 			evt.stopPropagation();
-			var $draggable = $(evt.currentTarget);
-			$draggable.find('.DragDrop-draggable-select-action a').trigger('click');
-			var $droppable = $draggable.closest('.DragDrop-droppable');
+
+			const $checkbox = $(evt.currentTarget);
+			const $droppable = $checkbox.closest('.DragDrop-droppable');
+			const $draggable = $checkbox.closest('.DragDrop-draggable');
+			const $action = $draggable.find('.DragDrop-draggable-select-action a');
+
+			$action.trigger('click');
+
 			if ($droppable.hasClass('allowMultiple')) {
-				var $checkbox = $draggable.find('input[type="checkbox"]');
 				if ($checkbox.prop('checked')) {
-					$checkbox.prop('checked', false);
-					$draggable.removeClass('selected');
-				} else {
-					$checkbox.prop('checked', true);
+					//$checkbox.prop('checked', false);
 					$draggable.addClass('selected');
+				} else {
+					//$checkbox.prop('checked', true);
+					$draggable.removeClass('selected');
 				}
-				_this.handleDroppable($droppable);
+
+				//_this.handleDroppable($droppable);
 			}
 		});
+
 		this.$area.on('click', '.DragDrop-draggable-select-action a', function(evt) {
 			evt.stopPropagation();
 		});

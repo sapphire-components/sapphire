@@ -77,6 +77,26 @@
 			}
 		}
 
+		&__Actions {
+			.BadgeCustom {
+				align-items: center;
+				font-size: 13px;
+				gap: $sapphire-sizes--small;
+				height: 26px;
+				max-height: unset;
+				padding: 0 $sapphire-sizes--small;
+
+				.BadgeCustom__Icon {
+					font-size: 16px;
+					height: 16px;
+				}
+
+				.BadgeCustom__Label {
+					color: $dark-grey;
+				}
+			}
+		}
+
 		.AR & {
 			&::after {
 				left: unset;
@@ -89,24 +109,6 @@
 	> .ListRecords > *:last-of-type .LineCardList {
 		&::after {
 			display: none;
-		}
-	}
-
-	.BadgeCustom {
-		align-items: center;
-		font-size: 13px;
-		gap: $sapphire-sizes--small;
-		height: 26px;
-		max-height: unset;
-		padding: 0 $sapphire-sizes--small;
-
-		.BadgeCustom__Icon {
-			font-size: 16px;
-			height: 16px;
-		}
-
-		.BadgeCustom__Label {
-			color: $dark-grey;
 		}
 	}
 }
