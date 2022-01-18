@@ -115,6 +115,25 @@
 			}
 		}
 	}
+
+	&--hasIconLeft {
+		.ShiftTableRow__IconLeft {
+			@include flex-center-vertically;
+			margin-right: $sapphire-sizes--medium;
+
+			min-height: 100%;
+			width: 20px;
+
+			.AR & {
+				margin-left: $sapphire-sizes--medium;
+				margin-right: 0;
+			}
+		}
+
+		.ShiftTableRow__Left {
+			width: 364px;
+		}
+	}
 }
 
 .ShiftTableCardEmpty {

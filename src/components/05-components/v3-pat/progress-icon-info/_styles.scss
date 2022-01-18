@@ -14,16 +14,9 @@
 	.icon-notgiven {
 		color: $regular-red;
 	}
-
-	&--empty {
-		color: $regular-grey;
-
-		.icon {
-			color: $mid-light-grey;
-		}
-	}
 }
 
+.NotDoneIcon,
 .NotStartedIcon,
 .PartiallyDoneIcon {
 	border: 1px solid $mid-light-grey;
@@ -35,6 +28,19 @@
 .PartiallyDoneIcon {
 	border-color: $regular-green;
 	border-right-width: $sapphire-sizes--small;
+}
+
+.NotDoneIcon {
+	background-color: $regular-red;
+	border: none;
+	color: $regular-white;
+	font-size: $font-size-small;
+	line-height: $sapphire-sizes--medium;
+	text-align: center;
+
+	.ProgressIconInfo--empty & {
+		background-color: $mid-light-grey;
+	}
 }
 
 .SmallPorgressBar {

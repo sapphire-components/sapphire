@@ -103,6 +103,11 @@
 
 .RedDot {
 	background-color: $regular-red;
+
+	&.Medium {
+		height: 12px;
+		width: 12px;
+	}
 }
 
 .GreenDot {

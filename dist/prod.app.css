@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128006 || Generated: Mon Jan 17 2022 16:25:12 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.128006 || Generated: Tue Jan 18 2022 10:15:48 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -21523,11 +21523,8 @@ a .PersonCard {
     color: #7cb342; }
   .ProgressIconInfo .icon-notgiven {
     color: #ff3e2d; }
-  .ProgressIconInfo--empty {
-    color: #777777; }
-    .ProgressIconInfo--empty .icon {
-      color: #adadad; }
 
+.NotDoneIcon,
 .NotStartedIcon,
 .PartiallyDoneIcon {
   border: 1px solid #adadad;
@@ -21538,6 +21535,16 @@ a .PersonCard {
 .PartiallyDoneIcon {
   border-color: #7cb342;
   border-right-width: 8px; }
+
+.NotDoneIcon {
+  background-color: #ff3e2d;
+  border: none;
+  color: #fff;
+  font-size: 0.857em;
+  line-height: 16px;
+  text-align: center; }
+  .ProgressIconInfo--empty .NotDoneIcon {
+    background-color: #adadad; }
 
 .SmallPorgressBar .ProgressBarWrap {
   height: 6px; }
@@ -25170,6 +25177,9 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 
 .RedDot {
   background-color: #ff3e2d; }
+  .RedDot.Medium {
+    height: 12px;
+    width: 12px; }
 
 .GreenDot {
   background-color: #7cb342; }
@@ -25534,6 +25544,17 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
       .ShiftTableRow__Content .tooltipstered,
       .ShiftTableRow__Content > .ListRecords .tooltipstered {
         width: 100%; }
+  .ShiftTableRow--hasIconLeft .ShiftTableRow__IconLeft {
+    align-items: center;
+    display: flex;
+    margin-right: 16px;
+    min-height: 100%;
+    width: 20px; }
+    .AR .ShiftTableRow--hasIconLeft .ShiftTableRow__IconLeft {
+      margin-left: 16px;
+      margin-right: 0; }
+  .ShiftTableRow--hasIconLeft .ShiftTableRow__Left {
+    width: 364px; }
 
 .ShiftTableCardEmpty {
   align-items: center;
@@ -25565,6 +25586,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     display: flex;
     padding-bottom: 8px; }
   .ShiftTable__HeaderLeft {
+    align-items: center;
+    display: flex;
     min-width: 424px; }
   .ShiftTable__HeaderTitle {
     color: #777777;
