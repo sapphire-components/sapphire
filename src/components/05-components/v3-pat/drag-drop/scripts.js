@@ -7,8 +7,7 @@
 		dragDropAreaWidget = window[config.dragDropAreaId];
 
 		$(window).load(function() {
-			SapphireWidgets.DragDropArea.refreshDragDrop();
-			//osAjaxBackend.BindAfterAjaxRequest(SapphireWidgets.DragDropArea.refreshDragDrop);
+			osAjaxBackend.BindAfterAjaxRequest(SapphireWidgets.DragDropArea.refreshDragDrop);
 		});
 	};
 

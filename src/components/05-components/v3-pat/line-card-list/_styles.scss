@@ -106,7 +106,7 @@
 	}
 
 	> .LineCardList:last-of-type,
-	> .ListRecords > *:last-of-type .LineCardList {
+	> .ListRecords > .LineCardList:last-of-type {
 		&::after {
 			display: none;
 		}
