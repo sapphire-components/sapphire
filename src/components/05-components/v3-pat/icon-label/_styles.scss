@@ -83,7 +83,6 @@ $IconLabel-color-text: $dark-grey;
 .IconVertical {
 	@include common-icons-default-style;
 
-	margin-right: 5px;
 	min-width: 50px;
 
 	&.iconBorder {

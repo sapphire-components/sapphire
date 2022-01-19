@@ -568,6 +568,7 @@ body.LayoutBase .os-internal-ui-widget-overlay {
 
 		.Toolbar {
 			padding-left: $sapphire-sizes--large;
+			min-height: 73px;
 		}
 
 		.Toolbar.Fix {

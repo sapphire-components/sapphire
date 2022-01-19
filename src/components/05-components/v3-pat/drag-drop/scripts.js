@@ -12,8 +12,12 @@
 	};
 
 	var refreshDragDrop = function() {
-		dragDropAreaWidget.setupDraggable();
-		dragDropAreaWidget.setupDroppable();
+		try {
+			dragDropAreaWidget.setupDraggable();
+			dragDropAreaWidget.setupDroppable();
+		} catch (error) {
+			console.error(error);
+		}
 	};
 
 	var DragDropArea = function(config) {

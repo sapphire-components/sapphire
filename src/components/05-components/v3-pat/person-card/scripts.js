@@ -9,21 +9,19 @@ $(document).ready(function() {
 				const $onCardCloseLink = $header.find('.PersonCard__OnCardCloseClick');
 				const $content = $header.next();
 
-				if ($content.children().length > 0) {
-					const $card = $(this).closest('.PersonCard');
+				const $card = $(this).closest('.PersonCard');
 
-					$content.removeClass('IsExpanded');
+				$content.removeClass('IsExpanded');
 
-					if ($card.hasClass('IsOpen')) {
-						$onCardCloseLink.triggerHandler('click');
-						$card.removeClass('IsOpen');
-					} else {
-						$onCardOpenLink.triggerHandler('click');
+				if ($card.hasClass('IsOpen')) {
+					$onCardCloseLink.triggerHandler('click');
+					$card.removeClass('IsOpen');
+				} else {
+					$onCardOpenLink.triggerHandler('click');
 
-						$content.addClass('IsExpanded');
+					$content.addClass('IsExpanded');
 
-						$card.addClass('IsOpen');
-					}
+					$card.addClass('IsOpen');
 				}
 			});
 	};
