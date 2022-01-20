@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128012 || Generated: Wed Jan 19 2022 16:14:50 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.128012 || Generated: Thu Jan 20 2022 12:43:37 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -20631,7 +20631,8 @@ body.PanelById.PanelOpened {
     display: flex;
     background-color: #fff;
     border-radius: 8px;
-    padding: 10px 16px; }
+    padding: 10px 16px;
+    /* Colors */ }
     .PersonCard__headerLeftInfo.IsLeftSideHide {
       display: none; }
     .PersonCard__headerLeftInfo.Male .PersonCardIcon {
@@ -20641,7 +20642,8 @@ body.PanelById.PanelOpened {
       .PersonCard__headerLeftInfo.Male.HasBorder .icon {
         color: #fff; }
     .PersonCard__headerLeftInfo.Female .PersonCardIcon {
-      background-color: #ec62ce; }
+      background-color: #ec62ce;
+      color: #fff; }
     .PersonCard__headerLeftInfo.Female.HasBorder {
       box-shadow: inset 5px 0px 0 0px #ec62ce; }
       .PersonCard__headerLeftInfo.Female.HasBorder .icon {
@@ -32118,12 +32120,6 @@ body.PanelOpened .daterangepicker {
 .AR .TileIconText_label,
 .AR .TileNumber_text {
   font-family: "TajawalRegular"; }
-
-div[id*='LinkedHospitalizations'] {
-  border-top: none; }
-
-span[id*='RelatedVisitsRL'] :not(:first-child) .PersonCard_header {
-  border-top: none; }
 
 .HospitalizationPlanLayout {
   height: auto;

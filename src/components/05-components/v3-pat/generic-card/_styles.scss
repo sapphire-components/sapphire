@@ -247,7 +247,7 @@
 			display: none;
 		}
 
-		// Colors
+		/* Colors */
 		&.Male {
 			.PersonCardIcon {
 				background-color: $regular-blue;
@@ -265,6 +265,7 @@
 		&.Female {
 			.PersonCardIcon {
 				background-color: $regular-pink;
+				color: $regular-white;
 			}
 
 			&.HasBorder {

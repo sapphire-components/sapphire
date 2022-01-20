@@ -487,6 +487,7 @@
 	DateTimeRangePicker.prototype.sendNotification = function(sendDate) {
 		if (this.$widget.hasClass('attachedInput')) {
 			this.$input.trigger('change');
+			this.$model && this.$model.trigger('change');
 			return false;
 		}
 
