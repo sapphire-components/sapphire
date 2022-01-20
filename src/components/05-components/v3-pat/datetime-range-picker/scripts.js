@@ -347,10 +347,14 @@
 		this.$calendar.on('click', '.DateTimeRangePicker-calendar-gotoday', function() {
 			_this.picker.setStartDate(moment());
 			_this.picker.setEndDate(moment());
+
 			_this.picker.hide();
+
 			if (!_this.config.autoUpdateInput || _this.config.hasTextTrigger || _this.config.attachToInput) {
 				_this.updateLabeling();
+				_this.$model && _this.$model.trigger('change');
 			}
+
 			_this.sendNotification();
 		});
 
@@ -403,6 +407,7 @@
 				if (this.config.attachToInput) {
 					if (this.config.singleDatePicker) {
 						this.$input.val(this.picker.startDate.format(inputMask));
+						this.$model && this.$model.val(this.picker.startDate.format(this.config.systemDateFormat));
 					} else {
 						const startDate = this.picker.startDate.format(inputMask);
 						const endDate = this.picker.endDate.format(inputMask);
@@ -487,7 +492,7 @@
 	DateTimeRangePicker.prototype.sendNotification = function(sendDate) {
 		if (this.$widget.hasClass('attachedInput')) {
 			this.$input.trigger('change');
-			this.$model && this.$model.trigger('change');
+
 			return false;
 		}
 
