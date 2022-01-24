@@ -80,9 +80,16 @@ $line-warning-height: 62px;
 			padding: $sapphire-sizes--small;
 
 			.LineWarns__message {
-				padding: 0;
 				line-height: 25px;
+				padding: 0;
 			}
+		}
+	}
+
+	&--vertical {
+		.LineWarns_list {
+			flex-direction: column;
+			gap: 0;
 		}
 	}
 }
