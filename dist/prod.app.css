@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128017 || Generated: Mon Jan 24 2022 16:01:17 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.128017 || Generated: Mon Jan 24 2022 16:07:47 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -28714,7 +28714,7 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 .shadow--xsmall {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.16); }
 
-.ShadowSmall, .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ForwardLocationsContent, .DropdownMenu, .InputWithList__List, .sp-container, .daterangepicker, div.ui-timepicker-container, .PatientCallCancelStructure, .CalendarWrapper .CalendarWb, .select2-container .select2-dropdown, .TableFormColumn--editMode, .RemoteAppointment,
+.ShadowSmall, .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ForwardLocationsContent, .DropdownMenu, .InputWithList__List, .sp-container, .daterangepicker, div.ui-timepicker-container, .PatientCallCancelStructure, .CalendarWrapper .CalendarWb, .select2-container .select2-dropdown, .TableFormColumn--editMode, .RemoteAppointment, .WorklistPageContent .CollapsibleSidePanel__Content,
 .shadow--small {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.16); }
 

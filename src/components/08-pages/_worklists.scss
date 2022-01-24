@@ -30,6 +30,10 @@
 		height: calc(100% - 16px);
 	}
 
+	.CollapsibleSidePanel__Content {
+		@include shadow-small;
+	}
+
 	.CollapsibleSidePanel__PanelHeader {
 		background-color: $regular-white;
 		position: sticky;
