@@ -87,6 +87,8 @@ $line-warning-height: 62px;
 	}
 
 	&--vertical {
+		width: 100%;
+
 		.LineWarns_list {
 			flex-direction: column;
 			gap: 0;

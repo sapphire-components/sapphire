@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128015 || Generated: Mon Jan 24 2022 10:27:40 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.128015 || Generated: Mon Jan 24 2022 10:29:38 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -18863,9 +18863,11 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
       .LineWarns--small .LineWarns_list .LineWarns__message {
         line-height: 25px;
         padding: 0; }
-  .LineWarns--vertical .LineWarns_list {
-    flex-direction: column;
-    gap: 0; }
+  .LineWarns--vertical {
+    width: 100%; }
+    .LineWarns--vertical .LineWarns_list {
+      flex-direction: column;
+      gap: 0; }
 
 .AR .LineWarns__buttonContainer,
 .FA .LineWarns__buttonContainer {
