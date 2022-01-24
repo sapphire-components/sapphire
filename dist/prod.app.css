@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128016 || Generated: Mon Jan 24 2022 10:30:16 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.128016 || Generated: Mon Jan 24 2022 16:00:19 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -31557,6 +31557,13 @@ ul.os-internal-ui-autocomplete {
 
 .WorklistPageContent .ShiftTableCardEmpty {
   height: calc(100% - 16px); }
+
+.WorklistPageContent .CollapsibleSidePanel__PanelHeader {
+  background-color: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1; }
 
 .WhiteContainer.MultiPaddingXSmall,
 .AR .WhiteContainer.MultiPaddingXSmall,
