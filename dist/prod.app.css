@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128018 || Generated: Mon Jan 24 2022 16:09:48 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.128018 || Generated: Mon Jan 24 2022 16:53:25 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -14902,6 +14902,13 @@ div.CircledArrow {
 
 .CollapsibleSidePanel--hideHeader .CollapsibleSidePanel__Header {
   display: none; }
+
+.CollapsibleSidePanel--fixed .CollapsibleSidePanel__Content {
+  position: fixed;
+  right: 58px;
+  top: 16px; }
+  .CollapsibleSidePanel--fixed .CollapsibleSidePanel__Content .CollapsibleSidePanel__PanelHeader {
+    position: unset; }
 
 .sp-replacer {
   background-color: #fff;
@@ -31564,6 +31571,9 @@ ul.os-internal-ui-autocomplete {
   position: sticky;
   top: 0;
   z-index: 1; }
+
+.WorklistPageContent .CollapsibleSidePanel__PanelContent {
+  overflow-x: hidden; }
 
 .WhiteContainer.MultiPaddingXSmall,
 .AR .WhiteContainer.MultiPaddingXSmall,

@@ -243,4 +243,16 @@
 			display: none;
 		}
 	}
+
+	&--fixed {
+		.CollapsibleSidePanel__Content {
+			position: fixed;
+			right: 58px;
+			top: $sapphire-sizes--medium;
+
+			.CollapsibleSidePanel__PanelHeader {
+				position: unset;
+			}
+		}
+	}
 }
