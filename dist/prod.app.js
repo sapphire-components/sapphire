@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.1.128019 || Generated: Mon Jan 24 2022 16:54:50 GMT+0000 (Western European Standard Time) */
+/*! prod.app.js || Version: 5.1.128019 || Generated: Mon Jan 24 2022 17:52:29 GMT+0000 (Western European Standard Time) */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -171,7 +171,7 @@ eval("/* Component LayoutPopup */\r\n(function($, window, document, SapphireWidg
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("/* Component SubLayoutLeft */\r\n(function($, window, document, SapphireWidgets) {\r\n\tconst create = function() {\r\n\t\t$(window).scroll(function() {\r\n\t\t\tconst $collapsibleOpen = $('.CollapsibleSidePanel--open');\r\n\r\n\t\t\tif ($collapsibleOpen.length) {\r\n\t\t\t\tconst position = $(window).scrollTop();\r\n\r\n\t\t\t\tif (position >= 64) $collapsibleOpen.addClass('CollapsibleSidePanel--fixed');\r\n\t\t\t\telse $collapsibleOpen.removeClass('CollapsibleSidePanel--fixed');\r\n\t\t\t}\r\n\t\t});\r\n\t};\r\n\r\n\tSapphireWidgets.SubLayoutLeft = {\r\n\t\tcreate,\r\n\t};\r\n})(jQuery, window, document, SapphireWidgets);\r\n\n\n//# sourceURL=webpack:///./src/components/05-components/layout/subLayoutLeft.js?");
+eval("/* Component SubLayoutLeft */\r\n(function($, window, document, SapphireWidgets) {\r\n\tconst create = function() {};\r\n\r\n\tSapphireWidgets.SubLayoutLeft = {\r\n\t\tcreate,\r\n\t};\r\n})(jQuery, window, document, SapphireWidgets);\r\n\n\n//# sourceURL=webpack:///./src/components/05-components/layout/subLayoutLeft.js?");
 
 /***/ }),
 

@@ -471,6 +471,13 @@
 	}
 }
 
+.LayoutBase--menuFixed {
+	.LayoutBase-Wrapper .LayoutBase-MainMenu {
+		position: fixed;
+		top: 0;
+	}
+}
+
 body.LayoutBase .os-internal-ui-widget-overlay {
 	z-index: 90 !important;
 }

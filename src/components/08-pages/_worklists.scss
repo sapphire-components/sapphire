@@ -34,12 +34,12 @@
 		@include shadow-small;
 	}
 
-	.CollapsibleSidePanel__PanelHeader {
-		background-color: $regular-white;
-		position: sticky;
-		top: 0;
-		z-index: 1;
-	}
+	// .CollapsibleSidePanel__PanelHeader {
+	// 	background-color: $regular-white;
+	// 	position: sticky;
+	// 	top: 0;
+	// 	z-index: 1;
+	// }
 
 	.CollapsibleSidePanel__PanelContent {
 		overflow-x: hidden;

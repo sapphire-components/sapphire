@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128019 || Generated: Mon Jan 24 2022 16:54:50 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.128019 || Generated: Mon Jan 24 2022 17:52:29 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -11143,6 +11143,10 @@ div.WizardParent {
     margin-left: 0;
     margin-right: -24px; }
 
+.LayoutBase--menuFixed .LayoutBase-Wrapper .LayoutBase-MainMenu {
+  position: fixed;
+  top: 0; }
+
 body.LayoutBase .os-internal-ui-widget-overlay {
   z-index: 90 !important; }
 
@@ -12031,12 +12035,31 @@ form,
       max-width: 430px;
       min-height: calc(100vh - 64px);
       z-index: 2; }
-  .SubLayoutLeftPanel--isFixedToTop .SubLayoutLeftPanel__PanelTitle {
-    top: 16px; }
-  .SubLayoutLeftPanel--isFixedToTop .SubLayoutLeftPanel__MenuItems {
-    top: 66px; }
-  .SubLayoutLeftPanel--isFixedToTop .WorklistPageHeader {
-    top: -5px; }
+  .SubLayoutLeftPanel--isFixedToTop {
+    padding-left: 242px; }
+    .SubLayoutLeftPanel--isFixedToTop .SubLayoutLeftPanel__Panel {
+      height: 100%;
+      left: 0;
+      position: fixed; }
+    .SubLayoutLeftPanel--isFixedToTop .SubLayoutLeftPanel__PanelTitle,
+    .SubLayoutLeftPanel--isFixedToTop .SubLayoutLeftPanel__MenuItems {
+      position: unset; }
+    .SubLayoutLeftPanel--isFixedToTop .WorklistPageHeader {
+      top: 64px; }
+    .SubLayoutLeftPanel--isFixedToTop .CollapsibleSidePanel__Content {
+      position: fixed;
+      right: 58px;
+      top: 80px; }
+      .SubLayoutLeftPanel--isFixedToTop .CollapsibleSidePanel__Content .CollapsibleSidePanel__PanelHeader {
+        position: unset; }
+    .SubLayoutLeftPanel--isFixedToTop .CollapsibleSidePanel--open .CollapsibleSidePanel__Content {
+      height: calc(100vh - 128px); }
+    .AR .SubLayoutLeftPanel--isFixedToTop {
+      padding-left: 0;
+      padding-right: 242px; }
+      .AR .SubLayoutLeftPanel--isFixedToTop .SubLayoutLeftPanel__Panel {
+        left: unset;
+        right: 0; }
 
 /* RichWidgets Components */
 html body {
@@ -14902,13 +14925,6 @@ div.CircledArrow {
 
 .CollapsibleSidePanel--hideHeader .CollapsibleSidePanel__Header {
   display: none; }
-
-.CollapsibleSidePanel--fixed .CollapsibleSidePanel__Content {
-  position: fixed;
-  right: 58px;
-  top: 16px; }
-  .CollapsibleSidePanel--fixed .CollapsibleSidePanel__Content .CollapsibleSidePanel__PanelHeader {
-    position: unset; }
 
 .sp-replacer {
   background-color: #fff;
@@ -31564,13 +31580,6 @@ ul.os-internal-ui-autocomplete {
 
 .WorklistPageContent .ShiftTableCardEmpty {
   height: calc(100% - 16px); }
-
-.WorklistPageContent .CollapsibleSidePanel__PanelHeader {
-  background-color: #fff;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 1; }
 
 .WorklistPageContent .CollapsibleSidePanel__PanelContent {
   overflow-x: hidden; }
