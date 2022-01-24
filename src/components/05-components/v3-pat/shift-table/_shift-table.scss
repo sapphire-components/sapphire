@@ -52,6 +52,10 @@
 		min-width: fit-content;
 		overflow: hidden;
 		width: 100%;
+
+		.ListRecords > span {
+			margin-bottom: $sapphire-sizes--small;
+		}
 	}
 
 	&__CurrentHour {
