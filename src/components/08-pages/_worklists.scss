@@ -22,9 +22,9 @@
 	}
 
 	.ShiftTableRow__Left {
+		justify-content: center;
 		padding-bottom: $sapphire-sizes--small;
 		padding-top: $sapphire-sizes--small;
-		justify-content: center;
 	}
 
 	.ShiftTableCell {
@@ -32,20 +32,19 @@
 	}
 
 	.ShiftTableCardEmpty {
-		height: 100%;
 		gap: 0;
+		height: 100%;
+	}
+
+	.LineCardList {
+		.icon {
+			font-size: 16px;
+		}
 	}
 
 	.CollapsibleSidePanel__Content {
 		@include shadow-small;
 	}
-
-	// .CollapsibleSidePanel__PanelHeader {
-	// 	background-color: $regular-white;
-	// 	position: sticky;
-	// 	top: 0;
-	// 	z-index: 1;
-	// }
 
 	.CollapsibleSidePanel__PanelContent {
 		overflow-x: hidden;

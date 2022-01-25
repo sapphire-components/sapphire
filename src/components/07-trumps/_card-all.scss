@@ -24,13 +24,8 @@
 			text-overflow: ellipsis;
 			white-space: nowrap;
 		}
-	}
-}
 
-.AR,
-.FA {
-	.CardAll {
-		.DescriptionContainer {
+		.AR & {
 			padding-left: 0;
 			padding-right: $sapphire-sizes--medium;
 			text-align: right;
@@ -38,6 +33,22 @@
 			.Description {
 				font-family: $font-family-latin-bold;
 			}
+		}
+	}
+}
+
+.CardAllHover {
+	&:hover {
+		.CardAll .DescriptionContainer {
+			color: $regular-beta;
+		}
+	}
+
+	&:link .Small_Description {
+		font-family: $font-family-latin-regular;
+
+		.AR & {
+			font-family: $font-family-arabic-regular;
 		}
 	}
 }

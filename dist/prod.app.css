@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128023 || Generated: Tue Jan 25 2022 08:41:22 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.128023 || Generated: Tue Jan 25 2022 09:13:53 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -30613,15 +30613,20 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap; }
+    .AR .CardAll .DescriptionContainer {
+      padding-left: 0;
+      padding-right: 16px;
+      text-align: right; }
+      .AR .CardAll .DescriptionContainer .Description {
+        font-family: "LatoBold"; }
 
-.AR .CardAll .DescriptionContainer,
-.FA .CardAll .DescriptionContainer {
-  padding-left: 0;
-  padding-right: 16px;
-  text-align: right; }
-  .AR .CardAll .DescriptionContainer .Description,
-  .FA .CardAll .DescriptionContainer .Description {
-    font-family: "LatoBold"; }
+.CardAllHover:hover .CardAll .DescriptionContainer {
+  color: #00ac94; }
+
+.CardAllHover:link .Small_Description {
+  font-family: "LatoRegular"; }
+  .AR .CardAllHover:link .Small_Description {
+    font-family: "TajawalRegular"; }
 
 .Card .Gallery .GalleryWrapper, .DashboardWindow .Gallery .GalleryWrapper {
   margin: 0; }
@@ -31578,16 +31583,19 @@ ul.os-internal-ui-autocomplete {
     background-color: #f2fffd; }
 
 .WorklistPageContent .ShiftTableRow__Left {
+  justify-content: center;
   padding-bottom: 8px;
-  padding-top: 8px;
-  justify-content: center; }
+  padding-top: 8px; }
 
 .WorklistPageContent .ShiftTableCell {
   padding: 8px; }
 
 .WorklistPageContent .ShiftTableCardEmpty {
-  height: 100%;
-  gap: 0; }
+  gap: 0;
+  height: 100%; }
+
+.WorklistPageContent .LineCardList .icon {
+  font-size: 16px; }
 
 .WorklistPageContent .CollapsibleSidePanel__PanelContent {
   overflow-x: hidden; }
