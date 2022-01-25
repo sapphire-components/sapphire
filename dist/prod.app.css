@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128022 || Generated: Mon Jan 24 2022 18:06:58 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.128022 || Generated: Tue Jan 25 2022 08:40:47 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -31568,6 +31568,9 @@ ul.os-internal-ui-autocomplete {
   top: 64px;
   z-index: 2; }
 
+.WorklistPageContent .ShiftTableRow {
+  min-height: 68px; }
+
 .WorklistPageContent .ShiftTableRow .ShiftTableRow:hover {
   background-color: #f2fffd;
   cursor: pointer; }
@@ -31576,13 +31579,15 @@ ul.os-internal-ui-autocomplete {
 
 .WorklistPageContent .ShiftTableRow__Left {
   padding-bottom: 8px;
-  padding-top: 8px; }
+  padding-top: 8px;
+  justify-content: center; }
 
 .WorklistPageContent .ShiftTableCell {
   padding: 8px; }
 
 .WorklistPageContent .ShiftTableCardEmpty {
-  height: calc(100% - 16px); }
+  height: 100%;
+  gap: 0; }
 
 .WorklistPageContent .CollapsibleSidePanel__PanelContent {
   overflow-x: hidden; }

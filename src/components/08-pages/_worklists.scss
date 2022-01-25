@@ -8,6 +8,10 @@
 }
 
 .WorklistPageContent {
+	.ShiftTableRow {
+		min-height: 68px;
+	}
+
 	.ShiftTableRow .ShiftTableRow:hover {
 		background-color: $regular-eta;
 		cursor: pointer;
@@ -20,6 +24,7 @@
 	.ShiftTableRow__Left {
 		padding-bottom: $sapphire-sizes--small;
 		padding-top: $sapphire-sizes--small;
+		justify-content: center;
 	}
 
 	.ShiftTableCell {
@@ -27,7 +32,8 @@
 	}
 
 	.ShiftTableCardEmpty {
-		height: calc(100% - 16px);
+		height: 100%;
+		gap: 0;
 	}
 
 	.CollapsibleSidePanel__Content {
