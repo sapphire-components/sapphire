@@ -35,10 +35,8 @@
 		gap: 0;
 	}
 
-	.LineCardList {
-		.icon {
-			font-size: 16px;
-		}
+	.LineCardList > .icon {
+		font-size: 16px;
 	}
 
 	.CollapsibleSidePanel__Content {

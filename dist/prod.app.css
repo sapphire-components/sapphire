@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128026 || Generated: Thu Jan 27 2022 13:44:44 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.128026 || Generated: Fri Jan 28 2022 17:18:43 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -31595,7 +31595,7 @@ ul.os-internal-ui-autocomplete {
 .WorklistPageContent .ShiftTableCardEmpty {
   gap: 0; }
 
-.WorklistPageContent .LineCardList .icon {
+.WorklistPageContent .LineCardList > .icon {
   font-size: 16px; }
 
 .WorklistPageContent .CollapsibleSidePanel__PanelContent {
