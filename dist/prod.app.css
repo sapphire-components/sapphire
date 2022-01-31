@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128029 || Generated: Mon Jan 31 2022 12:15:31 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.128029 || Generated: Mon Jan 31 2022 12:17:02 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -18881,11 +18881,15 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   .LineWarns--small {
     min-height: 43px; }
     .LineWarns--small .LineWarns_list {
+      align-items: center;
       min-height: 43px;
       padding: 8px; }
+      .LineWarns--small .LineWarns_list .LineWarns__icon {
+        line-height: 14px; }
       .LineWarns--small .LineWarns_list .LineWarns__message {
-        line-height: 25px;
         padding: 0; }
+      .LineWarns--small .LineWarns_list .LineWarningActions:empty {
+        display: none; }
   .LineWarns--vertical {
     width: 100%; }
     .LineWarns--vertical .LineWarns_list {

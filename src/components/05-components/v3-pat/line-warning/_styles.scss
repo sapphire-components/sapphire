@@ -76,12 +76,22 @@ $line-warning-height: 62px;
 		min-height: 43px;
 
 		.LineWarns_list {
+			align-items: center;
 			min-height: 43px;
 			padding: $sapphire-sizes--small;
 
+			.LineWarns__icon {
+				line-height: 14px;
+			}
+
 			.LineWarns__message {
-				line-height: 25px;
 				padding: 0;
+			}
+
+			.LineWarningActions {
+				&:empty {
+					display: none;
+				}
 			}
 		}
 	}
