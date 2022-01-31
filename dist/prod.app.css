@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128027 || Generated: Fri Jan 28 2022 17:20:03 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.128027 || Generated: Mon Jan 31 2022 10:21:17 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -25140,22 +25140,27 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     .AR .ShiftGroupContent__HeaderLeft {
       border-left: 1px solid #d6d6d6;
       border-right: none; }
-  .ShiftGroupContent__HeaderContent {
+  .ShiftGroupContent__HeaderContent,
+  .ShiftGroupContent__HeaderContent > .ListRecords {
     display: flex;
     flex: 1; }
-    .ShiftGroupContent__HeaderContent > div {
+    .ShiftGroupContent__HeaderContent > div,
+    .ShiftGroupContent__HeaderContent > .ListRecords > div {
       align-items: center;
       display: flex;
       justify-content: center;
       border-right: 1px solid #ebebeb;
       flex: 1;
       min-width: 130px; }
-      .ShiftGroupContent__HeaderContent > div:last-of-type {
+      .ShiftGroupContent__HeaderContent > div:last-of-type,
+      .ShiftGroupContent__HeaderContent > .ListRecords > div:last-of-type {
         border-right-color: transparent; }
-      .AR .ShiftGroupContent__HeaderContent > div {
+      .AR .ShiftGroupContent__HeaderContent > div, .AR
+      .ShiftGroupContent__HeaderContent > .ListRecords > div {
         border-left: 1px solid #ebebeb;
         border-right: none; }
-        .AR .ShiftGroupContent__HeaderContent > div:last-of-type {
+        .AR .ShiftGroupContent__HeaderContent > div:last-of-type, .AR
+        .ShiftGroupContent__HeaderContent > .ListRecords > div:last-of-type {
           border-left-color: transparent; }
   .ShiftGroupContent__HeaderExpandable {
     cursor: pointer;

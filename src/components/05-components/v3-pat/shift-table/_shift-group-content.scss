@@ -23,7 +23,8 @@
 		}
 	}
 
-	&__HeaderContent {
+	&__HeaderContent,
+	&__HeaderContent > .ListRecords{
 		display: flex;
 		flex: 1;
 
