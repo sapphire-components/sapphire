@@ -47,12 +47,17 @@
 		overflow-x: hidden;
 	}
 	//worklists item detail panel
-	.CollapsibleSidePanel__PanelContent .ReverseList {
+	.CollapsibleSidePanel__PanelFooter .ReverseList {
 		display: flex;
 		flex-direction: column-reverse;
 		max-height: 200px;
-    	overflow-y: auto;
 		background-color: #F9F9F9;
 	}
+
+	.CollapsibleSidePanel__PanelFooter .ReverseList.Scrollable::-webkit-scrollbar {
+		background-color: #F9F9F9;
+	}
+
+
 }
 
