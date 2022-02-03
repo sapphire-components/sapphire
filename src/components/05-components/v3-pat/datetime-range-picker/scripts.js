@@ -407,7 +407,7 @@
 				if (this.config.attachToInput) {
 					if (this.config.singleDatePicker) {
 						this.$input.val(this.picker.startDate.format(inputMask));
-						this.$model && this.$model.val(this.picker.startDate.format(this.config.systemDateFormat));
+						this.$model && this.$model.val(this.picker.startDate.format(`${this.config.systemDateFormat} HH:mm`));
 					} else {
 						const startDate = this.picker.startDate.format(inputMask);
 						const endDate = this.picker.endDate.format(inputMask);
