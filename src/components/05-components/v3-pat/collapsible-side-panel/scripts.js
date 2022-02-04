@@ -60,10 +60,14 @@
 				this.$component.hide();
 			}
 
-			$(document).ready(function() {
-				$('.CollapsibleSidePanel:visible').addClass('MultiMarginTopSmall');
-				$('.CollapsibleSidePanel:visible:first').addClass('MultiMarginTopLarge');
-			});
+			//Diogo Ribeiro - it seems we only need margins when we show the header
+			if(!this.options.hideHeader) {
+				$(document).ready(function() {
+					$('.CollapsibleSidePanel:visible').addClass('MultiMarginTopSmall');
+					$('.CollapsibleSidePanel:visible:first').addClass('MultiMarginTopLarge');
+				});
+			}
+			
 		}
 	}
 
