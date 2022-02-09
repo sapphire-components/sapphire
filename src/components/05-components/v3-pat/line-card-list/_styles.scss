@@ -107,7 +107,8 @@
 
 	> .LineCardList:last-of-type,
 	> .ListRecords > .LineCardList:last-of-type,
-	> .ListRecords > span .LineCardList:last-of-type {
+	> .ListRecords > span .LineCardList:last-of-type
+	> div .ListRecords > .LineCardList:last-of-type {
 		&::after {
 			display: none;
 		}
