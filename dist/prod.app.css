@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128037 || Generated: Wed Feb 09 2022 16:27:30 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.128037 || Generated: Wed Feb 09 2022 16:57:24 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -18541,7 +18541,8 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
       right: 52px; }
   .GroupLineCards > .LineCardList:last-of-type::after,
   .GroupLineCards > .ListRecords > .LineCardList:last-of-type::after,
-  .GroupLineCards > .ListRecords > span .LineCardList:last-of-type > div .ListRecords > .LineCardList:last-of-type::after {
+  .GroupLineCards > .ListRecords > span .LineCardList:last-of-type::after,
+  .GroupLineCards > div .ListRecords > .LineCardList:last-of-type::after {
     display: none; }
 
 .LineContent {
