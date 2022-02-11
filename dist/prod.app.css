@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128039 || Generated: Thu Feb 10 2022 17:32:59 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.128039 || Generated: Fri Feb 11 2022 09:51:00 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -18542,7 +18542,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   .GroupLineCards > .LineCardList:last-of-type::after,
   .GroupLineCards > .ListRecords > .LineCardList:last-of-type::after,
   .GroupLineCards > .ListRecords > span .LineCardList:last-of-type::after,
-  .GroupLineCards > div .ListRecords > .LineCardList:last-of-type::after {
+  .GroupLineCards > div .ListRecords > span:last-of-type .LineCardList::after {
     display: none; }
 
 .LineContent {

@@ -105,10 +105,11 @@
 		}
 	}
 
+	//these are different combinations to handle the spans the OS platform adds automatically
 	> .LineCardList:last-of-type,
 	> .ListRecords > .LineCardList:last-of-type,
 	> .ListRecords > span .LineCardList:last-of-type,
-	> div .ListRecords > .LineCardList:last-of-type {
+	> div .ListRecords > span:last-of-type .LineCardList {
 		&::after {
 			display: none;
 		}
