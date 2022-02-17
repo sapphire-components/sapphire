@@ -2,6 +2,7 @@
 	border: 1px solid $light-grey;
 	border-radius: $border-radius-medium;
 	overflow: hidden;
+	margin-bottom: $sapphire-sizes--small;//Diogo Ribeiro: added margin here, check shift-table css file 
 
 	&__Header {
 		align-items: stretch;
