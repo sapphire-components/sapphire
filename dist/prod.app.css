@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128041 || Generated: Thu Feb 17 2022 18:28:10 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.128041 || Generated: Thu Feb 17 2022 18:32:33 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -25660,8 +25660,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     overflow: hidden;
     width: 100%; }
     .ShiftTable__Content .ListRecords > span {
-      display: block;
-      margin-bottom: 8px; }
+      display: block; }
   .ShiftTable__CurrentHour .HourLine {
     background-color: #ff3e2d;
     bottom: 0;
