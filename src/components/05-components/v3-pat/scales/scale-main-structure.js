@@ -92,7 +92,7 @@
 						var ButtonScaleSelected = ScaleListSelected.querySelectorAll('.ButtonGroupScale')[i];
 
 						if (ButtonScaleSelected.querySelectorAll('.ButtonGroup_button.active').length > 0) {
-							var ScaleValue = ButtonScaleSelected.querySelectorAll('.active')[0].innerText;
+							var ScaleValue = ButtonScaleSelected.querySelectorAll('.ButtonGroup_button.active')[0].innerText;
 							total.push(parseInt(ScaleValue));
 							totalScore.push(parseInt(ScaleValue));
 							countActive = countActive + 1;
