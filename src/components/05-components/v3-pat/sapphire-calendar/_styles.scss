@@ -13,7 +13,8 @@
 	@include common-sapphire-weekdays-style;
 
 	border: 1px solid $light-grey;
-	min-width: 250px;
+	width: 350px;
+	padding: $sapphire-sizes--medium;
 	position: absolute;
 	z-index: 1;
 
@@ -23,7 +24,8 @@
 		border: 1px solid $light-grey;
 		border-radius: $border-radius-medium;
 		display: inline-block;
-		padding: $sapphire-sizes--medium $sapphire-sizes--large;
+		width: 350px;
+		padding: $sapphire-sizes--medium;
 		width: 100%;
 	}
 }
@@ -320,7 +322,7 @@
 
 		border-radius: $border-radius-medium;
 		margin-top: 7px;
-		min-width: 315px;
+		width: 350px;
 	}
 }
 

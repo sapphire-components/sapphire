@@ -5,5 +5,5 @@ dist/*
 !dist/prod.app.*
 !dist/prod.styleguide.*
 !dist/prod.backoffice.*
-
+package-lock.json
 GB/*
