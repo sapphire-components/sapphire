@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128044 || Generated: Thu Mar 10 2022 17:10:26 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.128044 || Generated: Thu Mar 10 2022 17:16:50 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -21616,8 +21616,7 @@ a .PersonCard {
     border-radius: 8px;
     display: inline-block;
     width: 350px;
-    padding: 16px;
-    width: 100%; }
+    padding: 16px; }
 
 .CalendarWidget .Calendar_SmallDayLink {
   align-items: center;
