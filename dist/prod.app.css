@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128045 || Generated: Fri Mar 11 2022 09:57:04 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.128045 || Generated: Mon Mar 14 2022 16:47:00 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -18495,6 +18495,8 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   .LineCardList__Actions {
     display: flex;
     gap: 8px; }
+    .LineCardList__Actions .FlexList, .LineCardList__Actions .FlexListSmallGap, .LineCardList__Actions .FlexListMediumGap, .LineCardList__Actions .FlexListLargeGap {
+      justify-content: flex-end; }
   .LineCardList:hover, .LineCardList--selected {
     background-color: #f2fffd;
     border-color: #00bfa5; }
@@ -22080,6 +22082,7 @@ div.List-Star {
     border: 1px solid #00bfa5; }
   .ButtonRadioInp.active .ButtonRadioInp_radioText, .ButtonRadioInp.active .ButtonRadioInp_radioText:hover {
     background-color: #00bfa5;
+    border-color: #00bfa5;
     color: #fff;
     pointer-events: none; }
   .ButtonRadioInp.disabled .ButtonRadioInp_radioText {
@@ -24201,6 +24204,11 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 
 .SelectSystemFilter .select2 .select2-selection {
   border-radius: 100px !important; }
+
+.SelectSystemFilter-Selected .select2 .select2-selection {
+  border: 2px solid #00bfa5; }
+  .SelectSystemFilter-Selected .select2 .select2-selection .select2-selection__rendered {
+    line-height: 34px; }
 
 .isTouch .select2 .select2-selection {
   height: 50px; }
@@ -28206,7 +28214,7 @@ div.TimelineDetail {
   font-family: 'Arial', sans-serif;
   font-size: 14px;
   line-height: 16px;
-  padding: 8px 16px; }
+  padding: 0px; }
 
 /* Use this next selector to style things like font-size and line-height: */
 .tooltipster-default .tooltipster-content {

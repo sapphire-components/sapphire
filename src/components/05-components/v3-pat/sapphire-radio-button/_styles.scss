@@ -25,6 +25,7 @@
 				&,
 				&:hover {
 					background-color: $regular-alpha;
+					border-color: $regular-alpha;
 					color: $regular-white;
 					pointer-events: none;
 				}

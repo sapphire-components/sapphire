@@ -32,6 +32,10 @@
 	&__Actions {
 		display: flex;
 		gap: $sapphire-sizes--small;
+
+		.FlexList {
+			justify-content: flex-end;
+		}
 	}
 
 	&:hover,

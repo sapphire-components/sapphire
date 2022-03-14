@@ -29,9 +29,10 @@ SapphireWidgets.SelectSystem = config => {
 		if (config.locale === 'AR' || config.locale === 'FA') {
 			Select2Options.dir = 'rtl';
 		}
-
+		
 		Select2Options.theme = 'default SelectSystem';
 
+		console.log("--- " + Select2Type + " ---");
 		/*  
           Change select2 search display 
               -Multiple Select2 search UI like Single Select2
@@ -425,6 +426,19 @@ SapphireWidgets.SelectSystem = config => {
 			} else {
 				$WidgetIdentifier.select2(Select2Options);
 			}
+		}
+
+		if (Select2Type === '4') {
+			$WidgetIdentifier.select2(Select2Options);
+			var idwidget = '#' + WidgetId;
+
+			$WidgetIdentifier.on('select2:select', function(e) {
+				if(e.target.selectedIndex !== 0){
+					$WidgetIdentifier.parent().addClass('SelectSystemFilter-Selected');
+				}else{
+					$WidgetIdentifier.parent().removeClass('SelectSystemFilter-Selected');
+				}
+			})
 		}
 	});
 };
