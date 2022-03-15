@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128046 || Generated: Mon Mar 14 2022 16:47:41 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.128046 || Generated: Tue Mar 15 2022 17:43:21 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -21185,22 +21185,22 @@ a .PersonCard {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px; }
 
-.SegmentedControl.Filters .SegmentedControlItem.Critical > input[type='radio']:checked ~ label {
+.SegmentedControl.Filters .SegmentedControlItem.Critical > input[type='radio']:checked ~ label, .Filters.SegmentedControlLight .SegmentedControlItem.Critical > input[type='radio']:checked ~ label {
   background-color: #cb0100; }
 
-.SegmentedControl.Filters .SegmentedControlItem.High > input[type='radio']:checked ~ label {
+.SegmentedControl.Filters .SegmentedControlItem.High > input[type='radio']:checked ~ label, .Filters.SegmentedControlLight .SegmentedControlItem.High > input[type='radio']:checked ~ label {
   background-color: #ff3e2d; }
 
-.SegmentedControl.Filters .SegmentedControlItem.Moderate > input[type='radio']:checked ~ label {
+.SegmentedControl.Filters .SegmentedControlItem.Moderate > input[type='radio']:checked ~ label, .Filters.SegmentedControlLight .SegmentedControlItem.Moderate > input[type='radio']:checked ~ label {
   background-color: #ffa000; }
 
-.SegmentedControl.Filters .SegmentedControlItem.Low > input[type='radio']:checked ~ label {
+.SegmentedControl.Filters .SegmentedControlItem.Low > input[type='radio']:checked ~ label, .Filters.SegmentedControlLight .SegmentedControlItem.Low > input[type='radio']:checked ~ label {
   background-color: #f0ad05; }
 
-.SegmentedControl.Filters .SegmentedControlItem.Info > input[type='radio']:checked ~ label {
+.SegmentedControl.Filters .SegmentedControlItem.Info > input[type='radio']:checked ~ label, .Filters.SegmentedControlLight .SegmentedControlItem.Info > input[type='radio']:checked ~ label {
   background-color: #1ba5ec; }
 
-.SegmentedControl.Filters .SegmentedControlItem.Unknown > input[type='radio']:checked ~ label {
+.SegmentedControl.Filters .SegmentedControlItem.Unknown > input[type='radio']:checked ~ label, .Filters.SegmentedControlLight .SegmentedControlItem.Unknown > input[type='radio']:checked ~ label {
   background-color: #777777; }
 
 .SectionPrescriptionExpandableArea.expanded:not(.isLinkEpandable) .PrescriptionExpandable_content {
@@ -23810,77 +23810,78 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     border-bottom: 1px solid #d6d6d6;
     flex: 1; }
 
-.SegmentedControl {
+.SegmentedControl, .SegmentedControlLight {
   margin-bottom: 12px; }
-  .SegmentedControl.NoMargin {
+  .SegmentedControl.NoMargin, .NoMargin.SegmentedControlLight {
     margin: 0 0 0 1px !important; }
-  .SegmentedControl.Invalid .SegmentedControlItem:last-child label {
+  .SegmentedControl.Invalid .SegmentedControlItem:last-child label, .Invalid.SegmentedControlLight .SegmentedControlItem:last-child label {
     border-color: #ff3e2d; }
-  .SegmentedControl.Invalid .SegmentedControlItem label {
+  .SegmentedControl.Invalid .SegmentedControlItem label, .Invalid.SegmentedControlLight .SegmentedControlItem label {
     border-color: #ff3e2d; }
-  .SegmentedControl.Vertical .SegmentedControlItem {
+  .SegmentedControl.Vertical .SegmentedControlItem, .Vertical.SegmentedControlLight .SegmentedControlItem {
     display: block; }
-    .SegmentedControl.Vertical .SegmentedControlItem:first-child label {
+    .SegmentedControl.Vertical .SegmentedControlItem:first-child label, .Vertical.SegmentedControlLight .SegmentedControlItem:first-child label {
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
       border-top-left-radius: 4px;
       border-top-right-radius: 4px; }
-    .SegmentedControl.Vertical .SegmentedControlItem:last-child label {
+    .SegmentedControl.Vertical .SegmentedControlItem:last-child label, .Vertical.SegmentedControlLight .SegmentedControlItem:last-child label {
       border-bottom: 1px solid #d6d6d6;
       border-bottom-left-radius: 4px;
       border-bottom-right-radius: 4px;
       border-top-left-radius: 0;
       border-top-right-radius: 0; }
-    .SegmentedControl.Vertical .SegmentedControlItem label {
+    .SegmentedControl.Vertical .SegmentedControlItem label, .Vertical.SegmentedControlLight .SegmentedControlItem label {
       border-bottom: 1px solid transparent;
       border-right: 1px solid #d6d6d6; }
-      .SegmentedControl.Vertical .SegmentedControlItem label:hover, .SegmentedControl.Vertical .SegmentedControlItem label:focus {
+      .SegmentedControl.Vertical .SegmentedControlItem label:hover, .Vertical.SegmentedControlLight .SegmentedControlItem label:hover, .SegmentedControl.Vertical .SegmentedControlItem label:focus, .Vertical.SegmentedControlLight .SegmentedControlItem label:focus {
         border-bottom: 1px solid #00bfa5; }
-  .SegmentedControl.Round .SegmentedControlItem {
+  .SegmentedControl.Round .SegmentedControlItem, .Round.SegmentedControlLight .SegmentedControlItem {
     margin: 0 3px; }
-    .SegmentedControl.Round .SegmentedControlItem:first-child {
+    .SegmentedControl.Round .SegmentedControlItem:first-child, .Round.SegmentedControlLight .SegmentedControlItem:first-child {
       margin-left: 0; }
-    .SegmentedControl.Round .SegmentedControlItem:last-child {
+    .SegmentedControl.Round .SegmentedControlItem:last-child, .Round.SegmentedControlLight .SegmentedControlItem:last-child {
       margin-right: 0; }
-    .SegmentedControl.Round .SegmentedControlItem label {
+    .SegmentedControl.Round .SegmentedControlItem label, .Round.SegmentedControlLight .SegmentedControlItem label {
       border: 1px solid #d6d6d6;
       border-radius: 50% !important;
       min-width: 36px;
       padding: 0;
       width: 36px; }
-  .SegmentedControl.Filters {
+  .SegmentedControl.Filters, .Filters.SegmentedControlLight {
     background-color: #fff;
     border: 1px solid #d6d6d6;
     border-radius: 100px; }
-    .SegmentedControl.Filters .SegmentedControlItem label {
+    .SegmentedControl.Filters .SegmentedControlItem label, .Filters.SegmentedControlLight .SegmentedControlItem label {
       border: none;
       border-radius: 100px;
       height: 34px; }
-      .SegmentedControl.Filters .SegmentedControlItem label:first-child, .SegmentedControl.Filters .SegmentedControlItem label:last-child {
+      .SegmentedControl.Filters .SegmentedControlItem label:first-child, .Filters.SegmentedControlLight .SegmentedControlItem label:first-child, .SegmentedControl.Filters .SegmentedControlItem label:last-child, .Filters.SegmentedControlLight .SegmentedControlItem label:last-child {
         border: none;
         border-radius: 100px; }
-      .SegmentedControl.Filters .SegmentedControlItem label:hover, .SegmentedControl.Filters .SegmentedControlItem label:focus {
+      .SegmentedControl.Filters .SegmentedControlItem label:hover, .Filters.SegmentedControlLight .SegmentedControlItem label:hover, .SegmentedControl.Filters .SegmentedControlItem label:focus, .Filters.SegmentedControlLight .SegmentedControlItem label:focus {
         background-color: #ebebeb;
         border: none; }
-    .SegmentedControl.Filters .SegmentedControlItem > input[type='radio']:checked ~ label,
-    .SegmentedControl.Filters .SegmentedControlItem > input[type='checkbox']:checked ~ label {
+    .SegmentedControl.Filters .SegmentedControlItem > input[type='radio']:checked ~ label, .Filters.SegmentedControlLight .SegmentedControlItem > input[type='radio']:checked ~ label,
+    .SegmentedControl.Filters .SegmentedControlItem > input[type='checkbox']:checked ~ label,
+    .Filters.SegmentedControlLight .SegmentedControlItem > input[type='checkbox']:checked ~ label {
       background-color: #5c5c5c;
       border: none; }
-  .SegmentedControl .SegmentedControlItem {
+  .SegmentedControl .SegmentedControlItem, .SegmentedControlLight .SegmentedControlItem {
     display: inline-block;
     font-size: 1em;
     min-height: 1.714em;
     overflow: hidden;
     position: relative;
     vertical-align: top; }
-    .SegmentedControl .SegmentedControlItem:first-child label {
+    .SegmentedControl .SegmentedControlItem:first-child label, .SegmentedControlLight .SegmentedControlItem:first-child label {
       border-bottom-left-radius: 4px;
       border-top-left-radius: 4px; }
-    .SegmentedControl .SegmentedControlItem:last-child label {
+    .SegmentedControl .SegmentedControlItem:last-child label, .SegmentedControlLight .SegmentedControlItem:last-child label {
       border-bottom-right-radius: 4px;
       border-right: 1px solid #d6d6d6;
       border-top-right-radius: 4px; }
-    .SegmentedControl .SegmentedControlItem label {
+    .SegmentedControl .SegmentedControlItem label, .SegmentedControlLight .SegmentedControlItem label {
       background-color: #fff;
       border: 1px solid #d6d6d6;
       border-right: 1px solid transparent;
@@ -23892,79 +23893,121 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
       text-align: center;
       transition: all 0.1s ease-in-out;
       width: 100%; }
-      .SegmentedControl .SegmentedControlItem label:hover, .SegmentedControl .SegmentedControlItem label:focus {
+      .SegmentedControl .SegmentedControlItem label:hover, .SegmentedControlLight .SegmentedControlItem label:hover, .SegmentedControl .SegmentedControlItem label:focus, .SegmentedControlLight .SegmentedControlItem label:focus {
         background-color: #f2fffd;
         border: 1px solid #00bfa5; }
-      .SegmentedControl .SegmentedControlItem label .icon {
+      .SegmentedControl .SegmentedControlItem label .icon, .SegmentedControlLight .SegmentedControlItem label .icon {
         color: #00ac94;
         font-size: 1.143em;
         padding-right: 4px; }
-    .SegmentedControl .SegmentedControlItem > input[type='radio']:checked ~ label,
-    .SegmentedControl .SegmentedControlItem > input[type='checkbox']:checked ~ label {
+    .SegmentedControl .SegmentedControlItem > input[type='radio']:checked ~ label, .SegmentedControlLight .SegmentedControlItem > input[type='radio']:checked ~ label,
+    .SegmentedControl .SegmentedControlItem > input[type='checkbox']:checked ~ label,
+    .SegmentedControlLight .SegmentedControlItem > input[type='checkbox']:checked ~ label {
       background-color: #00bfa5;
       border-color: #00bfa5;
       color: #fff;
       text-shadow: 0 0 1px #fff; }
-      .SegmentedControl .SegmentedControlItem > input[type='radio']:checked ~ label .icon,
-      .SegmentedControl .SegmentedControlItem > input[type='checkbox']:checked ~ label .icon {
+      .SegmentedControl .SegmentedControlItem > input[type='radio']:checked ~ label .icon, .SegmentedControlLight .SegmentedControlItem > input[type='radio']:checked ~ label .icon,
+      .SegmentedControl .SegmentedControlItem > input[type='checkbox']:checked ~ label .icon,
+      .SegmentedControlLight .SegmentedControlItem > input[type='checkbox']:checked ~ label .icon {
         color: #fff; }
-      .SegmentedControl .SegmentedControlItem > input[type='radio']:checked ~ label:hover, .SegmentedControl .SegmentedControlItem > input[type='radio']:checked ~ label:focus,
+      .SegmentedControl .SegmentedControlItem > input[type='radio']:checked ~ label:hover, .SegmentedControlLight .SegmentedControlItem > input[type='radio']:checked ~ label:hover, .SegmentedControl .SegmentedControlItem > input[type='radio']:checked ~ label:focus, .SegmentedControlLight .SegmentedControlItem > input[type='radio']:checked ~ label:focus,
       .SegmentedControl .SegmentedControlItem > input[type='checkbox']:checked ~ label:hover,
-      .SegmentedControl .SegmentedControlItem > input[type='checkbox']:checked ~ label:focus {
+      .SegmentedControlLight .SegmentedControlItem > input[type='checkbox']:checked ~ label:hover,
+      .SegmentedControl .SegmentedControlItem > input[type='checkbox']:checked ~ label:focus,
+      .SegmentedControlLight .SegmentedControlItem > input[type='checkbox']:checked ~ label:focus {
         border-color: #00bfa5; }
-    .SegmentedControl .SegmentedControlItem > input:disabled ~ label,
+    .SegmentedControl .SegmentedControlItem > input:disabled ~ label, .SegmentedControlLight .SegmentedControlItem > input:disabled ~ label,
     .SegmentedControl .SegmentedControlItem > input[disabled] ~ label,
-    .SegmentedControl .SegmentedControlItem > input[readonly] ~ label {
+    .SegmentedControlLight .SegmentedControlItem > input[disabled] ~ label,
+    .SegmentedControl .SegmentedControlItem > input[readonly] ~ label,
+    .SegmentedControlLight .SegmentedControlItem > input[readonly] ~ label {
       background: #ebebeb;
       color: #777777;
       cursor: default; }
-      .SegmentedControl .SegmentedControlItem > input:disabled ~ label:hover, .SegmentedControl .SegmentedControlItem > input:disabled ~ label:focus,
+      .SegmentedControl .SegmentedControlItem > input:disabled ~ label .icon, .SegmentedControlLight .SegmentedControlItem > input:disabled ~ label .icon,
+      .SegmentedControl .SegmentedControlItem > input[disabled] ~ label .icon,
+      .SegmentedControlLight .SegmentedControlItem > input[disabled] ~ label .icon,
+      .SegmentedControl .SegmentedControlItem > input[readonly] ~ label .icon,
+      .SegmentedControlLight .SegmentedControlItem > input[readonly] ~ label .icon {
+        color: #777777; }
+      .SegmentedControl .SegmentedControlItem > input:disabled ~ label:hover, .SegmentedControlLight .SegmentedControlItem > input:disabled ~ label:hover, .SegmentedControl .SegmentedControlItem > input:disabled ~ label:focus, .SegmentedControlLight .SegmentedControlItem > input:disabled ~ label:focus,
       .SegmentedControl .SegmentedControlItem > input[disabled] ~ label:hover,
+      .SegmentedControlLight .SegmentedControlItem > input[disabled] ~ label:hover,
       .SegmentedControl .SegmentedControlItem > input[disabled] ~ label:focus,
+      .SegmentedControlLight .SegmentedControlItem > input[disabled] ~ label:focus,
       .SegmentedControl .SegmentedControlItem > input[readonly] ~ label:hover,
-      .SegmentedControl .SegmentedControlItem > input[readonly] ~ label:focus {
+      .SegmentedControlLight .SegmentedControlItem > input[readonly] ~ label:hover,
+      .SegmentedControl .SegmentedControlItem > input[readonly] ~ label:focus,
+      .SegmentedControlLight .SegmentedControlItem > input[readonly] ~ label:focus {
         border-color: #d6d6d6; }
 
-.AR .SegmentedControl.Round .SegmentedControlItem:first-child,
-.FA .SegmentedControl.Round .SegmentedControlItem:first-child {
+.SegmentedControlLight.Filters {
+  background-color: #f3f3f3; }
+  .SegmentedControlLight.Filters .SegmentedControlItem {
+    background-color: transparent; }
+    .SegmentedControlLight.Filters .SegmentedControlItem label {
+      background-color: #f3f3f3; }
+    .SegmentedControlLight.Filters .SegmentedControlItem:first-child > input[type='radio']:checked ~ label,
+    .SegmentedControlLight.Filters .SegmentedControlItem:first-child > input[type='checkbox']:checked ~ label {
+      background-color: #fff;
+      border-right: 1px solid #d6d6d6;
+      color: #5c5c5c; }
+    .SegmentedControlLight.Filters .SegmentedControlItem:not(:first-child) > input[type='radio']:checked ~ label,
+    .SegmentedControlLight.Filters .SegmentedControlItem:not(:first-child) > input[type='checkbox']:checked ~ label {
+      background-color: #fff;
+      box-shadow: inset 0px 0px 0px 2px #00bfa5;
+      color: #5c5c5c; }
+
+.AR .SegmentedControl.Round .SegmentedControlItem:first-child, .AR .Round.SegmentedControlLight .SegmentedControlItem:first-child,
+.FA .SegmentedControl.Round .SegmentedControlItem:first-child,
+.FA .Round.SegmentedControlLight .SegmentedControlItem:first-child {
   margin-left: 3px;
   margin-right: 0; }
 
-.AR .SegmentedControl.Round .SegmentedControlItem:last-child,
-.FA .SegmentedControl.Round .SegmentedControlItem:last-child {
+.AR .SegmentedControl.Round .SegmentedControlItem:last-child, .AR .Round.SegmentedControlLight .SegmentedControlItem:last-child,
+.FA .SegmentedControl.Round .SegmentedControlItem:last-child,
+.FA .Round.SegmentedControlLight .SegmentedControlItem:last-child {
   margin-left: 0;
   margin-right: 3px; }
 
-.AR .SegmentedControl.Round .SegmentedControlItem label,
-.FA .SegmentedControl.Round .SegmentedControlItem label {
+.AR .SegmentedControl.Round .SegmentedControlItem label, .AR .Round.SegmentedControlLight .SegmentedControlItem label,
+.FA .SegmentedControl.Round .SegmentedControlItem label,
+.FA .Round.SegmentedControlLight .SegmentedControlItem label {
   border: 1px solid #d6d6d6; }
 
-.AR .SegmentedControl:not(.Vertical) .SegmentedControlItem:last-child label,
-.FA .SegmentedControl:not(.Vertical) .SegmentedControlItem:last-child label {
+.AR .SegmentedControl:not(.Vertical) .SegmentedControlItem:last-child label, .AR .SegmentedControlLight:not(.Vertical) .SegmentedControlItem:last-child label,
+.FA .SegmentedControl:not(.Vertical) .SegmentedControlItem:last-child label,
+.FA .SegmentedControlLight:not(.Vertical) .SegmentedControlItem:last-child label {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 0;
   border-left: 1px solid #d6d6d6;
   border-top-left-radius: 4px;
   border-top-right-radius: 0; }
 
-.AR .SegmentedControl:not(.Vertical) .SegmentedControlItem:first-child label,
-.FA .SegmentedControl:not(.Vertical) .SegmentedControlItem:first-child label {
+.AR .SegmentedControl:not(.Vertical) .SegmentedControlItem:first-child label, .AR .SegmentedControlLight:not(.Vertical) .SegmentedControlItem:first-child label,
+.FA .SegmentedControl:not(.Vertical) .SegmentedControlItem:first-child label,
+.FA .SegmentedControlLight:not(.Vertical) .SegmentedControlItem:first-child label {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 4px;
   border-top-left-radius: 0;
   border-top-right-radius: 4px; }
 
-.AR .SegmentedControl:not(.Vertical) .SegmentedControlItem label,
-.FA .SegmentedControl:not(.Vertical) .SegmentedControlItem label {
+.AR .SegmentedControl:not(.Vertical) .SegmentedControlItem label, .AR .SegmentedControlLight:not(.Vertical) .SegmentedControlItem label,
+.FA .SegmentedControl:not(.Vertical) .SegmentedControlItem label,
+.FA .SegmentedControlLight:not(.Vertical) .SegmentedControlItem label {
   border-left: 1px solid transparent;
   border-right: 1px solid #d6d6d6; }
-  .AR .SegmentedControl:not(.Vertical) .SegmentedControlItem label:hover, .AR .SegmentedControl:not(.Vertical) .SegmentedControlItem label:focus,
+  .AR .SegmentedControl:not(.Vertical) .SegmentedControlItem label:hover, .AR .SegmentedControlLight:not(.Vertical) .SegmentedControlItem label:hover, .AR .SegmentedControl:not(.Vertical) .SegmentedControlItem label:focus, .AR .SegmentedControlLight:not(.Vertical) .SegmentedControlItem label:focus,
   .FA .SegmentedControl:not(.Vertical) .SegmentedControlItem label:hover,
-  .FA .SegmentedControl:not(.Vertical) .SegmentedControlItem label:focus {
+  .FA .SegmentedControlLight:not(.Vertical) .SegmentedControlItem label:hover,
+  .FA .SegmentedControl:not(.Vertical) .SegmentedControlItem label:focus,
+  .FA .SegmentedControlLight:not(.Vertical) .SegmentedControlItem label:focus {
     border: 1px solid #00bfa5; }
 
-.AR .SegmentedControl.Filters .SegmentedControlItem label[for],
-.FA .SegmentedControl.Filters .SegmentedControlItem label[for] {
+.AR .SegmentedControl.Filters .SegmentedControlItem label[for], .AR .Filters.SegmentedControlLight .SegmentedControlItem label[for],
+.FA .SegmentedControl.Filters .SegmentedControlItem label[for],
+.FA .Filters.SegmentedControlLight .SegmentedControlItem label[for] {
   border: none;
   border-radius: 100px; }
 
@@ -26050,15 +26093,15 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   .ISidebar .ISidebar-content ::-webkit-scrollbar-thumb {
     border: 5px solid #fff;
     border-radius: 0; }
-  .ISidebar .ISidebar-content .SegmentedControl .ButtonGroup_button.Button {
+  .ISidebar .ISidebar-content .SegmentedControl .ButtonGroup_button.Button, .ISidebar .ISidebar-content .SegmentedControlLight .ButtonGroup_button.Button {
     background-color: #494f5c;
     border: none;
     border-radius: 4px; }
-    .ISidebar .ISidebar-content .SegmentedControl .ButtonGroup_button.Button:active, .ISidebar .ISidebar-content .SegmentedControl .ButtonGroup_button.Button.active {
+    .ISidebar .ISidebar-content .SegmentedControl .ButtonGroup_button.Button:active, .ISidebar .ISidebar-content .SegmentedControlLight .ButtonGroup_button.Button:active, .ISidebar .ISidebar-content .SegmentedControl .ButtonGroup_button.Button.active, .ISidebar .ISidebar-content .SegmentedControlLight .ButtonGroup_button.Button.active {
       background-color: #00bfa5;
       color: #fff;
       font-weight: bold; }
-    .ISidebar .ISidebar-content .SegmentedControl .ButtonGroup_button.Button label {
+    .ISidebar .ISidebar-content .SegmentedControl .ButtonGroup_button.Button label, .ISidebar .ISidebar-content .SegmentedControlLight .ButtonGroup_button.Button label {
       color: #d6d6d6 !important; }
   .ISidebar .ISidebar-content .Dropdown, .ISidebar .ISidebar-content .Page .FormField select, .Page .FormField .ISidebar .ISidebar-content select,
   .ISidebar .ISidebar-content .LayoutPopup .FormField select, .LayoutPopup .FormField .ISidebar .ISidebar-content select,
@@ -28537,6 +28580,9 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   position: absolute;
   width: calc(100% - 10px); }
 
+.tooltipster-arrow-left span:not(.tooltipster-arrow-border) {
+  border-left-color: #f9f9f9 !important; }
+
 .VacancyCard {
   background-color: #fff;
   border: 1px solid #d6d6d6;
@@ -30606,14 +30652,17 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   .tablet .BaseFont40.container,
   .BaseFont40.container {
     margin-bottom: 10px; }
-  .tablet .BaseFont40 .SegmentedControl,
-  .BaseFont40 .SegmentedControl {
+  .tablet .BaseFont40 .SegmentedControl, .tablet .BaseFont40 .SegmentedControlLight,
+  .BaseFont40 .SegmentedControl,
+  .BaseFont40 .SegmentedControlLight {
     font-size: 1em; }
-    .tablet .BaseFont40 .SegmentedControl .SegmentedControlItem,
-    .BaseFont40 .SegmentedControl .SegmentedControlItem {
+    .tablet .BaseFont40 .SegmentedControl .SegmentedControlItem, .tablet .BaseFont40 .SegmentedControlLight .SegmentedControlItem,
+    .BaseFont40 .SegmentedControl .SegmentedControlItem,
+    .BaseFont40 .SegmentedControlLight .SegmentedControlItem {
       font-size: 1em; }
-      .tablet .BaseFont40 .SegmentedControl .SegmentedControlItem label,
-      .BaseFont40 .SegmentedControl .SegmentedControlItem label {
+      .tablet .BaseFont40 .SegmentedControl .SegmentedControlItem label, .tablet .BaseFont40 .SegmentedControlLight .SegmentedControlItem label,
+      .BaseFont40 .SegmentedControl .SegmentedControlItem label,
+      .BaseFont40 .SegmentedControlLight .SegmentedControlItem label {
         line-height: unset; }
 
 .CardAll {
@@ -32357,7 +32406,7 @@ body.PanelOpened .daterangepicker {
 .Form textarea.Not_Valid, .Form textarea.Not_Valid:focus {
   padding: 0 10px; }
 
-.SegmentedControl input {
+.SegmentedControl input, .SegmentedControlLight input {
   left: -20px;
   margin: 0 5px 0 0;
   opacity: 0;
@@ -32389,8 +32438,9 @@ input[type]:focus.SavedInput {
   border-width: 2px !important; }
 
 /*  RTL Adjustments */
-.AR .SegmentedControl input,
-.FA .SegmentedControl input {
+.AR .SegmentedControl input, .AR .SegmentedControlLight input,
+.FA .SegmentedControl input,
+.FA .SegmentedControlLight input {
   left: auto;
   right: -20px; }
 
@@ -35494,7 +35544,7 @@ html .PatientDetailsLayout {
   margin-top: 15px; }
 
 /* Specific styles for SegmentedControl inside search */
-.SearchSideBar > .SearchSideBarFields > .SegmentedControl > .SegmentedControlItem {
+.SearchSideBar > .SearchSideBarFields > .SegmentedControl > .SegmentedControlItem, .SearchSideBar > .SearchSideBarFields > .SegmentedControlLight > .SegmentedControlItem {
   background: rgba(0, 0, 0, 0);
   border-bottom: solid 1px #c8d8dc;
   border-left: solid 1px #c8d8dc;
@@ -35503,29 +35553,32 @@ html .PatientDetailsLayout {
   min-height: 27px;
   width: 50%; }
 
-.FA .SearchSideBar > .SearchSideBarFields > .SegmentedControl > .SegmentedControlItem,
-.AR .SearchSideBar > .SearchSideBarFields > .SegmentedControl > .SegmentedControlItem {
+.FA .SearchSideBar > .SearchSideBarFields > .SegmentedControl > .SegmentedControlItem, .FA .SearchSideBar > .SearchSideBarFields > .SegmentedControlLight > .SegmentedControlItem,
+.AR .SearchSideBar > .SearchSideBarFields > .SegmentedControl > .SegmentedControlItem,
+.AR .SearchSideBar > .SearchSideBarFields > .SegmentedControlLight > .SegmentedControlItem {
   border-left: none;
   border-right: solid 1px #c8d8dc; }
 
-.SearchSideBar > .SearchSideBarFields > .SegmentedControl > .SegmentedControlItem:first-child {
+.SearchSideBar > .SearchSideBarFields > .SegmentedControl > .SegmentedControlItem:first-child, .SearchSideBar > .SearchSideBarFields > .SegmentedControlLight > .SegmentedControlItem:first-child {
   border-bottom-left-radius: 2px;
   border-top-left-radius: 2px; }
 
-.FA .SearchSideBar > .SearchSideBarFields > .SegmentedControl > .SegmentedControlItem:first-child,
-.AR .SearchSideBar > .SearchSideBarFields > .SegmentedControl > .SegmentedControlItem:first-child {
+.FA .SearchSideBar > .SearchSideBarFields > .SegmentedControl > .SegmentedControlItem:first-child, .FA .SearchSideBar > .SearchSideBarFields > .SegmentedControlLight > .SegmentedControlItem:first-child,
+.AR .SearchSideBar > .SearchSideBarFields > .SegmentedControl > .SegmentedControlItem:first-child,
+.AR .SearchSideBar > .SearchSideBarFields > .SegmentedControlLight > .SegmentedControlItem:first-child {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 2px;
   border-top-left-radius: 0;
   border-top-right-radius: 2px; }
 
-.SearchSideBar > .SearchSideBarFields > .SegmentedControl > .SegmentedControlItem:last-child {
+.SearchSideBar > .SearchSideBarFields > .SegmentedControl > .SegmentedControlItem:last-child, .SearchSideBar > .SearchSideBarFields > .SegmentedControlLight > .SegmentedControlItem:last-child {
   border-bottom-right-radius: 2px;
   border-right: solid 1px #c8d8dc;
   border-top-right-radius: 2px; }
 
-.FA .SearchSideBar > .SearchSideBarFields > .SegmentedControl > .SegmentedControlItem:last-child,
-.AR .SearchSideBar > .SearchSideBarFields > .SegmentedControl > .SegmentedControlItem:last-child {
+.FA .SearchSideBar > .SearchSideBarFields > .SegmentedControl > .SegmentedControlItem:last-child, .FA .SearchSideBar > .SearchSideBarFields > .SegmentedControlLight > .SegmentedControlItem:last-child,
+.AR .SearchSideBar > .SearchSideBarFields > .SegmentedControl > .SegmentedControlItem:last-child,
+.AR .SearchSideBar > .SearchSideBarFields > .SegmentedControlLight > .SegmentedControlItem:last-child {
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 0;
   border-left: solid 1px #c8d8dc;
@@ -35533,16 +35586,17 @@ html .PatientDetailsLayout {
   border-top-left-radius: 2px;
   border-top-right-radius: 0; }
 
-.SearchSideBar > .SearchSideBarFields > .SegmentedControl > .SegmentedControlItem label:hover,
-.SearchSideBar > .SearchSideBarFields > .SegmentedControl > .SegmentedControlItem label:focus {
+.SearchSideBar > .SearchSideBarFields > .SegmentedControl > .SegmentedControlItem label:hover, .SearchSideBar > .SearchSideBarFields > .SegmentedControlLight > .SegmentedControlItem label:hover,
+.SearchSideBar > .SearchSideBarFields > .SegmentedControl > .SegmentedControlItem label:focus,
+.SearchSideBar > .SearchSideBarFields > .SegmentedControlLight > .SegmentedControlItem label:focus {
   background: #576c73;
   color: #fff; }
 
-.SearchSideBar > .SearchSideBarFields > .SegmentedControl > .SegmentedControlItem > input[type='radio']:checked + label {
+.SearchSideBar > .SearchSideBarFields > .SegmentedControl > .SegmentedControlItem > input[type='radio']:checked + label, .SearchSideBar > .SearchSideBarFields > .SegmentedControlLight > .SegmentedControlItem > input[type='radio']:checked + label {
   background: #fff;
   color: #0d2831; }
 
-.SearchSideBar > .SearchSideBarFields > .SegmentedControl > .SegmentedControlItem label {
+.SearchSideBar > .SearchSideBarFields > .SegmentedControl > .SegmentedControlItem label, .SearchSideBar > .SearchSideBarFields > .SegmentedControlLight > .SegmentedControlItem label {
   background-color: transparent;
   box-shadow: none;
   line-height: 27px; }

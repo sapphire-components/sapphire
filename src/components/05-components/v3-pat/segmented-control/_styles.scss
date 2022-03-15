@@ -171,9 +171,47 @@
 			color: $text-color-disabled;
 			cursor: default;
 
+			.icon {
+				color: $text-color-disabled;
+			}
+
 			&:hover,
 			&:focus {
 				border-color: $light-grey;
+			}
+		}
+	}
+}
+
+.SegmentedControlLight {
+	@extend .SegmentedControl;
+
+	&.Filters {
+		background-color: $body-color;
+
+		.SegmentedControlItem {
+			background-color: transparent;
+
+			label {
+				background-color: $body-color;
+			}
+
+			&:first-child {
+				> input[type='radio']:checked ~ label,
+				> input[type='checkbox']:checked ~ label {
+					background-color: $regular-white;
+					border-right: 1px solid $light-grey;
+					color: $mid-dark-grey;
+				}
+			}
+
+			&:not(:first-child) {
+				> input[type='radio']:checked ~ label,
+				> input[type='checkbox']:checked ~ label {
+					background-color: $regular-white;
+					box-shadow: inset 0px 0px 0px 2px $regular-alpha;
+					color: $mid-dark-grey;
+				}
 			}
 		}
 	}

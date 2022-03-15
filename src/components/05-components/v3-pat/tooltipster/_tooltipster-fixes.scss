@@ -41,3 +41,9 @@
 	position: absolute;
 	width: calc(100% - 10px);
 }
+
+.tooltipster-arrow-left {
+	span:not(.tooltipster-arrow-border) {
+		border-left-color: $white-grey !important;
+	}
+}

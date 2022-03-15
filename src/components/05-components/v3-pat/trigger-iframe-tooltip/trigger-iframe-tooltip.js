@@ -29,7 +29,7 @@
 				$(helper).css({ visibility: 'hidden' });
 
 				if (config.noPadding) $('.tooltipster-content').addClass('tooltipster--noPadding');
-				if (config.customClass) $('.tooltipster-content').addClass(config.customClass);
+				if (config.customClass) $('.tooltipster-base').addClass(config.customClass);
 
 				setTimeout(function() {
 					$('.tooltipster-base').css({
