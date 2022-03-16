@@ -197,7 +197,7 @@
 			this.$title.css('display', 'none');
 		}
 		if (this.hideSubTitleOnOpen) {
-			this.$subTitle.css('display', 'none');
+			this.$subTitle.find('a').css('display', 'none');
 		}
 		if (this.hideCaptionOnOpen) {
 			this.$caption.css('display', 'none');
@@ -251,7 +251,7 @@
 			this.$title.css('display', 'block');
 		}
 		if (this.hideSubTitleOnOpen) {
-			this.$subTitle.css('display', 'block');
+			this.$subTitle.find('a').css('display', 'block');
 		}
 		if (this.hideCaptionOnOpen) {
 			this.$caption.css('display', 'block');

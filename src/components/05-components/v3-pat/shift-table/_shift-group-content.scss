@@ -2,12 +2,18 @@
 	border: 1px solid $light-grey;
 	border-radius: $border-radius-medium;
 	overflow: hidden;
-	margin-bottom: $sapphire-sizes--small;//Diogo Ribeiro: added margin here, check shift-table css file 
+	margin-bottom: $sapphire-sizes--small; //Diogo Ribeiro: added margin here, check shift-table css file
 
 	&__Header {
 		align-items: stretch;
 		background-color: $regular-white;
 		display: flex;
+
+		&.Selected {
+			background-color: $regular-eta;
+			border: 1px solid $regular-alpha;
+			border-radius: $border-radius-medium;
+		}
 	}
 
 	&__HeaderLeft {
@@ -25,7 +31,7 @@
 	}
 
 	&__HeaderContent,
-	&__HeaderContent > .ListRecords{
+	&__HeaderContent > .ListRecords {
 		display: flex;
 		flex: 1;
 

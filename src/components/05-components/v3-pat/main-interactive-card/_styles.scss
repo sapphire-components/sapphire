@@ -189,6 +189,26 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 		pointer-events: none;
 		z-index: 1;
 
+		.MainInteractiveCard-header-icon {
+			align-items: center;
+			background-color: transparent;
+			border: 1px solid $light-grey;
+			border-radius: 4px;
+			color: $mid-light-grey;
+			display: flex;
+			height: 32px;
+			justify-content: center;
+			width: 32px;
+
+			&__full {
+				@extend .MainInteractiveCard-header-icon;
+
+				background-color: $light-green;
+				border-color: $light-green;
+				color: $regular-green;
+			}
+		}
+
 		.MainInteractiveCard-expand-icon {
 			@include arrow-button($dark-grey, 20px, 0.7em);
 			min-width: 20px;
