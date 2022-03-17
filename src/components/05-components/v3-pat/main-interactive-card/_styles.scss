@@ -36,6 +36,12 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 		}
 	}
 
+	&.CardEmpty {
+		.MainInteractiveCard-header {
+			@include flex-custom-align($align: center, $justify: flex-start, $type: flex);
+		}
+	}
+
 	// &.isSelectable {
 	// 	> .MainInteractiveCard-header {
 	// 		gap: $sapphire-sizes--medium;
@@ -180,7 +186,7 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 	}
 
 	.MainInteractiveCard-header {
-		@include flex-center-vertically();
+		@include flex-custom-align($align: flex-start, $justify: center, $type: flex);
 
 		flex-direction: row;
 		gap: $sapphire-sizes--medium;

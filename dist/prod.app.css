@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128048 || Generated: Wed Mar 16 2022 19:57:54 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.128048 || Generated: Thu Mar 17 2022 17:49:39 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -19094,6 +19094,10 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
         overflow: hidden; }
     .MainInteractiveCard.isOpen > div > .MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
       display: block; }
+  .MainInteractiveCard.CardEmpty .MainInteractiveCard-header {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start; }
   .MainInteractiveCard.hasFloater.isOpen > .MainInteractiveCard-header .MainInteractiveCard-header-text {
     max-width: 70%; }
   .MainInteractiveCard.hasFloater.isOpen > .MainInteractiveCard-header .MainInteractiveCard-header-text-title {
@@ -19154,8 +19158,9 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     padding-bottom: 8px;
     padding-top: 8px; }
   .MainInteractiveCard .MainInteractiveCard-header {
-    align-items: center;
+    align-items: flex-start;
     display: flex;
+    justify-content: center;
     flex-direction: row;
     gap: 16px;
     min-height: 56px;
