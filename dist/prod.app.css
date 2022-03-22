@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128049 || Generated: Thu Mar 17 2022 17:50:23 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.128049 || Generated: Tue Mar 22 2022 18:31:42 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -20816,8 +20816,8 @@ body.PanelById.PanelOpened {
       line-height: inherit;
       overflow: inherit;
       text-overflow: inherit;
-      white-space: inherit;
-      width: 100%; }
+      white-space: pre-wrap;
+      width: 320px; }
     .PersonCard .CardAll .DescriptionContainer {
       align-self: center;
       display: flex;
