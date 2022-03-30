@@ -186,7 +186,7 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 	}
 
 	.MainInteractiveCard-header {
-		@include flex-custom-align($align: flex-start, $justify: center, $type: flex);
+		@include flex-custom-align($align: flex-start, $justify: flex-start, $type: flex);
 
 		flex-direction: row;
 		gap: $sapphire-sizes--medium;

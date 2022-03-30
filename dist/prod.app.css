@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128050 || Generated: Tue Mar 22 2022 18:32:43 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.128050 || Generated: Wed Mar 30 2022 17:34:40 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -19160,7 +19160,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   .MainInteractiveCard .MainInteractiveCard-header {
     align-items: flex-start;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: row;
     gap: 16px;
     min-height: 56px;
