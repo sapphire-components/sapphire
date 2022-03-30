@@ -37,7 +37,7 @@
 			order: 2;
 
 			.icon {
-				transform: rotate(0deg);
+				transform: rotate(180deg);
 			}
 		}
 
@@ -71,7 +71,7 @@
 
 	&--expanded.ExpandableLink--triggerRight {
 		.ExpandableLink__Icon .icon {
-			transform: rotate(-180deg);
+			transform: rotate(0deg);
 		}
 	}
 }
@@ -137,6 +137,7 @@
 		&__Content {
 			margin-top: 0;
 			transition: unset;
+			padding: $sapphire-sizes--medium;
 		}
 	}
 

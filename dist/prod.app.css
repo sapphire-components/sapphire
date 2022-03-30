@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128051 || Generated: Wed Mar 30 2022 17:35:13 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.128051 || Generated: Wed Mar 30 2022 18:04:17 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -16747,7 +16747,7 @@ div.CircledArrow {
 .ExpandableLink--triggerRight .ExpandableLink__Icon {
   order: 2; }
   .ExpandableLink--triggerRight .ExpandableLink__Icon .icon {
-    transform: rotate(0deg); }
+    transform: rotate(180deg); }
 
 .ExpandableLink--triggerRight .ExpandableLink__Link {
   display: flex;
@@ -16769,7 +16769,7 @@ div.CircledArrow {
   overflow: auto; }
 
 .ExpandableLink--expanded.ExpandableLink--triggerRight .ExpandableLink__Icon .icon {
-  transform: rotate(-180deg); }
+  transform: rotate(0deg); }
 
 .ExpandableList {
   border: 1px solid #d6d6d6;
@@ -16805,7 +16805,8 @@ div.CircledArrow {
       color: #777777; }
   .ExpandableList .ExpandableLink__Content {
     margin-top: 0;
-    transition: unset; }
+    transition: unset;
+    padding: 16px; }
   .ExpandableList--expanded .ExpandableLink__Header {
     border-bottom: 1px solid #d6d6d6; }
   .ExpandableList--expanded .ExpandableLink__Content {
