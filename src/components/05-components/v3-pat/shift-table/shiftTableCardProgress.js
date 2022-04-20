@@ -1,11 +1,16 @@
 SapphireWidgets.ShiftTableCardProgress = config => {
-	const DEFAULT_PADDING = 8;
+	const DEFAULT_PADDING = 0;
 	const DEFAULT_CARD_HEIGHT = 56;
+
+	console.log(config);
 
 	const setTableCardProgress = () => {
 		const cardProgresID = config.widgetId;
 		const startColumn = config.startColumn;
 		const endColumn = config.endColumn;
+		const initialMinutes = config.initialMinutes;
+		const beginsIncomplete = config.beginsIncomplete;
+		const endsIncomplete = config.endsIncomplete;
 
 		const $cardProgress = $('#' + cardProgresID);
 		const $shiftTable = $cardProgress.closest('.ShiftTable');
@@ -22,7 +27,7 @@ SapphireWidgets.ShiftTableCardProgress = config => {
 		const minuteValueWidth = timeSlotWidth / 60;
 		const hasActions = $actions.length > 0;
 
-		let totalLeft = 0;
+		let totalLeft = beginsIncomplete ? 0 : (initialMinutes * minuteValueWidth);
 
 		for (let i = 1; i < parseInt(startColumn); i++) {
 			totalLeft += $tableCellList[i].getBoundingClientRect().width;
@@ -30,7 +35,7 @@ SapphireWidgets.ShiftTableCardProgress = config => {
 
 		let roundWidth = Math.round((timeSlotWidth + Number.EPSILON) * 100) / 100;
 		const paddingOffset = DEFAULT_PADDING * 2;
-		const newWidth = colFill * roundWidth - paddingOffset;
+		const newWidth = parseFloat((colFill * roundWidth - paddingOffset) - (beginsIncomplete ? 0 : (endsIncomplete ? (initialMinutes * minuteValueWidth) : 0)));
 		const direction = $('.Page').hasClass('AR') || $('.Page').hasClass('FA') ? 'right' : 'left';
 
 		$cardProgress.css('width', `${newWidth}px`);
