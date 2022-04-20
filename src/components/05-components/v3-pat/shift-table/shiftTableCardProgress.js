@@ -2,8 +2,6 @@ SapphireWidgets.ShiftTableCardProgress = config => {
 	const DEFAULT_PADDING = 0;
 	const DEFAULT_CARD_HEIGHT = 56;
 
-	console.log(config);
-
 	const setTableCardProgress = () => {
 		const cardProgresID = config.widgetId;
 		const startColumn = config.startColumn;
