@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128054 || Generated: Wed Apr 20 2022 17:03:07 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.128054 || Generated: Fri Apr 29 2022 11:43:52 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -24035,7 +24035,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   max-height: 180px; }
 
 .select2 {
-  width: 100% !important; }
+  width: 100%; }
   .select2.select2-container--disabled .select2-selection[aria-disabled='true'] {
     background-color: #ebebeb;
     border-color: #d6d6d6; }
