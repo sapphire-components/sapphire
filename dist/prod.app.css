@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128055 || Generated: Fri Apr 29 2022 11:44:14 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.128055 || Generated: Tue May 17 2022 17:44:15 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -12717,6 +12717,10 @@ html body {
   .FA .DropdownMenu div,
   .FA .InputWithList__List div {
     text-align: right; }
+
+.MoreActions .DropdownMenu, .MoreActions .InputWithList__List {
+  right: 0;
+  left: auto; }
 
 .Feedback_AjaxWait {
   background-color: #00bfa5;
