@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128056 || Generated: Tue May 17 2022 17:44:50 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.128056 || Generated: Wed May 18 2022 16:51:27 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -16369,6 +16369,9 @@ div.CircledArrow {
 .FA .AppLine .MoveLine > .icon {
   margin-left: 0;
   margin-right: -10px; }
+
+.DropdownCategories .select2 {
+  width: 100% !important; }
 
 .DropZoneWrapper {
   display: inline; }
