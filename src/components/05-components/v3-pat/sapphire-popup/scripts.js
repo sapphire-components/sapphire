@@ -255,10 +255,10 @@ var RichWidgets_Popup_Editor_notifyWidget;
 			} else {
 				//when explicitly setting the height
 				if (sameOrigin){
-					if(innerDoc.body != undefined){
+					if(innerDoc != undefined){
 						innerDoc.body.style.height = 'auto';
 					}else{
-						console.log("The innerDoc.body isn't defined");
+						console.log("The innerDoc.body is undefined");
 					}
 				}
 			}
