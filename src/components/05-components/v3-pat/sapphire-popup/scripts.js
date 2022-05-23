@@ -254,7 +254,13 @@ var RichWidgets_Popup_Editor_notifyWidget;
 				if ($.browser.msie) height = height + 1;
 			} else {
 				//when explicitly setting the height
-				if (sameOrigin) innerDoc.body.style.height = 'auto';
+				if (sameOrigin){
+					if(innerDoc.body != undefined){
+						innerDoc.body.style.height = 'auto';
+					}else{
+						console.log("The innerDoc.body isn't defined");
+					}
+				}
 			}
 
 			if (isInsideIframe) {
