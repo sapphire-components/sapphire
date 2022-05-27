@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128059 || Generated: Mon May 23 2022 14:42:57 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.128059 || Generated: Fri May 27 2022 12:37:34 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -16794,6 +16794,8 @@ div.CircledArrow {
     border-bottom: none; }
     .ExpandableList > *:last-of-type .ExpandableLink__Header {
       display: none; }
+      .ExpandableList > *:last-of-type .ExpandableLink__Header.Force-Show-Header {
+        display: flex; }
   .ExpandableList .ExpandableLink__Header {
     align-items: center;
     background-color: #f3f3f3;
@@ -28834,6 +28836,10 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 
 .TopBorderGrey {
   border-top: 1px solid #d6d6d6; }
+
+.BorderRadiusGrey {
+  border: 1px solid #d6d6d6;
+  border-radius: 8px; }
 
 .ShadowXSmall, .ShiftTableCardProgress, .ShiftTableCard,
 .shadow--xsmall {

@@ -101,6 +101,10 @@
 
 			.ExpandableLink__Header {
 				display: none;
+
+				&.Force-Show-Header{
+					display: flex;
+				}
 			}
 		}
 	}

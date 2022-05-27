@@ -160,3 +160,8 @@
 .TopBorderGrey {
 	border-top: 1px solid $light-grey;
 }
+
+.BorderRadiusGrey{
+  border: 1px solid $light-grey;
+  border-radius: $border-radius-medium;
+}
