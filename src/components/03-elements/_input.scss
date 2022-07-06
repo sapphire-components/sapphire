@@ -230,10 +230,10 @@ input[type='password'] {
 
 textarea {
 	@include component-scroll-root;
-
+	
 	height: auto;
-	min-height: 64px;
 	padding: $sapphire-sizes--medium;
+	overflow: hidden;
 	resize: none;
 }
 
