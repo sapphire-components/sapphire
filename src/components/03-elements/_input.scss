@@ -212,13 +212,14 @@ input[type='password'] {
 		border-left-width: 3px;
 		border-radius: $border-radius-default;
 		box-shadow: none;
-		padding: 0 $sapphire-sizes--medium;
+		padding: $sapphire-sizes--medium;
 
 		&:hover,
 		&:focus {
 			border: 1px solid $regular-red;
 			border-left-width: 3px;
 			box-shadow: none;
+			padding: $sapphire-sizes--medium;
 		}
 	}
 

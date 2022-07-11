@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128063 || Generated: Wed Jul 06 2022 17:31:03 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.128063 || Generated: Mon Jul 11 2022 10:20:13 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -5006,7 +5006,7 @@ input[type='password'] {
     border-left-width: 3px;
     border-radius: 4px;
     box-shadow: none;
-    padding: 0 16px; }
+    padding: 16px; }
     select.Not_Valid:hover, select.Not_Valid:focus,
     textarea.Not_Valid:hover,
     textarea.Not_Valid:focus,
@@ -5020,7 +5020,8 @@ input[type='password'] {
     input[type='password'].Not_Valid:focus {
       border: 1px solid #ff3e2d;
       border-left-width: 3px;
-      box-shadow: none; }
+      box-shadow: none;
+      padding: 16px; }
   select.small,
   textarea.small,
   input[type='text'].small,
