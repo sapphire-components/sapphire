@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128064 || Generated: Mon Jul 11 2022 10:20:35 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.128064 || Generated: Thu Jul 14 2022 11:27:37 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -16383,6 +16383,9 @@ div.CircledArrow {
     background: #fff;
     border: 1px dashed #adadad;
     border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 56px;
     padding: 0; }
     .DropZoneWrapper .dropzone.dz-started .dz-message {
@@ -16394,7 +16397,7 @@ div.CircledArrow {
       top: 0px;
       z-index: 50; }
     .DropZoneWrapper .dropzone .dz-message {
-      font-size: 1.429em;
+      font-size: 14px;
       line-height: 56px;
       margin: 0;
       text-align: center;
@@ -29639,7 +29642,7 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
     text-transform: uppercase; }
   .Page .Text_Note {
     color: #777777;
-    font-size: 0.9em; }
+    font-size: 14px; }
 
 .Label {
   background-color: transparent;

@@ -10,6 +10,9 @@
 		background: $regular-white;
 		border: 1px dashed $mid-light-grey;
 		border-radius: $border-radius-medium;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		min-height: $sapphire-sizes--largest;
 		padding: 0;
 
@@ -26,7 +29,7 @@
 		}
 
 		.dz-message {
-			font-size: $font-size-heading2;
+			font-size: 14px;
 			line-height: $sapphire-sizes--largest;
 			margin: 0;
 			text-align: center;
