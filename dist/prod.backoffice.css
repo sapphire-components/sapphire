@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.128065 || Generated: Thu Jul 14 2022 11:27:55 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.128065 || Generated: Thu Jul 21 2022 14:50:00 GMT+0100 (Western European Summer Time) */
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
 /* Header */
@@ -2711,7 +2711,7 @@ body,
 input,
 select,
 textarea {
-  color: #333333;
+  color: blue;
   font-family: "LatoRegular";
   font-weight: normal;
   line-height: 1.43; }
@@ -2782,7 +2782,7 @@ div[onclick] {
     .DashboardCard__Title a:link,
     .DashboardCard__Title a:visited {
       align-items: center;
-      color: #333333;
+      color: blue;
       display: inline-flex;
       font-size: 20px;
       font-weight: bold;
@@ -2792,7 +2792,7 @@ div[onclick] {
       .DashboardCard__Title a:hover,
       .DashboardCard__Title a:link:hover,
       .DashboardCard__Title a:visited:hover {
-        color: #333333 !important;
+        color: blue !important;
         text-decoration: none !important; }
   .DashboardCard__Items {
     display: flex;
@@ -2917,8 +2917,6 @@ div[onclick] {
       width: 340px; }
       .SapphireSearch_input input[type='text'].expanded::-moz-placeholder {
         color: transparent; }
-      .SapphireSearch_input input[type='text'].expanded:-ms-input-placeholder {
-        color: transparent; }
       .SapphireSearch_input input[type='text'].expanded::placeholder {
         color: transparent; }
 
@@ -3012,7 +3010,7 @@ div[onclick] {
 .TitleSubTitleElement {
   min-height: 50px; }
   .TitleSubTitleElement_title {
-    color: #333333;
+    color: blue;
     font-size: 18px;
     font-weight: 600;
     line-height: 22px;
@@ -3279,7 +3277,7 @@ body {
   .TableRecords_OddLine, .TableRecords_EvenLine {
     background-color: #fff;
     border-bottom: 1px solid #d6d6d6;
-    color: #333333;
+    color: blue;
     min-height: 48px;
     padding: 10px;
     text-align: left;
@@ -3337,7 +3335,7 @@ body {
   .TableRecords th.SortColumns--ascending::after {
     content: '\e914'; }
   .TableRecords .LightGreen {
-    color: #333333; }
+    color: blue; }
   .TableRecords .TableRowExpandable {
     display: none;
     transition: all 500ms;
@@ -3466,7 +3464,7 @@ body {
   .InlineDropdown.open .InlineDropdown_icon, .InlineDropdown:hover .InlineDropdown_icon {
     background-color: #ebebeb; }
   .InlineDropdown:focus .InlineDropdown_text {
-    border-bottom: 1px solid #333333; }
+    border-bottom: 1px solid blue; }
   .InlineDropdown_text {
     color: #00ac94;
     font-family: "LatoBold"; }
@@ -3857,12 +3855,12 @@ body {
       .daterangepicker .drp-buttons .btn.cancelBtn {
         background-color: #fff;
         border: 1px solid #d6d6d6;
-        color: #333333;
+        color: blue;
         margin: 0 8px; }
         .daterangepicker .drp-buttons .btn.cancelBtn:hover {
           background-color: #ebebeb;
           border: 1px solid #d6d6d6;
-          color: #333333; }
+          color: blue; }
   .daterangepicker .calendar-table thead tr:last-of-type {
     color: #777777;
     font-family: "LatoBold";
@@ -3875,7 +3873,7 @@ body {
     box-shadow: none; }
   .daterangepicker .calendar-table th.next span,
   .daterangepicker .calendar-table th.prev span {
-    border-color: #333333;
+    border-color: blue;
     border-radius: 0;
     border-style: solid;
     border-width: 0 2px 2px 0;
@@ -3905,13 +3903,13 @@ body {
       background-color: #ebebeb; }
   .daterangepicker .calendar-table td.in-range {
     background-color: #f2fffd;
-    color: #333333; }
+    color: blue; }
     .daterangepicker .calendar-table td.in-range::before {
       background-color: #f2fffd; }
   .daterangepicker .calendar-table td.today {
     background-color: #fff;
     box-shadow: inset 0 0 0 2px #00bfa5;
-    color: #333333; }
+    color: blue; }
     .daterangepicker .calendar-table td.today:hover {
       background-color: #ebebeb; }
   .daterangepicker .calendar-table td.start-date::before {
@@ -4123,7 +4121,7 @@ div.ui-timepicker-container {
   .iconVertical_icon.IconOrangeColor {
     color: #c37b03; }
   .iconVertical_icon.IconDarkGreyColor {
-    color: #333333; }
+    color: blue; }
   .iconVertical_icon.AllGreenIcon .icon {
     color: #00ac94; }
 
@@ -4144,12 +4142,12 @@ div.ui-timepicker-container {
   .iconVertical_label.LabelColorOrange {
     color: #c37b03; }
   .iconVertical_label.LabelColorDarkGrey {
-    color: #333333; }
+    color: blue; }
 
 .iconVertical_icon {
   margin-bottom: 5px; }
   .iconVertical_icon.IconBlackColor {
-    color: #333333; }
+    color: blue; }
 
 .iconVertical_label {
   font-size: 12px; }
@@ -4173,7 +4171,7 @@ div.ui-timepicker-container {
     .iconHorizontal_icon.IconOrangeColor {
       color: #c37b03; }
     .iconHorizontal_icon.IconDarkGreyColor {
-      color: #333333; }
+      color: blue; }
     .iconHorizontal_icon.AllGreenIcon .icon {
       color: #00ac94; }
   .iconHorizontal_label {
@@ -4193,7 +4191,7 @@ div.ui-timepicker-container {
     .iconHorizontal_label.LabelColorOrange {
       color: #c37b03; }
     .iconHorizontal_label.LabelColorDarkGrey {
-      color: #333333; }
+      color: blue; }
   .iconHorizontal.iconBorder {
     padding: 0 5px 0 10px; }
   .iconHorizontal_icon {
@@ -4202,7 +4200,7 @@ div.ui-timepicker-container {
     text-align: center;
     vertical-align: middle; }
     .iconHorizontal_icon.IconBlackColor {
-      color: #333333;
+      color: blue;
       font-weight: bold; }
     .iconHorizontal_icon span.icon {
       display: inline-block;
@@ -4316,7 +4314,7 @@ body.confirmation-opened {
 .confirm-background.confirm-wb {
   background-image: radial-gradient(circle at 50% 100%, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
   bottom: 0;
-  color: #333333;
+  color: blue;
   left: 0;
   position: fixed;
   right: 0;
@@ -4339,7 +4337,7 @@ body.confirmation-opened {
   z-index: 51; }
 
 .confirm-container.confirm-wb .confirm-title {
-  color: #333333;
+  color: blue;
   font-family: "LatoBold";
   font-size: 1.429em;
   margin-bottom: 20px; }
@@ -4410,8 +4408,7 @@ body.confirmation-opened {
       .modalPopup.Open .modalPopup_content .Scrollable {
         margin-right: -8px;
         max-width: 900px;
-        -ms-scroll-chaining: none;
-            overscroll-behavior: contain;
+        overscroll-behavior: contain;
         padding-right: 8px; }
         .modalPopup.Open .modalPopup_content .Scrollable .ListRecords > *:first-child {
           margin-top: 24px; }
@@ -4561,7 +4558,7 @@ body.PanelById.PanelOpened {
       top: 16px;
       width: 14px; }
       .SapphirePopup div.os-internal-ui-dialog.os-internal-Popup .os-internal-ui-dialog-titlebar-close:after {
-        color: #333333;
+        color: blue;
         content: '\e60c';
         display: block;
         font-family: "Sapphire-Icon-Font";
@@ -4652,7 +4649,7 @@ body.PanelById.PanelOpened {
       height: 100%;
       line-height: inherit; }
     .select2 .select2-selection .select2-selection__rendered {
-      color: #333333;
+      color: blue;
       line-height: 36px;
       padding-left: 16px;
       padding-right: 36px; }
@@ -4672,9 +4669,6 @@ body.PanelById.PanelOpened {
           margin-top: -2px;
           padding-left: 0 !important; }
           .select2 .select2-selection .select2-selection__rendered .select2-search .select2-search__field::-moz-placeholder {
-            color: #adadad;
-            font-family: "LatoRegular"; }
-          .select2 .select2-selection .select2-selection__rendered .select2-search .select2-search__field:-ms-input-placeholder {
             color: #adadad;
             font-family: "LatoRegular"; }
           .select2 .select2-selection .select2-selection__rendered .select2-search .select2-search__field::placeholder {
@@ -4699,7 +4693,7 @@ body.PanelById.PanelOpened {
           white-space: nowrap; }
         .select2 .select2-selection .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove {
           border-radius: 50%;
-          color: #333333;
+          color: blue;
           cursor: pointer;
           display: inline-block;
           font-family: "LatoBold";
@@ -4754,7 +4748,7 @@ body.PanelById.PanelOpened {
       width: 18px; }
   .select2-container .select2-dropdown.MultipleSelect .select2-results__option--highlighted[aria-selected] {
     background-color: #f2fffd;
-    color: #333333; }
+    color: blue; }
   .select2-container .select2-dropdown .select2-search {
     padding: 8px; }
     .select2-container .select2-dropdown .select2-search .select2-search__field {
@@ -4790,7 +4784,7 @@ body.PanelById.PanelOpened {
         color: #fff; }
     .select2-container .select2-dropdown .select2-results .select2-results__options li.select2-results__option.select2-results__option--highlighted[aria-selected='false'] {
       background-color: #f2fffd;
-      color: #333333; }
+      color: blue; }
 
 .Mandatory + .select2.select2-container .select2-selection {
   border-left: 3px solid #00bfa5; }
@@ -5023,7 +5017,7 @@ div.WizardParent {
       div.WizardParent > div div.WizardStep.ActiveStep {
         background-color: #f2fffd;
         border-color: #00bfa5;
-        color: #333333;
+        color: blue;
         font-family: "LatoBold"; }
         div.WizardParent > div div.WizardStep.ActiveStep::after {
           background-color: #f2fffd;
@@ -6364,11 +6358,6 @@ textarea {
   resize: none; }
 
 input::-moz-placeholder {
-  color: #adadad;
-  font-size: 16px;
-  font-style: italic; }
-
-input:-ms-input-placeholder {
   color: #adadad;
   font-size: 16px;
   font-style: italic; }
@@ -7855,7 +7844,6 @@ td.is-disabled {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   white-space: nowrap; }
 
@@ -8328,7 +8316,6 @@ span.select2-selection--single:focus,
   height: 28px;
   -webkit-user-select: none;
   -moz-user-select: none;
-   -ms-user-select: none;
        user-select: none; }
 
 .select2-container .select2-selection--single .select2-selection__rendered {
@@ -8377,7 +8364,6 @@ span.select2-selection--single:focus,
   padding: 6px;
   -webkit-user-select: none;
   -moz-user-select: none;
-   -ms-user-select: none;
        user-select: none; }
 
 .select2-results__option[aria-selected] {
@@ -12345,7 +12331,6 @@ pre {
   min-height: 32px;
   -webkit-user-select: none;
   -moz-user-select: none;
-   -ms-user-select: none;
        user-select: none; }
 
 .select2-container .select2-selection--multiple .select2-selection__rendered {
