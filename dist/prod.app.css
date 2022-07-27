@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128065 || Generated: Wed Jul 27 2022 18:33:51 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.128065 || Generated: Wed Jul 27 2022 18:34:32 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -31144,9 +31144,6 @@ ul.os-internal-ui-autocomplete {
   transition: all 0.1s ease-in-out; }
   .InfoTooltipDnD:hover {
     color: #56d3c2; }
-
-.KPIS_Container iframe html body {
-  background-color: transparent !important; }
 
 .LayoutESignature {
   background-color: #f3f3f3;
