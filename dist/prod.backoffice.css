@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.128065 || Generated: Thu Jul 14 2022 11:27:55 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.128065 || Generated: Wed Jul 27 2022 18:33:51 GMT+0100 (Western European Summer Time) */
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
 /* Header */
@@ -5042,7 +5042,6 @@ div.WizardParent {
           top: 5px;
           transform: rotate(45deg);
           width: 24px;
-          background-color: #f3f3f3;
           border-color: #00bfa5;
           display: block;
           left: -13px;

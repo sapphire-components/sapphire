@@ -151,7 +151,7 @@ div.WizardParent {
 				&::before {
 					@include wizard-step-arrow-style();
 
-					background-color: $body-color;
+					//background-color: $body-regular;
 					border-color: $regular-alpha;
 					display: block;
 					left: -13px;

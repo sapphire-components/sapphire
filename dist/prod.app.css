@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128065 || Generated: Thu Jul 14 2022 11:27:55 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.128065 || Generated: Wed Jul 27 2022 18:33:51 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -10789,7 +10789,6 @@ div.WizardParent {
           top: 5px;
           transform: rotate(45deg);
           width: 24px;
-          background-color: #f3f3f3;
           border-color: #00bfa5;
           display: block;
           left: -13px;
@@ -26634,6 +26633,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
         border-color: #d6d6d6; }
         .SmallBoxSelectable--disabled.SmallBoxSelectable--selected .SmallBoxSelectable__SelectableIcon::before {
           background-color: #d6d6d6; }
+    .SmallBoxSelectable--disabled .SmallBoxSelectable__TitleContainer {
+      color: #777777; }
     .SmallBoxSelectable--disabled .SmallBoxSelectable__SelectableIcon {
       background-color: #f3f3f3; }
 
@@ -31144,6 +31145,9 @@ ul.os-internal-ui-autocomplete {
   .InfoTooltipDnD:hover {
     color: #56d3c2; }
 
+.KPIS_Container iframe html body {
+  background-color: transparent !important; }
+
 .LayoutESignature {
   background-color: #f3f3f3;
   display: grid;
@@ -31912,7 +31916,6 @@ ul.os-internal-ui-autocomplete {
     .ClinicianWorkArea____resumeDetails .AppointmentDetails .VisitDetailsContainer .SectionExpandableInside .SectionExpandableInside_header {
       background-color: #f3f3f3;
       border: 1px solid #d6d6d6;
-      border-bottom: none;
       border-radius: 4px;
       margin-bottom: 16px; }
     .ClinicianWorkArea____resumeDetails .AppointmentDetails .VisitDetailsContainer .SectionExpandableInside .ExapandablePlaceholder {

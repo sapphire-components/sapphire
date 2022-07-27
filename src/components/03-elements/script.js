@@ -23,7 +23,11 @@
   }
 
   function resizeTextArea ($textAreaInput) {
-    $textAreaInput.css('height', 'auto');
-    $textAreaInput.css('height', $textAreaInput[0].scrollHeight+'px');
+    console.log($textAreaInput[0].scrollHeight);
+    if($textAreaInput[0].scrollHeight == 0){
+      $textAreaInput.css('height', '60px');
+    }else{
+      $textAreaInput.css('height', $textAreaInput[0].scrollHeight+'px');
+    }
   }
 })(jQuery, window, document, SapphireWidgets);
