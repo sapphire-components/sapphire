@@ -25,6 +25,7 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 
 			.MainInteractiveCard-header-text {
 				overflow: hidden;
+				display: none;
 			}
 		}
 
@@ -204,6 +205,7 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 			display: flex;
 			height: 32px;
 			justify-content: center;
+			min-width: 32px;
 			width: 32px;
 
 			&__full {
@@ -286,10 +288,9 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 		/* To be used on an embedded Web Block page inside the card */
 		.MainInteractiveCard-absolute-actions {
 			display: none;
-			line-height: $sapphire-sizes--largest;
 			position: absolute;
 			right: $sapphire-sizes--medium;
-			top: 0;
+			top: $sapphire-sizes--medium;
 
 			.AR & {
 				left: $sapphire-sizes--medium;

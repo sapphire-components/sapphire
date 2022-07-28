@@ -10,3 +10,12 @@
 		color: $regular-epsilon;
 	}
 }
+
+.KPIS_Container iframe{
+	border-radius: $border-radius-medium;
+	margin-bottom: $sapphire-sizes--medium;
+
+	html > body{
+		background-color: transparent !important;
+	}
+}

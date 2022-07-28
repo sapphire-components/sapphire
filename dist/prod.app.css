@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128070 || Generated: Wed Jul 27 2022 18:50:46 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.128070 || Generated: Thu Jul 28 2022 16:06:21 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -15528,10 +15528,8 @@ div.CircledArrow {
   .DashboardWindow .DashboardContent {
     margin-top: 24px; }
 
-.DragBox .DashboardWindow {
-  margin-bottom: 16px; }
-  .DragBox .DashboardWindow:last-of-type {
-    margin-bottom: 0; }
+.DragBox .DashboardWindow:last-of-type {
+  margin-bottom: 0; }
 
 .AR .DashboardWindow .DashboardCloseWindow,
 .FA .DashboardWindow .DashboardCloseWindow {
@@ -19104,7 +19102,8 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
       .MainInteractiveCard.isOpen .MainInteractiveCard-header .MainInteractiveCard-expand-icon {
         transform: rotate(180deg); }
       .MainInteractiveCard.isOpen .MainInteractiveCard-header .MainInteractiveCard-header-text {
-        overflow: hidden; }
+        overflow: hidden;
+        display: none; }
     .MainInteractiveCard.isOpen > div > .MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
       display: block; }
   .MainInteractiveCard.CardEmpty .MainInteractiveCard-header {
@@ -19189,6 +19188,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
       display: flex;
       height: 32px;
       justify-content: center;
+      min-width: 32px;
       width: 32px; }
       .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-header-icon__full {
         background-color: #e7f2dc;
@@ -19261,10 +19261,9 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     /* To be used on an embedded Web Block page inside the card */ }
     .MainInteractiveCard .MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
       display: none;
-      line-height: 56px;
       position: absolute;
       right: 16px;
-      top: 0; }
+      top: 16px; }
       .AR .MainInteractiveCard .MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
         left: 16px;
         right: 0; }
@@ -31144,6 +31143,12 @@ ul.os-internal-ui-autocomplete {
   transition: all 0.1s ease-in-out; }
   .InfoTooltipDnD:hover {
     color: #56d3c2; }
+
+.KPIS_Container iframe {
+  border-radius: 8px;
+  margin-bottom: 16px; }
+  .KPIS_Container iframe html > body {
+    background-color: transparent !important; }
 
 .LayoutESignature {
   background-color: #f3f3f3;
