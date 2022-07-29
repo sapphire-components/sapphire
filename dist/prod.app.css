@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128071 || Generated: Thu Jul 28 2022 16:06:47 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.128071 || Generated: Fri Jul 29 2022 18:20:54 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -19102,8 +19102,9 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
       .MainInteractiveCard.isOpen .MainInteractiveCard-header .MainInteractiveCard-expand-icon {
         transform: rotate(180deg); }
       .MainInteractiveCard.isOpen .MainInteractiveCard-header .MainInteractiveCard-header-text {
-        overflow: hidden;
-        display: none; }
+        overflow: hidden; }
+        .MainInteractiveCard.isOpen .MainInteractiveCard-header .MainInteractiveCard-header-text .HasContent {
+          display: none; }
     .MainInteractiveCard.isOpen > div > .MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
       display: block; }
   .MainInteractiveCard.CardEmpty .MainInteractiveCard-header {
@@ -19241,6 +19242,8 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
       width: 100%; }
       .AR .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-header-text-title {
         font-family: "TajawalBold"; }
+    .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-header-text-subtitle {
+      line-height: 16px; }
     .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-header-text-caption {
       color: #777777; }
     .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-header-actions {

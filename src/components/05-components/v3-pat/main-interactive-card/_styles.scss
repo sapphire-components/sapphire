@@ -25,7 +25,11 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 
 			.MainInteractiveCard-header-text {
 				overflow: hidden;
-				display: none;
+				
+				.HasContent{
+					display: none;
+				}
+
 			}
 		}
 
@@ -260,6 +264,10 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 			.AR & {
 				font-family: $font-family-arabic-bold;
 			}
+		}
+
+		.MainInteractiveCard-header-text-subtitle {
+			line-height: 16px;
 		}
 
 		.MainInteractiveCard-header-text-caption {
