@@ -7,6 +7,16 @@
 			.QuickProblems,
 			.VisitDetailsContainer {
 				margin-top: $sapphire-sizes--large;
+
+				.VisitDetails{
+
+					.TimeLineSearchHeader{
+
+						.select2{
+							width: 100% !important;
+						}
+					}
+				}
 			}
 
 			.VisitDetailsContainer .SectionExpandableInside {

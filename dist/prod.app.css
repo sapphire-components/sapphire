@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128072 || Generated: Fri Jul 29 2022 18:21:10 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.128072 || Generated: Fri Jul 29 2022 18:56:46 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -31916,6 +31916,10 @@ ul.os-internal-ui-autocomplete {
   .ClinicianWorkArea____resumeDetails .AppointmentDetails .QuickProblems,
   .ClinicianWorkArea____resumeDetails .AppointmentDetails .VisitDetailsContainer {
     margin-top: 24px; }
+    .ClinicianWorkArea____resumeDetails .AppointmentDetails .QuickNotes .VisitDetails .TimeLineSearchHeader .select2,
+    .ClinicianWorkArea____resumeDetails .AppointmentDetails .QuickProblems .VisitDetails .TimeLineSearchHeader .select2,
+    .ClinicianWorkArea____resumeDetails .AppointmentDetails .VisitDetailsContainer .VisitDetails .TimeLineSearchHeader .select2 {
+      width: 100% !important; }
   .ClinicianWorkArea____resumeDetails .AppointmentDetails .VisitDetailsContainer .SectionExpandableInside {
     background-color: transparent; }
     .ClinicianWorkArea____resumeDetails .AppointmentDetails .VisitDetailsContainer .SectionExpandableInside .SectionExpandableInside_header {
