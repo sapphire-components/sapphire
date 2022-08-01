@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128073 || Generated: Fri Jul 29 2022 18:57:44 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.128073 || Generated: Mon Aug 01 2022 16:33:40 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -40490,7 +40490,7 @@ a.NoLink {
   vertical-align: middle; }
 
 .desktop .ScheduleContent {
-  width: 30%; }
+  min-width: 350px; }
 
 /*
 .desktop.hd .ScheduleContent {
