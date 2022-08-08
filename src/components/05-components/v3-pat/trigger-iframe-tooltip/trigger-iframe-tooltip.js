@@ -3,6 +3,8 @@
 	var create = function(config) {
 		var $elementId = $('#' + config.elementId);
 
+		config.minHeight = config.minHeight + 32;
+
 		$elementId.addClass('tooltip');
 
 		if (config.triggerId === 'click') $elementId.addClass('tooltipstered--pointer');
