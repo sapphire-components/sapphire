@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128074 || Generated: Mon Aug 01 2022 16:34:01 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.128074 || Generated: Mon Aug 08 2022 17:17:05 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -15491,7 +15491,8 @@ div.CircledArrow {
   padding-right: 92px; }
 
 .DashboardWindow {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .DashboardWindow:hover .DashboardCloseWindow {
     visibility: visible; }
   .DashboardWindow .DashBoardTitle1 {
@@ -20863,6 +20864,15 @@ body.PanelById.PanelOpened {
   .CardBackgroundWhite .PersonCard .PersonCard__actions,
   .CardBackgroundWhite .PersonCard .PersonCard__headerLeftInfo {
     background-color: #fff; }
+  .PersonCard.PersonCard_ScheduleCanceled .PersonCard__headerLeftInfo,
+  .PersonCard.PersonCard_ScheduleCanceled .PersonCard__content {
+    background-color: #ebebeb; }
+  .PersonCard.PersonCard_ScheduleCanceled .PersonCard__headerLeftInfo {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+  .PersonCard.PersonCard_ScheduleCanceled .PersonCard__content {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; }
 
 .PersonExpandableDiv {
   position: relative; }

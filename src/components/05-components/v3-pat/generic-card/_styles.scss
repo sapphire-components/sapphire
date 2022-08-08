@@ -539,6 +539,24 @@
 			background-color: $regular-white;
 		}
 	}
+
+	&.PersonCard_ScheduleCanceled{
+
+		.PersonCard__headerLeftInfo,
+		.PersonCard__content{
+			background-color: $sapphire-light;
+		}
+
+		.PersonCard__headerLeftInfo{
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+
+		.PersonCard__content{
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+		}
+	}
 }
 
 .PersonExpandableDiv {

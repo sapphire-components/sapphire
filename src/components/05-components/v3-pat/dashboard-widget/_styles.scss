@@ -2,6 +2,7 @@
 	@extend .Card;
 
 	position: relative;
+	overflow: hidden;
 
 	&:hover {
 		.DashboardCloseWindow {
