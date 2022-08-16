@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128076 || Generated: Mon Aug 08 2022 18:39:32 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.128076 || Generated: Tue Aug 16 2022 15:12:45 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -31655,6 +31655,19 @@ ul.os-internal-ui-autocomplete {
     z-index: 3; }
     .TimelinePage__Filters .TimeLineSearchHeader {
       min-width: 420px; }
+    .TimelinePage__Filters .select2 {
+      min-width: 200px; }
+      .TimelinePage__Filters .select2.select2-container .select2-selection {
+        border-radius: 100px; }
+        .TimelinePage__Filters .select2.select2-container .select2-selection .select2-selection__rendered .select2-selection__choice {
+          font-family: "LatoRegular"; }
+      .TimelinePage__Filters .select2.select2-container--open .select2-selection[aria-disabled='false'] {
+        border-bottom-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px; }
+    .TimelinePage__Filters.SelectSystemFilter-Selected .select2 .select2-selection {
+      border: 1px solid #d6d6d6; }
   .TimelinePage__Content {
     overflow: visible; }
     .TimelinePage__Content .LineTimeLine__Header {
