@@ -15,10 +15,12 @@ $select-system-height: 36px;
 			&:hover {
 				background-color: $background-disabled;
 				border-color: $border-color-disabled;
+				border-left-color: $regular-alpha;
 			}
 
 			&:after {
 				filter: grayscale(100%);
+				display: none;;
 			}
 
 			.select2-selection__rendered {

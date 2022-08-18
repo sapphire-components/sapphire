@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.128077 || Generated: Tue Aug 16 2022 15:13:12 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.1.128077 || Generated: Thu Aug 18 2022 12:14:25 GMT+0100 (Western European Summer Time) */
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
 /* Header */
@@ -4583,9 +4583,11 @@ body.PanelById.PanelOpened {
     border-color: #d6d6d6; }
     .select2.select2-container--disabled .select2-selection[aria-disabled='true']:hover {
       background-color: #ebebeb;
-      border-color: #d6d6d6; }
+      border-color: #d6d6d6;
+      border-left-color: #00bfa5; }
     .select2.select2-container--disabled .select2-selection[aria-disabled='true']:after {
-      filter: grayscale(100%); }
+      filter: grayscale(100%);
+      display: none; }
     .select2.select2-container--disabled .select2-selection[aria-disabled='true'] .select2-selection__rendered {
       color: #777777; }
   .select2.select2-container--focus .select2-selection, .select2.select2-container--focus .select2-selection:hover {
