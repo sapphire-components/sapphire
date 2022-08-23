@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128078 || Generated: Thu Aug 18 2022 12:14:57 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.128078 || Generated: Tue Aug 23 2022 11:31:29 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -11390,8 +11390,7 @@ html .Page .PatientDetailsLayout {
 .LayoutEmergency .SideMenu__PageTitle {
   display: block; }
 
-.LayoutEmergency .SideMenu__Tabs .iframeContainer,
-.LayoutEmergency .SideMenu__Tabs > div :first-of-type {
+.LayoutEmergency .SideMenu__Tabs .lds-ring.OI {
   display: none; }
 
 .CTTASLevelAssessmentMainContainer {

@@ -7,6 +7,9 @@
 		&__Tabs {
 			.iframeContainer,
 			> div :first-of-type {
+				//display: none;
+			}
+			.lds-ring.OI{
 				display: none;
 			}
 		}
