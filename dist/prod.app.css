@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128079 || Generated: Tue Aug 23 2022 11:31:55 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.128079 || Generated: Fri Aug 26 2022 16:28:24 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -12897,6 +12897,10 @@ html body {
   border: 1px solid #d6d6d6;
   padding-left: 16px;
   padding-right: 35px; }
+
+select[disabled="disabled"],
+.Form select.ReadOnly[disabled="disabled"] {
+  background-image: none; }
 
 /* Javascript_Lib Components */
 .cke.cke_chrome {
