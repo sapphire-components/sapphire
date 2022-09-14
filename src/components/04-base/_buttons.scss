@@ -1,7 +1,7 @@
 @mixin default-button($bgColor: $regular-alpha, $fontSize: $font-size-normal) {
 	background-color: $bgColor;
 	border: 1px solid transparent;
-	border-radius: 0; // 100px;
+	border-radius: 100px;
 	color: $regular-white;
 	cursor: pointer;
 	display: inline-block;
