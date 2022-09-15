@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128082 || Generated: Wed Sep 14 2022 13:46:21 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.128082 || Generated: Thu Sep 15 2022 14:54:13 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -5144,7 +5144,7 @@ a.Button.IsDefault,
 .PanelOpened a.Button.Is_Default,
 .PanelOpened .DropZoneContainer .row .Is_Default.Button,
 .DropZoneContainer .row .PanelOpened .Is_Default.Button {
-  background-color: #00bfa5;
+  background-color: red;
   border: 1px solid transparent;
   border-radius: 100px;
   color: #fff;

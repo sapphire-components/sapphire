@@ -1,5 +1,5 @@
 @mixin default-button($bgColor: $regular-alpha, $fontSize: $font-size-normal) {
-	background-color: $bgColor;
+	background-color: red; // $bgColor;
 	border: 1px solid transparent;
 	border-radius: 100px;
 	color: $regular-white;
