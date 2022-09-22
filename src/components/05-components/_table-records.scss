@@ -160,8 +160,16 @@
 		}
 	}
 
-	> tbody > tr:first-child td {
+	> tbody > tr:first-child td:first-child {
 		border-top: 1px solid $light-grey;
+		border-bottom-left-radius: $border-radius-medium;
+		border-top-left-radius: $border-radius-medium;
+	}
+
+	> tbody > tr:last-child td:last-child {
+		border-top: 1px solid $light-grey;
+		border-bottom-right-radius: $border-radius-medium;
+		border-top-right-radius: $border-radius-medium;
 	}
 
 	> tbody tr {
