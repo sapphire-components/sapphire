@@ -305,6 +305,7 @@
 		});
 
 		this.$input.on('apply.daterangepicker', function(event, picker) {
+			_this.$model.trigger('change'); // Fix to call the change when the date is the same/today
 			_this.$clear.removeClass('disabled');
 			_this.updateLabeling();
 			_this.sendNotification();
