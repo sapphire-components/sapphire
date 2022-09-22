@@ -160,15 +160,23 @@
 		}
 	}
 
-	> tbody > tr:first-child td:first-child {
+	> tbody > tr:first-child td {
 		border-top: 1px solid $light-grey;
+	}
+
+	> tbody > tr:first-child td:first-child {
 		border-top-left-radius: $border-radius-medium;
+	}
+
+	> tbody > tr:first-child td:last-child {
 		border-top-right-radius: $border-radius-medium;
 	}
 
-	> tbody > tr:last-child td:last-child {
-		border-top: 1px solid $light-grey;
+	> tbody > tr:last-child td:first-child {
 		border-bottom-left-radius: $border-radius-medium;
+	}
+
+	> tbody > tr:last-child td:last-child {
 		border-bottom-right-radius: $border-radius-medium;
 	}
 
