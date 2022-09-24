@@ -28,7 +28,7 @@
 	&-caption {
 		font-size: 1em;
 		margin-bottom: 0;
-		margin-right: 6px;
+		margin-right: $sapphire-sizes--small;
 	}
 
 	&-fullwidth {
@@ -224,7 +224,7 @@
 	.FormField-caption {
 		font-size: 1em;
 		margin-bottom: 0;
-		margin-left: 6px;
+		margin-left: $sapphire-sizes--small;
 		margin-right: 0;
 	}
 }

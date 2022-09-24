@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128089 || Generated: Thu Sep 22 2022 17:33:01 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.128089 || Generated: Sat Sep 24 2022 16:44:17 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -17058,7 +17058,7 @@ div.CircledArrow {
 .LayoutBase .FormField-caption {
   font-size: 1em;
   margin-bottom: 0;
-  margin-right: 6px; }
+  margin-right: 8px; }
 
 .Page .FormField-fullwidth,
 .LayoutPopup .FormField-fullwidth,
@@ -17255,7 +17255,7 @@ div.CircledArrow {
 .FA .FormField-caption {
   font-size: 1em;
   margin-bottom: 0;
-  margin-left: 6px;
+  margin-left: 8px;
   margin-right: 0; }
 
 .FullScreenTabsWrapper_Container {
@@ -31611,6 +31611,9 @@ ul.os-internal-ui-autocomplete {
 .template-usage .DateTimeRangePicker-input,
 .template-usage .DateTimeRangePicker-input input {
   width: 100% !important; }
+
+.template-usage .Tabs {
+  min-height: 64px; }
 
 .template-usage .TableRecords_OddLine,
 .template-usage .TableRecords_EvenLine {
