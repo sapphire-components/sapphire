@@ -201,7 +201,7 @@
 				> input[type='checkbox']:checked ~ label {
 					background-color: $regular-white;
 					border-right: 1px solid $light-grey;
-					color: $mid-dark-grey;
+					color: $dark-grey;
 				}
 			}
 
@@ -210,7 +210,7 @@
 				> input[type='checkbox']:checked ~ label {
 					background-color: $regular-white;
 					box-shadow: inset 0px 0px 0px 2px $regular-alpha;
-					color: $mid-dark-grey;
+					color: $dark-grey;
 				}
 			}
 		}

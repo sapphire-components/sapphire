@@ -200,6 +200,10 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 		pointer-events: none;
 		z-index: 1;
 
+		&.HeaderAlignCenterVertical{
+			@include flex-custom-align($align: center, $justify: flex-start, $type: flex);
+		}
+
 		.MainInteractiveCard-header-icon {
 			align-items: center;
 			background-color: transparent;

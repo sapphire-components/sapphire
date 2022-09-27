@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128090 || Generated: Sat Sep 24 2022 16:44:52 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.128090 || Generated: Tue Sep 27 2022 09:47:33 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -17047,7 +17047,7 @@ div.CircledArrow {
 .LayoutBlank .FormField-vertical .FormField-caption,
 .LayoutBase .FormField-vertical .FormField-caption {
   display: block;
-  margin-bottom: 3px;
+  margin-bottom: 8px;
   margin-right: 0;
   min-height: 18px;
   width: 100%; }
@@ -17931,7 +17931,7 @@ div.Toolbar {
     height: 18px;
     line-height: 18px;
     position: absolute;
-    right: 0;
+    right: 8px;
     top: 2px;
     width: 18px;
     z-index: 1; }
@@ -19192,6 +19192,10 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
     padding: 16px;
     pointer-events: none;
     z-index: 1; }
+    .MainInteractiveCard .MainInteractiveCard-header.HeaderAlignCenterVertical {
+      align-items: center;
+      display: flex;
+      justify-content: flex-start; }
     .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-header-icon, .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-header-icon__full {
       align-items: center;
       background-color: transparent;
@@ -24007,12 +24011,12 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     .SegmentedControlLight.Filters .SegmentedControlItem:first-child > input[type='checkbox']:checked ~ label {
       background-color: #fff;
       border-right: 1px solid #d6d6d6;
-      color: #5c5c5c; }
+      color: #333333; }
     .SegmentedControlLight.Filters .SegmentedControlItem:not(:first-child) > input[type='radio']:checked ~ label,
     .SegmentedControlLight.Filters .SegmentedControlItem:not(:first-child) > input[type='checkbox']:checked ~ label {
       background-color: #fff;
       box-shadow: inset 0px 0px 0px 2px #00bfa5;
-      color: #5c5c5c; }
+      color: #333333; }
 
 .AR .SegmentedControl.Round .SegmentedControlItem:first-child, .AR .Round.SegmentedControlLight .SegmentedControlItem:first-child,
 .FA .SegmentedControl.Round .SegmentedControlItem:first-child,
