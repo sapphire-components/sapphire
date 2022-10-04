@@ -229,6 +229,14 @@ a.Button.IsDefault,
 			box-shadow: inset 0 1px 0 rgba(255, 130, 0, 0.9), 0 2px 2px rgba(255, 130, 0, 0.9);
 		}
 	}
+	&.AppointmentConfirmed{
+		background-color: $light-green;
+		color: $regular-green;
+		
+		&:hover {
+			background-color: darken($light-green, 5%);
+		}
+	}
 }
 
 .LinkHover {

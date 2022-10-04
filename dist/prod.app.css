@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128091 || Generated: Tue Sep 27 2022 09:51:31 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.128091 || Generated: Tue Oct 04 2022 16:42:54 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -7298,6 +7298,67 @@ a.Button.IsDefault,
       border: solid 1px rgba(255, 130, 0, 0.9);
       border-color: rgba(255, 130, 0, 0.9);
       box-shadow: inset 0 1px 0 rgba(255, 130, 0, 0.9), 0 2px 2px rgba(255, 130, 0, 0.9); }
+  .desktop input.Button.Is_Default.AppointmentConfirmed,
+  .desktop input.Button.AppointmentConfirmed,
+  .desktop input.Button.ButtonDefault.AppointmentConfirmed,
+  .Page a.Button.AppointmentConfirmed,
+  .Page .DropZoneContainer .row .AppointmentConfirmed.Button,
+  .DropZoneContainer .row .Page .AppointmentConfirmed.Button,
+  .PanelOpened a.Button.AppointmentConfirmed,
+  .PanelOpened .DropZoneContainer .row .AppointmentConfirmed.Button,
+  .DropZoneContainer .row .PanelOpened .AppointmentConfirmed.Button,
+  .confirm-container a.Button.AppointmentConfirmed,
+  .confirm-container .DropZoneContainer .row .AppointmentConfirmed.Button,
+  .DropZoneContainer .row .confirm-container .AppointmentConfirmed.Button,
+  .LayoutPopup a.Button.AppointmentConfirmed,
+  .LayoutPopup .DropZoneContainer .row .AppointmentConfirmed.Button,
+  .DropZoneContainer .row .LayoutPopup .AppointmentConfirmed.Button,
+  .LayoutBlank a.Button.AppointmentConfirmed,
+  .LayoutBlank .DropZoneContainer .row .AppointmentConfirmed.Button,
+  .DropZoneContainer .row .LayoutBlank .AppointmentConfirmed.Button,
+  .LayoutBase a.Button.AppointmentConfirmed,
+  .LayoutBase .DropZoneContainer .row .AppointmentConfirmed.Button,
+  .DropZoneContainer .row .LayoutBase .AppointmentConfirmed.Button,
+  a.Button.IsDefault.AppointmentConfirmed,
+  .DropZoneContainer .row .IsDefault.AppointmentConfirmed.Button,
+  .desktop a.Button.Is_Default.AppointmentConfirmed,
+  .desktop .DropZoneContainer .row .Is_Default.AppointmentConfirmed.Button,
+  .DropZoneContainer .row .desktop .Is_Default.AppointmentConfirmed.Button,
+  .PanelOpened a.Button.Is_Default.AppointmentConfirmed,
+  .PanelOpened .DropZoneContainer .row .Is_Default.AppointmentConfirmed.Button,
+  .DropZoneContainer .row .PanelOpened .Is_Default.AppointmentConfirmed.Button {
+    background-color: #e7f2dc;
+    color: #7cb342; }
+    .desktop input.Button.Is_Default.AppointmentConfirmed:hover,
+    .desktop input.Button.AppointmentConfirmed:hover,
+    .desktop input.Button.ButtonDefault.AppointmentConfirmed:hover,
+    .Page a.Button.AppointmentConfirmed:hover,
+    .Page .DropZoneContainer .row .AppointmentConfirmed.Button:hover,
+    .DropZoneContainer .row .Page .AppointmentConfirmed.Button:hover,
+    .PanelOpened a.Button.AppointmentConfirmed:hover,
+    .PanelOpened .DropZoneContainer .row .AppointmentConfirmed.Button:hover,
+    .DropZoneContainer .row .PanelOpened .AppointmentConfirmed.Button:hover,
+    .confirm-container a.Button.AppointmentConfirmed:hover,
+    .confirm-container .DropZoneContainer .row .AppointmentConfirmed.Button:hover,
+    .DropZoneContainer .row .confirm-container .AppointmentConfirmed.Button:hover,
+    .LayoutPopup a.Button.AppointmentConfirmed:hover,
+    .LayoutPopup .DropZoneContainer .row .AppointmentConfirmed.Button:hover,
+    .DropZoneContainer .row .LayoutPopup .AppointmentConfirmed.Button:hover,
+    .LayoutBlank a.Button.AppointmentConfirmed:hover,
+    .LayoutBlank .DropZoneContainer .row .AppointmentConfirmed.Button:hover,
+    .DropZoneContainer .row .LayoutBlank .AppointmentConfirmed.Button:hover,
+    .LayoutBase a.Button.AppointmentConfirmed:hover,
+    .LayoutBase .DropZoneContainer .row .AppointmentConfirmed.Button:hover,
+    .DropZoneContainer .row .LayoutBase .AppointmentConfirmed.Button:hover,
+    a.Button.IsDefault.AppointmentConfirmed:hover,
+    .DropZoneContainer .row .IsDefault.AppointmentConfirmed.Button:hover,
+    .desktop a.Button.Is_Default.AppointmentConfirmed:hover,
+    .desktop .DropZoneContainer .row .Is_Default.AppointmentConfirmed.Button:hover,
+    .DropZoneContainer .row .desktop .Is_Default.AppointmentConfirmed.Button:hover,
+    .PanelOpened a.Button.Is_Default.AppointmentConfirmed:hover,
+    .PanelOpened .DropZoneContainer .row .Is_Default.AppointmentConfirmed.Button:hover,
+    .DropZoneContainer .row .PanelOpened .Is_Default.AppointmentConfirmed.Button:hover {
+      background-color: #daebc9; }
 
 .LinkHover {
   color: #333333;
