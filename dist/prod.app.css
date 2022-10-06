@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128092 || Generated: Tue Oct 04 2022 16:43:18 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.128092 || Generated: Thu Oct 06 2022 12:36:52 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -20879,7 +20879,7 @@ body.PanelById.PanelOpened {
       flex-basis: 15%;
       justify-content: flex-end; }
     .PersonCard__actions_width_Large {
-      flex-basis: 30%;
+      flex-basis: 35%;
       max-width: unset; }
     .PersonCard__actions > .MultiAlignRight {
       align-items: center;
