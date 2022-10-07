@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128094 || Generated: Thu Oct 06 2022 13:38:56 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.128094 || Generated: Fri Oct 07 2022 17:43:28 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -11208,6 +11208,8 @@ div.WizardParent {
   position: fixed;
   width: calc(67% - (24px + 3px));
   z-index: 1; }
+  .LayoutBase--fixedActions.HasSideBarNotExpandable {
+    width: calc(67% - (24px + 151px)); }
   .AR .LayoutBase--fixedActions {
     margin-left: 0;
     margin-right: -24px; }
@@ -11444,6 +11446,9 @@ html .Page .PatientDetailsLayout {
     color: #00ac94;
     height: 64px;
     margin-bottom: -15px; }
+
+.LayoutBase-iframesidebar.notExpandable + .LayoutBase-Content.PatientDetails_content .LayoutBase--fixedActions {
+  width: calc(67% - (24px + 151px)); }
 
 .LayoutBlank.Page {
   background-color: #fff;

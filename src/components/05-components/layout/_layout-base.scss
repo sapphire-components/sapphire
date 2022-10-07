@@ -465,11 +465,17 @@
 	width: calc(67% - (#{$sapphire-sizes--large} + 3px)); // Border + 1px
 	z-index: 1;
 
+	&.HasSideBarNotExpandable{
+		width: calc(67% - (#{$sapphire-sizes--large} + 151px));	
+	}
+
 	.AR & {
 		margin-left: 0;
 		margin-right: -$sapphire-sizes--large;
 	}
 }
+
+
 
 .LayoutBase--menuFixed {
 	.LayoutBase-Wrapper .LayoutBase-MainMenu {
@@ -804,4 +810,9 @@ html .Page .PatientDetailsLayout {
 			}
 		}
 	}
+}
+
+
+.LayoutBase-iframesidebar.notExpandable + .LayoutBase-Content.PatientDetails_content .LayoutBase--fixedActions{
+	width: calc(67% - (#{$sapphire-sizes--large} + 151px));		
 }
