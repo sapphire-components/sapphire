@@ -255,5 +255,14 @@ $card-charts-prop-width: 226px;
 			padding-top: $sapphire-sizes--small;
 			white-space: nowrap;
 		}
+
+		.tooltipx__description {
+			font-size: 10px; /* Needs to be set in pixel */
+			color: #777777;
+			line-height: 14px;
+			justify-content: space-between;
+			padding-top: $sapphire-sizes--xsmall;
+			white-space: nowrap;
+		}
 	}
 }

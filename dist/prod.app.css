@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128096 || Generated: Mon Oct 24 2022 14:56:22 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.128096 || Generated: Mon Oct 24 2022 15:07:32 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -14155,6 +14155,14 @@ div.ActionsMenu-item {
       height: 20px;
       justify-content: space-between;
       padding-top: 8px;
+      white-space: nowrap; }
+    .highcharts-tooltip-container .tooltipx .tooltipx__description {
+      font-size: 10px;
+      /* Needs to be set in pixel */
+      color: #777777;
+      line-height: 14px;
+      justify-content: space-between;
+      padding-top: 4px;
       white-space: nowrap; }
 
 .CardBox {
