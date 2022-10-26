@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128097 || Generated: Mon Oct 24 2022 15:08:08 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.128097 || Generated: Wed Oct 26 2022 10:57:54 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -27419,9 +27419,10 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
   background-color: #f3f3f3;
   pointer-events: none; }
 
+.TableFormColumn--greyBackground:not(.TableFormColumn--editMode) .TableFormColumn__Header,
 .TableFormColumn--greyBackground:not(.TableFormColumn--editMode) .TableFormColumn__Fields > div,
 .TableFormColumn--greyBackground:not(.TableFormColumn--editMode) .TableFormColumn__Fields > .ListRecords > div {
-  background-color: #fff; }
+  background-color: #f9f9f9; }
 
 .TableFormColumn__TextTag {
   color: #777777;

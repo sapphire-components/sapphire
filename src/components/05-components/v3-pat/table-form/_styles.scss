@@ -176,9 +176,11 @@ $table-form-header-height-edit: 42px;
 
 	&--greyBackground {
 		&:not(.TableFormColumn--editMode) {
+			.TableFormColumn__Header,
 			.TableFormColumn__Fields > div,
 			.TableFormColumn__Fields > .ListRecords > div {
-				background-color: $regular-white;
+				//background-color: $regular-white;//Was this an error?
+				background-color: $white-grey;
 			}
 		}
 	}
