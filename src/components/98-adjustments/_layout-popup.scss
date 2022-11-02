@@ -8,3 +8,7 @@ body .Page.desktop .MainPopup {
 	min-width: auto;
 	padding: 0;
 }
+//fix for #19906
+.LayoutPopup .select2-container {
+	width:100% !important;  
+}
