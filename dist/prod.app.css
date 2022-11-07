@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128099 || Generated: Wed Nov 02 2022 12:07:15 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.128099 || Generated: Mon Nov 07 2022 14:17:07 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -14487,6 +14487,9 @@ div.CircledArrow {
   display: table-cell;
   vertical-align: middle;
   width: 52%; }
+
+.ClinicStatus.NoStatusBorder {
+  border-top: 1px solid #5b5b5b; }
 
 .ClinicStatus .ClinicStatusLocked.PH:empty {
   display: none; }
