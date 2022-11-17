@@ -305,7 +305,7 @@
 		});
 
 		this.$input.on('apply.daterangepicker', function(event, picker) {
-			_this.$model.trigger('change'); // Fix to call the change when the date is the same/today
+			_this.$input.trigger('change'); // Fix to call the change when the date is the same/today
 			_this.$clear.removeClass('disabled');
 			_this.updateLabeling();
 			_this.sendNotification();
@@ -408,12 +408,11 @@
 				if (this.config.attachToInput) {
 					if (this.config.singleDatePicker) {
 						this.$input.val(this.picker.startDate.format(inputMask));
-						if(this.config.timePicker) {
+						if (this.config.timePicker) {
 							this.$model && this.$model.val(this.picker.startDate.format(`${this.config.systemDateFormat} HH:mm:ss`));
 						} else {
 							this.$model && this.$model.val(this.picker.startDate.format(this.config.systemDateFormat));
 						}
-						
 					} else {
 						const startDate = this.picker.startDate.format(inputMask);
 						const endDate = this.picker.endDate.format(inputMask);
