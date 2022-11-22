@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128102 || Generated: Thu Nov 17 2022 14:11:01 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.128102 || Generated: Tue Nov 22 2022 15:06:15 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -4866,6 +4866,9 @@ input[type='password'] {
   select::-moz-placeholder, textarea::-moz-placeholder, input[type='text']::-moz-placeholder, input[type='email']::-moz-placeholder, input[type='number']::-moz-placeholder, input[type='password']::-moz-placeholder {
     color: #adadad;
     font-family: "LatoRegular"; }
+  select:-ms-input-placeholder, textarea:-ms-input-placeholder, input[type='text']:-ms-input-placeholder, input[type='email']:-ms-input-placeholder, input[type='number']:-ms-input-placeholder, input[type='password']:-ms-input-placeholder {
+    color: #adadad;
+    font-family: "LatoRegular"; }
   select::placeholder,
   textarea::placeholder,
   input[type='text']::placeholder,
@@ -4941,6 +4944,8 @@ input[type='password'] {
     cursor: not-allowed;
     opacity: 1; }
     select[disabled='disabled']::-moz-placeholder, select[disabled='disabled']:hover::-moz-placeholder, select[disabled='disabled']:focus::-moz-placeholder, select[readonly='readonly']::-moz-placeholder, select[readonly='readonly']:hover::-moz-placeholder, select[readonly='readonly']:focus::-moz-placeholder, textarea[disabled='disabled']::-moz-placeholder, textarea[disabled='disabled']:hover::-moz-placeholder, textarea[disabled='disabled']:focus::-moz-placeholder, textarea[readonly='readonly']::-moz-placeholder, textarea[readonly='readonly']:hover::-moz-placeholder, textarea[readonly='readonly']:focus::-moz-placeholder, input[type='text'][disabled='disabled']::-moz-placeholder, input[type='text'][disabled='disabled']:hover::-moz-placeholder, input[type='text'][disabled='disabled']:focus::-moz-placeholder, input[type='text'][readonly='readonly']::-moz-placeholder, input[type='text'][readonly='readonly']:hover::-moz-placeholder, input[type='text'][readonly='readonly']:focus::-moz-placeholder, input[type='email'][disabled='disabled']::-moz-placeholder, input[type='email'][disabled='disabled']:hover::-moz-placeholder, input[type='email'][disabled='disabled']:focus::-moz-placeholder, input[type='email'][readonly='readonly']::-moz-placeholder, input[type='email'][readonly='readonly']:hover::-moz-placeholder, input[type='email'][readonly='readonly']:focus::-moz-placeholder, input[type='number'][disabled='disabled']::-moz-placeholder, input[type='number'][disabled='disabled']:hover::-moz-placeholder, input[type='number'][disabled='disabled']:focus::-moz-placeholder, input[type='number'][readonly='readonly']::-moz-placeholder, input[type='number'][readonly='readonly']:hover::-moz-placeholder, input[type='number'][readonly='readonly']:focus::-moz-placeholder, input[type='password'][disabled='disabled']::-moz-placeholder, input[type='password'][disabled='disabled']:hover::-moz-placeholder, input[type='password'][disabled='disabled']:focus::-moz-placeholder, input[type='password'][readonly='readonly']::-moz-placeholder, input[type='password'][readonly='readonly']:hover::-moz-placeholder, input[type='password'][readonly='readonly']:focus::-moz-placeholder {
+      color: #adadad; }
+    select[disabled='disabled']:-ms-input-placeholder, select[disabled='disabled']:hover:-ms-input-placeholder, select[disabled='disabled']:focus:-ms-input-placeholder, select[readonly='readonly']:-ms-input-placeholder, select[readonly='readonly']:hover:-ms-input-placeholder, select[readonly='readonly']:focus:-ms-input-placeholder, textarea[disabled='disabled']:-ms-input-placeholder, textarea[disabled='disabled']:hover:-ms-input-placeholder, textarea[disabled='disabled']:focus:-ms-input-placeholder, textarea[readonly='readonly']:-ms-input-placeholder, textarea[readonly='readonly']:hover:-ms-input-placeholder, textarea[readonly='readonly']:focus:-ms-input-placeholder, input[type='text'][disabled='disabled']:-ms-input-placeholder, input[type='text'][disabled='disabled']:hover:-ms-input-placeholder, input[type='text'][disabled='disabled']:focus:-ms-input-placeholder, input[type='text'][readonly='readonly']:-ms-input-placeholder, input[type='text'][readonly='readonly']:hover:-ms-input-placeholder, input[type='text'][readonly='readonly']:focus:-ms-input-placeholder, input[type='email'][disabled='disabled']:-ms-input-placeholder, input[type='email'][disabled='disabled']:hover:-ms-input-placeholder, input[type='email'][disabled='disabled']:focus:-ms-input-placeholder, input[type='email'][readonly='readonly']:-ms-input-placeholder, input[type='email'][readonly='readonly']:hover:-ms-input-placeholder, input[type='email'][readonly='readonly']:focus:-ms-input-placeholder, input[type='number'][disabled='disabled']:-ms-input-placeholder, input[type='number'][disabled='disabled']:hover:-ms-input-placeholder, input[type='number'][disabled='disabled']:focus:-ms-input-placeholder, input[type='number'][readonly='readonly']:-ms-input-placeholder, input[type='number'][readonly='readonly']:hover:-ms-input-placeholder, input[type='number'][readonly='readonly']:focus:-ms-input-placeholder, input[type='password'][disabled='disabled']:-ms-input-placeholder, input[type='password'][disabled='disabled']:hover:-ms-input-placeholder, input[type='password'][disabled='disabled']:focus:-ms-input-placeholder, input[type='password'][readonly='readonly']:-ms-input-placeholder, input[type='password'][readonly='readonly']:hover:-ms-input-placeholder, input[type='password'][readonly='readonly']:focus:-ms-input-placeholder {
       color: #adadad; }
     select[disabled='disabled']::placeholder, select[disabled='disabled']:hover::placeholder, select[disabled='disabled']:focus::placeholder, select[readonly='readonly']::placeholder, select[readonly='readonly']:hover::placeholder, select[readonly='readonly']:focus::placeholder,
     textarea[disabled='disabled']::placeholder,
@@ -9077,6 +9082,7 @@ div.LineInfo {
   text-align: center;
   -webkit-user-select: none;
      -moz-user-select: none;
+      -ms-user-select: none;
           user-select: none;
   z-index: 1; }
   .pika-single:after {
@@ -10990,6 +10996,7 @@ div.WizardParent {
   padding: 0 24px;
   z-index: 2; }
   .LayoutBase-Content .LayoutBase-primary-menu.isFixed {
+    position: -webkit-sticky;
     position: sticky;
     top: 80px; }
     .LayoutBase-Content .LayoutBase-primary-menu.isFixed ~ .LayoutBase-secondary {
@@ -10998,6 +11005,7 @@ div.WizardParent {
 .LayoutBase-Content .LayoutBase-secondary {
   border-bottom: 1px solid #d6d6d6;
   display: flex;
+  position: -webkit-sticky;
   position: sticky;
   top: 80px;
   z-index: 2; }
@@ -11092,6 +11100,7 @@ div.WizardParent {
 
 .LayoutBase-Content .LayoutBase-emergency {
   background-color: #fff;
+  position: -webkit-sticky;
   position: sticky;
   top: 79px;
   z-index: 3; }
@@ -11501,6 +11510,7 @@ html .Page .PatientDetailsLayout {
         padding: 0 16px;
         -webkit-user-select: none;
            -moz-user-select: none;
+            -ms-user-select: none;
                 user-select: none; }
         .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .SingleLocation:hover,
         .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .ForwardLocationsDiv:hover {
@@ -11515,6 +11525,7 @@ html .Page .PatientDetailsLayout {
         padding: 16px;
         -webkit-user-select: none;
            -moz-user-select: none;
+            -ms-user-select: none;
                 user-select: none; }
       .CTTASLevelAssessmentMainContainer .ForwardableContainer .ForwardContainer .LocationLabel {
         align-items: center;
@@ -12056,6 +12067,7 @@ form,
   .SubLayoutLeftPanel__PanelTitle {
     margin-bottom: 24px;
     padding: 0 16px;
+    position: -webkit-sticky;
     position: sticky;
     top: 88px;
     z-index: 1; }
@@ -12068,6 +12080,7 @@ form,
     .SubLayoutLeftPanel__PanelTitle .InlineDropdown_text {
       font-size: 1.286em; }
   .SubLayoutLeftPanel__MenuItems {
+    position: -webkit-sticky;
     position: sticky;
     top: 138px; }
     .SubLayoutLeftPanel__MenuItems > div::after,
@@ -12513,6 +12526,7 @@ html body {
     position: relative;
     -webkit-user-select: none;
        -moz-user-select: none;
+        -ms-user-select: none;
             user-select: none; }
     .ButtonGroupFilters .ButtonGroup_button.Button:not(:first-child):before, .ButtonGroupFiltersSmall .ButtonGroup_button.Button:not(:first-child):before {
       background-color: #d6d6d6;
@@ -14088,6 +14102,7 @@ div.ActionsMenu-item {
   overflow: visible; }
   .ChartsPopup .CardCharts .CardCharts__Header {
     background-color: #fff;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     transition: all 0.4s ease;
@@ -20089,7 +20104,8 @@ body.confirmation-opened {
       .modalPopup.Open .modalPopup_content .Scrollable {
         margin-right: -8px;
         max-width: 900px;
-        overscroll-behavior: contain;
+        -ms-scroll-chaining: none;
+            overscroll-behavior: contain;
         padding-right: 8px; }
         .modalPopup.Open .modalPopup_content .Scrollable .ListRecords > *:first-child {
           margin-top: 24px; }
@@ -20222,6 +20238,7 @@ body.PanelById.PanelOpened {
   padding: 0 16px;
   -webkit-user-select: none;
      -moz-user-select: none;
+      -ms-user-select: none;
           user-select: none;
   width: calc(100% - 8px); }
   .PanelMenuItem__LinkContent:hover {
@@ -22429,6 +22446,7 @@ div.List-Star {
     border: 1px solid #d6d6d6;
     display: flex;
     padding: 10px;
+    position: -webkit-sticky;
     position: sticky; }
   .ScaleFilter_headerOptions {
     align-items: center;
@@ -22945,6 +22963,9 @@ div.List-Star {
             height: 100%;
             padding: 0 48px; }
             .SearchSD .SearchSD_search .SearchSD__inputWrapper .SearchSD__actionInput .SearchSD___input input[type='text']::-moz-placeholder {
+              color: #adadad;
+              font-family: "LatoRegular"; }
+            .SearchSD .SearchSD_search .SearchSD__inputWrapper .SearchSD__actionInput .SearchSD___input input[type='text']:-ms-input-placeholder {
               color: #adadad;
               font-family: "LatoRegular"; }
             .SearchSD .SearchSD_search .SearchSD__inputWrapper .SearchSD__actionInput .SearchSD___input input[type='text']::placeholder {
@@ -23549,6 +23570,10 @@ div.List-Star {
       padding: 0 50px;
       width: 100%; }
       .SSD-Bar > .SearchInput-Container .InputPlaceholder input[type='text']::-moz-placeholder {
+        color: #00ac94;
+        font-family: "LatoBold";
+        font-size: 1em; }
+      .SSD-Bar > .SearchInput-Container .InputPlaceholder input[type='text']:-ms-input-placeholder {
         color: #00ac94;
         font-family: "LatoBold";
         font-size: 1em; }
@@ -24223,6 +24248,9 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
           margin-top: -2px;
           padding-left: 0 !important; }
           .select2 .select2-selection .select2-selection__rendered .select2-search .select2-search__field::-moz-placeholder {
+            color: #adadad;
+            font-family: "LatoRegular"; }
+          .select2 .select2-selection .select2-selection__rendered .select2-search .select2-search__field:-ms-input-placeholder {
             color: #adadad;
             font-family: "LatoRegular"; }
           .select2 .select2-selection .select2-selection__rendered .select2-search .select2-search__field::placeholder {
@@ -26242,6 +26270,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
       box-shadow: none; }
     .ISidebar .ISidebar-content .TextInput::-moz-placeholder {
       color: #777777; }
+    .ISidebar .ISidebar-content .TextInput:-ms-input-placeholder {
+      color: #777777; }
     .ISidebar .ISidebar-content .TextInput::placeholder {
       color: #777777; }
   .ISidebar .ISidebar-content .ValidationMessage {
@@ -27271,6 +27301,7 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
     display: inline-flex;
     flex-direction: column;
     left: 0;
+    position: -webkit-sticky;
     position: sticky;
     vertical-align: middle;
     z-index: 1; }
@@ -28136,6 +28167,7 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
   background-color: #f3f3f3;
   padding-bottom: 8px;
   padding-top: 16px;
+  position: -webkit-sticky;
   position: sticky;
   top: 185px;
   z-index: 2; }
@@ -28287,6 +28319,7 @@ div.TimelineDetail {
 .TimelineItemHeader {
   background-color: #f3f3f3;
   padding: 16px 8px 8px;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   width: 100%; }
@@ -31678,16 +31711,19 @@ ul.os-internal-ui-autocomplete {
     height: 36px;
     padding: 0 8px;
     padding-top: 24px;
+    position: -webkit-sticky;
     position: sticky;
     top: 125px;
     z-index: 1; }
   .TimelinePage__Navigation {
+    position: -webkit-sticky;
     position: sticky;
     top: 185px; }
     .TimelinePage__Navigation .ListRecords {
       height: calc(100vh - 185px);
       overflow-y: scroll;
-      overscroll-behavior: contain;
+      -ms-scroll-chaining: none;
+          overscroll-behavior: contain;
       padding-right: 8px; }
       .TimelinePage__Navigation .ListRecords::-webkit-scrollbar {
         background-color: #fff;
@@ -31721,6 +31757,7 @@ ul.os-internal-ui-autocomplete {
     background-color: #f3f3f3;
     gap: 8px;
     padding-top: 24px;
+    position: -webkit-sticky;
     position: sticky;
     top: 125px;
     z-index: 3; }
@@ -31742,6 +31779,7 @@ ul.os-internal-ui-autocomplete {
   .TimelinePage__Content {
     overflow: visible; }
     .TimelinePage__Content .LineTimeLine__Header {
+      position: -webkit-sticky;
       position: sticky;
       top: 227px; }
   .TimelinePage__LoadingMore {
@@ -31782,6 +31820,7 @@ ul.os-internal-ui-autocomplete {
   background-color: #f3f3f3;
   padding-bottom: 16px;
   padding-top: 24px;
+  position: -webkit-sticky;
   position: sticky;
   top: 64px;
   z-index: 2; }
@@ -32001,6 +32040,12 @@ ul.os-internal-ui-autocomplete {
         width: 250px; }
         .TopSection___Wrapper .TopSection___Container .DropDown___Container .selection .select2-selection.select2-selection--single .select2-selection__arrow b {
           top: 3px; }
+
+.EmptySlot {
+  background-color: rgba(255, 255, 255, 0.5); }
+
+.EmptySlot .PersonCard_header {
+  min-height: unset; }
 
 .ClinicianWorkArea____resumeDetails .AppointmentDetails {
   margin-top: 0 !important; }
@@ -33351,6 +33396,7 @@ div.SelectableList-Line > span > div.ExpandableContent {
 
 .tablet.portrait .Toolbar.Fix {
   margin: 0;
+  position: -webkit-sticky;
   position: sticky; }
   .tablet.portrait .Toolbar.Fix .MenuItemWrapper__icon {
     display: block; }
@@ -36855,7 +36901,7 @@ a.Button.Icon:hover,
   font-size: 13px;
   font-weight: bold;
   /* IE Dynamic Property to simulate the hover behaviour */
-  h: expression(onmouseover=new Function("this.className='Calendar_Item_Number-hover';"), onmouseout=new Function("this.className='Calendar_Item_Number';"));
+  h: expression(onmouseover=new Function("this.className='Calendar_Item_Number-hover';"), onmouseout=new Function("this.className='Calendar_Item_Number';"));
   padding-bottom: 2px;
   padding-top: 4px; }
 
