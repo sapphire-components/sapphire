@@ -34,8 +34,22 @@
 
 .EmptySlot {
 	background-color: rgba(255,255,255,0.5);
+
+	.PersonCard_header {
+		min-height: unset;
+		background-color: transparent;
+
+		.PersonCard__headerLeftInfo  {
+			background-color: transparent;
+		}
+
+		.PersonCard__content {
+			background-color: transparent;
+		}
+
+		.PersonCard__actions {
+			background-color: transparent;
+		}
+	}
 }
 
-.EmptySlot .PersonCard_header {
-	min-height: unset;
-}

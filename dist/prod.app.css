@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128103 || Generated: Tue Nov 22 2022 15:07:08 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.128103 || Generated: Tue Nov 22 2022 16:07:10 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -32043,9 +32043,15 @@ ul.os-internal-ui-autocomplete {
 
 .EmptySlot {
   background-color: rgba(255, 255, 255, 0.5); }
-
-.EmptySlot .PersonCard_header {
-  min-height: unset; }
+  .EmptySlot .PersonCard_header {
+    min-height: unset;
+    background-color: transparent; }
+    .EmptySlot .PersonCard_header .PersonCard__headerLeftInfo {
+      background-color: transparent; }
+    .EmptySlot .PersonCard_header .PersonCard__content {
+      background-color: transparent; }
+    .EmptySlot .PersonCard_header .PersonCard__actions {
+      background-color: transparent; }
 
 .ClinicianWorkArea____resumeDetails .AppointmentDetails {
   margin-top: 0 !important; }
