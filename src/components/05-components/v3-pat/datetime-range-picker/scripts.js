@@ -305,6 +305,10 @@
 		});
 
 		this.$input.on('apply.daterangepicker', function(event, picker) {
+			
+			if(_this.config.autoApply && _this.config.attachToInput){
+				_this.$model.trigger('change');//same fix as below for when the date is the same/today, when input is attached it seems we also need this extra step
+			}
 			_this.$input.trigger('change'); // Fix to call the change when the date is the same/today
 			_this.$clear.removeClass('disabled');
 			_this.updateLabeling();
