@@ -5,7 +5,7 @@
 		$('#' + inputBoxId).val(v);
 		$('#' + selectId + ' option[selected]').removeAttr('selected');
 
-		if (v > -1) {
+		if (v != -1) {
 			$('#' + selectId + ' option[value="' + v + '"]').attr('selected', 'selected');
 		}
 
