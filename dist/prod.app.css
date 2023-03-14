@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128106 || Generated: Thu Jan 19 2023 11:58:09 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.128106 || Generated: Tue Mar 14 2023 16:58:09 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -20751,6 +20751,8 @@ body.PanelById.PanelOpened {
         min-width: 800px; }
       .PersonCard_header .PersonCard__content .MinWidthXSmall {
         min-width: 50px; }
+      .PersonCard_header .PersonCard__content .MinWidth100 {
+        min-width: 100px; }
       .PersonCard_header .PersonCard__content .MinWidthSmall {
         min-width: 200px; }
       .PersonCard_header .PersonCard__content .MinWidth300 {
@@ -20761,6 +20763,8 @@ body.PanelById.PanelOpened {
         min-width: 600px; }
       .PersonCard_header .PersonCard__content .MaxWidthXSmall {
         max-width: 50px; }
+      .PersonCard_header .PersonCard__content .MaxWidth100 {
+        max-width: 100px; }
       .PersonCard_header .PersonCard__content .MaxWidthSmall {
         max-width: 200px; }
       .PersonCard_header .PersonCard__content .MaxWidthMedium {
