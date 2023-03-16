@@ -8719,6 +8719,10 @@ pre {
   white-space: pre-wrap;
 }
 
+.Hidden {
+  display: none;
+}
+
 
 /**************************SELECT2 MULTIPLE *************/
 

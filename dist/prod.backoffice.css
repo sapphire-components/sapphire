@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.128109 || Generated: Thu Mar 16 2023 14:48:27 GMT+0000 (Western European Standard Time) */
+/*! prod.backoffice.css || Version: 5.1.128109 || Generated: Thu Mar 16 2023 15:19:33 GMT+0000 (Western European Standard Time) */
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
 /* Header */
@@ -12519,6 +12519,9 @@ pre {
   font-family: "LatoRegular";
   font-size: 16px;
   white-space: pre-wrap; }
+
+.Hidden {
+  display: none; }
 
 /**************************SELECT2 MULTIPLE *************/
 .select2-container .select2-selection--multiple {
