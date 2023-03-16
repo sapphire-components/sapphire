@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.128108 || Generated: Thu Mar 16 2023 14:42:46 GMT+0000 (Western European Standard Time) */
+/*! prod.backoffice.css || Version: 5.1.128108 || Generated: Thu Mar 16 2023 14:47:56 GMT+0000 (Western European Standard Time) */
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
 /* Header */
@@ -4941,6 +4941,180 @@ body.PanelById.PanelOpened {
 .FA .WizardContent__Label {
   margin-left: 0;
   margin-right: 9px; }
+
+.DropZoneWrapper {
+  display: inline; }
+  .DropZoneWrapper--horizontal .FileUploadDropZone {
+    display: flex;
+    gap: 8px; }
+  .DropZoneWrapper .dropzone {
+    background: #fff;
+    border: 1px dashed #adadad;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 56px;
+    padding: 0; }
+    .DropZoneWrapper .dropzone.dz-started .dz-message {
+      display: inline-block;
+      height: 100%;
+      margin: 0 5px;
+      position: relative;
+      right: 0;
+      top: 0px;
+      z-index: 50; }
+    .DropZoneWrapper .dropzone .dz-message {
+      font-size: 14px;
+      line-height: 56px;
+      margin: 0;
+      text-align: center;
+      width: 100%; }
+    .DropZoneWrapper .dropzone .dz-preview {
+      height: 100%;
+      line-height: 34px;
+      margin: 0;
+      min-height: 34px;
+      text-align: right;
+      vertical-align: middle;
+      width: 100%;
+      z-index: 1; }
+      .DropZoneWrapper .dropzone .dz-preview.dz-file-preview .dz-details {
+        opacity: 0; }
+      .DropZoneWrapper .dropzone .dz-preview .dz-details {
+        line-height: 20px;
+        opacity: 1;
+        padding: 0;
+        position: static; }
+        .DropZoneWrapper .dropzone .dz-preview .dz-details .dz-size {
+          display: none; }
+        .DropZoneWrapper .dropzone .dz-preview .dz-details .dz-filename {
+          display: inline-block;
+          height: auto;
+          line-height: initial;
+          margin: 0 5px;
+          max-width: 150px;
+          overflow: hidden;
+          padding: 0;
+          text-overflow: ellipsis;
+          vertical-align: middle; }
+          .DropZoneWrapper .dropzone .dz-preview .dz-details .dz-filename span {
+            height: auto;
+            line-height: initial;
+            margin: 0 5px;
+            padding: 0; }
+      .DropZoneWrapper .dropzone .dz-preview .dz-image {
+        display: none; }
+      .DropZoneWrapper .dropzone .dz-preview .dz-progress {
+        background: #c4f0eb;
+        border: 1px solid #00ac94;
+        border-radius: 4px;
+        height: 10px;
+        top: 20px;
+        width: 120px; }
+        .DropZoneWrapper .dropzone .dz-preview .dz-progress .dz-upload {
+          background: #00ac94;
+          height: 10px; }
+      .DropZoneWrapper .dropzone .dz-preview .dz-error-mark,
+      .DropZoneWrapper .dropzone .dz-preview .dz-success-mark,
+      .DropZoneWrapper .dropzone .dz-preview .dz-error-message {
+        display: none; }
+      .DropZoneWrapper .dropzone .dz-preview .dz-success.dz-complete {
+        display: none; }
+
+.FileUploadDropZone {
+  display: inline-block;
+  height: auto;
+  padding: 0 2px;
+  position: relative; }
+  .FileUploadDropZone .dropzone {
+    background: transparent;
+    border: none; }
+    .FileUploadDropZone .dropzone.dz-started .dz-default.dz-message:after {
+      display: block;
+      font-size: 12px;
+      margin-top: 4px; }
+    .FileUploadDropZone .dropzone.dz-clickable {
+      line-height: unset;
+      min-height: 0;
+      padding-bottom: 4px;
+      padding-top: 0px; }
+      .FileUploadDropZone .dropzone.dz-clickable div.dz-default.dz-message {
+        display: inline-flex;
+        justify-content: center;
+        margin: 0; }
+        .FileUploadDropZone .dropzone.dz-clickable div.dz-default.dz-message .dz-button {
+          display: none; }
+    .FileUploadDropZone .dropzone .dz-message {
+      font-size: 1em;
+      font-weight: 400;
+      text-align: right; }
+      .FileUploadDropZone .dropzone .dz-message.dz-message:before {
+        color: #00ac94;
+        content: '\e931';
+        display: block;
+        font-family: "Sapphire-Icon-Font";
+        font-size: 1em;
+        -webkit-font-smoothing: antialiased;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        line-height: 1;
+        margin-top: 2px;
+        text-align: right;
+        text-transform: none; }
+      .FileUploadDropZone .dropzone .dz-message.dz-message:after {
+        display: block; }
+      .FileUploadDropZone .dropzone .dz-message.dz-message:hover:before {
+        color: #00ac94; }
+      .FileUploadDropZone .dropzone .dz-message.dz-message span,
+      .FileUploadDropZone .dropzone .dz-message.dz-message .dz-button {
+        display: none; }
+    .FileUploadDropZone .dropzone .dz-preview {
+      display: none; }
+  .FileUploadDropZone .UploadMessageClass {
+    bottom: 2px;
+    color: #00ac94;
+    cursor: pointer;
+    font-family: "LatoBold";
+    font-size: 1em;
+    line-height: 20px; }
+
+.DarkGreyLabel .UploadMessageClass {
+  color: #333333; }
+
+.DropZoneButtonThird {
+  display: inline-block; }
+  .DropZoneButtonThird .DropZoneWrapper .FileUploadDropZone {
+    align-items: center;
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #d6d6d6;
+    border-radius: 100px;
+    font-size: 13px;
+    gap: 8px;
+    height: 30px;
+    padding: 6px 12px;
+    transition: all 0.1s ease-in-out;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content; }
+    .DropZoneButtonThird .DropZoneWrapper .FileUploadDropZone:hover {
+      background-color: #ebebeb; }
+    .DropZoneButtonThird .DropZoneWrapper .FileUploadDropZone .dropzone.dz-clickable {
+      padding: 0; }
+    .DropZoneButtonThird .DropZoneWrapper .FileUploadDropZone .dropzone .dz-message {
+      font-size: unset; }
+      .DropZoneButtonThird .DropZoneWrapper .FileUploadDropZone .dropzone .dz-message::before {
+        color: #333333;
+        font-size: 1.1467992em; }
+    .DropZoneButtonThird .DropZoneWrapper .FileUploadDropZone .UploadMessageClass {
+      color: #333333; }
+
+.AR .FileUploadDropZone .dropzone .dz-default.dz-message:before,
+.FA .FileUploadDropZone .dropzone .dz-default.dz-message:before {
+  margin-left: 28px;
+  text-align: left; }
 
 div.WizardParent {
   border: none;
