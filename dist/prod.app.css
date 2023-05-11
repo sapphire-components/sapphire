@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128115 || Generated: Thu May 11 2023 14:59:59 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.128115 || Generated: Thu May 11 2023 15:36:52 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -26505,6 +26505,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   min-width: 900px;
   overflow: auto;
   padding: 30px; }
+  .ISidebar[data-showlastviewed='true'] .ISidebar-lastviewed:empty {
+    display: none; }
 
 .ISidebar[data-showlastviewed='false'] .ISidebar-lastviewed {
   display: none; }

@@ -450,6 +450,9 @@
 		min-width: 900px;
 		overflow: auto;
 		padding: 30px;
+		&:empty {
+			display: none;
+		}
 	}
 }
 
