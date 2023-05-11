@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.128114 || Generated: Fri Mar 17 2023 15:40:19 GMT+0000 (Western European Standard Time) */
+/*! prod.backoffice.css || Version: 5.1.128114 || Generated: Thu May 11 2023 14:59:23 GMT+0100 (Western European Summer Time) */
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
 /* Header */
@@ -2917,8 +2917,6 @@ div[onclick] {
       width: 340px; }
       .SapphireSearch_input input[type='text'].expanded::-moz-placeholder {
         color: transparent; }
-      .SapphireSearch_input input[type='text'].expanded:-ms-input-placeholder {
-        color: transparent; }
       .SapphireSearch_input input[type='text'].expanded::placeholder {
         color: transparent; }
 
@@ -3028,7 +3026,6 @@ div[onclick] {
   max-width: 1439px;
   padding-bottom: 20px;
   padding-top: 20px;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   width: 100%;
@@ -3055,7 +3052,6 @@ div[onclick] {
 
 .Page thead th {
   background: #fff;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1; }
@@ -4418,8 +4414,7 @@ body.confirmation-opened {
       .modalPopup.Open .modalPopup_content .Scrollable {
         margin-right: -8px;
         max-width: 900px;
-        -ms-scroll-chaining: none;
-            overscroll-behavior: contain;
+        overscroll-behavior: contain;
         padding-right: 8px; }
         .modalPopup.Open .modalPopup_content .Scrollable .ListRecords > *:first-child {
           margin-top: 24px; }
@@ -4682,9 +4677,6 @@ body.PanelById.PanelOpened {
           margin-top: -2px;
           padding-left: 0 !important; }
           .select2 .select2-selection .select2-selection__rendered .select2-search .select2-search__field::-moz-placeholder {
-            color: #adadad;
-            font-family: "LatoRegular"; }
-          .select2 .select2-selection .select2-selection__rendered .select2-search .select2-search__field:-ms-input-placeholder {
             color: #adadad;
             font-family: "LatoRegular"; }
           .select2 .select2-selection .select2-selection__rendered .select2-search .select2-search__field::placeholder {
@@ -6551,11 +6543,6 @@ input::-moz-placeholder {
   font-size: 16px;
   font-style: italic; }
 
-input:-ms-input-placeholder {
-  color: #adadad;
-  font-size: 16px;
-  font-style: italic; }
-
 input::placeholder {
   color: #adadad;
   font-size: 16px;
@@ -6934,7 +6921,6 @@ td.RowWithAddAction a {
   display: none;
   margin: 0;
   padding: 0 10px;
-  position: -webkit-sticky;
   position: sticky;
   right: 0;
   top: 81px;
@@ -8038,7 +8024,6 @@ td.is-disabled {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   white-space: nowrap; }
 
@@ -8511,7 +8496,6 @@ span.select2-selection--single:focus,
   height: 28px;
   -webkit-user-select: none;
   -moz-user-select: none;
-   -ms-user-select: none;
        user-select: none; }
 
 .select2-container .select2-selection--single .select2-selection__rendered {
@@ -8560,7 +8544,6 @@ span.select2-selection--single:focus,
   padding: 6px;
   -webkit-user-select: none;
   -moz-user-select: none;
-   -ms-user-select: none;
        user-select: none; }
 
 .select2-results__option[aria-selected] {
@@ -12531,7 +12514,6 @@ pre {
   min-height: 32px;
   -webkit-user-select: none;
   -moz-user-select: none;
-   -ms-user-select: none;
        user-select: none; }
 
 .select2-container .select2-selection--multiple .select2-selection__rendered {

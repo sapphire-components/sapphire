@@ -80,13 +80,12 @@
 		}
 
 		&.notExpandable {
-			width: 262px;
 			z-index: 29;
 		}
 
-		&.notExpandable:before {
-			width: 262px;
-		}
+		// &.notExpandable:before {
+		// 	width: 262px;
+		// }
 
 		&.isExpandable {
 			width: 40px;
@@ -465,8 +464,8 @@
 	width: calc(67% - (#{$sapphire-sizes--large} + 3px)); // Border + 1px
 	z-index: 1;
 
-	&.HasSideBarNotExpandable{
-		width: calc(67% - (#{$sapphire-sizes--large} + 151px));	
+	&.HasSideBarNotExpandable {
+		width: calc(67% - (#{$sapphire-sizes--large} + 151px));
 	}
 
 	.AR & {
@@ -474,8 +473,6 @@
 		margin-right: -$sapphire-sizes--large;
 	}
 }
-
-
 
 .LayoutBase--menuFixed {
 	.LayoutBase-Wrapper .LayoutBase-MainMenu {
@@ -812,7 +809,16 @@ html .Page .PatientDetailsLayout {
 	}
 }
 
+.LayoutBase-iframesidebar.notExpandable + .LayoutBase-Content.PatientDetails_content .LayoutBase--fixedActions {
+	width: calc(67% - (#{$sapphire-sizes--large} + 151px));
+}
 
-.LayoutBase-iframesidebar.notExpandable + .LayoutBase-Content.PatientDetails_content .LayoutBase--fixedActions{
-	width: calc(67% - (#{$sapphire-sizes--large} + 151px));		
+.LayoutBase-iframesidebar.notExpandable {
+	width: 262px;
+	&:before {
+		width: 262px;
+	}
+	&[data-showlastviewed='true'] {
+		width: 100%;
+	}
 }
