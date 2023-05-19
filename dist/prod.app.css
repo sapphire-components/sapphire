@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128117 || Generated: Fri May 19 2023 15:52:54 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.128117 || Generated: Fri May 19 2023 17:31:54 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -26782,6 +26782,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
       color: #777777; }
     .SmallBoxSelectable--disabled .SmallBoxSelectable__SelectableIcon {
       background-color: #f3f3f3; }
+  .SmallBoxSelectable--viewonly {
+    pointer-events: none; }
 
 .SmallBoxList .SmallBoxSelectable {
   border-color: transparent;

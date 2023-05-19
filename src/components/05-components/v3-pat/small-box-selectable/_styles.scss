@@ -101,6 +101,10 @@
 			background-color: $body-color;
 		}
 	}
+
+	&--viewonly {
+		pointer-events: none;
+	}
 }
 
 .SmallBoxList {
