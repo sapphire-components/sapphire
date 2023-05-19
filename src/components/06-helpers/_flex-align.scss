@@ -80,6 +80,12 @@
 	flex-wrap: wrap;
 	gap: $sapphire-sizes--small;
 
+	&XSmallGap {
+		@extend .FlexList;
+
+		gap: $sapphire-sizes--xsmall;
+	}
+
 	&SmallGap {
 		@extend .FlexList;
 

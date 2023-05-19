@@ -172,6 +172,17 @@
 		padding: $sapphire-sizes--medium;
 		transition: all 0.4s ease;
 	}
+
+	& .TransferInProgressBadge {
+		display: flex;
+		align-items: center;
+		height: $sapphire-sizes--largest;
+		background-color: $regular-red;
+		color: $regular-white;
+		padding: $sapphire-sizes--none $sapphire-sizes--small;
+		border-radius: $sapphire-sizes--xsmall;
+	}
+	
 }
 
 // UI Adjustments when Sidebar is always opened
