@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128118 || Generated: Fri May 19 2023 17:32:23 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.128118 || Generated: Tue May 23 2023 17:33:21 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -29853,6 +29853,9 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 .tablet .HideOnSmall,
 .desktop.small .HideOnSmall {
   display: none; }
+
+.Opacity50 {
+  opacity: 0.5; }
 
 .ZIndex0 {
   z-index: 0; }
