@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128119 || Generated: Tue May 23 2023 17:40:01 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.128119 || Generated: Wed May 24 2023 13:52:59 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -13882,6 +13882,8 @@ div.ActionsMenu-item {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
   .ListBedBox div.OSInline,
   .ListBedBox .BedBoxContainer {
+    width: 100%; }
+  .ListBedBox .tooltip {
     width: 100%; }
 
 .AR .SlotText,
