@@ -1061,6 +1061,10 @@ body .icon:after {
 	content: '\e95a';
 }
 
+.icon-in-progress:before {
+	content: '\e95b';
+}
+
 /* Regular icon sizes */
 .icon-lg {
 	font-size: 1.3333333333333333em;
