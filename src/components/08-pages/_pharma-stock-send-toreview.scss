@@ -1,0 +1,133 @@
+
+/* stock-movements-page CSS, needs to be reviewed! */
+.stock-movements-page .TableRecords_EvenLine {
+    /*margin: 1px;
+    padding: 5px 0 5px 10px;*/
+    background-color: #F3F3F3 !important;
+}
+
+.stock-movements-page .TableRecords_OddLine:last-child, 
+.stock-movements-page .TableRecords_EvenLine:last-child, 
+.stock-movements-page .TableRecords_Header:last-child {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.stock-movements-page .TableBehaviourCell {
+  display: table-cell;
+  vertical-align: middle;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.stock-movements-page .TableBehaviourCellM {
+  display: table-cell;
+  vertical-align: middle;
+  padding-bottom: 5px;
+}
+
+.stock-movements-page .TableBehaviourCellWB{
+  display: table-cell;
+  vertical-align: top;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.stock-movements-page .TableBehaviourF {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.stock-movements-page .TableBehaviourRow {
+    display: table-row;
+}
+
+.stock-movements-page .TableBehaviorRowBorderTop > div
+{
+    border-top: 1px solid #BDBDBD;
+}
+
+.stock-movements-page .TableBehaviourTable {
+    display: table;
+    width: 100%;
+}
+
+.stock-movements-page .TableFooterBorder{
+    border-top: 1px solid #BDBDBD;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.stock-movements-page .ItemW{
+    width: 25%;
+    padding-right: 5px;
+}
+
+.stock-movements-page .ActionW{
+    width: 15%;
+}
+
+.stock-movements-page .ReponsibleW{
+    width: 15%;
+    padding-left: 5px;
+}
+
+.stock-movements-page .QuantityW{
+    width: 10%;
+    padding-right: 10px;
+}
+
+.stock-movements-page .LocationW{
+    width: 25%;
+    padding-left: 5px;
+}
+
+.stock-movements-page .StockW{
+    width: 10%;
+    padding-left: 5px;
+}
+
+.stock-movements-page .TimeW{
+    width: 15%;
+    padding-right: 5px;
+}
+
+/* Header */
+.stock-movements-page .ItemHW{
+    width: 25%;
+    padding-left: 5px;
+}
+
+.stock-movements-page .ActionHW{
+    width: 15%;
+    padding-left: 5px;
+}
+
+.stock-movements-page .ReponsibleHW{
+    width: 15%;
+    padding-left: 5px;
+}
+
+.stock-movements-page .QuantityHW{
+    width: 10%;
+    padding-right: 5px;
+}
+
+.stock-movements-page .LocationHW{
+    width: 25%;
+    padding-left: 5px;
+}
+
+.stock-movements-page .StockHW{
+    width: 10%;
+    padding-left: 5px;
+}
+
+.stock-movements-page .TimeHW{
+    width: 15%;
+    padding-right: 10px;
+}
+
+.stock-movements-page .fa-fw{
+  text-align: right;
+}
