@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128124 || Generated: Tue Jun 06 2023 12:35:05 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.128124 || Generated: Tue Jun 06 2023 12:46:14 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -32914,33 +32914,6 @@ body .Page.desktop .MainPopup {
     .Panel .PanelBackground.ConfirmWB {
       -servicestudio-position: static; }
 
-/* needs to be reviewed! */
-.TableRecords tbody tr td.BelowMinimum,
-.TableRecords tbody tr:hover td.BelowMinimum {
-  background-color: #fce3e3; }
-
-.TableRecords tbody tr td.BelowTarget,
-.TableRecords tbody tr:hover td.BelowTarget {
-  background-color: #e7f2dc; }
-
-.TableRecords tbody tr td.OverTarget,
-.TableRecords tbody tr:hover td.OverTarget {
-  background-color: #e6e2aa; }
-
-.TableRecords tbody tr td.OnTarget,
-.TableRecords tbody tr:hover td.OnTarget {
-  background-color: #d6d6d6; }
-
-.TableRecords tbody tr td.WithoutList,
-.TableRecords tbody tr:hover td.WithoutList {
-  background-color: #fcc891; }
-
-/* This (or something similar) should be moved to the
-    theme to avoid table rows being too narrow.
-    The value was taken from StockHistory inline style */
-.PharmaTableRecords tbody tr {
-  line-height: 58px; }
-
 .phone .pika-single:not(.is-bound) .pika-next {
   right: 10px; }
 
@@ -33614,6 +33587,33 @@ div.SelectableList-Line > span > div.ExpandableContent {
 
 .VerticalAlignMiddle .Columns .Column {
   vertical-align: middle; }
+
+/* needs to be reviewed! */
+.TableRecords tbody tr td.BelowMinimum,
+.TableRecords tbody tr:hover td.BelowMinimum {
+  background-color: #fce3e3; }
+
+.TableRecords tbody tr td.BelowTarget,
+.TableRecords tbody tr:hover td.BelowTarget {
+  background-color: #e7f2dc; }
+
+.TableRecords tbody tr td.OverTarget,
+.TableRecords tbody tr:hover td.OverTarget {
+  background-color: #e6e2aa; }
+
+.TableRecords tbody tr td.OnTarget,
+.TableRecords tbody tr:hover td.OnTarget {
+  background-color: #d6d6d6; }
+
+.TableRecords tbody tr td.WithoutList,
+.TableRecords tbody tr:hover td.WithoutList {
+  background-color: #fcc891; }
+
+/* This (or something similar) should be moved to the
+    theme to avoid table rows being too narrow.
+    The value was taken from StockHistory inline style */
+.PharmaTableRecords tbody tr {
+  line-height: 58px; }
 
 /*
 
