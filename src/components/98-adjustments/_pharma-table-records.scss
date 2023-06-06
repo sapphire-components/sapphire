@@ -1,0 +1,32 @@
+/* needs to be reviewed! */
+.TableRecords tbody tr td.BelowMinimum,
+.TableRecords tbody tr:hover td.BelowMinimum {
+    background-color: $light-red;
+}
+
+.TableRecords tbody tr td.BelowTarget,
+.TableRecords tbody tr:hover td.BelowTarget {
+    background-color: $light-green;
+}
+
+.TableRecords tbody tr td.OverTarget,
+.TableRecords tbody tr:hover td.OverTarget {
+    background-color: $regular-beige;
+}
+
+.TableRecords tbody tr td.OnTarget,
+.TableRecords tbody tr:hover td.OnTarget {
+    background-color: $light-grey;
+}
+
+.TableRecords tbody tr td.WithoutList,
+.TableRecords tbody tr:hover td.WithoutList {
+    background-color: $light-orange;
+}
+
+/* This (or something similar) should be moved to the
+    theme to avoid table rows being too narrow.
+    The value was taken from StockHistory inline style */
+.PharmaTableRecords tbody tr {
+    line-height: 58px;
+}

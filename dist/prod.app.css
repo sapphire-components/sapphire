@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128123 || Generated: Mon Jun 05 2023 16:25:23 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.128123 || Generated: Tue Jun 06 2023 12:34:41 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -31921,7 +31921,7 @@ ul.os-internal-ui-autocomplete {
 .stock-movements-page .TableRecords_EvenLine {
   /*margin: 1px;
     padding: 5px 0 5px 10px;*/
-  background-color: #F3F3F3 !important; }
+  background-color: #f9f9f9 !important; }
 
 .stock-movements-page .TableRecords_OddLine:last-child,
 .stock-movements-page .TableRecords_EvenLine:last-child,
@@ -31954,14 +31954,14 @@ ul.os-internal-ui-autocomplete {
   display: table-row; }
 
 .stock-movements-page .TableBehaviorRowBorderTop > div {
-  border-top: 1px solid #BDBDBD; }
+  border-top: 1px solid #adadad; }
 
 .stock-movements-page .TableBehaviourTable {
   display: table;
   width: 100%; }
 
 .stock-movements-page .TableFooterBorder {
-  border-top: 1px solid #BDBDBD;
+  border-top: 1px solid #adadad;
   padding-top: 5px;
   padding-bottom: 5px; }
 
@@ -32913,6 +32913,33 @@ body .Page.desktop .MainPopup {
     -servicestudio-position: static; }
     .Panel .PanelBackground.ConfirmWB {
       -servicestudio-position: static; }
+
+/* needs to be reviewed! */
+.TableRecords tbody tr td.BelowMinimum,
+.TableRecords tbody tr:hover td.BelowMinimum {
+  background-color: #fce3e3; }
+
+.TableRecords tbody tr td.BelowTarget,
+.TableRecords tbody tr:hover td.BelowTarget {
+  background-color: #e7f2dc; }
+
+.TableRecords tbody tr td.OverTarget,
+.TableRecords tbody tr:hover td.OverTarget {
+  background-color: #e6e2aa; }
+
+.TableRecords tbody tr td.OnTarget,
+.TableRecords tbody tr:hover td.OnTarget {
+  background-color: #d6d6d6; }
+
+.TableRecords tbody tr td.WithoutList,
+.TableRecords tbody tr:hover td.WithoutList {
+  background-color: #fcc891; }
+
+/* This (or something similar) should be moved to the
+    theme to avoid table rows being too narrow.
+    The value was taken from StockHistory inline style */
+.PharmaTableRecords tbody tr {
+  line-height: 58px; }
 
 .phone .pika-single:not(.is-bound) .pika-next {
   right: 10px; }

@@ -3,7 +3,7 @@
 .stock-movements-page .TableRecords_EvenLine {
     /*margin: 1px;
     padding: 5px 0 5px 10px;*/
-    background-color: #F3F3F3 !important;
+    background-color: $white-grey !important;
 }
 
 .stock-movements-page .TableRecords_OddLine:last-child, 
@@ -44,7 +44,7 @@
 
 .stock-movements-page .TableBehaviorRowBorderTop > div
 {
-    border-top: 1px solid #BDBDBD;
+    border-top: 1px solid $mid-light-grey;
 }
 
 .stock-movements-page .TableBehaviourTable {
@@ -53,7 +53,7 @@
 }
 
 .stock-movements-page .TableFooterBorder{
-    border-top: 1px solid #BDBDBD;
+    border-top: 1px solid $mid-light-grey;
     padding-top: 5px;
     padding-bottom: 5px;
 }
