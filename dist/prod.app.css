@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128126 || Generated: Tue Jun 20 2023 12:18:14 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.128126 || Generated: Tue Jun 20 2023 16:17:41 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -20244,7 +20244,7 @@ body.PanelById.PanelOpened {
   cursor: pointer;
   gap: 16px;
   min-height: 40px;
-  padding: 0 16px;
+  padding: 8px 8px 8px 16px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -20266,7 +20266,8 @@ body.PanelById.PanelOpened {
   flex: 1; }
 
 .PanelMenuItem__Counter {
-  font-family: "LatoBold"; }
+  font-family: "LatoBold";
+  font-size: 0.857em; }
   .AR .PanelMenuItem__Counter {
     font-family: "TajawalBold"; }
 
@@ -20290,7 +20291,7 @@ body.PanelById.PanelOpened {
 .PanelMenuItem--selected .PanelMenuItem__Title {
   text-shadow: 0 0 1px #333333; }
 
-.PanelMenuItem--selected .PanelMenuItem__ExpandableContent {
+.PanelMenuItem--selected .__ExpandableContent {
   display: block; }
 
 .PanelMenuSubItem {
