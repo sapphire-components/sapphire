@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128125 || Generated: Tue Jun 06 2023 12:46:40 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.128125 || Generated: Tue Jun 20 2023 12:17:46 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -28885,7 +28885,7 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 
 .BorderStyleNone,
 .borderstyle--none {
-  border-style: none; }
+  border-style: none !important; }
 
 .BorderStyleSolid,
 .borderstyle--solid {
