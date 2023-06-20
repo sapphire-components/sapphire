@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128127 || Generated: Tue Jun 20 2023 16:18:06 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.128127 || Generated: Tue Jun 20 2023 17:09:34 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -20291,7 +20291,7 @@ body.PanelById.PanelOpened {
 .PanelMenuItem--selected .PanelMenuItem__Title {
   text-shadow: 0 0 1px #333333; }
 
-.PanelMenuItem--selected .__ExpandableContent {
+.PanelMenuItem--selected .PanelMenuItem__ExpandableContent {
   display: block; }
 
 .PanelMenuSubItem {
