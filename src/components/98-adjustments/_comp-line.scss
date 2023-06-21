@@ -5,9 +5,13 @@
 .TableRecords_Wrapper .CompLine {
 	margin-bottom: 0;
 }
-
+/*
 span:not(:last-of-type) .CompLine {
 	border-bottom: none;
+}*/
+//Diogo ribeiro: fix for the rule above, we should remove border only when we don't have a margin between CompLines in a list
+.TableRecords_Wrapper .CompLine:not(:last-of-type) {
+    border-bottom:none;
 }
 
 .ie7,
@@ -144,10 +148,11 @@ span:not(:last-of-type) .CompLine {
 			vertical-align: middle;
 			width: max-content;
 		}
-
+		/* Diogo ribeiro: why would we apply a margin like this on desktop small? What's special about this case?
 		.CompLine_actions > div > div {
 			margin: 10px 0;
 		}
+		*/
 	}
 
 	.CompLine_other {

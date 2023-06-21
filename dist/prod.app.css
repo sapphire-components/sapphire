@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128121 || Generated: Mon May 29 2023 12:44:33 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.128128 || Generated: Tue Jun 20 2023 17:10:03 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -20244,7 +20244,7 @@ body.PanelById.PanelOpened {
   cursor: pointer;
   gap: 16px;
   min-height: 40px;
-  padding: 0 16px;
+  padding: 8px 8px 8px 16px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -20266,7 +20266,8 @@ body.PanelById.PanelOpened {
   flex: 1; }
 
 .PanelMenuItem__Counter {
-  font-family: "LatoBold"; }
+  font-family: "LatoBold";
+  font-size: 0.857em; }
   .AR .PanelMenuItem__Counter {
     font-family: "TajawalBold"; }
 
@@ -28885,7 +28886,7 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 
 .BorderStyleNone,
 .borderstyle--none {
-  border-style: none; }
+  border-style: none !important; }
 
 .BorderStyleSolid,
 .borderstyle--solid {
@@ -31917,6 +31918,113 @@ ul.os-internal-ui-autocomplete {
 .WorklistPageContent .CollapsibleSidePanel__PanelFooter .ReverseList.Scrollable::-webkit-scrollbar {
   background-color: #F9F9F9; }
 
+/* stock-movements-page CSS, needs to be reviewed! */
+.stock-movements-page .TableRecords_EvenLine {
+  /*margin: 1px;
+    padding: 5px 0 5px 10px;*/
+  background-color: #f9f9f9 !important; }
+
+.stock-movements-page .TableRecords_OddLine:last-child,
+.stock-movements-page .TableRecords_EvenLine:last-child,
+.stock-movements-page .TableRecords_Header:last-child {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.stock-movements-page .TableBehaviourCell {
+  display: table-cell;
+  vertical-align: middle;
+  padding-bottom: 5px;
+  padding-top: 5px; }
+
+.stock-movements-page .TableBehaviourCellM {
+  display: table-cell;
+  vertical-align: middle;
+  padding-bottom: 5px; }
+
+.stock-movements-page .TableBehaviourCellWB {
+  display: table-cell;
+  vertical-align: top;
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+.stock-movements-page .TableBehaviourF {
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+.stock-movements-page .TableBehaviourRow {
+  display: table-row; }
+
+.stock-movements-page .TableBehaviorRowBorderTop > div {
+  border-top: 1px solid #adadad; }
+
+.stock-movements-page .TableBehaviourTable {
+  display: table;
+  width: 100%; }
+
+.stock-movements-page .TableFooterBorder {
+  border-top: 1px solid #adadad;
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+.stock-movements-page .ItemW {
+  width: 25%;
+  padding-right: 5px; }
+
+.stock-movements-page .ActionW {
+  width: 15%; }
+
+.stock-movements-page .ReponsibleW {
+  width: 15%;
+  padding-left: 5px; }
+
+.stock-movements-page .QuantityW {
+  width: 10%;
+  padding-right: 10px; }
+
+.stock-movements-page .LocationW {
+  width: 25%;
+  padding-left: 5px; }
+
+.stock-movements-page .StockW {
+  width: 10%;
+  padding-left: 5px; }
+
+.stock-movements-page .TimeW {
+  width: 15%;
+  padding-right: 5px; }
+
+/* Header */
+.stock-movements-page .ItemHW {
+  width: 25%;
+  padding-left: 5px; }
+
+.stock-movements-page .ActionHW {
+  width: 15%;
+  padding-left: 5px; }
+
+.stock-movements-page .ReponsibleHW {
+  width: 15%;
+  padding-left: 5px; }
+
+.stock-movements-page .QuantityHW {
+  width: 10%;
+  padding-right: 5px; }
+
+.stock-movements-page .LocationHW {
+  width: 25%;
+  padding-left: 5px; }
+
+.stock-movements-page .StockHW {
+  width: 10%;
+  padding-left: 5px; }
+
+.stock-movements-page .TimeHW {
+  width: 15%;
+  padding-right: 10px; }
+
+.stock-movements-page .fa-fw {
+  text-align: right; }
+
 .WhiteContainer.MultiPaddingXSmall,
 .AR .WhiteContainer.MultiPaddingXSmall,
 .FA .WhiteContainer.MultiPaddingXSmall {
@@ -32187,7 +32295,11 @@ div.EditContainerDiv {
 .TableRecords_Wrapper .CompLine {
   margin-bottom: 0; }
 
+/*
 span:not(:last-of-type) .CompLine {
+	border-bottom: none;
+}*/
+.TableRecords_Wrapper .CompLine:not(:last-of-type) {
   border-bottom: none; }
 
 .ie7 .CompLineExpandable.expanded .CompLine__expandIcon,
@@ -32280,22 +32392,24 @@ span:not(:last-of-type) .CompLine {
 .desktop.hd .CompLine_other {
   width: 42%; }
 
-.desktop.small .CompLine_other {
-  padding: 5px 20px;
-  width: 20%; }
-
-.desktop.small .CompLine_actions > div,
-.desktop.small .CompLine_actions > span {
-  display: inline-block;
-  margin: 0 10px 0 0;
-  text-align: center;
-  vertical-align: middle;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content; }
-
-.desktop.small .CompLine_actions > div > div {
-  margin: 10px 0; }
+.desktop.small {
+  /* Diogo ribeiro: why would we apply a margin like this on desktop small? What's special about this case?
+		.CompLine_actions > div > div {
+			margin: 10px 0;
+		}
+		*/ }
+  .desktop.small .CompLine_other {
+    padding: 5px 20px;
+    width: 20%; }
+  .desktop.small .CompLine_actions > div,
+  .desktop.small .CompLine_actions > span {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    text-align: center;
+    vertical-align: middle;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content; }
 
 .desktop .CompLine_other {
   width: 30%; }
@@ -33474,6 +33588,33 @@ div.SelectableList-Line > span > div.ExpandableContent {
 
 .VerticalAlignMiddle .Columns .Column {
   vertical-align: middle; }
+
+/* needs to be reviewed! */
+.TableRecords tbody tr td.BelowMinimum,
+.TableRecords tbody tr:hover td.BelowMinimum {
+  background-color: #fce3e3; }
+
+.TableRecords tbody tr td.BelowTarget,
+.TableRecords tbody tr:hover td.BelowTarget {
+  background-color: #e7f2dc; }
+
+.TableRecords tbody tr td.OverTarget,
+.TableRecords tbody tr:hover td.OverTarget {
+  background-color: #e6e2aa; }
+
+.TableRecords tbody tr td.OnTarget,
+.TableRecords tbody tr:hover td.OnTarget {
+  background-color: #d6d6d6; }
+
+.TableRecords tbody tr td.WithoutList,
+.TableRecords tbody tr:hover td.WithoutList {
+  background-color: #fcc891; }
+
+/* This (or something similar) should be moved to the
+    theme to avoid table rows being too narrow.
+    The value was taken from StockHistory inline style */
+.PharmaTableRecords tbody tr {
+  line-height: 58px; }
 
 /*
 

@@ -16,7 +16,7 @@
 
 .BorderStyleNone,
 .borderstyle--none {
-	border-style: none;
+	border-style: none !important;//important because there are cases applying this class won't work as expected due to pattern construction
 }
 
 .BorderStyleSolid,

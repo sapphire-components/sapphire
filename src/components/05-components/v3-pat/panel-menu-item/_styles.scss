@@ -17,7 +17,7 @@
 		cursor: pointer;
 		gap: $sapphire-sizes--medium;
 		min-height: 40px;
-		padding: 0 $sapphire-sizes--medium;
+		padding: $sapphire-sizes--small $sapphire-sizes--small $sapphire-sizes--small $sapphire-sizes--medium;
 		user-select: none;
 		width: calc(100% - 8px);
 
@@ -42,7 +42,7 @@
 
 	&__Counter {
 		font-family: $font-family-latin-bold;
-
+		font-size: $font-size-small;
 		.AR & {
 			font-family: $font-family-arabic-bold;
 		}
