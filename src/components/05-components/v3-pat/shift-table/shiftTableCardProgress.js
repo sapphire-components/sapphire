@@ -21,7 +21,7 @@ SapphireWidgets.ShiftTableCardProgress = config => {
 
 		const cardsTotal = $tableCard.length;
 		const timeSlotWidth = $tableCellList[1].getBoundingClientRect().width;
-		const colFill = parseInt(endColumn) - parseInt(startColumn) + 1;
+		const colFill = parseInt(endColumn) - parseInt(startColumn) > 0 ? parseInt(endColumn) - parseInt(startColumn) : 1;
 		const minuteValueWidth = timeSlotWidth / 60;
 		const hasActions = $actions.length > 0;
 
