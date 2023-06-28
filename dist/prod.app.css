@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128128 || Generated: Tue Jun 20 2023 17:10:03 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.128128 || Generated: Wed Jun 28 2023 15:04:36 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -22825,6 +22825,10 @@ div.List-Star {
     border-top: none;
     /* display: table; */
     width: 100%; }
+
+/* specialization of this pattern used on Past visits prescriptions list */
+.SSDCloneStructure--prescription-list .SSDCloneStructure_header {
+  background-color: #f3f3f3; }
 
 .SearchSD {
   position: relative; }

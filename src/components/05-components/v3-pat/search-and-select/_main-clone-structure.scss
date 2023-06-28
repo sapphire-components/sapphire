@@ -39,3 +39,10 @@
 		width: 100%;
 	}
 }
+/* specialization of this pattern used on Past visits prescriptions list */
+.SSDCloneStructure--prescription-list {
+	.SSDCloneStructure_header {
+		background-color: $body-color;
+	}
+}
+
