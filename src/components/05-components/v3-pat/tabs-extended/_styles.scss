@@ -207,6 +207,27 @@
 			border-top-left-radius: 0;
 		}
 	}
+
+	&.Tabs_Extended--actionslasttab {
+		.Tabs__tab:last-child {
+			float: right;
+			pointer-events: none;
+		}
+		.Tabs__tab:last-child > div {
+			display: flex;
+			gap: $sapphire-sizes--small
+		}
+		.Tabs__tab a:link,.Tabs__tab a:visited{
+			border: none;
+		}
+		.Tabs__tab:last-child:hover {
+			border-color: transparent;
+		}
+		.Tabs__tab:last-child a {
+			pointer-events: all;
+		} 
+	}
+	
 }
 
 .Tabs {
@@ -307,7 +328,6 @@
 }
 
 /* adjustments */
-
 .phone,
 .tablet {
 	.Tabs__tab {
