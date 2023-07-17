@@ -21,7 +21,7 @@ SapphireWidgets.ShiftTableCardProgress = config => {
 
 		const cardsTotal = $tableCard.length;
 		const timeSlotWidth = $tableCellList[1].getBoundingClientRect().width;
-		const colFill = parseInt(endColumn) - parseInt(startColumn) > 0 ? parseInt(endColumn) - parseInt(startColumn) : 1;//this was changed to stop incrementing one column, needs to be reviewed
+		const colFill = parseInt(endColumn) - parseInt(startColumn) > 0 ? parseInt(endColumn) - parseInt(startColumn) + 1 : 1;//changed to increment plus 1 again, needs to be reviewed when infusions start at time with minutes (like 5:30pm)
 		const minuteValueWidth = timeSlotWidth / 60;
 		const hasActions = $actions.length > 0;
 
