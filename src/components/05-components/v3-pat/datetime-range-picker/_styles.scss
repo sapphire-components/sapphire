@@ -8,7 +8,7 @@ $date-time-size-base: 40px;
 	&.onlyDate {
 		.DateTimeRangePicker-input {
 			input[type='text'] {
-				width: 130px;
+				width: 140px;//diogo ribeiro: increased width to 140px from 130px so placeholder "DD-MM-YYYY" is not cut
 			}
 		}
 	}

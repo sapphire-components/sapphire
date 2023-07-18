@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128135 || Generated: Tue Jul 18 2023 18:28:06 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! prod.app.css || Version: 5.1.128135 || Generated: Tue Jul 18 2023 18:38:19 GMT+0100 (Hora de verão da Europa Ocidental) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -15740,7 +15740,7 @@ div.CircledArrow {
   position: relative;
   vertical-align: middle; }
   .DateTimeRangePicker.onlyDate .DateTimeRangePicker-input input[type='text'] {
-    width: 130px; }
+    width: 140px; }
   .DateTimeRangePicker.textTrigger {
     vertical-align: baseline; }
     .DateTimeRangePicker.textTrigger .DateTimeRangePicker-displayed:before {
