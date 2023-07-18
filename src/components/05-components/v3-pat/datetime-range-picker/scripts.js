@@ -54,7 +54,8 @@
 		var stringConnection = '[, at]';
 
 		if (config.timePicker) {
-			if (!this.config.attachToInput) this.$input.prop('placeholder', 'DD-MM-YYYY HH:MM');
+			//if (!this.config.attachToInput) //changed by Diogo Ribeiro so date picker has a placeholder even if its attached to input (otherwise it never showed)
+			this.$input.prop('placeholder', 'DD-MM-YYYY HH:MM');
 
 			if (options.timePicker24Hour) {
 				this.config.formatInput = `${this.config.systemDateFormat} HH:mm`;
@@ -70,7 +71,8 @@
 		} else {
 			this.$widget.addClass('onlyDate');
 
-			if (!this.config.attachToInput) this.$input.prop('placeholder', 'DD-MM-YYYY');
+			//if (!this.config.attachToInput) 
+			this.$input.prop('placeholder', 'DD-MM-YYYY');
 
 			this.config.formatInput = this.config.systemDateFormat;
 			this.config.formatLabel = this.config.hasYearWhenText ? 'D MMM YYYY' : 'D MMM';
