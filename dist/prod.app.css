@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128137 || Generated: Wed Jul 19 2023 11:18:44 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! prod.app.css || Version: 5.1.128137 || Generated: Wed Jul 19 2023 12:15:07 GMT+0100 (Hora de verão da Europa Ocidental) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -12450,7 +12450,7 @@ html body {
 
 .ButtonGroup {
   padding-left: 1px;
-  padding-top: 1px; }
+  /*padding-top: 1px; Diogo Ribeiro: not sure why this padding exists but this makes button groups 1px taller than normal inputs without an apparent reason*/ }
   .ButtonGroup_button.Button {
     background: #fff;
     background-color: #fff;

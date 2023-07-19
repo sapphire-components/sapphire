@@ -1,6 +1,6 @@
 .ButtonGroup {
 	padding-left: 1px;
-	padding-top: 1px;
+	/*padding-top: 1px; Diogo Ribeiro: not sure why this padding exists but this makes button groups 1px taller than normal inputs without an apparent reason*/
 
 	&_button.Button {
 		background: $regular-white;
