@@ -135,7 +135,7 @@ $date-time-size-base: 40px;
 		transform: translateY(-50%);
 		position: absolute;
 		right: -20px;
-		Diogo Ribeiro: if the clear is set with position absolute the devs need to take the space it takes into account, I will change it to work like hour picker pattern (this way the behavior is consistent between patterns so it's another plus of doing this) */
+		DE72425 if the clear is set with position absolute the devs need to take the space it takes into account, will change it to work like hour picker pattern (this way the behavior is consistent between patterns so it's another plus of doing this) */
 		&:before {
 			content: '\e604';
 			display: inline-block;
@@ -145,7 +145,7 @@ $date-time-size-base: 40px;
 		&.disabled {
 			color: $text-color-disabled;
 			cursor: auto;
-			/*display: none;*/
+			/*display: none; DE72425*/
 		}
 	}
 
@@ -190,7 +190,7 @@ $date-time-size-base: 40px;
 	}
 
 	> div {
-		display: block;
+		display: flex;//DE72425 changed from block to flex so the clear option is displayed correctly when inside form fields with full width
 		position: relative;
 		white-space: nowrap;
 	}
