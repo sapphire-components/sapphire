@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128138 || Generated: Wed Jul 19 2023 12:15:36 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! prod.app.css || Version: 5.1.128138 || Generated: Wed Jul 19 2023 13:25:25 GMT+0100 (Hora de verão da Europa Ocidental) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -15807,12 +15807,14 @@ div.CircledArrow {
     font-variant: normal;
     font-weight: normal;
     line-height: 36px;
-    position: absolute;
-    right: -20px;
     speak: none;
     text-transform: none;
-    top: 50%;
-    transform: translateY(-50%); }
+    margin-left: 8px;
+    /*top: 50%;
+		transform: translateY(-50%);
+		position: absolute;
+		right: -20px;
+		Diogo Ribeiro: if the clear is set with position absolute the devs need to take the space it takes into account, I will change it to work like hour picker pattern (this way the behavior is consistent between patterns so it's another plus of doing this) */ }
     .DateTimeRangePicker-clear:before {
       content: '\e604';
       display: inline-block;
@@ -15820,7 +15822,7 @@ div.CircledArrow {
     .DateTimeRangePicker-clear.disabled {
       color: #777777;
       cursor: auto;
-      display: none; }
+      /*display: none;*/ }
   .DateTimeRangePicker-calendar-clear {
     color: #00bfa5;
     cursor: pointer;
