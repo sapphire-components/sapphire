@@ -10,7 +10,7 @@ SapphireWidgets.TabsExtended = function(config) {
 		var $calculatedTabs;
 
 		if(config.useLastTabAsActions) {
-			$calculatedTabs = $tabs.splice(-1);
+			$calculatedTabs = $tabs.slice(0,-1);
 		} else {
 			$calculatedTabs = $tabs;
 		}
