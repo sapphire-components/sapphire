@@ -7,8 +7,14 @@ SapphireWidgets.TabsExtended = function(config) {
 		const $tabs = $tabHeader.find('> .Tabs__tab');
 		const $tabsEnabled = $tabHeader.find('> .Tabs__tab:not(.disabled)');
 		const $tabsInput = $component.find('.Tabs_Input input');
+		var $calculatedTabs;
 
-		$tabs.each(function() {
+		if(config.useLastTabAsActions) {
+			$calculatedTabs = $tabs.splice(-1);
+		} else {
+			$calculatedTabs = $tabs;
+		}
+		$calculatedTabs.each(function() {
 			if ($(this).text() === '') {
 				$(this).remove();
 			}
