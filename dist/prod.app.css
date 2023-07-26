@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128142 || Generated: Mon Jul 24 2023 16:09:34 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! prod.app.css || Version: 5.1.128142 || Generated: Wed Jul 26 2023 18:33:56 GMT+0100 (Hora de verão da Europa Ocidental) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -11253,57 +11253,51 @@ body.LayoutBase .os-internal-ui-widget-overlay {
   border-left: none;
   border-right: 1px solid #d6d6d6; }
 
-.LayoutBase.Page.tablet .PatientDetails_content {
-  padding-left: 0;
-  padding-right: 0; }
-
-.LayoutBase.Page .LayoutBase-Content {
-  position: static; }
-
-.LayoutBase.Page .ClinicianWorkArea {
-  /*&.FullWidth {
+.LayoutBase.Page {
+  min-height: 100vh; }
+  .LayoutBase.Page.tablet .PatientDetails_content {
+    padding-left: 0;
+    padding-right: 0; }
+  .LayoutBase.Page .LayoutBase-Content {
+    position: static; }
+  .LayoutBase.Page .ClinicianWorkArea {
+    /*&.FullWidth {
 				.ClinicianWorkArea-columns {
 					background: #fff;
 					background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 0) 200px);
 				}
 			}*/ }
-  .LayoutBase.Page .ClinicianWorkArea .ClinicianWorkArea-columns {
-    align-items: stretch;
-    background-color: #f3f3f3;
-    display: flex;
-    flex: 1;
+    .LayoutBase.Page .ClinicianWorkArea .ClinicianWorkArea-columns {
+      align-items: stretch;
+      background-color: #f3f3f3;
+      display: flex;
+      flex: 1;
+      width: 100%; }
+  .LayoutBase.Page .ClinicianWorkArea-columns-big {
+    display: inline-block;
+    padding: 0;
+    vertical-align: top;
+    width: 67%; }
+  .LayoutBase.Page .ClinicianWorkArea-columns-small {
+    background-color: #ebebeb;
+    border-left: 1px solid #d6d6d6;
+    display: inline-block;
+    padding: 0 16px;
+    position: relative;
+    vertical-align: top;
+    width: 33%; }
+  .LayoutBase.Page .ClinicianWorkArea.FullWidth .ClinicianWorkArea-columns-big {
+    display: block;
+    padding: 0;
     width: 100%; }
-
-.LayoutBase.Page .ClinicianWorkArea-columns-big {
-  display: inline-block;
-  padding: 0;
-  vertical-align: top;
-  width: 67%; }
-
-.LayoutBase.Page .ClinicianWorkArea-columns-small {
-  background-color: #ebebeb;
-  border-left: 1px solid #d6d6d6;
-  display: inline-block;
-  padding: 0 16px;
-  position: relative;
-  vertical-align: top;
-  width: 33%; }
-
-.LayoutBase.Page .ClinicianWorkArea.FullWidth .ClinicianWorkArea-columns-big {
-  display: block;
-  padding: 0;
-  width: 100%; }
-
-.LayoutBase.Page .ClinicianWorkArea.FullWidth .ClinicianWorkArea-columns-small {
-  display: none; }
-
-.LayoutBase.Page .Toolbar {
-  padding-left: 24px;
-  min-height: 73px; }
-
-.LayoutBase.Page .Toolbar.Fix {
-  margin-left: 0;
-  padding-right: 8px; }
+  .LayoutBase.Page .ClinicianWorkArea.FullWidth .ClinicianWorkArea-columns-small {
+    display: none; }
+  .LayoutBase.Page .Toolbar {
+    padding-left: 24px;
+    min-height: 73px; }
+  .LayoutBase.Page .Toolbar.Fix {
+    margin-left: 0;
+    padding-right: 8px; }
 
 .LayoutBase .select2-container--open .select2-dropdown--below {
   z-index: 101; }
@@ -11855,8 +11849,7 @@ html,
 body,
 form,
 .Page {
-  height: auto !important;
-  min-height: 100vh; }
+  height: auto !important; }
 
 .LoginBackground {
   background: no-repeat;

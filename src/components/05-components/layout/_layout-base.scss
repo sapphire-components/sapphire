@@ -523,6 +523,8 @@ body.LayoutBase .os-internal-ui-widget-overlay {
 
 .LayoutBase {
 	&.Page {
+		min-height: 100vh;
+		
 		&.tablet .PatientDetails_content {
 			padding-left: 0;
 			padding-right: 0;
