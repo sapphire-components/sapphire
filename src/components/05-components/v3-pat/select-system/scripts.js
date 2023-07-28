@@ -33,7 +33,6 @@ SapphireWidgets.SelectSystem = config => {
 		Select2Options.theme = 'default SelectSystem';
 		Select2Options.width = 'style';
 
-		console.log("--- " + Select2Type + " ---");
 		/*  
           Change select2 search display 
               -Multiple Select2 search UI like Single Select2
@@ -352,7 +351,6 @@ SapphireWidgets.SelectSystem = config => {
 		}
 
 		if (OnUnSelectingJS != '' || OnSelectingJS != '') {
-			console.log("1. " + Select2Options);
 			$WidgetIdentifier
 				.select2(Select2Options)
 				.on('select2:unselecting', function(e) {
@@ -376,7 +374,6 @@ SapphireWidgets.SelectSystem = config => {
 				});
 		} else {
 			if (Select2Type === '2') {
-				console.log("2. " + Select2Options);
 				$WidgetIdentifier.select2(Select2Options);
 				var idwidget = '#' + WidgetId;
 
@@ -390,7 +387,6 @@ SapphireWidgets.SelectSystem = config => {
 						});
 						$WidgetIdentifier.select2('destroy');
 						$WidgetIdentifier.val(selectedItems).trigger('change');
-						console.log("3. " + Select2Options);
 						$WidgetIdentifier.select2(Select2Options);
 						$WidgetIdentifier.select2('open');
 					} else {
@@ -404,7 +400,6 @@ SapphireWidgets.SelectSystem = config => {
 							});
 							$WidgetIdentifier.select2('destroy');
 							$WidgetIdentifier.val(selectedItems).trigger('change');
-							console.log("4. " + Select2Options);
 							$WidgetIdentifier.select2(Select2Options);
 							$WidgetIdentifier.select2('open');
 						}
@@ -416,7 +411,6 @@ SapphireWidgets.SelectSystem = config => {
 					if (UnselectedId === 'All') {
 						$(idwidget + ' > option').removeAttr('selected');
 						$WidgetIdentifier.select2('destroy');
-						console.log("5. " + Select2Options);
 						$WidgetIdentifier.select2(Select2Options);
 						$WidgetIdentifier.select2('open');
 						$(idwidget)
@@ -425,19 +419,16 @@ SapphireWidgets.SelectSystem = config => {
 						//$(idwidget +' > option').attr('selected', "selected");
 					} else {
 						$(idwidget + ' > option:first-child').removeAttr('selected');
-						console.log("6. " + Select2Options);
 						$WidgetIdentifier.select2(Select2Options);
 						$WidgetIdentifier.select2('open');
 					}
 				});
 			} else {
-				console.log("7. " + Select2Options);
 				$WidgetIdentifier.select2(Select2Options);
 			}
 		}
 
 		if (Select2Type === '4') {
-			console.log("8. " + Select2Options);
 			$WidgetIdentifier.select2(Select2Options);
 			var idwidget = '#' + WidgetId;
 
