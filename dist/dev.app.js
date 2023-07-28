@@ -7721,6 +7721,7 @@ SapphireWidgets.SelectSystem = config => {
 		}
 		
 		Select2Options.theme = 'default SelectSystem';
+		Select2Options.width = 'style';
 
 		console.log("--- " + Select2Type + " ---");
 		/*  
