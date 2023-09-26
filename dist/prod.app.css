@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128146 || Generated: Tue Sep 26 2023 11:23:25 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.1.128146 || Generated: Tue Sep 26 2023 16:09:44 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -25524,7 +25524,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     gap: 16px; }
   .ShiftTableCardProgress__InfoDetails {
     flex: 1;
-    font-family: "LatoBold"; }
+    font-family: "LatoBold";
+    word-break: break-all; }
     .AR .ShiftTableCardProgress__InfoDetails {
       font-family: "TajawalBold"; }
   .ShiftTableCardProgress__Notes > div:first-child {

@@ -125,6 +125,7 @@
 	&__InfoDetails {
 		flex: 1;
 		font-family: $font-family-latin-bold;
+		word-break: break-all;
 
 		.AR & {
 			font-family: $font-family-arabic-bold;
