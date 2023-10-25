@@ -144,7 +144,7 @@
 
 			if (contentHeight > parentHeight) {
 				$osPopupContent.height(parentHeight - 70);
-				$body.height($osPopupContent.height() - paddingBody);
+				$body.height($osPopupContent.height() - paddingBody - 40 - 40);
 			} else {
 				$osPopupContent.height(contentHeight);
 			}
