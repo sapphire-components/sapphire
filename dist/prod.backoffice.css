@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.128145 || Generated: Fri Sep 08 2023 17:31:18 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! prod.backoffice.css || Version: 5.1.128145 || Generated: Wed Oct 25 2023 11:13:07 GMT+0100 (Hora de verão da Europa Ocidental) */
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
 /* Header */
@@ -5336,6 +5336,245 @@ div.WizardParent {
     content: '';
     display: block;
     height: 1px; }
+
+.TextUppercase {
+  text-transform: uppercase; }
+
+.TextLowercase {
+  text-transform: lowercase; }
+
+.Bold,
+.TextBold {
+  font-family: "LatoBold"; }
+  .Bold > .TextRegularAR,
+  .TextBold > .TextRegularAR {
+    font-family: "TajawalBold"; }
+
+.TextBoldAR {
+  font-family: "TajawalBold"; }
+
+.TextRegular {
+  font-family: "LatoRegular"; }
+  .AR .TextRegular {
+    font-family: "TajawalRegular"; }
+
+.TextRegularAR {
+  font-family: "TajawalRegular"; }
+
+.TextItalic {
+  font-style: italic; }
+
+.TextUnderline {
+  text-decoration: underline; }
+
+.TextLineThrough {
+  text-decoration: line-through; }
+
+.TextOverflow {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+  .TextOverflow_Ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+  .TextOverflowTwoLines {
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden; }
+  .TextOverflowThreeLines {
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    overflow: hidden; }
+
+.TextCenter {
+  text-align: center; }
+
+.TextLeft {
+  text-align: left; }
+
+.TextRight {
+  text-align: right; }
+
+.Page .Text {
+  /* Colors */
+  /* Sizes */
+  /* General */ }
+  .Page .Text_sapphireBlue, .Page .mainBlue1-tx {
+    color: fuchsia; }
+  .Page .Text_sapphireBlue2, .Page .mainBlue2-tx {
+    color: #00ac94; }
+  .Page .Text_sapphireInactive, .Page .inactiveButton-tx {
+    color: #d6d6d6; }
+  .Page .Text_sapphireDarkBlue1, .Page .darkBlue1-tx {
+    color: #333333; }
+  .Page .Text_sapphireDarkBlue2, .Page .darkBlue2-tx {
+    color: #30384a; }
+  .Page .Text_sapphireDarkText, .Page .darkText-tx {
+    color: #333333; }
+  .Page .Text_sapphireLightText, .Page .lightText-tx {
+    color: #777777; }
+  .Page .Text_sapphireFemale, .Page .female-tx {
+    color: #ec62ce; }
+  .Page .Text_sapphireMale, .Page .male-tx {
+    color: #1ba5ec; }
+  .Page .Text_sapphireDarkGrey, .Page .darkGreyText-tx {
+    color: #5c5c5c; }
+  .Page .Text_sapphireLightBoard, .Page .lightBorder-tx {
+    color: #d6d6d6; }
+  .Page .Text_sapphireLightContainer, .Page .lightContainer-tx {
+    color: #f3f3f3; }
+  .Page .Text_sapphireBackground, .Page .background-tx {
+    color: #f3f3f3; }
+  .Page .Text_sapphireWarning, .Page .warning-tx {
+    color: #ff3e2d; }
+  .Page .Text_sapphireWhite, .Page .white-tx {
+    color: #fff; }
+  .Page .Text_sapphireClinician, .Page .clinician-tx {
+    color: #d6d6d6; }
+  .Page .Text_sapphireLighnesstText, .Page .light-tx {
+    color: #d6d6d6; }
+  .Page .Text_DarkBlue {
+    color: #30384a; }
+  .Page .Text_black {
+    color: #131819; }
+  .Page .Text_blue {
+    color: #1ba5ec; }
+  .Page .Text_darkBlue {
+    color: #194968; }
+  .Page .Text_navyBlue {
+    color: #c4f0eb; }
+  .Page .Text_MiddleBlue {
+    color: #2a5a6e; }
+  .Page .Text_gray {
+    color: #777777; }
+  .Page .Text_green {
+    color: #7cb342; }
+  .Page .Text_Darkgreen {
+    color: #578329; }
+  .Page .Text_green_Sapphire {
+    color: #00bfa5; }
+  .Page .Text_lightGreen {
+    color: #e7f2dc; }
+  .Page .Text_orange {
+    color: #ffa000; }
+  .Page .Text_orangeDark {
+    color: #c37b03; }
+  .Page .Text_plum {
+    color: #ec62ce; }
+  .Page .Text_darkPlum {
+    color: #980263; }
+  .Page .Text_red {
+    color: #ff3e2d; }
+  .Page .Text_darkRed {
+    color: #b10100; }
+  .Page .Text_SapphireRed {
+    color: #ff3e2d; }
+  .Page .Text_silver {
+    color: #d6d6d6; }
+  .Page .Text_turquoise {
+    color: #c4f0eb; }
+  .Page .Text_darkTurquoise {
+    color: #1ba5ec; }
+  .Page .Text_white {
+    color: #fff; }
+  .Page .Text_yellow {
+    color: #fbc02d; }
+  .Page .Text_darkYellow {
+    color: #c19323; }
+  .Page .Text_09em {
+    font-size: 0.9em; }
+  .Page .Text_1em {
+    font-size: 1em; }
+  .Page .Text_11em {
+    font-size: 1.1em; }
+  .Page .Text_12em {
+    font-size: 1.2em; }
+  .Page .Text_13em {
+    font-size: 1.3em; }
+  .Page .Text_14em {
+    font-size: 1.4em; }
+  .Page .Text_15em {
+    font-size: 1.5em; }
+  .Page .Text_09rem {
+    font-size: 0.9rem; }
+  .Page .Text_1rem {
+    font-size: 1rem; }
+  .Page .Text_11rem {
+    font-size: 1.1rem; }
+  .Page .Text_12rem {
+    font-size: 1.2rem; }
+  .Page .Text_13rem {
+    font-size: 1.3rem; }
+  .Page .Text_14rem {
+    font-size: 1.4rem; }
+  .Page .Text_15rem {
+    font-size: 1.5rem; }
+  .Page .Text_Size11 {
+    font-size: 11px; }
+  .Page .TextSize12, .Page .Text_Size12 {
+    font-size: 12px; }
+  .Page .Text_Size13 {
+    font-size: 13px; }
+  .Page .TextSize14, .Page .Text_Size14 {
+    font-size: 14px; }
+  .Page .Text_Size15 {
+    font-size: 15px; }
+  .Page .TextSize16, .Page .Text_Size16 {
+    font-size: 16px; }
+  .Page .Text_Size17 {
+    font-size: 17px; }
+  .Page .Text_Size18 {
+    font-size: 18px; }
+  .Page .TextSize20, .Page .Text_Size20 {
+    font-size: 20px; }
+  .Page .Text_Size22 {
+    font-size: 22px; }
+  .Page .Text_Size25 {
+    font-size: 25px; }
+  .Page .Text_Size30 {
+    font-size: 30px; }
+  .Page .Text_Size90 {
+    font-size: 90px; }
+  .Page .Text_uppercase {
+    text-transform: uppercase; }
+  .Page .Text_Note {
+    color: #777777;
+    font-size: 14px; }
+
+.Label {
+  background-color: transparent;
+  border-radius: 10px;
+  max-height: 20px;
+  padding: 2px 8px; }
+
+.Uppercase {
+  text-transform: uppercase; }
+
+.NoWrap {
+  vertical-align: middle;
+  white-space: nowrap; }
+
+.LineHeightSmall {
+  line-height: 8px; }
+
+.LineHeightMedium {
+  line-height: 16px; }
+
+.LineHeightLarge {
+  line-height: 24px; }
+
+.LineHeightLarger {
+  line-height: 48px; }
+
+.LineHeightLargest {
+  line-height: 56px; }
+
+.LineHeightInputs {
+  line-height: 36px; }
 
 .SapphirePopup div.os-internal-ui-dialog.os-internal-Popup .os-internal-ui-dialog-titlebar {
   display: block; }
