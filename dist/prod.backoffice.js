@@ -1,4 +1,4 @@
-/*! prod.backoffice.js || Version: 5.1.128148 || Generated: Wed Oct 25 2023 11:27:09 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! prod.backoffice.js || Version: 5.1.128148 || Generated: Tue Dec 05 2023 08:41:47 GMT+0000 (Hora padrão da Europa Ocidental) */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -105,7 +105,7 @@ eval("$(document).ready(function () {\r\n\r\n\r\n  var regex = RegExp(\"Layout\"
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! ./styles.scss */ \"./src/backoffice/styles.scss\");\r\n\r\nSapphireWidgets = window.SapphireWidgets = window.SapphireWidgets || {};\r\n\r\n__webpack_require__(/*! ./01-components/layout/layout-backoffice */ \"./src/backoffice/01-components/layout/layout-backoffice.js\");\r\n\r\n__webpack_require__(/*! ../components/05-components/v3-pat/country-phone/scripts */ \"./src/components/05-components/v3-pat/country-phone/scripts.js\");\r\n__webpack_require__(/*! ../components/05-components/v3-pat/datetime-range-picker/scripts */ \"./src/components/05-components/v3-pat/datetime-range-picker/scripts.js\");\r\n__webpack_require__(/*! ../components/05-components/v3-pat/hour-picker/scripts */ \"./src/components/05-components/v3-pat/hour-picker/scripts.js\");\r\n__webpack_require__(/*! ../components/05-components/v3-pat/panel/confirmation-popup */ \"./src/components/05-components/v3-pat/panel/confirmation-popup.js\");\r\n__webpack_require__(/*! ../components/05-components/v3-pat/panel/panel-by-id */ \"./src/components/05-components/v3-pat/panel/panel-by-id.js\");\r\n__webpack_require__(/*! ../components/05-components/v3-pat/sapphire-popup/scripts */ \"./src/components/05-components/v3-pat/sapphire-popup/scripts.js\");\r\n__webpack_require__(/*! ../components/05-components/v3-pat/select-system/scripts */ \"./src/components/05-components/v3-pat/select-system/scripts.js\");\r\n__webpack_require__(/*! ../components/05-components/v3-pat/dropzone/dropzone */ \"./src/components/05-components/v3-pat/dropzone/dropzone.js\");\r\n\n\n//# sourceURL=webpack:///./src/backoffice/scripts.js?");
+eval("__webpack_require__(/*! ./styles.scss */ \"./src/backoffice/styles.scss\");\r\n\r\nSapphireWidgets = window.SapphireWidgets = window.SapphireWidgets || {};\r\n\r\n__webpack_require__(/*! ./01-components/layout/layout-backoffice */ \"./src/backoffice/01-components/layout/layout-backoffice.js\");\r\n\r\n__webpack_require__(/*! ../components/05-components/v3-pat/country-phone/scripts */ \"./src/components/05-components/v3-pat/country-phone/scripts.js\");\r\n__webpack_require__(/*! ../components/05-components/v3-pat/datetime-range-picker/scripts */ \"./src/components/05-components/v3-pat/datetime-range-picker/scripts.js\");\r\n__webpack_require__(/*! ../components/05-components/v3-pat/hour-picker/scripts */ \"./src/components/05-components/v3-pat/hour-picker/scripts.js\");\r\n__webpack_require__(/*! ../components/05-components/v3-pat/panel/confirmation-popup */ \"./src/components/05-components/v3-pat/panel/confirmation-popup.js\");\r\n__webpack_require__(/*! ../components/05-components/v3-pat/panel/panel-by-id */ \"./src/components/05-components/v3-pat/panel/panel-by-id.js\");\r\n__webpack_require__(/*! ../components/05-components/v3-pat/sapphire-popup/scripts */ \"./src/components/05-components/v3-pat/sapphire-popup/scripts.js\");\r\n__webpack_require__(/*! ../components/05-components/v3-pat/select-system/scripts */ \"./src/components/05-components/v3-pat/select-system/scripts.js\");\r\n__webpack_require__(/*! ../components/05-components/v3-pat/dropzone/dropzone */ \"./src/components/05-components/v3-pat/dropzone/dropzone.js\");\r\n__webpack_require__(/*! ../components/03-elements/script */ \"./src/components/03-elements/script.js\");\r\n\n\n//# sourceURL=webpack:///./src/backoffice/scripts.js?");
 
 /***/ }),
 
@@ -117,6 +117,17 @@ eval("__webpack_require__(/*! ./styles.scss */ \"./src/backoffice/styles.scss\")
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/backoffice/styles.scss?");
+
+/***/ }),
+
+/***/ "./src/components/03-elements/script.js":
+/*!**********************************************!*\
+  !*** ./src/components/03-elements/script.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("/* Component Textarea */\n(function($, window, document, SapphireWidgets) {\n  \n  $(document).ready(function() {\n    window.parent.CallTextAreaAutoResize();\n  });\n\n  window.CallTextAreaAutoResize = function prepareTextAreaAutoResize(TextAreaId){\n    \n    if(TextAreaId==undefined){\n      var textAreaInput = $('textarea');\n    }else{\n      var textAreaInput = $('#'+TextAreaId);\n    }\n    textAreaInput.each(function(){\n        $(this).attr('rows',2);\n        resizeTextArea($(this));\n    });\n\n    textAreaInput.on('input', function(){\n      resizeTextArea($(this));\n    });\n  }\n\n  function resizeTextArea ($textAreaInput) {\n    console.log($textAreaInput[0].scrollHeight);\n    if($textAreaInput[0].scrollHeight == 0){\n      $textAreaInput.css('height', '60px');\n    }else{\n      $textAreaInput.css('height', $textAreaInput[0].scrollHeight+'px');\n    }\n  }\n})(jQuery, window, document, SapphireWidgets);\n\n//# sourceURL=webpack:///./src/components/03-elements/script.js?");
 
 /***/ }),
 
