@@ -163,7 +163,7 @@
 	}
 
 	.tooltip {
-		width: 100%;
+		min-width: 202px;//min 200 from grid-template-columns plus 2 for the borders so everything is aligned
 	}
 }
 
