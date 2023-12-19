@@ -155,7 +155,7 @@
 	display: grid;
 	grid-column-gap: 18px;
 	grid-row-gap: 18px;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(200px, 350px));
 
 	div.OSInline,
 	.BedBoxContainer {
@@ -163,7 +163,7 @@
 	}
 
 	.tooltip {
-		min-width: 202px;//min 200 from grid-template-columns plus 2 for the borders so everything is aligned
+		width: 100%;
 	}
 }
 

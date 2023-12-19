@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128150 || Generated: Tue Dec 19 2023 10:52:13 GMT+0000 (Hora padrão da Europa Ocidental) */
+/*! prod.app.css || Version: 5.1.128150 || Generated: Tue Dec 19 2023 10:57:42 GMT+0000 (Hora padrão da Europa Ocidental) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -13876,12 +13876,12 @@ div.ActionsMenu-item {
   display: grid;
   grid-column-gap: 18px;
   grid-row-gap: 18px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+  grid-template-columns: repeat(auto-fit, minmax(200px, 350px)); }
   .ListBedBox div.OSInline,
   .ListBedBox .BedBoxContainer {
     width: 100%; }
   .ListBedBox .tooltip {
-    min-width: 202px; }
+    width: 100%; }
 
 .AR .SlotText,
 .FA .SlotText {
