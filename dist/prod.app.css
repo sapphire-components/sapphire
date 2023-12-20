@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128151 || Generated: Tue Dec 19 2023 10:58:02 GMT+0000 (Hora padrão da Europa Ocidental) */
+/*! prod.app.css || Version: 5.1.128151 || Generated: Wed Dec 20 2023 11:00:19 GMT+0000 (Hora padrão da Europa Ocidental) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -11788,19 +11788,24 @@ a.SpecialityButtonForward {
     padding-left: 5px;
     padding-right: 0; }
 
-.ResizeIframeTooltip.ResizeWidthTooltip {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content; }
+.ResizeIframeTooltip {
+  /* Diogo Ribeiro: this margin caused information to be cut when scroll bar was not showing, and when it showed
+	the difference this rule makes is not that relevant
+	.ScrollableContent {
+		margin-right: -$sapphire-sizes--small;
 
-.ResizeIframeTooltip.NoPadding .MainPopup {
-  padding: 0; }
-
-.ResizeIframeTooltip .ScrollableContent {
-  margin-right: -8px; }
-  .AR .ResizeIframeTooltip .ScrollableContent {
-    margin-left: -8px;
-    margin-right: 0; }
+		.AR & {
+			margin-left: -$sapphire-sizes--small;
+			margin-right: 0;
+		}
+	}
+	*/ }
+  .ResizeIframeTooltip.ResizeWidthTooltip {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content; }
+  .ResizeIframeTooltip.NoPadding .MainPopup {
+    padding: 0; }
 
 div.tooltipster-content.tooltipster--noPadding {
   padding: 0; }

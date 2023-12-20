@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.1.128151 || Generated: Tue Dec 19 2023 10:58:02 GMT+0000 (Hora padrão da Europa Ocidental) */
+/*! prod.app.js || Version: 5.1.128151 || Generated: Wed Dec 20 2023 11:00:19 GMT+0000 (Hora padrão da Europa Ocidental) */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};

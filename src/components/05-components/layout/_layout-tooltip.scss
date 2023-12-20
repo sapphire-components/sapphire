@@ -6,7 +6,8 @@
 	&.NoPadding .MainPopup {
 		padding: 0;
 	}
-
+	/* Diogo Ribeiro: this margin caused information to be cut when scroll bar was not showing, and when it showed
+	the difference this rule makes is not that relevant
 	.ScrollableContent {
 		margin-right: -$sapphire-sizes--small;
 
@@ -15,6 +16,7 @@
 			margin-right: 0;
 		}
 	}
+	*/
 }
 
 div.tooltipster-content.tooltipster--noPadding {
