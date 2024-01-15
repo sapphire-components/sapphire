@@ -5855,6 +5855,8 @@ var RichWidgets_Popup_Editor_notifyWidget;
 			let width = setWidth == -1 ? $(innerDoc).width() : setWidth;
 			let height = setHeight == -1 ? $(innerDoc).height() : setHeight;
 
+			console.log("1: " + height); /* IK temporary*/
+
 			var titleHeight;
 			if (isInsideIframe) {
 				titleHeight = window.top.$('.os-internal-ui-dialog-titlebar').height();
@@ -5877,21 +5879,15 @@ var RichWidgets_Popup_Editor_notifyWidget;
 			if (setHeight == -1) {
 				// IE7 needs a little more space to remove the scrollbars
 				if ($.browser.msie) height = height + 1;
-			} else {
-				//when explicitly setting the height
-				if (sameOrigin){
-					if(innerDoc != undefined){
-						innerDoc.body.style.height = 'auto';
-					}else{
-						console.log("The innerDoc.body is undefined");
-					}
-				}
+				console.log("2: " + height); /* IK temporary*/
 			}
 
 			if (isInsideIframe) {
 				window.top.$(divToPopup).height(height);
+				console.log("3: " + window.top.$(divToPopup).height()); /* IK temporary*/
 			} else {
 				$(divToPopup).height(height);
+				console.log("3: " + $(divToPopup).height()); /* IK temporary*/
 			}
 
 			//Hide ECT
@@ -5914,6 +5910,7 @@ var RichWidgets_Popup_Editor_notifyWidget;
 				var oldTop = parseInt(divPopupOuterWindow.css('top'));
 				if (recenter) animateFinal.top = Math.max(20, oldTop + (oldHeight - (height + titleHeight)) / 2);
 				animateFinal.height = height + titleHeight;
+				console.log("4: " + animateFinal.height + " / " + oldTop + "," + oldHeight + "," + titleHeight); /* IK temporary*/
 			}
 
 			if (setWidth == -1) {
