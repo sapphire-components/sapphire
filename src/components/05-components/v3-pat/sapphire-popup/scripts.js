@@ -229,7 +229,6 @@ var RichWidgets_Popup_Editor_notifyWidget;
 
 			let width = setWidth == -1 ? $(innerDoc).width() : setWidth;
 			let height = setHeight == -1 ? $(innerDoc).height() : setHeight;
-			console.log("IK 2: " + height);
 
 			var titleHeight;
 			if (isInsideIframe) {
@@ -281,7 +280,6 @@ var RichWidgets_Popup_Editor_notifyWidget;
 				var oldTop = parseInt(divPopupOuterWindow.css('top'));
 				if (recenter) animateFinal.top = Math.max(20, oldTop + (oldHeight - (height + titleHeight)) / 2);
 				animateFinal.height = height + titleHeight;
-				console.log("IK 3: " + animateFinal.height + " /" + oldTop + "," + oldHeight + "," + titleHeight);
 			}
 
 			if (setWidth == -1) {
@@ -333,7 +331,6 @@ var RichWidgets_Popup_Editor_notifyWidget;
 			divPleaseWait.hide();
 
 			if (setHeight == -1 || setWidth == -1) {
-				console.log("IK 1: " + animateFinal.height);
 				divPopupOuterWindow.animate(animateFinal, {
 					duration: 200,
 					complete: onAnimationComplete,
