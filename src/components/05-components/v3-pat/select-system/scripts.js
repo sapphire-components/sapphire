@@ -23,8 +23,8 @@ SapphireWidgets.SelectSystem = config => {
 		var PageTerm = config.PageTerm;
 		var AmountPage = config.PageAmount;
 		var isMultiple = config.isMultiple;
-		var AuthHeader = config.AuthHeader;
-		var HeaderValue = config.HeaderValue;
+		var AuthInternal = config.AuthInternal;
+		var Header_Value = config.Header_Value;
 		var Select2Options = {};
 		var $WidgetIdentifier;
 
@@ -192,7 +192,7 @@ SapphireWidgets.SelectSystem = config => {
 				url: AjaxURL,
 				dataType: 'json',
 				delay: AjaxDelay,
-				headers: {AuthHeader:HeaderValue},
+				headers: {AuthInternal:Header_Value},
 				data: function(params) {
 					var Select2AjaxOpt = {};
 					var SplitParameter = SearchExtraParam1.split(',');
