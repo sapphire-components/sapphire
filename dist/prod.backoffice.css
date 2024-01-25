@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.128155 || Generated: Fri Jan 19 2024 14:58:00 GMT+0000 (Hora padrão da Europa Ocidental) */
+/*! prod.backoffice.css || Version: 5.1.128155 || Generated: Thu Jan 25 2024 11:46:29 GMT+0000 (Western European Standard Time) */
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
 /* Header */
@@ -2706,7 +2706,7 @@ html,
 
 body {
   background-color: #f3f3f3;
-  margin: 0;
+  margin: 0 0 0 0;
   overflow-x: hidden;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
@@ -2920,8 +2920,6 @@ div[onclick] {
       width: 340px; }
       .SapphireSearch_input input[type='text'].expanded::-moz-placeholder {
         color: transparent; }
-      .SapphireSearch_input input[type='text'].expanded:-ms-input-placeholder {
-        color: transparent; }
       .SapphireSearch_input input[type='text'].expanded::placeholder {
         color: transparent; }
 
@@ -3031,7 +3029,6 @@ div[onclick] {
   max-width: 1439px;
   padding-bottom: 20px;
   padding-top: 20px;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   width: 100%;
@@ -3058,7 +3055,6 @@ div[onclick] {
 
 .Page thead th {
   background: #fff;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1; }
@@ -3092,8 +3088,7 @@ body {
   font-weight: initial; }
 
 .NavigationBar a.InlineDropdown .InlineDropdown_icon .fa {
-  -webkit-animation: none;
-          animation: none;
+  animation: none;
   transform: rotate(-180deg);
   transition: all 0.3s ease-in; }
 
@@ -3110,8 +3105,7 @@ body {
   transform: translate(-50%, -50%);
   width: 32px; }
   .lds-ring div {
-    -webkit-animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-            animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
     border: 3px solid #fff;
     border-color: #00bfa5 transparent transparent transparent;
     border-radius: 50%;
@@ -3122,14 +3116,11 @@ body {
     position: absolute;
     width: 16px; }
     .lds-ring div:nth-child(1) {
-      -webkit-animation-delay: -0.45s;
-              animation-delay: -0.45s; }
+      animation-delay: -0.45s; }
     .lds-ring div:nth-child(2) {
-      -webkit-animation-delay: -0.3s;
-              animation-delay: -0.3s; }
+      animation-delay: -0.3s; }
     .lds-ring div:nth-child(3) {
-      -webkit-animation-delay: -0.15s;
-              animation-delay: -0.15s; }
+      animation-delay: -0.15s; }
   .lds-ring--relative {
     left: unset;
     position: relative;
@@ -3139,12 +3130,6 @@ body {
       height: 24px;
       margin: 4px;
       width: 24px; }
-
-@-webkit-keyframes lds-ring {
-  0% {
-    transform: rotate(0deg); }
-  100% {
-    transform: rotate(360deg); } }
 
 @keyframes lds-ring {
   0% {
@@ -3467,11 +3452,9 @@ body {
 
 .InlineDropdown {
   cursor: pointer;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   position: relative;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content; }
   .InlineDropdown.open .InlineDropdown_icon, .InlineDropdown:hover .InlineDropdown_icon {
@@ -4423,8 +4406,7 @@ body.confirmation-opened {
       .modalPopup.Open .modalPopup_content .Scrollable {
         margin-right: -8px;
         max-width: 900px;
-        -ms-scroll-chaining: none;
-            overscroll-behavior: contain;
+        overscroll-behavior: contain;
         padding-right: 8px; }
         .modalPopup.Open .modalPopup_content .Scrollable .ListRecords > *:first-child {
           margin-top: 24px; }
@@ -4676,7 +4658,6 @@ body.PanelById.PanelOpened {
         .select2 .select2-selection .select2-selection__rendered .select2-search:only-child {
           width: 100%; }
           .select2 .select2-selection .select2-selection__rendered .select2-search:only-child .select2-search__field {
-            min-width: -webkit-fit-content;
             min-width: -moz-fit-content;
             min-width: fit-content;
             padding-left: 0 !important;
@@ -4687,9 +4668,6 @@ body.PanelById.PanelOpened {
           margin-top: -2px;
           padding-left: 0 !important; }
           .select2 .select2-selection .select2-selection__rendered .select2-search .select2-search__field::-moz-placeholder {
-            color: #adadad;
-            font-family: "LatoRegular"; }
-          .select2 .select2-selection .select2-selection__rendered .select2-search .select2-search__field:-ms-input-placeholder {
             color: #adadad;
             font-family: "LatoRegular"; }
           .select2 .select2-selection .select2-selection__rendered .select2-search .select2-search__field::placeholder {
@@ -5101,7 +5079,6 @@ body.PanelById.PanelOpened {
     height: 30px;
     padding: 6px 12px;
     transition: all 0.1s ease-in-out;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content; }
     .DropZoneButtonThird .DropZoneWrapper .FileUploadDropZone:hover {
@@ -6795,11 +6772,6 @@ input::-moz-placeholder {
   font-size: 16px;
   font-style: italic; }
 
-input:-ms-input-placeholder {
-  color: #adadad;
-  font-size: 16px;
-  font-style: italic; }
-
 input::placeholder {
   color: #adadad;
   font-size: 16px;
@@ -7178,7 +7150,6 @@ td.RowWithAddAction a {
   display: none;
   margin: 0;
   padding: 0 10px;
-  position: -webkit-sticky;
   position: sticky;
   right: 0;
   top: 81px;
@@ -8191,12 +8162,7 @@ td.is-disabled {
   border: 1px solid #00bfa5; }
 
 .InlineDropdown.open span {
-  -webkit-animation: myrotate 2s linear;
-          animation: myrotate 2s linear; }
-
-@-webkit-keyframes myrotate {
-  100% {
-    transform: rotate(180deg); } }
+  animation: myrotate 2s linear; }
 
 @keyframes myrotate {
   100% {
@@ -8282,7 +8248,6 @@ td.is-disabled {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   white-space: nowrap; }
 
@@ -8755,7 +8720,6 @@ span.select2-selection--single:focus,
   height: 28px;
   -webkit-user-select: none;
   -moz-user-select: none;
-   -ms-user-select: none;
        user-select: none; }
 
 .select2-container .select2-selection--single .select2-selection__rendered {
@@ -8804,7 +8768,6 @@ span.select2-selection--single:focus,
   padding: 6px;
   -webkit-user-select: none;
   -moz-user-select: none;
-   -ms-user-select: none;
        user-select: none; }
 
 .select2-results__option[aria-selected] {
@@ -12775,7 +12738,6 @@ pre {
   min-height: 32px;
   -webkit-user-select: none;
   -moz-user-select: none;
-   -ms-user-select: none;
        user-select: none; }
 
 .select2-container .select2-selection--multiple .select2-selection__rendered {
