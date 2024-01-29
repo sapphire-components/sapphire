@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.1.128158 || Generated: Thu Jan 25 2024 12:02:25 GMT+0000 (Western European Standard Time) */
+/*! prod.backoffice.css || Version: 5.1.128158 || Generated: Mon Jan 29 2024 15:46:32 GMT+0000 (Western European Standard Time) */
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
 /* Header */
@@ -2706,7 +2706,7 @@ html,
 
 body {
   background-color: #f3f3f3;
-  margin: 0 0 0 0;
+  margin: 0;
   overflow-x: hidden;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
@@ -4605,7 +4605,7 @@ body.PanelById.PanelOpened {
       border-color: #00bfa5; }
     .select2 .select2-selection:after {
       background-color: #fff;
-      background-image: url("https://atc-dev.outsystemsenterprise.com/Sapphirev2_Th/img/upDownArrows.png");
+      background-image: url("https://dev.nordicplatforms.com/Sapphirev2_Th/img/upDownArrows.png");
       background-position-x: center;
       background-position-y: center;
       background-repeat: no-repeat;

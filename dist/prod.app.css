@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.1.128158 || Generated: Thu Jan 25 2024 12:02:25 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.1.128158 || Generated: Mon Jan 29 2024 15:46:32 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -4630,7 +4630,7 @@ html,
 
 body {
   background-color: #f3f3f3;
-  margin: 0 0 0 0;
+  margin: 0;
   overflow-x: hidden;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
@@ -8509,7 +8509,7 @@ a.LinkReset:link, a.LinkReset:visited {
 .LayoutPopup .FormField select,
 .LayoutBlank .FormField select,
 .LayoutBase .FormField select {
-  background-image: url("https://atc-dev.outsystemsenterprise.com/Sapphirev2_Th/img/upDownArrows.png");
+  background-image: url("https://dev.nordicplatforms.com/Sapphirev2_Th/img/upDownArrows.png");
   background-position: right 14px center;
   background-repeat: no-repeat;
   color: #333333;
@@ -24120,7 +24120,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
       border-color: #00bfa5; }
     .select2 .select2-selection:after {
       background-color: #fff;
-      background-image: url("https://atc-dev.outsystemsenterprise.com/Sapphirev2_Th/img/upDownArrows.png");
+      background-image: url("https://dev.nordicplatforms.com/Sapphirev2_Th/img/upDownArrows.png");
       background-position-x: center;
       background-position-y: center;
       background-repeat: no-repeat;
@@ -26180,7 +26180,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   .ISidebar .ISidebar-content .LayoutBlank .FormField select, .LayoutBlank .FormField .ISidebar .ISidebar-content select,
   .ISidebar .ISidebar-content .LayoutBase .FormField select, .LayoutBase .FormField .ISidebar .ISidebar-content select {
     background-color: #494f5c;
-    background-image: url("https://atc-dev.outsystemsenterprise.com/Sapphirev2_Th/img/sidebarArrow.png");
+    background-image: url("https://dev.nordicplatforms.com/Sapphirev2_Th/img/sidebarArrow.png");
     border: none;
     color: #d6d6d6;
     cursor: pointer; }
