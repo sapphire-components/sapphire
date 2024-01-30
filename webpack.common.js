@@ -28,59 +28,61 @@ module.exports = {
 			banner: `[filebase] || Version: ${package.version} || Generated: ${new Date()}`,
 		}),
 	],
-	node: {
-		fs: 'empty',
+	resolve: {
+		fallback: {
+			fs: false
+		}
 	},
 	module: {
 		rules: [{
-				test: /\.js?$/,
-				exclude: /node_modules/,
-			},
-			{
-				test: /\.s?[ac]ss$/,
-				use: [
-					MiniCssExtractPlugin.loader,
-					{
-						loader: 'css-loader',
-						options: {
-							importLoaders: 2,
-							sourceMap: !isProduction,
-						},
-					},
-					{
-						loader: 'postcss-loader',
-						options: {
-							sourceMap: !isProduction,
-						},
-					},
-					{
-						loader: 'sass-loader',
-						options: {
-							sourceMap: !isProduction,
-							// prependData: () => {
-							// 	const path =
-							// 		isProduction
-							// 			? '/Sapphirev2_Th/fonts/Lato-Regular.ttf'
-							// 			: 'https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i&display=swap';
-							// 	return `$font-url: '${path}';`;
-							// },
-						},
-					},
-				],
-			},
-			{
-				test: /\.(png|jpg|gif)$/,
-				use: {
-					loader: 'file-loader',
+			test: /\.js?$/,
+			exclude: /node_modules/,
+		},
+		{
+			test: /\.s?[ac]ss$/,
+			use: [
+				MiniCssExtractPlugin.loader,
+				{
+					loader: 'css-loader',
 					options: {
-						name: '[name].[ext]',
+						importLoaders: 2,
+						sourceMap: !isProduction,
 					},
 				},
+				{
+					loader: 'postcss-loader',
+					options: {
+						sourceMap: !isProduction,
+					},
+				},
+				{
+					loader: 'sass-loader',
+					options: {
+						sourceMap: !isProduction,
+						// prependData: () => {
+						// 	const path =
+						// 		isProduction
+						// 			? '/Sapphirev2_Th/fonts/Lato-Regular.ttf'
+						// 			: 'https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i&display=swap';
+						// 	return `$font-url: '${path}';`;
+						// },
+					},
+				},
+			],
+		},
+		{
+			test: /\.(png|jpg|gif)$/,
+			use: {
+				loader: 'file-loader',
+				options: {
+					name: '[name].[ext]',
+				},
 			},
-			{
-				test: /\.(woff|woff2|eot|ttf|otf)$/,
-				use: ['file-loader'],
-			},
+		},
+		{
+			test: /\.(woff|woff2|eot|ttf|otf)$/,
+			use: ['file-loader'],
+		},
 		],
 	},
 };

@@ -59,7 +59,7 @@ $styleguide-main-content-padding: 50px;
 		position: relative;
 		width: 100%;
 
-		> .icon {
+		>.icon {
 			@include absolute-center();
 
 			color: $regular-alpha;
@@ -86,7 +86,7 @@ $styleguide-main-content-padding: 50px;
 		flex-direction: column;
 		padding: 10px 10px 5px;
 
-		> a {
+		>a {
 			margin: 10px 0 20px 0;
 
 			.icon {
@@ -103,6 +103,7 @@ $styleguide-main-content-padding: 50px;
 		width: 100%;
 
 		a[ui='button-expand-all'] {
+
 			&:link,
 			&:visited {
 				font-family: $font-family-latin-bold;
@@ -307,17 +308,17 @@ $styleguide-main-content-padding: 50px;
 		&--simple {
 			@extend .DesignSystem__DefaultSection;
 
-			> * {
+			>* {
 				padding: 0 10px;
 			}
 
-			> div:first-child {
+			>div:first-child {
 				@include flex-custom-align(center, unset);
 
 				flex: 1;
 			}
 
-			> div:last-child {
+			>div:last-child {
 				@include flex-custom-align(center, space-between);
 
 				min-width: 550px;
@@ -466,19 +467,19 @@ $styleguide-main-content-padding: 50px;
 			height: auto;
 			width: auto;
 
-			> div:first-child > div {
+			>div:first-child>div {
 				width: 100%;
 			}
 		}
 
-		> div:first-child {
+		>div:first-child {
 			@include flex-center-total;
 
 			flex: 1;
 			padding: 20px 10px;
 		}
 
-		> div:last-child {
+		>div:last-child {
 			font-family: $font-family-latin-bold;
 			font-size: 0.857em;
 			padding: 8px 10px;
@@ -491,6 +492,7 @@ $styleguide-main-content-padding: 50px;
 		width: 100%;
 
 		.AR & {
+
 			.MultiMarginRightSmall,
 			.MultiMarginRightXSmall,
 			.MultiMarginRightMedium,
@@ -499,8 +501,8 @@ $styleguide-main-content-padding: 50px;
 			}
 		}
 
-		> textarea,
-		> input:not([type='checkbox']):not([type='radio']) {
+		>textarea,
+		>input:not([type='checkbox']):not([type='radio']) {
 			display: block;
 			width: 100%;
 		}
@@ -527,7 +529,7 @@ $styleguide-main-content-padding: 50px;
 	&__CardSpacing {
 		border: 1px dashed $mid-light-grey;
 
-		> div {
+		>div {
 			background-color: $regular-beta;
 			height: 50px;
 			width: auto;
@@ -545,7 +547,7 @@ $styleguide-main-content-padding: 50px;
 
 			border: inherit;
 
-			> div {
+			>div {
 				background-color: transparent;
 			}
 		}
