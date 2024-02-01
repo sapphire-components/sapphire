@@ -25,7 +25,7 @@ module.exports = {
 			dry: false,
 		}),
 		new webpack.BannerPlugin({
-			banner: `[filebase] || Version: ${package.version} || Generated: ${new Date()}`,
+			banner: `[base] || Version: ${package.version} || Generated: ${new Date()}`,
 		}),
 	],
 	resolve: {
@@ -84,5 +84,8 @@ module.exports = {
 			use: ['file-loader'],
 		},
 		],
+	},
+	stats: {
+		errorDetails: true,
 	},
 };

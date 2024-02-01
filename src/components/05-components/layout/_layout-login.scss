@@ -7,7 +7,7 @@ form,
 
 .LoginBackground {
 	background: no-repeat;
-	background-image: url('/Login_UI/BackgroundImage.aspx?BackgroundImageId=3');
+	background-image: url($host-name + '/Login_UI/BackgroundImage.aspx?BackgroundImageId=3');
 	background-size: cover;
 	height: 100%;
 	left: 0;
@@ -52,11 +52,9 @@ form,
 	text-align: center;
 }
 
-.LoginMain__fingerPrint {
-}
+.LoginMain__fingerPrint {}
 
-.LoginMain__loginBox {
-}
+.LoginMain__loginBox {}
 
 .LoginMain__loginSamples {
 	background-color: $dark-blue; // #115873;
@@ -96,7 +94,7 @@ form,
 	width: 100%;
 }
 
-.LoginMain__fingerPrint > .LoginBox {
+.LoginMain__fingerPrint>.LoginBox {
 	width: 258px;
 }
 
@@ -131,7 +129,7 @@ form,
 	width: 96px;
 }
 
-.LoginMain__fingerPrint > div {
+.LoginMain__fingerPrint>div {
 	display: inline-block;
 }
 
@@ -147,7 +145,7 @@ form,
 	width: 40px !important;
 }
 
-.BorderOr > span {
+.BorderOr>span {
 	color: #063f4c;
 	font-size: 14px;
 	font-weight: 400;
@@ -175,11 +173,11 @@ form,
 	width: 100% !important;
 }
 
-.LoginForm_action a > div:first-child {
+.LoginForm_action a>div:first-child {
 	text-align: left;
 }
 
-.LoginForm_action a > div:last-child {
+.LoginForm_action a>div:last-child {
 	text-align: right;
 }
 
@@ -194,7 +192,7 @@ form,
 	vertical-align: middle;
 }
 
-.LoginMain__loginSamples .ListRecords > div:last-child .SampleUserLine {
+.LoginMain__loginSamples .ListRecords>div:last-child .SampleUserLine {
 	border-bottom: none;
 }
 

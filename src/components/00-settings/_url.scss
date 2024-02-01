@@ -1,2 +1,4 @@
-$icon-arrow-up-down: 'https://dev.nordicplatforms.com/Sapphirev2_Th/img/upDownArrows.png';
-$icon-arrow-sideBar: 'https://dev.nordicplatforms.com/Sapphirev2_Th/img/sidebarArrow.png';
+$host-name: 'https://dev.nordicplatforms.com';
+
+$icon-arrow-up-down: $host-name + '/Sapphirev2_Th/img/upDownArrows.png';
+$icon-arrow-sideBar: $host-name + '/Sapphirev2_Th/img/sidebarArrow.png';

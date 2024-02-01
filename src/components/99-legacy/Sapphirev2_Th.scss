@@ -16840,7 +16840,7 @@ a.Button.Icon:hover {
 }
 
 a.qq-button {
-  background: transparent url(/MultipleFileUpload/img/gray_a.png?301693&67436) no-repeat scroll top right;
+  background: transparent url($host-name + '/MultipleFileUpload/img/gray_a.png') no-repeat scroll top right;
   color: #0c2543;
   float: left;
   font-size: 1.5rem;
@@ -16850,7 +16850,7 @@ a.qq-button {
 }
 
 a.qq-button span {
-  background: transparent url(/MultipleFileUpload/img/gray_span.png?301693&67436) no-repeat;
+  background: transparent url($host-name + '/MultipleFileUpload/img/gray_span.png') no-repeat;
   line-height: 39px;
   padding: 9px 20px 15px 25px;
 }
@@ -16914,7 +16914,7 @@ a.qq-button span {
 }
 
 .qq-upload-spinner {
-  background: url('/Sapphirev2_Th/img/loading.gif?301693&82460');
+  background: url($host-name + '/Sapphirev2_Th/img/loading.gif');
   display: inline-block;
   height: 15px;
   vertical-align: text-bottom;
@@ -18363,7 +18363,7 @@ canvas.Sketch_Canvas {
 /*-------------------------------------------------------------------------------------*/
 
 .imgplace {
-  background-image: url('/Sapphirev2_Th/img/placeholder_bg.png?301693&82460');
+  background-image: url($host-name + '/Sapphirev2_Th/img/placeholder_bg.png');
   background-size: 100%;
   border: 2px solid #ccc;
   border-radius: 2px;
@@ -23555,7 +23555,7 @@ DAR: Tooltip css from silk UI theme applied in WB so we can use it in pages with
 /* 9.155 Sapphire Patterns > RoomCard */
 .RoomWrapp {
   background-color: #fff;
-  background-image: url(/Sandbox_CAJ/img/RoomBackground.png?285162&300119&78050);
+  background-image: url($host-name + '/Sandbox_CAJ/img/RoomBackground.png');
   background-position: right top;
   background-repeat: no-repeat;
   border: solid 1px #ccc;

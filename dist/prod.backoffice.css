@@ -1,4 +1,7 @@
-/*! prod.backoffice.css || Version: 5.1.128159 || Generated: Mon Jan 29 2024 15:48:44 GMT+0000 (Western European Standard Time) */
+/*! prod.backoffice.css || Version: 5.1.128159 || Generated: Thu Feb 01 2024 18:04:17 GMT+0000 (Western European Standard Time) */
+/*!***************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/backoffice/styles.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************/
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
 /* Header */
@@ -7500,7 +7503,7 @@ div.os-internal-Popup.os-internal-ui-dialog .os-internal-ui-dialog-titlebar-clos
   transform: none;
 }*/
 div.os-internal-Popup.os-internal-ui-dialog .os-internal-ui-dialog-titlebar-close-no-title {
-  background: url(/WebPatterns/img/PopupCloseDark.png?239989&508700&508700) no-repeat;
+  background: url("https://dev.nordicplatforms.com/WebPatterns/img/PopupCloseDark.png") no-repeat;
   height: 20px;
   right: 20px;
   top: 5px;
