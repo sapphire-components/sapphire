@@ -37,6 +37,7 @@
 
 	&__infoFileDelete {
 		&.delete a {
+
 			&,
 			&:hover,
 			&:active,
@@ -58,14 +59,15 @@
 		margin-top: $sapphire-sizes--medium;
 		width: 100%;
 
-		> div > div {
+		>div>div {
 			display: table-cell;
 			margin-right: 10px;
 			vertical-align: middle;
 		}
 
 		.Button {
-			@extend a.Button;
+			//@extend a.Button;
+			@extend a, .Button;
 
 			margin-left: 0;
 		}

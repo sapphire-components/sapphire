@@ -93,7 +93,8 @@
 
 			.PatientCallCancel {
 				[ui='data-button-call'] {
-					@extend .Button.Third;
+					//@extend .Button.Third;
+					@extend .Button, .Third;
 				}
 			}
 		}
