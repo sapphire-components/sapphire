@@ -29,5 +29,6 @@ module.exports = merge(common, {
 		hot: false,
 		liveReload: false,
 		port: 3000,
+		host: 'localhost',
 	},
 });
