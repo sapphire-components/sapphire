@@ -11,11 +11,18 @@
 You will need
 
 ```
-Node (recommended version 12.14 or higher)
-VSCode
+Node (recommended version 21.6 or higher)
+Visual Studio Code
 ```
 
 ### Commands
+
+Install node
+
+```
+nvm install v21.6.1
+// or 'nvm install node' for latest version
+```
 
 Installing dependencies
 
@@ -32,8 +39,8 @@ npm run dev
 Building and publishing a new version
 
 ```
-npm run release:patch (eg 5.0.123 -> 5.0.124)
-npm run release:minor (eg 5.1 -> 5.2)
+npm run release:patch (eg 5.2.123 -> 5.2.124)
+npm run release:minor (eg 5.2 -> 5.3)
 npm run release:major (eg 5.0 -> 6.0)
 ```
 
