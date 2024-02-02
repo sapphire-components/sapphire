@@ -14,6 +14,7 @@ You will need
 node.js (recommended version 21.6 or higher)
 Visual Studio Code
 ```
+You can download Visual Studio Code at [https://code.visualstudio.com/download](https://code.visualstudio.com/download).
 
 ### Commands
 
