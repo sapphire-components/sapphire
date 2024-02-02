@@ -92,9 +92,11 @@
 			margin-left: $sapphire-sizes--medium;
 
 			.PatientCallCancel {
-				[ui='data-button-call'] {
+
+				//[ui='data-button-call'] {
+				[ui='data-button-call'].Button {
 					//@extend .Button.Third;
-					@extend .Button, .Third;
+					@extend .Third;
 				}
 			}
 		}

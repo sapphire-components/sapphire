@@ -65,10 +65,10 @@
 			vertical-align: middle;
 		}
 
-		.Button {
+		//.Button {
+		a.Button {
 			//@extend a.Button;
-			@extend a, .Button;
-
+			@extend .Button;
 			margin-left: 0;
 		}
 	}
