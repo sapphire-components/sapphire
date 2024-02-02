@@ -23,7 +23,7 @@ Install node
 ```
 nvm install v21.6.1
 ```
-or for node's latest version:
+or, if you want to get node's latest version, use:
 
 ```
 nvm install node
