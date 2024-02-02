@@ -21,10 +21,6 @@ Install node
 
 ```
 nvm install v21.6.1
-<<<<<<< HEAD
-// or 'nvm install node' for latest version
-```
-=======
 ```
 or
 
@@ -32,7 +28,6 @@ or
 nvm install node
 ```
 for node's latest version.
->>>>>>> d45b0afc52dd8965d1185e72ba7132ed19938db8
 
 Installing dependencies
 
