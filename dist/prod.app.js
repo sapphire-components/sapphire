@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.2.1 || Generated: Fri Feb 02 2024 12:19:25 GMT+0000 (Western European Standard Time) */
+/*! prod.app.js || Version: 5.2.2 || Generated: Fri Feb 02 2024 12:20:52 GMT+0000 (Western European Standard Time) */
 /*
  * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
  * This devtool is neither made for production nor for readable output files.
