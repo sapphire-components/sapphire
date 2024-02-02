@@ -11,7 +11,7 @@
 You will need
 
 ```
-Node (recommended version 21.6 or higher)
+node.js (recommended version 21.6 or higher)
 Visual Studio Code
 ```
 
