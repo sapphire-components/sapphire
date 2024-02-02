@@ -10,7 +10,6 @@ module.exports = merge(common, {
 	output: {
 		filename: 'dev.[name].js',
 	},
-	watch: false,
 	plugins: [
 		new webpack.HotModuleReplacementPlugin(),
 		new MiniCssExtractPlugin({
@@ -20,7 +19,9 @@ module.exports = merge(common, {
 	devtool: 'inline-source-map',
 	devServer: {
 		static: path.join(__dirname, 'dist'),
-		https: true,
+		server: {
+			type: 'https',
+		},
 		devMiddleware: {
 			writeToDisk: true,
 		},
