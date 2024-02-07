@@ -32,7 +32,7 @@ SapphireWidgets.SelectSystem = config => {
 		}
 		
 		Select2Options.theme = 'default SelectSystem';
-		Select2Options.width = 'style';
+		Select2Options.width = 'resolve';
 
 		/*  
           Change select2 search display 
