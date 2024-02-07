@@ -66,17 +66,10 @@ module.exports = {
 			},
 			{
 				test: /\.(png|jpg|jpeg|svg|gif)$/,
-				/*use: {
-					loader: 'file-loader',
-					options: {
-						name: '[name].[ext]',
-					},
-				},*/
 				type: 'asset/resource',
 			},
 			{
 				test: /\.(woff|woff2|eot|ttf|otf)$/,
-				//use: ['file-loader'],
 				type: 'asset/resource',
 			},
 		],
