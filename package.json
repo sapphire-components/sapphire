@@ -1,8 +1,26 @@
 {
 	"name": "sapphire",
-	"version": "5.3.0",
-	"description": "",
-	"main": "index.js",
+	"version": "5.3.1",
+	"description": "Styles and scripts for Sapphire HMS design system.",
+	"keywords": [
+		"design system",
+		"sapphire",
+		"hms",
+		"style guide",
+		"patterns",
+		"css",
+		"javascript"
+	],
+	"homepage": "https://dev.nordicplatforms.com/StyleGuideV2_UI/Instructions.aspx",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sapphire-components/sapphire"
+	},
+	"author": {
+		"name": "António Carvalho",
+		"email": "antonio.carvalho@outsystems.com",
+		"url": "https://www.linkedin.com/in/carvalhoantonio/"
+	},
 	"scripts": {
 		"dev": "set NODE_ENV=development && webpack-dev-server --config webpack.dev.js",
 		"prod": "set NODE_ENV=production && webpack --config webpack.prod.js",
@@ -11,7 +29,6 @@
 		"release:minor": "release-it minor --git.requireBranch=main && npm run new:build",
 		"release:major": "release-it major --git.requireBranch=main && npm run new:build"
 	},
-	"author": "",
 	"license": "ISC",
 	"devDependencies": {
 		"autoprefixer": "^10.4.17",
