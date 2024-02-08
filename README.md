@@ -51,4 +51,5 @@ npm run release:major (eg 5.0 -> 6.0)
 
 ## Deployment
 
+Now how to publish it on [Sapphire Style Guide](https://dev.nordicplatforms.com/StyleGuideV2_UI/Instructions.aspx#Docs-PublishingVersion).
 ---
