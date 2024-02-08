@@ -30,7 +30,6 @@
 			this.openMenuItem(0);
 		}
 		$(function() {
-			console.log(this.$showLastViewed);
 
 			if (!config.isExpandable) {
 				$(`.${config.selectedTab}`).click();
