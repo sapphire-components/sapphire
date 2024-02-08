@@ -1,11 +1,9 @@
 const path = require('path');
 const webpack = require('webpack');
 const package = require('./package.json');
-const {
-	CleanWebpackPlugin
-} = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const outputPath = path.join(__dirname, 'dist');
+const outputPath = path.resolve(__dirname, 'dist');
 const isProduction = process.env.NODE_ENV === 'production ';
 
 module.exports = {
