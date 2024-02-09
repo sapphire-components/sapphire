@@ -5,40 +5,20 @@
   References: you can then search easily for its usage using the variable name.
   Consistency: if you need to update the image, no need to go into several places: just change here.
 
-  The $DEV-<something> variables are used to serve the resources from the web server and not localhost.
-  This is done in this way and not using variables for url() because css-loader is ignoring url. See webpack.common.js .
-  If otherwise we use url: true (or remove the option) the bundlig process returns errors because it can't find the resources.
-
 */
 
-$icon__arrow-up-down: url('/Sapphirev2_Th/img/upDownArrows.png');
-$DEV-icon__arrow-up-down: url('https://dev.nordicplatforms.com/Sapphirev2_Th/img/upDownArrows.png');
-
-$icon__arrow-sideBar: url('/Sapphirev2_Th/img/sidebarArrow.png');
-$DEV-icon__arrow-sideBar: url('https://dev.nordicplatforms.com/Sapphirev2_Th/img/sidebarArrow.png');
-
-$icon__background-image--3: url('/Login_UI/BackgroundImage.aspx?BackgroundImageId=3');
-$DEV-icon__background-image--3: url('https://dev.nordicplatforms.com/Login_UI/BackgroundImage.aspx?BackgroundImageId=3');
-
-$icon__loading: url('/Sapphirev2_Th/img/loading.gif');
-$DEV-icon__loading: url('https://dev.nordicplatforms.com/Sapphirev2_Th/img/loading.gif');
-
-$icon__placeholder-bg: url('/Sapphirev2_Th/img/placeholder_bg.png');
-$DEV-icon__placeholder-bg: url('https://dev.nordicplatforms.com/Sapphirev2_Th/img/placeholder_bg.png');
-
 body {
-  --icon__arrow-up-down: $icon__arrow-up-down;
-  --icon__arrow-sideBar: $icon__arrow-sideBar;
-  --icon__background-image--3: $icon__background-image--3;
-  --icon__loading: $icon__loading;
-  --icon__placeholder-bg: $icon__placeholder-bg;
+  --icon__arrow-up-down: url('/Sapphirev2_Th/img/upDownArrows.png');
+  --icon__arrow-sideBar: url('/Sapphirev2_Th/img/sidebarArrow.png');
+  --icon__background-image--3: url('/Login_UI/BackgroundImage.aspx?BackgroundImageId=3');
+  --icon__loading: url('/Sapphirev2_Th/img/loading.gif');
+  --icon__placeholder-bg: url('/Sapphirev2_Th/img/placeholder_bg.png');
 }
 
 body.webpack-dev {
-  /* class webpack-dev is added by script ./src/styleguide/script_dev.js */
-  --icon__arrow-up-down: $DEV-icon__arrow-up-down;
-  --icon__arrow-sideBar: $DEV-icon__arrow-sideBar;
-  --icon__background-image--3: $DEV-icon__background-image--3;
-  --icon__loading: $DEV-icon__loading;
-  --icon__placeholder-bg: $DEV-icon__placeholder-bg;
+  --icon__arrow-up-down: url('https://dev.nordicplatforms.com/Sapphirev2_Th/img/upDownArrows.png');
+  --icon__arrow-sideBar: url('https://dev.nordicplatforms.com/Sapphirev2_Th/img/sidebarArrow.png');
+  --icon__background-image--3: url('https://dev.nordicplatforms.com/Login_UI/BackgroundImage.aspx?BackgroundImageId=3');
+  --icon__loading: url('https://dev.nordicplatforms.com/Sapphirev2_Th/img/loading.gif');
+  --icon__placeholder-bg: url('https://dev.nordicplatforms.com/Sapphirev2_Th/img/placeholder_bg.png');
 }

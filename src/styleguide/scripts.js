@@ -1,4 +1,3 @@
-require('./script_dev.js');
 require('./styles.scss');
 
 (function ($, window, SapphireWidgets) {
