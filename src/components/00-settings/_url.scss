@@ -1,4 +1,12 @@
-$host-name: '';
+/*
+  Reusable images should go here and be used as variables.
+  
+  References: you can then search easily for its usage using the variable name.
+  Consistency: if you need to update the image, no need to go into several places: just change here.
+*/
 
-$icon-arrow-up-down: '/Sapphirev2_Th/img/upDownArrows.png';
-$icon-arrow-sideBar: '/Sapphirev2_Th/img/sidebarArrow.png';
+$icon__arrow-up-down: '/Sapphirev2_Th/img/upDownArrows.png';
+$icon__arrow-sideBar: '/Sapphirev2_Th/img/sidebarArrow.png';
+$icon__background-image--3: '/Login_UI/BackgroundImage.aspx?BackgroundImageId=3';
+$icon__loading: '/Sapphirev2_Th/img/loading.gif';
+$icon__placeholder-bg: '/Sapphirev2_Th/img/placeholder_bg.png';

@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.3.1 || Generated: Fri Feb 09 2024 10:47:28 GMT+0000 (Western European Standard Time) */
+/*! prod.backoffice.css || Version: 5.3.1 || Generated: Fri Feb 09 2024 12:15:32 GMT+0000 (Western European Standard Time) */
 /*!***************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/backoffice/styles.scss ***!
   \***************************************************************************************************************************************************************************************************************************************************/
@@ -6,6 +6,12 @@
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
 /* Header */
+/*
+  Reusable images should go here and be used as variables.
+
+  References: you can then search easily for its usage using the variable name.
+  Consistency: if you need to update the image, no need to go into several places: just change here.
+*/
 /* SapphireIcon */
 .icon {
   font-family: "Sapphire-Icon-Font";
@@ -9006,7 +9012,7 @@ div.os-internal-Popup.os-internal-ui-dialog .os-internal-ui-dialog-titlebar-clos
   transform: none;
 }*/
 div.os-internal-Popup.os-internal-ui-dialog .os-internal-ui-dialog-titlebar-close-no-title {
-  background: url("https://dev.nordicplatforms.com/WebPatterns/img/PopupCloseDark.png") no-repeat;
+  background: url("/WebPatterns/img/PopupCloseDark.png") no-repeat;
   height: 20px;
   right: 20px;
   top: 5px;

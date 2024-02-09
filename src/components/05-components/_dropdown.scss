@@ -1,5 +1,5 @@
 .Dropdown {
-	background-image: url($icon-arrow-up-down);
+	background-image: url($icon__arrow-up-down);
 	background-position: right 14px center;
 	background-repeat: no-repeat;
 	color: $dark-grey;
@@ -23,7 +23,7 @@
 			border-left: 3px solid $regular-red !important;
 			border-top-right-radius: 0;
 
-			+ .SelectSystem .select2-selection {
+			+.SelectSystem .select2-selection {
 				border: solid 1px $regular-red;
 				border-left: 3px solid $regular-red !important;
 			}

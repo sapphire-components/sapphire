@@ -33,6 +33,7 @@
 	width: 0;
 
 	@if $clean-icon {
+
 		&:after,
 		&:before {
 			content: '';
@@ -42,7 +43,7 @@
 
 @mixin up-down-arrows {
 	background-color: $regular-white;
-	background-image: url($icon-arrow-up-down);
+	background-image: url($icon__arrow-up-down);
 	background-position-x: center;
 	background-position-y: center;
 	background-repeat: no-repeat;
