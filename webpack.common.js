@@ -44,6 +44,7 @@ module.exports = {
 					{
 						loader: 'css-loader',
 						options: {
+							url: false,
 							importLoaders: 2,
 							sourceMap: !isProduction,
 						},
@@ -70,6 +71,19 @@ module.exports = {
 				test: /\.(woff|woff2|eot|ttf|otf)$/,
 				type: 'asset/resource',
 			},
+			/*{
+				test: /\.(png|jpg|jpeg|svg|gif)$/,
+				use: {
+					loader: 'file-loader',
+					options: {
+						name: '[name].[ext]',
+					},
+				},
+			},
+			{
+				test: /\.(woff|woff2|eot|ttf|otf)$/,
+				use: ['file-loader'],
+			},*/
 		],
 	},
 	stats: {
