@@ -1,5 +1,5 @@
 .Dropdown {
-	background-image: url($icon__arrow-up-down);
+	background-image: var(--icon__arrow-up-down);
 	background-position: right 14px center;
 	background-repeat: no-repeat;
 	color: $dark-grey;

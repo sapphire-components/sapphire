@@ -7,6 +7,16 @@ module.exports = merge(common, {
 	output: {
 		filename: 'prod.[name].js',
 	},
+	module: {
+		rules: [
+			{
+				test: /\.js$/,
+				exclude: [
+					'/src/styleguide/script_dev.js',
+				]
+			}
+		]
+	},
 	plugins: [
 		new MiniCssExtractPlugin({
 			filename: 'prod.[name].css',

@@ -35,7 +35,7 @@
 
 		.Dropdown {
 			background-color: $sapphire-grey-blue;
-			background-image: url($icon__arrow-sideBar);
+			background-image: var(--icon__arrow-sideBar);
 			border: none;
 			color: $light-grey;
 			cursor: pointer;
