@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.2 || Generated: Sat Feb 10 2024 00:40:55 GMT+0000 (Western European Standard Time) */
+/*! prod.app.js || Version: 5.5.2 || Generated: Sat Feb 10 2024 00:45:33 GMT+0000 (Western European Standard Time) */
 /*
  * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
  * This devtool is neither made for production nor for readable output files.
@@ -37,7 +37,7 @@ eval("__webpack_require__(/*! ./components/index.scss */ \"./src/components/inde
   \**********************************************/
 /***/ (function() {
 
-eval("SapphireWidgets = window.SapphireWidgets = window.SapphireWidgets || {};\r\n\r\n(function () {\r\n  const isDevelopment = \"development\" === 'development';\r\n\r\n  if (!isDevelopment) {\r\n    return;\r\n  }\r\n\r\n  /*\r\n  Adding this class allows to build js/css specific for dev purposes.\r\n  */\r\n  document.querySelector('body').classList.add('webpack-dev');\r\n})();\n\n//# sourceURL=webpack://sapphire/./src/components/00-settings/config.js?");
+eval("SapphireWidgets = window.SapphireWidgets = window.SapphireWidgets || {};\n\n//# sourceURL=webpack://sapphire/./src/components/00-settings/config.js?");
 
 /***/ }),
 

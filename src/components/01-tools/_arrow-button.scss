@@ -43,7 +43,7 @@
 
 @mixin up-down-arrows {
 	background-color: $regular-white;
-	background-image: var(--icon__arrow-up-down);
+	background-image: $icon__arrow-up-down;
 	background-position-x: center;
 	background-position-y: center;
 	background-repeat: no-repeat;

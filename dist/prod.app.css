@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.2 || Generated: Sat Feb 10 2024 00:40:55 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.5.2 || Generated: Sat Feb 10 2024 00:45:33 GMT+0000 (Western European Standard Time) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -14,22 +14,6 @@
   Consistency: if you need to update the image, no need to go into several places: just change here.
 
 */
-body {
-  --icon__arrow-up-down: url("/Sapphirev2_Th/img/upDownArrows.png");
-  --icon__arrow-sideBar: url("/Sapphirev2_Th/img/sidebarArrow.png");
-  --icon__background-image--3: url("/Login_UI/BackgroundImage.aspx?BackgroundImageId=3");
-  --icon__loading: url("/Sapphirev2_Th/img/loading.gif");
-  --icon__placeholder-bg: url("/Sapphirev2_Th/img/placeholder_bg.png");
-}
-
-body.webpack-dev {
-  --icon__arrow-up-down: url("https://dev.nordicplatforms.com/Sapphirev2_Th/img/upDownArrows.png");
-  --icon__arrow-sideBar: url("https://dev.nordicplatforms.com/Sapphirev2_Th/img/sidebarArrow.png");
-  --icon__background-image--3: url("https://dev.nordicplatforms.com/Login_UI/BackgroundImage.aspx?BackgroundImageId=3");
-  --icon__loading: url("https://dev.nordicplatforms.com/Sapphirev2_Th/img/loading.gif");
-  --icon__placeholder-bg: url("https://dev.nordicplatforms.com/Sapphirev2_Th/img/placeholder_bg.png");
-}
-
 /* SapphireIcon */
 .icon {
   font-family: "Sapphire-Icon-Font";
@@ -7649,7 +7633,7 @@ a.LinkReset:link, a.LinkReset:visited {
 .LayoutPopup .FormField select,
 .LayoutBlank .FormField select,
 .LayoutBase .FormField select {
-  background-image: var(--icon__arrow-up-down);
+  background-image: url("/Sapphirev2_Th/img/upDownArrows.png");
   background-position: right 14px center;
   background-repeat: no-repeat;
   color: #333333;
@@ -11634,7 +11618,7 @@ form,
 
 .LoginBackground {
   background: no-repeat;
-  background-image: var(--icon__background-image--3);
+  background-image: url("/Login_UI/BackgroundImage.aspx?BackgroundImageId=3");
   background-size: cover;
   height: 100%;
   left: 0;
@@ -26420,7 +26404,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 }
 .select2 .select2-selection:after {
   background-color: #fff;
-  background-image: var(--icon__arrow-up-down);
+  background-image: url("/Sapphirev2_Th/img/upDownArrows.png");
   background-position-x: center;
   background-position-y: center;
   background-repeat: no-repeat;
@@ -28870,7 +28854,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .ISidebar .ISidebar-content .LayoutBase .FormField select,
 .LayoutBase .FormField .ISidebar .ISidebar-content select {
   background-color: #494f5c;
-  background-image: var(--icon__arrow-sideBar);
+  background-image: url("/Sapphirev2_Th/img/sidebarArrow.png");
   border: none;
   color: #d6d6d6;
   cursor: pointer;
@@ -42998,7 +42982,7 @@ a.qq-button span {
 }
 
 .qq-upload-spinner {
-  background: var(--icon__loading);
+  background: url("/Sapphirev2_Th/img/loading.gif");
   display: inline-block;
   height: 15px;
   vertical-align: text-bottom;
@@ -43902,7 +43886,7 @@ canvas.Sketch_Canvas {
 /* 9.100 Sapphire Patterns > SapphireWidgets > ImagePlaceholder *********/
 /*-------------------------------------------------------------------------------------*/
 .imgplace {
-  background-image: var(--icon__placeholder-bg);
+  background-image: url("/Sapphirev2_Th/img/placeholder_bg.png");
   background-size: 100%;
   border: 2px solid #ccc;
   border-radius: 2px;
