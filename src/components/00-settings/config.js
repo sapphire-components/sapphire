@@ -1,10 +1,15 @@
 SapphireWidgets = window.SapphireWidgets = window.SapphireWidgets || {};
 
-const isProduction = process.env.NODE_ENV === 'production';
+(function () {
+  const isProduction = process.env.NODE_ENV === 'production';
 
-if (!isProduction) {
-  /*
+  if (isProduction) {
+    return;
+  }
+  else {
+    /*
     Adding this class allows to build js/css specific for dev purposes.
-   */
-  document.querySelector('body').classList.add('webpack-dev');
-}
+    */
+    document.querySelector('body').classList.add('webpack-dev');
+  }
+})();
