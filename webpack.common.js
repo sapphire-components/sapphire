@@ -44,7 +44,18 @@ module.exports = {
 					{
 						loader: 'css-loader',
 						options: {
-							url: false,
+							url: {
+								filter: (url, resourcePath) => {
+									// resourcePath - path to css file
+
+									// Don't handle `server root related` URLs (the paths starting with '/').
+									if (url.match(/^\//)) {
+										return false;
+									}
+
+									return true;
+								},
+							},
 							importLoaders: 2,
 							sourceMap: !isProduction,
 						},
