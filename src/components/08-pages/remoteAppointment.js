@@ -191,6 +191,8 @@
 	const setCallStarted = () => {};
 
 	const fakeAjaxRefresh = () => {
+		// Not sure what was the idea here, but it doesn't work because onbeforeunload only triggers the browser confirmation and ignores any code inside
+		/*
 		const $iframe = $('.SapphireFrame');
 
 		$iframe.on('load', function() {
@@ -199,7 +201,7 @@
 			};
 
 			$('.Feedback_AjaxWait').hide();
-		});
+		});*/
 	};
 
 	const openModalLeaveContext = url => {
