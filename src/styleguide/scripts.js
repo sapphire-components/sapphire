@@ -1,6 +1,6 @@
 require('./styles.scss');
 
-(function($, window, SapphireWidgets) {
+(function ($, window, SapphireWidgets) {
 	const create = config => {
 		this.$aside = $('.DesignSystem__Aside');
 		this.$filterInput = $('#' + config.filterInput);
@@ -135,7 +135,7 @@ require('./styles.scss');
 				if (hash === title || (!hash && !title)) {
 					$(el).addClass('active');
 
-					setTimeout(function() {
+					setTimeout(function () {
 						if (!!$(el).closest('.DesignSystem__MenuSubSection').length) {
 							$(el)
 								.closest('.DesignSystem__MenuSubSection')

@@ -1,11 +1,9 @@
 const path = require('path');
 const webpack = require('webpack');
 const package = require('./package.json');
-const {
-	CleanWebpackPlugin
-} = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const outputPath = path.join(__dirname, 'dist');
+const outputPath = path.resolve(__dirname, 'dist');
 const isProduction = process.env.NODE_ENV === 'production ';
 
 module.exports = {
@@ -46,6 +44,18 @@ module.exports = {
 					{
 						loader: 'css-loader',
 						options: {
+							url: {
+								filter: (url, resourcePath) => {
+									// resourcePath - path to css file
+
+									// Don't handle `server root related` URLs (the paths starting with '/').
+									if (url.match(/^\//)) {
+										return false;
+									}
+
+									return true;
+								},
+							},
 							importLoaders: 2,
 							sourceMap: !isProduction,
 						},

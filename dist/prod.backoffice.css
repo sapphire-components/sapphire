@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.3.1 || Generated: Thu Feb 08 2024 13:01:12 GMT+0000 (Western European Standard Time) */
+/*! prod.backoffice.css || Version: 5.5.6 || Generated: Mon Feb 12 2024 13:20:53 GMT+0000 (Western European Standard Time) */
 /*!***************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/backoffice/styles.scss ***!
   \***************************************************************************************************************************************************************************************************************************************************/
@@ -6,6 +6,14 @@
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
 /* Header */
+/*
+
+  Reusable images should go here and be used as variables.
+
+  References: you can then search easily for its usage using the variable name.
+  Consistency: if you need to update the image, no need to go into several places: just change here.
+
+*/
 /* SapphireIcon */
 .icon {
   font-family: "Sapphire-Icon-Font";
@@ -5601,7 +5609,7 @@ body.PanelById.PanelOpened {
 }
 .select2 .select2-selection:after {
   background-color: #fff;
-  background-image: url("https://dev.nordicplatforms.com/Sapphirev2_Th/img/upDownArrows.png");
+  background-image: url("/Sapphirev2_Th/img/upDownArrows.png");
   background-position-x: center;
   background-position-y: center;
   background-repeat: no-repeat;
@@ -9006,7 +9014,7 @@ div.os-internal-Popup.os-internal-ui-dialog .os-internal-ui-dialog-titlebar-clos
   transform: none;
 }*/
 div.os-internal-Popup.os-internal-ui-dialog .os-internal-ui-dialog-titlebar-close-no-title {
-  background: url("https://dev.nordicplatforms.com/WebPatterns/img/PopupCloseDark.png") no-repeat;
+  background: url("/WebPatterns/img/PopupCloseDark.png") no-repeat;
   height: 20px;
   right: 20px;
   top: 5px;

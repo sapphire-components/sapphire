@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.3.1 || Generated: Thu Feb 08 2024 13:01:12 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.5.6 || Generated: Mon Feb 12 2024 13:20:53 GMT+0000 (Western European Standard Time) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -6,6 +6,14 @@
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
 /* Header */
+/*
+
+  Reusable images should go here and be used as variables.
+
+  References: you can then search easily for its usage using the variable name.
+  Consistency: if you need to update the image, no need to go into several places: just change here.
+
+*/
 /* SapphireIcon */
 .icon {
   font-family: "Sapphire-Icon-Font";
@@ -7625,7 +7633,7 @@ a.LinkReset:link, a.LinkReset:visited {
 .LayoutPopup .FormField select,
 .LayoutBlank .FormField select,
 .LayoutBase .FormField select {
-  background-image: url("https://dev.nordicplatforms.com/Sapphirev2_Th/img/upDownArrows.png");
+  background-image: url("/Sapphirev2_Th/img/upDownArrows.png");
   background-position: right 14px center;
   background-repeat: no-repeat;
   color: #333333;
@@ -11610,7 +11618,7 @@ form,
 
 .LoginBackground {
   background: no-repeat;
-  background-image: url("https://dev.nordicplatforms.com/Login_UI/BackgroundImage.aspx?BackgroundImageId=3");
+  background-image: url("/Login_UI/BackgroundImage.aspx?BackgroundImageId=3");
   background-size: cover;
   height: 100%;
   left: 0;
@@ -26396,7 +26404,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 }
 .select2 .select2-selection:after {
   background-color: #fff;
-  background-image: url("https://dev.nordicplatforms.com/Sapphirev2_Th/img/upDownArrows.png");
+  background-image: url("/Sapphirev2_Th/img/upDownArrows.png");
   background-position-x: center;
   background-position-y: center;
   background-repeat: no-repeat;
@@ -28846,7 +28854,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .ISidebar .ISidebar-content .LayoutBase .FormField select,
 .LayoutBase .FormField .ISidebar .ISidebar-content select {
   background-color: #494f5c;
-  background-image: url("https://dev.nordicplatforms.com/Sapphirev2_Th/img/sidebarArrow.png");
+  background-image: url("/Sapphirev2_Th/img/sidebarArrow.png");
   border: none;
   color: #d6d6d6;
   cursor: pointer;
@@ -42900,7 +42908,7 @@ a.Button.Icon:hover {
 }
 
 a.qq-button {
-  background: transparent url("https://dev.nordicplatforms.com/MultipleFileUpload/img/gray_a.png") no-repeat scroll top right;
+  background: transparent url("/MultipleFileUpload/img/gray_a.png") no-repeat scroll top right;
   color: #0c2543;
   float: left;
   font-size: 1.5rem;
@@ -42910,7 +42918,7 @@ a.qq-button {
 }
 
 a.qq-button span {
-  background: transparent url("https://dev.nordicplatforms.com/MultipleFileUpload/img/gray_span.png") no-repeat;
+  background: transparent url("/MultipleFileUpload/img/gray_span.png") no-repeat;
   line-height: 39px;
   padding: 9px 20px 15px 25px;
 }
@@ -42974,7 +42982,7 @@ a.qq-button span {
 }
 
 .qq-upload-spinner {
-  background: url("https://dev.nordicplatforms.com/Sapphirev2_Th/img/loading.gif");
+  background: url("/Sapphirev2_Th/img/loading.gif");
   display: inline-block;
   height: 15px;
   vertical-align: text-bottom;
@@ -43878,7 +43886,7 @@ canvas.Sketch_Canvas {
 /* 9.100 Sapphire Patterns > SapphireWidgets > ImagePlaceholder *********/
 /*-------------------------------------------------------------------------------------*/
 .imgplace {
-  background-image: url("https://dev.nordicplatforms.com/Sapphirev2_Th/img/placeholder_bg.png");
+  background-image: url("/Sapphirev2_Th/img/placeholder_bg.png");
   background-size: 100%;
   border: 2px solid #ccc;
   border-radius: 2px;
@@ -45140,7 +45148,6 @@ DAR: Tooltip css from silk UI theme applied in WB so we can use it in pages with
 /* 9.155 Sapphire Patterns > RoomCard */
 .RoomWrapp {
   background-color: #fff;
-  background-image: url("https://dev.nordicplatforms.com/Sandbox_CAJ/img/RoomBackground.png");
   background-position: right top;
   background-repeat: no-repeat;
   border: solid 1px #ccc;
