@@ -127,6 +127,7 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 		> div > .MainInteractiveCard-body {
 			.MainInteractiveCard-absolute-actions {
 				line-height: $card-small-size-base;
+				top: 0px;
 			}
 		}
 
