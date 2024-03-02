@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.7 || Generated: Wed Feb 28 2024 16:14:09 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.5.7 || Generated: Sat Mar 02 2024 04:28:38 GMT+0000 (Western European Standard Time) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -11553,10 +11553,6 @@ a.SpecialityButtonForward {
   width: fit-content;
 }
 .ResizeIframeTooltip.NoPadding .MainPopup {
-  padding: 0;
-}
-
-div.tooltipster-content.tooltipster--noPadding {
   padding: 0;
 }
 
@@ -31451,6 +31447,39 @@ div.TimelineDetail__label {
   display: none;
 }
 
+/* This is the base styling required to make all Tooltipsters work */
+.tooltipster-base {
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  font-size: 0;
+  line-height: 0;
+  min-width: 250px;
+  overflow: visible;
+  padding: 0;
+  pointer-events: visible;
+  position: absolute;
+  width: auto;
+  z-index: 80;
+  --tooltipster-content--padding-x: 0px;
+  --tooltipster-content--padding-y: 0px;
+}
+.tooltipster-base.tooltipster-default {
+  --tooltipster-content--padding-x: 16px;
+  --tooltipster-content--padding-y: 8px;
+}
+.tooltipster-base.tooltipster-shadow {
+  --tooltipster-content--padding-x: 16px;
+  --tooltipster-content--padding-y: 16px;
+}
+.tooltipster-base--no-padding, .tooltipster-base--no-padding.tooltipster-default, .tooltipster-base--no-padding.tooltipster-shadow {
+  --tooltipster-content--padding-x: 0px;
+  --tooltipster-content--padding-y: 0px;
+}
+
+.tooltipster-content {
+  padding: var(--tooltipster-content--padding-y) var(--tooltipster-content--padding-x);
+}
+
 /* This is the default Tooltipster theme (feel free to modify or duplicate and create multiple themes!): */
 .tooltipster-default {
   background: #4c4c4c;
@@ -31470,46 +31499,28 @@ div.TimelineDetail__label {
   color: white;
 }
 
-.tooltipster-shadow .tooltipster-content {
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 16px;
-  padding: 16px;
-}
-
 /* Use this next selector to style things like font-size and line-height: */
 .tooltipster-default .tooltipster-content {
   font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 16px;
   overflow: hidden;
-  padding: 8px 16px;
+}
+
+.tooltipster-shadow .tooltipster-content {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 /* This next selector defines the color of the border on the outside of the arrow. This will automatically match the color and size of the border set on the main tooltip styles. Set display: none; if you would like a border around the tooltip but no border around the arrow */
-.tooltipster-default .tooltipster-arrow .tooltipster-arrow-border {
-  /* border-color: ... !important; */
-}
-
+/*.tooltipster-default .tooltipster-arrow .tooltipster-arrow-border {
+	 border-color: ... !important;
+}*/
 /* If you're using the icon option, use this next selector to style them */
 .tooltipster-icon {
   cursor: default;
   margin-left: 4px;
-}
-
-/* This is the base styling required to make all Tooltipsters work */
-.tooltipster-base {
-  border: 1px solid #d6d6d6;
-  border-radius: 8px;
-  font-size: 0;
-  line-height: 0;
-  min-width: 250px;
-  overflow: visible;
-  padding: 0;
-  pointer-events: visible;
-  position: absolute;
-  width: auto;
-  z-index: 80;
 }
 
 body.LayoutBase .tooltipster-location--Default {
@@ -31841,10 +31852,10 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 }
 
 .TooltipsterLoading {
-  background-color: #fff;
-  height: calc(100% - 8px);
   position: absolute;
-  width: calc(100% - 10px);
+  height: calc(100% - var(--tooltipster-content--padding-y) * 2);
+  width: calc(100% - var(--tooltipster-content--padding-x) * 2);
+  background-color: #fff;
 }
 
 .tooltipster-arrow-left span:not(.tooltipster-arrow-border) {

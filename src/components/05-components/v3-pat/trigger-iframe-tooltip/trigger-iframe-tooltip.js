@@ -3,8 +3,6 @@
 	var create = function (config) {
 		var $elementId = $('#' + config.elementId);
 
-		config.minHeight = config.minHeight + (config.noPadding ? 0 : 32);
-
 		$elementId.addClass('tooltip');
 
 		if (config.triggerId === 'click') $elementId.addClass('tooltipstered--pointer');
@@ -26,11 +24,11 @@
 			maxWidth: config.maxWidth,
 			zindex: config.zindex,
 			onlyOne: true,
-			content: `<iframe id="tooltipster-frame" data-ui="iframe-tooltip" src="${config.URL}" style="border:none; min-height:${config.minHeight}px;" data-iframetooltiptriggerid="${config.elementId}" iframetooltipnotifyid="${widgetNotifyId}"></iframe>`,
+			content: `<iframe id="tooltipster-frame" data-ui="iframe-tooltip" src="${config.URL}" style="border:none;" data-iframetooltiptriggerid="${config.elementId}" iframetooltipnotifyid="${widgetNotifyId}"></iframe>`,
 			functionReady: function (instance, helper) {
 				$(helper).css({ visibility: 'hidden' });
 
-				if (config.noPadding) $('.tooltipster-content').addClass('tooltipster--noPadding');
+				if (config.noPadding) $('.tooltipster-base').addClass('tooltipster-base--no-padding');
 				if (config.customClass) $('.tooltipster-base').addClass(config.customClass);
 
 				setTimeout(function () {

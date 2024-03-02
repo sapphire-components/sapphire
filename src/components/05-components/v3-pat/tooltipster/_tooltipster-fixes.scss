@@ -36,10 +36,10 @@
 }
 
 .TooltipsterLoading {
-	background-color: $regular-white;
-	height: calc(100% - 8px);
 	position: absolute;
-	width: calc(100% - 10px);
+	height: calc(100% - (var(--tooltipster-content--padding-y)*2));
+	width: calc(100% - (var(--tooltipster-content--padding-x)*2));
+	background-color: $regular-white;
 }
 
 .tooltipster-arrow-left {
