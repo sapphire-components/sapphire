@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.5.8 || Generated: Sat Mar 02 2024 04:30:39 GMT+0000 (Western European Standard Time) */
+/*! prod.backoffice.css || Version: 5.5.8 || Generated: Mon Apr 01 2024 14:52:18 GMT+0100 (Hora de verão da Europa Ocidental) */
 /*!***************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/backoffice/styles.scss ***!
   \***************************************************************************************************************************************************************************************************************************************************/
@@ -5663,7 +5663,7 @@ body.PanelById.PanelOpened {
   color: #333333;
   line-height: 36px;
   padding-left: 16px;
-  padding-right: 36px;
+  padding-right: 46px;
 }
 .select2 .select2-selection .select2-selection__rendered .select2-search {
   height: calc(36px - 2px);
@@ -5707,7 +5707,6 @@ body.PanelById.PanelOpened {
 .select2 .select2-selection .select2-selection__rendered .select2-selection__choice > div {
   max-width: 350px;
   overflow: hidden;
-  text-overflow: ellipsis;
   white-space: nowrap;
 }
 .select2 .select2-selection .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove {
@@ -5832,14 +5831,16 @@ body.PanelById.PanelOpened {
   display: inline-block;
   font-family: "LatoBold";
   font-size: 1em;
-  width: 49%;
+  min-width: 49%;
+  padding-right: 10px;
+  width: auto;
 }
 
 .fontSelect2Availability {
   color: #00ac94;
   display: inline-block;
   font-size: 1em;
-  width: 49%;
+  width: auto;
 }
 
 .SelectSystemFilter .select2 .select2-selection {

@@ -128,7 +128,7 @@ $select-system-height: 36px;
 			color: $dark-grey;
 			line-height: $select-system-height;
 			padding-left: $sapphire-sizes--medium;
-			padding-right: 36px;
+			padding-right: 46px;
 
 			.select2-search {
 				height: calc(#{$select-system-height} - 2px);
@@ -172,7 +172,6 @@ $select-system-height: 36px;
 				> div {
 					max-width: 350px;
 					overflow: hidden;
-					text-overflow: ellipsis;
 					white-space: nowrap;
 				}
 
@@ -326,14 +325,16 @@ $select-system-height: 36px;
 	display: inline-block;
 	font-family: $font-family-latin-bold;
 	font-size: 1em;
-	width: 49%;
+	min-width: 49%;
+	padding-right: 10px;
+	width: auto;	
 }
 
 .fontSelect2Availability {
 	color: $regular-beta;
 	display: inline-block;
 	font-size: 1em;
-	width: 49%;
+	width: auto;
 }
 
 .SelectSystemFilter {
