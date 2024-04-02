@@ -117,6 +117,7 @@ $styleguide-main-content-padding: 50px;
 		margin-top: 15px;
 		overflow-y: auto;
 		scroll-behavior: smooth;
+		-servicestudio-scroll-behavior: initial;
 	}
 
 	&__MenuSection {
