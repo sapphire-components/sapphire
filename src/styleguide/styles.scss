@@ -235,16 +235,15 @@ $styleguide-main-content-padding: 50px;
 		background-color: $body-color;
 		flex-direction: column;
 		padding: 10px $styleguide-main-content-padding 20px;
+		color: $text-color-light;
 
-		span {
-			color: $text-color-light;
-		}
-
-		span:first-child {
+		span:first-child,
+		&__Title {
 			font-size: 3em;
 		}
 
-		span:last-child {
+		span:last-child,
+		&__Subtitle {
 			font-size: 1.071em;
 		}
 	}
