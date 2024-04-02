@@ -237,12 +237,10 @@ $styleguide-main-content-padding: 50px;
 		padding: 10px $styleguide-main-content-padding 20px;
 		color: $text-color-light;
 
-		span:first-child,
 		&__Title {
 			font-size: 3em;
 		}
 
-		span:last-child,
 		&__SubTitle {
 			font-size: 1.071em;
 		}
