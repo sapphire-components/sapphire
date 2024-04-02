@@ -722,6 +722,14 @@ $styleguide-main-content-padding: 50px;
 		top: 6px;
 	}
 
+	&__LayoutSectionGeneric {
+
+		&__Title {
+			-servicestudio-width: 100%;
+			-servicestudio-color: $regular-beta;
+		}
+	}
+
 	.Section {
 		margin-bottom: 150px;
 	}
