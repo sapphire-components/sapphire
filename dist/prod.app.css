@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.15 || Generated: Wed Apr 03 2024 12:06:17 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.15 || Generated: Wed Apr 03 2024 15:04:27 GMT+0100 (Western European Summer Time) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -8762,8 +8762,6 @@ div.LineInfo {
 .LayoutBase .SectionExpandable_header .LayoutPopup__header .SectionExpandable__icon.LayoutPopup__header__text__title span:before,
 .LayoutPopup__header .LayoutBase .SectionExpandable_header .SectionExpandable__icon.LayoutPopup__header__text__title span:before {
   color: #00ac94;
-  content: "\e611";
-  font-family: "Sapphire-Icon-Font";
   font-size: 0.857em;
 }
 .LayoutBlank .SectionExpandable_header .Heading2.SectionExpandable__icon span:hover, .LayoutBlank .SectionExpandable_header .modalPopup.Open .SectionExpandable__icon.modalPopup_title span:hover, .modalPopup.Open .LayoutBlank .SectionExpandable_header .SectionExpandable__icon.modalPopup_title span:hover, .LayoutBlank .SectionExpandable_header .LayoutPopup__header .SectionExpandable__icon.LayoutPopup__header__text__title span:hover, .LayoutPopup__header .LayoutBlank .SectionExpandable_header .SectionExpandable__icon.LayoutPopup__header__text__title span:hover,
@@ -15601,8 +15599,6 @@ div.CircledArrow {
 .LayoutBlank .CompLine__pointerIcon span:before,
 .LayoutBase .CompLine__pointerIcon span:before {
   color: #00bfa5;
-  content: "\e611";
-  font-family: "Sapphire-Icon-Font";
   font-size: 0.857em;
 }
 .DesignSystem .CompLine__pointerIcon span:hover,
@@ -16997,8 +16993,6 @@ div.CircledArrow {
 }
 .DragDropExpandable .DragDrop-droppable-header [ui=data-expandable-icon] span:before {
   color: #00bfa5;
-  content: "\e611";
-  font-family: "Sapphire-Icon-Font";
   font-size: 0.786em;
 }
 .DragDropExpandable .DragDrop-droppable-header [ui=data-expandable-icon] span:hover {
@@ -17549,8 +17543,6 @@ div.CircledArrow {
 }
 .ExpandableLink__Icon .icon:before {
   color: #00ac94;
-  content: "\e611";
-  font-family: "Sapphire-Icon-Font";
   font-size: 0.7em;
 }
 .ExpandableLink__Icon .icon:hover {
@@ -18681,8 +18673,6 @@ div.Toolbar__leftBtn {
 }
 div.Toolbar__leftBtn:before {
   color: #00ac94;
-  content: "\e611";
-  font-family: "Sapphire-Icon-Font";
   font-size: 0.857em;
 }
 div.Toolbar__leftBtn:hover {
@@ -18710,8 +18700,6 @@ div.Toolbar__rightBtn {
 }
 div.Toolbar__rightBtn:before {
   color: #00ac94;
-  content: "\e611";
-  font-family: "Sapphire-Icon-Font";
   font-size: 0.857em;
 }
 div.Toolbar__rightBtn:hover {
@@ -19805,8 +19793,6 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
 }
 .LineDetailsExpandBox div.ExpandableHeader___expandableIcon span:before {
   color: #00bfa5;
-  content: "\e611";
-  font-family: "Sapphire-Icon-Font";
   font-size: 0.857em;
 }
 .LineDetailsExpandBox div.ExpandableHeader___expandableIcon span:hover {
@@ -20530,8 +20516,6 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
 }
 .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-expand-icon:before {
   color: #333333;
-  content: "\e611";
-  font-family: "Sapphire-Icon-Font";
   font-size: 0.7em;
 }
 .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-expand-icon:hover {
@@ -22172,8 +22156,6 @@ body.PanelById.PanelOpened {
 }
 .PersonCard_header.IsExpandable .PersonCard__expandIcon:before {
   color: #333333;
-  content: "\e611";
-  font-family: "Sapphire-Icon-Font";
   font-size: 0.7em;
 }
 .PersonCard_header.IsExpandable .PersonCard__expandIcon:hover {
@@ -22198,8 +22180,6 @@ body.PanelById.PanelOpened {
 }
 .PersonCard_header.IsExpandableDisabled .PersonCard__expandIcon:before {
   color: #d6d6d6;
-  content: "\e611";
-  font-family: "Sapphire-Icon-Font";
   font-size: 0.7em;
 }
 .PersonCard_header.IsExpandableDisabled .PersonCard__expandIcon:hover {
@@ -23179,8 +23159,6 @@ a .PersonCard_expandable {
 }
 .SectionPrescriptionExpandableArea .SectionExpandable__icon .PrescriptionExpandable_header__IconDiv .icon:before {
   color: #ff3e2d;
-  content: "\e611";
-  font-family: "Sapphire-Icon-Font";
   font-size: 0.8em;
 }
 .SectionPrescriptionExpandableArea .SectionExpandable__icon .PrescriptionExpandable_header__IconDiv .icon:hover {
@@ -24656,8 +24634,6 @@ div.List-Star > div[unselected] {
 }
 .CloneExpandable.isExpandable .CloneExpandable_arrow:before {
   color: #333333;
-  content: "\e611";
-  font-family: "Sapphire-Icon-Font";
   font-size: 0.7em;
 }
 .CloneExpandable.isExpandable .CloneExpandable_arrow:hover {
@@ -25925,8 +25901,6 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 }
 .SectionExpandableCustom .SectionExpandable___icon .icon:before {
   color: #00ac94;
-  content: "\e611";
-  font-family: "Sapphire-Icon-Font";
   font-size: 0.7em;
 }
 .SectionExpandableCustom .SectionExpandable___icon .icon:hover {
@@ -26826,8 +26800,6 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .LayoutPOpup .ShiftExpandable_header .ShiftExpandable__arrow span.icon:before,
 .DesignSystem .ShiftExpandable_header .ShiftExpandable__arrow span.icon:before {
   color: #00ac94;
-  content: "\e611";
-  font-family: "Sapphire-Icon-Font";
   font-size: 0.857em;
 }
 .LayoutBase .ShiftExpandable_header .ShiftExpandable__arrow span.icon:hover,
@@ -27761,8 +27733,6 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 }
 .ShiftGroupContent__HeaderExpandable span.icon:before {
   color: #333333;
-  content: "\e611";
-  font-family: "Sapphire-Icon-Font";
   font-size: 0.857em;
 }
 .ShiftGroupContent__HeaderExpandable span.icon:hover {
@@ -31046,8 +31016,6 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
 }
 .LineTimeLine__Expandable:before {
   color: #333333;
-  content: "\e611";
-  font-family: "Sapphire-Icon-Font";
   font-size: 0.7em;
 }
 .LineTimeLine__Expandable:hover {
