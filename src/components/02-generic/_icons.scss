@@ -11,6 +11,12 @@
 	text-transform: none;
 }
 
+.icon:before {
+    -servicestudio-display: block;
+    -servicestudio-height: 1px;
+    -servicestudio-line-height: 1.4;
+}
+
 .icon-fonterasear:before {
 	content: '\e924';
 }

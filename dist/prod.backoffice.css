@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.5.14 || Generated: Wed Apr 03 2024 11:39:33 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.5.14 || Generated: Wed Apr 03 2024 12:05:56 GMT+0100 (Western European Summer Time) */
 /*!***************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/backoffice/styles.scss ***!
   \***************************************************************************************************************************************************************************************************************************************************/
@@ -25,6 +25,12 @@
   line-height: 1;
   speak: none;
   text-transform: none;
+}
+
+.icon:before {
+  -servicestudio-display: block;
+  -servicestudio-height: 1px;
+  -servicestudio-line-height: 1.4;
 }
 
 .icon-fonterasear:before {
