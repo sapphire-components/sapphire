@@ -9,12 +9,14 @@
 	line-height: 1;
 	speak: none;
 	text-transform: none;
+
+	-servicestudio-display: inline-block;
 }
 
 .icon:before {
     -servicestudio-display: block;
     -servicestudio-height: 1px;
-    -servicestudio-line-height: 1.4;
+    -servicestudio-line-height: 1.2;
 }
 
 .icon-fonterasear:before {
