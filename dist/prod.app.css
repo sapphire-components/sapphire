@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.13 || Generated: Wed Apr 03 2024 11:35:40 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.13 || Generated: Wed Apr 03 2024 11:38:44 GMT+0100 (Western European Summer Time) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -25,11 +25,6 @@
   line-height: 1;
   speak: none;
   text-transform: none;
-}
-
-body .icon:after {
-  content: "";
-  /* revert offline font:  fallback */
 }
 
 .icon-fonterasear:before {
@@ -19287,10 +19282,6 @@ div.ui-timepicker-container.rtl.ui-timepicker-no-scrollbar .ui-timepicker-viewpo
   color: #adadad !important;
   cursor: auto;
   pointer-events: none;
-}
-
-.icon:after {
-  content: "N/A";
 }
 
 a:link .IconVertical_label,

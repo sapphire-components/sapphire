@@ -11,11 +11,6 @@
 	text-transform: none;
 }
 
-body .icon:after {
-	content: '';
-	/* revert offline font:  fallback */
-}
-
 .icon-fonterasear:before {
 	content: '\e924';
 }

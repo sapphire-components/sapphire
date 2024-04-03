@@ -167,7 +167,7 @@ $IconLabel-color-text: $dark-grey;
 			vertical-align: middle;
 		}
 
-		> div {
+		>div {
 			transform: scale(-1, 1);
 		}
 	}
@@ -179,6 +179,7 @@ $IconLabel-color-text: $dark-grey;
 }
 
 .iconLabel-disabled {
+
 	&,
 	.iconVertical_icon,
 	.iconHorizontal_icon,
@@ -192,11 +193,8 @@ $IconLabel-color-text: $dark-grey;
 	}
 }
 
-.icon:after {
-	content: 'N/A';
-}
-
 a:link {
+
 	.IconVertical_label,
 	.iconVertical_label,
 	.IconHorizontal_label,
