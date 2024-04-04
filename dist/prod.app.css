@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.23 || Generated: Thu Apr 04 2024 16:23:57 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.23 || Generated: Thu Apr 04 2024 16:27:47 GMT+0100 (Western European Summer Time) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -20056,6 +20056,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   height: 100%;
   min-height: 62px;
   padding: 16px;
+  -servicestudio-flex-direction: row;
 }
 .LineWarns .LineWarns_list.ColorBlueBG {
   background-color: #d7effc;
