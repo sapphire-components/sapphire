@@ -8,11 +8,11 @@ $line-warning-height: 62px;
 		border: 1px solid $light-grey;
 		border-radius: $border-radius-medium;
 		display: flex;
+		flex-direction: row;
 		gap: $sapphire-sizes--medium;
 		height: 100%;
 		min-height: $line-warning-height;
 		padding: $sapphire-sizes--medium;
-		flex-direction: row;
 
 		&.ColorBlueBG {
 			background-color: $light-blue;
