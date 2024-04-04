@@ -559,9 +559,10 @@ $styleguide-main-content-padding: 50px;
 	// Home Page
 	&__HomeHeader {
 		background-color: $regular-alpha;
-		//clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
 		height: 400px;
 		margin: -50px;
+
+		-servicestudio-margin-top: -80px;
 
 		*[ui='header-info'] {
 			@include flex-center-total;
