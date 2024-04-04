@@ -12,6 +12,7 @@ $line-warning-height: 62px;
 		height: 100%;
 		min-height: $line-warning-height;
 		padding: $sapphire-sizes--medium;
+		flex-direction: row;
 
 		&.ColorBlueBG {
 			background-color: $light-blue;
