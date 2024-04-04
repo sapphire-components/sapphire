@@ -684,13 +684,6 @@ $styleguide-main-content-padding: 50px;
 		margin-top: 100px;
 		padding: 0 50px;
 
-		code {
-			display: block;
-			padding: 15px;
-			border-radius: 5px;
-			background-color: $body-color;
-		}
-
 		img {
 			display: block;
 			margin: 15px auto;
@@ -736,8 +729,16 @@ $styleguide-main-content-padding: 50px;
 	.Section {
 		margin-bottom: 150px;
 	}
-}
 
-.Page {
-	-servicestudio-margin-top: -20px;
+	code,
+	.code {
+		display: block;
+		padding: 15px;
+		border-radius: 5px;
+		background-color: $body-color;
+	}
+
+	&.Page {
+		-servicestudio-margin-top: -20px;
+	}
 }
