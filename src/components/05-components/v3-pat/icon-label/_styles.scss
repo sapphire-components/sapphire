@@ -94,15 +94,13 @@ $IconLabel-color-text: $dark-grey;
 	@include common-icons-second-style;
 
 	&_icon {
-		margin-bottom: 5px;
-
 		&.IconBlackColor {
 			color: $dark-grey;
 		}
 	}
 
 	&_label {
-		font-size: 12px;
+		font-size: 1em;
 	}
 }
 
