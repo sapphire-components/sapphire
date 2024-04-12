@@ -4747,6 +4747,7 @@ a .ListItem:after {
   font-size: 27px;
   font-weight: 900;
   line-height: 32px;
+  color: red;
 }
 
 .Heading2 {
