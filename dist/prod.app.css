@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.28 || Generated: Fri Apr 12 2024 12:50:01 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.28 || Generated: Fri Apr 19 2024 12:54:01 GMT+0100 (Western European Summer Time) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -40802,9 +40802,6 @@ td.RowWithAddAction a {
   background-color: #00b3bd;
 }
 
-/* SILK Patterns > Info */
-/* SILK Patterns > Modal */
-/* SILK Patterns > Panel */
 /* SILK Patterns > Post */
 .Post .Post_icon img {
   border: 1px solid #dadbde;
@@ -40815,21 +40812,6 @@ td.RowWithAddAction a {
   font-size: 16px;
 }
 
-/* SILK Patterns > Section */
-/* SILK Patterns > Section Expandable */
-/*When Sidebar RL in SectionExpandableCustom_content Empty*/
-/* SILK Patterns > ExpandableTable */
-/* SILK Patterns > Separator */
-/* SILK Patterns > Tooltip */
-/* TOOLTIP FIX */
-/*------------------------------------------------------------*/
-/* 7.2 SILK Patterns > Controls *******************************/
-/*------------------------------------------------------------*/
-/* SILK Patterns > ButtonGroup */
-/* SILK Patterns > Calendar */
-/* Calendar **************************/
-/* SILK Patterns > Dropdown */
-/* SILK Patterns > FileUpload */
 .ConsentFormContainer .FileUpload {
   padding: 0;
 }
@@ -40899,9 +40881,6 @@ td.RowWithAddAction a {
   box-shadow: none;
 }
 
-/* SILK Patterns > Search */
-/* SILK Patterns > Select2 */
-/* SILK Patterns > ToggleButton */
 /*------------------------------------------------------------*/
 /* 7.3 SILK Patterns > Data ***********************************/
 /*------------------------------------------------------------*/
@@ -48224,9 +48203,6 @@ body .AR.phone .Content.ThemeGrid_Wrapper {
   border-top: 1px solid #c9cdce;
 }
 
-/*------------------------------------*\
-        $14. Service Studio Css
-\*-------------------------------------*/
 .tablet .ListAllOperations .NoWrap,
 .phone .ListAllOperations .NoWrap {
   white-space: initial;
@@ -48435,18 +48411,6 @@ body .AR.phone .Content.ThemeGrid_Wrapper {
   -servicestudio-display: none;
 }
 
-/*FullScreenTabs Responsive */
-/*------------------------------------*\
-        $15 Templates Sapphire
-\*-------------------------------------*/
-/* START */
-/***** templates css *****/
-/*DE63525
-div.template-item{
-    padding:5px 0;
-}*/
-/****21/03/2018 a ser apagado apos migração *****/
-/*for receive stock*/
 .DateTimeRangePicker-input input {
   width: 100%;
 }
