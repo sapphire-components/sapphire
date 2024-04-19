@@ -16348,17 +16348,6 @@ canvas.Sketch_Canvas {
 //   text-align: center;
 // }
 
-// .modalPopup.Open .modalPopup_div {
-//   background: rgba(0, 0, 0, 0.3);
-//   height: 100%;
-//   left: 0;
-//   overflow: none;
-//   position: fixed;
-//   top: 0;
-//   width: 100%;
-//   z-index: 50;
-// }
-
 // body.ModalOpened .ModalContainer {
 //   display: block;
 //   -webkit-transform: translateX(-50%) translateY(0) translateZ(0);
@@ -30437,10 +30426,6 @@ body .AR.phone .Content.ThemeGrid_Wrapper {
   -servicestudio-transform: translateX(0);
   -servicestudio-transform: translateY(0);
   -servicestudio-z-index: 0;
-}
-
-.modalPopup.Open .modalPopup_div {
-  -servicestudio-display: none;
 }
 
 .DateTimeRangePicker-input input {
