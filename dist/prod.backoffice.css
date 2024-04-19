@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.5.30 || Generated: Fri Apr 19 2024 13:00:14 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.5.30 || Generated: Fri Apr 19 2024 14:59:31 GMT+0100 (Western European Summer Time) */
 /*!***************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/backoffice/styles.scss ***!
   \***************************************************************************************************************************************************************************************************************************************************/
@@ -5419,19 +5419,33 @@ body.PanelById.PanelOpened {
   position: static;
 }
 
+.PanelById {
+  -servicestudio-height: auto !important;
+  -servicestudio-position: relative !important;
+  -servicestudio-width: 100% !important;
+}
 .PanelById .Panel {
   display: none;
+  -servicestudio-display: block !important;
+  -servicestudio-margin: 0 auto !important;
+  -servicestudio-position: relative !important;
 }
 .PanelById .Panel .PanelContainer {
   max-width: 800px;
   overflow: unset !important;
   z-index: 100;
+  -servicestudio-display: block !important;
+  -servicestudio-width: 1500px !important;
+  -servicestudio-z-index: 0;
 }
 .PanelById .Panel .PanelContainer.done {
   bottom: 0;
 }
 .PanelById .PanelMessage .CheckboxInput {
   margin-top: 10px;
+}
+.PanelById .PanelBackground {
+  -servicestudio-display: none !important;
 }
 
 .desktop.hd .PanelById .PanelContainer {

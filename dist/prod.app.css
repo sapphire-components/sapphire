@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.30 || Generated: Fri Apr 19 2024 13:00:14 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.30 || Generated: Fri Apr 19 2024 14:59:31 GMT+0100 (Western European Summer Time) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -21530,19 +21530,33 @@ body.PanelById.PanelOpened {
   position: static;
 }
 
+.PanelById {
+  -servicestudio-height: auto !important;
+  -servicestudio-position: relative !important;
+  -servicestudio-width: 100% !important;
+}
 .PanelById .Panel {
   display: none;
+  -servicestudio-display: block !important;
+  -servicestudio-margin: 0 auto !important;
+  -servicestudio-position: relative !important;
 }
 .PanelById .Panel .PanelContainer {
   max-width: 800px;
   overflow: unset !important;
   z-index: 100;
+  -servicestudio-display: block !important;
+  -servicestudio-width: 1500px !important;
+  -servicestudio-z-index: 0;
 }
 .PanelById .Panel .PanelContainer.done {
   bottom: 0;
 }
 .PanelById .PanelMessage .CheckboxInput {
   margin-top: 10px;
+}
+.PanelById .PanelBackground {
+  -servicestudio-display: none !important;
 }
 
 .desktop.hd .PanelById .PanelContainer {
@@ -36834,25 +36848,6 @@ body .Page.desktop .MainPopup {
   -servicestudio-display: none;
 }
 
-.PanelById {
-  -servicestudio-height: auto !important;
-  -servicestudio-position: relative !important;
-  -servicestudio-width: 100% !important;
-}
-.PanelById .Panel {
-  -servicestudio-display: block !important;
-  -servicestudio-margin: 0 auto !important;
-  -servicestudio-position: relative !important;
-}
-.PanelById .PanelBackground {
-  -servicestudio-display: none !important;
-}
-.PanelById .PanelContainer {
-  -servicestudio-display: block !important;
-  -servicestudio-width: 1500px !important;
-  -servicestudio-z-index: 0;
-}
-
 .SapphirePanel {
   -servicestudio-display: block;
   -servicestudio-position: relative;
@@ -43603,42 +43598,6 @@ canvas.Sketch_Canvas {
 }
 
 /*-------------------------------------------------------------------------------------*/
-/* 9.84 Sapphire Patterns > Javascript > PatientTranslationData *********/
-/*-------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------------------------------*/
-/* 9.85 Sapphire Patterns > Panel > ConfirmationPanel *********/
-/*-------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------------------------------*/
-/* 9.87 Sapphire Patterns > Panel > ModalPopup *********/
-/*-------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------------------------------*/
-/* 9.88 Sapphire Patterns > Panel > PanelById *********/
-/*-------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------------------------------*/
-/* 9.89 Sapphire Patterns > Panel > PanelByIdNotify *********/
-/*-------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------------------------------*/
-/* 9.90 Sapphire Patterns > Sapphire_Controls > BtnGroupDark *********/
-/*-------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------------------------------*/
-/* 9.91 Sapphire Patterns > Sapphire_Controls > ButtonSquare *********/
-/*-------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------------------------------*/
-/* 9.92 Sapphire Patterns > Sapphire_Controls > CalendarDateTimeInput *********/
-/*-------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------------------------------*/
-/* 9.93 Sapphire Patterns > Sapphire_Controls > CalendarDateTimeInputSmall *********/
-/*-------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------------------------------*/
-/* 9.94 Sapphire Patterns > Sapphire_Controls > CalendarInput *********/
-/*-------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------------------------------*/
-/* 9.95 Sapphire Patterns > Sapphire_Controls > CalendarInputSmall *********/
-/*-------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------------------------------*/
-/* 9.96 Sapphire Patterns > SapphireLists > List_Counter *********/
-/*-------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------------------------------*/
 /* 9.97 Sapphire Patterns > SapphireWidgets > Circle_Widget *********/
 /*-------------------------------------------------------------------------------------*/
 .CircleWidget {
@@ -43648,191 +43607,6 @@ canvas.Sketch_Canvas {
   vertical-align: middle;
 }
 
-/*-------------------------------------------------------------------------------------*/
-/* 9.98 Sapphire Patterns > SapphireWidgets > datetimepicker *********/
-/*-------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------------------------------*/
-/* 9.99 Sapphire Patterns > SapphireWidgets > iconLabel *********/
-/*-------------------------------------------------------------------------------------*/
-/*
-.IconVertical:hover,
-.IconHorizontal:hover {
-    text-decoration: none;
-}
-
-.IconVertical {
-    margin-right: 5px;
-    min-width: 50px;
-}
-
-.IconVertical.iconBorder {
-    padding: 0 5px 0 10px;
-}
-
-
-.FA .IconVertical,
-.AR .IconVertical {
-    padding: 0 10px 0 5px;
-}
-
-.iconHorizontal {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2em;
-}
-
-.iconHorizontal.iconBorder {
-    padding: 0 5px 0 10px;
-}
-
-.FA .iconHorizontal,
-.AR .iconHorizontal {
-    padding: 0 10px 0 5px;
-}
-
-.iconHorizontal_icon {
-    text-align: center;
-}
-
-.iconHorizontal_icon span.icon {
-    display: inline-block;
-    margin-right: 4px;
-}
-
-.iconHorizontal_icon span.icon.icon-lg {
-    margin-right: 4px;
-}
-
-.iconHorizontal_icon span.icon.icon-1x {
-    margin-right: 4px;
-}
-
-.iconHorizontal_icon span.icon.icon-2x {
-    margin-right: 7px;
-}
-
-.iconHorizontal_icon span.icon.icon-3x {
-    margin-right: 5px;
-}
-
-.iconHorizontal_icon span.icon.icon-4x {
-    margin-right: 5px;
-}
-
-
-
-.iconHorizontal_icon,
-.iconVertical_icon {
-    color: #16979f;
-    font-weight: 600;
-}
-
-.iconVertical_icon {
-    margin-bottom: 5px;
-}
-
-
-
-.InvertIconLabel .iconHorizontal_icon {
-    display: inline-block;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-
-.FA .iconHorizontal_icon,
-.AR .iconHorizontal_icon {
-    margin-right: 0;
-    margin-left: 10px !important;
-}
-
-.iconHorizontal_label,
-.iconVertical_label {
-    font-weight: 400;
-    text-decoration: none;
-    color: #262525;
-    font-family: 'globeregular', Helvetica, Arial, sans-serif;
-}
-
-
-.iconVertical_label.LabelGreen,
-.iconHorizontal_label.LabelGreen {
-    color: #16979F;
-    font-weight: 600;
-}
-
-.FA .iconVertical_label.LabelGreen,
-.FA .iconHorizontal_label.LabelGreen,
-.AR .iconVertical_label.LabelGreen,
-.AR .iconHorizontal_label.LabelGreen {
-    color: #262525;
-    font-weight: 600;
-}
-
-
-.iconBorder {
-    border-left: solid 1px #d8d8d8;
-    border-right: 0;
-}
-
-.FA .iconBorder,
-.AR .iconBorder {
-    border-right: solid 1px #d8d8d8;
-    border-left: 0;
-}
-
-
-.iconHorizontal_icon.IconGreenColor {
-    color: #00BFA5;
-
-}
-
-.iconHorizontal_icon.IconYellowColor {
-    color: #FFA000;
-}
-
-.iconHorizontal_icon.IconRedColor {
-    color: #FF3E2D;
-}
-
-.iconHorizontal_icon.IconBlackColor {
-    color: #11455D;
-    font-weight: bold;
-}
-
-.iconVertical_icon.IconGreenColor {
-    color: #00BFA5;
-
-}
-
-.iconVertical_icon.IconYellowColor {
-    color: #FFA000;
-}
-
-.iconVertical_icon.IconRedColor {
-    color: #FF3E2D;
-}
-
-.iconVertical_icon.IconBlackColor {
-    color: #11455D;
-}
-
-
-.iconHorizontal_icon.AllGreenIcon .icon,
-.iconVertical_icon.AllGreenIcon .icon {
-    color: #16979f;
-}
-
-.InvertIconLabel .iconHorizontal {
-    transform: scale(-1, 1);
-    text-align: left;
-}
-
-.InvertIconLabel .iconHorizontal>div {
-    transform: scale(-1, 1);
-}
-
-*/
 /*-------------------------------------------------------------------------------------*/
 /* 9.100 Sapphire Patterns > SapphireWidgets > ImagePlaceholder *********/
 /*-------------------------------------------------------------------------------------*/

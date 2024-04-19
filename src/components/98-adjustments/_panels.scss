@@ -1,26 +1,3 @@
-// PanelById
-.PanelById {
-	-servicestudio-height: auto !important;
-	-servicestudio-position: relative !important;
-	-servicestudio-width: 100% !important;
-
-	.Panel {
-		-servicestudio-display: block !important;
-		-servicestudio-margin: 0 auto !important;
-		-servicestudio-position: relative !important;
-	}
-
-	.PanelBackground {
-		-servicestudio-display: none !important;
-	}
-
-	.PanelContainer {
-		-servicestudio-display: block !important;
-		-servicestudio-width: 1500px !important;
-		-servicestudio-z-index: 0;
-	}
-}
-
 // ModalPopup
 .SapphirePanel {
 	-servicestudio-display: block;

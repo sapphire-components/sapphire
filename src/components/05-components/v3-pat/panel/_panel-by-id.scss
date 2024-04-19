@@ -4,13 +4,25 @@ body.PanelById.PanelOpened {
 }
 
 .PanelById {
+	-servicestudio-height: auto !important;
+	-servicestudio-position: relative !important;
+	-servicestudio-width: 100% !important;
+
 	.Panel {
 		display: none;
+
+		-servicestudio-display: block !important;
+		-servicestudio-margin: 0 auto !important;
+		-servicestudio-position: relative !important;
 
 		.PanelContainer {
 			max-width: 800px;
 			overflow: unset !important;
 			z-index: 100;
+
+			-servicestudio-display: block !important;
+			-servicestudio-width: 1500px !important;
+			-servicestudio-z-index: 0;
 
 			&.done {
 				bottom: 0;
@@ -22,6 +34,10 @@ body.PanelById.PanelOpened {
 		.CheckboxInput {
 			margin-top: 10px;
 		}
+	}
+
+	.PanelBackground {
+		-servicestudio-display: none !important;
 	}
 }
 
@@ -43,6 +59,7 @@ body.PanelById.PanelOpened {
 				top: 50%;
 			}
 		}
+
 		.PanelContainer {
 			max-height: 487px;
 			overflow-y: auto;
