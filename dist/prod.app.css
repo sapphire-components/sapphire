@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.37 || Generated: Mon Apr 22 2024 16:54:24 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.37 || Generated: Mon Apr 22 2024 21:24:04 GMT+0100 (Western European Summer Time) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -11281,6 +11281,7 @@ body.LayoutBase .os-internal-ui-widget-overlay {
   padding-left: 0;
   padding-right: 40px;
   padding-top: 0;
+  -servicestudio-padding-right: 0;
 }
 
 .AR.LayoutBase.Page .LayoutBase-Content-MainWorkArea .Content,
@@ -24082,6 +24083,9 @@ a .PersonCard_expandable {
 .SapphireHeader {
   background-color: #fff;
   position: relative;
+  -servicestudio-position: absolute;
+  -servicestudio-left: 0;
+  -servicestudio-right: 0;
 }
 .SapphireHeader.isOpen .SapphireHeader-additional-content {
   display: flex;
