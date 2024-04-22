@@ -1,8 +1,8 @@
 /* Component DateTimeRangePicker */
-(function($, window, document, SapphireWidgets) {
+(function ($, window, document, SapphireWidgets) {
 	var allDateTimeRangePickers = [];
 
-	var create = function(config) {
+	var create = function (config) {
 		for (var i = 0; i < allDateTimeRangePickers.length; i++) {
 			if (allDateTimeRangePickers[i].config.widgetId === config.widgetId) {
 				allDateTimeRangePickers.splice(i, 1);
@@ -12,7 +12,7 @@
 		allDateTimeRangePickers.push(window[config.widgetId]);
 	};
 
-	var DateTimeRangePicker = function(config) {
+	var DateTimeRangePicker = function (config) {
 		this.config = config;
 		this.currentLocale = config.currentLocale;
 
@@ -113,7 +113,7 @@
 
 		if (config.DisabledWeekDays) {
 			var disabledWeekDays = config.DisabledWeekDays.split(',');
-			options.isInvalidDate = function(date) {
+			options.isInvalidDate = function (date) {
 				return disabledWeekDays.includes(
 					moment(date)
 						.day()
@@ -124,7 +124,7 @@
 
 		var _this = this;
 
-		this.$input.daterangepicker(options, function(startDate, endDate, label) {
+		this.$input.daterangepicker(options, function (startDate, endDate, label) {
 			// after a selection is made
 			if (_this.config.attachToInput) {
 				let format = '';
@@ -209,22 +209,22 @@
 		}
 	};
 
-	DateTimeRangePicker.prototype.handleCustomValidation = function() {
+	DateTimeRangePicker.prototype.handleCustomValidation = function () {
 		// TO DO
 	};
 
-	DateTimeRangePicker.prototype.nativeEvents = function() {
+	DateTimeRangePicker.prototype.nativeEvents = function () {
 		const _this = this;
 
-		this.$input.on('showCalendar.daterangepicker', function(event, picker) {
+		this.$input.on('showCalendar.daterangepicker', function (event, picker) {
 			if (_this.config.hasGoToday) {
 				_this.$calendar
 					.find('.calendar-table thead tr')
 					.eq(0)
 					.after(
 						'<tr><td colspan="7" class="DateTimeRangePicker-calendar-gotoday">' +
-							_this.config.goTodayLabel +
-							'</td></tr>'
+						_this.config.goTodayLabel +
+						'</td></tr>'
 					);
 				if (_this.config.drops === 'up') {
 					_this.$calendar.css('top', _this.$calendar.offset().top - 24);
@@ -233,7 +233,7 @@
 			_this.handleViewportPosition();
 
 			if (!_this.config.singleDatePicker) {
-				$('.drp-selected').each(function() {
+				$('.drp-selected').each(function () {
 					let text = $(this).text();
 					text = text.replace(/-/gi, '·');
 
@@ -242,7 +242,7 @@
 			}
 		});
 
-		this.$input.on('show.daterangepicker', function(event, picker) {
+		this.$input.on('show.daterangepicker', function (event, picker) {
 			if (_this.config.timePicker && _this.config.hasClearHour) {
 				_this.$calendar.find('.calendar-time').append('<span class="DateTimeRangePicker-calendar-clear"></span>');
 				if (_this.isEmptyHour) {
@@ -269,7 +269,7 @@
 			}
 		});
 
-		this.$input.on('hide.daterangepicker', function(event, picker) {
+		this.$input.on('hide.daterangepicker', function (event, picker) {
 			_this.$calendar.find('.DateTimeRangePicker-calendar-clear').remove();
 			_this.updateParentIframe();
 
@@ -281,11 +281,11 @@
 			}
 		});
 
-		this.$input.on('cancel.daterangepicker', function(event, picker) {});
+		this.$input.on('cancel.daterangepicker', function (event, picker) { });
 
-		this.$input.on('outsideClick.daterangepicker', function(event, picker) {});
+		this.$input.on('outsideClick.daterangepicker', function (event, picker) { });
 
-		this.$input.on('timechanged.daterangepicker', function(event, picker) {
+		this.$input.on('timechanged.daterangepicker', function (event, picker) {
 			_this.isEmptyHour = false;
 			_this.$timeHolder.css('opacity', 1);
 			if (_this.config.hasClearHour) {
@@ -298,7 +298,7 @@
 			}
 		});
 
-		this.$input.on('clickDate.daterangepicker', function(event, picker) {
+		this.$input.on('clickDate.daterangepicker', function (event, picker) {
 			if (_this.config.autoApply) {
 				_this.$clear.removeClass('disabled');
 				_this.updateLabeling();
@@ -306,8 +306,9 @@
 			}
 		});
 
-		this.$input.on('apply.daterangepicker', function(event, picker) {
-			if (_this.config.autoApply && _this.config.attachToInput) {
+		this.$input.on('apply.daterangepicker', function (event, picker) {
+			if (_this.config.attachToInput) { //ONYX 20792
+				//if (_this.config.autoApply && _this.config.attachToInput) {
 				_this.$model.trigger('change'); //same fix as below for when the date is the same/today, when input is attached it seems we also need this extra step
 			}
 			_this.$input.trigger('change'); // Fix to call the change when the date is the same/today
@@ -317,16 +318,16 @@
 		});
 	};
 
-	DateTimeRangePicker.prototype.customEvents = function() {
+	DateTimeRangePicker.prototype.customEvents = function () {
 		var _this = this;
-		this.$label.off('click').on('click', function(event) {
+		this.$label.off('click').on('click', function (event) {
 			_this.picker.toggle();
 		});
-		this.$clear.off('click').on('click', function(event) {
+		this.$clear.off('click').on('click', function (event) {
 			_this.clear();
 			_this.picker.hide();
 		});
-		this.$calendar.on('click', '.DateTimeRangePicker-calendar-clear', function() {
+		this.$calendar.on('click', '.DateTimeRangePicker-calendar-clear', function () {
 			if (_this.config.timePicker24Hour) {
 				_this.$calendar
 					.find('.hourselect')
@@ -350,7 +351,7 @@
 			_this.$timeHolder.css('opacity', 0.5);
 			_this.$calendar.find('.DateTimeRangePicker-calendar-clear').addClass('disabled');
 		});
-		this.$calendar.on('click', '.DateTimeRangePicker-calendar-gotoday', function() {
+		this.$calendar.on('click', '.DateTimeRangePicker-calendar-gotoday', function () {
 			_this.picker.setStartDate(moment());
 			_this.picker.setEndDate(moment());
 
@@ -367,15 +368,15 @@
 		if (this.config.attachToInput) {
 			// Nothing
 		} else {
-			this.$input.on('click', function() {
-				window.setTimeout(function() {
+			this.$input.on('click', function () {
+				window.setTimeout(function () {
 					_this.updateParentIframe();
 				}, 50);
 			});
 		}
 	};
 
-	DateTimeRangePicker.prototype.updateLabeling = function() {
+	DateTimeRangePicker.prototype.updateLabeling = function () {
 		var labelMask = this.config.formatLabel;
 		var inputMask = this.config.formatInput;
 
@@ -434,7 +435,7 @@
 		}
 	};
 
-	DateTimeRangePicker.prototype.handleViewportPosition = function() {
+	DateTimeRangePicker.prototype.handleViewportPosition = function () {
 		if (
 			window.frameElement &&
 			($(window.frameElement.parentElement).hasClass('tooltipster-content') ||
@@ -461,14 +462,14 @@
 		}
 	};
 
-	DateTimeRangePicker.prototype.isInViewport = function() {
+	DateTimeRangePicker.prototype.isInViewport = function () {
 		var bounding = this.$calendar[0].getBoundingClientRect();
 		return (
 			bounding.top >= 0 && bounding.bottom <= (window.innerHeight + 5 || document.documentElement.clientHeight + 5)
 		);
 	};
 
-	DateTimeRangePicker.prototype.clear = function(sendNotification) {
+	DateTimeRangePicker.prototype.clear = function (sendNotification) {
 		this.picker.setStartDate(moment());
 		this.picker.setEndDate(moment());
 		this.isEmptyHour = false;
@@ -483,19 +484,19 @@
 		}
 	};
 
-	DateTimeRangePicker.prototype.show = function() {
+	DateTimeRangePicker.prototype.show = function () {
 		this.picker.show();
 	};
 
-	DateTimeRangePicker.prototype.hide = function() {
+	DateTimeRangePicker.prototype.hide = function () {
 		this.picker.hide();
 	};
 
-	DateTimeRangePicker.prototype.cancel = function() {
+	DateTimeRangePicker.prototype.cancel = function () {
 		this.picker.clickCancel();
 	};
 
-	DateTimeRangePicker.prototype.sendNotification = function(sendDate) {
+	DateTimeRangePicker.prototype.sendNotification = function (sendDate) {
 		if (this.$widget.hasClass('attachedInput')) {
 			this.$input.trigger('change');
 
@@ -526,7 +527,7 @@
 		}
 	};
 
-	DateTimeRangePicker.prototype.updateParentIframe = function() {
+	DateTimeRangePicker.prototype.updateParentIframe = function () {
 		if (typeof SapphireWidgets.ResizeParentIframe === 'object') {
 			SapphireWidgets.ResizeParentIframe.resize();
 		}
@@ -537,7 +538,7 @@
 
 	SapphireWidgets.DateTimeRangePicker = {
 		create: create,
-		all: function() {
+		all: function () {
 			return allDateTimeRangePickers;
 		},
 	};
