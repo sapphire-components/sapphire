@@ -40,8 +40,11 @@
 	}
 }
 
-.desktop input.Button.Is_Default,
+input.Button,
+input.Button.Is_Default,
+input.Button.ButtonDefault,
 .desktop input.Button,
+.desktop input.Button.Is_Default,
 .desktop input.Button.ButtonDefault,
 a.Button,
 .PanelOpened a.Button,
@@ -50,6 +53,8 @@ a.Button,
 .LayoutBlank a.Button,
 .LayoutBase a.Button,
 a.Button.IsDefault,
+a.Button.Is_Default,
+.desktop a.Button.IsDefault,
 .desktop a.Button.Is_Default,
 .PanelOpened a.Button.Is_Default {
 	@include default-button;
