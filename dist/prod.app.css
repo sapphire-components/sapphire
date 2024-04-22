@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.38 || Generated: Mon Apr 22 2024 21:24:28 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.38 || Generated: Mon Apr 22 2024 21:42:20 GMT+0100 (Western European Summer Time) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -18854,6 +18854,8 @@ div.CircledArrow {
 }
 .HeaderIdentification-photo .PatientHeaderPhotoAge {
   font-family: "LatoBold";
+  -servicestudio-margin-top: 18px;
+  -servicestudio-margin-left: 8px;
 }
 .HeaderIdentification-names {
   display: flex;
@@ -24106,6 +24108,7 @@ a .PersonCard_expandable {
 }
 .SapphireHeader-navigation {
   font-size: 2.249em;
+  -servicestudio-margin-top: 18px;
 }
 .SapphireHeader-navigation a .icon {
   color: #333333;
