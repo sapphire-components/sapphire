@@ -43,7 +43,7 @@
 .desktop input.Button.Is_Default,
 .desktop input.Button,
 .desktop input.Button.ButtonDefault,
-.Page a.Button,
+a.Button,
 .PanelOpened a.Button,
 .confirm-container a.Button,
 .LayoutPopup a.Button,
@@ -293,7 +293,7 @@ a.LinkReset {
 	}
 }
 
-.AR.Page {
+.AR {
 
 	a.Button,
 	&.LayoutTooltip a.Button,
