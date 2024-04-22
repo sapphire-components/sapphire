@@ -3,8 +3,8 @@
 	position: relative;
 
 	-servicestudio-position: absolute;
-    -servicestudio-left: 0;
-    -servicestudio-right: 0;
+	-servicestudio-left: 0;
+	-servicestudio-right: 0;
 
 	&.isOpen {
 		.SapphireHeader-additional-content {
@@ -30,7 +30,7 @@
 
 	&-navigation {
 		font-size: 2.249em;
-		
+
 		-servicestudio-margin-top: 18px;
 
 		a .icon {
@@ -38,7 +38,7 @@
 		}
 
 		.AR & {
-			> a {
+			>a {
 				transform: rotate(90deg);
 			}
 		}
@@ -78,7 +78,7 @@
 	&-actions {
 		//flex: 1;
 
-		> div {
+		>div {
 			align-items: center;
 			display: flex;
 			gap: $sapphire-sizes--xsmall;
@@ -188,11 +188,15 @@
 		padding: $sapphire-sizes--none $sapphire-sizes--small;
 		border-radius: $sapphire-sizes--xsmall;
 	}
-	
+
+}
+
+.patient-details-layout--deprecated .SapphireHeader {
+	-servicestudio-right: 40px;
 }
 
 // UI Adjustments when Sidebar is always opened
-.LayoutBase-iframesidebar.notExpandable + .LayoutBase-header {
+.LayoutBase-iframesidebar.notExpandable+.LayoutBase-header {
 	.SapphireHeader {
 		.DropdownMenu {
 			left: auto;
@@ -236,7 +240,7 @@
 			margin-right: 0;
 		}
 
-		&[style*='display: none;'] + .SapphireHeader-actions {
+		&[style*='display: none;']+.SapphireHeader-actions {
 			flex-basis: 100%;
 		}
 	}
@@ -244,7 +248,7 @@
 	.SapphireHeader-actions {
 		flex-basis: 50%;
 
-		> div {
+		>div {
 			justify-content: flex-end;
 		}
 	}
