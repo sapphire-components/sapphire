@@ -800,6 +800,16 @@
 	content: '\e914';
 }
 
+.icon-move-left:before {
+	content: '\e914';
+	transform: rotateZ(90deg);
+}
+
+.icon-move-right:before {
+	content: '\e914';
+	transform: rotateZ(-90deg);
+}
+
 .icon-temporary-bed:before {
 	content: '\e915';
 }
