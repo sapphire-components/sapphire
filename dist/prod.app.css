@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.42 || Generated: Tue Apr 23 2024 15:14:22 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.42 || Generated: Tue Apr 23 2024 18:46:20 GMT+0100 (Western European Summer Time) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -34538,6 +34538,10 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   display: none !important;
 }
 
+.hide-on-service-studio {
+  -servicestudio-display: none !important;
+}
+
 @media screen and (max-width: 0), screen and (min-width: 640px) {
   .show-for-small-only {
     display: none !important;
@@ -40873,17 +40877,6 @@ html .PatientDetailsLayout {
   width: 100%;
 }
 
-/*------------------------------------*\
-              $3. Forms
-\*-------------------------------------*/
-/*------------------------------------------------------------*/
-/* 3.1 Forms > Radio Button & Checkbox ************************/
-/*------------------------------------------------------------*/
-/*check Mandatory input*/
-/*for affect text only*/
-/*------------------------------------------------------------*/
-/* 3.2 Forms > Inputs, Selects & Textarea *********************/
-/*------------------------------------------------------------*/
 /*----------------------InputIconSapphire Input---------------------------------------*/
 .BigInput,
 .BigInput input,
@@ -40900,17 +40893,6 @@ html .PatientDetailsLayout {
   cursor: text;
 }
 
-/*
-.tablet .ValidationMessageContainer span.ValidationMessage {
-    margin-left: 12%;
-}
-
-.phone .ValidationMessageContainer span.ValidationMessage {
-    margin-left: 31%;
-}*/
-/*------------------------------------------------------------*/
-/* 3.4 Forms > Not Valid **************************************/
-/*------------------------------------------------------------*/
 /*------------------------------------*\
     $4. Buit-in widgets
 \*-------------------------------------*/
@@ -45380,10 +45362,6 @@ DAR: Tooltip css from silk UI theme applied in WB so we can use it in pages with
   bottom: 100%;
 }
 
-.hidden {
-  display: none;
-}
-
 .ms-search input[type=text] {
   border-left: 0;
   border-right: 0;
@@ -48486,10 +48464,6 @@ body .AR.phone .Content.ThemeGrid_Wrapper {
 .BadgeClassification {
   -servicestudio-background: red;
   -servicestudio-color: #fff;
-}
-
-.Hidden {
-  -servicestudio-display: none;
 }
 
 .AppLine {

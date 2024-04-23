@@ -8,7 +8,12 @@
 	display: none !important;
 }
 
-@media screen and (max-width: 0), screen and (min-width: 640px) {
+.hide-on-service-studio {
+	-servicestudio-display: none !important;
+}
+
+@media screen and (max-width: 0),
+screen and (min-width: 640px) {
 	.show-for-small-only {
 		display: none !important;
 	}
@@ -32,7 +37,8 @@
 	}
 }
 
-@media screen and (max-width: 639px), screen and (min-width: 1025px) {
+@media screen and (max-width: 639px),
+screen and (min-width: 1025px) {
 	.show-for-medium-only {
 		display: none !important;
 	}
@@ -56,13 +62,15 @@
 	}
 }
 
-@media screen and (max-width: 1024px), screen and (min-width: 1200px) {
+@media screen and (max-width: 1024px),
+screen and (min-width: 1200px) {
 	.show-for-large-only {
 		display: none !important;
 	}
 }
 
 @media only screen and (orientation: portrait) {
+
 	.show-for-portrait,
 	.hide-for-landscape {
 		display: initial !important;
@@ -75,6 +83,7 @@
 }
 
 @media only screen and (orientation: landscape) {
+
 	.show-for-portrait,
 	.hide-for-landscape {
 		display: none !important;
