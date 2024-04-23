@@ -270,6 +270,13 @@
 		});
 
 		this.$input.on('hide.daterangepicker', function (event, picker) {
+			// ONYX20792 Added START
+			if (_this.config.autoApply && _this.config.attachToInput) {
+				_this.updateLabeling();
+				_this.$model.trigger('change');
+			}
+			// ONYX20792 END
+
 			_this.$calendar.find('.DateTimeRangePicker-calendar-clear').remove();
 			_this.updateParentIframe();
 
@@ -307,13 +314,12 @@
 		});
 
 		this.$input.on('apply.daterangepicker', function (event, picker) {
-			if (_this.config.attachToInput) { //ONYX 20792
-				//if (_this.config.autoApply && _this.config.attachToInput) {
+			_this.updateLabeling(); // ONYX20792 This line was moved here. Previously it was right before _this.sendNotification().
+			if (_this.config.attachToInput) {
 				_this.$model.trigger('change'); //same fix as below for when the date is the same/today, when input is attached it seems we also need this extra step
 			}
 			_this.$input.trigger('change'); // Fix to call the change when the date is the same/today
 			_this.$clear.removeClass('disabled');
-			_this.updateLabeling();
 			_this.sendNotification();
 		});
 	};
