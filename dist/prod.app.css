@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.44 || Generated: Wed Apr 24 2024 12:31:05 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.44 || Generated: Wed Apr 24 2024 14:05:37 GMT+0100 (Western European Summer Time) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -11156,6 +11156,8 @@ div.WizardParent > div div.WizardStep a[disabled=disabled]:hover {
   position: fixed;
   width: calc(67% - (24px + 3px));
   z-index: 1;
+  -servicestudio-position: static;
+  -servicestudio-width: 100%;
 }
 .LayoutBase--fixedActions.HasSideBarNotExpandable {
   width: calc(67% - (24px + 151px));
