@@ -61,6 +61,7 @@ $select-system-height: 36px;
 		border-radius: $border-radius-default;
 		line-height: 0;
 		min-height: $select-system-height;
+		padding-right: 46px;
 		transition: all 0.1s ease-in;
 
 		&:hover {
