@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.5.46 || Generated: Wed Apr 24 2024 15:05:00 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.5.46 || Generated: Wed Apr 24 2024 15:33:44 GMT+0100 (Western European Summer Time) */
 /*!***************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/backoffice/styles.scss ***!
   \***************************************************************************************************************************************************************************************************************************************************/
@@ -6262,6 +6262,8 @@ div.WizardParent > div div.WizardStep {
   height: 36px;
   margin-left: -18px;
   padding: 0;
+  -servicestudio-width: auto;
+  -servicestudio-padding: 0 40px 0 20px;
 }
 .AR div.WizardParent > div div.WizardStep {
   margin-left: 0;
@@ -6385,6 +6387,9 @@ div.WizardParent > div div.WizardStep a:disabled,
 div.WizardParent > div div.WizardStep a[disabled=disabled],
 div.WizardParent > div div.WizardStep a[disabled=disabled]:hover {
   color: #adadad;
+}
+div.WizardParent > div div.WizardStep:after, div.WizardParent > div div.WizardStep.ActiveStep:after {
+  -servicestudio-background-color: transparent;
 }
 
 .DesignSystem .IconWizard,

@@ -60,6 +60,9 @@ div.WizardParent {
 			margin-left: -18px;
 			padding: 0;
 
+			-servicestudio-width: auto;
+		    -servicestudio-padding: 0 40px 0 20px;
+
 			.AR & {
 				margin-left: 0;
 				margin-right: -18px;
@@ -191,6 +194,11 @@ div.WizardParent {
 			a[disabled='disabled'],
 			a[disabled='disabled']:hover {
 				color: $label-color-disabled;
+			}
+
+			&:after,
+			&.ActiveStep:after {
+				-servicestudio-background-color: transparent;
 			}
 		}
 	}
