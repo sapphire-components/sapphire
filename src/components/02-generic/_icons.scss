@@ -802,11 +802,13 @@
 
 .icon-move-left:before {
 	content: '\e914';
+	display: inline-block;
 	transform: rotateZ(90deg);
 }
 
 .icon-move-right:before {
 	content: '\e914';
+	display: inline-block;
 	transform: rotateZ(-90deg);
 }
 
