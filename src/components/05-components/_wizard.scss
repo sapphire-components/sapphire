@@ -1,7 +1,5 @@
 // Wizard Parent
-
 @mixin wizard-step-arrow-style {
-	background-color: $regular-white;
 	border: none;
 	border-right: 1px solid $light-grey;
 	border-top: 1px solid $light-grey;
@@ -69,7 +67,8 @@ div.WizardParent {
 
 			&::after {
 				@include wizard-step-arrow-style();
-
+				
+				background-color: $regular-white;
 				right: 4px;
 
 				.AR & {
@@ -151,7 +150,6 @@ div.WizardParent {
 				&::before {
 					@include wizard-step-arrow-style();
 
-					//background-color: $body-regular;
 					border-color: $regular-alpha;
 					display: block;
 					left: -13px;

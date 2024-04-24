@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.45 || Generated: Wed Apr 24 2024 14:06:25 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.45 || Generated: Wed Apr 24 2024 15:04:36 GMT+0100 (Western European Summer Time) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -10670,7 +10670,6 @@ div.WizardParent > div div.WizardStep {
   margin-right: -18px;
 }
 div.WizardParent > div div.WizardStep::after {
-  background-color: #fff;
   border: none;
   border-right: 1px solid #d6d6d6;
   border-top: 1px solid #d6d6d6;
@@ -10679,6 +10678,7 @@ div.WizardParent > div div.WizardStep::after {
   top: 5px;
   transform: rotate(45deg);
   width: 24px;
+  background-color: #fff;
   right: 4px;
 }
 .AR div.WizardParent > div div.WizardStep::after {
@@ -10745,7 +10745,6 @@ div.WizardParent > div div.WizardStep.ActiveStep::after {
   border-left-color: #00bfa5;
 }
 div.WizardParent > div div.WizardStep.ActiveStep::before {
-  background-color: #fff;
   border: none;
   border-right: 1px solid #d6d6d6;
   border-top: 1px solid #d6d6d6;
