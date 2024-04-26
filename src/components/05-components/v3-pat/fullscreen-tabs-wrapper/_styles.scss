@@ -10,6 +10,11 @@ $tab-height: 44px;
 	padding: 0;
 	position: relative;
 
+	a {
+		-servicestudio-display: inline-block;
+		-servicestudio-padding: 0 16px;
+	}
+
 	.FullScreenTabsWrapper__Tabs {
 		bottom: 0;
 		display: inline-flex;
@@ -91,9 +96,6 @@ $tab-height: 44px;
 
 	a {
 		position: relative;
-
-		-servicestudio-display: inline-block;
-	    -servicestudio-padding: 0 16px;
 	}
 
 	.TabWrapper {
