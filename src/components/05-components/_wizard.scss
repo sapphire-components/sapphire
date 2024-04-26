@@ -20,10 +20,10 @@ div.WizardParent {
 		padding-right: 0;
 	}
 
-	> div {
+	>div {
 		display: flex;
 
-		> .ListRecords {
+		>.ListRecords {
 			display: flex;
 			width: 100%;
 		}
@@ -61,7 +61,7 @@ div.WizardParent {
 			padding: 0;
 
 			-servicestudio-width: auto;
-		    -servicestudio-padding: 0 40px 0 20px;
+			-servicestudio-padding: 0 40px 0 20px;
 
 			.AR & {
 				margin-left: 0;
@@ -70,7 +70,7 @@ div.WizardParent {
 
 			&::after {
 				@include wizard-step-arrow-style();
-				
+
 				background-color: $regular-white;
 				right: 4px;
 
@@ -176,12 +176,16 @@ div.WizardParent {
 				.IconWizard {
 					border: 1px solid $regular-white;
 					color: $regular-white;
+
+					-servicestudio-color: initial;
 				}
 			}
 
 			.IconWizard {
 				border: 1px solid $light-grey;
 				color: $light-grey;
+
+				-servicestudio-display: inline;
 			}
 
 			a,
