@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.48 || Generated: Wed Apr 24 2024 16:05:07 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! prod.app.css || Version: 5.5.48 || Generated: Fri Apr 26 2024 13:23:16 GMT+0100 (Western European Summer Time) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -10865,12 +10865,12 @@ div.WizardParent > div div.WizardStep:after, div.WizardParent > div div.WizardSt
   padding-left: 16px;
 }
 .LayoutBase-iframesidebar {
-  -servicestudio-display: none !important;
   height: 100vh;
   position: fixed;
   right: 0;
   top: 0;
   z-index: 70;
+  -servicestudio-display: none !important;
 }
 .LayoutBase-iframesidebar:before {
   background-color: #494f5c;
@@ -18543,6 +18543,8 @@ div.CircledArrow {
 }
 .FullScreenTabsWrapper_Container.Dashboard a {
   position: relative;
+  -servicestudio-display: inline-block;
+  -servicestudio-padding: 0 16px;
 }
 .FullScreenTabsWrapper_Container.Dashboard .TabWrapper {
   background-color: #fff;
@@ -28705,6 +28707,12 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 
 .SideMenu {
   background-color: #fff;
+  -servicestudio-position: absolute;
+  -servicestudio-left: 0;
+  -servicestudio-right: 0;
+}
+.LayoutBase .SideMenu {
+  -servicestudio-right: -40px;
 }
 .SideMenu--open .SideMenu__Shield {
   height: 100vh;

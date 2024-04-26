@@ -5,8 +5,6 @@
 	}
 
 	&-Wrapper {
-		// margin-bottom: 200px;
-
 		&.hasFixedBottom .LayoutBase-bottomfixedcontent {
 			background-color: $regular-white;
 			bottom: 0;
@@ -61,12 +59,13 @@
 	}
 
 	&-iframesidebar {
-		-servicestudio-display: none !important;
 		height: 100vh;
 		position: fixed;
 		right: 0;
 		top: 0;
 		z-index: 70;
+
+		-servicestudio-display: none !important;
 
 		&:before {
 			background-color: $sapphire-grey-blue;
@@ -82,10 +81,6 @@
 		&.notExpandable {
 			z-index: 29;
 		}
-
-		// &.notExpandable:before {
-		// 	width: 262px;
-		// }
 
 		&.isExpandable {
 			width: 40px;

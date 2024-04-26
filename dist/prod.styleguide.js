@@ -1,4 +1,4 @@
-/*! prod.styleguide.js || Version: 5.5.48 || Generated: Wed Apr 24 2024 16:05:07 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! prod.styleguide.js || Version: 5.5.48 || Generated: Fri Apr 26 2024 13:23:16 GMT+0100 (Western European Summer Time) */
 /*
  * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
  * This devtool is neither made for production nor for readable output files.

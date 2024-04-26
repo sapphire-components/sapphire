@@ -91,6 +91,9 @@ $tab-height: 44px;
 
 	a {
 		position: relative;
+
+		-servicestudio-display: inline-block;
+	    -servicestudio-padding: 0 16px;
 	}
 
 	.TabWrapper {
