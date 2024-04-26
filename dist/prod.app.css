@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.51 || Generated: Fri Apr 26 2024 16:25:13 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.51 || Generated: Fri Apr 26 2024 21:11:55 GMT+0100 (Western European Summer Time) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -11215,38 +11215,30 @@ body.LayoutBase .os-internal-ui-widget-overlay {
   border-right: 1px solid #d6d6d6;
 }
 
-.LayoutBase.Page {
+.LayoutBase {
   min-height: 100vh;
 }
-.LayoutBase.Page.tablet .PatientDetails_content {
+.LayoutBase.tablet .PatientDetails_content {
   padding-left: 0;
   padding-right: 0;
 }
-.LayoutBase.Page .LayoutBase-Content {
+.LayoutBase .LayoutBase-Content {
   position: static;
 }
-.LayoutBase.Page .ClinicianWorkArea {
-  /*&.FullWidth {
-  	.ClinicianWorkArea-columns {
-  		background: #fff;
-  		background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 0) 200px);
-  	}
-  }*/
-}
-.LayoutBase.Page .ClinicianWorkArea .ClinicianWorkArea-columns {
+.LayoutBase .ClinicianWorkArea .ClinicianWorkArea-columns {
   align-items: stretch;
   background-color: #f3f3f3;
   display: flex;
   flex: 1;
   width: 100%;
 }
-.LayoutBase.Page .ClinicianWorkArea-columns-big {
+.LayoutBase .ClinicianWorkArea-columns-big {
   display: inline-block;
   padding: 0;
   vertical-align: top;
   width: 67%;
 }
-.LayoutBase.Page .ClinicianWorkArea-columns-small {
+.LayoutBase .ClinicianWorkArea-columns-small {
   background-color: #ebebeb;
   border-left: 1px solid #d6d6d6;
   display: inline-block;
@@ -11255,19 +11247,19 @@ body.LayoutBase .os-internal-ui-widget-overlay {
   vertical-align: top;
   width: 33%;
 }
-.LayoutBase.Page .ClinicianWorkArea.FullWidth .ClinicianWorkArea-columns-big {
+.LayoutBase .ClinicianWorkArea.FullWidth .ClinicianWorkArea-columns-big {
   display: block;
   padding: 0;
   width: 100%;
 }
-.LayoutBase.Page .ClinicianWorkArea.FullWidth .ClinicianWorkArea-columns-small {
+.LayoutBase .ClinicianWorkArea.FullWidth .ClinicianWorkArea-columns-small {
   display: none;
 }
-.LayoutBase.Page .Toolbar {
+.LayoutBase .Toolbar {
   padding-left: 24px;
   min-height: 73px;
 }
-.LayoutBase.Page .Toolbar.Fix {
+.LayoutBase .Toolbar.Fix {
   margin-left: 0;
   padding-right: 8px;
 }
@@ -38010,6 +38002,17 @@ div.SelectableList-Line > span > div.ExpandableContent {
     The value was taken from StockHistory inline style */
 .PharmaTableRecords tbody tr {
   line-height: 58px;
+}
+
+.ClinicianWorkArea .TabWrapper {
+  -servicestudio-display: inline-block;
+}
+
+.LayoutBase .ClinicianWorkArea {
+  -servicestudio-position: absolute;
+  -servicestudio-left: 0px;
+  -servicestudio-right: 0px;
+  -servicestudio-top: 80px;
 }
 
 /*

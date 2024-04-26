@@ -520,71 +520,62 @@ body.LayoutBase .os-internal-ui-widget-overlay {
 }
 
 .LayoutBase {
-	&.Page {
-		min-height: 100vh;
+	min-height: 100vh;
 
-		&.tablet .PatientDetails_content {
-			padding-left: 0;
-			padding-right: 0;
-		}
+	&.tablet .PatientDetails_content {
+		padding-left: 0;
+		padding-right: 0;
+	}
 
-		.LayoutBase-Content {
-			position: static;
-		}
+	.LayoutBase-Content {
+		position: static;
+	}
 
-		.ClinicianWorkArea {
-			.ClinicianWorkArea-columns {
-				align-items: stretch;
-				background-color: $body-color;
-				display: flex;
-				flex: 1;
-				width: 100%;
-			}
-
-			/*&.FullWidth {
-				.ClinicianWorkArea-columns {
-					background: #fff;
-					background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 0) 200px);
-				}
-			}*/
-		}
-
-		.ClinicianWorkArea-columns-big {
-			display: inline-block;
-			padding: 0;
-			vertical-align: top;
-			width: 67%;
-		}
-
-		.ClinicianWorkArea-columns-small {
-			background-color: $sapphire-light;
-			border-left: 1px solid $light-grey;
-			display: inline-block;
-			padding: 0 $sapphire-sizes--medium;
-			position: relative;
-			vertical-align: top;
-			width: 33%;
-		}
-
-		.ClinicianWorkArea.FullWidth .ClinicianWorkArea-columns-big {
-			display: block;
-			padding: 0;
+	.ClinicianWorkArea {
+		.ClinicianWorkArea-columns {
+			align-items: stretch;
+			background-color: $body-color;
+			display: flex;
+			flex: 1;
 			width: 100%;
 		}
+	}
 
-		.ClinicianWorkArea.FullWidth .ClinicianWorkArea-columns-small {
-			display: none;
-		}
+	.ClinicianWorkArea-columns-big {
+		display: inline-block;
+		padding: 0;
+		vertical-align: top;
+		width: 67%;
+	}
 
-		.Toolbar {
-			padding-left: $sapphire-sizes--large;
-			min-height: 73px;
-		}
+	.ClinicianWorkArea-columns-small {
+		background-color: $sapphire-light;
+		border-left: 1px solid $light-grey;
+		display: inline-block;
+		padding: 0 $sapphire-sizes--medium;
+		position: relative;
+		vertical-align: top;
+		width: 33%;
+	}
 
-		.Toolbar.Fix {
-			margin-left: 0;
-			padding-right: 8px;
-		}
+	.ClinicianWorkArea.FullWidth .ClinicianWorkArea-columns-big {
+		display: block;
+		padding: 0;
+		width: 100%;
+	}
+
+	.ClinicianWorkArea.FullWidth .ClinicianWorkArea-columns-small {
+		display: none;
+	}
+
+	.Toolbar {
+		padding-left: $sapphire-sizes--large;
+		min-height: 73px;
+	}
+
+	.Toolbar.Fix {
+		margin-left: 0;
+		padding-right: 8px;
 	}
 
 	.select2-container--open .select2-dropdown--below {

@@ -1,0 +1,14 @@
+.TabWrapper {
+  .ClinicianWorkArea & {
+    -servicestudio-display: inline-block;
+  }
+}
+
+.LayoutBase {
+  .ClinicianWorkArea {
+    -servicestudio-position: absolute;
+    -servicestudio-left: 0px;
+    -servicestudio-right: 0px;
+    -servicestudio-top: 80px;
+  }
+}
