@@ -1,0 +1,11 @@
+.LayoutBase {
+  &-MainMenu:not(:empty) {
+    &~* .LayoutBase-header {
+      -servicestudio-top: 60px;
+    }
+
+    &~.LayoutBase-Content {
+      -servicestudio-margin-top: 20px;
+    }
+  }
+}

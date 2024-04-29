@@ -4,9 +4,9 @@ $side-menu-height: 64px;
 	background-color: $regular-white;
 
 	-servicestudio-position: absolute;
-    -servicestudio-left: 0;
-    -servicestudio-right: 0;
-	
+	-servicestudio-left: 0;
+	-servicestudio-right: 0;
+
 	.LayoutBase & {
 		-servicestudio-right: -40px;
 	}
@@ -45,7 +45,7 @@ $side-menu-height: 64px;
 				margin-top: 0;
 				overflow: unset;
 
-				> span:empty {
+				>span:empty {
 					display: none;
 				}
 
@@ -227,7 +227,7 @@ $side-menu-height: 64px;
 		display: inline-flex;
 		width: 100%;
 
-		> div {
+		>div {
 			&:first-of-type {
 				flex: 1;
 			}
@@ -287,8 +287,9 @@ $side-menu-height: 64px;
 		}
 
 		.SideMenu__MenuItems .MenuItem_subItems {
-			> a,
-			> .ListRecords > a {
+
+			>a,
+			>.ListRecords>a {
 				padding-left: 60px;
 			}
 		}
@@ -436,8 +437,8 @@ $side-menu-height: 64px;
 					}
 				}
 
-				> a,
-				> .ListRecords > a {
+				>a,
+				>.ListRecords>a {
 					background-color: transparent;
 					border: none;
 					color: $dark-grey;

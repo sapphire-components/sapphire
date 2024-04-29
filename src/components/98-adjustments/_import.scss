@@ -1,3 +1,4 @@
+@import 'appointments-list';
 @import 'auxiliar-containers';
 @import 'availability-card';
 @import 'bed-slot-box';
@@ -19,18 +20,21 @@
 @import 'edit-patient-details';
 @import 'er_common_cw';
 @import 'form-field';
+@import 'fullscreen-tabs-wrapper';
 @import 'general';
 @import 'hospitalization-plan-layout';
-@import 'appointments-list';
 @import 'inputs';
+@import 'layout-base';
 @import 'layout-popup';
 @import 'main-menu';
 @import 'modal-popup';
 @import 'panels';
+@import 'pharma-table-records';
 @import 'pika-single';
 @import 'prescription-expandable';
 @import 'prescriptions_CW';
 @import 'sapphire-calendar';
+@import 'sapphire-header';
 @import 'search-wrapper';
 @import 'section-expandable-custom';
 @import 'section-expandable-inside';
@@ -42,5 +46,3 @@
 @import 'table-records';
 @import 'toolbar';
 @import 'vertical-align';
-@import 'pharma-table-records';
-@import 'fullscreen-tabs-wrapper';
