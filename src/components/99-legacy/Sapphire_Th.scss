@@ -248,42 +248,6 @@
         $0. Fonts
 \*-------------------------------------*/
 
-/* Fonts > Import Font */
-
-/*
-@font-face {
-    font-family: 'globeregular';
-    src: url('fonts/glober_regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'globerbold';
-    src: url('fonts/glober_bold-webfont.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'droidsansbold';
-    src: url('fonts/droidSans_bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Sapphire-Icon-Font';
-    src: url('fonts/Sapphire-Icon-Font.eot');
-    src: url('fonts/Sapphire-Icon-Font.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Sapphire-Icon-Font.woff') format('woff'),
-        url('fonts/Sapphire-Icon-Font.ttf') format('truetype'),
-        url('fonts/Sapphire-Icon-Font.svg?#Sapphire-Icon-Font') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-*/
-
 /*------------------------------------*\
     $1. General Properties
 \*-------------------------------------*/
@@ -4111,14 +4075,6 @@ td.RowWithAddAction a {
 // 	height: auto !important;
 // }
 
-// div.os-internal-Popup .os-internal-ui-dialog .os-internal-ui-dialog-titlebar-close,
-// div.os-internal-Popup.os-internal-ui-dialog .os-internal-ui-dialog-titlebar-close {
-// 	background-image: url(/SilkUIFramework/img/PopupCloseDark.png?301693&82460);
-// 	opacity: 0.3;
-// 	right: 20px;
-// 	top: 20px;
-// }
-
 // div.os-internal-Popup.os-internal-ui-dialog .os-internal-ui-dialog-titlebar-close-no-title {
 // 	opacity: 0.3;
 // }
@@ -5564,29 +5520,6 @@ a.Button.Icon:hover {
   margin: 0;
 }
 
-// .Button.Loading:before,
-// .Button.Loading[disabled]:before,
-// .Button.Loading:disabled:before {
-//   background-image: url(/SilkUIFramework/img/loading_lisbon_white.gif?57934&58326&58328&201984&202697&301693&82460);
-//   background-size: 16px 16px;
-//   content: '';
-//   display: inline-block;
-//   height: 16px;
-//   margin-right: 5px;
-//   margin-top: -2px;
-//   vertical-align: middle;
-//   width: 16px;
-// }
-
-// .Button.Is_Default.Loading:before,
-// .Button.Is_Default.Loading[disabled]:before,
-// .Button.Is_Default.Loading:disabled:before,
-// .Button.ButtonDefault.Loading:before,
-// .Button.ButtonDefault.Loading[disabled]:before,
-// .Button.ButtonDefault.Loading:disabled:before {
-//   background-image: url(/SilkUIFramework/img/loading_lisbon_white.gif?57934&58326&58328&201984&202697&301693&82460);
-// }
-
 .Button.Small.Loading:before {
   margin-top: 4px;
 }
@@ -5598,24 +5531,6 @@ a.Button.Icon:hover {
 .Button.Loading span.fa {
   display: none;
 }
-
-/* Responsive Context **************************/
-// .phone .Button,
-// .tablet .Button,
-// .phone a.Button,
-// .tablet a.Button {
-//   height: 36px;
-//   line-height: 34px;
-//   text-decoration: none;
-// }
-
-// .tablet.portrait a.Button {
-//   height: auto;
-//   line-height: 18px;
-//   min-width: 110px;
-//   padding: 6px;
-//   white-space: pre-line;
-// }
 
 .phone input.Button:focus,
 .tablet input.Button:focus,
@@ -13675,7 +13590,6 @@ canvas.Sketch_Canvas {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
-  //cursor: url("pencil.cur"), auto;
   height: 100%;
   width: 100%;
 }

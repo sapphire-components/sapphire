@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.5.53 || Generated: Thu May 02 2024 18:56:39 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.5.53 || Generated: Thu May 02 2024 18:57:07 GMT+0100 (Western European Summer Time) */
 /*!***************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/backoffice/styles.scss ***!
   \***************************************************************************************************************************************************************************************************************************************************/
@@ -5631,7 +5631,7 @@ body.confirmation-opened {
 }
 .select2 .select2-selection:after {
   background-color: #fff;
-  background-image: url("/Sapphire_Th/img/upDownArrows.png");
+  background-image: url("/Sapphire_Resources/img/upDownArrows.png");
   background-position-x: center;
   background-position-y: center;
   background-repeat: no-repeat;
@@ -11653,11 +11653,6 @@ a.Button[disabled] {
   color: #9b9b9b;
 }
 
-/* .Button.Loading:before,
-.Button.Loading[disabled]:before,
-.Button.Loading:disabled:before {
-  background-image: url(/Backoffice_Th/img/ajaxloaderBO.gif?510901&510913);
-} */
 input.Button:focus {
   border-width: 1px;
   box-shadow: none;
@@ -11917,14 +11912,6 @@ a.Button.Link:disabled,
   width: 16px;
 }
 
-/* .Button.Is_Default.Loading:before,
-.Button.Is_Default.Loading[disabled]:before,
-.Button.Is_Default.Loading:disabled:before,
-.Button.ButtonDefault.Loading:before,
-.Button.ButtonDefault.Loading[disabled]:before,
-.Button.ButtonDefault.Loading:disabled:before {
-  background-image: url(/Backoffice_Th/img/ajaxloaderBO.gif?510901&510913);
-} */
 .Button.Small.Loading:before {
   margin-top: 4px;
 }

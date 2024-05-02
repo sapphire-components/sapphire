@@ -4911,12 +4911,6 @@ a.Button[disabled] {
   color: #9b9b9b;
 }
 
-/* .Button.Loading:before,
-.Button.Loading[disabled]:before,
-.Button.Loading:disabled:before {
-  background-image: url(/Backoffice_Th/img/ajaxloaderBO.gif?510901&510913);
-} */
-
 input.Button:focus {
   border-width: 1px;
   box-shadow: none;
@@ -5179,15 +5173,6 @@ a.Button.Link:disabled,
   vertical-align: middle;
   width: 16px;
 }
-
-/* .Button.Is_Default.Loading:before,
-.Button.Is_Default.Loading[disabled]:before,
-.Button.Is_Default.Loading:disabled:before,
-.Button.ButtonDefault.Loading:before,
-.Button.ButtonDefault.Loading[disabled]:before,
-.Button.ButtonDefault.Loading:disabled:before {
-  background-image: url(/Backoffice_Th/img/ajaxloaderBO.gif?510901&510913);
-} */
 
 .Button.Small.Loading:before {
   margin-top: 4px;

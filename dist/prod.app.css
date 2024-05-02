@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.53 || Generated: Thu May 02 2024 18:56:39 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.53 || Generated: Thu May 02 2024 18:57:07 GMT+0100 (Western European Summer Time) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -7962,7 +7962,7 @@ a.LinkReset:link, a.LinkReset:visited {
 .LayoutPopup .FormField select,
 .LayoutBlank .FormField select,
 .LayoutBase .FormField select {
-  background-image: url("/Sapphire_Th/img/upDownArrows.png");
+  background-image: url("/Sapphire_Resources/img/upDownArrows.png");
   background-position: right 14px center;
   background-repeat: no-repeat;
   color: #333333;
@@ -26723,7 +26723,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 }
 .select2 .select2-selection:after {
   background-color: #fff;
-  background-image: url("/Sapphire_Th/img/upDownArrows.png");
+  background-image: url("/Sapphire_Resources/img/upDownArrows.png");
   background-position-x: center;
   background-position-y: center;
   background-repeat: no-repeat;
@@ -29176,7 +29176,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .ISidebar .ISidebar-content .LayoutBase .FormField select,
 .LayoutBase .FormField .ISidebar .ISidebar-content select {
   background-color: #494f5c;
-  background-image: url("/Sapphire_Th/img/sidebarArrow.png");
+  background-image: url("/Sapphire_Resources/img/sidebarArrow.png");
   border: none;
   color: #d6d6d6;
   cursor: pointer;
@@ -38273,40 +38273,6 @@ div.SelectableList-Line > span > div.ExpandableContent {
 /*------------------------------------*\
         $0. Fonts
 \*-------------------------------------*/
-/* Fonts > Import Font */
-/*
-@font-face {
-    font-family: 'globeregular';
-    src: url('fonts/glober_regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'globerbold';
-    src: url('fonts/glober_bold-webfont.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'droidsansbold';
-    src: url('fonts/droidSans_bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Sapphire-Icon-Font';
-    src: url('fonts/Sapphire-Icon-Font.eot');
-    src: url('fonts/Sapphire-Icon-Font.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Sapphire-Icon-Font.woff') format('woff'),
-        url('fonts/Sapphire-Icon-Font.ttf') format('truetype'),
-        url('fonts/Sapphire-Icon-Font.svg?#Sapphire-Icon-Font') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-*/
 /*------------------------------------*\
     $1. General Properties
 \*-------------------------------------*/
@@ -41593,7 +41559,6 @@ a.Button.Icon:hover {
   display: none;
 }
 
-/* Responsive Context **************************/
 .phone input.Button:focus,
 .tablet input.Button:focus,
 .phone input.Button,
@@ -43239,7 +43204,7 @@ a.qq-button span {
 }
 
 .qq-upload-spinner {
-  background: url("/Sapphire_Th/img/loading.gif");
+  background: url("/Sapphire_Resources/img/ajaxloader.gif");
   display: inline-block;
   height: 15px;
   vertical-align: text-bottom;
@@ -43917,7 +43882,7 @@ canvas.Sketch_Canvas {
 /* 9.100 Sapphire Patterns > SapphireWidgets > ImagePlaceholder *********/
 /*-------------------------------------------------------------------------------------*/
 .imgplace {
-  background-image: url("/Sapphire_Th/img/placeholder_bg.png");
+  background-image: url("/Sapphire_Resources/img/placeholder_bg.png");
   background-size: 100%;
   border: 2px solid #ccc;
   border-radius: 2px;
