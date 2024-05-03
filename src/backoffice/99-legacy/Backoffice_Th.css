@@ -86,71 +86,11 @@
 /*------------------------------------*\
         $0. Fonts
 \*-------------------------------------*/
-
-/* Fonts > Import Font */
-
-
-
-/* 
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: url('fonts/Lato-Regular.eot');
-  src: url('fonts/Lato-Regular.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  src: url('fonts/Lato-Italic.eot');
-  src: url('fonts/Lato-Italic.woff') format('woff');
-}
-
-
-
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 600;
-  src: url('fonts/Lato-Semibold.eot');
-  src: url('fonts/Lato-Semibold.woff') format('woff');
-}
-
-
-
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 800;
-  src: url('fonts/Lato-Heavy.eot');
-  src: url('fonts/Lato-Heavy.woff') format('woff');
-}
-
-/* Fonts > Font Classes */
-
-
-
-/* Fonts > Font icons */
-/* @font-face {
-  font-family: 'Sapphire-Icon-Font';
-  font-style: normal;
-  font-weight: normal;
-  src: url('fonts/Sapphire-Icon-Font.eot');
-  src: url('fonts/Sapphire-Icon-Font.eot?#iefix') format('embedded-opentype'),
-    url('fonts/Sapphire-Icon-Font.woff') format('woff'),
-    url('fonts/Sapphire-Icon-Font.ttf') format('truetype'),
-    url('fonts/Sapphire-Icon-Font.svg?#Sapphire-Icon-Font') format('svg');
-}  */
-
 .icon,
 .icon:before,
 .icon:after {
   font-family: Sapphire-Icon-Font;
 }
-
-
 
 /* Fonts > Font Definition */
 html,

@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.5.54 || Generated: Thu May 02 2024 18:58:02 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.5.54 || Generated: Fri May 03 2024 12:48:06 GMT+0100 (Western European Summer Time) */
 /*!***************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/backoffice/styles.scss ***!
   \***************************************************************************************************************************************************************************************************************************************************/
@@ -6972,56 +6972,6 @@ div.WizardParent > div div.WizardStep:after, div.WizardParent > div div.WizardSt
 /*------------------------------------*\
         $0. Fonts
 \*-------------------------------------*/
-/* Fonts > Import Font */
-/* 
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: url('fonts/Lato-Regular.eot');
-  src: url('fonts/Lato-Regular.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  src: url('fonts/Lato-Italic.eot');
-  src: url('fonts/Lato-Italic.woff') format('woff');
-}
-
-
-
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 600;
-  src: url('fonts/Lato-Semibold.eot');
-  src: url('fonts/Lato-Semibold.woff') format('woff');
-}
-
-
-
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 800;
-  src: url('fonts/Lato-Heavy.eot');
-  src: url('fonts/Lato-Heavy.woff') format('woff');
-}
-
-/* Fonts > Font Classes */
-/* Fonts > Font icons */
-/* @font-face {
-  font-family: 'Sapphire-Icon-Font';
-  font-style: normal;
-  font-weight: normal;
-  src: url('fonts/Sapphire-Icon-Font.eot');
-  src: url('fonts/Sapphire-Icon-Font.eot?#iefix') format('embedded-opentype'),
-    url('fonts/Sapphire-Icon-Font.woff') format('woff'),
-    url('fonts/Sapphire-Icon-Font.ttf') format('truetype'),
-    url('fonts/Sapphire-Icon-Font.svg?#Sapphire-Icon-Font') format('svg');
-}  */
 .icon,
 .icon:before,
 .icon:after {
