@@ -16,7 +16,7 @@
 
 .BorderStyleNone,
 .borderstyle--none {
-	border-style: none !important;//important because there are cases applying this class won't work as expected due to pattern construction
+	border-style: none !important; //important because there are cases applying this class won't work as expected due to pattern construction
 }
 
 .BorderStyleSolid,
@@ -161,7 +161,13 @@
 	border-top: 1px solid $light-grey;
 }
 
-.BorderRadiusGrey{
-  border: 1px solid $light-grey;
-  border-radius: $border-radius-medium;
+.BorderRadiusGrey {
+	border: 1px solid $light-grey;
+	border-radius: $border-radius-medium;
+}
+
+.icon-border {
+	border: solid 0.08em $light-grey;
+	border-radius: 0.1em;
+	padding: 0.2em 0.25em 0.15em;
 }

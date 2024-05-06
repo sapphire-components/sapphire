@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.55 || Generated: Mon May 06 2024 11:02:00 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.55 || Generated: Mon May 06 2024 11:26:21 GMT+0100 (Western European Summer Time) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -32471,6 +32471,12 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 .BorderRadiusGrey {
   border: 1px solid #d6d6d6;
   border-radius: 8px;
+}
+
+.icon-border {
+  border: solid 0.08em #d6d6d6;
+  border-radius: 0.1em;
+  padding: 0.2em 0.25em 0.15em;
 }
 
 .ShadowXSmall, .ShiftTableCardProgress, .ShiftTableCard,
