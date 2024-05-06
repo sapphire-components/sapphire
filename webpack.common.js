@@ -11,6 +11,7 @@ module.exports = {
 		app: path.resolve(__dirname, './src/app.js'),
 		styleguide: path.resolve(__dirname, './src/styleguide/scripts.js'),
 		backoffice: path.resolve(__dirname, './src/backoffice/scripts.js'),
+		icons: path.resolve(__dirname, './src/assets/icons.js')
 	},
 	output: {
 		path: outputPath,
