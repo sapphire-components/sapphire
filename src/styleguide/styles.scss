@@ -685,9 +685,11 @@ $styleguide-main-content-padding: 50px;
 
 		img {
 			display: block;
+			height: auto;
+		    width: 100%;
+		    max-width: 1500px;
 			margin: 15px auto;
 			border-radius: 5px;
-			height: 520px;
 		}
 	}
 
