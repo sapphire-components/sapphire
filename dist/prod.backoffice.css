@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.5.60 || Generated: Wed May 22 2024 11:59:47 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.5.60 || Generated: Wed May 22 2024 19:13:45 GMT+0100 (Western European Summer Time) */
 /*!***************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/backoffice/styles.scss ***!
   \***************************************************************************************************************************************************************************************************************************************************/
@@ -4572,6 +4572,7 @@ body.confirmation-opened {
   font-family: "LatoRegular";
 }
 .select2 .select2-selection .select2-selection__rendered .select2-selection__choice {
+  width: 100%;
   background-color: #c4f0eb;
   border: none;
   border-radius: 0;
@@ -4582,7 +4583,9 @@ body.confirmation-opened {
   margin-top: 4px;
   padding: 2px 25px 2px 15px;
   position: relative;
-  white-space: normal;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .select2 .select2-selection .select2-selection__rendered .select2-selection__choice > div {
   max-width: 350px;
