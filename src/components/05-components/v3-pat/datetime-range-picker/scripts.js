@@ -458,10 +458,8 @@
 					.removeClass('drop-up')
 					.addClass('drop-down')
 					.css('top', point);
-			} else if (
-				!this.$calendar.hasClass('drop-up') &&
-				this.$calendar[0].getBoundingClientRect().bottom > (window.innerHeight || document.documentElement.clientHeight)
-			) {
+			}
+			else if (!this.$calendar.hasClass('drop-up') && this.$calendar[0].getBoundingClientRect().bottom > (window.innerHeight || document.documentElement.clientHeight)) {
 				var point = window.scrollY + coords.top - coords.height - this.$input.height() - 7;
 				this.$calendar.addClass('drop-up').css('top', point);
 			}
