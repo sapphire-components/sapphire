@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.62 || Generated: Mon Jun 03 2024 21:29:23 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.62 || Generated: Tue Jun 04 2024 15:25:36 GMT+0100 (Western European Summer Time) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -10793,13 +10793,6 @@ a.SpecialityButtonForward {
   font-size: 1.143em;
 }
 
-html,
-body,
-form,
-.Page {
-  height: auto !important;
-}
-
 .LoginBackground {
   background: no-repeat;
   background-image: url("/Login_UI/BackgroundImage.aspx?BackgroundImageId=3");
@@ -19834,9 +19827,8 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
 .MainInteractiveCard-iframe-actions {
   align-items: center;
   display: flex;
-  justify-content: flex-end;
   margin-bottom: 16px;
-  z-index: 0;
+  justify-content: flex-end;
 }
 .MainInteractiveCard-iframe-actions.XSmall {
   height: 56px;
