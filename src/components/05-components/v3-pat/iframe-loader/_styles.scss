@@ -1,0 +1,50 @@
+ul.os-internal-ui-autocomplete {
+  /* Prevent drop down autocomplete be overriden by the popup menu */
+  z-index: 100 !important;
+}
+
+div.menu-inline-wrapper {
+  width: 0;
+}
+
+div.menu-inline-wrapper>div.menu-inline {
+  position: absolute;
+  z-index: 2;
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 1px #c5cacd;
+  -moz-box-shadow: 0 1px 1px #c5cacd;
+  box-shadow: 0 1px 1px #c5cacd;
+  border: 1px solid #ddd;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+
+  -servicestudio-position: static;
+  -servicestudio-min-height: 100px;
+}
+
+div.menu-inline-wrapper>div.menu-inline>div.menu-inline-balloon {
+  display: block;
+  position: absolute;
+  -servicestudio-position: static;
+  height: 1px;
+  width: 1px;
+  border: solid 12px transparent;
+  border-bottom: solid 12px #c5cacd;
+  top: -24px;
+  left: 5px;
+}
+
+div.menu-inline-wrapper>div.menu-inline>div.menu-inline-balloon:after {
+  content: '';
+  display: block;
+  position: absolute;
+
+  -servicestudio-position: static;
+
+  height: 1px;
+  width: 1px;
+  border: solid 11px transparent;
+  border-bottom: solid 10px #fff;
+  top: -9px;
+  left: -11px;
+}
