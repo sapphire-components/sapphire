@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.64 || Generated: Tue Jun 04 2024 18:25:45 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.64 || Generated: Tue Jun 04 2024 23:17:08 GMT+0100 (Western European Summer Time) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -17439,6 +17439,694 @@ div.CircledArrow {
   color: #ff3e2d;
 }
 
+/* stylelint-disable no-descending-specificity */
+/* Now called GenericCard, the css classes will remain with their previous name*/
+.PersonCard {
+  /*&___icon {
+  	&:not(:empty) + .PersonCard____title {
+  		margin-left: $sapphire-sizes--medium;
+  	}
+  }*/
+}
+.PersonCard.IsOpen > .PersonCard_header {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.PersonCard.IsOpen > .PersonCard_header .PersonCard__expandIcon {
+  transform: rotate(180deg);
+}
+.PersonCard.IsOpen > .PersonCard_expandable {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.PersonCard.IsOpen > .PersonCard__content .PersonExpandableDiv {
+  background-color: #f2fffd;
+}
+.PersonCard.IsOpen .PersonExpandableDiv:before {
+  content: "\e611";
+}
+.PersonCard_header {
+  align-items: stretch;
+  background-color: #fff;
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  display: flex;
+  min-height: 56px;
+}
+.PersonCard_header:not(.IsTransparent).PersonCard__content {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 10px 16px;
+  width: 100%;
+}
+.PersonCard_header.IsExpandable .PersonCard__title,
+.PersonCard_header.IsExpandable .PersonCard__content,
+.PersonCard_header.IsExpandable .PersonCard__headerLeftInfo {
+  cursor: pointer;
+  pointer-events: auto;
+}
+.PersonCard_header.IsExpandable .PersonCard__expandIcon {
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid #333333;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  font-size: 0.857em;
+  height: 20px;
+  justify-content: center;
+  text-align: center;
+  transform: rotate(90deg);
+  width: 20px;
+  z-index: 1;
+  min-width: 20px;
+}
+.PersonCard_header.IsExpandable .PersonCard__expandIcon:before {
+  font-family: "Sapphire-Icon-Font";
+  content: "\e611";
+  color: #333333;
+  font-size: 0.7em;
+}
+.PersonCard_header.IsExpandable .PersonCard__expandIcon:hover {
+  background-color: rgba(51, 51, 51, 0.1);
+}
+.PersonCard_header.IsExpandableDisabled .PersonCard__expandIcon {
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid #d6d6d6;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  font-size: 0.857em;
+  height: 20px;
+  justify-content: center;
+  text-align: center;
+  transform: rotate(90deg);
+  width: 20px;
+  z-index: 1;
+  min-width: 20px;
+  pointer-events: none;
+}
+.PersonCard_header.IsExpandableDisabled .PersonCard__expandIcon:before {
+  font-family: "Sapphire-Icon-Font";
+  content: "\e611";
+  color: #d6d6d6;
+  font-size: 0.7em;
+}
+.PersonCard_header.IsExpandableDisabled .PersonCard__expandIcon:hover {
+  background-color: rgba(214, 214, 214, 0.1);
+}
+.PersonCard_header.IsTransparent {
+  background-color: transparent;
+  border: none;
+  height: unset;
+  min-height: 0px;
+}
+.PersonCard_header.IsTransparent .PersonCard__actions a.Button {
+  height: auto;
+  line-height: unset;
+}
+.PersonCard_header.IsTransparent .PersonCard__title,
+.PersonCard_header.IsTransparent .PersonCard__actions,
+.PersonCard_header.IsTransparent .PersonCard__content,
+.PersonCard_header.IsTransparent .PersonCard__headerLeftInfo {
+  background-color: transparent;
+}
+.PersonCard_header.NonePadding .PersonCard__actions,
+.PersonCard_header.NonePadding .PersonCard__content,
+.PersonCard_header.NonePadding .PersonCard__headerLeftInfo {
+  padding: 0;
+}
+.PersonCard_header.MediumPadding .PersonCard__headerLeftInfo {
+  gap: 16px;
+  padding: 16px;
+  padding-right: 0;
+}
+.PersonCard_header.MediumPadding .PersonCard__content {
+  padding: 16px;
+}
+.PersonCard_header.MediumPadding .PersonCard__actions {
+  padding: 16px;
+  padding-left: 0;
+}
+.PersonCard_header.SmallPadding .PersonCard__actions,
+.PersonCard_header.SmallPadding .PersonCard__content,
+.PersonCard_header.SmallPadding .PersonCard__headerLeftInfo {
+  padding: 6px 16px;
+}
+.PersonCard_header.Selected {
+  border: 1px solid #00bfa5;
+  border-radius: 8px;
+}
+.PersonCard_header.Selected .PersonCard__content,
+.PersonCard_header.Selected .PersonCard__actions,
+.PersonCard_header.Selected .PersonCard__headerLeftInfo {
+  background-color: #f2fffd;
+}
+.PersonCard_header .PersonCard__content {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  flex: auto;
+  flex-basis: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 10px 16px;
+}
+.PersonCard_header .PersonCard__content .Patient_Info > div {
+  width: 200px;
+}
+.PersonCard_header .PersonCard__content.MinWidthXSmall > div:first-of-type {
+  min-width: 200px;
+}
+.PersonCard_header .PersonCard__content.MinWidthSmall > div:first-of-type {
+  min-width: 400px;
+}
+.PersonCard_header .PersonCard__content.MinWidthMedium > div:first-of-type {
+  min-width: 600px;
+}
+.PersonCard_header .PersonCard__content.MinWidthLarge > div:first-of-type {
+  min-width: 800px;
+}
+.PersonCard_header .PersonCard__content .MinWidthXSmall {
+  min-width: 50px;
+}
+.PersonCard_header .PersonCard__content .MinWidth100 {
+  min-width: 100px;
+}
+.PersonCard_header .PersonCard__content .MinWidthSmall {
+  min-width: 200px;
+}
+.PersonCard_header .PersonCard__content .MinWidth300 {
+  min-width: 300px;
+}
+.PersonCard_header .PersonCard__content .MinWidthMedium {
+  min-width: 400px;
+}
+.PersonCard_header .PersonCard__content .MinWidthLarge {
+  min-width: 600px;
+}
+.PersonCard_header .PersonCard__content .MaxWidthXSmall {
+  max-width: 50px;
+}
+.PersonCard_header .PersonCard__content .MaxWidth100 {
+  max-width: 100px;
+}
+.PersonCard_header .PersonCard__content .MaxWidthSmall {
+  max-width: 200px;
+}
+.PersonCard_header .PersonCard__content .MaxWidthMedium {
+  max-width: 400px;
+}
+.PersonCard_header .PersonCard__content .MaxWidthLarge {
+  max-width: 600px;
+}
+.PersonCard_header .PersonCard__content span > div {
+  flex-basis: 100%;
+}
+.PersonCard_header .PersonCard__content span.ListRecords {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.PersonCard_header .PersonCard__content.Red,
+.PersonCard_header .PersonCard__actions.Red {
+  background-color: #fce3e3;
+  color: inherit;
+}
+.PersonCard_expandable {
+  box-sizing: content-box;
+  height: 0;
+  overflow: hidden;
+  visibility: visible;
+}
+.PersonCard_expandable.IsExpanded {
+  background-color: #fff;
+  border: 1px solid #d6d6d6;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top: none;
+  height: auto;
+}
+.PersonCard__headerLeftInfo {
+  align-items: center;
+  display: flex;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px 16px;
+  /* Colors */
+}
+.PersonCard__headerLeftInfo.IsLeftSideHide {
+  display: none;
+}
+.PersonCard__headerLeftInfo.Male .PersonCardIcon {
+  background-color: #1ba5ec;
+}
+.PersonCard__headerLeftInfo.Male.HasBorder {
+  box-shadow: inset 5px 0px 0 0px #1ba5ec;
+}
+.PersonCard__headerLeftInfo.Male.HasBorder .icon {
+  color: #fff;
+}
+.PersonCard__headerLeftInfo.Female .PersonCardIcon {
+  background-color: #ec62ce;
+  color: #fff;
+}
+.PersonCard__headerLeftInfo.Female.HasBorder {
+  box-shadow: inset 5px 0px 0 0px #ec62ce;
+}
+.PersonCard__headerLeftInfo.Female.HasBorder .icon {
+  color: #fff;
+}
+.PersonCard__headerLeftInfo.Unidentified .PersonCardIcon {
+  background-color: #f3f3f3;
+  color: #333333;
+}
+.PersonCard__headerLeftInfo.Unidentified.HasBorder {
+  box-shadow: inset 5px 0px 0 0px #777777;
+}
+.PersonCard__headerLeftInfo.Unidentified.HasBorder .icon {
+  color: #333333;
+}
+.PersonCard__headerLeftInfo.Red {
+  background-color: #fff;
+  color: #333333;
+}
+.PersonCard__headerLeftInfo.Red .PersonCardIcon {
+  background-color: #fce3e3;
+}
+.PersonCard__headerLeftInfo.Red.HasBorder {
+  box-shadow: inset 5px 0px 0 0px #ff3e2d;
+}
+.PersonCard__headerLeftInfo.Red.HasBorder .icon {
+  color: #b10100;
+}
+.PersonCard__headerLeftInfo.Green {
+  background-color: #fff;
+  color: #333333;
+}
+.PersonCard__headerLeftInfo.Green .PersonCardIcon {
+  background-color: #e7f2dc;
+  color: #7cb342;
+}
+.GenericCardBackground .PersonCard__headerLeftInfo.Green ~ .PersonCard__content,
+.GenericCardBackground .PersonCard__headerLeftInfo.Green ~ .PersonCard__actions {
+  background-color: #f0f7e9;
+}
+.PersonCard__headerLeftInfo.Green.HasBorder {
+  box-shadow: inset 5px 0px 0 0px #7cb342;
+}
+.PersonCard__headerLeftInfo.Green.HasBorder .icon {
+  color: #578329;
+}
+.PersonCard__headerLeftInfo.Brown {
+  color: #333333;
+}
+.PersonCard__headerLeftInfo.Brown .PersonCardIcon {
+  background-color: #e6e2aa;
+}
+.PersonCard__headerLeftInfo.Brown.HasBorder {
+  box-shadow: inset 5px 0px 0 0px #e6e2aa;
+}
+.PersonCard__headerLeftInfo.Brown.HasBorder .icon {
+  color: #928d09;
+}
+.PersonCard__headerLeftInfo.XSmall {
+  flex-basis: 9%;
+}
+.PersonCard__headerLeftInfo.XSmall .PersonCard____title {
+  flex-basis: 100%;
+}
+.PersonCard__headerLeftInfo.Small {
+  flex-basis: 20%;
+}
+.PersonCard__headerLeftInfo.Medium {
+  flex-basis: 30%;
+}
+.PersonCard__headerLeftInfo.Large {
+  flex-basis: 40%;
+}
+.PersonCard__headerLeftInfo.XLarge {
+  flex-basis: 50%;
+}
+.PersonCard__headerLeftInfo.Full {
+  flex-basis: 100%;
+}
+.PersonCard__headerLeftInfo .PersonCard____title a {
+  color: #333333;
+}
+.PersonCard__headerLeftInfo .PersonCard___flag {
+  margin-left: 8px;
+}
+.PersonCard__headerLeftInfo .PersonCard___flag .FlagContainer {
+  height: auto;
+}
+.PersonCard____title > div.Flex, .PersonCard____title > div.FlexEnd, .PersonCard____title > div.FlexStart, .PersonCard____title > div.FlexSpaceEvenly, .PersonCard____title > div.FlexSpaceBetween, .PersonCard____title > div.FlexSpaceAround, .PersonCard____title > div.FlexCenterHorizontal, .PersonCard____title > div.FlexCenterVertical, .PersonCard____title > div.FlexCenterFull {
+  align-items: center;
+}
+.PersonCard__content {
+  gap: 16px;
+}
+.PersonCard__content > div {
+  flex-basis: 100%;
+  margin: 0;
+}
+.PersonCard__content > div:first-of-type {
+  padding-left: 0;
+}
+.PersonCard__title:empty ~ .PersonCard__content > div {
+  padding: 0;
+}
+.PersonCard__actions {
+  background-color: #fff;
+  border-radius: 8px;
+  max-width: 300px;
+  padding: 10px 16px;
+}
+.PersonCard__actions_width_Small {
+  align-items: center;
+  display: flex;
+  flex-basis: 10%;
+  justify-content: flex-end;
+}
+.PersonCard__actions_width_Medium {
+  align-items: center;
+  display: flex;
+  flex-basis: 15%;
+  justify-content: flex-end;
+}
+.PersonCard__actions_width_Large {
+  flex-basis: 40%;
+  max-width: unset;
+}
+.PersonCard__actions > .MultiAlignRight {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+}
+.PersonCard__Complementary:not(:empty) ~ .PersonCard__headerLeftInfo {
+  padding-left: 0;
+}
+.PersonCard__Complementary:not(:empty) ~ .PersonCard__actions_width_Medium {
+  flex-basis: 20%;
+}
+.PersonCard__Complementary .PersonCardPreInfo {
+  height: 100%;
+}
+.PersonCard .PersonCardIcon {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  background-color: #ebebeb;
+  border-radius: 8px;
+  height: 48px;
+  max-width: 48px;
+  width: 48px;
+}
+.PersonCard .CardAll {
+  align-items: center;
+  display: flex;
+}
+.PersonCard .CardAll .Description {
+  line-height: inherit;
+  overflow: inherit;
+  text-overflow: inherit;
+  white-space: pre-wrap;
+  width: 320px;
+}
+.PersonCard .CardAll .DescriptionContainer {
+  align-self: center;
+  display: flex;
+  font-size: inherit;
+  line-height: inherit;
+}
+.PersonCard .CardAll .Small_Description {
+  overflow: inherit;
+  text-overflow: inherit;
+  white-space: inherit;
+  width: 100%;
+}
+.PersonCard .DescriptionContainer {
+  display: flex;
+  flex-direction: column;
+}
+.PersonCard .DescriptionContainer > .Description,
+.PersonCard .DescriptionContainer > .Small_Description {
+  align-self: center;
+  flex: 1;
+  padding: 0;
+}
+.PersonCard .PersonExpandableDiv:before {
+  content: "\e610";
+}
+.CardBackgroundGreen .PersonCard .PersonCard_header,
+.CardBackgroundGreen .PersonCard .PersonCard__content,
+.CardBackgroundGreen .PersonCard .PersonCard__actions,
+.CardBackgroundGreen .PersonCard .PersonCard__headerLeftInfo {
+  background-color: #f5faf0;
+}
+.CardBackgroundWhite .PersonCard .PersonCard_header,
+.CardBackgroundWhite .PersonCard .PersonCard__content,
+.CardBackgroundWhite .PersonCard .PersonCard__actions,
+.CardBackgroundWhite .PersonCard .PersonCard__headerLeftInfo {
+  background-color: #fff;
+}
+.PersonCard.PersonCard_ScheduleCanceled .PersonCard__headerLeftInfo,
+.PersonCard.PersonCard_ScheduleCanceled .PersonCard__content {
+  background-color: #ebebeb;
+}
+.PersonCard.PersonCard_ScheduleCanceled .PersonCard__headerLeftInfo {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.PersonCard.PersonCard_ScheduleCanceled .PersonCard__content {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.PersonExpandableDiv {
+  position: relative;
+}
+.PersonExpandableDiv:before {
+  font-family: "Sapphire-Icon-Font";
+  left: 10px;
+  position: absolute;
+  top: 18px;
+}
+
+.ColoredBox {
+  height: 100%;
+  padding: 10px;
+}
+
+.CardTableHeader .PersonCard {
+  font-family: "LatoBold";
+  font-size: 0.857em;
+  text-transform: uppercase;
+}
+.AR .CardTableHeader .PersonCard {
+  font-family: "TajawalBold";
+}
+.CardTableHeader .PersonCard .PersonCard_header .PersonCard__content,
+.CardTableHeader .PersonCard .PersonCard_header .PersonCard__headerLeftInfo {
+  color: #adadad;
+  padding: 9.5px 16px;
+}
+
+.GenericCardEmergency .PersonCard .PersonCardPreInfo,
+.GenericCardEmergency .PersonCard .PersonCard_header,
+.GenericCardEmergency .PersonCard .PersonCard__headerLeftInfo {
+  background-color: #fce3e3;
+}
+
+.AR .PersonCard_header.MediumPadding .PersonCard__headerLeftInfo,
+.FA .PersonCard_header.MediumPadding .PersonCard__headerLeftInfo {
+  padding-left: 0;
+  padding-right: 16px;
+}
+.AR .PersonCard_header.MediumPadding .PersonCard__actions,
+.FA .PersonCard_header.MediumPadding .PersonCard__actions {
+  padding-left: 16px;
+  padding-right: 0;
+}
+.AR .PersonCard__headerLeftInfo.Male.HasBorder,
+.FA .PersonCard__headerLeftInfo.Male.HasBorder {
+  border-left: none;
+  border-right: 2px solid #1ba5ec;
+}
+.AR .PersonCard__headerLeftInfo.Female.HasBorder,
+.FA .PersonCard__headerLeftInfo.Female.HasBorder {
+  border-left: none;
+  border-right: 2px solid #ec62ce;
+}
+.AR .PersonCard__headerLeftInfo.Unidentified.HasBorder,
+.FA .PersonCard__headerLeftInfo.Unidentified.HasBorder {
+  border-left: none;
+  border-right: 2px solid #777777;
+}
+.AR .PersonCard__headerLeftInfo .PersonCard___flag,
+.FA .PersonCard__headerLeftInfo .PersonCard___flag {
+  margin-left: auto;
+  margin-right: 10px;
+}
+.AR .PersonCard__Complementary:not(:empty) ~ .PersonCard__headerLeftInfo,
+.FA .PersonCard__Complementary:not(:empty) ~ .PersonCard__headerLeftInfo {
+  padding-right: 0;
+}
+.AR .PersonCard___icon:not(:empty) + .PersonCard____title,
+.FA .PersonCard___icon:not(:empty) + .PersonCard____title {
+  margin-left: 0;
+  margin-right: 16px;
+}
+.AR a .PersonCard,
+.FA a .PersonCard {
+  font-family: "TajawalRegular";
+}
+.AR .PersonExpandableDiv:before,
+.FA .PersonExpandableDiv:before {
+  left: auto;
+  right: 0px;
+}
+
+/* Adjustements */
+.PersonCard > .PersonCard_header .PersonCard__content {
+  color: #333333;
+  flex: 4;
+}
+
+.ListRecords .PersonCard,
+.ListRecords > div:not(:last-of-type) .PersonCard,
+.ListRecords > span:not(:last-of-type) .PersonCard,
+.ListPersonCard .PersonCard,
+.ListPersonCard > div:not(:last-of-type) .PersonCard,
+.ListPersonCard > span:not(:last-of-type) .PersonCard {
+  margin-bottom: 8px;
+}
+
+a .PersonCard {
+  color: #333333;
+  font-family: "LatoRegular";
+}
+a .PersonCard_expandable {
+  display: none !important;
+}
+
+.tablet .PersonCard:not(.LeftSideHidden) .PersonCard.IsExpandable .PersonCard__content,
+.desktop.small .SideBarOpen .PersonCard:not(.LeftSideHidden) .PersonCard.IsExpandable .PersonCard__content {
+  margin-left: 54px;
+}
+.tablet .PersonCard:not(.LeftSideHidden) .PersonCard__Complementary:empty ~ .PersonCard__headerLeftInfo,
+.desktop.small .SideBarOpen .PersonCard:not(.LeftSideHidden) .PersonCard__Complementary:empty ~ .PersonCard__headerLeftInfo {
+  flex-basis: 100%;
+}
+.tablet .PersonCard:not(.LeftSideHidden) .PersonCard__Complementary:not(:empty) ~ .PersonCard__headerLeftInfo,
+.desktop.small .SideBarOpen .PersonCard:not(.LeftSideHidden) .PersonCard__Complementary:not(:empty) ~ .PersonCard__headerLeftInfo {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.tablet .PersonCard:not(.LeftSideHidden) .PersonCard_header,
+.desktop.small .SideBarOpen .PersonCard:not(.LeftSideHidden) .PersonCard_header {
+  flex-wrap: wrap;
+}
+.tablet .PersonCard:not(.LeftSideHidden) .PersonCard_header .ColoredBox,
+.tablet .PersonCard:not(.LeftSideHidden) .PersonCard_header .PersonCardIcon,
+.tablet .PersonCard:not(.LeftSideHidden) .PersonCard_header .CircledPatient,
+.desktop.small .SideBarOpen .PersonCard:not(.LeftSideHidden) .PersonCard_header .ColoredBox,
+.desktop.small .SideBarOpen .PersonCard:not(.LeftSideHidden) .PersonCard_header .PersonCardIcon,
+.desktop.small .SideBarOpen .PersonCard:not(.LeftSideHidden) .PersonCard_header .CircledPatient {
+  height: 40px;
+  width: 40px;
+}
+.tablet .PersonCard:not(.LeftSideHidden) .PersonCard__headerLeftInfo,
+.desktop.small .SideBarOpen .PersonCard:not(.LeftSideHidden) .PersonCard__headerLeftInfo {
+  flex: 1;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+.tablet .PersonCard:not(.LeftSideHidden) .PersonCard__content,
+.desktop.small .SideBarOpen .PersonCard:not(.LeftSideHidden) .PersonCard__content {
+  border-radius: 0;
+  border-top: 1px solid #d6d6d6;
+  flex-basis: 100% !important;
+  margin-left: 70px;
+  padding-bottom: 8px;
+  padding-left: 0 !important;
+  padding-top: 8px;
+}
+.tablet .PersonCard:not(.LeftSideHidden) .PersonCard__actions,
+.desktop.small .SideBarOpen .PersonCard:not(.LeftSideHidden) .PersonCard__actions {
+  background-color: #f3f3f3;
+  border-radius: 0;
+  flex-basis: 100% !important;
+  max-width: none;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  text-align: right;
+}
+.tablet .PersonCard_header .PersonCard__content .MinWidthLarge,
+.tablet .PersonCard_header .PersonCard__content .MinWidthSmall,
+.tablet .PersonCard_header .PersonCard__content .MinWidthMedium,
+.tablet .PersonCard_header .PersonCard__content .MinWidthXSmall,
+.desktop.small .SideBarOpen .PersonCard_header .PersonCard__content .MinWidthLarge,
+.desktop.small .SideBarOpen .PersonCard_header .PersonCard__content .MinWidthSmall,
+.desktop.small .SideBarOpen .PersonCard_header .PersonCard__content .MinWidthMedium,
+.desktop.small .SideBarOpen .PersonCard_header .PersonCard__content .MinWidthXSmall {
+  min-width: auto;
+}
+.tablet .PersonCard_header .PersonCard__content .MaxWidthLarge,
+.tablet .PersonCard_header .PersonCard__content .MaxWidthSmall,
+.tablet .PersonCard_header .PersonCard__content .MaxWidthMedium,
+.tablet .PersonCard_header .PersonCard__content .MaxWidthXSmall,
+.desktop.small .SideBarOpen .PersonCard_header .PersonCard__content .MaxWidthLarge,
+.desktop.small .SideBarOpen .PersonCard_header .PersonCard__content .MaxWidthSmall,
+.desktop.small .SideBarOpen .PersonCard_header .PersonCard__content .MaxWidthMedium,
+.desktop.small .SideBarOpen .PersonCard_header .PersonCard__content .MaxWidthXSmall {
+  max-width: auto;
+}
+
+.desktop.hd .PersonCard__content__title,
+.desktop.small .PersonCard__content__title,
+.desktop .PersonCard__content__title,
+.tablet:not(.landscape) .PersonCard__content__title,
+.tablet:not(.portrait) .PersonCard__content__title {
+  display: none;
+}
+
+.phone .PersonCard_header {
+  flex-direction: column;
+}
+
+.phone .PersonCard_header > div {
+  width: 100% !important;
+}
+
+.desktop:not(.hd) .PersonCard_header .PersonCard__content.MinWidthSmall > div:first-of-type {
+  min-width: 250px;
+}
+
+.LayoutPopup__body__content .PersonCard__headerLeftInfo {
+  display: inherit !important;
+}
+
+.LayoutPopup__body__content .PersonCard___icon:not(:empty) + .PersonCard____title {
+  margin-left: 10px;
+}
+
+.PersonCardNoWrap .PersonCard_header {
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+}
+.PersonCardNoWrap .PersonCard_header > div {
+  width: auto !important;
+}
+.PersonCardNoWrap .PersonCard__content {
+  border-top: none !important;
+}
+
 .GenericGallery .GenericGallery-content {
   display: grid;
 }
@@ -21300,694 +21988,6 @@ body.confirmation-opened {
   min-width: auto;
 }
 
-/* stylelint-disable no-descending-specificity */
-/* Now called GenericCard, the css classes will remain with their previous name*/
-.PersonCard {
-  /*&___icon {
-  	&:not(:empty) + .PersonCard____title {
-  		margin-left: $sapphire-sizes--medium;
-  	}
-  }*/
-}
-.PersonCard.IsOpen > .PersonCard_header {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-}
-.PersonCard.IsOpen > .PersonCard_header .PersonCard__expandIcon {
-  transform: rotate(180deg);
-}
-.PersonCard.IsOpen > .PersonCard_expandable {
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-}
-.PersonCard.IsOpen > .PersonCard__content .PersonExpandableDiv {
-  background-color: #f2fffd;
-}
-.PersonCard.IsOpen .PersonExpandableDiv:before {
-  content: "\e611";
-}
-.PersonCard_header {
-  align-items: stretch;
-  background-color: #fff;
-  border: 1px solid #d6d6d6;
-  border-radius: 8px;
-  display: flex;
-  min-height: 56px;
-}
-.PersonCard_header:not(.IsTransparent).PersonCard__content {
-  background-color: #fff;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  padding: 10px 16px;
-  width: 100%;
-}
-.PersonCard_header.IsExpandable .PersonCard__title,
-.PersonCard_header.IsExpandable .PersonCard__content,
-.PersonCard_header.IsExpandable .PersonCard__headerLeftInfo {
-  cursor: pointer;
-  pointer-events: auto;
-}
-.PersonCard_header.IsExpandable .PersonCard__expandIcon {
-  align-items: center;
-  background-color: transparent;
-  border: 2px solid #333333;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  font-size: 0.857em;
-  height: 20px;
-  justify-content: center;
-  text-align: center;
-  transform: rotate(90deg);
-  width: 20px;
-  z-index: 1;
-  min-width: 20px;
-}
-.PersonCard_header.IsExpandable .PersonCard__expandIcon:before {
-  font-family: "Sapphire-Icon-Font";
-  content: "\e611";
-  color: #333333;
-  font-size: 0.7em;
-}
-.PersonCard_header.IsExpandable .PersonCard__expandIcon:hover {
-  background-color: rgba(51, 51, 51, 0.1);
-}
-.PersonCard_header.IsExpandableDisabled .PersonCard__expandIcon {
-  align-items: center;
-  background-color: transparent;
-  border: 2px solid #d6d6d6;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  font-size: 0.857em;
-  height: 20px;
-  justify-content: center;
-  text-align: center;
-  transform: rotate(90deg);
-  width: 20px;
-  z-index: 1;
-  min-width: 20px;
-  pointer-events: none;
-}
-.PersonCard_header.IsExpandableDisabled .PersonCard__expandIcon:before {
-  font-family: "Sapphire-Icon-Font";
-  content: "\e611";
-  color: #d6d6d6;
-  font-size: 0.7em;
-}
-.PersonCard_header.IsExpandableDisabled .PersonCard__expandIcon:hover {
-  background-color: rgba(214, 214, 214, 0.1);
-}
-.PersonCard_header.IsTransparent {
-  background-color: transparent;
-  border: none;
-  height: unset;
-  min-height: 0px;
-}
-.PersonCard_header.IsTransparent .PersonCard__actions a.Button {
-  height: auto;
-  line-height: unset;
-}
-.PersonCard_header.IsTransparent .PersonCard__title,
-.PersonCard_header.IsTransparent .PersonCard__actions,
-.PersonCard_header.IsTransparent .PersonCard__content,
-.PersonCard_header.IsTransparent .PersonCard__headerLeftInfo {
-  background-color: transparent;
-}
-.PersonCard_header.NonePadding .PersonCard__actions,
-.PersonCard_header.NonePadding .PersonCard__content,
-.PersonCard_header.NonePadding .PersonCard__headerLeftInfo {
-  padding: 0;
-}
-.PersonCard_header.MediumPadding .PersonCard__headerLeftInfo {
-  gap: 16px;
-  padding: 16px;
-  padding-right: 0;
-}
-.PersonCard_header.MediumPadding .PersonCard__content {
-  padding: 16px;
-}
-.PersonCard_header.MediumPadding .PersonCard__actions {
-  padding: 16px;
-  padding-left: 0;
-}
-.PersonCard_header.SmallPadding .PersonCard__actions,
-.PersonCard_header.SmallPadding .PersonCard__content,
-.PersonCard_header.SmallPadding .PersonCard__headerLeftInfo {
-  padding: 6px 16px;
-}
-.PersonCard_header.Selected {
-  border: 1px solid #00bfa5;
-  border-radius: 8px;
-}
-.PersonCard_header.Selected .PersonCard__content,
-.PersonCard_header.Selected .PersonCard__actions,
-.PersonCard_header.Selected .PersonCard__headerLeftInfo {
-  background-color: #f2fffd;
-}
-.PersonCard_header .PersonCard__content {
-  align-items: center;
-  background-color: #fff;
-  border-radius: 8px;
-  display: flex;
-  flex: auto;
-  flex-basis: 100%;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  padding: 10px 16px;
-}
-.PersonCard_header .PersonCard__content .Patient_Info > div {
-  width: 200px;
-}
-.PersonCard_header .PersonCard__content.MinWidthXSmall > div:first-of-type {
-  min-width: 200px;
-}
-.PersonCard_header .PersonCard__content.MinWidthSmall > div:first-of-type {
-  min-width: 400px;
-}
-.PersonCard_header .PersonCard__content.MinWidthMedium > div:first-of-type {
-  min-width: 600px;
-}
-.PersonCard_header .PersonCard__content.MinWidthLarge > div:first-of-type {
-  min-width: 800px;
-}
-.PersonCard_header .PersonCard__content .MinWidthXSmall {
-  min-width: 50px;
-}
-.PersonCard_header .PersonCard__content .MinWidth100 {
-  min-width: 100px;
-}
-.PersonCard_header .PersonCard__content .MinWidthSmall {
-  min-width: 200px;
-}
-.PersonCard_header .PersonCard__content .MinWidth300 {
-  min-width: 300px;
-}
-.PersonCard_header .PersonCard__content .MinWidthMedium {
-  min-width: 400px;
-}
-.PersonCard_header .PersonCard__content .MinWidthLarge {
-  min-width: 600px;
-}
-.PersonCard_header .PersonCard__content .MaxWidthXSmall {
-  max-width: 50px;
-}
-.PersonCard_header .PersonCard__content .MaxWidth100 {
-  max-width: 100px;
-}
-.PersonCard_header .PersonCard__content .MaxWidthSmall {
-  max-width: 200px;
-}
-.PersonCard_header .PersonCard__content .MaxWidthMedium {
-  max-width: 400px;
-}
-.PersonCard_header .PersonCard__content .MaxWidthLarge {
-  max-width: 600px;
-}
-.PersonCard_header .PersonCard__content span > div {
-  flex-basis: 100%;
-}
-.PersonCard_header .PersonCard__content span.ListRecords {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-.PersonCard_header .PersonCard__content.Red,
-.PersonCard_header .PersonCard__actions.Red {
-  background-color: #fce3e3;
-  color: inherit;
-}
-.PersonCard_expandable {
-  box-sizing: content-box;
-  height: 0;
-  overflow: hidden;
-  visibility: visible;
-}
-.PersonCard_expandable.IsExpanded {
-  background-color: #fff;
-  border: 1px solid #d6d6d6;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-top: none;
-  height: auto;
-}
-.PersonCard__headerLeftInfo {
-  align-items: center;
-  display: flex;
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 10px 16px;
-  /* Colors */
-}
-.PersonCard__headerLeftInfo.IsLeftSideHide {
-  display: none;
-}
-.PersonCard__headerLeftInfo.Male .PersonCardIcon {
-  background-color: #1ba5ec;
-}
-.PersonCard__headerLeftInfo.Male.HasBorder {
-  box-shadow: inset 5px 0px 0 0px #1ba5ec;
-}
-.PersonCard__headerLeftInfo.Male.HasBorder .icon {
-  color: #fff;
-}
-.PersonCard__headerLeftInfo.Female .PersonCardIcon {
-  background-color: #ec62ce;
-  color: #fff;
-}
-.PersonCard__headerLeftInfo.Female.HasBorder {
-  box-shadow: inset 5px 0px 0 0px #ec62ce;
-}
-.PersonCard__headerLeftInfo.Female.HasBorder .icon {
-  color: #fff;
-}
-.PersonCard__headerLeftInfo.Unidentified .PersonCardIcon {
-  background-color: #f3f3f3;
-  color: #333333;
-}
-.PersonCard__headerLeftInfo.Unidentified.HasBorder {
-  box-shadow: inset 5px 0px 0 0px #777777;
-}
-.PersonCard__headerLeftInfo.Unidentified.HasBorder .icon {
-  color: #333333;
-}
-.PersonCard__headerLeftInfo.Red {
-  background-color: #fff;
-  color: #333333;
-}
-.PersonCard__headerLeftInfo.Red .PersonCardIcon {
-  background-color: #fce3e3;
-}
-.PersonCard__headerLeftInfo.Red.HasBorder {
-  box-shadow: inset 5px 0px 0 0px #ff3e2d;
-}
-.PersonCard__headerLeftInfo.Red.HasBorder .icon {
-  color: #b10100;
-}
-.PersonCard__headerLeftInfo.Green {
-  background-color: #fff;
-  color: #333333;
-}
-.PersonCard__headerLeftInfo.Green .PersonCardIcon {
-  background-color: #e7f2dc;
-  color: #7cb342;
-}
-.GenericCardBackground .PersonCard__headerLeftInfo.Green ~ .PersonCard__content,
-.GenericCardBackground .PersonCard__headerLeftInfo.Green ~ .PersonCard__actions {
-  background-color: #f0f7e9;
-}
-.PersonCard__headerLeftInfo.Green.HasBorder {
-  box-shadow: inset 5px 0px 0 0px #7cb342;
-}
-.PersonCard__headerLeftInfo.Green.HasBorder .icon {
-  color: #578329;
-}
-.PersonCard__headerLeftInfo.Brown {
-  color: #333333;
-}
-.PersonCard__headerLeftInfo.Brown .PersonCardIcon {
-  background-color: #e6e2aa;
-}
-.PersonCard__headerLeftInfo.Brown.HasBorder {
-  box-shadow: inset 5px 0px 0 0px #e6e2aa;
-}
-.PersonCard__headerLeftInfo.Brown.HasBorder .icon {
-  color: #928d09;
-}
-.PersonCard__headerLeftInfo.XSmall {
-  flex-basis: 9%;
-}
-.PersonCard__headerLeftInfo.XSmall .PersonCard____title {
-  flex-basis: 100%;
-}
-.PersonCard__headerLeftInfo.Small {
-  flex-basis: 20%;
-}
-.PersonCard__headerLeftInfo.Medium {
-  flex-basis: 30%;
-}
-.PersonCard__headerLeftInfo.Large {
-  flex-basis: 40%;
-}
-.PersonCard__headerLeftInfo.XLarge {
-  flex-basis: 50%;
-}
-.PersonCard__headerLeftInfo.Full {
-  flex-basis: 100%;
-}
-.PersonCard__headerLeftInfo .PersonCard____title a {
-  color: #333333;
-}
-.PersonCard__headerLeftInfo .PersonCard___flag {
-  margin-left: 8px;
-}
-.PersonCard__headerLeftInfo .PersonCard___flag .FlagContainer {
-  height: auto;
-}
-.PersonCard____title > div.Flex, .PersonCard____title > div.FlexEnd, .PersonCard____title > div.FlexStart, .PersonCard____title > div.FlexSpaceEvenly, .PersonCard____title > div.FlexSpaceBetween, .PersonCard____title > div.FlexSpaceAround, .PersonCard____title > div.FlexCenterHorizontal, .PersonCard____title > div.FlexCenterVertical, .PersonCard____title > div.FlexCenterFull {
-  align-items: center;
-}
-.PersonCard__content {
-  gap: 16px;
-}
-.PersonCard__content > div {
-  flex-basis: 100%;
-  margin: 0;
-}
-.PersonCard__content > div:first-of-type {
-  padding-left: 0;
-}
-.PersonCard__title:empty ~ .PersonCard__content > div {
-  padding: 0;
-}
-.PersonCard__actions {
-  background-color: #fff;
-  border-radius: 8px;
-  max-width: 300px;
-  padding: 10px 16px;
-}
-.PersonCard__actions_width_Small {
-  align-items: center;
-  display: flex;
-  flex-basis: 10%;
-  justify-content: flex-end;
-}
-.PersonCard__actions_width_Medium {
-  align-items: center;
-  display: flex;
-  flex-basis: 15%;
-  justify-content: flex-end;
-}
-.PersonCard__actions_width_Large {
-  flex-basis: 40%;
-  max-width: unset;
-}
-.PersonCard__actions > .MultiAlignRight {
-  align-items: center;
-  display: flex;
-  height: 100%;
-  justify-content: flex-end;
-}
-.PersonCard__Complementary:not(:empty) ~ .PersonCard__headerLeftInfo {
-  padding-left: 0;
-}
-.PersonCard__Complementary:not(:empty) ~ .PersonCard__actions_width_Medium {
-  flex-basis: 20%;
-}
-.PersonCard__Complementary .PersonCardPreInfo {
-  height: 100%;
-}
-.PersonCard .PersonCardIcon {
-  align-items: center;
-  display: inline-flex;
-  justify-content: center;
-  background-color: #ebebeb;
-  border-radius: 8px;
-  height: 48px;
-  max-width: 48px;
-  width: 48px;
-}
-.PersonCard .CardAll {
-  align-items: center;
-  display: flex;
-}
-.PersonCard .CardAll .Description {
-  line-height: inherit;
-  overflow: inherit;
-  text-overflow: inherit;
-  white-space: pre-wrap;
-  width: 320px;
-}
-.PersonCard .CardAll .DescriptionContainer {
-  align-self: center;
-  display: flex;
-  font-size: inherit;
-  line-height: inherit;
-}
-.PersonCard .CardAll .Small_Description {
-  overflow: inherit;
-  text-overflow: inherit;
-  white-space: inherit;
-  width: 100%;
-}
-.PersonCard .DescriptionContainer {
-  display: flex;
-  flex-direction: column;
-}
-.PersonCard .DescriptionContainer > .Description,
-.PersonCard .DescriptionContainer > .Small_Description {
-  align-self: center;
-  flex: 1;
-  padding: 0;
-}
-.PersonCard .PersonExpandableDiv:before {
-  content: "\e610";
-}
-.CardBackgroundGreen .PersonCard .PersonCard_header,
-.CardBackgroundGreen .PersonCard .PersonCard__content,
-.CardBackgroundGreen .PersonCard .PersonCard__actions,
-.CardBackgroundGreen .PersonCard .PersonCard__headerLeftInfo {
-  background-color: #f5faf0;
-}
-.CardBackgroundWhite .PersonCard .PersonCard_header,
-.CardBackgroundWhite .PersonCard .PersonCard__content,
-.CardBackgroundWhite .PersonCard .PersonCard__actions,
-.CardBackgroundWhite .PersonCard .PersonCard__headerLeftInfo {
-  background-color: #fff;
-}
-.PersonCard.PersonCard_ScheduleCanceled .PersonCard__headerLeftInfo,
-.PersonCard.PersonCard_ScheduleCanceled .PersonCard__content {
-  background-color: #ebebeb;
-}
-.PersonCard.PersonCard_ScheduleCanceled .PersonCard__headerLeftInfo {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-.PersonCard.PersonCard_ScheduleCanceled .PersonCard__content {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.PersonExpandableDiv {
-  position: relative;
-}
-.PersonExpandableDiv:before {
-  font-family: "Sapphire-Icon-Font";
-  left: 10px;
-  position: absolute;
-  top: 18px;
-}
-
-.ColoredBox {
-  height: 100%;
-  padding: 10px;
-}
-
-.CardTableHeader .PersonCard {
-  font-family: "LatoBold";
-  font-size: 0.857em;
-  text-transform: uppercase;
-}
-.AR .CardTableHeader .PersonCard {
-  font-family: "TajawalBold";
-}
-.CardTableHeader .PersonCard .PersonCard_header .PersonCard__content,
-.CardTableHeader .PersonCard .PersonCard_header .PersonCard__headerLeftInfo {
-  color: #adadad;
-  padding: 9.5px 16px;
-}
-
-.GenericCardEmergency .PersonCard .PersonCardPreInfo,
-.GenericCardEmergency .PersonCard .PersonCard_header,
-.GenericCardEmergency .PersonCard .PersonCard__headerLeftInfo {
-  background-color: #fce3e3;
-}
-
-.AR .PersonCard_header.MediumPadding .PersonCard__headerLeftInfo,
-.FA .PersonCard_header.MediumPadding .PersonCard__headerLeftInfo {
-  padding-left: 0;
-  padding-right: 16px;
-}
-.AR .PersonCard_header.MediumPadding .PersonCard__actions,
-.FA .PersonCard_header.MediumPadding .PersonCard__actions {
-  padding-left: 16px;
-  padding-right: 0;
-}
-.AR .PersonCard__headerLeftInfo.Male.HasBorder,
-.FA .PersonCard__headerLeftInfo.Male.HasBorder {
-  border-left: none;
-  border-right: 2px solid #1ba5ec;
-}
-.AR .PersonCard__headerLeftInfo.Female.HasBorder,
-.FA .PersonCard__headerLeftInfo.Female.HasBorder {
-  border-left: none;
-  border-right: 2px solid #ec62ce;
-}
-.AR .PersonCard__headerLeftInfo.Unidentified.HasBorder,
-.FA .PersonCard__headerLeftInfo.Unidentified.HasBorder {
-  border-left: none;
-  border-right: 2px solid #777777;
-}
-.AR .PersonCard__headerLeftInfo .PersonCard___flag,
-.FA .PersonCard__headerLeftInfo .PersonCard___flag {
-  margin-left: auto;
-  margin-right: 10px;
-}
-.AR .PersonCard__Complementary:not(:empty) ~ .PersonCard__headerLeftInfo,
-.FA .PersonCard__Complementary:not(:empty) ~ .PersonCard__headerLeftInfo {
-  padding-right: 0;
-}
-.AR .PersonCard___icon:not(:empty) + .PersonCard____title,
-.FA .PersonCard___icon:not(:empty) + .PersonCard____title {
-  margin-left: 0;
-  margin-right: 16px;
-}
-.AR a .PersonCard,
-.FA a .PersonCard {
-  font-family: "TajawalRegular";
-}
-.AR .PersonExpandableDiv:before,
-.FA .PersonExpandableDiv:before {
-  left: auto;
-  right: 0px;
-}
-
-/* Adjustements */
-.PersonCard > .PersonCard_header .PersonCard__content {
-  color: #333333;
-  flex: 4;
-}
-
-.ListRecords .PersonCard,
-.ListRecords > div:not(:last-of-type) .PersonCard,
-.ListRecords > span:not(:last-of-type) .PersonCard,
-.ListPersonCard .PersonCard,
-.ListPersonCard > div:not(:last-of-type) .PersonCard,
-.ListPersonCard > span:not(:last-of-type) .PersonCard {
-  margin-bottom: 8px;
-}
-
-a .PersonCard {
-  color: #333333;
-  font-family: "LatoRegular";
-}
-a .PersonCard_expandable {
-  display: none !important;
-}
-
-.tablet .PersonCard:not(.LeftSideHidden) .PersonCard.IsExpandable .PersonCard__content,
-.desktop.small .SideBarOpen .PersonCard:not(.LeftSideHidden) .PersonCard.IsExpandable .PersonCard__content {
-  margin-left: 54px;
-}
-.tablet .PersonCard:not(.LeftSideHidden) .PersonCard__Complementary:empty ~ .PersonCard__headerLeftInfo,
-.desktop.small .SideBarOpen .PersonCard:not(.LeftSideHidden) .PersonCard__Complementary:empty ~ .PersonCard__headerLeftInfo {
-  flex-basis: 100%;
-}
-.tablet .PersonCard:not(.LeftSideHidden) .PersonCard__Complementary:not(:empty) ~ .PersonCard__headerLeftInfo,
-.desktop.small .SideBarOpen .PersonCard:not(.LeftSideHidden) .PersonCard__Complementary:not(:empty) ~ .PersonCard__headerLeftInfo {
-  padding-left: 16px;
-  padding-right: 16px;
-}
-.tablet .PersonCard:not(.LeftSideHidden) .PersonCard_header,
-.desktop.small .SideBarOpen .PersonCard:not(.LeftSideHidden) .PersonCard_header {
-  flex-wrap: wrap;
-}
-.tablet .PersonCard:not(.LeftSideHidden) .PersonCard_header .ColoredBox,
-.tablet .PersonCard:not(.LeftSideHidden) .PersonCard_header .PersonCardIcon,
-.tablet .PersonCard:not(.LeftSideHidden) .PersonCard_header .CircledPatient,
-.desktop.small .SideBarOpen .PersonCard:not(.LeftSideHidden) .PersonCard_header .ColoredBox,
-.desktop.small .SideBarOpen .PersonCard:not(.LeftSideHidden) .PersonCard_header .PersonCardIcon,
-.desktop.small .SideBarOpen .PersonCard:not(.LeftSideHidden) .PersonCard_header .CircledPatient {
-  height: 40px;
-  width: 40px;
-}
-.tablet .PersonCard:not(.LeftSideHidden) .PersonCard__headerLeftInfo,
-.desktop.small .SideBarOpen .PersonCard:not(.LeftSideHidden) .PersonCard__headerLeftInfo {
-  flex: 1;
-  padding-bottom: 8px;
-  padding-top: 8px;
-}
-.tablet .PersonCard:not(.LeftSideHidden) .PersonCard__content,
-.desktop.small .SideBarOpen .PersonCard:not(.LeftSideHidden) .PersonCard__content {
-  border-radius: 0;
-  border-top: 1px solid #d6d6d6;
-  flex-basis: 100% !important;
-  margin-left: 70px;
-  padding-bottom: 8px;
-  padding-left: 0 !important;
-  padding-top: 8px;
-}
-.tablet .PersonCard:not(.LeftSideHidden) .PersonCard__actions,
-.desktop.small .SideBarOpen .PersonCard:not(.LeftSideHidden) .PersonCard__actions {
-  background-color: #f3f3f3;
-  border-radius: 0;
-  flex-basis: 100% !important;
-  max-width: none;
-  padding-bottom: 8px;
-  padding-top: 8px;
-  text-align: right;
-}
-.tablet .PersonCard_header .PersonCard__content .MinWidthLarge,
-.tablet .PersonCard_header .PersonCard__content .MinWidthSmall,
-.tablet .PersonCard_header .PersonCard__content .MinWidthMedium,
-.tablet .PersonCard_header .PersonCard__content .MinWidthXSmall,
-.desktop.small .SideBarOpen .PersonCard_header .PersonCard__content .MinWidthLarge,
-.desktop.small .SideBarOpen .PersonCard_header .PersonCard__content .MinWidthSmall,
-.desktop.small .SideBarOpen .PersonCard_header .PersonCard__content .MinWidthMedium,
-.desktop.small .SideBarOpen .PersonCard_header .PersonCard__content .MinWidthXSmall {
-  min-width: auto;
-}
-.tablet .PersonCard_header .PersonCard__content .MaxWidthLarge,
-.tablet .PersonCard_header .PersonCard__content .MaxWidthSmall,
-.tablet .PersonCard_header .PersonCard__content .MaxWidthMedium,
-.tablet .PersonCard_header .PersonCard__content .MaxWidthXSmall,
-.desktop.small .SideBarOpen .PersonCard_header .PersonCard__content .MaxWidthLarge,
-.desktop.small .SideBarOpen .PersonCard_header .PersonCard__content .MaxWidthSmall,
-.desktop.small .SideBarOpen .PersonCard_header .PersonCard__content .MaxWidthMedium,
-.desktop.small .SideBarOpen .PersonCard_header .PersonCard__content .MaxWidthXSmall {
-  max-width: auto;
-}
-
-.desktop.hd .PersonCard__content__title,
-.desktop.small .PersonCard__content__title,
-.desktop .PersonCard__content__title,
-.tablet:not(.landscape) .PersonCard__content__title,
-.tablet:not(.portrait) .PersonCard__content__title {
-  display: none;
-}
-
-.phone .PersonCard_header {
-  flex-direction: column;
-}
-
-.phone .PersonCard_header > div {
-  width: 100% !important;
-}
-
-.desktop:not(.hd) .PersonCard_header .PersonCard__content.MinWidthSmall > div:first-of-type {
-  min-width: 250px;
-}
-
-.LayoutPopup__body__content .PersonCard__headerLeftInfo {
-  display: inherit !important;
-}
-
-.LayoutPopup__body__content .PersonCard___icon:not(:empty) + .PersonCard____title {
-  margin-left: 10px;
-}
-
-.PersonCardNoWrap .PersonCard_header {
-  flex-direction: row !important;
-  flex-wrap: nowrap !important;
-}
-.PersonCardNoWrap .PersonCard_header > div {
-  width: auto !important;
-}
-.PersonCardNoWrap .PersonCard__content {
-  border-top: none !important;
-}
-
 .PrescriptionCard {
   background-color: #fff;
   border: 1px solid #d6d6d6;
@@ -22655,6 +22655,14 @@ a .PersonCard_expandable {
 .SmallPorgressBar .ProgressBarWrap .ProgressBar__animation {
   background-color: #7cb342 !important;
   height: 6px !important;
+}
+
+body.ResizeParentIframe {
+  height: auto;
+  overflow: visible;
+}
+body.ResizeParentIframe .MainContent {
+  padding: 0;
 }
 
 .CalendarWb {
@@ -37661,14 +37669,6 @@ html .ThemeGrid_Container {
 .ThemeGrid_Container {
   margin-left: auto;
   margin-right: auto;
-}
-
-body.ResizeParentIframe {
-  height: auto;
-  overflow: visible;
-}
-body.ResizeParentIframe .MainContent {
-  padding: 0;
 }
 
 .InlineMenu-Wrapper iframe {

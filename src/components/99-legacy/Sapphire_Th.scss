@@ -979,15 +979,6 @@ html .ThemeGrid_Container {
   margin-right: auto;
 }
 
-body.ResizeParentIframe {
-  height: auto;
-  overflow: visible;
-
-  .MainContent {
-    padding: 0;
-  }
-}
-
 .InlineMenu-Wrapper iframe {
   transition: height 300ms linear;
 }
