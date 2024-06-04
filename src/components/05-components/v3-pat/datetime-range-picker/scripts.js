@@ -443,14 +443,23 @@
 
 	DateTimeRangePicker.prototype.handleViewportPosition = function () {
 		if (
-			window.frameElement &&
-			($(window.frameElement.parentElement).hasClass('tooltipster-content') ||
-				$(window.frameElement.parentElement).hasClass('os-internal-ui-dialog-content'))
+			window.frameElement
+			&& (
+				$(window.frameElement.parentElement).hasClass('tooltipster-content')
+				|| $(window.frameElement.parentElement).hasClass('os-internal-ui-dialog-content')
+			)
 		) {
 			return;
 		}
 
 		if (!this.isInViewport()) {
+
+			//Check if SapphireWidgets.ResizeParentIframe is defined.
+			if (typeof SapphireWidgets.ResizeParentIframe != 'undefined') {
+				// In case we're inside an iframe, we try to resize it first.
+				SapphireWidgets.ResizeParentIframe.resize();
+			}
+
 			var coords = this.$calendar[0].getBoundingClientRect();
 			if (this.$calendar.hasClass('drop-up') && this.$calendar[0].getBoundingClientRect().top < 0) {
 				var point = window.scrollY + coords.bottom + this.$input.height() + 7;
@@ -459,7 +468,10 @@
 					.addClass('drop-down')
 					.css('top', point);
 			}
-			else if (!this.$calendar.hasClass('drop-up') && this.$calendar[0].getBoundingClientRect().bottom > (window.innerHeight || document.documentElement.clientHeight)) {
+			else if (
+				!this.$calendar.hasClass('drop-up')
+				&& this.$calendar[0].getBoundingClientRect().bottom > (window.innerHeight || document.documentElement.clientHeight)
+			) {
 				var point = window.scrollY + coords.top - coords.height - this.$input.height() - 7;
 				this.$calendar.addClass('drop-up').css('top', point);
 			}

@@ -25,14 +25,16 @@ div.SSD_ListLine {
 		margin-bottom: 20px;
 		margin-top: 20px;
 
-		> div.LineHeader {
+		>div.LineHeader {
 			pointer-events: none;
 
-			> div.Icon {
+			>div.Icon {
 				opacity: 0;
 				pointer-events: none;
 			}
-			> div.Label {
+
+			>div.Label {
+
 				.label-text,
 				.detail-text {
 					pointer-events: all;
@@ -48,7 +50,8 @@ div.SSD_ListLine {
 				}
 			}
 
-			> div {
+			>div {
+
 				&.ExpandControl,
 				&.OtherControl,
 				&.OtherControlLeft {
@@ -56,17 +59,18 @@ div.SSD_ListLine {
 					visibility: hidden;
 				}
 
-				&.ExpandControl > a,
-				&.ToggleActions > a {
+				&.ExpandControl>a,
+				&.ToggleActions>a {
 					display: block;
 					height: 4.167rem;
 					padding: 0.8333rem;
 					text-align: right;
 				}
+
 				&.Icon {
 					display: none;
 
-					+ .Label {
+					+.Label {
 						padding-left: 20px;
 					}
 				}
@@ -82,12 +86,12 @@ div.SSD_ListLine {
 		&.GreyedOut {
 			background-color: $regular-white;
 
-			> div.LineHeader {
+			>div.LineHeader {
 				background-color: transparent;
 			}
 		}
 
-		> div.ExpandableContent {
+		>div.ExpandableContent {
 			background-color: $regular-white;
 			display: block;
 			height: 100%;
@@ -103,9 +107,11 @@ div.SSD_ListLine {
 		background-color: transparent;
 		border: 1px solid #ebebeb;
 
-		> div.LineHeader {
+		>div.LineHeader {
 			background-color: #f5f5f5;
-			> div {
+
+			>div {
+
 				&.OtherControl,
 				&.OtherControlLeft {
 					cursor: default;
@@ -125,21 +131,26 @@ div.SSD_ListLine {
 		margin-bottom: 30px;
 	}
 
-	> div.LineHeader {
+	>div.LineHeader {
 		display: table;
 		width: 100%;
-		> div:empty {
+
+		>div:empty {
 			display: none;
 		}
-		> div.Label {
+
+		>div.Label {
+
 			span[description],
 			div[description] {
 				color: #7c7f7f;
 			}
 		}
-		> div {
-			&.ExpandControl > a,
-			&.ToggleActions > a {
+
+		>div {
+
+			&.ExpandControl>a,
+			&.ToggleActions>a {
 				display: block;
 				height: 4.167rem;
 				padding: 0.8333rem;
@@ -158,11 +169,12 @@ div.SSD_ListLine {
 				}
 			}
 
-			&.Icon:empty + div.Label {
+			&.Icon:empty+div.Label {
 				padding-left: 10px;
 				width: 76%;
 			}
-			&.ExpandControl > a {
+
+			&.ExpandControl>a {
 				padding-right: 0;
 			}
 
@@ -182,15 +194,16 @@ div.SSD_ListLine {
 					display: none;
 				}
 
-				> a {
+				>a {
 					display: block;
 					height: 4.16rem;
 					text-align: center;
 				}
 			}
 		}
-		> div.Icon {
-			> div:empty {
+
+		>div.Icon {
+			>div:empty {
 				width: 50px;
 			}
 		}
@@ -198,7 +211,7 @@ div.SSD_ListLine {
 		/*height: 4.167rem;*/
 	}
 
-	&.SSD_ListLine-Iframe > div.LineHeader {
+	&.SSD_ListLine-Iframe>div.LineHeader {
 		position: relative;
 		z-index: 1;
 
@@ -210,12 +223,13 @@ div.SSD_ListLine {
 		}
 	}
 
-	&.Disabled > div.LineHeader,
-	&:not(.Active):hover > div.LineHeader {
+	&.Disabled>div.LineHeader,
+	&:not(.Active):hover>div.LineHeader {
 		background-color: #ecf6f8;
 	}
 
-	&.Disabled > div.LineHeader > div {
+	&.Disabled>div.LineHeader>div {
+
 		&.Label,
 		&.OtherControl,
 		&.OtherControlLeft {
@@ -229,7 +243,8 @@ div.SSD_ListLine {
 		}
 	}
 
-	> div.LineHeader > div {
+	>div.LineHeader>div {
+
 		&.OtherControl,
 		&.OtherControlLeft {
 			cursor: default;
@@ -263,7 +278,7 @@ div.SSD_ListLine {
 			transition: opacity 500ms linear;
 			width: 48px;
 
-			> a {
+			>a {
 				display: block;
 				display: table-cell;
 				height: 4.16rem;
@@ -272,6 +287,7 @@ div.SSD_ListLine {
 				width: 100%;
 			}
 		}
+
 		&.Icon:empty {
 			display: none;
 		}
@@ -286,19 +302,20 @@ div.SSD_ListLine {
 			}
 		}
 
-		&.Icon:empty + div.Label {
+		&.Icon:empty+div.Label {
 			padding-left: 10px;
 		}
 	}
 
-	> div.ExpandableContent {
+	>div.ExpandableContent {
 		display: none;
+
 		.iframe-loading {
 			margin-top: 4.167rem;
 		}
 	}
 
-	&.SSD_ListLine-Iframe > div.ExpandableContent {
+	&.SSD_ListLine-Iframe>div.ExpandableContent {
 		background-color: $regular-white;
 		position: relative;
 		z-index: 0;
@@ -310,6 +327,7 @@ div.SSD_ListLine {
 		height: 100%;
 		width: 100%;
 	}
+
 	.Label {
 		&.Clickable .detail-text.MultiMarginLeft10.Text_Size14 {
 			display: block;
@@ -324,8 +342,9 @@ div.SSD_ListLine {
 }
 
 .KeyboardNav .SSD-List {
-	span.SSD_ListRecords > span.focus div.LineHeader,
-	.SSD_ListLine.ShowMore.focus > div.LineHeader {
+
+	span.SSD_ListRecords>span.focus div.LineHeader,
+	.SSD_ListLine.ShowMore.focus>div.LineHeader {
 		background-color: #ecf6f8;
 	}
 }
@@ -345,12 +364,12 @@ div.SSD_ListLine {
 	padding: 0;
 }
 
-.rtl div.SSD_ListLine > div.LineHeader > div.Icon:empty + div.Label {
+.rtl div.SSD_ListLine>div.LineHeader>div.Icon:empty+div.Label {
 	padding-left: 0;
 	padding-right: 10px;
 }
 
-.HospitalizationPlan_Content__Cards .SSD_ListLine.Active > div.LineHeader > div.Label .label-text {
+.HospitalizationPlan_Content__Cards .SSD_ListLine.Active>div.LineHeader>div.Label .label-text {
 	max-width: 60%;
 }
 
@@ -359,7 +378,7 @@ div.SSD_ListLine {
 }
 
 @media (max-width: 1368px) {
-	div.SSD_ListLine > div.LineHeader > div.Label {
+	div.SSD_ListLine>div.LineHeader>div.Label {
 		color: #0c1d22;
 		font-size: 1.2rem;
 		line-height: 18px;
@@ -373,7 +392,7 @@ div.SSD_ListLine {
 
 .FA,
 .AR {
-	div.SSD_ListLine > div.LineHeader > div.ExpandControl > a {
+	div.SSD_ListLine>div.LineHeader>div.ExpandControl>a {
 		text-align: left;
 	}
 }

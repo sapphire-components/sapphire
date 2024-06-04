@@ -979,67 +979,22 @@ html .ThemeGrid_Container {
   margin-right: auto;
 }
 
-/* Structure > Main Content */
-// .MainContent {
-// 	min-height: 100%;
-// 	padding: 20px;
-// }
+body.ResizeParentIframe {
+  height: auto;
+  overflow: visible;
 
-body.ResizeParentIframe .MainContent {
-  padding: 0;
+  .MainContent {
+    padding: 0;
+  }
+}
+
+.InlineMenu-Wrapper iframe {
+  transition: height 300ms linear;
 }
 
 .MainClinicianPadding {
   padding: 20px 0 !important;
 }
-
-// .tablet .MainClinicianPadding {
-// 	padding: 0 !important;
-// }
-
-// .tablet .MainContent,
-// .phone .MainContent{
-//     padding:20px 60px 0 20px;
-// }
-
-// .tablet .MainContent,
-// .phone .MainContent {
-// 	padding: 0 30px 0 20px;
-// 	padding: 0;
-// }
-
-// .tablet .MainContent .ClinicianWorkArea,
-// .phone .MainContent .ClinicianWorkArea {
-// 	padding: 0 30px 0 20px;
-// }
-
-// .tablet .ClinicianWorkArea .MediumRightColumns {
-// 	display: flex;
-// 	flex-wrap: wrap;
-// }
-
-// .tablet .ClinicianWorkArea > .MediumRightColumns > .Column.ColFirst,
-// .phone .ClinicianWorkArea > .MediumRightColumns > .Column.ColFirst {
-// 	order: 2;
-// 	width: 100%;
-// }
-
-// .tablet .ClinicianWorkArea > .MediumRightColumns > .Column.ColLast,
-// .phone .ClinicianWorkArea > .MediumRightColumns > .Column.ColLast {
-// 	order: 1;
-// 	width: 100%;
-// }
-
-// .tablet .Toolbar.Fix {
-//     /* position:sticky !important; */
-//     top: 0px !important;
-// }
-
-// .tablet.portrait .Toolbar.Fix {
-//     margin: 0;
-//     position: sticky !important;
-
-// }
 
 .AR.tablet .MainContent,
 .FA.tablet .MainContent {
