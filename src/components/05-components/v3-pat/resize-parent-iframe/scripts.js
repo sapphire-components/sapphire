@@ -31,6 +31,15 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
             }
           }
 
+          var _iframeHeight = _iframe.clientHeight;
+          var _iframeParentViewportHeight = _iframe.ownerDocument.documentElement.clientHeight;
+
+          // iframe is full height?
+          if(_iframeHeight == _iframeParentViewportHeight) {
+            //if full height, doesn't make sense to resize it.
+            return;
+          }
+          
           let _bodyHeight = _body.scrollHeight;
           _iframe.style.height = _bodyHeight + "px";
         }
