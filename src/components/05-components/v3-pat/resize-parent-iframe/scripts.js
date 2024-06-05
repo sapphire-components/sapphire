@@ -27,7 +27,7 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
               _iframe.style.width = _contentDocument ? _contentDocument.querySelector(".ResizeIframeTooltip").getBoundingClientRect().width + "px" : "100%";
             }
             else {
-              _iframe.style.width("100%");
+              _iframe.style.width = "100%";
             }
           }
 
