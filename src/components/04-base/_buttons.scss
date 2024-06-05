@@ -177,7 +177,7 @@ a.Button.Is_Default,
 	&.Small {
 		font-size: 13px;
 		height: 30px;
-		line-height: 16px;
+		line-height: 1.2;
 		min-width: 76px;
 		padding: 6px 12px;
 	}
@@ -246,6 +246,15 @@ a.Button.Is_Default,
 	}
 }
 
+.phone,
+.tablet {
+	.Button.Small,
+	a.Button.Small {
+		height: 26px;
+		line-height: 1.2;
+	}
+}
+
 .LinkHover {
 	color: $dark-grey;
 	transition: color 0.1s ease-in-out !important;
@@ -282,12 +291,6 @@ a.Button.Is_Default,
 		}
 	}
 }
-
-/*.LinkRed {
-	&:link {
-		color: $regular-red;
-	}
-}*/
 
 a.LinkReset {
 

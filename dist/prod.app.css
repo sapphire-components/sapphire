@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.68 || Generated: Wed Jun 05 2024 01:16:10 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.68 || Generated: Wed Jun 05 2024 02:36:48 GMT+0100 (Western European Summer Time) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -5108,7 +5108,7 @@ a.Button.Is_Default.Small,
 .PanelOpened a.Button.Is_Default.Small {
   font-size: 13px;
   height: 30px;
-  line-height: 16px;
+  line-height: 1.2;
   min-width: 76px;
   padding: 6px 12px;
 }
@@ -5476,6 +5476,14 @@ a.Button.Is_Default.AppointmentConfirmed:hover,
   background-color: #daebc9;
 }
 
+.phone .Button.Small,
+.phone a.Button.Small,
+.tablet .Button.Small,
+.tablet a.Button.Small {
+  height: 26px;
+  line-height: 1.2;
+}
+
 .LinkHover {
   color: #333333;
   transition: color 0.1s ease-in-out !important;
@@ -5507,11 +5515,6 @@ a.Button.Is_Default.AppointmentConfirmed:hover,
   background-color: #f2fffd;
 }
 
-/*.LinkRed {
-	&:link {
-		color: $regular-red;
-	}
-}*/
 a.LinkReset:link, a.LinkReset:visited {
   color: #333333;
   font-family: "LatoRegular";
@@ -40511,21 +40514,12 @@ a.Button.Icon:hover {
   line-height: 37px;
 }
 
-.phone .Button.Small, .phone .DropZoneContainer .row a.Small.Button, .DropZoneContainer .row .phone a.Small.Button,
-.tablet .Button.Small,
-.tablet .DropZoneContainer .row a.Small.Button,
-.DropZoneContainer .row .tablet a.Small.Button {
-  height: 26px;
-  line-height: 26px;
-}
-
 .FA a.Button.DoctorUnit:before,
 .AR a.Button.DoctorUnit:before {
   margin-left: 0.8333rem;
   margin-right: auto;
 }
 
-/* Usefull Classes > Counter & Tile Background */
 /* Usefull Classes > User Initials Background */
 .UserInitials.Black {
   border-color: #131819;
