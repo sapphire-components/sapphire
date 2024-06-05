@@ -452,13 +452,13 @@
 			return;
 		}
 
+		//Check if SapphireWidgets.ResizeParentIframe is defined.
+		if (typeof SapphireWidgets.ResizeParentIframe != 'undefined') {
+			// In case we're inside an iframe, we try to resize it first.
+			SapphireWidgets.ResizeParentIframe.resize();
+		}
+		
 		if (!this.isInViewport()) {
-
-			//Check if SapphireWidgets.ResizeParentIframe is defined.
-			if (typeof SapphireWidgets.ResizeParentIframe != 'undefined') {
-				// In case we're inside an iframe, we try to resize it first.
-				SapphireWidgets.ResizeParentIframe.resize();
-			}
 
 			var coords = this.$calendar[0].getBoundingClientRect();
 			if (this.$calendar.hasClass('drop-up') && this.$calendar[0].getBoundingClientRect().top < 0) {
