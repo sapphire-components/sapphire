@@ -40,6 +40,21 @@
 
 				$('.tooltipster-content').prepend('<div class="TooltipsterLoading"><div class="lds-ring"><div></div></div>');
 
+				let _tooltipIframe = helper[0].querySelector('iframe');
+				if (!!_tooltipIframe) {
+					_tooltipIframe.addEventListener('load', function () {
+						// Check if iframe is loaded
+						if (_tooltipIframe.contentWindow.document.readyState === 'complete') {
+							$('.TooltipsterLoading').fadeOut(300, function () {
+								$(this).remove();
+							});
+						}
+						else {
+							console.log('Tooltip iframe is still loading...');
+						}
+					});
+				}
+
 				const isLeftOrRight = config.positionId === 'left' || config.positionId === 'right';
 
 				// Set a fixed height in order to keep the arrow in the same position
