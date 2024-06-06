@@ -21,14 +21,16 @@ $tooltipster-background-color: $regular-white;
 		--tooltipster-content--padding-x: 0px;
 		--tooltipster-content--padding-y: 0px;
 	
-		&.tooltipster-default {
-			--tooltipster-content--padding-x: #{$sapphire-sizes--medium};
-			--tooltipster-content--padding-y: #{$sapphire-sizes--small};
-		}
-	
-		&.tooltipster-shadow {
-			--tooltipster-content--padding-x: #{$sapphire-sizes--medium};
-			--tooltipster-content--padding-y: #{$sapphire-sizes--medium};
+		&.tooltipster {
+			&-default {
+				--tooltipster-content--padding-x: #{$sapphire-sizes--medium};
+				--tooltipster-content--padding-y: #{$sapphire-sizes--small};
+			}
+
+			&-shadow {
+				--tooltipster-content--padding-x: #{$sapphire-sizes--medium};
+				--tooltipster-content--padding-y: #{$sapphire-sizes--medium};
+			}
 		}
 	
 		&--no-padding,
@@ -41,6 +43,17 @@ $tooltipster-background-color: $regular-white;
 
 	/* *** V *** Starting here is the default Tooltipster theme *** V ***
 	(feel free to modify or duplicate and create multiple themes!) */
+	&-base {
+		.tooltipster-content {
+			border-radius: $border-radius-medium;
+			overflow: hidden;
+
+			& > iframe {
+				width: 100%;
+			}
+		}
+	}
+	
 	&-content {
 		padding: var(--tooltipster-content--padding-y) var(--tooltipster-content--padding-x);
 	}
@@ -99,15 +112,6 @@ body.LayoutBase .tooltipster-location--Default {
 
 body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 	z-index: 5;
-}
-
-.tooltipster-base .tooltipster-content {
-	border-radius: $border-radius-medium;
-	overflow: hidden;
-}
-
-.tooltipster-base .tooltipster-content>iframe {
-	width: 100%;
 }
 
 /* These next classes handle the styles for the little arrow attached to the tooltip. By default, the arrow will inherit the same colors and border as what is set on the main tooltip itself. */
@@ -230,7 +234,6 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 }
 
 /* Some CSS magic for the awesome animations - feel free to make your own custom animations and reference it in your Tooltipster settings! */
-
 .tooltipster-fade {
 	opacity: 0;
 	-webkit-transition-property: opacity;
@@ -361,9 +364,6 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 	transform: scale(1.1, 1.1);
 }
 
-/* ExcludeFromPickers: TooltipContainer, tooltipster-default, tooltipster-shadow, tooltipster-content, tooltipster-default, tooltipster-arrow, tooltipster-arrow-border, tooltipster-icon, tooltipster-base, tooltipster-content, tooltipster-arrow, tooltipster-arrow-top, tooltipster-arrow-top-right, tooltipster-arrow-top-left, tooltipster-arrow-bottom, tooltipster-arrow-bottom-right, tooltipster-arrow-bottom-left, tooltipster-arrow-top, tooltipster-arrow-top-left, tooltipster-arrow-top-right, tooltipster-arrow-left, tooltipster-arrow-right, tooltipster-fade, tooltipster-fade-show, tooltipster-grow, tooltipster-grow-show, tooltipster-swing, tooltipster-swing-show, tooltipster-fall, tooltipster-fall-show, tooltipster-falltooltipster-dying, tooltipster-slide, tooltipster-slidetooltipster-slide-show, tooltipster-slidetooltipster-dying, tooltipster-content-changing
-*/
-
 /* START: Tooltip red */
 .tooltipster-shadow-red {
 	background-color: #fff0ef;
@@ -470,3 +470,6 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 	transform: rotate(-45deg);
 	width: 0;
 }
+
+/* ExcludeFromPickers: TooltipContainer, tooltipster-default, tooltipster-shadow, tooltipster-content, tooltipster-default, tooltipster-arrow, tooltipster-arrow-border, tooltipster-icon, tooltipster-base, tooltipster-content, tooltipster-arrow, tooltipster-arrow-top, tooltipster-arrow-top-right, tooltipster-arrow-top-left, tooltipster-arrow-bottom, tooltipster-arrow-bottom-right, tooltipster-arrow-bottom-left, tooltipster-arrow-top, tooltipster-arrow-top-left, tooltipster-arrow-top-right, tooltipster-arrow-left, tooltipster-arrow-right, tooltipster-fade, tooltipster-fade-show, tooltipster-grow, tooltipster-grow-show, tooltipster-swing, tooltipster-swing-show, tooltipster-fall, tooltipster-fall-show, tooltipster-falltooltipster-dying, tooltipster-slide, tooltipster-slidetooltipster-slide-show, tooltipster-slidetooltipster-dying, tooltipster-content-changing
+*/
