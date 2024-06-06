@@ -376,5 +376,5 @@ SapphireWidgets.SelectSystem = config => {
 						}
 				})
 		}
-});
+	});
 };
