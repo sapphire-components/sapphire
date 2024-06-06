@@ -45,6 +45,8 @@
 					_tooltipIframe.addEventListener('load', function () {
 						// Check if iframe is loaded
 						if (_tooltipIframe.contentWindow.document.readyState === 'complete') {
+							_tooltipIframe.contentWindow.document.body.classList.add('tooltipster-iframe-content');
+							
 							$('.TooltipsterLoading').fadeOut(300, function () {
 								$(this).remove();
 							});
