@@ -11,6 +11,15 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
 
     var _mutationHandler = function (mutations) {
       mutations.forEach(function (mutation, index) {
+        /* Since this function is used as callback for MutationObserver and ResizeObserver
+        we check if this mutation object is of type MutationRecord by verifying if property
+        'removedNodes' is defined. At the same time, since we only want to act on removed nodes,
+        we check if is there any.*/
+        if(!!mutation.removedNodes && mutation.removedNodes.length == 0) {
+          return;
+        } /* In case this callback is called by ResizeObserver, the code continues,
+        since mutation object is of type ResizeObserverEntry, which doesn't have property 'removedNodes'.*/
+        
         clearTimeout(_resizeParentIframeResizeTimer);
         _resizeParentIframeResizeTimer = setTimeout(function () {
           SapphireWidgets.ResizeParentIframe.resize ? SapphireWidgets.ResizeParentIframe.resize() : resize();
@@ -52,10 +61,18 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
       }
     };
 
-    var _observer = new ResizeObserver(_mutationHandler);
+    var _mutationObserver = new MutationObserver(_mutationHandler);
+    var _resizeObserver = new ResizeObserver(_mutationHandler);
 
     if (_iframe) {
-      _observer.observe(document.body, {
+      _mutationObserver.observe(document.body, {
+        /* This observer will be used to track only nodes removed.
+        Check the MutationObserver callback for more info. */
+        childList: true,
+        subtree: true
+      });
+      
+      _resizeObserver.observe(document.body, {
         box: "border-box"
       });
     }
