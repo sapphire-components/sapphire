@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.73 || Generated: Thu Jun 06 2024 01:08:56 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.73 || Generated: Thu Jun 06 2024 01:40:11 GMT+0100 (Western European Summer Time) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -30695,11 +30695,14 @@ div.TimelineDetail__label {
   padding: 8px 16px;
 }
 
-.TooltipContainer {
-  display: none;
+/* Variables */
+/* Styles */
+.tooltipster {
+  /* This is the base styling required to make all Tooltipsters work */
+  /* *** V *** Starting here is the default Tooltipster theme *** V ***
+  (feel free to modify or duplicate and create multiple themes!) */
+  /* If you're using the icon option, use this next selector to style them */
 }
-
-/* This is the base styling required to make all Tooltipsters work */
 .tooltipster-base {
   border: 1px solid #d6d6d6;
   border-radius: 8px;
@@ -30727,52 +30730,46 @@ div.TimelineDetail__label {
   --tooltipster-content--padding-x: 0px;
   --tooltipster-content--padding-y: 0px;
 }
-
 .tooltipster-content {
   padding: var(--tooltipster-content--padding-y) var(--tooltipster-content--padding-x);
 }
-
-/* This is the default Tooltipster theme (feel free to modify or duplicate and create multiple themes!): */
 .tooltipster-default {
   background: #4c4c4c;
   border: 2px solid #000;
   border-radius: 5px;
   color: #fff;
 }
-
-.tooltipster-shadow {
-  background: #fff;
-  border-radius: 5px;
-}
-
-.tooltipster-borderless {
-  background: rgba(10, 10, 10, 0.9);
-  border-radius: 5px;
-  color: white;
-}
-
-/* Use this next selector to style things like font-size and line-height: */
 .tooltipster-default .tooltipster-content {
   font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 16px;
   overflow: hidden;
 }
-
+.tooltipster-shadow {
+  background: #fff;
+  border-radius: 5px;
+}
 .tooltipster-shadow .tooltipster-content {
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
 }
-
-/* This next selector defines the color of the border on the outside of the arrow. This will automatically match the color and size of the border set on the main tooltip styles. Set display: none; if you would like a border around the tooltip but no border around the arrow */
-/*.tooltipster-default .tooltipster-arrow .tooltipster-arrow-border {
-	 border-color: ... !important;
-}*/
-/* If you're using the icon option, use this next selector to style them */
+.tooltipster-borderless {
+  background: rgba(10, 10, 10, 0.9);
+  border-radius: 5px;
+  color: white;
+}
 .tooltipster-icon {
   cursor: default;
   margin-left: 4px;
+}
+
+.TooltipContainer {
+  display: none;
+}
+
+body.tooltipster-iframe-content {
+  background-color: #fff;
 }
 
 body.LayoutBase .tooltipster-location--Default {

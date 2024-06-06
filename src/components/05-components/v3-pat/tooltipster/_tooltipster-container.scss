@@ -1,90 +1,96 @@
+/* Variables */
+$tooltipster-background-color: $regular-white;
+
+/* Styles */
+.tooltipster {
+
+	/* This is the base styling required to make all Tooltipsters work */
+	&-base {
+		border: 1px solid $light-grey;
+		border-radius: $border-radius-medium;
+		font-size: 0;
+		line-height: 0;
+		min-width: 250px;
+		overflow: visible;
+		padding: 0;
+		pointer-events: visible;
+		position: absolute;
+		width: auto;
+		z-index: 80;
+	
+		--tooltipster-content--padding-x: 0px;
+		--tooltipster-content--padding-y: 0px;
+	
+		&.tooltipster-default {
+			--tooltipster-content--padding-x: #{$sapphire-sizes--medium};
+			--tooltipster-content--padding-y: #{$sapphire-sizes--small};
+		}
+	
+		&.tooltipster-shadow {
+			--tooltipster-content--padding-x: #{$sapphire-sizes--medium};
+			--tooltipster-content--padding-y: #{$sapphire-sizes--medium};
+		}
+	
+		&--no-padding,
+		&--no-padding.tooltipster-default,
+		&--no-padding.tooltipster-shadow {
+			--tooltipster-content--padding-x: 0px;
+			--tooltipster-content--padding-y: 0px;
+		}
+	}
+
+	/* *** V *** Starting here is the default Tooltipster theme *** V ***
+	(feel free to modify or duplicate and create multiple themes!) */
+	&-content {
+		padding: var(--tooltipster-content--padding-y) var(--tooltipster-content--padding-x);
+	}
+
+	&-default {
+		background: #4c4c4c;
+		border: 2px solid #000;
+		border-radius: 5px;
+		color: #fff;
+
+		 .tooltipster-content {
+			font-family: Arial, sans-serif;
+			font-size: 14px;
+			line-height: 16px;
+			overflow: hidden;
+		}
+	}
+
+	&-shadow {
+		@include shadow-medium;
+	
+		background: $tooltipster-background-color;
+		border-radius: 5px;
+
+		.tooltipster-content {
+			font-family: 'Arial', sans-serif;
+			font-size: 14px;
+			line-height: 16px;
+		}
+	}
+
+	&-borderless {
+		background: rgba(10, 10, 10, 0.9);
+		border-radius: 5px;
+		color: white;
+	}
+
+	/* If you're using the icon option, use this next selector to style them */
+	&-icon {
+		cursor: default;
+		margin-left: 4px;
+	}
+}
+
 .TooltipContainer {
 	display: none;
 }
 
-/* This is the base styling required to make all Tooltipsters work */
-.tooltipster-base {
-	border: 1px solid $light-grey;
-	border-radius: $border-radius-medium;
-	font-size: 0;
-	line-height: 0;
-	min-width: 250px;
-	overflow: visible;
-	padding: 0;
-	pointer-events: visible;
-	position: absolute;
-	width: auto;
-	z-index: 80;
-
-	--tooltipster-content--padding-x: 0px;
-	--tooltipster-content--padding-y: 0px;
-
-	&.tooltipster-default {
-		--tooltipster-content--padding-x: #{$sapphire-sizes--medium};
-		--tooltipster-content--padding-y: #{$sapphire-sizes--small};
-	}
-
-	&.tooltipster-shadow {
-		--tooltipster-content--padding-x: #{$sapphire-sizes--medium};
-		--tooltipster-content--padding-y: #{$sapphire-sizes--medium};
-	}
-
-	&--no-padding,
-	&--no-padding.tooltipster-default,
-	&--no-padding.tooltipster-shadow {
-		--tooltipster-content--padding-x: 0px;
-		--tooltipster-content--padding-y: 0px;
-	}
-}
-
-.tooltipster-content {
-	padding: var(--tooltipster-content--padding-y) var(--tooltipster-content--padding-x);
-}
-
-/* This is the default Tooltipster theme (feel free to modify or duplicate and create multiple themes!): */
-.tooltipster-default {
-	background: #4c4c4c;
-	border: 2px solid #000;
-	border-radius: 5px;
-	color: #fff;
-}
-
-.tooltipster-shadow {
-	@include shadow-medium;
-
-	background: #fff;
-	border-radius: 5px;
-}
-
-.tooltipster-borderless {
-	background: rgba(10, 10, 10, 0.9);
-	border-radius: 5px;
-	color: white;
-}
-
-/* Use this next selector to style things like font-size and line-height: */
-.tooltipster-default .tooltipster-content {
-	font-family: Arial, sans-serif;
-	font-size: 14px;
-	line-height: 16px;
-	overflow: hidden;
-}
-
-.tooltipster-shadow .tooltipster-content {
-	font-family: 'Arial', sans-serif;
-	font-size: 14px;
-	line-height: 16px;
-}
-
-/* This next selector defines the color of the border on the outside of the arrow. This will automatically match the color and size of the border set on the main tooltip styles. Set display: none; if you would like a border around the tooltip but no border around the arrow */
-/*.tooltipster-default .tooltipster-arrow .tooltipster-arrow-border {
-	 border-color: ... !important;
-}*/
-
-/* If you're using the icon option, use this next selector to style them */
-.tooltipster-icon {
-	cursor: default;
-	margin-left: 4px;
+body.tooltipster-iframe-content {
+	background-color: $tooltipster-background-color;
 }
 
 body.LayoutBase .tooltipster-location--Default {
