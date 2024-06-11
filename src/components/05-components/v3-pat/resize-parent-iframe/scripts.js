@@ -4,30 +4,62 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
   $(window).load(function () {
     const _body = document.body;
     const _iframe = window.frameElement;
+    const DATA_BODY_RESIZE_ATTRIBUTE_NAME = "data-resize-parent-iframe-top";
+    const DATA_ELEMENT_CAUSED_BODY_OFFSET = "data-element-caused-body-offset";
+    const RESIZE_TOP_OFFSET = 5;
 
-    var _resizeParentIframeResizeTimer;
-
-    _body.classList.add('ResizeParentIframe');
-
+    _body.classList.add("ResizeParentIframe");
+    
     var _mutationHandler = function (mutations) {
-      mutations.forEach(function (mutation, index) {
-        /* Since this function is used as callback for MutationObserver and ResizeObserver
-        we check if this mutation object is of type MutationRecord by verifying if property
-        'removedNodes' is defined. At the same time, since we only want to act on removed nodes,
-        we check if is there any.*/
-        if(!!mutation.removedNodes && mutation.removedNodes.length == 0) {
-          return;
-        } /* In case this callback is called by ResizeObserver, the code continues,
-        since mutation object is of type ResizeObserverEntry, which doesn't have property 'removedNodes'.*/
-        
-        clearTimeout(_resizeParentIframeResizeTimer);
-        _resizeParentIframeResizeTimer = setTimeout(function () {
-          SapphireWidgets.ResizeParentIframe.resize ? SapphireWidgets.ResizeParentIframe.resize() : resize();
-        }, 300);
-      });
+
+      _clearBodyTop();
+      var _elementOutsideBodyTop = _checkAnyElementOutsideBodyTop();
+      if (_elementOutsideBodyTop != null) {
+        _setBodyTop(_elementOutsideBodyTop.getBoundingClientRect().top * -1);
+      }
+      
+      SapphireWidgets.ResizeParentIframe.resize ? SapphireWidgets.ResizeParentIframe.resize() : resize()
     };
 
-    var resize = function () {
+    var _setBodyTop = function(top) {
+      _body.removeAttribute(DATA_BODY_RESIZE_ATTRIBUTE_NAME);
+      _body.style.marginTop = top + "px";
+      
+      if(top == 0)
+        return;
+      
+      _body.setAttribute(DATA_BODY_RESIZE_ATTRIBUTE_NAME, top);
+    }
+
+    var _getBodyTop = function() {
+      return parseFloat(_body.getAttribute(DATA_BODY_RESIZE_ATTRIBUTE_NAME) || 0);
+    }
+
+    var _clearBodyTop = function() {
+      if(document.querySelectorAll("[" + DATA_ELEMENT_CAUSED_BODY_OFFSET + "]").length > 0)
+        return;
+
+      _setBodyTop(0);
+    }
+
+    var _checkAnyElementOutsideBodyTop = function() {
+      var _topMostElement = null;
+      var _topMostY = 0;
+
+      for (let index = 0; index <= window.document.body.clientWidth; index += 10) {
+        var _elementFromPoint = document.elementFromPoint(index, 0);
+        var _elementFromPointY = _elementFromPoint != null ? (_elementFromPoint.getBoundingClientRect().top * -1) : 0;
+        
+        if(_elementFromPoint != document.body && _elementFromPointY > _topMostY) {
+          _topMostElement = _elementFromPoint;
+          _topMostY = _elementFromPointY;
+        }
+      }
+      
+      return _topMostElement;
+    }
+    
+    var resize = function (addedNodes) {
       if (_iframe) {
         try {
           if (_iframe.id === "tooltipster-frame") {
@@ -44,12 +76,12 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
           var _iframeParentViewportHeight = _iframe.ownerDocument.documentElement.clientHeight;
 
           // iframe is full height?
-          if (_iframeHeight >= _iframeParentViewportHeight) {
+          if (_iframeHeight == _iframeParentViewportHeight) {
             //if full height, doesn't make sense to resize it.
             return;
           }
 
-          let _bodyHeight = _body.scrollHeight;
+          let _bodyHeight = _body.scrollHeight + _getBodyTop();
           _iframe.style.height = _bodyHeight + "px";
         }
         catch (error) {
@@ -66,12 +98,10 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
 
     if (_iframe) {
       _mutationObserver.observe(document.body, {
-        /* This observer will be used to track only nodes removed.
-        Check the MutationObserver callback for more info. */
         childList: true,
         subtree: true
       });
-      
+
       _resizeObserver.observe(document.body, {
         box: "border-box"
       });
@@ -79,7 +109,7 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
     else {
       console.warn("Not an iframe, resize observer ignored.");
     }
-
+    
     SapphireWidgets.ResizeParentIframe = {
       resize: resize,
     };
