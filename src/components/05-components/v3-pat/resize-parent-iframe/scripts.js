@@ -12,13 +12,15 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
     
     var _mutationHandler = function (mutations) {
 
-      _clearBodyTop();
-      var _elementOutsideBodyTop = _checkAnyElementOutsideBodyTop();
-      if (_elementOutsideBodyTop != null) {
-        _setBodyTop(_elementOutsideBodyTop.getBoundingClientRect().top * -1);
-      }
-      
-      SapphireWidgets.ResizeParentIframe.resize ? SapphireWidgets.ResizeParentIframe.resize() : resize()
+      setTimeout(function(){
+        _clearBodyTop();
+        var _elementOutsideBodyTop = _checkAnyElementOutsideBodyTop();
+        if (_elementOutsideBodyTop != null) {
+          _setBodyTop(_elementOutsideBodyTop.getBoundingClientRect().top * -1);
+        }
+        
+        SapphireWidgets.ResizeParentIframe.resize ? SapphireWidgets.ResizeParentIframe.resize() : resize();
+      }, 200);
     };
 
     var _setBodyTop = function(top) {
@@ -82,6 +84,7 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
           }
 
           let _bodyHeight = _body.scrollHeight + _getBodyTop();
+          _bodyHeight += window.innerHeight - document.documentElement.clientHeight; // Adding scrollbar height in case it exists.
           _iframe.style.height = _bodyHeight + "px";
         }
         catch (error) {
