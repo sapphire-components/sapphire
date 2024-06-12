@@ -447,17 +447,23 @@
 }
 
 .LayoutBase--fixedActions {
-	align-items: center;
-	background-color: $regular-white;
-	border-top: 1px solid $light-grey;
-	bottom: 0;
 	display: flex;
-	justify-content: space-between;
+	width: calc(67% - (#{$sapphire-sizes--large} + 3px)); // Border + 1px
 	margin-left: -$sapphire-sizes--large;
 	padding: $sapphire-sizes--large;
 	position: fixed;
-	width: calc(67% - (#{$sapphire-sizes--large} + 3px)); // Border + 1px
+	bottom: 0;
+	align-items: center;
+	background-color: $regular-white;
+
+	border-top: 1px solid $light-grey;
+	justify-content: space-between;
+
 	z-index: 1;
+
+	.Page & {
+		-servicestudio-position: fixed;
+	}
 
 	-servicestudio-position: static;
 	-servicestudio-width: 100%;

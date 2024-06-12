@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.79 || Generated: Wed Jun 12 2024 01:15:40 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.79 || Generated: Wed Jun 12 2024 12:48:10 GMT+0100 (Western European Summer Time) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -10014,19 +10014,22 @@ div.WizardParent > div div.WizardStep:after, div.WizardParent > div div.WizardSt
 }
 
 .LayoutBase--fixedActions {
-  align-items: center;
-  background-color: #fff;
-  border-top: 1px solid #d6d6d6;
-  bottom: 0;
   display: flex;
-  justify-content: space-between;
+  width: calc(67% - (24px + 3px));
   margin-left: -24px;
   padding: 24px;
   position: fixed;
-  width: calc(67% - (24px + 3px));
+  bottom: 0;
+  align-items: center;
+  background-color: #fff;
+  border-top: 1px solid #d6d6d6;
+  justify-content: space-between;
   z-index: 1;
   -servicestudio-position: static;
   -servicestudio-width: 100%;
+}
+.Page .LayoutBase--fixedActions {
+  -servicestudio-position: fixed;
 }
 .LayoutBase--fixedActions.HasSideBarNotExpandable {
   width: calc(67% - (24px + 151px));
