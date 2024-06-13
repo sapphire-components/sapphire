@@ -43,7 +43,9 @@ SapphireWidgets.SelectSSD = function SSDSelectSetup(config) {
 					.on('click', function() {
 						$PopupID.fadeOut('fast', function() {
 							$SSDselectId.find('.SelectSD__starTrigger > a').click();
-							setTimeout($ComponentSSD.removeClass('Dont_Close'), 500);
+							setTimeout(function() {
+								$ComponentSSD.removeClass('Dont_Close')
+							}, 500);
 						});
 					});
 
@@ -52,7 +54,9 @@ SapphireWidgets.SelectSSD = function SSDSelectSetup(config) {
 					.off('click')
 					.on('click', function() {
 						$PopupID.fadeOut('fast', function() {
-							setTimeout($ComponentSSD.removeClass('Dont_Close'), 500);
+							setTimeout(function() {
+								$ComponentSSD.removeClass('Dont_Close')
+							}, 500);
 						});
 					});
 			});
