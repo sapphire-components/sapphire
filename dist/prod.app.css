@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.82 || Generated: Tue Jun 18 2024 11:27:29 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.82 || Generated: Tue Jun 18 2024 11:41:45 GMT+0100 (Western European Summer Time) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -3547,7 +3547,7 @@ body,
 input,
 select,
 textarea {
-  color: #333333;
+  color: #333;
   font-family: "LatoRegular";
   font-weight: normal;
   line-height: 1.43;
@@ -4031,7 +4031,7 @@ textarea::-webkit-scrollbar-thumb {
 .FA select.Mandatory:focus,
 .FA textarea.Mandatory:focus,
 .FA input[type=text].Mandatory:focus {
-  border: 1px solid #333333;
+  border: 1px solid #333;
 }
 .AR select.Mandatory:active,
 .AR textarea.Mandatory:active,
@@ -4435,7 +4435,7 @@ a.Button.Is_Default.Cancel,
 .PanelOpened a.Button.Is_Default.Cancel {
   background-color: #fff;
   border: 1px solid #d6d6d6;
-  color: #333333;
+  color: #333;
 }
 input.Button.Third:before, .PatientCallCancelStructure__LastCalled [ui=data-recall-button] .PatientCallCancel input.Button[ui=data-button-call]:before, input.Button.Cancel:before,
 input.Button.Is_Default.Third:before,
@@ -4473,7 +4473,7 @@ a.Button.Is_Default.Cancel:before,
 .desktop a.Button.Is_Default.Cancel:before,
 .PanelOpened a.Button.Is_Default.Third:before,
 .PanelOpened a.Button.Is_Default.Cancel:before {
-  color: #333333;
+  color: #333;
 }
 input.Button.Third:active, .PatientCallCancelStructure__LastCalled [ui=data-recall-button] .PatientCallCancel input.Button[ui=data-button-call]:active, input.Button.Third:hover, .PatientCallCancelStructure__LastCalled [ui=data-recall-button] .PatientCallCancel input.Button[ui=data-button-call]:hover, input.Button.Cancel:active, input.Button.Cancel:hover,
 input.Button.Is_Default.Third:active,
@@ -4596,7 +4596,7 @@ a.Button.Is_Default.Cancel:hover,
 .PanelOpened a.Button.Is_Default.Cancel:hover {
   background-color: #ebebeb;
   border: 1px solid #d6d6d6;
-  color: #333333;
+  color: #333;
 }
 input.Button.Third:focus, .PatientCallCancelStructure__LastCalled [ui=data-recall-button] .PatientCallCancel input.Button[ui=data-button-call]:focus, input.Button.Cancel:focus,
 input.Button.Is_Default.Third:focus,
@@ -5485,11 +5485,11 @@ a.Button.Is_Default.AppointmentConfirmed:hover,
 }
 
 .LinkHover {
-  color: #333333;
+  color: #333;
   transition: color 0.1s ease-in-out !important;
 }
 .LinkHover:link, .LinkHover:visited {
-  color: #333333;
+  color: #333;
 }
 .LinkHover:hover {
   color: #00ac94;
@@ -5516,7 +5516,7 @@ a.Button.Is_Default.AppointmentConfirmed:hover,
 }
 
 a.LinkReset:link, a.LinkReset:visited {
-  color: #333333;
+  color: #333;
   font-family: "LatoRegular";
 }
 
@@ -5721,7 +5721,7 @@ a.LinkReset:link, a.LinkReset:visited {
   background-position: center center;
   background-size: cover;
   box-shadow: inset 0 -1px 2px rgba(0, 0, 0, 0.15);
-  color: #333333;
+  color: #333;
   margin-top: 0;
   padding: 20px 20px 30px 20px;
 }
@@ -5790,7 +5790,7 @@ a.LinkReset:link, a.LinkReset:visited {
   color: #fff;
 }
 .Title_Section.White .SectionWebsite_title, .Title_Section.Silver .SectionWebsite_title, .Title_Section.Transparent .SectionWebsite_title {
-  color: #333333;
+  color: #333;
 }
 .Title_Section.BackgroundFixed {
   background-attachment: fixed;
@@ -5889,7 +5889,7 @@ a.LinkReset:link, a.LinkReset:visited {
 .AvailabilityCardContainer .AvailabilityCardLeftContainer {
   align-items: center;
   background-color: #f3f3f3;
-  color: #333333;
+  color: #333;
   display: flex;
   font-family: "LatoBold";
   font-size: 1.143em;
@@ -6095,7 +6095,7 @@ a.LinkReset:link, a.LinkReset:visited {
   width: 30px;
 }
 .ButtonSquare:focus {
-  border: 1px solid #333333;
+  border: 1px solid #333;
 }
 .ButtonSquare--disabled {
   background-color: #ebebeb;
@@ -6826,7 +6826,7 @@ a.LinkReset:link, a.LinkReset:visited {
   background-image: url("/Sapphire_Resources/img/upDownArrows.png");
   background-position: right 14px center;
   background-repeat: no-repeat;
-  color: #333333;
+  color: #333;
   padding: 0 35px 0 16px;
 }
 .DropdownFilter {
@@ -7067,7 +7067,7 @@ a.LinkReset:link, a.LinkReset:visited {
   transform: scale(-1, 1);
 }
 .FileUpload_Label {
-  color: #333333;
+  color: #333;
   font-family: "LatoBold";
   font-size: 1em;
 }
@@ -7141,7 +7141,7 @@ a.LinkReset:link, a.LinkReset:visited {
 }
 .InputIconSapphire a > span,
 .InputIconSapphire span a > span {
-  color: #333333;
+  color: #333;
   font-size: 20px;
   line-height: 36px;
   position: absolute;
@@ -7325,7 +7325,7 @@ div.LineInfo {
   width: fit-content;
 }
 .MedicalFileOptionsLine > div > .VolumeName {
-  color: #333333;
+  color: #333;
   font-size: 0.857em;
   line-height: 17px;
 }
@@ -7975,7 +7975,7 @@ div.LineInfo {
   color: #00ac94;
 }
 .SortTableLink a.LinkSelected {
-  color: #333333;
+  color: #333;
 }
 .SortTableLink a.LinkSelected::after {
   content: "\e913";
@@ -8020,7 +8020,7 @@ div.LineInfo {
 .LayoutBlank .SuperCard,
 .LayoutBase .SuperCard {
   border: 1px solid #d6d6d6;
-  color: #333333;
+  color: #333;
   display: table;
   min-height: 84px;
   width: 100%;
@@ -8243,7 +8243,7 @@ div.LineInfo {
 .DesignSystem .SuperCard_Left.TextBlack,
 .LayoutBlank .SuperCard_Left.TextBlack,
 .LayoutBase .SuperCard_Left.TextBlack {
-  color: #333333;
+  color: #333;
 }
 .DesignSystem .SuperCard_Left.TextRed,
 .LayoutBlank .SuperCard_Left.TextRed,
@@ -8509,7 +8509,7 @@ div.LineInfo {
 .TableRecords_OddLine, .TableRecords_EvenLine {
   background-color: #fff;
   border-bottom: 1px solid #d6d6d6;
-  color: #333333;
+  color: #333;
   min-height: 48px;
   padding: 10px;
   text-align: left;
@@ -8588,7 +8588,7 @@ div.LineInfo {
   content: "\e914";
 }
 .TableRecords .LightGreen {
-  color: #333333;
+  color: #333;
 }
 .TableRecords .TableRowExpandable {
   display: none;
@@ -9216,7 +9216,7 @@ div.NoPrompt > div.template-item-input-block {
   border: 1px solid #00bfa5;
 }
 .ToggleButton_label:focus {
-  border: 1px solid #333333 !important;
+  border: 1px solid #333 !important;
 }
 .ToggleButton_label.changed {
   background-color: #00bfa5;
@@ -9392,7 +9392,7 @@ div.NoPrompt > div.template-item-input-block {
   padding: 16px;
 }
 .CounterBox__Title {
-  color: #333333;
+  color: #333;
   font-family: "LatoBold";
   overflow: hidden;
   text-overflow: ellipsis;
@@ -9479,7 +9479,7 @@ div.NoPrompt > div.template-item-input-block {
   margin: 0 4px;
 }
 .WardTotalContainer .WardNumber {
-  color: #333333;
+  color: #333;
   font-family: "LatoBold";
   font-size: 1.143em;
 }
@@ -9597,7 +9597,7 @@ div.WizardParent > div div.WizardStep.Past .IconWizard.IconWizardWhite {
 div.WizardParent > div div.WizardStep.ActiveStep {
   background-color: #f2fffd;
   border-color: #00bfa5;
-  color: #333333;
+  color: #333;
   font-family: "LatoBold";
 }
 div.WizardParent > div div.WizardStep.ActiveStep::after {
@@ -10630,7 +10630,7 @@ a.SpecialityButtonForward {
   width: 14px;
 }
 .LayoutPopup__header .LayoutPopup__header__new__close:after {
-  color: #333333;
+  color: #333;
   content: "\e60c";
   display: block;
   font-family: "Sapphire-Icon-Font";
@@ -10774,7 +10774,7 @@ a.SpecialityButtonForward {
 .ListLinks a:link {
   align-items: center;
   display: flex;
-  color: #333333;
+  color: #333;
   gap: 16px;
   height: 36px;
   padding: 0 16px;
@@ -11046,7 +11046,7 @@ a.SpecialityButtonForward {
 }
 .SubLayoutLeftPanel__PanelTitle .InlineDropdown_icon,
 .SubLayoutLeftPanel__PanelTitle .InlineDropdown_text {
-  color: #333333;
+  color: #333;
 }
 .SubLayoutLeftPanel__PanelTitle .InlineDropdown_text {
   font-size: 1.286em;
@@ -11453,7 +11453,7 @@ html body .AR .Feedback_Message_Info:before {
   background-color: #fff;
   border: 1px solid #d6d6d6;
   border-radius: 100px;
-  color: #333333;
+  color: #333;
   height: 36px;
   padding: 0 0 0 16px;
   transition: all 0.1s ease-in-out;
@@ -11511,7 +11511,7 @@ html body .AR .Feedback_Message_Info:before {
   border-right: 1px solid transparent;
   border-top: 1px solid #d6d6d6;
   box-shadow: none;
-  color: #333333;
+  color: #333;
   cursor: pointer;
   display: inline-block;
   font-family: "LatoRegular";
@@ -11576,10 +11576,10 @@ html body .AR .Feedback_Message_Info:before {
   height: 34px;
 }
 .ButtonGroup_button.Button .iconHorizontal .iconHorizontal_icon .icon {
-  color: #333333;
+  color: #333;
 }
 .ButtonGroup_button.Button .iconHorizontal .iconHorizontal_label {
-  color: #333333;
+  color: #333;
   vertical-align: unset;
 }
 
@@ -11828,7 +11828,7 @@ html body .AR .Feedback_Message_Info:before {
 .InputWithList__List .PH > span > div,
 .DropdownMenu .PH > .MenuLinkItem,
 .InputWithList__List .PH > .MenuLinkItem {
-  color: #333333;
+  color: #333;
   display: block;
   font-family: "LatoRegular";
   height: 36px;
@@ -11844,7 +11844,7 @@ html body .AR .Feedback_Message_Info:before {
 .DropdownMenu .PH > .MenuLinkItem:hover,
 .InputWithList__List .PH > .MenuLinkItem:hover {
   background-color: #f2fffd;
-  color: #333333;
+  color: #333;
 }
 .DropdownMenu .PH > a.Selected, .InputWithList__List .PH > a.Selected,
 .DropdownMenu .PH > span a.Selected,
@@ -11893,7 +11893,7 @@ html body .AR .Feedback_Message_Info:before {
   width: 100%;
 }
 .DropdownMenu [ui=data-badge-classifications] .BadgeClassification > span, .InputWithList__List [ui=data-badge-classifications] .BadgeClassification > span {
-  color: #333333 !important;
+  color: #333 !important;
 }
 .DropdownMenu [ui=data-badge-classifications] .BadgeClassification .IconBadgeClassification, .InputWithList__List [ui=data-badge-classifications] .BadgeClassification .IconBadgeClassification {
   margin: 0;
@@ -12006,7 +12006,7 @@ html body .AR .Feedback_Message_Info:before {
   border-color: #00bfa5;
 }
 .IconDropdown_button.Button > span.fa {
-  color: #333333;
+  color: #333;
   font-size: 1.143em;
 }
 .IconDropdown_button.Button .IconDown, .DropZoneContainer .row a.IconDropdown_button.Button .IconDown {
@@ -12059,7 +12059,7 @@ html body .AR .Feedback_Message_Info:before {
   background-color: #ebebeb;
 }
 .InlineDropdown:focus .InlineDropdown_text {
-  border-bottom: 1px solid #333333;
+  border-bottom: 1px solid #333;
 }
 .InlineDropdown_text {
   color: #00ac94;
@@ -12245,7 +12245,7 @@ div.ActionsMenu-tooltip .tooltipster-arrow span:after {
   width: 10px;
 }
 div.ActionsMenu-tooltip .MenuLinkItem {
-  color: #333333;
+  color: #333;
   display: block;
   font-family: "LatoRegular";
   height: 36px;
@@ -12255,7 +12255,7 @@ div.ActionsMenu-tooltip .MenuLinkItem {
 }
 div.ActionsMenu-tooltip .MenuLinkItem:hover {
   background-color: #f2fffd;
-  color: #333333;
+  color: #333;
 }
 div.ActionsMenu-tooltip .MenuLinkItem.Selected {
   background-color: #00bfa5;
@@ -12550,7 +12550,7 @@ div.ActionsMenu-item:last-child {
 .LayoutBlank .StatusBadges.IconTextBlack,
 .LayoutBase .StatusBadges.IconTextBlack,
 .LayoutPopup .StatusBadges.IconTextBlack {
-  color: #333333;
+  color: #333;
 }
 .DesignSystem .StatusBadges.InvertBackground.BadgeRed,
 .LayoutBlank .StatusBadges.InvertBackground.BadgeRed,
@@ -12616,7 +12616,7 @@ div.ActionsMenu-item:last-child {
 .LayoutBlank .StatusBadges.InvertBackground.IconTextBlack,
 .LayoutBase .StatusBadges.InvertBackground.IconTextBlack,
 .LayoutPopup .StatusBadges.InvertBackground.IconTextBlack {
-  color: #333333;
+  color: #333;
 }
 .DesignSystem .StatusBadges .tablet .StatusBadges .Badges_Icon + div,
 .LayoutBlank .StatusBadges .tablet .StatusBadges .Badges_Icon + div,
@@ -12796,15 +12796,15 @@ div.ActionsMenu-item:last-child {
 .LayoutBase .PrescriptionBadges.DarkGrey,
 .LayoutPopup .PrescriptionBadges.DarkGrey {
   background-color: transparent;
-  border-color: #333333;
+  border-color: #333;
   border-radius: 18px;
 }
 .DesignSystem .PrescriptionBadges.DarkGrey.IsSelected,
 .LayoutBlank .PrescriptionBadges.DarkGrey.IsSelected,
 .LayoutBase .PrescriptionBadges.DarkGrey.IsSelected,
 .LayoutPopup .PrescriptionBadges.DarkGrey.IsSelected {
-  border: 1px solid #333333;
-  background-color: #333333;
+  border: 1px solid #333;
+  background-color: #333;
   border-radius: 18px;
   color: #fff;
 }
@@ -13014,7 +13014,7 @@ div.ActionsMenu-item:last-child {
   font-size: 1em;
 }
 .BadgeFilter .BadgeClassification > span {
-  color: #333333 !important;
+  color: #333 !important;
 }
 
 .BallonContent_wrapper {
@@ -13065,7 +13065,7 @@ div.ActionsMenu-item:last-child {
   background-color: #fff;
   border: 1px solid #d6d6d6;
   border-radius: 4px;
-  color: #333333;
+  color: #333;
   cursor: help;
   min-width: 168px;
   padding: 10px 12px 5px;
@@ -13413,7 +13413,7 @@ div.ActionsMenu-item:last-child {
 }
 .CardCharts__Charts .ListRecords > span .LabelYAxis,
 .CardCharts__Charts .SmallHeightChart > span .LabelYAxis {
-  color: #333333;
+  color: #333;
   font-family: "LatoRegular";
   font-size: 12px; /* Needs to be set in pixel */
   text-align: end;
@@ -13653,7 +13653,7 @@ div.ActionsMenu-item:last-child {
   text-align: center;
 }
 .CardBox .AppointementCard {
-  color: #333333;
+  color: #333;
   font-size: 1.143em;
   line-height: 35px;
   margin-left: 0;
@@ -13705,7 +13705,7 @@ div.ActionsMenu-item:last-child {
   background-color: #ebebeb;
 }
 .CardBoxFilters div.CardBox .CardCount {
-  color: #333333;
+  color: #333;
   font-family: "LatoBold";
   font-size: 1.143em;
   line-height: 20px;
@@ -13741,7 +13741,7 @@ div.ActionsMenu-item:last-child {
   border-bottom: 1px solid #d6d6d6;
   border-top: none;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  color: #333333;
+  color: #333;
   display: table;
   min-height: 75px;
   position: relative;
@@ -13749,7 +13749,7 @@ div.ActionsMenu-item:last-child {
 }
 .SmallStretchedContainer .DateContainer {
   background-color: #d6d6d6;
-  color: #333333;
+  color: #333;
   display: table-cell;
   font-family: "LatoBold";
   font-size: 1.143em;
@@ -14272,7 +14272,7 @@ div.CircledArrow {
   min-width: 26px;
 }
 .ClinicalInformation > div .ClinicalInformationItem-text {
-  color: #333333;
+  color: #333;
   display: flex;
   font-family: "LatoBold";
   font-size: 0.786em;
@@ -14419,7 +14419,7 @@ div.CircledArrow {
 }
 .CollapsibleSidePanel__Content .PersonCard .PersonCardIcon {
   border-radius: 4px;
-  color: #333333;
+  color: #333;
   height: 32px;
   width: 32px;
 }
@@ -14433,7 +14433,7 @@ div.CircledArrow {
   padding: 16px 8px;
 }
 .CollapsibleSidePanel__Content .SectionExpandableInside .SectionExpandableInside_header .HeaderIcon span.icon {
-  border-bottom-color: #333333;
+  border-bottom-color: #333;
 }
 .CollapsibleSidePanel__Content .SectionExpandableInside .SectionExpandableInside_header .ExapandablePlaceholder .Counter {
   border-radius: 80px;
@@ -14642,7 +14642,7 @@ div.CircledArrow {
 .LayoutBase .CompLine {
   background-color: #fff;
   border-radius: 1px;
-  color: #333333;
+  color: #333;
 }
 .DesignSystem .CompLine.IsHeader,
 .LayoutPopup .CompLine.IsHeader,
@@ -14882,7 +14882,7 @@ div.CircledArrow {
 .LayoutBase .CompLine_actions a:not(.Button),
 .LayoutBase .CompLine_actions a:not(.Button):link,
 .LayoutBase .CompLine_actions a:not(.Button):visited {
-  color: #333333;
+  color: #333;
   text-align: center;
   vertical-align: middle;
 }
@@ -15033,7 +15033,7 @@ div.CircledArrow {
   background-color: #f3f3f3;
 }
 .CounterBlock_row {
-  color: #333333;
+  color: #333;
   text-align: center;
 }
 .CounterBlock_row.Primary {
@@ -15335,7 +15335,7 @@ div.CircledArrow {
   background-color: #fff;
   border: 1px solid #d6d6d6;
   border-radius: 100px;
-  color: #333333;
+  color: #333;
   height: 36px;
   transition: all 0.1s ease-in-out;
   width: 36px;
@@ -15357,7 +15357,7 @@ div.CircledArrow {
   background-color: #fff;
   border: 1px solid #d6d6d6;
   border-radius: 100px;
-  color: #333333;
+  color: #333;
   cursor: pointer;
   font-family: "LatoRegular";
   height: 36px;
@@ -15369,7 +15369,7 @@ div.CircledArrow {
 }
 .DateNavigationContainer .DateNavigation_Date .CalendarPanelContainer > div a:link,
 .DateNavigationContainer .DateNavigation_Date .CalendarPanelContainer > div a:visited {
-  color: #333333;
+  color: #333;
   font-family: "LatoRegular";
 }
 .AR .DateNavigationContainer .DateNavigation_Date .CalendarPanelContainer > div a:link,
@@ -15377,7 +15377,7 @@ div.CircledArrow {
   font-family: "TajawalRegular";
 }
 .DateNavigationContainer .DateNavigation_Date .CalendarPanelContainer .DateTimeRangePicker-label {
-  color: #333333;
+  color: #333;
   font-family: "LatoRegular";
 }
 .AR .DateNavigationContainer .DateNavigation_Date .CalendarPanelContainer .DateTimeRangePicker-label {
@@ -15743,13 +15743,13 @@ div.CircledArrow {
 .daterangepicker .drp-buttons .btn.cancelBtn {
   background-color: #fff;
   border: 1px solid #d6d6d6;
-  color: #333333;
+  color: #333;
   margin: 0 8px;
 }
 .daterangepicker .drp-buttons .btn.cancelBtn:hover {
   background-color: #ebebeb;
   border: 1px solid #d6d6d6;
-  color: #333333;
+  color: #333;
 }
 .daterangepicker .calendar-table thead tr:last-of-type {
   color: #777777;
@@ -15766,7 +15766,7 @@ div.CircledArrow {
 }
 .daterangepicker .calendar-table th.next span,
 .daterangepicker .calendar-table th.prev span {
-  border-color: #333333;
+  border-color: #333;
   border-radius: 0;
   border-style: solid;
   border-width: 0 2px 2px 0;
@@ -15805,7 +15805,7 @@ div.CircledArrow {
 }
 .daterangepicker .calendar-table td.in-range {
   background-color: #f2fffd;
-  color: #333333;
+  color: #333;
 }
 .daterangepicker .calendar-table td.in-range::before {
   background-color: #f2fffd;
@@ -15813,7 +15813,7 @@ div.CircledArrow {
 .daterangepicker .calendar-table td.today {
   background-color: #fff;
   box-shadow: inset 0 0 0 2px #00bfa5;
-  color: #333333;
+  color: #333;
 }
 .daterangepicker .calendar-table td.today:hover {
   background-color: #ebebeb;
@@ -16466,7 +16466,7 @@ div.CircledArrow {
 }
 
 .DarkGreyLabel .UploadMessageClass {
-  color: #333333;
+  color: #333;
 }
 
 .DropZoneButtonThird {
@@ -16496,11 +16496,11 @@ div.CircledArrow {
   font-size: unset;
 }
 .DropZoneButtonThird .DropZoneWrapper .FileUploadDropZone .dropzone .dz-message::before {
-  color: #333333;
+  color: #333;
   font-size: 1.1467992em;
 }
 .DropZoneButtonThird .DropZoneWrapper .FileUploadDropZone .UploadMessageClass {
-  color: #333333;
+  color: #333;
 }
 
 .AR .FileUploadDropZone .dropzone .dz-default.dz-message:before,
@@ -16836,13 +16836,13 @@ div.CircledArrow {
   padding-bottom: 16px;
 }
 .CustomExpandableLink .ExpandableLink__Icon .icon {
-  border-color: #333333;
+  border-color: #333;
 }
 .CustomExpandableLink .ExpandableLink__Icon .icon:hover {
   background-color: rgba(51, 51, 51, 0.1);
 }
 .CustomExpandableLink .ExpandableLink__Icon .icon::before {
-  color: #333333;
+  color: #333;
 }
 .CustomExpandableLink .ExpandableLink__Link {
   color: inherit;
@@ -17006,7 +17006,7 @@ div.CircledArrow {
   width: 100%;
 }
 .ExpandableSmaller_Title, .ExpandableSmaller_header {
-  color: #333333;
+  color: #333;
   display: inline-block;
   min-width: 80px;
 }
@@ -17483,7 +17483,7 @@ div.CircledArrow {
 .PersonCard_header.IsExpandable .PersonCard__expandIcon {
   align-items: center;
   background-color: transparent;
-  border: 2px solid #333333;
+  border: 2px solid #333;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
@@ -17499,7 +17499,7 @@ div.CircledArrow {
 .PersonCard_header.IsExpandable .PersonCard__expandIcon:before {
   font-family: "Sapphire-Icon-Font";
   content: "\e611";
-  color: #333333;
+  color: #333;
   font-size: 0.7em;
 }
 .PersonCard_header.IsExpandable .PersonCard__expandIcon:hover {
@@ -17696,17 +17696,17 @@ div.CircledArrow {
 }
 .PersonCard__headerLeftInfo.Unidentified .PersonCardIcon {
   background-color: #f3f3f3;
-  color: #333333;
+  color: #333;
 }
 .PersonCard__headerLeftInfo.Unidentified.HasBorder {
   box-shadow: inset 5px 0px 0 0px #777777;
 }
 .PersonCard__headerLeftInfo.Unidentified.HasBorder .icon {
-  color: #333333;
+  color: #333;
 }
 .PersonCard__headerLeftInfo.Red {
   background-color: #fff;
-  color: #333333;
+  color: #333;
 }
 .PersonCard__headerLeftInfo.Red .PersonCardIcon {
   background-color: #fce3e3;
@@ -17719,7 +17719,7 @@ div.CircledArrow {
 }
 .PersonCard__headerLeftInfo.Green {
   background-color: #fff;
-  color: #333333;
+  color: #333;
 }
 .PersonCard__headerLeftInfo.Green .PersonCardIcon {
   background-color: #e7f2dc;
@@ -17736,7 +17736,7 @@ div.CircledArrow {
   color: #578329;
 }
 .PersonCard__headerLeftInfo.Brown {
-  color: #333333;
+  color: #333;
 }
 .PersonCard__headerLeftInfo.Brown .PersonCardIcon {
   background-color: #e6e2aa;
@@ -17769,7 +17769,7 @@ div.CircledArrow {
   flex-basis: 100%;
 }
 .PersonCard__headerLeftInfo .PersonCard____title a {
-  color: #333333;
+  color: #333;
 }
 .PersonCard__headerLeftInfo .PersonCard___flag {
   margin-left: 8px;
@@ -17987,7 +17987,7 @@ div.CircledArrow {
 
 /* Adjustements */
 .PersonCard > .PersonCard_header .PersonCard__content {
-  color: #333333;
+  color: #333;
   flex: 4;
 }
 
@@ -18001,7 +18001,7 @@ div.CircledArrow {
 }
 
 a .PersonCard {
-  color: #333333;
+  color: #333;
   font-family: "LatoRegular";
 }
 a .PersonCard_expandable {
@@ -18994,7 +18994,7 @@ div.ui-timepicker-container.rtl.ui-timepicker-no-scrollbar .ui-timepicker-viewpo
   color: #c37b03;
 }
 .iconVertical_icon.IconDarkGreyColor {
-  color: #333333;
+  color: #333;
 }
 .iconVertical_icon.AllGreenIcon .icon {
   color: #00ac94;
@@ -19023,10 +19023,10 @@ div.ui-timepicker-container.rtl.ui-timepicker-no-scrollbar .ui-timepicker-viewpo
   color: #c37b03;
 }
 .iconVertical_label.LabelColorDarkGrey {
-  color: #333333;
+  color: #333;
 }
 .iconVertical_icon.IconBlackColor {
-  color: #333333;
+  color: #333;
 }
 .iconVertical_label {
   font-size: 1em;
@@ -19059,7 +19059,7 @@ div.ui-timepicker-container.rtl.ui-timepicker-no-scrollbar .ui-timepicker-viewpo
   color: #c37b03;
 }
 .iconHorizontal_icon.IconDarkGreyColor {
-  color: #333333;
+  color: #333;
 }
 .iconHorizontal_icon.AllGreenIcon .icon {
   color: #00ac94;
@@ -19088,7 +19088,7 @@ div.ui-timepicker-container.rtl.ui-timepicker-no-scrollbar .ui-timepicker-viewpo
   color: #c37b03;
 }
 .iconHorizontal_label.LabelColorDarkGrey {
-  color: #333333;
+  color: #333;
 }
 .iconHorizontal.iconBorder {
   padding: 0 5px 0 10px;
@@ -19100,7 +19100,7 @@ div.ui-timepicker-container.rtl.ui-timepicker-no-scrollbar .ui-timepicker-viewpo
   vertical-align: middle;
 }
 .iconHorizontal_icon.IconBlackColor {
-  color: #333333;
+  color: #333;
   font-weight: bold;
 }
 .iconHorizontal_icon span.icon {
@@ -19327,7 +19327,7 @@ div.menu-inline-wrapper > div.menu-inline > div.menu-inline-balloon:after {
   border: 1px solid #d6d6d6;
   border-radius: 2px;
   box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.15);
-  color: #333333;
+  color: #333;
   font-size: 1em;
   height: 36px;
   line-height: 35px;
@@ -19602,7 +19602,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   height: 16px;
 }
 .GroupLineCards .LineCardList__Actions .BadgeCustom .BadgeCustom__Label {
-  color: #333333;
+  color: #333;
 }
 .AR .GroupLineCards .LineCardList::after {
   left: unset;
@@ -20423,7 +20423,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
 .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-expand-icon {
   align-items: center;
   background-color: transparent;
-  border: 2px solid #333333;
+  border: 2px solid #333;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
@@ -20440,7 +20440,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
 .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-expand-icon:before {
   font-family: "Sapphire-Icon-Font";
   content: "\e611";
-  color: #333333;
+  color: #333;
   font-size: 0.7em;
 }
 .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-expand-icon:hover {
@@ -21106,7 +21106,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   background-color: #fff;
   border: 1px solid #d6d6d6;
   border-radius: 100px;
-  color: #333333;
+  color: #333;
   transition: all 0.1s ease-in-out;
   width: 100%;
 }
@@ -21292,7 +21292,7 @@ body.confirmation-opened {
 .confirm-background.confirm-wb {
   background-image: radial-gradient(circle at 50% 100%, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
   bottom: 0;
-  color: #333333;
+  color: #333;
   left: 0;
   position: fixed;
   right: 0;
@@ -21317,7 +21317,7 @@ body.confirmation-opened {
 }
 
 .confirm-container.confirm-wb .confirm-title {
-  color: #333333;
+  color: #333;
   font-family: "LatoBold";
   font-size: 1.429em;
   margin-bottom: 20px;
@@ -21619,7 +21619,7 @@ body.confirmation-opened {
   color: #00ac94;
 }
 .PanelMenuItem--selected .PanelMenuItem__Title {
-  text-shadow: 0 0 1px #333333;
+  text-shadow: 0 0 1px #333;
 }
 .PanelMenuItem--selected .PanelMenuItem__ExpandableContent {
   display: block;
@@ -21758,11 +21758,11 @@ body.confirmation-opened {
   margin-top: 4px;
 }
 .PatientCallCancelStructure__ListQueues [ui=data-queue-list-dropdown] .InlineDropdown_text {
-  color: #333333;
+  color: #333;
 }
 .PatientCallCancelStructure__ListQueues [ui=data-queue-list-dropdown] .InlineDropdown_icon {
   background-color: transparent;
-  color: #333333;
+  color: #333;
   height: 24px;
   margin: 0 8px;
 }
@@ -22263,7 +22263,7 @@ body.confirmation-opened {
   border-radius: 4px 4px 0 0;
 }
 .SectionPrescriptionExpandableArea.expanded .PrescriptionExpandable_header.NotExpandable {
-  color: #333333;
+  color: #333;
   height: auto;
   justify-content: left;
   padding: 15px;
@@ -22373,7 +22373,7 @@ body.confirmation-opened {
   text-decoration: none;
 }
 .SectionPrescriptionExpandableArea .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard .PrescriptionText {
-  color: #333333;
+  color: #333;
 }
 .SectionPrescriptionExpandableArea .PrescriptionExpandable_content .PrescriptionCardList .PrescriptionCard .InformationContent {
   margin-top: 2px;
@@ -22570,10 +22570,10 @@ body.confirmation-opened {
   font-size: 0.857em;
 }
 .ProgressBarWrap .ProgressBarTooltip[data-tooltip][DataTooltipClassBackground=BLACK]::before {
-  background-color: #333333;
+  background-color: #333;
 }
 .ProgressBarWrap .ProgressBarTooltip[data-tooltip][DataTooltipClassBackground=BLACK]::after {
-  border-top: 5px solid #333333;
+  border-top: 5px solid #333;
 }
 
 .FA .ProgressBarWrap .ProgressBar .Success .Active,
@@ -22833,7 +22833,7 @@ body.ResizeParentIframe .MainContent {
 }
 .CalendarWidget__days .Calendar_Today .Calendar_SmallDayLink {
   border-color: #00bfa5;
-  color: #333333 !important;
+  color: #333 !important;
   font-family: "LatoBold";
 }
 .CalendarWidget__days .Calendar_Weekday {
@@ -22844,7 +22844,7 @@ body.ResizeParentIframe .MainContent {
   padding: 4px;
   text-align: center;
   width: 14.2857142857%;
-  color: #333333;
+  color: #333;
   font-family: "LatoBold";
 }
 .CalendarWidget__days .Calendar_Weekday a:link,
@@ -22983,7 +22983,7 @@ body.ResizeParentIframe .MainContent {
   padding: 4px;
   text-align: center;
   width: 14.2857142857%;
-  color: #333333;
+  color: #333;
   font-family: "LatoBold";
 }
 .CalendarWidget .ListRecords > a > .CalendarWidget__daysNumber:hover .Calendar_SmallDayLink {
@@ -23043,7 +23043,7 @@ body.ResizeParentIframe .MainContent {
   -servicestudio-margin-top: 18px;
 }
 .SapphireHeader-navigation a .icon {
-  color: #333333;
+  color: #333;
 }
 .AR .SapphireHeader-navigation > a {
   transform: rotate(90deg);
@@ -23272,7 +23272,7 @@ div.List-Star > div[unselected] {
   width: 14px;
 }
 .SapphirePopup div.os-internal-ui-dialog.os-internal-Popup .os-internal-ui-dialog-titlebar-close:after {
-  color: #333333;
+  color: #333;
   content: "\e60c";
   display: block;
   font-family: "Sapphire-Icon-Font";
@@ -23496,7 +23496,7 @@ div.List-Star > div[unselected] {
   border: 1px solid #d6d6d6;
   border-radius: 4px;
   box-sizing: border-box;
-  color: #333333;
+  color: #333;
   cursor: pointer;
   display: flex;
   font-size: 1em;
@@ -23514,8 +23514,8 @@ div.List-Star > div[unselected] {
 }
 .ScaleCard.active.disabled {
   background-color: #f3f3f3;
-  border: 1px solid #333333;
-  color: #333333;
+  border: 1px solid #333;
+  color: #333;
   pointer-events: none;
 }
 .ScaleCard.inactive {
@@ -23633,7 +23633,7 @@ div.List-Star > div[unselected] {
   background: linear-gradient(to top, #fff 0%, #fff 11%, #f2fffd 3%, #f2fffd 85%, #fff 90%, #fff 100%);
 }
 .ScaleList.MultipleScale.isTitle .ButtonGroupScale {
-  color: #333333;
+  color: #333;
   font-family: "LatoBold";
   font-size: 1em;
   text-align: center;
@@ -23797,7 +23797,7 @@ div.List-Star > div[unselected] {
 .ToggleItemControl_label {
   border: 1px solid #d6d6d6;
   border-radius: 4px;
-  color: #333333;
+  color: #333;
   cursor: pointer;
   display: inline-block;
   font-size: 14px;
@@ -23888,7 +23888,7 @@ div.List-Star > div[unselected] {
 .CloneExpandable.isExpandable .CloneExpandable_arrow {
   align-items: center;
   background-color: transparent;
-  border: 2px solid #333333;
+  border: 2px solid #333;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
@@ -23903,7 +23903,7 @@ div.List-Star > div[unselected] {
 .CloneExpandable.isExpandable .CloneExpandable_arrow:before {
   font-family: "Sapphire-Icon-Font";
   content: "\e611";
-  color: #333333;
+  color: #333;
   font-size: 0.7em;
 }
 .CloneExpandable.isExpandable .CloneExpandable_arrow:hover {
@@ -24497,7 +24497,7 @@ div.List-Star > div[unselected] {
   align-items: center;
   background-image: radial-gradient(circle at 50% 100%, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
   bottom: 0;
-  color: #333333;
+  color: #333;
   display: flex;
   justify-content: center;
   left: 0;
@@ -24675,7 +24675,7 @@ div.List-Star > div[unselected] {
   padding: 4px 16px;
 }
 .SelectSD .SelectSD_contentWrapper .SelectSD__contentTitle {
-  color: #333333;
+  color: #333;
   font-size: 1em;
   margin-right: 8px;
 }
@@ -24702,7 +24702,7 @@ div.List-Star > div[unselected] {
   pointer-events: none;
 }
 .SelectSD .SelectSD-searched-term {
-  color: #333333;
+  color: #333;
   font-family: "LatoBold";
 }
 .SelectSD .SelectSD__tags {
@@ -25049,7 +25049,7 @@ div.List-Star > div[unselected] {
 }
 .SSD-List .SSD_ListRecords .LineHeader .Label {
   border-radius: 0;
-  color: #333333;
+  color: #333;
   font-size: 1.286em;
   padding: 5px 16px;
   width: 100%;
@@ -25265,7 +25265,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 }
 .SectionExpandableInside_header {
   border-bottom: 1px solid #d6d6d6;
-  color: #333333;
+  color: #333;
   cursor: pointer;
   display: table;
   height: 35px;
@@ -25291,7 +25291,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   vertical-align: middle;
 }
 .SectionExpandableInside .ExapandablePlaceholder {
-  color: #333333;
+  color: #333;
   font-family: "LatoBold";
   margin-right: 8px;
 }
@@ -25534,13 +25534,13 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .SegmentedControlLight.Filters .SegmentedControlItem:first-child > input[type=checkbox]:checked ~ label {
   background-color: #fff;
   border-right: 1px solid #d6d6d6;
-  color: #333333;
+  color: #333;
 }
 .SegmentedControlLight.Filters .SegmentedControlItem:not(:first-child) > input[type=radio]:checked ~ label,
 .SegmentedControlLight.Filters .SegmentedControlItem:not(:first-child) > input[type=checkbox]:checked ~ label {
   background-color: #fff;
   box-shadow: inset 0px 0px 0px 2px #00bfa5;
-  color: #333333;
+  color: #333;
 }
 
 .AR .SegmentedControl.Round .SegmentedControlItem:first-child, .AR .Round.SegmentedControlLight .SegmentedControlItem:first-child,
@@ -25697,7 +25697,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   line-height: inherit;
 }
 .select2 .select2-selection .select2-selection__rendered {
-  color: #333333;
+  color: #333;
   line-height: 36px;
   padding-left: 16px;
   padding-right: 46px;
@@ -25751,7 +25751,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 }
 .select2 .select2-selection .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove {
   border-radius: 50%;
-  color: #333333;
+  color: #333;
   cursor: pointer;
   display: inline-block;
   font-family: "LatoBold";
@@ -25815,7 +25815,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 }
 .select2-container .select2-dropdown.MultipleSelect .select2-results__option--highlighted[aria-selected] {
   background-color: #f2fffd;
-  color: #333333;
+  color: #333;
 }
 .select2-container .select2-dropdown .select2-search {
   padding: 8px;
@@ -25860,7 +25860,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 }
 .select2-container .select2-dropdown .select2-results .select2-results__options li.select2-results__option.select2-results__option--highlighted[aria-selected=false] {
   background-color: #f2fffd;
-  color: #333333;
+  color: #333;
 }
 
 .Mandatory + .select2.select2-container .select2-selection {
@@ -26026,7 +26026,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   justify-content: flex-start;
   background-color: #f2fffd;
   border-bottom: 1px solid #d6d6d6;
-  color: #333333;
+  color: #333;
   min-height: 68px;
   padding: 0 24px;
 }
@@ -26230,7 +26230,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .LayoutPOpup .ShiftCard,
 .DesignSystem .ShiftCard {
   border-top: 1px solid #d6d6d6;
-  color: #333333;
+  color: #333;
   display: flex;
   min-height: 110px;
 }
@@ -26711,7 +26711,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .LayoutBlank .CardShiftWrapper .CardShift_hours,
 .LayoutPOpup .CardShiftWrapper .CardShift_hours,
 .DesignSystem .CardShiftWrapper .CardShift_hours {
-  color: #333333;
+  color: #333;
   font-size: 0.857em;
   text-align: left;
   white-space: nowrap;
@@ -26994,7 +26994,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .ShiftGroupContent__HeaderExpandable span.icon {
   align-items: center;
   background-color: transparent;
-  border: 2px solid #333333;
+  border: 2px solid #333;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
@@ -27012,7 +27012,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .ShiftGroupContent__HeaderExpandable span.icon:before {
   font-family: "Sapphire-Icon-Font";
   content: "\e611";
-  color: #333333;
+  color: #333;
   font-size: 0.857em;
 }
 .ShiftGroupContent__HeaderExpandable span.icon:hover {
@@ -27335,7 +27335,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   line-height: 0;
 }
 .ShiftTableCard__FooterNotes > div:first-of-type:hover {
-  color: #333333;
+  color: #333;
 }
 .ShiftTableCard__FooterInfo, .ShiftTableCard__FooterNotes {
   color: #777777;
@@ -27763,7 +27763,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   align-items: center;
   display: inline-flex;
   border-bottom: 1px solid #d6d6d6;
-  color: #333333;
+  color: #333;
   gap: 32px;
   height: 64px;
   padding: 0 24px;
@@ -27846,7 +27846,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   color: #00ac94;
 }
 .SideMenu__Shield {
-  background-color: #333333;
+  background-color: #333;
   height: 0;
   opacity: 0.2;
   position: fixed;
@@ -27965,11 +27965,11 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 }
 .SideMenu__MenuItems .MenuItem:hover {
   background-color: #f2fffd;
-  color: #333333;
+  color: #333;
 }
 .SideMenu__MenuItems .MenuItem:hover .MenuItem_icon a,
 .SideMenu__MenuItems .MenuItem:hover .MenuItem_label a {
-  color: #333333;
+  color: #333;
 }
 .SideMenu__MenuItems .MenuItem.activeIndicator {
   background-color: inherit;
@@ -27982,7 +27982,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   height: auto;
 }
 .SideMenu__MenuItems .MenuItem__ItemTitle {
-  color: #333333;
+  color: #333;
   padding: 0 24px;
 }
 .SideMenu__MenuItems .MenuItem_subItems {
@@ -28006,7 +28006,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .SideMenu__MenuItems .MenuItem_subItems > .ListRecords > a {
   background-color: transparent;
   border: none;
-  color: #333333;
+  color: #333;
   font-family: "LatoRegular";
   font-size: 1em;
   line-height: 36px;
@@ -28029,7 +28029,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   pointer-events: none;
 }
 .SideMenu__TabItems .MenuItem_icon a, .SideMenu__TabItems .MenuItem_label a, .SideMenu__MenuItems .MenuItem_icon a, .SideMenu__MenuItems .MenuItem_label a {
-  color: #333333;
+  color: #333;
   font-family: "LatoRegular";
 }
 .SideMenu__TabItems .MenuItem_icon:empty, .SideMenu__TabItems .MenuItem_subItems:empty, .SideMenu__MenuItems .MenuItem_icon:empty, .SideMenu__MenuItems .MenuItem_subItems:empty {
@@ -28321,7 +28321,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 }
 
 .ISidebar-shield {
-  background-color: #333333;
+  background-color: #333;
   flex-basis: 100%;
   opacity: 0.2;
 }
@@ -28598,10 +28598,10 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   margin-left: 0px;
 }
 .SimpleTooltip[data-tooltip][tooltip-background=BLACK]:before {
-  background-color: #333333;
+  background-color: #333;
 }
 .SimpleTooltip[data-tooltip][tooltip-background=BLACK]:after {
-  border-top: 5px solid #333333;
+  border-top: 5px solid #333;
 }
 
 .AR .SimpleTooltip[data-tooltip]:after,
@@ -28817,7 +28817,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   border: 1px solid #00ac94;
 }
 .SpinnerInput_Container > a:not([disabled]):focus {
-  border: 1px solid #333333;
+  border: 1px solid #333;
 }
 .SpinnerInput_Container > a:not([disabled]):active {
   border: 1px solid #00bfa5;
@@ -28973,7 +28973,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .Page .SplitButton-actions a,
 .Page .SplitButton-actions a:link,
 .Page .SplitButton-actions a:visited {
-  color: #333333;
+  color: #333;
   display: block;
   font-family: "LatoRegular";
   height: 36px;
@@ -30287,7 +30287,7 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
 .LineTimeLine__Expandable {
   align-items: center;
   background-color: transparent;
-  border: 2px solid #333333;
+  border: 2px solid #333;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
@@ -30303,7 +30303,7 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
 .LineTimeLine__Expandable:before {
   font-family: "Sapphire-Icon-Font";
   content: "\e611";
-  color: #333333;
+  color: #333;
   font-size: 0.7em;
 }
 .LineTimeLine__Expandable:hover {
@@ -30461,7 +30461,7 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
   font-style: italic;
 }
 .LineSubTimeLine__leftContent {
-  color: #333333;
+  color: #333;
   font-family: "LatoBold";
   margin: 10px;
 }
@@ -30500,7 +30500,7 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
   color: #777777;
 }
 .TimelineDescription_description {
-  color: #333333;
+  color: #333;
 }
 
 .TimeLineHideLogs .LineSubTimeLineHidden {
@@ -30601,7 +30601,7 @@ div.TimelineDetail__label {
   justify-content: center;
   background-color: #fff;
   border-radius: 4px;
-  color: #333333;
+  color: #333;
   height: 40px;
   width: 40px;
 }
@@ -30616,7 +30616,7 @@ div.TimelineDetail__label {
   color: #777777;
 }
 .TimelineItem__Description {
-  color: #333333;
+  color: #333;
 }
 
 .TimelineItemSection {
@@ -30633,7 +30633,7 @@ div.TimelineDetail__label {
 .TimelineItemHeader a:link {
   align-items: center;
   display: flex;
-  color: #333333;
+  color: #333;
   gap: 4px;
 }
 
@@ -31736,10 +31736,10 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 }
 
 .ColorDarkGreyText {
-  color: #333333;
+  color: #333;
 }
 .ColorDarkGreyBG {
-  background-color: #333333;
+  background-color: #333;
 }
 
 .ColorBlackText {
@@ -32224,13 +32224,13 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   color: #d6d6d6;
 }
 .Page .Text_sapphireDarkBlue1, .Page .darkBlue1-tx {
-  color: #333333;
+  color: #333;
 }
 .Page .Text_sapphireDarkBlue2, .Page .darkBlue2-tx {
   color: #30384a;
 }
 .Page .Text_sapphireDarkText, .Page .darkText-tx {
-  color: #333333;
+  color: #333;
 }
 .Page .Text_sapphireLightText, .Page .lightText-tx {
   color: #777777;
@@ -33683,7 +33683,7 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 }
 
 .SapphireDarkBlue1 {
-  background-color: #333333;
+  background-color: #333;
 }
 
 .SapphireDarkBlue2 {
@@ -33695,7 +33695,7 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 }
 
 .SapphireDarkText {
-  background-color: #333333;
+  background-color: #333;
 }
 
 .SapphireMale {
@@ -33896,7 +33896,7 @@ ul.os-internal-ui-autocomplete a {
 ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover {
   background-color: #f2fffd !important;
   border: none;
-  color: #333333 !important;
+  color: #333 !important;
   cursor: pointer;
 }
 
@@ -33962,7 +33962,7 @@ ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover {
   transform: rotate(0deg);
 }
 .SessionList__Number {
-  color: #333333;
+  color: #333;
   display: table-cell;
   font-size: 1.143em;
   text-align: center;
@@ -33970,7 +33970,7 @@ ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover {
   width: 40px;
 }
 .SessionList___Detail {
-  color: #333333;
+  color: #333;
   font-size: 1.143em;
 }
 .SessionList___Actions {
@@ -34435,7 +34435,7 @@ ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover {
 }
 .LayoutScanCode__Content.ModeAccessCode::before,
 .tablet .LayoutScanCode__Content.ModeAccessCode::before {
-  background-color: #333333;
+  background-color: #333;
   content: "";
   display: block;
   height: 100%;
@@ -35423,7 +35423,7 @@ ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover {
   width: 32px;
 }
 .ClinicianWorkArea____resumeDetails .AppointmentDetails .VisitDetailsContainer .SectionExpandableInside .ExapandablePlaceholder.HeaderIcon .icon {
-  border-bottom-color: #333333;
+  border-bottom-color: #333;
 }
 .ClinicianWorkArea____resumeDetails .AppointmentDetails .VisitDetailsContainer .SectionExpandableInside .RightAllPlaceDiv {
   font-family: "LatoBold";
@@ -36059,7 +36059,7 @@ input[type].TextInput[readonly] {
   background-color: transparent;
   border: none;
   box-shadow: none;
-  color: #333333;
+  color: #333;
   font-weight: bold;
   text-align: center;
 }
@@ -36891,7 +36891,7 @@ div.SelectableList-Line > span > div.ExpandableContent {
 
 .TableRecords_Wrapper.NoResponsive tr.TableRowExpandable .TableRowExpandable_Content.Column,
 .TableRecords_Wrapper.NoResponsive tr.TableRowExpandable.open .TableRowExpandable_Content.Column {
-  color: #333333;
+  color: #333;
   padding: 0;
   text-align: left;
 }
