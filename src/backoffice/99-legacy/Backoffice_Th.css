@@ -8455,6 +8455,7 @@ div.time-picker li.selected {
 }
 
 .MandatoryField {
+  position: absolute;
   color: #bf1601;
   font-size: 13px;
   font-weight: bold;
