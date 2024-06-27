@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.5.87 || Generated: Thu Jun 27 2024 17:31:29 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.5.87 || Generated: Thu Jun 27 2024 17:52:11 GMT+0100 (Western European Summer Time) */
 /*!***************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/backoffice/styles.scss ***!
   \***************************************************************************************************************************************************************************************************************************************************/
@@ -2599,66 +2599,54 @@ body {
   direction: ltr !important;
 }
 
-.LoginWrapper {
+.LayoutBackoffice .LoginWrapper {
   background-color: #fff;
   width: 100%;
 }
-
-.LoginWrapper .Column.ColFirst {
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.LoginWrapper .Columns {
+.LayoutBackoffice .LoginWrapper .Columns {
   height: 100%;
   overflow-y: hidden;
 }
-
-.LoginWrapper .Column.ColLast {
+.LayoutBackoffice .LoginWrapper .Column.ColFirst {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.LayoutBackoffice .LoginWrapper .Column.ColLast {
   height: 100vh;
   line-height: 49px;
 }
-
-.LoginWrapper .LoginWrapper_LeftLogo {
+.LayoutBackoffice .LoginWrapper_LeftLogo {
   height: 100vh;
 }
-
-.LoginWrapper___Logo {
+.LayoutBackoffice .LoginWrapper___Logo {
   font-size: 27px;
   font-weight: bold;
   line-height: 33px;
 }
-
-.LoginWrapper___Form {
+.LayoutBackoffice .LoginWrapper___Form {
   margin-top: 68px;
 }
-
-.LoginWrapper__LoginBox {
+.LayoutBackoffice .LoginWrapper__LoginBox {
   margin: 0 auto;
   max-width: 250px;
 }
-
-.Form_Password,
-.Form_Username {
+.LayoutBackoffice .Form_Username {
+  margin-bottom: 29px;
+  line-height: 17px;
   color: #5c5c5c;
   font-size: 14px;
-  line-height: 17px;
 }
-
-.Form_Username {
-  margin-bottom: 29px;
-}
-
-.Form_Password {
+.LayoutBackoffice .Form_Password {
   margin-bottom: 26px;
+  line-height: 17px;
+  color: #5c5c5c;
+  font-size: 14px;
 }
-
-.Form_Actions div:first-child {
+.LayoutBackoffice .Form_Actions div:first-child {
   margin-bottom: 42px;
   vertical-align: middle;
 }
-
-.Form_Actions > div > div {
+.LayoutBackoffice .Form_Actions > div > div {
   margin-left: 10px;
 }
 

@@ -1,68 +1,71 @@
-.LoginWrapper {
-  background-color: #fff;
-  width: 100%;
-}
+.LayoutBackoffice {
+  .LoginWrapper {
+    background-color: #fff;
+    width: 100%;
+  
+    .Columns {
+      height: 100%;
+      overflow-y: hidden;
+    }
+  
+    .Column {
+      &.ColFirst {
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+  
+      &.ColLast {
+        height: 100vh;
+        line-height: 49px;
+      }
+    }
+  
+    &_LeftLogo {
+      height: 100vh;
+    }
+  
+    &___Logo {
+      font-size: 27px;
+      font-weight: bold;
+      line-height: 33px;
+    }
+  
+    &___Form {
+      margin-top: 68px;
+    }
+  
+    &__LoginBox {
+      margin: 0 auto;
+      max-width: 250px;
+    }
+  }
 
-.LoginWrapper .Column.ColFirst {
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.LoginWrapper .Columns {
-  height: 100%;
-  overflow-y: hidden;
-}
-
-.LoginWrapper .Column.ColLast {
-  height: 100vh;
-  line-height: 49px;
-}
-
-.LoginWrapper .LoginWrapper_LeftLogo {
-  height: 100vh;
-}
-
-.LoginWrapper___Logo {
-  font-size: 27px;
-  font-weight: bold;
-  line-height: 33px;
-}
-
-.LoginWrapper___Form {
-  margin-top: 68px;
-}
-
-.LoginWrapper__LoginBox {
-  margin: 0 auto;
-  max-width: 250px;
-}
-
-.Form_Password,
-.Form_Username {
-  color: #5c5c5c;
-  font-size: 14px;
-  line-height: 17px;
-}
-
-.Form_Username {
-  margin-bottom: 29px;
-}
-
-.Form_Password {
-  margin-bottom: 26px;
-}
-
-.Form_Actions div:first-child {
-  margin-bottom: 42px;
-  vertical-align: middle;
-}
-
-.Form_Actions>div>div {
-  margin-left: 10px;
+  @mixin login-inputs ($margin-bottom: 29px) {
+    margin-bottom: $margin-bottom;
+    line-height: 17px;
+    color: $mid-dark-grey;
+    font-size: 14px;
+  }
+  
+  .Form_Username {
+    @include login-inputs;
+  }
+  
+  .Form_Password {
+    @include login-inputs($margin-bottom: 26px);
+  }
+  
+  .Form_Actions div:first-child {
+    margin-bottom: 42px;
+    vertical-align: middle;
+  }
+  
+  .Form_Actions > div > div {
+    margin-left: 10px;
+  }
 }
 
 /*Desktop  Behavior*/
-
 .desktop.hd .LoginWrapper___Logo {
   margin-top: 225px;
 }
@@ -86,8 +89,6 @@
 }
 
 /*Tablet and phone Behavior*/
-
-
 .phone .LoginWrapper__LoginBox {
   transform: translateY(25%);
 }
