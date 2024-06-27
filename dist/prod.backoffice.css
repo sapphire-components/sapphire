@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.5.89 || Generated: Thu Jun 27 2024 18:21:36 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.5.89 || Generated: Thu Jun 27 2024 18:23:41 GMT+0100 (Western European Summer Time) */
 /*!***************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/backoffice/styles.scss ***!
   \***************************************************************************************************************************************************************************************************************************************************/
@@ -6489,116 +6489,6 @@ div.Menu_DropDownPanel a:visited:hover {
   color: #00bfa5;
 }
 
-/* Menu tablet and phone 
-.tablet .Application_Menu,
-.phone .Application_Menu {
-  background: #fff;
-  bottom: 0;
-  display: block;
-  width: 250px;
-  height: auto;
-  left: 0;
-  overflow: auto;
-  position: fixed;
-  top: 49px;
-  /* Enable hardware acceleration
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
-  /* Animate the menu when opening and closing 
-  -webkit-transition: all 300ms ease-out;
-          transition: all 300ms ease-out;
-
-  /* reduce animation flickering 
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-perspective: 1000;
-      -ms-perspective: 1000;
-          perspective: 1000;
-}
-
-.phone .Application_Menu {
-  overflow-x: hidden;
-  width: 100%;
-}
-
-.tablet.active .Application_Menu,
-.phone.active .Application_Menu {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-}
-
-.tablet .Application_Menu .Menu_TopMenu,
-.phone .Application_Menu .Menu_TopMenu {
-  border-top-width: 1px;
-  margin: 0;
-  padding: 0 0;
-  width: 100%;
-}
-
-.tablet .Application_Menu .Menu_DropDownButton.open .Menu_TopMenu,
-.phone .Application_Menu .Menu_DropDownButton.open .Menu_TopMenu {
-  box-shadow: 0 3px 1px rgba(0,0,0,.3);
-}
-
-.tablet.active .Menu_Container,
-.phone.active .Menu_Container {
-  margin-bottom: 44px; /* iphone bottom toolbar 
-  right: 0;
-  width: 100%;
-}
-
-.tablet .Application_Menu .Menu_DropDownButton,
-.phone .Application_Menu .Menu_DropDownButton {
-  display: block;
-  position: relative;
-}
-
-.tablet .Application_Menu a,
-.phone .Application_Menu a,
-.tablet .Application_Menu a:link,
-.phone .Application_Menu a:link,
-.tablet .Application_Menu a:visited,
-.phone .Application_Menu a:visited {
-  border: 0;
-  box-sizing: border-box;
-  display: inline-block;
-  height: 50px;
-  line-height: 50px;
-  padding: 0 30px;
-  -webkit-transform: translateX(-300px) scale(.5);
-          transform: translateX(-300px) scale(.5);
-  -webkit-transition: all 300ms ease;
-          transition: all 300ms ease;
-  width: 100%;
-}
-
-.tablet.active .Application_Menu a,
-.phone.active .Application_Menu a,
-.tablet.active .Application_Menu a:link,
-.phone.active .Application_Menu a:link,
-.phone.active .Application_Menu a:visited,
-.phone.active .Application_Menu a:visited {
-  -webkit-transform: translateX(0) scale(1);
-          transform: translateX(0) scale(1);
-}
-
-.tablet .Application_Menu .Menu_DropDownPanel,
-.phone .Application_Menu .Menu_DropDownPanel {
-  background-color: rgba(0, 0, 0, .3);
-  border: 0;
-  box-shadow: none;
-  margin: 0;
-  padding: 0;
-  position: static;
-}
-
-.phone .Application_Menu .Menu_DropDownArrow,
-.tablet .Application_Menu .Menu_DropDownArrow {
-  position: absolute;
-  right: 14px;
-  top: 21px;
-}
-*/
 .tablet .Sidebar,
 .phone .Sidebar {
   width: auto;
@@ -14791,7 +14681,6 @@ input::-webkit-inner-spin-button {
 .FA .SegmentedControlItem,
 .AR .SegmentedControlItem {
   border-left: 1px solid #0DA2AA;
-  /* border-left: none; */
   border-right: solid 1px #0DA2AA;
   margin-right: -1px;
 }
@@ -14939,10 +14828,7 @@ input::-webkit-inner-spin-button {
   pointer-events: none;
 }
 
-/*SpinnerVertical*/
 /* SelectSystem */
 .Page .select2.select2-container.select2-container--disabled .select2-selection {
   background-color: #f5f5f5;
 }
-
-/* SelectSystem */
