@@ -1,4 +1,4 @@
-/*! prod.backoffice.js || Version: 5.5.84 || Generated: Tue Jun 18 2024 11:45:36 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.js || Version: 5.5.84 || Generated: Thu Jun 27 2024 11:14:12 GMT+0100 (Western European Summer Time) */
 /*
  * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
  * This devtool is neither made for production nor for readable output files.
