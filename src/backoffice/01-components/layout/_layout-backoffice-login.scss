@@ -2,38 +2,43 @@
   .LoginWrapper {
     background-color: #fff;
     width: 100%;
-  
+
     .Columns {
       height: 100%;
       overflow-y: hidden;
     }
-  
+
+    .Columns2>.Column {
+      -servicestudio-width: 50%;
+      -servicestudio-display: inline-block;
+    }
+
     .Column {
       &.ColFirst {
         background-repeat: no-repeat;
         background-size: contain;
       }
-  
+
       &.ColLast {
         height: 100vh;
         line-height: 49px;
       }
     }
-  
+
     &_LeftLogo {
       height: 100vh;
     }
-  
+
     &___Logo {
       font-size: 27px;
       font-weight: bold;
       line-height: 33px;
     }
-  
+
     &___Form {
       margin-top: 68px;
     }
-  
+
     &__LoginBox {
       margin: 0 auto;
       max-width: 250px;
@@ -46,21 +51,21 @@
     color: $mid-dark-grey;
     font-size: 14px;
   }
-  
+
   .Form_Username {
     @include login-inputs;
   }
-  
+
   .Form_Password {
     @include login-inputs($margin-bottom: 26px);
   }
-  
+
   .Form_Actions div:first-child {
     margin-bottom: 42px;
     vertical-align: middle;
   }
-  
-  .Form_Actions > div > div {
+
+  .Form_Actions>div>div {
     margin-left: 10px;
   }
 }
