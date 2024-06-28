@@ -4214,16 +4214,6 @@ span.select2-selection--single:focus,
   margin-left: 10px;
 }
 
-/*Layout Username*/
-
-.SapphireUserRole {
-  color: $regular-grey;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 0;
-  white-space: nowrap;
-}
-
 /*------------------------------------------------------------*/
 /* 7.5 SILK Patterns > Mobile *********************************/
 /*------------------------------------------------------------*/
@@ -7862,10 +7852,6 @@ a.cke_dialog_ui_button_ok:hover {
 .Sidebar_logo .icon {
   color: #5c5c5c;
   font-size: 45px;
-}
-
-.Sidebar_logo .SapphireUserRole {
-  display: none;
 }
 
 .Sidebar_logo>.LoginInfo {

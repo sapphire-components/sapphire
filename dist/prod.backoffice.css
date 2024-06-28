@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.5.91 || Generated: Fri Jun 28 2024 16:02:24 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.5.91 || Generated: Fri Jun 28 2024 18:27:09 GMT+0100 (Western European Summer Time) */
 /*!***************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/backoffice/styles.scss ***!
   \***************************************************************************************************************************************************************************************************************************************************/
@@ -9958,15 +9958,6 @@ span.select2-selection--single:focus,
   margin-left: 10px;
 }
 
-/*Layout Username*/
-.SapphireUserRole {
-  color: #777777;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 0;
-  white-space: nowrap;
-}
-
 /*------------------------------------------------------------*/
 /* 7.5 SILK Patterns > Mobile *********************************/
 /*------------------------------------------------------------*/
@@ -13448,10 +13439,6 @@ a.cke_dialog_ui_button_ok:hover {
 .Sidebar_logo .icon {
   color: #5c5c5c;
   font-size: 45px;
-}
-
-.Sidebar_logo .SapphireUserRole {
-  display: none;
 }
 
 .Sidebar_logo > .LoginInfo {
