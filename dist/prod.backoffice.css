@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.5.92 || Generated: Fri Jun 28 2024 18:54:56 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.5.92 || Generated: Tue Jul 02 2024 11:44:40 GMT+0100 (Western European Summer Time) */
 /*!***************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/backoffice/styles.scss ***!
   \***************************************************************************************************************************************************************************************************************************************************/
@@ -2563,7 +2563,11 @@ div[onclick] {
 }
 
 .MainContent_BreadCrumbs {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.MainContent_actions {
+  text-align: right;
 }
 
 .Page .MainContent_others {
@@ -10286,7 +10290,7 @@ a .ListItem:after {
 .Title {
   color: #333;
   font-size: 27px;
-  font-weight: Heavy;
+  font-weight: bold;
   line-height: 32px;
 }
 
@@ -13372,12 +13376,11 @@ a.cke_dialog_ui_button_ok:hover {
 }
 
 .Page .MainContent_Container {
-  background-color: #fff;
-  margin-top: 20px;
+  margin-top: 25px;
   padding-bottom: 26px;
   padding-left: 26px;
   padding-right: 26px;
-  padding-top: 5px;
+  background-color: #fff;
 }
 
 .Page .MainContent_Container.IsTransparent {

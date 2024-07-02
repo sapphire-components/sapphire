@@ -4550,7 +4550,7 @@ a .ListItem:after {
 .Title {
   color: #333;
   font-size: 27px;
-  font-weight: Heavy;
+  font-weight: bold;
   line-height: 32px;
 }
 
@@ -7780,13 +7780,11 @@ a.cke_dialog_ui_button_ok:hover {
 }
 
 .Page .MainContent_Container {
-  background-color: #fff;
-
-  margin-top: 20px;
+  margin-top: 25px;
   padding-bottom: 26px;
   padding-left: 26px;
   padding-right: 26px;
-  padding-top: 5px;
+  background-color: #fff;
 }
 
 .Page .MainContent_Container.IsTransparent {
