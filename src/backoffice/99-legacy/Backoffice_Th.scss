@@ -7736,12 +7736,12 @@ a.cke_dialog_ui_button_ok:hover {
   border: 1px solid #D6D6D6;
 }
 
-
-
-
 /*------------------------------------*\
     $11. Studio Preview
 \*------------------------------------*/
+[class*="ThemeGrid_Width"] {
+  -servicestudio-display: inline-block !important;
+}
 
 /*------------------------------------*\
     $12. Print
@@ -7795,40 +7795,18 @@ a.cke_dialog_ui_button_ok:hover {
   padding-top: 26px;
 }
 
-
 .Page .MainContent_others {
   background-color: #f1f1f1;
   max-width: 1439px;
   padding: 0;
-  /*position: sticky;*/
   top: 0;
   width: 100%;
-  z-index: 1
-    /*2*/
-  ;
+  z-index: 1;
 }
 
 .Page .FilterContainer {
   margin-top: 10px !important;
 }
-
-/*
-.Page .MainContent_others.fixed{
-  position: sticky;
-  background-color: #f5f5f5;
-  width: 100%;
-  max-width: 1439px;
-  top: 0;
-  z-index:1;
-}
-
-.Page thead.fixed th {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 70px;
-  background: white;
-  z-index: 1;
-}*/
 
 .Sidebar {
   background-color: #fff;
