@@ -8481,7 +8481,8 @@ pre {
 
 .Hidden,
 .hidden {
-  display: none !important;
+  display: none;
+  -servicestudio-display: initial;
 }
 
 
