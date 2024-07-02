@@ -2338,11 +2338,6 @@ a+a.Button {
   line-height: 19px;
 }
 
-
-.Page .MainContent_Container .PanelById {
-  /*position: absolute;*/
-}
-
 /* SILK Patterns > Post */
 .Post .Post_icon img {
   border: 1px solid #dadbde;
@@ -7751,7 +7746,6 @@ a.cke_dialog_ui_button_ok:hover {
 /*------------------------------------*\
     $13. Sapphire Backoffice Layout
 \*------------------------------------*/
-
 .Page .Content {
   height: 100%;
   margin: 0 auto;
@@ -7795,17 +7789,16 @@ a.cke_dialog_ui_button_ok:hover {
   padding-top: 26px;
 }
 
-.Page .MainContent_others {
-  background-color: #f1f1f1;
-  max-width: 1439px;
-  padding: 0;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-}
-
 .Page .FilterContainer {
   margin-top: 10px !important;
+}
+
+.MainContent_Container,
+.MainWrapper,
+.MainContent,
+.MainContent.Generic {
+  -servicestudio-height: 100%;
+  -servicestudio-min-height: 400px;
 }
 
 .Sidebar {
