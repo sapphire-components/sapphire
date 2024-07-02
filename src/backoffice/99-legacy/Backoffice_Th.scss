@@ -7774,11 +7774,9 @@ a.cke_dialog_ui_button_ok:hover {
 }
 
 .Page .MainContent_Container {
-  margin-top: 25px;
-  padding-bottom: 26px;
-  padding-left: 26px;
-  padding-right: 26px;
-  background-color: #fff;
+  margin-top: 20px;
+  padding: 8px 24px;
+  background-color: $regular-white;
 }
 
 .Page .MainContent_Container.IsTransparent {
