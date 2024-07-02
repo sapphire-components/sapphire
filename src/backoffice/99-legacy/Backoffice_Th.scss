@@ -4257,16 +4257,12 @@ a .ListItem:after {
 
 /* SILK Patterns > Breadbrumbs */
 .Breadcrumbs {
-  color: #333;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: $font-size-normal;
 }
 
 .Breadcrumbs a,
 .desktop .Breadcrumbs a:hover,
 .desktop .Breadcrumbs a:link:hover {
-  color: #009884;
-  font-weight: 700;
   text-decoration: none;
 }
 
@@ -4282,10 +4278,6 @@ a .ListItem:after {
 
 .Breadcrumbs span {
   margin: 0 2px 0 6px;
-}
-
-.Breadcrumbs>div:first-child {
-  color: #009884;
 }
 
 .Breadcrumbs>div:first-child .Heading2 {
@@ -8487,8 +8479,9 @@ pre {
   white-space: pre-wrap;
 }
 
-.Hidden {
-  display: none;
+.Hidden,
+.hidden {
+  display: none !important;
 }
 
 
