@@ -58,6 +58,7 @@ $timeline-sticky-top-secondary: 185px;
 
 	&__Right {
 		flex: 1;
+		overflow-wrap: anywhere;
 
 		.TimelinePage__LoadingMore {
 			position: unset;
