@@ -58,6 +58,18 @@
 
 			window.addEventListener('ToolbarFixed', () => handleResize($widget), false);
 		}
+		//avoid users flooding the server with repeated requests
+		$('.Toolbar_container a, .Toolbar__MoreOptionsList a').on('click', function(e) {
+			if($(this).hasClass('isDisabled')){
+				e.preventDefault();
+				return;
+			}
+			e.preventDefault(); // Prevent the default click behavior
+			var href = $(this).attr('href');
+			//$(this).removeAttr('href');
+			$(this).addClass('isDisabled');
+			window.location.href = href;
+		  });
 	};
 
 	handleArrows = $widget => {
