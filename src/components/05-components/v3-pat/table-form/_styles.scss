@@ -219,10 +219,8 @@ $table-form-header-height-edit: 42px;
 	&__Fields {
 		border-right: 1px solid $light-grey;
 
-		>div,
-		>.ListRecords>div {
-			@include flex-center-vertically();
-
+		> div,
+		> .ListRecords > div {
 			display: block;
 			width: 200px;
 			height: $sapphire-sizes--xxlarge;
