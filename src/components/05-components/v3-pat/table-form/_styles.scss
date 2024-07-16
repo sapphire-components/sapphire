@@ -25,18 +25,18 @@ $table-form-header-height-edit: 42px;
 			left: unset;
 		}
 
-		> .ListRecords {
+		>.ListRecords {
 			display: contents;
 		}
 
-		> div + .ListRecords > div {
+		>div+.ListRecords>div {
 			&:first-child {
 				border-radius: 0;
 			}
 		}
 
-		> div:not(.TableForm__Properties),
-		> .ListRecords > div {
+		>div:not(.TableForm__Properties),
+		>.ListRecords>div {
 			@include flex-center-vertically(inline-flex);
 
 			background-color: $white-grey;
@@ -83,15 +83,16 @@ $table-form-header-height-edit: 42px;
 	}
 
 	&__Columns {
+
 		&,
-		> span {
+		>span {
 			display: inline-flex;
 			flex-direction: row;
 		}
 
-		> .TableFormColumn:last-child,
-		.TableFormListRecords > span:last-child,
-		> .ListRecords > .TableFormColumn:last-child {
+		>.TableFormColumn:last-child,
+		.TableFormListRecords>span:last-child,
+		>.ListRecords>.TableFormColumn:last-child {
 			.TableFormColumn__Header {
 				border-top-right-radius: $border-radius-medium;
 
@@ -105,8 +106,8 @@ $table-form-header-height-edit: 42px;
 			.TableFormColumn__Fields {
 				border-right: none;
 
-				> div,
-				> .ListRecords > div {
+				>div,
+				>.ListRecords>div {
 					border-right: 1px solid $light-grey;
 
 					.AR & {
@@ -114,8 +115,8 @@ $table-form-header-height-edit: 42px;
 					}
 				}
 
-				> div:last-child,
-				> .ListRecords > div:last-child {
+				>div:last-child,
+				>.ListRecords>div:last-child {
 					border-bottom-right-radius: $border-radius-medium;
 
 					.AR & {
@@ -149,8 +150,8 @@ $table-form-header-height-edit: 42px;
 		.TableFormColumn__Fields {
 			border: none;
 
-			> div,
-			> .ListRecords > div {
+			>div,
+			>.ListRecords>div {
 				width: 226px;
 			}
 		}
@@ -167,8 +168,9 @@ $table-form-header-height-edit: 42px;
 	}
 
 	&--disabled {
+
 		.TableFormColumn__Header,
-		.TableFormColumn__Fields > div {
+		.TableFormColumn__Fields>div {
 			background-color: $body-color;
 			pointer-events: none;
 		}
@@ -176,9 +178,10 @@ $table-form-header-height-edit: 42px;
 
 	&--greyBackground {
 		&:not(.TableFormColumn--editMode) {
+
 			.TableFormColumn__Header,
-			.TableFormColumn__Fields > div,
-			.TableFormColumn__Fields > .ListRecords > div {
+			.TableFormColumn__Fields>div,
+			.TableFormColumn__Fields>.ListRecords>div {
 				//background-color: $regular-white;//Was this an error?
 				background-color: $white-grey;
 			}
@@ -216,18 +219,21 @@ $table-form-header-height-edit: 42px;
 	&__Fields {
 		border-right: 1px solid $light-grey;
 
-		> div,
-		> .ListRecords > div {
+		>div,
+		>.ListRecords>div {
 			@include flex-center-vertically();
 
-			background-color: $regular-white;
-			border-top: 1px solid $light-grey;
+			display: block;
+			width: 200px;
 			height: $sapphire-sizes--xxlarge;
-			overflow: hidden;
 			padding: 0 $sapphire-sizes--medium;
+			border-top: 1px solid $light-grey;
+			line-height: calc($sapphire-sizes--xxlarge - 2px);
+			background-color: $regular-white;
+			overflow: hidden;
 			text-overflow: ellipsis;
 			white-space: nowrap;
-			width: 200px;
+
 
 			&:last-child {
 				border-bottom: 1px solid $light-grey;
@@ -283,8 +289,8 @@ $table-form-header-height-edit: 42px;
 	.TableFormColumn--editMode {
 		margin-top: -22px;
 
-		.TableFormColumn__Fields > div,
-		.TableFormColumn__Fields > .ListRecords > div {
+		.TableFormColumn__Fields>div,
+		.TableFormColumn__Fields>.ListRecords>div {
 			overflow: unset;
 			padding: 0 $sapphire-sizes--small;
 
