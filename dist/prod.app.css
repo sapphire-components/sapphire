@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.105 || Generated: Tue Jul 16 2024 19:08:59 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.105 || Generated: Wed Jul 17 2024 12:41:45 GMT+0100 (Hora de verão da Europa Ocidental) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -26940,7 +26940,6 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   border: 1px solid #d6d6d6;
   border-radius: 8px;
   overflow: hidden;
-  margin-bottom: 8px;
 }
 .ShiftGroupContent__Header {
   align-items: stretch;
@@ -27551,6 +27550,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .ShiftTable {
   overflow-x: auto;
   position: relative;
+  margin-bottom: 8px;
 }
 .ShiftTable::-webkit-scrollbar {
   background-color: #fff;
