@@ -331,12 +331,6 @@
 		display: contents;
 	}
 
-	&_BottomNavigation {
-		display: flex;
-		justify-content: space-between;
-		margin-top: $sapphire-sizes--medium;
-	}
-
 	th.SortColumns_Sorted,
 	th.SortColumns_Sortable {
 		&:hover {
