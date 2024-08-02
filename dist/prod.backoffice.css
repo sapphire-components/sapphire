@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.5.109 || Generated: Fri Aug 02 2024 12:57:41 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.5.109 || Generated: Fri Aug 02 2024 13:06:36 GMT+0100 (Western European Summer Time) */
 /*!***************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/backoffice/styles.scss ***!
   \***************************************************************************************************************************************************************************************************************************************************/
@@ -5268,8 +5268,7 @@ div.WizardParent > div div.WizardStep::after {
   width: 26px;
 }
 div.WizardParent > div div.WizardStep.LastStep::after, div.WizardParent > div div.WizardStep:last-child::after {
-  border: 0;
-  content: "";
+  display: none;
 }
 div.WizardParent > div div.WizardStep::before {
   display: none;
@@ -5294,8 +5293,9 @@ div.WizardParent > div div.WizardStep:last-of-type {
   border-top-right-radius: 4px;
 }
 .AR div.WizardParent > div div.WizardStep:last-of-type {
-  border-left: none;
-  border-right: 1px solid #d6d6d6;
+  border-radius: 0;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
 }
 div.WizardParent > div div.WizardStep.Past {
   background-color: #f3f3f3;
@@ -5379,9 +5379,7 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
   -servicestudio-background-color: transparent;
 }
 
-.DesignSystem .IconWizard,
-.LayoutBlank .IconWizard,
-.LayoutBase .IconWizard {
+.IconWizard {
   border: 1px solid #00ac94;
   border-radius: 50%;
   color: #00ac94;
@@ -5393,15 +5391,11 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
   vertical-align: middle;
   width: 20px;
 }
-.AR .DesignSystem .IconWizard,
-.AR .LayoutBlank .IconWizard,
-.AR .LayoutBase .IconWizard {
+.AR .IconWizard {
   margin-right: 0;
   margin-left: 8px;
 }
-.DesignSystem .IconWizard.IconWizardWhite,
-.LayoutBlank .IconWizard.IconWizardWhite,
-.LayoutBase .IconWizard.IconWizardWhite {
+.IconWizard.IconWizardWhite {
   background-color: #fff;
   border: 1px solid #00ac94;
   color: #00ac94;
