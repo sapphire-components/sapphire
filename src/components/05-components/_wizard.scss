@@ -52,13 +52,13 @@ div.WizardParent {
 		div.WizardStep {
 			@include flex-center-total();
 
+			height: 36px;
+			margin-left: -18px;
+			padding: 0;
 			border: 1px solid $light-grey;
 			flex: 1;
 			font-family: $font-family-latin-regular;
 			font-weight: unset;
-			height: 36px;
-			margin-left: -18px;
-			padding: 0;
 
 			-servicestudio-width: auto;
 			-servicestudio-padding: 0 40px 0 20px;
@@ -174,8 +174,8 @@ div.WizardParent {
 				}
 
 				.IconWizard {
-					border: 1px solid $regular-white;
-					color: $regular-white;
+					border: 1px solid $dark-grey;
+					color: $dark-grey;
 
 					-servicestudio-color: initial;
 				}
@@ -190,8 +190,10 @@ div.WizardParent {
 
 			a,
 			a:link {
-				font-family: $font-family-latin-regular;
+				@include flex-center-total();
+				
 				width: 100%;
+				font-family: $font-family-latin-regular;
 			}
 
 			a:disabled,

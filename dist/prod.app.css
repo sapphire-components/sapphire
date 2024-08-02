@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.107 || Generated: Wed Jul 31 2024 18:48:19 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.107 || Generated: Fri Aug 02 2024 12:20:46 GMT+0100 (Western European Summer Time) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -5526,8 +5526,8 @@ a.LinkReset:link, a.LinkReset:visited {
 }
 
 .CardIcon, .CardIconAlert {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: #f3f3f3;
   border-radius: 4px;
@@ -5579,8 +5579,8 @@ a.LinkReset:link, a.LinkReset:visited {
 }
 
 .CardUserInitials {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: #adadad;
   border-radius: 50%;
@@ -5594,8 +5594,8 @@ a.LinkReset:link, a.LinkReset:visited {
 }
 
 .CardHugeIcon {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   font-size: 2.249em;
   line-height: 32px;
@@ -5690,8 +5690,8 @@ a.LinkReset:link, a.LinkReset:visited {
 }
 
 .EmergencyWarning {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: #fce3e3;
   border: 1px solid #ff3e2d;
@@ -6082,8 +6082,8 @@ a.LinkReset:link, a.LinkReset:visited {
   }
 }
 .ButtonSquare {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: #fff;
   border: 1px solid #00bfa5;
@@ -6112,8 +6112,8 @@ a.LinkReset:link, a.LinkReset:visited {
 }
 
 .CircledPatient {
-  align-items: center;
   display: inline-flex;
+  align-items: center;
   justify-content: center;
   background-color: #ebebeb;
   border-radius: 50%;
@@ -6228,8 +6228,8 @@ a.LinkReset:link, a.LinkReset:visited {
   justify-content: flex-end;
 }
 .ClinicalCalendar.CenteredCalendarBigWrapper .ClinicalCalendarBigBox .CalendarDaySlot [ui=data-calendar-day] {
-  align-items: center;
   display: inline-flex;
+  align-items: center;
   justify-content: center;
   border: 1px solid transparent;
   border-radius: 50%;
@@ -6735,8 +6735,8 @@ a.LinkReset:link, a.LinkReset:visited {
   order: 2;
 }
 .CustomExpandable .ExpandableSmaller__headerContent div.PrescriptionBadges.Green .QuantityLabel, .CustomExpandable .ExpandableSmaller__headerContentClose div.PrescriptionBadges.Green .QuantityLabel {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: #00bfa5;
   border-radius: 50%;
@@ -6928,8 +6928,8 @@ a.LinkReset:link, a.LinkReset:visited {
   width: 100%;
 }
 .Card_Container .Icon_Card {
-  align-items: center;
   display: inline-flex;
+  align-items: center;
   justify-content: center;
   background-color: #ebebeb;
   border-radius: 8px;
@@ -7048,8 +7048,8 @@ a.LinkReset:link, a.LinkReset:visited {
 }
 
 .FileUpload {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: transparent;
   border: 1px dashed #adadad;
@@ -7317,8 +7317,8 @@ div.LineInfo {
   margin-right: 8px;
 }
 .MedicalFileOptionsLine > div:not(:first-child) {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   border-left: 1px solid #d6d6d6;
   width: -moz-fit-content;
@@ -7339,8 +7339,8 @@ div.LineInfo {
 }
 
 .MedicalFileOptions_addVolume {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: #f3f3f3;
   padding: 12px 0;
@@ -8407,8 +8407,8 @@ div.LineInfo {
   border: none;
 }
 .TableRecords.CustomTable .CustomTableIcon {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: #f3f3f3;
   border-radius: 8px;
@@ -9394,8 +9394,8 @@ div.NoPrompt > div.template-item-input-block {
   white-space: nowrap;
 }
 .CounterBox__Title .CounterBoxIcon {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: #f3f3f3;
   border-radius: 8px;
@@ -9512,16 +9512,16 @@ div.WizardParent > div::after {
   background: #f3f3f3;
 }
 div.WizardParent > div div.WizardStep {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
+  height: 36px;
+  margin-left: -18px;
+  padding: 0;
   border: 1px solid #d6d6d6;
   flex: 1;
   font-family: "LatoRegular";
   font-weight: unset;
-  height: 36px;
-  margin-left: -18px;
-  padding: 0;
   -servicestudio-width: auto;
   -servicestudio-padding: 0 40px 0 20px;
 }
@@ -9631,8 +9631,8 @@ div.WizardParent > div div.WizardStep.ActiveStep .IconWizard.IconWizardWhite {
   color: #00ac94;
 }
 div.WizardParent > div div.WizardStep.ActiveStep .IconWizard {
-  border: 1px solid #fff;
-  color: #fff;
+  border: 1px solid #333;
+  color: #333;
   -servicestudio-color: initial;
 }
 div.WizardParent > div div.WizardStep .IconWizard {
@@ -9642,8 +9642,11 @@ div.WizardParent > div div.WizardStep .IconWizard {
 }
 div.WizardParent > div div.WizardStep a,
 div.WizardParent > div div.WizardStep a:link {
-  font-family: "LatoRegular";
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
+  font-family: "LatoRegular";
 }
 div.WizardParent > div div.WizardStep a:disabled,
 div.WizardParent > div div.WizardStep a[disabled=disabled],
@@ -10347,8 +10350,8 @@ html .Page .PatientDetailsLayout {
   width: 100%;
 }
 .CTTASLevelAssessmentMainContainer .LevelsContainer .CTTASLevelsMainContainer > span .CTTASLevelContainer {
-  align-items: center;
   display: inline-flex;
+  align-items: center;
   justify-content: center;
   border-radius: 20px;
   cursor: pointer;
@@ -10511,8 +10514,8 @@ html .Page .PatientDetailsLayout {
   overflow: hidden;
 }
 .pain-level .pain-level-icon {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: #ffa000;
   color: #fff;
@@ -11471,8 +11474,8 @@ html body .AR .Feedback_Message_Info:before {
   width: 100%;
 }
 .ButtonDropdown_icon {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: transparent;
   color: #00bfa5;
@@ -12005,8 +12008,8 @@ html body .AR .Feedback_Message_Info:before {
   font-size: 1.143em;
 }
 .IconDropdown_button.Button .IconDown, .DropZoneContainer .row a.IconDropdown_button.Button .IconDown {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   color: #00bfa5;
   height: 100%;
@@ -12014,8 +12017,8 @@ html body .AR .Feedback_Message_Info:before {
 }
 
 .MoreActions .IconDropdown_button {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   border: none;
   height: 30px;
@@ -12061,8 +12064,8 @@ html body .AR .Feedback_Message_Info:before {
   font-family: "LatoBold";
 }
 .InlineDropdown_icon {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   border-radius: 50%;
   color: #00ac94;
@@ -12983,8 +12986,8 @@ div.ActionsMenu-item:last-child {
 }
 
 .BadgeFilter {
-  align-items: center;
   display: inline-flex;
+  align-items: center;
   justify-content: center;
   background-color: #fff;
   border: 1px solid #d6d6d6;
@@ -13223,8 +13226,8 @@ div.ActionsMenu-item:last-child {
   }
 }
 .BlankState {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: transparent;
   border: 1px solid #d6d6d6;
@@ -13253,8 +13256,8 @@ div.ActionsMenu-item:last-child {
 .ButtonClick > a,
 .ButtonClick > div,
 .ButtonClick > span {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: #fff;
   border: 1px solid #d6d6d6;
@@ -14100,8 +14103,8 @@ div.CircledArrow {
   flex: 1;
 }
 .ClinicBoxSelectable__ContentRight {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
 }
@@ -14115,8 +14118,8 @@ div.CircledArrow {
   color: #ff3e2d;
 }
 .ClinicBoxSelectable__FirstSlot, .ClinicBoxSelectable__SecondSlot, .ClinicBoxSelectable__ThirdSlot {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   font-size: 0.857em;
@@ -14158,8 +14161,8 @@ div.CircledArrow {
 }
 
 .ClinicalBadge {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   border: 1px solid #d6d6d6;
   border-radius: 4px;
@@ -14259,8 +14262,8 @@ div.CircledArrow {
   overflow: hidden;
 }
 .ClinicalInformation > div .ClinicalInformationItem-icon {
-  align-items: center;
   display: inline-flex;
+  align-items: center;
   justify-content: center;
   color: #fff;
   height: 26px;
@@ -14482,8 +14485,8 @@ div.CircledArrow {
   gap: 8px;
 }
 .CollapsibleSidePanel__Title .Counter, .CollapsibleSidePanel__PanelTitle .Counter {
-  align-items: center;
   display: inline-flex;
+  align-items: center;
   justify-content: center;
   border-radius: 80px;
   color: #fff;
@@ -15324,8 +15327,8 @@ div.CircledArrow {
   margin-bottom: 10px;
 }
 .DateNavigationContainer .DateNavigation_NextDate .CircledArrow, .DateNavigationContainer .DateNavigation_PreviousDate .CircledArrow {
-  align-items: center;
   display: inline-flex;
+  align-items: center;
   justify-content: center;
   background-color: #fff;
   border: 1px solid #d6d6d6;
@@ -15346,8 +15349,8 @@ div.CircledArrow {
   pointer-events: none;
 }
 .DateNavigationContainer .DateNavigation_Date {
-  align-items: center;
   display: inline-flex;
+  align-items: center;
   justify-content: center;
   background-color: #fff;
   border: 1px solid #d6d6d6;
@@ -16604,8 +16607,8 @@ div.CircledArrow {
   padding: 8px 16px;
 }
 .DynamicTable__RowColumn, .DynamicTable__HeaderColumn, .DynamicTable__RowColumn--main, .DynamicTable__HeaderColumn--main {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   flex: 1;
   padding: 0 4px;
@@ -17826,8 +17829,8 @@ div.CircledArrow {
   height: 100%;
 }
 .PersonCard .PersonCardIcon {
-  align-items: center;
   display: inline-flex;
+  align-items: center;
   justify-content: center;
   background-color: #ebebeb;
   border-radius: 8px;
@@ -18608,8 +18611,8 @@ div.Toolbar__MoreOptions--open .Toolbar__MoreOptionsList {
   z-index: 2;
 }
 div.Toolbar__MoreOptionsIcon {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: transparent;
   color: #777777;
@@ -20594,8 +20597,8 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   border: none;
 }
 .CardsWrapper__HeaderCounter {
-  align-items: center;
   display: inline-flex;
+  align-items: center;
   justify-content: center;
   background-color: #ff3e2d;
   border-radius: 80px;
@@ -21095,8 +21098,8 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   border-color: #d6d6d6;
 }
 .navigation-control .navigation-control-item a {
-  align-items: center;
   display: inline-flex;
+  align-items: center;
   justify-content: center;
   background-color: #fff;
   border: 1px solid #d6d6d6;
@@ -21109,8 +21112,8 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   background-color: #ebebeb;
 }
 .navigation-control .navigation-control-item label {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   cursor: pointer;
   height: 100%;
@@ -21334,8 +21337,8 @@ body.confirmation-opened {
 }
 
 .modalPopup {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   display: none;
   height: 100%;
@@ -21672,8 +21675,8 @@ body.confirmation-opened {
   border-radius: 4px;
 }
 .PatientCallCancel__HeaderMode {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: #00bfa5;
   border-radius: 8px;
@@ -21697,8 +21700,8 @@ body.confirmation-opened {
   margin-top: 8px;
 }
 .PatientCallCancel__HeaderMode .PatientCallCancel__Counter [ui=data-cancel-call] {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 4px;
 }
@@ -21894,8 +21897,8 @@ body.confirmation-opened {
   background-color: #ebebeb;
 }
 .PatientMedicalFile .RequestFile .RequestFileOption a {
-  align-items: center;
   display: inline-flex;
+  align-items: center;
   justify-content: center;
   border-radius: 50%;
   height: 30px;
@@ -21905,8 +21908,8 @@ body.confirmation-opened {
   height: 20px;
 }
 .PatientMedicalFile .RequestFiles-Menu div[button-style] {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   height: 80px;
   transform: rotate(180deg);
@@ -21990,8 +21993,8 @@ body.confirmation-opened {
   font-size: 1em;
 }
 .PersonCardPreInfo .ColoredBox__Content {
-  align-items: center;
   display: inline-flex;
+  align-items: center;
   justify-content: center;
   height: 100%;
   width: 100%;
@@ -22031,8 +22034,8 @@ body.confirmation-opened {
   padding: 16px;
 }
 .PrescriptionCard__Icon {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: #ebebeb;
   border-radius: 4px;
@@ -22128,8 +22131,8 @@ body.confirmation-opened {
   right: 6px;
 }
 .PrescriptionCard--hasInteraction .PrescriptionCard__Icon .PrescriptionCard___CompareIcon {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   direction: initial;
 }
@@ -22729,8 +22732,8 @@ body.ResizeParentIframe .MainContent {
 }
 
 .CalendarWidget .Calendar_SmallDayLink {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   border: 2px solid transparent;
   border-radius: 50%;
@@ -23234,8 +23237,8 @@ div.List-Star > div[unselected] {
 }
 
 .SapphirePopup {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   height: 100%;
   position: fixed;
@@ -24047,8 +24050,8 @@ div.List-Star > div[unselected] {
   margin-right: 48px;
 }
 .SearchSD.hasFavorite .SearchSD__star {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 .SearchSD.hasFavorite .SearchSD__star .icon {
@@ -24147,8 +24150,8 @@ div.List-Star > div[unselected] {
   width: 100%;
 }
 .SearchSD .SearchSD_search .SearchSD_search_favoriteLink {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: #fff;
   border: 1px solid #d6d6d6;
@@ -24214,8 +24217,8 @@ div.List-Star > div[unselected] {
   background-color: #fff;
 }
 .SearchSD .SearchSD_search .SearchSD__inputWrapper .SearchSD__actionInput .SearchSD___input:before {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   color: #adadad;
   content: "\e690";
@@ -24378,8 +24381,8 @@ div.List-Star > div[unselected] {
   border-color: #d6d6d6;
 }
 .SearchSD .SearchSD_filterfavorites > span .InputWithClear-clear {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   border: 1px solid #d6d6d6;
   border-radius: 50%;
@@ -24399,8 +24402,8 @@ div.List-Star > div[unselected] {
   transform: rotate(0);
 }
 .SearchSD .SearchSD___remove {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: #fff;
   border: 1px solid #d6d6d6;
@@ -24636,8 +24639,8 @@ div.List-Star > div[unselected] {
   min-height: 48px;
 }
 .SelectSD.hasFavorite .SelectSD__starLink {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   color: #d6d6d6;
   width: 48px;
@@ -25966,8 +25969,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 }
 
 .SelectableList-EmptyMessage {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   align-items: center;
   background-color: transparent;
@@ -26812,8 +26815,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .LayoutBlank .ShiftCellContent.IsTimer,
 .LayoutPOpup .ShiftCellContent.IsTimer,
 .DesignSystem .ShiftCellContent.IsTimer {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: #fff;
   color: #777777;
@@ -26963,8 +26966,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   flex: 1;
 }
 .ShiftGroupContent__HeaderContent > div, .ShiftGroupContent__HeaderContent > .ListRecords > div {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   border-right: 1px solid #ebebeb;
   flex: 1;
@@ -27053,8 +27056,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 }
 
 .ShiftTableCardHover {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   border-radius: 4px;
   color: #777777;
@@ -27066,8 +27069,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   background-color: #ebebeb;
 }
 .ShiftTableCardHover__Content {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   cursor: pointer;
   height: 100%;
@@ -27088,15 +27091,15 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   z-index: 1;
 }
 .ShiftTableCardProgress__ActionButton {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   border-right: 1px solid #d6d6d6;
   width: 56px;
 }
 .ShiftTableCardProgress__ActionButton a {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: #00bfa5;
   border-radius: 50%;
@@ -27142,8 +27145,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   font-size: 0.857em;
 }
 .ShiftTableCardProgress__HeaderAction .MoreActions {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: #fff;
   border-radius: 50%;
@@ -27289,8 +27292,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   gap: 8px;
 }
 .ShiftTableCard__HeaderAction .MoreActions {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: #fff;
   border-radius: 50%;
@@ -27529,8 +27532,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 }
 
 .ShiftTableCardEmpty {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 16px;
@@ -27829,8 +27832,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   gap: 8px;
 }
 .SideMenu__Trigger {
-  align-items: center;
   display: inline-flex;
+  align-items: center;
   justify-content: center;
   cursor: pointer;
   gap: 8px;
@@ -28665,8 +28668,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   border-color: #00bfa5;
 }
 .SmallBoxSelectable__SelectableIcon {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: #fff;
   border: 1px solid #d6d6d6;
@@ -30353,8 +30356,8 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
   gap: 32px;
 }
 .LineTimeLine__IconDate {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: #00bfa5;
   border-radius: 4px;
@@ -30591,8 +30594,8 @@ div.TimelineDetail__label {
   color: #fff;
 }
 .TimelineItem__Icon {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: #fff;
   border-radius: 4px;
@@ -30633,8 +30636,8 @@ div.TimelineDetail__label {
 }
 
 .TimelineNoItems {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: transparent;
   border: 1px solid #d6d6d6;
@@ -34526,8 +34529,8 @@ ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover {
 }
 .LayoutScanCode__AccessCode div[ui=input-code-container],
 .tablet .LayoutScanCode__AccessCode div[ui=input-code-container] {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: #fff;
   padding: 32px 28px;
@@ -34797,8 +34800,8 @@ ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover {
   position: relative;
 }
 .RemoteAppointment--minimized.RemoteAppointment--callStarted .RemoteAppointment__RestoreWindow {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   color: #dcdcdc;
   cursor: pointer;

@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.5.107 || Generated: Wed Jul 31 2024 18:48:19 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.5.107 || Generated: Fri Aug 02 2024 12:20:46 GMT+0100 (Western European Summer Time) */
 /*!***************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/backoffice/styles.scss ***!
   \***************************************************************************************************************************************************************************************************************************************************/
@@ -2892,8 +2892,8 @@ body {
   border: none;
 }
 .TableRecords.CustomTable .CustomTableIcon {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: #f3f3f3;
   border-radius: 8px;
@@ -3209,8 +3209,8 @@ body {
   font-family: "LatoBold";
 }
 .InlineDropdown_icon {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   border-radius: 50%;
   color: #00ac94;
@@ -4297,8 +4297,8 @@ body.confirmation-opened {
 }
 
 .modalPopup {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   display: none;
   height: 100%;
@@ -4518,8 +4518,8 @@ body.confirmation-opened {
 }
 
 .SapphirePopup {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   height: 100%;
   position: fixed;
@@ -5239,16 +5239,16 @@ div.WizardParent > div::after {
   background: #f3f3f3;
 }
 div.WizardParent > div div.WizardStep {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
+  height: 36px;
+  margin-left: -18px;
+  padding: 0;
   border: 1px solid #d6d6d6;
   flex: 1;
   font-family: "LatoRegular";
   font-weight: unset;
-  height: 36px;
-  margin-left: -18px;
-  padding: 0;
   -servicestudio-width: auto;
   -servicestudio-padding: 0 40px 0 20px;
 }
@@ -5358,8 +5358,8 @@ div.WizardParent > div div.WizardStep.ActiveStep .IconWizard.IconWizardWhite {
   color: #00ac94;
 }
 div.WizardParent > div div.WizardStep.ActiveStep .IconWizard {
-  border: 1px solid #fff;
-  color: #fff;
+  border: 1px solid #333;
+  color: #333;
   -servicestudio-color: initial;
 }
 div.WizardParent > div div.WizardStep .IconWizard {
@@ -5369,8 +5369,11 @@ div.WizardParent > div div.WizardStep .IconWizard {
 }
 div.WizardParent > div div.WizardStep a,
 div.WizardParent > div div.WizardStep a:link {
-  font-family: "LatoRegular";
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
+  font-family: "LatoRegular";
 }
 div.WizardParent > div div.WizardStep a:disabled,
 div.WizardParent > div div.WizardStep a[disabled=disabled],

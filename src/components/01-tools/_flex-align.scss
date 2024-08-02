@@ -1,6 +1,6 @@
 @mixin flex-center-total($type: flex) {
-	align-items: center;
 	display: $type;
+	align-items: center;
 	justify-content: center;
 }
 
