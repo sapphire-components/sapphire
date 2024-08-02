@@ -20,27 +20,12 @@ div.WizardParent {
 		padding-right: 0;
 	}
 
-	>div {
+	> div {
 		display: flex;
 
 		>.ListRecords {
 			display: flex;
 			width: 100%;
-		}
-
-		&::after {
-			background: $regular-white;
-			content: '';
-			display: block;
-			height: 36px;
-			position: absolute;
-			right: 0;
-			width: 18px;
-
-			.AR & {
-				left: 0;
-				right: unset;
-			}
 		}
 
 		.ParentGreyBG & {
@@ -88,6 +73,12 @@ div.WizardParent {
 				}
 			}
 
+			&.LastStep::after,
+			&:last-child::after {
+				border: 0;
+				content: '';
+			}
+
 			&::before {
 				display: none;
 			}
@@ -110,8 +101,9 @@ div.WizardParent {
 				}
 			}
 
-			&:last-child {
-				border-right: none;
+			&:last-of-type {
+				border-bottom-right-radius: $border-radius-default;
+				border-top-right-radius: $border-radius-default;
 
 				.AR & {
 					border-left: none;
@@ -122,7 +114,7 @@ div.WizardParent {
 			&.Past {
 				background-color: $body-color;
 
-				&:after {
+				&::after {
 					background-color: $body-color;
 				}
 
@@ -139,6 +131,10 @@ div.WizardParent {
 				color: $dark-grey;
 				font-family: $font-family-latin-bold;
 
+				.AR & {
+					border-right: 1px solid $regular-alpha;
+				}
+				
 				&::after {
 					background-color: $regular-eta;
 					border-right-color: $regular-alpha;
@@ -191,7 +187,7 @@ div.WizardParent {
 			a,
 			a:link {
 				@include flex-center-total();
-				
+
 				width: 100%;
 				font-family: $font-family-latin-regular;
 			}
@@ -202,8 +198,8 @@ div.WizardParent {
 				color: $label-color-disabled;
 			}
 
-			&:after,
-			&.ActiveStep:after {
+			&::after,
+			&.ActiveStep::after {
 				-servicestudio-background-color: transparent;
 			}
 		}
@@ -219,10 +215,15 @@ div.WizardParent {
 	font-size: 0.857em;
 	height: 20px;
 	line-height: 18px;
-	margin-right: 5px;
+	margin-right: $sapphire-sizes--small;
 	text-align: center;
 	vertical-align: middle;
 	width: 20px;
+
+	.AR & {
+		margin-right: 0;
+		margin-left: $sapphire-sizes--small;
+	}
 
 	&.IconWizardWhite {
 		background-color: $regular-white;

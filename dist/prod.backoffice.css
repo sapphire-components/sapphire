@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.5.108 || Generated: Fri Aug 02 2024 12:21:40 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.5.108 || Generated: Fri Aug 02 2024 12:56:26 GMT+0100 (Western European Summer Time) */
 /*!***************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/backoffice/styles.scss ***!
   \***************************************************************************************************************************************************************************************************************************************************/
@@ -5222,19 +5222,6 @@ div.WizardParent > div > .ListRecords {
   display: flex;
   width: 100%;
 }
-div.WizardParent > div::after {
-  background: #fff;
-  content: "";
-  display: block;
-  height: 36px;
-  position: absolute;
-  right: 0;
-  width: 18px;
-}
-.AR div.WizardParent > div::after {
-  left: 0;
-  right: unset;
-}
 .ParentGreyBG div.WizardParent > div::after {
   background: #f3f3f3;
 }
@@ -5280,6 +5267,10 @@ div.WizardParent > div div.WizardStep::after {
   top: 2px;
   width: 26px;
 }
+div.WizardParent > div div.WizardStep.LastStep::after, div.WizardParent > div div.WizardStep:last-child::after {
+  border: 0;
+  content: "";
+}
 div.WizardParent > div div.WizardStep::before {
   display: none;
 }
@@ -5298,17 +5289,18 @@ div.WizardParent > div div.WizardStep:first-of-type::before {
   border-top-right-radius: 4px;
   margin-right: 0;
 }
-div.WizardParent > div div.WizardStep:last-child {
-  border-right: none;
+div.WizardParent > div div.WizardStep:last-of-type {
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
 }
-.AR div.WizardParent > div div.WizardStep:last-child {
+.AR div.WizardParent > div div.WizardStep:last-of-type {
   border-left: none;
   border-right: 1px solid #d6d6d6;
 }
 div.WizardParent > div div.WizardStep.Past {
   background-color: #f3f3f3;
 }
-div.WizardParent > div div.WizardStep.Past:after {
+div.WizardParent > div div.WizardStep.Past::after {
   background-color: #f3f3f3;
 }
 div.WizardParent > div div.WizardStep.Past .IconWizard.IconWizardWhite {
@@ -5321,6 +5313,9 @@ div.WizardParent > div div.WizardStep.ActiveStep {
   border-color: #00bfa5;
   color: #333;
   font-family: "LatoBold";
+}
+.AR div.WizardParent > div div.WizardStep.ActiveStep {
+  border-right: 1px solid #00bfa5;
 }
 div.WizardParent > div div.WizardStep.ActiveStep::after {
   background-color: #f2fffd;
@@ -5380,7 +5375,7 @@ div.WizardParent > div div.WizardStep a[disabled=disabled],
 div.WizardParent > div div.WizardStep a[disabled=disabled]:hover {
   color: #adadad;
 }
-div.WizardParent > div div.WizardStep:after, div.WizardParent > div div.WizardStep.ActiveStep:after {
+div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardStep.ActiveStep::after {
   -servicestudio-background-color: transparent;
 }
 
@@ -5393,10 +5388,16 @@ div.WizardParent > div div.WizardStep:after, div.WizardParent > div div.WizardSt
   font-size: 0.857em;
   height: 20px;
   line-height: 18px;
-  margin-right: 5px;
+  margin-right: 8px;
   text-align: center;
   vertical-align: middle;
   width: 20px;
+}
+.AR .DesignSystem .IconWizard,
+.AR .LayoutBlank .IconWizard,
+.AR .LayoutBase .IconWizard {
+  margin-right: 0;
+  margin-left: 8px;
 }
 .DesignSystem .IconWizard.IconWizardWhite,
 .LayoutBlank .IconWizard.IconWizardWhite,
