@@ -2,6 +2,8 @@
 .hidden,
 .dontshow {
 	display: none !important;
+
+	-servicestudio-display: initial !important;
 }
 
 .ph:empty,
