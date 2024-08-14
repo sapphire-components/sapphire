@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.113 || Generated: Fri Aug 09 2024 10:39:58 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.113 || Generated: Wed Aug 14 2024 12:52:00 GMT+0100 (Hora de verão da Europa Ocidental) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -17458,6 +17458,8 @@ div.CircledArrow {
   border-radius: 8px;
   display: flex;
   min-height: 56px;
+  overflow-x: clip;
+  flex-wrap: wrap;
 }
 .PersonCard_header:not(.IsTransparent).PersonCard__content {
   background-color: #fff;
@@ -17556,6 +17558,7 @@ div.CircledArrow {
 .PersonCard_header.MediumPadding .PersonCard__actions {
   padding: 16px;
   padding-left: 0;
+  margin-left: auto;
 }
 .PersonCard_header.SmallPadding .PersonCard__actions,
 .PersonCard_header.SmallPadding .PersonCard__content,
