@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.118 || Generated: Thu Aug 22 2024 17:53:32 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.118 || Generated: Thu Aug 22 2024 22:26:21 GMT+0100 (Western European Summer Time) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -9708,10 +9708,9 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
   min-height: calc(100vh - 80px);
 }
 .LayoutBase-MainMenu, .LayoutBase-MainMenu.PatientDetails_Header {
+  position: fixed;
   height: 44px;
   margin-top: 0;
-  position: fixed;
-  z-index: 29;
 }
 .LayoutBase-MainMenu:empty, .LayoutBase-MainMenu.PatientDetails_Header:empty {
   display: none;
@@ -10784,6 +10783,10 @@ a.SpecialityButtonForward {
   font-size: 1.143em;
 }
 
+.Page.login-page {
+  height: auto !important;
+}
+
 .LoginBackground {
   background: no-repeat;
   background-image: url("/Login_UI/BackgroundImage.aspx?BackgroundImageId=3");
@@ -10873,6 +10876,10 @@ a.SpecialityButtonForward {
   width: 258px;
 }
 
+.LoginMain__fingerPrint > div {
+  display: inline-block;
+}
+
 .LoginBox {
   background-color: #ffffff;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.4);
@@ -10902,10 +10909,6 @@ a.SpecialityButtonForward {
   line-height: 18px;
   text-align: right;
   width: 96px;
-}
-
-.LoginMain__fingerPrint > div {
-  display: inline-block;
 }
 
 .BorderOr {
@@ -11076,7 +11079,6 @@ a.SpecialityButtonForward {
 .SubLayoutLeftPanel__Content {
   flex: 1;
   padding: 0 16px 24px;
-  position: relative;
 }
 .SubLayoutLeftPanel__Content .CollapsibleSidePanel__Content {
   border-left: 1px solid #d6d6d6;

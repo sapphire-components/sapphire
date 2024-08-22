@@ -1,3 +1,7 @@
+.Page.login-page {
+	height: auto !important;
+}
+
 .LoginBackground {
 	background: no-repeat;
 	background-image: $icon__background-image--3;
@@ -45,10 +49,6 @@
 	text-align: center;
 }
 
-.LoginMain__fingerPrint {}
-
-.LoginMain__loginBox {}
-
 .LoginMain__loginSamples {
 	background-color: $dark-blue; // #115873;
 	display: inline-block;
@@ -91,6 +91,10 @@
 	width: 258px;
 }
 
+.LoginMain__fingerPrint>div {
+	display: inline-block;
+}
+
 .LoginBox {
 	background-color: #ffffff;
 	box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.4);
@@ -120,10 +124,6 @@
 	line-height: 18px;
 	text-align: right;
 	width: 96px;
-}
-
-.LoginMain__fingerPrint>div {
-	display: inline-block;
 }
 
 .BorderOr {
@@ -190,7 +190,7 @@
 }
 
 .SampleUserLine_info {
-	color: #fff;
+	color: $regular-white;
 	font-size: 15px;
 	margin: 0;
 	padding: 10px 0 10px 20px;
