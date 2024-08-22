@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.117 || Generated: Thu Aug 22 2024 16:42:24 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! prod.app.css || Version: 5.5.117 || Generated: Thu Aug 22 2024 17:52:43 GMT+0100 (Western European Summer Time) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -9735,7 +9735,7 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 70;
+  z-index: 3;
   -servicestudio-display: none !important;
 }
 .LayoutBase-iframesidebar:before {
@@ -9766,13 +9766,12 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
   position: fixed;
   top: 44px;
   width: 100%;
-  z-index: 20;
+  z-index: 2;
 }
 .LayoutBase-Content .LayoutBase-primary-menu {
   background-color: #fff;
   border-bottom: 1px solid #d6d6d6;
   padding: 0 24px;
-  z-index: 2;
 }
 .LayoutBase-Content .LayoutBase-primary-menu.isFixed {
   position: sticky;
@@ -9782,11 +9781,11 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
   display: none;
 }
 .LayoutBase-Content .LayoutBase-secondary {
-  border-bottom: 1px solid #d6d6d6;
-  display: flex;
   position: sticky;
   top: 80px;
-  z-index: 2;
+  display: flex;
+  border-bottom: 1px solid #d6d6d6;
+  z-index: 1;
 }
 .LayoutBase-Content .LayoutBase-secondary.isFixed {
   border-bottom: solid 2px #d6d6d6;
@@ -10227,8 +10226,7 @@ html .Page .PatientDetailsLayout {
 }
 .NewNavigation .FullScreenTabsWrapper_Container .TabWrapper.Active {
   border-top-left-radius: 4px;
-  -webkit-clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
-          clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
   padding-right: 30px;
 }
 .NewNavigation .FullScreenTabsWrapper_Container .TabWrapper.Active .TabWrapper_icon .icon {
@@ -10249,8 +10247,7 @@ html .Page .PatientDetailsLayout {
 }
 .NewNavigation .Toolbar .MenuItemWrapper.Active {
   border-top-left-radius: 4px;
-  -webkit-clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
-          clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
   padding-right: 40px;
 }
 .NewNavigation .Toolbar .MenuItemWrapper.Active .MenuItemWrapper_Container {
@@ -21469,7 +21466,7 @@ body.confirmation-opened {
 .PanelById .Panel .PanelContainer {
   max-width: 800px;
   overflow: unset !important;
-  z-index: 100;
+  z-index: 3;
   -servicestudio-display: block !important;
   -servicestudio-width: 1500px !important;
   -servicestudio-z-index: 0;
@@ -21530,7 +21527,7 @@ body.confirmation-opened {
   right: 0;
   top: 0;
   transition: all 0.14s ease;
-  z-index: 30;
+  z-index: 3;
 }
 .Panel .PanelContainer {
   left: 50%;
@@ -21544,7 +21541,7 @@ body.confirmation-opened {
   position: fixed;
   text-align: center;
   width: 100%;
-  z-index: 51;
+  z-index: 3;
 }
 .Panel .PanelContainer .PanelTitle {
   font-family: "LatoBold";
@@ -34249,8 +34246,7 @@ ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover {
 }
 .HasCriticalValue:before {
   background-color: #ff3e2d;
-  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   color: #fff;
   content: "!";
   display: block;

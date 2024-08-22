@@ -63,7 +63,7 @@
 		position: fixed;
 		right: 0;
 		top: 0;
-		z-index: 70;
+		z-index: 3;
 
 		-servicestudio-display: none !important;
 
@@ -101,7 +101,7 @@
 		position: fixed;
 		top: 44px;
 		width: 100%;
-		z-index: 20;
+		z-index: 2;
 	}
 
 	&-Content {
@@ -109,12 +109,11 @@
 			background-color: $regular-white;
 			border-bottom: 1px solid $light-grey;
 			padding: 0 $sapphire-sizes--large;
-			z-index: 2;
+			//z-index: 2;
 
 			&.isFixed {
 				position: sticky;
 				top: 80px;
-				// z-index: 18;
 
 				~.LayoutBase-secondary {
 					display: none;
@@ -123,11 +122,11 @@
 		}
 
 		.LayoutBase-secondary {
-			border-bottom: 1px solid $light-grey;
-			display: flex;
 			position: sticky;
 			top: 80px;
-			z-index: 2;
+			display: flex;
+			border-bottom: 1px solid $light-grey;
+			z-index: 1;
 
 			&.isFixed {
 				border-bottom: solid 2px $light-grey;
