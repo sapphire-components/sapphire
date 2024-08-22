@@ -34,6 +34,7 @@
 		position: fixed;
 		height: $default-menubar-height;
 		margin-top: 0;
+		z-index: 2;
 
 		&:empty {
 			display: none;
@@ -46,9 +47,9 @@
 	}
 
 	&-topfixedcontent {
-		background-color: $body-color;
 		position: fixed;
 		width: 100%;
+		background-color: $body-color;
 		z-index: 2;
 	}
 
@@ -78,7 +79,7 @@
 		}
 
 		&.notExpandable {
-			z-index: 29;
+			z-index: 3;
 		}
 
 		&.isExpandable {
@@ -108,7 +109,6 @@
 			background-color: $regular-white;
 			border-bottom: 1px solid $light-grey;
 			padding: 0 $sapphire-sizes--large;
-			//z-index: 2;
 
 			&.isFixed {
 				position: sticky;

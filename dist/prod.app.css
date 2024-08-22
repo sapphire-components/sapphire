@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.118 || Generated: Thu Aug 22 2024 22:46:22 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.118 || Generated: Thu Aug 22 2024 23:08:37 GMT+0100 (Western European Summer Time) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -9711,6 +9711,7 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
   position: fixed;
   height: 44px;
   margin-top: 0;
+  z-index: 2;
 }
 .LayoutBase-MainMenu:empty, .LayoutBase-MainMenu.PatientDetails_Header:empty {
   display: none;
@@ -9720,9 +9721,9 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
   display: block;
 }
 .LayoutBase-topfixedcontent {
-  background-color: #f3f3f3;
   position: fixed;
   width: 100%;
+  background-color: #f3f3f3;
   z-index: 2;
 }
 .LayoutBase-bottomfixedcontent {
@@ -9748,7 +9749,7 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
   width: 40px;
 }
 .LayoutBase-iframesidebar.notExpandable {
-  z-index: 29;
+  z-index: 3;
 }
 .LayoutBase-iframesidebar.isExpandable {
   width: 40px;
@@ -10590,6 +10591,7 @@ a.SpecialityButtonForward {
 
 .LayoutPopup {
   width: 100%;
+  background-color: #fff;
 }
 .LayoutPopup.SmallPopup .LayoutPopup__body__sidebar {
   display: none;
@@ -38237,9 +38239,6 @@ a.Header_ButtonSidebar {
 
 .PatientDetails__MainWorkArea {
   height: 100%;
-  /*padding-top: 50px;*/
-  /*** removed padding left ***/
-  /*padding-left:40px;*/
 }
 
 .patientHeaderLabelsHeader {
