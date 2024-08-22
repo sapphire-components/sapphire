@@ -1,19 +1,19 @@
 // Wizard Parent
 @mixin wizard-step-arrow-style {
+	height: 24px;
+	width: 24px;
+	top: 5px;
 	border: none;
 	border-right: 1px solid $light-grey;
 	border-top: 1px solid $light-grey;
 	border-top-right-radius: 6px;
-	height: 24px;
-	top: 5px;
 	transform: rotate(45deg);
-	width: 24px;
 }
 
 div.WizardParent {
-	border: none;
-	padding-right: 1px;
 	position: relative;
+	padding-right: 1px;
+	border: none;
 
 	.AR & {
 		padding-left: 1px;
@@ -100,6 +100,15 @@ div.WizardParent {
 				}
 			}
 
+			&:not(:first-of-type) {
+				border-left-width: 0;
+
+				.AR & {
+					border-left-width: 1px;
+					border-right-width: 0;
+				}
+			}
+
 			&:last-of-type {
 				border-bottom-right-radius: $border-radius-default;
 				border-top-right-radius: $border-radius-default;
@@ -149,9 +158,10 @@ div.WizardParent {
 				&::before {
 					@include wizard-step-arrow-style();
 
-					border-color: $regular-alpha;
 					display: block;
 					left: -13px;
+					border-color: $regular-alpha;
+					background-color: $regular-white;
 					z-index: 1;
 				}
 

@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.5.115 || Generated: Tue Aug 20 2024 17:28:25 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! prod.backoffice.css || Version: 5.5.115 || Generated: Thu Aug 22 2024 16:03:26 GMT+0100 (Western European Summer Time) */
 /*!***************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/backoffice/styles.scss ***!
   \***************************************************************************************************************************************************************************************************************************************************/
@@ -5207,9 +5207,9 @@ body.confirmation-opened {
 }
 
 div.WizardParent {
-  border: none;
-  padding-right: 1px;
   position: relative;
+  padding-right: 1px;
+  border: none;
 }
 .AR div.WizardParent {
   padding-left: 1px;
@@ -5244,14 +5244,14 @@ div.WizardParent > div div.WizardStep {
   margin-right: -18px;
 }
 div.WizardParent > div div.WizardStep::after {
+  height: 24px;
+  width: 24px;
+  top: 5px;
   border: none;
   border-right: 1px solid #d6d6d6;
   border-top: 1px solid #d6d6d6;
   border-top-right-radius: 6px;
-  height: 24px;
-  top: 5px;
   transform: rotate(45deg);
-  width: 24px;
   background-color: #fff;
   right: 4px;
 }
@@ -5287,6 +5287,13 @@ div.WizardParent > div div.WizardStep:first-of-type::before {
   border-right: 1px solid #d6d6d6;
   border-top-right-radius: 4px;
   margin-right: 0;
+}
+div.WizardParent > div div.WizardStep:not(:first-of-type) {
+  border-left-width: 0;
+}
+.AR div.WizardParent > div div.WizardStep:not(:first-of-type) {
+  border-left-width: 1px;
+  border-right-width: 0;
 }
 div.WizardParent > div div.WizardStep:last-of-type {
   border-bottom-right-radius: 4px;
@@ -5327,17 +5334,18 @@ div.WizardParent > div div.WizardStep.ActiveStep::after {
   border-left-color: #00bfa5;
 }
 div.WizardParent > div div.WizardStep.ActiveStep::before {
+  height: 24px;
+  width: 24px;
+  top: 5px;
   border: none;
   border-right: 1px solid #d6d6d6;
   border-top: 1px solid #d6d6d6;
   border-top-right-radius: 6px;
-  height: 24px;
-  top: 5px;
   transform: rotate(45deg);
-  width: 24px;
-  border-color: #00bfa5;
   display: block;
   left: -13px;
+  border-color: #00bfa5;
+  background-color: #fff;
   z-index: 1;
 }
 div.WizardParent > div div.WizardStep.ActiveStep a,
