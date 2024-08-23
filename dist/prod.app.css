@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.119 || Generated: Thu Aug 22 2024 23:12:18 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.119 || Generated: Fri Aug 23 2024 16:55:30 GMT+0100 (Hora de verão da Europa Ocidental) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -9724,7 +9724,7 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
   position: fixed;
   width: 100%;
   background-color: #f3f3f3;
-  z-index: 2;
+  z-index: 1;
 }
 .LayoutBase-bottomfixedcontent {
   background-color: #f3f3f3;
@@ -10226,7 +10226,8 @@ html .Page .PatientDetailsLayout {
 }
 .NewNavigation .FullScreenTabsWrapper_Container .TabWrapper.Active {
   border-top-left-radius: 4px;
-  clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
   padding-right: 30px;
 }
 .NewNavigation .FullScreenTabsWrapper_Container .TabWrapper.Active .TabWrapper_icon .icon {
@@ -10247,7 +10248,8 @@ html .Page .PatientDetailsLayout {
 }
 .NewNavigation .Toolbar .MenuItemWrapper.Active {
   border-top-left-radius: 4px;
-  clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
   padding-right: 40px;
 }
 .NewNavigation .Toolbar .MenuItemWrapper.Active .MenuItemWrapper_Container {
@@ -34248,7 +34250,8 @@ ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover {
 }
 .HasCriticalValue:before {
   background-color: #ff3e2d;
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   color: #fff;
   content: "!";
   display: block;
