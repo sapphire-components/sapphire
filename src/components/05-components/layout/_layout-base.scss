@@ -101,7 +101,7 @@
 		position: fixed;
 		top: 44px;
 		width: 100%;
-		z-index: 2;
+		z-index: 1;
 	}
 
 	&-Content {
@@ -125,7 +125,6 @@
 			top: 80px;
 			display: flex;
 			border-bottom: 1px solid $light-grey;
-			z-index: 1;
 
 			&.isFixed {
 				border-bottom: solid 2px $light-grey;

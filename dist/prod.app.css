@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.120 || Generated: Fri Aug 23 2024 16:56:07 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! prod.app.css || Version: 5.5.120 || Generated: Tue Aug 27 2024 12:25:37 GMT+0100 (Hora de verão da Europa Ocidental) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -9766,7 +9766,7 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
   position: fixed;
   top: 44px;
   width: 100%;
-  z-index: 2;
+  z-index: 1;
 }
 .LayoutBase-Content .LayoutBase-primary-menu {
   background-color: #fff;
@@ -9785,7 +9785,6 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
   top: 80px;
   display: flex;
   border-bottom: 1px solid #d6d6d6;
-  z-index: 1;
 }
 .LayoutBase-Content .LayoutBase-secondary.isFixed {
   border-bottom: solid 2px #d6d6d6;
