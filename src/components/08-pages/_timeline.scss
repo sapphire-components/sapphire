@@ -73,7 +73,7 @@ $timeline-sticky-top-secondary: 185px;
 		padding-top: $sapphire-sizes--large;
 		position: sticky;
 		top: $timeline-sticky-top-primary;
-		z-index: 3;
+		z-index: 1;
 
 		.TimeLineSearchHeader {
 			min-width: 420px;

@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.121 || Generated: Tue Aug 27 2024 12:26:04 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! prod.app.css || Version: 5.5.121 || Generated: Thu Aug 29 2024 16:04:42 GMT+0100 (Hora de verão da Europa Ocidental) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -9711,7 +9711,7 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
   position: fixed;
   height: 44px;
   margin-top: 0;
-  z-index: 2;
+  z-index: 4;
 }
 .LayoutBase-MainMenu:empty, .LayoutBase-MainMenu.PatientDetails_Header:empty {
   display: none;
@@ -9735,7 +9735,7 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 3;
+  z-index: 4;
   -servicestudio-display: none !important;
 }
 .LayoutBase-iframesidebar:before {
@@ -9766,7 +9766,7 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
   position: fixed;
   top: 44px;
   width: 100%;
-  z-index: 1;
+  z-index: 3;
 }
 .LayoutBase-Content .LayoutBase-primary-menu {
   background-color: #fff;
@@ -9776,6 +9776,7 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
 .LayoutBase-Content .LayoutBase-primary-menu.isFixed {
   position: sticky;
   top: 80px;
+  z-index: 1;
 }
 .LayoutBase-Content .LayoutBase-primary-menu.isFixed ~ .LayoutBase-secondary {
   display: none;
@@ -9785,6 +9786,7 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
   top: 80px;
   display: flex;
   border-bottom: 1px solid #d6d6d6;
+  z-index: 1;
 }
 .LayoutBase-Content .LayoutBase-secondary.isFixed {
   border-bottom: solid 2px #d6d6d6;
@@ -30304,6 +30306,7 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
   width: 20px;
   z-index: 1;
   margin-right: -8px;
+  z-index: 0;
 }
 .LineTimeLine__Expandable:before {
   font-family: "Sapphire-Icon-Font";
@@ -30441,7 +30444,7 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
   padding-top: 16px;
   position: sticky;
   top: 185px;
-  z-index: 2;
+  z-index: 1;
 }
 
 .LineSubTimeLine {
@@ -34915,7 +34918,7 @@ ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover {
   padding-top: 24px;
   position: sticky;
   top: 125px;
-  z-index: 3;
+  z-index: 1;
 }
 .TimelinePage__Filters .TimeLineSearchHeader {
   min-width: 420px;

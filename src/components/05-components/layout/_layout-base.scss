@@ -34,7 +34,7 @@
 		position: fixed;
 		height: $default-menubar-height;
 		margin-top: 0;
-		z-index: 2;
+		z-index: 4;
 
 		&:empty {
 			display: none;
@@ -63,7 +63,7 @@
 		position: fixed;
 		right: 0;
 		top: 0;
-		z-index: 3;
+		z-index: 4;
 
 		-servicestudio-display: none !important;
 
@@ -101,7 +101,7 @@
 		position: fixed;
 		top: 44px;
 		width: 100%;
-		z-index: 1;
+		z-index: 3;
 	}
 
 	&-Content {
@@ -113,6 +113,7 @@
 			&.isFixed {
 				position: sticky;
 				top: 80px;
+				z-index: 1;
 
 				~.LayoutBase-secondary {
 					display: none;
@@ -125,6 +126,7 @@
 			top: 80px;
 			display: flex;
 			border-bottom: 1px solid $light-grey;
+			z-index: 1;
 
 			&.isFixed {
 				border-bottom: solid 2px $light-grey;

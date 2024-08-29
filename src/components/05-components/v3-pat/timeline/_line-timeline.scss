@@ -53,6 +53,7 @@
 		@include arrow-button($dark-grey, 20px, 0.7em, 90deg);
 
 		margin-right: -$sapphire-sizes--small;
+		z-index: 0;
 
 		.AR & {
 			margin-left: -$sapphire-sizes--small;
@@ -207,7 +208,7 @@
 	padding-top: $sapphire-sizes--medium;
 	position: sticky;
 	top: 185px;
-	z-index: 2;
+	z-index: 1;
 }
 
 .LineSubTimeLine {
