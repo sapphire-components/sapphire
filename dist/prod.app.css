@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.122 || Generated: Thu Aug 29 2024 16:05:10 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! prod.app.css || Version: 5.5.122 || Generated: Thu Aug 29 2024 16:09:55 GMT+0100 (Hora de verão da Europa Ocidental) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -24297,7 +24297,6 @@ div.List-Star > div[unselected] {
   display: none;
   position: relative;
   width: 100%;
-  z-index: 1;
 }
 .SearchSD .SearchSD_content .EmptySelectableList {
   color: #777777;
