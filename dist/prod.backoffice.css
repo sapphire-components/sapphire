@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.5.123 || Generated: Thu Aug 29 2024 16:10:14 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! prod.backoffice.css || Version: 5.5.123 || Generated: Fri Aug 30 2024 16:29:19 GMT+0100 (Hora de verão da Europa Ocidental) */
 /*!***************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/backoffice/styles.scss ***!
   \***************************************************************************************************************************************************************************************************************************************************/
@@ -5345,7 +5345,7 @@ div.WizardParent > div div.WizardStep.ActiveStep::before {
   display: block;
   left: -13px;
   border-color: #00bfa5;
-  background-color: #fff;
+  background-color: transparent;
   z-index: 1;
 }
 div.WizardParent > div div.WizardStep.ActiveStep a,
@@ -5357,7 +5357,7 @@ div.WizardParent > div div.WizardStep.ActiveStep a[disabled=disabled]:hover {
 }
 div.WizardParent > div div.WizardStep.ActiveStep .IconWizard.IconWizardWhite {
   background-color: #fff;
-  border: 1px solid #fff;
+  border: 1px solid #00bfa5;
   color: #00ac94;
 }
 div.WizardParent > div div.WizardStep.ActiveStep .IconWizard {

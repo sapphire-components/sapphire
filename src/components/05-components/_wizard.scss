@@ -161,7 +161,7 @@ div.WizardParent {
 					display: block;
 					left: -13px;
 					border-color: $regular-alpha;
-					background-color: $regular-white;
+					background-color: transparent;
 					z-index: 1;
 				}
 
@@ -175,7 +175,7 @@ div.WizardParent {
 
 				.IconWizard.IconWizardWhite {
 					background-color: $regular-white;
-					border: 1px solid $regular-white;
+					border: 1px solid $regular-alpha;
 					color: $regular-beta;
 				}
 
