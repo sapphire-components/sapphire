@@ -126,7 +126,7 @@
 			top: 80px;
 			display: flex;
 			border-bottom: 1px solid $light-grey;
-			z-index: 1;
+			z-index: 2;
 
 			&.isFixed {
 				border-bottom: solid 2px $light-grey;
