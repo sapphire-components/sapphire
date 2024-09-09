@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.128 || Generated: Mon Sep 09 2024 09:05:34 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! prod.app.css || Version: 5.5.128 || Generated: Mon Sep 09 2024 15:46:30 GMT+0100 (Hora de verão da Europa Ocidental) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -9056,6 +9056,7 @@ span.SavedFeedback {
 }
 
 div.title-wrapper {
+  font-size: 16px;
   vertical-align: top;
 }
 
