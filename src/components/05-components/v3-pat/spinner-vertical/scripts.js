@@ -13,7 +13,7 @@
 					const arrayToSpin = config.numberList;
 					const $errorMessage = $(`#${config.widgetId} .SpinnerErrorMessage`);
 
-					$errorMessage.css('display', (arrayToSpin.indexOf(inputValueInt) === -1 && !config.hideFrequencyWarning) ? 'block' : 'none');
+					$errorMessage.css('display', (arrayToSpin.indexOf(inputValueInt) === -1 && !config.hideErrorMessage) ? 'block' : 'none');
 				}
 
 				if (currentInputValue < config.minValue) $minusVertical.addClass('DisabledSpin');
