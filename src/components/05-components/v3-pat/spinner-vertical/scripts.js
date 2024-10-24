@@ -9,11 +9,12 @@
 				const currentInputValue = $inputSpinner.val();
 
 				if (config.numberList && event.type === 'blur') {
-					const inputValueInt = parseInt(currentInputValue);
+					const inputValueInt = (currentInputValue == NaN) ? 0 : currentInputValue;
 					const arrayToSpin = config.numberList;
 					const $errorMessage = $(`#${config.widgetId} .SpinnerErrorMessage`);
 
-					$errorMessage.css('display', (arrayToSpin.indexOf(inputValueInt) === -1 && !config.hideErrorMessage) ? 'block' : 'none');
+					$errorMessage.css('display', (arrayToSpin.indexOf(inputValueInt) === -1 && 
+																				(!config.hideErrorMessage || inputValueInt != 0)) ? 'block' : 'none');
 				}
 
 				if (currentInputValue < config.minValue) $minusVertical.addClass('DisabledSpin');
