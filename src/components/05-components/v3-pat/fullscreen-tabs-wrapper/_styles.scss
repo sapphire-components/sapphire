@@ -10,9 +10,11 @@ $tab-height: 44px;
 	padding: 0;
 	position: relative;
 
+	-servicestudio-position: static;
+
 	a {
 		-servicestudio-display: inline-block;
-		-servicestudio-padding: 0 16px;
+		-servicestudio-padding: 10px 16px;
 	}
 
 	.FullScreenTabsWrapper__Tabs {
@@ -31,7 +33,7 @@ $tab-height: 44px;
 	height: $tab-height;
 	position: relative;
 	text-align: center;
-	
+
 	&:hover {
 		border-bottom-color: $regular-alpha;
 
