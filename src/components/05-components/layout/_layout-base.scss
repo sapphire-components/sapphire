@@ -320,11 +320,6 @@
 						margin-bottom: 5px;
 					}
 				}
-
-				/*.TopInfo__OrderSet {
-					position: sticky;
-					top: 90px;
-				}*/
 			}
 
 			&__Actions {
@@ -395,10 +390,6 @@
 
 	&.LayoutBase--withTabs {
 		.LayoutBase {
-			// &-spacer {
-			// 	display: none;
-			// }
-
 			&-MainMenu {
 				height: 0;
 				position: absolute;

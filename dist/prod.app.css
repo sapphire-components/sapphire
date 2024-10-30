@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.140 || Generated: Wed Oct 30 2024 15:48:57 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.5.140 || Generated: Wed Oct 30 2024 15:49:15 GMT+0000 (Western European Standard Time) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -9925,10 +9925,6 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
   display: flex;
   height: 100%;
   overflow: visible;
-  /*.TopInfo__OrderSet {
-  	position: sticky;
-  	top: 90px;
-  }*/
 }
 .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumn, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnEnd, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnStart, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnSpaceEvenly, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnSpaceBetween, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnSpaceAround, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnCenterHorizontal, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnCenterVertical, .LayoutBase-secondary-aside .TopInfo > div.ContextButtons.FlexColumnCenterFull {
   flex-direction: column;
