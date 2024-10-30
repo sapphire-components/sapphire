@@ -8,11 +8,11 @@
 			.VisitDetailsContainer {
 				margin-top: $sapphire-sizes--large;
 
-				.VisitDetails{
+				.VisitDetails {
 
-					.TimeLineSearchHeader{
+					.TimeLineSearchHeader {
 
-						.select2{
+						.select2 {
 							width: 100% !important;
 						}
 					}
@@ -25,7 +25,6 @@
 				.SectionExpandableInside_header {
 					background-color: $body-color;
 					border: 1px solid $light-grey;
-					//border-bottom: none;
 					border-radius: $border-radius-default;
 					margin-bottom: $sapphire-sizes--medium;
 				}
