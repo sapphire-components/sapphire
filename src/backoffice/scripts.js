@@ -11,5 +11,6 @@ require('../components/05-components/v3-pat/panel/confirmation-popup');
 require('../components/05-components/v3-pat/panel/panel-by-id');
 require('../components/05-components/v3-pat/sapphire-popup/scripts');
 require('../components/05-components/v3-pat/select-system/scripts');
+require('../components/05-components/v3-pat/spinner-vertical/scripts');
 require('../components/05-components/v3-pat/dropzone/dropzone');
 require('../components/03-elements/script');
