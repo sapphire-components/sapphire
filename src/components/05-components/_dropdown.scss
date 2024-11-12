@@ -50,3 +50,19 @@
 		padding: 5px 5px 5px 5px;
 	}
 }
+
+.fake-dropdown--disabled {
+	height: 36px;
+	padding: 0 35px 0 $sapphire-sizes--medium;
+	line-height: 2.43;
+	vertical-align: middle;
+	border: 1px solid $border-color-disabled;
+	border-radius: $border-radius-default;
+	background-image: $icon__arrow-up-down;
+	background-color: $background-disabled;
+	background-position: right 14px center;
+	background-repeat: no-repeat;
+	color: $text-color-disabled;
+	font-family: $font-family-latin-regular;
+	cursor: not-allowed;
+}
