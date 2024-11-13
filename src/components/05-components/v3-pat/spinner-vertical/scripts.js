@@ -54,6 +54,8 @@
 			if (config.isInputEmpty) {
 				$inputSpinner.attr('value', '');
 				$minusVertical.addClass('DisabledSpin');
+			} else {
+				$inputSpinner.blur();
 			}
 		});
 	};
