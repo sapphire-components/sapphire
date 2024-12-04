@@ -686,8 +686,8 @@ $styleguide-main-content-padding: 50px;
 		img {
 			display: block;
 			height: auto;
-		    width: 100%;
-		    max-width: 1500px;
+			width: 100%;
+			max-width: 1500px;
 			margin: 15px auto;
 			border-radius: 5px;
 		}
@@ -733,10 +733,14 @@ $styleguide-main-content-padding: 50px;
 
 	code,
 	.code {
-		display: block;
-		padding: 15px;
+		padding: 5px 10px;
 		border-radius: 5px;
 		background-color: $body-color;
+
+		&.code--block {
+			display: block;
+			padding: 15px;
+		}
 	}
 
 	&.Page {
