@@ -1,4 +1,4 @@
-/*! prod.styleguide.css || Version: 5.5.144 || Generated: Wed Dec 04 2024 16:58:38 GMT+0000 (Hora padrão da Europa Ocidental) */
+/*! prod.styleguide.css || Version: 5.5.145 || Generated: Thu Dec 05 2024 10:36:17 GMT+0000 (Hora padrão da Europa Ocidental) */
 /*!***************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/styleguide/styles.scss ***!
   \***************************************************************************************************************************************************************************************************************************************************/
@@ -623,10 +623,14 @@ body::-webkit-scrollbar-thumb {
 }
 .DesignSystem code,
 .DesignSystem .code {
-  display: block;
-  padding: 15px;
+  padding: 5px 10px;
   border-radius: 5px;
   background-color: #f3f3f3;
+}
+.DesignSystem code.code--block,
+.DesignSystem .code.code--block {
+  display: block;
+  padding: 15px;
 }
 .DesignSystem.Page {
   -servicestudio-margin-top: -20px;
