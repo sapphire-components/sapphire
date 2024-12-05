@@ -5,7 +5,8 @@
 		margin: 0 0 0 1px !important;
 	}
 
-	&.Invalid {
+	&.Invalid,
+	&.Round.Invalid {
 		.SegmentedControlItem {
 			&:last-child label {
 				border-color: $regular-red;
