@@ -806,7 +806,8 @@
 	transform: rotateZ(90deg);
 }
 
-.ar .icon-move-left:before {
+.ar .icon-move-left:before,
+.AR .icon-move-left:before {
 	transform: rotateZ(180deg);
 }
 
@@ -816,7 +817,8 @@
 	transform: rotateZ(-90deg);
 }
 
-.ar .icon-move-right:before {
+.ar .icon-move-right:before,
+.AR .icon-move-right:before {
 	transform: rotateZ(0);
 }
 
