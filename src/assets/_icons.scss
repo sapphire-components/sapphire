@@ -806,10 +806,18 @@
 	transform: rotateZ(90deg);
 }
 
+.ar .icon-move-left:before {
+	transform: rotateZ(180deg);
+}
+
 .icon-move-right:before {
 	content: '\e914';
 	display: inline-block;
 	transform: rotateZ(-90deg);
+}
+
+.ar .icon-move-right:before {
+	transform: none;
 }
 
 .icon-temporary-bed:before {
