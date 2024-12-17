@@ -1,4 +1,4 @@
-(function($, window, SapphireWidgets) {
+(function ($, window, SapphireWidgets) {
 	const create = () => {
 		const $widget = $('.RemoteAppointment');
 		const $header = $widget.find('.RemoteAppointment__Header');
@@ -33,7 +33,7 @@
 				right: '50%',
 				left: '50%',
 				width: '280px',
-				height: '380px',
+				height: '425px',
 			});
 		});
 
@@ -52,7 +52,7 @@
 				right: '50%',
 				left: '50%',
 				width: isCallStarted ? '45vw' : '450px',
-				height: isCallStarted ? '45vh' : '260px',
+				height: isCallStarted ? '52vh' : '260px',
 			});
 		});
 
@@ -71,7 +71,7 @@
 			else $mediumSize.click();
 		});
 
-		$(document).ready(function() {
+		$(document).ready(function () {
 			$widget.draggable({
 				containment: 'window',
 				handle: $header,
@@ -104,7 +104,7 @@
 		$widget.addClass('RemoteAppointment--callStarted');
 
 		$widget.css({
-			height: '45vh',
+			height: '52vh',
 			width: '45vw',
 		});
 
@@ -117,7 +117,7 @@
 		let timeout;
 
 		function warning(e) {
-			timeout = setTimeout(function() {
+			timeout = setTimeout(function () {
 				// Hack to keep the current tab selected if user doesn't go to another page
 				const iframeContents = window.top.$('.MainContent > iframe').contents();
 				const tabItems = iframeContents.find('.TabWrapper');
@@ -178,7 +178,7 @@
 		const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
 
 		if (iframeDoc.readyState == 'complete') {
-			iframe.contentWindow.onload = function() {
+			iframe.contentWindow.onload = function () {
 				setInitialState();
 			};
 
@@ -188,7 +188,7 @@
 		window.setTimeout(checkIframeLoaded, 100);
 	};
 
-	const setCallStarted = () => {};
+	const setCallStarted = () => { };
 
 	const fakeAjaxRefresh = () => {
 		// Not sure what was the idea here, but it doesn't work because onbeforeunload only triggers the browser confirmation and ignores any code inside
