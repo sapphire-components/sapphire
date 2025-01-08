@@ -14,3 +14,4 @@ require('../components/05-components/v3-pat/select-system/scripts');
 require('../components/05-components/v3-pat/spinner-vertical/scripts');
 require('../components/05-components/v3-pat/dropzone/dropzone');
 require('../components/03-elements/script');
+require('../components/05-components/v3-pat/segmented-control/scripts')
