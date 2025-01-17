@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-/*! prod.app.css || Version: 5.5.157 || Generated: Fri Jan 17 2025 11:15:35 GMT+0000 (Hora padrão da Europa Ocidental) */
-=======
-/*! prod.app.css || Version: 5.5.158 || Generated: Thu Jan 16 2025 18:16:02 GMT+0000 (Western European Standard Time) */
->>>>>>> 3ced18c3978ba2ecc03e2361fba891fb8349ebda
+/*! prod.app.css || Version: 5.5.158 || Generated: Fri Jan 17 2025 11:20:26 GMT+0000 (Hora padrão da Europa Ocidental) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -10247,7 +10243,8 @@ html .Page .PatientDetailsLayout {
 }
 .NewNavigation .FullScreenTabsWrapper_Container .TabWrapper.Active {
   border-top-left-radius: 4px;
-  clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
   padding-right: 30px;
 }
 .NewNavigation .FullScreenTabsWrapper_Container .TabWrapper.Active .TabWrapper_icon .icon {
@@ -10268,7 +10265,8 @@ html .Page .PatientDetailsLayout {
 }
 .NewNavigation .Toolbar .MenuItemWrapper.Active {
   border-top-left-radius: 4px;
-  clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
   padding-right: 40px;
 }
 .NewNavigation .Toolbar .MenuItemWrapper.Active .MenuItemWrapper_Container {
@@ -34285,7 +34283,8 @@ ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover {
 }
 .HasCriticalValue:before {
   background-color: #ff3e2d;
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   color: #fff;
   content: "!";
   display: block;
