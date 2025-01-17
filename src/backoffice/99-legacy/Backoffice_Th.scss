@@ -9040,6 +9040,7 @@ input::-webkit-inner-spin-button {
   text-decoration: none;
 }
 
+
 .SegmentedControl {
   margin-bottom: 10px;
 }
@@ -9049,11 +9050,6 @@ input::-webkit-inner-spin-button {
 }
 
 .SegmentedControlItem {
-  border-bottom: solid 1px #0DA2AA;
-  border-left: solid 1px #0DA2AA;
-  border-right: solid 1px #0DA2AA;
-  border-top: solid 1px #0DA2AA;
-  color: #0DA2AA;
   display: inline-block;
   font-size: 13px;
   margin-left: -1px;
@@ -9080,7 +9076,6 @@ input::-webkit-inner-spin-button {
 .Vertical .SegmentedControlItem,
 .SegmentedControlItem:first-child {
   border-bottom-left-radius: 5px;
-  border-left: solid 1px #0DA2AA;
   border-top-left-radius: 5px;
   margin-left: 0;
 }
@@ -9100,7 +9095,6 @@ input::-webkit-inner-spin-button {
 .Vertical .SegmentedControlItem,
 .SegmentedControlItem:last-child {
   border-bottom-right-radius: 5px;
-  border-right: solid 1px #0DA2AA;
   border-top-right-radius: 5px;
 }
 
@@ -9152,7 +9146,6 @@ input::-webkit-inner-spin-button {
 .SegmentedControlItem>input[type="radio"]:checked~label,
 .SegmentedControlItem>input[type="checkbox"]:checked~label {
   background: #0DA2AA;
-  box-shadow: inset 2px 1px 3px rgba(100, 100, 100, 0.4);
   color: #FFF;
 }
 
@@ -9167,7 +9160,6 @@ input::-webkit-inner-spin-button {
 .SegmentedControlItem label .icon {
   font-size: 18px;
   line-height: 35px;
-
   padding-right: 5px;
 
 }

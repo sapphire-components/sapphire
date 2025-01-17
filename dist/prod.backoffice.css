@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.5.157 || Generated: Thu Jan 16 2025 16:38:48 GMT+0000 (Hora padrão da Europa Ocidental) */
+/*! prod.backoffice.css || Version: 5.5.157 || Generated: Fri Jan 17 2025 11:15:35 GMT+0000 (Hora padrão da Europa Ocidental) */
 /*!***************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/backoffice/styles.scss ***!
   \***************************************************************************************************************************************************************************************************************************************************/
@@ -14859,11 +14859,6 @@ input::-webkit-inner-spin-button {
 }
 
 .SegmentedControlItem {
-  border-bottom: solid 1px #0DA2AA;
-  border-left: solid 1px #0DA2AA;
-  border-right: solid 1px #0DA2AA;
-  border-top: solid 1px #0DA2AA;
-  color: #0DA2AA;
   display: inline-block;
   font-size: 13px;
   margin-left: -1px;
@@ -14888,7 +14883,6 @@ input::-webkit-inner-spin-button {
 .Vertical .SegmentedControlItem,
 .SegmentedControlItem:first-child {
   border-bottom-left-radius: 5px;
-  border-left: solid 1px #0DA2AA;
   border-top-left-radius: 5px;
   margin-left: 0;
 }
@@ -14908,7 +14902,6 @@ input::-webkit-inner-spin-button {
 .Vertical .SegmentedControlItem,
 .SegmentedControlItem:last-child {
   border-bottom-right-radius: 5px;
-  border-right: solid 1px #0DA2AA;
   border-top-right-radius: 5px;
 }
 
@@ -14958,7 +14951,6 @@ input::-webkit-inner-spin-button {
 .SegmentedControlItem > input[type=radio]:checked ~ label,
 .SegmentedControlItem > input[type=checkbox]:checked ~ label {
   background: #0DA2AA;
-  box-shadow: inset 2px 1px 3px rgba(100, 100, 100, 0.4);
   color: #FFF;
 }
 
