@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /*! prod.app.css || Version: 5.5.157 || Generated: Fri Jan 17 2025 11:15:35 GMT+0000 (Hora padrão da Europa Ocidental) */
+=======
+/*! prod.app.css || Version: 5.5.158 || Generated: Thu Jan 16 2025 18:16:02 GMT+0000 (Western European Standard Time) */
+>>>>>>> 3ced18c3978ba2ecc03e2361fba891fb8349ebda
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -9976,6 +9980,7 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
 }
 .LayoutBase--sideMenu .LayoutBase-header {
   top: 0;
+  left: 0;
 }
 .LayoutBase--sideMenu .LayoutBase-spacer {
   min-height: 64px;
@@ -10183,24 +10188,26 @@ body.LayoutBase .os-internal-ui-widget-overlay {
   padding-right: 0;
 }
 
+.LayoutBase.Page .LayoutBase-iframesidebar.notExpandable ~ .LayoutBase-Content .LayoutBase-Content-MainWorkArea .Content {
+  padding-right: 262px !important;
+}
+
 .AR.LayoutBase.Page .LayoutBase-iframesidebar.notExpandable ~ .LayoutBase-Content .LayoutBase-Content-MainWorkArea .Content {
   padding-left: 262px !important;
   padding-right: 0 !important;
 }
 
-.AR .LayoutBase-iframesidebar.notExpandable ~ .LayoutBase-header,
-.AR .LayoutBase-SystemWideSidebar.SystemWideSidebar.Open ~ .LayoutBase-header {
-  padding-left: 262px;
-  padding-right: 0;
-}
-
-.LayoutBase.Page .LayoutBase-iframesidebar.notExpandable ~ .LayoutBase-Content .LayoutBase-Content-MainWorkArea .Content {
-  padding-right: 262px !important;
-}
-
 .LayoutBase-iframesidebar.notExpandable ~ .LayoutBase-header,
 .LayoutBase-SystemWideSidebar.SystemWideSidebar.Open ~ .LayoutBase-header {
-  padding-right: 262px;
+  right: 262px;
+  width: auto;
+  padding: 0;
+}
+
+.AR .LayoutBase-iframesidebar.notExpandable ~ .LayoutBase-header,
+.AR .LayoutBase-SystemWideSidebar.SystemWideSidebar.Open ~ .LayoutBase-header {
+  right: 0;
+  left: 262px;
 }
 
 html .Page .PatientDetailsLayout {
@@ -10240,8 +10247,7 @@ html .Page .PatientDetailsLayout {
 }
 .NewNavigation .FullScreenTabsWrapper_Container .TabWrapper.Active {
   border-top-left-radius: 4px;
-  -webkit-clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
-          clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
   padding-right: 30px;
 }
 .NewNavigation .FullScreenTabsWrapper_Container .TabWrapper.Active .TabWrapper_icon .icon {
@@ -10262,8 +10268,7 @@ html .Page .PatientDetailsLayout {
 }
 .NewNavigation .Toolbar .MenuItemWrapper.Active {
   border-top-left-radius: 4px;
-  -webkit-clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
-          clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
   padding-right: 40px;
 }
 .NewNavigation .Toolbar .MenuItemWrapper.Active .MenuItemWrapper_Container {
@@ -34280,8 +34285,7 @@ ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover {
 }
 .HasCriticalValue:before {
   background-color: #ff3e2d;
-  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   color: #fff;
   content: "!";
   display: block;

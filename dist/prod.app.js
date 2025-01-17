@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /*! prod.app.js || Version: 5.5.157 || Generated: Fri Jan 17 2025 11:15:35 GMT+0000 (Hora padrão da Europa Ocidental) */
+=======
+/*! prod.app.js || Version: 5.5.158 || Generated: Thu Jan 16 2025 18:16:02 GMT+0000 (Western European Standard Time) */
+>>>>>>> 3ced18c3978ba2ecc03e2361fba891fb8349ebda
 /*
  * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
  * This devtool is neither made for production nor for readable output files.
