@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.159 || Generated: Fri Jan 17 2025 11:20:55 GMT+0000 (Hora padrão da Europa Ocidental) */
+/*! prod.app.css || Version: 5.5.159 || Generated: Wed Feb 05 2025 11:02:13 GMT+0000 (Western European Standard Time) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -10243,8 +10243,7 @@ html .Page .PatientDetailsLayout {
 }
 .NewNavigation .FullScreenTabsWrapper_Container .TabWrapper.Active {
   border-top-left-radius: 4px;
-  -webkit-clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
-          clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
   padding-right: 30px;
 }
 .NewNavigation .FullScreenTabsWrapper_Container .TabWrapper.Active .TabWrapper_icon .icon {
@@ -10265,8 +10264,7 @@ html .Page .PatientDetailsLayout {
 }
 .NewNavigation .Toolbar .MenuItemWrapper.Active {
   border-top-left-radius: 4px;
-  -webkit-clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
-          clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
   padding-right: 40px;
 }
 .NewNavigation .Toolbar .MenuItemWrapper.Active .MenuItemWrapper_Container {
@@ -25731,7 +25729,6 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   color: #333;
   line-height: 36px;
   padding-left: 16px;
-  padding-right: 46px;
 }
 .select2 .select2-selection .select2-selection__rendered .select2-search {
   height: calc(36px - 2px);
@@ -34283,8 +34280,7 @@ ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover {
 }
 .HasCriticalValue:before {
   background-color: #ff3e2d;
-  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   color: #fff;
   content: "!";
   display: block;
