@@ -218,9 +218,9 @@ SapphireWidgets.SelectSystem = config => {
 					activeValues = activeValues.replace(/,\s*$/, '');
 					return activeValues;
 				} else if (selectedOptions === totalOptions) {
-					return 'All Selected';
+					return config.texts.allSelected;
 				} else {
-					return selectedOptions + ' of ' + totalOptions + ' selected';
+					return config.texts.PartialSelection.replace("{SelectedOptions}", selectedOptions).replace("{TotalOptions}", totalOptions);
 				}
 			};
 		}
