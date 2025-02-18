@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.163 || Generated: Tue Feb 18 2025 12:14:58 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.5.163 || Generated: Tue Feb 18 2025 12:18:24 GMT+0000 (Western European Standard Time) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -10337,6 +10337,9 @@ html .Page .PatientDetailsLayout {
 }
 .LayoutBlank.Page.MainInteractiveCard {
   padding: 0;
+}
+.LayoutBlank--background-transparent.Page {
+  background-color: transparent;
 }
 
 .LayoutEmergency .SideMenu__PageTitle {

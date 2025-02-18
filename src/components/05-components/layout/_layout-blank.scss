@@ -1,13 +1,19 @@
-.LayoutBlank.Page {
-	background-color: #fff;
-	border: none;
+.LayoutBlank {
+	&.Page {
+		background-color: #fff;
+		border: none;
 
-	&.SidebarIframe,
-	&.MainInteractiveCard {
-		background-color: transparent;
+		&.SidebarIframe,
+		&.MainInteractiveCard {
+			background-color: transparent;
+		}
+
+		&.MainInteractiveCard {
+			padding: 0;
+		}
 	}
 
-	&.MainInteractiveCard {
-		padding: 0;
+	&--background-transparent.Page {
+		background-color: transparent;
 	}
 }
