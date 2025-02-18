@@ -1,5 +1,5 @@
 var inlineMenu_notifyWidget;
-$.fn.menuInline = function (notifyId, type, isFullWidth = false, actionsClass, _backgroundColor) {
+$.fn.menuInline = function (notifyId, type, isFullWidth = false, actionsClass, _backgroundColor, dataId) {
   /* type: INLINE; MENU; */
   var typeINLINE = "INLINE";
   var typeBALLON = "BALLON";
@@ -201,8 +201,13 @@ $.fn.menuInline = function (notifyId, type, isFullWidth = false, actionsClass, _
 
     if (type == typeINLINE) {
       popupDiv = $("<div class='iframe-loading' style='text-align: center;'></div>").appendTo(wrapper);
-      _iframe = $('<iframe scrolling="auto" frameborder="0" src="javascript:void(0);" style="width: ' + (isFullWidth ? '100%' : '0') + '; height: 0;" />').appendTo(wrapper);
+      _iframe = $('<iframe scrolling="auto" frameborder="0" src="javascript:void(0);" style="width: ' + (isFullWidth ? '100%' : '0') + '; height: 0;" />');
 
+      if (dataId) {
+        _iframe.attr('data-id', dataId);
+      }
+
+      _iframe.appendTo(wrapper);
     }
     else if (type == typeBALLON) {
       wrapper.attr("class", "menu-inline-wrapper");
@@ -212,7 +217,13 @@ $.fn.menuInline = function (notifyId, type, isFullWidth = false, actionsClass, _
       _menuContent = $('<div class="menu-inline-content"></div>').appendTo(_menu);
       popupDiv = $("<div class='iframe-loading' style='text-align: center;'></div>").appendTo(_menuContent);
 
-      _iframe = $('<iframe scrolling="auto" frameborder="0" src="javascript:void(0);" style="width: ' + (isFullWidth ? '100%' : '0') + '; height: 0;" />').appendTo(_menuContent);
+      _iframe = $('<iframe scrolling="auto" frameborder="0" src="javascript:void(0);" style="width: ' + (isFullWidth ? '100%' : '0') + '; height: 0;" />');
+
+      if (dataId) {
+        _iframe.attr('data-id', dataId);
+      }
+
+      _iframe.appendTo(_menuContent);
     }
 
     pleaseWaitDiv = popupDiv.prepend("<span style='margin-top: 25px;' class='Text_Note'>" + waitText + "</span>");
