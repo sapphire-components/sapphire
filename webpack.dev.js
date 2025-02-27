@@ -20,8 +20,7 @@ module.exports = merge(common, {
 	devServer: {
 		static: path.join(__dirname, 'dist'),
 		server: {
-			//type: 'https',
-			type: 'http',
+			type: 'https',
 		},
 		devMiddleware: {
 			writeToDisk: true,
