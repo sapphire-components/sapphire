@@ -7,3 +7,5 @@ dist/*
 !dist/prod.backoffice.*
 package-lock.json
 GB/*
+
+.DS_Store
