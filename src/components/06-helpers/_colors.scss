@@ -483,3 +483,23 @@
 		background-color: $sapphire-grey-blue;
 	}
 }
+
+.ColorControlledActive {
+	&Text {
+		color: $controlled-active;
+	}
+
+	&BG {
+		background-color: $controlled-active;
+	}
+}
+
+.ColorControlledDisabled {
+	&Text {
+		color: $controlled-disabled;
+	}
+
+	&BG {
+		background-color: $controlled-disabled;
+	}
+}

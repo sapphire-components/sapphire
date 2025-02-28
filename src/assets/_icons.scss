@@ -191,6 +191,10 @@
 	content: '\e626';
 }
 
+.icon-globe:before {
+	content: '\e968';
+}
+
 .icon-groupofactions:before {
 	content: '\e627';
 }
@@ -954,10 +958,6 @@
 	content: '\e938';
 }
 
-.icon-fontgoal:before {
-	content: '\e939';
-}
-
 .icon-fontintervention:before {
 	content: '\e93a';
 }
@@ -1088,6 +1088,42 @@
 
 .icon-in-progress:before {
 	content: '\e95b';
+}
+
+.icon-mappings-all:before {
+	content: '\e95c';
+}
+
+.icon-mappings-many:before {
+	content: '\e95d';
+}
+
+.icon-mappings-only-one:before {
+	content: '\e95e';
+}
+
+.icon-controlled-medication:before {
+	content: '\e95f';
+}
+
+.icon-machine-translation:before {
+	content: '\e96a';
+}
+
+.icon-api-type-external:before {
+	content: '\e96b';
+}
+
+.icon-api-type-inter-environment:before {
+	content: '\e96c';
+}
+
+.icon-api-type-internal:before {
+	content: '\e96d';
+}
+
+.icon-api-type-same-environment:before {
+	content: '\e96e';
 }
 
 /* Regular icon sizes */
