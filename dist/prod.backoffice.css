@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.5.168 || Generated: Thu Feb 27 2025 17:06:18 GMT+0000 (Western European Standard Time) */
+/*! prod.backoffice.css || Version: 5.5.168 || Generated: Fri Feb 28 2025 12:40:41 GMT+0000 (Western European Standard Time) */
 /*!***************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/backoffice/styles.scss ***!
   \***************************************************************************************************************************************************************************************************************************************************/
@@ -25,6 +25,10 @@ a.Button.Allergies:before,
 a.Button.Admissions:before,
 a.Button.Ambulatory:before,
 a.Button.Ampoule:before,
+a.Button.ApiTypeExternal:before,
+a.Button.ApiTypeInterEnvironment:before,
+a.Button.ApiTypeInternal:before,
+a.Button.ApiTypeSameEnvironment:before,
 a.Button.Appointment:before,
 a.Button.ArabicToEnglish:before,
 a.Button.Assessment:before,
@@ -79,6 +83,7 @@ a.Button.CollapseArrow:before,
 a.Button.Comment:before,
 a.Button.ConfigureMedicationLabel:before,
 a.Button.ConfigWardDashboard:before,
+a.Button.ControlledMedication:before,
 a.Button.CreateFromThis:before,
 a.Button.CreditCard:before,
 a.Button.CreatePatientWhite:before,
@@ -133,6 +138,7 @@ a.Button.GotoPatientWhite:before,
 a.Button.GroupPatients:before,
 a.Button.Gel:before,
 a.Button.GeneralInfo:before,
+a.Button.Globe:before,
 a.Button.Glass:before,
 a.Button.GetRide:before,
 a.Button.GroupOfActions:before,
@@ -156,7 +162,11 @@ a.Button.lines_thickness:before,
 a.Button.LocationPin:before,
 a.Button.Lock:before,
 a.Button.Logout:before,
+a.Button.MachineTranslation:before,
 a.Button.Management:before,
+a.Button.MappingsAll:before,
+a.Button.MappingsMany:before,
+a.Button.MappingsOnlyOne:before,
 a.Button.Maximize:before,
 a.Button.MedCommittee:before,
 a.Button.MedicalEpisode:before,
@@ -297,7 +307,7 @@ a.Button.BloodTubes2:before,
 a.Button.Attach:before,
 a.Button.Warning2:before,
 a.Button.Video:before {
-  content: "\e60b";
+  content: "\e686";
   display: inline-block;
   font-family: "Sapphire-Icon-Font";
   font-size: 1.1467992em;
@@ -316,8 +326,28 @@ a.Button.Administration:before {
   content: "\e606";
 }
 
+a.Button.ApiTypeExternal:before {
+  content: "\e96b";
+}
+
+a.Button.ApiTypeInterEnvironment:before {
+  content: "\e96c";
+}
+
+a.Button.ApiTypeInternal:before {
+  content: "\e96d";
+}
+
+a.Button.ApiTypeSameEnvironment:before {
+  content: "\e96e";
+}
+
 a.Button.Label:before {
   content: "\e665";
+}
+
+a.Button.Calendar:before {
+  content: "\e60b";
 }
 
 a.Button.Check:before {
@@ -844,6 +874,10 @@ a.Button.ConfigWardDashboard:before {
   content: "\e91c";
 }
 
+a.Button.ControlledMedication:before {
+  content: "\e95f";
+}
+
 a.Button.CreateFromThis:before {
   content: "\e615";
 }
@@ -1025,6 +1059,10 @@ a.Button.Glass:before {
   content: "\e626";
 }
 
+a.Button.Globe:before {
+  content: "\e968";
+}
+
 a.Button.GroupOfActions:before {
   content: "\e627";
 }
@@ -1089,8 +1127,24 @@ a.Button.Logout:before {
   content: "\e62d";
 }
 
+a.Button.MachineTranslation:before {
+  content: "\e96a";
+}
+
 a.Button.Management:before {
   content: "\e62e";
+}
+
+a.Button.MappingsAll:before {
+  content: "\e95c";
+}
+
+a.Button.MappingsMany:before {
+  content: "\e95d";
+}
+
+a.Button.MappingsOnlyOne:before {
+  content: "\e95e";
 }
 
 a.Button.Maximize:before {
@@ -1266,11 +1320,11 @@ a.Button.Sachet:before {
 }
 
 a.Button.SapphireLogo:before {
-  content: "\e654";
+  content: "\e94c";
 }
 
 a.Button.SapphireLogoVertical_v2:before {
-  content: "\e666";
+  content: "\e94b";
 }
 
 a.Button.SapphireSymbol:before {
@@ -1530,6 +1584,10 @@ a.Button.RespiratoryRate:before {
 .AR a.Button.Allergies:before,
 .AR a.Button.Admissions:before,
 .AR a.Button.Ambulatory:before,
+.AR a.Button.ApiTypeExternal:before,
+.AR a.Button.ApiTypeInterEnvironment:before,
+.AR a.Button.ApiTypeInternal:before,
+.AR a.Button.ApiTypeSameEnvironment:before,
 .AR a.Button.Ampoule:before,
 .AR a.Button.Appointment:before,
 .AR a.Button.ArabicToEnglish:before,
@@ -1554,6 +1612,7 @@ a.Button.RespiratoryRate:before {
 .AR a.Button.CheckoutWhite:before,
 .AR a.Button.CKey:before,
 .AR a.Button.ConfirmSchedule:before,
+.AR a.Button.ControlledMedication:before,
 .AR a.Button.Copy:before,
 .AR a.Button.CreatePatientWhite:before,
 .AR a.Button.CallNextTicket:before,
@@ -1628,6 +1687,7 @@ a.Button.RespiratoryRate:before {
 .AR a.Button.GotoPatientWhite:before,
 .AR a.Button.Gel:before,
 .AR a.Button.GeneralInfo:before,
+.AR a.Button.Globe:before,
 .AR a.Button.Glass:before,
 .AR a.Button.GetRide:before,
 .AR a.Button.GroupOfActions:before,
@@ -1651,7 +1711,11 @@ a.Button.RespiratoryRate:before {
 .AR a.Button.LocationPin:before,
 .AR a.Button.Lock:before,
 .AR a.Button.Logout:before,
+.AR a.Button.MachineTranslation:before,
 .AR a.Button.Management:before,
+.AR a.Button.MappingsAll:before,
+.AR a.Button.MappingsMany:before,
+.AR a.Button.MappingsOnlyOne:before,
 .AR a.Button.Maximize:before,
 .AR a.Button.MedCommittee:before,
 .AR a.Button.MedicalEpisode:before,
@@ -1790,6 +1854,10 @@ a.Button.RespiratoryRate:before {
 .FA a.Button.Attention:before,
 .FA a.Button.Addendum:before,
 .FA a.Button.AdmitPatient:before,
+.FA a.Button.ApiTypeExternal:before,
+.FA a.Button.ApiTypeInterEnvironment:before,
+.FA a.Button.ApiTypeInternal:before,
+.FA a.Button.ApiTypeSameEnvironment:before,
 .FA a.Button.AssignFile:before,
 .FA a.Button.Label:before,
 .FA a.Button.Attachment:before,
@@ -1844,6 +1912,7 @@ a.Button.RespiratoryRate:before {
 .FA a.Button.Comment:before,
 .FA a.Button.ConfigureMedicationLabel:before,
 .FA a.Button.ConfigWardDashboard:before,
+.FA a.Button.ControlledMedication:before,
 .FA a.Button.CreateFromThis:before,
 .FA a.Button.CreditCard:before,
 .FA a.Button.DischargePatient:before,
@@ -1896,6 +1965,7 @@ a.Button.RespiratoryRate:before {
 .FA a.Button.Gel:before,
 .FA a.Button.GeneralInfo:before,
 .FA a.Button.GroupPatients:before,
+.FA a.Button.Globe:before,
 .FA a.Button.Glass:before,
 .FA a.Button.GroupOfActions:before,
 .FA a.Button.Habits:before,
@@ -1918,7 +1988,11 @@ a.Button.RespiratoryRate:before {
 .FA a.Button.LocationPin:before,
 .FA a.Button.Lock:before,
 .FA a.Button.Logout:before,
+.FA a.Button.MachineTranslation:before,
 .FA a.Button.Management:before,
+.FA a.Button.MappingsAll:before,
+.FA a.Button.MappingsMany:before,
+.FA a.Button.MappingsOnlyOne:before,
 .FA a.Button.Maximize:before,
 .FA a.Button.MedCommittee:before,
 .FA a.Button.MedicalEpisode:before,

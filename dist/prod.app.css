@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.168 || Generated: Thu Feb 27 2025 17:06:18 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.5.168 || Generated: Fri Feb 28 2025 12:40:41 GMT+0000 (Western European Standard Time) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -32,6 +32,14 @@ a.Button.Ambulatory:before,
 .DropZoneContainer .row a.Ambulatory.Button:before,
 a.Button.Ampoule:before,
 .DropZoneContainer .row a.Ampoule.Button:before,
+a.Button.ApiTypeExternal:before,
+.DropZoneContainer .row a.ApiTypeExternal.Button:before,
+a.Button.ApiTypeInterEnvironment:before,
+.DropZoneContainer .row a.ApiTypeInterEnvironment.Button:before,
+a.Button.ApiTypeInternal:before,
+.DropZoneContainer .row a.ApiTypeInternal.Button:before,
+a.Button.ApiTypeSameEnvironment:before,
+.DropZoneContainer .row a.ApiTypeSameEnvironment.Button:before,
 a.Button.Appointment:before,
 .DropZoneContainer .row a.Appointment.Button:before,
 a.Button.ArabicToEnglish:before,
@@ -140,6 +148,8 @@ a.Button.ConfigureMedicationLabel:before,
 .DropZoneContainer .row a.ConfigureMedicationLabel.Button:before,
 a.Button.ConfigWardDashboard:before,
 .DropZoneContainer .row a.ConfigWardDashboard.Button:before,
+a.Button.ControlledMedication:before,
+.DropZoneContainer .row a.ControlledMedication.Button:before,
 a.Button.CreateFromThis:before,
 .DropZoneContainer .row a.CreateFromThis.Button:before,
 a.Button.CreditCard:before,
@@ -248,6 +258,8 @@ a.Button.Gel:before,
 .DropZoneContainer .row a.Gel.Button:before,
 a.Button.GeneralInfo:before,
 .DropZoneContainer .row a.GeneralInfo.Button:before,
+a.Button.Globe:before,
+.DropZoneContainer .row a.Globe.Button:before,
 a.Button.Glass:before,
 .DropZoneContainer .row a.Glass.Button:before,
 a.Button.GetRide:before,
@@ -294,8 +306,16 @@ a.Button.Lock:before,
 .DropZoneContainer .row a.Lock.Button:before,
 a.Button.Logout:before,
 .DropZoneContainer .row a.Logout.Button:before,
+a.Button.MachineTranslation:before,
+.DropZoneContainer .row a.MachineTranslation.Button:before,
 a.Button.Management:before,
 .DropZoneContainer .row a.Management.Button:before,
+a.Button.MappingsAll:before,
+.DropZoneContainer .row a.MappingsAll.Button:before,
+a.Button.MappingsMany:before,
+.DropZoneContainer .row a.MappingsMany.Button:before,
+a.Button.MappingsOnlyOne:before,
+.DropZoneContainer .row a.MappingsOnlyOne.Button:before,
 a.Button.Maximize:before,
 .DropZoneContainer .row a.Maximize.Button:before,
 a.Button.MedCommittee:before,
@@ -576,7 +596,7 @@ a.Button.Warning2:before,
 .DropZoneContainer .row a.Warning2.Button:before,
 a.Button.Video:before,
 .DropZoneContainer .row a.Video.Button:before {
-  content: "\e60b";
+  content: "\e686";
   display: inline-block;
   font-family: "Sapphire-Icon-Font";
   font-size: 1.1467992em;
@@ -595,8 +615,28 @@ a.Button.Administration:before, .DropZoneContainer .row a.Administration.Button:
   content: "\e606";
 }
 
+a.Button.ApiTypeExternal:before, .DropZoneContainer .row a.ApiTypeExternal.Button:before {
+  content: "\e96b";
+}
+
+a.Button.ApiTypeInterEnvironment:before, .DropZoneContainer .row a.ApiTypeInterEnvironment.Button:before {
+  content: "\e96c";
+}
+
+a.Button.ApiTypeInternal:before, .DropZoneContainer .row a.ApiTypeInternal.Button:before {
+  content: "\e96d";
+}
+
+a.Button.ApiTypeSameEnvironment:before, .DropZoneContainer .row a.ApiTypeSameEnvironment.Button:before {
+  content: "\e96e";
+}
+
 a.Button.Label:before, .DropZoneContainer .row a.Label.Button:before {
   content: "\e665";
+}
+
+a.Button.Calendar:before, .DropZoneContainer .row a.Calendar.Button:before {
+  content: "\e60b";
 }
 
 a.Button.Check:before, .DropZoneContainer .row a.Check.Button:before {
@@ -1123,6 +1163,10 @@ a.Button.ConfigWardDashboard:before, .DropZoneContainer .row a.ConfigWardDashboa
   content: "\e91c";
 }
 
+a.Button.ControlledMedication:before, .DropZoneContainer .row a.ControlledMedication.Button:before {
+  content: "\e95f";
+}
+
 a.Button.CreateFromThis:before, .DropZoneContainer .row a.CreateFromThis.Button:before {
   content: "\e615";
 }
@@ -1304,6 +1348,10 @@ a.Button.Glass:before, .DropZoneContainer .row a.Glass.Button:before {
   content: "\e626";
 }
 
+a.Button.Globe:before, .DropZoneContainer .row a.Globe.Button:before {
+  content: "\e968";
+}
+
 a.Button.GroupOfActions:before, .DropZoneContainer .row a.GroupOfActions.Button:before {
   content: "\e627";
 }
@@ -1368,8 +1416,24 @@ a.Button.Logout:before, .DropZoneContainer .row a.Logout.Button:before {
   content: "\e62d";
 }
 
+a.Button.MachineTranslation:before, .DropZoneContainer .row a.MachineTranslation.Button:before {
+  content: "\e96a";
+}
+
 a.Button.Management:before, .DropZoneContainer .row a.Management.Button:before {
   content: "\e62e";
+}
+
+a.Button.MappingsAll:before, .DropZoneContainer .row a.MappingsAll.Button:before {
+  content: "\e95c";
+}
+
+a.Button.MappingsMany:before, .DropZoneContainer .row a.MappingsMany.Button:before {
+  content: "\e95d";
+}
+
+a.Button.MappingsOnlyOne:before, .DropZoneContainer .row a.MappingsOnlyOne.Button:before {
+  content: "\e95e";
 }
 
 a.Button.Maximize:before, .DropZoneContainer .row a.Maximize.Button:before {
@@ -1545,11 +1609,11 @@ a.Button.Sachet:before, .DropZoneContainer .row a.Sachet.Button:before {
 }
 
 a.Button.SapphireLogo:before, .DropZoneContainer .row a.SapphireLogo.Button:before {
-  content: "\e654";
+  content: "\e94c";
 }
 
 a.Button.SapphireLogoVertical_v2:before, .DropZoneContainer .row a.SapphireLogoVertical_v2.Button:before {
-  content: "\e666";
+  content: "\e94b";
 }
 
 a.Button.SapphireSymbol:before, .DropZoneContainer .row a.SapphireSymbol.Button:before {
@@ -1841,6 +1905,18 @@ a.Button.RespiratoryRate:before, .DropZoneContainer .row a.RespiratoryRate.Butto
 .AR a.Button.Ambulatory:before,
 .AR .DropZoneContainer .row a.Ambulatory.Button:before,
 .DropZoneContainer .row .AR a.Ambulatory.Button:before,
+.AR a.Button.ApiTypeExternal:before,
+.AR .DropZoneContainer .row a.ApiTypeExternal.Button:before,
+.DropZoneContainer .row .AR a.ApiTypeExternal.Button:before,
+.AR a.Button.ApiTypeInterEnvironment:before,
+.AR .DropZoneContainer .row a.ApiTypeInterEnvironment.Button:before,
+.DropZoneContainer .row .AR a.ApiTypeInterEnvironment.Button:before,
+.AR a.Button.ApiTypeInternal:before,
+.AR .DropZoneContainer .row a.ApiTypeInternal.Button:before,
+.DropZoneContainer .row .AR a.ApiTypeInternal.Button:before,
+.AR a.Button.ApiTypeSameEnvironment:before,
+.AR .DropZoneContainer .row a.ApiTypeSameEnvironment.Button:before,
+.DropZoneContainer .row .AR a.ApiTypeSameEnvironment.Button:before,
 .AR a.Button.Ampoule:before,
 .AR .DropZoneContainer .row a.Ampoule.Button:before,
 .DropZoneContainer .row .AR a.Ampoule.Button:before,
@@ -1913,6 +1989,9 @@ a.Button.RespiratoryRate:before, .DropZoneContainer .row a.RespiratoryRate.Butto
 .AR a.Button.ConfirmSchedule:before,
 .AR .DropZoneContainer .row a.ConfirmSchedule.Button:before,
 .DropZoneContainer .row .AR a.ConfirmSchedule.Button:before,
+.AR a.Button.ControlledMedication:before,
+.AR .DropZoneContainer .row a.ControlledMedication.Button:before,
+.DropZoneContainer .row .AR a.ControlledMedication.Button:before,
 .AR a.Button.Copy:before,
 .AR .DropZoneContainer .row a.Copy.Button:before,
 .DropZoneContainer .row .AR a.Copy.Button:before,
@@ -2135,6 +2214,9 @@ a.Button.RespiratoryRate:before, .DropZoneContainer .row a.RespiratoryRate.Butto
 .AR a.Button.GeneralInfo:before,
 .AR .DropZoneContainer .row a.GeneralInfo.Button:before,
 .DropZoneContainer .row .AR a.GeneralInfo.Button:before,
+.AR a.Button.Globe:before,
+.AR .DropZoneContainer .row a.Globe.Button:before,
+.DropZoneContainer .row .AR a.Globe.Button:before,
 .AR a.Button.Glass:before,
 .AR .DropZoneContainer .row a.Glass.Button:before,
 .DropZoneContainer .row .AR a.Glass.Button:before,
@@ -2204,9 +2286,21 @@ a.Button.RespiratoryRate:before, .DropZoneContainer .row a.RespiratoryRate.Butto
 .AR a.Button.Logout:before,
 .AR .DropZoneContainer .row a.Logout.Button:before,
 .DropZoneContainer .row .AR a.Logout.Button:before,
+.AR a.Button.MachineTranslation:before,
+.AR .DropZoneContainer .row a.MachineTranslation.Button:before,
+.DropZoneContainer .row .AR a.MachineTranslation.Button:before,
 .AR a.Button.Management:before,
 .AR .DropZoneContainer .row a.Management.Button:before,
 .DropZoneContainer .row .AR a.Management.Button:before,
+.AR a.Button.MappingsAll:before,
+.AR .DropZoneContainer .row a.MappingsAll.Button:before,
+.DropZoneContainer .row .AR a.MappingsAll.Button:before,
+.AR a.Button.MappingsMany:before,
+.AR .DropZoneContainer .row a.MappingsMany.Button:before,
+.DropZoneContainer .row .AR a.MappingsMany.Button:before,
+.AR a.Button.MappingsOnlyOne:before,
+.AR .DropZoneContainer .row a.MappingsOnlyOne.Button:before,
+.DropZoneContainer .row .AR a.MappingsOnlyOne.Button:before,
 .AR a.Button.Maximize:before,
 .AR .DropZoneContainer .row a.Maximize.Button:before,
 .DropZoneContainer .row .AR a.Maximize.Button:before,
@@ -2621,6 +2715,18 @@ a.Button.RespiratoryRate:before, .DropZoneContainer .row a.RespiratoryRate.Butto
 .FA a.Button.AdmitPatient:before,
 .FA .DropZoneContainer .row a.AdmitPatient.Button:before,
 .DropZoneContainer .row .FA a.AdmitPatient.Button:before,
+.FA a.Button.ApiTypeExternal:before,
+.FA .DropZoneContainer .row a.ApiTypeExternal.Button:before,
+.DropZoneContainer .row .FA a.ApiTypeExternal.Button:before,
+.FA a.Button.ApiTypeInterEnvironment:before,
+.FA .DropZoneContainer .row a.ApiTypeInterEnvironment.Button:before,
+.DropZoneContainer .row .FA a.ApiTypeInterEnvironment.Button:before,
+.FA a.Button.ApiTypeInternal:before,
+.FA .DropZoneContainer .row a.ApiTypeInternal.Button:before,
+.DropZoneContainer .row .FA a.ApiTypeInternal.Button:before,
+.FA a.Button.ApiTypeSameEnvironment:before,
+.FA .DropZoneContainer .row a.ApiTypeSameEnvironment.Button:before,
+.DropZoneContainer .row .FA a.ApiTypeSameEnvironment.Button:before,
 .FA a.Button.AssignFile:before,
 .FA .DropZoneContainer .row a.AssignFile.Button:before,
 .DropZoneContainer .row .FA a.AssignFile.Button:before,
@@ -2783,6 +2889,9 @@ a.Button.RespiratoryRate:before, .DropZoneContainer .row a.RespiratoryRate.Butto
 .FA a.Button.ConfigWardDashboard:before,
 .FA .DropZoneContainer .row a.ConfigWardDashboard.Button:before,
 .DropZoneContainer .row .FA a.ConfigWardDashboard.Button:before,
+.FA a.Button.ControlledMedication:before,
+.FA .DropZoneContainer .row a.ControlledMedication.Button:before,
+.DropZoneContainer .row .FA a.ControlledMedication.Button:before,
 .FA a.Button.CreateFromThis:before,
 .FA .DropZoneContainer .row a.CreateFromThis.Button:before,
 .DropZoneContainer .row .FA a.CreateFromThis.Button:before,
@@ -2939,6 +3048,9 @@ a.Button.RespiratoryRate:before, .DropZoneContainer .row a.RespiratoryRate.Butto
 .FA a.Button.GroupPatients:before,
 .FA .DropZoneContainer .row a.GroupPatients.Button:before,
 .DropZoneContainer .row .FA a.GroupPatients.Button:before,
+.FA a.Button.Globe:before,
+.FA .DropZoneContainer .row a.Globe.Button:before,
+.DropZoneContainer .row .FA a.Globe.Button:before,
 .FA a.Button.Glass:before,
 .FA .DropZoneContainer .row a.Glass.Button:before,
 .DropZoneContainer .row .FA a.Glass.Button:before,
@@ -3005,9 +3117,21 @@ a.Button.RespiratoryRate:before, .DropZoneContainer .row a.RespiratoryRate.Butto
 .FA a.Button.Logout:before,
 .FA .DropZoneContainer .row a.Logout.Button:before,
 .DropZoneContainer .row .FA a.Logout.Button:before,
+.FA a.Button.MachineTranslation:before,
+.FA .DropZoneContainer .row a.MachineTranslation.Button:before,
+.DropZoneContainer .row .FA a.MachineTranslation.Button:before,
 .FA a.Button.Management:before,
 .FA .DropZoneContainer .row a.Management.Button:before,
 .DropZoneContainer .row .FA a.Management.Button:before,
+.FA a.Button.MappingsAll:before,
+.FA .DropZoneContainer .row a.MappingsAll.Button:before,
+.DropZoneContainer .row .FA a.MappingsAll.Button:before,
+.FA a.Button.MappingsMany:before,
+.FA .DropZoneContainer .row a.MappingsMany.Button:before,
+.DropZoneContainer .row .FA a.MappingsMany.Button:before,
+.FA a.Button.MappingsOnlyOne:before,
+.FA .DropZoneContainer .row a.MappingsOnlyOne.Button:before,
+.DropZoneContainer .row .FA a.MappingsOnlyOne.Button:before,
 .FA a.Button.Maximize:before,
 .FA .DropZoneContainer .row a.Maximize.Button:before,
 .DropZoneContainer .row .FA a.Maximize.Button:before,
@@ -31807,6 +31931,20 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   background-color: #494f5c;
 }
 
+.ColorControlledActiveText {
+  color: #C15523;
+}
+.ColorControlledActiveBG {
+  background-color: #C15523;
+}
+
+.ColorControlledDisabledText {
+  color: #A27059;
+}
+.ColorControlledDisabledBG {
+  background-color: #A27059;
+}
+
 .DisabledContainer {
   background-color: #fff;
   display: block;
@@ -33763,6 +33901,14 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 
 .SapphireWarning {
   background-color: #ff3e2d;
+}
+
+.ControlledActive {
+  background-color: #C15523;
+}
+
+.ControlledDisabled {
+  background-color: #A27059;
 }
 
 .tablet .BaseFont40,
