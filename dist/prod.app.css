@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.153 || Generated: Tue Dec 17 2024 17:36:17 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.5.166 || Generated: Tue Feb 18 2025 12:45:09 GMT+0000 (Western European Standard Time) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -9976,6 +9976,7 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
 }
 .LayoutBase--sideMenu .LayoutBase-header {
   top: 0;
+  left: 0;
 }
 .LayoutBase--sideMenu .LayoutBase-spacer {
   min-height: 64px;
@@ -10183,24 +10184,26 @@ body.LayoutBase .os-internal-ui-widget-overlay {
   padding-right: 0;
 }
 
+.LayoutBase.Page .LayoutBase-iframesidebar.notExpandable ~ .LayoutBase-Content .LayoutBase-Content-MainWorkArea .Content {
+  padding-right: 262px !important;
+}
+
 .AR.LayoutBase.Page .LayoutBase-iframesidebar.notExpandable ~ .LayoutBase-Content .LayoutBase-Content-MainWorkArea .Content {
   padding-left: 262px !important;
   padding-right: 0 !important;
 }
 
-.AR .LayoutBase-iframesidebar.notExpandable ~ .LayoutBase-header,
-.AR .LayoutBase-SystemWideSidebar.SystemWideSidebar.Open ~ .LayoutBase-header {
-  padding-left: 262px;
-  padding-right: 0;
-}
-
-.LayoutBase.Page .LayoutBase-iframesidebar.notExpandable ~ .LayoutBase-Content .LayoutBase-Content-MainWorkArea .Content {
-  padding-right: 262px !important;
-}
-
 .LayoutBase-iframesidebar.notExpandable ~ .LayoutBase-header,
 .LayoutBase-SystemWideSidebar.SystemWideSidebar.Open ~ .LayoutBase-header {
-  padding-right: 262px;
+  right: 262px;
+  width: auto;
+  padding: 0;
+}
+
+.AR .LayoutBase-iframesidebar.notExpandable ~ .LayoutBase-header,
+.AR .LayoutBase-SystemWideSidebar.SystemWideSidebar.Open ~ .LayoutBase-header {
+  right: 0;
+  left: 262px;
 }
 
 html .Page .PatientDetailsLayout {
@@ -10329,14 +10332,14 @@ html .Page .PatientDetailsLayout {
   background-color: #fff;
   border: none;
 }
-
-.LayoutBlank.Page.SidebarIframe,
-.LayoutBlank.Page.MainInteractiveCard {
+.LayoutBlank.Page.SidebarIframe, .LayoutBlank.Page.MainInteractiveCard {
   background-color: transparent;
 }
-
 .LayoutBlank.Page.MainInteractiveCard {
   padding: 0;
+}
+.LayoutBlank.layout-blank--background-transparent.Page {
+  background-color: transparent;
 }
 
 .LayoutEmergency .SideMenu__PageTitle {
@@ -25726,7 +25729,6 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   color: #333;
   line-height: 36px;
   padding-left: 16px;
-  padding-right: 46px;
 }
 .select2 .select2-selection .select2-selection__rendered .select2-search {
   height: calc(36px - 2px);
@@ -28115,6 +28117,9 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   background-color: #494f5c;
   border: none;
   border-radius: 4px;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 .ISidebar .ISidebar-content .SegmentedControl .ButtonGroup_button.Button:active, .ISidebar .ISidebar-content .SegmentedControlLight .ButtonGroup_button.Button:active, .ISidebar .ISidebar-content .SegmentedControl .ButtonGroup_button.Button.active, .ISidebar .ISidebar-content .SegmentedControlLight .ButtonGroup_button.Button.active {
   background-color: #00bfa5;
@@ -28947,6 +28952,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   position: absolute;
   text-align: left;
   width: 200px;
+  z-index: 1;
 }
 .SpinnerInput_ContainerVertical .SpinnerErrorMessage:before {
   background-color: #ff3e2d;

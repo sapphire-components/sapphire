@@ -356,6 +356,7 @@
 
 		&-header {
 			top: 0;
+			left: 0;
 		}
 
 		&-spacer {
@@ -624,24 +625,26 @@ body.LayoutBase .os-internal-ui-widget-overlay {
 	padding-right: 0;
 }
 
+.LayoutBase.Page .LayoutBase-iframesidebar.notExpandable~.LayoutBase-Content .LayoutBase-Content-MainWorkArea .Content {
+	padding-right: 262px !important;
+}
+
 .AR.LayoutBase.Page .LayoutBase-iframesidebar.notExpandable~.LayoutBase-Content .LayoutBase-Content-MainWorkArea .Content {
 	padding-left: 262px !important;
 	padding-right: 0 !important;
 }
 
-.AR .LayoutBase-iframesidebar.notExpandable~.LayoutBase-header,
-.AR .LayoutBase-SystemWideSidebar.SystemWideSidebar.Open~.LayoutBase-header {
-	padding-left: 262px;
-	padding-right: 0;
+.LayoutBase-iframesidebar.notExpandable ~ .LayoutBase-header,
+.LayoutBase-SystemWideSidebar.SystemWideSidebar.Open ~ .LayoutBase-header {
+    right: 262px;
+    width: auto;
+	padding: 0;
 }
 
-.LayoutBase.Page .LayoutBase-iframesidebar.notExpandable~.LayoutBase-Content .LayoutBase-Content-MainWorkArea .Content {
-	padding-right: 262px !important;
-}
-
-.LayoutBase-iframesidebar.notExpandable~.LayoutBase-header,
-.LayoutBase-SystemWideSidebar.SystemWideSidebar.Open~.LayoutBase-header {
-	padding-right: 262px;
+.AR .LayoutBase-iframesidebar.notExpandable ~ .LayoutBase-header,
+.AR .LayoutBase-SystemWideSidebar.SystemWideSidebar.Open ~ .LayoutBase-header {
+	right: 0;
+    left: 262px;
 }
 
 html .Page .PatientDetailsLayout {

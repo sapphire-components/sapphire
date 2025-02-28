@@ -59,6 +59,7 @@
 		position: absolute;
 		text-align: left;
 		width: 200px;
+		z-index: 1;
 
 		&:before {
 			background-color: $regular-red;
