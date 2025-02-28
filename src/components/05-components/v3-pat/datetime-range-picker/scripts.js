@@ -35,8 +35,12 @@
 			this.$input.prop('readonly', true);
 		}
 
+		// Just to force kuwait arabic version
 		if (this.currentLocale === 'AR') {
 			moment.locale('ar-kw');
+		}
+		else {
+			moment.locale(config.currentLocale)
 		}
 
 		var options = {};
@@ -49,9 +53,9 @@
 		options.timePickerIncrement = config.timePickerIncrement;
 		options.showDropdowns = config.hasDropdowns; // Month/Year Picker
 		options.drops = config.drops;
-		options.opens = config.currentLocale === 'AR' && config.opens != 'center' ? 'left' : config.opens;
+		options.opens = config.isRTL && config.opens != 'center' ? 'left' : config.opens;
 
-		var stringConnection = '[, at]';
+		var stringConnection = '[, ' + config.dateTimeStringConnection + ']';
 
 		if (config.timePicker) {
 			//if (!this.config.attachToInput) //changed by Diogo Ribeiro so date picker has a placeholder even if its attached to input (otherwise it never showed)
@@ -87,10 +91,10 @@
 			: this.config.formatLabel;
 
 		options.locale = {
-			direction: config.currentLocale === 'AR' ? 'rtl' : 'ltr',
+			direction: config.isRTL ? 'rtl' : 'ltr',
 			format: this.config.formatInput,
-			cancelLabel: 'Cancel',
-			applyLabel: 'Apply',
+			cancelLabel: this.config.cancelLabel,
+			applyLabel: this.config.applyLabel,
 		};
 
 		if (config.hasTextTrigger) {
@@ -451,7 +455,7 @@
 		) {
 			return;
 		}
-		
+
 		if (!this.isInViewport()) {
 
 			var coords = this.$calendar[0].getBoundingClientRect();
@@ -466,7 +470,7 @@
 				!this.$calendar.hasClass('drop-up')
 				&& this.$calendar[0].getBoundingClientRect().bottom > (window.innerHeight || document.documentElement.clientHeight)
 			) {
-				if(!window.frameElement || (coords.height + this.$input.height() + 7) < document.body.offsetHeight) {
+				if (!window.frameElement || (coords.height + this.$input.height() + 7) < document.body.offsetHeight) {
 					var point = window.scrollY + coords.top - coords.height - this.$input.height() - 7;
 					this.$calendar.addClass('drop-up').css('top', point);
 				}
