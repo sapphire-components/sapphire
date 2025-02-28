@@ -1,4 +1,4 @@
-/*! prod.backoffice.js || Version: 5.5.171 || Generated: Fri Feb 28 2025 15:38:46 GMT+0000 (Western European Standard Time) */
+/*! prod.backoffice.js || Version: 5.5.171 || Generated: Fri Feb 28 2025 15:51:24 GMT+0000 (Western European Standard Time) */
 /*
  * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
  * This devtool is neither made for production nor for readable output files.
@@ -9,6 +9,17 @@
  */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/backoffice/styles.scss":
+/*!************************************!*\
+  !*** ./src/backoffice/styles.scss ***!
+  \************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://sapphire/./src/backoffice/styles.scss?");
+
+/***/ }),
 
 /***/ "./src/backoffice/01-components/layout/layout-backoffice.js":
 /*!******************************************************************!*\
@@ -27,17 +38,6 @@ eval("$(document).ready(function () {\r\n\r\n\r\n  var regex = RegExp(\"Layout\"
 /***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
 
 eval("__webpack_require__(/*! ./styles.scss */ \"./src/backoffice/styles.scss\");\r\n\r\nSapphireWidgets = window.SapphireWidgets = window.SapphireWidgets || {};\r\n\r\n__webpack_require__(/*! ./01-components/layout/layout-backoffice */ \"./src/backoffice/01-components/layout/layout-backoffice.js\");\r\n\r\n__webpack_require__(/*! ../components/05-components/v3-pat/country-phone/scripts */ \"./src/components/05-components/v3-pat/country-phone/scripts.js\");\r\n__webpack_require__(/*! ../components/05-components/v3-pat/datetime-range-picker/scripts */ \"./src/components/05-components/v3-pat/datetime-range-picker/scripts.js\");\r\n__webpack_require__(/*! ../components/05-components/v3-pat/hour-picker/scripts */ \"./src/components/05-components/v3-pat/hour-picker/scripts.js\");\r\n__webpack_require__(/*! ../components/05-components/v3-pat/panel/confirmation-popup */ \"./src/components/05-components/v3-pat/panel/confirmation-popup.js\");\r\n__webpack_require__(/*! ../components/05-components/v3-pat/panel/panel-by-id */ \"./src/components/05-components/v3-pat/panel/panel-by-id.js\");\r\n__webpack_require__(/*! ../components/05-components/v3-pat/sapphire-popup/scripts */ \"./src/components/05-components/v3-pat/sapphire-popup/scripts.js\");\r\n__webpack_require__(/*! ../components/05-components/v3-pat/select-system/scripts */ \"./src/components/05-components/v3-pat/select-system/scripts.js\");\r\n__webpack_require__(/*! ../components/05-components/v3-pat/spinner-vertical/scripts */ \"./src/components/05-components/v3-pat/spinner-vertical/scripts.js\");\r\n__webpack_require__(/*! ../components/05-components/v3-pat/dropzone/dropzone */ \"./src/components/05-components/v3-pat/dropzone/dropzone.js\");\r\n__webpack_require__(/*! ../components/03-elements/script */ \"./src/components/03-elements/script.js\");\r\n__webpack_require__(/*! ../components/05-components/v3-pat/segmented-control/scripts */ \"./src/components/05-components/v3-pat/segmented-control/scripts.js\")\n\n//# sourceURL=webpack://sapphire/./src/backoffice/scripts.js?");
-
-/***/ }),
-
-/***/ "./src/backoffice/styles.scss":
-/*!************************************!*\
-  !*** ./src/backoffice/styles.scss ***!
-  \************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://sapphire/./src/backoffice/styles.scss?");
 
 /***/ }),
 
