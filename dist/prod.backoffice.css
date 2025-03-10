@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.5.173 || Generated: Thu Mar 06 2025 10:06:26 GMT+0000 (Western European Standard Time) */
+/*! prod.backoffice.css || Version: 5.5.173 || Generated: Mon Mar 10 2025 11:19:18 GMT+0000 (Hora padrão da Europa Ocidental) */
 /*!***************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/backoffice/styles.scss ***!
   \***************************************************************************************************************************************************************************************************************************************************/
@@ -5726,6 +5726,129 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
 .FA .Filters.SegmentedControlLight .SegmentedControlItem label[for] {
   border: none;
   border-radius: 100px;
+}
+
+.Flex, .FlexEnd, .FlexStart, .FlexSpaceEvenly, .FlexSpaceBetween, .FlexSpaceAround, .FlexCenterHorizontal, .FlexCenterVertical, .FlexCenterFull {
+  display: flex;
+}
+.FlexCenterFull {
+  align-items: center;
+  justify-content: center;
+}
+.FlexCenterVertical {
+  align-items: center;
+}
+.FlexCenterHorizontal {
+  justify-content: center;
+}
+.FlexSpaceAround {
+  justify-content: space-around;
+}
+.FlexSpaceBetween {
+  justify-content: space-between;
+}
+.FlexSpaceEvenly {
+  justify-content: space-evenly;
+}
+.FlexStart {
+  justify-content: flex-start;
+}
+.FlexEnd {
+  justify-content: flex-end;
+}
+.FlexWrap {
+  flex-wrap: wrap;
+}
+.FlexChild {
+  flex: 1;
+}
+
+.InlineFlex, .InlineFlexEnd, .InlineFlexStart, .InlineFlexSpaceEvenly, .InlineFlexSpaceBetween, .InlineFlexSpaceAround, .InlineFlexCenterHorizontal, .InlineFlexCenterVertical, .InlineFlexCenterFull {
+  display: flex;
+  display: inline-flex;
+}
+.InlineFlexCenterFull {
+  align-items: center;
+  justify-content: center;
+}
+.InlineFlexCenterVertical {
+  align-items: center;
+}
+.InlineFlexCenterHorizontal {
+  justify-content: center;
+}
+.InlineFlexSpaceAround {
+  justify-content: space-around;
+}
+.InlineFlexSpaceBetween {
+  justify-content: space-between;
+}
+.InlineFlexSpaceEvenly {
+  justify-content: space-evenly;
+}
+.InlineFlexStart {
+  justify-content: flex-start;
+}
+.InlineFlexEnd {
+  justify-content: flex-end;
+}
+
+.FlexColumn, .FlexColumnEnd, .FlexColumnStart, .FlexColumnSpaceEvenly, .FlexColumnSpaceBetween, .FlexColumnSpaceAround, .FlexColumnCenterHorizontal, .FlexColumnCenterVertical, .FlexColumnCenterFull {
+  display: flex;
+  flex-direction: column;
+}
+.FlexColumnCenterFull {
+  align-items: center;
+  justify-content: center;
+}
+.FlexColumnCenterVertical {
+  align-items: center;
+}
+.FlexColumnCenterHorizontal {
+  justify-content: center;
+}
+.FlexColumnSpaceAround {
+  justify-content: space-around;
+}
+.FlexColumnSpaceBetween {
+  justify-content: space-between;
+}
+.FlexColumnSpaceEvenly {
+  justify-content: space-evenly;
+}
+.FlexColumnStart {
+  justify-content: flex-start;
+}
+.FlexColumnEnd {
+  justify-content: flex-end;
+}
+
+.FlexList, .FlexListLargeGap, .FlexListMediumGap, .FlexListSmallGap, .FlexListXSmallGap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.FlexListXSmallGap {
+  gap: 4px;
+}
+.FlexListSmallGap {
+  gap: 8px;
+}
+.FlexListMediumGap {
+  gap: 16px;
+}
+.FlexListLargeGap {
+  gap: 24px;
+}
+
+.InlineFlexList {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.FlexNoWrap {
+  flex-wrap: nowrap !important;
 }
 
 .Scrollable {
