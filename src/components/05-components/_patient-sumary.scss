@@ -59,5 +59,10 @@
 			border-bottom: 1px solid $sapphire-light;
 			padding-bottom: $sapphire-sizes--medium;
 		}
+
+		.ListRecordsMediumGap:not(:last-of-type) > *:first-child ~ *:last-child{
+			border-bottom: 1px solid #ebebeb;
+			padding-bottom: 16px;
+		}
 	}
 }
