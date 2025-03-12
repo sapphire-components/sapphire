@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.180 || Generated: Wed Mar 12 2025 13:21:32 GMT+0000 (Hora padrão da Europa Ocidental) */
+/*! prod.app.css || Version: 5.5.180 || Generated: Wed Mar 12 2025 15:12:11 GMT+0000 (Hora padrão da Europa Ocidental) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -10171,6 +10171,9 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
   z-index: 1;
   -servicestudio-position: static;
   -servicestudio-width: 100%;
+}
+.LayoutBase--fixedActions:has(.Panel) {
+  z-index: 5;
 }
 .Page .LayoutBase--fixedActions {
   -servicestudio-position: fixed;
