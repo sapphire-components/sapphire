@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.179 || Generated: Tue Mar 11 2025 18:01:08 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.5.179 || Generated: Wed Mar 12 2025 13:19:42 GMT+0000 (Hora padrão da Europa Ocidental) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -10372,7 +10372,8 @@ html .Page .PatientDetailsLayout {
 }
 .NewNavigation .FullScreenTabsWrapper_Container .TabWrapper.Active {
   border-top-left-radius: 4px;
-  clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
   padding-right: 30px;
 }
 .NewNavigation .FullScreenTabsWrapper_Container .TabWrapper.Active .TabWrapper_icon .icon {
@@ -10393,7 +10394,8 @@ html .Page .PatientDetailsLayout {
 }
 .NewNavigation .Toolbar .MenuItemWrapper.Active {
   border-top-left-radius: 4px;
-  clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
   padding-right: 40px;
 }
 .NewNavigation .Toolbar .MenuItemWrapper.Active .MenuItemWrapper_Container {
@@ -27767,6 +27769,9 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .ShiftTable__Content .ListRecords > span {
   display: block;
 }
+.ShiftTable__Content .ListRecords > span .TableRecords_ContentExpandable {
+  display: contents;
+}
 .ShiftTable__CurrentHour .HourLine {
   background-color: #ff3e2d;
   bottom: 0;
@@ -34435,7 +34440,8 @@ ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover {
 }
 .HasCriticalValue:before {
   background-color: #ff3e2d;
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   color: #fff;
   content: "!";
   display: block;

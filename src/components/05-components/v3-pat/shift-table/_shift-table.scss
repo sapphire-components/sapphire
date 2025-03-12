@@ -57,6 +57,10 @@
 		.ListRecords > span {
 			display: block;
 			//margin-bottom: $sapphire-sizes--small; //-->Diogo Ribeiro: Removed as it was introducing margin between items in shit table content
+			
+			.TableRecords_ContentExpandable {
+				display: contents;
+			}
 		}
 	}
 
