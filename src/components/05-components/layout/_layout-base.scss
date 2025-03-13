@@ -128,6 +128,10 @@
 			border-bottom: 1px solid $light-grey;
 			z-index: 2;
 
+			&:has(.Panel:not([style*="display: none;"])) {
+				z-index: 5;
+			}
+
 			&.isFixed {
 				border-bottom: solid 2px $light-grey;
 				border-top: solid 2px $light-grey;
@@ -452,7 +456,7 @@
 
 	z-index: 1;
 
-	&:has(.Panel) {
+	&:has(.Panel:not([style*="display: none;"])) {
     z-index: 5;
   }
 
