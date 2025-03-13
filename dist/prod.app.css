@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.182 || Generated: Thu Mar 13 2025 11:01:50 GMT+0000 (Hora padrão da Europa Ocidental) */
+/*! prod.app.css || Version: 5.5.182 || Generated: Thu Mar 13 2025 14:39:03 GMT+0000 (Hora padrão da Europa Ocidental) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -27705,9 +27705,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   flex-direction: column;
   gap: 16px;
   height: calc(100% - 32px);
-  left: 0px;
   position: absolute;
-  width: 100%;
+  width: -webkit-fill-available;
 }
 .ShiftTableCardEmpty__Message {
   color: #777777;
