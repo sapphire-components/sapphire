@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.184 || Generated: Thu Mar 13 2025 14:48:09 GMT+0000 (Hora padrão da Europa Ocidental) */
+/*! prod.app.css || Version: 5.5.184 || Generated: Wed Mar 19 2025 12:03:57 GMT+0000 (Western European Standard Time) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -10372,8 +10372,7 @@ html .Page .PatientDetailsLayout {
 }
 .NewNavigation .FullScreenTabsWrapper_Container .TabWrapper.Active {
   border-top-left-radius: 4px;
-  -webkit-clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
-          clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
   padding-right: 30px;
 }
 .NewNavigation .FullScreenTabsWrapper_Container .TabWrapper.Active .TabWrapper_icon .icon {
@@ -10394,8 +10393,7 @@ html .Page .PatientDetailsLayout {
 }
 .NewNavigation .Toolbar .MenuItemWrapper.Active {
   border-top-left-radius: 4px;
-  -webkit-clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
-          clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
   padding-right: 40px;
 }
 .NewNavigation .Toolbar .MenuItemWrapper.Active .MenuItemWrapper_Container {
@@ -28250,7 +28248,6 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .ISidebar .ISidebar-content .SegmentedControl .ButtonGroup_button.Button, .ISidebar .ISidebar-content .SegmentedControlLight .ButtonGroup_button.Button {
   background-color: #494f5c;
   border: none;
-  border-radius: 4px;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -28372,7 +28369,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   display: block;
 }
 .ISidebar .SearchSideBar .ButtonGroup_button.Button {
-  width: 50% !important;
+  width: 50%;
 }
 .ISidebar input[type=number] {
   text-align: center;
@@ -34439,8 +34436,7 @@ ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover {
 }
 .HasCriticalValue:before {
   background-color: #ff3e2d;
-  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   color: #fff;
   content: "!";
   display: block;
