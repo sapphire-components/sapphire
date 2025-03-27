@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.191 || Generated: Thu Mar 27 2025 14:53:28 GMT+0000 (Hora padrão da Europa Ocidental) */
+/*! prod.app.css || Version: 5.5.191 || Generated: Thu Mar 27 2025 15:40:31 GMT+0000 (Hora padrão da Europa Ocidental) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -32112,6 +32112,14 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   align-items: baseline;
 }
 
+.FlexBasis75 {
+  flex-basis: 75%;
+}
+
+.FlexBasis70 {
+  flex-basis: 70%;
+}
+
 .FlexBasis65 {
   flex-basis: 65%;
 }
@@ -32134,6 +32142,14 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 
 .FlexBasis20 {
   flex-basis: 20%;
+}
+
+.FlexBasis15 {
+  flex-basis: 15%;
+}
+
+.FlexBasis10 {
+  flex-basis: 10%;
 }
 
 .FormMarginXXSmall > div:not(:first-of-type) {
