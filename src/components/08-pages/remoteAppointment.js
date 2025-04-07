@@ -32,7 +32,7 @@
 				top: '50%',
 				right: '50%',
 				left: '50%',
-				width: '280px',
+				width: '510px',
 				height: '425px',
 			});
 		});
