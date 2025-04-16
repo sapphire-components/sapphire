@@ -23,7 +23,6 @@
   }
 
   function resizeTextArea ($textAreaInput) {
-    console.log($textAreaInput[0].scrollHeight);
     if($textAreaInput[0].scrollHeight == 0){
       $textAreaInput.css('height', '60px');
     }else{
