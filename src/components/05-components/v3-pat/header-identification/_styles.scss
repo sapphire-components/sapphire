@@ -52,7 +52,7 @@
 				font-size: $font-size-heading3;
 				line-height: $sapphire-sizes--large;
 
-				.patient-en-fullname span {
+				.patient-en-fullname {
 					display: inline-block;
 					font-family: $font-family-latin-bold;
 					line-height: initial;
@@ -61,7 +61,7 @@
 					text-overflow: ellipsis;
 				}
 
-				.patient-ar-fullname span {
+				.patient-ar-fullname {
 					font-family: $font-family-arabic-bold;
 				}
 
