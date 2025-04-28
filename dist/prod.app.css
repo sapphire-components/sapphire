@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.194 || Generated: Wed Apr 23 2025 12:11:30 GMT+0300 (GMT+03:00) */
+/*! prod.app.css || Version: 5.5.194 || Generated: Mon Apr 28 2025 11:46:50 GMT+0300 (GMT+03:00) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -18583,7 +18583,7 @@ a .PersonCard_expandable {
   font-size: 1.286em;
   line-height: 24px;
 }
-.HeaderIdentification-names .HeaderIdentification-primary-name .patient-en-fullname span {
+.HeaderIdentification-names .HeaderIdentification-primary-name .patient-en-fullname {
   display: inline-block;
   font-family: "LatoBold";
   line-height: initial;
@@ -18591,7 +18591,7 @@ a .PersonCard_expandable {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.HeaderIdentification-names .HeaderIdentification-primary-name .patient-ar-fullname span {
+.HeaderIdentification-names .HeaderIdentification-primary-name .patient-ar-fullname {
   font-family: "TajawalBold";
 }
 .HeaderIdentification-names .HeaderIdentification-primary-name .Ellipsis {

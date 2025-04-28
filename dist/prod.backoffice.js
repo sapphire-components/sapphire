@@ -1,4 +1,4 @@
-/*! prod.backoffice.js || Version: 5.5.194 || Generated: Wed Apr 23 2025 12:11:30 GMT+0300 (GMT+03:00) */
+/*! prod.backoffice.js || Version: 5.5.194 || Generated: Mon Apr 28 2025 11:46:50 GMT+0300 (GMT+03:00) */
 /*
  * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
  * This devtool is neither made for production nor for readable output files.
