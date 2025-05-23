@@ -1,14 +1,14 @@
 /* Component Dropzone */
-(function($, window, document, SapphireWidgets) {
-	const create = function(config) {
+(function ($, window, document, SapphireWidgets) {
+	const create = function (config) {
 		window.Dropzone.autoDiscover = false;
 
-		$(document).ready(function() {
+		$(document).ready(function () {
 			bindEvents(config);
 
 			const myDropzone = new window.Dropzone(config.hiddenInputContainer, {
 				...config,
-				init: function() {
+				init: function () {
 					let prevFile;
 
 					const filesList = config.filesList ? config.filesList.split(',') : [];
@@ -26,7 +26,7 @@
 					}
 
 					if (+config.maxFiles === 1 && config.isReplacePrevious) {
-						this.on('addedfile', function() {
+						this.on('addedfile', function () {
 							if (prevFile !== undefined) {
 								this.removeFile(prevFile);
 							}
@@ -35,26 +35,26 @@
 
 					const $notifyInput = $(`#${config.notifyInputId}`);
 
-					this.on('success', function(file, responseText) {
+					this.on('success', function (file, responseText) {
 						prevFile = file;
 
 						$(`#${config.notifyInputId} .dz-filename`).attr('title', file.name);
-						$notifyInput.val(responseText);
-						$notifyInput.change();
+						$notifyInput.val('OK:' + responseText);
+						$notifyInput.trigger('change');
 					});
 
-					this.on('error', function(file, responseText) {
+					this.on('error', function (file, responseText) {
 						prevFile = file;
 
-						$notifyInput.val(responseText);
-						$notifyInput.change();
+						$notifyInput.val('ER:' + responseText);
+						$notifyInput.trigger('change');
 					});
 				},
 			});
 		});
 	};
 
-	const bindEvents = function(config) {
+	const bindEvents = function (config) {
 		$(`#${config.widgetId} .UploadMessageClass`).on('click', () => {
 			$(`#${config.widgetId} .dz-clickable`).click();
 		});
