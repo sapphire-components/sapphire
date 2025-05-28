@@ -1,4 +1,4 @@
-/*! prod.backoffice.js || Version: 5.5.196 || Generated: Fri May 23 2025 15:49:08 GMT+0300 (GMT+03:00) */
+/*! prod.backoffice.js || Version: 5.5.196 || Generated: Wed May 28 2025 11:34:32 GMT+0100 (Hora de verão da Europa Ocidental) */
 /*
  * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
  * This devtool is neither made for production nor for readable output files.
@@ -9,6 +9,17 @@
  */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/backoffice/styles.scss":
+/*!************************************!*\
+  !*** ./src/backoffice/styles.scss ***!
+  \************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://sapphire/./src/backoffice/styles.scss?");
+
+/***/ }),
 
 /***/ "./src/backoffice/01-components/layout/layout-backoffice.js":
 /*!******************************************************************!*\
@@ -30,24 +41,13 @@ eval("__webpack_require__(/*! ./styles.scss */ \"./src/backoffice/styles.scss\")
 
 /***/ }),
 
-/***/ "./src/backoffice/styles.scss":
-/*!************************************!*\
-  !*** ./src/backoffice/styles.scss ***!
-  \************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://sapphire/./src/backoffice/styles.scss?");
-
-/***/ }),
-
 /***/ "./src/components/03-elements/script.js":
 /*!**********************************************!*\
   !*** ./src/components/03-elements/script.js ***!
   \**********************************************/
 /***/ (function() {
 
-eval("/* Component Textarea */\r\n(function($, window, document, SapphireWidgets) {\r\n  \r\n  $(document).ready(function() {\r\n    window.parent.CallTextAreaAutoResize();\r\n  });\r\n\r\n  window.CallTextAreaAutoResize = function prepareTextAreaAutoResize(TextAreaId){\r\n    \r\n    if(TextAreaId==undefined){\r\n      var textAreaInput = $('textarea');\r\n    }else{\r\n      var textAreaInput = $('#'+TextAreaId);\r\n    }\r\n    textAreaInput.each(function(){\r\n        $(this).attr('rows',2);\r\n        resizeTextArea($(this));\r\n    });\r\n\r\n    textAreaInput.on('input', function(){\r\n      resizeTextArea($(this));\r\n    });\r\n  }\r\n\r\n  function resizeTextArea ($textAreaInput) {\r\n    if($textAreaInput[0].scrollHeight == 0){\r\n      $textAreaInput.css('height', '60px');\r\n    }else{\r\n      $textAreaInput.css('height', $textAreaInput[0].scrollHeight+'px');\r\n    }\r\n  }\r\n})(jQuery, window, document, SapphireWidgets);\n\n//# sourceURL=webpack://sapphire/./src/components/03-elements/script.js?");
+eval("/* Component Textarea */\r\n(function($, window, document, SapphireWidgets) {\r\n  \r\n  $(document).ready(function() {\r\n    window.parent.CallTextAreaAutoResize();\r\n  });\r\n\r\n  window.CallTextAreaAutoResize = function prepareTextAreaAutoResize(TextAreaId){\r\n    \r\n    if(TextAreaId==undefined){\r\n      var textAreaInput = $('textarea');\r\n    }else{\r\n      var textAreaInput = $('#'+TextAreaId);\r\n    }\r\n    textAreaInput.each(function(){\r\n      $(this).data('original-height', $(this)[0].scrollHeight);\r\n\r\n      $(this).attr('rows',2);\r\n      resizeTextArea($(this));\r\n    });\r\n\r\n    textAreaInput.on('input', function(){\r\n      resizeTextArea($(this));\r\n    });\r\n  }\r\n\r\n  function resizeTextArea ($textAreaInput) {\r\n    const originalHeight = $textAreaInput.data('original-height');\r\n    const scrollHeight = $textAreaInput[0].scrollHeight;\r\n    \r\n    if($textAreaInput[0].scrollHeight == 0){\r\n      $textAreaInput.css('height', '60px');\r\n    }else{\r\n      if(scrollHeight >= originalHeight)\r\n        $textAreaInput.css('height', $textAreaInput[0].scrollHeight + 'px');\r\n    }\r\n  }\r\n})(jQuery, window, document, SapphireWidgets);\n\n//# sourceURL=webpack://sapphire/./src/components/03-elements/script.js?");
 
 /***/ }),
 

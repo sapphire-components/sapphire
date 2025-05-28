@@ -13,8 +13,10 @@
       var textAreaInput = $('#'+TextAreaId);
     }
     textAreaInput.each(function(){
-        $(this).attr('rows',2);
-        resizeTextArea($(this));
+      $(this).data('original-height', $(this)[0].scrollHeight);
+
+      $(this).attr('rows',2);
+      resizeTextArea($(this));
     });
 
     textAreaInput.on('input', function(){
@@ -23,10 +25,14 @@
   }
 
   function resizeTextArea ($textAreaInput) {
+    const originalHeight = $textAreaInput.data('original-height');
+    const scrollHeight = $textAreaInput[0].scrollHeight;
+    
     if($textAreaInput[0].scrollHeight == 0){
       $textAreaInput.css('height', '60px');
     }else{
-      $textAreaInput.css('height', $textAreaInput[0].scrollHeight+'px');
+      if(scrollHeight >= originalHeight)
+        $textAreaInput.css('height', $textAreaInput[0].scrollHeight + 'px');
     }
   }
 })(jQuery, window, document, SapphireWidgets);
