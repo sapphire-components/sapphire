@@ -13,26 +13,24 @@
       var textAreaInput = $('#'+TextAreaId);
     }
     textAreaInput.each(function(){
-      $(this).data('original-height', $(this)[0].scrollHeight);
-
       $(this).attr('rows',2);
-      resizeTextArea($(this));
+
+      $(this)[0].style.minHeight = '70px';
+      resizeTextArea($(this)[0]);
     });
 
     textAreaInput.on('input', function(){
-      resizeTextArea($(this));
+      resizeTextArea($(this)[0]);
     });
   }
 
   function resizeTextArea ($textAreaInput) {
-    const originalHeight = $textAreaInput.data('original-height');
-    const scrollHeight = $textAreaInput[0].scrollHeight;
-    
-    if($textAreaInput[0].scrollHeight == 0){
-      $textAreaInput.css('height', '60px');
+    console.log($textAreaInput);    
+    if($textAreaInput.scrollHeight == 0){
+      $textAreaInput.style.height = '70px';
     }else{
-      if(scrollHeight >= originalHeight)
-        $textAreaInput.css('height', $textAreaInput[0].scrollHeight + 'px');
+      $textAreaInput.style.height = 'auto';
+      $textAreaInput.style.height = $textAreaInput.scrollHeight + 'px';
     }
   }
 })(jQuery, window, document, SapphireWidgets);
