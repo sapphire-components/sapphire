@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.198 || Generated: Wed May 28 2025 18:40:29 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! prod.app.js || Version: 5.5.198 || Generated: Fri Jun 06 2025 10:06:19 GMT+0100 (Hora de verão da Europa Ocidental) */
 /*
  * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
  * This devtool is neither made for production nor for readable output files.
@@ -47,7 +47,7 @@ eval("SapphireWidgets = window.SapphireWidgets = window.SapphireWidgets || {};\n
   \**********************************************/
 /***/ (function() {
 
-eval("/* Component Textarea */\r\n(function($, window, document, SapphireWidgets) {\r\n  \r\n  $(document).ready(function() {\r\n    window.parent.CallTextAreaAutoResize();\r\n  });\r\n\r\n  window.CallTextAreaAutoResize = function prepareTextAreaAutoResize(TextAreaId){\r\n    \r\n    if(TextAreaId==undefined){\r\n      var textAreaInput = $('textarea');\r\n    }else{\r\n      var textAreaInput = $('#'+TextAreaId);\r\n    }\r\n    textAreaInput.each(function(){\r\n      $(this).attr('rows',2);\r\n\r\n      $(this)[0].style.minHeight = '70px';\r\n      resizeTextArea($(this)[0]);\r\n    });\r\n\r\n    textAreaInput.on('input', function(){\r\n      resizeTextArea($(this)[0]);\r\n    });\r\n  }\r\n\r\n  function resizeTextArea ($textAreaInput) {\r\n    console.log($textAreaInput);    \r\n    if($textAreaInput.scrollHeight == 0){\r\n      $textAreaInput.style.height = '70px';\r\n    }else{\r\n      $textAreaInput.style.height = 'auto';\r\n      $textAreaInput.style.height = $textAreaInput.scrollHeight + 'px';\r\n    }\r\n  }\r\n})(jQuery, window, document, SapphireWidgets);\n\n//# sourceURL=webpack://sapphire/./src/components/03-elements/script.js?");
+eval("/* Component Textarea */\r\n(function($, window, document, SapphireWidgets) {\r\n  \r\n  $(document).ready(function() {\r\n    CallTextAreaAutoResize();\r\n  });\r\n\r\n  window.CallTextAreaAutoResize = function prepareTextAreaAutoResize(TextAreaId){\r\n    \r\n    if(TextAreaId==undefined){\r\n      var textAreaInput = $('textarea');\r\n    }else{\r\n      var textAreaInput = $('#'+TextAreaId);\r\n    }\r\n    textAreaInput.each(function(){\r\n      $(this).attr('rows',2);\r\n\r\n      $(this)[0].style.minHeight = '70px';\r\n      resizeTextArea($(this)[0]);\r\n    });\r\n\r\n    textAreaInput.on('input', function(){\r\n      resizeTextArea($(this)[0]);\r\n    });\r\n  }\r\n\r\n  function resizeTextArea ($textAreaInput) {\r\n    if($textAreaInput.scrollHeight == 0){\r\n      $textAreaInput.style.height = '70px';\r\n    }else{\r\n      $textAreaInput.style.height = 'auto';\r\n      $textAreaInput.style.height = $textAreaInput.scrollHeight + 'px';\r\n    }\r\n  }\r\n})(jQuery, window, document, SapphireWidgets);\n\n//# sourceURL=webpack://sapphire/./src/components/03-elements/script.js?");
 
 /***/ }),
 

@@ -2,7 +2,7 @@
 (function($, window, document, SapphireWidgets) {
   
   $(document).ready(function() {
-    window.parent.CallTextAreaAutoResize();
+    CallTextAreaAutoResize();
   });
 
   window.CallTextAreaAutoResize = function prepareTextAreaAutoResize(TextAreaId){
@@ -25,7 +25,6 @@
   }
 
   function resizeTextArea ($textAreaInput) {
-    console.log($textAreaInput);    
     if($textAreaInput.scrollHeight == 0){
       $textAreaInput.style.height = '70px';
     }else{
