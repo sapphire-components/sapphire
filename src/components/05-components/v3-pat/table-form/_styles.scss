@@ -289,6 +289,9 @@ $table-form-header-height-edit: 42px;
 
 		.TableFormColumn__Fields>div,
 		.TableFormColumn__Fields>.ListRecords>div {
+			align-items: center;
+			display: flex;
+			line-height: unset;
 			overflow: unset;
 			padding: 0 $sapphire-sizes--small;
 

@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.200 || Generated: Mon Jun 09 2025 11:23:33 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! prod.app.css || Version: 5.5.200 || Generated: Wed Jun 11 2025 11:45:52 GMT+0100 (Hora de verão da Europa Ocidental) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -29820,6 +29820,9 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
 }
 .VitalSignsTable .TableFormColumn--editMode .TableFormColumn__Fields > div,
 .VitalSignsTable .TableFormColumn--editMode .TableFormColumn__Fields > .ListRecords > div {
+  align-items: center;
+  display: flex;
+  line-height: unset;
   overflow: unset;
   padding: 0 8px;
 }
