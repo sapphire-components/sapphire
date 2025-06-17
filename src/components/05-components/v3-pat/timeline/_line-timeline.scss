@@ -207,7 +207,7 @@
 	padding-bottom: $sapphire-sizes--small;
 	padding-top: $sapphire-sizes--medium;
 	position: sticky;
-	top: 185px;
+	top: var(--line-title-top, 185px);
 	z-index: 1;
 }
 
