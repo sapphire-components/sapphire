@@ -281,7 +281,6 @@ SapphireWidgets.SelectSystem = (config) => {
 			// Set up ResizeObserver to track height changes
 			const updateLineTimelineTitlePosition = () => {
 				const newHeight = 125 + $('.TimelinePage__Filters').outerHeight();
-				//$('.LineTimelineTitle').css('top', newHeight + 'px');
 				document.documentElement.style.setProperty('--line-title-top', newHeight + 'px');
 			};
 
