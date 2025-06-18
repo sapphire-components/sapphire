@@ -290,7 +290,7 @@ SapphireWidgets.SelectSystem = (config) => {
 			});
 
 			const $filtersContainer = $('.TimelinePage__Filters');
-			if($filtersContainer){
+			if($filtersContainer.length){
 				resizeObserver.observe($filtersContainer[0]);
 			}
 		}
