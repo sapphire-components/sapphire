@@ -260,7 +260,7 @@ SapphireWidgets.SelectSystem = (config) => {
 		}
 
 		if (config.SelectType === 'TagCustom') {
-			Select2Options.tags = true;
+			Select2Options.tags = config.HasTags;
 			Select2Options.containerCssClass = 'tagCustom';
 			Select2Options.dropdownCssClass = 'tagCustom';
 			// According to documentation, this has been replaced with createTag, but this signature looks like for insertTag.
