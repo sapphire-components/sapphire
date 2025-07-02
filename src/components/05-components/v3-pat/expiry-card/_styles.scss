@@ -6,6 +6,7 @@
 	min-width: 80px;
 	padding: 8px;
 	text-align: center;
+	white-space: nowrap;
 }
 
 .ExpiryCard.Expired {
@@ -18,9 +19,4 @@
 	// important used due to Theme Sapphire
 	background-color: $light-orange !important;
 	color: $dark-orange !important;
-}
-
-.ExpiryCard .ExpiryCard_data {
-	text-align: center;
-	white-space: nowrap;
 }
