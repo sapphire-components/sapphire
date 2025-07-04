@@ -289,7 +289,7 @@ SapphireWidgets.SelectSystem = (config) => {
 			});
 
 			const $filtersContainer = $('.TimelinePage__Filters');
-			if($filtersContainer.length){
+			if ($filtersContainer.length) {
 				resizeObserver.observe($filtersContainer[0]);
 			}
 		}
@@ -373,6 +373,12 @@ SapphireWidgets.SelectSystem = (config) => {
 				} else {
 					$WidgetIdentifier.parent().removeClass('SelectSystemFilter-Selected');
 				}
+			});
+		} else if (config.SelectType === 'HtmlOptions' || config.SelectType === 'Ajax') {
+			$WidgetIdentifier.on('select2:select select2:unselect', function (e) {
+				// Problem with the title is that it is always escaped, which looks bad when we have HTML there.
+				// It is possible to customize how title is built, but for this we need extra field in source data.
+				$('.select2-selection__rendered').removeAttr('title');
 			});
 		}
 	});
