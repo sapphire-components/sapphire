@@ -462,6 +462,10 @@
 	white-space: nowrap;
 }
 
+.BreakWord {
+	overflow-wrap: break-word;
+}
+
 // LineHeight
 .LineHeightSmall {
 	line-height: $sapphire-sizes--small;
