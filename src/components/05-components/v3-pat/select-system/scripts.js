@@ -4,8 +4,8 @@ SapphireWidgets.SelectSystem = (config) => {
 		var Select2Options = {};
 		var $WidgetIdentifier;
 
-		if (config.WidgetId === '' && config.Class != '') {
-			$WidgetIdentifier = $('.' + config.Class);
+		if (config.WidgetId === '' && config.WidgetClass != '') {
+			$WidgetIdentifier = $('.' + config.WidgetClass);
 		} else {
 			$WidgetIdentifier = $('#' + config.WidgetId);
 		}
@@ -82,8 +82,8 @@ SapphireWidgets.SelectSystem = (config) => {
 			},
 		};
 
-		if (config.InputType != '') {
-			Select2Options.dropdownCssClass = config.InputType;
+		if (config.DropdownClass != '') {
+			Select2Options.dropdownCssClass = config.DropdownClass;
 		}
 
 		if (config.allowClear === 'True') {
@@ -375,11 +375,13 @@ SapphireWidgets.SelectSystem = (config) => {
 				}
 			});
 		} else if (config.SelectType === 'HtmlOptions' || config.SelectType === 'Ajax') {
-			$WidgetIdentifier.on('select2:select select2:unselect', function (e) {
-				// Problem with the title is that it is always escaped, which looks bad when we have HTML there.
-				// It is possible to customize how title is built, but for this we need extra field in source data.
-				$('.select2-selection__rendered').removeAttr('title');
-			});
+			// Problem with the title is that it is always escaped, which looks bad when we have HTML there.
+			// It should be possible to customize how title is built, but for this we need extra field in source data.
+			const removeSelectionTitle = function () {
+				$WidgetIdentifier.next().find('.select2-selection__rendered').removeAttr('title');
+			};
+			$WidgetIdentifier.on('select2:select select2:unselect', removeSelectionTitle);
+			removeSelectionTitle();
 		}
 	});
 };
