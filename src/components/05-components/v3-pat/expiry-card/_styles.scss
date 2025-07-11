@@ -16,3 +16,12 @@
 	background-color: $light-orange;
 	color: $dark-orange;
 }
+
+.LotCodeCard {
+    display: inline-block;
+    vertical-align: bottom;
+    max-width: 8vw;
+		overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
