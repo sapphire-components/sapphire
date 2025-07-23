@@ -280,7 +280,7 @@ SapphireWidgets.SelectSystem = (config) => {
 
 			// Set up ResizeObserver to track height changes
 			const updateLineTimelineTitlePosition = () => {
-				const newHeight = 125 + $('.TimelinePage__Filters').outerHeight();
+				const newHeight = 125 + $('.ResizableContainer').outerHeight();
 				document.documentElement.style.setProperty('--line-title-top', newHeight + 'px');
 			};
 
@@ -288,9 +288,9 @@ SapphireWidgets.SelectSystem = (config) => {
 				updateLineTimelineTitlePosition();
 			});
 
-			const $filtersContainer = $('.TimelinePage__Filters');
-			if ($filtersContainer.length) {
-				resizeObserver.observe($filtersContainer[0]);
+			const $resizeContainer = $('.ResizableContainer');
+			if ($resizeContainer.length) {
+				resizeObserver.observe($resizeContainer[0]);
 			}
 		}
 
