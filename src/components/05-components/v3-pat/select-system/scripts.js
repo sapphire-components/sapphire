@@ -10,7 +10,7 @@ SapphireWidgets.SelectSystem = (config) => {
 			$WidgetIdentifier = $('#' + config.WidgetId);
 		}
 
-		if (config.locale === 'AR' || config.locale === 'FA') {
+		if (config.IsRTL) {
 			Select2Options.dir = 'rtl';
 		}
 		Select2Options.theme = 'default SelectSystem';
@@ -66,19 +66,19 @@ SapphireWidgets.SelectSystem = (config) => {
 		// Other possible values are inputTooLong, inputTooShort and maximumSelected (you can find in Select2 sources).
 		Select2Options.language = {
 			errorLoading: function () {
-				return config.texts.errorLoading ?? 'Results could not be loaded.';
+				return config.Texts.errorLoading ?? 'Results could not be loaded.';
 			},
 			loadingMore: function () {
-				return config.texts.loadingMore ?? 'Loading more results…';
+				return config.Texts.loadingMore ?? 'Loading more results…';
 			},
 			noResults: function () {
-				return config.texts.noResults ?? 'No results found.';
+				return config.Texts.noResults ?? 'No results found.';
 			},
 			searching: function () {
-				return config.texts.searching ?? 'Searching…';
+				return config.Texts.searching ?? 'Searching…';
 			},
 			removeAllItems: function () {
-				return config.texts.removeAllItems ?? 'Remove all items';
+				return config.Texts.removeAllItems ?? 'Remove all items';
 			},
 		};
 
@@ -94,8 +94,8 @@ SapphireWidgets.SelectSystem = (config) => {
 			Select2Options.maximumInputLength = config.MaximumLength;
 		}
 
-		if (config.texts.prompt != '') {
-			Select2Options.placeholder = config.texts.prompt;
+		if (config.Texts.prompt != '') {
+			Select2Options.placeholder = config.Texts.prompt;
 		}
 
 		if (config.SelectType === 'Ajax') {
@@ -103,7 +103,7 @@ SapphireWidgets.SelectSystem = (config) => {
 
 			Select2Options.templateSelection = function (repo) {
 				if (!repo.element) {
-					return config.texts.prompt;
+					return config.Texts.prompt;
 				}
 
 				return repo.full_name || repo.text;
@@ -159,7 +159,7 @@ SapphireWidgets.SelectSystem = (config) => {
 				return markup;
 			};
 
-			if (config.isMultiple) {
+			if (config.IsMultiple) {
 				Select2Options.multiple = true;
 				Select2Options.containerCssClass = 'Select2Ajax Multiple';
 				Select2Options.dropdownCssClass = 'Select2Ajax Multiple';
@@ -167,17 +167,6 @@ SapphireWidgets.SelectSystem = (config) => {
 				Select2Options.multiple = false;
 				Select2Options.containerCssClass = 'Select2Ajax';
 				Select2Options.dropdownCssClass = 'Select2Ajax';
-			}
-
-			if (config.SelectedValue !== '') {
-				try {
-					const data = JSON.parse(config.SelectedValue);
-					const option = new Option(data.Value, data.Id, true, true);
-
-					$WidgetIdentifier.append(option).trigger('change');
-				} catch (error) {
-					console.error(`Component SelectSystem (${config.WidgetId}): SelectedValue must be a valid JSON!`);
-				}
 			}
 
 			Select2Options.minimumResultsForSearch = 0;
@@ -192,7 +181,7 @@ SapphireWidgets.SelectSystem = (config) => {
 			}
 
 			if (config.WidgetId != '') {
-				option = new Option(config.texts.selectAll, 'All', true, isAllSelected);
+				option = new Option(config.Texts.selectAll, 'All', true, isAllSelected);
 				$WidgetIdentifier.prepend(option);
 				$WidgetIdentifier.find('option:first-child').addClass('SelectedAll');
 			}
@@ -201,7 +190,7 @@ SapphireWidgets.SelectSystem = (config) => {
 			Select2Options.allowHtml = false;
 			Select2Options.tags = false;
 
-			if (config.HasSearch === 'True') {
+			if (config.HasSearch) {
 				Select2Options.dropdownAdapter = $.fn.select2.amd.require('SearchLikeSingle');
 			} else {
 				Select2Options.minimumResultsForSearch = -1;
@@ -215,7 +204,7 @@ SapphireWidgets.SelectSystem = (config) => {
 				var totalOptions = $WidgetIdentifier.find('option:not(".SelectedAll")').length;
 
 				if (selectedOptions === 0) {
-					return config.texts.prompt;
+					return config.Texts.prompt;
 					//return 'Select an option';
 				} else if (selectedOptions < 4) {
 					var activeValues = '';
@@ -225,9 +214,9 @@ SapphireWidgets.SelectSystem = (config) => {
 					activeValues = activeValues.replace(/,\s*$/, '');
 					return activeValues;
 				} else if (selectedOptions === totalOptions) {
-					return config.texts.allSelected;
+					return config.Texts.allSelected;
 				} else {
-					return config.texts.partialSelection
+					return config.Texts.partialSelection
 						.replace('{SelectedOptions}', selectedOptions)
 						.replace('{TotalOptions}', totalOptions);
 				}
@@ -251,12 +240,6 @@ SapphireWidgets.SelectSystem = (config) => {
 			Select2Options.escapeMarkup = function (markup) {
 				return markup;
 			};
-
-			if (config.SelectedValue != '') {
-				$WidgetIdentifier.val(config.SelectedValue).trigger('change');
-			} else {
-				$WidgetIdentifier.val('').trigger('change');
-			}
 		}
 
 		if (config.SelectType === 'TagCustom') {
@@ -311,7 +294,7 @@ SapphireWidgets.SelectSystem = (config) => {
 			};
 		}
 
-		if (config.HasSearch === 'False') {
+		if (!config.HasSearch) {
 			Select2Options.minimumResultsForSearch = -1;
 		}
 
