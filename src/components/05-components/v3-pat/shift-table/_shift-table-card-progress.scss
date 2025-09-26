@@ -173,7 +173,7 @@
 				height: 4px;
 
 				.ProgressBar__animation {
-					background-color: $regular-green !important;
+					background-color: $regular-green !important;// :(
 				}
 			}
 
@@ -237,6 +237,42 @@
 			.MoreActions {
 				background-color: $sapphire-light;
 			}
+		}
+	}
+
+	&--darkred {
+		.ShiftTableCardProgress__HeaderIcons{
+			color: $dark-red;
+		}
+
+		.ProgressBarWrap .ProgressBarTooltip[data-tooltip]:before {
+			background-color: $dark-red;
+		}
+
+		.ProgressBarWrap .ProgressBarTooltip[data-tooltip]:after {
+			background-color: $dark-red;
+		}
+
+		.ShiftTableCardProgress__ProgressBar .ProgressBarWrap .ProgressBar_structure .ProgressBar__animation {
+			background-color: $dark-red !important;
+		}
+	}
+
+	&--orange {
+		.ShiftTableCardProgress__HeaderIcons{
+			color: $regular-orange;
+		}
+
+		.ProgressBarWrap .ProgressBarTooltip[data-tooltip]:before {
+			background-color: $regular-orange;
+		}
+
+		.ProgressBarWrap .ProgressBarTooltip[data-tooltip]:after {
+			background-color: $regular-orange;
+		}
+
+		.ShiftTableCardProgress__ProgressBar .ProgressBarWrap .ProgressBar_structure .ProgressBar__animation {
+			background-color: $regular-orange !important;
 		}
 	}
 }

@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.223 || Generated: Tue Sep 23 2025 16:52:51 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! prod.app.css || Version: 5.5.223 || Generated: Fri Sep 26 2025 18:04:09 GMT+0100 (Hora de verão da Europa Ocidental) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -27437,6 +27437,30 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 }
 .ShiftTableCardProgress--selected .ShiftTableCardProgress__HeaderAction .MoreActions {
   background-color: #ebebeb;
+}
+.ShiftTableCardProgress--darkred .ShiftTableCardProgress__HeaderIcons {
+  color: #b10100;
+}
+.ShiftTableCardProgress--darkred .ProgressBarWrap .ProgressBarTooltip[data-tooltip]:before {
+  background-color: #b10100;
+}
+.ShiftTableCardProgress--darkred .ProgressBarWrap .ProgressBarTooltip[data-tooltip]:after {
+  background-color: #b10100;
+}
+.ShiftTableCardProgress--darkred .ShiftTableCardProgress__ProgressBar .ProgressBarWrap .ProgressBar_structure .ProgressBar__animation {
+  background-color: #b10100 !important;
+}
+.ShiftTableCardProgress--orange .ShiftTableCardProgress__HeaderIcons {
+  color: #ffa000;
+}
+.ShiftTableCardProgress--orange .ProgressBarWrap .ProgressBarTooltip[data-tooltip]:before {
+  background-color: #ffa000;
+}
+.ShiftTableCardProgress--orange .ProgressBarWrap .ProgressBarTooltip[data-tooltip]:after {
+  background-color: #ffa000;
+}
+.ShiftTableCardProgress--orange .ShiftTableCardProgress__ProgressBar .ProgressBarWrap .ProgressBar_structure .ProgressBar__animation {
+  background-color: #ffa000 !important;
 }
 
 .ShiftTableCard {
