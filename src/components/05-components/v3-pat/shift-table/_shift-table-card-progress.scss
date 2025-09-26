@@ -250,7 +250,7 @@
 		}
 
 		.ProgressBarWrap .ProgressBarTooltip[data-tooltip]:after {
-			background-color: $dark-red;
+			border-top-color: $dark-red;
 		}
 
 		.ShiftTableCardProgress__ProgressBar .ProgressBarWrap .ProgressBar_structure .ProgressBar__animation {
@@ -268,7 +268,7 @@
 		}
 
 		.ProgressBarWrap .ProgressBarTooltip[data-tooltip]:after {
-			background-color: $regular-orange;
+			border-top-color: $regular-orange;
 		}
 
 		.ShiftTableCardProgress__ProgressBar .ProgressBarWrap .ProgressBar_structure .ProgressBar__animation {
