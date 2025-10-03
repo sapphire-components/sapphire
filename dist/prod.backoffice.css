@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.5.225 || Generated: Fri Sep 26 2025 18:31:35 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! prod.backoffice.css || Version: 5.5.225 || Generated: Fri Oct 03 2025 12:01:15 GMT+0300 (Itä-Euroopan kesäaika) */
 /*!***************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/backoffice/styles.scss ***!
   \***************************************************************************************************************************************************************************************************************************************************/
@@ -115,6 +115,7 @@ a.Button.Eraser:before,
 a.Button.Error:before,
 a.Button.Evening:before,
 a.Button.ExpandArrow:before,
+a.Button.Expired:before,
 a.Button.FamilyHistory:before,
 a.Button.FileTracking:before,
 a.Button.FindPatient:before,
@@ -152,6 +153,7 @@ a.Button.Image:before,
 a.Button.Inbox:before,
 a.Button.Injection:before,
 a.Button.Insurance:before,
+a.Button.InsuranceCoverage:before,
 a.Button.Investigation:before,
 a.Button.Invoice:before,
 a.Button.LockWhite:before,
@@ -186,6 +188,7 @@ a.Button.Minus:before,
 a.Button.Next:before,
 a.Button.NotGiven:before,
 a.Button.Night:before,
+a.Button.NearExpiry:before,
 a.Button.NewBorn:before,
 a.Button.Nobed:before,
 a.Button.Note:before,
@@ -255,6 +258,7 @@ a.Button.Selection:before,
 a.Button.Serum:before,
 a.Button.ShapesIcon:before,
 a.Button.Share:before,
+a.Button.Shift:before,
 a.Button.Sickleave:before,
 a.Button.Similar:before,
 a.Button.Smartphone:before,
@@ -978,6 +982,10 @@ a.Button.ExpandArrow:before {
   content: "\e65f";
 }
 
+a.Button.Expired:before {
+  content: "\e960";
+}
+
 a.Button.FastForward:before {
   content: "\e65f";
   transform: rotate(-90deg);
@@ -1099,6 +1107,10 @@ a.Button.Insurance:before {
   content: "\e923";
 }
 
+a.Button.InsuranceCoverage:before {
+  content: "\e961";
+}
+
 a.Button.LabExamination:before {
   content: "\e668";
 }
@@ -1201,6 +1213,10 @@ a.Button.Night:before {
 
 a.Button.Nobed:before {
   content: "\e940";
+}
+
+a.Button.NearExpiry:before {
+  content: "\e962";
 }
 
 a.Button.NewBorn:before {
@@ -1349,6 +1365,10 @@ a.Button.ShapesIcon:before {
 
 a.Button.Share:before {
   content: "\e902";
+}
+
+a.Button.Shift:before {
+  content: "\e963";
 }
 
 a.Button.Sickleave:before {
@@ -1665,6 +1685,7 @@ a.Button.RespiratoryRate:before {
 .AR a.Button.Error:before,
 .AR a.Button.Evening:before,
 .AR a.Button.ExpandArrow:before,
+.AR a.Button.Expired:before,
 .AR a.Button.FamilyHistory:before,
 .AR a.Button.FileTracking:before,
 .AR a.Button.FindPatient:before,
@@ -1701,6 +1722,7 @@ a.Button.RespiratoryRate:before {
 .AR a.Button.Inbox:before,
 .AR a.Button.Injection:before,
 .AR a.Button.Insurance:before,
+.AR a.Button.InsuranceCoverage:before,
 .AR a.Button.Investigation:before,
 .AR a.Button.Invoice:before,
 .AR a.Button.LockWhite:before,
@@ -1734,6 +1756,7 @@ a.Button.RespiratoryRate:before {
 .AR a.Button.NotGiven:before,
 .AR a.Button.Night:before,
 .AR a.Button.Nobed:before,
+.AR a.Button.NearExpiry:before,
 .AR a.Button.NewBorn:before,
 .AR a.Button.Note:before,
 .AR a.Button.Notification:before,
@@ -1803,6 +1826,7 @@ a.Button.RespiratoryRate:before {
 .AR a.Button.Serum:before,
 .AR a.Button.ShapesIcon:before,
 .AR a.Button.Share:before,
+.AR a.Button.Shift:before,
 .AR a.Button.Similar:before,
 .AR a.Button.Smartphone:before,
 .AR a.Button.Smoker:before,
@@ -1942,6 +1966,7 @@ a.Button.RespiratoryRate:before {
 .FA a.Button.Error:before,
 .FA a.Button.Evening:before,
 .FA a.Button.ExpandArrow:before,
+.FA a.Button.Expired:before,
 .FA a.Button.FamilyHistory:before,
 .FA a.Button.FileTracking:before,
 .FA a.Button.FindPatient:before,
@@ -1978,6 +2003,7 @@ a.Button.RespiratoryRate:before {
 .FA a.Button.Inbox:before,
 .FA a.Button.Injection:before,
 .FA a.Button.Insurance:before,
+.FA a.Button.InsuranceCoverage:before,
 .FA a.Button.Investigation:before,
 .FA a.Button.Invoice:before,
 .FA a.Button.LockWhite:before,
@@ -2011,6 +2037,7 @@ a.Button.RespiratoryRate:before {
 .FA a.Button.NotGiven:before,
 .FA a.Button.Night:before,
 .FA a.Button.Nobed:before,
+.FA a.Button.NearExpiry:before,
 .FA a.Button.NewBorn:before,
 .FA a.Button.Note:before,
 .FA a.Button.Notification:before,
@@ -2081,6 +2108,7 @@ a.Button.RespiratoryRate:before {
 .FA a.Button.Serum:before,
 .FA a.Button.ShapesIcon:before,
 .FA a.Button.Share:before,
+.FA a.Button.Shift:before,
 .FA a.Button.Similar:before,
 .FA a.Button.Smartphone:before,
 .FA a.Button.Smoker:before,
