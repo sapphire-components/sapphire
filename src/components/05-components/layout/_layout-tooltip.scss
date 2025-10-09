@@ -46,7 +46,7 @@
 	display: flex;
 	flex-direction: column;
 	padding: $sapphire-sizes--small 0;
-	min-width: 250px;
+	min-width: 300px;
 
 	a:link {
 		@include flex-center-vertically;
