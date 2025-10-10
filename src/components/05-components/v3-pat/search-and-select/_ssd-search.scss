@@ -99,6 +99,29 @@ $searchsd-small-size-base: 36px;
 		}
 	}
 
+	//The side content uses similar styles as the clone option, code can be improved
+	&.hasSideContent {
+		.SearchSD__inputWrapper {
+			border-bottom-right-radius: 0;
+			border-right-color: transparent;
+			border-top-right-radius: 0;
+			width: 100%;
+		}
+
+		.SearchSD__SideContentWrapper {
+			align-items: center;
+			display: flex;
+			background-color: #fff;
+			border: 1px solid #d6d6d6;
+			border-bottom-right-radius: 24px;
+			border-top-right-radius: 24px;
+			color: #00ac94;
+			cursor: pointer;
+			gap: 8px;
+			padding: 0 16px;
+		}
+	}
+
 	&.hasClone {
 		&.Open {
 			.SearchSD_search {
@@ -356,6 +379,8 @@ $searchsd-small-size-base: 36px;
 				border-color: $regular-alpha;
 			}
 		}
+
+		
 	}
 
 	.SearchSD_content {

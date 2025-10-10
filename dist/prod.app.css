@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.228 || Generated: Thu Oct 09 2025 17:10:51 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! prod.app.css || Version: 5.5.228 || Generated: Fri Oct 10 2025 14:21:55 GMT+0100 (Hora de verão da Europa Ocidental) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -24264,6 +24264,24 @@ div.List-Star > div[unselected] {
 }
 .SearchSD.hasFavorite .SearchSD__star .icon {
   font-size: 1.286em;
+}
+.SearchSD.hasSideContent .SearchSD__inputWrapper {
+  border-bottom-right-radius: 0;
+  border-right-color: transparent;
+  border-top-right-radius: 0;
+  width: 100%;
+}
+.SearchSD.hasSideContent .SearchSD__SideContentWrapper {
+  align-items: center;
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #d6d6d6;
+  border-bottom-right-radius: 24px;
+  border-top-right-radius: 24px;
+  color: #00ac94;
+  cursor: pointer;
+  gap: 8px;
+  padding: 0 16px;
 }
 .SearchSD.hasClone.Open .SearchSD_search .SearchSD__cloneWrapper {
   border-bottom-right-radius: 0;
