@@ -101,13 +101,15 @@ $searchsd-small-size-base: 36px;
 
 	//The side content uses similar styles as the clone option, code can be improved
 	&.hasSideContent {
-		.SearchSD__inputWrapper {
-			border-bottom-right-radius: 0;
-			border-right-color: transparent;
-			border-top-right-radius: 0;
-			width: 100%;
+		.SearchSD_search {
+			.SearchSD__inputWrapper {
+				border-bottom-right-radius: 0;
+				border-right-color: transparent;
+				border-top-right-radius: 0;
+				width: 100%;
+			}
 		}
-
+		
 		.SearchSD__SideContentWrapper {
 			align-items: center;
 			display: flex;

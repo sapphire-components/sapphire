@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.229 || Generated: Fri Oct 10 2025 14:23:15 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! prod.app.css || Version: 5.5.229 || Generated: Fri Oct 10 2025 16:52:39 GMT+0100 (Hora de verão da Europa Ocidental) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -24265,7 +24265,7 @@ div.List-Star > div[unselected] {
 .SearchSD.hasFavorite .SearchSD__star .icon {
   font-size: 1.286em;
 }
-.SearchSD.hasSideContent .SearchSD__inputWrapper {
+.SearchSD.hasSideContent .SearchSD_search .SearchSD__inputWrapper {
   border-bottom-right-radius: 0;
   border-right-color: transparent;
   border-top-right-radius: 0;
