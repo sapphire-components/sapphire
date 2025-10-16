@@ -1,9 +1,9 @@
 /* Component HorizontalToolbar */
-(function($, window, SapphireWidgets) {
-	const create = config => {
+(function ($, window, SapphireWidgets) {
+	const create = (config) => {
 		const $widget = $('#' + config.widgetId);
 
-		$(document).ready(() => init($widget, config));
+		$(document).ready(() => init($widget, config.isArrowNavigation));
 
 		if (config.isArrowNavigation) {
 			$(window).load(() => {
@@ -18,8 +18,8 @@
 		}
 	};
 
-	const init = ($widget, config) => {
-		if (config.isArrowNavigation) {
+	const init = ($widget, isArrowNavigation) => {
+		if (isArrowNavigation) {
 			handleArrows($widget);
 
 			const $toolbarItems = $widget.find('.Toolbar__Items');
@@ -29,7 +29,7 @@
 
 			$toolbarItems.scroll(() => handleArrows($widget));
 
-			$btnRight.click(function() {
+			$btnRight.click(function () {
 				var currentScroll = $toolbarItems.scrollLeft();
 				var maxScrolll = $listItems.width() - $toolbarItems.width();
 				var sideWidth = maxScrolll - 50;
@@ -39,7 +39,7 @@
 				if (currentScroll != 50) $btnLeft.removeClass('Disabled');
 			});
 
-			$btnLeft.click(function() {
+			$btnLeft.click(function () {
 				var currentScroll = $toolbarItems.scrollLeft();
 				var maxScrolll = $listItems.width() - $toolbarItems.width();
 				var sideWidth = maxScrolll - 50;
@@ -50,17 +50,16 @@
 			});
 
 			$(window).on('resize.toolbar', () => handleArrows($widget));
+
+			// Menu items are initially hidden and must be made visible after loading is finished
+			$listItems.find('> a:not(.Visible)').addClass('Visible');
 		} else {
-			handleResize($widget);
-			bindEventsClick($widget);
-
-			$(window).on('resize.toolbar', () => handleResize($widget));
-
-			window.addEventListener('ToolbarFixed', () => handleResize($widget), false);
+			handleMoreOptions($widget);
+			bindMoreOptionsEvents($widget);
 		}
 	};
 
-	handleArrows = $widget => {
+	handleArrows = ($widget) => {
 		const $toolbarItems = $widget.find('.Toolbar__Items');
 		const $listItems = $widget.find('.Toolbar__Items .ListRecords');
 		const $btnRight = $widget.find('.Toolbar__rightBtn');
@@ -90,80 +89,69 @@
 		else $btnRight.removeClass('Disabled');
 	};
 
-	handleResize = $widget => {
-		let itemsTotal = 0;
-		let hasItemsHidden = false;
-
+	handleMoreOptions = ($widget) => {
 		const $listItems = $widget.find('.Toolbar__Items .ListRecords');
-		$listItems.find('> a[ui]').css('display', 'none');
+		$listItems.find('> a.Visible').removeClass('Visible');
 
 		const menuWidth = $widget.find('.Toolbar__Items').outerWidth(true);
+		let itemsTotal = 0;
 
-		$listItems.find('a[ui]').each(function() {
+		$listItems.find('> a').each(function () {
 			itemsTotal += parseInt($(this).outerWidth(true), 10);
 
 			if (itemsTotal + 90 < menuWidth) {
-				$(this).css('display', 'block');
+				$(this).addClass('Visible');
 			} else {
-				hasItemsHidden = true;
-
 				return false;
 			}
 		});
 
-		if (hasItemsHidden && !$listItems.find('.Toolbar__MoreOptions').length) {
-			$widget
-				.find('.Toolbar__MoreOptions')
-				.clone()
-				.css('display', 'block')
-				.appendTo($listItems);
+		const $hiddenItems = $listItems.find('> a:not(.Visible)');
 
-			hasItemsHidden = false;
+		if ($hiddenItems.length && !$listItems.find('.Toolbar__MoreOptions').length) {
+			$widget.find('.Toolbar__MoreOptions').clone().css('display', 'block').appendTo($listItems);
 		}
+		$listItems.find('.Toolbar__MoreOptions').css('display', $hiddenItems.length ? 'block' : 'none');
 
 		const $optionsList = $widget.find('.Toolbar__Items .Toolbar__MoreOptionsList');
-
-		$listItems.find('.Toolbar__MoreOptions').css('display', $optionsList.length ? 'block' : 'none');
-
-		const $hiddenItems = $listItems.find('> a[ui]').filter(function() {
-			return $(this).css('display') == 'none';
-		});
-
 		$optionsList.empty();
+		$hiddenItems.clone().appendTo($optionsList);
 
 		const hasNotificationHidden = $hiddenItems.find('.MenuItemWrapper_Badge:not(:empty)').length !== 0;
 		const $trigger = $widget.find('.Toolbar__Items .Toolbar__MoreOptionsIcon');
 
-		if (hasNotificationHidden) $trigger.addClass('Toolbar__MoreOptionsIcon--notification');
-		else $trigger.removeClass('Toolbar__MoreOptionsIcon--notification');
-
-		$hiddenItems
-			.clone()
-			.css('display', 'block')
-			.appendTo($optionsList);
+		if (hasNotificationHidden) {
+			$trigger.addClass('Toolbar__MoreOptionsIcon--notification');
+		} else {
+			$trigger.removeClass('Toolbar__MoreOptionsIcon--notification');
+		}
 	};
 
-	bindEventsClick = $widget => {
+	bindMoreOptionsEvents = ($widget) => {
 		const $moreOptions = $widget.find('.Toolbar__Items .Toolbar__MoreOptions');
 		const $trigger = $widget.find('.Toolbar__Items .Toolbar__MoreOptionsIcon');
 		const $optionsList = $widget.find('.Toolbar__MoreOptionsList');
 
-		$trigger.on('click', event => {
+		$trigger.on('click', (event) => {
 			$moreOptions.toggleClass('Toolbar__MoreOptions--open');
 			event.stopPropagation();
 		});
 
-		$optionsList.on('mousewheel', event => {
+		$optionsList.on('mousewheel', (event) => {
 			event.stopPropagation();
 		});
 
-		$('body').on('mouseup', event => {
+		$('body').on('mouseup', (event) => {
 			const $target = $(event.target).parents();
 
 			if (!$target.andSelf().is($moreOptions)) {
 				$moreOptions.removeClass('Toolbar__MoreOptions--open');
 			}
 		});
+
+		$(window).on('resize.toolbar', () => handleMoreOptions($widget));
+
+		window.addEventListener('ToolbarFixed', () => handleMoreOptions($widget), false);
 	};
 
 	SapphireWidgets.HorizontalToolbar = {

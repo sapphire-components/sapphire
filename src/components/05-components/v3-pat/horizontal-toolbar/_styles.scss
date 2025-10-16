@@ -87,6 +87,14 @@ div.Toolbar {
 					}
 				}
 			}
+			
+			// Menu items are initially hidden and made visible by JS after loading is finished
+			> a {
+				display: none;
+			}
+			> a.Visible {
+				display: block;
+			}
 		}
 	}
 
