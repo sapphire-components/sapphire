@@ -67,6 +67,7 @@ div.Toolbar {
 
 	&__Items {
 		display: block;
+		overflow: hidden;
 		padding-top: 11px;
 
 		.ListRecords {

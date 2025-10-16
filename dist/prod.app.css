@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.233 || Generated: Tue Oct 14 2025 10:35:19 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! prod.app.css || Version: 5.5.233 || Generated: Thu Oct 16 2025 11:57:51 GMT+0300 (GMT+03:00) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -5345,7 +5345,9 @@ input.Button.ButtonDefault.Button.twoLines,
 .desktop input.Button.ButtonDefault.Button.TwoLines,
 .desktop input.Button.ButtonDefault.Button.twoLines,
 a.Button.Button.TwoLines,
+.DropZoneContainer .row a.Button.TwoLines,
 a.Button.Button.twoLines,
+.DropZoneContainer .row a.Button.twoLines,
 .PanelOpened a.Button.Button.TwoLines,
 .PanelOpened a.Button.Button.twoLines,
 .confirm-container a.Button.Button.TwoLines,
@@ -5383,7 +5385,9 @@ input.Button.ButtonDefault.Button.twoLines:before,
 .desktop input.Button.ButtonDefault.Button.TwoLines:before,
 .desktop input.Button.ButtonDefault.Button.twoLines:before,
 a.Button.Button.TwoLines:before,
+.DropZoneContainer .row a.Button.TwoLines:before,
 a.Button.Button.twoLines:before,
+.DropZoneContainer .row a.Button.twoLines:before,
 .PanelOpened a.Button.Button.TwoLines:before,
 .PanelOpened a.Button.Button.twoLines:before,
 .confirm-container a.Button.Button.TwoLines:before,
@@ -5645,7 +5649,7 @@ a.Button.Is_Default.AppointmentConfirmed:hover,
 .desktop a.Button.IsDefault.AppointmentConfirmed:hover,
 .desktop a.Button.Is_Default.AppointmentConfirmed:hover,
 .PanelOpened a.Button.Is_Default.AppointmentConfirmed:hover {
-  background-color: #daebc9;
+  background-color: rgb(218.25, 235.09375, 201.40625);
 }
 
 .phone .Button.Small,
@@ -10420,8 +10424,7 @@ html .Page .PatientDetailsLayout {
 }
 .NewNavigation .FullScreenTabsWrapper_Container .TabWrapper.Active {
   border-top-left-radius: 4px;
-  -webkit-clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
-          clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
   padding-right: 30px;
 }
 .NewNavigation .FullScreenTabsWrapper_Container .TabWrapper.Active .TabWrapper_icon .icon {
@@ -10442,8 +10445,7 @@ html .Page .PatientDetailsLayout {
 }
 .NewNavigation .Toolbar .MenuItemWrapper.Active {
   border-top-left-radius: 4px;
-  -webkit-clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
-          clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
   padding-right: 40px;
 }
 .NewNavigation .Toolbar .MenuItemWrapper.Active .MenuItemWrapper_Container {
@@ -14382,35 +14384,35 @@ div.CircledArrow {
   color: #00ac94;
 }
 .ClinicalBadge.ColorZetaBG:hover {
-  background-color: #b0ebe4;
+  background-color: rgb(175.6689189189, 234.8310810811, 228.1081081081);
 }
 .ClinicalBadge.ColorLightRedBG {
   border: none;
   color: #ff3e2d;
 }
 .ClinicalBadge.ColorLightRedBG:hover {
-  background-color: #facccc;
+  background-color: rgb(249.5322580645, 203.9677419355, 203.9677419355);
 }
 .ClinicalBadge.ColorLightGreenBG {
   border: none;
   color: #7cb342;
 }
 .ClinicalBadge.ColorLightGreenBG:hover {
-  background-color: #daebc9;
+  background-color: rgb(218.25, 235.09375, 201.40625);
 }
 .ClinicalBadge.ColorLightBlueBG {
   border: none;
   color: #1ba5ec;
 }
 .ClinicalBadge.ColorLightBlueBG:hover {
-  background-color: #bfe6fa;
+  background-color: rgb(191.2790697674, 229.511627907, 250.2209302326);
 }
 .ClinicalBadge.ColorMidDarkGreyBG {
   border: none;
   color: #fff;
 }
 .ClinicalBadge.ColorMidDarkGreyBG:hover {
-  background-color: #4f4f4f;
+  background-color: rgb(79.25, 79.25, 79.25);
 }
 .ClinicalBadge-label {
   font-size: 0.857em;
@@ -17934,7 +17936,7 @@ div.CircledArrow {
 }
 .GenericCardBackground .PersonCard__headerLeftInfo.Green ~ .PersonCard__content,
 .GenericCardBackground .PersonCard__headerLeftInfo.Green ~ .PersonCard__actions {
-  background-color: #f0f7e9;
+  background-color: rgb(239.986122449, 246.8106122449, 232.7893877551);
 }
 .PersonCard__headerLeftInfo.Green.HasBorder {
   box-shadow: inset 5px 0px 0 0px #7cb342;
@@ -18086,7 +18088,7 @@ div.CircledArrow {
 .CardBackgroundGreen .PersonCard .PersonCard__content,
 .CardBackgroundGreen .PersonCard .PersonCard__actions,
 .CardBackgroundGreen .PersonCard .PersonCard__headerLeftInfo {
-  background-color: #f5faf0;
+  background-color: rgb(245.0236734694, 249.5583673469, 240.2416326531);
 }
 .CardBackgroundWhite .PersonCard .PersonCard_header,
 .CardBackgroundWhite .PersonCard .PersonCard__content,
@@ -18716,6 +18718,7 @@ div.Toolbar_container--noarrows:before {
 }
 div.Toolbar__Items {
   display: block;
+  overflow: hidden;
   padding-top: 11px;
 }
 div.Toolbar__Items .ListRecords {
@@ -22349,23 +22352,23 @@ body.confirmation-opened {
   font-size: 9px;
 }
 .PrescriptionCard.Critical {
-  background-color: #fff8f8;
+  background-color: rgb(255, 248.4372881356, 248.4);
 }
 .PrescriptionCard.Critical .PrescriptionCard__Icon {
-  background-color: #ffe4e4;
-  color: #cb0100;
+  background-color: rgb(255, 228.1525423729, 228);
+  color: rgb(202.5, 1.1440677966, 0);
 }
 .PrescriptionCard.Critical .PrescriptionCard__InteractionInfo {
-  color: #cb0100;
+  color: rgb(202.5, 1.1440677966, 0);
 }
 .PrescriptionCard.Critical .PrescriptionCard__Actions .BadgeCustom {
-  background-color: #cb0100;
+  background-color: rgb(202.5, 1.1440677966, 0);
 }
 .PrescriptionCard.High {
-  background-color: #fff9f9;
+  background-color: rgb(255, 249.4857142857, 249);
 }
 .PrescriptionCard.High .PrescriptionCard__Icon {
-  background-color: #ffe2e0;
+  background-color: rgb(255, 226.05, 223.5);
   color: #ff3e2d;
 }
 .PrescriptionCard.High .PrescriptionCard__InteractionInfo {
@@ -22375,7 +22378,7 @@ body.confirmation-opened {
   background-color: #ff3e2d;
 }
 .PrescriptionCard.Moderate {
-  background-color: #fff7eb;
+  background-color: rgb(255, 247.4, 234.6);
 }
 .PrescriptionCard.Moderate .PrescriptionCard__Icon {
   background-color: #ffeccc;
@@ -22388,23 +22391,23 @@ body.confirmation-opened {
   background-color: #ffa000;
 }
 .PrescriptionCard.Low {
-  background-color: #fffcf5;
+  background-color: rgb(254.8130841121, 252.0560747664, 245.1869158879);
 }
 .PrescriptionCard.Low .PrescriptionCard__Icon {
-  background-color: #fef2d2;
-  color: #f0ad05;
+  background-color: rgb(254.1457943925, 241.5462616822, 210.1542056075);
+  color: rgb(240.4205607477, 172.8738317757, 4.5794392523);
 }
 .PrescriptionCard.Low .PrescriptionCard__InteractionInfo {
-  color: #f0ad05;
+  color: rgb(240.4205607477, 172.8738317757, 4.5794392523);
 }
 .PrescriptionCard.Low .PrescriptionCard__Actions .BadgeCustom {
-  background-color: #f0ad05;
+  background-color: rgb(240.4205607477, 172.8738317757, 4.5794392523);
 }
 .PrescriptionCard.Information {
-  background-color: #eff9fe;
+  background-color: rgb(238.8461538462, 248.6234817814, 253.6538461538);
 }
 .PrescriptionCard.Information .PrescriptionCard__Icon {
-  background-color: #d7effc;
+  background-color: rgb(215.3076923077, 239.3319838057, 251.6923076923);
   color: #1ba5ec;
 }
 .PrescriptionCard.Information .PrescriptionCard__InteractionInfo {
@@ -22414,7 +22417,7 @@ body.confirmation-opened {
   background-color: #1ba5ec;
 }
 .PrescriptionCard.Unknown {
-  background-color: #fbfbfb;
+  background-color: rgb(250.65, 250.65, 250.65);
 }
 .PrescriptionCard.Unknown .PrescriptionCard__Icon {
   background-color: #f3f3f3;
@@ -22442,7 +22445,7 @@ body.confirmation-opened {
 }
 
 .SegmentedControl.Filters .SegmentedControlItem.Critical > input[type=radio]:checked ~ label, .Filters.SegmentedControlLight .SegmentedControlItem.Critical > input[type=radio]:checked ~ label {
-  background-color: #cb0100;
+  background-color: rgb(202.5, 1.1440677966, 0);
 }
 .SegmentedControl.Filters .SegmentedControlItem.High > input[type=radio]:checked ~ label, .Filters.SegmentedControlLight .SegmentedControlItem.High > input[type=radio]:checked ~ label {
   background-color: #ff3e2d;
@@ -22451,7 +22454,7 @@ body.confirmation-opened {
   background-color: #ffa000;
 }
 .SegmentedControl.Filters .SegmentedControlItem.Low > input[type=radio]:checked ~ label, .Filters.SegmentedControlLight .SegmentedControlItem.Low > input[type=radio]:checked ~ label {
-  background-color: #f0ad05;
+  background-color: rgb(240.4205607477, 172.8738317757, 4.5794392523);
 }
 .SegmentedControl.Filters .SegmentedControlItem.Info > input[type=radio]:checked ~ label, .Filters.SegmentedControlLight .SegmentedControlItem.Info > input[type=radio]:checked ~ label {
   background-color: #1ba5ec;
@@ -27627,10 +27630,10 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 }
 .ShiftTableCard--Done {
   background-color: #e7f2dc;
-  border-color: #aed388;
+  border-color: rgb(174.4979591837, 211.0897959184, 135.9102040816);
 }
 .ShiftTableCard--Done.ShiftTableCard--selected {
-  background-color: #daebc9;
+  background-color: rgb(218.25, 235.09375, 201.40625);
 }
 .ShiftTableCard--Done .ShiftTableCard__CardStatus {
   border: none;
@@ -27638,10 +27641,10 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 }
 .ShiftTableCard--NotDone {
   background-color: #fce3e3;
-  border-color: #ff9c93;
+  border-color: rgb(255, 155.7428571429, 147);
 }
 .ShiftTableCard--NotDone.ShiftTableCard--selected {
-  background-color: #facccc;
+  background-color: rgb(249.5322580645, 203.9677419355, 203.9677419355);
 }
 .ShiftTableCard--NotDone .ShiftTableCard__CardStatus {
   border: none;
@@ -27652,7 +27655,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   border-color: #ffc666;
 }
 .ShiftTableCard--Overdue.ShiftTableCard--selected {
-  background-color: #fbbc78;
+  background-color: rgb(251.3230088496, 187.5884955752, 120.1769911504);
 }
 .ShiftTableCard--Overdue .ShiftTableCard__CardStatus {
   border: none;
@@ -27660,10 +27663,10 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 }
 .ShiftTableCard--PartiallyDone {
   background-color: #f5f4e0;
-  border-color: #ece9be;
+  border-color: rgb(235.7954545455, 232.7227272727, 189.7045454545);
 }
 .ShiftTableCard--PartiallyDone.ShiftTableCard--selected {
-  background-color: #efedcd;
+  background-color: rgb(238.7804878049, 237.1585365854, 204.7195121951);
 }
 .ShiftTableCard--PartiallyDone .ShiftTableCard__CardStatus {
   border: none;
@@ -34610,8 +34613,7 @@ ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover {
 }
 .HasCriticalValue:before {
   background-color: #ff3e2d;
-  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   color: #fff;
   content: "!";
   display: block;
