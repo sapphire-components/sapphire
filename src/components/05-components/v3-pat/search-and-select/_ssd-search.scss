@@ -101,6 +101,14 @@ $searchsd-small-size-base: 36px;
 
 	//The side content uses similar styles as the clone option, need to check if code can be improved to avoid duplicated styles
 	&.hasSideContent {
+		&.Open {
+			.SearchSD_search {
+				.SearchSD__SideContentWrapper {
+					border-bottom-right-radius: 0;
+				}
+			}
+		}
+
 		.SearchSD_search {
 			.SearchSD__inputWrapper {
 				border-bottom-right-radius: 0;
@@ -121,6 +129,10 @@ $searchsd-small-size-base: 36px;
 			cursor: pointer;
 			gap: 8px;
 			padding: 0 16px;
+
+			.DropdownMenu {
+				left: -16px; //a hack to avoid the dropdown being clipped by the MainInteractiveCard content overflow
+			}
 		}
 	}
 
