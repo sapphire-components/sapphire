@@ -76,7 +76,7 @@
 			_this.$iframeSidebar.find('.lds-ring').fadeOut();
 			// The way to prevent interface "jumping" is hiding some elements until load is complete
 			setTimeout(function () {
-				_this.$widget.find('.HiddenOnStart').removeClass('HiddenOnStart');
+				_this.$widget.find('.HiddenOnStart').hide().removeClass('HiddenOnStart').fadeIn();
 			}, 100);
 		});
 	};
