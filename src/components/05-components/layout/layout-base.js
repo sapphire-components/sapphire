@@ -1,38 +1,36 @@
 /* Component LayoutBase */
-(function($, window, document, SapphireWidgets) {
-	var create = function(config) {
+(function ($, window, document, SapphireWidgets) {
+	var create = function (config) {
 		window[config.widgetId] = new LayoutBase(config);
 		SapphireWidgets.LayoutBase.widgetId = config.widgetId;
 	};
 
-	var openSidebarIframe = function(duration) {
+	var openSidebarIframe = function (duration) {
 		window[SapphireWidgets.LayoutBase.widgetId].openSidebarIframe(duration);
 	};
 
-	var closeSidebarIframe = function(duration) {
+	var closeSidebarIframe = function (duration) {
 		window[SapphireWidgets.LayoutBase.widgetId].closeSidebarIframe(duration);
 	};
 
-	var scrollToElement = function($element, offset = 0) {
+	var scrollToElement = function ($element, offset = 0) {
 		var $targetElement = $element;
 
 		if (!!$targetElement.length) {
 			var scrollToOffsetInterval;
 
-			scrollToOffsetInterval = setInterval(function() {
+			scrollToOffsetInterval = setInterval(function () {
 				if (window[SapphireWidgets.LayoutBase.widgetId].getThresholds().secondaryThreshold > 0) {
 					clearInterval(scrollToOffsetInterval);
 
 					let targetElementOffsetTop = $targetElement.offset().top;
 
-					const isFixed = $('.LayoutBase-secondary').hasClass('isFixed');
 					const isEmergency = !!$('.LayoutBase-emergency').text();
 
 					const headerHeight = $('.SapphireHeader').height();
 					const secondaryHeight = $('.LayoutBase-secondary').outerHeight();
 					const emergencyHeight = isEmergency ? $('.LayoutBase-emergency').height() : 0;
 
-					//const secondaryFixed = isFixed ? secondaryHeight : secondaryHeight - 26;
 					targetElementOffsetTop = targetElementOffsetTop - (headerHeight + secondaryHeight + emergencyHeight);
 
 					$('body, html').scrollTop(targetElementOffsetTop - 16);
@@ -41,10 +39,9 @@
 		}
 	};
 
-	var LayoutBase = function(config) {
+	var LayoutBase = function (config) {
 		var _this = this;
 		this.layoutBaseRedrawTimer = 0;
-		this.hasHeader = config.hasHeader;
 		this.isExpandable = config.isExpandable;
 		this.isTopWindow = window.top === window.self ? true : false;
 		this.$widget = $('#' + config.widgetId);
@@ -62,19 +59,17 @@
 		this.$topfixedContent = this.$widget.find('.LayoutBase-topfixedcontent');
 		this.$bottomfixedContent = this.$widget.find('.LayoutBase-bottomfixedcontent');
 		this.$mainContent = this.$widget.find('.LayoutBase-MainContent');
-		this.extraPaddingEmergency = 0;
-		this.extraPaddingSecondary = 0;
 		this.setupWindowEvents();
 		this.$iframeSidebar.append('<div class="lds-ring 1"><div></div><div></div><div></div><div></div></div>');
 
-		$(function() {
+		$(function () {
 			$('body').addClass('LayoutBase');
 			if (_this.isTopWindow) {
 				$('body').css('overflow-y', 'scroll');
 			}
 		});
 
-		$(window).load(function() {
+		$(window).load(function () {
 			$('body').click();
 			$(window).scroll();
 
@@ -82,24 +77,22 @@
 		});
 	};
 
-	LayoutBase.prototype.setupWindowEvents = function() {
+	LayoutBase.prototype.setupWindowEvents = function () {
 		var _this = this;
 		var cursorPositon = 0;
 
-		$(window).resize(function() {
+		$(window).resize(function () {
 			_this.updateThresholds();
-			_this.handleOptionalContainers();
 			_this.handleLayoutTopPadding();
 			_this.handleLayoutBottomPadding();
 		});
 
-		$(window).scroll(function() {
+		$(window).scroll(function () {
 			var newPosition = $(window).scrollTop();
 
 			window.clearTimeout(_this.layoutBaseRedrawTimer);
-			_this.layoutBaseRedrawTimer = window.setTimeout(function() {
+			_this.layoutBaseRedrawTimer = window.setTimeout(function () {
 				_this.updateThresholds();
-				_this.handleOptionalContainers();
 				_this.handleLayoutTopPadding();
 				_this.handleLayoutBottomPadding();
 				_this.handleManageQueueCard(cursorPositon, newPosition);
@@ -108,20 +101,9 @@
 		});
 	};
 
-	LayoutBase.prototype.handleOptionalContainers = function() {
-		/*const scrollTop = $(window).scrollTop();
-		const isEmergency = !!$('.LayoutBase-emergency').text();*/
-	};
-
-	LayoutBase.prototype.handleLayoutTopPadding = function() {
-		var paddingTop = this.contentThreshold + this.extraPaddingEmergency + this.extraPaddingSecondary;
-		this.$spacer.stop().animate(
-			{
-				height: paddingTop,
-			},
-			0,
-			'linear'
-		);
+	LayoutBase.prototype.handleLayoutTopPadding = function () {
+		var paddingTop = this.contentThreshold;
+		this.$spacer.stop().animate({ height: paddingTop }, 0, 'linear');
 		if (this.$topfixedContent.length === 1) {
 			this.$topfixedContent.css({
 				width: $('.LayoutBase-MainContent').width(),
@@ -130,7 +112,7 @@
 		}
 	};
 
-	LayoutBase.prototype.handleLayoutBottomPadding = function() {
+	LayoutBase.prototype.handleLayoutBottomPadding = function () {
 		if (this.$bottomfixedContent.length === 1) {
 			if ($('body')[0].scrollHeight > $('body').height()) {
 				var bottomFixedHeight = this.$bottomfixedContent.outerHeight(true);
@@ -147,7 +129,7 @@
 		}
 	};
 
-	LayoutBase.prototype.updateThresholds = function() {
+	LayoutBase.prototype.updateThresholds = function () {
 		var mainMenuHeight = this.$mainMenu.outerHeight(true) || 0;
 		var headerBodyHeight = this.$headerBody.outerHeight(true) || this.$header.outerHeight(true) || 0;
 		var topfixedContentHeight = this.$topfixedContent.outerHeight(true) || 0;
@@ -160,7 +142,7 @@
 			mainMenuHeight + headerBodyHeight + topfixedContentHeight + primaryMenuHeight + emergencyHeight;
 	};
 
-	LayoutBase.prototype.getThresholds = function() {
+	LayoutBase.prototype.getThresholds = function () {
 		return {
 			topfixedContentThreshold: this.topfixedContentThreshold,
 			contentThreshold: this.contentThreshold,
@@ -169,7 +151,7 @@
 		};
 	};
 
-	LayoutBase.prototype.openSidebarIframe = function(duration_in) {
+	LayoutBase.prototype.openSidebarIframe = function (duration_in) {
 		var duration = duration_in >= 0 ? duration_in : 100;
 		this.$iframeSidebar.animate(
 			{
@@ -177,12 +159,10 @@
 			},
 			duration
 		);
-		$('body')
-			.css('overflow-y', 'scroll')
-			.click();
+		$('body').css('overflow-y', 'scroll').click();
 	};
 
-	LayoutBase.prototype.closeSidebarIframe = function(duration_in) {
+	LayoutBase.prototype.closeSidebarIframe = function (duration_in) {
 		var duration = duration_in >= 0 ? duration_in : 100;
 		var targetWidth = this.isExpandable ? 40 : 262;
 		this.$iframeSidebar.animate(
@@ -194,7 +174,7 @@
 		$('body').css('overflow-y', 'scroll');
 	};
 
-	LayoutBase.prototype.handleManageQueueCard = function(cursorPositon, newPosition) {
+	LayoutBase.prototype.handleManageQueueCard = function (cursorPositon, newPosition) {
 		const $manageQueue = $('.ManageQueueContainer');
 
 		if ($manageQueue.length) {
