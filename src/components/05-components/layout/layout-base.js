@@ -74,6 +74,8 @@
 			$(window).scroll();
 
 			_this.$iframeSidebar.find('.lds-ring').fadeOut();
+			// The way to prevent interface "jumping" is hiding some elements until load is complete
+			_this.$widget.find('.HiddenOnStart').removeClass('.HiddenOnStart');
 		});
 	};
 
