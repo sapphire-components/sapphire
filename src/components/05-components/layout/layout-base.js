@@ -75,7 +75,9 @@
 
 			_this.$iframeSidebar.find('.lds-ring').fadeOut();
 			// The way to prevent interface "jumping" is hiding some elements until load is complete
+			console.log('HiddenOnStart: ' + _this.$widget.find('.HiddenOnStart').length);
 			_this.$widget.find('.HiddenOnStart').removeClass('.HiddenOnStart');
+			console.log('HiddenOnStart: ' + _this.$widget.find('.HiddenOnStart').length);
 		});
 	};
 
@@ -104,8 +106,13 @@
 	};
 
 	LayoutBase.prototype.handleLayoutTopPadding = function () {
-		var paddingTop = this.contentThreshold;
-		this.$spacer.stop().animate({ height: paddingTop }, 0, 'linear');
+		this.$spacer.stop().animate(
+			{
+				height: this.contentThreshold,
+			},
+			0,
+			'linear'
+		);
 		if (this.$topfixedContent.length === 1) {
 			this.$topfixedContent.css({
 				width: $('.LayoutBase-MainContent').width(),
