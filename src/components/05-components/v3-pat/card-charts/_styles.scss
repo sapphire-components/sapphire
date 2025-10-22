@@ -202,7 +202,7 @@ $card-charts-prop-width: 226px;
 		.CardCharts__Content {
 			@include component-scroll-root();
 
-			overflow-x: hidden;
+			overflow-x: auto;
 		}
 
 		.CardCharts__Properties {
