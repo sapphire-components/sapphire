@@ -134,5 +134,6 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
     });
 
     resize();
+    
   });
 };
