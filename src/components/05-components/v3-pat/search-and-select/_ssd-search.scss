@@ -101,28 +101,37 @@ $searchsd-small-size-base: 36px;
 
 	//The side content uses similar styles as the clone option, need to check if code can be improved to avoid duplicated styles
 	&.hasSideContent {
-		.SearchSD_search {
-			.SearchSD__inputWrapper {
-				border-bottom-right-radius: 0;
-				border-right-color: transparent;
-				border-top-right-radius: 0;
-				width: 100%;
-			}
-		}
-		
-		.SearchSD__SideContentWrapper {
-			align-items: center;
-			display: flex;
-			background-color: #fff;
-			border: 1px solid #d6d6d6;
-			border-bottom-right-radius: 24px;
-			border-top-right-radius: 24px;
-			color: #00ac94;
-			cursor: pointer;
-			gap: 8px;
-			padding: 0 16px;
-		}
-	}
+        &.Open {
+            .SearchSD_search {
+                .SearchSD__SideContentWrapper {
+                    border-bottom-right-radius: 0;
+                }
+            }
+        }
+        .SearchSD_search {
+            .SearchSD__inputWrapper {
+                border-bottom-right-radius: 0;
+                border-right-color: transparent;
+                border-top-right-radius: 0;
+                width: 100%;
+            }
+        }
+        .SearchSD__SideContentWrapper {
+            align-items: center;
+            display: flex;
+            background-color: #fff;
+            border: 1px solid #D6D6D6;
+            border-bottom-right-radius: 24px;
+            border-top-right-radius: 24px;
+            color: #00AC94;
+            cursor: pointer;
+            gap: 8px;
+            padding: 0 16px;
+            .DropdownMenu {
+                left: -16px; //a hack to avoid the dropdown being clipped by the MainInteractiveCard content overflow
+            }
+        }
+    }
 
 	&.hasClone {
 		&.Open {

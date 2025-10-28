@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.238 || Generated: Wed Oct 22 2025 14:04:36 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! prod.app.css || Version: 5.5.238 || Generated: Tue Oct 28 2025 13:59:03 GMT+0000 (Hora padrão da Europa Ocidental) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -24272,6 +24272,9 @@ div.List-Star > div[unselected] {
 .SearchSD.hasFavorite .SearchSD__star .icon {
   font-size: 1.286em;
 }
+.SearchSD.hasSideContent.Open .SearchSD_search .SearchSD__SideContentWrapper {
+  border-bottom-right-radius: 0;
+}
 .SearchSD.hasSideContent .SearchSD_search .SearchSD__inputWrapper {
   border-bottom-right-radius: 0;
   border-right-color: transparent;
@@ -24282,13 +24285,16 @@ div.List-Star > div[unselected] {
   align-items: center;
   display: flex;
   background-color: #fff;
-  border: 1px solid #d6d6d6;
+  border: 1px solid #D6D6D6;
   border-bottom-right-radius: 24px;
   border-top-right-radius: 24px;
-  color: #00ac94;
+  color: #00AC94;
   cursor: pointer;
   gap: 8px;
   padding: 0 16px;
+}
+.SearchSD.hasSideContent .SearchSD__SideContentWrapper .DropdownMenu, .SearchSD.hasSideContent .SearchSD__SideContentWrapper .InputWithList__List {
+  left: -16px;
 }
 .SearchSD.hasClone.Open .SearchSD_search .SearchSD__cloneWrapper {
   border-bottom-right-radius: 0;
