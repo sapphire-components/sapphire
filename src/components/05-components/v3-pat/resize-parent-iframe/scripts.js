@@ -96,11 +96,23 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
       }
     };
 
+    var _mutationHandler2 = function (mutations) {
+      setTimeout(() => {
+        window.parent.dispatchEvent(new Event('resize'));
+      }, 300);
+    };
+
     var _mutationObserver = new MutationObserver(_mutationHandler);
+    var _mutationObserver2 = new MutationObserver(_mutationHandler2);
     var _resizeObserver = new ResizeObserver(_mutationHandler);
 
     if (_iframe) {
       _mutationObserver.observe(document.body, {
+        childList: true,
+        subtree: true
+      });
+
+      _mutationObserver2.observe(_iframe.contentDocument, {
         childList: true,
         subtree: true
       });
