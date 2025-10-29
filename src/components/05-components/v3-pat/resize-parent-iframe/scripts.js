@@ -23,6 +23,16 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
       }, 200);
     };
 
+    /* This mutation handler observes for changes in the DOM (that make the iframe
+    ** change its size), and simulates a resize event that triggers the 
+    ** repositioning of the iframe
+    */
+    var _iframeMutationHandler = function (mutations) {
+      setTimeout(() => {
+        window.parent.dispatchEvent(new Event('resize'));
+      }, 300);
+    };
+
     var _setBodyTop = function(top) {
       _body.removeAttribute(DATA_BODY_RESIZE_ATTRIBUTE_NAME);
       _body.style.marginTop = top + "px";
@@ -96,14 +106,8 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
       }
     };
 
-    var _mutationHandler2 = function (mutations) {
-      setTimeout(() => {
-        window.parent.dispatchEvent(new Event('resize'));
-      }, 300);
-    };
-
     var _mutationObserver = new MutationObserver(_mutationHandler);
-    var _mutationObserver2 = new MutationObserver(_mutationHandler2);
+    var _iframeMutationObserver = new MutationObserver(_iframeMutationHandler);
     var _resizeObserver = new ResizeObserver(_mutationHandler);
 
     if (_iframe) {
@@ -112,7 +116,7 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
         subtree: true
       });
 
-      _mutationObserver2.observe(_iframe.contentDocument, {
+      _iframeMutationObserver.observe(_iframe.contentDocument, {
         childList: true,
         subtree: true
       });
