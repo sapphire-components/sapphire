@@ -97,6 +97,7 @@
 }
 
 .ColorLightBlue2 {
+
 	// Deprecated
 	&Text {
 		color: $light-blue;
@@ -280,6 +281,7 @@
 }
 
 .ColorLightPink2 {
+
 	// Deprecated
 	&Text {
 		color: $light-pink;
@@ -501,5 +503,15 @@
 
 	&BG {
 		background-color: $controlled-disabled;
+	}
+}
+
+.ColorNonformulary {
+	&Text {
+		color: $nonformulary;
+	}
+
+	&BG {
+		background-color: $nonformulary;
 	}
 }
