@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.5.242 || Generated: Fri Oct 31 2025 11:38:45 GMT+0200 (Itä-Euroopan normaaliaika) */
+/*! prod.backoffice.css || Version: 5.5.243 || Generated: Tue Nov 04 2025 15:54:44 GMT+0200 (Itä-Euroopan normaaliaika) */
 /*!***************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/backoffice/styles.scss ***!
   \***************************************************************************************************************************************************************************************************************************************************/
@@ -83,9 +83,11 @@ a.Button.CollapseArrow:before,
 a.Button.Comment:before,
 a.Button.ConfigureMedicationLabel:before,
 a.Button.ConfigWardDashboard:before,
+a.Button.Consumables:before,
 a.Button.ControlledMedication:before,
 a.Button.CreateFromThis:before,
 a.Button.CreditCard:before,
+a.Button.Crutches:before,
 a.Button.CreatePatientWhite:before,
 a.Button.DischargePatient:before,
 a.Button.DoctorUnit:before,
@@ -222,6 +224,7 @@ a.Button.PreMedicalCommittee:before,
 a.Button.Prescription:before,
 a.Button.Previous:before,
 a.Button.Printer:before,
+a.Button.RateChange:before,
 a.Button.ReleaseBedWhite:before,
 a.Button.ReopenVisit:before,
 a.Button.Request:before,
@@ -360,6 +363,10 @@ a.Button.Check:before {
 
 a.Button.Printer:before {
   content: "\e63a";
+}
+
+a.Button.RateChange:before {
+  content: "\e966";
 }
 
 a.Button.SendToDoctor:before {
@@ -878,6 +885,10 @@ a.Button.ConfigWardDashboard:before {
   content: "\e91c";
 }
 
+a.Button.Consumables:before {
+  content: "\e964";
+}
+
 a.Button.ControlledMedication:before {
   content: "\e95f";
 }
@@ -888,6 +899,10 @@ a.Button.CreateFromThis:before {
 
 a.Button.CreditCard:before {
   content: "\e616";
+}
+
+a.Button.Crutches:before {
+  content: "\e965";
 }
 
 a.Button.Dashed:before {
@@ -1656,8 +1671,10 @@ a.Button.RespiratoryRate:before {
 .AR a.Button.Comment:before,
 .AR a.Button.ConfigureMedicationLabel:before,
 .AR a.Button.ConfigWardDashboard:before,
+.AR a.Button.Consumables:before,
 .AR a.Button.CreateFromThis:before,
 .AR a.Button.CreditCard:before,
+.AR a.Button.Crutches:before,
 .AR a.Button.DischargePatient:before,
 .AR a.Button.Download:before,
 .AR a.Button.Dashed:before,
@@ -1789,6 +1806,7 @@ a.Button.RespiratoryRate:before {
 .AR a.Button.Prescription:before,
 .AR a.Button.Previous:before,
 .AR a.Button.Printer:before,
+.AR a.Button.RateChange:before,
 .AR a.Button.ReleaseBedWhite:before,
 .AR a.Button.ReopenVisit:before,
 .AR a.Button.Request:before,
@@ -1936,9 +1954,11 @@ a.Button.RespiratoryRate:before {
 .FA a.Button.Comment:before,
 .FA a.Button.ConfigureMedicationLabel:before,
 .FA a.Button.ConfigWardDashboard:before,
+.FA a.Button.Consumables:before,
 .FA a.Button.ControlledMedication:before,
 .FA a.Button.CreateFromThis:before,
 .FA a.Button.CreditCard:before,
+.FA a.Button.Crutches:before,
 .FA a.Button.DischargePatient:before,
 .FA a.Button.Download:before,
 .FA a.Button.Dashed:before,
@@ -2071,6 +2091,7 @@ a.Button.RespiratoryRate:before {
 .FA a.Button.Prescription:before,
 .FA a.Button.Previous:before,
 .FA a.Button.Printer:before,
+.FA a.Button.RateChange:before,
 .FA a.Button.ReleaseBedWhite:before,
 .FA a.Button.ReopenVisit:before,
 .FA a.Button.Request:before,
