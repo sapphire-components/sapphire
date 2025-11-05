@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.5.243 || Generated: Tue Nov 04 2025 15:54:44 GMT+0200 (Itä-Euroopan normaaliaika) */
+/*! prod.backoffice.css || Version: 5.5.244 || Generated: Wed Nov 05 2025 09:27:36 GMT+0200 (Itä-Euroopan normaaliaika) */
 /*!***************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/backoffice/styles.scss ***!
   \***************************************************************************************************************************************************************************************************************************************************/
@@ -83,7 +83,7 @@ a.Button.CollapseArrow:before,
 a.Button.Comment:before,
 a.Button.ConfigureMedicationLabel:before,
 a.Button.ConfigWardDashboard:before,
-a.Button.Consumables:before,
+a.Button.MedicalSupplies:before,
 a.Button.ControlledMedication:before,
 a.Button.CreateFromThis:before,
 a.Button.CreditCard:before,
@@ -885,7 +885,7 @@ a.Button.ConfigWardDashboard:before {
   content: "\e91c";
 }
 
-a.Button.Consumables:before {
+a.Button.MedicalSupplies:before {
   content: "\e964";
 }
 
@@ -1671,7 +1671,7 @@ a.Button.RespiratoryRate:before {
 .AR a.Button.Comment:before,
 .AR a.Button.ConfigureMedicationLabel:before,
 .AR a.Button.ConfigWardDashboard:before,
-.AR a.Button.Consumables:before,
+.AR a.Button.MedicalSupplies:before,
 .AR a.Button.CreateFromThis:before,
 .AR a.Button.CreditCard:before,
 .AR a.Button.Crutches:before,
@@ -1954,7 +1954,7 @@ a.Button.RespiratoryRate:before {
 .FA a.Button.Comment:before,
 .FA a.Button.ConfigureMedicationLabel:before,
 .FA a.Button.ConfigWardDashboard:before,
-.FA a.Button.Consumables:before,
+.FA a.Button.MedicalSupplies:before,
 .FA a.Button.ControlledMedication:before,
 .FA a.Button.CreateFromThis:before,
 .FA a.Button.CreditCard:before,
