@@ -3,6 +3,7 @@
 .dontshow,
 .HiddenOnStart {
 	display: none !important;
+	-servicestudio-display: initial !important;
 }
 
 .ph:empty,
