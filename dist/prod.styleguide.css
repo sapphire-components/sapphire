@@ -1,4 +1,4 @@
-/*! prod.styleguide.css || Version: 5.5.247 || Generated: Thu Nov 20 2025 13:41:52 GMT+0000 (Hora padrão da Europa Ocidental) */
+/*! prod.styleguide.css || Version: 5.5.247 || Generated: Thu Nov 20 2025 14:30:50 GMT+0000 (Hora padrão da Europa Ocidental) */
 /*!***************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/styleguide/styles.scss ***!
   \***************************************************************************************************************************************************************************************************************************************************/
@@ -13,6 +13,10 @@
   Consistency: if you need to update the image, no need to go into several places: just change here.
 
 */
+body {
+  background-color: #fff !important;
+  margin: 0;
+}
 body::-webkit-scrollbar {
   background-color: #fff;
   height: 14px;
@@ -23,10 +27,6 @@ body::-webkit-scrollbar-thumb {
   background-clip: padding-box;
   border: 4px solid rgba(0, 0, 0, 0);
   border-radius: 9999px;
-}
-body {
-  background-color: #fff !important;
-  margin: 0;
 }
 body::-webkit-scrollbar {
   width: 8px;
@@ -95,6 +95,13 @@ body::-webkit-scrollbar-thumb {
 .DesignSystem__ExpandAll a[ui=button-expand-all]:link, .DesignSystem__ExpandAll a[ui=button-expand-all]:visited {
   font-family: "LatoBold";
 }
+.DesignSystem__Menu {
+  height: calc(100vh - 195px);
+  margin-top: 15px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  -servicestudio-scroll-behavior: initial;
+}
 .DesignSystem__Menu::-webkit-scrollbar {
   background-color: #fff;
   height: 14px;
@@ -105,13 +112,6 @@ body::-webkit-scrollbar-thumb {
   background-clip: padding-box;
   border: 4px solid rgba(0, 0, 0, 0);
   border-radius: 9999px;
-}
-.DesignSystem__Menu {
-  height: calc(100vh - 195px);
-  margin-top: 15px;
-  overflow-y: auto;
-  scroll-behavior: smooth;
-  -servicestudio-scroll-behavior: initial;
 }
 .DesignSystem__MenuSection {
   margin-bottom: 25px;
@@ -126,16 +126,12 @@ body::-webkit-scrollbar-thumb {
   line-height: 28px;
   padding: 0 10px;
   transition: all 0.25s;
+  font-family: "LatoRegular" !important;
 }
 .DesignSystem__MenuSection a:hover,
 .DesignSystem__MenuSection a:link:hover,
 .DesignSystem__MenuSection a:visited:hover {
   background-color: #c4f0eb;
-}
-.DesignSystem__MenuSection a,
-.DesignSystem__MenuSection a:link,
-.DesignSystem__MenuSection a:visited {
-  font-family: "LatoRegular" !important;
 }
 .DesignSystem__MenuSection a.active,
 .DesignSystem__MenuSection a:link.active,
@@ -190,16 +186,14 @@ body::-webkit-scrollbar-thumb {
   line-height: 28px;
   padding: 0 10px;
   transition: all 0.25s;
-}
-.DesignSystem__MenuItemSection:hover {
-  background-color: #c4f0eb;
-}
-.DesignSystem__MenuItemSection {
   cursor: pointer;
   font-weight: normal;
   margin: 0 -13px 0 -20px;
   padding: 0 20px;
   position: relative;
+}
+.DesignSystem__MenuItemSection:hover {
+  background-color: #c4f0eb;
 }
 .DesignSystem__MenuItemSection::after {
   border-bottom: 5px solid #00ac94;
@@ -207,11 +201,6 @@ body::-webkit-scrollbar-thumb {
   border-right: 5px solid transparent;
   height: 0;
   width: 0;
-}
-.DesignSystem__MenuItemSection::after:after, .DesignSystem__MenuItemSection::after:before {
-  content: "";
-}
-.DesignSystem__MenuItemSection::after {
   position: absolute;
   top: 44%;
   transform: translateY(-44%);
@@ -219,6 +208,9 @@ body::-webkit-scrollbar-thumb {
   right: 15px;
   transform: rotate(90deg) translateY(-44%);
   transition: all 0.15s;
+}
+.DesignSystem__MenuItemSection::after:after, .DesignSystem__MenuItemSection::after:before {
+  content: "";
 }
 .DesignSystem__MenuTitle {
   color: #333;

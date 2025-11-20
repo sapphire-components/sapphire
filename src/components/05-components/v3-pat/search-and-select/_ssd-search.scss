@@ -136,6 +136,10 @@ $searchsd-small-size-base: 36px;
 			cursor: pointer;
 			gap: 8px;
 			padding: 0 16px;
+
+			.DropdownMenu {
+                left: -16px; //a hack to avoid the dropdown being clipped by the MainInteractiveCard content overflow
+            }
 		}
 	}
 
