@@ -1,3 +1,5 @@
+@use '../../../00-settings/sizes' as *;
+
 .LineContent {
 	padding-left: $sapphire-sizes--medium;
 	vertical-align: middle;

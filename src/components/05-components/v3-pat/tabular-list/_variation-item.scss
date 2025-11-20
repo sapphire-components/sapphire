@@ -1,3 +1,6 @@
+@use '../../../00-settings/colors' as *;
+@use '../../../../assets/variables' as *;
+
 .ListRecords.VariationItems {
 	display: flex;
 	flex-direction: row;

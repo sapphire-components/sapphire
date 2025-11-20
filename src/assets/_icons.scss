@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 /* SapphireIcon */
 .icon {
 	font-family: $font-family-icons;
@@ -1192,7 +1194,7 @@
 	padding-left: 0;
 }
 
-.icon-ul>li {
+.icon-ul > li {
 	position: relative;
 }
 

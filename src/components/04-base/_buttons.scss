@@ -1,3 +1,10 @@
+@use 'sass:color';
+
+@use '../00-settings/colors' as *;
+@use '../00-settings/fonts' as *;
+@use '../00-settings/sizes' as *;
+@use '../00-settings/borders' as *;
+
 @mixin default-button($bgColor: $regular-alpha, $fontSize: $font-size-normal) {
 	background-color: $bgColor;
 	border: 1px solid transparent;
@@ -32,7 +39,6 @@
 }
 
 @mixin link-style-all {
-
 	&:hover,
 	&:link,
 	&:active {
@@ -211,7 +217,7 @@ a.Button.Is_Default,
 			margin-top: 12px;
 		}
 
-		>div {
+		> div {
 			text-align: right;
 		}
 	}
@@ -221,7 +227,9 @@ a.Button.Is_Default,
 		border: solid 1px #ff8200;
 		border: solid 1px #ff8200;
 		border-color: #ff8200;
-		box-shadow: inset 0 1px 0 #ff8200, 0 2px 2px #ff8200;
+		box-shadow:
+			inset 0 1px 0 #ff8200,
+			0 2px 2px #ff8200;
 		color: $regular-white;
 		font-family: Arial, sans-serif;
 		font-size: $font-size-small;
@@ -232,7 +240,9 @@ a.Button.Is_Default,
 			border: solid 1px rgba(255, 130, 0, 0.9);
 			border: solid 1px rgba(255, 130, 0, 0.9);
 			border-color: rgba(255, 130, 0, 0.9);
-			box-shadow: inset 0 1px 0 rgba(255, 130, 0, 0.9), 0 2px 2px rgba(255, 130, 0, 0.9);
+			box-shadow:
+				inset 0 1px 0 rgba(255, 130, 0, 0.9),
+				0 2px 2px rgba(255, 130, 0, 0.9);
 		}
 	}
 
@@ -241,7 +251,7 @@ a.Button.Is_Default,
 		color: $regular-green;
 
 		&:hover {
-			background-color: darken($light-green, 5%);
+			background-color: color.adjust($light-green, $lightness: -5%);
 		}
 	}
 }
@@ -293,7 +303,6 @@ a.Button.Is_Default,
 }
 
 a.LinkReset {
-
 	&:link,
 	&:visited {
 		color: $dark-grey;
@@ -302,7 +311,6 @@ a.LinkReset {
 }
 
 .AR {
-
 	a.Button,
 	&.LayoutTooltip a.Button,
 	&.LayoutPopup a.Button,

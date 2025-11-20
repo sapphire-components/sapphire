@@ -1,3 +1,6 @@
+@use '../00-settings/colors' as *;
+@use '../00-settings/sizes' as *;
+
 .TextInput {
 	&.Mandatory {
 		border-left: 3px solid $regular-alpha;

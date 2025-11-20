@@ -1,3 +1,8 @@
+@use '../../../00-settings/colors' as *;
+@use '../../../../assets/variables' as *;
+
+@use '../../../01-tools/flex-align' as *;
+
 .IconDropdown {
 	cursor: pointer;
 	position: relative;

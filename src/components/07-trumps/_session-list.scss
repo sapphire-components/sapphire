@@ -1,3 +1,6 @@
+@use '../00-settings/colors' as *;
+@use '../00-settings/borders' as *;
+
 .SessionList {
 	&:not(.IsDisable) {
 		.SessionList_Content {

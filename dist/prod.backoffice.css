@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.5.247 || Generated: Thu Nov 20 2025 10:44:29 GMT+0000 (Hora padrão da Europa Ocidental) */
+/*! prod.backoffice.css || Version: 5.5.247 || Generated: Thu Nov 20 2025 13:41:52 GMT+0000 (Hora padrão da Europa Ocidental) */
 /*!***************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/backoffice/styles.scss ***!
   \***************************************************************************************************************************************************************************************************************************************************/
@@ -6555,7 +6555,6 @@ option {
 .TileIconText_label,
 .Heading1,
 .Heading2,
-.modalPopup.Open .modalPopup_title,
 .Heading3,
 .Heading4,
 .Header_title a,
@@ -8726,7 +8725,7 @@ a + a.Button {
   padding: 10px;
 }
 
-.SectionExpandable .SectionExpandable_header .Heading2, .SectionExpandable .SectionExpandable_header .modalPopup.Open .modalPopup_title, .modalPopup.Open .SectionExpandable .SectionExpandable_header .modalPopup_title {
+.SectionExpandable .SectionExpandable_header .Heading2 {
   font-size: 14px;
   font-weight: 400;
 }
@@ -8739,17 +8738,17 @@ a + a.Button {
   visibility: visible;
 }
 
-.SectionExpandable.expanded .SectionExpandable_header .Heading2, .SectionExpandable.expanded .SectionExpandable_header .modalPopup.Open .modalPopup_title, .modalPopup.Open .SectionExpandable.expanded .SectionExpandable_header .modalPopup_title {
+.SectionExpandable.expanded .SectionExpandable_header .Heading2 {
   color: #009884;
   font-weight: 600;
 }
 
-.SectionExpandable .SectionExpandable_header .Heading2, .SectionExpandable .SectionExpandable_header .modalPopup.Open .modalPopup_title, .modalPopup.Open .SectionExpandable .SectionExpandable_header .modalPopup_title {
+.SectionExpandable .SectionExpandable_header .Heading2 {
   color: #333;
   font-weight: 600;
 }
 
-.SectionExpandable .SectionExpandable_header .Heading2.SectionExpandable__icon, .SectionExpandable .SectionExpandable_header .modalPopup.Open .SectionExpandable__icon.modalPopup_title, .modalPopup.Open .SectionExpandable .SectionExpandable_header .SectionExpandable__icon.modalPopup_title {
+.SectionExpandable .SectionExpandable_header .Heading2.SectionExpandable__icon {
   font-size: 24px;
 }
 
@@ -10595,7 +10594,7 @@ a .ListItem:after {
   margin: 0 2px 0 6px;
 }
 
-.Breadcrumbs > div:first-child .Heading2, .Breadcrumbs > div:first-child .modalPopup.Open .modalPopup_title, .modalPopup.Open .Breadcrumbs > div:first-child .modalPopup_title {
+.Breadcrumbs > div:first-child .Heading2 {
   color: #009884;
 }
 
@@ -10866,7 +10865,7 @@ a .ListItem:after {
   line-height: 32px;
 }
 
-.Heading2, .modalPopup.Open .modalPopup_title {
+.Heading2 {
   font-size: 20px;
   font-weight: 900;
 }
@@ -11785,7 +11784,7 @@ a.ListNavigation_Next:link {
   transform: scale(-1, 1);
 }
 
-.ExpandableContainer .SectionExpandable.expanded .SectionExpandable_header .Heading2, .ExpandableContainer .SectionExpandable.expanded .SectionExpandable_header .modalPopup.Open .modalPopup_title, .modalPopup.Open .ExpandableContainer .SectionExpandable.expanded .SectionExpandable_header .modalPopup_title {
+.ExpandableContainer .SectionExpandable.expanded .SectionExpandable_header .Heading2 {
   color: #333;
 }
 
@@ -11840,7 +11839,7 @@ a.ListNavigation_Next:link {
   pointer-events: none;
 }
 
-.ExpandableContainer .SectionExpandable .SectionExpandable_header .Heading2.SectionExpandable__icon span, .ExpandableContainer .SectionExpandable .SectionExpandable_header .modalPopup.Open .SectionExpandable__icon.modalPopup_title span, .modalPopup.Open .ExpandableContainer .SectionExpandable .SectionExpandable_header .SectionExpandable__icon.modalPopup_title span {
+.ExpandableContainer .SectionExpandable .SectionExpandable_header .Heading2.SectionExpandable__icon span {
   font-size: 14px;
   vertical-align: middle;
 }
@@ -12408,7 +12407,7 @@ button.ms-choice.open {
   cursor: -webkit-grab;
 }
 
-.WrapDraggableContent .Section_content .Section_header .Heading2, .WrapDraggableContent .Section_content .Section_header .modalPopup.Open .modalPopup_title, .modalPopup.Open .WrapDraggableContent .Section_content .Section_header .modalPopup_title {
+.WrapDraggableContent .Section_content .Section_header .Heading2 {
   background: #d6d6d6;
   color: #858585;
   font-size: 14px;
@@ -14480,10 +14479,8 @@ div.time-picker li.selected {
   padding: 10px;
 }
 
-.SplitTablesContainer .Heading2, .SplitTablesContainer .modalPopup.Open .modalPopup_title, .modalPopup.Open .SplitTablesContainer .modalPopup_title,
-.TableRecords_Wrapper .Heading2,
-.TableRecords_Wrapper .modalPopup.Open .modalPopup_title,
-.modalPopup.Open .TableRecords_Wrapper .modalPopup_title {
+.SplitTablesContainer .Heading2,
+.TableRecords_Wrapper .Heading2 {
   height: 68px;
   line-height: 68px;
   margin-left: 26px;
@@ -15171,11 +15168,11 @@ input::-webkit-inner-spin-button {
   text-decoration: none;
 }
 
-.SegmentedControl, .SegmentedControlLight {
+.SegmentedControl {
   margin-bottom: 10px;
 }
 
-.SegmentedControl.NoMargin, .NoMargin.SegmentedControlLight {
+.SegmentedControl.NoMargin {
   margin: 0;
 }
 
@@ -15237,7 +15234,7 @@ input::-webkit-inner-spin-button {
   border-top-right-radius: 0;
 }
 
-.SegmentedControl input, .SegmentedControlLight input {
+.SegmentedControl input {
   left: -20px;
   margin: 0 5px 0 0;
   opacity: 0;
@@ -15245,9 +15242,8 @@ input::-webkit-inner-spin-button {
   position: absolute;
 }
 
-.FA .SegmentedControl input, .FA .SegmentedControlLight input,
-.AR .SegmentedControl input,
-.AR .SegmentedControlLight input {
+.FA .SegmentedControl input,
+.AR .SegmentedControl input {
   left: auto;
   right: -20px;
 }

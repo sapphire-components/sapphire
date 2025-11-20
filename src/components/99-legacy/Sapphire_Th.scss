@@ -317,6 +317,8 @@
 //     font-family: 'globerbold', Helvetica, Arial, sans-serif;
 // }
 
+@use '../00-settings/url' as *;
+
 .isTouch {
   font-size: 18px;
 }

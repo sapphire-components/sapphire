@@ -1,3 +1,8 @@
+@use '../00-settings/colors' as *;
+@use '../00-settings/borders' as *;
+
+@use 'flex-align' as *;
+
 @mixin blank-state {
 	@include flex-center-total;
 

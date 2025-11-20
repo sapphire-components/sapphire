@@ -1,3 +1,5 @@
+@use '../00-settings/colors' as *;
+
 .CardBox {
 	-servicestudio-background-color: $regular-white !important;
 	-servicestudio-border: solid 1px $regular-grey !important;

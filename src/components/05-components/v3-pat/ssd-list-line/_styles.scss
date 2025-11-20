@@ -1,3 +1,5 @@
+@use '../../../00-settings/colors' as *;
+
 div.SSD_ListLine {
 	background-color: $regular-white;
 	border-bottom: 1px solid #c9cdce;

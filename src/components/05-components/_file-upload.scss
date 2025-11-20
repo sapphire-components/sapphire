@@ -1,3 +1,11 @@
+@use '../00-settings/colors' as *;
+@use '../00-settings/borders' as *;
+@use '../00-settings/sizes' as *;
+@use '../00-settings/fonts' as *;
+@use '../../assets/variables' as *;
+
+@use '../01-tools/flex-align' as *;
+
 .FileUpload {
 	@include flex-center-total;
 

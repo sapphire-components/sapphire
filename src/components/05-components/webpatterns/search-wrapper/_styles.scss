@@ -1,3 +1,8 @@
+@use '../../../00-settings/colors' as *;
+@use '../../../../assets/variables' as *;
+@use '../../../00-settings/fonts' as *;
+@use '../../../00-settings/sizes' as *;
+
 .Page .Search_wrapper {
 	line-height: 1;
 	position: relative;

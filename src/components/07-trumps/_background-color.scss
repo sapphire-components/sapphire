@@ -1,4 +1,6 @@
 // Go to 06-helpers/_colors.scss to see the new classes
+@use '../00-settings/colors' as *;
+
 .Beige {
 	background-color: $regular-beige;
 }

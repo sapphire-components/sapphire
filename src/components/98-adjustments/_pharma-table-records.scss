@@ -1,3 +1,5 @@
+@use '../00-settings/colors' as *;
+
 /* needs to be reviewed! */
 .TableRecords tbody tr td.BelowMinimum,
 .TableRecords tbody tr:hover td.BelowMinimum {

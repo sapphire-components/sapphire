@@ -1,3 +1,15 @@
+@use 'sass:color';
+
+@use '../../../00-settings/borders' as *;
+@use '../../../00-settings/colors' as *;
+@use '../../../00-settings/sizes' as *;
+@use '../../../../assets/variables' as *;
+@use '../../../00-settings/fonts' as *;
+
+@use '../../../01-tools/arrow-button' as *;
+
+@use '../../../01-tools/flex-align' as *;
+
 /* stylelint-disable no-descending-specificity */
 /* Now called GenericCard, the css classes will remain with their previous name*/
 .PersonCard {
@@ -33,7 +45,7 @@
 		display: flex;
 		min-height: 56px;
 		overflow-x: clip;
-    flex-wrap: wrap;
+		flex-wrap: wrap;
 
 		&:not(.IsTransparent).PersonCard__content {
 			background-color: $regular-white;
@@ -332,7 +344,7 @@
 			.GenericCardBackground & {
 				~ .PersonCard__content,
 				~ .PersonCard__actions {
-					background-color: lighten($regular-green, 46%);
+					background-color: color.adjust($regular-green, $lightness: 46%);
 				}
 			}
 
@@ -537,7 +549,7 @@
 		.PersonCard__content,
 		.PersonCard__actions,
 		.PersonCard__headerLeftInfo {
-			background-color: lighten($regular-green, 48%);
+			background-color: color.adjust($regular-green, $lightness: 48%);
 		}
 	}
 
@@ -550,19 +562,18 @@
 		}
 	}
 
-	&.PersonCard_ScheduleCanceled{
-
+	&.PersonCard_ScheduleCanceled {
 		.PersonCard__headerLeftInfo,
-		.PersonCard__content{
+		.PersonCard__content {
 			background-color: $sapphire-light;
 		}
 
-		.PersonCard__headerLeftInfo{
+		.PersonCard__headerLeftInfo {
 			border-top-right-radius: 0;
 			border-bottom-right-radius: 0;
 		}
 
-		.PersonCard__content{
+		.PersonCard__content {
 			border-top-left-radius: 0;
 			border-bottom-left-radius: 0;
 		}

@@ -1,3 +1,12 @@
+@use '../../../00-settings/colors' as *;
+@use '../../../00-settings/borders' as *;
+@use '../../../00-settings/sizes' as *;
+@use '../../../00-settings/fonts' as *;
+
+@use '../../../01-tools/box-shadow' as *;
+
+@use '../../../01-tools/alignment' as *;
+
 .Panel {
 	background-color: transparent;
 	border: none;

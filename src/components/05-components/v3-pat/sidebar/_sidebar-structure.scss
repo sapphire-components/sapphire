@@ -1,3 +1,11 @@
+@use '../../../00-settings/colors' as *;
+@use '../../../00-settings/url' as *;
+@use '../../../00-settings/fonts' as *;
+
+@use '../../../01-tools/scrollbar' as *;
+
+@use '../../../01-tools/alignment' as *;
+
 .Sidebar {
 	border-left: 1px solid #ddd;
 	height: 100%;

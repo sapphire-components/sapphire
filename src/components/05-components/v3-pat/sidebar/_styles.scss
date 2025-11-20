@@ -1,3 +1,3 @@
-@import 'sidebar-structure';
-@import 'sidebar-notify';
-@import 'tasks';
+@use 'sidebar-structure' as *;
+@use 'sidebar-notify' as *;
+@use 'tasks' as *;

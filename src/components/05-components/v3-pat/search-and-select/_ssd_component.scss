@@ -4,6 +4,10 @@
 
     Component defined inside other component----- Sign_CW -> SearchSelectComponent\SSDSearch V3 PATH */
 
+@use '../../../00-settings/colors' as *;
+@use '../../../00-settings/fonts' as *;
+@use '../../../00-settings/sizes' as *;
+
 .SSD-Widget {
 	height: 4rem;
 	position: relative;

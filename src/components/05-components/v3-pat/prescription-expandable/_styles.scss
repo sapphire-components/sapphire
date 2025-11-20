@@ -1,3 +1,11 @@
+@use '../../../00-settings/colors' as *;
+@use '../../../00-settings/borders' as *;
+@use '../../../00-settings/fonts' as *;
+
+@use '../../../01-tools/flex-align' as *;
+
+@use '../../../01-tools/arrow-button' as *;
+
 .SectionPrescriptionExpandableArea {
 	&.expanded {
 		&:not(.isLinkEpandable) {

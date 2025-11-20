@@ -1,3 +1,8 @@
+@use '../00-settings/colors' as *;
+@use '../00-settings/fonts' as *;
+@use '../../assets/variables' as *;
+@use '../00-settings/url' as *;
+
 @mixin arrow-button($color-base: $regular-beta, $size-base: 22px, $font-size: 0.857em, $rotate: 90deg) {
 	align-items: center;
 	background-color: transparent;

@@ -1,3 +1,8 @@
+@use '../00-settings/colors' as *;
+@use '../00-settings/borders' as *;
+@use '../00-settings/fonts' as *;
+@use '../00-settings/sizes' as *;
+
 .AvailabilityCardContainer {
 	border: 1px solid $light-grey;
 	border-radius: $border-radius-default;

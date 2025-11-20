@@ -1,3 +1,6 @@
+@use '../00-settings/colors' as *;
+@use '../00-settings/sizes' as *;
+
 @mixin defaultSettings($borderDirection: border-left) {
 	#{$borderDirection}: 1.9px solid $light-grey;
 	bottom: 0;

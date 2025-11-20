@@ -1,3 +1,5 @@
+@use '../../../../components/00-settings/colors' as *;
+
 .DashboardCard {
 	background-color: $regular-white;
 	border-radius: 2px;

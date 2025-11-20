@@ -1,3 +1,6 @@
+@use '../../../00-settings/colors' as *;
+@use '../../../00-settings/fonts' as *;
+
 .WizardContent {
 	&.active {
 		.WizardContent {

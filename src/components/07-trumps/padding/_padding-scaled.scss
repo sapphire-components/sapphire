@@ -1,6 +1,10 @@
+@use 'sass:list';
+
+@use '../../00-settings/sizes' as *;
+
 @each $size in $sapphire-sizes {
-	$label: nth($size, 1);
-	$value: nth($size, 2);
+	$label: list.nth($size, 1);
+	$value: list.nth($size, 2);
 
 	.MultiPadding#{$label} {
 		padding: #{$value};

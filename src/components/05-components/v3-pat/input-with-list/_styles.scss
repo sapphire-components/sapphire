@@ -1,3 +1,8 @@
+@use '../../../00-settings/sizes' as *;
+@use '../../../00-settings/colors' as *;
+
+@use '../../../05-components/webpatterns/dropdown-menu/_styles' as *;
+
 .InputWithList {
 	position: relative;
 	&__Input {

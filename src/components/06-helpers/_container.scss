@@ -1,3 +1,5 @@
+@use '../00-settings/colors' as *;
+
 .DisabledContainer {
 	background-color: $regular-white;
 	display: block;

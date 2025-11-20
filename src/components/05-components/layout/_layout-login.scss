@@ -1,3 +1,6 @@
+@use '../../00-settings/url' as *;
+@use '../../00-settings/colors' as *;
+
 .Page.login-page {
 	height: auto !important;
 }

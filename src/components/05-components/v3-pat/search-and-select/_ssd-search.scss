@@ -1,3 +1,10 @@
+@use '../../../../assets/variables' as *;
+@use '../../../00-settings/colors' as *;
+@use '../../../00-settings/sizes' as *;
+@use '../../../00-settings/fonts' as *;
+
+@use '../../../01-tools/flex-align' as *;
+
 $searchsd-border-radius: 24px;
 $searchsd-size-base: 48px;
 $searchsd-small-size-base: 36px;

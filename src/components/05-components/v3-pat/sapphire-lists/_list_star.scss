@@ -1,3 +1,5 @@
+@use '../../../00-settings/colors' as *;
+
 div.List-Star {
 	color: $light-grey;
 	width: 48px;

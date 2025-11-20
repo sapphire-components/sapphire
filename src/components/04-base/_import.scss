@@ -1,8 +1,8 @@
-@import 'big-input';
-@import 'buttons';
-@import 'card-icon';
-@import 'circle';
-@import 'container';
-@import 'text-input';
-@import 'title-section';
-@import 'validation-form';
+@use 'big-input' as *;
+@use 'buttons' as *;
+@use 'card-icon' as *;
+@use 'circle' as *;
+@use 'container' as *;
+@use 'text-input' as *;
+@use 'title-section' as *;
+@use 'validation-form' as *;

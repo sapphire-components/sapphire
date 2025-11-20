@@ -1,3 +1,5 @@
+@use '../00-settings/import' as *;
+
 @mixin flex-center-total($type: flex) {
 	display: $type;
 	align-items: center;

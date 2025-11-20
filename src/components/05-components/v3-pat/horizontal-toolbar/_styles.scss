@@ -1,3 +1,16 @@
+@use '../../../00-settings/colors' as *;
+@use '../../../00-settings/borders' as *;
+@use '../../../00-settings/sizes' as *;
+@use '../../../00-settings/fonts' as *;
+
+@use '../../../01-tools/arrow-button' as *;
+
+@use '../../../01-tools/flex-align' as *;
+
+@use '../../../01-tools/box-shadow' as *;
+
+@use '../../../01-tools/scrollbar' as *;
+
 @mixin common-toolbar-button-style($rotate-degree: 270deg) {
 	@include arrow-button;
 

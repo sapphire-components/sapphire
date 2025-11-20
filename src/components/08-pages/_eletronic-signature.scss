@@ -1,3 +1,12 @@
+@use '../00-settings/colors' as *;
+@use '../00-settings/fonts' as *;
+@use '../00-settings/sizes' as *;
+@use '../00-settings/borders' as *;
+
+@use '../01-tools/alignment' as *;
+
+@use '../01-tools/flex-align' as *;
+
 .LayoutESignature {
 	background-color: $body-color;
 	display: grid;

@@ -12,6 +12,8 @@
 //
 // Style guide: Components.Loading
 
+@use '../00-settings/colors' as *;
+
 .lds-ring {
 	display: inline-block;
 	height: 32px;

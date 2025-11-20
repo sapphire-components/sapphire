@@ -1,3 +1,5 @@
+@use '../../../00-settings/sizes' as *;
+
 .Columns2 > .Column {
 	padding-left: $sapphire-sizes--large;
 	padding-right: $sapphire-sizes--large;

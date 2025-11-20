@@ -1,3 +1,7 @@
+@use '../../../00-settings/colors' as *;
+@use '../../../../assets/variables' as *;
+@use '../../../00-settings/borders' as *;
+
 .SpinnerInput_Container {
 	& > a {
 		background-color: $regular-white;

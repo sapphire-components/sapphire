@@ -1,3 +1,6 @@
+@use '../../../00-settings/colors' as *;
+@use '../../../00-settings/fonts' as *;
+
 $IconLabel-color-border: $mid-light-grey;
 $IconLabel-color-disabled: $mid-light-grey;
 $IconLabel-color-link: $regular-beta;

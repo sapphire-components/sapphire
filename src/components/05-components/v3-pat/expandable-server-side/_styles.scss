@@ -1,3 +1,5 @@
+@use '../../../00-settings/colors' as *;
+
 .ExpandableServerSide {
 	background-color: $regular-white;
 	padding: 0 10px;

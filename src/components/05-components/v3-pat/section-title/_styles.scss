@@ -1,3 +1,6 @@
+@use '../../../00-settings/colors' as *;
+@use '../../../00-settings/fonts' as *;
+
 .SectionTitles.Area {
 	display: flex;
 	margin-bottom: 20px;

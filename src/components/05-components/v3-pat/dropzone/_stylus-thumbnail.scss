@@ -1,3 +1,6 @@
+@use '../../../00-settings/colors' as *;
+@use '../../../00-settings/sizes' as *;
+
 .DropZoneContainer {
 	&_preview {
 		border: 1px solid $light-grey;

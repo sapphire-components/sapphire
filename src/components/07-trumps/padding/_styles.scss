@@ -1,4 +1,4 @@
-@import '_padding-numeric';
-@import '_padding-scaled';
-@import '_no-padding';
-@import 'padding-appointments';
+@use '_padding-numeric' as *;
+@use '_padding-scaled' as *;
+@use '_no-padding' as *;
+@use 'padding-appointments' as *;

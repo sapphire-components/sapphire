@@ -1,3 +1,5 @@
+@use '../00-settings/colors' as *;
+
 /*------------------------------------------------------------*/
 /* 10.3 Sapphire Auxiliar Classes  ****************************/
 /*------------------------------------------------------------*/
@@ -1080,7 +1082,7 @@ a.Button.Glass:before {
 }
 
 a.Button.Globe:before {
-	content: '\e968'
+	content: '\e968';
 }
 
 a.Button.GroupOfActions:before {

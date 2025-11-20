@@ -1,9 +1,9 @@
-@import '../components/00-settings/colors';
-@import '../components/00-settings/fonts';
-@import '../components/01-tools/alignment';
-@import '../components/01-tools/arrow-button';
-@import '../components/01-tools/flex-align';
-@import '../components/01-tools/scrollbar';
+@use '../components/00-settings/colors' as *;
+@use '../components/00-settings/fonts' as *;
+@use '../components/01-tools/alignment' as *;
+@use '../components/01-tools/arrow-button' as *;
+@use '../components/01-tools/flex-align' as *;
+@use '../components/01-tools/scrollbar' as *;
 
 // Reset
 body {

@@ -1,3 +1,5 @@
+@use '../00-settings/fonts' as *;
+
 .Heading1 {
 	font-family: $font-family-latin-bold;
 	font-size: $font-size-heading1;

@@ -1,3 +1,12 @@
+@use '../00-settings/colors' as *;
+@use '../00-settings/borders' as *;
+@use '../00-settings/sizes' as *;
+@use '../00-settings/fonts' as *;
+
+@use '../01-tools/alignment' as *;
+
+@use '../01-tools/scrollbar' as *;
+
 @mixin common-radio-checkbox-style($border-radius: 4px) {
 	appearance: none;
 	border: 0;

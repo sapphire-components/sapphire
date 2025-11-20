@@ -1,6 +1,6 @@
-@import 'alignment';
-@import 'arrow-button';
-@import 'blank-state';
-@import 'box-shadow';
-@import 'flex-align';
-@import 'scrollbar';
+@use 'alignment' as *;
+@use 'arrow-button' as *;
+@use 'blank-state' as *;
+@use 'box-shadow' as *;
+@use 'flex-align' as *;
+@use 'scrollbar' as *;

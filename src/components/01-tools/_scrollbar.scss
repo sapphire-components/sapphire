@@ -1,3 +1,5 @@
+@use '../00-settings/colors' as *;
+
 @mixin component-scroll($dark-bar: false, $border-radius: 4px) {
 	& ::-webkit-scrollbar {
 		box-sizing: border-box;

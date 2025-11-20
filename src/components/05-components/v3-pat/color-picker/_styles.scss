@@ -1,3 +1,9 @@
+@use '../../../00-settings/colors' as *;
+@use '../../../00-settings/borders' as *;
+@use '../../../00-settings/fonts' as *;
+
+@use '../../../01-tools/box-shadow' as *;
+
 .sp-replacer {
 	background-color: $regular-white;
 	border: 1px solid $light-grey;

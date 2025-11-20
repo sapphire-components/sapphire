@@ -1,3 +1,5 @@
+@use '../../../00-settings/colors' as *;
+
 div.CircledArrow {
 	border: 2px solid $regular-beta;
 	border-radius: 50%;

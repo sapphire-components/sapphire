@@ -1,3 +1,6 @@
+@use '../../../00-settings/borders' as *;
+@use '../../../00-settings/sizes' as *;
+
 .InputWithClear-container {
 	position: relative;
 }

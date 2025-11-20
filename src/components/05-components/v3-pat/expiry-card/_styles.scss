@@ -1,3 +1,7 @@
+@use '../../../00-settings/borders' as *;
+@use '../../../00-settings/fonts' as *;
+@use '../../../00-settings/colors' as *;
+
 .ExpiryCard {
 	border-radius: $border-radius-default;
 	display: inline-block;

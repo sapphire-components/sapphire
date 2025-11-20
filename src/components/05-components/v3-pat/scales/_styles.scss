@@ -1,7 +1,7 @@
-@import 'button-group-scale';
-@import 'ruler-scales';
-@import 'scale-card';
-@import 'scale-filter';
-@import 'scale-list';
-@import 'scale-main-structure';
-@import 'toggle-item-control';
+@use 'button-group-scale' as *;
+@use 'ruler-scales' as *;
+@use 'scale-card' as *;
+@use 'scale-filter' as *;
+@use 'scale-list' as *;
+@use 'scale-main-structure' as *;
+@use 'toggle-item-control' as *;

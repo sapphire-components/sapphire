@@ -1,3 +1,6 @@
+@use '../00-settings/colors' as *;
+@use '../00-settings/sizes' as *;
+
 .PatientDetails {
 	&__ActionsWrapper {
 		background-color: $regular-white;

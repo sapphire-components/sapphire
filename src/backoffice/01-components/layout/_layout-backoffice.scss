@@ -1,3 +1,5 @@
+@use '../../../components/00-settings/colors' as *;
+
 .BreadActionsWrapper {
 	background-color: $body-color;
 	max-width: 1439px;

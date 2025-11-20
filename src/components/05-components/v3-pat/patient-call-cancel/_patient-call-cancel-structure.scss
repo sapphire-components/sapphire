@@ -1,3 +1,11 @@
+@use '../../../00-settings/colors' as *;
+@use '../../../00-settings/sizes' as *;
+@use '../../../00-settings/fonts' as *;
+
+@use '../../../01-tools/box-shadow' as *;
+
+@use '../../../01-tools/flex-align' as *;
+
 .PatientCallCancelStructure {
 	@include shadow-small;
 
@@ -92,11 +100,10 @@
 			margin-left: $sapphire-sizes--medium;
 
 			.PatientCallCancel {
-
 				//[ui='data-button-call'] {
 				[ui='data-button-call'].Button {
 					//@extend .Button.Third;
-					@extend .Third;
+					@extend .Third!optional;
 				}
 			}
 		}
@@ -209,7 +216,6 @@
 
 				.PatientCallCancel {
 					&__Header {
-
 						[ui='data-button-call'] {
 							margin-left: 0 !important;
 							margin-right: $sapphire-sizes--medium !important;

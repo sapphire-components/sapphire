@@ -1,4 +1,11 @@
 // Wizard Parent
+@use '../00-settings/colors' as *;
+@use '../00-settings/fonts' as *;
+@use '../00-settings/borders' as *;
+@use '../00-settings/sizes' as *;
+
+@use '../01-tools/flex-align' as *;
+
 @mixin wizard-step-arrow-style {
 	height: 24px;
 	width: 24px;

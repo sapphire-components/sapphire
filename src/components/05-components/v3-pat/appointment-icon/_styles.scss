@@ -1,3 +1,8 @@
+@use '../../../00-settings/sizes' as *;
+@use '../../../00-settings/colors' as *;
+@use '../../../../assets/variables' as *;
+@use '../../../00-settings/fonts' as *;
+
 .Page .Appointment_Icon {
 	border-radius: 50%;
 	height: $sapphire-sizes--medium;

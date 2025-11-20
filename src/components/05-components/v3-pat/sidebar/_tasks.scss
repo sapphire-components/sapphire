@@ -1,3 +1,5 @@
+@use '../../../00-settings/colors' as *;
+
 .NotificationLine {
   border-bottom: solid 1px $sapphire-grey-blue;
   font-size: .9rem;

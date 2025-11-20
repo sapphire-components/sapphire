@@ -1,3 +1,14 @@
+@use 'sass:color';
+
+@use '../../../00-settings/colors' as *;
+@use '../../../00-settings/borders' as *;
+@use '../../../00-settings/sizes' as *;
+@use '../../../00-settings/fonts' as *;
+
+@use '../../../01-tools/box-shadow' as *;
+
+@use '../../../01-tools/flex-align' as *;
+
 .ShiftTableCard {
 	@include shadow-xsmall;
 
@@ -125,10 +136,10 @@
 
 	&--Done {
 		background-color: $light-green;
-		border-color: lighten($regular-green, 20%);
+		border-color: color.adjust($regular-green, $lightness: 20%);
 
 		&.ShiftTableCard--selected {
-			background-color: darken($light-green, 5%);
+			background-color: color.adjust($light-green, $lightness: -5%);
 		}
 
 		.ShiftTableCard__CardStatus {
@@ -139,10 +150,10 @@
 
 	&--NotDone {
 		background-color: $light-red;
-		border-color: lighten($regular-red, 20%);
+		border-color: color.adjust($regular-red, $lightness: 20%);
 
 		&.ShiftTableCard--selected {
-			background-color: darken($light-red, 5%);
+			background-color: color.adjust($light-red, $lightness: -5%);
 		}
 
 		.ShiftTableCard__CardStatus {
@@ -153,10 +164,10 @@
 
 	&--Overdue {
 		background-color: $light-yellow;
-		border-color: lighten($regular-orange, 20%);
+		border-color: color.adjust($regular-orange, $lightness: 20%);
 
 		&.ShiftTableCard--selected {
-			background-color: darken($light-orange, 5%);
+			background-color: color.adjust($light-orange, $lightness: -5%);
 		}
 
 		.ShiftTableCard__CardStatus {
@@ -167,10 +178,10 @@
 
 	&--PartiallyDone {
 		background-color: $light-beige;
-		border-color: lighten($regular-beige, 5%);
+		border-color: color.adjust($regular-beige, $lightness: 5%);
 
 		&.ShiftTableCard--selected {
-			background-color: darken($light-beige, 5%);
+			background-color: color.adjust($light-beige, $lightness: -5%);
 		}
 
 		.ShiftTableCard__CardStatus {

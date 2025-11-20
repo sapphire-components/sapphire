@@ -1,3 +1,15 @@
+@use '../../../00-settings/sizes' as *;
+@use '../../../00-settings/colors' as *;
+@use '../../../00-settings/borders' as *;
+@use '../../../00-settings/fonts' as *;
+@use '../../../../assets/variables' as *;
+
+@use '../../../01-tools/flex-align' as *;
+
+@use '../../../01-tools/arrow-button' as *;
+
+@use '../../../02-generic/headings' as *;
+
 $card-xsmall-size-base: $sapphire-sizes--largest;
 $card-small-size-base: $sapphire-sizes--largest + 20px;
 $card-medium-size-base: $sapphire-sizes--largest + 30px;
@@ -25,11 +37,10 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 
 			.MainInteractiveCard-header-text {
 				overflow: hidden;
-				
-				.HasContent{
+
+				.HasContent {
 					display: none;
 				}
-
 			}
 		}
 
@@ -201,7 +212,7 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 		pointer-events: none;
 		z-index: 1;
 
-		&.HeaderAlignCenterVertical{
+		&.HeaderAlignCenterVertical {
 			@include flex-custom-align($align: center, $justify: flex-start, $type: flex);
 		}
 
@@ -367,7 +378,7 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 
 	margin-bottom: $sapphire-sizes--medium;
 	justify-content: flex-end;
-	
+
 	&.XSmall {
 		height: $card-xsmall-size-base;
 	}

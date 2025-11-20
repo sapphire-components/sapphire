@@ -1,4 +1,8 @@
 // Used in the Referral Letter Page
+@use '../00-settings/colors' as *;
+
+@use '../01-tools/flex-align' as *;
+
 .CustomExpandable {
 	.ExpandableSmaller {
 		display: flex;

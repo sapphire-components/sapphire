@@ -1,8 +1,7 @@
-@import 'confirmation-panel';
-@import 'confirmation-panel-3options';
-@import 'modal-popup';
-@import 'panel-by-id';
-@import 'panel-by-notify';
-@import 'pop_up_menu';
-
-@import 'panel-common-styles';
+@use 'confirmation-panel' as *;
+@use 'confirmation-panel-3options' as *;
+@use 'modal-popup' as *;
+@use 'panel-by-id' as *;
+@use 'panel-by-notify' as *;
+@use 'pop_up_menu' as *;
+@use 'panel-common-styles' as *;

@@ -1,2 +1,2 @@
-@import 'layout-backoffice';
-@import 'layout-backoffice-login';
+@use 'layout-backoffice' as *;
+@use 'layout-backoffice-login' as *;

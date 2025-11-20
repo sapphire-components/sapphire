@@ -1,3 +1,7 @@
+@use '../../00-settings/colors' as *;
+@use '../../00-settings/borders' as *;
+@use '../../00-settings/sizes' as *;
+
 .cke {
 	&.cke_chrome {
 		border: 1px solid $light-grey;

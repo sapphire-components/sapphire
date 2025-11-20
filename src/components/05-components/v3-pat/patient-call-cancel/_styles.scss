@@ -1,2 +1,2 @@
-@import 'patient-call-cancel';
-@import 'patient-call-cancel-structure';
+@use 'patient-call-cancel' as *;
+@use 'patient-call-cancel-structure' as *;

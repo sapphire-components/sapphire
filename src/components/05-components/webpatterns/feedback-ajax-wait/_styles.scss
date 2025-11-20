@@ -1,3 +1,5 @@
+@use '../../../00-settings/colors' as *;
+
 .Feedback_AjaxWait {
   background-color: $regular-alpha;
   border-radius: 3px;

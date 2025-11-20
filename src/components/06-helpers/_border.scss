@@ -1,4 +1,7 @@
 // Style
+@use '../00-settings/colors' as *;
+@use '../00-settings/borders' as *;
+
 .BorderStyleDashed,
 .borderstyle--dashed {
 	border-style: dashed;

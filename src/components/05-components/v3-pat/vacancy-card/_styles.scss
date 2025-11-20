@@ -1,3 +1,5 @@
+@use '../../../00-settings/colors' as *;
+
 .VacancyCard {
 	background-color: $regular-white;
 	border: 1px solid $light-grey;

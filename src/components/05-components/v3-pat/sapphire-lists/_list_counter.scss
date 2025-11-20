@@ -1,3 +1,5 @@
+@use '../../../00-settings/colors' as *;
+
 div.Counter_Message {
 	color: $regular-grey;
 }

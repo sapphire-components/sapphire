@@ -1,6 +1,6 @@
-@import 'borders';
-@import 'colors';
-@import '../../assets/variables';
-@import 'fonts';
-@import 'sizes';
-@import 'url';
+@use 'borders' as *;
+@use 'colors' as *;
+@use '../../assets/variables' as *;
+@use 'fonts' as *;
+@use 'sizes' as *;
+@use 'url' as *;

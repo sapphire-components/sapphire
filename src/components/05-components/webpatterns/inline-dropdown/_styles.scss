@@ -1,3 +1,8 @@
+@use '../../../00-settings/colors' as *;
+@use '../../../00-settings/fonts' as *;
+
+@use '../../../01-tools/flex-align' as *;
+
 .InlineDropdown {
 	cursor: pointer;
 	height: fit-content;

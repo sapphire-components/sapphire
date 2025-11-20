@@ -1,3 +1,7 @@
+@use '../../../00-settings/colors' as *;
+@use '../../../00-settings/fonts' as *;
+@use '../../../00-settings/sizes' as *;
+
 .Demographic-item {
 	.Demographic-item-label {
 		color: $regular-grey;

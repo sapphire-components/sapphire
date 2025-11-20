@@ -1,3 +1,5 @@
+@use '../../../00-settings/colors' as *;
+
 .ScaleCard {
 	align-items: center;
 	background-color: $regular-white;

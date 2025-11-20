@@ -1,2 +1,2 @@
-@import 'list_counter';
-@import 'list_star';
+@use 'list_counter' as *;
+@use 'list_star' as *;
