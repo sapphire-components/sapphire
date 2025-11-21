@@ -105,21 +105,23 @@
 		});
 	};
 
+
 	LayoutBase.prototype.handleLayoutTopPadding = function () {
-		this.$spacer.stop().animate(
-			{
-				height: this.contentThreshold,
-			},
-			0,
-			'linear'
-		);
+
+		this.$spacer.stop().animate({
+			height: this.contentThreshold,
+		}, 0, 'linear');
+
 		if (this.$topfixedContent.length === 1) {
 			this.$topfixedContent.css({
 				width: $('.LayoutBase-MainContent').width(),
 				top: this.topfixedContentThreshold + 'px',
 			});
 		}
+
 	};
+
+
 
 	LayoutBase.prototype.handleLayoutBottomPadding = function () {
 		if (this.$bottomfixedContent.length === 1) {
@@ -162,12 +164,7 @@
 
 	LayoutBase.prototype.openSidebarIframe = function (duration_in) {
 		var duration = duration_in >= 0 ? duration_in : 100;
-		this.$iframeSidebar.animate(
-			{
-				width: '100%',
-			},
-			duration
-		);
+		this.$iframeSidebar.animate({ width: '100%', }, duration);
 		$('body').css('overflow-y', 'scroll').click();
 	};
 

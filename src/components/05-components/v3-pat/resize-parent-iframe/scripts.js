@@ -9,16 +9,16 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
     const RESIZE_TOP_OFFSET = 5;
 
     _body.classList.add("ResizeParentIframe");
-    
+
     var _mutationHandler = function (mutations) {
 
-      setTimeout(function(){
+      setTimeout(function () {
         _clearBodyTop();
         var _elementOutsideBodyTop = _checkAnyElementOutsideBodyTop();
         if (_elementOutsideBodyTop != null) {
           _setBodyTop(_elementOutsideBodyTop.getBoundingClientRect().top * -1);
         }
-        
+
         SapphireWidgets.ResizeParentIframe.resize ? SapphireWidgets.ResizeParentIframe.resize() : resize();
       }, 200);
     };
@@ -33,44 +33,44 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
       }, 300);
     };
 
-    var _setBodyTop = function(top) {
+    var _setBodyTop = function (top) {
       _body.removeAttribute(DATA_BODY_RESIZE_ATTRIBUTE_NAME);
       _body.style.marginTop = top + "px";
-      
-      if(top == 0)
+
+      if (top == 0)
         return;
-      
+
       _body.setAttribute(DATA_BODY_RESIZE_ATTRIBUTE_NAME, top);
     }
 
-    var _getBodyTop = function() {
+    var _getBodyTop = function () {
       return parseFloat(_body.getAttribute(DATA_BODY_RESIZE_ATTRIBUTE_NAME) || 0);
     }
 
-    var _clearBodyTop = function() {
-      if(document.querySelectorAll("[" + DATA_ELEMENT_CAUSED_BODY_OFFSET + "]").length > 0)
+    var _clearBodyTop = function () {
+      if (document.querySelectorAll("[" + DATA_ELEMENT_CAUSED_BODY_OFFSET + "]").length > 0)
         return;
 
       _setBodyTop(0);
     }
 
-    var _checkAnyElementOutsideBodyTop = function() {
+    var _checkAnyElementOutsideBodyTop = function () {
       var _topMostElement = null;
       var _topMostY = 0;
 
       for (let index = 0; index <= window.document.body.clientWidth; index += 10) {
         var _elementFromPoint = document.elementFromPoint(index, 0);
         var _elementFromPointY = _elementFromPoint != null ? (_elementFromPoint.getBoundingClientRect().top * -1) : 0;
-        
-        if(_elementFromPoint != document.body && _elementFromPointY > _topMostY) {
+
+        if (_elementFromPoint != document.body && _elementFromPointY > _topMostY) {
           _topMostElement = _elementFromPoint;
           _topMostY = _elementFromPointY;
         }
       }
-      
+
       return _topMostElement;
     }
-    
+
     var resize = function (addedNodes) {
       if (_iframe) {
         try {
@@ -87,11 +87,15 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
           var _iframeHeight = _iframe.clientHeight;
           var _iframeParentViewportHeight = _iframe.ownerDocument.documentElement.clientHeight;
 
+
           // iframe is full height?
-          if (_iframeHeight == _iframeParentViewportHeight) {
+          if (_iframeHeight >= _iframeParentViewportHeight) {
             //if full height, doesn't make sense to resize it.
+            // when zooming in, the iframe height will be greater than the parent viewport height.
+
             return;
           }
+
 
           let _bodyHeight = _body.scrollHeight + _getBodyTop();
           _bodyHeight += window.innerHeight - document.documentElement.clientHeight; // Adding scrollbar height in case it exists.
@@ -128,7 +132,7 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
     else {
       console.warn("Not an iframe, resize observer ignored.");
     }
-    
+
     SapphireWidgets.ResizeParentIframe = {
       resize: resize,
     };
@@ -138,6 +142,6 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
     });
 
     resize();
-    
+
   });
 };

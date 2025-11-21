@@ -1,15 +1,15 @@
 /* Component ISidebar */
-(function($, window, document, SapphireWidgets) {
-	var create = function(config) {
+(function ($, window, document, SapphireWidgets) {
+	var create = function (config) {
 		window[config.widgetId] = new Sidebar(config);
 		SapphireWidgets.Sidebar.widgetId = config.widgetId;
 	};
 
-	var close = function() {
+	var close = function () {
 		window[SapphireWidgets.Sidebar.widgetId].close();
 	};
 
-	var Sidebar = function(config) {
+	var Sidebar = function (config) {
 		var _this = this;
 		this.isExpandable = config.isExpandable;
 		this.$widget = $('#' + config.widgetId);
@@ -20,7 +20,7 @@
 		this.$sidebarContent = this.$widget.find('.ISidebar-content');
 		this.showLastViewed = false;
 
-		this.$sidebarContent.find('> div').each(function() {
+		this.$sidebarContent.find('> div').each(function () {
 			if ($(this).hasClass('PH') && $(this).text() === '') {
 				$(this).remove();
 			}
@@ -29,7 +29,7 @@
 		if (!this.isExpandable) {
 			this.openMenuItem(0);
 		}
-		$(function() {
+		$(function () {
 
 			if (!config.isExpandable) {
 				$(`.${config.selectedTab}`).click();
@@ -44,36 +44,34 @@
 			}
 		});
 
-		$(window).unload(function() {
+		$(window).unload(function () {
 			window.parent.$('.LayoutBase-iframesidebar .lds-ring').fadeOut();
 		});
 	};
 
-	Sidebar.prototype.attachEvents = function() {
+	Sidebar.prototype.attachEvents = function () {
 		var _this = this;
-		this.$sidebarMenu.on('click', function(evt) {
-			console.log(evt);
-
+		this.$sidebarMenu.on('click', function (evt) {
 			evt.stopPropagation();
 			if (!_this.$sidebar.hasClass('open')) {
 				_this.openMenuItem(0);
 			}
 		});
-		this.$sidebarMenuItem.on('click', function() {
+		this.$sidebarMenuItem.on('click', function () {
 			var selectedPosition = $(this).index();
 			_this.openMenuItem(selectedPosition);
 		});
-		this.$sidebarShield.on('click', function() {
+		this.$sidebarShield.on('click', function () {
 			_this.close();
 		});
-		this.$sidebar.on('click', '.SearchSideBarFields .ButtonGroup_button:first-child', function() {
+		this.$sidebar.on('click', '.SearchSideBarFields .ButtonGroup_button:first-child', function () {
 			_this.$sidebar
 				.find('.FieldsSlider')
 				.addClass('Tab1')
 				.removeClass('Tab2');
 			_this.setFieldFocus(_this.$sidebarContent.find('.TextInput:visible').eq(0));
 		});
-		this.$sidebar.on('click', '.SearchSideBarFields .ButtonGroup_button:last-child', function() {
+		this.$sidebar.on('click', '.SearchSideBarFields .ButtonGroup_button:last-child', function () {
 			_this.$sidebar
 				.find('.FieldsSlider')
 				.addClass('Tab2')
@@ -81,7 +79,7 @@
 			_this.setFieldFocus(_this.$sidebarContent.find('.TextInput:visible').eq(0));
 		});
 
-		this.$sidebar.on('click', '.show-last-viewed', function() {
+		this.$sidebar.on('click', '.show-last-viewed', function () {
 			_this.showLastViewed = !_this.showLastViewed;
 
 			document.querySelector('.ISidebar').dataset.showlastviewed = _this.showLastViewed;
@@ -97,7 +95,7 @@
 		});
 	};
 
-	Sidebar.prototype.openMenuItem = function(selectedPosition) {
+	Sidebar.prototype.openMenuItem = function (selectedPosition) {
 		var _this = this;
 
 		this.$sidebar
@@ -130,16 +128,15 @@
 		}
 	};
 
-	Sidebar.prototype.setFieldFocus = function($input) {
-		window.setTimeout(function() {
+	Sidebar.prototype.setFieldFocus = function ($input) {
+		window.setTimeout(function () {
 			$input.click().select();
 		}, 250);
 	};
 
-	Sidebar.prototype.close = function() {
+	Sidebar.prototype.close = function () {
 		var _this = this;
 
-		console.log('sidebar close');
 
 		if (window.parent.length) {
 			window.parent.SapphireWidgets.LayoutBase.closeSidebarIframe(0);
