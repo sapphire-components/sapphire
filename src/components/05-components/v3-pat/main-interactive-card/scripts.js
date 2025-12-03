@@ -35,6 +35,7 @@
 		this.emitNotifyOnOpen = config.emitNotifyOnOpen;
 		this.hideActionsOnOpen = config.hideActionsOnOpen;
 		this.hideCaptionOnOpen = config.hideCaptionOnOpen;
+		this.hideIconOnOpen = config.hideIconOnOpen;
 		this.hideTitleOnOpen = config.hideTitleOnOpen;
 		this.hideSubTitleOnOpen = config.hideSubTitleOnOpen;
 		this.headerHeightWhenOpen = config.headerHeightWhenOpen;
@@ -52,6 +53,9 @@
 		);
 		this.$caption = this.$widget.find(
 			'> .MainInteractiveCard > .MainInteractiveCard-header .MainInteractiveCard-header-text-caption'
+		);
+		this.$icon = this.$widget.find(
+			'> .MainInteractiveCard > .MainInteractiveCard-header .MainInteractiveCard-header-icon'
 		);
 		this.$title = this.$widget.find(
 			'> .MainInteractiveCard > .MainInteractiveCard-header .MainInteractiveCard-header-text-title'
@@ -202,6 +206,9 @@
 		if (this.hideCaptionOnOpen) {
 			this.$caption.css('display', 'none');
 		}
+		if (this.hideIconOnOpen) {
+			this.$icon.css('display', 'none');
+		}
 		if (this.emitNotifyOnOpen) {
 			if (sendNotify) {
 				OsNotifyWidget(this.MainInteractiveCardFakeNotifyId, 'open');
@@ -255,6 +262,9 @@
 		}
 		if (this.hideCaptionOnOpen) {
 			this.$caption.css('display', 'block');
+		}
+		if (this.hideIconOnOpen) {
+			this.$icon.css('display', 'block');
 		}
 
 		if (this.$header.width() - this.$actions.width() > 10) {

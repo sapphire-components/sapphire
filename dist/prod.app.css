@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.249 || Generated: Fri Nov 21 2025 09:56:05 GMT+0000 (Hora padrão da Europa Ocidental) */
+/*! prod.app.css || Version: 5.5.249 || Generated: Wed Dec 03 2025 10:56:26 GMT+0000 (Hora padrão da Europa Ocidental) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -2751,6 +2751,12 @@ input[type=password].small {
   min-height: 26px;
 }
 
+textarea {
+  height: auto;
+  padding: 16px;
+  overflow: hidden;
+  resize: none;
+}
 textarea::-webkit-scrollbar {
   background-color: #fff;
   height: 14px;
@@ -2761,12 +2767,6 @@ textarea::-webkit-scrollbar-thumb {
   background-clip: padding-box;
   border: 4px solid rgba(0, 0, 0, 0);
   border-radius: 9999px;
-}
-textarea {
-  height: auto;
-  padding: 16px;
-  overflow: hidden;
-  resize: none;
 }
 
 .InputFilter input {
@@ -3940,7 +3940,7 @@ a.Button.Is_Default.AppointmentConfirmed:hover,
 .desktop a.Button.IsDefault.AppointmentConfirmed:hover,
 .desktop a.Button.Is_Default.AppointmentConfirmed:hover,
 .PanelOpened a.Button.Is_Default.AppointmentConfirmed:hover {
-  background-color: rgb(218.25, 235.09375, 201.40625);
+  background-color: #daebc9;
 }
 
 .phone .Button.Small,
@@ -5905,6 +5905,12 @@ div.LineInfo {
 .SummaryCard__HeaderTitle {
   flex: 1;
 }
+.SummaryCard__Content {
+  max-height: 360px;
+  overflow-y: auto;
+  padding: 16px;
+  padding-right: 12px;
+}
 .SummaryCard__Content::-webkit-scrollbar {
   background-color: #fff;
   height: 14px;
@@ -5915,12 +5921,6 @@ div.LineInfo {
   background-clip: padding-box;
   border: 4px solid rgba(0, 0, 0, 0);
   border-radius: 9999px;
-}
-.SummaryCard__Content {
-  max-height: 360px;
-  overflow-y: auto;
-  padding: 16px;
-  padding-right: 12px;
 }
 .AR .SummaryCard__Content {
   padding-left: 12px;
@@ -6420,6 +6420,8 @@ div.LineInfo {
   transform: rotate(90deg);
   width: 22px;
   z-index: 1;
+  font-size: 0.857em;
+  transform: rotate(0);
 }
 .LayoutBlank .SectionExpandable_header .Heading2.SectionExpandable__icon span:before,
 .LayoutBase .SectionExpandable_header .Heading2.SectionExpandable__icon span:before {
@@ -6431,11 +6433,6 @@ div.LineInfo {
 .LayoutBlank .SectionExpandable_header .Heading2.SectionExpandable__icon span:hover,
 .LayoutBase .SectionExpandable_header .Heading2.SectionExpandable__icon span:hover {
   background-color: rgba(0, 172, 148, 0.1);
-}
-.LayoutBlank .SectionExpandable_header .Heading2.SectionExpandable__icon span,
-.LayoutBase .SectionExpandable_header .Heading2.SectionExpandable__icon span {
-  font-size: 0.857em;
-  transform: rotate(0);
 }
 
 .SortTableLink--ascending a:link.LinkSelected::after {
@@ -8499,13 +8496,11 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
   border-top: 1px solid #d6d6d6;
   justify-content: space-between;
   z-index: 1;
+  -servicestudio-position: static;
+  -servicestudio-width: 100%;
 }
 .Page .LayoutBase--fixedActions {
   -servicestudio-position: fixed;
-}
-.LayoutBase--fixedActions {
-  -servicestudio-position: static;
-  -servicestudio-width: 100%;
 }
 .LayoutBase--fixedActions.HasSideBarNotExpandable {
   width: calc(67% - (24px + 151px));
@@ -8704,7 +8699,8 @@ html .Page .PatientDetailsLayout {
 }
 .NewNavigation .FullScreenTabsWrapper_Container .TabWrapper.Active {
   border-top-left-radius: 4px;
-  clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 82% 0, 100% 100%, 0 100%);
   padding-right: 30px;
 }
 .NewNavigation .FullScreenTabsWrapper_Container .TabWrapper.Active .TabWrapper_icon .icon {
@@ -8725,7 +8721,8 @@ html .Page .PatientDetailsLayout {
 }
 .NewNavigation .Toolbar .MenuItemWrapper.Active {
   border-top-left-radius: 4px;
-  clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
   padding-right: 40px;
 }
 .NewNavigation .Toolbar .MenuItemWrapper.Active .MenuItemWrapper_Container {
@@ -9149,6 +9146,12 @@ a.SpecialityButtonForward {
   padding-right: 20px;
   width: 270px;
 }
+.LayoutPopup__body__content {
+  margin-top: -32px;
+  overflow-y: scroll;
+  padding-right: 5px;
+  width: 100%;
+}
 .LayoutPopup__body__content::-webkit-scrollbar {
   background-color: #fff;
   height: 14px;
@@ -9159,12 +9162,6 @@ a.SpecialityButtonForward {
   background-clip: padding-box;
   border: 4px solid rgba(0, 0, 0, 0);
   border-radius: 9999px;
-}
-.LayoutPopup__body__content {
-  margin-top: -32px;
-  overflow-y: scroll;
-  padding-right: 5px;
-  width: 100%;
 }
 .LayoutPopup__body__content > *:first-child {
   margin-top: 32px;
@@ -9625,6 +9622,12 @@ a.SpecialityButtonForward {
 }
 
 /* RichWidgets Components */
+html body {
+  /* RichWidgets > Feedback Message > Success */
+  /* RichWidgets > Feedback Message > Error */
+  /* RichWidgets > Feedback Message > Warning */
+  /* RichWidgets > Feedback Message > Info */
+}
 html body div.Feedback_Message_Wrapper {
   left: 0;
   margin-top: 102px;
@@ -9679,9 +9682,6 @@ html body div.Feedback_Message_Warning a.Feedback_Message_Wrapper_Close,
 html body div.Feedback_Message_Info a.Feedback_Message_Wrapper_Close {
   opacity: 1;
 }
-html body {
-  /* RichWidgets > Feedback Message > Success */
-}
 html body div.Feedback_Message_Success {
   background-color: #dff0d8;
   border: 1px solid #cbe0ba;
@@ -9695,9 +9695,6 @@ html body div.Feedback_Message_Success a.Feedback_Message_Wrapper_Close:after {
   margin: 0;
   padding: 0;
 }
-html body {
-  /* RichWidgets > Feedback Message > Error */
-}
 html body div.Feedback_Message_Error {
   background-color: #f5e7e7;
   border: 1px solid #ead8d8;
@@ -9709,9 +9706,6 @@ html body div.Feedback_Message_Error:before {
 html body div.Feedback_Message_Error a.Feedback_Message_Wrapper_Close:after {
   color: #843557;
 }
-html body {
-  /* RichWidgets > Feedback Message > Warning */
-}
 html body div.Feedback_Message_Warning {
   background-color: #fcf8e3;
   border: 1px solid #f1deb6;
@@ -9722,9 +9716,6 @@ html body div.Feedback_Message_Warning:before {
 }
 html body div.Feedback_Message_Warning a.Feedback_Message_Wrapper_Close:after {
   color: #8a6d3b;
-}
-html body {
-  /* RichWidgets > Feedback Message > Info */
 }
 html body div.Feedback_Message_Info {
   background-color: #fcf8e3;
@@ -9871,17 +9862,17 @@ html body .AR .Feedback_Message_Info:before {
   margin: 0;
   padding: 0;
 }
+.ListNavigation_Wrapper a.ListNavigation_Next,
+.ListNavigation_Wrapper a.ListNavigation_Previous {
+  font-size: 0;
+  padding: 0;
+}
 .ListNavigation_Wrapper a.ListNavigation_Next:before,
 .ListNavigation_Wrapper a.ListNavigation_Previous:before {
   color: #5c5c5c;
   content: "\e69c";
   font-family: "Sapphire-Icon-Font";
   font-size: 10px;
-}
-.ListNavigation_Wrapper a.ListNavigation_Next,
-.ListNavigation_Wrapper a.ListNavigation_Previous {
-  font-size: 0;
-  padding: 0;
 }
 .ListNavigation_Wrapper a.ListNavigation_Previous:before {
   content: "\e69c";
@@ -10297,17 +10288,6 @@ html body .AR .Feedback_Message_Info:before {
   line-height: 40px;
 }
 
-.DropdownMenu::-webkit-scrollbar, .InputWithList__List::-webkit-scrollbar {
-  background-color: #fff;
-  height: 14px;
-  width: 14px;
-}
-.DropdownMenu::-webkit-scrollbar-thumb, .InputWithList__List::-webkit-scrollbar-thumb {
-  background-color: #d6d6d6;
-  background-clip: padding-box;
-  border: 4px solid rgba(0, 0, 0, 0);
-  border-radius: 9999px;
-}
 .DropdownMenu, .InputWithList__List {
   background-color: #fff;
   border: 1px solid #d6d6d6;
@@ -10321,6 +10301,17 @@ html body .AR .Feedback_Message_Info:before {
   position: absolute;
   text-align: left;
   z-index: 2;
+}
+.DropdownMenu::-webkit-scrollbar, .InputWithList__List::-webkit-scrollbar {
+  background-color: #fff;
+  height: 14px;
+  width: 14px;
+}
+.DropdownMenu::-webkit-scrollbar-thumb, .InputWithList__List::-webkit-scrollbar-thumb {
+  background-color: #d6d6d6;
+  background-clip: padding-box;
+  border: 4px solid rgba(0, 0, 0, 0);
+  border-radius: 9999px;
 }
 .open .DropdownMenu, .open .InputWithList__List {
   display: block;
@@ -10913,15 +10904,15 @@ div.ActionsMenu-item:last-child {
 .IconSignal.Small .IconSignal_icon {
   font-size: 15px;
 }
+.IconSignal.Small .IconSignal_status {
+  height: 20px;
+  width: 20px;
+}
 .IconSignal.Small .IconSignal_status:before {
   font-size: 11px;
   left: 5px;
   position: absolute;
   top: 3px;
-}
-.IconSignal.Small .IconSignal_status {
-  height: 20px;
-  width: 20px;
 }
 .IconSignal.XSmall {
   height: 25px;
@@ -10968,6 +10959,12 @@ div.ActionsMenu-item:last-child {
   top: -4px;
 }
 
+.DesignSystem,
+.LayoutBlank,
+.LayoutBase,
+.LayoutPopup {
+  /* SmallBadge */
+}
 .DesignSystem .StatusBadges,
 .LayoutBlank .StatusBadges,
 .LayoutBase .StatusBadges,
@@ -11350,12 +11347,6 @@ div.ActionsMenu-item:last-child {
 .LayoutBase .BadgeArrow.IsSmallBadge.IsSelected,
 .LayoutPopup .BadgeArrow.IsSmallBadge.IsSelected {
   display: none;
-}
-.DesignSystem,
-.LayoutBlank,
-.LayoutBase,
-.LayoutPopup {
-  /* SmallBadge */
 }
 .DesignSystem .IsSmallBadge,
 .LayoutBlank .IsSmallBadge,
@@ -11959,6 +11950,9 @@ div.ActionsMenu-item:last-child {
 .ChartsPopup .CardCharts .CardCharts__HeaderChart > div:after {
   display: none;
 }
+.ChartsPopup .CardCharts .CardCharts__Content {
+  overflow-x: auto;
+}
 .ChartsPopup .CardCharts .CardCharts__Content::-webkit-scrollbar {
   background-color: #fff;
   height: 14px;
@@ -11969,9 +11963,6 @@ div.ActionsMenu-item:last-child {
   background-clip: padding-box;
   border: 4px solid rgba(0, 0, 0, 0);
   border-radius: 9999px;
-}
-.ChartsPopup .CardCharts .CardCharts__Content {
-  overflow-x: auto;
 }
 .ChartsPopup .CardCharts .CardCharts__Properties {
   height: -moz-min-content;
@@ -12689,35 +12680,35 @@ div.CircledArrow {
   color: #00ac94;
 }
 .ClinicalBadge.ColorZetaBG:hover {
-  background-color: rgb(175.6689189189, 234.8310810811, 228.1081081081);
+  background-color: #b0ebe4;
 }
 .ClinicalBadge.ColorLightRedBG {
   border: none;
   color: #ff3e2d;
 }
 .ClinicalBadge.ColorLightRedBG:hover {
-  background-color: rgb(249.5322580645, 203.9677419355, 203.9677419355);
+  background-color: #facccc;
 }
 .ClinicalBadge.ColorLightGreenBG {
   border: none;
   color: #7cb342;
 }
 .ClinicalBadge.ColorLightGreenBG:hover {
-  background-color: rgb(218.25, 235.09375, 201.40625);
+  background-color: #daebc9;
 }
 .ClinicalBadge.ColorLightBlueBG {
   border: none;
   color: #1ba5ec;
 }
 .ClinicalBadge.ColorLightBlueBG:hover {
-  background-color: rgb(191.2790697674, 229.511627907, 250.2209302326);
+  background-color: #bfe6fa;
 }
 .ClinicalBadge.ColorMidDarkGreyBG {
   border: none;
   color: #fff;
 }
 .ClinicalBadge.ColorMidDarkGreyBG:hover {
-  background-color: rgb(79.25, 79.25, 79.25);
+  background-color: #4f4f4f;
 }
 .ClinicalBadge-label {
   font-size: 0.857em;
@@ -13018,6 +13009,9 @@ div.CircledArrow {
   align-items: center;
   gap: 16px;
 }
+.CollapsibleSidePanel__PanelContent {
+  overflow: auto;
+}
 .CollapsibleSidePanel__PanelContent::-webkit-scrollbar {
   background-color: #fff;
   height: 14px;
@@ -13028,9 +13022,6 @@ div.CircledArrow {
   background-clip: padding-box;
   border: 4px solid rgba(0, 0, 0, 0);
   border-radius: 9999px;
-}
-.CollapsibleSidePanel__PanelContent {
-  overflow: auto;
 }
 .CollapsibleSidePanel__PanelFooter {
   align-items: center;
@@ -13793,6 +13784,9 @@ div.CircledArrow {
 .DataTable .dataTables_wrapper table.DTFC_Cloned tfoot {
   background-color: transparent;
 }
+.DataTable .dataTables_wrapper .dataTables_scrollBody {
+  border-bottom-color: #d6d6d6;
+}
 .DataTable .dataTables_wrapper .dataTables_scrollBody::-webkit-scrollbar {
   background-color: #fff;
   height: 14px;
@@ -13803,9 +13797,6 @@ div.CircledArrow {
   background-clip: padding-box;
   border: 4px solid rgba(0, 0, 0, 0);
   border-radius: 9999px;
-}
-.DataTable .dataTables_wrapper .dataTables_scrollBody {
-  border-bottom-color: #d6d6d6;
 }
 
 .DateNavigationContainer {
@@ -15204,6 +15195,7 @@ div.CircledArrow {
   transform: rotate(90deg);
   width: 20px;
   z-index: 1;
+  transition: transform 0.5s;
 }
 .ExpandableLink__Icon .icon:before {
   font-family: "Sapphire-Icon-Font";
@@ -15213,9 +15205,6 @@ div.CircledArrow {
 }
 .ExpandableLink__Icon .icon:hover {
   background-color: rgba(0, 172, 148, 0.1);
-}
-.ExpandableLink__Icon .icon {
-  transition: transform 0.5s;
 }
 .ExpandableLink__Link {
   color: #00ac94;
@@ -15931,6 +15920,13 @@ div.CircledArrow {
 
 /* stylelint-disable no-descending-specificity */
 /* Now called GenericCard, the css classes will remain with their previous name*/
+.PersonCard {
+  /*&___icon {
+  	&:not(:empty) + .PersonCard____title {
+  		margin-left: $sapphire-sizes--medium;
+  	}
+  }*/
+}
 .PersonCard.IsOpen > .PersonCard_header {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -15986,6 +15982,7 @@ div.CircledArrow {
   transform: rotate(90deg);
   width: 20px;
   z-index: 1;
+  min-width: 20px;
 }
 .PersonCard_header.IsExpandable .PersonCard__expandIcon:before {
   font-family: "Sapphire-Icon-Font";
@@ -15995,9 +15992,6 @@ div.CircledArrow {
 }
 .PersonCard_header.IsExpandable .PersonCard__expandIcon:hover {
   background-color: rgba(51, 51, 51, 0.1);
-}
-.PersonCard_header.IsExpandable .PersonCard__expandIcon {
-  min-width: 20px;
 }
 .PersonCard_header.IsExpandableDisabled .PersonCard__expandIcon {
   align-items: center;
@@ -16013,6 +16007,8 @@ div.CircledArrow {
   transform: rotate(90deg);
   width: 20px;
   z-index: 1;
+  min-width: 20px;
+  pointer-events: none;
 }
 .PersonCard_header.IsExpandableDisabled .PersonCard__expandIcon:before {
   font-family: "Sapphire-Icon-Font";
@@ -16022,10 +16018,6 @@ div.CircledArrow {
 }
 .PersonCard_header.IsExpandableDisabled .PersonCard__expandIcon:hover {
   background-color: rgba(214, 214, 214, 0.1);
-}
-.PersonCard_header.IsExpandableDisabled .PersonCard__expandIcon {
-  min-width: 20px;
-  pointer-events: none;
 }
 .PersonCard_header.IsTransparent {
   background-color: transparent;
@@ -16167,12 +16159,10 @@ div.CircledArrow {
   background-color: #fff;
   border-radius: 8px;
   padding: 10px 16px;
+  /* Colors */
 }
 .PersonCard__headerLeftInfo.IsLeftSideHide {
   display: none;
-}
-.PersonCard__headerLeftInfo {
-  /* Colors */
 }
 .PersonCard__headerLeftInfo.Male .PersonCardIcon {
   background-color: #1ba5ec;
@@ -16226,7 +16216,7 @@ div.CircledArrow {
 }
 .GenericCardBackground .PersonCard__headerLeftInfo.Green ~ .PersonCard__content,
 .GenericCardBackground .PersonCard__headerLeftInfo.Green ~ .PersonCard__actions {
-  background-color: rgb(239.986122449, 246.8106122449, 232.7893877551);
+  background-color: #f0f7e9;
 }
 .PersonCard__headerLeftInfo.Green.HasBorder {
   box-shadow: inset 5px 0px 0 0px #7cb342;
@@ -16328,13 +16318,6 @@ div.CircledArrow {
 .PersonCard__Complementary .PersonCardPreInfo {
   height: 100%;
 }
-.PersonCard {
-  /*&___icon {
-  	&:not(:empty) + .PersonCard____title {
-  		margin-left: $sapphire-sizes--medium;
-  	}
-  }*/
-}
 .PersonCard .PersonCardIcon {
   display: inline-flex;
   align-items: center;
@@ -16385,7 +16368,7 @@ div.CircledArrow {
 .CardBackgroundGreen .PersonCard .PersonCard__content,
 .CardBackgroundGreen .PersonCard .PersonCard__actions,
 .CardBackgroundGreen .PersonCard .PersonCard__headerLeftInfo {
-  background-color: rgb(245.0236734694, 249.5583673469, 240.2416326531);
+  background-color: #f5faf0;
 }
 .CardBackgroundWhite .PersonCard .PersonCard_header,
 .CardBackgroundWhite .PersonCard .PersonCard__content,
@@ -17051,6 +17034,11 @@ div.Toolbar__leftBtn {
   transform: rotate(90deg);
   width: 22px;
   z-index: 1;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(270deg);
+  left: 5px;
 }
 div.Toolbar__leftBtn:before {
   font-family: "Sapphire-Icon-Font";
@@ -17060,13 +17048,6 @@ div.Toolbar__leftBtn:before {
 }
 div.Toolbar__leftBtn:hover {
   background-color: rgba(0, 172, 148, 0.1);
-}
-div.Toolbar__leftBtn {
-  background-color: #fff;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%) rotate(270deg);
-  left: 5px;
 }
 div.Toolbar__rightBtn {
   align-items: center;
@@ -17082,6 +17063,11 @@ div.Toolbar__rightBtn {
   transform: rotate(90deg);
   width: 22px;
   z-index: 1;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+  right: 5px;
 }
 div.Toolbar__rightBtn:before {
   font-family: "Sapphire-Icon-Font";
@@ -17091,13 +17077,6 @@ div.Toolbar__rightBtn:before {
 }
 div.Toolbar__rightBtn:hover {
   background-color: rgba(0, 172, 148, 0.1);
-}
-div.Toolbar__rightBtn {
-  background-color: #fff;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%) rotate(90deg);
-  right: 5px;
 }
 div.Toolbar__leftBtn.Disabled, div.Toolbar__rightBtn.Disabled {
   border: 1px solid #d6d6d6;
@@ -17163,6 +17142,13 @@ div.Toolbar__MoreOptionsIcon span[ui=more-options-icon] {
   height: 20px;
   margin-bottom: 6px;
 }
+div.Toolbar__MoreOptionsList {
+  background-color: #fff;
+  display: none;
+  max-height: calc(100vh - 240px);
+  overflow: auto;
+  position: absolute;
+}
 div.Toolbar__MoreOptionsList::-webkit-scrollbar {
   background-color: #fff;
   height: 14px;
@@ -17173,13 +17159,6 @@ div.Toolbar__MoreOptionsList::-webkit-scrollbar-thumb {
   background-clip: padding-box;
   border: 4px solid rgba(0, 0, 0, 0);
   border-radius: 9999px;
-}
-div.Toolbar__MoreOptionsList {
-  background-color: #fff;
-  display: none;
-  max-height: calc(100vh - 240px);
-  overflow: auto;
-  position: absolute;
 }
 div.Toolbar__MoreOptionsList .MenuItemWrapper {
   border: none;
@@ -17441,6 +17420,16 @@ div.Toolbar.Fix .MenuItemWrapper__icon {
 }
 
 /* UI TimePicker CSS - HourPicker */
+div.ui-timepicker-container {
+  background-color: #fff;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  font-size: 1em;
+  margin-top: 4px;
+  min-width: 130px;
+  z-index: 1 !important;
+  /* RTL Adjustments - UI Timepicker */
+}
 div.ui-timepicker-container ::-webkit-scrollbar {
   box-sizing: border-box;
   height: 7px;
@@ -17454,15 +17443,6 @@ div.ui-timepicker-container ::-webkit-scrollbar-thumb {
   border: 5px solid #d6d6d6;
   border-radius: 4px;
 }
-div.ui-timepicker-container {
-  background-color: #fff;
-  border: 1px solid #d6d6d6;
-  border-radius: 4px;
-  font-size: 1em;
-  margin-top: 4px;
-  min-width: 130px;
-  z-index: 1 !important;
-}
 div.ui-timepicker-container .ui-state-hover {
   background-color: #f2fffd;
   border-color: transparent;
@@ -17470,9 +17450,6 @@ div.ui-timepicker-container .ui-state-hover {
 div.ui-timepicker-container .ui-corner-all {
   cursor: pointer;
   text-decoration: none;
-}
-div.ui-timepicker-container {
-  /* RTL Adjustments - UI Timepicker */
 }
 div.ui-timepicker-container.rtl .ui-timepicker-viewport {
   list-style: none;
@@ -17482,11 +17459,11 @@ div.ui-timepicker-container.rtl.ui-timepicker-no-scrollbar .ui-timepicker-viewpo
   padding-right: 0 !important;
 }
 
-.IconVertical:hover {
-  text-decoration: none;
-}
 .IconVertical {
   min-width: 50px;
+}
+.IconVertical:hover {
+  text-decoration: none;
 }
 .IconVertical.iconBorder {
   padding: 0 5px 0 10px;
@@ -17554,6 +17531,9 @@ div.ui-timepicker-container.rtl.ui-timepicker-no-scrollbar .ui-timepicker-viewpo
   text-decoration: none;
 }
 
+.iconHorizontal {
+  font-size: 1em;
+}
 .iconHorizontal_icon {
   color: #00ac94;
   font-weight: 600;
@@ -17604,9 +17584,6 @@ div.ui-timepicker-container.rtl.ui-timepicker-no-scrollbar .ui-timepicker-viewpo
 }
 .iconHorizontal_label.LabelColorDarkGrey {
   color: #333;
-}
-.iconHorizontal {
-  font-size: 1em;
 }
 .iconHorizontal.iconBorder {
   padding: 0 5px 0 10px;
@@ -18790,6 +18767,8 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   border: 1px solid #d6d6d6;
   border-radius: 8px;
   position: relative;
+  /* To avoid changes in nested cards */
+  /* To avoid changes in nested cards */
 }
 .MainInteractiveCard.isEnabled {
   background-color: #fff;
@@ -18950,6 +18929,8 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   transform: rotate(90deg);
   width: 20px;
   z-index: 1;
+  min-width: 20px;
+  pointer-events: all;
 }
 .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-expand-icon:before {
   font-family: "Sapphire-Icon-Font";
@@ -18959,10 +18940,6 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
 }
 .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-expand-icon:hover {
   background-color: rgba(51, 51, 51, 0.1);
-}
-.MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-expand-icon {
-  min-width: 20px;
-  pointer-events: all;
 }
 .MainInteractiveCard .MainInteractiveCard-header .MainInteractiveCard-header-text {
   cursor: auto;
@@ -19017,6 +18994,7 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
 .MainInteractiveCard .MainInteractiveCard-body {
   padding: 16px;
   /* To be used on an embedded Web Block page inside the card */
+  /* To be used on an embedded Web Block page inside the card */
 }
 .MainInteractiveCard .MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
   display: none;
@@ -19027,9 +19005,6 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
 .AR .MainInteractiveCard .MainInteractiveCard-body .MainInteractiveCard-absolute-actions {
   left: 16px;
   right: 0;
-}
-.MainInteractiveCard .MainInteractiveCard-body {
-  /* To be used on an embedded Web Block page inside the card */
 }
 .MainInteractiveCard .MainInteractiveCard-body .TextClickable {
   cursor: text;
@@ -19048,9 +19023,6 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
 .MainInteractiveCard .MainInteractiveCard-body .TextClickable:hover::before {
   color: #adadad;
 }
-.MainInteractiveCard {
-  /* To avoid changes in nested cards */
-}
 .MainInteractiveCard > div > .MainInteractiveCard-body {
   display: none;
   width: auto;
@@ -19061,9 +19033,6 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
 }
 .MainInteractiveCard > .MainInteractiveCard-floater .MainInteractiveCard-body {
   padding-top: 0;
-}
-.MainInteractiveCard {
-  /* To avoid changes in nested cards */
 }
 .MainInteractiveCard .iframe-loading {
   padding-top: 32px;
@@ -19265,6 +19234,16 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   width: 100%;
 }
 
+.Menubar {
+  background-color: #2a5a6e;
+  font-weight: 700;
+  height: 44px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 4;
+}
 .Menubar ::-webkit-scrollbar {
   box-sizing: border-box;
   height: 7px;
@@ -19276,16 +19255,6 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
 .Menubar ::-webkit-scrollbar-thumb {
   border: 5px solid #fff;
   border-radius: 0;
-}
-.Menubar {
-  background-color: #2a5a6e;
-  font-weight: 700;
-  height: 44px;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 4;
 }
 .Menubar .ListRecords {
   display: inline;
@@ -20462,12 +20431,10 @@ body.confirmation-opened {
   border-right: 5px solid transparent;
   height: 0;
   width: 0;
+  margin-top: -3px;
 }
 .PatientMedicalFile .RequestFiles-Menu div[button-style] .icon:after, .PatientMedicalFile .RequestFiles-Menu div[button-style] .icon:before {
   content: "";
-}
-.PatientMedicalFile .RequestFiles-Menu div[button-style] .icon {
-  margin-top: -3px;
 }
 
 .MFile {
@@ -20671,23 +20638,23 @@ body.confirmation-opened {
   font-size: 9px;
 }
 .PrescriptionCard.Critical {
-  background-color: rgb(255, 248.4372881356, 248.4);
+  background-color: #fff8f8;
 }
 .PrescriptionCard.Critical .PrescriptionCard__Icon {
-  background-color: rgb(255, 228.1525423729, 228);
-  color: rgb(202.5, 1.1440677966, 0);
+  background-color: #ffe4e4;
+  color: #cb0100;
 }
 .PrescriptionCard.Critical .PrescriptionCard__InteractionInfo {
-  color: rgb(202.5, 1.1440677966, 0);
+  color: #cb0100;
 }
 .PrescriptionCard.Critical .PrescriptionCard__Actions .BadgeCustom {
-  background-color: rgb(202.5, 1.1440677966, 0);
+  background-color: #cb0100;
 }
 .PrescriptionCard.High {
-  background-color: rgb(255, 249.4857142857, 249);
+  background-color: #fff9f9;
 }
 .PrescriptionCard.High .PrescriptionCard__Icon {
-  background-color: rgb(255, 226.05, 223.5);
+  background-color: #ffe2e0;
   color: #ff3e2d;
 }
 .PrescriptionCard.High .PrescriptionCard__InteractionInfo {
@@ -20697,7 +20664,7 @@ body.confirmation-opened {
   background-color: #ff3e2d;
 }
 .PrescriptionCard.Moderate {
-  background-color: rgb(255, 247.4, 234.6);
+  background-color: #fff7eb;
 }
 .PrescriptionCard.Moderate .PrescriptionCard__Icon {
   background-color: #ffeccc;
@@ -20710,23 +20677,23 @@ body.confirmation-opened {
   background-color: #ffa000;
 }
 .PrescriptionCard.Low {
-  background-color: rgb(254.8130841121, 252.0560747664, 245.1869158879);
+  background-color: #fffcf5;
 }
 .PrescriptionCard.Low .PrescriptionCard__Icon {
-  background-color: rgb(254.1457943925, 241.5462616822, 210.1542056075);
-  color: rgb(251.953271028, 207.0140186916, 95.046728972);
+  background-color: #fef2d2;
+  color: #fccf5f;
 }
 .PrescriptionCard.Low .PrescriptionCard__InteractionInfo {
-  color: rgb(251.953271028, 207.0140186916, 95.046728972);
+  color: #fccf5f;
 }
 .PrescriptionCard.Low .PrescriptionCard__Actions .BadgeCustom {
-  background-color: rgb(251.953271028, 207.0140186916, 95.046728972);
+  background-color: #fccf5f;
 }
 .PrescriptionCard.Information {
-  background-color: rgb(238.8461538462, 248.6234817814, 253.6538461538);
+  background-color: #eff9fe;
 }
 .PrescriptionCard.Information .PrescriptionCard__Icon {
-  background-color: rgb(215.3076923077, 239.3319838057, 251.6923076923);
+  background-color: #d7effc;
   color: #1ba5ec;
 }
 .PrescriptionCard.Information .PrescriptionCard__InteractionInfo {
@@ -20736,7 +20703,7 @@ body.confirmation-opened {
   background-color: #1ba5ec;
 }
 .PrescriptionCard.Unknown {
-  background-color: rgb(250.65, 250.65, 250.65);
+  background-color: #fbfbfb;
 }
 .PrescriptionCard.Unknown .PrescriptionCard__Icon {
   background-color: #f3f3f3;
@@ -20764,7 +20731,7 @@ body.confirmation-opened {
 }
 
 .SegmentedControl.Filters .SegmentedControlItem.Critical > input[type=radio]:checked ~ label {
-  background-color: rgb(202.5, 1.1440677966, 0);
+  background-color: #cb0100;
 }
 .SegmentedControl.Filters .SegmentedControlItem.High > input[type=radio]:checked ~ label {
   background-color: #ff3e2d;
@@ -20773,7 +20740,7 @@ body.confirmation-opened {
   background-color: #ffa000;
 }
 .SegmentedControl.Filters .SegmentedControlItem.Low > input[type=radio]:checked ~ label {
-  background-color: rgb(251.953271028, 207.0140186916, 95.046728972);
+  background-color: #fccf5f;
 }
 .SegmentedControl.Filters .SegmentedControlItem.Info > input[type=radio]:checked ~ label {
   background-color: #1ba5ec;
@@ -20935,6 +20902,8 @@ body.confirmation-opened {
   transform: rotate(0);
   width: 20px;
   z-index: 1;
+  margin-left: 20px;
+  transition: transform 0.5s;
 }
 .SectionPrescriptionExpandableArea .SectionExpandable__icon .PrescriptionExpandable_header__IconDiv .icon:before {
   font-family: "Sapphire-Icon-Font";
@@ -20944,10 +20913,6 @@ body.confirmation-opened {
 }
 .SectionPrescriptionExpandableArea .SectionExpandable__icon .PrescriptionExpandable_header__IconDiv .icon:hover {
   background-color: rgba(255, 62, 45, 0.1);
-}
-.SectionPrescriptionExpandableArea .SectionExpandable__icon .PrescriptionExpandable_header__IconDiv .icon {
-  margin-left: 20px;
-  transition: transform 0.5s;
 }
 
 .AR .SectionPrescriptionExpandableArea.isLinkEpandable .PrescriptionExpandable_header,
@@ -20971,6 +20936,8 @@ body.confirmation-opened {
 
 .ProgressBarWrap .ProgressBar {
   width: 100%;
+  /*Sucess Color*/
+  /*Error Color*/
 }
 .ProgressBarWrap .ProgressBar .ProgressBar_structure {
   background-color: #fff;
@@ -21006,17 +20973,11 @@ body.confirmation-opened {
   right: 0;
   top: 0;
 }
-.ProgressBarWrap .ProgressBar {
-  /*Sucess Color*/
-}
 .ProgressBarWrap .ProgressBar .Success .Active {
   background-image: linear-gradient(270deg, #c4f0eb 0%, #00bfa5 100%);
 }
 .ProgressBarWrap .ProgressBar .Success .Active::after {
   background: #c4f0eb;
-}
-.ProgressBarWrap .ProgressBar {
-  /*Error Color*/
 }
 .ProgressBarWrap .ProgressBar .Error {
   border: 1px solid #ff3e2d;
@@ -21448,6 +21409,11 @@ body.ResizeParentIframe .MainContent {
   bottom: 0;
   display: contents;
   position: absolute;
+  /*&.green {
+  	&:after {
+  		background-color: $regular-green;
+  	}
+  }*/
 }
 .CalendarWidget__daysNumber .arrowLeft:after {
   border-radius: 4px;
@@ -21458,13 +21424,6 @@ body.ResizeParentIframe .MainContent {
   position: absolute;
   transform: translateX(-50%);
   width: 4px;
-}
-.CalendarWidget__daysNumber .arrowLeft {
-  /*&.green {
-  	&:after {
-  		background-color: $regular-green;
-  	}
-  }*/
 }
 .CalendarWidget__daysNumber .arrowLeft.orange:after {
   background-color: #ffa000;
@@ -22258,6 +22217,9 @@ div.List-Star > div[unselected] {
 .ScaleMainStructure_menu:empty + .ScaleMainStructure_options:empty {
   margin-bottom: 0;
 }
+.ScaleMainStructure_content {
+  height: 65%;
+}
 .ScaleMainStructure_content::-webkit-scrollbar {
   background-color: #fff;
   height: 14px;
@@ -22268,9 +22230,6 @@ div.List-Star > div[unselected] {
   background-clip: padding-box;
   border: 4px solid rgba(0, 0, 0, 0);
   border-radius: 9999px;
-}
-.ScaleMainStructure_content {
-  height: 65%;
 }
 .ScaleMainStructure_footer {
   align-items: flex-end;
@@ -23862,17 +23821,15 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   border-right: 5px solid transparent;
   height: 0;
   width: 0;
-}
-.SectionExpandableInside .ExapandablePlaceholder.HeaderIcon .icon:after, .SectionExpandableInside .ExapandablePlaceholder.HeaderIcon .icon:before {
-  content: "";
-}
-.SectionExpandableInside .ExapandablePlaceholder.HeaderIcon .icon {
   transform: rotate(90deg);
   cursor: pointer;
   display: block;
   font-size: 0.857em;
   margin: 0;
   margin: 0 16px;
+}
+.SectionExpandableInside .ExapandablePlaceholder.HeaderIcon .icon:after, .SectionExpandableInside .ExapandablePlaceholder.HeaderIcon .icon:before {
+  content: "";
 }
 .SectionExpandableInside .PlaceHolderActions {
   display: table-cell;
@@ -24637,6 +24594,9 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   transform: rotate(90deg);
   width: 22px;
   z-index: 1;
+  font-size: 0.857em;
+  height: 20px;
+  width: 20px;
 }
 .LayoutBase .ShiftExpandable_header .ShiftExpandable__arrow span.icon:before,
 .LayoutBlank .ShiftExpandable_header .ShiftExpandable__arrow span.icon:before,
@@ -24652,14 +24612,6 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .LayoutPOpup .ShiftExpandable_header .ShiftExpandable__arrow span.icon:hover,
 .DesignSystem .ShiftExpandable_header .ShiftExpandable__arrow span.icon:hover {
   background-color: rgba(0, 172, 148, 0.1);
-}
-.LayoutBase .ShiftExpandable_header .ShiftExpandable__arrow span.icon,
-.LayoutBlank .ShiftExpandable_header .ShiftExpandable__arrow span.icon,
-.LayoutPOpup .ShiftExpandable_header .ShiftExpandable__arrow span.icon,
-.DesignSystem .ShiftExpandable_header .ShiftExpandable__arrow span.icon {
-  font-size: 0.857em;
-  height: 20px;
-  width: 20px;
 }
 .LayoutBase .ShiftExpandable_container,
 .LayoutBlank .ShiftExpandable_container,
@@ -24686,6 +24638,17 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   font-size: 1em;
 }
 
+.LayoutBase .ShiftContainer,
+.LayoutBlank .ShiftContainer,
+.LayoutPOpup .ShiftContainer,
+.DesignSystem .ShiftContainer {
+  background-color: #fff;
+  border: 1px solid #d6d6d6;
+  border-radius: 1px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+}
 .LayoutBase .ShiftContainer ::-webkit-scrollbar,
 .LayoutBlank .ShiftContainer ::-webkit-scrollbar,
 .LayoutPOpup .ShiftContainer ::-webkit-scrollbar,
@@ -24724,17 +24687,6 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   background-clip: padding-box;
   border: 4px solid rgba(0, 0, 0, 0);
   border-radius: 9999px;
-}
-.LayoutBase .ShiftContainer,
-.LayoutBlank .ShiftContainer,
-.LayoutPOpup .ShiftContainer,
-.DesignSystem .ShiftContainer {
-  background-color: #fff;
-  border: 1px solid #d6d6d6;
-  border-radius: 1px;
-  overflow-x: auto;
-  overflow-y: hidden;
-  position: relative;
 }
 .LayoutBase .ShiftContainer_header,
 .LayoutBlank .ShiftContainer_header,
@@ -25579,6 +25531,9 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   transform: rotate(90deg);
   width: 22px;
   z-index: 1;
+  font-size: 0.857em;
+  height: 20px;
+  width: 20px;
 }
 .ShiftGroupContent__HeaderExpandable span.icon:before {
   font-family: "Sapphire-Icon-Font";
@@ -25588,11 +25543,6 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 }
 .ShiftGroupContent__HeaderExpandable span.icon:hover {
   background-color: rgba(51, 51, 51, 0.1);
-}
-.ShiftGroupContent__HeaderExpandable span.icon {
-  font-size: 0.857em;
-  height: 20px;
-  width: 20px;
 }
 .ShiftGroupContent__Content > .ShiftTableRow:last-of-type .ShiftTableRow__Left,
 .ShiftGroupContent__Content > .ShiftTableRow:last-of-type .ShiftTableRow__Content,
@@ -25972,10 +25922,10 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 }
 .ShiftTableCard--Done {
   background-color: #e7f2dc;
-  border-color: rgb(174.4979591837, 211.0897959184, 135.9102040816);
+  border-color: #aed388;
 }
 .ShiftTableCard--Done.ShiftTableCard--selected {
-  background-color: rgb(218.25, 235.09375, 201.40625);
+  background-color: #daebc9;
 }
 .ShiftTableCard--Done .ShiftTableCard__CardStatus {
   border: none;
@@ -25983,10 +25933,10 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 }
 .ShiftTableCard--NotDone {
   background-color: #fce3e3;
-  border-color: rgb(255, 155.7428571429, 147);
+  border-color: #ff9c93;
 }
 .ShiftTableCard--NotDone.ShiftTableCard--selected {
-  background-color: rgb(249.5322580645, 203.9677419355, 203.9677419355);
+  background-color: #facccc;
 }
 .ShiftTableCard--NotDone .ShiftTableCard__CardStatus {
   border: none;
@@ -25997,7 +25947,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   border-color: #ffc666;
 }
 .ShiftTableCard--Overdue.ShiftTableCard--selected {
-  background-color: rgb(251.3230088496, 187.5884955752, 120.1769911504);
+  background-color: #fbbc78;
 }
 .ShiftTableCard--Overdue .ShiftTableCard__CardStatus {
   border: none;
@@ -26005,10 +25955,10 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 }
 .ShiftTableCard--PartiallyDone {
   background-color: #f5f4e0;
-  border-color: rgb(235.7954545455, 232.7227272727, 189.7045454545);
+  border-color: #ece9be;
 }
 .ShiftTableCard--PartiallyDone.ShiftTableCard--selected {
-  background-color: rgb(238.7804878049, 237.1585365854, 204.7195121951);
+  background-color: #efedcd;
 }
 .ShiftTableCard--PartiallyDone .ShiftTableCard__CardStatus {
   border: none;
@@ -26148,6 +26098,11 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   color: #777777;
 }
 
+.ShiftTable {
+  overflow-x: auto;
+  position: relative;
+  margin-bottom: 8px;
+}
 .ShiftTable::-webkit-scrollbar {
   background-color: #fff;
   height: 14px;
@@ -26158,11 +26113,6 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   background-clip: padding-box;
   border: 4px solid rgba(0, 0, 0, 0);
   border-radius: 9999px;
-}
-.ShiftTable {
-  overflow-x: auto;
-  position: relative;
-  margin-bottom: 8px;
 }
 .ShiftTable::-webkit-scrollbar {
   background-color: transparent;
@@ -26339,6 +26289,10 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   white-space: break-spaces;
   width: 100%;
 }
+.SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem_subItems .ListRecords {
+  max-height: 450px;
+  overflow-y: scroll;
+}
 .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem_subItems .ListRecords::-webkit-scrollbar {
   background-color: #fff;
   height: 14px;
@@ -26349,10 +26303,6 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   background-clip: padding-box;
   border: 4px solid rgba(0, 0, 0, 0);
   border-radius: 9999px;
-}
-.SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem_subItems .ListRecords {
-  max-height: 450px;
-  overflow-y: scroll;
 }
 .SideMenu--tabsTheme .SideMenu__Tabs .SideMenu__MenuItems .MenuItem_icon {
   display: none;
@@ -26546,6 +26496,10 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   text-align: center;
   width: 21px;
 }
+.SideMenu__MenuItems {
+  margin-top: 16px;
+  overflow: auto;
+}
 .SideMenu__MenuItems::-webkit-scrollbar {
   background-color: #fff;
   height: 14px;
@@ -26556,10 +26510,6 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   background-clip: padding-box;
   border: 4px solid rgba(0, 0, 0, 0);
   border-radius: 9999px;
-}
-.SideMenu__MenuItems {
-  margin-top: 16px;
-  overflow: auto;
 }
 .SideMenu__MenuItems::-webkit-scrollbar-thumb {
   border: 3px solid #fff;
@@ -27728,6 +27678,7 @@ div.SSD_ListLine.GreaterMarginBottom, div.SSD_ListLine.Active.GreaterMarginBotto
 div.SSD_ListLine > div.LineHeader {
   display: table;
   width: 100%;
+  /*height: 4.167rem;*/
 }
 div.SSD_ListLine > div.LineHeader > div:empty {
   display: none;
@@ -27779,9 +27730,6 @@ div.SSD_ListLine > div.LineHeader > div.Icon > a {
 div.SSD_ListLine > div.LineHeader > div.Icon > div:empty {
   width: 50px;
 }
-div.SSD_ListLine > div.LineHeader {
-  /*height: 4.167rem;*/
-}
 div.SSD_ListLine.SSD_ListLine-Iframe > div.LineHeader {
   position: relative;
   z-index: 1;
@@ -27800,12 +27748,12 @@ div.SSD_ListLine.Disabled > div.LineHeader > div.OtherControl, div.SSD_ListLine.
   cursor: default;
   padding: 12px;
 }
-div.SSD_ListLine > div.LineHeader > div.OtherControl, div.SSD_ListLine > div.LineHeader > div.OtherControlLeft {
-  cursor: default;
-}
 div.SSD_ListLine > div.LineHeader > div {
   display: table-cell;
   vertical-align: middle;
+}
+div.SSD_ListLine > div.LineHeader > div.OtherControl, div.SSD_ListLine > div.LineHeader > div.OtherControlLeft {
+  cursor: default;
 }
 div.SSD_ListLine > div.LineHeader > div:nth-child(4) {
   line-height: 32px;
@@ -27992,6 +27940,13 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
   padding-bottom: 32px;
 }
 
+.TableForm {
+  display: flex;
+  max-width: 100%;
+  overflow: auto;
+  padding-bottom: 8px;
+  padding-top: 42px;
+}
 .TableForm::-webkit-scrollbar {
   background-color: #fff;
   height: 14px;
@@ -28002,13 +27957,6 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
   background-clip: padding-box;
   border: 4px solid rgba(0, 0, 0, 0);
   border-radius: 9999px;
-}
-.TableForm {
-  display: flex;
-  max-width: 100%;
-  overflow: auto;
-  padding-bottom: 8px;
-  padding-top: 42px;
 }
 .TableForm--scrollDisabled {
   overflow: hidden;
@@ -28899,6 +28847,8 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
   transform: rotate(90deg);
   width: 20px;
   z-index: 1;
+  margin-right: -8px;
+  z-index: 0;
 }
 .LineTimeLine__Expandable:before {
   font-family: "Sapphire-Icon-Font";
@@ -28908,10 +28858,6 @@ div.SSD_ListLine.ShowMore > div.LineHeader > a {
 }
 .LineTimeLine__Expandable:hover {
   background-color: rgba(51, 51, 51, 0.1);
-}
-.LineTimeLine__Expandable {
-  margin-right: -8px;
-  z-index: 0;
 }
 .AR .LineTimeLine__Expandable {
   margin-left: -8px;
@@ -29306,6 +29252,9 @@ div.TimelineDetail__label {
 /* Styles */
 .tooltipster {
   /* This is the base styling required to make all Tooltipsters work */
+  /* *** V *** Starting here is the default Tooltipster theme *** V ***
+  (feel free to modify or duplicate and create multiple themes!) */
+  /* If you're using the icon option, use this next selector to style them */
 }
 .tooltipster-base {
   border: 1px solid #d6d6d6;
@@ -29333,10 +29282,6 @@ div.TimelineDetail__label {
 .tooltipster-base--no-padding, .tooltipster-base--no-padding.tooltipster-default, .tooltipster-base--no-padding.tooltipster-shadow {
   --tooltipster-content--padding-x: 0px;
   --tooltipster-content--padding-y: 0px;
-}
-.tooltipster {
-  /* *** V *** Starting here is the default Tooltipster theme *** V ***
-  (feel free to modify or duplicate and create multiple themes!) */
 }
 .tooltipster-base .tooltipster-content {
   border-radius: 8px;
@@ -29373,9 +29318,6 @@ div.TimelineDetail__label {
   background: rgba(10, 10, 10, 0.9);
   border-radius: 5px;
   color: white;
-}
-.tooltipster {
-  /* If you're using the icon option, use this next selector to style them */
 }
 .tooltipster-icon {
   cursor: default;
@@ -30445,6 +30387,7 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 
 .InlineFlex, .InlineFlexEnd, .InlineFlexStart, .InlineFlexSpaceEvenly, .InlineFlexSpaceBetween, .InlineFlexSpaceAround, .InlineFlexCenterHorizontal, .InlineFlexCenterVertical, .InlineFlexCenterFull {
   display: flex;
+  display: inline-flex;
 }
 .InlineFlexCenterFull {
   align-items: center;
@@ -30471,12 +30414,10 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 .InlineFlexEnd {
   justify-content: flex-end;
 }
-.InlineFlex, .InlineFlexEnd, .InlineFlexStart, .InlineFlexSpaceEvenly, .InlineFlexSpaceBetween, .InlineFlexSpaceAround, .InlineFlexCenterHorizontal, .InlineFlexCenterVertical, .InlineFlexCenterFull {
-  display: inline-flex;
-}
 
 .FlexColumn, .FlexColumnEnd, .FlexColumnStart, .FlexColumnSpaceEvenly, .FlexColumnSpaceBetween, .FlexColumnSpaceAround, .FlexColumnCenterHorizontal, .FlexColumnCenterVertical, .FlexColumnCenterFull {
   display: flex;
+  flex-direction: column;
 }
 .FlexColumnCenterFull {
   align-items: center;
@@ -30502,9 +30443,6 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 }
 .FlexColumnEnd {
   justify-content: flex-end;
-}
-.FlexColumn, .FlexColumnEnd, .FlexColumnStart, .FlexColumnSpaceEvenly, .FlexColumnSpaceBetween, .FlexColumnSpaceAround, .FlexColumnCenterHorizontal, .FlexColumnCenterVertical, .FlexColumnCenterFull {
-  flex-direction: column;
 }
 
 .FlexList, .FlexListLargeGap, .FlexListMediumGap, .FlexListSmallGap, .FlexListXSmallGap {
@@ -30675,6 +30613,9 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   transform: rotate(360deg);
 }
 
+.Scrollable {
+  overflow: auto;
+}
 .Scrollable::-webkit-scrollbar {
   background-color: #fff;
   height: 14px;
@@ -30686,15 +30627,17 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   border: 4px solid rgba(0, 0, 0, 0);
   border-radius: 9999px;
 }
-.Scrollable {
-  overflow: auto;
-}
 .Scrollable::before {
   content: "";
   display: block;
   height: 1px;
 }
 
+.ScrollableContainer {
+  overflow: auto;
+  margin-right: -8px;
+  padding-right: 8px;
+}
 .ScrollableContainer::-webkit-scrollbar {
   background-color: #fff;
   height: 14px;
@@ -30705,9 +30648,6 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   background-clip: padding-box;
   border: 4px solid rgba(0, 0, 0, 0);
   border-radius: 9999px;
-}
-.ScrollableContainer {
-  overflow: auto;
 }
 .ScrollableContainer::before {
   content: "";
@@ -30720,11 +30660,10 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   padding-left: 8px;
   padding-right: auto;
 }
-.ScrollableContainer {
-  margin-right: -8px;
-  padding-right: 8px;
-}
 
+.ScrollableWhite {
+  overflow: auto;
+}
 .ScrollableWhite::-webkit-scrollbar {
   background-color: transparent;
   height: 14px;
@@ -30738,9 +30677,6 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   background-clip: padding-box;
   border: 4px solid rgba(0, 0, 0, 0);
   border-radius: 9999px;
-}
-.ScrollableWhite {
-  overflow: auto;
 }
 .ScrollableWhite::before {
   content: "";
@@ -30890,6 +30826,8 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 
 .Page .Text {
   /* Colors */
+  /* Sizes */
+  /* General */
 }
 .Page .Text_sapphireBlue, .Page .mainBlue1-tx {
   color: fuchsia;
@@ -31014,9 +30952,6 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 .Page .Text_darkYellow {
   color: #c19323;
 }
-.Page .Text {
-  /* Sizes */
-}
 .Page .Text_09em {
   font-size: 0.9em;
 }
@@ -31097,9 +31032,6 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 }
 .Page .Text_Size90 {
   font-size: 90px;
-}
-.Page .Text {
-  /* General */
 }
 .Page .Text_uppercase {
   text-transform: uppercase;
@@ -31200,12 +31132,28 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
   z-index: 0;
 }
 
+.display-none {
+  display: none;
+}
+
 .display-block {
   display: block;
 }
 
 .display-flex {
   display: flex;
+}
+
+.display-contents {
+  display: contents;
+}
+
+.display-inline-block {
+  display: inline-block;
+}
+
+span[id$=FakeNotify_block] {
+  display: contents;
 }
 
 .MarginBottom5 {
@@ -32940,7 +32888,8 @@ ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover {
 }
 .HasCriticalValue:before {
   background-color: #ff3e2d;
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   color: #fff;
   content: "!";
   display: block;
@@ -33273,16 +33222,16 @@ ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover {
 .tablet .LayoutScanCode__ModeOptions {
   transform: translateY(calc(-50% + 210px));
 }
-.LayoutScanCode__ModeOptions .ButtonGroupFilters .ButtonGroup_button.Button.Button.active,
-.tablet .LayoutScanCode__ModeOptions .ButtonGroupFilters .ButtonGroup_button.Button.Button.active {
-  background-color: #00bfa5;
-  box-shadow: 0 0 0 1px #00bfa5;
-}
 .LayoutScanCode__ModeOptions .ButtonGroupFilters .ButtonGroup_button.Button.Button,
 .tablet .LayoutScanCode__ModeOptions .ButtonGroupFilters .ButtonGroup_button.Button.Button {
   height: 34px;
   min-height: 34px;
   padding: 0 24px;
+}
+.LayoutScanCode__ModeOptions .ButtonGroupFilters .ButtonGroup_button.Button.Button.active,
+.tablet .LayoutScanCode__ModeOptions .ButtonGroupFilters .ButtonGroup_button.Button.Button.active {
+  background-color: #00bfa5;
+  box-shadow: 0 0 0 1px #00bfa5;
 }
 .LayoutScanCode__QRCodeInvalid,
 .tablet .LayoutScanCode__QRCodeInvalid {
@@ -33555,6 +33504,12 @@ ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover {
   position: sticky;
   top: 185px;
 }
+.TimelinePage__Navigation .ListRecords {
+  height: calc(100vh - 185px);
+  overflow-y: scroll;
+  overscroll-behavior: contain;
+  padding-right: 8px;
+}
 .TimelinePage__Navigation .ListRecords::-webkit-scrollbar {
   background-color: #fff;
   height: 14px;
@@ -33565,12 +33520,6 @@ ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover {
   background-clip: padding-box;
   border: 4px solid rgba(0, 0, 0, 0);
   border-radius: 9999px;
-}
-.TimelinePage__Navigation .ListRecords {
-  height: calc(100vh - 185px);
-  overflow-y: scroll;
-  overscroll-behavior: contain;
-  padding-right: 8px;
 }
 .AR .TimelinePage__Navigation .ListRecords {
   padding-left: 8px;
@@ -34290,6 +34239,13 @@ span:not(:last-of-type) .CompLine {
 .desktop.hd .CompLine_other {
   width: 42%;
 }
+.desktop.small {
+  /* Diogo ribeiro: why would we apply a margin like this on desktop small? What's special about this case?
+  .CompLine_actions > div > div {
+  	margin: 10px 0;
+  }
+  */
+}
 .desktop.small .CompLine_other {
   padding: 5px 20px;
   width: 20%;
@@ -34302,13 +34258,6 @@ span:not(:last-of-type) .CompLine {
   vertical-align: middle;
   width: -moz-max-content;
   width: max-content;
-}
-.desktop.small {
-  /* Diogo ribeiro: why would we apply a margin like this on desktop small? What's special about this case?
-  .CompLine_actions > div > div {
-  	margin: 10px 0;
-  }
-  */
 }
 .desktop .CompLine_other {
   width: 30%;
@@ -34646,6 +34595,11 @@ body.PanelOpened .daterangepicker {
   margin-right: 30px;
 }
 
+.ScrollableContent {
+  max-height: 450px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
 .ScrollableContent::-webkit-scrollbar {
   background-color: #fff;
   height: 14px;
@@ -34656,11 +34610,6 @@ body.PanelOpened .daterangepicker {
   background-clip: padding-box;
   border: 4px solid rgba(0, 0, 0, 0);
   border-radius: 9999px;
-}
-.ScrollableContent {
-  max-height: 450px;
-  overflow-y: auto;
-  padding-right: 4px;
 }
 .AR .ScrollableContent {
   padding-left: 4px;
