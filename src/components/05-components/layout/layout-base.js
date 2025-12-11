@@ -105,7 +105,6 @@
 		});
 	};
 
-
 	LayoutBase.prototype.handleLayoutTopPadding = function () {
 
 		this.$spacer.stop().animate({
@@ -120,8 +119,6 @@
 		}
 
 	};
-
-
 
 	LayoutBase.prototype.handleLayoutBottomPadding = function () {
 		if (this.$bottomfixedContent.length === 1) {

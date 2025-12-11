@@ -1,0 +1,38 @@
+@use '../../../00-settings/colors' as *;
+@use '../../../00-settings/fonts' as *;
+
+.badge-box {
+	border-radius: 4px;
+	border: solid 1px $light-grey;
+	display: inline-flex;
+	flex-direction: column;
+	height: 45px;
+	min-width: 35px;
+	padding: 4px;
+	text-align: center;
+
+	&-above {
+		align-items: center;
+		color: $dark-grey;
+		display: flex;
+		flex: 1;
+		font-size: $font-size-heading4;
+		font-weight: 700;
+		justify-content: center;
+		&:empty {
+			display: none;
+		}
+	}
+	&-below {
+		align-items: center;
+		color: $regular-grey;
+		display: flex;
+		flex: 1;
+		font-size: $font-size-micro;
+		font-weight: 700;
+		justify-content: center;
+		&:empty {
+			display: none;
+		}
+	}
+}

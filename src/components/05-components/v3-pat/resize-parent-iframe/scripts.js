@@ -72,14 +72,14 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
     }
 
     var resize = function (addedNodes) {
+
       if (_iframe) {
         try {
           if (_iframe.id === "tooltipster-frame") {
             if (options.resizeWidth) {
               const _contentDocument = _iframe.contentDocument;
               _iframe.style.width = _contentDocument ? _contentDocument.querySelector(".ResizeIframeTooltip").getBoundingClientRect().width + "px" : "100%";
-            }
-            else {
+            } else {
               _iframe.style.width = "100%";
             }
           }
@@ -87,12 +87,9 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
           var _iframeHeight = _iframe.clientHeight;
           var _iframeParentViewportHeight = _iframe.ownerDocument.documentElement.clientHeight;
 
-
           // iframe is full height?
-          if (_iframeHeight >= _iframeParentViewportHeight) {
+          if (_iframeHeight === _iframeParentViewportHeight || document.querySelector(".Page").classList.contains('SidebarIframe')) {
             //if full height, doesn't make sense to resize it.
-            // when zooming in, the iframe height will be greater than the parent viewport height.
-
             return;
           }
 
@@ -100,6 +97,19 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
           let _bodyHeight = _body.scrollHeight + _getBodyTop();
           _bodyHeight += window.innerHeight - document.documentElement.clientHeight; // Adding scrollbar height in case it exists.
           _iframe.style.height = _bodyHeight + "px";
+
+
+          console.log('will resize...');
+
+          console.log({
+            page: document.querySelector(".Page"),
+            _bodyHeight: _bodyHeight,
+            _iframeHeight: _iframeHeight,
+            _iframeParentViewportHeight: _iframeParentViewportHeight
+          })
+
+
+
         }
         catch (error) {
           console.error("Error trying to resize parent iframe: " + error.message);
@@ -128,8 +138,7 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
       _resizeObserver.observe(document.body, {
         box: "border-box"
       });
-    }
-    else {
+    } else {
       console.warn("Not an iframe, resize observer ignored.");
     }
 
