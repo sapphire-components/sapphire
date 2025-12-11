@@ -1,7 +1,6 @@
 @use '../../../00-settings/colors' as *;
 @use '../../../00-settings/fonts' as *;
 @use '../../../00-settings/sizes' as *;
-
 @use '../../../01-tools/arrow-button' as *;
 
 @mixin animation-arrow-button($rotate-degree: 0) {
@@ -96,6 +95,14 @@
 	.SectionExpandable .SectionExpandableInside_header > div {
 		display: table-cell;
 		vertical-align: middle;
+	}
+}
+
+.SectionExpandableInside[data-theme~='grayed'] {
+	border-radius: 4px;
+	.SectionExpandableInside_header {
+		background-color: #d9d9d9;
+		border-radius: 4px;
 	}
 }
 

@@ -36,3 +36,7 @@
 		}
 	}
 }
+
+.badge-box[data-theme~='no-border'] {
+	border: none;
+}

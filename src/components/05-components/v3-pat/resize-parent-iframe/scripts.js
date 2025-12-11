@@ -99,14 +99,6 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
           _iframe.style.height = _bodyHeight + "px";
 
 
-          console.log('will resize...');
-
-          console.log({
-            page: document.querySelector(".Page"),
-            _bodyHeight: _bodyHeight,
-            _iframeHeight: _iframeHeight,
-            _iframeParentViewportHeight: _iframeParentViewportHeight
-          })
 
 
 
