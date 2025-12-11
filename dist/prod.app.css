@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.251 || Generated: Thu Dec 11 2025 15:20:46 GMT+0000 (Hora padrão da Europa Ocidental) */
+/*! prod.app.css || Version: 5.5.252 || Generated: Thu Dec 11 2025 16:27:08 GMT+0000 (Hora padrão da Europa Ocidental) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -23887,6 +23887,14 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   vertical-align: middle;
 }
 
+.SectionExpandableInside[data-theme~=grayed] {
+  border-radius: 4px;
+}
+.SectionExpandableInside[data-theme~=grayed] .SectionExpandableInside_header {
+  background-color: #d9d9d9;
+  border-radius: 4px;
+}
+
 .AR .SectionExpandableInside .ExapandablePlaceholder,
 .FA .SectionExpandableInside .ExapandablePlaceholder {
   font-family: "TajawalBold";
@@ -29798,6 +29806,10 @@ body.LayoutBase .tooltipster-base.tooltipster-location--Content {
 }
 .badge-box-below:empty {
   display: none;
+}
+
+.badge-box[data-theme~=no-border] {
+  border: none;
 }
 
 .MultiAlignRight,
