@@ -1,0 +1,10 @@
+.spam-aware {
+}
+
+.spam-blocked,
+a.spam-blocked {
+	pointer-events: none !important;
+	&.Button {
+		background-color: #d6d6d6 !important;
+	}
+}

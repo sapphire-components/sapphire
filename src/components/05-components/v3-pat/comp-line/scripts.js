@@ -1,5 +1,5 @@
 /* Component CompLine */
-(function($, window, SapphireWidgets) {
+(function ($, window, SapphireWidgets) {
 	function SectionCompline() {
 		var that = this;
 
@@ -61,29 +61,29 @@
 		}
 
 		// ajax refres function
-		that.ajaxRefresh = function() {
+		that.ajaxRefresh = function () {
 			// remove click events
 			$('.CompLine_headLine').off();
 
 			// add stop prepagation
-			$('.CompLine_headLine input, .CompLine_headLine select, .CompLine_headLine a').click(function(event) {
+			$('.CompLine_headLine input, .CompLine_headLine select, .CompLine_headLine a').click(function (event) {
 				event.stopPropagation();
 			});
 
 			// add new click events
 			$('.CompLine__expandIcon').unbind('click');
-			$('.CompLine__expandIcon').on('click', function() {
+			$('.CompLine__expandIcon').on('click', function () {
 				clickEvents(this.parentElement);
 			});
 
 			// each all sections
-			$('.CompLineExpandable').each(function() {
+			$('.CompLineExpandable').each(function () {
 				// if new SectionExpandable then add to previewstat array
 				if (
 					previewstat[
-						$(this)
-							.closest('.CompLine')
-							.attr('id')
+					$(this)
+						.closest('.CompLine')
+						.attr('id')
 					] == null
 				) {
 					// add stat on array
@@ -115,9 +115,9 @@
 				if (
 					curState !=
 					previewstat[
-						$(this)
-							.closest('.CompLine')
-							.attr('id')
+					$(this)
+						.closest('.CompLine')
+						.attr('id')
 					]['server']
 				) {
 					// curstate
@@ -135,9 +135,9 @@
 					// has class expanded
 					if (
 						previewstat[
-							$(this)
-								.closest('.CompLine')
-								.attr('id')
+						$(this)
+							.closest('.CompLine')
+							.attr('id')
 						]['client'] == false &&
 						$(this).hasClass('expanded')
 					) {
@@ -147,9 +147,9 @@
 							.height(0);
 					} else if (
 						previewstat[
-							$(this)
-								.closest('.CompLine')
-								.attr('id')
+						$(this)
+							.closest('.CompLine')
+							.attr('id')
 						]['client'] == true &&
 						!$(this).hasClass('expanded')
 					) {
@@ -160,9 +160,9 @@
 		};
 
 		// set events
-		that.init = function() {
+		that.init = function () {
 			// each all sections to create array stat
-			$('.CompLineExpandable').each(function() {
+			$('.CompLineExpandable').each(function () {
 				// add stat on array
 				var stat = false;
 
@@ -184,19 +184,21 @@
 
 			// add click events
 			$('.CompLine__expandIcon').unbind('click');
-			$('.CompLine__expandIcon').on('click', function() {
+			$('.CompLine__expandIcon').on('click', function () {
 				clickEvents(this.parentElement);
 			});
 
 			// add stop prepagation
-			$('.CompLine_headLine input, .CompLine_headLine select, .CompLine_headLine a').click(function(event) {
+			$('.CompLine_headLine input, .CompLine_headLine select, .CompLine_headLine a').click(function (event) {
 				event.stopPropagation();
 			});
 
 			// remove unecessary behaviors
 
 			// event ajax
-			osAjaxBackend.BindAfterAjaxRequest(that.ajaxRefresh);
+			setTimeout(() => {
+				osAjaxBackend.BindAfterAjaxRequest(that.ajaxRefresh);
+			}, 100);
 		};
 	}
 

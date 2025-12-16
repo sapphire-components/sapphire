@@ -31,7 +31,7 @@
 		//Check if SapphireWidgets.ResizeParentIframe is defined.
 		if (typeof SapphireWidgets.ResizeParentIframe != 'undefined') {
 			// In case we're inside an iframe, we try to resize it first.
-			SapphireWidgets.ResizeParentIframe.resize();
+			if (window.self !== window.top) SapphireWidgets.ResizeParentIframe.resize();
 		}
 	};
 
