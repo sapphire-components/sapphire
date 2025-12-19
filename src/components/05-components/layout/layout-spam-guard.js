@@ -76,6 +76,13 @@
     const target = findTarget(e.target, opts.classes);
     if (!target) return;
 
+    const hasButtonGroup = [...target.classList].some(cls =>
+      cls.toLowerCase().includes("buttongroup")
+    );
+
+    if (hasButtonGroup) return;
+
+
     // keydown filtering
     if (e.type === "keydown" && !opts.keyTriggers.has(e.key)) return;
 
@@ -89,6 +96,10 @@
   }
 
   function create(userOpts = {}) {
+
+
+    console.log("create", userOpts);
+
     const opts = { ...DEFAULTS, ...userOpts };
     opts.classes = normalizeClasses(opts.classes);
 
