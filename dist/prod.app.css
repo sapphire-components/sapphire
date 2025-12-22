@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.246 || Generated: Wed Nov 05 2025 20:49:01 GMT+0300 (GMT+03:00) */
+/*! prod.app.css || Version: 5.5.246 || Generated: Mon Dec 22 2025 14:02:59 GMT+0300 (GMT+03:00) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -3894,7 +3894,6 @@ input[type=checkbox].ReadOnly {
 input[type=checkbox].Not_Valid:before {
   border: 1px solid #ff3e2d;
   box-shadow: none;
-  padding: 0;
 }
 input[type=checkbox].Not_Valid:focus:before {
   border: 1px solid #ff3e2d;
@@ -3976,7 +3975,6 @@ input[type=radio].ReadOnly {
 input[type=radio].Not_Valid:before {
   border: 1px solid #ff3e2d;
   box-shadow: none;
-  padding: 0;
 }
 input[type=radio].Not_Valid:focus:before {
   border: 1px solid #ff3e2d;
@@ -4167,7 +4165,6 @@ input[type=password].Not_Valid {
   border-left-width: 3px;
   border-radius: 4px;
   box-shadow: none;
-  padding: 16px;
 }
 select.Not_Valid:hover, select.Not_Valid:focus,
 textarea.Not_Valid:hover,
@@ -5925,7 +5922,6 @@ a.LinkReset:link, a.LinkReset:visited {
 }
 .TextInput.Mandatory.Not_Valid {
   border-left: 3px solid #ff3e2d;
-  padding: 16px;
 }
 
 .Title_Section {
@@ -36453,9 +36449,6 @@ body.PanelOpened .daterangepicker {
 
 .Form:not(.ReadOnly) {
   cursor: text;
-}
-.Form textarea.Not_Valid, .Form textarea.Not_Valid:focus {
-  padding: 0 10px;
 }
 
 .SegmentedControl input, .SegmentedControlLight input {

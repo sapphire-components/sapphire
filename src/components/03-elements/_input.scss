@@ -69,7 +69,6 @@
 		&:before {
 			border: 1px solid $regular-red;
 			box-shadow: none; // inset 0 1px 3px 0 $light-grey, 0 0 4px 0 $regular-red;
-			padding: 0;
 		}
 
 		&:focus:before {
@@ -212,7 +211,6 @@ input[type='password'] {
 		border-left-width: 3px;
 		border-radius: $border-radius-default;
 		box-shadow: none;
-		padding: $sapphire-sizes--medium;
 
 		&:hover,
 		&:focus {
