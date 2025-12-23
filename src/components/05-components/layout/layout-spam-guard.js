@@ -1,6 +1,8 @@
 /* Component LayoutSpamGuard */
 (function ($, window, document, SapphireWidgets) {
 
+  // just a comment
+
   const DEFAULTS = {
     awareClass: "spam-aware",
     blockedClass: "spam-blocked",
