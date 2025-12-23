@@ -49,13 +49,6 @@
 	&:not(.ReadOnly) {
 		cursor: text;
 	}
-
-	textarea {
-		&.Not_Valid,
-		&.Not_Valid:focus {
-			padding: 0 10px;
-		}
-	}
 }
 
 .SegmentedControl {
