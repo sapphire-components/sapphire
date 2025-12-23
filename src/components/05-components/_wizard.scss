@@ -174,8 +174,8 @@ div.WizardParent {
 
 				a,
 				a:link,
-				a[disabled='disabled'],
-				a[disabled='disabled']:hover {
+				a[disabled],
+				a[disabled]:hover {
 					color: inherit;
 					font-family: inherit;
 				}
@@ -210,8 +210,8 @@ div.WizardParent {
 			}
 
 			a:disabled,
-			a[disabled='disabled'],
-			a[disabled='disabled']:hover {
+			a[disabled],
+			a[disabled]:hover {
 				color: $label-color-disabled;
 			}
 

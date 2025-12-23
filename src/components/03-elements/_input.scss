@@ -187,8 +187,8 @@ input[type='password'] {
 		box-shadow: none;
 	}
 
-	&[disabled='disabled'],
-	&[readonly='readonly'] {
+	&[disabled],
+	&[readonly] {
 		&,
 		&:hover,
 		&:focus {

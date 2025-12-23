@@ -20,7 +20,7 @@
 
     a:link:hover,
     a:visited:hover,
-    a:not([disabled='disabled']):hover {
+    a:not([disabled]):hover {
       text-decoration: none;
     }
   }

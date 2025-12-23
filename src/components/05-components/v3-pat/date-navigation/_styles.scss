@@ -32,7 +32,7 @@
 			}
 
 			a:disabled .CircledArrow,
-			a[disabled='disabled'] .CircledArrow {
+			a[disabled] .CircledArrow {
 				background-color: $regular-white;
 				color: $light-grey;
 				pointer-events: none;

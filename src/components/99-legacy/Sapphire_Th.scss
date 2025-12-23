@@ -338,7 +338,7 @@
 //     /* font-weight:bold;*/
 // }
 
-// .desktop a:not([disabled="disabled"]):hover,
+// .desktop a:not([disabled]):hover,
 // .desktop a:link:hover,
 // .desktop a:visited:hover {
 //     color: #08a6af;
@@ -658,7 +658,7 @@ a.Login_Info_Username:visited {
 .Login_Info_Logout:before,
 .Login_Info_Username:before,
 .AppSwitcherContainer:before,
-.AppSwitcherLink[disabled='disabled']:before {
+.AppSwitcherLink[disabled]:before {
   color: #b3b3b3;
   font-family: FontAwesome;
   font-size: 14px;
@@ -4664,8 +4664,8 @@ a .ListItem:after {
 
 // .WizardStep a,
 // .WizardStep a:link,
-// .WizardStep a[disabled='disabled'],
-// .WizardStep a[disabled='disabled']:hover {
+// .WizardStep a[disabled],
+// .WizardStep a[disabled]:hover {
 // 	color: #79868a;
 // 	font-size: 12px;
 // 	font-weight: 400;
@@ -4678,8 +4678,8 @@ a .ListItem:after {
 
 // .WizardStep.Past a,
 // .WizardStep.Past a:link,
-// .WizardStep.Past a[disabled='disabled'],
-// .WizardStep.Past a[disabled='disabled']:hover {
+// .WizardStep.Past a[disabled],
+// .WizardStep.Past a[disabled]:hover {
 // 	color: #fff;
 // 	font-size: 12px;
 // 	font-weight: normal;
@@ -4709,8 +4709,8 @@ a .ListItem:after {
 
 // .WizardStep.ActiveStep a,
 // .WizardStep.ActiveStep a:link,
-// .WizardStep.ActiveStep a[disabled='disabled'],
-// .WizardStep.ActiveStep a[disabled='disabled']:hover {
+// .WizardStep.ActiveStep a[disabled],
+// .WizardStep.ActiveStep a[disabled]:hover {
 // 	color: #fff;
 // }
 
@@ -16064,7 +16064,7 @@ DAR: Tooltip css from silk UI theme applied in WB so we can use it in pages with
 //     padding: 0 25px;
 // }
 
-// .desktop .Toolbar__Items a:not([disabled="disabled"]):hover,
+// .desktop .Toolbar__Items a:not([disabled]):hover,
 // .desktop .Toolbar__Items a:link:hover,
 // .desktop .Toolbar__Items a:visited:hover {
 //     text-decoration: none;
