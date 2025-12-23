@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.256 || Generated: Tue Dec 23 2025 15:33:48 GMT+0300 (GMT+03:00) */
+/*! prod.app.css || Version: 5.5.257 || Generated: Tue Dec 23 2025 18:23:52 GMT+0300 (GMT+03:00) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -2618,37 +2618,37 @@ input[type=password]:active {
   border: 1px solid #00ac94;
   box-shadow: none;
 }
-select[disabled=disabled], select[disabled=disabled]:hover, select[disabled=disabled]:focus, select[readonly=readonly], select[readonly=readonly]:hover, select[readonly=readonly]:focus,
-textarea[disabled=disabled],
-textarea[disabled=disabled]:hover,
-textarea[disabled=disabled]:focus,
-textarea[readonly=readonly],
-textarea[readonly=readonly]:hover,
-textarea[readonly=readonly]:focus,
-input[type=text][disabled=disabled],
-input[type=text][disabled=disabled]:hover,
-input[type=text][disabled=disabled]:focus,
-input[type=text][readonly=readonly],
-input[type=text][readonly=readonly]:hover,
-input[type=text][readonly=readonly]:focus,
-input[type=email][disabled=disabled],
-input[type=email][disabled=disabled]:hover,
-input[type=email][disabled=disabled]:focus,
-input[type=email][readonly=readonly],
-input[type=email][readonly=readonly]:hover,
-input[type=email][readonly=readonly]:focus,
-input[type=number][disabled=disabled],
-input[type=number][disabled=disabled]:hover,
-input[type=number][disabled=disabled]:focus,
-input[type=number][readonly=readonly],
-input[type=number][readonly=readonly]:hover,
-input[type=number][readonly=readonly]:focus,
-input[type=password][disabled=disabled],
-input[type=password][disabled=disabled]:hover,
-input[type=password][disabled=disabled]:focus,
-input[type=password][readonly=readonly],
-input[type=password][readonly=readonly]:hover,
-input[type=password][readonly=readonly]:focus {
+select[disabled], select[disabled]:hover, select[disabled]:focus, select[readonly], select[readonly]:hover, select[readonly]:focus,
+textarea[disabled],
+textarea[disabled]:hover,
+textarea[disabled]:focus,
+textarea[readonly],
+textarea[readonly]:hover,
+textarea[readonly]:focus,
+input[type=text][disabled],
+input[type=text][disabled]:hover,
+input[type=text][disabled]:focus,
+input[type=text][readonly],
+input[type=text][readonly]:hover,
+input[type=text][readonly]:focus,
+input[type=email][disabled],
+input[type=email][disabled]:hover,
+input[type=email][disabled]:focus,
+input[type=email][readonly],
+input[type=email][readonly]:hover,
+input[type=email][readonly]:focus,
+input[type=number][disabled],
+input[type=number][disabled]:hover,
+input[type=number][disabled]:focus,
+input[type=number][readonly],
+input[type=number][readonly]:hover,
+input[type=number][readonly]:focus,
+input[type=password][disabled],
+input[type=password][disabled]:hover,
+input[type=password][disabled]:focus,
+input[type=password][readonly],
+input[type=password][readonly]:hover,
+input[type=password][readonly]:focus {
   background-blend-mode: luminosity;
   background-color: #ebebeb;
   background-position: right 14px center;
@@ -2659,40 +2659,40 @@ input[type=password][readonly=readonly]:focus {
   cursor: not-allowed;
   opacity: 1;
 }
-select[disabled=disabled]::-moz-placeholder, select[disabled=disabled]:hover::-moz-placeholder, select[disabled=disabled]:focus::-moz-placeholder, select[readonly=readonly]::-moz-placeholder, select[readonly=readonly]:hover::-moz-placeholder, select[readonly=readonly]:focus::-moz-placeholder, textarea[disabled=disabled]::-moz-placeholder, textarea[disabled=disabled]:hover::-moz-placeholder, textarea[disabled=disabled]:focus::-moz-placeholder, textarea[readonly=readonly]::-moz-placeholder, textarea[readonly=readonly]:hover::-moz-placeholder, textarea[readonly=readonly]:focus::-moz-placeholder, input[type=text][disabled=disabled]::-moz-placeholder, input[type=text][disabled=disabled]:hover::-moz-placeholder, input[type=text][disabled=disabled]:focus::-moz-placeholder, input[type=text][readonly=readonly]::-moz-placeholder, input[type=text][readonly=readonly]:hover::-moz-placeholder, input[type=text][readonly=readonly]:focus::-moz-placeholder, input[type=email][disabled=disabled]::-moz-placeholder, input[type=email][disabled=disabled]:hover::-moz-placeholder, input[type=email][disabled=disabled]:focus::-moz-placeholder, input[type=email][readonly=readonly]::-moz-placeholder, input[type=email][readonly=readonly]:hover::-moz-placeholder, input[type=email][readonly=readonly]:focus::-moz-placeholder, input[type=number][disabled=disabled]::-moz-placeholder, input[type=number][disabled=disabled]:hover::-moz-placeholder, input[type=number][disabled=disabled]:focus::-moz-placeholder, input[type=number][readonly=readonly]::-moz-placeholder, input[type=number][readonly=readonly]:hover::-moz-placeholder, input[type=number][readonly=readonly]:focus::-moz-placeholder, input[type=password][disabled=disabled]::-moz-placeholder, input[type=password][disabled=disabled]:hover::-moz-placeholder, input[type=password][disabled=disabled]:focus::-moz-placeholder, input[type=password][readonly=readonly]::-moz-placeholder, input[type=password][readonly=readonly]:hover::-moz-placeholder, input[type=password][readonly=readonly]:focus::-moz-placeholder {
+select[disabled]::-moz-placeholder, select[disabled]:hover::-moz-placeholder, select[disabled]:focus::-moz-placeholder, select[readonly]::-moz-placeholder, select[readonly]:hover::-moz-placeholder, select[readonly]:focus::-moz-placeholder, textarea[disabled]::-moz-placeholder, textarea[disabled]:hover::-moz-placeholder, textarea[disabled]:focus::-moz-placeholder, textarea[readonly]::-moz-placeholder, textarea[readonly]:hover::-moz-placeholder, textarea[readonly]:focus::-moz-placeholder, input[type=text][disabled]::-moz-placeholder, input[type=text][disabled]:hover::-moz-placeholder, input[type=text][disabled]:focus::-moz-placeholder, input[type=text][readonly]::-moz-placeholder, input[type=text][readonly]:hover::-moz-placeholder, input[type=text][readonly]:focus::-moz-placeholder, input[type=email][disabled]::-moz-placeholder, input[type=email][disabled]:hover::-moz-placeholder, input[type=email][disabled]:focus::-moz-placeholder, input[type=email][readonly]::-moz-placeholder, input[type=email][readonly]:hover::-moz-placeholder, input[type=email][readonly]:focus::-moz-placeholder, input[type=number][disabled]::-moz-placeholder, input[type=number][disabled]:hover::-moz-placeholder, input[type=number][disabled]:focus::-moz-placeholder, input[type=number][readonly]::-moz-placeholder, input[type=number][readonly]:hover::-moz-placeholder, input[type=number][readonly]:focus::-moz-placeholder, input[type=password][disabled]::-moz-placeholder, input[type=password][disabled]:hover::-moz-placeholder, input[type=password][disabled]:focus::-moz-placeholder, input[type=password][readonly]::-moz-placeholder, input[type=password][readonly]:hover::-moz-placeholder, input[type=password][readonly]:focus::-moz-placeholder {
   color: #adadad;
 }
-select[disabled=disabled]::placeholder, select[disabled=disabled]:hover::placeholder, select[disabled=disabled]:focus::placeholder, select[readonly=readonly]::placeholder, select[readonly=readonly]:hover::placeholder, select[readonly=readonly]:focus::placeholder,
-textarea[disabled=disabled]::placeholder,
-textarea[disabled=disabled]:hover::placeholder,
-textarea[disabled=disabled]:focus::placeholder,
-textarea[readonly=readonly]::placeholder,
-textarea[readonly=readonly]:hover::placeholder,
-textarea[readonly=readonly]:focus::placeholder,
-input[type=text][disabled=disabled]::placeholder,
-input[type=text][disabled=disabled]:hover::placeholder,
-input[type=text][disabled=disabled]:focus::placeholder,
-input[type=text][readonly=readonly]::placeholder,
-input[type=text][readonly=readonly]:hover::placeholder,
-input[type=text][readonly=readonly]:focus::placeholder,
-input[type=email][disabled=disabled]::placeholder,
-input[type=email][disabled=disabled]:hover::placeholder,
-input[type=email][disabled=disabled]:focus::placeholder,
-input[type=email][readonly=readonly]::placeholder,
-input[type=email][readonly=readonly]:hover::placeholder,
-input[type=email][readonly=readonly]:focus::placeholder,
-input[type=number][disabled=disabled]::placeholder,
-input[type=number][disabled=disabled]:hover::placeholder,
-input[type=number][disabled=disabled]:focus::placeholder,
-input[type=number][readonly=readonly]::placeholder,
-input[type=number][readonly=readonly]:hover::placeholder,
-input[type=number][readonly=readonly]:focus::placeholder,
-input[type=password][disabled=disabled]::placeholder,
-input[type=password][disabled=disabled]:hover::placeholder,
-input[type=password][disabled=disabled]:focus::placeholder,
-input[type=password][readonly=readonly]::placeholder,
-input[type=password][readonly=readonly]:hover::placeholder,
-input[type=password][readonly=readonly]:focus::placeholder {
+select[disabled]::placeholder, select[disabled]:hover::placeholder, select[disabled]:focus::placeholder, select[readonly]::placeholder, select[readonly]:hover::placeholder, select[readonly]:focus::placeholder,
+textarea[disabled]::placeholder,
+textarea[disabled]:hover::placeholder,
+textarea[disabled]:focus::placeholder,
+textarea[readonly]::placeholder,
+textarea[readonly]:hover::placeholder,
+textarea[readonly]:focus::placeholder,
+input[type=text][disabled]::placeholder,
+input[type=text][disabled]:hover::placeholder,
+input[type=text][disabled]:focus::placeholder,
+input[type=text][readonly]::placeholder,
+input[type=text][readonly]:hover::placeholder,
+input[type=text][readonly]:focus::placeholder,
+input[type=email][disabled]::placeholder,
+input[type=email][disabled]:hover::placeholder,
+input[type=email][disabled]:focus::placeholder,
+input[type=email][readonly]::placeholder,
+input[type=email][readonly]:hover::placeholder,
+input[type=email][readonly]:focus::placeholder,
+input[type=number][disabled]::placeholder,
+input[type=number][disabled]:hover::placeholder,
+input[type=number][disabled]:focus::placeholder,
+input[type=number][readonly]::placeholder,
+input[type=number][readonly]:hover::placeholder,
+input[type=number][readonly]:focus::placeholder,
+input[type=password][disabled]::placeholder,
+input[type=password][disabled]:hover::placeholder,
+input[type=password][disabled]:focus::placeholder,
+input[type=password][readonly]::placeholder,
+input[type=password][readonly]:hover::placeholder,
+input[type=password][readonly]:focus::placeholder {
   color: #adadad;
 }
 select.Mandatory, select.Mandatory:hover, select.Mandatory:focus,
@@ -5266,15 +5266,15 @@ a.LinkReset:link, a.LinkReset:visited {
 .DateInput_Container input:disabled {
   pointer-events: none;
 }
-.DateInput_Container input[readonly=readonly] {
+.DateInput_Container input[readonly] {
   background-color: #fff;
   cursor: default;
 }
-.DateInput_Container input[readonly=readonly]:hover {
+.DateInput_Container input[readonly]:hover {
   background-color: #f2fffd;
   cursor: default;
 }
-.DateInput_Container input[readonly=readonly]:focus {
+.DateInput_Container input[readonly]:focus {
   background-color: #fff;
 }
 
@@ -8118,8 +8118,8 @@ div.WizardParent > div div.WizardStep.ActiveStep::before {
 }
 div.WizardParent > div div.WizardStep.ActiveStep a,
 div.WizardParent > div div.WizardStep.ActiveStep a:link,
-div.WizardParent > div div.WizardStep.ActiveStep a[disabled=disabled],
-div.WizardParent > div div.WizardStep.ActiveStep a[disabled=disabled]:hover {
+div.WizardParent > div div.WizardStep.ActiveStep a[disabled],
+div.WizardParent > div div.WizardStep.ActiveStep a[disabled]:hover {
   color: inherit;
   font-family: inherit;
 }
@@ -8147,8 +8147,8 @@ div.WizardParent > div div.WizardStep a:link {
   font-family: "LatoRegular";
 }
 div.WizardParent > div div.WizardStep a:disabled,
-div.WizardParent > div div.WizardStep a[disabled=disabled],
-div.WizardParent > div div.WizardStep a[disabled=disabled]:hover {
+div.WizardParent > div div.WizardStep a[disabled],
+div.WizardParent > div div.WizardStep a[disabled]:hover {
   color: #adadad;
 }
 div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardStep.ActiveStep::after {
@@ -10642,8 +10642,8 @@ html body .AR .Feedback_Message_Info:before {
   padding-right: 35px;
 }
 
-select[disabled=disabled],
-.Form select.ReadOnly[disabled=disabled] {
+select[disabled],
+.Form select.ReadOnly[disabled] {
   background-image: none;
 }
 
@@ -13850,8 +13850,8 @@ div.CircledArrow {
   background-color: #ebebeb;
 }
 .DateNavigationContainer .DateNavigation_NextDate a:disabled .CircledArrow,
-.DateNavigationContainer .DateNavigation_NextDate a[disabled=disabled] .CircledArrow, .DateNavigationContainer .DateNavigation_PreviousDate a:disabled .CircledArrow,
-.DateNavigationContainer .DateNavigation_PreviousDate a[disabled=disabled] .CircledArrow {
+.DateNavigationContainer .DateNavigation_NextDate a[disabled] .CircledArrow, .DateNavigationContainer .DateNavigation_PreviousDate a:disabled .CircledArrow,
+.DateNavigationContainer .DateNavigation_PreviousDate a[disabled] .CircledArrow {
   background-color: #fff;
   color: #d6d6d6;
   pointer-events: none;
@@ -35725,7 +35725,7 @@ div.SelectableList-Line > span > div.ExpandableContent {
 
 .desktop .Toolbar__Items a:link:hover,
 .desktop .Toolbar__Items a:visited:hover,
-.desktop .Toolbar__Items a:not([disabled=disabled]):hover {
+.desktop .Toolbar__Items a:not([disabled]):hover {
   text-decoration: none;
 }
 
@@ -36188,7 +36188,7 @@ a.Login_Info_Username:visited {
 .Login_Info_Logout:before,
 .Login_Info_Username:before,
 .AppSwitcherContainer:before,
-.AppSwitcherLink[disabled=disabled]:before {
+.AppSwitcherLink[disabled]:before {
   color: #b3b3b3;
   font-family: FontAwesome;
   font-size: 14px;

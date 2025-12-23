@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.5.256 || Generated: Tue Dec 23 2025 15:33:48 GMT+0300 (GMT+03:00) */
+/*! prod.backoffice.css || Version: 5.5.257 || Generated: Tue Dec 23 2025 18:23:52 GMT+0300 (GMT+03:00) */
 /*!***************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/backoffice/styles.scss ***!
   \***************************************************************************************************************************************************************************************************************************************************/
@@ -5474,8 +5474,8 @@ div.WizardParent > div div.WizardStep.ActiveStep::before {
 }
 div.WizardParent > div div.WizardStep.ActiveStep a,
 div.WizardParent > div div.WizardStep.ActiveStep a:link,
-div.WizardParent > div div.WizardStep.ActiveStep a[disabled=disabled],
-div.WizardParent > div div.WizardStep.ActiveStep a[disabled=disabled]:hover {
+div.WizardParent > div div.WizardStep.ActiveStep a[disabled],
+div.WizardParent > div div.WizardStep.ActiveStep a[disabled]:hover {
   color: inherit;
   font-family: inherit;
 }
@@ -5503,8 +5503,8 @@ div.WizardParent > div div.WizardStep a:link {
   font-family: "LatoRegular";
 }
 div.WizardParent > div div.WizardStep a:disabled,
-div.WizardParent > div div.WizardStep a[disabled=disabled],
-div.WizardParent > div div.WizardStep a[disabled=disabled]:hover {
+div.WizardParent > div div.WizardStep a[disabled],
+div.WizardParent > div div.WizardStep a[disabled]:hover {
   color: #adadad;
 }
 div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardStep.ActiveStep::after {
@@ -7631,7 +7631,7 @@ input[type].Not_Valid {
   border-radius: 0;
 }
 
-input[readonly=readonly]:focus {
+input[readonly]:focus {
   border: 1px solid #d6d6d6;
   box-shadow: none !important;
 }
@@ -7796,21 +7796,21 @@ select[disabled=disabled] {
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.Form textarea.ReadOnly[readonly=readonly],
+.Form textarea.ReadOnly[readonly],
 .Form textarea.ReadOnly[disabled=disabled],
 .Form select.ReadOnly[disabled=disabled],
-.Form input.ReadOnly[readonly=readonly],
+.Form input.ReadOnly[readonly],
 .Form input.ReadOnly[disabled=disabled],
 .Form input[disabled=disabled].ReadOnly:not(.Not_Valid),
-.Form input[readonly=readonly].ReadOnly:not(.Not_Valid),
+.Form input[readonly].ReadOnly:not(.Not_Valid),
 .Form textarea[disabled=disabled].ReadOnly:not(.Not_Valid),
-.Form textarea[readonly=readonly].ReadOnly:not(.Not_Valid),
+.Form textarea[readonly].ReadOnly:not(.Not_Valid),
 .Form select[disabled=disabled].ReadOnly:not(.Not_Valid),
-.Form select[readonly=readonly].ReadOnly:not(.Not_Valid),
+.Form select[readonly].ReadOnly:not(.Not_Valid),
 textarea[disabled=disabled],
-textarea[readonly=readonly],
+textarea[readonly],
 select[disabled=disabled],
-input[readonly=readonly],
+input[readonly],
 input[disabled=disabled] {
   background-color: #f5f5f5;
   border: 1px solid #d6d6d6;
@@ -7821,15 +7821,15 @@ input[disabled=disabled] {
 input[disabled=disabled][type=text]:focus,
 input[disabled=disabled][type=password]:focus,
 textarea[disabled=disabled]:focus,
-textarea[readonly=readonly]:focus,
+textarea[readonly]:focus,
 select[disabled=disabled]:focus,
-input[readonly=readonly]:focus,
+input[readonly]:focus,
 input[disabled=disabled]:focus,
-.Form input[readonly=readonly].ReadOnly:not(.Not_Valid):focus,
+.Form input[readonly].ReadOnly:not(.Not_Valid):focus,
 .Form input[disabled=disabled].ReadOnly:not(.Not_Valid):focus,
-.Form textarea[readonly=readonly].ReadOnly:not(.Not_Valid):focus,
+.Form textarea[readonly].ReadOnly:not(.Not_Valid):focus,
 .Form textarea[disabled=disabled].ReadOnly:not(.Not_Valid):focus,
-.Form select[readonly=readonly].ReadOnly:not(.Not_Valid):focus,
+.Form select[readonly].ReadOnly:not(.Not_Valid):focus,
 .Form select[disabled=disabled].ReadOnly:not(.Not_Valid):focus {
   background-color: #f5f5f5;
   border: 1px solid #d6d6d6;
@@ -7839,9 +7839,9 @@ input[disabled=disabled]:focus,
 input[type=radio].ReadOnly,
 input[type=checkbox].ReadOnly,
 .Form input.ReadOnly[disabled=disabled][type=radio],
-.Form input.ReadOnly[readonly=readonly][type=radio],
+.Form input.ReadOnly[readonly][type=radio],
 .Form input.ReadOnly[disabled=disabled][type=checkbox],
-.Form input.ReadOnly[readonly=readonly][type=checkbox],
+.Form input.ReadOnly[readonly][type=checkbox],
 .Form input[type=radio].ReadOnly,
 .Form input[type=checkbox].ReadOnly {
   background-color: transparent;
