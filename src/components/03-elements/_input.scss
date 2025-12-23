@@ -78,6 +78,7 @@
 		&:before {
 			border: 1px solid $regular-red;
 			box-shadow: none; // inset 0 1px 3px 0 $light-grey, 0 0 4px 0 $regular-red;
+			padding: 0;
 		}
 
 		&:focus:before {
@@ -220,12 +221,16 @@ input[type='password'] {
 		border-left-width: 3px;
 		border-radius: $border-radius-default;
 		box-shadow: none;
+		// This should be the same as normal padding, it's here to override the base theme setting
+		padding: 0 $sapphire-sizes--medium;
 
 		&:hover,
 		&:focus {
 			border: 1px solid $regular-red;
 			border-left-width: 3px;
 			box-shadow: none;
+			// This should be the same as normal padding, it's here to override the base theme setting
+			padding: 0 $sapphire-sizes--medium;
 		}
 	}
 
@@ -242,6 +247,17 @@ textarea {
 	padding: $sapphire-sizes--medium;
 	overflow: hidden;
 	resize: none;
+
+	&.Not_Valid {
+		// This should be the same as normal padding, it's here to override the base theme setting
+		padding: $sapphire-sizes--medium;
+
+		&:hover,
+		&:focus {
+			// This should be the same as normal padding, it's here to override the base theme setting
+			padding: $sapphire-sizes--medium;
+		}
+	}
 }
 
 .InputFilter {
