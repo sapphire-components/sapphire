@@ -1,7 +1,7 @@
 /* Component SapphirePopup */
 var RichWidgets_Popup_Editor_notifyWidget;
 
-(function($, window, SapphireWidgets) {
+(function ($, window, SapphireWidgets) {
 	// Check if the widget is loaded inside an iFrame
 	let isInsideIframe = window.frameElement != undefined || false;
 
@@ -18,14 +18,14 @@ var RichWidgets_Popup_Editor_notifyWidget;
 	const create = config => {
 		if (config.ignoreIframe) isInsideIframe = false;
 
-		$().ready(function($) {
+		$().ready(function ($) {
 			const _id = config.linkId;
 			const linkQuery = `#${config.linkId}`;
 			let linkWidget;
 
 			try {
 				linkWidget = $(linkQuery).get(0);
-			} catch (e) {}
+			} catch (e) { }
 
 			if (typeof linkWidget == 'undefined') {
 				//Case the widget is inexistent or invisible, it will show no errors.
@@ -45,7 +45,7 @@ var RichWidgets_Popup_Editor_notifyWidget;
 						outsystems.osErrorCodes.SystemJavascriptError,
 						'Popup_Editor'
 					);
-				} catch (e) {}
+				} catch (e) { }
 
 				return;
 			}
@@ -75,7 +75,7 @@ var RichWidgets_Popup_Editor_notifyWidget;
 				);
 			}
 
-			const clickHandler = function(event) {
+			const clickHandler = function (event) {
 				// The clickHandler event is registered in osjs and $ for compatibillity reasons, they must not run both for the same click.
 				// Variable is set to false in resize function.
 				if ($.data(event.target, 'os-internal-processing') == true) {
@@ -124,7 +124,7 @@ var RichWidgets_Popup_Editor_notifyWidget;
 					pleaseWaitDiv = popupDiv.prepend(loadingElement);
 				}
 
-				const loadTargetPage = function() {
+				const loadTargetPage = function () {
 					if (isInsideIframe) {
 						window.top.POPUP_NOTIFY_WIDGET = config.notifyId;
 						// Create a reference to the iframe object on the document parent
@@ -144,8 +144,8 @@ var RichWidgets_Popup_Editor_notifyWidget;
 
 					popupDiv.find('iframe').attr('src', xhref);
 
-					(function(popupDiv) {
-						popupDiv.find('iframe').load(function() {
+					(function (popupDiv) {
+						popupDiv.find('iframe').load(function () {
 							// After loading try to resize
 							resize(popupDiv, _id, config.setWidth, config.setHeight, true, event);
 						});
@@ -302,8 +302,8 @@ var RichWidgets_Popup_Editor_notifyWidget;
 				$(frameObj).height(0);
 			}
 
-			var onAnimationComplete = function() {
-				setTimeout(function() {
+			var onAnimationComplete = function () {
+				setTimeout(function () {
 					if (isInsideIframe) {
 						window.top.$('.os-internal-ui-dialog-titlebar-close-no-title').css('display', 'block');
 						window.top
@@ -350,6 +350,7 @@ var RichWidgets_Popup_Editor_notifyWidget;
 	};
 
 	const close = () => {
+
 		let popupToClose;
 		let popupContainer;
 
@@ -395,7 +396,7 @@ var RichWidgets_Popup_Editor_notifyWidget;
 					}
 				}
 			}
-		} catch (e) {}
+		} catch (e) { }
 
 		return [linkHref, isAButton];
 	};
@@ -418,7 +419,7 @@ var RichWidgets_Popup_Editor_notifyWidget;
 
 		for (var i = 0; i < closingPopups.length; i++) {
 			if ($.data(closingPopups.get(i), POPUP_CLOSING_TAG) == POPUP_CLOSING_VALUE) {
-				setTimeout(function() {
+				setTimeout(function () {
 					openPopup(divToPopup, divPleaseWait, loadTargetPage, event, config);
 				}, 13);
 
@@ -460,16 +461,21 @@ var RichWidgets_Popup_Editor_notifyWidget;
 			position: 'center',
 			width: config.setWidth == -1 ? POPUP_INITIAL_WIDTH : config.setWidth,
 			zIndex: POPUP_WINDOW_INDEX,
-			close: function() {
+			close: function () {
+
+
 				// If the popup is closed before it is resized (ESC) we need to set the processing event to false.
 				$.data(event.target, 'os-internal-processing', false);
 
 				_dialog.find('iframe').unbind('load');
 				_dialog.find('iframe').attr('src', 'about:blank');
 
-				setTimeout(function() {
+				setTimeout(function () {
 					_dialog.find('iframe').empty();
 					_dialog.empty();
+
+					document.querySelectorAll('.SapphirePopup').forEach(el => el.remove());
+
 				}, 13);
 			},
 		});

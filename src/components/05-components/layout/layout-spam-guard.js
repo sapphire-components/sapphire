@@ -1,8 +1,6 @@
 /* Component LayoutSpamGuard */
 (function ($, window, document, SapphireWidgets) {
 
-  // just a comment
-
   const DEFAULTS = {
     awareClass: "spam-aware",
     blockedClass: "spam-blocked",
@@ -98,10 +96,6 @@
   }
 
   function create(userOpts = {}) {
-
-
-    console.log("create", userOpts);
-
     const opts = { ...DEFAULTS, ...userOpts };
     opts.classes = normalizeClasses(opts.classes);
 

@@ -1,7 +1,7 @@
 var SearchSelectDefine = (window.SearchSelectDefine = window.SearchSelectDefine || {});
 
 SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
-	$(function() {
+	$(function () {
 		var $SSDwidget = $('#' + config.SSDWidgetId); // SSDComponent map not used again
 		var $SSDComponent = $SSDwidget.find('.SearchSD'); // SSDSearch Component id for use in the function and manipulate classes
 		var $SSDComponentContent = $SSDComponent.find('.SearchSD_content'); // SSDcomponent content
@@ -19,15 +19,15 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 
 		$SSDInputElement.attr('maxLength', inputLength);
 
-		var executeSearch = function() {
+		var executeSearch = function () {
 			clearTimeout(searchTriggerTimer);
-			searchTriggerTimer = setTimeout(function() {
+			searchTriggerTimer = setTimeout(function () {
 				TriggerSearch($SSDComponent);
 			}, 700);
 		};
 
 		if (hasShield) {
-			window.setTimeout(function() {
+			window.setTimeout(function () {
 				$widgetShield.hide();
 			}, shieldTimeout);
 		}
@@ -37,13 +37,13 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 		 *   N milliseconds. If `immediate` is passed, trigger the function on the
 		 *   leading edge, instead of the trailing.
 		 */
-		var debounce = function(func, wait, immediate) {
+		var debounce = function (func, wait, immediate) {
 			var timeout;
 			return function executedFunction() {
 				var context = this;
 				var args = arguments;
 
-				var later = function() {
+				var later = function () {
 					timeout = null;
 					if (!immediate) func.apply(context, args);
 				};
@@ -58,7 +58,7 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 		/****
 		 *   Reset Search UI to the initial state
 		 */
-		var resetUI = function($SSDComponent) {
+		var resetUI = function ($SSDComponent) {
 			$SSDComponent.find('.SearchSD__inputWrapper').show();
 			$SSDComponent.find('.SearchSD_search_favoriteLink').hide();
 			$SSDComponent.find('.SearchSD___goToFavorite').hide();
@@ -84,7 +84,7 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 		 *  --  add class showFavorite to have component control
 		 *  --  addClass Open with slide
 		 */
-		var goToFavorites = function($SSDComponent) {
+		var goToFavorites = function ($SSDComponent) {
 			resetUI($SSDComponent);
 
 			$SSDComponent.find('.SearchSD___input input').val('');
@@ -119,7 +119,7 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 		 *  -- Add ShowClone class
 		 *  -- SlideDown effect and add Open Class
 		 */
-		var goToClone = function($SSDComponent) {
+		var goToClone = function ($SSDComponent) {
 			// loading show hide list
 			$SSDComponent.find('.SearchSD_contentList').hide();
 			$SSDComponent.find('.SearchSD__loading').show();
@@ -139,7 +139,7 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 		/*
 		 * Return to search from favorite or clone
 		 */
-		var returnToSearch = function($SSDComponent) {
+		var returnToSearch = function ($SSDComponent) {
 			// loading show hide list
 			$SSDComponent.find('.SearchSD_contentList').hide();
 			$SSDComponent.find('.SearchSD__loading').show();
@@ -169,7 +169,7 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 		 *   SSDClear closes SSDSearch container
 		 *   and clear ssd filter input
 		 */
-		var ssdClear = function($SSDComponent) {
+		var ssdClear = function ($SSDComponent) {
 			$SSDComponent.removeClass('Open');
 			$SSDComponent.find('.SearchSD___input input').val('');
 		};
@@ -178,7 +178,7 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 		 *   CloseSSD closes SSDSearch container
 		 *   must remove hightlightSelection done by keyboard navigation
 		 */
-		var closeSSD = function($SSDComponent) {
+		var closeSSD = function ($SSDComponent) {
 			$SSDComponent.removeClass('Open');
 			$SSDComponentContent.slideUp('250');
 			$SSDComponent.find('.selected').removeClass('.selected');
@@ -189,7 +189,7 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 		 *   if SSDComponent has class Open then focus
 		 *   makes open effect, check the characters inside the input to filter
 		 */
-		var ssdFocus = function($SSDComponent) {
+		var ssdFocus = function ($SSDComponent) {
 			if (!$SSDComponent.hasClass('Open')) {
 				// loading show hide list
 				$SSDComponent.find('.SearchSD_contentList').hide();
@@ -213,7 +213,7 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 		 *   When clicking clicking outside the component
 		 *   the SSD must close and return to initial state
 		 */
-		var ClickOut = function(e, $SSDComponent) {
+		var ClickOut = function (e, $SSDComponent) {
 			if (!$SSDComponent.is(e.target) && $SSDComponent.has(e.target).length === 0) {
 				returnToSearch($SSDComponent);
 				$SSDComponent.removeClass('MultiSelectActive');
@@ -224,7 +224,7 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 		 *   Triggers the link to initialize
 		 *   the database search based on current length of the string inserted on the input
 		 */
-		var TriggerSearch = function($SSDComponent) {
+		var TriggerSearch = function ($SSDComponent) {
 			var currentWord = $SSDComponent.find('.SearchSD___input input').val();
 			var currentCount = currentWord.length;
 			if (currentCount >= letterLimit || currentCount === 0) {
@@ -236,14 +236,14 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 		 *   Removes all favorite checked boxes
 		 *   and ends MultipleSelect
 		 */
-		var MultiUncheck = function($SSDComponent) {
+		var MultiUncheck = function ($SSDComponent) {
 			$checkBoxes = $SSDComponent.parent().find('.SelectSD__multiple > input[type="checkbox"]');
 			$SSDComponent.removeClass('MultiSelectActive');
 
 			$SSDComponent
 				.parent()
 				.find('.SelectSD__multiple > input[type="checkbox"]')
-				.each(function() {
+				.each(function () {
 					$(this).prop('checked', false);
 				});
 		};
@@ -251,7 +251,7 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 		/*
 		 *   KeyBoard events up down and enter if not filter
 		 */
-		var keyboardEvents = function(e, $SSDComponent) {
+		var keyboardEvents = function (e, $SSDComponent) {
 			if ($SSDComponent.hasClass('Open')) {
 				var currentSelected = $SSDComponentContent.find('.ListRecords > span.selected'); // Current selectable item
 				var $firstSelect = $SSDComponentContent.find('.ListRecords > span:first-child'); // First selectable item
@@ -331,38 +331,38 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 		}
 
 		if ((hasClone === 'True') & (showClones === 'True')) {
-			$SSDComponent.find('.SearchSD_cloneWrapper').click(function() {
+			$SSDComponent.find('.SearchSD_cloneWrapper').click(function () {
 				$SSDComponent.addClass('Open');
 			});
 		}
 
-		$SSDComponent.find('.SearchSD__FavoriteRemove').click(function() {
+		$SSDComponent.find('.SearchSD__FavoriteRemove').click(function () {
 			ssdClear($SSDComponent);
 			returnToSearch($SSDComponent);
 			debounce(TriggerSearch($SSDComponent), 550);
 			debounce($SSDComponent.find('.SearchSD___input input').focus(), 560);
 		});
 
-		$SSDComponent.find('.SearchSD__cloneWrapper').click(function() {
+		$SSDComponent.find('.SearchSD__cloneWrapper').click(function () {
 			goToClone($SSDComponent);
 			$SSDComponent.find('.SearchSD___goToClone > a').click();
 		});
 
-		$SSDComponent.find('.SearchSD__inputWrapper').click(function() {
+		$SSDComponent.find('.SearchSD__inputWrapper').click(function () {
 			if ($SSDComponent.hasClass('showClone')) {
 				returnToSearch($SSDComponent);
 			}
 		});
 
-		$SSDComponent.find('.SearchSD__FavoriteActionsCancel').click(function() {
+		$SSDComponent.find('.SearchSD__FavoriteActionsCancel').click(function () {
 			MultiUncheck($SSDComponent);
 		});
 
-		$SSDComponent.find('.SearchSD___input input').focus(function() {
+		$SSDComponent.find('.SearchSD___input input').focus(function () {
 			debounce(ssdFocus($SSDComponent), 600);
 		});
 
-		$('body').mouseup(function(e) {
+		$('body').mouseup(function (e) {
 			ClickOut(e, $SSDComponent);
 		});
 		/*
@@ -371,7 +371,7 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 		$SSDComponent
 			.find('.SearchSD___input input')
 			.add($SSDComponent.find('.SelectSD_actionLink'))
-			.on('keyup', function(e) {
+			.on('keyup', function (e) {
 				if (!e.which != 13) {
 					keyboardEvents(e, $SSDComponent);
 				}
@@ -388,24 +388,24 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 		 *   instead go to keyboard events to trigger
 		 *   the selection
 		 */
-		$($SSDComponent).on('keydown', function(e) {
+		$($SSDComponent).on('keydown', function (e) {
 			if (e.which == 13) {
 				keyboardEvents(e, $SSDComponent);
 			}
 		});
 
-		$SSDComponent.find('.SearchSD___remove').click(function() {
+		$SSDComponent.find('.SearchSD___remove').click(function () {
 			ssdClear($SSDComponent);
 			debounce(returnToSearch($SSDComponent), 600);
 		});
 
-		$SSDComponent.find('.SearchSD_search_favoriteLink').click(function() {
+		$SSDComponent.find('.SearchSD_search_favoriteLink').click(function () {
 			ssdClear($SSDComponent);
 			goToFavorites($SSDComponent);
 			$SSDComponent.find('.SearchSD___goToFavorite > a').click();
 		});
 
-		$SSDComponent.find('.SearchSD__FavoriteActionsAdd > a').click(function() {
+		$SSDComponent.find('.SearchSD__FavoriteActionsAdd > a').click(function () {
 			debounce(TriggerSearch($SSDComponent), 200);
 			debounce(returnToSearch($SSDComponent), 350);
 		});
@@ -415,10 +415,10 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 		 *   ListRecords
 		 */
 		osAjaxBackend &&
-			osAjaxBackend.BindAfterAjaxRequest(function() {
+			osAjaxBackend.BindAfterAjaxRequest(function () {
 				if ($SSDComponent.hasClass('Open')) {
 					$SSDComponent.find('.SearchSD__loading').hide();
-					$SSDComponentContent.slideDown('1000', function() {
+					$SSDComponentContent.slideDown('1000', function () {
 						$SSDComponent.find('.SearchSD_contentList').show();
 						if ($SSDComponent.find('.SearchSD_showMore a').length > 0) {
 							$SSDComponent.find('.SearchSD_showMore').show();
@@ -444,14 +444,14 @@ window.addEventListener('DOMContentLoaded', event => {
 	var rootElement = document.querySelector('body');
 	rootElement.addEventListener(
 		'click',
-		function(event) {
+		function (event) {
 			document.querySelector("iframe[src*='Prescriptions_CW']") &&
 				document
 					.querySelector("iframe[src*='Prescriptions_CW']")
 					.contentWindow.document.addEventListener('click', e => {
 						e.stopPropagation();
-						document.querySelector('.SearchSD').classList.remove('Open');
-						var allInput = document.querySelector('.SearchSD___input').children;
+						document.querySelector('.SearchSD')?.classList.remove('Open');
+						var allInput = document.querySelector('.SearchSD___input')?.children;
 						for (const element in allInput) {
 							return allInput[element].value != undefined ? (allInput[element].value = '') : null;
 						}
