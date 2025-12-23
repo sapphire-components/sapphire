@@ -33,6 +33,22 @@
 	}
 }
 
+.SpinnerInput {
+	// Specific to SpinnerHorizontal. It was using ValidationMessageContainer class which helped with the button position,
+	// but also changed the look of it. It was requested in context of DeviceRequest_UI to make it look as normal,
+	// and since it was the only place which has mandatory input with spinner, it was made the default behavior.
+	position: relative;
+
+	.ValidationMessage,
+	span.ValidationMessage {
+		white-space: nowrap;
+		left: 0;
+		pointer-events: none;
+		position: absolute;
+		z-index: 1;
+	}
+}
+
 .ValidationMessage {
 	position: relative;
 	text-align: right;
