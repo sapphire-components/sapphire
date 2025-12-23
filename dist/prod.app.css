@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.254 || Generated: Fri Dec 19 2025 15:34:52 GMT+0000 (Hora padrão da Europa Ocidental) */
+/*! prod.app.css || Version: 5.5.255 || Generated: Tue Dec 23 2025 15:01:37 GMT+0300 (GMT+03:00) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -2450,7 +2450,6 @@ input[type=checkbox].ReadOnly {
 input[type=checkbox].Not_Valid:before {
   border: 1px solid #ff3e2d;
   box-shadow: none;
-  padding: 0;
 }
 input[type=checkbox].Not_Valid:focus:before {
   border: 1px solid #ff3e2d;
@@ -2532,7 +2531,6 @@ input[type=radio].ReadOnly {
 input[type=radio].Not_Valid:before {
   border: 1px solid #ff3e2d;
   box-shadow: none;
-  padding: 0;
 }
 input[type=radio].Not_Valid:focus:before {
   border: 1px solid #ff3e2d;
@@ -2723,7 +2721,6 @@ input[type=password].Not_Valid {
   border-left-width: 3px;
   border-radius: 4px;
   box-shadow: none;
-  padding: 16px;
 }
 select.Not_Valid:hover, select.Not_Valid:focus,
 textarea.Not_Valid:hover,
@@ -2739,7 +2736,6 @@ input[type=password].Not_Valid:focus {
   border: 1px solid #ff3e2d;
   border-left-width: 3px;
   box-shadow: none;
-  padding: 16px;
 }
 select.small,
 textarea.small,
@@ -4180,7 +4176,6 @@ a.LinkReset:link, a.LinkReset:visited {
 }
 .TextInput.Mandatory.Not_Valid {
   border-left: 3px solid #ff3e2d;
-  padding: 16px;
 }
 
 .Title_Section {
@@ -4294,6 +4289,18 @@ a.LinkReset:link, a.LinkReset:visited {
   line-height: 1em;
   margin-top: 1px;
   padding: 5px 10px;
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.SpinnerInput {
+  position: relative;
+}
+.SpinnerInput .ValidationMessage,
+.SpinnerInput span.ValidationMessage {
+  white-space: nowrap;
+  left: 0;
   pointer-events: none;
   position: absolute;
   z-index: 1;
@@ -34787,9 +34794,6 @@ body.PanelOpened .daterangepicker {
 
 .Form:not(.ReadOnly) {
   cursor: text;
-}
-.Form textarea.Not_Valid, .Form textarea.Not_Valid:focus {
-  padding: 0 10px;
 }
 
 .SegmentedControl input {
