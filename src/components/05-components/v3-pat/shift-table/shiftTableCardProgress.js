@@ -33,7 +33,17 @@ SapphireWidgets.ShiftTableCardProgress = config => {
 
 		let roundWidth = Math.round((timeSlotWidth + Number.EPSILON) * 100) / 100;
 		const paddingOffset = DEFAULT_PADDING * 2;
+
+
+
 		const newWidth = parseFloat((colFill * roundWidth - paddingOffset) - (beginsIncomplete ? 0 : (endsIncomplete ? (initialMinutes * minuteValueWidth) : 0)));
+
+
+		console.log(config, 'newWidth', newWidth);
+
+
+
+
 		const direction = $('.Page').hasClass('AR') || $('.Page').hasClass('FA') ? 'right' : 'left';
 
 		$cardProgress.css('width', `${newWidth}px`);
@@ -43,7 +53,7 @@ SapphireWidgets.ShiftTableCardProgress = config => {
 		if (cardsTotal > 0) {
 			let count = 0;
 
-			$tableCard.each(function() {
+			$tableCard.each(function () {
 				const $this = $(this);
 				const isOverlaped = checkForOverlap($cardProgress[0], $this[0]);
 
@@ -54,7 +64,7 @@ SapphireWidgets.ShiftTableCardProgress = config => {
 				count = count++;
 			});
 
-			$cardProgressList.each(function() {
+			$cardProgressList.each(function () {
 				const $this = $(this);
 
 				const helper = helperObj($this, $cardProgress, $cardProgressList);
@@ -70,7 +80,7 @@ SapphireWidgets.ShiftTableCardProgress = config => {
 
 			$tableRowContent.height($cardProgressList.last().position().top + offset);
 		} else {
-			$cardProgressList.each(function() {
+			$cardProgressList.each(function () {
 				const $this = $(this);
 
 				const helper = helperObj($this, $cardProgress, $cardProgressList);
@@ -158,14 +168,14 @@ SapphireWidgets.ShiftTableCardProgress = config => {
 		return { $shiftCard, createdId, loopedId, $firstSlotCreated, isOverlaped };
 	};
 
-	$(document).ready(function() {
+	$(document).ready(function () {
 		setTableCardProgress(config);
 	});
 
-	$(window).resize(function() {
+	$(window).resize(function () {
 		if (window[config.widgetId]) {
 			clearTimeout(window[config.widgetId].resizedFinished);
-			window[config.widgetId].resizedFinished = setTimeout(function() {
+			window[config.widgetId].resizedFinished = setTimeout(function () {
 				setTableCardProgress(config);
 			}, 250);
 		}

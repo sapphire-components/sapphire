@@ -463,7 +463,6 @@ var RichWidgets_Popup_Editor_notifyWidget;
 			zIndex: POPUP_WINDOW_INDEX,
 			close: function () {
 
-
 				// If the popup is closed before it is resized (ESC) we need to set the processing event to false.
 				$.data(event.target, 'os-internal-processing', false);
 

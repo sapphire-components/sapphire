@@ -167,11 +167,12 @@
 	}
 
 	&__ProgressBar {
+		//margin-left: -$sapphire-sizes--small;
 		bottom: 0;
 		height: 4px;
-		margin-left: -$sapphire-sizes--small;
+		left: -56px;
 		position: absolute;
-		width: 100%;
+		width: calc(100% + 56px);
 
 		.ProgressBarWrap {
 			height: 4px;
@@ -182,7 +183,7 @@
 				height: 4px;
 
 				.ProgressBar__animation {
-					background-color: $regular-green !important;// :(
+					background-color: $regular-green !important; // :(
 				}
 			}
 
@@ -250,7 +251,7 @@
 	}
 
 	&--darkred {
-		.ShiftTableCardProgress__HeaderIcons{
+		.ShiftTableCardProgress__HeaderIcons {
 			color: $dark-red;
 		}
 
@@ -268,7 +269,7 @@
 	}
 
 	&--orange {
-		.ShiftTableCardProgress__HeaderIcons{
+		.ShiftTableCardProgress__HeaderIcons {
 			color: $regular-orange;
 		}
 
