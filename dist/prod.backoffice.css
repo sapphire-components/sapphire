@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.5.257 || Generated: Tue Dec 23 2025 18:23:52 GMT+0300 (GMT+03:00) */
+/*! prod.backoffice.css || Version: 5.5.258 || Generated: Wed Dec 24 2025 14:14:09 GMT+0000 (Hora padrão da Europa Ocidental) */
 /*!***************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/backoffice/styles.scss ***!
   \***************************************************************************************************************************************************************************************************************************************************/
@@ -6882,7 +6882,7 @@ a.Login_Info_Username:visited {
 .Login_Info_Logout:before,
 .Login_Info_Username:before,
 .AppSwitcherContainer:before,
-.AppSwitcherLink[disabled=disabled]:before {
+.AppSwitcherLink[disabled]:before {
   color: #b3b3b3;
   font-family: FontAwesome;
   font-size: 14px;
@@ -7759,7 +7759,7 @@ select.ReadOnly {
   cursor: pointer;
 }
 
-select[disabled=disabled] {
+select[disabled] {
   padding-top: 0;
 }
 
@@ -7797,40 +7797,40 @@ select[disabled=disabled] {
 }
 
 .Form textarea.ReadOnly[readonly],
-.Form textarea.ReadOnly[disabled=disabled],
-.Form select.ReadOnly[disabled=disabled],
+.Form textarea.ReadOnly[disabled],
+.Form select.ReadOnly[disabled],
 .Form input.ReadOnly[readonly],
-.Form input.ReadOnly[disabled=disabled],
-.Form input[disabled=disabled].ReadOnly:not(.Not_Valid),
+.Form input.ReadOnly[disabled],
+.Form input[disabled].ReadOnly:not(.Not_Valid),
 .Form input[readonly].ReadOnly:not(.Not_Valid),
-.Form textarea[disabled=disabled].ReadOnly:not(.Not_Valid),
+.Form textarea[disabled].ReadOnly:not(.Not_Valid),
 .Form textarea[readonly].ReadOnly:not(.Not_Valid),
-.Form select[disabled=disabled].ReadOnly:not(.Not_Valid),
+.Form select[disabled].ReadOnly:not(.Not_Valid),
 .Form select[readonly].ReadOnly:not(.Not_Valid),
-textarea[disabled=disabled],
+textarea[disabled],
 textarea[readonly],
-select[disabled=disabled],
+select[disabled],
 input[readonly],
-input[disabled=disabled] {
+input[disabled] {
   background-color: #f5f5f5;
   border: 1px solid #d6d6d6;
   border-radius: 1px;
   cursor: not-allowed;
 }
 
-input[disabled=disabled][type=text]:focus,
-input[disabled=disabled][type=password]:focus,
-textarea[disabled=disabled]:focus,
+input[disabled][type=text]:focus,
+input[disabled][type=password]:focus,
+textarea[disabled]:focus,
 textarea[readonly]:focus,
-select[disabled=disabled]:focus,
+select[disabled]:focus,
 input[readonly]:focus,
-input[disabled=disabled]:focus,
+input[disabled]:focus,
 .Form input[readonly].ReadOnly:not(.Not_Valid):focus,
-.Form input[disabled=disabled].ReadOnly:not(.Not_Valid):focus,
+.Form input[disabled].ReadOnly:not(.Not_Valid):focus,
 .Form textarea[readonly].ReadOnly:not(.Not_Valid):focus,
-.Form textarea[disabled=disabled].ReadOnly:not(.Not_Valid):focus,
+.Form textarea[disabled].ReadOnly:not(.Not_Valid):focus,
 .Form select[readonly].ReadOnly:not(.Not_Valid):focus,
-.Form select[disabled=disabled].ReadOnly:not(.Not_Valid):focus {
+.Form select[disabled].ReadOnly:not(.Not_Valid):focus {
   background-color: #f5f5f5;
   border: 1px solid #d6d6d6;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -7838,9 +7838,9 @@ input[disabled=disabled]:focus,
 
 input[type=radio].ReadOnly,
 input[type=checkbox].ReadOnly,
-.Form input.ReadOnly[disabled=disabled][type=radio],
+.Form input.ReadOnly[disabled][type=radio],
 .Form input.ReadOnly[readonly][type=radio],
-.Form input.ReadOnly[disabled=disabled][type=checkbox],
+.Form input.ReadOnly[disabled][type=checkbox],
 .Form input.ReadOnly[readonly][type=checkbox],
 .Form input[type=radio].ReadOnly,
 .Form input[type=checkbox].ReadOnly {
@@ -10786,8 +10786,8 @@ a .ListItem:after {
 
 .WizardStep a,
 .WizardStep a:link,
-.WizardStep a[disabled=disabled],
-.WizardStep a[disabled=disabled]:hover {
+.WizardStep a[disabled],
+.WizardStep a[disabled]:hover {
   color: #79868a;
 }
 
@@ -10798,8 +10798,8 @@ a .ListItem:after {
 
 .WizardStep.Past a,
 .WizardStep.Past a:link,
-.WizardStep.Past a[disabled=disabled],
-.WizardStep.Past a[disabled=disabled]:hover {
+.WizardStep.Past a[disabled],
+.WizardStep.Past a[disabled]:hover {
   color: #00bfa5;
 }
 
@@ -10824,8 +10824,8 @@ a .ListItem:after {
 
 .WizardStep.ActiveStep a,
 .WizardStep.ActiveStep a:link,
-.WizardStep.ActiveStep a[disabled=disabled],
-.WizardStep.ActiveStep a[disabled=disabled]:hover {
+.WizardStep.ActiveStep a[disabled],
+.WizardStep.ActiveStep a[disabled]:hover {
   color: #fff;
 }
 

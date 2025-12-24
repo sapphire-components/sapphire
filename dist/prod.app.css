@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.257 || Generated: Tue Dec 23 2025 18:23:52 GMT+0300 (GMT+03:00) */
+/*! prod.app.css || Version: 5.5.258 || Generated: Wed Dec 24 2025 14:14:09 GMT+0000 (Hora padrão da Europa Ocidental) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -25819,9 +25819,9 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .ShiftTableCardProgress__ProgressBar {
   bottom: 0;
   height: 4px;
-  margin-left: -8px;
+  left: -56px;
   position: absolute;
-  width: 100%;
+  width: calc(100% + 56px);
 }
 .ShiftTableCardProgress__ProgressBar .ProgressBarWrap {
   height: 4px;
