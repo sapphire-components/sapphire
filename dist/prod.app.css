@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.259 || Generated: Thu Dec 25 2025 19:52:19 GMT+0300 (GMT+03:00) */
+/*! prod.app.css || Version: 5.5.260 || Generated: Wed Dec 31 2025 12:55:52 GMT+0000 (Hora padrão da Europa Ocidental) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -25688,13 +25688,16 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 
 .ShiftTableCardProgress {
   background-color: #fff;
-  border: 1px solid #d6d6d6;
   border-radius: 4px;
-  display: flex;
+  border: 1px solid #d6d6d6;
+  container-type: inline-size;
   max-width: 0;
   overflow: hidden;
   position: absolute;
   z-index: 1;
+}
+.ShiftTableCardProgress__Holder {
+  display: flex;
 }
 .ShiftTableCardProgress__ActionButton {
   display: flex;
@@ -25874,6 +25877,21 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 }
 .ShiftTableCardProgress--selected .ShiftTableCardProgress__HeaderAction .MoreActions {
   background-color: #ebebeb;
+}
+
+@container (max-width: 160px) {
+  .ShiftTableCardProgress .ShiftTableCardProgress__Holder {
+    flex-direction: column;
+  }
+  .ShiftTableCardProgress .ShiftTableCardProgress__ProgressBar {
+    left: 0;
+    width: 100%;
+  }
+  .ShiftTableCardProgress .ShiftTableCardProgress__ActionButton {
+    border-right: none;
+    padding: 4px;
+    width: unset;
+  }
 }
 .ShiftTableCardProgress--darkred .ShiftTableCardProgress__HeaderIcons {
   color: #b10100;
