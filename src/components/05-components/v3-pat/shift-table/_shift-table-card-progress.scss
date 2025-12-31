@@ -251,10 +251,23 @@
 	}
 }
 
-@container (max-width: 160px) {
+@container (max-width: 200px) {
 	.ShiftTableCardProgress .ShiftTableCardProgress__Holder {
 		flex-direction: column;
 	}
+
+	.ShiftTableCardProgress .ShiftTableCardProgress__Header,
+	.ShiftTableCardProgress .ShiftTableCardProgress__HeaderLeft {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.ShiftTableCardProgress .ShiftTableCardProgress__Footer {
+		display: flex;
+		flex-direction: column;
+	}
+
 	.ShiftTableCardProgress .ShiftTableCardProgress__ProgressBar {
 		left: 0;
 		width: 100%;
