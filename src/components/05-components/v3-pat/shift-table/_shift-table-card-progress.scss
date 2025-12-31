@@ -1,23 +1,25 @@
-@use '../../../00-settings/colors' as *;
 @use '../../../00-settings/borders' as *;
-@use '../../../00-settings/sizes' as *;
+@use '../../../00-settings/colors' as *;
 @use '../../../00-settings/fonts' as *;
-
+@use '../../../00-settings/sizes' as *;
 @use '../../../01-tools/box-shadow' as *;
-
 @use '../../../01-tools/flex-align' as *;
 
 .ShiftTableCardProgress {
 	@include shadow-xsmall;
 
 	background-color: $regular-white;
-	border: 1px solid $light-grey;
 	border-radius: $border-radius-default;
-	display: flex;
+	border: 1px solid $light-grey;
+	container-type: inline-size;
 	max-width: 0;
 	overflow: hidden;
 	position: absolute;
 	z-index: 1;
+
+	&__Holder {
+		display: flex;
+	}
 
 	&__ActionButton {
 		@include flex-center-total;
@@ -193,12 +195,10 @@
 			}
 		}
 	}
-
 	&--notStarted {
 		.ShiftTableCardProgress__HeaderLabel {
 			color: $regular-grey;
 		}
-
 		.ShiftTableCardProgress__ProgressStatusIcon {
 			display: none;
 		}
@@ -249,40 +249,19 @@
 			}
 		}
 	}
+}
 
-	&--darkred {
-		.ShiftTableCardProgress__HeaderIcons {
-			color: $dark-red;
-		}
-
-		.ProgressBarWrap .ProgressBarTooltip[data-tooltip]:before {
-			background-color: $dark-red;
-		}
-
-		.ProgressBarWrap .ProgressBarTooltip[data-tooltip]:after {
-			border-top-color: $dark-red;
-		}
-
-		.ShiftTableCardProgress__ProgressBar .ProgressBarWrap .ProgressBar_structure .ProgressBar__animation {
-			background-color: $dark-red !important;
-		}
+@container (max-width: 160px) {
+	.ShiftTableCardProgress .ShiftTableCardProgress__Holder {
+		flex-direction: column;
 	}
-
-	&--orange {
-		.ShiftTableCardProgress__HeaderIcons {
-			color: $regular-orange;
-		}
-
-		.ProgressBarWrap .ProgressBarTooltip[data-tooltip]:before {
-			background-color: $regular-orange;
-		}
-
-		.ProgressBarWrap .ProgressBarTooltip[data-tooltip]:after {
-			border-top-color: $regular-orange;
-		}
-
-		.ShiftTableCardProgress__ProgressBar .ProgressBarWrap .ProgressBar_structure .ProgressBar__animation {
-			background-color: $regular-orange !important;
-		}
+	.ShiftTableCardProgress .ShiftTableCardProgress__ProgressBar {
+		left: 0;
+		width: 100%;
+	}
+	.ShiftTableCardProgress .ShiftTableCardProgress__ActionButton {
+		border-right: none;
+		padding: 4px;
+		width: unset;
 	}
 }

@@ -39,7 +39,6 @@ SapphireWidgets.ShiftTableCardProgress = config => {
 		const newWidth = parseFloat((colFill * roundWidth - paddingOffset) - (beginsIncomplete ? 0 : (endsIncomplete ? (initialMinutes * minuteValueWidth) : 0)));
 
 
-		console.log(config, 'newWidth', newWidth);
 
 
 
