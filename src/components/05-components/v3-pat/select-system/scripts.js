@@ -38,12 +38,12 @@ SapphireWidgets.SelectSystem = (config) => {
 					let placeholder = this.options.get('placeholderForSearch') || '';
 					var $search = $(
 						'<span class="select2-search select2-search--dropdown">' +
-							'<input class="select2-search__field" placeholder="' +
-							placeholder +
-							'" type="search"' +
-							' tabindex="-1" autocomplete="off" autocorrect="off" autocapitalize="off"' +
-							' spellcheck="false" role="textbox" />' +
-							'</span>'
+						'<input class="select2-search__field" placeholder="' +
+						placeholder +
+						'" type="search"' +
+						' tabindex="-1" autocomplete="off" autocorrect="off" autocapitalize="off"' +
+						' spellcheck="false" role="textbox" />' +
+						'</span>'
 					);
 
 					this.$searchContainer = $search;
@@ -261,6 +261,7 @@ SapphireWidgets.SelectSystem = (config) => {
 				}
 			};
 
+
 			// Set up ResizeObserver to track height changes
 			const updateLineTimelineTitlePosition = () => {
 				const newHeight = 125 + $('.ResizableContainer').outerHeight();
@@ -299,6 +300,14 @@ SapphireWidgets.SelectSystem = (config) => {
 		}
 
 		$WidgetIdentifier.select2(Select2Options);
+
+
+		if (!config.AutoHeight) {
+			let renderedElement = $WidgetIdentifier.next()[0];
+			renderedElement.querySelector('.select2-selection__rendered').style.height = '35px';
+			renderedElement.querySelector('.select2-selection__rendered').style.overflowY = 'overlay';
+		}
+
 
 		if (config.OnChange) {
 			$WidgetIdentifier.on('change', config.OnChange);
