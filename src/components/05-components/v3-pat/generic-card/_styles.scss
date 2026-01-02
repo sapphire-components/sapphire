@@ -839,3 +839,12 @@ a {
 		border-top: none !important;
 	}
 }
+
+.PersonCard[data-background='26'] {
+	.PersonCard_header,
+	.PersonCard__headerLeftInfo,
+	.PersonCard__content,
+	.PersonCard__actions {
+		background-color: $light-red;
+	}
+}
