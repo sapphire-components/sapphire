@@ -1,0 +1,4 @@
+// For error fixing purposes, the icon was being displayed twice with :before and :after - SPD-4615
+.DateInput_Container.DateTimeRangePicker-input:after {
+	display: none;
+}

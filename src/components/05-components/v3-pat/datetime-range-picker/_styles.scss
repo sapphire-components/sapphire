@@ -16,7 +16,7 @@ $date-time-size-base: 40px;
 	&.onlyDate {
 		.DateTimeRangePicker-input {
 			input[type='text'] {
-				width: 140px;//diogo ribeiro: increased width to 140px from 130px so placeholder "DD-MM-YYYY" is not cut
+				width: 140px; //diogo ribeiro: increased width to 140px from 130px so placeholder "DD-MM-YYYY" is not cut
 			}
 		}
 	}
@@ -198,7 +198,7 @@ $date-time-size-base: 40px;
 	}
 
 	> div {
-		display: flex;//DE72425 changed from block to flex so the clear option is displayed correctly when inside form fields with full width
+		display: flex; //DE72425 changed from block to flex so the clear option is displayed correctly when inside form fields with full width
 		position: relative;
 		white-space: nowrap;
 	}
