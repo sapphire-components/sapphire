@@ -1,5 +1,11 @@
 .MainInteractiveCard--no-max-height {
-	.MainInteractiveCard-header .MainInteractiveCard-header-text-title {
+	> .MainInteractiveCard-header .MainInteractiveCard-header-text-title {
+		max-height: unset;
+	}
+	&.XSmallHeader.isOpen > .MainInteractiveCard-header {
+		height: auto;
+	}
+	&.hasFloater.isOpen > .MainInteractiveCard-header .MainInteractiveCard-header-text-title {
 		max-height: unset;
 	}
 }
