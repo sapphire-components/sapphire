@@ -1,54 +1,62 @@
 /* Component InputLASA */
-(function() {
-	var setupInput = function(config) {
-		$('body').off('click', '#' + config.labelId);
-		$('body').off('blur change input', '#' + config.inputId);
+/* This extends MarkWordsFromList, which is in Javascript_Lib */
+(function () {
+	var setupInput = function (config) {
+		$('#' + config.inputId).addClass('OSFillParent');
+		$('#' + config.labelId).addClass('OSFillParent');
 
-		$('#' + config.inputId).css('width', '100%');
-		$('#' + config.labelId).css('width', '100%');
+		SapphireWidgets.MarkWordsFromList.switchView(config);
+		window.setTimeout(function () {
+			SapphireWidgets.MarkWordsFromList.updateLabel(config);
+		}, 250);
 
-		$('#' + config.inputId).hide();
-		$('#' + config.labelId).show();
-
-		SapphireWidgets.MarkWordsFromList.handlePrompt(config);
-
-		$('body').on('click', '#' + config.labelId, function() {
-			$('#' + config.labelId).hide();
-			$('#' + config.inputId).show();
-			$('#' + config.inputId).focus();
+		$('#' + config.labelId).on('click', function () {
+			SapphireWidgets.MarkWordsFromList.switchView(config, true, true);
 		});
 
-		$('body').on('blur', '#' + config.inputId, function() {
-			SapphireWidgets.MarkWordsFromList.handlePrompt(config);
-			$('#' + config.inputId).hide();
-			$('#' + config.labelId).show();
-			window.setTimeout(function() {
-				SapphireWidgets.MarkWordsFromList.handlePrompt(config);
-				SapphireWidgets.MarkWordsFromList.applyMarking({ target: config.labelId });
-			}, 250);
-		});
-
-		$('body').on('change input', '#' + config.inputId, function() {
-			$('#' + config.labelId).text($('#' + config.inputId).val());
-			window.setTimeout(function() {
-				SapphireWidgets.MarkWordsFromList.applyMarking({ target: 'page' });
-			}, 250);
-		});
+		$('#' + config.inputId)
+			.on('focus', function () {
+				SapphireWidgets.MarkWordsFromList.switchView(config, true);
+			})
+			.on('blur', function () {
+				SapphireWidgets.MarkWordsFromList.switchView(config);
+				SapphireWidgets.MarkWordsFromList.updateLabel(config);
+			})
+			.on('change input', function () {
+				SapphireWidgets.MarkWordsFromList.updateLabel(config);
+			});
 	};
 
-	var handlePrompt = function(config) {
-		if (!$('#' + config.inputId).val().length) {
-			$('#' + config.labelId)
-				.text($('#' + config.inputId).prop('placeholder'))
-				.css('color', '#999');
+	var updateLabel = function (config) {
+		var input = $('#' + config.inputId);
+		var label = $('#' + config.labelId);
+		if (input.val()) {
+			label.text(input.val()).css('color', '');
+			window.setTimeout(function () {
+				SapphireWidgets.MarkWordsFromList.applyMarking({ target: config.labelId });
+			}, 250);
 		} else {
-			$('#' + config.labelId)
-				.text($('#' + config.inputId).val())
-				.css('color', '');
+			label.text(input.prop('placeholder')).css('color', '#999');
+		}
+	};
+
+	var switchView = function (config, showInput, focusInput) {
+		var input = $('#' + config.inputId);
+		var label = $('#' + config.labelId);
+		if (showInput) {
+			label.hide();
+			input.show();
+			if (focusInput) {
+				input.focus();
+			}
+		} else {
+			input.hide();
+			label.show();
 		}
 	};
 
 	SapphireWidgets.MarkWordsFromList = SapphireWidgets.MarkWordsFromList = SapphireWidgets.MarkWordsFromList || {};
 	SapphireWidgets.MarkWordsFromList.setupInput = setupInput;
-	SapphireWidgets.MarkWordsFromList.handlePrompt = handlePrompt;
+	SapphireWidgets.MarkWordsFromList.updateLabel = updateLabel;
+	SapphireWidgets.MarkWordsFromList.switchView = switchView;
 })();
