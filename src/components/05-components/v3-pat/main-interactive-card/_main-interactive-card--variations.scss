@@ -9,3 +9,9 @@
 		max-height: unset;
 	}
 }
+
+.MainInteractiveCard.isOpen {
+	.maininteractivecard--hide-when-open {
+		display: none;
+	}
+}

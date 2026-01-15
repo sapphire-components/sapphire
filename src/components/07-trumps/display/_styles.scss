@@ -21,3 +21,17 @@
 span[id$='FakeNotify_block'] {
 	display: contents;
 }
+
+.flex-1 {
+	flex: 1;
+}
+
+.min-width-0 {
+	min-width: 0;
+}
+
+.ellipsis-line {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
