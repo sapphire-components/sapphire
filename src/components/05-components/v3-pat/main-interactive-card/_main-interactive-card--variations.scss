@@ -1,12 +1,22 @@
 .MainInteractiveCard--no-max-height {
-	> .MainInteractiveCard-header .MainInteractiveCard-header-text-title {
+	>.MainInteractiveCard-header .MainInteractiveCard-header-text-title {
 		max-height: unset;
 	}
-	&.XSmallHeader.isOpen > .MainInteractiveCard-header {
+
+	&.XSmallHeader.isOpen>.MainInteractiveCard-header {
 		height: auto;
 	}
-	&.hasFloater.isOpen > .MainInteractiveCard-header .MainInteractiveCard-header-text-title {
+
+	&.hasFloater.isOpen>.MainInteractiveCard-header .MainInteractiveCard-header-text-title {
 		max-height: unset;
+	}
+}
+
+.MainInteractiveCard--no-max-height {
+	>.MainInteractiveCard-floater {
+		.MainInteractiveCard-iframe-actions.MultiMarginTopMedium.XSmall {
+			height: auto;
+		}
 	}
 }
 
