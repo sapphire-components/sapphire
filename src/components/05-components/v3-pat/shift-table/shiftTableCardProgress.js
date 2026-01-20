@@ -4,11 +4,17 @@ SapphireWidgets.ShiftTableCardProgress = config => {
 
 	const setTableCardProgress = () => {
 		const cardProgresID = config.widgetId;
-		const startColumn = config.startColumn;
-		const endColumn = config.endColumn;
-		const initialMinutes = config.initialMinutes;
-		const beginsIncomplete = config.beginsIncomplete;
-		const endsIncomplete = config.endsIncomplete;
+
+		console.log('#############################');
+		console.log('config', config);
+
+
+		const shiftEndDateTime = config.shiftEndDateTime;
+		const shiftStartDateTime = config.shiftStartDateTime;
+		const slotBeginDateTime = config.slotBeginDateTime;
+		const slotFinalDateTime = config.slotFinalDateTime;
+
+
 
 		const $cardProgress = $('#' + cardProgresID);
 		const $shiftTable = $cardProgress.closest('.ShiftTable');
@@ -21,22 +27,27 @@ SapphireWidgets.ShiftTableCardProgress = config => {
 
 		const cardsTotal = $tableCard.length;
 		const timeSlotWidth = $tableCellList[1].getBoundingClientRect().width;
-		const colFill = parseInt(endColumn) - parseInt(startColumn) > 0 ? parseInt(endColumn) - parseInt(startColumn) + 1 : 1;//changed to increment plus 1 again, needs to be reviewed when infusions start at time with minutes (like 5:30pm)
-		const minuteValueWidth = timeSlotWidth / 60;
-		const hasActions = $actions.length > 0;
 
-		let totalLeft = beginsIncomplete ? 0 : (initialMinutes * minuteValueWidth);
 
-		for (let i = 1; i < parseInt(startColumn); i++) {
-			totalLeft += $tableCellList[i].getBoundingClientRect().width;
-		}
 
 		let roundWidth = Math.round((timeSlotWidth + Number.EPSILON) * 100) / 100;
-		const paddingOffset = DEFAULT_PADDING * 2;
+		const hasActions = $actions.length > 0;
 
 
 
-		const newWidth = parseFloat((colFill * roundWidth - paddingOffset) - (beginsIncomplete ? 0 : (endsIncomplete ? (initialMinutes * minuteValueWidth) : 0)));
+
+
+
+		const cardPosition = computeCardPosition({
+			shiftStartStr: shiftStartDateTime,
+			shiftEndStr: shiftEndDateTime,
+			slotStartStr: slotBeginDateTime,
+			slotEndStr: slotFinalDateTime,
+			hourColWidthPx: roundWidth
+		});
+		console.log('cardPosition', cardPosition);
+
+
 
 
 
@@ -45,9 +56,13 @@ SapphireWidgets.ShiftTableCardProgress = config => {
 
 		const direction = $('.Page').hasClass('AR') || $('.Page').hasClass('FA') ? 'right' : 'left';
 
-		$cardProgress.css('width', `${newWidth}px`);
 		$cardProgress.css('max-width', 'unset');
-		$cardProgress.css(direction, `${(totalLeft += DEFAULT_PADDING)}px`);
+		// $cardProgress.css('width', `${newWidth}px`);
+		$cardProgress.css('width', `${cardPosition.width}px`);
+
+
+		//$cardProgress.css(direction, `${(totalLeft += DEFAULT_PADDING)}px`);
+		$cardProgress.css(direction, `${(cardPosition.left += DEFAULT_PADDING)}px`);
 
 		if (cardsTotal > 0) {
 			let count = 0;
@@ -119,22 +134,61 @@ SapphireWidgets.ShiftTableCardProgress = config => {
 			};
 		}
 
-		/*$progressBarList.each(function(index) {
-			const beginslot = $(this).data('beginslot');
-			const beginminute = $(this).data('beginminute');
-			const endslot = $(this).data('endslot');
-			const endminute = $(this).data('endminute');
-			const actionsWidth = 56;
 
-			const progressBarMinutes = (endslot - beginslot) * 60 + endminute - beginminute;
-			const progressendWithPer = progressBarMinutes * minuteValueWidth;
-
-			const $progressTotal = $(this).find('.ProgressBar__animation');
-
-			//$(this).css('left', ((beginslot - 1) * 60 + beginminute) * minuteValueWidth + 'px');
-			$progressTotal.css('width', progressendWithPer - actionsWidth + 'px');
-		});*/
 	};
+
+
+	const parseLocalDateTime = (str) => {
+		// expects "YYYY-MM-DD HH:mm" (or "YYYY-MM-DDTHH:mm")
+		const s = str.trim().replace("T", " ");
+		const [datePart, timePart] = s.split(" ");
+		const [y, m, d] = datePart.split("-").map(Number);
+		const [hh, mm] = timePart.split(":").map(Number);
+		return new Date(y, m - 1, d, hh, mm, 0, 0); // local time
+	}
+
+	const clampDate = (date, min, max) => {
+		return new Date(Math.min(Math.max(date.getTime(), min.getTime()), max.getTime()));
+	}
+
+	const computeCardPosition = ({
+		shiftStartStr,
+		shiftEndStr,
+		slotStartStr,
+		slotEndStr,
+		hourColWidthPx
+	}) => {
+		const gridStart = parseLocalDateTime(shiftStartStr);
+		const gridEnd = parseLocalDateTime(shiftEndStr);
+		let slotStart = parseLocalDateTime(slotStartStr);
+		let slotEnd = parseLocalDateTime(slotEndStr);
+
+		// Handle inverted/invalid ranges
+		if (slotEnd <= slotStart) return { left: 0, width: 0 };
+
+		// Clamp slot to grid (optional but usually desirable)
+		slotStart = clampDate(slotStart, gridStart, gridEnd);
+		slotEnd = clampDate(slotEnd, gridStart, gridEnd);
+
+		if (slotEnd <= slotStart) return { left: 0, width: 0 };
+
+		const pxPerMinute = hourColWidthPx / 60;
+
+		const minutesFromStart = (slotStart - gridStart) / 60000;
+		const durationMinutes = (slotEnd - slotStart) / 60000;
+
+		const left = minutesFromStart * pxPerMinute;
+		const width = durationMinutes * pxPerMinute;
+
+		return { left, width };
+	}
+
+
+
+
+
+
+
 
 	const checkForOverlap = (el1, el2) => {
 		const bounds1 = el1.getBoundingClientRect();
