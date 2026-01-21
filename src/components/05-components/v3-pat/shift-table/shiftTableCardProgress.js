@@ -3,17 +3,12 @@ SapphireWidgets.ShiftTableCardProgress = config => {
 	const DEFAULT_CARD_HEIGHT = 56;
 
 	const setTableCardProgress = () => {
+
 		const cardProgresID = config.widgetId;
-
-		console.log('#############################');
-		console.log('config', config);
-
-
 		const shiftEndDateTime = config.shiftEndDateTime;
 		const shiftStartDateTime = config.shiftStartDateTime;
 		const slotBeginDateTime = config.slotBeginDateTime;
 		const slotFinalDateTime = config.slotFinalDateTime;
-
 
 
 		const $cardProgress = $('#' + cardProgresID);
@@ -22,21 +17,14 @@ SapphireWidgets.ShiftTableCardProgress = config => {
 		const $tableRowContent = $cardProgress.closest('.ShiftTableRow__Content');
 		const $tableCard = $tableRowContent.find('.ShiftTableCard');
 		const $cardProgressList = $tableRowContent.find('.ShiftTableCardProgress');
-		const $progressBarList = $cardProgress.find('.ProgressBarWrap');
 		const $actions = $cardProgress.find('.MoreActions');
-
-		const cardsTotal = $tableCard.length;
-		const timeSlotWidth = $tableCellList[1].getBoundingClientRect().width;
-
-
-
-		let roundWidth = Math.round((timeSlotWidth + Number.EPSILON) * 100) / 100;
 		const hasActions = $actions.length > 0;
 
+		const cardsTotal = $tableCard.length;
 
+		const timeSlotWidth = $tableCellList[1].getBoundingClientRect().width;
 
-
-
+		const roundWidth = Math.round((timeSlotWidth + Number.EPSILON) * 100) / 100;
 
 		const cardPosition = computeCardPosition({
 			shiftStartStr: shiftStartDateTime,
@@ -45,23 +33,13 @@ SapphireWidgets.ShiftTableCardProgress = config => {
 			slotEndStr: slotFinalDateTime,
 			hourColWidthPx: roundWidth
 		});
-		console.log('cardPosition', cardPosition);
-
-
-
-
-
 
 
 
 		const direction = $('.Page').hasClass('AR') || $('.Page').hasClass('FA') ? 'right' : 'left';
 
 		$cardProgress.css('max-width', 'unset');
-		// $cardProgress.css('width', `${newWidth}px`);
 		$cardProgress.css('width', `${cardPosition.width}px`);
-
-
-		//$cardProgress.css(direction, `${(totalLeft += DEFAULT_PADDING)}px`);
 		$cardProgress.css(direction, `${(cardPosition.left += DEFAULT_PADDING)}px`);
 
 		if (cardsTotal > 0) {
@@ -94,16 +72,28 @@ SapphireWidgets.ShiftTableCardProgress = config => {
 
 			$tableRowContent.height($cardProgressList.last().position().top + offset);
 		} else {
-			$cardProgressList.each(function () {
-				const $this = $(this);
 
+
+			$cardProgressList.each(function () {
+				this.style.opacity = 1;
+
+				const $this = $(this);
 				const helper = helperObj($this, $cardProgress, $cardProgressList);
 
 				if (helper.isOverlaped) {
-					const offset = DEFAULT_CARD_HEIGHT + DEFAULT_PADDING * 2;
+					const myRect = this.getBoundingClientRect();
+					const next = findNextSiblingWithClass(this, 'ShiftTableCardProgress');
 
-					$cardProgress.css('top', $cardProgress[0].offsetTop + offset + 'px');
-					helper.$shiftCard.height(helper.$shiftCard.height() + $this[0].offsetHeight);
+					if (!next) return;
+
+					const nextRect = next.getBoundingClientRect();
+
+					next.style.top = this.offsetTop + myRect.height + 'px';
+					helper.$shiftCard.height(this.offsetTop + myRect.height + nextRect.height);
+
+					// const offset = DEFAULT_CARD_HEIGHT + DEFAULT_PADDING * 2;
+					// $cardProgress.css('top', $cardProgress[0].offsetTop + offset + 'px');
+					// helper.$shiftCard.height(helper.$shiftCard.height() + $this[0].offsetHeight);
 				}
 			});
 		}
@@ -117,9 +107,7 @@ SapphireWidgets.ShiftTableCardProgress = config => {
 		if (hasActions) {
 			$actions.on('click', e => {
 				e.stopPropagation();
-
 				$cardProgress.addClass('ShiftTableCardProgress--selected');
-
 				window.addEventListener('click', onClickOutside);
 			});
 
@@ -183,6 +171,27 @@ SapphireWidgets.ShiftTableCardProgress = config => {
 		return { left, width };
 	}
 
+	const findPreviousSiblingWithClass = (element, className) => {
+		let prev = element?.previousElementSibling;
+		while (prev) {
+			if (prev.classList.contains(className)) {
+				return prev;
+			}
+			prev = prev.previousElementSibling;
+		}
+		return null;
+	}
+
+	const findNextSiblingWithClass = (element, className) => {
+		let next = element?.nextElementSibling;
+		while (next) {
+			if (next.classList.contains(className)) {
+				return next;
+			}
+			next = next.nextElementSibling;
+		}
+		return null;
+	}
 
 
 
@@ -228,6 +237,14 @@ SapphireWidgets.ShiftTableCardProgress = config => {
 	$(window).resize(function () {
 		if (window[config.widgetId]) {
 			clearTimeout(window[config.widgetId].resizedFinished);
+
+
+			const allShiftTableCardProgress = document.querySelectorAll('.ShiftTableCardProgress');
+			allShiftTableCardProgress.forEach(element => {
+				element.style.top = '';
+				element.style.opacity = 0;
+			});
+
 			window[config.widgetId].resizedFinished = setTimeout(function () {
 				setTableCardProgress(config);
 			}, 250);
