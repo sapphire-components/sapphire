@@ -2,15 +2,37 @@
 @use '../../../00-settings/fonts' as *;
 
 .badge-box {
+	flex-direction: row;
 	border-radius: 4px;
 	border: solid 1px $light-grey;
 	display: inline-flex;
-	flex-direction: column;
 	height: 45px;
-	min-width: 35px;
-	padding: 4px;
 	text-align: center;
 	width: var(--width);
+
+	&-button {
+		width: 25px;
+		display: none;
+		place-items: center;
+		cursor: pointer;
+		font-weight: 700;
+		font-size: 16px;
+
+		&.minus {
+			border-right: solid 1px $light-grey;
+		}
+		&.plus {
+			border-left: solid 1px $light-grey;
+		}
+	}
+
+	&-content {
+		flex: 1;
+		padding: 4px;
+		min-width: 35px;
+		display: flex;
+		flex-direction: column;
+	}
 
 	&-above {
 		align-items: center;
