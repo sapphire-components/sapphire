@@ -1,40 +1,40 @@
 /* Component BadgeBox */
 (function ($, window, document, SapphireWidgets) {
 	let abovePlaceholderEl = null;
-	let timeoutDelay = null;
-	let timeout = null;
+	let maxValue = null;
+	let minValue = null;
 	let minusButtonEl = null;
 	let plusButtonEl = null;
+	let step = null;
+	let timeout = null;
+	let timeoutDelay = null;
 	let value = null;
 	let valueInputEl = null;
 	let widgetEl = null;
-	let maxValue = null;
-	let minValue = null;
 
 	const create = (config) => {
-		console.log(config);
-
 		widgetEl = document.getElementById(config.widgetId);
 
 		abovePlaceholderEl = widgetEl.querySelector('.badge-box-above');
-		timeoutDelay = config.timeoutDelay;
-		minusButtonEl = widgetEl.querySelector('.badge-box-button.minus');
-		plusButtonEl = widgetEl.querySelector('.badge-box-button.plus');
-		valueInputEl = widgetEl.querySelector('input[type="text"]');
 		maxValue = config.max;
 		minValue = config.min;
+		minusButtonEl = widgetEl.querySelector('.badge-box-button.minus');
+		plusButtonEl = widgetEl.querySelector('.badge-box-button.plus');
+		step = config.step;
+		timeoutDelay = config.timeoutDelay;
+		valueInputEl = widgetEl.querySelector('input[type="text"]');
 
 		if (config.value !== '') {
 			value = config.value;
 			abovePlaceholderEl.textContent = value;
 
 			minusButtonEl.addEventListener('click', () => {
-				value--;
+				value = parseFloat(value) - parseFloat(step);
 				render();
 			});
 
 			plusButtonEl.addEventListener('click', () => {
-				value++;
+				value = parseFloat(value) + parseFloat(step);
 				render();
 			});
 		}
