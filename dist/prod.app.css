@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.270 || Generated: Thu Jan 22 2026 15:46:56 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.5.271 || Generated: Fri Jan 23 2026 11:20:55 GMT+0000 (Western European Standard Time) */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/index.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -9783,15 +9783,34 @@ div.ActionsMenu-item:last-child {
 }
 
 .badge-box {
+  flex-direction: row;
   border-radius: 4px;
   border: solid 1px #d6d6d6;
   display: inline-flex;
-  flex-direction: column;
   height: 45px;
-  min-width: 35px;
-  padding: 4px;
   text-align: center;
   width: var(--width);
+}
+.badge-box-button {
+  width: 25px;
+  display: none;
+  place-items: center;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+}
+.badge-box-button.minus {
+  border-right: solid 1px #d6d6d6;
+}
+.badge-box-button.plus {
+  border-left: solid 1px #d6d6d6;
+}
+.badge-box-content {
+  flex: 1;
+  padding: 4px;
+  min-width: 35px;
+  display: flex;
+  flex-direction: column;
 }
 .badge-box-above {
   align-items: center;
@@ -9820,6 +9839,10 @@ div.ActionsMenu-item:last-child {
 
 .badge-box[data-theme~=no-border] {
   border: none;
+}
+
+.badge-box[data-showcontrols=true] .badge-box-button {
+  display: grid;
 }
 
 .IconSignal {
