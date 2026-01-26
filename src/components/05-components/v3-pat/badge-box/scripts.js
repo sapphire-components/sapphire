@@ -13,6 +13,7 @@
 	let widgetEl = null;
 
 	const create = (config) => {
+		console.log('create', config);
 		widgetEl = document.getElementById(config.widgetId);
 
 		abovePlaceholderEl = widgetEl.querySelector('.badge-box-above');
@@ -58,6 +59,7 @@
 		}
 
 		clearTimeout(timeout);
+
 		timeout = setTimeout(() => {
 			clearTimeout(timeout);
 			valueInputEl.dispatchEvent(new Event('change', { bubbles: true }));

@@ -1,9 +1,11 @@
 const path = require('path');
-const webpack = require('webpack');
-const package = require('./package.json');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const outputPath = path.resolve(__dirname, 'dist');
+const package = require('./package.json');
+const webpack = require('webpack');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
 const isProduction = process.env.NODE_ENV === 'production ';
 
 module.exports = {
@@ -11,7 +13,7 @@ module.exports = {
 		app: path.resolve(__dirname, './src/app.js'),
 		styleguide: path.resolve(__dirname, './src/styleguide/scripts.js'),
 		backoffice: path.resolve(__dirname, './src/backoffice/scripts.js'),
-		icons: path.resolve(__dirname, './src/assets/icons.js')
+		icons: path.resolve(__dirname, './src/assets/icons.js'),
 	},
 	output: {
 		path: outputPath,
@@ -30,7 +32,7 @@ module.exports = {
 	resolve: {
 		fallback: {
 			fs: false,
-		}
+		},
 	},
 	module: {
 		rules: [
@@ -48,7 +50,6 @@ module.exports = {
 							url: {
 								filter: (url, resourcePath) => {
 									// resourcePath - path to css file
-
 									// Don't handle `server root related` URLs (the paths starting with '/').
 									if (url.match(/^\//)) {
 										return false;
@@ -59,6 +60,7 @@ module.exports = {
 							},
 							importLoaders: 2,
 							sourceMap: !isProduction,
+							modules: false,
 						},
 					},
 					{

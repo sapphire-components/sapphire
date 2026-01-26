@@ -1,10 +1,8 @@
 @use '../00-settings/colors' as *;
-
 @use '../01-tools/flex-align' as *;
 
 .ButtonSquare {
 	@include flex-center-total;
-
 	background-color: $regular-white;
 	border: 1px solid $regular-alpha;
 	border-radius: 2px;

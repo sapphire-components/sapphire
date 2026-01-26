@@ -1,903 +1,10640 @@
-/*! prod.app.js || Version: 5.5.273 || Generated: Fri Jan 23 2026 16:36:24 GMT+0000 (Western European Standard Time) */
-/*
- * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
+/*! prod.app.js || Version: 5.5.273 || Generated: Mon Jan 26 2026 14:57:50 GMT+0000 (Western European Standard Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/app.js":
-/*!********************!*\
-  !*** ./src/app.js ***!
-  \********************/
-/***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
-
-eval("{__webpack_require__(/*! ./components/index.scss */ \"./src/components/index.scss\");\r\n\r\n//Import all JS files\r\nconst requireAll = r => r.keys().forEach(r);\r\nrequireAll(__webpack_require__(\"./src/components sync recursive \\\\.js$\"));\n\n//# sourceURL=webpack://sapphire/./src/app.js?\n}");
-
-/***/ }),
-
 /***/ "./src/components sync recursive \\.js$":
-/*!************************************!*\
-  !*** ./src/components/ sync \.js$ ***!
-  \************************************/
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-eval("{var map = {\n\t\"./00-settings/config.js\": \"./src/components/00-settings/config.js\",\n\t\"./03-elements/script.js\": \"./src/components/03-elements/script.js\",\n\t\"./05-components/layout/layout-base.js\": \"./src/components/05-components/layout/layout-base.js\",\n\t\"./05-components/layout/layout-blank.js\": \"./src/components/05-components/layout/layout-blank.js\",\n\t\"./05-components/layout/layout-emergency.js\": \"./src/components/05-components/layout/layout-emergency.js\",\n\t\"./05-components/layout/layout-popup.js\": \"./src/components/05-components/layout/layout-popup.js\",\n\t\"./05-components/layout/layout-spam-guard.js\": \"./src/components/05-components/layout/layout-spam-guard.js\",\n\t\"./05-components/layout/subLayoutLeft.js\": \"./src/components/05-components/layout/subLayoutLeft.js\",\n\t\"./05-components/v3-pat/actions-menu/scripts.js\": \"./src/components/05-components/v3-pat/actions-menu/scripts.js\",\n\t\"./05-components/v3-pat/badge-box/scripts.js\": \"./src/components/05-components/v3-pat/badge-box/scripts.js\",\n\t\"./05-components/v3-pat/button-link/scripts.js\": \"./src/components/05-components/v3-pat/button-link/scripts.js\",\n\t\"./05-components/v3-pat/card-charts/scripts.js\": \"./src/components/05-components/v3-pat/card-charts/scripts.js\",\n\t\"./05-components/v3-pat/collapsible-side-panel/scripts.js\": \"./src/components/05-components/v3-pat/collapsible-side-panel/scripts.js\",\n\t\"./05-components/v3-pat/comp-line/scripts.js\": \"./src/components/05-components/v3-pat/comp-line/scripts.js\",\n\t\"./05-components/v3-pat/country-phone/scripts.js\": \"./src/components/05-components/v3-pat/country-phone/scripts.js\",\n\t\"./05-components/v3-pat/data-tables/scripts.js\": \"./src/components/05-components/v3-pat/data-tables/scripts.js\",\n\t\"./05-components/v3-pat/datetime-range-picker/scripts.js\": \"./src/components/05-components/v3-pat/datetime-range-picker/scripts.js\",\n\t\"./05-components/v3-pat/drag-drop/scripts.js\": \"./src/components/05-components/v3-pat/drag-drop/scripts.js\",\n\t\"./05-components/v3-pat/dropdown-categories/scripts.js\": \"./src/components/05-components/v3-pat/dropdown-categories/scripts.js\",\n\t\"./05-components/v3-pat/dropzone/dropzone.js\": \"./src/components/05-components/v3-pat/dropzone/dropzone.js\",\n\t\"./05-components/v3-pat/expandable-link/scripts.js\": \"./src/components/05-components/v3-pat/expandable-link/scripts.js\",\n\t\"./05-components/v3-pat/fullscreen-tabs-wrapper/scripts.js\": \"./src/components/05-components/v3-pat/fullscreen-tabs-wrapper/scripts.js\",\n\t\"./05-components/v3-pat/generic-card/scripts.js\": \"./src/components/05-components/v3-pat/generic-card/scripts.js\",\n\t\"./05-components/v3-pat/generic-gallery/scripts.js\": \"./src/components/05-components/v3-pat/generic-gallery/scripts.js\",\n\t\"./05-components/v3-pat/generic-grid/scripts.js\": \"./src/components/05-components/v3-pat/generic-grid/scripts.js\",\n\t\"./05-components/v3-pat/horizontal-toolbar/scripts.js\": \"./src/components/05-components/v3-pat/horizontal-toolbar/scripts.js\",\n\t\"./05-components/v3-pat/hour-picker/scripts.js\": \"./src/components/05-components/v3-pat/hour-picker/scripts.js\",\n\t\"./05-components/v3-pat/iframe-loader/scripts.js\": \"./src/components/05-components/v3-pat/iframe-loader/scripts.js\",\n\t\"./05-components/v3-pat/input-lasa/scripts.js\": \"./src/components/05-components/v3-pat/input-lasa/scripts.js\",\n\t\"./05-components/v3-pat/input-with-clear/scripts.js\": \"./src/components/05-components/v3-pat/input-with-clear/scripts.js\",\n\t\"./05-components/v3-pat/input-with-list/scripts.js\": \"./src/components/05-components/v3-pat/input-with-list/scripts.js\",\n\t\"./05-components/v3-pat/line-add/scripts.js\": \"./src/components/05-components/v3-pat/line-add/scripts.js\",\n\t\"./05-components/v3-pat/line-details-expand-box/script.js\": \"./src/components/05-components/v3-pat/line-details-expand-box/script.js\",\n\t\"./05-components/v3-pat/location-box/scripts.js\": \"./src/components/05-components/v3-pat/location-box/scripts.js\",\n\t\"./05-components/v3-pat/main-interactive-card/scripts.js\": \"./src/components/05-components/v3-pat/main-interactive-card/scripts.js\",\n\t\"./05-components/v3-pat/menu-bar/scripts.js\": \"./src/components/05-components/v3-pat/menu-bar/scripts.js\",\n\t\"./05-components/v3-pat/multiple-selection-button/scripts.js\": \"./src/components/05-components/v3-pat/multiple-selection-button/scripts.js\",\n\t\"./05-components/v3-pat/panel/confirmation-panel.js\": \"./src/components/05-components/v3-pat/panel/confirmation-panel.js\",\n\t\"./05-components/v3-pat/panel/confirmation-popup.js\": \"./src/components/05-components/v3-pat/panel/confirmation-popup.js\",\n\t\"./05-components/v3-pat/panel/modal-popup.js\": \"./src/components/05-components/v3-pat/panel/modal-popup.js\",\n\t\"./05-components/v3-pat/panel/panel-by-id-notify.js\": \"./src/components/05-components/v3-pat/panel/panel-by-id-notify.js\",\n\t\"./05-components/v3-pat/panel/panel-by-id.js\": \"./src/components/05-components/v3-pat/panel/panel-by-id.js\",\n\t\"./05-components/v3-pat/panel/popup-menu.js\": \"./src/components/05-components/v3-pat/panel/popup-menu.js\",\n\t\"./05-components/v3-pat/panel/sapphire-panel.js\": \"./src/components/05-components/v3-pat/panel/sapphire-panel.js\",\n\t\"./05-components/v3-pat/panel/scripts.js\": \"./src/components/05-components/v3-pat/panel/scripts.js\",\n\t\"./05-components/v3-pat/patient-call-cancel/patient-call-cancel-structure.js\": \"./src/components/05-components/v3-pat/patient-call-cancel/patient-call-cancel-structure.js\",\n\t\"./05-components/v3-pat/patient-call-cancel/patient-call-cancel.js\": \"./src/components/05-components/v3-pat/patient-call-cancel/patient-call-cancel.js\",\n\t\"./05-components/v3-pat/prescription-card/scripts.js\": \"./src/components/05-components/v3-pat/prescription-card/scripts.js\",\n\t\"./05-components/v3-pat/prescription-expandable/scripts.js\": \"./src/components/05-components/v3-pat/prescription-expandable/scripts.js\",\n\t\"./05-components/v3-pat/resize-parent-iframe/scripts.js\": \"./src/components/05-components/v3-pat/resize-parent-iframe/scripts.js\",\n\t\"./05-components/v3-pat/sapphire-header/scripts.js\": \"./src/components/05-components/v3-pat/sapphire-header/scripts.js\",\n\t\"./05-components/v3-pat/sapphire-popup/scripts.js\": \"./src/components/05-components/v3-pat/sapphire-popup/scripts.js\",\n\t\"./05-components/v3-pat/sapphire-radio-button/scripts.js\": \"./src/components/05-components/v3-pat/sapphire-radio-button/scripts.js\",\n\t\"./05-components/v3-pat/scales/scale-main-structure.js\": \"./src/components/05-components/v3-pat/scales/scale-main-structure.js\",\n\t\"./05-components/v3-pat/scales/toggle-item-control.js\": \"./src/components/05-components/v3-pat/scales/toggle-item-control.js\",\n\t\"./05-components/v3-pat/search-and-select/select-ssd.js\": \"./src/components/05-components/v3-pat/search-and-select/select-ssd.js\",\n\t\"./05-components/v3-pat/search-and-select/ssd-search.js\": \"./src/components/05-components/v3-pat/search-and-select/ssd-search.js\",\n\t\"./05-components/v3-pat/searchable-client-side/scripts.js\": \"./src/components/05-components/v3-pat/searchable-client-side/scripts.js\",\n\t\"./05-components/v3-pat/section-expandable-custom/scripts.js\": \"./src/components/05-components/v3-pat/section-expandable-custom/scripts.js\",\n\t\"./05-components/v3-pat/section-expandable-inside/scripts.js\": \"./src/components/05-components/v3-pat/section-expandable-inside/scripts.js\",\n\t\"./05-components/v3-pat/segmented-control/scripts.js\": \"./src/components/05-components/v3-pat/segmented-control/scripts.js\",\n\t\"./05-components/v3-pat/select-system/scripts.js\": \"./src/components/05-components/v3-pat/select-system/scripts.js\",\n\t\"./05-components/v3-pat/shift-container/scripts.js\": \"./src/components/05-components/v3-pat/shift-container/scripts.js\",\n\t\"./05-components/v3-pat/shift-table/shiftTable.js\": \"./src/components/05-components/v3-pat/shift-table/shiftTable.js\",\n\t\"./05-components/v3-pat/shift-table/shiftTableCard.js\": \"./src/components/05-components/v3-pat/shift-table/shiftTableCard.js\",\n\t\"./05-components/v3-pat/shift-table/shiftTableCardProgress.js\": \"./src/components/05-components/v3-pat/shift-table/shiftTableCardProgress.js\",\n\t\"./05-components/v3-pat/shift-table/shiftTableHover.js\": \"./src/components/05-components/v3-pat/shift-table/shiftTableHover.js\",\n\t\"./05-components/v3-pat/side-menu/scripts.js\": \"./src/components/05-components/v3-pat/side-menu/scripts.js\",\n\t\"./05-components/v3-pat/sidebar/sidebar-structure.js\": \"./src/components/05-components/v3-pat/sidebar/sidebar-structure.js\",\n\t\"./05-components/v3-pat/small-box-selectable/scripts.js\": \"./src/components/05-components/v3-pat/small-box-selectable/scripts.js\",\n\t\"./05-components/v3-pat/spinner-horizontal/scripts.js\": \"./src/components/05-components/v3-pat/spinner-horizontal/scripts.js\",\n\t\"./05-components/v3-pat/spinner-vertical/scripts.js\": \"./src/components/05-components/v3-pat/spinner-vertical/scripts.js\",\n\t\"./05-components/v3-pat/split-button/scripts.js\": \"./src/components/05-components/v3-pat/split-button/scripts.js\",\n\t\"./05-components/v3-pat/ssd-component-block/scripts.js\": \"./src/components/05-components/v3-pat/ssd-component-block/scripts.js\",\n\t\"./05-components/v3-pat/ssd-list-line/scripts.js\": \"./src/components/05-components/v3-pat/ssd-list-line/scripts.js\",\n\t\"./05-components/v3-pat/table-form/scripts.js\": \"./src/components/05-components/v3-pat/table-form/scripts.js\",\n\t\"./05-components/v3-pat/tabs-extended/scripts.js\": \"./src/components/05-components/v3-pat/tabs-extended/scripts.js\",\n\t\"./05-components/v3-pat/tabular-list/scripts.js\": \"./src/components/05-components/v3-pat/tabular-list/scripts.js\",\n\t\"./05-components/v3-pat/tabular-scroll/scripts.js\": \"./src/components/05-components/v3-pat/tabular-scroll/scripts.js\",\n\t\"./05-components/v3-pat/timeline/scripts.js\": \"./src/components/05-components/v3-pat/timeline/scripts.js\",\n\t\"./05-components/v3-pat/trigger-iframe-tooltip/trigger-iframe-tooltip.js\": \"./src/components/05-components/v3-pat/trigger-iframe-tooltip/trigger-iframe-tooltip.js\",\n\t\"./05-components/v3-pat/truncated-content/scripts.js\": \"./src/components/05-components/v3-pat/truncated-content/scripts.js\",\n\t\"./08-pages/clinicianWorkArea.js\": \"./src/components/08-pages/clinicianWorkArea.js\",\n\t\"./08-pages/eSignature.js\": \"./src/components/08-pages/eSignature.js\",\n\t\"./08-pages/remoteAppointment.js\": \"./src/components/08-pages/remoteAppointment.js\",\n\t\"./globals.js\": \"./src/components/globals.js\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/components sync recursive \\\\.js$\";\n\n//# sourceURL=webpack://sapphire/./src/components/_sync_\\.js$?\n}");
+var map = {
+	"./00-settings/config.js": "./src/components/00-settings/config.js",
+	"./03-elements/script.js": "./src/components/03-elements/script.js",
+	"./05-components/layout/layout-base.js": "./src/components/05-components/layout/layout-base.js",
+	"./05-components/layout/layout-blank.js": "./src/components/05-components/layout/layout-blank.js",
+	"./05-components/layout/layout-emergency.js": "./src/components/05-components/layout/layout-emergency.js",
+	"./05-components/layout/layout-popup.js": "./src/components/05-components/layout/layout-popup.js",
+	"./05-components/layout/layout-spam-guard.js": "./src/components/05-components/layout/layout-spam-guard.js",
+	"./05-components/layout/subLayoutLeft.js": "./src/components/05-components/layout/subLayoutLeft.js",
+	"./05-components/v3-pat/actions-menu/scripts.js": "./src/components/05-components/v3-pat/actions-menu/scripts.js",
+	"./05-components/v3-pat/badge-box/scripts.js": "./src/components/05-components/v3-pat/badge-box/scripts.js",
+	"./05-components/v3-pat/button-link/scripts.js": "./src/components/05-components/v3-pat/button-link/scripts.js",
+	"./05-components/v3-pat/card-charts/scripts.js": "./src/components/05-components/v3-pat/card-charts/scripts.js",
+	"./05-components/v3-pat/collapsible-side-panel/scripts.js": "./src/components/05-components/v3-pat/collapsible-side-panel/scripts.js",
+	"./05-components/v3-pat/comp-line/scripts.js": "./src/components/05-components/v3-pat/comp-line/scripts.js",
+	"./05-components/v3-pat/country-phone/scripts.js": "./src/components/05-components/v3-pat/country-phone/scripts.js",
+	"./05-components/v3-pat/data-tables/scripts.js": "./src/components/05-components/v3-pat/data-tables/scripts.js",
+	"./05-components/v3-pat/datetime-range-picker/scripts.js": "./src/components/05-components/v3-pat/datetime-range-picker/scripts.js",
+	"./05-components/v3-pat/drag-drop/scripts.js": "./src/components/05-components/v3-pat/drag-drop/scripts.js",
+	"./05-components/v3-pat/dropdown-categories/scripts.js": "./src/components/05-components/v3-pat/dropdown-categories/scripts.js",
+	"./05-components/v3-pat/dropzone/dropzone.js": "./src/components/05-components/v3-pat/dropzone/dropzone.js",
+	"./05-components/v3-pat/expandable-link/scripts.js": "./src/components/05-components/v3-pat/expandable-link/scripts.js",
+	"./05-components/v3-pat/fullscreen-tabs-wrapper/scripts.js": "./src/components/05-components/v3-pat/fullscreen-tabs-wrapper/scripts.js",
+	"./05-components/v3-pat/generic-card/scripts.js": "./src/components/05-components/v3-pat/generic-card/scripts.js",
+	"./05-components/v3-pat/generic-gallery/scripts.js": "./src/components/05-components/v3-pat/generic-gallery/scripts.js",
+	"./05-components/v3-pat/generic-grid/scripts.js": "./src/components/05-components/v3-pat/generic-grid/scripts.js",
+	"./05-components/v3-pat/horizontal-toolbar/scripts.js": "./src/components/05-components/v3-pat/horizontal-toolbar/scripts.js",
+	"./05-components/v3-pat/hour-picker/scripts.js": "./src/components/05-components/v3-pat/hour-picker/scripts.js",
+	"./05-components/v3-pat/iframe-loader/scripts.js": "./src/components/05-components/v3-pat/iframe-loader/scripts.js",
+	"./05-components/v3-pat/input-lasa/scripts.js": "./src/components/05-components/v3-pat/input-lasa/scripts.js",
+	"./05-components/v3-pat/input-with-clear/scripts.js": "./src/components/05-components/v3-pat/input-with-clear/scripts.js",
+	"./05-components/v3-pat/input-with-list/scripts.js": "./src/components/05-components/v3-pat/input-with-list/scripts.js",
+	"./05-components/v3-pat/line-add/scripts.js": "./src/components/05-components/v3-pat/line-add/scripts.js",
+	"./05-components/v3-pat/line-details-expand-box/script.js": "./src/components/05-components/v3-pat/line-details-expand-box/script.js",
+	"./05-components/v3-pat/location-box/scripts.js": "./src/components/05-components/v3-pat/location-box/scripts.js",
+	"./05-components/v3-pat/main-interactive-card/scripts.js": "./src/components/05-components/v3-pat/main-interactive-card/scripts.js",
+	"./05-components/v3-pat/menu-bar/scripts.js": "./src/components/05-components/v3-pat/menu-bar/scripts.js",
+	"./05-components/v3-pat/multiple-selection-button/scripts.js": "./src/components/05-components/v3-pat/multiple-selection-button/scripts.js",
+	"./05-components/v3-pat/panel/confirmation-panel.js": "./src/components/05-components/v3-pat/panel/confirmation-panel.js",
+	"./05-components/v3-pat/panel/confirmation-popup.js": "./src/components/05-components/v3-pat/panel/confirmation-popup.js",
+	"./05-components/v3-pat/panel/modal-popup.js": "./src/components/05-components/v3-pat/panel/modal-popup.js",
+	"./05-components/v3-pat/panel/panel-by-id-notify.js": "./src/components/05-components/v3-pat/panel/panel-by-id-notify.js",
+	"./05-components/v3-pat/panel/panel-by-id.js": "./src/components/05-components/v3-pat/panel/panel-by-id.js",
+	"./05-components/v3-pat/panel/popup-menu.js": "./src/components/05-components/v3-pat/panel/popup-menu.js",
+	"./05-components/v3-pat/panel/sapphire-panel.js": "./src/components/05-components/v3-pat/panel/sapphire-panel.js",
+	"./05-components/v3-pat/panel/scripts.js": "./src/components/05-components/v3-pat/panel/scripts.js",
+	"./05-components/v3-pat/patient-call-cancel/patient-call-cancel-structure.js": "./src/components/05-components/v3-pat/patient-call-cancel/patient-call-cancel-structure.js",
+	"./05-components/v3-pat/patient-call-cancel/patient-call-cancel.js": "./src/components/05-components/v3-pat/patient-call-cancel/patient-call-cancel.js",
+	"./05-components/v3-pat/prescription-card/scripts.js": "./src/components/05-components/v3-pat/prescription-card/scripts.js",
+	"./05-components/v3-pat/prescription-expandable/scripts.js": "./src/components/05-components/v3-pat/prescription-expandable/scripts.js",
+	"./05-components/v3-pat/resize-parent-iframe/scripts.js": "./src/components/05-components/v3-pat/resize-parent-iframe/scripts.js",
+	"./05-components/v3-pat/sapphire-header/scripts.js": "./src/components/05-components/v3-pat/sapphire-header/scripts.js",
+	"./05-components/v3-pat/sapphire-popup/scripts.js": "./src/components/05-components/v3-pat/sapphire-popup/scripts.js",
+	"./05-components/v3-pat/sapphire-radio-button/scripts.js": "./src/components/05-components/v3-pat/sapphire-radio-button/scripts.js",
+	"./05-components/v3-pat/scales/scale-main-structure.js": "./src/components/05-components/v3-pat/scales/scale-main-structure.js",
+	"./05-components/v3-pat/scales/toggle-item-control.js": "./src/components/05-components/v3-pat/scales/toggle-item-control.js",
+	"./05-components/v3-pat/search-and-select/select-ssd.js": "./src/components/05-components/v3-pat/search-and-select/select-ssd.js",
+	"./05-components/v3-pat/search-and-select/ssd-search.js": "./src/components/05-components/v3-pat/search-and-select/ssd-search.js",
+	"./05-components/v3-pat/searchable-client-side/scripts.js": "./src/components/05-components/v3-pat/searchable-client-side/scripts.js",
+	"./05-components/v3-pat/section-expandable-custom/scripts.js": "./src/components/05-components/v3-pat/section-expandable-custom/scripts.js",
+	"./05-components/v3-pat/section-expandable-inside/scripts.js": "./src/components/05-components/v3-pat/section-expandable-inside/scripts.js",
+	"./05-components/v3-pat/segmented-control/scripts.js": "./src/components/05-components/v3-pat/segmented-control/scripts.js",
+	"./05-components/v3-pat/select-system/scripts.js": "./src/components/05-components/v3-pat/select-system/scripts.js",
+	"./05-components/v3-pat/shift-container/scripts.js": "./src/components/05-components/v3-pat/shift-container/scripts.js",
+	"./05-components/v3-pat/shift-table/shiftTable.js": "./src/components/05-components/v3-pat/shift-table/shiftTable.js",
+	"./05-components/v3-pat/shift-table/shiftTableCard.js": "./src/components/05-components/v3-pat/shift-table/shiftTableCard.js",
+	"./05-components/v3-pat/shift-table/shiftTableCardProgress.js": "./src/components/05-components/v3-pat/shift-table/shiftTableCardProgress.js",
+	"./05-components/v3-pat/shift-table/shiftTableHover.js": "./src/components/05-components/v3-pat/shift-table/shiftTableHover.js",
+	"./05-components/v3-pat/side-menu/scripts.js": "./src/components/05-components/v3-pat/side-menu/scripts.js",
+	"./05-components/v3-pat/sidebar/sidebar-structure.js": "./src/components/05-components/v3-pat/sidebar/sidebar-structure.js",
+	"./05-components/v3-pat/small-box-selectable/scripts.js": "./src/components/05-components/v3-pat/small-box-selectable/scripts.js",
+	"./05-components/v3-pat/spinner-horizontal/scripts.js": "./src/components/05-components/v3-pat/spinner-horizontal/scripts.js",
+	"./05-components/v3-pat/spinner-vertical/scripts.js": "./src/components/05-components/v3-pat/spinner-vertical/scripts.js",
+	"./05-components/v3-pat/split-button/scripts.js": "./src/components/05-components/v3-pat/split-button/scripts.js",
+	"./05-components/v3-pat/ssd-component-block/scripts.js": "./src/components/05-components/v3-pat/ssd-component-block/scripts.js",
+	"./05-components/v3-pat/ssd-list-line/scripts.js": "./src/components/05-components/v3-pat/ssd-list-line/scripts.js",
+	"./05-components/v3-pat/table-form/scripts.js": "./src/components/05-components/v3-pat/table-form/scripts.js",
+	"./05-components/v3-pat/tabs-extended/scripts.js": "./src/components/05-components/v3-pat/tabs-extended/scripts.js",
+	"./05-components/v3-pat/tabular-list/scripts.js": "./src/components/05-components/v3-pat/tabular-list/scripts.js",
+	"./05-components/v3-pat/tabular-scroll/scripts.js": "./src/components/05-components/v3-pat/tabular-scroll/scripts.js",
+	"./05-components/v3-pat/timeline/scripts.js": "./src/components/05-components/v3-pat/timeline/scripts.js",
+	"./05-components/v3-pat/trigger-iframe-tooltip/trigger-iframe-tooltip.js": "./src/components/05-components/v3-pat/trigger-iframe-tooltip/trigger-iframe-tooltip.js",
+	"./05-components/v3-pat/truncated-content/scripts.js": "./src/components/05-components/v3-pat/truncated-content/scripts.js",
+	"./08-pages/clinicianWorkArea.js": "./src/components/08-pages/clinicianWorkArea.js",
+	"./08-pages/eSignature.js": "./src/components/08-pages/eSignature.js",
+	"./08-pages/remoteAppointment.js": "./src/components/08-pages/remoteAppointment.js",
+	"./globals.js": "./src/components/globals.js"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./src/components sync recursive \\.js$";
 
 /***/ }),
 
 /***/ "./src/components/00-settings/config.js":
-/*!**********************************************!*\
-  !*** ./src/components/00-settings/config.js ***!
-  \**********************************************/
 /***/ (function() {
 
-eval("{SapphireWidgets = window.SapphireWidgets = window.SapphireWidgets || {};\n\n//# sourceURL=webpack://sapphire/./src/components/00-settings/config.js?\n}");
+SapphireWidgets = window.SapphireWidgets = window.SapphireWidgets || {};
 
 /***/ }),
 
 /***/ "./src/components/03-elements/script.js":
-/*!**********************************************!*\
-  !*** ./src/components/03-elements/script.js ***!
-  \**********************************************/
 /***/ (function() {
 
-eval("{/* Component Textarea */\r\n(function($, window, document, SapphireWidgets) {\r\n  \r\n  $(document).ready(function() {\r\n    CallTextAreaAutoResize();\r\n  });\r\n\r\n  window.CallTextAreaAutoResize = function prepareTextAreaAutoResize(TextAreaId){\r\n    \r\n    if(TextAreaId==undefined){\r\n      var textAreaInput = $('textarea');\r\n    }else{\r\n      var textAreaInput = $('#'+TextAreaId);\r\n    }\r\n    textAreaInput.each(function(){\r\n      $(this).attr('rows',2);\r\n\r\n      $(this)[0].style.minHeight = '70px';\r\n      resizeTextArea($(this)[0]);\r\n    });\r\n\r\n    textAreaInput.on('input', function(){\r\n      resizeTextArea($(this)[0]);\r\n    });\r\n  }\r\n\r\n  function resizeTextArea ($textAreaInput) {\r\n    if($textAreaInput.scrollHeight == 0){\r\n      $textAreaInput.style.height = '70px';\r\n    }else{\r\n      $textAreaInput.style.height = 'auto';\r\n      $textAreaInput.style.height = $textAreaInput.scrollHeight + 'px';\r\n    }\r\n  }\r\n})(jQuery, window, document, SapphireWidgets);\n\n//# sourceURL=webpack://sapphire/./src/components/03-elements/script.js?\n}");
+/* Component Textarea */
+(function($, window, document, SapphireWidgets) {
+  
+  $(document).ready(function() {
+    CallTextAreaAutoResize();
+  });
+
+  window.CallTextAreaAutoResize = function prepareTextAreaAutoResize(TextAreaId){
+    
+    if(TextAreaId==undefined){
+      var textAreaInput = $('textarea');
+    }else{
+      var textAreaInput = $('#'+TextAreaId);
+    }
+    textAreaInput.each(function(){
+      $(this).attr('rows',2);
+
+      $(this)[0].style.minHeight = '70px';
+      resizeTextArea($(this)[0]);
+    });
+
+    textAreaInput.on('input', function(){
+      resizeTextArea($(this)[0]);
+    });
+  }
+
+  function resizeTextArea ($textAreaInput) {
+    if($textAreaInput.scrollHeight == 0){
+      $textAreaInput.style.height = '70px';
+    }else{
+      $textAreaInput.style.height = 'auto';
+      $textAreaInput.style.height = $textAreaInput.scrollHeight + 'px';
+    }
+  }
+})(jQuery, window, document, SapphireWidgets);
 
 /***/ }),
 
 /***/ "./src/components/05-components/layout/layout-base.js":
-/*!************************************************************!*\
-  !*** ./src/components/05-components/layout/layout-base.js ***!
-  \************************************************************/
 /***/ (function() {
 
-eval("{/* Component LayoutBase */\r\n(function ($, window, document, SapphireWidgets) {\r\n\tvar create = function (config) {\r\n\t\twindow[config.widgetId] = new LayoutBase(config);\r\n\t\tSapphireWidgets.LayoutBase.widgetId = config.widgetId;\r\n\t};\r\n\r\n\tvar openSidebarIframe = function (duration) {\r\n\t\twindow[SapphireWidgets.LayoutBase.widgetId].openSidebarIframe(duration);\r\n\t};\r\n\r\n\tvar closeSidebarIframe = function (duration) {\r\n\t\twindow[SapphireWidgets.LayoutBase.widgetId].closeSidebarIframe(duration);\r\n\t};\r\n\r\n\tvar scrollToElement = function ($element, offset = 0) {\r\n\t\tvar $targetElement = $element;\r\n\r\n\t\tif (!!$targetElement.length) {\r\n\t\t\tvar scrollToOffsetInterval;\r\n\r\n\t\t\tscrollToOffsetInterval = setInterval(function () {\r\n\t\t\t\tif (window[SapphireWidgets.LayoutBase.widgetId].getThresholds().secondaryThreshold > 0) {\r\n\t\t\t\t\tclearInterval(scrollToOffsetInterval);\r\n\r\n\t\t\t\t\tlet targetElementOffsetTop = $targetElement.offset().top;\r\n\r\n\t\t\t\t\tconst isEmergency = !!$('.LayoutBase-emergency').text();\r\n\r\n\t\t\t\t\tconst headerHeight = $('.SapphireHeader').height();\r\n\t\t\t\t\tconst secondaryHeight = $('.LayoutBase-secondary').outerHeight();\r\n\t\t\t\t\tconst emergencyHeight = isEmergency ? $('.LayoutBase-emergency').height() : 0;\r\n\r\n\t\t\t\t\ttargetElementOffsetTop = targetElementOffsetTop - (headerHeight + secondaryHeight + emergencyHeight);\r\n\r\n\t\t\t\t\t$('body, html').scrollTop(targetElementOffsetTop - 16);\r\n\t\t\t\t}\r\n\t\t\t}, 250);\r\n\t\t}\r\n\t};\r\n\r\n\tvar LayoutBase = function (config) {\r\n\t\tvar _this = this;\r\n\t\tthis.layoutBaseRedrawTimer = 0;\r\n\t\tthis.isExpandable = config.isExpandable;\r\n\t\tthis.isTopWindow = window.top === window.self ? true : false;\r\n\t\tthis.$widget = $('#' + config.widgetId);\r\n\t\tthis.$wrapper = this.$widget.find('.LayoutBase-Wrapper');\r\n\t\tthis.$spacer = this.$widget.find('.LayoutBase-spacer');\r\n\t\tthis.$mainMenu = this.$widget.find('.LayoutBase-MainMenu');\r\n\t\tthis.$header = this.$widget.find('.LayoutBase-header');\r\n\t\tthis.$headerBody = this.$widget.find('.SapphireHeader-body');\r\n\t\tthis.$primaryMenu = this.$widget.find('.LayoutBase-primary-menu');\r\n\t\tthis.$emergency = this.$widget.find('.LayoutBase-emergency');\r\n\t\tthis.$secondary = this.$widget.find('.LayoutBase-secondary');\r\n\t\tthis.$secondaryMenu = this.$widget.find('.LayoutBase-secondary-menu');\r\n\t\tthis.$iframeSidebar = this.$widget.find('.LayoutBase-iframesidebar');\r\n\t\tthis.$headerAdditionalContent = this.$widget.find('.SapphireHeader-additional-content');\r\n\t\tthis.$topfixedContent = this.$widget.find('.LayoutBase-topfixedcontent');\r\n\t\tthis.$bottomfixedContent = this.$widget.find('.LayoutBase-bottomfixedcontent');\r\n\t\tthis.$mainContent = this.$widget.find('.LayoutBase-MainContent');\r\n\t\tthis.setupWindowEvents();\r\n\t\tthis.$iframeSidebar.append('<div class=\"lds-ring 1\"><div></div><div></div><div></div><div></div></div>');\r\n\r\n\t\t$(function () {\r\n\t\t\t$('body').addClass('LayoutBase');\r\n\t\t\tif (_this.isTopWindow) {\r\n\t\t\t\t$('body').css('overflow-y', 'scroll');\r\n\t\t\t}\r\n\t\t});\r\n\r\n\t\t$(window).load(function () {\r\n\t\t\t$('body').click();\r\n\t\t\t$(window).scroll();\r\n\r\n\t\t\t_this.$iframeSidebar.find('.lds-ring').fadeOut();\r\n\t\t\t// The way to prevent interface \"jumping\" is hiding some elements until load is complete\r\n\t\t\tsetTimeout(function () {\r\n\t\t\t\t_this.$widget.find('.HiddenOnStart').hide().removeClass('HiddenOnStart').fadeIn();\r\n\t\t\t}, 100);\r\n\t\t});\r\n\t};\r\n\r\n\tLayoutBase.prototype.setupWindowEvents = function () {\r\n\t\tvar _this = this;\r\n\t\tvar cursorPositon = 0;\r\n\r\n\t\t$(window).resize(function () {\r\n\t\t\t_this.updateThresholds();\r\n\t\t\t_this.handleLayoutTopPadding();\r\n\t\t\t_this.handleLayoutBottomPadding();\r\n\t\t});\r\n\r\n\t\t$(window).scroll(function () {\r\n\t\t\tvar newPosition = $(window).scrollTop();\r\n\r\n\t\t\twindow.clearTimeout(_this.layoutBaseRedrawTimer);\r\n\t\t\t_this.layoutBaseRedrawTimer = window.setTimeout(function () {\r\n\t\t\t\t_this.updateThresholds();\r\n\t\t\t\t_this.handleLayoutTopPadding();\r\n\t\t\t\t_this.handleLayoutBottomPadding();\r\n\t\t\t\t_this.handleManageQueueCard(cursorPositon, newPosition);\r\n\t\t\t\tcursorPositon = newPosition;\r\n\t\t\t}, 100);\r\n\t\t});\r\n\t};\r\n\r\n\tLayoutBase.prototype.handleLayoutTopPadding = function () {\r\n\r\n\t\tthis.$spacer.stop().animate({\r\n\t\t\theight: this.contentThreshold,\r\n\t\t}, 0, 'linear');\r\n\r\n\t\tif (this.$topfixedContent.length === 1) {\r\n\t\t\tthis.$topfixedContent.css({\r\n\t\t\t\twidth: $('.LayoutBase-MainContent').width(),\r\n\t\t\t\ttop: this.topfixedContentThreshold + 'px',\r\n\t\t\t});\r\n\t\t}\r\n\r\n\t};\r\n\r\n\tLayoutBase.prototype.handleLayoutBottomPadding = function () {\r\n\t\tif (this.$bottomfixedContent.length === 1) {\r\n\t\t\tif ($('body')[0].scrollHeight > $('body').height()) {\r\n\t\t\t\tvar bottomFixedHeight = this.$bottomfixedContent.outerHeight(true);\r\n\t\t\t\tthis.$wrapper.addClass('hasFixedBottom').css('padding-bottom', bottomFixedHeight + 'px');\r\n\t\t\t\tthis.$bottomfixedContent.css({\r\n\t\t\t\t\twidth: $('.LayoutBase-MainContent').outerWidth(true),\r\n\t\t\t\t});\r\n\t\t\t} else {\r\n\t\t\t\tthis.$wrapper.removeClass('hasFixedBottom').css('padding-bottom', '');\r\n\t\t\t\tthis.$bottomfixedContent.css({\r\n\t\t\t\t\twidth: '',\r\n\t\t\t\t});\r\n\t\t\t}\r\n\t\t}\r\n\t};\r\n\r\n\tLayoutBase.prototype.updateThresholds = function () {\r\n\t\tvar mainMenuHeight = this.$mainMenu.outerHeight(true) || 0;\r\n\t\tvar headerBodyHeight = this.$headerBody.outerHeight(true) || this.$header.outerHeight(true) || 0;\r\n\t\tvar topfixedContentHeight = this.$topfixedContent.outerHeight(true) || 0;\r\n\t\tvar primaryMenuHeight = this.$primaryMenu.outerHeight(true) || 0;\r\n\t\tvar emergencyHeight = this.$emergency.outerHeight(true) || 0;\r\n\t\tthis.topfixedContentThreshold = mainMenuHeight + headerBodyHeight;\r\n\t\tthis.contentThreshold = mainMenuHeight + headerBodyHeight + topfixedContentHeight;\r\n\t\tthis.emergencyThreshold = mainMenuHeight + headerBodyHeight + topfixedContentHeight + primaryMenuHeight;\r\n\t\tthis.secondaryThreshold =\r\n\t\t\tmainMenuHeight + headerBodyHeight + topfixedContentHeight + primaryMenuHeight + emergencyHeight;\r\n\t};\r\n\r\n\tLayoutBase.prototype.getThresholds = function () {\r\n\t\treturn {\r\n\t\t\ttopfixedContentThreshold: this.topfixedContentThreshold,\r\n\t\t\tcontentThreshold: this.contentThreshold,\r\n\t\t\temergencyThreshold: this.emergencyThreshold,\r\n\t\t\tsecondaryThreshold: this.secondaryThreshold,\r\n\t\t};\r\n\t};\r\n\r\n\tLayoutBase.prototype.openSidebarIframe = function (duration_in) {\r\n\t\tvar duration = duration_in >= 0 ? duration_in : 100;\r\n\t\tthis.$iframeSidebar.animate({ width: '100%', }, duration);\r\n\t\t$('body').css('overflow-y', 'scroll').click();\r\n\t};\r\n\r\n\tLayoutBase.prototype.closeSidebarIframe = function (duration_in) {\r\n\t\tvar duration = duration_in >= 0 ? duration_in : 100;\r\n\t\tvar targetWidth = this.isExpandable ? 40 : 262;\r\n\t\tthis.$iframeSidebar.animate(\r\n\t\t\t{\r\n\t\t\t\twidth: targetWidth,\r\n\t\t\t},\r\n\t\t\tduration\r\n\t\t);\r\n\t\t$('body').css('overflow-y', 'scroll');\r\n\t};\r\n\r\n\tLayoutBase.prototype.handleManageQueueCard = function (cursorPositon, newPosition) {\r\n\t\tconst $manageQueue = $('.ManageQueueContainer');\r\n\r\n\t\tif ($manageQueue.length) {\r\n\t\t\tif (newPosition > cursorPositon) {\r\n\t\t\t\t$manageQueue.addClass('ManageQueueContainer--closed');\r\n\t\t\t} else if (newPosition < cursorPositon) {\r\n\t\t\t\t$manageQueue.removeClass('ManageQueueContainer--closed');\r\n\t\t\t}\r\n\t\t}\r\n\t};\r\n\r\n\tSapphireWidgets.LayoutBase = {\r\n\t\tcreate,\r\n\t\tcloseSidebarIframe,\r\n\t\topenSidebarIframe,\r\n\t\tscrollToElement,\r\n\t};\r\n})(jQuery, window, document, SapphireWidgets);\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/layout/layout-base.js?\n}");
+/* Component LayoutBase */
+(function ($, window, document, SapphireWidgets) {
+	var create = function (config) {
+		window[config.widgetId] = new LayoutBase(config);
+		SapphireWidgets.LayoutBase.widgetId = config.widgetId;
+	};
+
+	var openSidebarIframe = function (duration) {
+		window[SapphireWidgets.LayoutBase.widgetId].openSidebarIframe(duration);
+	};
+
+	var closeSidebarIframe = function (duration) {
+		window[SapphireWidgets.LayoutBase.widgetId].closeSidebarIframe(duration);
+	};
+
+	var scrollToElement = function ($element, offset = 0) {
+		var $targetElement = $element;
+
+		if (!!$targetElement.length) {
+			var scrollToOffsetInterval;
+
+			scrollToOffsetInterval = setInterval(function () {
+				if (window[SapphireWidgets.LayoutBase.widgetId].getThresholds().secondaryThreshold > 0) {
+					clearInterval(scrollToOffsetInterval);
+
+					let targetElementOffsetTop = $targetElement.offset().top;
+
+					const isEmergency = !!$('.LayoutBase-emergency').text();
+
+					const headerHeight = $('.SapphireHeader').height();
+					const secondaryHeight = $('.LayoutBase-secondary').outerHeight();
+					const emergencyHeight = isEmergency ? $('.LayoutBase-emergency').height() : 0;
+
+					targetElementOffsetTop = targetElementOffsetTop - (headerHeight + secondaryHeight + emergencyHeight);
+
+					$('body, html').scrollTop(targetElementOffsetTop - 16);
+				}
+			}, 250);
+		}
+	};
+
+	var LayoutBase = function (config) {
+		var _this = this;
+		this.layoutBaseRedrawTimer = 0;
+		this.isExpandable = config.isExpandable;
+		this.isTopWindow = window.top === window.self ? true : false;
+		this.$widget = $('#' + config.widgetId);
+		this.$wrapper = this.$widget.find('.LayoutBase-Wrapper');
+		this.$spacer = this.$widget.find('.LayoutBase-spacer');
+		this.$mainMenu = this.$widget.find('.LayoutBase-MainMenu');
+		this.$header = this.$widget.find('.LayoutBase-header');
+		this.$headerBody = this.$widget.find('.SapphireHeader-body');
+		this.$primaryMenu = this.$widget.find('.LayoutBase-primary-menu');
+		this.$emergency = this.$widget.find('.LayoutBase-emergency');
+		this.$secondary = this.$widget.find('.LayoutBase-secondary');
+		this.$secondaryMenu = this.$widget.find('.LayoutBase-secondary-menu');
+		this.$iframeSidebar = this.$widget.find('.LayoutBase-iframesidebar');
+		this.$headerAdditionalContent = this.$widget.find('.SapphireHeader-additional-content');
+		this.$topfixedContent = this.$widget.find('.LayoutBase-topfixedcontent');
+		this.$bottomfixedContent = this.$widget.find('.LayoutBase-bottomfixedcontent');
+		this.$mainContent = this.$widget.find('.LayoutBase-MainContent');
+		this.setupWindowEvents();
+		this.$iframeSidebar.append('<div class="lds-ring 1"><div></div><div></div><div></div><div></div></div>');
+
+		$(function () {
+			$('body').addClass('LayoutBase');
+			if (_this.isTopWindow) {
+				$('body').css('overflow-y', 'scroll');
+			}
+		});
+
+		$(window).load(function () {
+			$('body').click();
+			$(window).scroll();
+
+			_this.$iframeSidebar.find('.lds-ring').fadeOut();
+			// The way to prevent interface "jumping" is hiding some elements until load is complete
+			setTimeout(function () {
+				_this.$widget.find('.HiddenOnStart').hide().removeClass('HiddenOnStart').fadeIn();
+			}, 100);
+		});
+	};
+
+	LayoutBase.prototype.setupWindowEvents = function () {
+		var _this = this;
+		var cursorPositon = 0;
+
+		$(window).resize(function () {
+			_this.updateThresholds();
+			_this.handleLayoutTopPadding();
+			_this.handleLayoutBottomPadding();
+		});
+
+		$(window).scroll(function () {
+			var newPosition = $(window).scrollTop();
+
+			window.clearTimeout(_this.layoutBaseRedrawTimer);
+			_this.layoutBaseRedrawTimer = window.setTimeout(function () {
+				_this.updateThresholds();
+				_this.handleLayoutTopPadding();
+				_this.handleLayoutBottomPadding();
+				_this.handleManageQueueCard(cursorPositon, newPosition);
+				cursorPositon = newPosition;
+			}, 100);
+		});
+	};
+
+	LayoutBase.prototype.handleLayoutTopPadding = function () {
+
+		this.$spacer.stop().animate({
+			height: this.contentThreshold,
+		}, 0, 'linear');
+
+		if (this.$topfixedContent.length === 1) {
+			this.$topfixedContent.css({
+				width: $('.LayoutBase-MainContent').width(),
+				top: this.topfixedContentThreshold + 'px',
+			});
+		}
+
+	};
+
+	LayoutBase.prototype.handleLayoutBottomPadding = function () {
+		if (this.$bottomfixedContent.length === 1) {
+			if ($('body')[0].scrollHeight > $('body').height()) {
+				var bottomFixedHeight = this.$bottomfixedContent.outerHeight(true);
+				this.$wrapper.addClass('hasFixedBottom').css('padding-bottom', bottomFixedHeight + 'px');
+				this.$bottomfixedContent.css({
+					width: $('.LayoutBase-MainContent').outerWidth(true),
+				});
+			} else {
+				this.$wrapper.removeClass('hasFixedBottom').css('padding-bottom', '');
+				this.$bottomfixedContent.css({
+					width: '',
+				});
+			}
+		}
+	};
+
+	LayoutBase.prototype.updateThresholds = function () {
+		var mainMenuHeight = this.$mainMenu.outerHeight(true) || 0;
+		var headerBodyHeight = this.$headerBody.outerHeight(true) || this.$header.outerHeight(true) || 0;
+		var topfixedContentHeight = this.$topfixedContent.outerHeight(true) || 0;
+		var primaryMenuHeight = this.$primaryMenu.outerHeight(true) || 0;
+		var emergencyHeight = this.$emergency.outerHeight(true) || 0;
+		this.topfixedContentThreshold = mainMenuHeight + headerBodyHeight;
+		this.contentThreshold = mainMenuHeight + headerBodyHeight + topfixedContentHeight;
+		this.emergencyThreshold = mainMenuHeight + headerBodyHeight + topfixedContentHeight + primaryMenuHeight;
+		this.secondaryThreshold =
+			mainMenuHeight + headerBodyHeight + topfixedContentHeight + primaryMenuHeight + emergencyHeight;
+	};
+
+	LayoutBase.prototype.getThresholds = function () {
+		return {
+			topfixedContentThreshold: this.topfixedContentThreshold,
+			contentThreshold: this.contentThreshold,
+			emergencyThreshold: this.emergencyThreshold,
+			secondaryThreshold: this.secondaryThreshold,
+		};
+	};
+
+	LayoutBase.prototype.openSidebarIframe = function (duration_in) {
+		var duration = duration_in >= 0 ? duration_in : 100;
+		this.$iframeSidebar.animate({ width: '100%', }, duration);
+		$('body').css('overflow-y', 'scroll').click();
+	};
+
+	LayoutBase.prototype.closeSidebarIframe = function (duration_in) {
+		var duration = duration_in >= 0 ? duration_in : 100;
+		var targetWidth = this.isExpandable ? 40 : 262;
+		this.$iframeSidebar.animate(
+			{
+				width: targetWidth,
+			},
+			duration
+		);
+		$('body').css('overflow-y', 'scroll');
+	};
+
+	LayoutBase.prototype.handleManageQueueCard = function (cursorPositon, newPosition) {
+		const $manageQueue = $('.ManageQueueContainer');
+
+		if ($manageQueue.length) {
+			if (newPosition > cursorPositon) {
+				$manageQueue.addClass('ManageQueueContainer--closed');
+			} else if (newPosition < cursorPositon) {
+				$manageQueue.removeClass('ManageQueueContainer--closed');
+			}
+		}
+	};
+
+	SapphireWidgets.LayoutBase = {
+		create,
+		closeSidebarIframe,
+		openSidebarIframe,
+		scrollToElement,
+	};
+})(jQuery, window, document, SapphireWidgets);
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/layout/layout-blank.js":
-/*!*************************************************************!*\
-  !*** ./src/components/05-components/layout/layout-blank.js ***!
-  \*************************************************************/
 /***/ (function() {
 
-eval("{/* Component LayoutBlank */\r\n$(function () {\r\n\tif (window.frameElement) {\r\n\t\tif (!!$(this.frameElement).closest('.MainInteractiveCard').length) {\r\n\t\t\t$('.LayoutBlank.Page').addClass('MainInteractiveCard');\r\n\t\t}\r\n\t}\r\n});\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/layout/layout-blank.js?\n}");
+/* Component LayoutBlank */
+$(function () {
+	if (window.frameElement) {
+		if (!!$(this.frameElement).closest('.MainInteractiveCard').length) {
+			$('.LayoutBlank.Page').addClass('MainInteractiveCard');
+		}
+	}
+});
 
 /***/ }),
 
 /***/ "./src/components/05-components/layout/layout-emergency.js":
-/*!*****************************************************************!*\
-  !*** ./src/components/05-components/layout/layout-emergency.js ***!
-  \*****************************************************************/
 /***/ (function() {
 
-eval("{(function($, window, document, SapphireWidgets) {\r\n\tconst ForwardPatientComponent = () => {\r\n\t\tconst $allOptions = $('.ForwardLocationsContent');\r\n\t\tconst $multiple = $('.ForwardLocationsDiv');\r\n\t\tconst $single = $('.SingleLocation');\r\n\r\n\t\t$('body').mouseup(function(e) {\r\n\t\t\tconst notClickInAllOptions = !$allOptions.is(e.target) && $allOptions.has(e.target).length === 0;\r\n\t\t\tconst notClickInMultiple = !$multiple.is(e.target) && $multiple.has(e.target).length === 0;\r\n\t\t\tconst notClickInSingle = !$single.is(e.target) && $single.has(e.target).length === 0;\r\n\t\t\tconst isOpen = $multiple.is(':visible');\r\n\r\n\t\t\tif (notClickInAllOptions && notClickInMultiple && notClickInSingle && isOpen) {\r\n\t\t\t\t$multiple.click();\r\n\t\t\t}\r\n\t\t});\r\n\t};\r\n\r\n\tSapphireWidgets.LayoutEmergency = {\r\n\t\tForwardPatientComponent,\r\n\t};\r\n})(jQuery, window, document, SapphireWidgets);\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/layout/layout-emergency.js?\n}");
+(function($, window, document, SapphireWidgets) {
+	const ForwardPatientComponent = () => {
+		const $allOptions = $('.ForwardLocationsContent');
+		const $multiple = $('.ForwardLocationsDiv');
+		const $single = $('.SingleLocation');
+
+		$('body').mouseup(function(e) {
+			const notClickInAllOptions = !$allOptions.is(e.target) && $allOptions.has(e.target).length === 0;
+			const notClickInMultiple = !$multiple.is(e.target) && $multiple.has(e.target).length === 0;
+			const notClickInSingle = !$single.is(e.target) && $single.has(e.target).length === 0;
+			const isOpen = $multiple.is(':visible');
+
+			if (notClickInAllOptions && notClickInMultiple && notClickInSingle && isOpen) {
+				$multiple.click();
+			}
+		});
+	};
+
+	SapphireWidgets.LayoutEmergency = {
+		ForwardPatientComponent,
+	};
+})(jQuery, window, document, SapphireWidgets);
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/layout/layout-popup.js":
-/*!*************************************************************!*\
-  !*** ./src/components/05-components/layout/layout-popup.js ***!
-  \*************************************************************/
 /***/ (function() {
 
-eval("{/* Component LayoutPopup */\r\n(function($, window, document, SapphireWidgets) {\r\n\tvar popupWidth;\r\n\tvar popupMinWidth;\r\n\tvar popupHeight;\r\n\tvar popupMinHeight;\r\n\tvar popupMaxHeight;\r\n\tvar popupWidthPercentage;\r\n\tvar layoutPopupResizeTimer;\r\n\r\n\tvar $popup = $('.LayoutPopup');\r\n\tvar $osPopup = window.parent.$('.os-internal-Popup.os-internal-ui-dialog');\r\n\tvar $osPopupContent = window.parent.$('.os-internal-ui-dialog-content.os-internal-ui-widget-content');\r\n\tvar $overlay = window.parent.$('.os-internal-ui-widget-overlay');\r\n\tvar popupSize;\r\n\tvar paddingBody;\r\n\r\n\tconst BODY_PADDING_TOP_BOTTOM = 32;\r\n\r\n\tconst create = function(config) {\r\n\t\tSapphireWidgets.LayoutPopup.config = config;\r\n\t\tpopupSize = SapphireWidgets.LayoutPopup.config.PopupSize;\r\n\t\tpaddingBody = config.noContentPadding ? 0 : BODY_PADDING_TOP_BOTTOM;\r\n\r\n\t\t$(function() {\r\n\t\t\t$('body').addClass('LayoutPopup'); // because datetimerangepicker is attached to body\r\n\r\n\t\t\tif (SapphireWidgets.LayoutPopup.config.isTouch) {\r\n\t\t\t\t$popup.addClass('isTouch');\r\n\t\t\t\t$('body').addClass('isTouch'); // because select2 is attached to body\r\n\t\t\t}\r\n\r\n\t\t\tvar observer = new MutationObserver(function(mutations) {\r\n\t\t\t\tmutations.forEach(function(mutation, index) {\r\n\t\t\t\t\t// Avoid to redraw the dialog if it is one the following popups\r\n\t\t\t\t\tif (\r\n\t\t\t\t\t\tSapphireWidgets.PopupsToAvoidMutations &&\r\n\t\t\t\t\t\tSapphireWidgets.PopupsToAvoidMutations.some(e => $(`.${e}`).length)\r\n\t\t\t\t\t) {\r\n\t\t\t\t\t\treturn false;\r\n\t\t\t\t\t}\r\n\r\n\t\t\t\t\tredrawDialogWindow();\r\n\t\t\t\t});\r\n\t\t\t});\r\n\r\n\t\t\tobserver.observe(document.body, {\r\n\t\t\t\tchildList: true,\r\n\t\t\t\tsubtree: true,\r\n\t\t\t\tattributes: false,\r\n\t\t\t});\r\n\r\n\t\t\t$('body').css('visibility', 'hidden');\r\n\t\t});\r\n\r\n\t\t$(window).load(function() {\r\n\t\t\t$(this.frameElement).css({\r\n\t\t\t\twidth: '100%',\r\n\t\t\t\theight: '100%',\r\n\t\t\t});\r\n\r\n\t\t\tsetTimeout(function() {\r\n\t\t\t\tresizeDialog();\r\n\t\t\t\tresizeContent();\r\n\t\t\t\t$('body').css('visibility', 'visible');\r\n\t\t\t}, 150);\r\n\r\n\t\t\tosAjaxBackend.BindAfterAjaxRequest(SapphireWidgets.LayoutPopup.redrawDialogWindow);\r\n\t\t});\r\n\r\n\t\t$(window.parent)\r\n\t\t\t.off('resize.LayoutPopup')\r\n\t\t\t.on('resize.LayoutPopup', function() {\r\n\t\t\t\tredrawDialogWindow();\r\n\t\t\t});\r\n\t};\r\n\r\n\tconst redrawDialogWindow = function() {\r\n\t\tclearTimeout(layoutPopupResizeTimer);\r\n\t\tlayoutPopupResizeTimer = setTimeout(function() {\r\n\t\t\tresizeDialog();\r\n\t\t\tresizeContent();\r\n\t\t\t$('body').css('visibility', 'visible');\r\n\t\t}, 300);\r\n\t};\r\n\r\n\tconst resizeDialog = function() {\r\n\t\tif (SapphireWidgets.LayoutPopup.config.hasClose) {\r\n\t\t\twindow.parent.$('.os-internal-ui-dialog-titlebar').show();\r\n\r\n\t\t\tif (window.top._iframePopup != undefined || false) {\r\n\t\t\t\tconst $closeButton = window.parent.$('.os-internal-ui-dialog-titlebar-close');\r\n\r\n\t\t\t\t$closeButton.removeAttr('href');\r\n\t\t\t\t$closeButton.off('click').on('click', () => window.top._iframePopup.SapphireWidgets.SapphirePopup.close());\r\n\t\t\t}\r\n\t\t}\r\n\r\n\t\tif (window.top.$('body').hasClass('LayoutBase')) {\r\n\t\t\twindow.top.$('body').css({\r\n\t\t\t\toverflowY: 'hidden',\r\n\t\t\t});\r\n\t\t}\r\n\r\n\t\t$overlay.width('100%');\r\n\r\n\t\tcalcWidthPercentage(popupSize, $osPopupContent);\r\n\r\n\t\t$osPopup.css({\r\n\t\t\tleft: 'unset',\r\n\t\t\ttop: 'unset',\r\n\t\t\theight: 'auto',\r\n\t\t\tminWidth: popupMinWidth + 'px',\r\n\t\t\twidth: popupWidth + 'px',\r\n\t\t});\r\n\t};\r\n\r\n\tconst resizeContent = function() {\r\n\t\tvar $body = $('.LayoutPopup__body__content');\r\n\t\tvar contentScrollTop = $body.scrollTop();\r\n\r\n\t\tif (popupSize === 'Small' && $('.daterangepicker:visible').length > 0) {\r\n\t\t\t// skip the reset of .LayoutPopup__body__content\r\n\t\t} else {\r\n\t\t\t$body.css({\r\n\t\t\t\theight: 'auto',\r\n\t\t\t});\r\n\t\t}\r\n\r\n\t\tlet bodyContent = paddingBody\r\n\t\t\t? $('.LayoutPopup__body__content')[0].scrollHeight\r\n\t\t\t: $('.LayoutPopup__body__content').height();\r\n\r\n\t\tvar headerHeight = $('.LayoutPopup__header').innerHeight() || 0;\r\n\t\tvar introHeight = $('.LayoutPopup__intro').innerHeight() || 0;\r\n\t\tvar bodyHeight = bodyContent || 0;\r\n\t\tvar footerHeight = $('.LayoutPopup__footer').innerHeight() || 0;\r\n\t\tvar contentHeight = headerHeight + introHeight + bodyHeight + footerHeight + paddingBody;\r\n\t\tvar dialogHeight = window.parent.$('.os-internal-Popup.os-internal-ui-dialog').outerHeight();\r\n\t\tconst windowHeight = $(window.parent).height();\r\n\r\n\t\tif (popupSize === 'Small') {\r\n\t\t\tvar parentHeight = $(window.parent).height();\r\n\r\n\t\t\tif (contentHeight > parentHeight) {\r\n\t\t\t\t$osPopupContent.height(parentHeight - 70);\r\n\t\t\t\t$body.height($osPopupContent.height() - paddingBody - 40 - 40);\r\n\t\t\t} else {\r\n\t\t\t\t$osPopupContent.height(contentHeight);\r\n\t\t\t}\r\n\t\t} else {\r\n\t\t\tif (contentHeight < dialogHeight && SapphireWidgets.LayoutPopup.config.isFixedHeight) {\r\n\t\t\t\tvar forcedBodyHeight = dialogHeight - headerHeight - introHeight - footerHeight - paddingBody;\r\n\t\t\t\t$body.height(forcedBodyHeight);\r\n\t\t\t} else if (contentHeight < dialogHeight) {\r\n\t\t\t\t$osPopupContent.height(contentHeight);\r\n\t\t\t\tif (contentHeight < popupMinHeight) {\r\n\t\t\t\t\tvar diference = popupMinHeight - contentHeight;\r\n\t\t\t\t\t$body.height(bodyHeight + diference);\r\n\t\t\t\t}\r\n\t\t\t} else if (contentHeight >= dialogHeight && SapphireWidgets.LayoutPopup.config.isFixedHeight) {\r\n\t\t\t\tvar forcedBodyHeight = dialogHeight - headerHeight - introHeight - footerHeight - paddingBody;\r\n\t\t\t\t$body.height(forcedBodyHeight);\r\n\t\t\t} else if (contentHeight >= dialogHeight) {\r\n\t\t\t\tif (contentHeight > popupMaxHeight) {\r\n\t\t\t\t\t$osPopupContent.height(popupMaxHeight);\r\n\t\t\t\t\tvar forcedBodyHeight = popupMaxHeight - headerHeight - introHeight - footerHeight - paddingBody;\r\n\t\t\t\t\t$body.height(forcedBodyHeight);\r\n\t\t\t\t} else {\r\n\t\t\t\t\t$osPopupContent.height(contentHeight);\r\n\t\t\t\t}\r\n\t\t\t} else {\r\n\t\t\t\tconsole.warn('Unexpected combination...');\r\n\t\t\t}\r\n\t\t}\r\n\r\n\t\t// Handle when DateTimeRangePicker is opened\r\n\t\tvar dateRangePicker = $('.daterangepicker:visible');\r\n\t\tif (dateRangePicker.length === 1) {\r\n\t\t\tif (dateRangePicker[0].getBoundingClientRect().bottom > dialogHeight) {\r\n\t\t\t\tvar difference = dateRangePicker[0].getBoundingClientRect().bottom - dialogHeight;\r\n\t\t\t\tvar bodyHeight = $('.LayoutPopup__body__content').outerHeight(true);\r\n\r\n\t\t\t\t$('.LayoutPopup__body__content').height(bodyHeight + difference + paddingBody);\r\n\t\t\t\t$osPopupContent.height($('body')[0].scrollHeight);\r\n\r\n\t\t\t\tconst popupTotalHeight = $osPopupContent.height();\r\n\t\t\t\tconst newContentHeight = $('.LayoutPopup__body').outerHeight(true) + headerHeight + introHeight + footerHeight;\r\n\r\n\t\t\t\tif (windowHeight < 720) {\r\n\t\t\t\t\tconst coords = dateRangePicker[0].getBoundingClientRect();\r\n\t\t\t\t\tvar point = window.parent.scrollY + coords.top - coords.height;\r\n\t\t\t\t\tdateRangePicker.addClass('drop-up').css('top', point);\r\n\t\t\t\t} else if (windowHeight < 980 && newContentHeight > popupTotalHeight) {\r\n\t\t\t\t\t$osPopupContent.css({\r\n\t\t\t\t\t\tmaxHeight: newContentHeight + 'px',\r\n\t\t\t\t\t});\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}\r\n\r\n\t\t$body.scrollTop(contentScrollTop);\r\n\t};\r\n\r\n\tconst increaseHeight = function(diference) {\r\n\t\t$osPopupContent.height($osPopupContent.height() + diference);\r\n\t};\r\n\r\n\tconst scrollToElement = function($element) {\r\n\t\tvar $targetElement = $element;\r\n\t\tif (!!$targetElement.length) {\r\n\t\t\tvar scrollToOffsetInterval;\r\n\t\t\tscrollToOffsetInterval = setInterval(function() {\r\n\t\t\t\tclearInterval(scrollToOffsetInterval);\r\n\t\t\t\tvar headerHeight = $('.LayoutPopup__header').outerHeight(true) || 0;\r\n\t\t\t\tvar introHeight = $('.LayoutPopup__intro').outerHeight(true) || 0;\r\n\t\t\t\tvar currentBodyScroll = $('.LayoutPopup__body__content')[0].scrollTop || 0;\r\n\t\t\t\tvar targetElementOffsetTop = $targetElement.offset().top - headerHeight - introHeight + currentBodyScroll - 20;\r\n\t\t\t\t$('.LayoutPopup__body__content').scrollTop(targetElementOffsetTop);\r\n\t\t\t}, 250);\r\n\t\t}\r\n\t};\r\n\r\n\tconst calcWidthPercentage = () => {\r\n\t\tconst windowHeight = $(window.parent).height();\r\n\t\tconst windowWidth = $(window.parent).width();\r\n\r\n\t\tif (popupSize === 'Small') {\r\n\t\t\tlet percentage = 0.33;\r\n\r\n\t\t\tif (windowWidth <= 1024) percentage = 0.5;\r\n\t\t\telse if (windowWidth > 1024 && windowWidth <= 1440) percentage = 0.4;\r\n\r\n\t\t\tpopupWidth = parseInt(windowWidth * percentage);\r\n\t\t\tpopupMinWidth = 400;\r\n\t\t} else if (popupSize === 'Medium') {\r\n\t\t\tif (windowWidth <= 1024) popupWidthPercentage = 0.8;\r\n\t\t\telse {\r\n\t\t\t\tswitch (SapphireWidgets.LayoutPopup.config.PopupWidth) {\r\n\t\t\t\t\tcase 'XSmall':\r\n\t\t\t\t\t\tpopupMinWidth = 200;\r\n\t\t\t\t\t\tpopupWidthPercentage = 0.2;\r\n\t\t\t\t\t\tbreak;\r\n\t\t\t\t\tcase 'Small':\r\n\t\t\t\t\t\tpopupMinWidth = 300;\r\n\t\t\t\t\t\tpopupWidthPercentage = 0.3;\r\n\t\t\t\t\t\tbreak;\r\n\t\t\t\t\tcase 'Medium':\r\n\t\t\t\t\t\tpopupMinWidth = 700;\r\n\t\t\t\t\t\tpopupWidthPercentage = 0.6;\r\n\t\t\t\t\t\tbreak;\r\n\t\t\t\t\tdefault:\r\n\t\t\t\t\t\tpopupMinWidth = 700;\r\n\t\t\t\t\t\tpopupWidthPercentage = 0.7;\r\n\t\t\t\t}\r\n\r\n\t\t\t\tpopupWidthPercentage = SapphireWidgets.LayoutPopup.config.isTouch ? 0.8 : popupWidthPercentage;\r\n\t\t\t}\r\n\r\n\t\t\tpopupWidth = parseInt(windowWidth * popupWidthPercentage);\r\n\t\t\tpopupMinHeight = 100;\r\n\t\t\tpopupMaxHeight = SapphireWidgets.LayoutPopup.config.isTouch\r\n\t\t\t\t? parseInt(windowHeight * 0.9)\r\n\t\t\t\t: parseInt(windowHeight * 0.7);\r\n\r\n\t\t\tif (SapphireWidgets.LayoutPopup.config.isFixedHeight) popupHeight = popupMaxHeight;\r\n\t\t\telse popupHeight = window.parent.$('.os-internal-Popup.os-internal-ui-dialog').outerHeight();\r\n\r\n\t\t\t$osPopupContent.css({\r\n\t\t\t\tmaxHeight: popupMaxHeight + 'px',\r\n\t\t\t\tminHeight: popupMinHeight + 'px',\r\n\t\t\t\theight: popupHeight + 'px',\r\n\t\t\t});\r\n\t\t} else if (popupSize === 'Large') {\r\n\t\t\tpopupMinWidth = parseInt(windowWidth * 0.8);\r\n\t\t\tpopupMaxHeight = parseInt(windowHeight * 0.9);\r\n\t\t} else if (popupSize === 'Fixed') {\r\n\t\t\tpopupWidth = SapphireWidgets.SapphirePopup.popupWidth;\r\n\t\t\tpopupMinWidth = SapphireWidgets.SapphirePopup.popupWidth;\r\n\t\t}\r\n\t};\r\n\r\n\tSapphireWidgets.LayoutPopup = {\r\n\t\tcreate,\r\n\t\tresizeDialog,\r\n\t\tresizeContent,\r\n\t\tincreaseHeight,\r\n\t\tredrawDialogWindow,\r\n\t\tscrollToElement,\r\n\t};\r\n})(jQuery, window, document, SapphireWidgets);\r\n\r\n$(window).unload(function() {\r\n\tif (!!$('.LayoutPopup').length) {\r\n\t\twindow.top.$('body').css({\r\n\t\t\toverflowY: 'scroll',\r\n\t\t});\r\n\t}\r\n});\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/layout/layout-popup.js?\n}");
+/* Component LayoutPopup */
+(function($, window, document, SapphireWidgets) {
+	var popupWidth;
+	var popupMinWidth;
+	var popupHeight;
+	var popupMinHeight;
+	var popupMaxHeight;
+	var popupWidthPercentage;
+	var layoutPopupResizeTimer;
+
+	var $popup = $('.LayoutPopup');
+	var $osPopup = window.parent.$('.os-internal-Popup.os-internal-ui-dialog');
+	var $osPopupContent = window.parent.$('.os-internal-ui-dialog-content.os-internal-ui-widget-content');
+	var $overlay = window.parent.$('.os-internal-ui-widget-overlay');
+	var popupSize;
+	var paddingBody;
+
+	const BODY_PADDING_TOP_BOTTOM = 32;
+
+	const create = function(config) {
+		SapphireWidgets.LayoutPopup.config = config;
+		popupSize = SapphireWidgets.LayoutPopup.config.PopupSize;
+		paddingBody = config.noContentPadding ? 0 : BODY_PADDING_TOP_BOTTOM;
+
+		$(function() {
+			$('body').addClass('LayoutPopup'); // because datetimerangepicker is attached to body
+
+			if (SapphireWidgets.LayoutPopup.config.isTouch) {
+				$popup.addClass('isTouch');
+				$('body').addClass('isTouch'); // because select2 is attached to body
+			}
+
+			var observer = new MutationObserver(function(mutations) {
+				mutations.forEach(function(mutation, index) {
+					// Avoid to redraw the dialog if it is one the following popups
+					if (
+						SapphireWidgets.PopupsToAvoidMutations &&
+						SapphireWidgets.PopupsToAvoidMutations.some(e => $(`.${e}`).length)
+					) {
+						return false;
+					}
+
+					redrawDialogWindow();
+				});
+			});
+
+			observer.observe(document.body, {
+				childList: true,
+				subtree: true,
+				attributes: false,
+			});
+
+			$('body').css('visibility', 'hidden');
+		});
+
+		$(window).load(function() {
+			$(this.frameElement).css({
+				width: '100%',
+				height: '100%',
+			});
+
+			setTimeout(function() {
+				resizeDialog();
+				resizeContent();
+				$('body').css('visibility', 'visible');
+			}, 150);
+
+			osAjaxBackend.BindAfterAjaxRequest(SapphireWidgets.LayoutPopup.redrawDialogWindow);
+		});
+
+		$(window.parent)
+			.off('resize.LayoutPopup')
+			.on('resize.LayoutPopup', function() {
+				redrawDialogWindow();
+			});
+	};
+
+	const redrawDialogWindow = function() {
+		clearTimeout(layoutPopupResizeTimer);
+		layoutPopupResizeTimer = setTimeout(function() {
+			resizeDialog();
+			resizeContent();
+			$('body').css('visibility', 'visible');
+		}, 300);
+	};
+
+	const resizeDialog = function() {
+		if (SapphireWidgets.LayoutPopup.config.hasClose) {
+			window.parent.$('.os-internal-ui-dialog-titlebar').show();
+
+			if (window.top._iframePopup != undefined || false) {
+				const $closeButton = window.parent.$('.os-internal-ui-dialog-titlebar-close');
+
+				$closeButton.removeAttr('href');
+				$closeButton.off('click').on('click', () => window.top._iframePopup.SapphireWidgets.SapphirePopup.close());
+			}
+		}
+
+		if (window.top.$('body').hasClass('LayoutBase')) {
+			window.top.$('body').css({
+				overflowY: 'hidden',
+			});
+		}
+
+		$overlay.width('100%');
+
+		calcWidthPercentage(popupSize, $osPopupContent);
+
+		$osPopup.css({
+			left: 'unset',
+			top: 'unset',
+			height: 'auto',
+			minWidth: popupMinWidth + 'px',
+			width: popupWidth + 'px',
+		});
+	};
+
+	const resizeContent = function() {
+		var $body = $('.LayoutPopup__body__content');
+		var contentScrollTop = $body.scrollTop();
+
+		if (popupSize === 'Small' && $('.daterangepicker:visible').length > 0) {
+			// skip the reset of .LayoutPopup__body__content
+		} else {
+			$body.css({
+				height: 'auto',
+			});
+		}
+
+		let bodyContent = paddingBody
+			? $('.LayoutPopup__body__content')[0].scrollHeight
+			: $('.LayoutPopup__body__content').height();
+
+		var headerHeight = $('.LayoutPopup__header').innerHeight() || 0;
+		var introHeight = $('.LayoutPopup__intro').innerHeight() || 0;
+		var bodyHeight = bodyContent || 0;
+		var footerHeight = $('.LayoutPopup__footer').innerHeight() || 0;
+		var contentHeight = headerHeight + introHeight + bodyHeight + footerHeight + paddingBody;
+		var dialogHeight = window.parent.$('.os-internal-Popup.os-internal-ui-dialog').outerHeight();
+		const windowHeight = $(window.parent).height();
+
+		if (popupSize === 'Small') {
+			var parentHeight = $(window.parent).height();
+
+			if (contentHeight > parentHeight) {
+				$osPopupContent.height(parentHeight - 70);
+				$body.height($osPopupContent.height() - paddingBody - 40 - 40);
+			} else {
+				$osPopupContent.height(contentHeight);
+			}
+		} else {
+			if (contentHeight < dialogHeight && SapphireWidgets.LayoutPopup.config.isFixedHeight) {
+				var forcedBodyHeight = dialogHeight - headerHeight - introHeight - footerHeight - paddingBody;
+				$body.height(forcedBodyHeight);
+			} else if (contentHeight < dialogHeight) {
+				$osPopupContent.height(contentHeight);
+				if (contentHeight < popupMinHeight) {
+					var diference = popupMinHeight - contentHeight;
+					$body.height(bodyHeight + diference);
+				}
+			} else if (contentHeight >= dialogHeight && SapphireWidgets.LayoutPopup.config.isFixedHeight) {
+				var forcedBodyHeight = dialogHeight - headerHeight - introHeight - footerHeight - paddingBody;
+				$body.height(forcedBodyHeight);
+			} else if (contentHeight >= dialogHeight) {
+				if (contentHeight > popupMaxHeight) {
+					$osPopupContent.height(popupMaxHeight);
+					var forcedBodyHeight = popupMaxHeight - headerHeight - introHeight - footerHeight - paddingBody;
+					$body.height(forcedBodyHeight);
+				} else {
+					$osPopupContent.height(contentHeight);
+				}
+			} else {
+				console.warn('Unexpected combination...');
+			}
+		}
+
+		// Handle when DateTimeRangePicker is opened
+		var dateRangePicker = $('.daterangepicker:visible');
+		if (dateRangePicker.length === 1) {
+			if (dateRangePicker[0].getBoundingClientRect().bottom > dialogHeight) {
+				var difference = dateRangePicker[0].getBoundingClientRect().bottom - dialogHeight;
+				var bodyHeight = $('.LayoutPopup__body__content').outerHeight(true);
+
+				$('.LayoutPopup__body__content').height(bodyHeight + difference + paddingBody);
+				$osPopupContent.height($('body')[0].scrollHeight);
+
+				const popupTotalHeight = $osPopupContent.height();
+				const newContentHeight = $('.LayoutPopup__body').outerHeight(true) + headerHeight + introHeight + footerHeight;
+
+				if (windowHeight < 720) {
+					const coords = dateRangePicker[0].getBoundingClientRect();
+					var point = window.parent.scrollY + coords.top - coords.height;
+					dateRangePicker.addClass('drop-up').css('top', point);
+				} else if (windowHeight < 980 && newContentHeight > popupTotalHeight) {
+					$osPopupContent.css({
+						maxHeight: newContentHeight + 'px',
+					});
+				}
+			}
+		}
+
+		$body.scrollTop(contentScrollTop);
+	};
+
+	const increaseHeight = function(diference) {
+		$osPopupContent.height($osPopupContent.height() + diference);
+	};
+
+	const scrollToElement = function($element) {
+		var $targetElement = $element;
+		if (!!$targetElement.length) {
+			var scrollToOffsetInterval;
+			scrollToOffsetInterval = setInterval(function() {
+				clearInterval(scrollToOffsetInterval);
+				var headerHeight = $('.LayoutPopup__header').outerHeight(true) || 0;
+				var introHeight = $('.LayoutPopup__intro').outerHeight(true) || 0;
+				var currentBodyScroll = $('.LayoutPopup__body__content')[0].scrollTop || 0;
+				var targetElementOffsetTop = $targetElement.offset().top - headerHeight - introHeight + currentBodyScroll - 20;
+				$('.LayoutPopup__body__content').scrollTop(targetElementOffsetTop);
+			}, 250);
+		}
+	};
+
+	const calcWidthPercentage = () => {
+		const windowHeight = $(window.parent).height();
+		const windowWidth = $(window.parent).width();
+
+		if (popupSize === 'Small') {
+			let percentage = 0.33;
+
+			if (windowWidth <= 1024) percentage = 0.5;
+			else if (windowWidth > 1024 && windowWidth <= 1440) percentage = 0.4;
+
+			popupWidth = parseInt(windowWidth * percentage);
+			popupMinWidth = 400;
+		} else if (popupSize === 'Medium') {
+			if (windowWidth <= 1024) popupWidthPercentage = 0.8;
+			else {
+				switch (SapphireWidgets.LayoutPopup.config.PopupWidth) {
+					case 'XSmall':
+						popupMinWidth = 200;
+						popupWidthPercentage = 0.2;
+						break;
+					case 'Small':
+						popupMinWidth = 300;
+						popupWidthPercentage = 0.3;
+						break;
+					case 'Medium':
+						popupMinWidth = 700;
+						popupWidthPercentage = 0.6;
+						break;
+					default:
+						popupMinWidth = 700;
+						popupWidthPercentage = 0.7;
+				}
+
+				popupWidthPercentage = SapphireWidgets.LayoutPopup.config.isTouch ? 0.8 : popupWidthPercentage;
+			}
+
+			popupWidth = parseInt(windowWidth * popupWidthPercentage);
+			popupMinHeight = 100;
+			popupMaxHeight = SapphireWidgets.LayoutPopup.config.isTouch
+				? parseInt(windowHeight * 0.9)
+				: parseInt(windowHeight * 0.7);
+
+			if (SapphireWidgets.LayoutPopup.config.isFixedHeight) popupHeight = popupMaxHeight;
+			else popupHeight = window.parent.$('.os-internal-Popup.os-internal-ui-dialog').outerHeight();
+
+			$osPopupContent.css({
+				maxHeight: popupMaxHeight + 'px',
+				minHeight: popupMinHeight + 'px',
+				height: popupHeight + 'px',
+			});
+		} else if (popupSize === 'Large') {
+			popupMinWidth = parseInt(windowWidth * 0.8);
+			popupMaxHeight = parseInt(windowHeight * 0.9);
+		} else if (popupSize === 'Fixed') {
+			popupWidth = SapphireWidgets.SapphirePopup.popupWidth;
+			popupMinWidth = SapphireWidgets.SapphirePopup.popupWidth;
+		}
+	};
+
+	SapphireWidgets.LayoutPopup = {
+		create,
+		resizeDialog,
+		resizeContent,
+		increaseHeight,
+		redrawDialogWindow,
+		scrollToElement,
+	};
+})(jQuery, window, document, SapphireWidgets);
+
+$(window).unload(function() {
+	if (!!$('.LayoutPopup').length) {
+		window.top.$('body').css({
+			overflowY: 'scroll',
+		});
+	}
+});
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/layout/layout-spam-guard.js":
-/*!******************************************************************!*\
-  !*** ./src/components/05-components/layout/layout-spam-guard.js ***!
-  \******************************************************************/
 /***/ (function() {
 
-eval("{/* Component LayoutSpamGuard */\r\n(function ($, window, document, SapphireWidgets) {\r\n\r\n  const DEFAULTS = {\r\n    awareClass: \"spam-aware\",\r\n    blockedClass: \"spam-blocked\",\r\n    classes: \"Button, PreventMulticlick\",\r\n    cooldownMs: 2500,\r\n    keyTriggers: new Set([\"Enter\", \" \"]), // Space = \" \"\r\n    root: document,\r\n  };\r\n\r\n  function normalizeClasses(list) {\r\n    // Accepts:\r\n    // - string: \"Button, .Potatoes, .Something\"\r\n    // - array of strings: [\"Button\", \".Potatoes\", \".Something\"]\r\n    // - mixed values\r\n    // Returns: [\"Button\", \"Potatoes\", \"Something\"]\r\n    let raw = [];\r\n\r\n    if (Array.isArray(list)) {\r\n      raw = list.flatMap(c => String(c ?? \"\").split(/[,\\s]+/));\r\n    } else if (typeof list === \"string\") {\r\n      raw = list.split(/[,\\s]+/);\r\n    } else if (list != null) {\r\n      raw = String(list).split(/[,\\s]+/);\r\n    }\r\n\r\n    return Array.from(new Set(\r\n      raw\r\n        .map(c => String(c || \"\").trim())\r\n        .filter(Boolean)\r\n        .map(c => c.startsWith(\".\") ? c.slice(1) : c)\r\n    ));\r\n  }\r\n\r\n  function matchesAnyClass(el, classes) {\r\n    return classes.some(c => el.classList.contains(c));\r\n  }\r\n\r\n  function findTarget(startEl, classes) {\r\n    let el = startEl;\r\n    while (el && el !== document) {\r\n      if (el.nodeType === 1 && matchesAnyClass(el, classes)) return el;\r\n      el = el.parentElement;\r\n    }\r\n    return null;\r\n  }\r\n\r\n  function isBlocked(el, opts) {\r\n    return el.classList.contains(opts.blockedClass) || el.dataset.spamBlocked === \"1\";\r\n  }\r\n\r\n  function block(el, opts) {\r\n    if (isBlocked(el, opts)) return false;\r\n\r\n    el.dataset.spamBlocked = \"1\";\r\n    el.classList.add(opts.blockedClass);\r\n    el.classList.add(opts.awareClass);\r\n    el.setAttribute(\"aria-disabled\", \"true\");\r\n\r\n    if (\"disabled\" in el) el.disabled = true;\r\n\r\n    clearTimeout(el._spamTimer);\r\n    el._spamTimer = setTimeout(() => {\r\n      el.dataset.spamBlocked = \"0\";\r\n      el.classList.remove(opts.blockedClass);\r\n      el.removeAttribute(\"aria-disabled\");\r\n      if (\"disabled\" in el) el.disabled = false;\r\n    }, opts.cooldownMs);\r\n\r\n    return true;\r\n  }\r\n\r\n  function guardHandler(e, opts) {\r\n    const target = findTarget(e.target, opts.classes);\r\n    if (!target) return;\r\n\r\n    const hasButtonGroup = [...target.classList].some(cls =>\r\n      cls.toLowerCase().includes(\"buttongroup\")\r\n    );\r\n\r\n    if (hasButtonGroup) return;\r\n\r\n\r\n    // keydown filtering\r\n    if (e.type === \"keydown\" && !opts.keyTriggers.has(e.key)) return;\r\n\r\n    if (isBlocked(target, opts)) {\r\n      e.preventDefault();\r\n      e.stopImmediatePropagation();\r\n      return;\r\n    }\r\n\r\n    block(target, opts);\r\n  }\r\n\r\n  function create(userOpts = {}) {\r\n    const opts = { ...DEFAULTS, ...userOpts };\r\n    opts.classes = normalizeClasses(opts.classes);\r\n\r\n    if (!opts.classes.length) {\r\n      console.warn(\"SpamGuard: no classes provided\");\r\n      return;\r\n    }\r\n\r\n    // Capture-phase listeners\r\n    opts.root.addEventListener(\"click\", e => guardHandler(e, opts), true);\r\n    opts.root.addEventListener(\"keydown\", e => guardHandler(e, opts), true);\r\n    opts.root.addEventListener(\"submit\", e => guardHandler(e, opts), true);\r\n\r\n    // Initial marking (purely visual / semantic)\r\n    document.querySelectorAll(\r\n      opts.classes.map(c => `.${CSS.escape(c)}`).join(\",\")\r\n    ).forEach(el => el.classList.add(opts.awareClass));\r\n\r\n    return {\r\n      classes: opts.classes,\r\n      disconnect() {\r\n        opts.root.removeEventListener(\"click\", guardHandler, true);\r\n        opts.root.removeEventListener(\"keydown\", guardHandler, true);\r\n        opts.root.removeEventListener(\"submit\", guardHandler, true);\r\n      }\r\n    };\r\n  };\r\n\r\n  SapphireWidgets.LayoutSpamGuard = { create };\r\n\r\n})(jQuery, window, document, SapphireWidgets);\r\n\r\n\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/layout/layout-spam-guard.js?\n}");
+/* Component LayoutSpamGuard */
+(function ($, window, document, SapphireWidgets) {
+
+  const DEFAULTS = {
+    awareClass: "spam-aware",
+    blockedClass: "spam-blocked",
+    classes: "Button, PreventMulticlick",
+    cooldownMs: 2500,
+    keyTriggers: new Set(["Enter", " "]), // Space = " "
+    root: document,
+  };
+
+  function normalizeClasses(list) {
+    // Accepts:
+    // - string: "Button, .Potatoes, .Something"
+    // - array of strings: ["Button", ".Potatoes", ".Something"]
+    // - mixed values
+    // Returns: ["Button", "Potatoes", "Something"]
+    let raw = [];
+
+    if (Array.isArray(list)) {
+      raw = list.flatMap(c => String(c ?? "").split(/[,\s]+/));
+    } else if (typeof list === "string") {
+      raw = list.split(/[,\s]+/);
+    } else if (list != null) {
+      raw = String(list).split(/[,\s]+/);
+    }
+
+    return Array.from(new Set(
+      raw
+        .map(c => String(c || "").trim())
+        .filter(Boolean)
+        .map(c => c.startsWith(".") ? c.slice(1) : c)
+    ));
+  }
+
+  function matchesAnyClass(el, classes) {
+    return classes.some(c => el.classList.contains(c));
+  }
+
+  function findTarget(startEl, classes) {
+    let el = startEl;
+    while (el && el !== document) {
+      if (el.nodeType === 1 && matchesAnyClass(el, classes)) return el;
+      el = el.parentElement;
+    }
+    return null;
+  }
+
+  function isBlocked(el, opts) {
+    return el.classList.contains(opts.blockedClass) || el.dataset.spamBlocked === "1";
+  }
+
+  function block(el, opts) {
+    if (isBlocked(el, opts)) return false;
+
+    el.dataset.spamBlocked = "1";
+    el.classList.add(opts.blockedClass);
+    el.classList.add(opts.awareClass);
+    el.setAttribute("aria-disabled", "true");
+
+    if ("disabled" in el) el.disabled = true;
+
+    clearTimeout(el._spamTimer);
+    el._spamTimer = setTimeout(() => {
+      el.dataset.spamBlocked = "0";
+      el.classList.remove(opts.blockedClass);
+      el.removeAttribute("aria-disabled");
+      if ("disabled" in el) el.disabled = false;
+    }, opts.cooldownMs);
+
+    return true;
+  }
+
+  function guardHandler(e, opts) {
+    const target = findTarget(e.target, opts.classes);
+    if (!target) return;
+
+    const hasButtonGroup = [...target.classList].some(cls =>
+      cls.toLowerCase().includes("buttongroup")
+    );
+
+    if (hasButtonGroup) return;
+
+
+    // keydown filtering
+    if (e.type === "keydown" && !opts.keyTriggers.has(e.key)) return;
+
+    if (isBlocked(target, opts)) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+      return;
+    }
+
+    block(target, opts);
+  }
+
+  function create(userOpts = {}) {
+    const opts = { ...DEFAULTS, ...userOpts };
+    opts.classes = normalizeClasses(opts.classes);
+
+    if (!opts.classes.length) {
+      console.warn("SpamGuard: no classes provided");
+      return;
+    }
+
+    // Capture-phase listeners
+    opts.root.addEventListener("click", e => guardHandler(e, opts), true);
+    opts.root.addEventListener("keydown", e => guardHandler(e, opts), true);
+    opts.root.addEventListener("submit", e => guardHandler(e, opts), true);
+
+    // Initial marking (purely visual / semantic)
+    document.querySelectorAll(
+      opts.classes.map(c => `.${CSS.escape(c)}`).join(",")
+    ).forEach(el => el.classList.add(opts.awareClass));
+
+    return {
+      classes: opts.classes,
+      disconnect() {
+        opts.root.removeEventListener("click", guardHandler, true);
+        opts.root.removeEventListener("keydown", guardHandler, true);
+        opts.root.removeEventListener("submit", guardHandler, true);
+      }
+    };
+  };
+
+  SapphireWidgets.LayoutSpamGuard = { create };
+
+})(jQuery, window, document, SapphireWidgets);
+
+
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/layout/subLayoutLeft.js":
-/*!**************************************************************!*\
-  !*** ./src/components/05-components/layout/subLayoutLeft.js ***!
-  \**************************************************************/
 /***/ (function() {
 
-eval("{/* Component SubLayoutLeft */\r\n(function($, window, document, SapphireWidgets) {\r\n\tconst create = function() {};\r\n\r\n\tSapphireWidgets.SubLayoutLeft = {\r\n\t\tcreate,\r\n\t};\r\n})(jQuery, window, document, SapphireWidgets);\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/layout/subLayoutLeft.js?\n}");
+/* Component SubLayoutLeft */
+(function($, window, document, SapphireWidgets) {
+	const create = function() {};
+
+	SapphireWidgets.SubLayoutLeft = {
+		create,
+	};
+})(jQuery, window, document, SapphireWidgets);
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/actions-menu/scripts.js":
-/*!*********************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/actions-menu/scripts.js ***!
-  \*********************************************************************/
 /***/ (function() {
 
-eval("{/* Component ActionsMenu */\r\n(function($, window, SapphireWidgets) {\r\n\tvar create = function(config) {\r\n\t\tvar $triggerElement = $('#' + config.triggerElement);\r\n\t\tvar $contentElement = $('#' + config.contentElement);\r\n\r\n\t\tif ($contentElement.text().length < 1) {\r\n\t\t\t$triggerElement.hide();\r\n\t\t}\r\n\r\n\t\t$(function() {\r\n\t\t\t// inside a document ready due to sapphire popup binded events\r\n\t\t\twindow.setTimeout(function() {\r\n\t\t\t\tvar position = config.position;\r\n\t\t\t\tif (config.locale === 'AR') {\r\n\t\t\t\t\tswitch (config.position) {\r\n\t\t\t\t\t\tcase 'right':\r\n\t\t\t\t\t\t\tposition = 'left';\r\n\t\t\t\t\t\t\tbreak;\r\n\t\t\t\t\t\tcase 'left':\r\n\t\t\t\t\t\t\tposition = 'right';\r\n\t\t\t\t\t\t\tbreak;\r\n\t\t\t\t\t\tcase 'bottom-left':\r\n\t\t\t\t\t\t\tposition = 'bottom-right';\r\n\t\t\t\t\t\t\tbreak;\r\n\t\t\t\t\t\tcase 'bottom-right':\r\n\t\t\t\t\t\t\tposition = 'bottom-left';\r\n\t\t\t\t\t\t\tbreak;\r\n\t\t\t\t\t\tcase 'top-left':\r\n\t\t\t\t\t\t\tposition = 'top-right';\r\n\t\t\t\t\t\t\tbreak;\r\n\t\t\t\t\t\tcase 'top-right':\r\n\t\t\t\t\t\t\tposition = 'top-left';\r\n\t\t\t\t\t\t\tbreak;\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\t\t\t\t$triggerElement.tooltipster({\r\n\t\t\t\t\tcontent: $('<section/>').append($contentElement.clone(true, true)),\r\n\t\t\t\t\ttrigger: config.triggerEvent,\r\n\t\t\t\t\tposition: position,\r\n\t\t\t\t\tmaxWidth: config.maxWidth,\r\n\t\t\t\t\ttheme:\r\n\t\t\t\t\t\t'tooltipster-location--' +\r\n\t\t\t\t\t\tconfig.location +\r\n\t\t\t\t\t\t' ActionsMenu-tooltip Padding--' +\r\n\t\t\t\t\t\tconfig.padding +\r\n\t\t\t\t\t\t' Border--' +\r\n\t\t\t\t\t\tconfig.border,\r\n\t\t\t\t});\r\n\t\t\t\t$contentElement.remove();\r\n\t\t\t}, 500);\r\n\t\t});\r\n\t};\r\n\r\n\tSapphireWidgets.ActionsMenu = {\r\n\t\tcreate,\r\n\t};\r\n})(jQuery, window, SapphireWidgets);\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/actions-menu/scripts.js?\n}");
+/* Component ActionsMenu */
+(function($, window, SapphireWidgets) {
+	var create = function(config) {
+		var $triggerElement = $('#' + config.triggerElement);
+		var $contentElement = $('#' + config.contentElement);
+
+		if ($contentElement.text().length < 1) {
+			$triggerElement.hide();
+		}
+
+		$(function() {
+			// inside a document ready due to sapphire popup binded events
+			window.setTimeout(function() {
+				var position = config.position;
+				if (config.locale === 'AR') {
+					switch (config.position) {
+						case 'right':
+							position = 'left';
+							break;
+						case 'left':
+							position = 'right';
+							break;
+						case 'bottom-left':
+							position = 'bottom-right';
+							break;
+						case 'bottom-right':
+							position = 'bottom-left';
+							break;
+						case 'top-left':
+							position = 'top-right';
+							break;
+						case 'top-right':
+							position = 'top-left';
+							break;
+					}
+				}
+				$triggerElement.tooltipster({
+					content: $('<section/>').append($contentElement.clone(true, true)),
+					trigger: config.triggerEvent,
+					position: position,
+					maxWidth: config.maxWidth,
+					theme:
+						'tooltipster-location--' +
+						config.location +
+						' ActionsMenu-tooltip Padding--' +
+						config.padding +
+						' Border--' +
+						config.border,
+				});
+				$contentElement.remove();
+			}, 500);
+		});
+	};
+
+	SapphireWidgets.ActionsMenu = {
+		create,
+	};
+})(jQuery, window, SapphireWidgets);
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/badge-box/scripts.js":
-/*!******************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/badge-box/scripts.js ***!
-  \******************************************************************/
 /***/ (function() {
 
-eval("{/* Component BadgeBox */\r\n(function ($, window, document, SapphireWidgets) {\r\n\tlet abovePlaceholderEl = null;\r\n\tlet maxValue = null;\r\n\tlet minValue = null;\r\n\tlet minusButtonEl = null;\r\n\tlet plusButtonEl = null;\r\n\tlet step = null;\r\n\tlet timeout = null;\r\n\tlet timeoutDelay = null;\r\n\tlet value = null;\r\n\tlet valueInputEl = null;\r\n\tlet widgetEl = null;\r\n\r\n\tconst create = (config) => {\r\n\t\twidgetEl = document.getElementById(config.widgetId);\r\n\r\n\t\tabovePlaceholderEl = widgetEl.querySelector('.badge-box-above');\r\n\t\tmaxValue = config.max;\r\n\t\tminValue = config.min;\r\n\t\tminusButtonEl = widgetEl.querySelector('.badge-box-button.minus');\r\n\t\tplusButtonEl = widgetEl.querySelector('.badge-box-button.plus');\r\n\t\tstep = config.step;\r\n\t\ttimeoutDelay = config.timeoutDelay;\r\n\t\tvalueInputEl = widgetEl.querySelector('input[type=\"text\"]');\r\n\r\n\t\tif (config.value !== '') {\r\n\t\t\tvalue = config.value;\r\n\t\t\tabovePlaceholderEl.textContent = value;\r\n\r\n\t\t\tminusButtonEl.addEventListener('click', () => {\r\n\t\t\t\tvalue = parseFloat(value) - parseFloat(step);\r\n\t\t\t\trender();\r\n\t\t\t});\r\n\r\n\t\t\tplusButtonEl.addEventListener('click', () => {\r\n\t\t\t\tvalue = parseFloat(value) + parseFloat(step);\r\n\t\t\t\trender();\r\n\t\t\t});\r\n\t\t}\r\n\t};\r\n\r\n\tconst render = () => {\r\n\t\tvalueInputEl.value = value;\r\n\t\tvalueInputEl.setAttribute('value', value);\r\n\t\tabovePlaceholderEl.textContent = value;\r\n\r\n\t\tif (parseFloat(value) === parseFloat(minValue)) {\r\n\t\t\tminusButtonEl.classList.add('is-disabled');\r\n\t\t} else {\r\n\t\t\tminusButtonEl.classList.remove('is-disabled');\r\n\t\t}\r\n\r\n\t\tif (parseFloat(value) === parseFloat(maxValue)) {\r\n\t\t\tplusButtonEl.classList.add('is-disabled');\r\n\t\t} else {\r\n\t\t\tplusButtonEl.classList.remove('is-disabled');\r\n\t\t}\r\n\r\n\t\tclearTimeout(timeout);\r\n\t\ttimeout = setTimeout(() => {\r\n\t\t\tclearTimeout(timeout);\r\n\t\t\tvalueInputEl.dispatchEvent(new Event('change', { bubbles: true }));\r\n\t\t}, timeoutDelay);\r\n\t};\r\n\r\n\tSapphireWidgets.BadgeBox = {\r\n\t\tcreate: create,\r\n\t};\r\n})(jQuery, window, document, SapphireWidgets);\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/badge-box/scripts.js?\n}");
+/* Component BadgeBox */
+(function ($, window, document, SapphireWidgets) {
+	let abovePlaceholderEl = null;
+	let maxValue = null;
+	let minValue = null;
+	let minusButtonEl = null;
+	let plusButtonEl = null;
+	let step = null;
+	let timeout = null;
+	let timeoutDelay = null;
+	let value = null;
+	let valueInputEl = null;
+	let widgetEl = null;
+
+	const create = (config) => {
+		console.log('create', config);
+		widgetEl = document.getElementById(config.widgetId);
+
+		abovePlaceholderEl = widgetEl.querySelector('.badge-box-above');
+		maxValue = config.max;
+		minValue = config.min;
+		minusButtonEl = widgetEl.querySelector('.badge-box-button.minus');
+		plusButtonEl = widgetEl.querySelector('.badge-box-button.plus');
+		step = config.step;
+		timeoutDelay = config.timeoutDelay;
+		valueInputEl = widgetEl.querySelector('input[type="text"]');
+
+		if (config.value !== '') {
+			value = config.value;
+			abovePlaceholderEl.textContent = value;
+
+			minusButtonEl.addEventListener('click', () => {
+				value = parseFloat(value) - parseFloat(step);
+				render();
+			});
+
+			plusButtonEl.addEventListener('click', () => {
+				value = parseFloat(value) + parseFloat(step);
+				render();
+			});
+		}
+	};
+
+	const render = () => {
+		valueInputEl.value = value;
+		valueInputEl.setAttribute('value', value);
+		abovePlaceholderEl.textContent = value;
+
+		if (parseFloat(value) === parseFloat(minValue)) {
+			minusButtonEl.classList.add('is-disabled');
+		} else {
+			minusButtonEl.classList.remove('is-disabled');
+		}
+
+		if (parseFloat(value) === parseFloat(maxValue)) {
+			plusButtonEl.classList.add('is-disabled');
+		} else {
+			plusButtonEl.classList.remove('is-disabled');
+		}
+
+		clearTimeout(timeout);
+
+		timeout = setTimeout(() => {
+			clearTimeout(timeout);
+			valueInputEl.dispatchEvent(new Event('change', { bubbles: true }));
+		}, timeoutDelay);
+	};
+
+	SapphireWidgets.BadgeBox = {
+		create: create,
+	};
+})(jQuery, window, document, SapphireWidgets);
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/button-link/scripts.js":
-/*!********************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/button-link/scripts.js ***!
-  \********************************************************************/
 /***/ (function() {
 
-eval("{/* Component ButtonLink */\r\n(function($, window, SapphireWidgets) {\r\n\tconst create = config => {\r\n\t\t$(document).ready(function() {\r\n\t\t\tconst $widget = $(`#${config.widgetId} .ButtonClick`);\r\n\r\n\t\t\t$widget.off('click').on('click', function(e) {\r\n\t\t\t\tconst _target = $(e.target);\r\n\r\n\t\t\t\tif (_target.closest('.ButtonClick.click').length == 0) {\r\n\t\t\t\t\t$('.ButtonClick.click').removeClass('click');\r\n\t\t\t\t\t$(this).addClass('click');\r\n\t\t\t\t}\r\n\t\t\t});\r\n\t\t});\r\n\t};\r\n\r\n\tSapphireWidgets.ButtonLink = { create };\r\n})(jQuery, window, SapphireWidgets);\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/button-link/scripts.js?\n}");
+/* Component ButtonLink */
+(function($, window, SapphireWidgets) {
+	const create = config => {
+		$(document).ready(function() {
+			const $widget = $(`#${config.widgetId} .ButtonClick`);
+
+			$widget.off('click').on('click', function(e) {
+				const _target = $(e.target);
+
+				if (_target.closest('.ButtonClick.click').length == 0) {
+					$('.ButtonClick.click').removeClass('click');
+					$(this).addClass('click');
+				}
+			});
+		});
+	};
+
+	SapphireWidgets.ButtonLink = { create };
+})(jQuery, window, SapphireWidgets);
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/card-charts/scripts.js":
-/*!********************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/card-charts/scripts.js ***!
-  \********************************************************************/
 /***/ (function() {
 
-eval("{/* Component CardCharts */\r\nSapphireWidgets.CardChartsPopup = () => {\r\n\t$(document).ready(function() {\r\n\t\twindow['CardChartsScroll'] = {};\r\n\t\tconst isInsideIframe = window.frameElement != undefined || false;\r\n\r\n\t\tlet $component = $('.CardCharts');\r\n\t\tlet $header = $component.find('.CardCharts__Header');\r\n\t\tlet $content = $component.find('.CardCharts__Content');\r\n\t\tlet $properties = $component.find('.CardCharts__Properties');\r\n\t\tlet $headerDiv = $component.find('.CardCharts__HeaderChart > div');\r\n\t\tlet $fakeColumns = $('.FakeColumns');\r\n\t\tlet $bodyContent = $('.LayoutPopup__body');\r\n\r\n\t\tif (isInsideIframe && !$fakeColumns.length) {\r\n\t\t\t$headerDiv.append(`<div class='FakeColumns'></div>`);\r\n\t\t}\r\n\r\n\t\tif (isInsideIframe) {\r\n\t\t\t$fakeColumns = $('.FakeColumns');\r\n\r\n\t\t\t$content.on('scroll', () => {\r\n\t\t\t\tclearTimeout(window['CardChartsScroll'].scrollFinished);\r\n\t\t\t\twindow['CardChartsScroll'].scrollFinished = setTimeout(function() {\r\n\t\t\t\t\tif ($content.scrollTop() > 0) $header.addClass('ShadowMedium');\r\n\t\t\t\t\telse $header.removeClass('ShadowMedium');\r\n\t\t\t\t}, 50);\r\n\t\t\t});\r\n\t\t}\r\n\r\n\t\t$(window).resize(function() {\r\n\t\t\t$component = $('.CardCharts');\r\n\t\t\t$header = $component.find('.CardCharts__Header');\r\n\t\t\t$content = $component.find('.CardCharts__Content');\r\n\t\t\t$properties = $component.find('.CardCharts__Properties');\r\n\t\t\t$fakeColumns = $('.FakeColumns');\r\n\t\t\t$bodyContent = $('.LayoutPopup__body');\r\n\r\n\t\t\tlet headerTitleHeight = 63;\r\n\t\t\tconst headerPropertiesHeight = 56;\r\n\r\n\t\t\tconst $charts = $content.find('.CardCharts__Charts .OSChart');\r\n\r\n\t\t\t$charts.each(function() {\r\n\t\t\t\tconst $chart = $(this);\r\n\r\n\t\t\t\tconst newWidth = $content.width() - $properties.width() + 40;\r\n\t\t\t\t$chart.highcharts().setSize(newWidth, $chart.height());\r\n\t\t\t});\r\n\r\n\t\t\tif (isInsideIframe) {\r\n\t\t\t\tconst timeoutHeight = setTimeout(() => {\r\n\t\t\t\t\tconst $headerTitle = $component.find('.CardCharts__HeaderTitle');\r\n\r\n\t\t\t\t\theaderTitleHeight = $headerTitle.length ? $headerTitle.outerHeight() : headerTitleHeight - 6;\r\n\r\n\t\t\t\t\tconst newHeight = $(window.frameElement).height() - headerTitleHeight;\r\n\r\n\t\t\t\t\t$fakeColumns.css('height', `${newHeight + headerPropertiesHeight}px`);\r\n\t\t\t\t\t$content.css('height', `${newHeight - headerPropertiesHeight}px`);\r\n\r\n\t\t\t\t\tclearTimeout(timeoutHeight);\r\n\t\t\t\t}, 500);\r\n\t\t\t}\r\n\t\t});\r\n\r\n\t\t// See MutationObserver (LayoutPopup)\r\n\t\tSapphireWidgets.PopupsToAvoidMutations = ['ChartsPopup'];\r\n\t});\r\n};\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/card-charts/scripts.js?\n}");
+/* Component CardCharts */
+SapphireWidgets.CardChartsPopup = () => {
+	$(document).ready(function() {
+		window['CardChartsScroll'] = {};
+		const isInsideIframe = window.frameElement != undefined || false;
+
+		let $component = $('.CardCharts');
+		let $header = $component.find('.CardCharts__Header');
+		let $content = $component.find('.CardCharts__Content');
+		let $properties = $component.find('.CardCharts__Properties');
+		let $headerDiv = $component.find('.CardCharts__HeaderChart > div');
+		let $fakeColumns = $('.FakeColumns');
+		let $bodyContent = $('.LayoutPopup__body');
+
+		if (isInsideIframe && !$fakeColumns.length) {
+			$headerDiv.append(`<div class='FakeColumns'></div>`);
+		}
+
+		if (isInsideIframe) {
+			$fakeColumns = $('.FakeColumns');
+
+			$content.on('scroll', () => {
+				clearTimeout(window['CardChartsScroll'].scrollFinished);
+				window['CardChartsScroll'].scrollFinished = setTimeout(function() {
+					if ($content.scrollTop() > 0) $header.addClass('ShadowMedium');
+					else $header.removeClass('ShadowMedium');
+				}, 50);
+			});
+		}
+
+		$(window).resize(function() {
+			$component = $('.CardCharts');
+			$header = $component.find('.CardCharts__Header');
+			$content = $component.find('.CardCharts__Content');
+			$properties = $component.find('.CardCharts__Properties');
+			$fakeColumns = $('.FakeColumns');
+			$bodyContent = $('.LayoutPopup__body');
+
+			let headerTitleHeight = 63;
+			const headerPropertiesHeight = 56;
+
+			const $charts = $content.find('.CardCharts__Charts .OSChart');
+
+			$charts.each(function() {
+				const $chart = $(this);
+
+				const newWidth = $content.width() - $properties.width() + 40;
+				$chart.highcharts().setSize(newWidth, $chart.height());
+			});
+
+			if (isInsideIframe) {
+				const timeoutHeight = setTimeout(() => {
+					const $headerTitle = $component.find('.CardCharts__HeaderTitle');
+
+					headerTitleHeight = $headerTitle.length ? $headerTitle.outerHeight() : headerTitleHeight - 6;
+
+					const newHeight = $(window.frameElement).height() - headerTitleHeight;
+
+					$fakeColumns.css('height', `${newHeight + headerPropertiesHeight}px`);
+					$content.css('height', `${newHeight - headerPropertiesHeight}px`);
+
+					clearTimeout(timeoutHeight);
+				}, 500);
+			}
+		});
+
+		// See MutationObserver (LayoutPopup)
+		SapphireWidgets.PopupsToAvoidMutations = ['ChartsPopup'];
+	});
+};
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/collapsible-side-panel/scripts.js":
-/*!*******************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/collapsible-side-panel/scripts.js ***!
-  \*******************************************************************************/
 /***/ (function() {
 
-eval("{/* Component CollapsibleSidePanel */\r\n(function($, window, SapphireWidgets) {\r\n\tclass CollapsibleSidePanel {\r\n\t\tconstructor(config) {\r\n\t\t\tthis.options = {\r\n\t\t\t\t...config,\r\n\t\t\t};\r\n\r\n\t\t\tthis.onComponentInit();\r\n\t\t}\r\n\r\n\t\topenCloseSidePanel(toOpen) {\r\n\t\t\tif (toOpen) {\r\n\t\t\t\tthis.$content.css('display', 'grid');\r\n\r\n\t\t\t\tsetTimeout(() => {\r\n\t\t\t\t\tthis.$component.addClass('CollapsibleSidePanel--open');\r\n\t\t\t\t}, 50);\r\n\t\t\t} else {\r\n\t\t\t\tthis.$component.removeClass('CollapsibleSidePanel--open');\r\n\r\n\t\t\t\tsetTimeout(() => {\r\n\t\t\t\t\t$('.CollapsibleSidePanel__Content').css('display', 'none');\r\n\t\t\t\t}, 350);\r\n\t\t\t}\r\n\t\t}\r\n\r\n\t\tonComponentInit() {\r\n\t\t\tthis.$component = $(`#${this.options.widgetId}`);\r\n\t\t\tthis.$header = this.$component.find('.CollapsibleSidePanel__Header');\r\n\t\t\tthis.$content = this.$component.find('.CollapsibleSidePanel__Content');\r\n\t\t\tthis.$counter1 = this.$component.find('.CollapsibleSidePanel__Title span.Counter');\r\n\t\t\tthis.$counter2 = this.$component.find('.CollapsibleSidePanel__PanelTitle span.Counter');\r\n\t\t\tthis.$panelContent = this.$component.find('.CollapsibleSidePanel__PanelContent');\r\n\t\t\tthis.$close = this.$component.find('.CollapsibleSidePanel__PanelHeader .icon');\r\n\t\t\tthis.$closeEventLink = this.$component.find('.CollapsibleSidePanel__PanelHeader .PanelCloseButton');\r\n\r\n\t\t\tthis.$header.on('click', () => this.openCloseSidePanel(true));\r\n\t\t\tthis.$close.on('click', () => {\r\n\t\t\t\tthis.openCloseSidePanel(false);\r\n\r\n\t\t\t\tthis.$closeEventLink.click();\r\n\r\n\t\t\t\tif ($('.PanelContentEmpty').length) {\r\n\t\t\t\t\tSapphireWidgets.CollapsibleSidePanel.close(this.options.widgetId, true);\r\n\t\t\t\t}\r\n\t\t\t});\r\n\r\n\t\t\tif (this.options.isAutoCounter) {\r\n\t\t\t\tcalculateCounter(this.$panelContent, this.$counter1, this.$counter2);\r\n\r\n\t\t\t\tthis.$counter1.removeClass('Hidden');\r\n\t\t\t\tthis.$counter2.removeClass('Hidden');\r\n\t\t\t}\r\n\r\n\t\t\tconst hasEmptyMessage = this.$panelContent.find('.CollapsibleEmptyMessage');\r\n\t\t\tconst contentToVerify = hasEmptyMessage.length ? this.$panelContent.find('>:first-child') : this.$panelContent;\r\n\r\n\t\t\tif (this.options.hideWhenEmpty && !contentToVerify.text()) {\r\n\t\t\t\tthis.$component.hide();\r\n\t\t\t}\r\n\r\n\t\t\t//Diogo Ribeiro - it seems we only need margins when we show the header\r\n\t\t\tif(!this.options.hideHeader) {\r\n\t\t\t\t$(document).ready(function() {\r\n\t\t\t\t\t$('.CollapsibleSidePanel:visible').addClass('MultiMarginTopSmall');\r\n\t\t\t\t\t$('.CollapsibleSidePanel:visible:first').addClass('MultiMarginTopLarge');\r\n\t\t\t\t});\r\n\t\t\t}\r\n\t\t\t\r\n\t\t}\r\n\t}\r\n\r\n\tconst calculateCounter = (panelContent, counter1, counter2) => {\r\n\t\tlet total = 0;\r\n\t\tconst counters = panelContent.find('.ExapandablePlaceholder.Counter');\r\n\r\n\t\tcounters.each(function() {\r\n\t\t\ttotal += +$(this).text();\r\n\t\t});\r\n\r\n\t\tcounter1.text(total);\r\n\t\tcounter2.text(total);\r\n\r\n\t\tif (total === 0) counter2.addClass('ColorLightGreyBG');\r\n\t};\r\n\r\n\tconst updateCounter = (widgetId, counter) => {\r\n\t\tthis.$component = $(`#${widgetId}`);\r\n\t\tthis.counter1 = this.$component.find('.CollapsibleSidePanel__Title span.Counter');\r\n\t\tthis.counter2 = this.$component.find('.CollapsibleSidePanel__PanelTitle span.Counter');\r\n\r\n\t\tthis.counter1.text(counter);\r\n\t\tthis.counter2.text(counter);\r\n\r\n\t\tif (+counter === 0) this.counter2.addClass('ColorLightGreyBG');\r\n\t};\r\n\r\n\tconst close = (widgetId, hideHeader, updateCounter) => {\r\n\t\tthis.$component = $(`#${widgetId}`);\r\n\r\n\t\tif (!this.$component.hasClass('CollapsibleSidePanel')) {\r\n\t\t\tthis.$component = $(`#${widgetId}`).find('.CollapsibleSidePanel');\r\n\t\t}\r\n\r\n\t\tif (hideHeader) {\r\n\t\t\tthis.$component.addClass('CollapsibleSidePanel--headerHidden');\r\n\t\t}\r\n\r\n\t\tthis.$component.removeClass('CollapsibleSidePanel--open');\r\n\r\n\t\t$('.CollapsibleSidePanel:visible').removeClass('MultiMarginTopSmall');\r\n\t\t$('.CollapsibleSidePanel:visible:first').removeClass('MultiMarginTopLarge');\r\n\t};\r\n\r\n\tconst checkEmpty = widgetId => {\r\n\t\tthis.$component = $(`#${widgetId}`).find('.CollapsibleSidePanel');\r\n\t\tthis.$panelContent = this.$component.find('.CollapsibleSidePanel__PanelContent');\r\n\t\tthis.$counter1 = this.$component.find('.CollapsibleSidePanel__Title span.Counter');\r\n\t\tthis.$counter2 = this.$component.find('.CollapsibleSidePanel__PanelTitle span.Counter');\r\n\t\tthis.$emptyMessage = this.$component.find('.CollapsibleEmptyMessage');\r\n\r\n\t\tthis.$emptyMessage.show();\r\n\r\n\t\tcalculateCounter(this.$panelContent, this.$counter1, this.$counter2);\r\n\t};\r\n\r\n\tconst create = config => (window[config.widgetId] = new CollapsibleSidePanel(config));\r\n\r\n\tSapphireWidgets.CollapsibleSidePanel = { create, close, updateCounter, checkEmpty };\r\n})(jQuery, window, SapphireWidgets);\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/collapsible-side-panel/scripts.js?\n}");
+/* Component CollapsibleSidePanel */
+(function($, window, SapphireWidgets) {
+	class CollapsibleSidePanel {
+		constructor(config) {
+			this.options = {
+				...config,
+			};
+
+			this.onComponentInit();
+		}
+
+		openCloseSidePanel(toOpen) {
+			if (toOpen) {
+				this.$content.css('display', 'grid');
+
+				setTimeout(() => {
+					this.$component.addClass('CollapsibleSidePanel--open');
+				}, 50);
+			} else {
+				this.$component.removeClass('CollapsibleSidePanel--open');
+
+				setTimeout(() => {
+					$('.CollapsibleSidePanel__Content').css('display', 'none');
+				}, 350);
+			}
+		}
+
+		onComponentInit() {
+			this.$component = $(`#${this.options.widgetId}`);
+			this.$header = this.$component.find('.CollapsibleSidePanel__Header');
+			this.$content = this.$component.find('.CollapsibleSidePanel__Content');
+			this.$counter1 = this.$component.find('.CollapsibleSidePanel__Title span.Counter');
+			this.$counter2 = this.$component.find('.CollapsibleSidePanel__PanelTitle span.Counter');
+			this.$panelContent = this.$component.find('.CollapsibleSidePanel__PanelContent');
+			this.$close = this.$component.find('.CollapsibleSidePanel__PanelHeader .icon');
+			this.$closeEventLink = this.$component.find('.CollapsibleSidePanel__PanelHeader .PanelCloseButton');
+
+			this.$header.on('click', () => this.openCloseSidePanel(true));
+			this.$close.on('click', () => {
+				this.openCloseSidePanel(false);
+
+				this.$closeEventLink.click();
+
+				if ($('.PanelContentEmpty').length) {
+					SapphireWidgets.CollapsibleSidePanel.close(this.options.widgetId, true);
+				}
+			});
+
+			if (this.options.isAutoCounter) {
+				calculateCounter(this.$panelContent, this.$counter1, this.$counter2);
+
+				this.$counter1.removeClass('Hidden');
+				this.$counter2.removeClass('Hidden');
+			}
+
+			const hasEmptyMessage = this.$panelContent.find('.CollapsibleEmptyMessage');
+			const contentToVerify = hasEmptyMessage.length ? this.$panelContent.find('>:first-child') : this.$panelContent;
+
+			if (this.options.hideWhenEmpty && !contentToVerify.text()) {
+				this.$component.hide();
+			}
+
+			//Diogo Ribeiro - it seems we only need margins when we show the header
+			if(!this.options.hideHeader) {
+				$(document).ready(function() {
+					$('.CollapsibleSidePanel:visible').addClass('MultiMarginTopSmall');
+					$('.CollapsibleSidePanel:visible:first').addClass('MultiMarginTopLarge');
+				});
+			}
+			
+		}
+	}
+
+	const calculateCounter = (panelContent, counter1, counter2) => {
+		let total = 0;
+		const counters = panelContent.find('.ExapandablePlaceholder.Counter');
+
+		counters.each(function() {
+			total += +$(this).text();
+		});
+
+		counter1.text(total);
+		counter2.text(total);
+
+		if (total === 0) counter2.addClass('ColorLightGreyBG');
+	};
+
+	const updateCounter = (widgetId, counter) => {
+		this.$component = $(`#${widgetId}`);
+		this.counter1 = this.$component.find('.CollapsibleSidePanel__Title span.Counter');
+		this.counter2 = this.$component.find('.CollapsibleSidePanel__PanelTitle span.Counter');
+
+		this.counter1.text(counter);
+		this.counter2.text(counter);
+
+		if (+counter === 0) this.counter2.addClass('ColorLightGreyBG');
+	};
+
+	const close = (widgetId, hideHeader, updateCounter) => {
+		this.$component = $(`#${widgetId}`);
+
+		if (!this.$component.hasClass('CollapsibleSidePanel')) {
+			this.$component = $(`#${widgetId}`).find('.CollapsibleSidePanel');
+		}
+
+		if (hideHeader) {
+			this.$component.addClass('CollapsibleSidePanel--headerHidden');
+		}
+
+		this.$component.removeClass('CollapsibleSidePanel--open');
+
+		$('.CollapsibleSidePanel:visible').removeClass('MultiMarginTopSmall');
+		$('.CollapsibleSidePanel:visible:first').removeClass('MultiMarginTopLarge');
+	};
+
+	const checkEmpty = widgetId => {
+		this.$component = $(`#${widgetId}`).find('.CollapsibleSidePanel');
+		this.$panelContent = this.$component.find('.CollapsibleSidePanel__PanelContent');
+		this.$counter1 = this.$component.find('.CollapsibleSidePanel__Title span.Counter');
+		this.$counter2 = this.$component.find('.CollapsibleSidePanel__PanelTitle span.Counter');
+		this.$emptyMessage = this.$component.find('.CollapsibleEmptyMessage');
+
+		this.$emptyMessage.show();
+
+		calculateCounter(this.$panelContent, this.$counter1, this.$counter2);
+	};
+
+	const create = config => (window[config.widgetId] = new CollapsibleSidePanel(config));
+
+	SapphireWidgets.CollapsibleSidePanel = { create, close, updateCounter, checkEmpty };
+})(jQuery, window, SapphireWidgets);
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/comp-line/scripts.js":
-/*!******************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/comp-line/scripts.js ***!
-  \******************************************************************/
 /***/ (function() {
 
-eval("{/* Component CompLine */\r\n(function ($, window, SapphireWidgets) {\r\n\tfunction SectionCompline() {\r\n\t\tvar that = this;\r\n\r\n\t\t// Object to save stats\r\n\t\tvar previewstat = [];\r\n\r\n\t\t// set click events\r\n\t\tfunction clickEvents(ob) {\r\n\t\t\t// store querys in a single var\r\n\t\t\tvar holder = $(ob).closest('.CompLine');\r\n\t\t\tvar Section = $(ob).closest('.CompLineExpandable');\r\n\t\t\tvar SectionContent = Section.children('.CompLine_Expand');\r\n\r\n\t\t\t// get id\r\n\t\t\tvar id = holder.attr('id');\r\n\r\n\t\t\tvar tempHeight = 0;\r\n\r\n\t\t\t// has class expanded\r\n\t\t\tif (Section.hasClass('expanded')) {\r\n\t\t\t\t// Calc and set a fixed height, during this process, transitions are disabled\r\n\t\t\t\tSectionContent.addClass('noTransition');\r\n\t\t\t\tSectionContent.height(SectionContent.height());\r\n\t\t\t\tSectionContent[0].offsetHeight; // hack to force a repaint\r\n\t\t\t\tSectionContent.removeClass('noTransition');\r\n\r\n\t\t\t\t// Collapse content\r\n\t\t\t\tSectionContent.height(0);\r\n\t\t\t\tSection.removeClass('expanded');\r\n\t\t\t\tSectionContent.css('overflow', 'hidden');\r\n\r\n\t\t\t\t// Remove class, set height and save state\r\n\t\t\t\tpreviewstat[id]['client'] = false;\r\n\r\n\t\t\t\tif (holder.hasClass('notRenderInteractions')) {\r\n\t\t\t\t\tholder.find('.CompLine-toggle-interactions').trigger('click');\r\n\t\t\t\t}\r\n\t\t\t} else {\r\n\t\t\t\t// Calc and set a fixed height\r\n\t\t\t\tSectionContent.height('auto');\r\n\t\t\t\ttempHeight = SectionContent.height();\r\n\t\t\t\tSectionContent.height(0);\r\n\t\t\t\tSectionContent.height(tempHeight);\r\n\t\t\t\tSectionContent.css('overflow', 'hidden');\r\n\r\n\t\t\t\t// remove class, set height and save state\r\n\t\t\t\tSection.addClass('expanded');\r\n\t\t\t\tpreviewstat[id]['client'] = true;\r\n\r\n\t\t\t\tif ($('.Page').hasClass('ie8') || $('.Page').hasClass('ie9')) {\r\n\t\t\t\t\tSectionContent.height('auto');\r\n\t\t\t\t\tSectionContent.css('overflow', 'visible');\r\n\t\t\t\t}\r\n\r\n\t\t\t\tif (holder.hasClass('notRenderInteractions')) {\r\n\t\t\t\t\tholder.find('.CompLine-toggle-interactions').trigger('click');\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}\r\n\r\n\t\t// ajax refres function\r\n\t\tthat.ajaxRefresh = function () {\r\n\t\t\t// remove click events\r\n\t\t\t$('.CompLine_headLine').off();\r\n\r\n\t\t\t// add stop prepagation\r\n\t\t\t$('.CompLine_headLine input, .CompLine_headLine select, .CompLine_headLine a').click(function (event) {\r\n\t\t\t\tevent.stopPropagation();\r\n\t\t\t});\r\n\r\n\t\t\t// add new click events\r\n\t\t\t$('.CompLine__expandIcon').unbind('click');\r\n\t\t\t$('.CompLine__expandIcon').on('click', function () {\r\n\t\t\t\tclickEvents(this.parentElement);\r\n\t\t\t});\r\n\r\n\t\t\t// each all sections\r\n\t\t\t$('.CompLineExpandable').each(function () {\r\n\t\t\t\t// if new SectionExpandable then add to previewstat array\r\n\t\t\t\tif (\r\n\t\t\t\t\tpreviewstat[\r\n\t\t\t\t\t$(this)\r\n\t\t\t\t\t\t.closest('.CompLine')\r\n\t\t\t\t\t\t.attr('id')\r\n\t\t\t\t\t] == null\r\n\t\t\t\t) {\r\n\t\t\t\t\t// add stat on array\r\n\t\t\t\t\tvar stat = false;\r\n\t\t\t\t\t// if open\r\n\t\t\t\t\tif ($(this).hasClass('expanded')) {\r\n\t\t\t\t\t\tstat = true;\r\n\t\t\t\t\t}\r\n\t\t\t\t\t// add row\r\n\t\t\t\t\tpreviewstat[\r\n\t\t\t\t\t\t$(this)\r\n\t\t\t\t\t\t\t.closest('.CompLine')\r\n\t\t\t\t\t\t\t.attr('id')\r\n\t\t\t\t\t] = {\r\n\t\t\t\t\t\tclient: stat,\r\n\t\t\t\t\t\tserver: stat,\r\n\t\t\t\t\t};\r\n\t\t\t\t}\r\n\r\n\t\t\t\t// curent state (ajax state x initial state)\r\n\t\t\t\tvar curState = false;\r\n\r\n\t\t\t\t// check if start expandable\r\n\t\t\t\tif ($(this).hasClass('expanded')) {\r\n\t\t\t\t\tcurState = true;\r\n\t\t\t\t}\r\n\r\n\t\t\t\t// check if ajax != initial server\r\n\t\t\t\tif (\r\n\t\t\t\t\tcurState !=\r\n\t\t\t\t\tpreviewstat[\r\n\t\t\t\t\t$(this)\r\n\t\t\t\t\t\t.closest('.CompLine')\r\n\t\t\t\t\t\t.attr('id')\r\n\t\t\t\t\t]['server']\r\n\t\t\t\t) {\r\n\t\t\t\t\t// curstate\r\n\t\t\t\t\tpreviewstat[\r\n\t\t\t\t\t\t$(this)\r\n\t\t\t\t\t\t\t.closest('.CompLine')\r\n\t\t\t\t\t\t\t.attr('id')\r\n\t\t\t\t\t]['client'] = curState;\r\n\t\t\t\t\tpreviewstat[\r\n\t\t\t\t\t\t$(this)\r\n\t\t\t\t\t\t\t.closest('.CompLine')\r\n\t\t\t\t\t\t\t.attr('id')\r\n\t\t\t\t\t]['server'] = curState;\r\n\t\t\t\t} else {\r\n\t\t\t\t\t// has class expanded\r\n\t\t\t\t\tif (\r\n\t\t\t\t\t\tpreviewstat[\r\n\t\t\t\t\t\t$(this)\r\n\t\t\t\t\t\t\t.closest('.CompLine')\r\n\t\t\t\t\t\t\t.attr('id')\r\n\t\t\t\t\t\t]['client'] == false &&\r\n\t\t\t\t\t\t$(this).hasClass('expanded')\r\n\t\t\t\t\t) {\r\n\t\t\t\t\t\t$(this).removeClass('expanded');\r\n\t\t\t\t\t\t$(this)\r\n\t\t\t\t\t\t\t.children('.CompLine_Expand')\r\n\t\t\t\t\t\t\t.height(0);\r\n\t\t\t\t\t} else if (\r\n\t\t\t\t\t\tpreviewstat[\r\n\t\t\t\t\t\t$(this)\r\n\t\t\t\t\t\t\t.closest('.CompLine')\r\n\t\t\t\t\t\t\t.attr('id')\r\n\t\t\t\t\t\t]['client'] == true &&\r\n\t\t\t\t\t\t!$(this).hasClass('expanded')\r\n\t\t\t\t\t) {\r\n\t\t\t\t\t\t$(this).addClass('expanded');\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\t\t\t});\r\n\t\t};\r\n\r\n\t\t// set events\r\n\t\tthat.init = function () {\r\n\t\t\t// each all sections to create array stat\r\n\t\t\t$('.CompLineExpandable').each(function () {\r\n\t\t\t\t// add stat on array\r\n\t\t\t\tvar stat = false;\r\n\r\n\t\t\t\t// if open\r\n\t\t\t\tif ($(this).hasClass('expanded')) {\r\n\t\t\t\t\tstat = true;\r\n\t\t\t\t}\r\n\r\n\t\t\t\t// add row\r\n\t\t\t\tpreviewstat[\r\n\t\t\t\t\t$(this)\r\n\t\t\t\t\t\t.closest('.CompLine')\r\n\t\t\t\t\t\t.attr('id')\r\n\t\t\t\t] = {\r\n\t\t\t\t\tclient: stat,\r\n\t\t\t\t\tserver: stat,\r\n\t\t\t\t};\r\n\t\t\t});\r\n\r\n\t\t\t// add click events\r\n\t\t\t$('.CompLine__expandIcon').unbind('click');\r\n\t\t\t$('.CompLine__expandIcon').on('click', function () {\r\n\t\t\t\tclickEvents(this.parentElement);\r\n\t\t\t});\r\n\r\n\t\t\t// add stop prepagation\r\n\t\t\t$('.CompLine_headLine input, .CompLine_headLine select, .CompLine_headLine a').click(function (event) {\r\n\t\t\t\tevent.stopPropagation();\r\n\t\t\t});\r\n\r\n\t\t\t// remove unecessary behaviors\r\n\r\n\t\t\t// event ajax\r\n\t\t\tsetTimeout(() => {\r\n\t\t\t\tosAjaxBackend.BindAfterAjaxRequest(that.ajaxRefresh);\r\n\t\t\t}, 100);\r\n\t\t};\r\n\t}\r\n\r\n\tconst create = () => {\r\n\t\tconst expandable = new SectionCompline();\r\n\r\n\t\texpandable.init();\r\n\t};\r\n\r\n\tSapphireWidgets.CompLine = { create };\r\n})(jQuery, window, SapphireWidgets);\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/comp-line/scripts.js?\n}");
+/* Component CompLine */
+(function ($, window, SapphireWidgets) {
+	function SectionCompline() {
+		var that = this;
+
+		// Object to save stats
+		var previewstat = [];
+
+		// set click events
+		function clickEvents(ob) {
+			// store querys in a single var
+			var holder = $(ob).closest('.CompLine');
+			var Section = $(ob).closest('.CompLineExpandable');
+			var SectionContent = Section.children('.CompLine_Expand');
+
+			// get id
+			var id = holder.attr('id');
+
+			var tempHeight = 0;
+
+			// has class expanded
+			if (Section.hasClass('expanded')) {
+				// Calc and set a fixed height, during this process, transitions are disabled
+				SectionContent.addClass('noTransition');
+				SectionContent.height(SectionContent.height());
+				SectionContent[0].offsetHeight; // hack to force a repaint
+				SectionContent.removeClass('noTransition');
+
+				// Collapse content
+				SectionContent.height(0);
+				Section.removeClass('expanded');
+				SectionContent.css('overflow', 'hidden');
+
+				// Remove class, set height and save state
+				previewstat[id]['client'] = false;
+
+				if (holder.hasClass('notRenderInteractions')) {
+					holder.find('.CompLine-toggle-interactions').trigger('click');
+				}
+			} else {
+				// Calc and set a fixed height
+				SectionContent.height('auto');
+				tempHeight = SectionContent.height();
+				SectionContent.height(0);
+				SectionContent.height(tempHeight);
+				SectionContent.css('overflow', 'hidden');
+
+				// remove class, set height and save state
+				Section.addClass('expanded');
+				previewstat[id]['client'] = true;
+
+				if ($('.Page').hasClass('ie8') || $('.Page').hasClass('ie9')) {
+					SectionContent.height('auto');
+					SectionContent.css('overflow', 'visible');
+				}
+
+				if (holder.hasClass('notRenderInteractions')) {
+					holder.find('.CompLine-toggle-interactions').trigger('click');
+				}
+			}
+		}
+
+		// ajax refres function
+		that.ajaxRefresh = function () {
+			// remove click events
+			$('.CompLine_headLine').off();
+
+			// add stop prepagation
+			$('.CompLine_headLine input, .CompLine_headLine select, .CompLine_headLine a').click(function (event) {
+				event.stopPropagation();
+			});
+
+			// add new click events
+			$('.CompLine__expandIcon').unbind('click');
+			$('.CompLine__expandIcon').on('click', function () {
+				clickEvents(this.parentElement);
+			});
+
+			// each all sections
+			$('.CompLineExpandable').each(function () {
+				// if new SectionExpandable then add to previewstat array
+				if (
+					previewstat[
+					$(this)
+						.closest('.CompLine')
+						.attr('id')
+					] == null
+				) {
+					// add stat on array
+					var stat = false;
+					// if open
+					if ($(this).hasClass('expanded')) {
+						stat = true;
+					}
+					// add row
+					previewstat[
+						$(this)
+							.closest('.CompLine')
+							.attr('id')
+					] = {
+						client: stat,
+						server: stat,
+					};
+				}
+
+				// curent state (ajax state x initial state)
+				var curState = false;
+
+				// check if start expandable
+				if ($(this).hasClass('expanded')) {
+					curState = true;
+				}
+
+				// check if ajax != initial server
+				if (
+					curState !=
+					previewstat[
+					$(this)
+						.closest('.CompLine')
+						.attr('id')
+					]['server']
+				) {
+					// curstate
+					previewstat[
+						$(this)
+							.closest('.CompLine')
+							.attr('id')
+					]['client'] = curState;
+					previewstat[
+						$(this)
+							.closest('.CompLine')
+							.attr('id')
+					]['server'] = curState;
+				} else {
+					// has class expanded
+					if (
+						previewstat[
+						$(this)
+							.closest('.CompLine')
+							.attr('id')
+						]['client'] == false &&
+						$(this).hasClass('expanded')
+					) {
+						$(this).removeClass('expanded');
+						$(this)
+							.children('.CompLine_Expand')
+							.height(0);
+					} else if (
+						previewstat[
+						$(this)
+							.closest('.CompLine')
+							.attr('id')
+						]['client'] == true &&
+						!$(this).hasClass('expanded')
+					) {
+						$(this).addClass('expanded');
+					}
+				}
+			});
+		};
+
+		// set events
+		that.init = function () {
+			// each all sections to create array stat
+			$('.CompLineExpandable').each(function () {
+				// add stat on array
+				var stat = false;
+
+				// if open
+				if ($(this).hasClass('expanded')) {
+					stat = true;
+				}
+
+				// add row
+				previewstat[
+					$(this)
+						.closest('.CompLine')
+						.attr('id')
+				] = {
+					client: stat,
+					server: stat,
+				};
+			});
+
+			// add click events
+			$('.CompLine__expandIcon').unbind('click');
+			$('.CompLine__expandIcon').on('click', function () {
+				clickEvents(this.parentElement);
+			});
+
+			// add stop prepagation
+			$('.CompLine_headLine input, .CompLine_headLine select, .CompLine_headLine a').click(function (event) {
+				event.stopPropagation();
+			});
+
+			// remove unecessary behaviors
+
+			// event ajax
+			setTimeout(() => {
+				osAjaxBackend.BindAfterAjaxRequest(that.ajaxRefresh);
+			}, 100);
+		};
+	}
+
+	const create = () => {
+		const expandable = new SectionCompline();
+
+		expandable.init();
+	};
+
+	SapphireWidgets.CompLine = { create };
+})(jQuery, window, SapphireWidgets);
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/country-phone/scripts.js":
-/*!**********************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/country-phone/scripts.js ***!
-  \**********************************************************************/
 /***/ (function() {
 
-eval("{/* Component CountryPhone */\r\n(function($, window, SapphireWidgets) {\r\n\tconst create = config => {\r\n\t\tconst $element = document.querySelector(`#${config.widgetId}`);\r\n\t\tconst additionalValidations = config.additionalValidations;\r\n\r\n\t\tconst countryPhoneInput = window.intlTelInput($element, {\r\n\t\t\tinitialCountry: config.initialCountry,\r\n\t\t\tpreferredCountries: config.preferredCountries,\r\n\t\t\tseparateDialCode: config.separateDialCode,\r\n\t\t\tnationalMode: config.nationalMode,\r\n\t\t\tautoPlaceholder: config.autoPlaceholder ? 'polite' : false,\r\n\t\t\tformatOnDisplay: false,\r\n\t\t\tutilsScript: '/V3_Pat/js/utils.js',\r\n\t\t});\r\n\r\n\t\tconst $input = $(`#${config.widgetId}`);\r\n\r\n\t\t$input.on('keyup', function(e) {\r\n\t\t\tif ($input.val() === '+' || $input.val() === '') {\r\n\t\t\t\tcountryPhoneInput.setCountry(config.initialCountry);\r\n\t\t\t}\r\n\t\t});\r\n\r\n\t\t$input.on('keypress', function(e) {\r\n\t\t\tconst selectedCountry = countryPhoneInput.getSelectedCountryData();\r\n\t\t\tconst filter = additionalValidations.find(i => i.CountryPhoneValidations.CountryCode === selectedCountry.iso2);\r\n\t\t\tconst value = $input.val().trim();\r\n\r\n\t\t\tlet isValid = true;\r\n\r\n\t\t\tif (filter) {\r\n\t\t\t\tconst withouCode = value.replace(`+${selectedCountry.dialCode}`, '');\r\n\r\n\t\t\t\tisValid = withouCode.trim().length + 1 <= filter.CountryPhoneValidations.PhoneLength;\r\n\t\t\t}\r\n\r\n\t\t\tif (value === `+${selectedCountry.dialCode}`) {\r\n\t\t\t\t$input.val(`+${selectedCountry.dialCode} `);\r\n\t\t\t}\r\n\r\n\t\t\treturn (\r\n\t\t\t\tisValid &&\r\n\t\t\t\t(e.metaKey || // cmd/ctrl\r\n\t\t\t\te.which <= 0 || // arrow keys\r\n\t\t\t\te.which == 8 || // delete key\r\n\t\t\t\t\t(!value.length && e.key === '+') ||\r\n\t\t\t\t\t/[0-9]/.test(String.fromCharCode(e.which)))\r\n\t\t\t);\r\n\t\t});\r\n\r\n\t\t$element.addEventListener('countrychange', function() {\r\n\t\t\tonChangeCountry();\r\n\t\t});\r\n\r\n\t\tconst onChangeCountry = () => {\r\n\t\t\tconst $selectedCountryInput = $(`#${config.selectedCountryInput}`);\r\n\t\t\tconst selectedCountry = countryPhoneInput.getSelectedCountryData();\r\n\r\n\t\t\t$selectedCountryInput.val(selectedCountry.iso2);\r\n\t\t\t$selectedCountryInput.trigger('change');\r\n\t\t};\r\n\r\n\t\t$(document).ready(function() {\r\n\t\t\tonChangeCountry();\r\n\t\t});\r\n\t};\r\n\r\n\tSapphireWidgets.CountryPhone = {\r\n\t\tcreate,\r\n\t};\r\n})(jQuery, window, SapphireWidgets);\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/country-phone/scripts.js?\n}");
+/* Component CountryPhone */
+(function($, window, SapphireWidgets) {
+	const create = config => {
+		const $element = document.querySelector(`#${config.widgetId}`);
+		const additionalValidations = config.additionalValidations;
+
+		const countryPhoneInput = window.intlTelInput($element, {
+			initialCountry: config.initialCountry,
+			preferredCountries: config.preferredCountries,
+			separateDialCode: config.separateDialCode,
+			nationalMode: config.nationalMode,
+			autoPlaceholder: config.autoPlaceholder ? 'polite' : false,
+			formatOnDisplay: false,
+			utilsScript: '/V3_Pat/js/utils.js',
+		});
+
+		const $input = $(`#${config.widgetId}`);
+
+		$input.on('keyup', function(e) {
+			if ($input.val() === '+' || $input.val() === '') {
+				countryPhoneInput.setCountry(config.initialCountry);
+			}
+		});
+
+		$input.on('keypress', function(e) {
+			const selectedCountry = countryPhoneInput.getSelectedCountryData();
+			const filter = additionalValidations.find(i => i.CountryPhoneValidations.CountryCode === selectedCountry.iso2);
+			const value = $input.val().trim();
+
+			let isValid = true;
+
+			if (filter) {
+				const withouCode = value.replace(`+${selectedCountry.dialCode}`, '');
+
+				isValid = withouCode.trim().length + 1 <= filter.CountryPhoneValidations.PhoneLength;
+			}
+
+			if (value === `+${selectedCountry.dialCode}`) {
+				$input.val(`+${selectedCountry.dialCode} `);
+			}
+
+			return (
+				isValid &&
+				(e.metaKey || // cmd/ctrl
+				e.which <= 0 || // arrow keys
+				e.which == 8 || // delete key
+					(!value.length && e.key === '+') ||
+					/[0-9]/.test(String.fromCharCode(e.which)))
+			);
+		});
+
+		$element.addEventListener('countrychange', function() {
+			onChangeCountry();
+		});
+
+		const onChangeCountry = () => {
+			const $selectedCountryInput = $(`#${config.selectedCountryInput}`);
+			const selectedCountry = countryPhoneInput.getSelectedCountryData();
+
+			$selectedCountryInput.val(selectedCountry.iso2);
+			$selectedCountryInput.trigger('change');
+		};
+
+		$(document).ready(function() {
+			onChangeCountry();
+		});
+	};
+
+	SapphireWidgets.CountryPhone = {
+		create,
+	};
+})(jQuery, window, SapphireWidgets);
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/data-tables/scripts.js":
-/*!********************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/data-tables/scripts.js ***!
-  \********************************************************************/
 /***/ (function() {
 
-eval("{(function() {\r\n\tclass DataTables {\r\n\t\tconstructor(config) {\r\n\t\t\tthis.config = config;\r\n\t\t\tthis.$widget = $(`#${config.widgetId}`);\r\n\t\t\tthis.$table = this.$widget.find('table');\r\n\t\t\tthis.$table.addClass('cell-border compact');\r\n\t\t\tthis.onInit();\r\n\t\t}\r\n\r\n\t\tonInit() {\r\n\t\t\tthis.options = {\r\n\t\t\t\t...this.config,\r\n\t\t\t\tfixedColumns: true,\r\n\t\t\t\tinfo: false,\r\n\t\t\t\tordering: false,\r\n\t\t\t\tpaging: false,\r\n\t\t\t\tscrollCollapse: true,\r\n\t\t\t\tscrollX: true,\r\n\t\t\t\tsearching: false,\r\n\t\t\t};\r\n\r\n\t\t\t$(() => {\r\n\t\t\t\tthis.$table.DataTable(this.options);\r\n\t\t\t});\r\n\t\t}\r\n\t}\r\n\r\n\tconst create = config => (window[config.widgetId] = new DataTables(config));\r\n\r\n\tSapphireWidgets.DataTables = {\r\n\t\tcreate,\r\n\t};\r\n})();\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/data-tables/scripts.js?\n}");
+(function() {
+	class DataTables {
+		constructor(config) {
+			this.config = config;
+			this.$widget = $(`#${config.widgetId}`);
+			this.$table = this.$widget.find('table');
+			this.$table.addClass('cell-border compact');
+			this.onInit();
+		}
+
+		onInit() {
+			this.options = {
+				...this.config,
+				fixedColumns: true,
+				info: false,
+				ordering: false,
+				paging: false,
+				scrollCollapse: true,
+				scrollX: true,
+				searching: false,
+			};
+
+			$(() => {
+				this.$table.DataTable(this.options);
+			});
+		}
+	}
+
+	const create = config => (window[config.widgetId] = new DataTables(config));
+
+	SapphireWidgets.DataTables = {
+		create,
+	};
+})();
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/datetime-range-picker/scripts.js":
-/*!******************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/datetime-range-picker/scripts.js ***!
-  \******************************************************************************/
 /***/ (function() {
 
-eval("{/* Component DateTimeRangePicker */\r\n(function ($, window, document, SapphireWidgets) {\r\n\tvar allDateTimeRangePickers = [];\r\n\r\n\tvar create = function (config) {\r\n\t\tfor (var i = 0; i < allDateTimeRangePickers.length; i++) {\r\n\t\t\tif (allDateTimeRangePickers[i].config.widgetId === config.widgetId) {\r\n\t\t\t\tallDateTimeRangePickers.splice(i, 1);\r\n\t\t\t}\r\n\t\t}\r\n\t\twindow[config.widgetId] = new DateTimeRangePicker(config);\r\n\t\tallDateTimeRangePickers.push(window[config.widgetId]);\r\n\t};\r\n\r\n\tvar DateTimeRangePicker = function (config) {\r\n\r\n\t\tthis.config = config;\r\n\t\tthis.currentLocale = config.currentLocale;\r\n\r\n\t\tthis.$widget = $('#' + config.widgetId);\r\n\t\tthis.$widget.addClass('DateTimeRangePicker');\r\n\t\tthis.$clear = this.$widget.find('.DateTimeRangePicker-clear');\r\n\t\tthis.$label = this.$widget.find('.DateTimeRangePicker-label');\r\n\r\n\t\tthis.isEmptyHour = false;\r\n\r\n\t\tif (this.config.attachToInput) {\r\n\t\t\tthis.$widget.addClass('attachedInput');\r\n\t\t\tthis.$model = this.$widget.find('.DateTimeRangePicker-placeholder input[type=\"text\"]');\r\n\t\t\tthis.$model.attr('tabIndex', -1);\r\n\t\t}\r\n\r\n\t\tthis.$input = $('#' + config.inputId);\r\n\r\n\t\tif (!this.config.allowsTyping) {\r\n\t\t\tthis.$input.prop('readonly', true);\r\n\t\t}\r\n\r\n\t\t// Just to force kuwait arabic version\r\n\t\tif (this.currentLocale === 'AR') {\r\n\t\t\tmoment.locale('ar-kw');\r\n\t\t}\r\n\t\telse {\r\n\t\t\tmoment.locale(config.currentLocale)\r\n\t\t}\r\n\r\n\t\tvar options = {};\r\n\t\toptions.startDate = config.startDate;\r\n\t\toptions.singleDatePicker = config.singleDatePicker;\r\n\t\toptions.autoApply = config.autoApply;\r\n\t\toptions.autoUpdateInput = config.autoUpdateInput;\r\n\t\toptions.timePicker = config.timePicker;\r\n\t\toptions.timePicker24Hour = config.timePicker24Hour;\r\n\t\toptions.timePickerIncrement = config.timePickerIncrement;\r\n\t\toptions.showDropdowns = config.hasDropdowns; // Month/Year Picker\r\n\t\toptions.drops = config.drops;\r\n\t\toptions.opens = config.isRTL && config.opens != 'center' ? 'left' : config.opens;\r\n\r\n\t\tvar stringConnection = '[, ' + config.dateTimeStringConnection + ']';\r\n\r\n\t\tif (config.timePicker) {\r\n\t\t\t//if (!this.config.attachToInput) //changed by Diogo Ribeiro so date picker has a placeholder even if its attached to input (otherwise it never showed)\r\n\t\t\tthis.$input.prop('placeholder', 'DD-MM-YYYY HH:MM');\r\n\r\n\t\t\tif (options.timePicker24Hour) {\r\n\t\t\t\tthis.config.formatInput = `${this.config.systemDateFormat} HH:mm`;\r\n\t\t\t\tthis.config.formatLabel = this.config.hasYearWhenText\r\n\t\t\t\t\t? 'D MMM YYYY' + stringConnection + ' HH:mm'\r\n\t\t\t\t\t: 'D MMM' + stringConnection + ' HH:mm';\r\n\t\t\t} else {\r\n\t\t\t\tthis.config.formatInput = `${this.config.systemDateFormat} hh:mm A`;\r\n\t\t\t\tthis.config.formatLabel = this.config.hasYearWhenText\r\n\t\t\t\t\t? 'D MMM YYYY' + stringConnection + ' hh:mm A'\r\n\t\t\t\t\t: 'D MMM' + stringConnection + ' hh:mm A';\r\n\t\t\t}\r\n\t\t} else {\r\n\t\t\tthis.$widget.addClass('onlyDate');\r\n\r\n\t\t\t//if (!this.config.attachToInput) \r\n\t\t\tthis.$input.prop('placeholder', 'DD-MM-YYYY');\r\n\r\n\t\t\tthis.config.formatInput = this.config.systemDateFormat;\r\n\t\t\tthis.config.formatLabel = this.config.hasYearWhenText ? 'D MMM YYYY' : 'D MMM';\r\n\t\t}\r\n\r\n\t\tif (!config.singleDatePicker) {\r\n\t\t\tthis.$widget.addClass('rangeDates');\r\n\t\t}\r\n\r\n\t\tthis.config.formatLabel = this.config.hasWeekDayNameWhenText\r\n\t\t\t? 'ddd[, ]' + this.config.formatLabel\r\n\t\t\t: this.config.formatLabel;\r\n\r\n\t\toptions.locale = {\r\n\t\t\tdirection: config.isRTL ? 'rtl' : 'ltr',\r\n\t\t\tformat: this.config.formatInput,\r\n\t\t\tcancelLabel: this.config.cancelLabel,\r\n\t\t\tapplyLabel: this.config.applyLabel,\r\n\t\t};\r\n\r\n\t\tif (config.hasTextTrigger) {\r\n\t\t\tthis.$widget.addClass('textTrigger');\r\n\t\t}\r\n\r\n\t\tconst nulldDates = ['01-01-1900 00:00:00', '1900-01-01 00:00:00'];\r\n\r\n\t\tif (config.endDate && !nulldDates.some(i => i === config.endDate)) {\r\n\t\t\toptions.endDate = config.endDate;\r\n\t\t}\r\n\r\n\t\tif (config.maxDate && !nulldDates.some(i => i === config.maxDate)) {\r\n\t\t\toptions.maxDate = config.maxDate;\r\n\t\t}\r\n\r\n\t\tif (config.minDate && !nulldDates.some(i => i === config.minDate)) {\r\n\t\t\toptions.minDate = config.minDate;\r\n\t\t}\r\n\r\n\t\tif (config.DisabledWeekDays) {\r\n\t\t\tvar disabledWeekDays = config.DisabledWeekDays.split(',');\r\n\t\t\toptions.isInvalidDate = function (date) {\r\n\t\t\t\treturn disabledWeekDays.includes(\r\n\t\t\t\t\tmoment(date)\r\n\t\t\t\t\t\t.day()\r\n\t\t\t\t\t\t.toString()\r\n\t\t\t\t);\r\n\t\t\t};\r\n\t\t}\r\n\r\n\t\tvar _this = this;\r\n\r\n\t\tthis.$input.daterangepicker(options, function (startDate, endDate, label) {\r\n\t\t\t// after a selection is made\r\n\t\t\tif (_this.config.attachToInput) {\r\n\t\t\t\tlet format = '';\r\n\r\n\t\t\t\tif (_this.config.timePicker) {\r\n\t\t\t\t\tformat = `${_this.config.systemDateFormat} HH:mm`;\r\n\t\t\t\t}\r\n\r\n\t\t\t\tif (_this.config.singleDatePicker) {\r\n\t\t\t\t\tif (_this.config.timePicker) _this.$model.val(startDate.format(format));\r\n\t\t\t\t\telse _this.$model.val(startDate.format(_this.config.systemDateFormat));\r\n\t\t\t\t} else {\r\n\t\t\t\t\tlet start, end;\r\n\r\n\t\t\t\t\tif (_this.config.timePicker) {\r\n\t\t\t\t\t\tstart = startDate.format(format);\r\n\t\t\t\t\t\tend = endDate.format(format);\r\n\t\t\t\t\t} else {\r\n\t\t\t\t\t\tstart = startDate.format(_this.config.systemDateFormat);\r\n\t\t\t\t\t\tend = endDate.format(_this.config.systemDateFormat);\r\n\t\t\t\t\t}\r\n\r\n\t\t\t\t\t_this.$model.val(`${start}  ·  ${end}`);\r\n\t\t\t\t}\r\n\r\n\t\t\t\t_this.$model.trigger('change');\r\n\t\t\t}\r\n\r\n\t\t\tconst initialValue = _this.$input.val();\r\n\t\t\tconst allowsMMYY = _this.config.allowsTyping && _this.config.allowsTypeMMYY && _this.config.singleDatePicker;\r\n\r\n\t\t\tif (allowsMMYY && initialValue.length === 4) {\r\n\t\t\t\t_this.picker.setStartDate(moment(`01${initialValue}`, 'DDMMYY'));\r\n\r\n\t\t\t\tif (_this.config.attachToInput) {\r\n\t\t\t\t\tlet format = '';\r\n\r\n\t\t\t\t\tif (_this.config.timePicker) format = `${_this.config.systemDateFormat} HH:mm`;\r\n\t\t\t\t\telse format = _this.config.systemDateFormat;\r\n\r\n\t\t\t\t\t_this.$model.val(_this.picker.startDate.format(format));\r\n\t\t\t\t\t_this.$model.trigger('change');\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t});\r\n\r\n\t\t// now we have a proper instance\r\n\t\tthis.picker = this.$input.data('daterangepicker');\r\n\r\n\t\tthis.$calendar = $(this.picker.container);\r\n\r\n\t\tif (!!this.config.cssClass) {\r\n\t\t\tthis.$calendar.addClass(this.config.cssClass);\r\n\t\t}\r\n\r\n\t\tthis.$timeHolder = this.$calendar.find('.calendar-time');\r\n\t\tthis.$buttonsHolder = this.$calendar.find('.drp-buttons');\r\n\r\n\t\tif (this.config.autoApply) {\r\n\t\t\tthis.$buttonsHolder.hide();\r\n\t\t}\r\n\r\n\t\tif (config.isEmptyStartDate) {\r\n\t\t\tthis.clear(false);\r\n\t\t} else if (config.isEmptyStartHour) {\r\n\t\t\tthis.isEmptyHour = true;\r\n\t\t\tthis.updateLabeling();\r\n\t\t} else {\r\n\t\t\tthis.updateLabeling();\r\n\t\t}\r\n\r\n\t\tif (config.enabled) {\r\n\t\t\tthis.nativeEvents();\r\n\t\t\tthis.customEvents();\r\n\t\t} else {\r\n\t\t\tthis.$clear.hide();\r\n\t\t\tthis.$input.off('click focus keydown keyup');\r\n\t\t}\r\n\r\n\t\tif (this.config.attachToInput) {\r\n\t\t\tthis.handleCustomValidation();\r\n\t\t}\r\n\t};\r\n\r\n\tDateTimeRangePicker.prototype.handleCustomValidation = function () {\r\n\t\t// TO DO\r\n\t};\r\n\r\n\tDateTimeRangePicker.prototype.nativeEvents = function () {\r\n\t\tconst _this = this;\r\n\r\n\t\tthis.$input.on('showCalendar.daterangepicker', function (event, picker) {\r\n\t\t\tif (_this.config.hasGoToday) {\r\n\t\t\t\t_this.$calendar\r\n\t\t\t\t\t.find('.calendar-table thead tr')\r\n\t\t\t\t\t.eq(0)\r\n\t\t\t\t\t.after(\r\n\t\t\t\t\t\t'<tr><td colspan=\"7\" class=\"DateTimeRangePicker-calendar-gotoday\">' +\r\n\t\t\t\t\t\t_this.config.goTodayLabel +\r\n\t\t\t\t\t\t'</td></tr>'\r\n\t\t\t\t\t);\r\n\t\t\t\tif (_this.config.drops === 'up') {\r\n\t\t\t\t\t_this.$calendar.css('top', _this.$calendar.offset().top - 24);\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t\t_this.handleViewportPosition();\r\n\r\n\t\t\tif (!_this.config.singleDatePicker) {\r\n\t\t\t\t$('.drp-selected').each(function () {\r\n\t\t\t\t\tlet text = $(this).text();\r\n\t\t\t\t\ttext = text.replace(/-/gi, '·');\r\n\r\n\t\t\t\t\t$(this).text(text);\r\n\t\t\t\t});\r\n\t\t\t}\r\n\t\t});\r\n\r\n\t\tthis.$input.on('show.daterangepicker', function (event, picker) {\r\n\t\t\tif (_this.config.timePicker && _this.config.hasClearHour) {\r\n\t\t\t\t_this.$calendar.find('.calendar-time').append('<span class=\"DateTimeRangePicker-calendar-clear\"></span>');\r\n\t\t\t\tif (_this.isEmptyHour) {\r\n\t\t\t\t\t_this.$timeHolder.css('opacity', 0.5);\r\n\t\t\t\t\t_this.$calendar.find('.DateTimeRangePicker-calendar-clear').addClass('disabled');\r\n\t\t\t\t} else {\r\n\t\t\t\t\t_this.$timeHolder.css('opacity', 1);\r\n\t\t\t\t\t_this.$calendar.find('.DateTimeRangePicker-calendar-clear').removeClass('disabled');\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t\t_this.handleViewportPosition();\r\n\t\t\tSapphireWidgets.DateTimeRangePicker.openedWidgetId = _this.config.widgetId;\r\n\r\n\t\t\tif (_this.config.cssClass === 'CalendarPopup' && window.frameElement) {\r\n\t\t\t\tconst oldBodyHeight = $('body')[0].scrollHeight + 8;\r\n\t\t\t\tconst calendarSafeHeight = _this.$calendar.outerHeight() + 32;\r\n\r\n\t\t\t\tconst newHeight = oldBodyHeight > calendarSafeHeight ? oldBodyHeight : calendarSafeHeight;\r\n\r\n\t\t\t\t$('<div class=\"CalendarPopup__Overlay\"></div>').insertAfter(_this.$calendar);\r\n\r\n\t\t\t\t$(window.frameElement).animate({ minHeight: newHeight });\r\n\t\t\t\t$('body').animate({ minHeight: newHeight });\r\n\t\t\t}\r\n\t\t});\r\n\r\n\t\tthis.$input.on('hide.daterangepicker', function (event, picker) {\r\n\t\t\t// ONYX20792 Added START\r\n\t\t\tif (_this.config.autoApply && _this.config.attachToInput) {\r\n\t\t\t\t_this.updateLabeling();\r\n\t\t\t\t_this.$model.trigger('change');\r\n\t\t\t}\r\n\t\t\t// ONYX20792 END\r\n\r\n\t\t\t_this.$calendar.find('.DateTimeRangePicker-calendar-clear').remove();\r\n\t\t\t_this.updateParentIframe();\r\n\r\n\t\t\tif (_this.config.cssClass === 'CalendarPopup' && window.frameElement) {\r\n\t\t\t\t$(window.frameElement).css({ minHeight: 'unset' });\r\n\t\t\t\t$('body').css({ minHeight: 'unset' });\r\n\r\n\t\t\t\t$('.CalendarPopup__Overlay').remove();\r\n\t\t\t}\r\n\t\t});\r\n\r\n\t\tthis.$input.on('cancel.daterangepicker', function (event, picker) { });\r\n\r\n\t\tthis.$input.on('outsideClick.daterangepicker', function (event, picker) { });\r\n\r\n\t\tthis.$input.on('timechanged.daterangepicker', function (event, picker) {\r\n\t\t\t_this.isEmptyHour = false;\r\n\t\t\t_this.$timeHolder.css('opacity', 1);\r\n\t\t\tif (_this.config.hasClearHour) {\r\n\t\t\t\t_this.$calendar.find('.calendar-time').append('<span class=\"DateTimeRangePicker-calendar-clear\"></span>');\r\n\t\t\t}\r\n\t\t\tif (_this.config.autoApply) {\r\n\t\t\t\t_this.$clear.removeClass('disabled');\r\n\t\t\t\t_this.updateLabeling();\r\n\t\t\t\t_this.sendNotification();\r\n\t\t\t}\r\n\t\t});\r\n\r\n\t\tthis.$input.on('clickDate.daterangepicker', function (event, picker) {\r\n\t\t\tif (_this.config.autoApply) {\r\n\t\t\t\t_this.$clear.removeClass('disabled');\r\n\t\t\t\t_this.updateLabeling();\r\n\t\t\t\t_this.sendNotification();\r\n\t\t\t}\r\n\t\t});\r\n\r\n\t\tthis.$input.on('apply.daterangepicker', function (event, picker) {\r\n\t\t\t_this.updateLabeling(); // ONYX20792 This line was moved here. Previously it was right before _this.sendNotification().\r\n\t\t\tif (_this.config.attachToInput) {\r\n\t\t\t\t_this.$model.trigger('change'); //same fix as below for when the date is the same/today, when input is attached it seems we also need this extra step\r\n\t\t\t}\r\n\t\t\t_this.$input.trigger('change'); // Fix to call the change when the date is the same/today\r\n\t\t\t_this.$clear.removeClass('disabled');\r\n\t\t\t_this.sendNotification();\r\n\t\t});\r\n\t};\r\n\r\n\tDateTimeRangePicker.prototype.customEvents = function () {\r\n\t\tvar _this = this;\r\n\t\tthis.$label.off('click').on('click', function (event) {\r\n\t\t\t_this.picker.toggle();\r\n\t\t});\r\n\t\tthis.$clear.off('click').on('click', function (event) {\r\n\t\t\t_this.clear();\r\n\t\t\t_this.picker.hide();\r\n\t\t});\r\n\t\tthis.$calendar.on('click', '.DateTimeRangePicker-calendar-clear', function () {\r\n\t\t\tif (_this.config.timePicker24Hour) {\r\n\t\t\t\t_this.$calendar\r\n\t\t\t\t\t.find('.hourselect')\r\n\t\t\t\t\t.val('0')\r\n\t\t\t\t\t.trigger('change');\r\n\t\t\t} else {\r\n\t\t\t\t_this.$calendar\r\n\t\t\t\t\t.find('.hourselect')\r\n\t\t\t\t\t.val('12')\r\n\t\t\t\t\t.trigger('change');\r\n\t\t\t}\r\n\t\t\t_this.$calendar\r\n\t\t\t\t.find('.minuteselect')\r\n\t\t\t\t.val('0')\r\n\t\t\t\t.trigger('change');\r\n\t\t\t_this.$calendar\r\n\t\t\t\t.find('.ampmselect')\r\n\t\t\t\t.val('AM')\r\n\t\t\t\t.trigger('change');\r\n\t\t\t_this.isEmptyHour = true;\r\n\t\t\t_this.$timeHolder.css('opacity', 0.5);\r\n\t\t\t_this.$calendar.find('.DateTimeRangePicker-calendar-clear').addClass('disabled');\r\n\t\t});\r\n\t\tthis.$calendar.on('click', '.DateTimeRangePicker-calendar-gotoday', function () {\r\n\t\t\t_this.picker.setStartDate(moment());\r\n\t\t\t_this.picker.setEndDate(moment());\r\n\r\n\t\t\t_this.picker.hide();\r\n\r\n\t\t\tif (!_this.config.autoUpdateInput || _this.config.hasTextTrigger || _this.config.attachToInput) {\r\n\t\t\t\t_this.updateLabeling();\r\n\t\t\t\t_this.$model && _this.$model.trigger('change');\r\n\t\t\t}\r\n\r\n\t\t\t_this.sendNotification();\r\n\t\t});\r\n\r\n\t\tif (this.config.attachToInput) {\r\n\t\t\t// Nothing\r\n\t\t} else {\r\n\t\t\tthis.$input.on('click', function () {\r\n\t\t\t\twindow.setTimeout(function () {\r\n\t\t\t\t\t_this.updateParentIframe();\r\n\t\t\t\t}, 50);\r\n\t\t\t});\r\n\t\t}\r\n\t};\r\n\r\n\tDateTimeRangePicker.prototype.updateLabeling = function () {\r\n\t\tvar labelMask = this.config.formatLabel;\r\n\t\tvar inputMask = this.config.formatInput;\r\n\r\n\t\tif (moment(this.picker.startDate).isSame(moment(), 'day')) {\r\n\t\t\tif (labelMask.includes('D MMM YYYY')) {\r\n\t\t\t\tlabelMask = labelMask.replace('D MMM YYYY', '[Today,] D MMM YYYY');\r\n\t\t\t} else if (labelMask.includes('D MMM')) {\r\n\t\t\t\tlabelMask = labelMask.replace('D MMM', '[Today]');\r\n\t\t\t}\r\n\t\t}\r\n\t\tif (this.isEmptyHour) {\r\n\t\t\tlabelMask = labelMask.replace('hh:mm A', '[--:--]').replace('HH:mm', '[--:--]');\r\n\t\t\tinputMask = inputMask.replace('hh:mm A', '[--:--]').replace('HH:mm', '[--:--]');\r\n\r\n\t\t\tif (this.config.hasTextTrigger) {\r\n\t\t\t\tthis.$label.html(this.config.prefixTextTrigger + this.picker.startDate.format(labelMask));\r\n\r\n\t\t\t\tif (this.config.timePicker) {\r\n\t\t\t\t\tthis.$input.val(this.picker.startDate.format(`${this.config.systemDateFormat} [00:00:00]`));\r\n\t\t\t\t} else {\r\n\t\t\t\t\tthis.$input.val(this.picker.startDate.format(this.config.systemDateFormat));\r\n\t\t\t\t}\r\n\t\t\t} else {\r\n\t\t\t\tthis.$input.val(this.picker.startDate.format(`${this.config.systemDateFormat} [00:00:00]`));\r\n\t\t\t}\r\n\t\t} else {\r\n\t\t\tif (this.config.hasTextTrigger) {\r\n\t\t\t\tthis.$label.html(this.config.prefixTextTrigger + this.picker.startDate.format(labelMask));\r\n\t\t\t\tthis.$input.val(this.picker.startDate.format(inputMask));\r\n\t\t\t} else {\r\n\t\t\t\tif (this.config.attachToInput) {\r\n\t\t\t\t\tif (this.config.singleDatePicker) {\r\n\t\t\t\t\t\tthis.$input.val(this.picker.startDate.format(inputMask));\r\n\t\t\t\t\t\tif (this.config.timePicker) {\r\n\t\t\t\t\t\t\tthis.$model && this.$model.val(this.picker.startDate.format(`${this.config.systemDateFormat} HH:mm:ss`));\r\n\t\t\t\t\t\t} else {\r\n\t\t\t\t\t\t\tthis.$model && this.$model.val(this.picker.startDate.format(this.config.systemDateFormat));\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t} else {\r\n\t\t\t\t\t\tconst startDate = this.picker.startDate.format(inputMask);\r\n\t\t\t\t\t\tconst endDate = this.picker.endDate.format(inputMask);\r\n\r\n\t\t\t\t\t\tthis.$input.val(`${startDate}  ·  ${endDate}`);\r\n\t\t\t\t\t}\r\n\t\t\t\t} else {\r\n\t\t\t\t\tif (this.config.singleDatePicker) {\r\n\t\t\t\t\t\tthis.$input.val(this.picker.startDate.format(this.config.formatInput));\r\n\t\t\t\t\t} else {\r\n\t\t\t\t\t\tlet startDate = this.picker.startDate.format(this.config.formatInput);\r\n\t\t\t\t\t\tlet endDate = this.picker.endDate.format(this.config.formatInput);\r\n\r\n\t\t\t\t\t\tthis.$input.val(`${startDate}  ·  ${endDate}`);\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}\r\n\t};\r\n\r\n\tDateTimeRangePicker.prototype.handleViewportPosition = function () {\r\n\t\tif (\r\n\t\t\twindow.frameElement\r\n\t\t\t&& (\r\n\t\t\t\t$(window.frameElement.parentElement).hasClass('tooltipster-content')\r\n\t\t\t\t|| $(window.frameElement.parentElement).hasClass('os-internal-ui-dialog-content')\r\n\t\t\t)\r\n\t\t) {\r\n\t\t\treturn;\r\n\t\t}\r\n\r\n\t\tif (!this.isInViewport()) {\r\n\r\n\t\t\tvar coords = this.$calendar[0].getBoundingClientRect();\r\n\t\t\tif (this.$calendar.hasClass('drop-up') && this.$calendar[0].getBoundingClientRect().top < 0) {\r\n\t\t\t\tvar point = window.scrollY + coords.bottom + this.$input.height() + 7;\r\n\t\t\t\tthis.$calendar\r\n\t\t\t\t\t.removeClass('drop-up')\r\n\t\t\t\t\t.addClass('drop-down')\r\n\t\t\t\t\t.css('top', point);\r\n\t\t\t}\r\n\t\t\telse if (\r\n\t\t\t\t!this.$calendar.hasClass('drop-up')\r\n\t\t\t\t&& this.$calendar[0].getBoundingClientRect().bottom > (window.innerHeight || document.documentElement.clientHeight)\r\n\t\t\t) {\r\n\t\t\t\tif (!window.frameElement || (coords.height + this.$input.height() + 7) < document.body.offsetHeight) {\r\n\t\t\t\t\tvar point = window.scrollY + coords.top - coords.height - this.$input.height() - 7;\r\n\t\t\t\t\tthis.$calendar.addClass('drop-up').css('top', point);\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}\r\n\t};\r\n\r\n\tDateTimeRangePicker.prototype.isInViewport = function () {\r\n\t\tvar bounding = this.$calendar[0].getBoundingClientRect();\r\n\t\treturn (\r\n\t\t\tbounding.top >= 0 && bounding.bottom <= (window.innerHeight + 5 || document.documentElement.clientHeight + 5)\r\n\t\t);\r\n\t};\r\n\r\n\tDateTimeRangePicker.prototype.clear = function (sendNotification) {\r\n\t\tthis.picker.setStartDate(moment());\r\n\t\tthis.picker.setEndDate(moment());\r\n\t\tthis.isEmptyHour = false;\r\n\t\tthis.$clear.addClass('disabled');\r\n\t\tif (this.config.hasTextTrigger) {\r\n\t\t\tthis.$label.html('-- -- --');\r\n\t\t} else {\r\n\t\t\tthis.$input.val('');\r\n\t\t}\r\n\t\tif (sendNotification || sendNotification == undefined) {\r\n\t\t\tthis.sendNotification(false);\r\n\t\t}\r\n\t};\r\n\r\n\tDateTimeRangePicker.prototype.show = function () {\r\n\t\tthis.picker.show();\r\n\t};\r\n\r\n\tDateTimeRangePicker.prototype.hide = function () {\r\n\t\tthis.picker.hide();\r\n\t};\r\n\r\n\tDateTimeRangePicker.prototype.cancel = function () {\r\n\t\tthis.picker.clickCancel();\r\n\t};\r\n\r\n\tDateTimeRangePicker.prototype.sendNotification = function (sendDate) {\r\n\t\tif (this.$widget.hasClass('attachedInput')) {\r\n\t\t\tthis.$input.trigger('change');\r\n\r\n\t\t\treturn false;\r\n\t\t}\r\n\r\n\t\tif (sendDate || sendDate == undefined) {\r\n\t\t\tif (this.isEmptyHour) {\r\n\t\t\t\tOsNotifyWidget(\r\n\t\t\t\t\tthis.config.dateTimeRangePickerFakeNotifyId,\r\n\t\t\t\t\tthis.picker.startDate.format(`${this.config.systemDateFormat} [00:00:00]`) + '|' + this.isEmptyHour\r\n\t\t\t\t);\r\n\t\t\t} else {\r\n\t\t\t\tif (this.config.timePicker) {\r\n\t\t\t\t\tOsNotifyWidget(\r\n\t\t\t\t\t\tthis.config.dateTimeRangePickerFakeNotifyId,\r\n\t\t\t\t\t\tthis.picker.startDate.format(`${this.config.systemDateFormat} HH:mm:ss`) + '|' + this.isEmptyHour\r\n\t\t\t\t\t);\r\n\t\t\t\t} else {\r\n\t\t\t\t\tOsNotifyWidget(\r\n\t\t\t\t\t\tthis.config.dateTimeRangePickerFakeNotifyId,\r\n\t\t\t\t\t\tthis.picker.startDate.format(this.config.systemDateFormat) + '|' + this.isEmptyHour\r\n\t\t\t\t\t);\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t} else {\r\n\t\t\tOsNotifyWidget(this.config.dateTimeRangePickerFakeNotifyId, 'null|true');\r\n\t\t}\r\n\t};\r\n\r\n\tDateTimeRangePicker.prototype.updateParentIframe = function () {\r\n\t\tif (typeof SapphireWidgets.ResizeParentIframe === 'object') {\r\n\t\t\tSapphireWidgets.ResizeParentIframe.resize();\r\n\t\t}\r\n\t\tif ($('.Page.LayoutPopup').length === 1) {\r\n\t\t\tSapphireWidgets.LayoutPopup.redrawDialogWindow();\r\n\t\t}\r\n\t};\r\n\r\n\tSapphireWidgets.DateTimeRangePicker = {\r\n\t\tcreate: create,\r\n\t\tall: function () {\r\n\t\t\treturn allDateTimeRangePickers;\r\n\t\t},\r\n\t};\r\n})(jQuery, window, document, SapphireWidgets);\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/datetime-range-picker/scripts.js?\n}");
+/* Component DateTimeRangePicker */
+(function ($, window, document, SapphireWidgets) {
+	var allDateTimeRangePickers = [];
+
+	var create = function (config) {
+		for (var i = 0; i < allDateTimeRangePickers.length; i++) {
+			if (allDateTimeRangePickers[i].config.widgetId === config.widgetId) {
+				allDateTimeRangePickers.splice(i, 1);
+			}
+		}
+		window[config.widgetId] = new DateTimeRangePicker(config);
+		allDateTimeRangePickers.push(window[config.widgetId]);
+	};
+
+	var DateTimeRangePicker = function (config) {
+
+		this.config = config;
+		this.currentLocale = config.currentLocale;
+
+		this.$widget = $('#' + config.widgetId);
+		this.$widget.addClass('DateTimeRangePicker');
+		this.$clear = this.$widget.find('.DateTimeRangePicker-clear');
+		this.$label = this.$widget.find('.DateTimeRangePicker-label');
+
+		this.isEmptyHour = false;
+
+		if (this.config.attachToInput) {
+			this.$widget.addClass('attachedInput');
+			this.$model = this.$widget.find('.DateTimeRangePicker-placeholder input[type="text"]');
+			this.$model.attr('tabIndex', -1);
+		}
+
+		this.$input = $('#' + config.inputId);
+
+		if (!this.config.allowsTyping) {
+			this.$input.prop('readonly', true);
+		}
+
+		// Just to force kuwait arabic version
+		if (this.currentLocale === 'AR') {
+			moment.locale('ar-kw');
+		}
+		else {
+			moment.locale(config.currentLocale)
+		}
+
+		var options = {};
+		options.startDate = config.startDate;
+		options.singleDatePicker = config.singleDatePicker;
+		options.autoApply = config.autoApply;
+		options.autoUpdateInput = config.autoUpdateInput;
+		options.timePicker = config.timePicker;
+		options.timePicker24Hour = config.timePicker24Hour;
+		options.timePickerIncrement = config.timePickerIncrement;
+		options.showDropdowns = config.hasDropdowns; // Month/Year Picker
+		options.drops = config.drops;
+		options.opens = config.isRTL && config.opens != 'center' ? 'left' : config.opens;
+
+		var stringConnection = '[, ' + config.dateTimeStringConnection + ']';
+
+		if (config.timePicker) {
+			//if (!this.config.attachToInput) //changed by Diogo Ribeiro so date picker has a placeholder even if its attached to input (otherwise it never showed)
+			this.$input.prop('placeholder', 'DD-MM-YYYY HH:MM');
+
+			if (options.timePicker24Hour) {
+				this.config.formatInput = `${this.config.systemDateFormat} HH:mm`;
+				this.config.formatLabel = this.config.hasYearWhenText
+					? 'D MMM YYYY' + stringConnection + ' HH:mm'
+					: 'D MMM' + stringConnection + ' HH:mm';
+			} else {
+				this.config.formatInput = `${this.config.systemDateFormat} hh:mm A`;
+				this.config.formatLabel = this.config.hasYearWhenText
+					? 'D MMM YYYY' + stringConnection + ' hh:mm A'
+					: 'D MMM' + stringConnection + ' hh:mm A';
+			}
+		} else {
+			this.$widget.addClass('onlyDate');
+
+			//if (!this.config.attachToInput) 
+			this.$input.prop('placeholder', 'DD-MM-YYYY');
+
+			this.config.formatInput = this.config.systemDateFormat;
+			this.config.formatLabel = this.config.hasYearWhenText ? 'D MMM YYYY' : 'D MMM';
+		}
+
+		if (!config.singleDatePicker) {
+			this.$widget.addClass('rangeDates');
+		}
+
+		this.config.formatLabel = this.config.hasWeekDayNameWhenText
+			? 'ddd[, ]' + this.config.formatLabel
+			: this.config.formatLabel;
+
+		options.locale = {
+			direction: config.isRTL ? 'rtl' : 'ltr',
+			format: this.config.formatInput,
+			cancelLabel: this.config.cancelLabel,
+			applyLabel: this.config.applyLabel,
+		};
+
+		if (config.hasTextTrigger) {
+			this.$widget.addClass('textTrigger');
+		}
+
+		const nulldDates = ['01-01-1900 00:00:00', '1900-01-01 00:00:00'];
+
+		if (config.endDate && !nulldDates.some(i => i === config.endDate)) {
+			options.endDate = config.endDate;
+		}
+
+		if (config.maxDate && !nulldDates.some(i => i === config.maxDate)) {
+			options.maxDate = config.maxDate;
+		}
+
+		if (config.minDate && !nulldDates.some(i => i === config.minDate)) {
+			options.minDate = config.minDate;
+		}
+
+		if (config.DisabledWeekDays) {
+			var disabledWeekDays = config.DisabledWeekDays.split(',');
+			options.isInvalidDate = function (date) {
+				return disabledWeekDays.includes(
+					moment(date)
+						.day()
+						.toString()
+				);
+			};
+		}
+
+		var _this = this;
+
+		this.$input.daterangepicker(options, function (startDate, endDate, label) {
+			// after a selection is made
+			if (_this.config.attachToInput) {
+				let format = '';
+
+				if (_this.config.timePicker) {
+					format = `${_this.config.systemDateFormat} HH:mm`;
+				}
+
+				if (_this.config.singleDatePicker) {
+					if (_this.config.timePicker) _this.$model.val(startDate.format(format));
+					else _this.$model.val(startDate.format(_this.config.systemDateFormat));
+				} else {
+					let start, end;
+
+					if (_this.config.timePicker) {
+						start = startDate.format(format);
+						end = endDate.format(format);
+					} else {
+						start = startDate.format(_this.config.systemDateFormat);
+						end = endDate.format(_this.config.systemDateFormat);
+					}
+
+					_this.$model.val(`${start}  ·  ${end}`);
+				}
+
+				_this.$model.trigger('change');
+			}
+
+			const initialValue = _this.$input.val();
+			const allowsMMYY = _this.config.allowsTyping && _this.config.allowsTypeMMYY && _this.config.singleDatePicker;
+
+			if (allowsMMYY && initialValue.length === 4) {
+				_this.picker.setStartDate(moment(`01${initialValue}`, 'DDMMYY'));
+
+				if (_this.config.attachToInput) {
+					let format = '';
+
+					if (_this.config.timePicker) format = `${_this.config.systemDateFormat} HH:mm`;
+					else format = _this.config.systemDateFormat;
+
+					_this.$model.val(_this.picker.startDate.format(format));
+					_this.$model.trigger('change');
+				}
+			}
+		});
+
+		// now we have a proper instance
+		this.picker = this.$input.data('daterangepicker');
+
+		this.$calendar = $(this.picker.container);
+
+		if (!!this.config.cssClass) {
+			this.$calendar.addClass(this.config.cssClass);
+		}
+
+		this.$timeHolder = this.$calendar.find('.calendar-time');
+		this.$buttonsHolder = this.$calendar.find('.drp-buttons');
+
+		if (this.config.autoApply) {
+			this.$buttonsHolder.hide();
+		}
+
+		if (config.isEmptyStartDate) {
+			this.clear(false);
+		} else if (config.isEmptyStartHour) {
+			this.isEmptyHour = true;
+			this.updateLabeling();
+		} else {
+			this.updateLabeling();
+		}
+
+		if (config.enabled) {
+			this.nativeEvents();
+			this.customEvents();
+		} else {
+			this.$clear.hide();
+			this.$input.off('click focus keydown keyup');
+		}
+
+		if (this.config.attachToInput) {
+			this.handleCustomValidation();
+		}
+	};
+
+	DateTimeRangePicker.prototype.handleCustomValidation = function () {
+		// TO DO
+	};
+
+	DateTimeRangePicker.prototype.nativeEvents = function () {
+		const _this = this;
+
+		this.$input.on('showCalendar.daterangepicker', function (event, picker) {
+			if (_this.config.hasGoToday) {
+				_this.$calendar
+					.find('.calendar-table thead tr')
+					.eq(0)
+					.after(
+						'<tr><td colspan="7" class="DateTimeRangePicker-calendar-gotoday">' +
+						_this.config.goTodayLabel +
+						'</td></tr>'
+					);
+				if (_this.config.drops === 'up') {
+					_this.$calendar.css('top', _this.$calendar.offset().top - 24);
+				}
+			}
+			_this.handleViewportPosition();
+
+			if (!_this.config.singleDatePicker) {
+				$('.drp-selected').each(function () {
+					let text = $(this).text();
+					text = text.replace(/-/gi, '·');
+
+					$(this).text(text);
+				});
+			}
+		});
+
+		this.$input.on('show.daterangepicker', function (event, picker) {
+			if (_this.config.timePicker && _this.config.hasClearHour) {
+				_this.$calendar.find('.calendar-time').append('<span class="DateTimeRangePicker-calendar-clear"></span>');
+				if (_this.isEmptyHour) {
+					_this.$timeHolder.css('opacity', 0.5);
+					_this.$calendar.find('.DateTimeRangePicker-calendar-clear').addClass('disabled');
+				} else {
+					_this.$timeHolder.css('opacity', 1);
+					_this.$calendar.find('.DateTimeRangePicker-calendar-clear').removeClass('disabled');
+				}
+			}
+			_this.handleViewportPosition();
+			SapphireWidgets.DateTimeRangePicker.openedWidgetId = _this.config.widgetId;
+
+			if (_this.config.cssClass === 'CalendarPopup' && window.frameElement) {
+				const oldBodyHeight = $('body')[0].scrollHeight + 8;
+				const calendarSafeHeight = _this.$calendar.outerHeight() + 32;
+
+				const newHeight = oldBodyHeight > calendarSafeHeight ? oldBodyHeight : calendarSafeHeight;
+
+				$('<div class="CalendarPopup__Overlay"></div>').insertAfter(_this.$calendar);
+
+				$(window.frameElement).animate({ minHeight: newHeight });
+				$('body').animate({ minHeight: newHeight });
+			}
+		});
+
+		this.$input.on('hide.daterangepicker', function (event, picker) {
+			// ONYX20792 Added START
+			if (_this.config.autoApply && _this.config.attachToInput) {
+				_this.updateLabeling();
+				_this.$model.trigger('change');
+			}
+			// ONYX20792 END
+
+			_this.$calendar.find('.DateTimeRangePicker-calendar-clear').remove();
+			_this.updateParentIframe();
+
+			if (_this.config.cssClass === 'CalendarPopup' && window.frameElement) {
+				$(window.frameElement).css({ minHeight: 'unset' });
+				$('body').css({ minHeight: 'unset' });
+
+				$('.CalendarPopup__Overlay').remove();
+			}
+		});
+
+		this.$input.on('cancel.daterangepicker', function (event, picker) { });
+
+		this.$input.on('outsideClick.daterangepicker', function (event, picker) { });
+
+		this.$input.on('timechanged.daterangepicker', function (event, picker) {
+			_this.isEmptyHour = false;
+			_this.$timeHolder.css('opacity', 1);
+			if (_this.config.hasClearHour) {
+				_this.$calendar.find('.calendar-time').append('<span class="DateTimeRangePicker-calendar-clear"></span>');
+			}
+			if (_this.config.autoApply) {
+				_this.$clear.removeClass('disabled');
+				_this.updateLabeling();
+				_this.sendNotification();
+			}
+		});
+
+		this.$input.on('clickDate.daterangepicker', function (event, picker) {
+			if (_this.config.autoApply) {
+				_this.$clear.removeClass('disabled');
+				_this.updateLabeling();
+				_this.sendNotification();
+			}
+		});
+
+		this.$input.on('apply.daterangepicker', function (event, picker) {
+			_this.updateLabeling(); // ONYX20792 This line was moved here. Previously it was right before _this.sendNotification().
+			if (_this.config.attachToInput) {
+				_this.$model.trigger('change'); //same fix as below for when the date is the same/today, when input is attached it seems we also need this extra step
+			}
+			_this.$input.trigger('change'); // Fix to call the change when the date is the same/today
+			_this.$clear.removeClass('disabled');
+			_this.sendNotification();
+		});
+	};
+
+	DateTimeRangePicker.prototype.customEvents = function () {
+		var _this = this;
+		this.$label.off('click').on('click', function (event) {
+			_this.picker.toggle();
+		});
+		this.$clear.off('click').on('click', function (event) {
+			_this.clear();
+			_this.picker.hide();
+		});
+		this.$calendar.on('click', '.DateTimeRangePicker-calendar-clear', function () {
+			if (_this.config.timePicker24Hour) {
+				_this.$calendar
+					.find('.hourselect')
+					.val('0')
+					.trigger('change');
+			} else {
+				_this.$calendar
+					.find('.hourselect')
+					.val('12')
+					.trigger('change');
+			}
+			_this.$calendar
+				.find('.minuteselect')
+				.val('0')
+				.trigger('change');
+			_this.$calendar
+				.find('.ampmselect')
+				.val('AM')
+				.trigger('change');
+			_this.isEmptyHour = true;
+			_this.$timeHolder.css('opacity', 0.5);
+			_this.$calendar.find('.DateTimeRangePicker-calendar-clear').addClass('disabled');
+		});
+		this.$calendar.on('click', '.DateTimeRangePicker-calendar-gotoday', function () {
+			_this.picker.setStartDate(moment());
+			_this.picker.setEndDate(moment());
+
+			_this.picker.hide();
+
+			if (!_this.config.autoUpdateInput || _this.config.hasTextTrigger || _this.config.attachToInput) {
+				_this.updateLabeling();
+				_this.$model && _this.$model.trigger('change');
+			}
+
+			_this.sendNotification();
+		});
+
+		if (this.config.attachToInput) {
+			// Nothing
+		} else {
+			this.$input.on('click', function () {
+				window.setTimeout(function () {
+					_this.updateParentIframe();
+				}, 50);
+			});
+		}
+	};
+
+	DateTimeRangePicker.prototype.updateLabeling = function () {
+		var labelMask = this.config.formatLabel;
+		var inputMask = this.config.formatInput;
+
+		if (moment(this.picker.startDate).isSame(moment(), 'day')) {
+			if (labelMask.includes('D MMM YYYY')) {
+				labelMask = labelMask.replace('D MMM YYYY', '[Today,] D MMM YYYY');
+			} else if (labelMask.includes('D MMM')) {
+				labelMask = labelMask.replace('D MMM', '[Today]');
+			}
+		}
+		if (this.isEmptyHour) {
+			labelMask = labelMask.replace('hh:mm A', '[--:--]').replace('HH:mm', '[--:--]');
+			inputMask = inputMask.replace('hh:mm A', '[--:--]').replace('HH:mm', '[--:--]');
+
+			if (this.config.hasTextTrigger) {
+				this.$label.html(this.config.prefixTextTrigger + this.picker.startDate.format(labelMask));
+
+				if (this.config.timePicker) {
+					this.$input.val(this.picker.startDate.format(`${this.config.systemDateFormat} [00:00:00]`));
+				} else {
+					this.$input.val(this.picker.startDate.format(this.config.systemDateFormat));
+				}
+			} else {
+				this.$input.val(this.picker.startDate.format(`${this.config.systemDateFormat} [00:00:00]`));
+			}
+		} else {
+			if (this.config.hasTextTrigger) {
+				this.$label.html(this.config.prefixTextTrigger + this.picker.startDate.format(labelMask));
+				this.$input.val(this.picker.startDate.format(inputMask));
+			} else {
+				if (this.config.attachToInput) {
+					if (this.config.singleDatePicker) {
+						this.$input.val(this.picker.startDate.format(inputMask));
+						if (this.config.timePicker) {
+							this.$model && this.$model.val(this.picker.startDate.format(`${this.config.systemDateFormat} HH:mm:ss`));
+						} else {
+							this.$model && this.$model.val(this.picker.startDate.format(this.config.systemDateFormat));
+						}
+					} else {
+						const startDate = this.picker.startDate.format(inputMask);
+						const endDate = this.picker.endDate.format(inputMask);
+
+						this.$input.val(`${startDate}  ·  ${endDate}`);
+					}
+				} else {
+					if (this.config.singleDatePicker) {
+						this.$input.val(this.picker.startDate.format(this.config.formatInput));
+					} else {
+						let startDate = this.picker.startDate.format(this.config.formatInput);
+						let endDate = this.picker.endDate.format(this.config.formatInput);
+
+						this.$input.val(`${startDate}  ·  ${endDate}`);
+					}
+				}
+			}
+		}
+	};
+
+	DateTimeRangePicker.prototype.handleViewportPosition = function () {
+		if (
+			window.frameElement
+			&& (
+				$(window.frameElement.parentElement).hasClass('tooltipster-content')
+				|| $(window.frameElement.parentElement).hasClass('os-internal-ui-dialog-content')
+			)
+		) {
+			return;
+		}
+
+		if (!this.isInViewport()) {
+
+			var coords = this.$calendar[0].getBoundingClientRect();
+			if (this.$calendar.hasClass('drop-up') && this.$calendar[0].getBoundingClientRect().top < 0) {
+				var point = window.scrollY + coords.bottom + this.$input.height() + 7;
+				this.$calendar
+					.removeClass('drop-up')
+					.addClass('drop-down')
+					.css('top', point);
+			}
+			else if (
+				!this.$calendar.hasClass('drop-up')
+				&& this.$calendar[0].getBoundingClientRect().bottom > (window.innerHeight || document.documentElement.clientHeight)
+			) {
+				if (!window.frameElement || (coords.height + this.$input.height() + 7) < document.body.offsetHeight) {
+					var point = window.scrollY + coords.top - coords.height - this.$input.height() - 7;
+					this.$calendar.addClass('drop-up').css('top', point);
+				}
+			}
+		}
+	};
+
+	DateTimeRangePicker.prototype.isInViewport = function () {
+		var bounding = this.$calendar[0].getBoundingClientRect();
+		return (
+			bounding.top >= 0 && bounding.bottom <= (window.innerHeight + 5 || document.documentElement.clientHeight + 5)
+		);
+	};
+
+	DateTimeRangePicker.prototype.clear = function (sendNotification) {
+		this.picker.setStartDate(moment());
+		this.picker.setEndDate(moment());
+		this.isEmptyHour = false;
+		this.$clear.addClass('disabled');
+		if (this.config.hasTextTrigger) {
+			this.$label.html('-- -- --');
+		} else {
+			this.$input.val('');
+		}
+		if (sendNotification || sendNotification == undefined) {
+			this.sendNotification(false);
+		}
+	};
+
+	DateTimeRangePicker.prototype.show = function () {
+		this.picker.show();
+	};
+
+	DateTimeRangePicker.prototype.hide = function () {
+		this.picker.hide();
+	};
+
+	DateTimeRangePicker.prototype.cancel = function () {
+		this.picker.clickCancel();
+	};
+
+	DateTimeRangePicker.prototype.sendNotification = function (sendDate) {
+		if (this.$widget.hasClass('attachedInput')) {
+			this.$input.trigger('change');
+
+			return false;
+		}
+
+		if (sendDate || sendDate == undefined) {
+			if (this.isEmptyHour) {
+				OsNotifyWidget(
+					this.config.dateTimeRangePickerFakeNotifyId,
+					this.picker.startDate.format(`${this.config.systemDateFormat} [00:00:00]`) + '|' + this.isEmptyHour
+				);
+			} else {
+				if (this.config.timePicker) {
+					OsNotifyWidget(
+						this.config.dateTimeRangePickerFakeNotifyId,
+						this.picker.startDate.format(`${this.config.systemDateFormat} HH:mm:ss`) + '|' + this.isEmptyHour
+					);
+				} else {
+					OsNotifyWidget(
+						this.config.dateTimeRangePickerFakeNotifyId,
+						this.picker.startDate.format(this.config.systemDateFormat) + '|' + this.isEmptyHour
+					);
+				}
+			}
+		} else {
+			OsNotifyWidget(this.config.dateTimeRangePickerFakeNotifyId, 'null|true');
+		}
+	};
+
+	DateTimeRangePicker.prototype.updateParentIframe = function () {
+		if (typeof SapphireWidgets.ResizeParentIframe === 'object') {
+			SapphireWidgets.ResizeParentIframe.resize();
+		}
+		if ($('.Page.LayoutPopup').length === 1) {
+			SapphireWidgets.LayoutPopup.redrawDialogWindow();
+		}
+	};
+
+	SapphireWidgets.DateTimeRangePicker = {
+		create: create,
+		all: function () {
+			return allDateTimeRangePickers;
+		},
+	};
+})(jQuery, window, document, SapphireWidgets);
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/drag-drop/scripts.js":
-/*!******************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/drag-drop/scripts.js ***!
-  \******************************************************************/
 /***/ (function() {
 
-eval("{/* Component DragDropArea */\r\n(function($, window, document, SapphireWidgets) {\r\n\tvar dragDropAreaWidget;\r\n\r\n\tvar create = function(config) {\r\n\t\twindow[config.dragDropAreaId] = new DragDropArea(config);\r\n\t\tdragDropAreaWidget = window[config.dragDropAreaId];\r\n\r\n\t\t$(window).load(function() {\r\n\t\t\tosAjaxBackend.BindAfterAjaxRequest(SapphireWidgets.DragDropArea.refreshDragDrop);\r\n\t\t});\r\n\t};\r\n\r\n\tvar refreshDragDrop = function() {\r\n\t\ttry {\r\n\t\t\tdragDropAreaWidget.setupDraggable();\r\n\t\t\tdragDropAreaWidget.setupDroppable();\r\n\t\t} catch (error) {\r\n\t\t\tconsole.error(error);\r\n\t\t}\r\n\t};\r\n\r\n\tvar DragDropArea = function(config) {\r\n\t\tvar _this = this;\r\n\t\tthis.config = config;\r\n\t\tthis.$area = $('#' + config.dragDropAreaId);\r\n\t\tthis.$area.css('display', 'block');\r\n\t\tthis.skin = config.skin;\r\n\t\tthis.fakeNotifyWidgetId = config.fakeNotifyWidgetId;\r\n\t\tthis.setupDroppable();\r\n\t\tif (config.sortable) {\r\n\t\t\tthis.setupSortable();\r\n\t\t}\r\n\t\tthis.setupDraggable();\r\n\t\tthis.attachEvents();\r\n\t\tthis.$area.find('.DragDrop-droppable').each(function() {\r\n\t\t\t_this.handleDroppable($(this));\r\n\t\t});\r\n\t};\r\n\r\n\tDragDropArea.prototype.setupDraggable = function() {\r\n\t\tvar _this = this;\r\n\r\n\t\tthis.$area.find('.DragDrop-draggable').draggable({\r\n\t\t\tdisabled: this.config.disabled,\r\n\t\t\tcontainment: this.$area,\r\n\t\t\tscope: this.config.dragDropAreaId,\r\n\t\t\tdelay: 0,\r\n\t\t\tscroll: true,\r\n\t\t\trevert: 'invalid',\r\n\t\t\trevertDuration: 0,\r\n\t\t\tconnectToSortable: '.DragDrop-droppable',\r\n\t\t\tstop: function(event, ui) {\r\n\t\t\t\tif (ui.helper.hasClass('ui-draggable-dragging')) {\r\n\t\t\t\t\tconst $target = _this.$area.find('.ui-droppable.ui-sortable');\r\n\r\n\t\t\t\t\tif (_this.skin === 'Teams') {\r\n\t\t\t\t\t\t//$(ui.helper).hide();\r\n\t\t\t\t\t\tOsNotifyWidget($target.data('fakenotify'), ui.helper.data('itemtype') + '|' + ui.helper.data('itemid'));\r\n\t\t\t\t\t} else {\r\n\t\t\t\t\t\tOsNotifyWidget(\r\n\t\t\t\t\t\t\t$target.data('fakenotify'),\r\n\t\t\t\t\t\t\t_this.$area.find('.DragDrop-draggable-placeholder').index() + '|' + ui.helper.data('itemid')\r\n\t\t\t\t\t\t);\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t});\r\n\t};\r\n\r\n\tDragDropArea.prototype.setupDroppable = function() {\r\n\t\tvar _this = this;\r\n\t\tthis.$area.find('.DragDrop-droppable').droppable({\r\n\t\t\thoverClass: 'hovered',\r\n\t\t\taddClasses: true,\r\n\t\t\tdisabled: this.config.disabled,\r\n\t\t\tscope: this.config.dragDropAreaId,\r\n\t\t\ttolerance: 'pointer',\r\n\t\t\tdrop: function(event, ui) {\r\n\t\t\t\tif (_this.skin === 'Teams') {\r\n\t\t\t\t\t$(ui.draggable).hide();\r\n\t\t\t\t\tOsNotifyWidget(\r\n\t\t\t\t\t\t$(event.target).data('fakenotify'),\r\n\t\t\t\t\t\tui.draggable.data('itemtype') + '|' + ui.draggable.data('itemid')\r\n\t\t\t\t\t);\r\n\t\t\t\t} else {\r\n\t\t\t\t\tOsNotifyWidget(\r\n\t\t\t\t\t\t$(event.target).data('fakenotify'),\r\n\t\t\t\t\t\t_this.$area.find('.DragDrop-draggable-placeholder').index() + '|' + ui.draggable.data('itemid')\r\n\t\t\t\t\t);\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t});\r\n\t};\r\n\r\n\tDragDropArea.prototype.setupSortable = function() {\r\n\t\tthis.$area.find('.DragDrop-droppable').sortable({\r\n\t\t\tdisabled: this.config.disabled,\r\n\t\t\tforcePlaceholderSize: true,\r\n\t\t\tcontainment: this.$area,\r\n\t\t\ttolerance: 'pointer',\r\n\t\t\trevert: 200,\r\n\t\t\titems: '.DragDrop-droppable-items .DragDrop-draggable',\r\n\t\t\tplaceholder: 'DragDrop-draggable-placeholder',\r\n\t\t});\r\n\t};\r\n\r\n\tDragDropArea.prototype.attachEvents = function() {\r\n\t\tvar _this = this;\r\n\t\tthis.$area.on('click', '.DragDrop-draggable input', function(evt) {\r\n\t\t\tevt.stopPropagation();\r\n\r\n\t\t\tconst $checkbox = $(evt.currentTarget);\r\n\t\t\tconst $droppable = $checkbox.closest('.DragDrop-droppable');\r\n\t\t\tconst $draggable = $checkbox.closest('.DragDrop-draggable');\r\n\t\t\tconst $action = $draggable.find('.DragDrop-draggable-select-action a');\r\n\r\n\t\t\t$action.trigger('click');\r\n\r\n\t\t\tif ($droppable.hasClass('allowMultiple')) {\r\n\t\t\t\tif ($checkbox.prop('checked')) {\r\n\t\t\t\t\t//$checkbox.prop('checked', false);\r\n\t\t\t\t\t$draggable.addClass('selected');\r\n\t\t\t\t} else {\r\n\t\t\t\t\t//$checkbox.prop('checked', true);\r\n\t\t\t\t\t$draggable.removeClass('selected');\r\n\t\t\t\t}\r\n\r\n\t\t\t\t//_this.handleDroppable($droppable);\r\n\t\t\t}\r\n\t\t});\r\n\r\n\t\tthis.$area.on('click', '.DragDrop-draggable-select-action a', function(evt) {\r\n\t\t\tevt.stopPropagation();\r\n\t\t});\r\n\t};\r\n\r\n\tDragDropArea.prototype.handleDroppable = function($droppable) {\r\n\t\tif ($droppable.hasClass('allowMultiple')) {\r\n\t\t\tvar $actions = $droppable.find('.DragDrop-droppable-intro');\r\n\t\t\tvar chkSelected = $droppable.find('input[type=\"checkbox\"]:checked').length;\r\n\t\t\tif (chkSelected > 0) {\r\n\t\t\t\t$actions.find('a, button').attr('disabled', false);\r\n\t\t\t} else {\r\n\t\t\t\t$actions.find('a, button').attr('disabled', true);\r\n\t\t\t}\r\n\t\t} else {\r\n\t\t\t$droppable.find('input[type=\"checkbox\"]').prop('disabled', true);\r\n\t\t}\r\n\t};\r\n\r\n\tSapphireWidgets.DragDropArea = {\r\n\t\tcreate: create,\r\n\t\trefreshDragDrop: refreshDragDrop,\r\n\t};\r\n})(jQuery, window, document, SapphireWidgets);\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/drag-drop/scripts.js?\n}");
+/* Component DragDropArea */
+(function($, window, document, SapphireWidgets) {
+	var dragDropAreaWidget;
+
+	var create = function(config) {
+		window[config.dragDropAreaId] = new DragDropArea(config);
+		dragDropAreaWidget = window[config.dragDropAreaId];
+
+		$(window).load(function() {
+			osAjaxBackend.BindAfterAjaxRequest(SapphireWidgets.DragDropArea.refreshDragDrop);
+		});
+	};
+
+	var refreshDragDrop = function() {
+		try {
+			dragDropAreaWidget.setupDraggable();
+			dragDropAreaWidget.setupDroppable();
+		} catch (error) {
+			console.error(error);
+		}
+	};
+
+	var DragDropArea = function(config) {
+		var _this = this;
+		this.config = config;
+		this.$area = $('#' + config.dragDropAreaId);
+		this.$area.css('display', 'block');
+		this.skin = config.skin;
+		this.fakeNotifyWidgetId = config.fakeNotifyWidgetId;
+		this.setupDroppable();
+		if (config.sortable) {
+			this.setupSortable();
+		}
+		this.setupDraggable();
+		this.attachEvents();
+		this.$area.find('.DragDrop-droppable').each(function() {
+			_this.handleDroppable($(this));
+		});
+	};
+
+	DragDropArea.prototype.setupDraggable = function() {
+		var _this = this;
+
+		this.$area.find('.DragDrop-draggable').draggable({
+			disabled: this.config.disabled,
+			containment: this.$area,
+			scope: this.config.dragDropAreaId,
+			delay: 0,
+			scroll: true,
+			revert: 'invalid',
+			revertDuration: 0,
+			connectToSortable: '.DragDrop-droppable',
+			stop: function(event, ui) {
+				if (ui.helper.hasClass('ui-draggable-dragging')) {
+					const $target = _this.$area.find('.ui-droppable.ui-sortable');
+
+					if (_this.skin === 'Teams') {
+						//$(ui.helper).hide();
+						OsNotifyWidget($target.data('fakenotify'), ui.helper.data('itemtype') + '|' + ui.helper.data('itemid'));
+					} else {
+						OsNotifyWidget(
+							$target.data('fakenotify'),
+							_this.$area.find('.DragDrop-draggable-placeholder').index() + '|' + ui.helper.data('itemid')
+						);
+					}
+				}
+			},
+		});
+	};
+
+	DragDropArea.prototype.setupDroppable = function() {
+		var _this = this;
+		this.$area.find('.DragDrop-droppable').droppable({
+			hoverClass: 'hovered',
+			addClasses: true,
+			disabled: this.config.disabled,
+			scope: this.config.dragDropAreaId,
+			tolerance: 'pointer',
+			drop: function(event, ui) {
+				if (_this.skin === 'Teams') {
+					$(ui.draggable).hide();
+					OsNotifyWidget(
+						$(event.target).data('fakenotify'),
+						ui.draggable.data('itemtype') + '|' + ui.draggable.data('itemid')
+					);
+				} else {
+					OsNotifyWidget(
+						$(event.target).data('fakenotify'),
+						_this.$area.find('.DragDrop-draggable-placeholder').index() + '|' + ui.draggable.data('itemid')
+					);
+				}
+			},
+		});
+	};
+
+	DragDropArea.prototype.setupSortable = function() {
+		this.$area.find('.DragDrop-droppable').sortable({
+			disabled: this.config.disabled,
+			forcePlaceholderSize: true,
+			containment: this.$area,
+			tolerance: 'pointer',
+			revert: 200,
+			items: '.DragDrop-droppable-items .DragDrop-draggable',
+			placeholder: 'DragDrop-draggable-placeholder',
+		});
+	};
+
+	DragDropArea.prototype.attachEvents = function() {
+		var _this = this;
+		this.$area.on('click', '.DragDrop-draggable input', function(evt) {
+			evt.stopPropagation();
+
+			const $checkbox = $(evt.currentTarget);
+			const $droppable = $checkbox.closest('.DragDrop-droppable');
+			const $draggable = $checkbox.closest('.DragDrop-draggable');
+			const $action = $draggable.find('.DragDrop-draggable-select-action a');
+
+			$action.trigger('click');
+
+			if ($droppable.hasClass('allowMultiple')) {
+				if ($checkbox.prop('checked')) {
+					//$checkbox.prop('checked', false);
+					$draggable.addClass('selected');
+				} else {
+					//$checkbox.prop('checked', true);
+					$draggable.removeClass('selected');
+				}
+
+				//_this.handleDroppable($droppable);
+			}
+		});
+
+		this.$area.on('click', '.DragDrop-draggable-select-action a', function(evt) {
+			evt.stopPropagation();
+		});
+	};
+
+	DragDropArea.prototype.handleDroppable = function($droppable) {
+		if ($droppable.hasClass('allowMultiple')) {
+			var $actions = $droppable.find('.DragDrop-droppable-intro');
+			var chkSelected = $droppable.find('input[type="checkbox"]:checked').length;
+			if (chkSelected > 0) {
+				$actions.find('a, button').attr('disabled', false);
+			} else {
+				$actions.find('a, button').attr('disabled', true);
+			}
+		} else {
+			$droppable.find('input[type="checkbox"]').prop('disabled', true);
+		}
+	};
+
+	SapphireWidgets.DragDropArea = {
+		create: create,
+		refreshDragDrop: refreshDragDrop,
+	};
+})(jQuery, window, document, SapphireWidgets);
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/dropdown-categories/scripts.js":
-/*!****************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/dropdown-categories/scripts.js ***!
-  \****************************************************************************/
 /***/ (function() {
 
-eval("{/* Component DropdownCategories */\r\n(function ($, window, SapphireWidgets) {\r\n\tfunction optGroupSetValue(selectId, inputBoxId, buttonId) {\r\n\t\tvar v = document.getElementById(selectId).value;\r\n\t\t$('#' + inputBoxId).val(v);\r\n\t\t$('#' + selectId + ' option[selected]').removeAttr('selected');\r\n\r\n\t\tif (v != -1) {\r\n\t\t\t$('#' + selectId + ' option[value=\"' + v + '\"]').attr('selected', 'selected');\r\n\t\t}\r\n\r\n\t\t$('#' + buttonId).click();\r\n\t\t$('#s2id_' + selectId).removeClass('select2-container-active');\r\n\t}\r\n\r\n\tfunction OsCustomValidatorOptGroup(a, b) {\r\n\t\tvar _e = $('#' + a.controltovalidate);\r\n\t\tvar isValid = _e.find('option[selected]').length;\r\n\t\tvar hasSibling_MandatorySelect2 = _e.prev('div.select2-container.Mandatory').length;\r\n\r\n\t\tif (hasSibling_MandatorySelect2) {\r\n\t\t\tif (isValid) {\r\n\t\t\t\t_e.prev('div.select2-container.Mandatory').removeClass('Not_Valid');\r\n\t\t\t} else {\r\n\t\t\t\t_e.prev('div.select2-container.Mandatory').addClass('Not_Valid');\r\n\t\t\t}\r\n\t\t}\r\n\r\n\t\treturn isValid;\r\n\t}\r\n\r\n\tfunction addOptGroupValidator(optGroupElementId) {\r\n\t\tOsPage_Validators.push({\r\n\t\t\tcontroltovalidate: optGroupElementId,\r\n\t\t\tenabled: true,\r\n\t\t\terrormessage: 'Required field!',\r\n\t\t\tevaluationfunction: 'SapphireWidgets.DropdownCategories.OsCustomValidatorOptGroup',\r\n\t\t\tinitialvalue: '',\r\n\t\t\tisvalid: true,\r\n\t\t});\r\n\t}\r\n\r\n\tSapphireWidgets.DropdownCategories = {\r\n\t\toptGroupSetValue,\r\n\t\tOsCustomValidatorOptGroup,\r\n\t\taddOptGroupValidator,\r\n\t};\r\n})(jQuery, window, SapphireWidgets);\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/dropdown-categories/scripts.js?\n}");
+/* Component DropdownCategories */
+(function ($, window, SapphireWidgets) {
+	function optGroupSetValue(selectId, inputBoxId, buttonId) {
+		var v = document.getElementById(selectId).value;
+		$('#' + inputBoxId).val(v);
+		$('#' + selectId + ' option[selected]').removeAttr('selected');
+
+		if (v != -1) {
+			$('#' + selectId + ' option[value="' + v + '"]').attr('selected', 'selected');
+		}
+
+		$('#' + buttonId).click();
+		$('#s2id_' + selectId).removeClass('select2-container-active');
+	}
+
+	function OsCustomValidatorOptGroup(a, b) {
+		var _e = $('#' + a.controltovalidate);
+		var isValid = _e.find('option[selected]').length;
+		var hasSibling_MandatorySelect2 = _e.prev('div.select2-container.Mandatory').length;
+
+		if (hasSibling_MandatorySelect2) {
+			if (isValid) {
+				_e.prev('div.select2-container.Mandatory').removeClass('Not_Valid');
+			} else {
+				_e.prev('div.select2-container.Mandatory').addClass('Not_Valid');
+			}
+		}
+
+		return isValid;
+	}
+
+	function addOptGroupValidator(optGroupElementId) {
+		OsPage_Validators.push({
+			controltovalidate: optGroupElementId,
+			enabled: true,
+			errormessage: 'Required field!',
+			evaluationfunction: 'SapphireWidgets.DropdownCategories.OsCustomValidatorOptGroup',
+			initialvalue: '',
+			isvalid: true,
+		});
+	}
+
+	SapphireWidgets.DropdownCategories = {
+		optGroupSetValue,
+		OsCustomValidatorOptGroup,
+		addOptGroupValidator,
+	};
+})(jQuery, window, SapphireWidgets);
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/dropzone/dropzone.js":
-/*!******************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/dropzone/dropzone.js ***!
-  \******************************************************************/
 /***/ (function() {
 
-eval("{/* Component Dropzone */\r\n(function ($, window, document, SapphireWidgets) {\r\n\tconst create = function (config) {\r\n\t\twindow.Dropzone.autoDiscover = false;\r\n\r\n\t\t$(document).ready(function () {\r\n\t\t\tbindEvents(config);\r\n\r\n\t\t\tconst myDropzone = new window.Dropzone(config.hiddenInputContainer, {\r\n\t\t\t\t...config,\r\n\t\t\t\tinit: function () {\r\n\t\t\t\t\tlet prevFile;\r\n\r\n\t\t\t\t\tconst filesList = config.filesList ? config.filesList.split(',') : [];\r\n\r\n\t\t\t\t\tfor (const item of filesList) {\r\n\t\t\t\t\t\tconst mockFile = { name: item, size: 12345678 };\r\n\r\n\t\t\t\t\t\tthis.emit('addedfile', mockFile);\r\n\t\t\t\t\t\tthis.emit('complete', mockFile);\r\n\t\t\t\t\t\tthis.files.push(mockFile);\r\n\r\n\t\t\t\t\t\t$(`${config.hiddenInputContainer} .dz-filename`).attr('title', item);\r\n\r\n\t\t\t\t\t\tprevFile = mockFile;\r\n\t\t\t\t\t}\r\n\r\n\t\t\t\t\tif (+config.maxFiles === 1 && config.isReplacePrevious) {\r\n\t\t\t\t\t\tthis.on('addedfile', function () {\r\n\t\t\t\t\t\t\tif (prevFile !== undefined) {\r\n\t\t\t\t\t\t\t\tthis.removeFile(prevFile);\r\n\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t});\r\n\t\t\t\t\t}\r\n\r\n\t\t\t\t\tconst $notifyInput = $(`#${config.notifyInputId}`);\r\n\r\n\t\t\t\t\tthis.on('success', function (file, responseText) {\r\n\t\t\t\t\t\tprevFile = file;\r\n\r\n\t\t\t\t\t\t$(`#${config.notifyInputId} .dz-filename`).attr('title', file.name);\r\n\t\t\t\t\t\t$notifyInput.val('OK:' + responseText);\r\n\t\t\t\t\t\t$notifyInput.trigger('change');\r\n\t\t\t\t\t});\r\n\r\n\t\t\t\t\tthis.on('error', function (file, responseText) {\r\n\t\t\t\t\t\tprevFile = file;\r\n\r\n\t\t\t\t\t\t$notifyInput.val('ER:' + responseText);\r\n\t\t\t\t\t\t$notifyInput.trigger('change');\r\n\t\t\t\t\t});\r\n\t\t\t\t},\r\n\t\t\t});\r\n\t\t});\r\n\t};\r\n\r\n\tconst bindEvents = function (config) {\r\n\t\t$(`#${config.widgetId} .UploadMessageClass`).on('click', () => {\r\n\t\t\t$(`#${config.widgetId} .dz-clickable`).click();\r\n\t\t});\r\n\t};\r\n\r\n\tSapphireWidgets.Dropzone = { create };\r\n})(jQuery, window, document, SapphireWidgets);\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/dropzone/dropzone.js?\n}");
+/* Component Dropzone */
+(function ($, window, document, SapphireWidgets) {
+	const create = function (config) {
+		window.Dropzone.autoDiscover = false;
+
+		$(document).ready(function () {
+			bindEvents(config);
+
+			const myDropzone = new window.Dropzone(config.hiddenInputContainer, {
+				...config,
+				init: function () {
+					let prevFile;
+
+					const filesList = config.filesList ? config.filesList.split(',') : [];
+
+					for (const item of filesList) {
+						const mockFile = { name: item, size: 12345678 };
+
+						this.emit('addedfile', mockFile);
+						this.emit('complete', mockFile);
+						this.files.push(mockFile);
+
+						$(`${config.hiddenInputContainer} .dz-filename`).attr('title', item);
+
+						prevFile = mockFile;
+					}
+
+					if (+config.maxFiles === 1 && config.isReplacePrevious) {
+						this.on('addedfile', function () {
+							if (prevFile !== undefined) {
+								this.removeFile(prevFile);
+							}
+						});
+					}
+
+					const $notifyInput = $(`#${config.notifyInputId}`);
+
+					this.on('success', function (file, responseText) {
+						prevFile = file;
+
+						$(`#${config.notifyInputId} .dz-filename`).attr('title', file.name);
+						$notifyInput.val('OK:' + responseText);
+						$notifyInput.trigger('change');
+					});
+
+					this.on('error', function (file, responseText) {
+						prevFile = file;
+
+						$notifyInput.val('ER:' + responseText);
+						$notifyInput.trigger('change');
+					});
+				},
+			});
+		});
+	};
+
+	const bindEvents = function (config) {
+		$(`#${config.widgetId} .UploadMessageClass`).on('click', () => {
+			$(`#${config.widgetId} .dz-clickable`).click();
+		});
+	};
+
+	SapphireWidgets.Dropzone = { create };
+})(jQuery, window, document, SapphireWidgets);
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/expandable-link/scripts.js":
-/*!************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/expandable-link/scripts.js ***!
-  \************************************************************************/
 /***/ (function() {
 
-eval("{/* Component ExpandableLink */\r\n(function ($, window, SapphireWidgets) {\r\n\tconst create = widgetID => {\r\n\t\tconst $elementWrapper = $(`#${widgetID}`);\r\n\r\n\t\tif ($elementWrapper.parent('.ExpandableList').hasClass('HideWhenEmpty')) {\r\n\t\t\tconst text = $elementWrapper.find('.ExpandableLink__Content').text();\r\n\r\n\t\t\tif (text.length === 0) $elementWrapper.parent('.ExpandableList').hide();\r\n\t\t}\r\n\r\n\t\tbindEvents(widgetID);\r\n\t};\r\n\r\n\tconst bindEvents = widgetID => {\r\n\t\t$(`#${widgetID} .ExpandableLink__Header`).click(() => openClose(`#${widgetID}`));\r\n\t};\r\n\r\n\tconst openClose = elementID => {\r\n\t\t// When the expandables are inside a container with class ExpandableLinkGroup, will act like a expandable group\r\n\t\tconst $linkGroup = $(elementID).closest('.ExpandableLinkGroup');\r\n\r\n\t\tif ($linkGroup.length) {\r\n\t\t\tconst $expandables = $linkGroup.find('.ExpandableLink--expanded').not(elementID);\r\n\r\n\t\t\t$expandables.removeClass('ExpandableLink--expanded');\r\n\t\t}\r\n\r\n\t\t$(elementID).toggleClass('ExpandableLink--expanded');\r\n\r\n\t\t//Check if SapphireWidgets.ResizeParentIframe is defined.\r\n\t\tif (typeof SapphireWidgets.ResizeParentIframe != 'undefined') {\r\n\t\t\t// In case we're inside an iframe, we try to resize it first.\r\n\t\t\tif (window.self !== window.top) SapphireWidgets.ResizeParentIframe.resize();\r\n\t\t}\r\n\t};\r\n\r\n\tSapphireWidgets.ExpandableLink = { create };\r\n})(jQuery, window, SapphireWidgets);\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/expandable-link/scripts.js?\n}");
+/* Component ExpandableLink */
+(function ($, window, SapphireWidgets) {
+	const create = widgetID => {
+		const $elementWrapper = $(`#${widgetID}`);
+
+		if ($elementWrapper.parent('.ExpandableList').hasClass('HideWhenEmpty')) {
+			const text = $elementWrapper.find('.ExpandableLink__Content').text();
+
+			if (text.length === 0) $elementWrapper.parent('.ExpandableList').hide();
+		}
+
+		bindEvents(widgetID);
+	};
+
+	const bindEvents = widgetID => {
+		$(`#${widgetID} .ExpandableLink__Header`).click(() => openClose(`#${widgetID}`));
+	};
+
+	const openClose = elementID => {
+		// When the expandables are inside a container with class ExpandableLinkGroup, will act like a expandable group
+		const $linkGroup = $(elementID).closest('.ExpandableLinkGroup');
+
+		if ($linkGroup.length) {
+			const $expandables = $linkGroup.find('.ExpandableLink--expanded').not(elementID);
+
+			$expandables.removeClass('ExpandableLink--expanded');
+		}
+
+		$(elementID).toggleClass('ExpandableLink--expanded');
+
+		//Check if SapphireWidgets.ResizeParentIframe is defined.
+		if (typeof SapphireWidgets.ResizeParentIframe != 'undefined') {
+			// In case we're inside an iframe, we try to resize it first.
+			if (window.self !== window.top) SapphireWidgets.ResizeParentIframe.resize();
+		}
+	};
+
+	SapphireWidgets.ExpandableLink = { create };
+})(jQuery, window, SapphireWidgets);
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/fullscreen-tabs-wrapper/scripts.js":
-/*!********************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/fullscreen-tabs-wrapper/scripts.js ***!
-  \********************************************************************************/
 /***/ (function() {
 
-eval("{/* Component FullScreenTabsWrapper */\r\nSapphireWidgets.FullScreenTabsWrapper = () => {\r\n\t$(document).ready(function() {\r\n\t\t$('.TabWrapper').click(function() {\r\n\t\t\tconst $wrapper = $(this).closest('.FullScreenTabsWrapper__Tabs');\r\n\t\t\t$wrapper.find('*').removeClass('Active');\r\n\r\n\t\t\t$(this).addClass('Active');\r\n\t\t});\r\n\t});\r\n};\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/fullscreen-tabs-wrapper/scripts.js?\n}");
+/* Component FullScreenTabsWrapper */
+SapphireWidgets.FullScreenTabsWrapper = () => {
+	$(document).ready(function() {
+		$('.TabWrapper').click(function() {
+			const $wrapper = $(this).closest('.FullScreenTabsWrapper__Tabs');
+			$wrapper.find('*').removeClass('Active');
+
+			$(this).addClass('Active');
+		});
+	});
+};
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/generic-card/scripts.js":
-/*!*********************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/generic-card/scripts.js ***!
-  \*********************************************************************/
 /***/ (function() {
 
-eval("{/* Component PersonCard */\r\n$(document).ready(function() {\r\n\tvar PersonCardEvent = function() {\r\n\t\t$('.IsExpandable .PersonCard__headerLeftInfo, .IsExpandable .PersonCard__content')\r\n\t\t\t.off('click')\r\n\t\t\t.on('click', function() {\r\n\t\t\t\tconst $header = $(this).closest('.PersonCard_header');\r\n\t\t\t\tconst $onCardOpenLink = $header.find('.PersonCard__OnCardOpenLink');\r\n\t\t\t\tconst $onCardCloseLink = $header.find('.PersonCard__OnCardCloseClick');\r\n\t\t\t\tconst $content = $header.next();\r\n\r\n\t\t\t\tconst $card = $(this).closest('.PersonCard');\r\n\r\n\t\t\t\t$content.removeClass('IsExpanded');\r\n\r\n\t\t\t\tif ($card.hasClass('IsOpen')) {\r\n\t\t\t\t\t$onCardCloseLink.triggerHandler('click');\r\n\t\t\t\t\t$card.removeClass('IsOpen');\r\n\t\t\t\t} else {\r\n\t\t\t\t\t$onCardOpenLink.triggerHandler('click');\r\n\r\n\t\t\t\t\t$content.addClass('IsExpanded');\r\n\r\n\t\t\t\t\t$card.addClass('IsOpen');\r\n\t\t\t\t}\r\n\t\t\t});\r\n\t};\r\n\r\n\t$('.StopPropagation').click(function(event) {\r\n\t\tevent.stopPropagation();\r\n\t});\r\n\r\n\tPersonCardEvent();\r\n\r\n\tosAjaxBackend.BindAfterAjaxRequest(PersonCardEvent);\r\n});\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/generic-card/scripts.js?\n}");
+/* Component PersonCard */
+$(document).ready(function() {
+	var PersonCardEvent = function() {
+		$('.IsExpandable .PersonCard__headerLeftInfo, .IsExpandable .PersonCard__content')
+			.off('click')
+			.on('click', function() {
+				const $header = $(this).closest('.PersonCard_header');
+				const $onCardOpenLink = $header.find('.PersonCard__OnCardOpenLink');
+				const $onCardCloseLink = $header.find('.PersonCard__OnCardCloseClick');
+				const $content = $header.next();
+
+				const $card = $(this).closest('.PersonCard');
+
+				$content.removeClass('IsExpanded');
+
+				if ($card.hasClass('IsOpen')) {
+					$onCardCloseLink.triggerHandler('click');
+					$card.removeClass('IsOpen');
+				} else {
+					$onCardOpenLink.triggerHandler('click');
+
+					$content.addClass('IsExpanded');
+
+					$card.addClass('IsOpen');
+				}
+			});
+	};
+
+	$('.StopPropagation').click(function(event) {
+		event.stopPropagation();
+	});
+
+	PersonCardEvent();
+
+	osAjaxBackend.BindAfterAjaxRequest(PersonCardEvent);
+});
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/generic-gallery/scripts.js":
-/*!************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/generic-gallery/scripts.js ***!
-  \************************************************************************/
 /***/ (function() {
 
-eval("{/* Component GenericGallery */\r\n(function($, window, document, SapphireWidgets) {\r\n\tvar create = function(config) {\r\n\t\twindow[config.widgetId] = new GenericGallery(config);\r\n\t};\r\n\r\n\tvar GenericGallery = function(config) {\r\n\t\tthis.config = config;\r\n\t\tthis.$widget = $('#' + this.config.widgetId).css('display', 'block');\r\n\t\tthis.equalHeight = this.config.equalHeight;\r\n\t\tif (\r\n\t\t\tthis.$widget.find('> .GenericGallery-content > span').length === 1 &&\r\n\t\t\tthis.$widget.find('.GenericGallery-content > span').hasClass('ListRecords')\r\n\t\t) {\r\n\t\t\tthis.$gallery = this.$widget.find('> .GenericGallery-content > span.ListRecords');\r\n\t\t} else {\r\n\t\t\tthis.$gallery = this.$widget.find('> .GenericGallery-content');\r\n\t\t}\r\n\r\n\t\tlet templateColumn = 'repeat(' + this.config.columnSizing + ', minmax(' + this.config.columnMinWidth + ', 1fr))';\r\n\r\n\t\tif (this.config.maxItemsRow > 0) {\r\n\t\t\ttemplateColumn = `repeat(${this.config.columnSizing}, minmax(max(${this.config.columnMinWidth}, (100% - (${this.config.maxItemsRow} - 1) * ${this.config.gapColumn}px) / ${this.config.maxItemsRow}), 1fr))`;\r\n\t\t}\r\n\r\n\t\tthis.$gallery.css({\r\n\t\t\tdisplay: 'grid',\r\n\t\t\tgridTemplateColumns: templateColumn,\r\n\t\t});\r\n\r\n\t\tthis.$galleryItems = this.$gallery.children();\r\n\t\tthis.$galleryItems.each(function() {\r\n\t\t\tif (!$(this).hasClass('GenericGallery-item')) {\r\n\t\t\t\t$(this).wrap('<div class=\"GenericGallery-item\"></div>');\r\n\t\t\t}\r\n\t\t});\r\n\t};\r\n\r\n\tSapphireWidgets.GenericGallery = {\r\n\t\tcreate: create,\r\n\t};\r\n})(jQuery, window, document, SapphireWidgets);\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/generic-gallery/scripts.js?\n}");
+/* Component GenericGallery */
+(function($, window, document, SapphireWidgets) {
+	var create = function(config) {
+		window[config.widgetId] = new GenericGallery(config);
+	};
+
+	var GenericGallery = function(config) {
+		this.config = config;
+		this.$widget = $('#' + this.config.widgetId).css('display', 'block');
+		this.equalHeight = this.config.equalHeight;
+		if (
+			this.$widget.find('> .GenericGallery-content > span').length === 1 &&
+			this.$widget.find('.GenericGallery-content > span').hasClass('ListRecords')
+		) {
+			this.$gallery = this.$widget.find('> .GenericGallery-content > span.ListRecords');
+		} else {
+			this.$gallery = this.$widget.find('> .GenericGallery-content');
+		}
+
+		let templateColumn = 'repeat(' + this.config.columnSizing + ', minmax(' + this.config.columnMinWidth + ', 1fr))';
+
+		if (this.config.maxItemsRow > 0) {
+			templateColumn = `repeat(${this.config.columnSizing}, minmax(max(${this.config.columnMinWidth}, (100% - (${this.config.maxItemsRow} - 1) * ${this.config.gapColumn}px) / ${this.config.maxItemsRow}), 1fr))`;
+		}
+
+		this.$gallery.css({
+			display: 'grid',
+			gridTemplateColumns: templateColumn,
+		});
+
+		this.$galleryItems = this.$gallery.children();
+		this.$galleryItems.each(function() {
+			if (!$(this).hasClass('GenericGallery-item')) {
+				$(this).wrap('<div class="GenericGallery-item"></div>');
+			}
+		});
+	};
+
+	SapphireWidgets.GenericGallery = {
+		create: create,
+	};
+})(jQuery, window, document, SapphireWidgets);
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/generic-grid/scripts.js":
-/*!*********************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/generic-grid/scripts.js ***!
-  \*********************************************************************/
 /***/ (function() {
 
-eval("{/* Component GenericGrid */\r\n(function ($, window, document, SapphireWidgets) {\r\n\tvar allGenericGrids = [];\r\n\r\n\tvar create = function (config) {\r\n\t\twindow[config.widgetId] = new GenericGrid(config);\r\n\t\tallGenericGrids.push(window[config.widgetId]);\r\n\t};\r\n\r\n\tvar GenericGrid = function (config) {\r\n\t\tvar _this = this;\r\n\t\tthis.config = config;\r\n\t\tconsole.log(this.config);\r\n\t};\r\n\r\n\tSapphireWidgets.GenericGrid = {\r\n\t\tcreate: create,\r\n\t};\r\n\r\n})(jQuery, window, document, SapphireWidgets);\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/generic-grid/scripts.js?\n}");
+/* Component GenericGrid */
+(function ($, window, document, SapphireWidgets) {
+	var allGenericGrids = [];
+
+	var create = function (config) {
+		window[config.widgetId] = new GenericGrid(config);
+		allGenericGrids.push(window[config.widgetId]);
+	};
+
+	var GenericGrid = function (config) {
+		var _this = this;
+		this.config = config;
+		console.log(this.config);
+	};
+
+	SapphireWidgets.GenericGrid = {
+		create: create,
+	};
+
+})(jQuery, window, document, SapphireWidgets);
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/horizontal-toolbar/scripts.js":
-/*!***************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/horizontal-toolbar/scripts.js ***!
-  \***************************************************************************/
 /***/ (function() {
 
-eval("{/* Component HorizontalToolbar */\r\n(function ($, window, SapphireWidgets) {\r\n\tconst create = (config) => {\r\n\t\tconst $widget = $('#' + config.widgetId);\r\n\r\n\t\t$(document).ready(() => init($widget, config.isArrowNavigation));\r\n\r\n\t\tif (config.isArrowNavigation) {\r\n\t\t\t$(window).load(() => {\r\n\t\t\t\tconst $itemWrapper = $widget.find('.MenuItemWrapper.Active');\r\n\t\t\t\tif ($itemWrapper.length) {\r\n\t\t\t\t\t$itemWrapper[0].scrollIntoView({\r\n\t\t\t\t\t\tbehavior: 'auto',\r\n\t\t\t\t\t\tblock: 'end',\r\n\t\t\t\t\t});\r\n\t\t\t\t}\r\n\t\t\t});\r\n\t\t}\r\n\t};\r\n\r\n\tconst init = ($widget, isArrowNavigation) => {\r\n\t\tif (isArrowNavigation) {\r\n\t\t\thandleArrows($widget);\r\n\r\n\t\t\tconst $toolbarItems = $widget.find('.Toolbar__Items');\r\n\t\t\tconst $listItems = $widget.find('.Toolbar__Items .ListRecords');\r\n\t\t\tconst $btnRight = $widget.find('.Toolbar__rightBtn');\r\n\t\t\tconst $btnLeft = $widget.find('.Toolbar__leftBtn');\r\n\r\n\t\t\t$toolbarItems.scroll(() => handleArrows($widget));\r\n\r\n\t\t\t$btnRight.click(function () {\r\n\t\t\t\tvar currentScroll = $toolbarItems.scrollLeft();\r\n\t\t\t\tvar maxScrolll = $listItems.width() - $toolbarItems.width();\r\n\t\t\t\tvar sideWidth = maxScrolll - 50;\r\n\t\t\t\t$toolbarItems.scrollLeft(currentScroll + 50);\r\n\r\n\t\t\t\tif (currentScroll == sideWidth) $btnRight.addClass('Disabled');\r\n\t\t\t\tif (currentScroll != 50) $btnLeft.removeClass('Disabled');\r\n\t\t\t});\r\n\r\n\t\t\t$btnLeft.click(function () {\r\n\t\t\t\tvar currentScroll = $toolbarItems.scrollLeft();\r\n\t\t\t\tvar maxScrolll = $listItems.width() - $toolbarItems.width();\r\n\t\t\t\tvar sideWidth = maxScrolll - 50;\r\n\t\t\t\t$toolbarItems.scrollLeft(currentScroll - 50);\r\n\r\n\t\t\t\tif (currentScroll != sideWidth) $btnRight.removeClass('Disabled');\r\n\t\t\t\tif (currentScroll == 50) $btnLeft.addClass('Disabled');\r\n\t\t\t});\r\n\r\n\t\t\t$(window).on('resize.toolbar', () => handleArrows($widget));\r\n\r\n\t\t\t// Menu items are initially hidden and must be made visible after loading is finished\r\n\t\t\t$listItems.find('> a:not(.Visible)').addClass('Visible');\r\n\t\t} else {\r\n\t\t\thandleMoreOptions($widget);\r\n\t\t\tbindMoreOptionsEvents($widget);\r\n\t\t}\r\n\t};\r\n\r\n\thandleArrows = ($widget) => {\r\n\t\tconst $toolbarItems = $widget.find('.Toolbar__Items');\r\n\t\tconst $listItems = $widget.find('.Toolbar__Items .ListRecords');\r\n\t\tconst $btnRight = $widget.find('.Toolbar__rightBtn');\r\n\t\tconst $btnLeft = $widget.find('.Toolbar__leftBtn');\r\n\r\n\t\tlet currentScroll = $toolbarItems.scrollLeft();\r\n\t\tlet menuWidth = $listItems.width();\r\n\t\tlet externalWidth = $toolbarItems.width();\r\n\t\tvar maxScrolll = menuWidth - externalWidth;\r\n\r\n\t\tif (externalWidth > menuWidth) {\r\n\t\t\t$btnLeft.hide();\r\n\t\t\t$btnRight.hide();\r\n\r\n\t\t\t$widget.find('.Toolbar_container').addClass('Toolbar_container--noarrows');\r\n\t\t} else {\r\n\t\t\t$btnLeft.show();\r\n\t\t\t$btnRight.show();\r\n\r\n\t\t\t$widget.find('.Toolbar_container').removeClass('Toolbar_container--noarrows');\r\n\t\t}\r\n\r\n\t\tif (currentScroll === 0) $btnLeft.addClass('Disabled');\r\n\t\telse $btnLeft.removeClass('Disabled');\r\n\r\n\t\tif (currentScroll >= maxScrolll) $btnRight.addClass('Disabled');\r\n\t\telse $btnRight.removeClass('Disabled');\r\n\t};\r\n\r\n\thandleMoreOptions = ($widget) => {\r\n\t\tconst $listItems = $widget.find('.Toolbar__Items .ListRecords');\r\n\t\t$listItems.find('> a.Visible').removeClass('Visible');\r\n\r\n\t\tconst menuWidth = $widget.find('.Toolbar__Items').outerWidth(true);\r\n\t\tlet itemsTotal = 0;\r\n\r\n\t\t$listItems.find('> a').each(function () {\r\n\t\t\titemsTotal += parseInt($(this).outerWidth(true), 10);\r\n\r\n\t\t\tif (itemsTotal + 90 < menuWidth) {\r\n\t\t\t\t$(this).addClass('Visible');\r\n\t\t\t} else {\r\n\t\t\t\treturn false;\r\n\t\t\t}\r\n\t\t});\r\n\r\n\t\tconst $hiddenItems = $listItems.find('> a:not(.Visible)');\r\n\r\n\t\tif ($hiddenItems.length && !$listItems.find('.Toolbar__MoreOptions').length) {\r\n\t\t\t$widget.find('.Toolbar__MoreOptions').clone().css('display', 'block').appendTo($listItems);\r\n\t\t}\r\n\t\t$listItems.find('.Toolbar__MoreOptions').css('display', $hiddenItems.length ? 'block' : 'none');\r\n\r\n\t\tconst $optionsList = $widget.find('.Toolbar__Items .Toolbar__MoreOptionsList');\r\n\t\t$optionsList.empty();\r\n\t\t$hiddenItems.clone().appendTo($optionsList);\r\n\r\n\t\tconst hasNotificationHidden = $hiddenItems.find('.MenuItemWrapper_Badge:not(:empty)').length !== 0;\r\n\t\tconst $trigger = $widget.find('.Toolbar__Items .Toolbar__MoreOptionsIcon');\r\n\r\n\t\tif (hasNotificationHidden) {\r\n\t\t\t$trigger.addClass('Toolbar__MoreOptionsIcon--notification');\r\n\t\t} else {\r\n\t\t\t$trigger.removeClass('Toolbar__MoreOptionsIcon--notification');\r\n\t\t}\r\n\t};\r\n\r\n\tbindMoreOptionsEvents = ($widget) => {\r\n\t\tconst $moreOptions = $widget.find('.Toolbar__Items .Toolbar__MoreOptions');\r\n\t\tconst $trigger = $widget.find('.Toolbar__Items .Toolbar__MoreOptionsIcon');\r\n\t\tconst $optionsList = $widget.find('.Toolbar__MoreOptionsList');\r\n\r\n\t\t$trigger.on('click', (event) => {\r\n\t\t\t$moreOptions.toggleClass('Toolbar__MoreOptions--open');\r\n\t\t\tevent.stopPropagation();\r\n\t\t});\r\n\r\n\t\t$optionsList.on('mousewheel', (event) => {\r\n\t\t\tevent.stopPropagation();\r\n\t\t});\r\n\r\n\t\t$('body').on('mouseup', (event) => {\r\n\t\t\tconst $target = $(event.target).parents();\r\n\r\n\t\t\tif (!$target.andSelf().is($moreOptions)) {\r\n\t\t\t\t$moreOptions.removeClass('Toolbar__MoreOptions--open');\r\n\t\t\t}\r\n\t\t});\r\n\r\n\t\t$(window).on('resize.toolbar', () => handleMoreOptions($widget));\r\n\r\n\t\twindow.addEventListener('ToolbarFixed', () => handleMoreOptions($widget), false);\r\n\t};\r\n\r\n\tSapphireWidgets.HorizontalToolbar = {\r\n\t\tcreate,\r\n\t};\r\n})(jQuery, window, SapphireWidgets);\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/horizontal-toolbar/scripts.js?\n}");
+/* Component HorizontalToolbar */
+(function ($, window, SapphireWidgets) {
+	const create = (config) => {
+		const $widget = $('#' + config.widgetId);
+
+		$(document).ready(() => init($widget, config.isArrowNavigation));
+
+		if (config.isArrowNavigation) {
+			$(window).load(() => {
+				const $itemWrapper = $widget.find('.MenuItemWrapper.Active');
+				if ($itemWrapper.length) {
+					$itemWrapper[0].scrollIntoView({
+						behavior: 'auto',
+						block: 'end',
+					});
+				}
+			});
+		}
+	};
+
+	const init = ($widget, isArrowNavigation) => {
+		if (isArrowNavigation) {
+			handleArrows($widget);
+
+			const $toolbarItems = $widget.find('.Toolbar__Items');
+			const $listItems = $widget.find('.Toolbar__Items .ListRecords');
+			const $btnRight = $widget.find('.Toolbar__rightBtn');
+			const $btnLeft = $widget.find('.Toolbar__leftBtn');
+
+			$toolbarItems.scroll(() => handleArrows($widget));
+
+			$btnRight.click(function () {
+				var currentScroll = $toolbarItems.scrollLeft();
+				var maxScrolll = $listItems.width() - $toolbarItems.width();
+				var sideWidth = maxScrolll - 50;
+				$toolbarItems.scrollLeft(currentScroll + 50);
+
+				if (currentScroll == sideWidth) $btnRight.addClass('Disabled');
+				if (currentScroll != 50) $btnLeft.removeClass('Disabled');
+			});
+
+			$btnLeft.click(function () {
+				var currentScroll = $toolbarItems.scrollLeft();
+				var maxScrolll = $listItems.width() - $toolbarItems.width();
+				var sideWidth = maxScrolll - 50;
+				$toolbarItems.scrollLeft(currentScroll - 50);
+
+				if (currentScroll != sideWidth) $btnRight.removeClass('Disabled');
+				if (currentScroll == 50) $btnLeft.addClass('Disabled');
+			});
+
+			$(window).on('resize.toolbar', () => handleArrows($widget));
+
+			// Menu items are initially hidden and must be made visible after loading is finished
+			$listItems.find('> a:not(.Visible)').addClass('Visible');
+		} else {
+			handleMoreOptions($widget);
+			bindMoreOptionsEvents($widget);
+		}
+	};
+
+	handleArrows = ($widget) => {
+		const $toolbarItems = $widget.find('.Toolbar__Items');
+		const $listItems = $widget.find('.Toolbar__Items .ListRecords');
+		const $btnRight = $widget.find('.Toolbar__rightBtn');
+		const $btnLeft = $widget.find('.Toolbar__leftBtn');
+
+		let currentScroll = $toolbarItems.scrollLeft();
+		let menuWidth = $listItems.width();
+		let externalWidth = $toolbarItems.width();
+		var maxScrolll = menuWidth - externalWidth;
+
+		if (externalWidth > menuWidth) {
+			$btnLeft.hide();
+			$btnRight.hide();
+
+			$widget.find('.Toolbar_container').addClass('Toolbar_container--noarrows');
+		} else {
+			$btnLeft.show();
+			$btnRight.show();
+
+			$widget.find('.Toolbar_container').removeClass('Toolbar_container--noarrows');
+		}
+
+		if (currentScroll === 0) $btnLeft.addClass('Disabled');
+		else $btnLeft.removeClass('Disabled');
+
+		if (currentScroll >= maxScrolll) $btnRight.addClass('Disabled');
+		else $btnRight.removeClass('Disabled');
+	};
+
+	handleMoreOptions = ($widget) => {
+		const $listItems = $widget.find('.Toolbar__Items .ListRecords');
+		$listItems.find('> a.Visible').removeClass('Visible');
+
+		const menuWidth = $widget.find('.Toolbar__Items').outerWidth(true);
+		let itemsTotal = 0;
+
+		$listItems.find('> a').each(function () {
+			itemsTotal += parseInt($(this).outerWidth(true), 10);
+
+			if (itemsTotal + 90 < menuWidth) {
+				$(this).addClass('Visible');
+			} else {
+				return false;
+			}
+		});
+
+		const $hiddenItems = $listItems.find('> a:not(.Visible)');
+
+		if ($hiddenItems.length && !$listItems.find('.Toolbar__MoreOptions').length) {
+			$widget.find('.Toolbar__MoreOptions').clone().css('display', 'block').appendTo($listItems);
+		}
+		$listItems.find('.Toolbar__MoreOptions').css('display', $hiddenItems.length ? 'block' : 'none');
+
+		const $optionsList = $widget.find('.Toolbar__Items .Toolbar__MoreOptionsList');
+		$optionsList.empty();
+		$hiddenItems.clone().appendTo($optionsList);
+
+		const hasNotificationHidden = $hiddenItems.find('.MenuItemWrapper_Badge:not(:empty)').length !== 0;
+		const $trigger = $widget.find('.Toolbar__Items .Toolbar__MoreOptionsIcon');
+
+		if (hasNotificationHidden) {
+			$trigger.addClass('Toolbar__MoreOptionsIcon--notification');
+		} else {
+			$trigger.removeClass('Toolbar__MoreOptionsIcon--notification');
+		}
+	};
+
+	bindMoreOptionsEvents = ($widget) => {
+		const $moreOptions = $widget.find('.Toolbar__Items .Toolbar__MoreOptions');
+		const $trigger = $widget.find('.Toolbar__Items .Toolbar__MoreOptionsIcon');
+		const $optionsList = $widget.find('.Toolbar__MoreOptionsList');
+
+		$trigger.on('click', (event) => {
+			$moreOptions.toggleClass('Toolbar__MoreOptions--open');
+			event.stopPropagation();
+		});
+
+		$optionsList.on('mousewheel', (event) => {
+			event.stopPropagation();
+		});
+
+		$('body').on('mouseup', (event) => {
+			const $target = $(event.target).parents();
+
+			if (!$target.andSelf().is($moreOptions)) {
+				$moreOptions.removeClass('Toolbar__MoreOptions--open');
+			}
+		});
+
+		$(window).on('resize.toolbar', () => handleMoreOptions($widget));
+
+		window.addEventListener('ToolbarFixed', () => handleMoreOptions($widget), false);
+	};
+
+	SapphireWidgets.HorizontalToolbar = {
+		create,
+	};
+})(jQuery, window, SapphireWidgets);
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/hour-picker/scripts.js":
-/*!********************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/hour-picker/scripts.js ***!
-  \********************************************************************/
 /***/ (function() {
 
-eval("{/* Component HourPicker */\r\n(function($, window, SapphireWidgets) {\r\n\tclass HourPicker {\r\n\t\tconstructor(config) {\r\n\t\t\t// Options used by jQuery Timerpicker (External Lib)\r\n\t\t\tthis.options = {\r\n\t\t\t\t...config,\r\n\t\t\t};\r\n\r\n\t\t\tSapphireWidgets.HourPicker.allIntances.push(config.widgetId);\r\n\r\n\t\t\tthis.onComponentInit();\r\n\t\t}\r\n\r\n\t\tisComponentValid() {\r\n\t\t\tlet valid = true;\r\n\t\t\tlet message = `Component HourPicker (${this.options.widgetId}):`;\r\n\t\t\tlet errors = '';\r\n\r\n\t\t\tif (this.$model.length && this.$model.length > 1) {\r\n\t\t\t\terrors = `${errors} - Needs one - and just one - Input element.`;\r\n\t\t\t\tvalid = false;\r\n\t\t\t}\r\n\r\n\t\t\tif (!this.$model.length && this.$component.find('.HourPicker__Placeholder input').length) {\r\n\t\t\t\terrors = `${errors}\\n - The Input element must be of type Text.`;\r\n\t\t\t\tvalid = false;\r\n\t\t\t}\r\n\r\n\t\t\tif (!valid) console.error(`${message} ${errors}`);\r\n\r\n\t\t\treturn valid;\r\n\t\t}\r\n\r\n\t\tsetComponentPosition() {\r\n\t\t\tconst $widget = $('.ui-timepicker-container');\r\n\t\t\tconst labelLeft = this.$label.offset().left;\r\n\t\t\tconst labelWidth = this.$label.width();\r\n\t\t\tconst labelOuterWidth = this.$label.outerWidth();\r\n\t\t\tconst widgetOuterWidth = $widget.outerWidth();\r\n\t\t\tconst widgetMinWidth = +$widget.css('min-width').replace('px', '');\r\n\t\t\tconst isOutsideWindow =\r\n\t\t\t\tlabelLeft + labelOuterWidth > $(window).scrollLeft() + $(window).width() - widgetOuterWidth;\r\n\r\n\t\t\t$widget.css({\r\n\t\t\t\tleft: () => {\r\n\t\t\t\t\tlet value = labelLeft - (widgetMinWidth - labelWidth) / 2;\r\n\r\n\t\t\t\t\tif (isOutsideWindow) value = labelLeft + labelWidth - widgetOuterWidth;\r\n\t\t\t\t\telse if (value < 0) value = labelLeft;\r\n\r\n\t\t\t\t\treturn value;\r\n\t\t\t\t},\r\n\t\t\t});\r\n\t\t}\r\n\r\n\t\tsetElementClass(selector, className) {\r\n\t\t\treturn className ? $(selector).addClass(className) : false;\r\n\t\t}\r\n\r\n\t\tdefineTimeFormat() {\r\n\t\t\tlet format = [];\r\n\t\t\tlet amPm = '';\r\n\r\n\t\t\tformat.push(this.options.is24hFormat ? 'HH' : 'hh');\r\n\t\t\tif (this.options.showMinutes) format.push('mm');\r\n\t\t\tif (this.options.showSeconds) format.push('ss');\r\n\t\t\tif (!this.options.is24hFormat) amPm = ' p';\r\n\r\n\t\t\treturn `${format.join(':')}${amPm}`;\r\n\t\t}\r\n\r\n\t\tconvertTime12to24(value) {\r\n\t\t\tconst [time, modifier] = value.split(' ');\r\n\t\t\tlet [hours, minutes = '00', seconds = '00'] = time.split(':');\r\n\r\n\t\t\tif (hours === '12') hours = '00';\r\n\t\t\tif (modifier === 'PM') hours = parseInt(hours, 10) + 12;\r\n\r\n\t\t\treturn `${hours}:${minutes}:${seconds}`;\r\n\t\t}\r\n\r\n\t\tconvertTimeFormatToMask(value = '') {\r\n\t\t\treturn value.replace(/[a-zA-Z]+/g, '--');\r\n\t\t}\r\n\r\n\t\tonChangeEvent(value = '') {\r\n\t\t\tlet model = '01-01-1900 00:00:00'; //i.e. null\r\n\t\t\tlet label = this.convertTimeFormatToMask(this.options.timeFormat);\r\n\r\n\t\t\tif (value && !!value.trim()) {\r\n\t\t\t\t// This condition is correct, model always uses the 24h format\r\n\t\t\t\tmodel = this.options.is24hFormat ? value : this.convertTime12to24(value);\r\n\t\t\t\tlabel = value;\r\n\t\t\t}\r\n\r\n\t\t\tif (this.options.isNotifyEnabled) OsNotifyWidget(this.options.hourPickerFakeNotifyId, model);\r\n\t\t\tif (this.options.isTextTriggerable) this.$label.text(label);\r\n\r\n\t\t\tthis.$model.val(model);\r\n\t\t\tthis.$model.change();\r\n\r\n\t\t\treturn;\r\n\t\t}\r\n\r\n\t\tonComponentInit() {\r\n\t\t\tthis.$component = $(`#${this.options.widgetId}`);\r\n\t\t\tthis.$model = this.$component.find('.HourPicker__Placeholder input[type=\"text\"]');\r\n\t\t\tthis.$input = this.$component.find('.HourPicker__Displayed .HourPicker__InputValue');\r\n\t\t\tthis.$element = this.$input;\r\n\r\n\t\t\tthis.options.timeFormat = this.defineTimeFormat();\r\n\r\n\t\t\tif (!this.isComponentValid()) return;\r\n\t\t\telse {\r\n\t\t\t\tconst $container = this.$component;\r\n\r\n\t\t\t\tif (this.options.isTextTriggerable) {\r\n\t\t\t\t\t$container.addClass('HourPicker--textTrigger');\r\n\r\n\t\t\t\t\tthis.$label = $container.find('.HourPicker__Displayed .HourPicker__LabelValue');\r\n\t\t\t\t\tthis.$element = this.$label;\r\n\r\n\t\t\t\t\tthis.$label.text(this.convertTimeFormatToMask(this.options.timeFormat));\r\n\r\n\t\t\t\t\tthis.$label.on('click', () => {\r\n\t\t\t\t\t\tthis.$label.timepicker().open();\r\n\r\n\t\t\t\t\t\tthis.setComponentPosition();\r\n\t\t\t\t\t});\r\n\t\t\t\t}\r\n\r\n\t\t\t\tif (this.options.isClearable) {\r\n\t\t\t\t\tthis.$buttonClear = $container.find('.HourPicker__Displayed .HourPicker__ButtonClear');\r\n\r\n\t\t\t\t\tthis.$buttonClear.on('click', () => {\r\n\t\t\t\t\t\tthis.$input.val('');\r\n\t\t\t\t\t\tthis.onChangeEvent();\r\n\t\t\t\t\t});\r\n\t\t\t\t}\r\n\r\n\t\t\t\tthis.$element.timepicker({\r\n\t\t\t\t\t...this.options,\r\n\t\t\t\t\tchange: time => this.onChangeEvent(time ? $().timepicker.formatTime(this.options.timeFormat, time) : null),\r\n\t\t\t\t});\r\n\r\n\t\t\t\tthis.setElementClass('.ui-timepicker-container', this.options.currentLocale === 'AR' ? 'rtl' : 'ltr');\r\n\r\n\t\t\t\tthis.$input.prop('readonly', !this.options.isTypeEnabled);\r\n\t\t\t\tthis.$input.prop('placeholder', this.options.timeFormat);\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n\r\n\tconst create = config => {\r\n\t\twindow[config.widgetId] = new HourPicker(config);\r\n\t};\r\n\r\n\tSapphireWidgets.HourPicker = {\r\n\t\tcreate,\r\n\t\tallIntances: [],\r\n\t};\r\n})(jQuery, window, SapphireWidgets);\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/hour-picker/scripts.js?\n}");
+/* Component HourPicker */
+(function($, window, SapphireWidgets) {
+	class HourPicker {
+		constructor(config) {
+			// Options used by jQuery Timerpicker (External Lib)
+			this.options = {
+				...config,
+			};
+
+			SapphireWidgets.HourPicker.allIntances.push(config.widgetId);
+
+			this.onComponentInit();
+		}
+
+		isComponentValid() {
+			let valid = true;
+			let message = `Component HourPicker (${this.options.widgetId}):`;
+			let errors = '';
+
+			if (this.$model.length && this.$model.length > 1) {
+				errors = `${errors} - Needs one - and just one - Input element.`;
+				valid = false;
+			}
+
+			if (!this.$model.length && this.$component.find('.HourPicker__Placeholder input').length) {
+				errors = `${errors}\n - The Input element must be of type Text.`;
+				valid = false;
+			}
+
+			if (!valid) console.error(`${message} ${errors}`);
+
+			return valid;
+		}
+
+		setComponentPosition() {
+			const $widget = $('.ui-timepicker-container');
+			const labelLeft = this.$label.offset().left;
+			const labelWidth = this.$label.width();
+			const labelOuterWidth = this.$label.outerWidth();
+			const widgetOuterWidth = $widget.outerWidth();
+			const widgetMinWidth = +$widget.css('min-width').replace('px', '');
+			const isOutsideWindow =
+				labelLeft + labelOuterWidth > $(window).scrollLeft() + $(window).width() - widgetOuterWidth;
+
+			$widget.css({
+				left: () => {
+					let value = labelLeft - (widgetMinWidth - labelWidth) / 2;
+
+					if (isOutsideWindow) value = labelLeft + labelWidth - widgetOuterWidth;
+					else if (value < 0) value = labelLeft;
+
+					return value;
+				},
+			});
+		}
+
+		setElementClass(selector, className) {
+			return className ? $(selector).addClass(className) : false;
+		}
+
+		defineTimeFormat() {
+			let format = [];
+			let amPm = '';
+
+			format.push(this.options.is24hFormat ? 'HH' : 'hh');
+			if (this.options.showMinutes) format.push('mm');
+			if (this.options.showSeconds) format.push('ss');
+			if (!this.options.is24hFormat) amPm = ' p';
+
+			return `${format.join(':')}${amPm}`;
+		}
+
+		convertTime12to24(value) {
+			const [time, modifier] = value.split(' ');
+			let [hours, minutes = '00', seconds = '00'] = time.split(':');
+
+			if (hours === '12') hours = '00';
+			if (modifier === 'PM') hours = parseInt(hours, 10) + 12;
+
+			return `${hours}:${minutes}:${seconds}`;
+		}
+
+		convertTimeFormatToMask(value = '') {
+			return value.replace(/[a-zA-Z]+/g, '--');
+		}
+
+		onChangeEvent(value = '') {
+			let model = '01-01-1900 00:00:00'; //i.e. null
+			let label = this.convertTimeFormatToMask(this.options.timeFormat);
+
+			if (value && !!value.trim()) {
+				// This condition is correct, model always uses the 24h format
+				model = this.options.is24hFormat ? value : this.convertTime12to24(value);
+				label = value;
+			}
+
+			if (this.options.isNotifyEnabled) OsNotifyWidget(this.options.hourPickerFakeNotifyId, model);
+			if (this.options.isTextTriggerable) this.$label.text(label);
+
+			this.$model.val(model);
+			this.$model.change();
+
+			return;
+		}
+
+		onComponentInit() {
+			this.$component = $(`#${this.options.widgetId}`);
+			this.$model = this.$component.find('.HourPicker__Placeholder input[type="text"]');
+			this.$input = this.$component.find('.HourPicker__Displayed .HourPicker__InputValue');
+			this.$element = this.$input;
+
+			this.options.timeFormat = this.defineTimeFormat();
+
+			if (!this.isComponentValid()) return;
+			else {
+				const $container = this.$component;
+
+				if (this.options.isTextTriggerable) {
+					$container.addClass('HourPicker--textTrigger');
+
+					this.$label = $container.find('.HourPicker__Displayed .HourPicker__LabelValue');
+					this.$element = this.$label;
+
+					this.$label.text(this.convertTimeFormatToMask(this.options.timeFormat));
+
+					this.$label.on('click', () => {
+						this.$label.timepicker().open();
+
+						this.setComponentPosition();
+					});
+				}
+
+				if (this.options.isClearable) {
+					this.$buttonClear = $container.find('.HourPicker__Displayed .HourPicker__ButtonClear');
+
+					this.$buttonClear.on('click', () => {
+						this.$input.val('');
+						this.onChangeEvent();
+					});
+				}
+
+				this.$element.timepicker({
+					...this.options,
+					change: time => this.onChangeEvent(time ? $().timepicker.formatTime(this.options.timeFormat, time) : null),
+				});
+
+				this.setElementClass('.ui-timepicker-container', this.options.currentLocale === 'AR' ? 'rtl' : 'ltr');
+
+				this.$input.prop('readonly', !this.options.isTypeEnabled);
+				this.$input.prop('placeholder', this.options.timeFormat);
+			}
+		}
+	}
+
+	const create = config => {
+		window[config.widgetId] = new HourPicker(config);
+	};
+
+	SapphireWidgets.HourPicker = {
+		create,
+		allIntances: [],
+	};
+})(jQuery, window, SapphireWidgets);
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/iframe-loader/scripts.js":
-/*!**********************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/iframe-loader/scripts.js ***!
-  \**********************************************************************/
 /***/ (function() {
 
-eval("{var inlineMenu_notifyWidget;\r\n$.fn.menuInline = function (notifyId, type, isFullWidth = false, actionsClass, _backgroundColor, dataId) {\r\n  /* type: INLINE; MENU; */\r\n  var typeINLINE = \"INLINE\";\r\n  var typeBALLON = \"BALLON\";\r\n  var _id = this.attr('id');\r\n  inlineMenu_notifyWidget = notifyId;\r\n  var GetLinkHref = function (widget) {\r\n    var linkHref;\r\n    var isAButton = false;\r\n    try {\r\n      //Checks if the id is from a link or not\r\n      linkHref = $(widget).attr('href');\r\n\r\n      //Tests for visibility/existence\r\n      if (typeof linkHref == 'undefined') {\r\n        var onClick = widget.getAttribute('onclick');\r\n        if (typeof onClick != 'undefined') {\r\n          isAButton = true;\r\n          if (onClick != null) {\r\n            var hrefMatch;\r\n            if ((hrefMatch = onClick.toString().match(/href='([^']*)'/)) != null) {\r\n              linkHref = hrefMatch[1];\r\n            }\r\n          }\r\n        }\r\n      } //else: throw (\"Inexistent or Invisible button\");\r\n    } catch (e) { }\r\n    return [linkHref, isAButton];\r\n  }\r\n\r\n  linkId = \"#\" + _id;\r\n\r\n  var linkWidget;\r\n  try { linkWidget = $(linkId).get(0); } catch (e) { }\r\n  if (typeof linkWidget == 'undefined') {\r\n    //Case the widget is inexistent or invisible, it will show no errors.\r\n    return;\r\n  }\r\n\r\n  var getLinkResult = GetLinkHref(linkWidget);\r\n  var linkHref = getLinkResult[0];\r\n  var isAButton = getLinkResult[1];\r\n\r\n  if (typeof linkHref == 'undefined' || linkHref == \"\" || linkHref == \"#\" || linkHref.indexOf(\"javascript:\") == 0) {\r\n    try {\r\n      window.OsHandleException(new Error(\"Popup link id must be the id of a Link or Button Widget with Method Navigate.\"), outsystems.osErrorCodes.SystemJavascriptError, 'Popup_Editor');\r\n    } catch (e) { }\r\n    return;\r\n  }\r\n\r\n  if (isAButton) {\r\n    //remove the existing on-click\r\n    linkWidget.setAttribute('onclick', linkWidget.getAttribute('onclick').toString().replace('window.location.href=', 'return false;window.location.href='));\r\n  }\r\n\r\n  // if there's a confirmation message, store in an attribute the result\r\n  if (linkWidget.getAttribute('onclick') != null) {\r\n    linkWidget.setAttribute('onclick', linkWidget.getAttribute('onclick').toString().replace(\"if( ret != true )\", \"$('\" + linkId + \"').get(0).setAttribute('confirmed', ret); if( ret != true )\"));\r\n  }\r\n\r\n\r\n  function menuPositionNotify(id, context) {\r\n    //var _this = $(this);\r\n    var _this = $(\"#\" + id);\r\n    var Xx = 0;\r\n    var Yy = 0;\r\n    var Ww = 0;\r\n    var Hh = 0;\r\n\r\n    /* Get the menu element. */\r\n    var _el = $(\"div[menu-type=\" + id + \"]\");\r\n\r\n    /* Get the dimensions of the button. */\r\n    buttonHh = _this.outerHeight();\r\n    buttonWw = _this.outerWidth();\r\n\r\n    var buttonY = (_this.position().top + buttonHh) - (buttonHh / 2);\r\n    var buttonX = _this.offset().left - (buttonWw / 2);\r\n    //var buttonX = _this.position().left;\r\n\r\n    /* Get the distance of menu button and the parent element */\r\n    var popupParentXx = (_this.offset().left - _this.position().left);\r\n\r\n    var popupXx = _el.offset().left;\r\n    var popupWw = _el.outerWidth();\r\n\r\n    Xx = Math.abs(buttonX - $('body').scrollLeft() - popupParentXx);\r\n    Yy = Math.abs((buttonHh - buttonY) - $('body').scrollTop());\r\n\r\n    /* Check if clicked position plus the popup width exceed the window width. */\r\n    if ((buttonX + popupWw - $('body').scrollLeft()) > $(context).width()) {\r\n      Xx = ((buttonX - popupWw) - $('body').scrollLeft() - popupParentXx) + (buttonWw);\r\n      //Xx = ($(window).width() - popupWw) - $('body').scrollLeft();\r\n    }\r\n\r\n    /* Set menu position. */\r\n    _el.css({ 'left': Xx + 'px', 'top': buttonY + 'px' });\r\n\r\n    /* Refresh value */\r\n    popupXx = _el.offset().left;\r\n\r\n    var _balloonEl = _el.children(\".menu-inline\").children(\".menu-inline-balloon\");\r\n\r\n    var _balloonXx = _balloonEl.offset().left;\r\n    var _balloonWw = _balloonEl.outerWidth();\r\n    var _balloonPosXx = Math.abs(buttonX - Xx - popupParentXx);\r\n\r\n    //console.log(\"res: \" + (_balloonPosXx + _balloonWw) + \" (\" + _balloonXx + \" or \" + (_balloonPosXx + Xx) + \" + \" + _balloonWw + \") \" + \" > \" + (Xx + popupWw) +  \" (\" + Xx + \" + \" + popupWw + \") \");\r\n\r\n    /* Is the balloon icon positioned out of the popup menu? */\r\n    if (((_balloonPosXx + Xx) + _balloonWw) > (Xx + popupWw)) {\r\n      _balloonPosXx = (_balloonPosXx - _balloonWw);\r\n    }\r\n\r\n    /* Set position of the balloon effect. */\r\n    _balloonEl.css('left', _balloonPosXx + 'px');\r\n\r\n    inlineMenu_notifyWidget = notifyId;\r\n  }\r\n\r\n  function menuNotifyEvents(id) {\r\n    var context = \"MainWorkArea\";\r\n    menuPositionNotify(id, context);\r\n\r\n    /* v *** Hide popup when click outside *** v */\r\n    function PMClickOutside(event) {\r\n      if (event.hasOwnProperty('target')) {\r\n        var target = $(event.target);\r\n        /*if ((target.parents().index($('a[sapphirehospital], .HospitalPopUp')) == -1)) {}*/\r\n        if (!$(event.target).closest('.menu-inline, .os-internal-ui-autocomplete, .os-internal-ui-menu-item, .os-internal-ui-corner-all, ui-autocomplete-ite').length) {\r\n          $('.menu-inline:visible').remove();\r\n        }\r\n      }\r\n    }\r\n\r\n    var _PMIsDrag = false;\r\n    var _PMIsClick = false;\r\n    $(document).on('touchstart', function (event) {\r\n      _PMIsDrag = false;\r\n      _PMIsClick = true;\r\n    });\r\n    $(document).on('touchmove', function (event) {\r\n      _PMIsDrag = true;\r\n    });\r\n    $(document).on('click', function (event) {\r\n      PMClickOutside(event);\r\n      _PMIsDrag = false;\r\n      _PMIsClick = false;\r\n    });\r\n    $(document).on('touchend', function (event) {\r\n      if (!_PMIsDrag && _PMIsClick) {\r\n        PMClickOutside(event);\r\n      }\r\n      _PMIsDrag = false;\r\n      _PMIsClick = false;\r\n    });\r\n    /* ^ *** Hide popup when click outside *** ^ */\r\n  }\r\n\r\n\r\n  $(linkId).off('click').on('click', function (event) {\r\n    if (type == typeBALLON) {\r\n      /* Ensure to close all the opened menus in the page. */\r\n      $(\"div.menu-inline-wrapper[menu-type]\").html(\"\");\r\n    }\r\n\r\n    var _linkId = $(this).attr('id');\r\n    //The clickHandler event is registered in osjs and $ for compatibillity reasons, they must not run both for the same click.\r\n    //Variable is set to false in RichWidgets_Popup_Editor_resize function.\r\n    /* if($.data(event.target,\"os-internal-processing\") == true){\r\n        return false;\r\n    } else {\r\n        $.data(event.target,\"os-internal-processing\", true);\r\n    }*/\r\n\r\n    //Check if the clicked link is disabled\r\n    if (linkWidget.getAttribute('disabled') != null) {\r\n      var linkDisabled = linkWidget.getAttribute('disabled').toString().toLowerCase();\r\n      if (linkDisabled == 'disabled' || linkDisabled.indexOf('true') != -1) {\r\n        return false;\r\n      }\r\n    }\r\n\r\n    if (linkWidget.getAttribute(\"confirmed\") == 'false') {\r\n      return false;\r\n    }\r\n    if (OsIsIE()) {\r\n      osFocusBackend.ClearFocusedElement();\r\n    }\r\n\r\n    var wrapper = $(\"#\" + $(\"div[menu-type=\" + _linkId + \"]\").attr(\"id\"));\r\n    wrapper.html(\"\");\r\n    var popupDiv;\r\n    var _iframe;\r\n    var pleaseWaitDiv;\r\n\r\n    var _menu;\r\n    var _menuContent;\r\n    var waitText = \"Loading...\";\r\n\r\n    if (type == typeINLINE) {\r\n      popupDiv = $(\"<div class='iframe-loading' style='text-align: center;'></div>\").appendTo(wrapper);\r\n      _iframe = $('<iframe scrolling=\"auto\" frameborder=\"0\" src=\"javascript:void(0);\" style=\"width: ' + (isFullWidth ? '100%' : '0') + '; height: 0;\" />');\r\n\r\n      if (dataId) {\r\n        _iframe.attr('data-id', dataId);\r\n      }\r\n\r\n      _iframe.appendTo(wrapper);\r\n    }\r\n    else if (type == typeBALLON) {\r\n      wrapper.attr(\"class\", \"menu-inline-wrapper\");\r\n\r\n      _menu = $('<div class=\"menu-inline\"></div>').appendTo(wrapper);\r\n      var _menuBallon = $('<div class=\"menu-inline-balloon\"></div>').appendTo(_menu);\r\n      _menuContent = $('<div class=\"menu-inline-content\"></div>').appendTo(_menu);\r\n      popupDiv = $(\"<div class='iframe-loading' style='text-align: center;'></div>\").appendTo(_menuContent);\r\n\r\n      _iframe = $('<iframe scrolling=\"auto\" frameborder=\"0\" src=\"javascript:void(0);\" style=\"width: ' + (isFullWidth ? '100%' : '0') + '; height: 0;\" />');\r\n\r\n      if (dataId) {\r\n        _iframe.attr('data-id', dataId);\r\n      }\r\n\r\n      _iframe.appendTo(_menuContent);\r\n    }\r\n\r\n    pleaseWaitDiv = popupDiv.prepend(\"<span style='margin-top: 25px;' class='Text_Note'>\" + waitText + \"</span>\");\r\n\r\n    //load target page\r\n    var ohref = GetLinkHref(linkWidget)[0];\r\n    var rhref = ohref.replace(/(\\?|&)_=.*?(&|$)/, \"$1_=\" + (+ new Date().now) + \"$2\");\r\n    var xhref = rhref + ((rhref == ohref) ? (rhref.indexOf('?') >= 0 ? \"&\" : \"?\") + \"_=\" + (+new Date) : '');\r\n\r\n    _iframe.attr('src', xhref);\r\n    (function (popupDiv) {\r\n      _iframe.load(function () {\r\n        var iframeContext = $(this).contents();\r\n\r\n        const $header = iframeContext.find('.MainInteractiveCard-iframe-actions');\r\n\r\n        if ($header.length && actionsClass) {\r\n          $header.addClass(actionsClass);\r\n        }\r\n\r\n        iframeContext.find(\"head\").append($(\"<style type='text/css'>\" +\r\n          \"    html > body { background-color: \" + _backgroundColor + \"; min-width: \" + (isFullWidth ? \"100%\" : \"inherit\") + \"; display: inline-block; } \" +\r\n          \"    html { width: inherit; display: inline-block; overflow-y: hidden; } \" +\r\n          \"    html form { width: \" + (isFullWidth ? \"100%\" : \"inherit\") + \"; display: inline-block; } \" +\r\n          \"</style>\"));\r\n        //after loading try to resize, if it is possible resize also after each ajax call\r\n        popupDiv.remove();\r\n        $(this).css({\r\n          'width': (isFullWidth ? '100%' : (iframeContext.find('html form').outerWidth(true) + 1) + 'px'),\r\n          'height': (iframeContext.find('html form').outerHeight(true) + 1) + 'px'\r\n        });\r\n\r\n        if (type == typeBALLON) {\r\n          menuNotifyEvents(_linkId);\r\n        }\r\n\r\n      });\r\n    })(popupDiv);\r\n\r\n\r\n    return false;\r\n  });\r\n};\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/iframe-loader/scripts.js?\n}");
+var inlineMenu_notifyWidget;
+$.fn.menuInline = function (notifyId, type, isFullWidth = false, actionsClass, _backgroundColor, dataId) {
+  /* type: INLINE; MENU; */
+  var typeINLINE = "INLINE";
+  var typeBALLON = "BALLON";
+  var _id = this.attr('id');
+  inlineMenu_notifyWidget = notifyId;
+  var GetLinkHref = function (widget) {
+    var linkHref;
+    var isAButton = false;
+    try {
+      //Checks if the id is from a link or not
+      linkHref = $(widget).attr('href');
+
+      //Tests for visibility/existence
+      if (typeof linkHref == 'undefined') {
+        var onClick = widget.getAttribute('onclick');
+        if (typeof onClick != 'undefined') {
+          isAButton = true;
+          if (onClick != null) {
+            var hrefMatch;
+            if ((hrefMatch = onClick.toString().match(/href='([^']*)'/)) != null) {
+              linkHref = hrefMatch[1];
+            }
+          }
+        }
+      } //else: throw ("Inexistent or Invisible button");
+    } catch (e) { }
+    return [linkHref, isAButton];
+  }
+
+  linkId = "#" + _id;
+
+  var linkWidget;
+  try { linkWidget = $(linkId).get(0); } catch (e) { }
+  if (typeof linkWidget == 'undefined') {
+    //Case the widget is inexistent or invisible, it will show no errors.
+    return;
+  }
+
+  var getLinkResult = GetLinkHref(linkWidget);
+  var linkHref = getLinkResult[0];
+  var isAButton = getLinkResult[1];
+
+  if (typeof linkHref == 'undefined' || linkHref == "" || linkHref == "#" || linkHref.indexOf("javascript:") == 0) {
+    try {
+      window.OsHandleException(new Error("Popup link id must be the id of a Link or Button Widget with Method Navigate."), outsystems.osErrorCodes.SystemJavascriptError, 'Popup_Editor');
+    } catch (e) { }
+    return;
+  }
+
+  if (isAButton) {
+    //remove the existing on-click
+    linkWidget.setAttribute('onclick', linkWidget.getAttribute('onclick').toString().replace('window.location.href=', 'return false;window.location.href='));
+  }
+
+  // if there's a confirmation message, store in an attribute the result
+  if (linkWidget.getAttribute('onclick') != null) {
+    linkWidget.setAttribute('onclick', linkWidget.getAttribute('onclick').toString().replace("if( ret != true )", "$('" + linkId + "').get(0).setAttribute('confirmed', ret); if( ret != true )"));
+  }
+
+
+  function menuPositionNotify(id, context) {
+    //var _this = $(this);
+    var _this = $("#" + id);
+    var Xx = 0;
+    var Yy = 0;
+    var Ww = 0;
+    var Hh = 0;
+
+    /* Get the menu element. */
+    var _el = $("div[menu-type=" + id + "]");
+
+    /* Get the dimensions of the button. */
+    buttonHh = _this.outerHeight();
+    buttonWw = _this.outerWidth();
+
+    var buttonY = (_this.position().top + buttonHh) - (buttonHh / 2);
+    var buttonX = _this.offset().left - (buttonWw / 2);
+    //var buttonX = _this.position().left;
+
+    /* Get the distance of menu button and the parent element */
+    var popupParentXx = (_this.offset().left - _this.position().left);
+
+    var popupXx = _el.offset().left;
+    var popupWw = _el.outerWidth();
+
+    Xx = Math.abs(buttonX - $('body').scrollLeft() - popupParentXx);
+    Yy = Math.abs((buttonHh - buttonY) - $('body').scrollTop());
+
+    /* Check if clicked position plus the popup width exceed the window width. */
+    if ((buttonX + popupWw - $('body').scrollLeft()) > $(context).width()) {
+      Xx = ((buttonX - popupWw) - $('body').scrollLeft() - popupParentXx) + (buttonWw);
+      //Xx = ($(window).width() - popupWw) - $('body').scrollLeft();
+    }
+
+    /* Set menu position. */
+    _el.css({ 'left': Xx + 'px', 'top': buttonY + 'px' });
+
+    /* Refresh value */
+    popupXx = _el.offset().left;
+
+    var _balloonEl = _el.children(".menu-inline").children(".menu-inline-balloon");
+
+    var _balloonXx = _balloonEl.offset().left;
+    var _balloonWw = _balloonEl.outerWidth();
+    var _balloonPosXx = Math.abs(buttonX - Xx - popupParentXx);
+
+    //console.log("res: " + (_balloonPosXx + _balloonWw) + " (" + _balloonXx + " or " + (_balloonPosXx + Xx) + " + " + _balloonWw + ") " + " > " + (Xx + popupWw) +  " (" + Xx + " + " + popupWw + ") ");
+
+    /* Is the balloon icon positioned out of the popup menu? */
+    if (((_balloonPosXx + Xx) + _balloonWw) > (Xx + popupWw)) {
+      _balloonPosXx = (_balloonPosXx - _balloonWw);
+    }
+
+    /* Set position of the balloon effect. */
+    _balloonEl.css('left', _balloonPosXx + 'px');
+
+    inlineMenu_notifyWidget = notifyId;
+  }
+
+  function menuNotifyEvents(id) {
+    var context = "MainWorkArea";
+    menuPositionNotify(id, context);
+
+    /* v *** Hide popup when click outside *** v */
+    function PMClickOutside(event) {
+      if (event.hasOwnProperty('target')) {
+        var target = $(event.target);
+        /*if ((target.parents().index($('a[sapphirehospital], .HospitalPopUp')) == -1)) {}*/
+        if (!$(event.target).closest('.menu-inline, .os-internal-ui-autocomplete, .os-internal-ui-menu-item, .os-internal-ui-corner-all, ui-autocomplete-ite').length) {
+          $('.menu-inline:visible').remove();
+        }
+      }
+    }
+
+    var _PMIsDrag = false;
+    var _PMIsClick = false;
+    $(document).on('touchstart', function (event) {
+      _PMIsDrag = false;
+      _PMIsClick = true;
+    });
+    $(document).on('touchmove', function (event) {
+      _PMIsDrag = true;
+    });
+    $(document).on('click', function (event) {
+      PMClickOutside(event);
+      _PMIsDrag = false;
+      _PMIsClick = false;
+    });
+    $(document).on('touchend', function (event) {
+      if (!_PMIsDrag && _PMIsClick) {
+        PMClickOutside(event);
+      }
+      _PMIsDrag = false;
+      _PMIsClick = false;
+    });
+    /* ^ *** Hide popup when click outside *** ^ */
+  }
+
+
+  $(linkId).off('click').on('click', function (event) {
+    if (type == typeBALLON) {
+      /* Ensure to close all the opened menus in the page. */
+      $("div.menu-inline-wrapper[menu-type]").html("");
+    }
+
+    var _linkId = $(this).attr('id');
+    //The clickHandler event is registered in osjs and $ for compatibillity reasons, they must not run both for the same click.
+    //Variable is set to false in RichWidgets_Popup_Editor_resize function.
+    /* if($.data(event.target,"os-internal-processing") == true){
+        return false;
+    } else {
+        $.data(event.target,"os-internal-processing", true);
+    }*/
+
+    //Check if the clicked link is disabled
+    if (linkWidget.getAttribute('disabled') != null) {
+      var linkDisabled = linkWidget.getAttribute('disabled').toString().toLowerCase();
+      if (linkDisabled == 'disabled' || linkDisabled.indexOf('true') != -1) {
+        return false;
+      }
+    }
+
+    if (linkWidget.getAttribute("confirmed") == 'false') {
+      return false;
+    }
+    if (OsIsIE()) {
+      osFocusBackend.ClearFocusedElement();
+    }
+
+    var wrapper = $("#" + $("div[menu-type=" + _linkId + "]").attr("id"));
+    wrapper.html("");
+    var popupDiv;
+    var _iframe;
+    var pleaseWaitDiv;
+
+    var _menu;
+    var _menuContent;
+    var waitText = "Loading...";
+
+    if (type == typeINLINE) {
+      popupDiv = $("<div class='iframe-loading' style='text-align: center;'></div>").appendTo(wrapper);
+      _iframe = $('<iframe scrolling="auto" frameborder="0" src="javascript:void(0);" style="width: ' + (isFullWidth ? '100%' : '0') + '; height: 0;" />');
+
+      if (dataId) {
+        _iframe.attr('data-id', dataId);
+      }
+
+      _iframe.appendTo(wrapper);
+    }
+    else if (type == typeBALLON) {
+      wrapper.attr("class", "menu-inline-wrapper");
+
+      _menu = $('<div class="menu-inline"></div>').appendTo(wrapper);
+      var _menuBallon = $('<div class="menu-inline-balloon"></div>').appendTo(_menu);
+      _menuContent = $('<div class="menu-inline-content"></div>').appendTo(_menu);
+      popupDiv = $("<div class='iframe-loading' style='text-align: center;'></div>").appendTo(_menuContent);
+
+      _iframe = $('<iframe scrolling="auto" frameborder="0" src="javascript:void(0);" style="width: ' + (isFullWidth ? '100%' : '0') + '; height: 0;" />');
+
+      if (dataId) {
+        _iframe.attr('data-id', dataId);
+      }
+
+      _iframe.appendTo(_menuContent);
+    }
+
+    pleaseWaitDiv = popupDiv.prepend("<span style='margin-top: 25px;' class='Text_Note'>" + waitText + "</span>");
+
+    //load target page
+    var ohref = GetLinkHref(linkWidget)[0];
+    var rhref = ohref.replace(/(\?|&)_=.*?(&|$)/, "$1_=" + (+ new Date().now) + "$2");
+    var xhref = rhref + ((rhref == ohref) ? (rhref.indexOf('?') >= 0 ? "&" : "?") + "_=" + (+new Date) : '');
+
+    _iframe.attr('src', xhref);
+    (function (popupDiv) {
+      _iframe.load(function () {
+        var iframeContext = $(this).contents();
+
+        const $header = iframeContext.find('.MainInteractiveCard-iframe-actions');
+
+        if ($header.length && actionsClass) {
+          $header.addClass(actionsClass);
+        }
+
+        iframeContext.find("head").append($("<style type='text/css'>" +
+          "    html > body { background-color: " + _backgroundColor + "; min-width: " + (isFullWidth ? "100%" : "inherit") + "; display: inline-block; } " +
+          "    html { width: inherit; display: inline-block; overflow-y: hidden; } " +
+          "    html form { width: " + (isFullWidth ? "100%" : "inherit") + "; display: inline-block; } " +
+          "</style>"));
+        //after loading try to resize, if it is possible resize also after each ajax call
+        popupDiv.remove();
+        $(this).css({
+          'width': (isFullWidth ? '100%' : (iframeContext.find('html form').outerWidth(true) + 1) + 'px'),
+          'height': (iframeContext.find('html form').outerHeight(true) + 1) + 'px'
+        });
+
+        if (type == typeBALLON) {
+          menuNotifyEvents(_linkId);
+        }
+
+      });
+    })(popupDiv);
+
+
+    return false;
+  });
+};
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/input-lasa/scripts.js":
-/*!*******************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/input-lasa/scripts.js ***!
-  \*******************************************************************/
 /***/ (function() {
 
-eval("{/* Component InputLASA */\r\n/* This extends MarkWordsFromList, which is in Javascript_Lib */\r\n(function () {\r\n\tvar setupInput = function (config) {\r\n\t\t$('#' + config.inputId).addClass('OSFillParent');\r\n\t\t$('#' + config.labelId).addClass('OSFillParent');\r\n\r\n\t\tSapphireWidgets.MarkWordsFromList.switchView(config);\r\n\t\twindow.setTimeout(function () {\r\n\t\t\tSapphireWidgets.MarkWordsFromList.updateLabel(config);\r\n\t\t}, 250);\r\n\r\n\t\t$('#' + config.labelId).on('click', function () {\r\n\t\t\tSapphireWidgets.MarkWordsFromList.switchView(config, true, true);\r\n\t\t});\r\n\r\n\t\t$('#' + config.inputId)\r\n\t\t\t.on('focus', function () {\r\n\t\t\t\tSapphireWidgets.MarkWordsFromList.switchView(config, true);\r\n\t\t\t})\r\n\t\t\t.on('blur', function () {\r\n\t\t\t\tSapphireWidgets.MarkWordsFromList.switchView(config);\r\n\t\t\t\tSapphireWidgets.MarkWordsFromList.updateLabel(config);\r\n\t\t\t})\r\n\t\t\t.on('change input', function () {\r\n\t\t\t\tSapphireWidgets.MarkWordsFromList.updateLabel(config);\r\n\t\t\t});\r\n\t};\r\n\r\n\tvar updateLabel = function (config) {\r\n\t\tvar input = $('#' + config.inputId);\r\n\t\tvar label = $('#' + config.labelId);\r\n\t\tif (input.val()) {\r\n\t\t\tlabel.text(input.val()).css('color', '');\r\n\t\t\twindow.setTimeout(function () {\r\n\t\t\t\tSapphireWidgets.MarkWordsFromList.applyMarking({ target: config.labelId });\r\n\t\t\t}, 250);\r\n\t\t} else {\r\n\t\t\tlabel.text(input.prop('placeholder')).css('color', '#999');\r\n\t\t}\r\n\t};\r\n\r\n\tvar switchView = function (config, showInput, focusInput) {\r\n\t\tvar input = $('#' + config.inputId);\r\n\t\tvar label = $('#' + config.labelId);\r\n\t\tif (showInput) {\r\n\t\t\tlabel.hide();\r\n\t\t\tinput.show();\r\n\t\t\tif (focusInput) {\r\n\t\t\t\tinput.focus();\r\n\t\t\t}\r\n\t\t} else {\r\n\t\t\tinput.hide();\r\n\t\t\tlabel.show();\r\n\t\t}\r\n\t};\r\n\r\n\tSapphireWidgets.MarkWordsFromList = SapphireWidgets.MarkWordsFromList = SapphireWidgets.MarkWordsFromList || {};\r\n\tSapphireWidgets.MarkWordsFromList.setupInput = setupInput;\r\n\tSapphireWidgets.MarkWordsFromList.updateLabel = updateLabel;\r\n\tSapphireWidgets.MarkWordsFromList.switchView = switchView;\r\n})();\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/input-lasa/scripts.js?\n}");
+/* Component InputLASA */
+/* This extends MarkWordsFromList, which is in Javascript_Lib */
+(function () {
+	var setupInput = function (config) {
+		$('#' + config.inputId).addClass('OSFillParent');
+		$('#' + config.labelId).addClass('OSFillParent');
+
+		SapphireWidgets.MarkWordsFromList.switchView(config);
+		window.setTimeout(function () {
+			SapphireWidgets.MarkWordsFromList.updateLabel(config);
+		}, 250);
+
+		$('#' + config.labelId).on('click', function () {
+			SapphireWidgets.MarkWordsFromList.switchView(config, true, true);
+		});
+
+		$('#' + config.inputId)
+			.on('focus', function () {
+				SapphireWidgets.MarkWordsFromList.switchView(config, true);
+			})
+			.on('blur', function () {
+				SapphireWidgets.MarkWordsFromList.switchView(config);
+				SapphireWidgets.MarkWordsFromList.updateLabel(config);
+			})
+			.on('change input', function () {
+				SapphireWidgets.MarkWordsFromList.updateLabel(config);
+			});
+	};
+
+	var updateLabel = function (config) {
+		var input = $('#' + config.inputId);
+		var label = $('#' + config.labelId);
+		if (input.val()) {
+			label.text(input.val()).css('color', '');
+			window.setTimeout(function () {
+				SapphireWidgets.MarkWordsFromList.applyMarking({ target: config.labelId });
+			}, 250);
+		} else {
+			label.text(input.prop('placeholder')).css('color', '#999');
+		}
+	};
+
+	var switchView = function (config, showInput, focusInput) {
+		var input = $('#' + config.inputId);
+		var label = $('#' + config.labelId);
+		if (showInput) {
+			label.hide();
+			input.show();
+			if (focusInput) {
+				input.focus();
+			}
+		} else {
+			input.hide();
+			label.show();
+		}
+	};
+
+	SapphireWidgets.MarkWordsFromList = SapphireWidgets.MarkWordsFromList = SapphireWidgets.MarkWordsFromList || {};
+	SapphireWidgets.MarkWordsFromList.setupInput = setupInput;
+	SapphireWidgets.MarkWordsFromList.updateLabel = updateLabel;
+	SapphireWidgets.MarkWordsFromList.switchView = switchView;
+})();
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/input-with-clear/scripts.js":
-/*!*************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/input-with-clear/scripts.js ***!
-  \*************************************************************************/
 /***/ (function() {
 
-eval("{(function() {\r\n\tclass InputWithClear {\r\n\t\tconstructor(config) {\r\n\t\t\tthis.config = config;\r\n\t\t\tthis.$widget = $(`#${config.widgetId}`);\r\n\t\t\tthis.$input = this.$widget.find('input[type]');\r\n\t\t\tthis.$clear = this.$widget.find('.InputWithClear-clear');\r\n\t\t\tthis.$notifyLink = this.$widget.find('.InputWithClear-notify-link');\r\n\t\t\tthis.$widgetShield = this.$widget.find('.InputWithClear--shield');\r\n\t\t\tthis.onInit();\r\n\t\t}\r\n\r\n\t\tonInit() {\r\n\t\t\tthis.$input.on('keyup', e => {\r\n\t\t\t\tif (this.$input.val() !== '') this.$clear.show();\r\n\t\t\t\telse this.$clear.show();\r\n\t\t\t});\r\n\r\n\t\t\tthis.$input.on('blur', () => {\r\n\t\t\t\tif (this.$input.val() === '') {\r\n\t\t\t\t\twindow.setTimeout(() => {\r\n\t\t\t\t\t\tif ($('.daterangepicker:visible').length === 1) {\r\n\t\t\t\t\t\t\treturn false;\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t\tthis.$clear.hide();\r\n\t\t\t\t\t\tthis.$notifyLink.trigger('click');\r\n\t\t\t\t\t}, 100);\r\n\t\t\t\t}\r\n\t\t\t});\r\n\t\t\tthis.$clear.on('click', () => {\r\n\t\t\t\tthis.$input.val('');\r\n\t\t\t\tthis.$clear.hide();\r\n\t\t\t\tthis.$notifyLink.trigger('click');\r\n\t\t\t});\r\n\t\t\tif (this.config.hasShield) {\r\n\t\t\t\twindow.setTimeout(() => {\r\n\t\t\t\t\tthis.$widgetShield.hide();\r\n\t\t\t\t}, this.config.shieldTimeout);\r\n\t\t\t\tif (this.config.shieldTimeout > 0) {\r\n\t\t\t\t\tthis.$widgetShield.on('click', () => {\r\n\t\t\t\t\t\tthis.$clear.hide();\r\n\t\t\t\t\t});\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n\r\n\tconst create = config => (window[config.widgetId] = new InputWithClear(config));\r\n\r\n\tSapphireWidgets.InputWithClear = {\r\n\t\tcreate,\r\n\t};\r\n})();\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/input-with-clear/scripts.js?\n}");
+(function() {
+	class InputWithClear {
+		constructor(config) {
+			this.config = config;
+			this.$widget = $(`#${config.widgetId}`);
+			this.$input = this.$widget.find('input[type]');
+			this.$clear = this.$widget.find('.InputWithClear-clear');
+			this.$notifyLink = this.$widget.find('.InputWithClear-notify-link');
+			this.$widgetShield = this.$widget.find('.InputWithClear--shield');
+			this.onInit();
+		}
+
+		onInit() {
+			this.$input.on('keyup', e => {
+				if (this.$input.val() !== '') this.$clear.show();
+				else this.$clear.show();
+			});
+
+			this.$input.on('blur', () => {
+				if (this.$input.val() === '') {
+					window.setTimeout(() => {
+						if ($('.daterangepicker:visible').length === 1) {
+							return false;
+						}
+						this.$clear.hide();
+						this.$notifyLink.trigger('click');
+					}, 100);
+				}
+			});
+			this.$clear.on('click', () => {
+				this.$input.val('');
+				this.$clear.hide();
+				this.$notifyLink.trigger('click');
+			});
+			if (this.config.hasShield) {
+				window.setTimeout(() => {
+					this.$widgetShield.hide();
+				}, this.config.shieldTimeout);
+				if (this.config.shieldTimeout > 0) {
+					this.$widgetShield.on('click', () => {
+						this.$clear.hide();
+					});
+				}
+			}
+		}
+	}
+
+	const create = config => (window[config.widgetId] = new InputWithClear(config));
+
+	SapphireWidgets.InputWithClear = {
+		create,
+	};
+})();
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/input-with-list/scripts.js":
-/*!************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/input-with-list/scripts.js ***!
-  \************************************************************************/
 /***/ (function() {
 
-eval("{(function() {\r\n\tclass InputWithList {\r\n\t\tconstructor(config) {\r\n\t\t\tthis.config = config;\r\n\t\t\tthis.$widget = $(`#${config.widgetId}`);\r\n\t\t\tthis.$input = this.$widget.find('input[type]');\r\n\t\t\tthis.$list = this.$widget.find('.InputWithList__List');\r\n\r\n\t\t\tthis.$input.val('');\r\n\r\n\t\t\tthis.onInit();\r\n\t\t}\r\n\r\n\t\tonInit() {\r\n\t\t\tthis.$input.on('keyup', e => {\r\n\t\t\t\t// Getting elements again in order to work when this component is cloned (e.g. when using inside ActionsMenu)\r\n\t\t\t\tthis.$widget = $(`#${this.config.widgetId}`);\r\n\t\t\t\tconst $input = this.$widget.find('input[type]');\r\n\t\t\t\tconst $list = this.$widget.find('.InputWithList__List');\r\n\t\t\t\tthis.$hiddenInput = this.$widget.find('.InputWithList__HiddenInput input');\r\n\r\n\t\t\t\tif ($input.val().trim() !== '') {\r\n\t\t\t\t\t$list.empty();\r\n\r\n\t\t\t\t\t$list.append(`<div><b>Create:</b> ${$input.val()}</div>`);\r\n\r\n\t\t\t\t\tif (!$list.is(':visible')) $list.show();\r\n\t\t\t\t} else {\r\n\t\t\t\t\t$list.hide();\r\n\t\t\t\t}\r\n\t\t\t});\r\n\r\n\t\t\tthis.$list.on('click', e => {\r\n\t\t\t\tconst $linkNotify = this.$widget.find('.InputWithList-notify-link');\r\n\t\t\t\tconst $list = this.$widget.find('.InputWithList__List');\r\n\t\t\t\tconst $input = this.$widget.find('input[type]');\r\n\r\n\t\t\t\tthis.$hiddenInput.val($input.val());\r\n\t\t\t\tthis.$hiddenInput.change();\r\n\r\n\t\t\t\t$linkNotify.click();\r\n\t\t\t\t$list.hide();\r\n\t\t\t});\r\n\t\t}\r\n\t}\r\n\r\n\tconst create = config => (window[config.widgetId] = new InputWithList(config));\r\n\r\n\tSapphireWidgets.InputWithList = {\r\n\t\tcreate,\r\n\t};\r\n})();\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/input-with-list/scripts.js?\n}");
+(function() {
+	class InputWithList {
+		constructor(config) {
+			this.config = config;
+			this.$widget = $(`#${config.widgetId}`);
+			this.$input = this.$widget.find('input[type]');
+			this.$list = this.$widget.find('.InputWithList__List');
+
+			this.$input.val('');
+
+			this.onInit();
+		}
+
+		onInit() {
+			this.$input.on('keyup', e => {
+				// Getting elements again in order to work when this component is cloned (e.g. when using inside ActionsMenu)
+				this.$widget = $(`#${this.config.widgetId}`);
+				const $input = this.$widget.find('input[type]');
+				const $list = this.$widget.find('.InputWithList__List');
+				this.$hiddenInput = this.$widget.find('.InputWithList__HiddenInput input');
+
+				if ($input.val().trim() !== '') {
+					$list.empty();
+
+					$list.append(`<div><b>Create:</b> ${$input.val()}</div>`);
+
+					if (!$list.is(':visible')) $list.show();
+				} else {
+					$list.hide();
+				}
+			});
+
+			this.$list.on('click', e => {
+				const $linkNotify = this.$widget.find('.InputWithList-notify-link');
+				const $list = this.$widget.find('.InputWithList__List');
+				const $input = this.$widget.find('input[type]');
+
+				this.$hiddenInput.val($input.val());
+				this.$hiddenInput.change();
+
+				$linkNotify.click();
+				$list.hide();
+			});
+		}
+	}
+
+	const create = config => (window[config.widgetId] = new InputWithList(config));
+
+	SapphireWidgets.InputWithList = {
+		create,
+	};
+})();
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/line-add/scripts.js":
-/*!*****************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/line-add/scripts.js ***!
-  \*****************************************************************/
 /***/ (function() {
 
-eval("{/* Component LineAdd */\r\n(function($, window, SapphireWidgets) {\r\n\tconst create = function(config) {\r\n\t\t$(window).load(function() {\r\n\t\t\tsetWidth(config.widgetId);\r\n\t\t\tSapphireWidgets.LineAdd.widgetId = config.widgetId;\r\n\r\n\t\t\tosAjaxBackend.BindAfterAjaxRequest(() => setWidth(config.widgetId));\r\n\t\t});\r\n\r\n\t\t$(window).on('resize.LineAdd', () => setWidth(config.widgetId));\r\n\t};\r\n\r\n\tconst setWidth = function(widgetId) {\r\n\t\twindow.setTimeout(function() {\r\n\t\t\tconst $widget = $(`#${widgetId || SapphireWidgets.LineAdd.widgetId}`);\r\n\t\t\tconst widths = [];\r\n\r\n\t\t\tfor (i = 1; i < 8; i++) {\r\n\t\t\t\tlet maxWidthContent = Math.max.apply(\r\n\t\t\t\t\tnull,\r\n\t\t\t\t\t$widget\r\n\t\t\t\t\t\t.find('.lacol' + i)\r\n\t\t\t\t\t\t.map(function() {\r\n\t\t\t\t\t\t\treturn $(this).width();\r\n\t\t\t\t\t\t})\r\n\t\t\t\t\t\t.get()\r\n\t\t\t\t);\r\n\r\n\t\t\t\twidths.push(maxWidthContent);\r\n\t\t\t\t$widget.find('.lacol' + i).width(maxWidthContent);\r\n\t\t\t}\r\n\t\t}, 100);\r\n\t};\r\n\r\n\tSapphireWidgets.LineAdd = { create, setWidth };\r\n})(jQuery, window, SapphireWidgets);\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/line-add/scripts.js?\n}");
+/* Component LineAdd */
+(function($, window, SapphireWidgets) {
+	const create = function(config) {
+		$(window).load(function() {
+			setWidth(config.widgetId);
+			SapphireWidgets.LineAdd.widgetId = config.widgetId;
+
+			osAjaxBackend.BindAfterAjaxRequest(() => setWidth(config.widgetId));
+		});
+
+		$(window).on('resize.LineAdd', () => setWidth(config.widgetId));
+	};
+
+	const setWidth = function(widgetId) {
+		window.setTimeout(function() {
+			const $widget = $(`#${widgetId || SapphireWidgets.LineAdd.widgetId}`);
+			const widths = [];
+
+			for (i = 1; i < 8; i++) {
+				let maxWidthContent = Math.max.apply(
+					null,
+					$widget
+						.find('.lacol' + i)
+						.map(function() {
+							return $(this).width();
+						})
+						.get()
+				);
+
+				widths.push(maxWidthContent);
+				$widget.find('.lacol' + i).width(maxWidthContent);
+			}
+		}, 100);
+	};
+
+	SapphireWidgets.LineAdd = { create, setWidth };
+})(jQuery, window, SapphireWidgets);
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/line-details-expand-box/script.js":
-/*!*******************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/line-details-expand-box/script.js ***!
-  \*******************************************************************************/
 /***/ (function() {
 
-eval("{/* Component LineDetailsExpandBox */\r\n(function($, window, SapphireWidgets) {\r\n\tconst init = config => {\r\n\t\t$(`#${config.widgetId} + .LineDetailsExpandBox_action`).click(event => {\r\n\t\t\tevent.stopPropagation();\r\n\t\t});\r\n\t};\r\n\r\n\tconst create = config => $(document).ready(() => init(config));\r\n\r\n\tSapphireWidgets.LineDetailsExpandBox = { create };\r\n})(jQuery, window, SapphireWidgets);\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/line-details-expand-box/script.js?\n}");
+/* Component LineDetailsExpandBox */
+(function($, window, SapphireWidgets) {
+	const init = config => {
+		$(`#${config.widgetId} + .LineDetailsExpandBox_action`).click(event => {
+			event.stopPropagation();
+		});
+	};
+
+	const create = config => $(document).ready(() => init(config));
+
+	SapphireWidgets.LineDetailsExpandBox = { create };
+})(jQuery, window, SapphireWidgets);
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/location-box/scripts.js":
-/*!*********************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/location-box/scripts.js ***!
-  \*********************************************************************/
 /***/ (function() {
 
-eval("{/* Component LocationBox */\r\nSapphireWidgets.LocationBox = function(widgetId) {\r\n\tconst $component = $(`#${widgetId}`);\r\n\r\n\tif ($component.hasClass('On')) {\r\n\t\t$('.DisableRoom').each(function() {\r\n\t\t\t$(this)\r\n\t\t\t\t.removeClass('Off')\r\n\t\t\t\t.removeClass('On');\r\n\t\t\t$(this)\r\n\t\t\t\t.parent('.RoomBox')\r\n\t\t\t\t.css({\r\n\t\t\t\t\topacity: '1',\r\n\t\t\t\t})\r\n\t\t\t\t.removeClass('Selected');\r\n\t\t});\r\n\t} else {\r\n\t\t$component\r\n\t\t\t.addClass('On')\r\n\t\t\t.removeClass('Off')\r\n\t\t\t.parent('.RoomBox')\r\n\t\t\t.css({\r\n\t\t\t\topacity: '1',\r\n\t\t\t})\r\n\t\t\t.addClass('Selected');\r\n\r\n\t\t$('.DisableRoom:not(#' + widgetId + ')').each(function() {\r\n\t\t\t$(this).addClass('Off');\r\n\t\t\t$(this).removeClass('On');\r\n\t\t});\r\n\r\n\t\t$('.DisableRoom.Off')\r\n\t\t\t.parent('.RoomBox')\r\n\t\t\t.css({\r\n\t\t\t\topacity: '0.50',\r\n\t\t\t})\r\n\t\t\t.removeClass('Selected');\r\n\t}\r\n};\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/location-box/scripts.js?\n}");
+/* Component LocationBox */
+SapphireWidgets.LocationBox = function(widgetId) {
+	const $component = $(`#${widgetId}`);
+
+	if ($component.hasClass('On')) {
+		$('.DisableRoom').each(function() {
+			$(this)
+				.removeClass('Off')
+				.removeClass('On');
+			$(this)
+				.parent('.RoomBox')
+				.css({
+					opacity: '1',
+				})
+				.removeClass('Selected');
+		});
+	} else {
+		$component
+			.addClass('On')
+			.removeClass('Off')
+			.parent('.RoomBox')
+			.css({
+				opacity: '1',
+			})
+			.addClass('Selected');
+
+		$('.DisableRoom:not(#' + widgetId + ')').each(function() {
+			$(this).addClass('Off');
+			$(this).removeClass('On');
+		});
+
+		$('.DisableRoom.Off')
+			.parent('.RoomBox')
+			.css({
+				opacity: '0.50',
+			})
+			.removeClass('Selected');
+	}
+};
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/main-interactive-card/scripts.js":
-/*!******************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/main-interactive-card/scripts.js ***!
-  \******************************************************************************/
 /***/ (function() {
 
-eval("{/* Component MainInteractiveCard */\r\n(function($, window, document, SapphireWidgets) {\r\n\tvar allMainInteractiveCards = [];\r\n\tvar defaultDuration = 300;\r\n\r\n\tvar create = function(config) {\r\n\t\tfor (var i = 0; i < allMainInteractiveCards.length; i++) {\r\n\t\t\tif (allMainInteractiveCards[i].config.widgetId === config.widgetId) {\r\n\t\t\t\tallMainInteractiveCards.splice(i, 1);\r\n\t\t\t}\r\n\t\t}\r\n\t\twindow[config.widgetId] = new MainInteractiveCard(config);\r\n\t\tallMainInteractiveCards.push(window[config.widgetId]);\r\n\r\n\t\tif (!!!SapphireWidgets.MainInteractiveCard.afterAjaxRequestBinded && !!osAjaxBackend) {\r\n\t\t\tosAjaxBackend.BindAfterAjaxRequest(function() {\r\n\t\t\t\tvar allMainInteractiveCards = SapphireWidgets.MainInteractiveCard.all();\r\n\t\t\t\tallMainInteractiveCards.forEach(function(element) {\r\n\t\t\t\t\telement.handleHeaderWithAbsoluteButtons();\r\n\t\t\t\t});\r\n\t\t\t});\r\n\t\t\tSapphireWidgets.MainInteractiveCard.afterAjaxRequestBinded = true;\r\n\t\t}\r\n\t};\r\n\r\n\tvar MainInteractiveCard = function(config) {\r\n\t\tvar _this = this;\r\n\t\tthis.config = config;\r\n\t\tthis.isLockedOnClose = false;\r\n\t\tthis.isOpen = config.isOpen;\r\n\t\tthis.isEnabled = config.isEnabled;\r\n\t\tthis.isSelectable = config.isSelectable;\r\n\t\tthis.allowOpening = config.allowOpening;\r\n\t\tthis.allowMultipleOpen = config.allowMultipleOpen;\r\n\t\tthis.emitNotifyOnOpen = config.emitNotifyOnOpen;\r\n\t\tthis.hideActionsOnOpen = config.hideActionsOnOpen;\r\n\t\tthis.hideCaptionOnOpen = config.hideCaptionOnOpen;\r\n\t\tthis.hideIconOnOpen = config.hideIconOnOpen;\r\n\t\tthis.hideTitleOnOpen = config.hideTitleOnOpen;\r\n\t\tthis.hideSubTitleOnOpen = config.hideSubTitleOnOpen;\r\n\t\tthis.headerHeightWhenOpen = config.headerHeightWhenOpen;\r\n\t\tthis.MainInteractiveCardFakeNotifyId = config.mainInteractiveCardFakeNotifyId;\r\n\r\n\t\tthis.$widget = $('#' + config.widgetId);\r\n\t\tthis.$widget.css('display', 'block');\r\n\t\tthis.$card = this.$widget.find('> .MainInteractiveCard');\r\n\t\tthis.$header = this.$widget.find('> .MainInteractiveCard > .MainInteractiveCard-header');\r\n\t\tthis.$headerText = this.$header.find('.MainInteractiveCard-header-text');\r\n\t\tthis.$expandIcon = this.$header.find('.MainInteractiveCard-expand-icon');\r\n\t\tthis.$body = this.$widget.find('> .MainInteractiveCard > div > .MainInteractiveCard-body');\r\n\t\tthis.$actions = this.$widget.find(\r\n\t\t\t'> .MainInteractiveCard > .MainInteractiveCard-header .MainInteractiveCard-header-actions'\r\n\t\t);\r\n\t\tthis.$caption = this.$widget.find(\r\n\t\t\t'> .MainInteractiveCard > .MainInteractiveCard-header .MainInteractiveCard-header-text-caption'\r\n\t\t);\r\n\t\tthis.$icon = this.$widget.find(\r\n\t\t\t'> .MainInteractiveCard > .MainInteractiveCard-header .MainInteractiveCard-header-icon'\r\n\t\t);\r\n\t\tthis.$title = this.$widget.find(\r\n\t\t\t'> .MainInteractiveCard > .MainInteractiveCard-header .MainInteractiveCard-header-text-title'\r\n\t\t);\r\n\t\tthis.$subTitle = this.$widget.find(\r\n\t\t\t'> .MainInteractiveCard > .MainInteractiveCard-header .MainInteractiveCard-header-text-subtitle'\r\n\t\t);\r\n\t\tthis.$selectTrigger = this.$widget.find(\r\n\t\t\t'> .MainInteractiveCard > .MainInteractiveCard-header > .MainInteractiveCard-header-selectable > .MainInteractiveCard-header-selectable-trigger'\r\n\t\t);\r\n\t\tthis.$selectPlaceholder = this.$widget.find(\r\n\t\t\t'> .MainInteractiveCard > .MainInteractiveCard-header .MainInteractiveCard-header-selectable-placeholder'\r\n\t\t);\r\n\t\tthis.$triggerPlaceholder = this.$widget.find(\r\n\t\t\t'> .MainInteractiveCard > .MainInteractiveCard-header-triggerAction-placeholder'\r\n\t\t);\r\n\r\n\t\tif (this.$triggerPlaceholder.find('a').length === 1) {\r\n\t\t\tthis.$trigger = this.$triggerPlaceholder.find('a');\r\n\t\t}\r\n\r\n\t\tif (this.isOpen) {\r\n\t\t\tthis.open(false, -1);\r\n\t\t\tthis.$card.addClass('forceOpen');\r\n\t\t}\r\n\r\n\t\tthis.$card.addClass(this.headerHeightWhenOpen + 'Header');\r\n\r\n\t\tif (this.allowOpening) {\r\n\t\t\tthis.$card.addClass('allowOpening');\r\n\t\t}\r\n\r\n\t\tthis.attachEvents();\r\n\r\n\t\tvar observer = new MutationObserver(function(mutations) {\r\n\t\t\tmutations.forEach(function(mutation, index) {\r\n\t\t\t\t_this.handleHeaderWithAbsoluteButtons();\r\n\t\t\t});\r\n\t\t});\r\n\r\n\t\tobserver.observe(document.getElementById(config.widgetId), {\r\n\t\t\tchildList: true,\r\n\t\t\tsubtree: true,\r\n\t\t\tattributes: false,\r\n\t\t});\r\n\t};\r\n\r\n\tMainInteractiveCard.prototype.handleHeaderWithAbsoluteButtons = function() {\r\n\t\tvar _this = this;\r\n\t\tif (!!this.$body.find('> div .MainInteractiveCard-absolute-actions').length && this.isOpen) {\r\n\t\t\tvar absoluteActionsWidth = Math.max.apply(\r\n\t\t\t\tMath,\r\n\t\t\t\tthis.$body\r\n\t\t\t\t\t.find('> div .MainInteractiveCard-absolute-actions')\r\n\t\t\t\t\t.map(function() {\r\n\t\t\t\t\t\treturn $(this).outerWidth(true);\r\n\t\t\t\t\t})\r\n\t\t\t\t\t.get()\r\n\t\t\t);\r\n\t\t\tvar headerMaxWidth = this.$header.width() - absoluteActionsWidth;\r\n\t\t\tif (headerMaxWidth > 10) {\r\n\t\t\t\tthis.$headerText.css({\r\n\t\t\t\t\tmaxWidth: headerMaxWidth + 'px',\r\n\t\t\t\t});\r\n\t\t\t}\r\n\t\t\tthis.$body\r\n\t\t\t\t.find('> div .MainInteractiveCard-absolute-actions .MainInteractiveCard--close')\r\n\t\t\t\t.off('click')\r\n\t\t\t\t.on('click', function(e) {\r\n\t\t\t\t\te.preventDefault();\r\n\t\t\t\t\t_this.close();\r\n\t\t\t\t});\r\n\t\t}\r\n\t};\r\n\r\n\tMainInteractiveCard.prototype.attachEvents = function() {\r\n\t\tvar _this = this;\r\n\t\tthis.$header\r\n\t\t\t.find('.MainInteractiveCard--open:not([disabled])')\r\n\t\t\t.off('click')\r\n\t\t\t.on('click', function(e) {\r\n\t\t\t\te.preventDefault();\r\n\t\t\t\t_this.open(true);\r\n\t\t\t});\r\n\t\tthis.$header\r\n\t\t\t.find('.MainInteractiveCard--close')\r\n\t\t\t.off('click')\r\n\t\t\t.on('click', function(e) {\r\n\t\t\t\te.preventDefault();\r\n\t\t\t\t_this.close();\r\n\t\t\t});\r\n\t\tif (this.allowOpening) {\r\n\t\t\tconst clickAction = function(evt) {\r\n\t\t\t\tif ($(evt.target).hasClass('Button')) {\r\n\t\t\t\t\t// the user clicked on a Button inside the header, nothing to do here\r\n\t\t\t\t} else {\r\n\t\t\t\t\tif (_this.isOpen) {\r\n\t\t\t\t\t\tif (\r\n\t\t\t\t\t\t\t_this.$widget.find('iframe').length === 1 &&\r\n\t\t\t\t\t\t\t!_this.$widget.find('iframe').hasClass('cke_wysiwyg_frame')\r\n\t\t\t\t\t\t) {\r\n\t\t\t\t\t\t\t// do not close when and iframe exists\r\n\t\t\t\t\t\t} else if (\r\n\t\t\t\t\t\t\t_this.$actions.find('a').length > 0 &&\r\n\t\t\t\t\t\t\t_this.$actions.find('.MainInteractiveCard--close').length > 0\r\n\t\t\t\t\t\t) {\r\n\t\t\t\t\t\t\t// do not close when the card has actions\r\n\t\t\t\t\t\t} else {\r\n\t\t\t\t\t\t\t_this.close();\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t} else {\r\n\t\t\t\t\t\t_this.open(true);\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\t\t\t};\r\n\r\n\t\t\tthis.$headerText.off('click').on('click', function(e) {\r\n\t\t\t\tclickAction(e);\r\n\t\t\t});\r\n\t\t\tthis.$expandIcon.off('click').on('click', function(e) {\r\n\t\t\t\tclickAction(e);\r\n\t\t\t});\r\n\t\t}\r\n\t\tif (this.isSelectable) {\r\n\t\t\tthis.$selectTrigger.off('click').on('click', function(e) {\r\n\t\t\t\tif (_this.$selectPlaceholder.find('a').length === 1) {\r\n\t\t\t\t\t_this.$selectPlaceholder.find('a').click();\r\n\t\t\t\t} else {\r\n\t\t\t\t\tconsole.warn('You need 1 link in this placeholder.');\r\n\t\t\t\t}\r\n\t\t\t});\r\n\t\t}\r\n\t};\r\n\r\n\tMainInteractiveCard.prototype.open = function(sendNotify, duration) {\r\n\t\tvar duration = duration || defaultDuration;\r\n\t\tthis.isOpen = true;\r\n\t\tthis.$card.addClass('isOpen');\r\n\t\tif (this.hideActionsOnOpen) {\r\n\t\t\tthis.$actions.css('display', 'none');\r\n\t\t}\r\n\t\tif (this.hideTitleOnOpen) {\r\n\t\t\tthis.$title.css('display', 'none');\r\n\t\t}\r\n\t\tif (this.hideSubTitleOnOpen) {\r\n\t\t\tthis.$subTitle.css('display', 'none');\r\n\t\t}\r\n\t\tif (this.hideCaptionOnOpen) {\r\n\t\t\tthis.$caption.css('display', 'none');\r\n\t\t}\r\n\t\tif (this.hideIconOnOpen) {\r\n\t\t\tthis.$icon.css('display', 'none');\r\n\t\t}\r\n\t\tif (this.emitNotifyOnOpen) {\r\n\t\t\tif (sendNotify) {\r\n\t\t\t\tOsNotifyWidget(this.MainInteractiveCardFakeNotifyId, 'open');\r\n\t\t\t}\r\n\t\t\tthis.$body.css('display', 'block');\r\n\t\t} else if (this.$trigger) {\r\n\t\t\tthis.$trigger.click();\r\n\t\t\tthis.$body.css('display', 'block');\r\n\t\t} else {\r\n\t\t\tif (duration > 0) {\r\n\t\t\t\tthis.$body.slideDown(duration);\r\n\t\t\t} else {\r\n\t\t\t\tthis.$body.css('display', 'block');\r\n\t\t\t}\r\n\t\t}\r\n\t\tif (this.$widget.find('iframe').length === 1 && !this.$widget.find('iframe').hasClass('cke_wysiwyg_frame')) {\r\n\t\t\tvar iframeContents = this.$widget.find('iframe').contents();\r\n\t\t\tiframeContents.find('.MainInteractiveCard-iframe-actions').css('visibility', 'visible');\r\n\t\t} else {\r\n\t\t\tthis.handleHeaderWithAbsoluteButtons();\r\n\t\t}\r\n\t\tif (!this.allowMultipleOpen) {\r\n\t\t\tallMainInteractiveCards.forEach(item => (item !== this && item.allowOpening ? item.close(duration) : null));\r\n\t\t}\r\n\t};\r\n\r\n\tMainInteractiveCard.prototype.close = function(duration) {\r\n\t\tvar self = this;\r\n\t\tvar duration = duration || defaultDuration;\r\n\t\tthis.isOpen = false;\r\n\t\tthis.$card.removeClass('isOpen');\r\n\t\tif (this.$widget.find('iframe').length === 1 && !this.$widget.find('iframe').hasClass('cke_wysiwyg_frame')) {\r\n\t\t\tthis.$widget\r\n\t\t\t\t.find('iframe')\r\n\t\t\t\t.find('.MainInteractiveCard-iframe-actions')\r\n\t\t\t\t.css('visibility', 'hidden');\r\n\t\t}\r\n\t\tthis.$body.slideUp(duration, function() {\r\n\t\t\tif (self.$card.hasClass('forceOpen')) {\r\n\t\t\t\tself.$card.removeClass('forceOpen');\r\n\t\t\t}\r\n\t\t});\r\n\t\tif (this.hideActionsOnOpen) {\r\n\t\t\tthis.$actions.show();\r\n\t\t}\r\n\t\tif (this.hideTitleOnOpen) {\r\n\t\t\tthis.$title.css('display', 'block');\r\n\t\t}\r\n\t\tif (this.hideSubTitleOnOpen) {\r\n\t\t\tthis.$subTitle.css('display', 'block');\r\n\t\t}\r\n\t\tif (this.hideCaptionOnOpen) {\r\n\t\t\tthis.$caption.css('display', 'block');\r\n\t\t}\r\n\t\tif (this.hideIconOnOpen) {\r\n\t\t\tthis.$icon.css('display', 'block');\r\n\t\t}\r\n\r\n\t\tif (this.$header.width() - this.$actions.width() > 10) {\r\n\t\t\tthis.$headerText.css({\r\n\t\t\t\tmaxWidth: this.$header.width() - this.$actions.width() + 'px',\r\n\t\t\t});\r\n\t\t}\r\n\t};\r\n\r\n\tMainInteractiveCard.prototype.isOpen = function() {\r\n\t\treturn this.isOpen;\r\n\t};\r\n\r\n\tSapphireWidgets.MainInteractiveCard = {\r\n\t\tcreate: create,\r\n\t\tall: function() {\r\n\t\t\treturn allMainInteractiveCards;\r\n\t\t},\r\n\t};\r\n})(jQuery, window, document, SapphireWidgets);\r\n\r\n$(window).load(function() {\r\n\tif (!!$('.MainInteractiveCard').length) {\r\n\t\tif (!!!SapphireWidgets.MainInteractiveCard.afterAjaxRequestBinded) {\r\n\t\t\tosAjaxBackend.BindAfterAjaxRequest(function() {\r\n\t\t\t\tvar allMainInteractiveCards = SapphireWidgets.MainInteractiveCard.all();\r\n\t\t\t\tallMainInteractiveCards.forEach(function(element) {\r\n\t\t\t\t\telement.handleHeaderWithAbsoluteButtons();\r\n\t\t\t\t});\r\n\t\t\t});\r\n\t\t\tSapphireWidgets.MainInteractiveCard.afterAjaxRequestBinded = true;\r\n\t\t}\r\n\t}\r\n\r\n\tsetTimeout(function() {\r\n\t\tvar allMainInteractiveCards = SapphireWidgets.MainInteractiveCard.all();\r\n\t\tallMainInteractiveCards.forEach(function(element) {\r\n\t\t\telement.handleHeaderWithAbsoluteButtons();\r\n\t\t});\r\n\t}, 1000);\r\n});\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/main-interactive-card/scripts.js?\n}");
+/* Component MainInteractiveCard */
+(function($, window, document, SapphireWidgets) {
+	var allMainInteractiveCards = [];
+	var defaultDuration = 300;
+
+	var create = function(config) {
+		for (var i = 0; i < allMainInteractiveCards.length; i++) {
+			if (allMainInteractiveCards[i].config.widgetId === config.widgetId) {
+				allMainInteractiveCards.splice(i, 1);
+			}
+		}
+		window[config.widgetId] = new MainInteractiveCard(config);
+		allMainInteractiveCards.push(window[config.widgetId]);
+
+		if (!!!SapphireWidgets.MainInteractiveCard.afterAjaxRequestBinded && !!osAjaxBackend) {
+			osAjaxBackend.BindAfterAjaxRequest(function() {
+				var allMainInteractiveCards = SapphireWidgets.MainInteractiveCard.all();
+				allMainInteractiveCards.forEach(function(element) {
+					element.handleHeaderWithAbsoluteButtons();
+				});
+			});
+			SapphireWidgets.MainInteractiveCard.afterAjaxRequestBinded = true;
+		}
+	};
+
+	var MainInteractiveCard = function(config) {
+		var _this = this;
+		this.config = config;
+		this.isLockedOnClose = false;
+		this.isOpen = config.isOpen;
+		this.isEnabled = config.isEnabled;
+		this.isSelectable = config.isSelectable;
+		this.allowOpening = config.allowOpening;
+		this.allowMultipleOpen = config.allowMultipleOpen;
+		this.emitNotifyOnOpen = config.emitNotifyOnOpen;
+		this.hideActionsOnOpen = config.hideActionsOnOpen;
+		this.hideCaptionOnOpen = config.hideCaptionOnOpen;
+		this.hideIconOnOpen = config.hideIconOnOpen;
+		this.hideTitleOnOpen = config.hideTitleOnOpen;
+		this.hideSubTitleOnOpen = config.hideSubTitleOnOpen;
+		this.headerHeightWhenOpen = config.headerHeightWhenOpen;
+		this.MainInteractiveCardFakeNotifyId = config.mainInteractiveCardFakeNotifyId;
+
+		this.$widget = $('#' + config.widgetId);
+		this.$widget.css('display', 'block');
+		this.$card = this.$widget.find('> .MainInteractiveCard');
+		this.$header = this.$widget.find('> .MainInteractiveCard > .MainInteractiveCard-header');
+		this.$headerText = this.$header.find('.MainInteractiveCard-header-text');
+		this.$expandIcon = this.$header.find('.MainInteractiveCard-expand-icon');
+		this.$body = this.$widget.find('> .MainInteractiveCard > div > .MainInteractiveCard-body');
+		this.$actions = this.$widget.find(
+			'> .MainInteractiveCard > .MainInteractiveCard-header .MainInteractiveCard-header-actions'
+		);
+		this.$caption = this.$widget.find(
+			'> .MainInteractiveCard > .MainInteractiveCard-header .MainInteractiveCard-header-text-caption'
+		);
+		this.$icon = this.$widget.find(
+			'> .MainInteractiveCard > .MainInteractiveCard-header .MainInteractiveCard-header-icon'
+		);
+		this.$title = this.$widget.find(
+			'> .MainInteractiveCard > .MainInteractiveCard-header .MainInteractiveCard-header-text-title'
+		);
+		this.$subTitle = this.$widget.find(
+			'> .MainInteractiveCard > .MainInteractiveCard-header .MainInteractiveCard-header-text-subtitle'
+		);
+		this.$selectTrigger = this.$widget.find(
+			'> .MainInteractiveCard > .MainInteractiveCard-header > .MainInteractiveCard-header-selectable > .MainInteractiveCard-header-selectable-trigger'
+		);
+		this.$selectPlaceholder = this.$widget.find(
+			'> .MainInteractiveCard > .MainInteractiveCard-header .MainInteractiveCard-header-selectable-placeholder'
+		);
+		this.$triggerPlaceholder = this.$widget.find(
+			'> .MainInteractiveCard > .MainInteractiveCard-header-triggerAction-placeholder'
+		);
+
+		if (this.$triggerPlaceholder.find('a').length === 1) {
+			this.$trigger = this.$triggerPlaceholder.find('a');
+		}
+
+		if (this.isOpen) {
+			this.open(false, -1);
+			this.$card.addClass('forceOpen');
+		}
+
+		this.$card.addClass(this.headerHeightWhenOpen + 'Header');
+
+		if (this.allowOpening) {
+			this.$card.addClass('allowOpening');
+		}
+
+		this.attachEvents();
+
+		var observer = new MutationObserver(function(mutations) {
+			mutations.forEach(function(mutation, index) {
+				_this.handleHeaderWithAbsoluteButtons();
+			});
+		});
+
+		observer.observe(document.getElementById(config.widgetId), {
+			childList: true,
+			subtree: true,
+			attributes: false,
+		});
+	};
+
+	MainInteractiveCard.prototype.handleHeaderWithAbsoluteButtons = function() {
+		var _this = this;
+		if (!!this.$body.find('> div .MainInteractiveCard-absolute-actions').length && this.isOpen) {
+			var absoluteActionsWidth = Math.max.apply(
+				Math,
+				this.$body
+					.find('> div .MainInteractiveCard-absolute-actions')
+					.map(function() {
+						return $(this).outerWidth(true);
+					})
+					.get()
+			);
+			var headerMaxWidth = this.$header.width() - absoluteActionsWidth;
+			if (headerMaxWidth > 10) {
+				this.$headerText.css({
+					maxWidth: headerMaxWidth + 'px',
+				});
+			}
+			this.$body
+				.find('> div .MainInteractiveCard-absolute-actions .MainInteractiveCard--close')
+				.off('click')
+				.on('click', function(e) {
+					e.preventDefault();
+					_this.close();
+				});
+		}
+	};
+
+	MainInteractiveCard.prototype.attachEvents = function() {
+		var _this = this;
+		this.$header
+			.find('.MainInteractiveCard--open:not([disabled])')
+			.off('click')
+			.on('click', function(e) {
+				e.preventDefault();
+				_this.open(true);
+			});
+		this.$header
+			.find('.MainInteractiveCard--close')
+			.off('click')
+			.on('click', function(e) {
+				e.preventDefault();
+				_this.close();
+			});
+		if (this.allowOpening) {
+			const clickAction = function(evt) {
+				if ($(evt.target).hasClass('Button')) {
+					// the user clicked on a Button inside the header, nothing to do here
+				} else {
+					if (_this.isOpen) {
+						if (
+							_this.$widget.find('iframe').length === 1 &&
+							!_this.$widget.find('iframe').hasClass('cke_wysiwyg_frame')
+						) {
+							// do not close when and iframe exists
+						} else if (
+							_this.$actions.find('a').length > 0 &&
+							_this.$actions.find('.MainInteractiveCard--close').length > 0
+						) {
+							// do not close when the card has actions
+						} else {
+							_this.close();
+						}
+					} else {
+						_this.open(true);
+					}
+				}
+			};
+
+			this.$headerText.off('click').on('click', function(e) {
+				clickAction(e);
+			});
+			this.$expandIcon.off('click').on('click', function(e) {
+				clickAction(e);
+			});
+		}
+		if (this.isSelectable) {
+			this.$selectTrigger.off('click').on('click', function(e) {
+				if (_this.$selectPlaceholder.find('a').length === 1) {
+					_this.$selectPlaceholder.find('a').click();
+				} else {
+					console.warn('You need 1 link in this placeholder.');
+				}
+			});
+		}
+	};
+
+	MainInteractiveCard.prototype.open = function(sendNotify, duration) {
+		var duration = duration || defaultDuration;
+		this.isOpen = true;
+		this.$card.addClass('isOpen');
+		if (this.hideActionsOnOpen) {
+			this.$actions.css('display', 'none');
+		}
+		if (this.hideTitleOnOpen) {
+			this.$title.css('display', 'none');
+		}
+		if (this.hideSubTitleOnOpen) {
+			this.$subTitle.css('display', 'none');
+		}
+		if (this.hideCaptionOnOpen) {
+			this.$caption.css('display', 'none');
+		}
+		if (this.hideIconOnOpen) {
+			this.$icon.css('display', 'none');
+		}
+		if (this.emitNotifyOnOpen) {
+			if (sendNotify) {
+				OsNotifyWidget(this.MainInteractiveCardFakeNotifyId, 'open');
+			}
+			this.$body.css('display', 'block');
+		} else if (this.$trigger) {
+			this.$trigger.click();
+			this.$body.css('display', 'block');
+		} else {
+			if (duration > 0) {
+				this.$body.slideDown(duration);
+			} else {
+				this.$body.css('display', 'block');
+			}
+		}
+		if (this.$widget.find('iframe').length === 1 && !this.$widget.find('iframe').hasClass('cke_wysiwyg_frame')) {
+			var iframeContents = this.$widget.find('iframe').contents();
+			iframeContents.find('.MainInteractiveCard-iframe-actions').css('visibility', 'visible');
+		} else {
+			this.handleHeaderWithAbsoluteButtons();
+		}
+		if (!this.allowMultipleOpen) {
+			allMainInteractiveCards.forEach(item => (item !== this && item.allowOpening ? item.close(duration) : null));
+		}
+	};
+
+	MainInteractiveCard.prototype.close = function(duration) {
+		var self = this;
+		var duration = duration || defaultDuration;
+		this.isOpen = false;
+		this.$card.removeClass('isOpen');
+		if (this.$widget.find('iframe').length === 1 && !this.$widget.find('iframe').hasClass('cke_wysiwyg_frame')) {
+			this.$widget
+				.find('iframe')
+				.find('.MainInteractiveCard-iframe-actions')
+				.css('visibility', 'hidden');
+		}
+		this.$body.slideUp(duration, function() {
+			if (self.$card.hasClass('forceOpen')) {
+				self.$card.removeClass('forceOpen');
+			}
+		});
+		if (this.hideActionsOnOpen) {
+			this.$actions.show();
+		}
+		if (this.hideTitleOnOpen) {
+			this.$title.css('display', 'block');
+		}
+		if (this.hideSubTitleOnOpen) {
+			this.$subTitle.css('display', 'block');
+		}
+		if (this.hideCaptionOnOpen) {
+			this.$caption.css('display', 'block');
+		}
+		if (this.hideIconOnOpen) {
+			this.$icon.css('display', 'block');
+		}
+
+		if (this.$header.width() - this.$actions.width() > 10) {
+			this.$headerText.css({
+				maxWidth: this.$header.width() - this.$actions.width() + 'px',
+			});
+		}
+	};
+
+	MainInteractiveCard.prototype.isOpen = function() {
+		return this.isOpen;
+	};
+
+	SapphireWidgets.MainInteractiveCard = {
+		create: create,
+		all: function() {
+			return allMainInteractiveCards;
+		},
+	};
+})(jQuery, window, document, SapphireWidgets);
+
+$(window).load(function() {
+	if (!!$('.MainInteractiveCard').length) {
+		if (!!!SapphireWidgets.MainInteractiveCard.afterAjaxRequestBinded) {
+			osAjaxBackend.BindAfterAjaxRequest(function() {
+				var allMainInteractiveCards = SapphireWidgets.MainInteractiveCard.all();
+				allMainInteractiveCards.forEach(function(element) {
+					element.handleHeaderWithAbsoluteButtons();
+				});
+			});
+			SapphireWidgets.MainInteractiveCard.afterAjaxRequestBinded = true;
+		}
+	}
+
+	setTimeout(function() {
+		var allMainInteractiveCards = SapphireWidgets.MainInteractiveCard.all();
+		allMainInteractiveCards.forEach(function(element) {
+			element.handleHeaderWithAbsoluteButtons();
+		});
+	}, 1000);
+});
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/menu-bar/scripts.js":
-/*!*****************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/menu-bar/scripts.js ***!
-  \*****************************************************************/
 /***/ (function() {
 
-eval("{/* Component MenuBar */\r\nSapphireWidgets.MenuBar = function(config) {\r\n\t$(function() {\r\n\t\tvar $menuWidget = $('#' + config.menuWidget);\r\n\r\n\t\tvar menuResider = function() {\r\n\t\t\tvar navWidth = 0;\r\n\t\t\tvar availabeEspace = $menuWidget.find('.Menubar_item').width();\r\n\r\n\t\t\t$menuWidget.find('.Menubar_item .MenuItem').each(function() {\r\n\t\t\t\tnavWidth += $(this).outerWidth(true);\r\n\t\t\t});\r\n\r\n\t\t\tif (navWidth > availabeEspace) {\r\n\t\t\t\tvar lastItem = $menuWidget.find('.Menubar_item .MenuItem').last();\r\n\t\t\t\tlastItem.attr('data-width', lastItem.outerWidth(true));\r\n\t\t\t\tlastItem.prependTo($menuWidget.find('.Menubar__extraContainer'));\r\n\t\t\t\tmenuResider();\r\n\t\t\t} else {\r\n\t\t\t\tvar firstMoreElement = $menuWidget.find('.Menubar__extraContainer .MenuItem').first();\r\n\t\t\t\tif (navWidth + firstMoreElement.data('width') < availabeEspace) {\r\n\t\t\t\t\tfirstMoreElement.insertAfter($menuWidget.find('.Menubar_item .MenuItem').last());\r\n\t\t\t\t\tmenuResider();\r\n\t\t\t\t}\r\n\t\t\t}\r\n\r\n\t\t\tif (!$menuWidget.find('.Menubar__extraContainer').is(':empty')) {\r\n\t\t\t\t$menuWidget.find('.Menubar_extraItem').addClass('show');\r\n\t\t\t} else {\r\n\t\t\t\t$menuWidget.find('.Menubar_extraItem').removeClass('show');\r\n\t\t\t}\r\n\t\t};\r\n\r\n\t\t$menuWidget.find('.MenuItem').click(function() {\r\n\t\t\tif (\r\n\t\t\t\t!$(this)\r\n\t\t\t\t\t.parent()\r\n\t\t\t\t\t.hasClass('Menubar__extraContainer')\r\n\t\t\t) {\r\n\t\t\t\tif (!$(this).hasClass('active') && !$(this).hasClass('activeIndicator')) {\r\n\t\t\t\t\t$(this).addClass('active');\r\n\t\t\t\t\t$menuWidget.find('.activeIndicator').addClass('shadow');\r\n\t\t\t\t\t$(this)\r\n\t\t\t\t\t\t.find('.MenuItem_subItems')\r\n\t\t\t\t\t\t.toggleClass('show');\r\n\t\t\t\t} else if (!$(this).hasClass('active') && $(this).hasClass('activeIndicator')) {\r\n\t\t\t\t\t$(this).addClass('active');\r\n\t\t\t\t\t$(this)\r\n\t\t\t\t\t\t.find('.MenuItem_subItems')\r\n\t\t\t\t\t\t.toggleClass('show');\r\n\t\t\t\t}\r\n\t\t\t} else {\r\n\t\t\t\t$(this)\r\n\t\t\t\t\t.find('.MenuItem_subItems')\r\n\t\t\t\t\t.toggleClass('show');\r\n\t\t\t}\r\n\t\t});\r\n\r\n\t\t$menuWidget.find('.Menubar_extraItem .icon').click(function() {\r\n\t\t\t$menuWidget.find('.Menubar__extraContainer ').toggleClass('show');\r\n\t\t});\r\n\r\n\t\t$(document).mouseup(e => {\r\n\t\t\tvar $menu = $menuWidget.find('.MenuItem.active');\r\n\t\t\tvar $moreOptions = $menuWidget.find('.Menubar_extraItem');\r\n\r\n\t\t\t// if the target of the click isn't the menu or a descendant of the menu\r\n\t\t\tif ($menu.length > 0) {\r\n\t\t\t\tif (!$menu.is(e.target) && $menu.has(e.target).length === 0) {\r\n\t\t\t\t\t$menu.find('.MenuItem_subItems').removeClass('show');\r\n\t\t\t\t\t$('.activeIndicator').removeClass('shadow');\r\n\t\t\t\t\t$menuWidget.find('.MenuItem.active').removeClass('active');\r\n\t\t\t\t}\r\n\t\t\t}\r\n\r\n\t\t\tif (!$moreOptions.is(e.target) && $moreOptions.has(e.target).length === 0) {\r\n\t\t\t\t$moreOptions.find('.Menubar__extraContainer').removeClass('show');\r\n\t\t\t\t$('.activeIndicator').removeClass('shadow');\r\n\t\t\t}\r\n\t\t});\r\n\r\n\t\t$(window).on('resize load', function() {\r\n\t\t\tmenuResider();\r\n\t\t});\r\n\t});\r\n};\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/menu-bar/scripts.js?\n}");
+/* Component MenuBar */
+SapphireWidgets.MenuBar = function(config) {
+	$(function() {
+		var $menuWidget = $('#' + config.menuWidget);
+
+		var menuResider = function() {
+			var navWidth = 0;
+			var availabeEspace = $menuWidget.find('.Menubar_item').width();
+
+			$menuWidget.find('.Menubar_item .MenuItem').each(function() {
+				navWidth += $(this).outerWidth(true);
+			});
+
+			if (navWidth > availabeEspace) {
+				var lastItem = $menuWidget.find('.Menubar_item .MenuItem').last();
+				lastItem.attr('data-width', lastItem.outerWidth(true));
+				lastItem.prependTo($menuWidget.find('.Menubar__extraContainer'));
+				menuResider();
+			} else {
+				var firstMoreElement = $menuWidget.find('.Menubar__extraContainer .MenuItem').first();
+				if (navWidth + firstMoreElement.data('width') < availabeEspace) {
+					firstMoreElement.insertAfter($menuWidget.find('.Menubar_item .MenuItem').last());
+					menuResider();
+				}
+			}
+
+			if (!$menuWidget.find('.Menubar__extraContainer').is(':empty')) {
+				$menuWidget.find('.Menubar_extraItem').addClass('show');
+			} else {
+				$menuWidget.find('.Menubar_extraItem').removeClass('show');
+			}
+		};
+
+		$menuWidget.find('.MenuItem').click(function() {
+			if (
+				!$(this)
+					.parent()
+					.hasClass('Menubar__extraContainer')
+			) {
+				if (!$(this).hasClass('active') && !$(this).hasClass('activeIndicator')) {
+					$(this).addClass('active');
+					$menuWidget.find('.activeIndicator').addClass('shadow');
+					$(this)
+						.find('.MenuItem_subItems')
+						.toggleClass('show');
+				} else if (!$(this).hasClass('active') && $(this).hasClass('activeIndicator')) {
+					$(this).addClass('active');
+					$(this)
+						.find('.MenuItem_subItems')
+						.toggleClass('show');
+				}
+			} else {
+				$(this)
+					.find('.MenuItem_subItems')
+					.toggleClass('show');
+			}
+		});
+
+		$menuWidget.find('.Menubar_extraItem .icon').click(function() {
+			$menuWidget.find('.Menubar__extraContainer ').toggleClass('show');
+		});
+
+		$(document).mouseup(e => {
+			var $menu = $menuWidget.find('.MenuItem.active');
+			var $moreOptions = $menuWidget.find('.Menubar_extraItem');
+
+			// if the target of the click isn't the menu or a descendant of the menu
+			if ($menu.length > 0) {
+				if (!$menu.is(e.target) && $menu.has(e.target).length === 0) {
+					$menu.find('.MenuItem_subItems').removeClass('show');
+					$('.activeIndicator').removeClass('shadow');
+					$menuWidget.find('.MenuItem.active').removeClass('active');
+				}
+			}
+
+			if (!$moreOptions.is(e.target) && $moreOptions.has(e.target).length === 0) {
+				$moreOptions.find('.Menubar__extraContainer').removeClass('show');
+				$('.activeIndicator').removeClass('shadow');
+			}
+		});
+
+		$(window).on('resize load', function() {
+			menuResider();
+		});
+	});
+};
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/multiple-selection-button/scripts.js":
-/*!**********************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/multiple-selection-button/scripts.js ***!
-  \**********************************************************************************/
 /***/ (function() {
 
-eval("{/* Component MultipleSelectionButton */\r\nSapphireWidgets.MultipleSelectionButton = function(WrapperId) {\r\n\tconst $widget = $(WrapperId);\r\n\tconst $control = $widget.find('input[type=\"checkbox\"]');\r\n\r\n\tif ($(WrapperId + ' input[type=\"checkbox\"]').is(':disabled')) {\r\n\t\t$widget.addClass('disabled');\r\n\t} else {\r\n\t\t$widget.removeClass('disabled');\r\n\t}\r\n\r\n\tif ($(WrapperId + ' input[type=\"checkbox\"]').is(':checked')) {\r\n\t\t$widget.addClass('active');\r\n\t} else {\r\n\t\t$widget.removeClass('active');\r\n\t}\r\n\r\n\t$widget.find('input[type=\"checkbox\"]').change(function() {\r\n\t\tconst $parent = $(this).parent();\r\n\r\n\t\tif ($(this).is(':checked')) $parent.parent().addClass('active');\r\n\t\telse $parent.parent().removeClass('active');\r\n\t});\r\n\r\n\t$widget.find('.MultipleSelectionButton-label').click(function() {\r\n\t\t$control[0].click();\r\n\r\n\t\tsetTimeout(function() {\r\n\t\t\tif ($control.is(':checked')) $widget.addClass('active');\r\n\t\t\telse $widget.removeClass('active');\r\n\t\t}, 10);\r\n\t});\r\n};\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/multiple-selection-button/scripts.js?\n}");
+/* Component MultipleSelectionButton */
+SapphireWidgets.MultipleSelectionButton = function(WrapperId) {
+	const $widget = $(WrapperId);
+	const $control = $widget.find('input[type="checkbox"]');
+
+	if ($(WrapperId + ' input[type="checkbox"]').is(':disabled')) {
+		$widget.addClass('disabled');
+	} else {
+		$widget.removeClass('disabled');
+	}
+
+	if ($(WrapperId + ' input[type="checkbox"]').is(':checked')) {
+		$widget.addClass('active');
+	} else {
+		$widget.removeClass('active');
+	}
+
+	$widget.find('input[type="checkbox"]').change(function() {
+		const $parent = $(this).parent();
+
+		if ($(this).is(':checked')) $parent.parent().addClass('active');
+		else $parent.parent().removeClass('active');
+	});
+
+	$widget.find('.MultipleSelectionButton-label').click(function() {
+		$control[0].click();
+
+		setTimeout(function() {
+			if ($control.is(':checked')) $widget.addClass('active');
+			else $widget.removeClass('active');
+		}, 10);
+	});
+};
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/panel/confirmation-panel.js":
-/*!*************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/panel/confirmation-panel.js ***!
-  \*************************************************************************/
 /***/ (function() {
 
-eval("{/* Component ConfirmationPanel3Options ConfirmationPanel same javascript code*/\r\n\r\nSapphireWidgets.ConfirmationPanel = {\r\n\tisAnyPanelOpened: function() {\r\n\t\treturn $('body').hasClass('PanelOpened') && $('.PanelContainer:visible').length;\r\n\t},\r\n\r\n\ttogglePanel: function(PanelId) {\r\n\t\tif (!OsValidatorOnSubmit()) return;\r\n\r\n\t\tif (!SapphireWidgets.ConfirmationPanel.isAnyPanelOpened()) {\r\n\t\t\t$('body').addClass('PanelOpened');\r\n\t\t\t$('#' + PanelId).fadeIn(140);\r\n\r\n\t\t\tsetTimeout(function() {\r\n\t\t\t\t$('#' + PanelId)\r\n\t\t\t\t\t.find('.PanelContainer')\r\n\t\t\t\t\t.slideToggle(150);\r\n\t\t\t}, 100);\r\n\r\n\t\t\tif (window.frameElement) {\r\n\t\t\t\tSapphireWidgets.RemoteAppointment.setModalMinimized();\r\n\t\t\t}\r\n\t\t}\r\n\t},\r\n\r\n\tclosePanel: function(PanelId) {\r\n\t\t$('body').removeClass('PanelOpened');\r\n\t\t$('#' + PanelId).fadeOut(140);\r\n\r\n\t\tsetTimeout(function() {\r\n\t\t\t$('#' + PanelId)\r\n\t\t\t\t.find('.PanelContainer')\r\n\t\t\t\t.slideUp(150);\r\n\t\t}, 100);\r\n\t},\r\n\r\n\tsetPanelBehavior: function() {\r\n\t\t$('.Panel[confirmation-panel-trigger-elementid]').each(function() {\r\n\t\t\tvar this_panel = $(this);\r\n\t\t\t$('#' + this_panel.attr('confirmation-panel-trigger-elementid') + '')\r\n\t\t\t\t.off('click')\r\n\t\t\t\t.on('click', function() {\r\n\t\t\t\t\tSapphireWidgets.ConfirmationPanel.togglePanel(this_panel.attr('id'));\r\n\t\t\t\t\treturn false;\r\n\t\t\t\t});\r\n\t\t});\r\n\t},\r\n};\r\n\r\n$(document).ready(function() {\r\n\tSapphireWidgets.ConfirmationPanel.setPanelBehavior();\r\n\tif (osAjaxBackend.EventHandlers.AfterAjaxRequest.toString().indexOf('setPanelBehavior') == -1) {\r\n\t\tosAjaxBackend.BindAfterAjaxRequest(SapphireWidgets.ConfirmationPanel.setPanelBehavior);\r\n\t}\r\n});\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/panel/confirmation-panel.js?\n}");
+/* Component ConfirmationPanel3Options ConfirmationPanel same javascript code*/
+
+SapphireWidgets.ConfirmationPanel = {
+	isAnyPanelOpened: function() {
+		return $('body').hasClass('PanelOpened') && $('.PanelContainer:visible').length;
+	},
+
+	togglePanel: function(PanelId) {
+		if (!OsValidatorOnSubmit()) return;
+
+		if (!SapphireWidgets.ConfirmationPanel.isAnyPanelOpened()) {
+			$('body').addClass('PanelOpened');
+			$('#' + PanelId).fadeIn(140);
+
+			setTimeout(function() {
+				$('#' + PanelId)
+					.find('.PanelContainer')
+					.slideToggle(150);
+			}, 100);
+
+			if (window.frameElement) {
+				SapphireWidgets.RemoteAppointment.setModalMinimized();
+			}
+		}
+	},
+
+	closePanel: function(PanelId) {
+		$('body').removeClass('PanelOpened');
+		$('#' + PanelId).fadeOut(140);
+
+		setTimeout(function() {
+			$('#' + PanelId)
+				.find('.PanelContainer')
+				.slideUp(150);
+		}, 100);
+	},
+
+	setPanelBehavior: function() {
+		$('.Panel[confirmation-panel-trigger-elementid]').each(function() {
+			var this_panel = $(this);
+			$('#' + this_panel.attr('confirmation-panel-trigger-elementid') + '')
+				.off('click')
+				.on('click', function() {
+					SapphireWidgets.ConfirmationPanel.togglePanel(this_panel.attr('id'));
+					return false;
+				});
+		});
+	},
+};
+
+$(document).ready(function() {
+	SapphireWidgets.ConfirmationPanel.setPanelBehavior();
+	if (osAjaxBackend.EventHandlers.AfterAjaxRequest.toString().indexOf('setPanelBehavior') == -1) {
+		osAjaxBackend.BindAfterAjaxRequest(SapphireWidgets.ConfirmationPanel.setPanelBehavior);
+	}
+});
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/panel/confirmation-popup.js":
-/*!*************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/panel/confirmation-popup.js ***!
-  \*************************************************************************/
 /***/ (function() {
 
-eval("{/* Component ConfirmationPopup */\r\nvar _isInIframe = window.frameElement != undefined || false;\r\nSapphireWidgets.ConfirmationPopup = {\r\n\tisAnyConfirmationOpened: function() {\r\n\t\tif (_isInIframe) {\r\n\t\t\treturn window.top.$('body').hasClass('confirmation-opened') && window.top.$('.confirm-container:visible').length;\r\n\t\t} else {\r\n\t\t\treturn $('body').hasClass('confirmation-opened') && $('.confirm-container:visible').length;\r\n\t\t}\r\n\t},\r\n\r\n\ttoggleConfirm: function(_id, _question, _message, _notifyId, _HasNotifyOnCancel) {\r\n\t\tif (!OsValidatorOnSubmit()) return;\r\n\r\n\t\tif (!this.isAnyConfirmationOpened()) {\r\n\t\t\tvar _body = $('body');\r\n\t\t\tvar _bodyJS = document.body;\r\n\t\t\tif (_isInIframe) {\r\n\t\t\t\t_body = window.top.$('body');\r\n\t\t\t\t_bodyJS = window.top.document.body;\r\n\t\t\t}\r\n\r\n\t\t\t_body.addClass('confirmation-opened');\r\n\r\n\t\t\tvar _confirmId = 'confirm_' + _id;\r\n\r\n\t\t\tvar _container = document.createElement('DIV');\r\n\t\t\t_container.setAttribute('id', _confirmId);\r\n\t\t\t_container.setAttribute('class', 'confirm confirm-wb');\r\n\t\t\t_container.setAttribute('confirm-trigger-elementid', _id);\r\n\r\n\t\t\tvar _background = document.createElement('DIV');\r\n\t\t\t_background.setAttribute('class', 'confirm-background confirm-wb');\r\n\t\t\t_background.setAttribute('id', 'bg_' + _confirmId);\r\n\t\t\t_container.appendChild(_background);\r\n\r\n\t\t\tvar _confirm = document.createElement('DIV');\r\n\t\t\t_confirm.setAttribute('class', 'confirm-container confirm-wb');\r\n\t\t\t_container.appendChild(_confirm);\r\n\r\n\t\t\tvar _confirmTitle = document.createElement('DIV');\r\n\t\t\t_confirmTitle.setAttribute('class', 'confirm-title');\r\n\t\t\tvar _title = document.createTextNode(_question);\r\n\t\t\t_confirmTitle.appendChild(_title);\r\n\t\t\t_confirm.appendChild(_confirmTitle);\r\n\r\n\t\t\tvar _confirmMsg = document.createElement('DIV');\r\n\t\t\t_confirmMsg.setAttribute('class', 'confirm-message');\r\n\r\n\t\t\t_confirmMsg.innerHTML = _message; /* Set HTML to render the message HTML tags, similar to the Escape Content set as No. */\r\n\t\t\t_confirm.appendChild(_confirmMsg);\r\n\r\n\t\t\tvar _confirmActions = document.createElement('DIV');\r\n\t\t\t_confirmActions.setAttribute('class', 'confirm-actions');\r\n\t\t\t_confirm.appendChild(_confirmActions);\r\n\r\n\t\t\tvar _noBtnLnk = document.createElement('A');\r\n\t\t\t_noBtnLnk.setAttribute('class', 'Button Third MultiMarginRight10');\r\n\t\t\t_noBtnLnk.setAttribute('cancel-button', 'cancel-button');\r\n\t\t\t_noBtnLnk.setAttribute('ui', 'ConfirmNo1');\r\n\t\t\tif (_HasNotifyOnCancel == 'True') {\r\n\t\t\t\tif (_isInIframe) {\r\n\t\t\t\t\t_noBtnLnk.setAttribute(\r\n\t\t\t\t\t\t'onclick',\r\n\t\t\t\t\t\t'document.getElementById(\"' +\r\n\t\t\t\t\t\t\t'iframe_' +\r\n\t\t\t\t\t\t\t_id +\r\n\t\t\t\t\t\t\t'\").contentWindow.OsNotifyWidget(\"' +\r\n\t\t\t\t\t\t\t_notifyId +\r\n\t\t\t\t\t\t\t'\",\"CANCEL\"); SapphireWidgets.ConfirmationPopup.closeConfirmPopup(\"' +\r\n\t\t\t\t\t\t\t_confirmId +\r\n\t\t\t\t\t\t\t'\");'\r\n\t\t\t\t\t);\r\n\t\t\t\t} else {\r\n\t\t\t\t\t_noBtnLnk.setAttribute(\r\n\t\t\t\t\t\t'onclick',\r\n\t\t\t\t\t\t'OsNotifyWidget(\"' +\r\n\t\t\t\t\t\t\t_notifyId +\r\n\t\t\t\t\t\t\t'\",\"CANCEL\"); SapphireWidgets.ConfirmationPopup.closeConfirmPopup(\"' +\r\n\t\t\t\t\t\t\t_confirmId +\r\n\t\t\t\t\t\t\t'\");'\r\n\t\t\t\t\t);\r\n\t\t\t\t}\r\n\t\t\t} else {\r\n\t\t\t\tif (_isInIframe) {\r\n\t\t\t\t\t_noBtnLnk.setAttribute(\r\n\t\t\t\t\t\t'onclick',\r\n\t\t\t\t\t\t'SapphireWidgets.ConfirmationPopup.closeConfirmPopup(\"' + _confirmId + '\");'\r\n\t\t\t\t\t);\r\n\t\t\t\t} else {\r\n\t\t\t\t\t_noBtnLnk.setAttribute(\r\n\t\t\t\t\t\t'onclick',\r\n\t\t\t\t\t\t'SapphireWidgets.ConfirmationPopup.closeConfirmPopup(\"' + _confirmId + '\");'\r\n\t\t\t\t\t);\r\n\t\t\t\t}\r\n\t\t\t}\r\n\r\n\t\t\tvar _noBtn = document.createTextNode('No');\r\n\t\t\t_noBtnLnk.appendChild(_noBtn);\r\n\t\t\t_confirmActions.appendChild(_noBtnLnk);\r\n\r\n\t\t\tvar _yesBtnLnk = document.createElement('A');\r\n\t\t\t_yesBtnLnk.setAttribute('class', 'Button SetAsValid Is_Default');\r\n\t\t\t_yesBtnLnk.setAttribute('cancel-button', '');\r\n\t\t\t_yesBtnLnk.setAttribute('ui', 'ConfirmYes1');\r\n\r\n\t\t\tif (_isInIframe) {\r\n\t\t\t\t_yesBtnLnk.setAttribute(\r\n\t\t\t\t\t'onclick',\r\n\t\t\t\t\t'document.getElementById(\"' +\r\n\t\t\t\t\t\t'iframe_' +\r\n\t\t\t\t\t\t_id +\r\n\t\t\t\t\t\t'\").contentWindow.OsNotifyWidget(\"' +\r\n\t\t\t\t\t\t_notifyId +\r\n\t\t\t\t\t\t'\",\"OK\"); SapphireWidgets.ConfirmationPopup.closeConfirmPopup(\"' +\r\n\t\t\t\t\t\t_confirmId +\r\n\t\t\t\t\t\t'\");'\r\n\t\t\t\t);\r\n\t\t\t} else {\r\n\t\t\t\t_yesBtnLnk.setAttribute(\r\n\t\t\t\t\t'onclick',\r\n\t\t\t\t\t'OsNotifyWidget(\"' +\r\n\t\t\t\t\t\t_notifyId +\r\n\t\t\t\t\t\t'\",\"OK\"); SapphireWidgets.ConfirmationPopup.closeConfirmPopup(\"' +\r\n\t\t\t\t\t\t_confirmId +\r\n\t\t\t\t\t\t'\");'\r\n\t\t\t\t);\r\n\t\t\t}\r\n\t\t\tvar _yesBtn = document.createTextNode('Yes');\r\n\t\t\t_yesBtnLnk.appendChild(_yesBtn);\r\n\t\t\t_confirmActions.appendChild(_yesBtnLnk);\r\n\r\n\t\t\t_confirm.appendChild(_confirmActions);\r\n\r\n\t\t\t_container.appendChild(_confirm);\r\n\r\n\t\t\t_bodyJS.appendChild(_container);\r\n\r\n\t\t\tif (_isInIframe) {\r\n\t\t\t\twindow.top.$('#bg_' + _confirmId).fadeIn(140);\r\n\t\t\t\tsetTimeout(function() {\r\n\t\t\t\t\twindow.top\r\n\t\t\t\t\t\t.$('#' + _confirmId)\r\n\t\t\t\t\t\t.find('.confirm-container')\r\n\t\t\t\t\t\t.slideToggle(150);\r\n\t\t\t\t\twindow.top.$('#' + _confirmId + ' [cancel-button]').focus();\r\n\t\t\t\t}, 100);\r\n\r\n\t\t\t\tSapphireWidgets.RemoteAppointment.setModalMinimized();\r\n\t\t\t} else {\r\n\t\t\t\t$('#bg_' + _confirmId).fadeIn(140);\r\n\t\t\t\tsetTimeout(function() {\r\n\t\t\t\t\t$('#' + _confirmId)\r\n\t\t\t\t\t\t.find('.confirm-container')\r\n\t\t\t\t\t\t.slideToggle(150);\r\n\t\t\t\t\t$('#' + _confirmId + ' [cancel-button]').focus();\r\n\t\t\t\t}, 100);\r\n\t\t\t}\r\n\t\t}\r\n\t},\r\n\r\n\tcloseConfirmPopup: function(_confirmId) {\r\n\t\t$('body').removeClass('confirmation-opened');\r\n\t\t$('body').css('overflow-y', 'scroll');\r\n\t\t$('#bg_' + _confirmId).fadeOut(140);\r\n\r\n\t\tsetTimeout(function() {\r\n\t\t\t$('#' + _confirmId)\r\n\t\t\t\t.find('.confirm-container')\r\n\t\t\t\t.slideUp(150);\r\n\t\t\t$('#' + _confirmId).remove();\r\n\t\t}, 100);\r\n\t},\r\n\r\n\tcreate: function(_id, _question, _message, _notifyId, _HasNotifyOnCancel) {\r\n\t\t$(document).ready(function() {\r\n\t\t\t$('#' + _id)\r\n\t\t\t\t.off('click')\r\n\t\t\t\t.on('click', function() {\r\n\t\t\t\t\tSapphireWidgets.ConfirmationPopup.toggleConfirm(_id, _question, _message, _notifyId, _HasNotifyOnCancel);\r\n\t\t\t\t\tif (_isInIframe) {\r\n\t\t\t\t\t\twindow.frameElement.setAttribute('menu-id', _id);\r\n\t\t\t\t\t\twindow.frameElement.setAttribute('id', 'iframe_' + _id);\r\n\t\t\t\t\t}\r\n\t\t\t\t\treturn false;\r\n\t\t\t\t});\r\n\t\t});\r\n\t},\r\n};\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/panel/confirmation-popup.js?\n}");
+/* Component ConfirmationPopup */
+var _isInIframe = window.frameElement != undefined || false;
+SapphireWidgets.ConfirmationPopup = {
+	isAnyConfirmationOpened: function() {
+		if (_isInIframe) {
+			return window.top.$('body').hasClass('confirmation-opened') && window.top.$('.confirm-container:visible').length;
+		} else {
+			return $('body').hasClass('confirmation-opened') && $('.confirm-container:visible').length;
+		}
+	},
+
+	toggleConfirm: function(_id, _question, _message, _notifyId, _HasNotifyOnCancel) {
+		if (!OsValidatorOnSubmit()) return;
+
+		if (!this.isAnyConfirmationOpened()) {
+			var _body = $('body');
+			var _bodyJS = document.body;
+			if (_isInIframe) {
+				_body = window.top.$('body');
+				_bodyJS = window.top.document.body;
+			}
+
+			_body.addClass('confirmation-opened');
+
+			var _confirmId = 'confirm_' + _id;
+
+			var _container = document.createElement('DIV');
+			_container.setAttribute('id', _confirmId);
+			_container.setAttribute('class', 'confirm confirm-wb');
+			_container.setAttribute('confirm-trigger-elementid', _id);
+
+			var _background = document.createElement('DIV');
+			_background.setAttribute('class', 'confirm-background confirm-wb');
+			_background.setAttribute('id', 'bg_' + _confirmId);
+			_container.appendChild(_background);
+
+			var _confirm = document.createElement('DIV');
+			_confirm.setAttribute('class', 'confirm-container confirm-wb');
+			_container.appendChild(_confirm);
+
+			var _confirmTitle = document.createElement('DIV');
+			_confirmTitle.setAttribute('class', 'confirm-title');
+			var _title = document.createTextNode(_question);
+			_confirmTitle.appendChild(_title);
+			_confirm.appendChild(_confirmTitle);
+
+			var _confirmMsg = document.createElement('DIV');
+			_confirmMsg.setAttribute('class', 'confirm-message');
+
+			_confirmMsg.innerHTML = _message; /* Set HTML to render the message HTML tags, similar to the Escape Content set as No. */
+			_confirm.appendChild(_confirmMsg);
+
+			var _confirmActions = document.createElement('DIV');
+			_confirmActions.setAttribute('class', 'confirm-actions');
+			_confirm.appendChild(_confirmActions);
+
+			var _noBtnLnk = document.createElement('A');
+			_noBtnLnk.setAttribute('class', 'Button Third MultiMarginRight10');
+			_noBtnLnk.setAttribute('cancel-button', 'cancel-button');
+			_noBtnLnk.setAttribute('ui', 'ConfirmNo1');
+			if (_HasNotifyOnCancel == 'True') {
+				if (_isInIframe) {
+					_noBtnLnk.setAttribute(
+						'onclick',
+						'document.getElementById("' +
+							'iframe_' +
+							_id +
+							'").contentWindow.OsNotifyWidget("' +
+							_notifyId +
+							'","CANCEL"); SapphireWidgets.ConfirmationPopup.closeConfirmPopup("' +
+							_confirmId +
+							'");'
+					);
+				} else {
+					_noBtnLnk.setAttribute(
+						'onclick',
+						'OsNotifyWidget("' +
+							_notifyId +
+							'","CANCEL"); SapphireWidgets.ConfirmationPopup.closeConfirmPopup("' +
+							_confirmId +
+							'");'
+					);
+				}
+			} else {
+				if (_isInIframe) {
+					_noBtnLnk.setAttribute(
+						'onclick',
+						'SapphireWidgets.ConfirmationPopup.closeConfirmPopup("' + _confirmId + '");'
+					);
+				} else {
+					_noBtnLnk.setAttribute(
+						'onclick',
+						'SapphireWidgets.ConfirmationPopup.closeConfirmPopup("' + _confirmId + '");'
+					);
+				}
+			}
+
+			var _noBtn = document.createTextNode('No');
+			_noBtnLnk.appendChild(_noBtn);
+			_confirmActions.appendChild(_noBtnLnk);
+
+			var _yesBtnLnk = document.createElement('A');
+			_yesBtnLnk.setAttribute('class', 'Button SetAsValid Is_Default');
+			_yesBtnLnk.setAttribute('cancel-button', '');
+			_yesBtnLnk.setAttribute('ui', 'ConfirmYes1');
+
+			if (_isInIframe) {
+				_yesBtnLnk.setAttribute(
+					'onclick',
+					'document.getElementById("' +
+						'iframe_' +
+						_id +
+						'").contentWindow.OsNotifyWidget("' +
+						_notifyId +
+						'","OK"); SapphireWidgets.ConfirmationPopup.closeConfirmPopup("' +
+						_confirmId +
+						'");'
+				);
+			} else {
+				_yesBtnLnk.setAttribute(
+					'onclick',
+					'OsNotifyWidget("' +
+						_notifyId +
+						'","OK"); SapphireWidgets.ConfirmationPopup.closeConfirmPopup("' +
+						_confirmId +
+						'");'
+				);
+			}
+			var _yesBtn = document.createTextNode('Yes');
+			_yesBtnLnk.appendChild(_yesBtn);
+			_confirmActions.appendChild(_yesBtnLnk);
+
+			_confirm.appendChild(_confirmActions);
+
+			_container.appendChild(_confirm);
+
+			_bodyJS.appendChild(_container);
+
+			if (_isInIframe) {
+				window.top.$('#bg_' + _confirmId).fadeIn(140);
+				setTimeout(function() {
+					window.top
+						.$('#' + _confirmId)
+						.find('.confirm-container')
+						.slideToggle(150);
+					window.top.$('#' + _confirmId + ' [cancel-button]').focus();
+				}, 100);
+
+				SapphireWidgets.RemoteAppointment.setModalMinimized();
+			} else {
+				$('#bg_' + _confirmId).fadeIn(140);
+				setTimeout(function() {
+					$('#' + _confirmId)
+						.find('.confirm-container')
+						.slideToggle(150);
+					$('#' + _confirmId + ' [cancel-button]').focus();
+				}, 100);
+			}
+		}
+	},
+
+	closeConfirmPopup: function(_confirmId) {
+		$('body').removeClass('confirmation-opened');
+		$('body').css('overflow-y', 'scroll');
+		$('#bg_' + _confirmId).fadeOut(140);
+
+		setTimeout(function() {
+			$('#' + _confirmId)
+				.find('.confirm-container')
+				.slideUp(150);
+			$('#' + _confirmId).remove();
+		}, 100);
+	},
+
+	create: function(_id, _question, _message, _notifyId, _HasNotifyOnCancel) {
+		$(document).ready(function() {
+			$('#' + _id)
+				.off('click')
+				.on('click', function() {
+					SapphireWidgets.ConfirmationPopup.toggleConfirm(_id, _question, _message, _notifyId, _HasNotifyOnCancel);
+					if (_isInIframe) {
+						window.frameElement.setAttribute('menu-id', _id);
+						window.frameElement.setAttribute('id', 'iframe_' + _id);
+					}
+					return false;
+				});
+		});
+	},
+};
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/panel/modal-popup.js":
-/*!******************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/panel/modal-popup.js ***!
-  \******************************************************************/
 /***/ (function() {
 
-eval("{/* Component ModalPopup */\r\n\r\nvar _isInIframe = window.frameElement != undefined || false;\r\n\r\nSapphireWidgets.ModalPopup = {\r\n\tcreate: function(widgetId) {\r\n\t\t$(document).ready(function() {\r\n\t\t\t// Use this code to append the component to the root body\r\n\t\t\t// window.frameElement && $(window.frameElement).closest('.MainInteractiveCard-body').length > 0\r\n\t\t\tif (false) // removed by dead control flow\n{} else {\r\n\t\t\t\tconst $widget = $(`#${widgetId}`);\r\n\t\t\t\tconst $btnClose = $widget.find('.modalPopup_close');\r\n\r\n\t\t\t\tif (window.frameElement) {\r\n\t\t\t\t\tconst $modalRemoteAppt = window.top.$('.RemoteAppointment');\r\n\r\n\t\t\t\t\tif ($modalRemoteAppt.length) {\r\n\t\t\t\t\t\tconst $minimizeModal = $modalRemoteAppt.find('.Minimize');\r\n\t\t\t\t\t\t$minimizeModal.click();\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\r\n\t\t\t\t$btnClose.click(function() {\r\n\t\t\t\t\t$widget.removeClass('Open');\r\n\t\t\t\t\t$widget.removeClass('showclose');\r\n\t\t\t\t});\r\n\t\t\t}\r\n\t\t});\r\n\t},\r\n};\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/panel/modal-popup.js?\n}");
+/* Component ModalPopup */
+
+var _isInIframe = window.frameElement != undefined || false;
+
+SapphireWidgets.ModalPopup = {
+	create: function(widgetId) {
+		$(document).ready(function() {
+			// Use this code to append the component to the root body
+			// window.frameElement && $(window.frameElement).closest('.MainInteractiveCard-body').length > 0
+			if (false) // removed by dead control flow
+{} else {
+				const $widget = $(`#${widgetId}`);
+				const $btnClose = $widget.find('.modalPopup_close');
+
+				if (window.frameElement) {
+					const $modalRemoteAppt = window.top.$('.RemoteAppointment');
+
+					if ($modalRemoteAppt.length) {
+						const $minimizeModal = $modalRemoteAppt.find('.Minimize');
+						$minimizeModal.click();
+					}
+				}
+
+				$btnClose.click(function() {
+					$widget.removeClass('Open');
+					$widget.removeClass('showclose');
+				});
+			}
+		});
+	},
+};
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/panel/panel-by-id-notify.js":
-/*!*************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/panel/panel-by-id-notify.js ***!
-  \*************************************************************************/
 /***/ (function() {
 
-eval("{/* Component PanelByIDNotify */\r\nvar panelNotifyWidget;\r\nSapphireWidgets.PanelByIdNotify = {\r\n\tisAnyPanelOpenedDeprecated: function() {\r\n\t\treturn $('body').hasClass('PanelOpened');\r\n\t},\r\n\ttogglePanelByNotify: function(Id) {\r\n\t\tif (!isAnyPanelOpenedDeprecated()) {\r\n\t\t\t$('body').addClass('PanelOpened');\r\n\t\t\t$('#' + Id)\r\n\t\t\t\t.parents('.ToggleButton')\r\n\t\t\t\t.parent()\r\n\t\t\t\t.children('.Panel')\r\n\t\t\t\t.fadeIn(140);\r\n\r\n\t\t\ttry {\r\n\t\t\t\tif (justDragged == false) {\r\n\t\t\t\t\t$('.PanelContainer')\r\n\t\t\t\t\t\t.css('margin-left', panelMarginLeft)\r\n\t\t\t\t\t\t.css('left', panelLeft)\r\n\t\t\t\t\t\t.addClass(panelArrowClass);\r\n\t\t\t\t}\r\n\t\t\t} catch (e) {\r\n\t\t\t\tconsole.log(e);\r\n\t\t\t}\r\n\r\n\t\t\tsetTimeout(function() {\r\n\t\t\t\t$('#' + Id)\r\n\t\t\t\t\t.parents('.ToggleButton')\r\n\t\t\t\t\t.parent()\r\n\t\t\t\t\t.children('.Panel')\r\n\t\t\t\t\t.children('.PanelContainer')\r\n\t\t\t\t\t.slideDown(150);\r\n\t\t\t}, 100);\r\n\t\t} else {\r\n\t\t\t$('body').removeClass('PanelOpened');\r\n\t\t\t$('#' + Id)\r\n\t\t\t\t.parents('.ToggleButton')\r\n\t\t\t\t.parent()\r\n\t\t\t\t.children('.Panel')\r\n\t\t\t\t.fadeOut(140);\r\n\t\t\tsetTimeout(function() {\r\n\t\t\t\t$('#' + Id)\r\n\t\t\t\t\t.parents('.ToggleButton')\r\n\t\t\t\t\t.parent()\r\n\t\t\t\t\t.children('.Panel')\r\n\t\t\t\t\t.children('.PanelContainer')\r\n\t\t\t\t\t.slideUp(150);\r\n\t\t\t}, 100);\r\n\t\t}\r\n\t},\r\n\ttogglePanelNotifyById: function(Id) {\r\n\t\t$('body').toggleClass('PanelOpened');\r\n\t\t$('#' + Id)\r\n\t\t\t.parents('.ToggleButton')\r\n\t\t\t.parent()\r\n\t\t\t.children('.Panel')\r\n\t\t\t.fadeToggle(140);\r\n\r\n\t\tpanelNotifyWidget = $('#' + Id)\r\n\t\t\t.parents('.ToggleButton')\r\n\t\t\t.attr('NotifyId');\r\n\r\n\t\tsetTimeout(function() {\r\n\t\t\t$('#' + Id)\r\n\t\t\t\t.parents('.ToggleButton')\r\n\t\t\t\t.parent()\r\n\t\t\t\t.children('.Panel')\r\n\t\t\t\t.children('.PanelContainer')\r\n\t\t\t\t.slideToggle(150);\r\n\t\t}, 100);\r\n\t},\r\n};\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/panel/panel-by-id-notify.js?\n}");
+/* Component PanelByIDNotify */
+var panelNotifyWidget;
+SapphireWidgets.PanelByIdNotify = {
+	isAnyPanelOpenedDeprecated: function() {
+		return $('body').hasClass('PanelOpened');
+	},
+	togglePanelByNotify: function(Id) {
+		if (!isAnyPanelOpenedDeprecated()) {
+			$('body').addClass('PanelOpened');
+			$('#' + Id)
+				.parents('.ToggleButton')
+				.parent()
+				.children('.Panel')
+				.fadeIn(140);
+
+			try {
+				if (justDragged == false) {
+					$('.PanelContainer')
+						.css('margin-left', panelMarginLeft)
+						.css('left', panelLeft)
+						.addClass(panelArrowClass);
+				}
+			} catch (e) {
+				console.log(e);
+			}
+
+			setTimeout(function() {
+				$('#' + Id)
+					.parents('.ToggleButton')
+					.parent()
+					.children('.Panel')
+					.children('.PanelContainer')
+					.slideDown(150);
+			}, 100);
+		} else {
+			$('body').removeClass('PanelOpened');
+			$('#' + Id)
+				.parents('.ToggleButton')
+				.parent()
+				.children('.Panel')
+				.fadeOut(140);
+			setTimeout(function() {
+				$('#' + Id)
+					.parents('.ToggleButton')
+					.parent()
+					.children('.Panel')
+					.children('.PanelContainer')
+					.slideUp(150);
+			}, 100);
+		}
+	},
+	togglePanelNotifyById: function(Id) {
+		$('body').toggleClass('PanelOpened');
+		$('#' + Id)
+			.parents('.ToggleButton')
+			.parent()
+			.children('.Panel')
+			.fadeToggle(140);
+
+		panelNotifyWidget = $('#' + Id)
+			.parents('.ToggleButton')
+			.attr('NotifyId');
+
+		setTimeout(function() {
+			$('#' + Id)
+				.parents('.ToggleButton')
+				.parent()
+				.children('.Panel')
+				.children('.PanelContainer')
+				.slideToggle(150);
+		}, 100);
+	},
+};
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/panel/panel-by-id.js":
-/*!******************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/panel/panel-by-id.js ***!
-  \******************************************************************/
 /***/ (function() {
 
-eval("{/* Component PanelByID */\r\nSapphireWidgets.PanelById = {\r\n\tisAnyPanelOpenedDeprecated: function() {\r\n\t\treturn $('body').hasClass('PanelOpened');\r\n\t},\r\n\r\n\ttoggleButton: function(id) {\r\n\t\tconst $toggleButton = $(`#${id}`).parents('.ToggleButton').length\r\n\t\t\t? $(`#${id}`).parents('.ToggleButton')\r\n\t\t\t: $(`#${id}`);\r\n\r\n\t\t$toggleButton.click();\r\n\t},\r\n\r\n\ttogglePanelById: function(Id) {\r\n\t\tconst $toggleButton = $(`#${Id}`).parents('.ToggleButton');\r\n\t\tconst $panel = $toggleButton.parent().children('.Panel');\r\n\t\tconst $panelContainer = $panel.children('.PanelContainer');\r\n\t\tconst $panelBackground = $panel.children('.PanelBackground');\r\n\r\n\t\tif (!this.isAnyPanelOpenedDeprecated()) {\r\n\t\t\t$('body').addClass('PanelOpened');\r\n\t\t\t$('body').css('overflow-y', 'hidden');\r\n\r\n\t\t\t$panel.show();\r\n\t\t\t$panelContainer.slideDown(200);\r\n\r\n\t\t\ttry {\r\n\t\t\t\tif (typeof justDragged !== 'undefined') {\r\n\t\t\t\t\tif (justDragged == false) {\r\n\t\t\t\t\t\t$('.PanelByIdNew_PanelContainer')\r\n\t\t\t\t\t\t\t.css('margin-left', panelMarginLeft)\r\n\t\t\t\t\t\t\t.css('left', panelLeft)\r\n\t\t\t\t\t\t\t.addClass(panelArrowClass);\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\t\t\t} catch (e) {\r\n\t\t\t\tconsole.log(e);\r\n\t\t\t}\r\n\r\n\t\t\tsetTimeout(function() {\r\n\t\t\t\t$panelBackground.fadeIn(80);\r\n\r\n\t\t\t\t$toggleButton.click();\r\n\t\t\t}, 50);\r\n\t\t} else {\r\n\t\t\t$panelContainer.slideUp(200);\r\n\r\n\t\t\t$panelBackground.fadeOut(80, () => {\r\n\t\t\t\t$toggleButton.click();\r\n\r\n\t\t\t\t$('body').css('overflow-y', 'scroll');\r\n\t\t\t\t$('body').removeClass('PanelOpened');\r\n\r\n\t\t\t\t$panel.hide();\r\n\t\t\t});\r\n\t\t}\r\n\t},\r\n};\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/panel/panel-by-id.js?\n}");
+/* Component PanelByID */
+SapphireWidgets.PanelById = {
+	isAnyPanelOpenedDeprecated: function() {
+		return $('body').hasClass('PanelOpened');
+	},
+
+	toggleButton: function(id) {
+		const $toggleButton = $(`#${id}`).parents('.ToggleButton').length
+			? $(`#${id}`).parents('.ToggleButton')
+			: $(`#${id}`);
+
+		$toggleButton.click();
+	},
+
+	togglePanelById: function(Id) {
+		const $toggleButton = $(`#${Id}`).parents('.ToggleButton');
+		const $panel = $toggleButton.parent().children('.Panel');
+		const $panelContainer = $panel.children('.PanelContainer');
+		const $panelBackground = $panel.children('.PanelBackground');
+
+		if (!this.isAnyPanelOpenedDeprecated()) {
+			$('body').addClass('PanelOpened');
+			$('body').css('overflow-y', 'hidden');
+
+			$panel.show();
+			$panelContainer.slideDown(200);
+
+			try {
+				if (typeof justDragged !== 'undefined') {
+					if (justDragged == false) {
+						$('.PanelByIdNew_PanelContainer')
+							.css('margin-left', panelMarginLeft)
+							.css('left', panelLeft)
+							.addClass(panelArrowClass);
+					}
+				}
+			} catch (e) {
+				console.log(e);
+			}
+
+			setTimeout(function() {
+				$panelBackground.fadeIn(80);
+
+				$toggleButton.click();
+			}, 50);
+		} else {
+			$panelContainer.slideUp(200);
+
+			$panelBackground.fadeOut(80, () => {
+				$toggleButton.click();
+
+				$('body').css('overflow-y', 'scroll');
+				$('body').removeClass('PanelOpened');
+
+				$panel.hide();
+			});
+		}
+	},
+};
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/panel/popup-menu.js":
-/*!*****************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/panel/popup-menu.js ***!
-  \*****************************************************************/
 /***/ (function() {
 
-eval("{/* Component PopUpMenu */\r\nSapphireWidgets.PopUpMenu = {\r\n\tmenuPosition: function(id, Context, Locale) {\r\n\t\t/* Hide any other menus on page and set button as collapsed. */\r\n\t\t$('.popup-menu:visible').hide();\r\n\r\n\t\t//var _this = $(this);\r\n\t\tvar _this = $('#' + id);\r\n\t\tvar Xx = 0;\r\n\t\tvar Yy = 0;\r\n\t\tvar Ww = 0;\r\n\t\tvar Hh = 0;\r\n\r\n\t\t//_this.children('.button-expand:visible').hide();\r\n\r\n\t\t/* Get the menu element. */\r\n\t\tvar _el = _this.next('.popup-menu');\r\n\r\n\t\t/* Display the menu. */\r\n\t\t_el.show();\r\n\r\n\t\t/* Set button collapse. */\r\n\t\t_this.children('.button-collapse').show();\r\n\r\n\t\t/* Get the dimensions of the button. */\r\n\t\tbuttonHh = _this.outerHeight();\r\n\t\tbuttonWw = _this.outerWidth();\r\n\r\n\t\tvar buttonY = _this.position().top + buttonHh + 10;\r\n\t\tvar buttonX = _this.offset().left;\r\n\t\t//var buttonX = _this.position().left;\r\n\r\n\t\t/* Get the distance of menu button and the parent element */\r\n\t\tvar popupParentXx = _this.offset().left - _this.position().left;\r\n\r\n\t\tvar popupXx = _el.offset().left;\r\n\t\tvar popupWw = _el.outerWidth();\r\n\r\n\t\tXx = Math.abs(buttonX - $('body').scrollLeft() - popupParentXx);\r\n\t\tYy = Math.abs(buttonHh - buttonY - $('body').scrollTop());\r\n\r\n\t\tif (Locale != 'AR') {\r\n\t\t\t/* Check if clicked position plus the popup width exceed the window width. */\r\n\t\t\tif (buttonX + popupWw - $('body').scrollLeft() > $(Context).width()) {\r\n\t\t\t\tXx = buttonX - popupWw - $('body').scrollLeft() - popupParentXx + buttonWw;\r\n\t\t\t\t//Xx = ($(window).width() - popupWw) - $('body').scrollLeft();\r\n\t\t\t}\r\n\t\t}\r\n\r\n\t\t/* Set menu position. */\r\n\t\t_el.css({\r\n\t\t\tleft: Xx + 'px',\r\n\t\t\ttop: buttonY + 'px',\r\n\t\t});\r\n\r\n\t\t/* Refresh value */\r\n\t\tpopupXx = _el.offset().left;\r\n\r\n\t\tvar _balloonEl = _el.children('.popup-menu-balloon');\r\n\r\n\t\tvar _balloonXx = _balloonEl.offset().left;\r\n\t\tvar _balloonWw = _balloonEl.outerWidth();\r\n\t\tvar _balloonPosXx = Math.abs(buttonX - Xx - popupParentXx);\r\n\r\n\t\t/* Is the balloon icon positioned out of the popup menu? */\r\n\t\tif (_balloonPosXx + Xx + _balloonWw > Xx + popupWw) {\r\n\t\t\t_balloonPosXx = _balloonPosXx - _balloonWw;\r\n\t\t}\r\n\r\n\t\t/* Set position of the balloon effect. */\r\n\t\t_balloonEl.css('left', _balloonPosXx + 'px');\r\n\t},\r\n\tmenuEvents: function(Context, Locale) {\r\n\t\t$('.popup-button')\r\n\t\t\t.off('click')\r\n\t\t\t.on('click', function(e) {\r\n\t\t\t\tvar id = $(this).attr('id');\r\n\t\t\t\tSapphireWidgets.PopUpMenu.menuPosition(id, Context, Locale);\r\n\r\n\t\t\t\t/*e.stopPropagation();*/\r\n\r\n\t\t\t\t/* Prevent link submission */\r\n\t\t\t\treturn false;\r\n\t\t\t});\r\n\r\n\t\t/* v *** Hide popup when click outside *** v */\r\n\t\tfunction PMClickOutside(event) {\r\n\t\t\tif (event.hasOwnProperty('target')) {\r\n\t\t\t\tvar target = $(event.target);\r\n\t\t\t\t/*if ((target.parents().index($('a[sapphirehospital], .HospitalPopUp')) == -1)) {}*/\r\n\t\t\t\tif (\r\n\t\t\t\t\t!$(event.target).closest(\r\n\t\t\t\t\t\t'.popup-button, .popup-menu, .os-internal-ui-autocomplete, .os-internal-ui-menu-item, .os-internal-ui-corner-all, ui-autocomplete-item'\r\n\t\t\t\t\t).length\r\n\t\t\t\t) {\r\n\t\t\t\t\t$('.popup-menu:visible').hide();\r\n\t\t\t\t\t$('.button-collapse:visible').hide();\r\n\t\t\t\t\t//$('.button-expand').show();\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}\r\n\r\n\t\tvar _PMIsDrag = false;\r\n\t\tvar _PMIsClick = false;\r\n\t\t$(document).on('touchstart', function(event) {\r\n\t\t\t_PMIsDrag = false;\r\n\t\t\t_PMIsClick = true;\r\n\t\t});\r\n\t\t$(document).on('touchmove', function(event) {\r\n\t\t\t_PMIsDrag = true;\r\n\t\t});\r\n\t\t$(document).on('click', function(event) {\r\n\t\t\tPMClickOutside(event);\r\n\t\t\t_PMIsDrag = false;\r\n\t\t\t_PMIsClick = false;\r\n\t\t});\r\n\t\t$(document).on('touchend', function(event) {\r\n\t\t\tif (!_PMIsDrag && _PMIsClick) {\r\n\t\t\t\tPMClickOutside(event);\r\n\t\t\t}\r\n\t\t\t_PMIsDrag = false;\r\n\t\t\t_PMIsClick = false;\r\n\t\t});\r\n\r\n\t\t$('.button-collapse').on('click', function(event) {\r\n\t\t\t$('body').trigger('click');\r\n\t\t\treturn false;\r\n\t\t});\r\n\t\t/* ^ *** Hide popup when click outside *** ^ */\r\n\t},\r\n};\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/panel/popup-menu.js?\n}");
+/* Component PopUpMenu */
+SapphireWidgets.PopUpMenu = {
+	menuPosition: function(id, Context, Locale) {
+		/* Hide any other menus on page and set button as collapsed. */
+		$('.popup-menu:visible').hide();
+
+		//var _this = $(this);
+		var _this = $('#' + id);
+		var Xx = 0;
+		var Yy = 0;
+		var Ww = 0;
+		var Hh = 0;
+
+		//_this.children('.button-expand:visible').hide();
+
+		/* Get the menu element. */
+		var _el = _this.next('.popup-menu');
+
+		/* Display the menu. */
+		_el.show();
+
+		/* Set button collapse. */
+		_this.children('.button-collapse').show();
+
+		/* Get the dimensions of the button. */
+		buttonHh = _this.outerHeight();
+		buttonWw = _this.outerWidth();
+
+		var buttonY = _this.position().top + buttonHh + 10;
+		var buttonX = _this.offset().left;
+		//var buttonX = _this.position().left;
+
+		/* Get the distance of menu button and the parent element */
+		var popupParentXx = _this.offset().left - _this.position().left;
+
+		var popupXx = _el.offset().left;
+		var popupWw = _el.outerWidth();
+
+		Xx = Math.abs(buttonX - $('body').scrollLeft() - popupParentXx);
+		Yy = Math.abs(buttonHh - buttonY - $('body').scrollTop());
+
+		if (Locale != 'AR') {
+			/* Check if clicked position plus the popup width exceed the window width. */
+			if (buttonX + popupWw - $('body').scrollLeft() > $(Context).width()) {
+				Xx = buttonX - popupWw - $('body').scrollLeft() - popupParentXx + buttonWw;
+				//Xx = ($(window).width() - popupWw) - $('body').scrollLeft();
+			}
+		}
+
+		/* Set menu position. */
+		_el.css({
+			left: Xx + 'px',
+			top: buttonY + 'px',
+		});
+
+		/* Refresh value */
+		popupXx = _el.offset().left;
+
+		var _balloonEl = _el.children('.popup-menu-balloon');
+
+		var _balloonXx = _balloonEl.offset().left;
+		var _balloonWw = _balloonEl.outerWidth();
+		var _balloonPosXx = Math.abs(buttonX - Xx - popupParentXx);
+
+		/* Is the balloon icon positioned out of the popup menu? */
+		if (_balloonPosXx + Xx + _balloonWw > Xx + popupWw) {
+			_balloonPosXx = _balloonPosXx - _balloonWw;
+		}
+
+		/* Set position of the balloon effect. */
+		_balloonEl.css('left', _balloonPosXx + 'px');
+	},
+	menuEvents: function(Context, Locale) {
+		$('.popup-button')
+			.off('click')
+			.on('click', function(e) {
+				var id = $(this).attr('id');
+				SapphireWidgets.PopUpMenu.menuPosition(id, Context, Locale);
+
+				/*e.stopPropagation();*/
+
+				/* Prevent link submission */
+				return false;
+			});
+
+		/* v *** Hide popup when click outside *** v */
+		function PMClickOutside(event) {
+			if (event.hasOwnProperty('target')) {
+				var target = $(event.target);
+				/*if ((target.parents().index($('a[sapphirehospital], .HospitalPopUp')) == -1)) {}*/
+				if (
+					!$(event.target).closest(
+						'.popup-button, .popup-menu, .os-internal-ui-autocomplete, .os-internal-ui-menu-item, .os-internal-ui-corner-all, ui-autocomplete-item'
+					).length
+				) {
+					$('.popup-menu:visible').hide();
+					$('.button-collapse:visible').hide();
+					//$('.button-expand').show();
+				}
+			}
+		}
+
+		var _PMIsDrag = false;
+		var _PMIsClick = false;
+		$(document).on('touchstart', function(event) {
+			_PMIsDrag = false;
+			_PMIsClick = true;
+		});
+		$(document).on('touchmove', function(event) {
+			_PMIsDrag = true;
+		});
+		$(document).on('click', function(event) {
+			PMClickOutside(event);
+			_PMIsDrag = false;
+			_PMIsClick = false;
+		});
+		$(document).on('touchend', function(event) {
+			if (!_PMIsDrag && _PMIsClick) {
+				PMClickOutside(event);
+			}
+			_PMIsDrag = false;
+			_PMIsClick = false;
+		});
+
+		$('.button-collapse').on('click', function(event) {
+			$('body').trigger('click');
+			return false;
+		});
+		/* ^ *** Hide popup when click outside *** ^ */
+	},
+};
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/panel/sapphire-panel.js":
-/*!*********************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/panel/sapphire-panel.js ***!
-  \*********************************************************************/
 /***/ (function() {
 
-eval("{/* Component SapphirePanel */\r\nSapphireWidgets.SapphirePanel = {\r\n\tcheckOpenPanel: function() {\r\n\t\treturn $('body').hasClass('SapphirePanelOpen') && $('.SapphirePanel_Container:visible').length;\r\n\t},\r\n\r\n\ttoggleSapphirePanel: function(PanelId) {\r\n\t\tif (!OsValidatorOnSubmit()) {\r\n\t\t\treturn;\r\n\t\t}\r\n\r\n\t\tif (!SapphireWidgets.SapphirePanel.checkOpenPanel()) {\r\n\t\t\t$('body').addClass('SapphirePanelOpen');\r\n\t\t\t$('#' + PanelId).fadeIn(140);\r\n\r\n\t\t\tsetTimeout(function() {\r\n\t\t\t\t$('#' + PanelId)\r\n\t\t\t\t\t.find('.SapphirePanel_Container')\r\n\t\t\t\t\t.slideToggle(150);\r\n\t\t\t}, 100);\r\n\t\t}\r\n\t},\r\n\r\n\tcloseSapphirePanel: function(PanelId) {\r\n\t\t$('body').removeClass('SapphirePanelOpen');\r\n\t\t$('#' + PanelId).fadeOut(140);\r\n\r\n\t\tsetTimeout(function() {\r\n\t\t\t$('#' + PanelId)\r\n\t\t\t\t.find('.SapphirePanel_Container')\r\n\t\t\t\t.slideUp(150);\r\n\t\t}, 100);\r\n\t},\r\n\r\n\tsetPanelBehavior: function() {\r\n\t\t$('.Panel[panel-trigger-elementid]').each(function() {\r\n\t\t\tvar this_panel = $(this);\r\n\t\t\t$('#' + this_panel.attr('panel-trigger-elementid') + '')\r\n\t\t\t\t.off('click')\r\n\t\t\t\t.on('click', function() {\r\n\t\t\t\t\tSapphireWidgets.SapphirePanel.toggleSapphirePanel(this_panel.attr('id'));\r\n\t\t\t\t\treturn false;\r\n\t\t\t\t});\r\n\t\t});\r\n\t},\r\n};\r\n\r\n$(document).ready(function() {\r\n\tSapphireWidgets.SapphirePanel.setPanelBehavior();\r\n\r\n\tif (osAjaxBackend.EventHandlers.AfterAjaxRequest.toString().indexOf('setPanelBehavior') == -1) {\r\n\t\tosAjaxBackend.BindAfterAjaxRequest(SapphireWidgets.SapphirePanel.setPanelBehavior);\r\n\t}\r\n});\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/panel/sapphire-panel.js?\n}");
+/* Component SapphirePanel */
+SapphireWidgets.SapphirePanel = {
+	checkOpenPanel: function() {
+		return $('body').hasClass('SapphirePanelOpen') && $('.SapphirePanel_Container:visible').length;
+	},
+
+	toggleSapphirePanel: function(PanelId) {
+		if (!OsValidatorOnSubmit()) {
+			return;
+		}
+
+		if (!SapphireWidgets.SapphirePanel.checkOpenPanel()) {
+			$('body').addClass('SapphirePanelOpen');
+			$('#' + PanelId).fadeIn(140);
+
+			setTimeout(function() {
+				$('#' + PanelId)
+					.find('.SapphirePanel_Container')
+					.slideToggle(150);
+			}, 100);
+		}
+	},
+
+	closeSapphirePanel: function(PanelId) {
+		$('body').removeClass('SapphirePanelOpen');
+		$('#' + PanelId).fadeOut(140);
+
+		setTimeout(function() {
+			$('#' + PanelId)
+				.find('.SapphirePanel_Container')
+				.slideUp(150);
+		}, 100);
+	},
+
+	setPanelBehavior: function() {
+		$('.Panel[panel-trigger-elementid]').each(function() {
+			var this_panel = $(this);
+			$('#' + this_panel.attr('panel-trigger-elementid') + '')
+				.off('click')
+				.on('click', function() {
+					SapphireWidgets.SapphirePanel.toggleSapphirePanel(this_panel.attr('id'));
+					return false;
+				});
+		});
+	},
+};
+
+$(document).ready(function() {
+	SapphireWidgets.SapphirePanel.setPanelBehavior();
+
+	if (osAjaxBackend.EventHandlers.AfterAjaxRequest.toString().indexOf('setPanelBehavior') == -1) {
+		osAjaxBackend.BindAfterAjaxRequest(SapphireWidgets.SapphirePanel.setPanelBehavior);
+	}
+});
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/panel/scripts.js":
-/*!**************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/panel/scripts.js ***!
-  \**************************************************************/
 /***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
 
-eval("{__webpack_require__(/*! ./confirmation-panel */ \"./src/components/05-components/v3-pat/panel/confirmation-panel.js\");\r\n__webpack_require__(/*! ./modal-popup */ \"./src/components/05-components/v3-pat/panel/modal-popup.js\");\r\n__webpack_require__(/*! ./panel-by-id */ \"./src/components/05-components/v3-pat/panel/panel-by-id.js\");\r\n__webpack_require__(/*! ./popup-menu */ \"./src/components/05-components/v3-pat/panel/popup-menu.js\");\r\n__webpack_require__(/*! ./sapphire-panel */ \"./src/components/05-components/v3-pat/panel/sapphire-panel.js\");\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/panel/scripts.js?\n}");
+__webpack_require__("./src/components/05-components/v3-pat/panel/confirmation-panel.js");
+__webpack_require__("./src/components/05-components/v3-pat/panel/modal-popup.js");
+__webpack_require__("./src/components/05-components/v3-pat/panel/panel-by-id.js");
+__webpack_require__("./src/components/05-components/v3-pat/panel/popup-menu.js");
+__webpack_require__("./src/components/05-components/v3-pat/panel/sapphire-panel.js");
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/patient-call-cancel/patient-call-cancel-structure.js":
-/*!**************************************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/patient-call-cancel/patient-call-cancel-structure.js ***!
-  \**************************************************************************************************/
 /***/ (function() {
 
-eval("{/* Component PatientCallCancelStructure */\r\n(function($, window, document, SapphireWidgets) {\r\n\tconst create = function(config) {\r\n\t\tconst $widget = $('#' + config.widgetId).find('.PatientCallCancelStructure');\r\n\t\tconst $listQueueWrapper = $widget.find('.PatientCallCancelStructure__ListQueues');\r\n\t\tconst $dropdown = $listQueueWrapper.find('.InlineDropdown_label');\r\n\r\n\t\t$listQueueWrapper.on('click', event => {\r\n\t\t\tif (!$dropdown.length) return;\r\n\t\t\tevent.stopPropagation();\r\n\r\n\t\t\t$widget.toggleClass('PatientCallCancelStructure--active');\r\n\r\n\t\t\t$(document).on('click.PatientCallCancelStructure', () => {\r\n\t\t\t\t$widget.removeClass('PatientCallCancelStructure--active');\r\n\t\t\t\t$(document).off('click.PatientCallCancelStructure');\r\n\t\t\t});\r\n\r\n\t\t\t$dropdown.trigger('click');\r\n\t\t\tevent.preventDefault();\r\n\t\t});\r\n\t};\r\n\r\n\tSapphireWidgets.PatientCallCancelStructure = { create };\r\n})(jQuery, window, document, SapphireWidgets);\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/patient-call-cancel/patient-call-cancel-structure.js?\n}");
+/* Component PatientCallCancelStructure */
+(function($, window, document, SapphireWidgets) {
+	const create = function(config) {
+		const $widget = $('#' + config.widgetId).find('.PatientCallCancelStructure');
+		const $listQueueWrapper = $widget.find('.PatientCallCancelStructure__ListQueues');
+		const $dropdown = $listQueueWrapper.find('.InlineDropdown_label');
+
+		$listQueueWrapper.on('click', event => {
+			if (!$dropdown.length) return;
+			event.stopPropagation();
+
+			$widget.toggleClass('PatientCallCancelStructure--active');
+
+			$(document).on('click.PatientCallCancelStructure', () => {
+				$widget.removeClass('PatientCallCancelStructure--active');
+				$(document).off('click.PatientCallCancelStructure');
+			});
+
+			$dropdown.trigger('click');
+			event.preventDefault();
+		});
+	};
+
+	SapphireWidgets.PatientCallCancelStructure = { create };
+})(jQuery, window, document, SapphireWidgets);
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/patient-call-cancel/patient-call-cancel.js":
-/*!****************************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/patient-call-cancel/patient-call-cancel.js ***!
-  \****************************************************************************************/
 /***/ (function() {
 
-eval("{/* Component PatientCallCancel */\r\n(function($, window, document, SapphireWidgets) {\r\n\tconst create = function(config) {\r\n\t\tconst $widget = $('#' + config.widgetId);\r\n\t\tconst $countdown = $widget.find('[ui=data-counter]');\r\n\t\tlet $callButton = $widget.find('[ui=data-button-call]');\r\n\t\tlet $cancelButton = $widget.find('[ui=data-button-cancel]');\r\n\t\tconst $otherContent = $widget.find('.PatientCallCancel__Other');\r\n\r\n\t\tlet interval;\r\n\t\tlet timeCounter;\r\n\r\n\t\tconst callPatient = function($widget) {\r\n\t\t\ttoggleCallingState();\r\n\r\n\t\t\tif (config.showCountdown) $countdown.text(config.txtCallingIn + ' ' + config.timeToCancel);\r\n\t\t\telse $countdown.text(config.txtCallingIn);\r\n\r\n\t\t\tstartCounter();\r\n\t\t};\r\n\r\n\t\tconst toggleCallingState = () => {\r\n\t\t\t$widget.toggleClass('CallingPatient');\r\n\t\t\t$countdown.text(config.txtCallPatient);\r\n\t\t};\r\n\r\n\t\tconst setInitialState = () => {\r\n\t\t\t$widget.removeClass('CallingPatient');\r\n\t\t\t$callButton.show();\r\n\t\t\t$otherContent.show();\r\n\t\t};\r\n\r\n\t\tconst startCounter = () => {\r\n\t\t\ttimeCounter = config.timeToCancel;\r\n\t\t\tinterval = window.setInterval(updateCounter, 1000);\r\n\t\t};\r\n\r\n\t\tconst updateCounter = () => {\r\n\t\t\ttimeCounter--;\r\n\r\n\t\t\tif (timeCounter === 0) {\r\n\t\t\t\tclearInterval(interval);\r\n\t\t\t\tOsNotifyWidget(config.patientCallFakeNotifyId, '');\r\n\r\n\t\t\t\tsetInitialState();\r\n\t\t\t}\r\n\r\n\t\t\tif (config.showCountdown) $countdown.text(config.txtCallingIn + ' ' + timeCounter);\r\n\t\t\telse $countdown.text(config.txtCallingIn);\r\n\t\t};\r\n\r\n\t\tif (config.startCounting) callPatient($widget);\r\n\r\n\t\t$callButton.on('click', () => {\r\n\t\t\tif ($widget.hasClass('CallingPatient')) return;\r\n\r\n\t\t\tcallPatient($widget);\r\n\r\n\t\t\t$callButton.hide();\r\n\t\t\t$otherContent.hide();\r\n\t\t});\r\n\r\n\t\t$cancelButton.on('click', event => {\r\n\t\t\ttimeCounter = config.timeToCancel;\r\n\t\t\t$countdown.text(timeCounter);\r\n\t\t\tclearInterval(interval);\r\n\r\n\t\t\ttoggleCallingState();\r\n\r\n\t\t\t$callButton.show();\r\n\t\t\t$otherContent.show();\r\n\t\t});\r\n\t};\r\n\r\n\tSapphireWidgets.PatientCallCancel = { create };\r\n})(jQuery, window, document, SapphireWidgets);\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/patient-call-cancel/patient-call-cancel.js?\n}");
+/* Component PatientCallCancel */
+(function($, window, document, SapphireWidgets) {
+	const create = function(config) {
+		const $widget = $('#' + config.widgetId);
+		const $countdown = $widget.find('[ui=data-counter]');
+		let $callButton = $widget.find('[ui=data-button-call]');
+		let $cancelButton = $widget.find('[ui=data-button-cancel]');
+		const $otherContent = $widget.find('.PatientCallCancel__Other');
+
+		let interval;
+		let timeCounter;
+
+		const callPatient = function($widget) {
+			toggleCallingState();
+
+			if (config.showCountdown) $countdown.text(config.txtCallingIn + ' ' + config.timeToCancel);
+			else $countdown.text(config.txtCallingIn);
+
+			startCounter();
+		};
+
+		const toggleCallingState = () => {
+			$widget.toggleClass('CallingPatient');
+			$countdown.text(config.txtCallPatient);
+		};
+
+		const setInitialState = () => {
+			$widget.removeClass('CallingPatient');
+			$callButton.show();
+			$otherContent.show();
+		};
+
+		const startCounter = () => {
+			timeCounter = config.timeToCancel;
+			interval = window.setInterval(updateCounter, 1000);
+		};
+
+		const updateCounter = () => {
+			timeCounter--;
+
+			if (timeCounter === 0) {
+				clearInterval(interval);
+				OsNotifyWidget(config.patientCallFakeNotifyId, '');
+
+				setInitialState();
+			}
+
+			if (config.showCountdown) $countdown.text(config.txtCallingIn + ' ' + timeCounter);
+			else $countdown.text(config.txtCallingIn);
+		};
+
+		if (config.startCounting) callPatient($widget);
+
+		$callButton.on('click', () => {
+			if ($widget.hasClass('CallingPatient')) return;
+
+			callPatient($widget);
+
+			$callButton.hide();
+			$otherContent.hide();
+		});
+
+		$cancelButton.on('click', event => {
+			timeCounter = config.timeToCancel;
+			$countdown.text(timeCounter);
+			clearInterval(interval);
+
+			toggleCallingState();
+
+			$callButton.show();
+			$otherContent.show();
+		});
+	};
+
+	SapphireWidgets.PatientCallCancel = { create };
+})(jQuery, window, document, SapphireWidgets);
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/prescription-card/scripts.js":
-/*!**************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/prescription-card/scripts.js ***!
-  \**************************************************************************/
 /***/ (function() {
 
-eval("{/* Component PrescriptionCard */\r\n(function($, window, SapphireWidgets) {\r\n\tconst create = config => {\r\n\t\tconst $component = $(`#${config.widgetId} .PrescriptionCard`);\r\n\r\n\t\tif (config.isExpandable) {\r\n\t\t\tconst $expandLink = $component.find('.PrescriptionCard__ExpandIcon');\r\n\r\n\t\t\t$expandLink.click(() => {\r\n\t\t\t\t$component.toggleClass('PrescriptionCard--expanded');\r\n\t\t\t});\r\n\t\t}\r\n\t};\r\n\r\n\tSapphireWidgets.PrescriptionCard = { create };\r\n})(jQuery, window, SapphireWidgets);\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/prescription-card/scripts.js?\n}");
+/* Component PrescriptionCard */
+(function($, window, SapphireWidgets) {
+	const create = config => {
+		const $component = $(`#${config.widgetId} .PrescriptionCard`);
+
+		if (config.isExpandable) {
+			const $expandLink = $component.find('.PrescriptionCard__ExpandIcon');
+
+			$expandLink.click(() => {
+				$component.toggleClass('PrescriptionCard--expanded');
+			});
+		}
+	};
+
+	SapphireWidgets.PrescriptionCard = { create };
+})(jQuery, window, SapphireWidgets);
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/prescription-expandable/scripts.js":
-/*!********************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/prescription-expandable/scripts.js ***!
-  \********************************************************************************/
 /***/ (function() {
 
-eval("{/* Component PrescriptionExpandable */\r\n(function($, window, SapphireWidgets) {\r\n\tconst PrescriptionExpandable = function(config) {\r\n\t\tconst widgetId = config.widgetId;\r\n\t\tconst previewstat = [];\r\n\r\n\t\tconst $elementWrapper = $(`#${config.widgetId}`);\r\n\r\n\t\tconst clickEvents = ob => {\r\n\t\t\tif ($(ob).hasClass('PrescriptionExpandable_header__LinksDiv')) {\r\n\t\t\t\tvar Section = $(ob)\r\n\t\t\t\t\t.parent()\r\n\t\t\t\t\t.parent()\r\n\t\t\t\t\t.parent();\r\n\t\t\t} else {\r\n\t\t\t\tvar Section = $(ob).parent();\r\n\t\t\t}\r\n\r\n\t\t\tvar SectionContent = Section.children('.PrescriptionExpandable_content');\r\n\r\n\t\t\t// get id\r\n\t\t\tvar id = Section.attr('id');\r\n\r\n\t\t\tvar tempHeight = 0;\r\n\r\n\t\t\t// has class expanded\r\n\t\t\tif (Section.hasClass('expanded')) {\r\n\t\t\t\t// Calc and set a fixed height, during this process, transitions are disabled\r\n\t\t\t\tSectionContent.addClass('noTransition');\r\n\t\t\t\tSectionContent.height(SectionContent.height());\r\n\t\t\t\tSectionContent[0].offsetHeight; // hack to force a repaint\r\n\t\t\t\tSectionContent.removeClass('noTransition');\r\n\r\n\t\t\t\t// Collapse content\r\n\t\t\t\tSectionContent.height(0);\r\n\t\t\t\tSection.removeClass('expanded');\r\n\t\t\t\tSectionContent.css('overflow', 'hidden');\r\n\r\n\t\t\t\t// Remove class, set height and save state\r\n\t\t\t\tpreviewstat[id]['client'] = false;\r\n\t\t\t} else {\r\n\t\t\t\t// Calc and set a fixed height\r\n\t\t\t\tSectionContent.height('auto');\r\n\t\t\t\ttempHeight = SectionContent.height();\r\n\t\t\t\tSectionContent.height(0);\r\n\t\t\t\tSectionContent.height(tempHeight);\r\n\t\t\t\tSectionContent.css('overflow', 'hidden');\r\n\r\n\t\t\t\t// remove class, set height and save state\r\n\t\t\t\tSection.addClass('expanded');\r\n\t\t\t\tpreviewstat[id]['client'] = true;\r\n\t\t\t}\r\n\t\t};\r\n\r\n\t\tthis.init = () => {\r\n\t\t\tconst $header = $elementWrapper.find('.PrescriptionExpandable_header');\r\n\t\t\tconst $links = $header.find('.PrescriptionExpandable_header__LinksDiv');\r\n\r\n\t\t\t// Create array stat\r\n\t\t\t$('.SectionPrescriptionExpandableArea').each(() => {\r\n\t\t\t\tconst stat = $header.hasClass('expanded') ? true : false;\r\n\t\t\t\tpreviewstat[widgetId] = { client: stat, server: stat };\r\n\t\t\t});\r\n\r\n\t\t\tif ($header.hasClass('NotExpandable')) {\r\n\t\t\t\t$header.on('click', e => e.preventDefault());\r\n\t\t\t} else if ($header.hasClass('isLinkEpandableClick')) {\r\n\t\t\t\t$links.on('click', e => clickEvents($links));\r\n\t\t\t} else {\r\n\t\t\t\t$header.on('click', e => clickEvents($header));\r\n\t\t\t}\r\n\r\n\t\t\tconst elements =\r\n\t\t\t\t'.PrescriptionExpandable_header input, .PrescriptionExpandable_header select, .PrescriptionExpandable_header a';\r\n\t\t\t$(elements).click(function(event) {\r\n\t\t\t\tevent.stopPropagation();\r\n\t\t\t});\r\n\r\n\t\t\tosAjaxBackend && osAjaxBackend.BindAfterAjaxRequest(ajaxRefresh);\r\n\t\t};\r\n\r\n\t\tconst ajaxRefresh = function(event) {\r\n\t\t\t// remove click events\r\n\t\t\t//$('.PrescriptionExpandable_header').off();\r\n\r\n\t\t\t// add stop prepagation\r\n\t\t\t$(\r\n\t\t\t\t'.PrescriptionExpandable_header input, .PrescriptionExpandable_header select, .PrescriptionExpandable_header a'\r\n\t\t\t).click(function(event) {\r\n\t\t\t\tevent.stopPropagation();\r\n\t\t\t});\r\n\r\n\t\t\t// each all sections\r\n\t\t\t$('.SectionPrescriptionExpandableArea').each(function() {\r\n\t\t\t\t// if new SectionExpandable then add to previewstat array\r\n\t\t\t\tif (previewstat[$(this).attr('id')] == null) {\r\n\t\t\t\t\t// add stat on array\r\n\t\t\t\t\tvar stat = false;\r\n\t\t\t\t\t// if open\r\n\t\t\t\t\tif ($(this).hasClass('expanded')) {\r\n\t\t\t\t\t\tstat = true;\r\n\t\t\t\t\t}\r\n\t\t\t\t\t// add row\r\n\t\t\t\t\tpreviewstat[$(this).attr('id')] = { client: stat, server: stat };\r\n\t\t\t\t}\r\n\r\n\t\t\t\t// curent state (ajax state x initial state)\r\n\t\t\t\tvar curState = false;\r\n\r\n\t\t\t\t// check if start expandable\r\n\t\t\t\tif ($(this).hasClass('expanded')) {\r\n\t\t\t\t\tcurState = true;\r\n\t\t\t\t}\r\n\r\n\t\t\t\t// check if ajax != initial server\r\n\t\t\t\tif (curState != previewstat[$(this).attr('id')]['server']) {\r\n\t\t\t\t\t// curstate\r\n\t\t\t\t\tpreviewstat[$(this).attr('id')]['client'] = curState;\r\n\t\t\t\t\tpreviewstat[$(this).attr('id')]['server'] = curState;\r\n\t\t\t\t} else {\r\n\t\t\t\t\t// has class expanded\r\n\t\t\t\t\tif (previewstat[$(this).attr('id')]['client'] == false && $(this).hasClass('expanded')) {\r\n\t\t\t\t\t\t$(this).removeClass('expanded');\r\n\t\t\t\t\t\t$(this)\r\n\t\t\t\t\t\t\t.children('.PrescriptionExpandable_content')\r\n\t\t\t\t\t\t\t.height(0);\r\n\t\t\t\t\t} else if (previewstat[$(this).attr('id')]['client'] == true && !$(this).hasClass('expanded')) {\r\n\t\t\t\t\t\t$(this).addClass('expanded');\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\t\t\t});\r\n\t\t};\r\n\t};\r\n\r\n\tconst create = config => {\r\n\t\tconst expandable = new PrescriptionExpandable(config);\r\n\r\n\t\texpandable.init();\r\n\t};\r\n\r\n\tSapphireWidgets.PrescriptionExpandable = { create };\r\n})(jQuery, window, SapphireWidgets);\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/prescription-expandable/scripts.js?\n}");
+/* Component PrescriptionExpandable */
+(function($, window, SapphireWidgets) {
+	const PrescriptionExpandable = function(config) {
+		const widgetId = config.widgetId;
+		const previewstat = [];
+
+		const $elementWrapper = $(`#${config.widgetId}`);
+
+		const clickEvents = ob => {
+			if ($(ob).hasClass('PrescriptionExpandable_header__LinksDiv')) {
+				var Section = $(ob)
+					.parent()
+					.parent()
+					.parent();
+			} else {
+				var Section = $(ob).parent();
+			}
+
+			var SectionContent = Section.children('.PrescriptionExpandable_content');
+
+			// get id
+			var id = Section.attr('id');
+
+			var tempHeight = 0;
+
+			// has class expanded
+			if (Section.hasClass('expanded')) {
+				// Calc and set a fixed height, during this process, transitions are disabled
+				SectionContent.addClass('noTransition');
+				SectionContent.height(SectionContent.height());
+				SectionContent[0].offsetHeight; // hack to force a repaint
+				SectionContent.removeClass('noTransition');
+
+				// Collapse content
+				SectionContent.height(0);
+				Section.removeClass('expanded');
+				SectionContent.css('overflow', 'hidden');
+
+				// Remove class, set height and save state
+				previewstat[id]['client'] = false;
+			} else {
+				// Calc and set a fixed height
+				SectionContent.height('auto');
+				tempHeight = SectionContent.height();
+				SectionContent.height(0);
+				SectionContent.height(tempHeight);
+				SectionContent.css('overflow', 'hidden');
+
+				// remove class, set height and save state
+				Section.addClass('expanded');
+				previewstat[id]['client'] = true;
+			}
+		};
+
+		this.init = () => {
+			const $header = $elementWrapper.find('.PrescriptionExpandable_header');
+			const $links = $header.find('.PrescriptionExpandable_header__LinksDiv');
+
+			// Create array stat
+			$('.SectionPrescriptionExpandableArea').each(() => {
+				const stat = $header.hasClass('expanded') ? true : false;
+				previewstat[widgetId] = { client: stat, server: stat };
+			});
+
+			if ($header.hasClass('NotExpandable')) {
+				$header.on('click', e => e.preventDefault());
+			} else if ($header.hasClass('isLinkEpandableClick')) {
+				$links.on('click', e => clickEvents($links));
+			} else {
+				$header.on('click', e => clickEvents($header));
+			}
+
+			const elements =
+				'.PrescriptionExpandable_header input, .PrescriptionExpandable_header select, .PrescriptionExpandable_header a';
+			$(elements).click(function(event) {
+				event.stopPropagation();
+			});
+
+			osAjaxBackend && osAjaxBackend.BindAfterAjaxRequest(ajaxRefresh);
+		};
+
+		const ajaxRefresh = function(event) {
+			// remove click events
+			//$('.PrescriptionExpandable_header').off();
+
+			// add stop prepagation
+			$(
+				'.PrescriptionExpandable_header input, .PrescriptionExpandable_header select, .PrescriptionExpandable_header a'
+			).click(function(event) {
+				event.stopPropagation();
+			});
+
+			// each all sections
+			$('.SectionPrescriptionExpandableArea').each(function() {
+				// if new SectionExpandable then add to previewstat array
+				if (previewstat[$(this).attr('id')] == null) {
+					// add stat on array
+					var stat = false;
+					// if open
+					if ($(this).hasClass('expanded')) {
+						stat = true;
+					}
+					// add row
+					previewstat[$(this).attr('id')] = { client: stat, server: stat };
+				}
+
+				// curent state (ajax state x initial state)
+				var curState = false;
+
+				// check if start expandable
+				if ($(this).hasClass('expanded')) {
+					curState = true;
+				}
+
+				// check if ajax != initial server
+				if (curState != previewstat[$(this).attr('id')]['server']) {
+					// curstate
+					previewstat[$(this).attr('id')]['client'] = curState;
+					previewstat[$(this).attr('id')]['server'] = curState;
+				} else {
+					// has class expanded
+					if (previewstat[$(this).attr('id')]['client'] == false && $(this).hasClass('expanded')) {
+						$(this).removeClass('expanded');
+						$(this)
+							.children('.PrescriptionExpandable_content')
+							.height(0);
+					} else if (previewstat[$(this).attr('id')]['client'] == true && !$(this).hasClass('expanded')) {
+						$(this).addClass('expanded');
+					}
+				}
+			});
+		};
+	};
+
+	const create = config => {
+		const expandable = new PrescriptionExpandable(config);
+
+		expandable.init();
+	};
+
+	SapphireWidgets.PrescriptionExpandable = { create };
+})(jQuery, window, SapphireWidgets);
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/resize-parent-iframe/scripts.js":
-/*!*****************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/resize-parent-iframe/scripts.js ***!
-  \*****************************************************************************/
 /***/ (function() {
 
-eval("{var SapphireWidgets = (window.SapphireWidgets = window.SapphireWidgets || {});\r\n\r\nSapphireWidgets.ResizeParentIframe = function (options = {}) {\r\n  $(window).load(function () {\r\n    const _body = document.body;\r\n    const _iframe = window.frameElement;\r\n    const DATA_BODY_RESIZE_ATTRIBUTE_NAME = \"data-resize-parent-iframe-top\";\r\n    const DATA_ELEMENT_CAUSED_BODY_OFFSET = \"data-element-caused-body-offset\";\r\n    const RESIZE_TOP_OFFSET = 5;\r\n\r\n    _body.classList.add(\"ResizeParentIframe\");\r\n\r\n    var _mutationHandler = function (mutations) {\r\n\r\n      setTimeout(function () {\r\n        _clearBodyTop();\r\n        var _elementOutsideBodyTop = _checkAnyElementOutsideBodyTop();\r\n        if (_elementOutsideBodyTop != null) {\r\n          _setBodyTop(_elementOutsideBodyTop.getBoundingClientRect().top * -1);\r\n        }\r\n\r\n        SapphireWidgets.ResizeParentIframe.resize ? SapphireWidgets.ResizeParentIframe.resize() : resize();\r\n      }, 200);\r\n    };\r\n\r\n    /* This mutation handler observes for changes in the DOM (that make the iframe\r\n    ** change its size), and simulates a resize event that triggers the \r\n    ** repositioning of the iframe\r\n    */\r\n    var _iframeMutationHandler = function (mutations) {\r\n      setTimeout(() => {\r\n        window.parent.dispatchEvent(new Event('resize'));\r\n      }, 300);\r\n    };\r\n\r\n    var _setBodyTop = function (top) {\r\n      _body.removeAttribute(DATA_BODY_RESIZE_ATTRIBUTE_NAME);\r\n      _body.style.marginTop = top + \"px\";\r\n\r\n      if (top == 0)\r\n        return;\r\n\r\n      _body.setAttribute(DATA_BODY_RESIZE_ATTRIBUTE_NAME, top);\r\n    }\r\n\r\n    var _getBodyTop = function () {\r\n      return parseFloat(_body.getAttribute(DATA_BODY_RESIZE_ATTRIBUTE_NAME) || 0);\r\n    }\r\n\r\n    var _clearBodyTop = function () {\r\n      if (document.querySelectorAll(\"[\" + DATA_ELEMENT_CAUSED_BODY_OFFSET + \"]\").length > 0)\r\n        return;\r\n\r\n      _setBodyTop(0);\r\n    }\r\n\r\n    var _checkAnyElementOutsideBodyTop = function () {\r\n      var _topMostElement = null;\r\n      var _topMostY = 0;\r\n\r\n      for (let index = 0; index <= window.document.body.clientWidth; index += 10) {\r\n        var _elementFromPoint = document.elementFromPoint(index, 0);\r\n        var _elementFromPointY = _elementFromPoint != null ? (_elementFromPoint.getBoundingClientRect().top * -1) : 0;\r\n\r\n        if (_elementFromPoint != document.body && _elementFromPointY > _topMostY) {\r\n          _topMostElement = _elementFromPoint;\r\n          _topMostY = _elementFromPointY;\r\n        }\r\n      }\r\n\r\n      return _topMostElement;\r\n    }\r\n\r\n    var resize = function (addedNodes) {\r\n\r\n      if (_iframe) {\r\n        try {\r\n          if (_iframe.id === \"tooltipster-frame\") {\r\n            if (options.resizeWidth) {\r\n              const _contentDocument = _iframe.contentDocument;\r\n              _iframe.style.width = _contentDocument ? _contentDocument.querySelector(\".ResizeIframeTooltip\").getBoundingClientRect().width + \"px\" : \"100%\";\r\n            } else {\r\n              _iframe.style.width = \"100%\";\r\n            }\r\n          }\r\n\r\n          var _iframeHeight = _iframe.clientHeight;\r\n          var _iframeParentViewportHeight = _iframe.ownerDocument.documentElement.clientHeight;\r\n\r\n          // iframe is full height?\r\n          if (_iframeHeight === _iframeParentViewportHeight || document.querySelector(\".Page\").classList.contains('SidebarIframe')) {\r\n            //if full height, doesn't make sense to resize it.\r\n            return;\r\n          }\r\n\r\n\r\n          let _bodyHeight = _body.scrollHeight + _getBodyTop();\r\n          _bodyHeight += window.innerHeight - document.documentElement.clientHeight; // Adding scrollbar height in case it exists.\r\n          _iframe.style.height = _bodyHeight + \"px\";\r\n\r\n\r\n\r\n\r\n\r\n        }\r\n        catch (error) {\r\n          console.error(\"Error trying to resize parent iframe: \" + error.message);\r\n        }\r\n      }\r\n      else {\r\n        console.warn(\"Not an iframe, resize ignored.\");\r\n      }\r\n    };\r\n\r\n    var _mutationObserver = new MutationObserver(_mutationHandler);\r\n    var _iframeMutationObserver = new MutationObserver(_iframeMutationHandler);\r\n    var _resizeObserver = new ResizeObserver(_mutationHandler);\r\n\r\n    if (_iframe) {\r\n      _mutationObserver.observe(document.body, {\r\n        childList: true,\r\n        subtree: true\r\n      });\r\n\r\n      _iframeMutationObserver.observe(_iframe.contentDocument, {\r\n        childList: true,\r\n        subtree: true\r\n      });\r\n\r\n      _resizeObserver.observe(document.body, {\r\n        box: \"border-box\"\r\n      });\r\n    } else {\r\n      console.warn(\"Not an iframe, resize observer ignored.\");\r\n    }\r\n\r\n    SapphireWidgets.ResizeParentIframe = {\r\n      resize: resize,\r\n    };\r\n\r\n    osAjaxBackend.BindAfterAjaxRequest(function () {\r\n      setTimeout(SapphireWidgets.ResizeParentIframe.resize, 500);\r\n    });\r\n\r\n    resize();\r\n\r\n  });\r\n};\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/resize-parent-iframe/scripts.js?\n}");
+var SapphireWidgets = (window.SapphireWidgets = window.SapphireWidgets || {});
+
+SapphireWidgets.ResizeParentIframe = function (options = {}) {
+  $(window).load(function () {
+    const _body = document.body;
+    const _iframe = window.frameElement;
+    const DATA_BODY_RESIZE_ATTRIBUTE_NAME = "data-resize-parent-iframe-top";
+    const DATA_ELEMENT_CAUSED_BODY_OFFSET = "data-element-caused-body-offset";
+    const RESIZE_TOP_OFFSET = 5;
+
+    _body.classList.add("ResizeParentIframe");
+
+    var _mutationHandler = function (mutations) {
+
+      setTimeout(function () {
+        _clearBodyTop();
+        var _elementOutsideBodyTop = _checkAnyElementOutsideBodyTop();
+        if (_elementOutsideBodyTop != null) {
+          _setBodyTop(_elementOutsideBodyTop.getBoundingClientRect().top * -1);
+        }
+
+        SapphireWidgets.ResizeParentIframe.resize ? SapphireWidgets.ResizeParentIframe.resize() : resize();
+      }, 200);
+    };
+
+    /* This mutation handler observes for changes in the DOM (that make the iframe
+    ** change its size), and simulates a resize event that triggers the 
+    ** repositioning of the iframe
+    */
+    var _iframeMutationHandler = function (mutations) {
+      setTimeout(() => {
+        window.parent.dispatchEvent(new Event('resize'));
+      }, 300);
+    };
+
+    var _setBodyTop = function (top) {
+      _body.removeAttribute(DATA_BODY_RESIZE_ATTRIBUTE_NAME);
+      _body.style.marginTop = top + "px";
+
+      if (top == 0)
+        return;
+
+      _body.setAttribute(DATA_BODY_RESIZE_ATTRIBUTE_NAME, top);
+    }
+
+    var _getBodyTop = function () {
+      return parseFloat(_body.getAttribute(DATA_BODY_RESIZE_ATTRIBUTE_NAME) || 0);
+    }
+
+    var _clearBodyTop = function () {
+      if (document.querySelectorAll("[" + DATA_ELEMENT_CAUSED_BODY_OFFSET + "]").length > 0)
+        return;
+
+      _setBodyTop(0);
+    }
+
+    var _checkAnyElementOutsideBodyTop = function () {
+      var _topMostElement = null;
+      var _topMostY = 0;
+
+      for (let index = 0; index <= window.document.body.clientWidth; index += 10) {
+        var _elementFromPoint = document.elementFromPoint(index, 0);
+        var _elementFromPointY = _elementFromPoint != null ? (_elementFromPoint.getBoundingClientRect().top * -1) : 0;
+
+        if (_elementFromPoint != document.body && _elementFromPointY > _topMostY) {
+          _topMostElement = _elementFromPoint;
+          _topMostY = _elementFromPointY;
+        }
+      }
+
+      return _topMostElement;
+    }
+
+    var resize = function (addedNodes) {
+
+      if (_iframe) {
+        try {
+          if (_iframe.id === "tooltipster-frame") {
+            if (options.resizeWidth) {
+              const _contentDocument = _iframe.contentDocument;
+              _iframe.style.width = _contentDocument ? _contentDocument.querySelector(".ResizeIframeTooltip").getBoundingClientRect().width + "px" : "100%";
+            } else {
+              _iframe.style.width = "100%";
+            }
+          }
+
+          var _iframeHeight = _iframe.clientHeight;
+          var _iframeParentViewportHeight = _iframe.ownerDocument.documentElement.clientHeight;
+
+          // iframe is full height?
+          if (_iframeHeight === _iframeParentViewportHeight || document.querySelector(".Page").classList.contains('SidebarIframe')) {
+            //if full height, doesn't make sense to resize it.
+            return;
+          }
+
+
+          let _bodyHeight = _body.scrollHeight + _getBodyTop();
+          _bodyHeight += window.innerHeight - document.documentElement.clientHeight; // Adding scrollbar height in case it exists.
+          _iframe.style.height = _bodyHeight + "px";
+
+
+
+
+
+        }
+        catch (error) {
+          console.error("Error trying to resize parent iframe: " + error.message);
+        }
+      }
+      else {
+        console.warn("Not an iframe, resize ignored.");
+      }
+    };
+
+    var _mutationObserver = new MutationObserver(_mutationHandler);
+    var _iframeMutationObserver = new MutationObserver(_iframeMutationHandler);
+    var _resizeObserver = new ResizeObserver(_mutationHandler);
+
+    if (_iframe) {
+      _mutationObserver.observe(document.body, {
+        childList: true,
+        subtree: true
+      });
+
+      _iframeMutationObserver.observe(_iframe.contentDocument, {
+        childList: true,
+        subtree: true
+      });
+
+      _resizeObserver.observe(document.body, {
+        box: "border-box"
+      });
+    } else {
+      console.warn("Not an iframe, resize observer ignored.");
+    }
+
+    SapphireWidgets.ResizeParentIframe = {
+      resize: resize,
+    };
+
+    osAjaxBackend.BindAfterAjaxRequest(function () {
+      setTimeout(SapphireWidgets.ResizeParentIframe.resize, 500);
+    });
+
+    resize();
+
+  });
+};
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/sapphire-header/scripts.js":
-/*!************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/sapphire-header/scripts.js ***!
-  \************************************************************************/
 /***/ (function() {
 
-eval("{/* Component SapphireHeader */\r\n(function($, window, document, SapphireWidgets) {\r\n\tvar create = function(config) {\r\n\t\twindow[config.widgetId] = new SapphireHeader(config);\r\n\t\tSapphireWidgets.SapphireHeader.widgetId = config.widgetId;\r\n\t};\r\n\r\n\tvar handleDemographics = function() {\r\n\t\twindow[SapphireWidgets.SapphireHeader.widgetId].handleDemographics();\r\n\t};\r\n\r\n\tvar SapphireHeader = function(config) {\r\n\t\tvar _this = this;\r\n\t\tthis.config = config;\r\n\t\tthis.isConfidential = config.isConfidential;\r\n\t\tthis.$widget = $('#' + config.widgetId);\r\n\t\tthis.$widget.css({\r\n\t\t\tdisplay: 'block',\r\n\t\t});\r\n\t\tthis.$header = this.$widget.find('.SapphireHeader');\r\n\t\tthis.$navigation = this.$widget.find('.SapphireHeader-navigation');\r\n\t\tthis.$identification = this.$widget.find('.SapphireHeader-identification');\r\n\t\tthis.$demographic = this.$widget.find('.SapphireHeader-demographics');\r\n\t\tthis.$information = this.$widget.find('.SapphireHeader-information');\r\n\t\tthis.$actions = this.$widget.find('.SapphireHeader-actions');\r\n\t\tthis.$additionalTrigger = this.$widget.find('.SapphireHeader-additional-trigger');\r\n\t\tthis.$additionalContent = this.$widget.find('.SapphireHeader-additional-content');\r\n\r\n\t\tthis.handleResize();\r\n\t\tthis.attachEvents();\r\n\r\n\t\tif (this.$information.text() === '') {\r\n\t\t\tthis.$information.hide();\r\n\t\t}\r\n\t};\r\n\r\n\tSapphireHeader.prototype.getConfig = function() {\r\n\t\treturn this.config;\r\n\t};\r\n\r\n\tSapphireHeader.prototype.handleResize = function() {\r\n\t\tvar _this = this;\r\n\t\t$(window).resize(function() {\r\n\t\t\t_this.handleDemographics();\r\n\t\t});\r\n\t};\r\n\r\n\tSapphireHeader.prototype.attachEvents = function() {\r\n\t\tvar _this = this;\r\n\t\tthis.$additionalTrigger.on('click', function() {\r\n\t\t\tif (_this.$header.hasClass('isOpen')) {\r\n\t\t\t\t_this.$header.removeClass('isOpen');\r\n\t\t\t\t//$('.LayoutBase-header').css('z-index', 2);\r\n\t\t\t} else {\r\n\t\t\t\t_this.$header.addClass('isOpen');\r\n\t\t\t\t//$('.LayoutBase-header').css('z-index', 3);\r\n\t\t\t}\r\n\t\t});\r\n\t};\r\n\r\n\tSapphireHeader.prototype.handleDemographics = function() {\r\n\t\tconst _this = this;\r\n\t\tthis.$demographic.find('.Demographic-item').css('display', 'none');\r\n\r\n\t\tthis.$additionalTrigger.hide();\r\n\t\tthis.$additionalContent.empty();\r\n\r\n\t\tconst demographicWidth = this.$demographic.outerWidth(true);\r\n\t\tlet itemsTotal = 0;\r\n\r\n\t\tconst componentWidth = this.$widget.outerWidth(true);\r\n\t\tconst navigationWidth = this.$navigation.width();\r\n\t\tconst identificationWidth = this.$identification.width();\r\n\t\tconst demographicsWidth = this.$demographic.width();\r\n\t\tconst informationWidth = this.$information.width();\r\n\t\tconst actionsWidth = this.$actions.width();\r\n\r\n\t\tthis.$demographic.find('.Demographic-item').each(function(index) {\r\n\t\t\titemsTotal += parseInt($(this).outerWidth(true), 10);\r\n\r\n\t\t\t// 64 -> margins and 99 -> More Info button\r\n\t\t\tif (itemsTotal + 64 + 110 < demographicWidth) {\r\n\t\t\t\t$(this).css('display', 'inline-block');\r\n\t\t\t} else {\r\n\t\t\t\t$(this)\r\n\t\t\t\t\t.clone()\r\n\t\t\t\t\t.css('display', 'inline-block')\r\n\t\t\t\t\t.appendTo(_this.$additionalContent);\r\n\t\t\t\t_this.$additionalTrigger.show();\r\n\t\t\t}\r\n\t\t});\r\n\r\n\t\tif (this.$additionalContent.find('.Demographic-item').length === 0) {\r\n\t\t\tthis.$header.removeClass('isOpen');\r\n\t\t}\r\n\t};\r\n\r\n\tSapphireHeader.prototype.showAdditional = function() {\r\n\t\treturn this.$header.addClass('isOpen');\r\n\t};\r\n\r\n\tSapphireHeader.prototype.hideAdditional = function() {\r\n\t\treturn this.$header.removeClass('isOpen');\r\n\t};\r\n\r\n\tSapphireWidgets.SapphireHeader = {\r\n\t\tcreate: create,\r\n\t\thandleDemographics: handleDemographics,\r\n\t};\r\n})(jQuery, window, document, SapphireWidgets);\r\n\r\n$(window).load(function() {\r\n\tif (!!SapphireWidgets.SapphireHeader.widgetId) {\r\n\t\twindow[SapphireWidgets.SapphireHeader.widgetId].handleDemographics();\r\n\t}\r\n\tif (!!$('.SapphireHeader-demographics').length) {\r\n\t\tosAjaxBackend &&\r\n\t\t\tosAjaxBackend.BindAfterAjaxRequest(function() {\r\n\t\t\t\twindow[SapphireWidgets.SapphireHeader.widgetId].handleDemographics();\r\n\t\t\t});\r\n\t}\r\n});\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/sapphire-header/scripts.js?\n}");
+/* Component SapphireHeader */
+(function($, window, document, SapphireWidgets) {
+	var create = function(config) {
+		window[config.widgetId] = new SapphireHeader(config);
+		SapphireWidgets.SapphireHeader.widgetId = config.widgetId;
+	};
+
+	var handleDemographics = function() {
+		window[SapphireWidgets.SapphireHeader.widgetId].handleDemographics();
+	};
+
+	var SapphireHeader = function(config) {
+		var _this = this;
+		this.config = config;
+		this.isConfidential = config.isConfidential;
+		this.$widget = $('#' + config.widgetId);
+		this.$widget.css({
+			display: 'block',
+		});
+		this.$header = this.$widget.find('.SapphireHeader');
+		this.$navigation = this.$widget.find('.SapphireHeader-navigation');
+		this.$identification = this.$widget.find('.SapphireHeader-identification');
+		this.$demographic = this.$widget.find('.SapphireHeader-demographics');
+		this.$information = this.$widget.find('.SapphireHeader-information');
+		this.$actions = this.$widget.find('.SapphireHeader-actions');
+		this.$additionalTrigger = this.$widget.find('.SapphireHeader-additional-trigger');
+		this.$additionalContent = this.$widget.find('.SapphireHeader-additional-content');
+
+		this.handleResize();
+		this.attachEvents();
+
+		if (this.$information.text() === '') {
+			this.$information.hide();
+		}
+	};
+
+	SapphireHeader.prototype.getConfig = function() {
+		return this.config;
+	};
+
+	SapphireHeader.prototype.handleResize = function() {
+		var _this = this;
+		$(window).resize(function() {
+			_this.handleDemographics();
+		});
+	};
+
+	SapphireHeader.prototype.attachEvents = function() {
+		var _this = this;
+		this.$additionalTrigger.on('click', function() {
+			if (_this.$header.hasClass('isOpen')) {
+				_this.$header.removeClass('isOpen');
+				//$('.LayoutBase-header').css('z-index', 2);
+			} else {
+				_this.$header.addClass('isOpen');
+				//$('.LayoutBase-header').css('z-index', 3);
+			}
+		});
+	};
+
+	SapphireHeader.prototype.handleDemographics = function() {
+		const _this = this;
+		this.$demographic.find('.Demographic-item').css('display', 'none');
+
+		this.$additionalTrigger.hide();
+		this.$additionalContent.empty();
+
+		const demographicWidth = this.$demographic.outerWidth(true);
+		let itemsTotal = 0;
+
+		const componentWidth = this.$widget.outerWidth(true);
+		const navigationWidth = this.$navigation.width();
+		const identificationWidth = this.$identification.width();
+		const demographicsWidth = this.$demographic.width();
+		const informationWidth = this.$information.width();
+		const actionsWidth = this.$actions.width();
+
+		this.$demographic.find('.Demographic-item').each(function(index) {
+			itemsTotal += parseInt($(this).outerWidth(true), 10);
+
+			// 64 -> margins and 99 -> More Info button
+			if (itemsTotal + 64 + 110 < demographicWidth) {
+				$(this).css('display', 'inline-block');
+			} else {
+				$(this)
+					.clone()
+					.css('display', 'inline-block')
+					.appendTo(_this.$additionalContent);
+				_this.$additionalTrigger.show();
+			}
+		});
+
+		if (this.$additionalContent.find('.Demographic-item').length === 0) {
+			this.$header.removeClass('isOpen');
+		}
+	};
+
+	SapphireHeader.prototype.showAdditional = function() {
+		return this.$header.addClass('isOpen');
+	};
+
+	SapphireHeader.prototype.hideAdditional = function() {
+		return this.$header.removeClass('isOpen');
+	};
+
+	SapphireWidgets.SapphireHeader = {
+		create: create,
+		handleDemographics: handleDemographics,
+	};
+})(jQuery, window, document, SapphireWidgets);
+
+$(window).load(function() {
+	if (!!SapphireWidgets.SapphireHeader.widgetId) {
+		window[SapphireWidgets.SapphireHeader.widgetId].handleDemographics();
+	}
+	if (!!$('.SapphireHeader-demographics').length) {
+		osAjaxBackend &&
+			osAjaxBackend.BindAfterAjaxRequest(function() {
+				window[SapphireWidgets.SapphireHeader.widgetId].handleDemographics();
+			});
+	}
+});
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/sapphire-popup/scripts.js":
-/*!***********************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/sapphire-popup/scripts.js ***!
-  \***********************************************************************/
 /***/ (function() {
 
-eval("{/* Component SapphirePopup */\r\nvar RichWidgets_Popup_Editor_notifyWidget;\r\n\r\n(function ($, window, SapphireWidgets) {\r\n\t// Check if the widget is loaded inside an iFrame\r\n\tlet isInsideIframe = window.frameElement != undefined || false;\r\n\r\n\t// Constants\r\n\tconst POPUP_INITIAL_WIDTH = 300;\r\n\tconst POPUP_INITIAL_HEIGHT = 100;\r\n\tconst POPUP_WINDOW_INDEX = 4010;\r\n\tconst POPUP_CLOSING_TAG = 'closing';\r\n\tconst POPUP_CLOSING_VALUE = 'true';\r\n\r\n\tlet POPUP_NOTIFY_WIDGET;\r\n\tlet POPUP_PARENT_URL;\r\n\r\n\tconst create = config => {\r\n\t\tif (config.ignoreIframe) isInsideIframe = false;\r\n\r\n\t\t$().ready(function ($) {\r\n\t\t\tconst _id = config.linkId;\r\n\t\t\tconst linkQuery = `#${config.linkId}`;\r\n\t\t\tlet linkWidget;\r\n\r\n\t\t\ttry {\r\n\t\t\t\tlinkWidget = $(linkQuery).get(0);\r\n\t\t\t} catch (e) { }\r\n\r\n\t\t\tif (typeof linkWidget == 'undefined') {\r\n\t\t\t\t//Case the widget is inexistent or invisible, it will show no errors.\r\n\t\t\t\treturn;\r\n\t\t\t}\r\n\r\n\t\t\tPOPUP_PARENT_URL = config.parentUrl;\r\n\r\n\t\t\tconst linkResult = getLinkHREF(linkWidget);\r\n\t\t\tconst linkHref = linkResult[0];\r\n\t\t\tconst isAButton = linkResult[1];\r\n\r\n\t\t\tif (typeof linkHref == 'undefined' || linkHref == '' || linkHref == '#' || linkHref.indexOf('javascript:') == 0) {\r\n\t\t\t\ttry {\r\n\t\t\t\t\twindow.OsHandleException(\r\n\t\t\t\t\t\tnew Error('Popup link id must be the id of a Link or Button Widget with Method Navigate.'),\r\n\t\t\t\t\t\toutsystems.osErrorCodes.SystemJavascriptError,\r\n\t\t\t\t\t\t'Popup_Editor'\r\n\t\t\t\t\t);\r\n\t\t\t\t} catch (e) { }\r\n\r\n\t\t\t\treturn;\r\n\t\t\t}\r\n\r\n\t\t\t// Remove the existing on-click event\r\n\t\t\tif (isAButton) {\r\n\t\t\t\tlinkWidget.setAttribute(\r\n\t\t\t\t\t'onclick',\r\n\t\t\t\t\tlinkWidget\r\n\t\t\t\t\t\t.getAttribute('onclick')\r\n\t\t\t\t\t\t.toString()\r\n\t\t\t\t\t\t.replace('window.location.href=', 'return false;window.location.href=')\r\n\t\t\t\t);\r\n\t\t\t}\r\n\r\n\t\t\t// If there's a confirmation message, store in an attribute the result\r\n\t\t\tif (linkWidget.getAttribute('onclick') != null) {\r\n\t\t\t\tlinkWidget.setAttribute(\r\n\t\t\t\t\t'onclick',\r\n\t\t\t\t\tlinkWidget\r\n\t\t\t\t\t\t.getAttribute('onclick')\r\n\t\t\t\t\t\t.toString()\r\n\t\t\t\t\t\t.replace(\r\n\t\t\t\t\t\t\t'if( ret != true )',\r\n\t\t\t\t\t\t\t\"$('\" + linkQuery + \"').get(0).setAttribute('confirmed', ret); if( ret != true )\"\r\n\t\t\t\t\t\t)\r\n\t\t\t\t);\r\n\t\t\t}\r\n\r\n\t\t\tconst clickHandler = function (event) {\r\n\t\t\t\t// The clickHandler event is registered in osjs and $ for compatibillity reasons, they must not run both for the same click.\r\n\t\t\t\t// Variable is set to false in resize function.\r\n\t\t\t\tif ($.data(event.target, 'os-internal-processing') == true) {\r\n\t\t\t\t\treturn false;\r\n\t\t\t\t} else {\r\n\t\t\t\t\t$.data(event.target, 'os-internal-processing', true);\r\n\t\t\t\t}\r\n\r\n\t\t\t\t// Check if the clicked link is disabled\r\n\t\t\t\tif (linkWidget.getAttribute('disabled') != null) {\r\n\t\t\t\t\tvar linkDisabled = linkWidget\r\n\t\t\t\t\t\t.getAttribute('disabled')\r\n\t\t\t\t\t\t.toString()\r\n\t\t\t\t\t\t.toLowerCase();\r\n\r\n\t\t\t\t\tif (linkDisabled == 'disabled' || linkDisabled.indexOf('true') != -1) {\r\n\t\t\t\t\t\treturn false;\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\r\n\t\t\t\tif (linkWidget.getAttribute('confirmed') == 'false') return false;\r\n\t\t\t\tif (OsIsIE()) osFocusBackend.ClearFocusedElement();\r\n\r\n\t\t\t\tlet popupDiv;\r\n\t\t\t\tlet pleaseWaitDiv;\r\n\r\n\t\t\t\tconst waitText = `<div style=\"margin-top: 36px;\">${config.loadingMessage}</div>`;\r\n\t\t\t\tconst imgHTML = '<div class=\"lds-ring\"><div></div></div>';\r\n\t\t\t\tconst loadingElement = `<div class=\"LayoutPopup-loading\">${imgHTML} ${waitText}</div>`;\r\n\t\t\t\tconst iFrameElement = `<iframe id=\"iframe_${_id}\" width=\"100%\" scrolling=\"no\" height=\"100%\" frameborder=\"0\" src=\"javascript:void(0);\"/>`;\r\n\r\n\t\t\t\tif (isInsideIframe) {\r\n\t\t\t\t\tlet _div = document.createElement('DIV');\r\n\t\t\t\t\t_div.setAttribute('style', 'text-align: center; display: none;');\r\n\t\t\t\t\t_div.setAttribute('id', 'window_' + _id);\r\n\t\t\t\t\twindow.top.document.body.appendChild(_div);\r\n\r\n\t\t\t\t\tpopupDiv = window.top.$('#window_' + _id);\r\n\t\t\t\t\tpopupDiv.append(iFrameElement);\r\n\r\n\t\t\t\t\tpleaseWaitDiv = popupDiv.prepend(loadingElement);\r\n\t\t\t\t} else {\r\n\t\t\t\t\tpopupDiv = $(\"<div style='text-align: center; display: none;'></div>\").appendTo('body');\r\n\t\t\t\t\tpopupDiv.append(iFrameElement);\r\n\r\n\t\t\t\t\tpleaseWaitDiv = popupDiv.prepend(loadingElement);\r\n\t\t\t\t}\r\n\r\n\t\t\t\tconst loadTargetPage = function () {\r\n\t\t\t\t\tif (isInsideIframe) {\r\n\t\t\t\t\t\twindow.top.POPUP_NOTIFY_WIDGET = config.notifyId;\r\n\t\t\t\t\t\t// Create a reference to the iframe object on the document parent\r\n\t\t\t\t\t\twindow.top._iframePopup = window.frameElement.contentWindow;\r\n\t\t\t\t\t} else {\r\n\t\t\t\t\t\twindow.top._iframePopup = window;\r\n\t\t\t\t\t}\r\n\r\n\t\t\t\t\tPOPUP_NOTIFY_WIDGET = config.notifyId;\r\n\t\t\t\t\tRichWidgets_Popup_Editor_notifyWidget = config.notifyId;\r\n\t\t\t\t\twindow.top._iframePopup.RichWidgets_Popup_Editor_notifyWidget = config.notifyId;\r\n\r\n\t\t\t\t\t// Load target page\r\n\t\t\t\t\tconst ohref = getLinkHREF(linkWidget)[0];\r\n\t\t\t\t\tconst rhref = ohref.replace(/(\\?|&)_=.*?(&|$)/, '$1_=' + +new Date().now + '$2');\r\n\t\t\t\t\tconst xhref = rhref + (rhref == ohref ? (rhref.indexOf('?') >= 0 ? '&' : '?') + '_=' + +new Date() : '');\r\n\r\n\t\t\t\t\tpopupDiv.find('iframe').attr('src', xhref);\r\n\r\n\t\t\t\t\t(function (popupDiv) {\r\n\t\t\t\t\t\tpopupDiv.find('iframe').load(function () {\r\n\t\t\t\t\t\t\t// After loading try to resize\r\n\t\t\t\t\t\t\tresize(popupDiv, _id, config.setWidth, config.setHeight, true, event);\r\n\t\t\t\t\t\t});\r\n\t\t\t\t\t})(popupDiv);\r\n\r\n\t\t\t\t\tpopupDiv = null;\r\n\t\t\t\t\tpleaseWaitDiv = null;\r\n\t\t\t\t};\r\n\r\n\t\t\t\topenPopup(popupDiv, pleaseWaitDiv, loadTargetPage, event, config);\r\n\r\n\t\t\t\treturn false;\r\n\t\t\t};\r\n\r\n\t\t\t$(linkQuery).click(clickHandler);\r\n\r\n\t\t\tSapphireWidgets.SapphirePopup.popupWidth = config.setWidth || POPUP_INITIAL_WIDTH;\r\n\t\t});\r\n\t};\r\n\r\n\tconst resize = (divToPopup, _id, setWidth, setHeight, recenter, event) => {\r\n\t\t// Code to support old resize method Popup_Window_resize(setWidth, setHeight, recenter)\r\n\t\tif (typeof recenter == 'undefined') {\r\n\t\t\trecenter = setHeight;\r\n\t\t\tsetHeight = setWidth;\r\n\t\t\tsetWidth = divToPopup;\r\n\r\n\t\t\tif (isInsideIframe) {\r\n\t\t\t\tdivToPopup = window.top.$('.os-internal-ui-dialog-content');\r\n\t\t\t} else {\r\n\t\t\t\tdivToPopup = $('.os-internal-ui-dialog-content');\r\n\t\t\t}\r\n\t\t}\r\n\r\n\t\t// Resize must bail out immediately if the popup is marked as closing, and not start the animation.\r\n\t\tif ($.data(divToPopup.get(0), POPUP_CLOSING_TAG) == POPUP_CLOSING_VALUE) {\r\n\t\t\treturn false;\r\n\t\t}\r\n\r\n\t\tlet documentServer;\r\n\t\tlet frameObj = divToPopup.find('iframe')[0];\r\n\r\n\t\tif (typeof frameObj == 'undefined') {\r\n\t\t\tframeObj = window.top.$('#iframe_' + _id)[0];\r\n\t\t}\r\n\r\n\t\tif (isInsideIframe) {\r\n\t\t\tdocumentServer = window.top.document.location.href.replace(/(https?:\\/\\/[^\\/]*).*/, '$1');\r\n\t\t} else {\r\n\t\t\tdocumentServer = document.location.href.replace(/(https?:\\/\\/[^\\/]*).*/, '$1');\r\n\t\t}\r\n\r\n\t\tif (typeof frameObj != 'undefined') {\r\n\t\t\tconst frameServer = frameObj.src.replace(/(https?:\\/\\/[^\\/]*).*/, '$1');\r\n\t\t\tconst sameOrigin = frameServer.toLowerCase() == documentServer.toLowerCase() || frameServer.indexOf('http') != 0;\r\n\r\n\t\t\tif (!sameOrigin && (setWidth == -1 || setHeight == -1)) {\r\n\t\t\t\tthrow new Error('A Popup with a screen from a different server (or https) needs explicict width, height set.');\r\n\t\t\t}\r\n\r\n\t\t\tif (sameOrigin) {\r\n\t\t\t\tif (frameObj.contentDocument !== null || frameObj.contentWindow !== null) {\r\n\t\t\t\t\tvar innerDoc = frameObj.contentDocument ? frameObj.contentDocument : frameObj.contentWindow.document;\r\n\t\t\t\t\tif (innerDoc.documentElement.scrollHeight == 0)\r\n\t\t\t\t\t\t// Strangely this event is also triggered on close\r\n\t\t\t\t\t\treturn false;\r\n\t\t\t\t}\r\n\t\t\t}\r\n\r\n\t\t\tlet oldHeight;\r\n\t\t\tif (isInsideIframe) {\r\n\t\t\t\toldHeight = window.top\r\n\t\t\t\t\t.$(divToPopup)\r\n\t\t\t\t\t.parents('.os-internal-Popup')\r\n\t\t\t\t\t.outerHeight();\r\n\t\t\t} else {\r\n\t\t\t\toldHeight = $(divToPopup)\r\n\t\t\t\t\t.parents('.os-internal-Popup')\r\n\t\t\t\t\t.outerHeight();\r\n\t\t\t}\r\n\r\n\t\t\tlet width = setWidth == -1 ? $(innerDoc).width() : setWidth;\r\n\t\t\tlet height = setHeight == -1 ? $(innerDoc).height() : setHeight;\r\n\r\n\t\t\tvar titleHeight;\r\n\t\t\tif (isInsideIframe) {\r\n\t\t\t\ttitleHeight = window.top.$('.os-internal-ui-dialog-titlebar').height();\r\n\t\t\t} else {\r\n\t\t\t\ttitleHeight = $('.os-internal-ui-dialog-titlebar').height();\r\n\t\t\t}\r\n\r\n\t\t\t// Verify if the parent window width is less than the pop-up window, if so set the responsive class on the iframe body (for responsive themes)\r\n\t\t\tif (window.innerWidth < width) {\r\n\t\t\t\t// only set the class if the origin is the same\r\n\t\t\t\tif (sameOrigin) {\r\n\t\t\t\t\t$(innerDoc)\r\n\t\t\t\t\t\t.find('body')\r\n\t\t\t\t\t\t.addClass('Responsive');\r\n\t\t\t\t\twidth = window.innerWidth - 20; // 10px \"padding\" effect, to keep the popup look and feel on top of content\r\n\t\t\t\t}\r\n\t\t\t}\r\n\r\n\t\t\t// Fix issues with scrollbars\r\n\t\t\tif (setHeight == -1) {\r\n\t\t\t\t// IE7 needs a little more space to remove the scrollbars\r\n\t\t\t\tif ($.browser.msie) height = height + 1;\r\n\t\t\t}\r\n\r\n\t\t\tif (isInsideIframe) {\r\n\t\t\t\twindow.top.$(divToPopup).height(height);\r\n\t\t\t} else {\r\n\t\t\t\t$(divToPopup).height(height);\r\n\t\t\t}\r\n\r\n\t\t\t//Hide ECT\r\n\t\t\tif (isInsideIframe) {\r\n\t\t\t\twindow.top\r\n\t\t\t\t\t.$(innerDoc)\r\n\t\t\t\t\t.find('.ECT_FeedbackContainer')\r\n\t\t\t\t\t.hide();\r\n\t\t\t\tvar divPopupOuterWindow = window.top.$(divToPopup).parents('.os-internal-Popup');\r\n\t\t\t} else {\r\n\t\t\t\t$(innerDoc)\r\n\t\t\t\t\t.find('.ECT_FeedbackContainer')\r\n\t\t\t\t\t.hide();\r\n\t\t\t\tvar divPopupOuterWindow = $(divToPopup).parents('.os-internal-Popup');\r\n\t\t\t}\r\n\r\n\t\t\tvar animateFinal = {};\r\n\r\n\t\t\tif (setHeight == -1) {\r\n\t\t\t\tvar oldTop = parseInt(divPopupOuterWindow.css('top'));\r\n\t\t\t\tif (recenter) animateFinal.top = Math.max(20, oldTop + (oldHeight - (height + titleHeight)) / 2);\r\n\t\t\t\tanimateFinal.height = height + titleHeight;\r\n\t\t\t}\r\n\r\n\t\t\tif (setWidth == -1) {\r\n\t\t\t\tvar oldLeft = parseInt(divPopupOuterWindow.css('left'));\r\n\t\t\t\tif (recenter) animateFinal.left = oldLeft + (divPopupOuterWindow.width() - width) / 2;\r\n\t\t\t\tanimateFinal.width = width;\r\n\t\t\t}\r\n\r\n\t\t\tif (\r\n\t\t\t\tdivPopupOuterWindow.width() == animateFinal.width &&\r\n\t\t\t\tdivPopupOuterWindow.height() == animateFinal.height - ($.browser.msie ? 1 : 0)\r\n\t\t\t) {\r\n\t\t\t\t$('.os-internal-ui-dialog-content>.LayoutPopup-loading').hide();\r\n\t\t\t\t$(divToPopup).height(height - ($.browser.msie ? 1 : 0)); // restore size\r\n\t\t\t\treturn true; // nothing to do...\r\n\t\t\t}\r\n\r\n\t\t\t// hide content in first resize - readjustments will not flickr\r\n\t\t\tif (divPopupOuterWindow.width() == POPUP_INITIAL_WIDTH && divPopupOuterWindow.height() == POPUP_INITIAL_HEIGHT) {\r\n\t\t\t\t$(frameObj).height(0);\r\n\t\t\t}\r\n\r\n\t\t\tvar onAnimationComplete = function () {\r\n\t\t\t\tsetTimeout(function () {\r\n\t\t\t\t\tif (isInsideIframe) {\r\n\t\t\t\t\t\twindow.top.$('.os-internal-ui-dialog-titlebar-close-no-title').css('display', 'block');\r\n\t\t\t\t\t\twindow.top\r\n\t\t\t\t\t\t\t.$(divToPopup)\r\n\t\t\t\t\t\t\t.find('iframe')\r\n\t\t\t\t\t\t\t.height('100%')\r\n\t\t\t\t\t\t\t.width(animateFinal.width);\r\n\t\t\t\t\t} else {\r\n\t\t\t\t\t\t$('.os-internal-ui-dialog-titlebar-close-no-title').css('display', 'block');\r\n\t\t\t\t\t\t$(divToPopup)\r\n\t\t\t\t\t\t\t.find('iframe')\r\n\t\t\t\t\t\t\t.height('100%')\r\n\t\t\t\t\t\t\t.width(animateFinal.width);\r\n\t\t\t\t\t}\r\n\t\t\t\t}, 13);\r\n\t\t\t};\r\n\r\n\t\t\tvar divPleaseWait;\r\n\t\t\tif (isInsideIframe) {\r\n\t\t\t\tdivPleaseWait = window.top.$('.os-internal-ui-dialog-content>.LayoutPopup-loading');\r\n\t\t\t} else {\r\n\t\t\t\tdivPleaseWait = $('.os-internal-ui-dialog-content>.LayoutPopup-loading');\r\n\t\t\t}\r\n\r\n\t\t\tdivPleaseWait.hide();\r\n\r\n\t\t\tif (setHeight == -1 || setWidth == -1) {\r\n\t\t\t\tdivPopupOuterWindow.animate(animateFinal, {\r\n\t\t\t\t\tduration: 200,\r\n\t\t\t\t\tcomplete: onAnimationComplete,\r\n\t\t\t\t});\r\n\t\t\t} else {\r\n\t\t\t\tonAnimationComplete();\r\n\t\t\t}\r\n\t\t\tinnerDoc = null;\r\n\t\t\tdivPopupOuterWindow = null;\r\n\t\t\tif (isInsideIframe) {\r\n\t\t\t\twindow.top.$.data(event.target, 'os-internal-processing', false);\r\n\t\t\t} else {\r\n\t\t\t\t$.data(event.target, 'os-internal-processing', false);\r\n\t\t\t}\r\n\t\t\treturn true;\r\n\t\t}\r\n\t};\r\n\r\n\tconst close = () => {\r\n\r\n\t\tlet popupToClose;\r\n\t\tlet popupContainer;\r\n\r\n\t\tif (isInsideIframe) {\r\n\t\t\tpopupToClose = window.top.$('.os-internal-ui-dialog-content');\r\n\t\t\tpopupContainer = window.top.$('.SapphirePopup');\r\n\t\t} else {\r\n\t\t\tpopupToClose = $('.os-internal-ui-dialog-content');\r\n\t\t\tpopupContainer = $('.SapphirePopup');\r\n\t\t}\r\n\r\n\t\tpopupToClose.data(POPUP_CLOSING_TAG, POPUP_CLOSING_VALUE);\r\n\r\n\t\t//setTimeout(function() {\r\n\t\tif (popupToClose.length) popupToClose.dialog('close');\r\n\r\n\t\tpopupToClose.remove();\r\n\t\tpopupContainer.remove();\r\n\t\t//}, 0);\r\n\t};\r\n\r\n\tconst getLinkHREF = widget => {\r\n\t\tlet linkHref;\r\n\t\tlet isAButton = false;\r\n\r\n\t\ttry {\r\n\t\t\t//Checks if the id is from a link or not\r\n\t\t\tlinkHref = $(widget).attr('href');\r\n\r\n\t\t\t//Tests for visibility/existence\r\n\t\t\tif (typeof linkHref == 'undefined') {\r\n\t\t\t\tconst onClick = widget.getAttribute('onclick');\r\n\r\n\t\t\t\tif (typeof onClick != 'undefined') {\r\n\t\t\t\t\tisAButton = true;\r\n\r\n\t\t\t\t\tif (onClick != null) {\r\n\t\t\t\t\t\tlet hrefMatch;\r\n\r\n\t\t\t\t\t\tif ((hrefMatch = onClick.toString().match(/href='([^']*)'/)) != null) {\r\n\t\t\t\t\t\t\tlinkHref = hrefMatch[1];\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t} catch (e) { }\r\n\r\n\t\treturn [linkHref, isAButton];\r\n\t};\r\n\r\n\tconst openPopup = (divToPopup, divPleaseWait, loadTargetPage, event, config) => {\r\n\t\t// Destroy any previous dialog\r\n\t\tclose(null);\r\n\r\n\t\tif (isInsideIframe) {\r\n\t\t\tconst $jParent = window.top.$;\r\n\t\t\t$jParent('.os-internal-Popup').remove();\r\n\t\t}\r\n\r\n\t\t// If any close is pending, schedule to execute itself asynchronously exit\r\n\t\t// If no close is pending, continue with open operation\r\n\t\tlet closingPopups;\r\n\r\n\t\tif (isInsideIframe) closingPopups = window.top.$('.os-internal-ui-dialog-content');\r\n\t\telse closingPopups = $('.os-internal-ui-dialog-content');\r\n\r\n\t\tfor (var i = 0; i < closingPopups.length; i++) {\r\n\t\t\tif ($.data(closingPopups.get(i), POPUP_CLOSING_TAG) == POPUP_CLOSING_VALUE) {\r\n\t\t\t\tsetTimeout(function () {\r\n\t\t\t\t\topenPopup(divToPopup, divPleaseWait, loadTargetPage, event, config);\r\n\t\t\t\t}, 13);\r\n\r\n\t\t\t\treturn false;\r\n\t\t\t}\r\n\t\t}\r\n\r\n\t\tlet _dialog;\r\n\r\n\t\tif (isInsideIframe) {\r\n\t\t\tconst popupContainer = document.createElement('DIV');\r\n\t\t\tpopupContainer.setAttribute('class', 'SapphirePopup');\r\n\r\n\t\t\twindow.top.document.body.appendChild(popupContainer);\r\n\r\n\t\t\t_dialog = window.top.$(divToPopup);\r\n\t\t} else {\r\n\t\t\t$('<div class=\"SapphirePopup\"></div>').appendTo('body');\r\n\r\n\t\t\t_dialog = $(divToPopup);\r\n\t\t}\r\n\r\n\t\t$(divPleaseWait).show();\r\n\r\n\t\tif ($('.ISidebar').length) window.parent.SapphireWidgets.LayoutBase.openSidebarIframe(0);\r\n\r\n\t\t_dialog.show().dialog({\r\n\t\t\tappendTo: '.SapphirePopup',\r\n\t\t\tdialogClass: 'os-internal-Popup',\r\n\t\t\tresizable: false,\r\n\t\t\tautoResize: false,\r\n\t\t\tcloseOnEscape: !config.hideCloseButton,\r\n\t\t\tbgiframe: true,\r\n\t\t\tdraggable: false,\r\n\t\t\tautoOpen: true,\r\n\t\t\ttitle: config.setTitle,\r\n\t\t\tmodal: !(config.useModal === false),\r\n\t\t\theight: config.setHeight == -1 ? POPUP_INITIAL_HEIGHT : config.setHeight,\r\n\t\t\tposition: 'center',\r\n\t\t\twidth: config.setWidth == -1 ? POPUP_INITIAL_WIDTH : config.setWidth,\r\n\t\t\tzIndex: POPUP_WINDOW_INDEX,\r\n\t\t\tclose: function () {\r\n\r\n\t\t\t\t// If the popup is closed before it is resized (ESC) we need to set the processing event to false.\r\n\t\t\t\t$.data(event.target, 'os-internal-processing', false);\r\n\r\n\t\t\t\t_dialog.find('iframe').unbind('load');\r\n\t\t\t\t_dialog.find('iframe').attr('src', 'about:blank');\r\n\r\n\t\t\t\tsetTimeout(function () {\r\n\t\t\t\t\t_dialog.find('iframe').empty();\r\n\t\t\t\t\t_dialog.empty();\r\n\r\n\t\t\t\t\tdocument.querySelectorAll('.SapphirePopup').forEach(el => el.remove());\r\n\r\n\t\t\t\t}, 13);\r\n\t\t\t},\r\n\t\t});\r\n\r\n\t\t_dialog.find('iframe').height(0);\r\n\t\t_dialog.parents('.os-internal-ui-dialog').dropShadow();\r\n\r\n\t\tif (config.CssClasses !== ' ') {\r\n\t\t\tif (isInsideIframe) window.top.$('.os-internal-ui-dialog').addClass(config.CssClasses);\r\n\t\t\telse $('.os-internal-ui-dialog').addClass(config.CssClasses);\r\n\t\t}\r\n\r\n\t\tloadTargetPage();\r\n\t};\r\n\r\n\tSapphireWidgets.SapphirePopup = { create, close, resize };\r\n})(jQuery, window, SapphireWidgets);\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/sapphire-popup/scripts.js?\n}");
+/* Component SapphirePopup */
+var RichWidgets_Popup_Editor_notifyWidget;
+
+(function ($, window, SapphireWidgets) {
+	// Check if the widget is loaded inside an iFrame
+	let isInsideIframe = window.frameElement != undefined || false;
+
+	// Constants
+	const POPUP_INITIAL_WIDTH = 300;
+	const POPUP_INITIAL_HEIGHT = 100;
+	const POPUP_WINDOW_INDEX = 4010;
+	const POPUP_CLOSING_TAG = 'closing';
+	const POPUP_CLOSING_VALUE = 'true';
+
+	let POPUP_NOTIFY_WIDGET;
+	let POPUP_PARENT_URL;
+
+	const create = config => {
+		if (config.ignoreIframe) isInsideIframe = false;
+
+		$().ready(function ($) {
+			const _id = config.linkId;
+			const linkQuery = `#${config.linkId}`;
+			let linkWidget;
+
+			try {
+				linkWidget = $(linkQuery).get(0);
+			} catch (e) { }
+
+			if (typeof linkWidget == 'undefined') {
+				//Case the widget is inexistent or invisible, it will show no errors.
+				return;
+			}
+
+			POPUP_PARENT_URL = config.parentUrl;
+
+			const linkResult = getLinkHREF(linkWidget);
+			const linkHref = linkResult[0];
+			const isAButton = linkResult[1];
+
+			if (typeof linkHref == 'undefined' || linkHref == '' || linkHref == '#' || linkHref.indexOf('javascript:') == 0) {
+				try {
+					window.OsHandleException(
+						new Error('Popup link id must be the id of a Link or Button Widget with Method Navigate.'),
+						outsystems.osErrorCodes.SystemJavascriptError,
+						'Popup_Editor'
+					);
+				} catch (e) { }
+
+				return;
+			}
+
+			// Remove the existing on-click event
+			if (isAButton) {
+				linkWidget.setAttribute(
+					'onclick',
+					linkWidget
+						.getAttribute('onclick')
+						.toString()
+						.replace('window.location.href=', 'return false;window.location.href=')
+				);
+			}
+
+			// If there's a confirmation message, store in an attribute the result
+			if (linkWidget.getAttribute('onclick') != null) {
+				linkWidget.setAttribute(
+					'onclick',
+					linkWidget
+						.getAttribute('onclick')
+						.toString()
+						.replace(
+							'if( ret != true )',
+							"$('" + linkQuery + "').get(0).setAttribute('confirmed', ret); if( ret != true )"
+						)
+				);
+			}
+
+			const clickHandler = function (event) {
+				// The clickHandler event is registered in osjs and $ for compatibillity reasons, they must not run both for the same click.
+				// Variable is set to false in resize function.
+				if ($.data(event.target, 'os-internal-processing') == true) {
+					return false;
+				} else {
+					$.data(event.target, 'os-internal-processing', true);
+				}
+
+				// Check if the clicked link is disabled
+				if (linkWidget.getAttribute('disabled') != null) {
+					var linkDisabled = linkWidget
+						.getAttribute('disabled')
+						.toString()
+						.toLowerCase();
+
+					if (linkDisabled == 'disabled' || linkDisabled.indexOf('true') != -1) {
+						return false;
+					}
+				}
+
+				if (linkWidget.getAttribute('confirmed') == 'false') return false;
+				if (OsIsIE()) osFocusBackend.ClearFocusedElement();
+
+				let popupDiv;
+				let pleaseWaitDiv;
+
+				const waitText = `<div style="margin-top: 36px;">${config.loadingMessage}</div>`;
+				const imgHTML = '<div class="lds-ring"><div></div></div>';
+				const loadingElement = `<div class="LayoutPopup-loading">${imgHTML} ${waitText}</div>`;
+				const iFrameElement = `<iframe id="iframe_${_id}" width="100%" scrolling="no" height="100%" frameborder="0" src="javascript:void(0);"/>`;
+
+				if (isInsideIframe) {
+					let _div = document.createElement('DIV');
+					_div.setAttribute('style', 'text-align: center; display: none;');
+					_div.setAttribute('id', 'window_' + _id);
+					window.top.document.body.appendChild(_div);
+
+					popupDiv = window.top.$('#window_' + _id);
+					popupDiv.append(iFrameElement);
+
+					pleaseWaitDiv = popupDiv.prepend(loadingElement);
+				} else {
+					popupDiv = $("<div style='text-align: center; display: none;'></div>").appendTo('body');
+					popupDiv.append(iFrameElement);
+
+					pleaseWaitDiv = popupDiv.prepend(loadingElement);
+				}
+
+				const loadTargetPage = function () {
+					if (isInsideIframe) {
+						window.top.POPUP_NOTIFY_WIDGET = config.notifyId;
+						// Create a reference to the iframe object on the document parent
+						window.top._iframePopup = window.frameElement.contentWindow;
+					} else {
+						window.top._iframePopup = window;
+					}
+
+					POPUP_NOTIFY_WIDGET = config.notifyId;
+					RichWidgets_Popup_Editor_notifyWidget = config.notifyId;
+					window.top._iframePopup.RichWidgets_Popup_Editor_notifyWidget = config.notifyId;
+
+					// Load target page
+					const ohref = getLinkHREF(linkWidget)[0];
+					const rhref = ohref.replace(/(\?|&)_=.*?(&|$)/, '$1_=' + +new Date().now + '$2');
+					const xhref = rhref + (rhref == ohref ? (rhref.indexOf('?') >= 0 ? '&' : '?') + '_=' + +new Date() : '');
+
+					popupDiv.find('iframe').attr('src', xhref);
+
+					(function (popupDiv) {
+						popupDiv.find('iframe').load(function () {
+							// After loading try to resize
+							resize(popupDiv, _id, config.setWidth, config.setHeight, true, event);
+						});
+					})(popupDiv);
+
+					popupDiv = null;
+					pleaseWaitDiv = null;
+				};
+
+				openPopup(popupDiv, pleaseWaitDiv, loadTargetPage, event, config);
+
+				return false;
+			};
+
+			$(linkQuery).click(clickHandler);
+
+			SapphireWidgets.SapphirePopup.popupWidth = config.setWidth || POPUP_INITIAL_WIDTH;
+		});
+	};
+
+	const resize = (divToPopup, _id, setWidth, setHeight, recenter, event) => {
+		// Code to support old resize method Popup_Window_resize(setWidth, setHeight, recenter)
+		if (typeof recenter == 'undefined') {
+			recenter = setHeight;
+			setHeight = setWidth;
+			setWidth = divToPopup;
+
+			if (isInsideIframe) {
+				divToPopup = window.top.$('.os-internal-ui-dialog-content');
+			} else {
+				divToPopup = $('.os-internal-ui-dialog-content');
+			}
+		}
+
+		// Resize must bail out immediately if the popup is marked as closing, and not start the animation.
+		if ($.data(divToPopup.get(0), POPUP_CLOSING_TAG) == POPUP_CLOSING_VALUE) {
+			return false;
+		}
+
+		let documentServer;
+		let frameObj = divToPopup.find('iframe')[0];
+
+		if (typeof frameObj == 'undefined') {
+			frameObj = window.top.$('#iframe_' + _id)[0];
+		}
+
+		if (isInsideIframe) {
+			documentServer = window.top.document.location.href.replace(/(https?:\/\/[^\/]*).*/, '$1');
+		} else {
+			documentServer = document.location.href.replace(/(https?:\/\/[^\/]*).*/, '$1');
+		}
+
+		if (typeof frameObj != 'undefined') {
+			const frameServer = frameObj.src.replace(/(https?:\/\/[^\/]*).*/, '$1');
+			const sameOrigin = frameServer.toLowerCase() == documentServer.toLowerCase() || frameServer.indexOf('http') != 0;
+
+			if (!sameOrigin && (setWidth == -1 || setHeight == -1)) {
+				throw new Error('A Popup with a screen from a different server (or https) needs explicict width, height set.');
+			}
+
+			if (sameOrigin) {
+				if (frameObj.contentDocument !== null || frameObj.contentWindow !== null) {
+					var innerDoc = frameObj.contentDocument ? frameObj.contentDocument : frameObj.contentWindow.document;
+					if (innerDoc.documentElement.scrollHeight == 0)
+						// Strangely this event is also triggered on close
+						return false;
+				}
+			}
+
+			let oldHeight;
+			if (isInsideIframe) {
+				oldHeight = window.top
+					.$(divToPopup)
+					.parents('.os-internal-Popup')
+					.outerHeight();
+			} else {
+				oldHeight = $(divToPopup)
+					.parents('.os-internal-Popup')
+					.outerHeight();
+			}
+
+			let width = setWidth == -1 ? $(innerDoc).width() : setWidth;
+			let height = setHeight == -1 ? $(innerDoc).height() : setHeight;
+
+			var titleHeight;
+			if (isInsideIframe) {
+				titleHeight = window.top.$('.os-internal-ui-dialog-titlebar').height();
+			} else {
+				titleHeight = $('.os-internal-ui-dialog-titlebar').height();
+			}
+
+			// Verify if the parent window width is less than the pop-up window, if so set the responsive class on the iframe body (for responsive themes)
+			if (window.innerWidth < width) {
+				// only set the class if the origin is the same
+				if (sameOrigin) {
+					$(innerDoc)
+						.find('body')
+						.addClass('Responsive');
+					width = window.innerWidth - 20; // 10px "padding" effect, to keep the popup look and feel on top of content
+				}
+			}
+
+			// Fix issues with scrollbars
+			if (setHeight == -1) {
+				// IE7 needs a little more space to remove the scrollbars
+				if ($.browser.msie) height = height + 1;
+			}
+
+			if (isInsideIframe) {
+				window.top.$(divToPopup).height(height);
+			} else {
+				$(divToPopup).height(height);
+			}
+
+			//Hide ECT
+			if (isInsideIframe) {
+				window.top
+					.$(innerDoc)
+					.find('.ECT_FeedbackContainer')
+					.hide();
+				var divPopupOuterWindow = window.top.$(divToPopup).parents('.os-internal-Popup');
+			} else {
+				$(innerDoc)
+					.find('.ECT_FeedbackContainer')
+					.hide();
+				var divPopupOuterWindow = $(divToPopup).parents('.os-internal-Popup');
+			}
+
+			var animateFinal = {};
+
+			if (setHeight == -1) {
+				var oldTop = parseInt(divPopupOuterWindow.css('top'));
+				if (recenter) animateFinal.top = Math.max(20, oldTop + (oldHeight - (height + titleHeight)) / 2);
+				animateFinal.height = height + titleHeight;
+			}
+
+			if (setWidth == -1) {
+				var oldLeft = parseInt(divPopupOuterWindow.css('left'));
+				if (recenter) animateFinal.left = oldLeft + (divPopupOuterWindow.width() - width) / 2;
+				animateFinal.width = width;
+			}
+
+			if (
+				divPopupOuterWindow.width() == animateFinal.width &&
+				divPopupOuterWindow.height() == animateFinal.height - ($.browser.msie ? 1 : 0)
+			) {
+				$('.os-internal-ui-dialog-content>.LayoutPopup-loading').hide();
+				$(divToPopup).height(height - ($.browser.msie ? 1 : 0)); // restore size
+				return true; // nothing to do...
+			}
+
+			// hide content in first resize - readjustments will not flickr
+			if (divPopupOuterWindow.width() == POPUP_INITIAL_WIDTH && divPopupOuterWindow.height() == POPUP_INITIAL_HEIGHT) {
+				$(frameObj).height(0);
+			}
+
+			var onAnimationComplete = function () {
+				setTimeout(function () {
+					if (isInsideIframe) {
+						window.top.$('.os-internal-ui-dialog-titlebar-close-no-title').css('display', 'block');
+						window.top
+							.$(divToPopup)
+							.find('iframe')
+							.height('100%')
+							.width(animateFinal.width);
+					} else {
+						$('.os-internal-ui-dialog-titlebar-close-no-title').css('display', 'block');
+						$(divToPopup)
+							.find('iframe')
+							.height('100%')
+							.width(animateFinal.width);
+					}
+				}, 13);
+			};
+
+			var divPleaseWait;
+			if (isInsideIframe) {
+				divPleaseWait = window.top.$('.os-internal-ui-dialog-content>.LayoutPopup-loading');
+			} else {
+				divPleaseWait = $('.os-internal-ui-dialog-content>.LayoutPopup-loading');
+			}
+
+			divPleaseWait.hide();
+
+			if (setHeight == -1 || setWidth == -1) {
+				divPopupOuterWindow.animate(animateFinal, {
+					duration: 200,
+					complete: onAnimationComplete,
+				});
+			} else {
+				onAnimationComplete();
+			}
+			innerDoc = null;
+			divPopupOuterWindow = null;
+			if (isInsideIframe) {
+				window.top.$.data(event.target, 'os-internal-processing', false);
+			} else {
+				$.data(event.target, 'os-internal-processing', false);
+			}
+			return true;
+		}
+	};
+
+	const close = () => {
+
+		let popupToClose;
+		let popupContainer;
+
+		if (isInsideIframe) {
+			popupToClose = window.top.$('.os-internal-ui-dialog-content');
+			popupContainer = window.top.$('.SapphirePopup');
+		} else {
+			popupToClose = $('.os-internal-ui-dialog-content');
+			popupContainer = $('.SapphirePopup');
+		}
+
+		popupToClose.data(POPUP_CLOSING_TAG, POPUP_CLOSING_VALUE);
+
+		//setTimeout(function() {
+		if (popupToClose.length) popupToClose.dialog('close');
+
+		popupToClose.remove();
+		popupContainer.remove();
+		//}, 0);
+	};
+
+	const getLinkHREF = widget => {
+		let linkHref;
+		let isAButton = false;
+
+		try {
+			//Checks if the id is from a link or not
+			linkHref = $(widget).attr('href');
+
+			//Tests for visibility/existence
+			if (typeof linkHref == 'undefined') {
+				const onClick = widget.getAttribute('onclick');
+
+				if (typeof onClick != 'undefined') {
+					isAButton = true;
+
+					if (onClick != null) {
+						let hrefMatch;
+
+						if ((hrefMatch = onClick.toString().match(/href='([^']*)'/)) != null) {
+							linkHref = hrefMatch[1];
+						}
+					}
+				}
+			}
+		} catch (e) { }
+
+		return [linkHref, isAButton];
+	};
+
+	const openPopup = (divToPopup, divPleaseWait, loadTargetPage, event, config) => {
+		// Destroy any previous dialog
+		close(null);
+
+		if (isInsideIframe) {
+			const $jParent = window.top.$;
+			$jParent('.os-internal-Popup').remove();
+		}
+
+		// If any close is pending, schedule to execute itself asynchronously exit
+		// If no close is pending, continue with open operation
+		let closingPopups;
+
+		if (isInsideIframe) closingPopups = window.top.$('.os-internal-ui-dialog-content');
+		else closingPopups = $('.os-internal-ui-dialog-content');
+
+		for (var i = 0; i < closingPopups.length; i++) {
+			if ($.data(closingPopups.get(i), POPUP_CLOSING_TAG) == POPUP_CLOSING_VALUE) {
+				setTimeout(function () {
+					openPopup(divToPopup, divPleaseWait, loadTargetPage, event, config);
+				}, 13);
+
+				return false;
+			}
+		}
+
+		let _dialog;
+
+		if (isInsideIframe) {
+			const popupContainer = document.createElement('DIV');
+			popupContainer.setAttribute('class', 'SapphirePopup');
+
+			window.top.document.body.appendChild(popupContainer);
+
+			_dialog = window.top.$(divToPopup);
+		} else {
+			$('<div class="SapphirePopup"></div>').appendTo('body');
+
+			_dialog = $(divToPopup);
+		}
+
+		$(divPleaseWait).show();
+
+		if ($('.ISidebar').length) window.parent.SapphireWidgets.LayoutBase.openSidebarIframe(0);
+
+		_dialog.show().dialog({
+			appendTo: '.SapphirePopup',
+			dialogClass: 'os-internal-Popup',
+			resizable: false,
+			autoResize: false,
+			closeOnEscape: !config.hideCloseButton,
+			bgiframe: true,
+			draggable: false,
+			autoOpen: true,
+			title: config.setTitle,
+			modal: !(config.useModal === false),
+			height: config.setHeight == -1 ? POPUP_INITIAL_HEIGHT : config.setHeight,
+			position: 'center',
+			width: config.setWidth == -1 ? POPUP_INITIAL_WIDTH : config.setWidth,
+			zIndex: POPUP_WINDOW_INDEX,
+			close: function () {
+
+				// If the popup is closed before it is resized (ESC) we need to set the processing event to false.
+				$.data(event.target, 'os-internal-processing', false);
+
+				_dialog.find('iframe').unbind('load');
+				_dialog.find('iframe').attr('src', 'about:blank');
+
+				setTimeout(function () {
+					_dialog.find('iframe').empty();
+					_dialog.empty();
+
+					document.querySelectorAll('.SapphirePopup').forEach(el => el.remove());
+
+				}, 13);
+			},
+		});
+
+		_dialog.find('iframe').height(0);
+		_dialog.parents('.os-internal-ui-dialog').dropShadow();
+
+		if (config.CssClasses !== ' ') {
+			if (isInsideIframe) window.top.$('.os-internal-ui-dialog').addClass(config.CssClasses);
+			else $('.os-internal-ui-dialog').addClass(config.CssClasses);
+		}
+
+		loadTargetPage();
+	};
+
+	SapphireWidgets.SapphirePopup = { create, close, resize };
+})(jQuery, window, SapphireWidgets);
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/sapphire-radio-button/scripts.js":
-/*!******************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/sapphire-radio-button/scripts.js ***!
-  \******************************************************************************/
 /***/ (function() {
 
-eval("{/* Component SapphireRadioButton */\r\nSapphireWidgets.SapphireRadioButton = widgetId => {\r\n\tconst $widget = $(`#${widgetId}`);\r\n\tconst $input = $widget.find('input[type=\"radio\"]');\r\n\tconst $label = $widget.find('.ButtonRadioInp_radioText');\r\n\tconst name = $input.prop('name');\r\n\r\n\tconst addRemoveClass = ($el, toAdd) => {\r\n\t\tif (toAdd) $el.addClass('active');\r\n\t\telse $el.removeClass('active');\r\n\t};\r\n\r\n\tconst isChecked = $el => {\r\n\t\tif ($el.is(':checked')) addRemoveClass($widget, true);\r\n\t\telse addRemoveClass($widget, false);\r\n\t};\r\n\r\n\t$input.click(function() {\r\n\t\t$widget.removeClass('active');\r\n\r\n\t\t$(`input[type=\"radio\"][name=\"${name}\"]`).each(function() {\r\n\t\t\taddRemoveClass($(this).closest('.ButtonRadioInp'), $(this).is(':checked'));\r\n\t\t});\r\n\t});\r\n\r\n\t$input.on('change', function() {\r\n\t\tisChecked($(this));\r\n\t});\r\n\r\n\t$label.click(function() {\r\n\t\tconst $closestElement = $(this).closest('.ButtonRadioInp');\r\n\r\n\t\tif ($closestElement.hasClass('disabled')) return false;\r\n\r\n\t\t$input[0].click();\r\n\t\t//isChecked($input);\r\n\t});\r\n\r\n\tisChecked($input);\r\n};\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/sapphire-radio-button/scripts.js?\n}");
+/* Component SapphireRadioButton */
+SapphireWidgets.SapphireRadioButton = widgetId => {
+	const $widget = $(`#${widgetId}`);
+	const $input = $widget.find('input[type="radio"]');
+	const $label = $widget.find('.ButtonRadioInp_radioText');
+	const name = $input.prop('name');
+
+	const addRemoveClass = ($el, toAdd) => {
+		if (toAdd) $el.addClass('active');
+		else $el.removeClass('active');
+	};
+
+	const isChecked = $el => {
+		if ($el.is(':checked')) addRemoveClass($widget, true);
+		else addRemoveClass($widget, false);
+	};
+
+	$input.click(function() {
+		$widget.removeClass('active');
+
+		$(`input[type="radio"][name="${name}"]`).each(function() {
+			addRemoveClass($(this).closest('.ButtonRadioInp'), $(this).is(':checked'));
+		});
+	});
+
+	$input.on('change', function() {
+		isChecked($(this));
+	});
+
+	$label.click(function() {
+		const $closestElement = $(this).closest('.ButtonRadioInp');
+
+		if ($closestElement.hasClass('disabled')) return false;
+
+		$input[0].click();
+		//isChecked($input);
+	});
+
+	isChecked($input);
+};
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/scales/scale-main-structure.js":
-/*!****************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/scales/scale-main-structure.js ***!
-  \****************************************************************************/
 /***/ (function() {
 
-eval("{/* Component ScaleMainStructure */\r\n(function($, window, SapphireWidgets) {\r\n\tconst create = config => {\r\n\t\t$(document).ready(function() {\r\n\t\t\tsetupScale();\r\n\t\t\tbindClicks();\r\n\r\n\t\t\tosAjaxBackend &&\r\n\t\t\t\tosAjaxBackend.BindAfterAjaxRequest(function() {\r\n\t\t\t\t\tsetTimeout(function() {\r\n\t\t\t\t\t\tbindClicks();\r\n\t\t\t\t\t}, 1000);\r\n\t\t\t\t});\r\n\t\t});\r\n\t};\r\n\r\n\tScaleCount = conf => {\r\n\t\t$(function() {\r\n\t\t\tvar CardScale = conf.IsCardScale;\r\n\t\t\tvar RulerScale = conf.IsRulerScale;\r\n\t\t\tvar MultipleScale = conf.IsMultipleScale;\r\n\t\t\tvar $totalPlace = $('.ScaleMainStructure_footerResult');\r\n\t\t\tvar totalCardScale = 0;\r\n\t\t\tvar totalMultipleScale = 0;\r\n\t\t\tvar totalRulerScale = 0;\r\n\r\n\t\t\tvar ScaleTypeCard = function() {\r\n\t\t\t\tvar totalSelected = $('.ScaleList.CardScale').find('.ScaleCard.active').length;\r\n\t\t\t\tvar totalNumber = 0;\r\n\t\t\t\t$(\".ScaleList.CardScale:not('.isTitle')\").each(function() {\r\n\t\t\t\t\tif ($(this).find('.ScaleCard').length > 0) {\r\n\t\t\t\t\t\ttotalNumber += 1;\r\n\t\t\t\t\t}\r\n\t\t\t\t});\r\n\r\n\t\t\t\tif (totalNumber === totalSelected) {\r\n\t\t\t\t\tvar total = [];\r\n\t\t\t\t\tvar inputValue = '';\r\n\t\t\t\t\tvar $scaleRow = $('.ScaleList.CardScale:not(.isTitle)');\r\n\t\t\t\t\t$scaleRow.each(function() {\r\n\t\t\t\t\t\tinputValue = $(this)\r\n\t\t\t\t\t\t\t.find('.ScaleCard.active')\r\n\t\t\t\t\t\t\t.data('value');\r\n\t\t\t\t\t\t$(this)\r\n\t\t\t\t\t\t\t.find('.ScaleList_inputValue input')\r\n\t\t\t\t\t\t\t.val(inputValue);\r\n\t\t\t\t\t});\r\n\r\n\t\t\t\t\t$('.ScaleList.CardScale .ScaleCard.active').each(function() {\r\n\t\t\t\t\t\ttotal.push($(this).data('value'));\r\n\t\t\t\t\t});\r\n\t\t\t\t\tvar finalTotal = eval(total.join('+'));\r\n\t\t\t\t\treturn finalTotal;\r\n\t\t\t\t}\r\n\t\t\t};\r\n\r\n\t\t\tvar ScaleTypeRuler = function() {\r\n\t\t\t\tvar activeRulerValue = '';\r\n\t\t\t\tvar $activeRuler = $('.RulerScale_number.active');\r\n\t\t\t\tif ($activeRuler.length > 0) {\r\n\t\t\t\t\tvar activeRulerValue = $('.RulerScale_number.active')\r\n\t\t\t\t\t\t.closest('.RulerScale')\r\n\t\t\t\t\t\t.data().value;\r\n\t\t\t\t\t$('.ScaleList.Ruler')\r\n\t\t\t\t\t\t.find('.ScaleList_inputValue input')\r\n\t\t\t\t\t\t.val(activeRulerValue);\r\n\r\n\t\t\t\t\treturn activeRulerValue;\r\n\t\t\t\t}\r\n\t\t\t\treturn activeRulerValue;\r\n\t\t\t};\r\n\r\n\t\t\tvar ScaleTypeMultiple = function() {\r\n\t\t\t\tvar numberofCols = $('.ScaleList.MultipleScale')\r\n\t\t\t\t\t.first()\r\n\t\t\t\t\t.find('.ButtonGroupScale').length;\r\n\t\t\t\tvar numberofRows = $('.ButtonGroupScale').closest('.ScaleList.MultipleScale:not(.isTitle):not(.isSubtotal)')\r\n\t\t\t\t\t.length;\r\n\t\t\t\tvar total = [];\r\n\t\t\t\tvar i = 0;\r\n\t\t\t\tvar j = 0;\r\n\t\t\t\tvar countActive = 0;\r\n\t\t\t\tvar countallActiveCols = 0;\r\n\t\t\t\tvar totalOfItems = numberofCols * numberofRows;\r\n\t\t\t\tvar totalScore = [];\r\n\r\n\t\t\t\tfor (i = 0; i < numberofCols; i++) {\r\n\t\t\t\t\tfor (j = 0; j < numberofRows; j++) {\r\n\t\t\t\t\t\tvar ScaleListSelected = document.querySelectorAll(\r\n\t\t\t\t\t\t\t'.ScaleList.MultipleScale:not(.isTitle):not(.isSubtotal)'\r\n\t\t\t\t\t\t)[j];\r\n\t\t\t\t\t\tvar ButtonScaleSelected = ScaleListSelected.querySelectorAll('.ButtonGroupScale')[i];\r\n\r\n\t\t\t\t\t\tif (ButtonScaleSelected.querySelectorAll('.ButtonGroup_button.active').length > 0) {\r\n\t\t\t\t\t\t\tvar ScaleValue = ButtonScaleSelected.querySelectorAll('.ButtonGroup_button.active')[0].innerText;\r\n\t\t\t\t\t\t\ttotal.push(parseInt(ScaleValue));\r\n\t\t\t\t\t\t\ttotalScore.push(parseInt(ScaleValue));\r\n\t\t\t\t\t\t\tcountActive = countActive + 1;\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t}\r\n\t\t\t\t\tif ($('.ScaleList.MultipleScale.isSubtotal').length > 0) {\r\n\t\t\t\t\t\tif (countActive === numberofRows) {\r\n\t\t\t\t\t\t\tvar subTotal = eval(total.join('+'));\r\n\t\t\t\t\t\t\tvar subtotalScale = document.querySelectorAll('.ScaleList.MultipleScale.isSubtotal .ButtonGroupScale')[i];\r\n\t\t\t\t\t\t\tsubtotalScale.innerText = subTotal;\r\n\t\t\t\t\t\t\tcountallActiveCols = countallActiveCols + 1;\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t}\r\n\t\t\t\t\tcountActive = 0;\r\n\t\t\t\t\ttotal = [];\r\n\t\t\t\t}\r\n\r\n\t\t\t\tif (document.querySelectorAll('.ButtonGroup_button.active').length === totalOfItems) {\r\n\t\t\t\t\tvar i = 0;\r\n\t\t\t\t\tvar j = 0;\r\n\t\t\t\t\tfor (i = 0; i < numberofRows; i++) {\r\n\t\t\t\t\t\tvar ScaleListRow = $('.ScaleList.MultipleScale:not(.isTitle):not(.isSubttotal)')[i];\r\n\t\t\t\t\t\tvar $ScaleListInput = $(ScaleListRow).find('.ScaleList_inputValue input');\r\n\t\t\t\t\t\tvar valuesSelected = '';\r\n\t\t\t\t\t\tfor (j = 0; j < numberofCols; j++) {\r\n\t\t\t\t\t\t\tvar ActiveButton = $(ScaleListRow).find('.ButtonGroup_button.active')[j];\r\n\t\t\t\t\t\t\tvar ActiveValue = ActiveButton.innerText;\r\n\t\t\t\t\t\t\t//valuesSelected=valuesSelected+','+ActiveValue;\r\n\t\t\t\t\t\t\tif (j === numberofCols - 1) {\r\n\t\t\t\t\t\t\t\tvaluesSelected += ActiveValue;\r\n\t\t\t\t\t\t\t} else {\r\n\t\t\t\t\t\t\t\tvaluesSelected += ActiveValue + ',';\r\n\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t\t$ScaleListInput.val(valuesSelected);\r\n\t\t\t\t\t}\r\n\t\t\t\t\tvar getTotal = eval(totalScore.join('+'));\r\n\t\t\t\t\treturn getTotal;\r\n\t\t\t\t}\r\n\t\t\t};\r\n\r\n\t\t\tconst TotalCalc = function() {\r\n\t\t\t\tlet isEmpty = false;\r\n\r\n\t\t\t\tif (CardScale === true) {\r\n\t\t\t\t\ttotalCardScale = ScaleTypeCard();\r\n\t\t\t\t\tisEmpty = totalCardScale === '';\r\n\t\t\t\t}\r\n\r\n\t\t\t\tif (RulerScale === true) {\r\n\t\t\t\t\ttotalRulerScale = ScaleTypeRuler();\r\n\t\t\t\t\tisEmpty = totalRulerScale === '';\r\n\t\t\t\t}\r\n\r\n\t\t\t\tif (MultipleScale === true) {\r\n\t\t\t\t\ttotalMultipleScale = ScaleTypeMultiple();\r\n\t\t\t\t\tisEmpty = totalMultipleScale === '';\r\n\t\t\t\t}\r\n\r\n\t\t\t\tconst $footerResult = $('.ScaleMainStructure_footerResult');\r\n\t\t\t\tconst $totalScore = $('.ScaleMainStructure_totalScore');\r\n\t\t\t\tconst $scoreLabel = $('.ScaleMainStructure_footerResult .TotalLabel');\r\n\r\n\t\t\t\tif (isEmpty) {\r\n\t\t\t\t\t$totalScore.text('---');\r\n\t\t\t\t\t$scoreLabel.text('-');\r\n\r\n\t\t\t\t\t$footerResult.removeClass('ColorZetaBG');\r\n\t\t\t\t} else if (!isNaN(totalMultipleScale) && !isNaN(totalCardScale) && !isNaN(totalRulerScale)) {\r\n\t\t\t\t\tconst totalAbsoluteScore = totalCardScale + totalMultipleScale + totalRulerScale;\r\n\t\t\t\t\tconst totalAbsoluteLabel = totalAbsoluteScore > 11 ? 'High' : 'Low';\r\n\r\n\t\t\t\t\t$totalScore.text(totalAbsoluteLabel);\r\n\t\t\t\t\t$scoreLabel.text(totalAbsoluteScore);\r\n\r\n\t\t\t\t\t$footerResult.addClass('ColorZetaBG');\r\n\r\n\t\t\t\t\tconst $hiddenLink = $('.ScaleMainStructure_hiddingLink a');\r\n\r\n\t\t\t\t\tif ($hiddenLink.length > 0) $hiddenLink.click();\r\n\t\t\t\t}\r\n\t\t\t};\r\n\r\n\t\t\tif (CardScale === true) {\r\n\t\t\t\t$('.ScaleCard').click(function() {\r\n\t\t\t\t\tif (!$(this).hasClass('disabled')) {\r\n\t\t\t\t\t\t$parentScaleCard = $(this).closest('.ScaleList.CardScale');\r\n\t\t\t\t\t\t$parentScaleCard.find('.ScaleCard').removeClass('active');\r\n\t\t\t\t\t\t$(this).addClass('active');\r\n\t\t\t\t\t\tTotalCalc();\r\n\t\t\t\t\t}\r\n\t\t\t\t});\r\n\t\t\t\tTotalCalc();\r\n\t\t\t}\r\n\r\n\t\t\tif (RulerScale === true) {\r\n\t\t\t\t$('.RulerScale').click(function() {\r\n\t\t\t\t\tif ($(this).find('.viewmode').length === 0) {\r\n\t\t\t\t\t\tvar $rulerScaleList = $(this).closest('.ScaleList.Ruler');\r\n\t\t\t\t\t\t$rulerScaleList.find('.RulerScale_number').removeClass('active');\r\n\t\t\t\t\t\t$(this)\r\n\t\t\t\t\t\t\t.find('.RulerScale_number')\r\n\t\t\t\t\t\t\t.addClass('active');\r\n\t\t\t\t\t\tTotalCalc();\r\n\t\t\t\t\t}\r\n\t\t\t\t});\r\n\t\t\t\tTotalCalc();\r\n\t\t\t}\r\n\r\n\t\t\tif (MultipleScale === true) {\r\n\t\t\t\tvar counter;\r\n\t\t\t\tvar ScaleListTitle = document.querySelector('.ScaleList.MultipleScale.isTitle');\r\n\t\t\t\tvar ScaleListSubTotal = document.querySelector('.ScaleList.MultipleScale.isSubtotal');\r\n\t\t\t\tvar ScaleList = document.querySelector('.ScaleList.MultipleScale:not(.isTitle):not(.isSubtotal)');\r\n\r\n\t\t\t\t$('.ButtonGroupScale')\r\n\t\t\t\t\t.closest('.ScaleList.MultipleScale:nth-child(2n)')\r\n\t\t\t\t\t.addClass('EvenLine');\r\n\t\t\t\tvar numberOfGroupScale = ScaleList.querySelectorAll('.ButtonGroupScale').length;\r\n\r\n\t\t\t\t$('.ScaleList.MultipleScale.isSubtotal .ButtonGroupScale').text(0);\r\n\t\t\t\t// Check if Multiple Scale Title exists then adjust title width\r\n\t\t\t\tif ($('.ScaleList.MultipleScale.isTitle').length > 0) {\r\n\t\t\t\t\tfor (counter = 0; counter < numberOfGroupScale; counter++) {\r\n\t\t\t\t\t\tvar ScaleListWidth = ScaleList.querySelectorAll('.ButtonGroupScale')[counter].offsetWidth;\r\n\t\t\t\t\t\tScaleListTitle.querySelectorAll('.ButtonGroupScale')[counter].style.width = ScaleListWidth + 'px';\r\n\t\t\t\t\t\tScaleListSubTotal.querySelectorAll('.ButtonGroupScale')[counter].style.width = ScaleListWidth + 'px';\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\r\n\t\t\t\t$('.ButtonGroup_button').click(function() {\r\n\t\t\t\t\tTotalCalc();\r\n\t\t\t\t});\r\n\t\t\t\tTotalCalc();\r\n\t\t\t}\r\n\t\t});\r\n\t};\r\n\r\n\tsetupScale = () => {\r\n\t\tvar IsCardScale;\r\n\t\tvar IsRulerScale;\r\n\t\tvar IsMultipleScale;\r\n\r\n\t\t$('.ScaleCard').length > 0 ? (IsCardScale = true) : (IsCardScale = false);\r\n\t\t$('.ButtonGroupScale').length > 0 ? (IsMultipleScale = true) : (IsMultipleScale = false);\r\n\t\t$('.RulerScale').length > 0 ? (IsRulerScale = true) : (IsRulerScale = false);\r\n\r\n\t\tsetTimeout(function() {\r\n\t\t\tScaleCount({\r\n\t\t\t\tIsCardScale: IsCardScale,\r\n\t\t\t\tIsRulerScale: IsRulerScale,\r\n\t\t\t\tIsMultipleScale: IsMultipleScale,\r\n\t\t\t});\r\n\t\t}, 500);\r\n\r\n\t\tif ($('.ScaleMainStructure_options .ToggleItemControl').length > 0) {\r\n\t\t\t$('.ScaleMainStructure_options .ToggleItemControl').click(function() {\r\n\t\t\t\t$('.ScaleMainStructure_totalScore').text('---');\r\n\t\t\t});\r\n\t\t}\r\n\t};\r\n\r\n\tresetScales = () => {\r\n\t\t$('.ScaleMainStructure_content').css('visibility', 'hidden');\r\n\t\t$('.ScaleMainStructure_options .ToggleItemControl').addClass('disabled');\r\n\t\tsetTimeout(function() {\r\n\t\t\t$('.ScaleMainStructure_totalScore').text('---');\r\n\t\t\tsetupScale();\r\n\t\t}, 600);\r\n\t\tsetTimeout(function() {\r\n\t\t\t$('.ScaleMainStructure_content').css('visibility', 'visible');\r\n\t\t\t$('.ScaleMainStructure_options .ToggleItemControl').removeClass('disabled');\r\n\t\t}, 1000);\r\n\t};\r\n\r\n\tbindClicks = () => {\r\n\t\tif ($('.ScaleMainStructure_options .ToggleItemControl ').length > 0) {\r\n\t\t\t$('.ScaleMainStructure')\r\n\t\t\t\t.off('click')\r\n\t\t\t\t.on('click', '.ToggleItemControl', function() {\r\n\t\t\t\t\tresetScales();\r\n\t\t\t\t});\r\n\t\t}\r\n\r\n\t\tif ($('.Navigation_control').length > 0) {\r\n\t\t\t$('.Navigation_right').click(function() {\r\n\t\t\t\tif (\r\n\t\t\t\t\t!$(this)\r\n\t\t\t\t\t\t.find('a')[0]\r\n\t\t\t\t\t\t.hasAttribute('disabled')\r\n\t\t\t\t) {\r\n\t\t\t\t\tresetScales();\r\n\t\t\t\t}\r\n\t\t\t});\r\n\r\n\t\t\t$('.Navigation_left').click(function() {\r\n\t\t\t\tif (\r\n\t\t\t\t\t!$(this)\r\n\t\t\t\t\t\t.find('a')[0]\r\n\t\t\t\t\t\t.hasAttribute('disabled')\r\n\t\t\t\t) {\r\n\t\t\t\t\tresetScales();\r\n\t\t\t\t}\r\n\t\t\t});\r\n\t\t}\r\n\t};\r\n\r\n\tSapphireWidgets.ScaleMainStructure = { create };\r\n})(jQuery, window, SapphireWidgets);\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/scales/scale-main-structure.js?\n}");
+/* Component ScaleMainStructure */
+(function($, window, SapphireWidgets) {
+	const create = config => {
+		$(document).ready(function() {
+			setupScale();
+			bindClicks();
+
+			osAjaxBackend &&
+				osAjaxBackend.BindAfterAjaxRequest(function() {
+					setTimeout(function() {
+						bindClicks();
+					}, 1000);
+				});
+		});
+	};
+
+	ScaleCount = conf => {
+		$(function() {
+			var CardScale = conf.IsCardScale;
+			var RulerScale = conf.IsRulerScale;
+			var MultipleScale = conf.IsMultipleScale;
+			var $totalPlace = $('.ScaleMainStructure_footerResult');
+			var totalCardScale = 0;
+			var totalMultipleScale = 0;
+			var totalRulerScale = 0;
+
+			var ScaleTypeCard = function() {
+				var totalSelected = $('.ScaleList.CardScale').find('.ScaleCard.active').length;
+				var totalNumber = 0;
+				$(".ScaleList.CardScale:not('.isTitle')").each(function() {
+					if ($(this).find('.ScaleCard').length > 0) {
+						totalNumber += 1;
+					}
+				});
+
+				if (totalNumber === totalSelected) {
+					var total = [];
+					var inputValue = '';
+					var $scaleRow = $('.ScaleList.CardScale:not(.isTitle)');
+					$scaleRow.each(function() {
+						inputValue = $(this)
+							.find('.ScaleCard.active')
+							.data('value');
+						$(this)
+							.find('.ScaleList_inputValue input')
+							.val(inputValue);
+					});
+
+					$('.ScaleList.CardScale .ScaleCard.active').each(function() {
+						total.push($(this).data('value'));
+					});
+					var finalTotal = eval(total.join('+'));
+					return finalTotal;
+				}
+			};
+
+			var ScaleTypeRuler = function() {
+				var activeRulerValue = '';
+				var $activeRuler = $('.RulerScale_number.active');
+				if ($activeRuler.length > 0) {
+					var activeRulerValue = $('.RulerScale_number.active')
+						.closest('.RulerScale')
+						.data().value;
+					$('.ScaleList.Ruler')
+						.find('.ScaleList_inputValue input')
+						.val(activeRulerValue);
+
+					return activeRulerValue;
+				}
+				return activeRulerValue;
+			};
+
+			var ScaleTypeMultiple = function() {
+				var numberofCols = $('.ScaleList.MultipleScale')
+					.first()
+					.find('.ButtonGroupScale').length;
+				var numberofRows = $('.ButtonGroupScale').closest('.ScaleList.MultipleScale:not(.isTitle):not(.isSubtotal)')
+					.length;
+				var total = [];
+				var i = 0;
+				var j = 0;
+				var countActive = 0;
+				var countallActiveCols = 0;
+				var totalOfItems = numberofCols * numberofRows;
+				var totalScore = [];
+
+				for (i = 0; i < numberofCols; i++) {
+					for (j = 0; j < numberofRows; j++) {
+						var ScaleListSelected = document.querySelectorAll(
+							'.ScaleList.MultipleScale:not(.isTitle):not(.isSubtotal)'
+						)[j];
+						var ButtonScaleSelected = ScaleListSelected.querySelectorAll('.ButtonGroupScale')[i];
+
+						if (ButtonScaleSelected.querySelectorAll('.ButtonGroup_button.active').length > 0) {
+							var ScaleValue = ButtonScaleSelected.querySelectorAll('.ButtonGroup_button.active')[0].innerText;
+							total.push(parseInt(ScaleValue));
+							totalScore.push(parseInt(ScaleValue));
+							countActive = countActive + 1;
+						}
+					}
+					if ($('.ScaleList.MultipleScale.isSubtotal').length > 0) {
+						if (countActive === numberofRows) {
+							var subTotal = eval(total.join('+'));
+							var subtotalScale = document.querySelectorAll('.ScaleList.MultipleScale.isSubtotal .ButtonGroupScale')[i];
+							subtotalScale.innerText = subTotal;
+							countallActiveCols = countallActiveCols + 1;
+						}
+					}
+					countActive = 0;
+					total = [];
+				}
+
+				if (document.querySelectorAll('.ButtonGroup_button.active').length === totalOfItems) {
+					var i = 0;
+					var j = 0;
+					for (i = 0; i < numberofRows; i++) {
+						var ScaleListRow = $('.ScaleList.MultipleScale:not(.isTitle):not(.isSubttotal)')[i];
+						var $ScaleListInput = $(ScaleListRow).find('.ScaleList_inputValue input');
+						var valuesSelected = '';
+						for (j = 0; j < numberofCols; j++) {
+							var ActiveButton = $(ScaleListRow).find('.ButtonGroup_button.active')[j];
+							var ActiveValue = ActiveButton.innerText;
+							//valuesSelected=valuesSelected+','+ActiveValue;
+							if (j === numberofCols - 1) {
+								valuesSelected += ActiveValue;
+							} else {
+								valuesSelected += ActiveValue + ',';
+							}
+						}
+						$ScaleListInput.val(valuesSelected);
+					}
+					var getTotal = eval(totalScore.join('+'));
+					return getTotal;
+				}
+			};
+
+			const TotalCalc = function() {
+				let isEmpty = false;
+
+				if (CardScale === true) {
+					totalCardScale = ScaleTypeCard();
+					isEmpty = totalCardScale === '';
+				}
+
+				if (RulerScale === true) {
+					totalRulerScale = ScaleTypeRuler();
+					isEmpty = totalRulerScale === '';
+				}
+
+				if (MultipleScale === true) {
+					totalMultipleScale = ScaleTypeMultiple();
+					isEmpty = totalMultipleScale === '';
+				}
+
+				const $footerResult = $('.ScaleMainStructure_footerResult');
+				const $totalScore = $('.ScaleMainStructure_totalScore');
+				const $scoreLabel = $('.ScaleMainStructure_footerResult .TotalLabel');
+
+				if (isEmpty) {
+					$totalScore.text('---');
+					$scoreLabel.text('-');
+
+					$footerResult.removeClass('ColorZetaBG');
+				} else if (!isNaN(totalMultipleScale) && !isNaN(totalCardScale) && !isNaN(totalRulerScale)) {
+					const totalAbsoluteScore = totalCardScale + totalMultipleScale + totalRulerScale;
+					const totalAbsoluteLabel = totalAbsoluteScore > 11 ? 'High' : 'Low';
+
+					$totalScore.text(totalAbsoluteLabel);
+					$scoreLabel.text(totalAbsoluteScore);
+
+					$footerResult.addClass('ColorZetaBG');
+
+					const $hiddenLink = $('.ScaleMainStructure_hiddingLink a');
+
+					if ($hiddenLink.length > 0) $hiddenLink.click();
+				}
+			};
+
+			if (CardScale === true) {
+				$('.ScaleCard').click(function() {
+					if (!$(this).hasClass('disabled')) {
+						$parentScaleCard = $(this).closest('.ScaleList.CardScale');
+						$parentScaleCard.find('.ScaleCard').removeClass('active');
+						$(this).addClass('active');
+						TotalCalc();
+					}
+				});
+				TotalCalc();
+			}
+
+			if (RulerScale === true) {
+				$('.RulerScale').click(function() {
+					if ($(this).find('.viewmode').length === 0) {
+						var $rulerScaleList = $(this).closest('.ScaleList.Ruler');
+						$rulerScaleList.find('.RulerScale_number').removeClass('active');
+						$(this)
+							.find('.RulerScale_number')
+							.addClass('active');
+						TotalCalc();
+					}
+				});
+				TotalCalc();
+			}
+
+			if (MultipleScale === true) {
+				var counter;
+				var ScaleListTitle = document.querySelector('.ScaleList.MultipleScale.isTitle');
+				var ScaleListSubTotal = document.querySelector('.ScaleList.MultipleScale.isSubtotal');
+				var ScaleList = document.querySelector('.ScaleList.MultipleScale:not(.isTitle):not(.isSubtotal)');
+
+				$('.ButtonGroupScale')
+					.closest('.ScaleList.MultipleScale:nth-child(2n)')
+					.addClass('EvenLine');
+				var numberOfGroupScale = ScaleList.querySelectorAll('.ButtonGroupScale').length;
+
+				$('.ScaleList.MultipleScale.isSubtotal .ButtonGroupScale').text(0);
+				// Check if Multiple Scale Title exists then adjust title width
+				if ($('.ScaleList.MultipleScale.isTitle').length > 0) {
+					for (counter = 0; counter < numberOfGroupScale; counter++) {
+						var ScaleListWidth = ScaleList.querySelectorAll('.ButtonGroupScale')[counter].offsetWidth;
+						ScaleListTitle.querySelectorAll('.ButtonGroupScale')[counter].style.width = ScaleListWidth + 'px';
+						ScaleListSubTotal.querySelectorAll('.ButtonGroupScale')[counter].style.width = ScaleListWidth + 'px';
+					}
+				}
+
+				$('.ButtonGroup_button').click(function() {
+					TotalCalc();
+				});
+				TotalCalc();
+			}
+		});
+	};
+
+	setupScale = () => {
+		var IsCardScale;
+		var IsRulerScale;
+		var IsMultipleScale;
+
+		$('.ScaleCard').length > 0 ? (IsCardScale = true) : (IsCardScale = false);
+		$('.ButtonGroupScale').length > 0 ? (IsMultipleScale = true) : (IsMultipleScale = false);
+		$('.RulerScale').length > 0 ? (IsRulerScale = true) : (IsRulerScale = false);
+
+		setTimeout(function() {
+			ScaleCount({
+				IsCardScale: IsCardScale,
+				IsRulerScale: IsRulerScale,
+				IsMultipleScale: IsMultipleScale,
+			});
+		}, 500);
+
+		if ($('.ScaleMainStructure_options .ToggleItemControl').length > 0) {
+			$('.ScaleMainStructure_options .ToggleItemControl').click(function() {
+				$('.ScaleMainStructure_totalScore').text('---');
+			});
+		}
+	};
+
+	resetScales = () => {
+		$('.ScaleMainStructure_content').css('visibility', 'hidden');
+		$('.ScaleMainStructure_options .ToggleItemControl').addClass('disabled');
+		setTimeout(function() {
+			$('.ScaleMainStructure_totalScore').text('---');
+			setupScale();
+		}, 600);
+		setTimeout(function() {
+			$('.ScaleMainStructure_content').css('visibility', 'visible');
+			$('.ScaleMainStructure_options .ToggleItemControl').removeClass('disabled');
+		}, 1000);
+	};
+
+	bindClicks = () => {
+		if ($('.ScaleMainStructure_options .ToggleItemControl ').length > 0) {
+			$('.ScaleMainStructure')
+				.off('click')
+				.on('click', '.ToggleItemControl', function() {
+					resetScales();
+				});
+		}
+
+		if ($('.Navigation_control').length > 0) {
+			$('.Navigation_right').click(function() {
+				if (
+					!$(this)
+						.find('a')[0]
+						.hasAttribute('disabled')
+				) {
+					resetScales();
+				}
+			});
+
+			$('.Navigation_left').click(function() {
+				if (
+					!$(this)
+						.find('a')[0]
+						.hasAttribute('disabled')
+				) {
+					resetScales();
+				}
+			});
+		}
+	};
+
+	SapphireWidgets.ScaleMainStructure = { create };
+})(jQuery, window, SapphireWidgets);
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/scales/toggle-item-control.js":
-/*!***************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/scales/toggle-item-control.js ***!
-  \***************************************************************************/
 /***/ (function() {
 
-eval("{/* Component ToggleItemControl */\r\nSapphireWidgets.ToggleItemControl = () => {\r\n\t$(document).ready(function() {\r\n\t\t$('.ToggleItemControl input[type=\"radio\"]').each(function() {\r\n\t\t\tif ($(this).is(':checked')) {\r\n\t\t\t\t$(this)\r\n\t\t\t\t\t.parent()\r\n\t\t\t\t\t.parent()\r\n\t\t\t\t\t.addClass('active');\r\n\t\t\t}\r\n\t\t});\r\n\r\n\t\t$('.ToggleItemControl')\r\n\t\t\t.off('click')\r\n\t\t\t.on('click', function() {\r\n\t\t\t\t$('.ToggleItemControl').removeClass('active');\r\n\t\t\t\t$(this)\r\n\t\t\t\t\t.find('input[type=\"radio\"]')\r\n\t\t\t\t\t.not(':checked')\r\n\t\t\t\t\t.prop('checked', true)\r\n\t\t\t\t\t.click();\r\n\t\t\t\tif (\r\n\t\t\t\t\t$(this)\r\n\t\t\t\t\t\t.find('input[type=\"radio\"]')\r\n\t\t\t\t\t\t.is(':checked')\r\n\t\t\t\t) {\r\n\t\t\t\t\t$(this).addClass('active');\r\n\t\t\t\t} else {\r\n\t\t\t\t\t$(this).removeClass('active');\r\n\t\t\t\t}\r\n\t\t\t});\r\n\r\n\t\tosAjaxBackend &&\r\n\t\t\tosAjaxBackend.BindAfterAjaxRequest(function() {\r\n\t\t\t\t$('.ToggleItemControl input[type=\"radio\"]').each(function() {\r\n\t\t\t\t\tif ($(this).is(':checked')) {\r\n\t\t\t\t\t\t$(this)\r\n\t\t\t\t\t\t\t.parent()\r\n\t\t\t\t\t\t\t.parent()\r\n\t\t\t\t\t\t\t.addClass('active');\r\n\t\t\t\t\t}\r\n\t\t\t\t});\r\n\r\n\t\t\t\t$('.ToggleItemControl')\r\n\t\t\t\t\t.off('click')\r\n\t\t\t\t\t.on('click', function() {\r\n\t\t\t\t\t\t$('.ToggleItemControl').removeClass('active');\r\n\r\n\t\t\t\t\t\tif (\r\n\t\t\t\t\t\t\t$(this)\r\n\t\t\t\t\t\t\t\t.find('input[type=\"radio\"]')\r\n\t\t\t\t\t\t\t\t.is(':checked')\r\n\t\t\t\t\t\t) {\r\n\t\t\t\t\t\t\t$(this).addClass('active');\r\n\t\t\t\t\t\t} else {\r\n\t\t\t\t\t\t\t$(this).removeClass('active');\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t});\r\n\t\t\t});\r\n\t});\r\n};\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/scales/toggle-item-control.js?\n}");
+/* Component ToggleItemControl */
+SapphireWidgets.ToggleItemControl = () => {
+	$(document).ready(function() {
+		$('.ToggleItemControl input[type="radio"]').each(function() {
+			if ($(this).is(':checked')) {
+				$(this)
+					.parent()
+					.parent()
+					.addClass('active');
+			}
+		});
+
+		$('.ToggleItemControl')
+			.off('click')
+			.on('click', function() {
+				$('.ToggleItemControl').removeClass('active');
+				$(this)
+					.find('input[type="radio"]')
+					.not(':checked')
+					.prop('checked', true)
+					.click();
+				if (
+					$(this)
+						.find('input[type="radio"]')
+						.is(':checked')
+				) {
+					$(this).addClass('active');
+				} else {
+					$(this).removeClass('active');
+				}
+			});
+
+		osAjaxBackend &&
+			osAjaxBackend.BindAfterAjaxRequest(function() {
+				$('.ToggleItemControl input[type="radio"]').each(function() {
+					if ($(this).is(':checked')) {
+						$(this)
+							.parent()
+							.parent()
+							.addClass('active');
+					}
+				});
+
+				$('.ToggleItemControl')
+					.off('click')
+					.on('click', function() {
+						$('.ToggleItemControl').removeClass('active');
+
+						if (
+							$(this)
+								.find('input[type="radio"]')
+								.is(':checked')
+						) {
+							$(this).addClass('active');
+						} else {
+							$(this).removeClass('active');
+						}
+					});
+			});
+	});
+};
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/search-and-select/select-ssd.js":
-/*!*****************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/search-and-select/select-ssd.js ***!
-  \*****************************************************************************/
 /***/ (function() {
 
-eval("{var SearchSelectDefine = (window.SearchSelectDefine = window.SearchSelectDefine || {});\r\n\r\nSapphireWidgets.SelectSSD = function SSDSelectSetup(config) {\r\n\t$(function() {\r\n\t\tvar $SSDselectId = $('#' + config.SSDSelectId);\r\n\t\tvar isMultiple = config.isMultiple;\r\n\r\n\t\tvar $ComponentSSD = $SSDselectId.closest('.SearchSD');\r\n\t\tvar $ComponentSSDinput = $ComponentSSD.find('.SearchSD___input input');\r\n\t\tvar Componentinputlength = $ComponentSSDinput.val().length;\r\n\r\n\t\tif (Componentinputlength > 0) {\r\n\t\t\t$SSDselectId.find('.SelectSD__contentTitle').highlight($ComponentSSDinput.val(), {\r\n\t\t\t\tclassName: 'SelectSD-searched-term',\r\n\t\t\t\tcaseSensitive: false,\r\n\t\t\t\twordsOnly: false,\r\n\t\t\t});\r\n\t\t}\r\n\r\n\t\tvar $favoritesSearchInput = $ComponentSSD.find('.SearchSD_filterfavorites input');\r\n\r\n\t\tif ($favoritesSearchInput.length) {\r\n\t\t\tvar favoritesSearchLength = $favoritesSearchInput.val().length;\r\n\r\n\t\t\tif (config.HasFavorite === 'True' && favoritesSearchLength > 0) {\r\n\t\t\t\t$SSDselectId.find('.SelectSD__contentTitle').highlight($favoritesSearchInput.val(), {\r\n\t\t\t\t\tclassName: 'SelectSD-searched-term',\r\n\t\t\t\t\tcaseSensitive: false,\r\n\t\t\t\t\twordsOnly: false,\r\n\t\t\t\t});\r\n\t\t\t}\r\n\t\t}\r\n\r\n\t\tvar OpenConfirmPopup = function($SSDselectId) {\r\n\t\t\t$ComponentSSD = $SSDselectId.closest('.SearchSD');\r\n\t\t\t$PopupID = $ComponentSSD.siblings('.SSDPopupWrapper');\r\n\r\n\t\t\t$PopupID.fadeIn('fast', function() {\r\n\t\t\t\t$ComponentSSD.addClass('Dont_Close');\r\n\t\t\t\t$PopupID\r\n\t\t\t\t\t.find('.SSDpopupOk')\r\n\t\t\t\t\t.off('click')\r\n\t\t\t\t\t.on('click', function() {\r\n\t\t\t\t\t\t$PopupID.fadeOut('fast', function() {\r\n\t\t\t\t\t\t\t$SSDselectId.find('.SelectSD__starTrigger > a').click();\r\n\t\t\t\t\t\t\tsetTimeout(function() {\r\n\t\t\t\t\t\t\t\t$ComponentSSD.removeClass('Dont_Close')\r\n\t\t\t\t\t\t\t}, 500);\r\n\t\t\t\t\t\t});\r\n\t\t\t\t\t});\r\n\r\n\t\t\t\t$PopupID\r\n\t\t\t\t\t.find('.SSDpopupCancel')\r\n\t\t\t\t\t.off('click')\r\n\t\t\t\t\t.on('click', function() {\r\n\t\t\t\t\t\t$PopupID.fadeOut('fast', function() {\r\n\t\t\t\t\t\t\tsetTimeout(function() {\r\n\t\t\t\t\t\t\t\t$ComponentSSD.removeClass('Dont_Close')\r\n\t\t\t\t\t\t\t}, 500);\r\n\t\t\t\t\t\t});\r\n\t\t\t\t\t});\r\n\t\t\t});\r\n\t\t};\r\n\r\n\t\tvar SSDCheckBoxSelect = function($widgetId) {\r\n\t\t\tvar checkBoxCount = 0;\r\n\t\t\tif (isMultiple === 'True') {\r\n\t\t\t\tcheckBoxCount = $widgetId\r\n\t\t\t\t\t.closest('.SearchSD.showFavorite')\r\n\t\t\t\t\t.find('.SelectSD__multiple > input[type=\"checkbox\"]:checked').length;\r\n\r\n\t\t\t\t$allListcard = $widgetId.closest('.SearchSD_content');\r\n\r\n\t\t\t\tif (checkBoxCount > 0) {\r\n\t\t\t\t\t$widgetId.closest('.SearchSD.showFavorite').addClass('MultiSelectActive');\r\n\t\t\t\t\t$widgetId.closest('.SearchSD_content .SelectSD').each(function() {\r\n\t\t\t\t\t\t$(this)\r\n\t\t\t\t\t\t\t.find('.SelectSD_contentWrapper')\r\n\t\t\t\t\t\t\t.off('click');\r\n\t\t\t\t\t\t$(this)\r\n\t\t\t\t\t\t\t.find('.SelectSD_actionLink')\r\n\t\t\t\t\t\t\t.off('click');\r\n\t\t\t\t\t});\r\n\t\t\t\t} else {\r\n\t\t\t\t\t$widgetId.closest('.SearchSD.showFavorite').removeClass('MultiSelectActive');\r\n\t\t\t\t\t$widgetId.closest('.SearchSD_content .SelectSD ').each(function() {\r\n\t\t\t\t\t\t$(this)\r\n\t\t\t\t\t\t\t.find('.SelectSD_contentWrapper')\r\n\t\t\t\t\t\t\t.on('click', function(e) {\r\n\t\t\t\t\t\t\t\t$(this)\r\n\t\t\t\t\t\t\t\t\t.find('.LineActionLINK > a')\r\n\t\t\t\t\t\t\t\t\t.click();\r\n\t\t\t\t\t\t\t});\r\n\t\t\t\t\t\t$(this)\r\n\t\t\t\t\t\t\t.find('.SelectSD_actionLink')\r\n\t\t\t\t\t\t\t.on('click', function(e) {\r\n\t\t\t\t\t\t\t\t$(this)\r\n\t\t\t\t\t\t\t\t\t.find('.LineActionLINK > a')\r\n\t\t\t\t\t\t\t\t\t.click();\r\n\t\t\t\t\t\t\t});\r\n\t\t\t\t\t});\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t};\r\n\r\n\t\tif (isMultiple === 'True') {\r\n\t\t\t$SSDselectId.find('.SelectSD__multiple > input').click(function() {\r\n\t\t\t\tSSDCheckBoxSelect($SSDselectId);\r\n\t\t\t});\r\n\t\t}\r\n\r\n\t\t$SSDselectId.find('.SelectSD__starLink').on('click', function(e) {\r\n\t\t\tif (!$SSDselectId.find('.SelectSD .SelectSD__starWrapper').hasClass('starDisabled')) {\r\n\t\t\t\tif ($SSDselectId.find('.SelectSD .SelectSD__starWrapper').hasClass('starSelected')) {\r\n\t\t\t\t\tOpenConfirmPopup($SSDselectId);\r\n\t\t\t\t} else {\r\n\t\t\t\t\t$SSDselectId.find('.SelectSD__starTrigger > a').click();\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t});\r\n\r\n\t\t$SSDselectId.find('.SelectSD_contentWrapper').on('click', function(e) {\r\n\t\t\t$ComponentSSD = $SSDselectId.closest('.SearchSD');\r\n\t\t\t$SSDselectId.find('.LineActionLINK > a').click();\r\n\t\t\tif (!$ComponentSSD.hasClass('MultiSelectActive')) {\r\n\t\t\t\tSearchSelectDefine.SSDSearch.returnToSearch($SSDselectId.closest('.SearchSD'));\r\n\t\t\t\tSearchSelectDefine.SSDSearch.closeSSD($SSDselectId.closest('.SearchSD'));\r\n\t\t\t}\r\n\r\n\t\t\t$ComponentSSDinput.val('');\r\n\t\t});\r\n\r\n\t\t$SSDselectId.find('.SelectSD_actionLink').on('click', function(e) {\r\n\t\t\t$ComponentSSD = $SSDselectId.closest('.SearchSD');\r\n\t\t\t$SSDselectId.find('.LineActionLINK > a').click();\r\n\t\t\tif (!$ComponentSSD.hasClass('MultiSelectActive')) {\r\n\t\t\t\tSearchSelectDefine.SSDSearch.returnToSearch($SSDselectId.closest('.SearchSD'));\r\n\t\t\t\tSearchSelectDefine.SSDSearch.closeSSD($SSDselectId.closest('.SearchSD'));\r\n\t\t\t}\r\n\t\t});\r\n\t});\r\n};\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/search-and-select/select-ssd.js?\n}");
+var SearchSelectDefine = (window.SearchSelectDefine = window.SearchSelectDefine || {});
+
+SapphireWidgets.SelectSSD = function SSDSelectSetup(config) {
+	$(function() {
+		var $SSDselectId = $('#' + config.SSDSelectId);
+		var isMultiple = config.isMultiple;
+
+		var $ComponentSSD = $SSDselectId.closest('.SearchSD');
+		var $ComponentSSDinput = $ComponentSSD.find('.SearchSD___input input');
+		var Componentinputlength = $ComponentSSDinput.val().length;
+
+		if (Componentinputlength > 0) {
+			$SSDselectId.find('.SelectSD__contentTitle').highlight($ComponentSSDinput.val(), {
+				className: 'SelectSD-searched-term',
+				caseSensitive: false,
+				wordsOnly: false,
+			});
+		}
+
+		var $favoritesSearchInput = $ComponentSSD.find('.SearchSD_filterfavorites input');
+
+		if ($favoritesSearchInput.length) {
+			var favoritesSearchLength = $favoritesSearchInput.val().length;
+
+			if (config.HasFavorite === 'True' && favoritesSearchLength > 0) {
+				$SSDselectId.find('.SelectSD__contentTitle').highlight($favoritesSearchInput.val(), {
+					className: 'SelectSD-searched-term',
+					caseSensitive: false,
+					wordsOnly: false,
+				});
+			}
+		}
+
+		var OpenConfirmPopup = function($SSDselectId) {
+			$ComponentSSD = $SSDselectId.closest('.SearchSD');
+			$PopupID = $ComponentSSD.siblings('.SSDPopupWrapper');
+
+			$PopupID.fadeIn('fast', function() {
+				$ComponentSSD.addClass('Dont_Close');
+				$PopupID
+					.find('.SSDpopupOk')
+					.off('click')
+					.on('click', function() {
+						$PopupID.fadeOut('fast', function() {
+							$SSDselectId.find('.SelectSD__starTrigger > a').click();
+							setTimeout(function() {
+								$ComponentSSD.removeClass('Dont_Close')
+							}, 500);
+						});
+					});
+
+				$PopupID
+					.find('.SSDpopupCancel')
+					.off('click')
+					.on('click', function() {
+						$PopupID.fadeOut('fast', function() {
+							setTimeout(function() {
+								$ComponentSSD.removeClass('Dont_Close')
+							}, 500);
+						});
+					});
+			});
+		};
+
+		var SSDCheckBoxSelect = function($widgetId) {
+			var checkBoxCount = 0;
+			if (isMultiple === 'True') {
+				checkBoxCount = $widgetId
+					.closest('.SearchSD.showFavorite')
+					.find('.SelectSD__multiple > input[type="checkbox"]:checked').length;
+
+				$allListcard = $widgetId.closest('.SearchSD_content');
+
+				if (checkBoxCount > 0) {
+					$widgetId.closest('.SearchSD.showFavorite').addClass('MultiSelectActive');
+					$widgetId.closest('.SearchSD_content .SelectSD').each(function() {
+						$(this)
+							.find('.SelectSD_contentWrapper')
+							.off('click');
+						$(this)
+							.find('.SelectSD_actionLink')
+							.off('click');
+					});
+				} else {
+					$widgetId.closest('.SearchSD.showFavorite').removeClass('MultiSelectActive');
+					$widgetId.closest('.SearchSD_content .SelectSD ').each(function() {
+						$(this)
+							.find('.SelectSD_contentWrapper')
+							.on('click', function(e) {
+								$(this)
+									.find('.LineActionLINK > a')
+									.click();
+							});
+						$(this)
+							.find('.SelectSD_actionLink')
+							.on('click', function(e) {
+								$(this)
+									.find('.LineActionLINK > a')
+									.click();
+							});
+					});
+				}
+			}
+		};
+
+		if (isMultiple === 'True') {
+			$SSDselectId.find('.SelectSD__multiple > input').click(function() {
+				SSDCheckBoxSelect($SSDselectId);
+			});
+		}
+
+		$SSDselectId.find('.SelectSD__starLink').on('click', function(e) {
+			if (!$SSDselectId.find('.SelectSD .SelectSD__starWrapper').hasClass('starDisabled')) {
+				if ($SSDselectId.find('.SelectSD .SelectSD__starWrapper').hasClass('starSelected')) {
+					OpenConfirmPopup($SSDselectId);
+				} else {
+					$SSDselectId.find('.SelectSD__starTrigger > a').click();
+				}
+			}
+		});
+
+		$SSDselectId.find('.SelectSD_contentWrapper').on('click', function(e) {
+			$ComponentSSD = $SSDselectId.closest('.SearchSD');
+			$SSDselectId.find('.LineActionLINK > a').click();
+			if (!$ComponentSSD.hasClass('MultiSelectActive')) {
+				SearchSelectDefine.SSDSearch.returnToSearch($SSDselectId.closest('.SearchSD'));
+				SearchSelectDefine.SSDSearch.closeSSD($SSDselectId.closest('.SearchSD'));
+			}
+
+			$ComponentSSDinput.val('');
+		});
+
+		$SSDselectId.find('.SelectSD_actionLink').on('click', function(e) {
+			$ComponentSSD = $SSDselectId.closest('.SearchSD');
+			$SSDselectId.find('.LineActionLINK > a').click();
+			if (!$ComponentSSD.hasClass('MultiSelectActive')) {
+				SearchSelectDefine.SSDSearch.returnToSearch($SSDselectId.closest('.SearchSD'));
+				SearchSelectDefine.SSDSearch.closeSSD($SSDselectId.closest('.SearchSD'));
+			}
+		});
+	});
+};
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/search-and-select/ssd-search.js":
-/*!*****************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/search-and-select/ssd-search.js ***!
-  \*****************************************************************************/
 /***/ (function() {
 
-eval("{var SearchSelectDefine = (window.SearchSelectDefine = window.SearchSelectDefine || {});\r\n\r\nSapphireWidgets.SSDSearch = function SSDsearchSetup(config) {\r\n\t$(function () {\r\n\t\tvar $SSDwidget = $('#' + config.SSDWidgetId); // SSDComponent map not used again\r\n\t\tvar $SSDComponent = $SSDwidget.find('.SearchSD'); // SSDSearch Component id for use in the function and manipulate classes\r\n\t\tvar $SSDComponentContent = $SSDComponent.find('.SearchSD_content'); // SSDcomponent content\r\n\t\tvar hasClone = config.HasClone; // HasClone variable input parameter value\r\n\t\tvar hasFavorite = config.HasFavorite; // HasFavorite variable input parameter value\r\n\t\tvar showClones = config.ShowClones; // ShowClones variable input parameter value\r\n\t\tvar letterLimit = config.LimitLetter; // Number of letter to enter before trigger the search action\r\n\t\tvar hasShield = config.HasShield;\r\n\t\tvar shieldTimeout = config.ShieldTimeout;\r\n\t\tvar inputLength = config.SearchInputLength;\r\n\t\tvar $widgetShield = $SSDComponent.find('.SearchSD--shield');\r\n\t\tvar searchTriggerTimer;\r\n\t\tconst $SSDClearButton = $SSDComponent.find('.SearchSD___remove');\r\n\t\tconst $SSDInputElement = $SSDComponent.find('.SearchSD___input input');\r\n\r\n\t\t$SSDInputElement.attr('maxLength', inputLength);\r\n\r\n\t\tvar executeSearch = function () {\r\n\t\t\tclearTimeout(searchTriggerTimer);\r\n\t\t\tsearchTriggerTimer = setTimeout(function () {\r\n\t\t\t\tTriggerSearch($SSDComponent);\r\n\t\t\t}, 700);\r\n\t\t};\r\n\r\n\t\tif (hasShield) {\r\n\t\t\twindow.setTimeout(function () {\r\n\t\t\t\t$widgetShield.hide();\r\n\t\t\t}, shieldTimeout);\r\n\t\t}\r\n\r\n\t\t/*  Returns a function, that, as long as it continues to be invoked, will not\r\n\t\t *   be triggered. The function will be called after it stops being called for\r\n\t\t *   N milliseconds. If `immediate` is passed, trigger the function on the\r\n\t\t *   leading edge, instead of the trailing.\r\n\t\t */\r\n\t\tvar debounce = function (func, wait, immediate) {\r\n\t\t\tvar timeout;\r\n\t\t\treturn function executedFunction() {\r\n\t\t\t\tvar context = this;\r\n\t\t\t\tvar args = arguments;\r\n\r\n\t\t\t\tvar later = function () {\r\n\t\t\t\t\ttimeout = null;\r\n\t\t\t\t\tif (!immediate) func.apply(context, args);\r\n\t\t\t\t};\r\n\r\n\t\t\t\tvar callNow = immediate && !timeout;\r\n\t\t\t\tclearTimeout(timeout);\r\n\t\t\t\ttimeout = setTimeout(later, wait);\r\n\t\t\t\tif (callNow) func.apply(context, args);\r\n\t\t\t};\r\n\t\t};\r\n\r\n\t\t/****\r\n\t\t *   Reset Search UI to the initial state\r\n\t\t */\r\n\t\tvar resetUI = function ($SSDComponent) {\r\n\t\t\t$SSDComponent.find('.SearchSD__inputWrapper').show();\r\n\t\t\t$SSDComponent.find('.SearchSD_search_favoriteLink').hide();\r\n\t\t\t$SSDComponent.find('.SearchSD___goToFavorite').hide();\r\n\t\t\t$SSDComponent.find('.SearchSD__FavoriteActions').hide();\r\n\t\t\t$SSDComponent.find('.SearchSD__FavoriteRemove').hide();\r\n\t\t\t$SSDComponent.find('.SearchSD__cloneWrapper').hide();\r\n\t\t\t$SSDComponent.find('.SearchSD__inputWrapper .SearchSD__return').hide();\r\n\r\n\t\t\tif ($SSDInputElement.val().trim() === '') {\r\n\t\t\t\t$SSDComponent.find('.SearchSD___remove').hide();\r\n\t\t\t}\r\n\r\n\t\t\t$SSDComponent.removeClass('showFavorite');\r\n\t\t\t$SSDComponent.removeClass('showClone');\r\n\t\t};\r\n\r\n\t\t/*\r\n\t\t *\r\n\t\t *  Go to Favorites UI\r\n\t\t *  --  rest SSDcomponent\r\n\t\t *  --  show Favorite features\r\n\t\t *  --  remove class showClone if component have that class\r\n\t\t *  --  add class showFavorite to have component control\r\n\t\t *  --  addClass Open with slide\r\n\t\t */\r\n\t\tvar goToFavorites = function ($SSDComponent) {\r\n\t\t\tresetUI($SSDComponent);\r\n\r\n\t\t\t$SSDComponent.find('.SearchSD___input input').val('');\r\n\t\t\t$SSDComponent.removeClass('Open');\r\n\t\t\t$SSDComponent.removeClass('MultiSelectActive');\r\n\t\t\t$SSDComponent.find('.SearchSD__return').hide();\r\n\t\t\t$SSDComponent.find('.SearchSD__inputWrapper').hide();\r\n\r\n\t\t\tif ($SSDComponent.hasClass('showClone')) {\r\n\t\t\t\t$SSDComponent.removeClass('showClone');\r\n\t\t\t}\r\n\r\n\t\t\t$SSDComponent.find('.SearchSD_search_favoriteLink ').show();\r\n\t\t\t$SSDComponent.find('.SearchSD__FavoriteRemove ').show();\r\n\t\t\t$SSDComponent.find('.SearchSD__FavoriteActions').show();\r\n\t\t\t$SSDComponent.addClass('showFavorite');\r\n\t\t\t$SSDComponent.find('.SelectSD.hasFavorite > a').focus();\r\n\t\t\t$SSDComponent.addClass('Open');\r\n\r\n\t\t\t// loading show hide list\r\n\t\t\t$SSDComponent.find('.SearchSD_contentList').hide();\r\n\t\t\t$SSDComponent.find('.SearchSD__loading').show();\r\n\t\t\tif ($SSDComponent.find('.SearchSD_showMore a').length > 0) {\r\n\t\t\t\t$SSDComponent.find('.SearchSD_showMore').hide();\r\n\t\t\t}\r\n\t\t};\r\n\r\n\t\t/**************\r\n\t\t *\r\n\t\t *  Go to Clone UI\r\n\t\t *  --  remove class Open\r\n\t\t *  -- Add ShowClone class\r\n\t\t *  -- SlideDown effect and add Open Class\r\n\t\t */\r\n\t\tvar goToClone = function ($SSDComponent) {\r\n\t\t\t// loading show hide list\r\n\t\t\t$SSDComponent.find('.SearchSD_contentList').hide();\r\n\t\t\t$SSDComponent.find('.SearchSD__loading').show();\r\n\t\t\tif ($SSDComponent.find('.SearchSD_showMore a').length > 0) {\r\n\t\t\t\t$SSDComponent.find('.SearchSD_showMore').hide();\r\n\t\t\t}\r\n\r\n\t\t\t$SSDComponent.find('.SearchSD___input input').val('');\r\n\t\t\t$SSDComponent.removeClass('Open');\r\n\r\n\t\t\tif (!$SSDComponent.hasClass('showClone')) {\r\n\t\t\t\t$SSDComponent.addClass('showClone');\r\n\t\t\t}\r\n\t\t\t$SSDComponent.addClass('Open');\r\n\t\t};\r\n\r\n\t\t/*\r\n\t\t * Return to search from favorite or clone\r\n\t\t */\r\n\t\tvar returnToSearch = function ($SSDComponent) {\r\n\t\t\t// loading show hide list\r\n\t\t\t$SSDComponent.find('.SearchSD_contentList').hide();\r\n\t\t\t$SSDComponent.find('.SearchSD__loading').show();\r\n\t\t\tif ($SSDComponent.find('.SearchSD_showMore a').length > 0) {\r\n\t\t\t\t$SSDComponent.find('.SearchSD_showMore').hide();\r\n\t\t\t}\r\n\r\n\t\t\tresetUI($SSDComponent);\r\n\t\t\t$SSDComponent.removeClass('showClone');\r\n\t\t\t$SSDComponent.removeClass('showFavorite');\r\n\t\t\t$SSDComponent.removeClass('Open');\r\n\t\t\t$SSDComponent.removeClass('MultiSelectActive');\r\n\r\n\t\t\t$SSDComponent.find('.SearchSD__inputWrapper .SearchSD__return').hide();\r\n\r\n\t\t\tif ($SSDComponent.hasClass('hasClone')) {\r\n\t\t\t\t$SSDComponent.addClass('hasClone');\r\n\t\t\t\t$SSDComponent.find('.SearchSD__cloneWrapper').css('display', 'flex');\r\n\t\t\t}\r\n\t\t\tif ($SSDComponent.hasClass('hasFavorite')) {\r\n\t\t\t\t$SSDComponent.addClass('hasFavorite');\r\n\t\t\t\t$SSDComponent.find('.SearchSD_search_favoriteLink').show();\r\n\t\t\t}\r\n\t\t};\r\n\r\n\t\t/*\r\n\t\t *   SSDClear closes SSDSearch container\r\n\t\t *   and clear ssd filter input\r\n\t\t */\r\n\t\tvar ssdClear = function ($SSDComponent) {\r\n\t\t\t$SSDComponent.removeClass('Open');\r\n\t\t\t$SSDComponent.find('.SearchSD___input input').val('');\r\n\t\t};\r\n\r\n\t\t/*\r\n\t\t *   CloseSSD closes SSDSearch container\r\n\t\t *   must remove hightlightSelection done by keyboard navigation\r\n\t\t */\r\n\t\tvar closeSSD = function ($SSDComponent) {\r\n\t\t\t$SSDComponent.removeClass('Open');\r\n\t\t\t$SSDComponentContent.slideUp('250');\r\n\t\t\t$SSDComponent.find('.selected').removeClass('.selected');\r\n\t\t};\r\n\r\n\t\t/*\r\n\t\t *   Add Open class to SSDComponent\r\n\t\t *   if SSDComponent has class Open then focus\r\n\t\t *   makes open effect, check the characters inside the input to filter\r\n\t\t */\r\n\t\tvar ssdFocus = function ($SSDComponent) {\r\n\t\t\tif (!$SSDComponent.hasClass('Open')) {\r\n\t\t\t\t// loading show hide list\r\n\t\t\t\t$SSDComponent.find('.SearchSD_contentList').hide();\r\n\t\t\t\t$SSDComponent.find('.SearchSD__loading').show();\r\n\t\t\t\tif ($SSDComponent.find('.SearchSD_showMore a').length > 0) {\r\n\t\t\t\t\t$SSDComponent.find('.SearchSD_showMore').hide();\r\n\t\t\t\t}\r\n\r\n\t\t\t\t$SSDComponent.removeClass('Open');\r\n\t\t\t\t$SSDComponent.removeClass('.showClone');\r\n\t\t\t\t$SSDComponent.removeClass('.showFavorite');\r\n\r\n\t\t\t\tif (!$SSDComponent.hasClass('Open')) {\r\n\t\t\t\t\t$SSDComponent.find('.SearchLinkInput a').click();\r\n\t\t\t\t\t$SSDComponent.addClass('Open');\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t};\r\n\r\n\t\t/*\r\n\t\t *   When clicking clicking outside the component\r\n\t\t *   the SSD must close and return to initial state\r\n\t\t */\r\n\t\tvar ClickOut = function (e, $SSDComponent) {\r\n\t\t\tif (!$SSDComponent.is(e.target) && $SSDComponent.has(e.target).length === 0) {\r\n\t\t\t\treturnToSearch($SSDComponent);\r\n\t\t\t\t$SSDComponent.removeClass('MultiSelectActive');\r\n\t\t\t}\r\n\t\t};\r\n\r\n\t\t/*\r\n\t\t *   Triggers the link to initialize\r\n\t\t *   the database search based on current length of the string inserted on the input\r\n\t\t */\r\n\t\tvar TriggerSearch = function ($SSDComponent) {\r\n\t\t\tvar currentWord = $SSDComponent.find('.SearchSD___input input').val();\r\n\t\t\tvar currentCount = currentWord.length;\r\n\t\t\tif (currentCount >= letterLimit || currentCount === 0) {\r\n\t\t\t\t$SSDComponent.find('.SearchLinkInput > a').click();\r\n\t\t\t}\r\n\t\t};\r\n\r\n\t\t/*\r\n\t\t *   Removes all favorite checked boxes\r\n\t\t *   and ends MultipleSelect\r\n\t\t */\r\n\t\tvar MultiUncheck = function ($SSDComponent) {\r\n\t\t\t$checkBoxes = $SSDComponent.parent().find('.SelectSD__multiple > input[type=\"checkbox\"]');\r\n\t\t\t$SSDComponent.removeClass('MultiSelectActive');\r\n\r\n\t\t\t$SSDComponent\r\n\t\t\t\t.parent()\r\n\t\t\t\t.find('.SelectSD__multiple > input[type=\"checkbox\"]')\r\n\t\t\t\t.each(function () {\r\n\t\t\t\t\t$(this).prop('checked', false);\r\n\t\t\t\t});\r\n\t\t};\r\n\r\n\t\t/*\r\n\t\t *   KeyBoard events up down and enter if not filter\r\n\t\t */\r\n\t\tvar keyboardEvents = function (e, $SSDComponent) {\r\n\t\t\tif ($SSDComponent.hasClass('Open')) {\r\n\t\t\t\tvar currentSelected = $SSDComponentContent.find('.ListRecords > span.selected'); // Current selectable item\r\n\t\t\t\tvar $firstSelect = $SSDComponentContent.find('.ListRecords > span:first-child'); // First selectable item\r\n\t\t\t\tvar $lastSelect = $SSDComponentContent.find('.ListRecords > span:last-child'); // Last selectable item\r\n\t\t\t\tvar countSelected = currentSelected.length; // Number of selected item\r\n\r\n\t\t\t\tif (e.which == 38) {\r\n\t\t\t\t\t// if key pressed is up arrow\r\n\t\t\t\t\tif (countSelected === 0) {\r\n\t\t\t\t\t\tcurrentSelected = $lastSelect;\r\n\t\t\t\t\t\t$lastSelect.addClass('selected');\r\n\t\t\t\t\t} else {\r\n\t\t\t\t\t\tcurrentSelected.removeClass('selected');\r\n\t\t\t\t\t\tnext = currentSelected.prev();\r\n\r\n\t\t\t\t\t\tif (next.length > 0) {\r\n\t\t\t\t\t\t\tcurrentSelected = next.addClass('selected');\r\n\t\t\t\t\t\t} else {\r\n\t\t\t\t\t\t\tcurrentSelected = currentSelected.last().addClass('selected');\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t}\r\n\t\t\t\t} else if (e.which == 40) {\r\n\t\t\t\t\t// if key pressed is down arrow\r\n\t\t\t\t\tif (countSelected === 0) {\r\n\t\t\t\t\t\t$firstSelect.addClass('selected');\r\n\t\t\t\t\t} else {\r\n\t\t\t\t\t\tnext = currentSelected.next();\r\n\t\t\t\t\t\tcurrentSelected.removeClass('selected');\r\n\r\n\t\t\t\t\t\tif (next.length > 0) {\r\n\t\t\t\t\t\t\tcurrentSelected = next.addClass('selected');\r\n\t\t\t\t\t\t} else {\r\n\t\t\t\t\t\t\tcurrentSelected = currentSelected.eq(0).addClass('selected');\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t}\r\n\t\t\t\t} else if (e.which == 13) {\r\n\t\t\t\t\t// if key pressed is enter\r\n\t\t\t\t\tif (countSelected > 0) {\r\n\t\t\t\t\t\te.preventDefault();\r\n\t\t\t\t\t\tcurrentSelected.find('.SelectSD .SelectSD_actionLink').click();\r\n\t\t\t\t\t\tssdClear($SSDComponent);\r\n\r\n\t\t\t\t\t\treturn true;\r\n\t\t\t\t\t} else if ($SSDComponent.find('SearchSD___input input').is(':active') && countSelected === 0) {\r\n\t\t\t\t\t\te.preventDefault();\r\n\t\t\t\t\t\treturn true;\r\n\t\t\t\t\t}\r\n\t\t\t\t} else {\r\n\t\t\t\t\texecuteSearch();\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t};\r\n\r\n\t\t/*\r\n\t\t *   The first step is to reset the seetings to default\r\n\t\t */\r\n\t\tresetUI($SSDComponent);\r\n\r\n\t\t/*\r\n\t\t *  Remove autoComplete from search input\r\n\t\t */\r\n\t\t$SSDComponent.find('.SearchSD___input input').attr('autocomplete', 'off');\r\n\r\n\t\t/*\r\n\t\t *   If SSD has Clone and the clone list is visible\r\n\t\t *   onclick \"Clone previous medication\" then\r\n\t\t *   remove Open and show items to clone list\r\n\t\t */\r\n\t\tif (hasClone === 'True') {\r\n\t\t\t$SSDComponent.addClass('hasClone');\r\n\t\t\t$SSDComponent.find('.SearchSD__cloneWrapper').css('display', 'flex');\r\n\t\t}\r\n\r\n\t\tif (hasFavorite === 'True') {\r\n\t\t\t$SSDComponent.addClass('hasFavorite');\r\n\t\t\t$SSDComponent.find('.SearchSD_search_favoriteLink').show();\r\n\t\t}\r\n\r\n\t\tif ((hasClone === 'True') & (showClones === 'True')) {\r\n\t\t\t$SSDComponent.find('.SearchSD_cloneWrapper').click(function () {\r\n\t\t\t\t$SSDComponent.addClass('Open');\r\n\t\t\t});\r\n\t\t}\r\n\r\n\t\t$SSDComponent.find('.SearchSD__FavoriteRemove').click(function () {\r\n\t\t\tssdClear($SSDComponent);\r\n\t\t\treturnToSearch($SSDComponent);\r\n\t\t\tdebounce(TriggerSearch($SSDComponent), 550);\r\n\t\t\tdebounce($SSDComponent.find('.SearchSD___input input').focus(), 560);\r\n\t\t});\r\n\r\n\t\t$SSDComponent.find('.SearchSD__cloneWrapper').click(function () {\r\n\t\t\tgoToClone($SSDComponent);\r\n\t\t\t$SSDComponent.find('.SearchSD___goToClone > a').click();\r\n\t\t});\r\n\r\n\t\t$SSDComponent.find('.SearchSD__inputWrapper').click(function () {\r\n\t\t\tif ($SSDComponent.hasClass('showClone')) {\r\n\t\t\t\treturnToSearch($SSDComponent);\r\n\t\t\t}\r\n\t\t});\r\n\r\n\t\t$SSDComponent.find('.SearchSD__FavoriteActionsCancel').click(function () {\r\n\t\t\tMultiUncheck($SSDComponent);\r\n\t\t});\r\n\r\n\t\t$SSDComponent.find('.SearchSD___input input').focus(function () {\r\n\t\t\tdebounce(ssdFocus($SSDComponent), 600);\r\n\t\t});\r\n\r\n\t\t$('body').mouseup(function (e) {\r\n\t\t\tClickOut(e, $SSDComponent);\r\n\t\t});\r\n\t\t/*\r\n\t\t *   KeyBoard events on key press\r\n\t\t */\r\n\t\t$SSDComponent\r\n\t\t\t.find('.SearchSD___input input')\r\n\t\t\t.add($SSDComponent.find('.SelectSD_actionLink'))\r\n\t\t\t.on('keyup', function (e) {\r\n\t\t\t\tif (!e.which != 13) {\r\n\t\t\t\t\tkeyboardEvents(e, $SSDComponent);\r\n\t\t\t\t}\r\n\r\n\t\t\t\tif ($SSDInputElement.val().trim() === '') {\r\n\t\t\t\t\t$SSDClearButton.animate({ opacity: 'hide' }, 300);\r\n\t\t\t\t} else {\r\n\t\t\t\t\t$SSDClearButton.animate({ opacity: 'show' }, 300);\r\n\t\t\t\t}\r\n\t\t\t});\r\n\r\n\t\t/*\r\n\t\t *   Prevent form submission on enter,\r\n\t\t *   instead go to keyboard events to trigger\r\n\t\t *   the selection\r\n\t\t */\r\n\t\t$($SSDComponent).on('keydown', function (e) {\r\n\t\t\tif (e.which == 13) {\r\n\t\t\t\tkeyboardEvents(e, $SSDComponent);\r\n\t\t\t}\r\n\t\t});\r\n\r\n\t\t$SSDComponent.find('.SearchSD___remove').click(function () {\r\n\t\t\tssdClear($SSDComponent);\r\n\t\t\tdebounce(returnToSearch($SSDComponent), 600);\r\n\t\t});\r\n\r\n\t\t$SSDComponent.find('.SearchSD_search_favoriteLink').click(function () {\r\n\t\t\tssdClear($SSDComponent);\r\n\t\t\tgoToFavorites($SSDComponent);\r\n\t\t\t$SSDComponent.find('.SearchSD___goToFavorite > a').click();\r\n\t\t});\r\n\r\n\t\t$SSDComponent.find('.SearchSD__FavoriteActionsAdd > a').click(function () {\r\n\t\t\tdebounce(TriggerSearch($SSDComponent), 200);\r\n\t\t\tdebounce(returnToSearch($SSDComponent), 350);\r\n\t\t});\r\n\r\n\t\t/*\r\n\t\t *   On Ajax Request hide loading div if the SSD is open then show the\r\n\t\t *   ListRecords\r\n\t\t */\r\n\t\tosAjaxBackend &&\r\n\t\t\tosAjaxBackend.BindAfterAjaxRequest(function () {\r\n\t\t\t\tif ($SSDComponent.hasClass('Open')) {\r\n\t\t\t\t\t$SSDComponent.find('.SearchSD__loading').hide();\r\n\t\t\t\t\t$SSDComponentContent.slideDown('1000', function () {\r\n\t\t\t\t\t\t$SSDComponent.find('.SearchSD_contentList').show();\r\n\t\t\t\t\t\tif ($SSDComponent.find('.SearchSD_showMore a').length > 0) {\r\n\t\t\t\t\t\t\t$SSDComponent.find('.SearchSD_showMore').show();\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t});\r\n\t\t\t\t}\r\n\t\t\t});\r\n\r\n\t\t$('form').append('<input type=\"submit\" name=\"ssdInput\" onclick=\"return false;\"  style=\"display:none;\" />');\r\n\r\n\t\twindow.SearchSelectDefine.SSDSearch = {\r\n\t\t\treturnToSearch: returnToSearch,\r\n\t\t\tresetUI: resetUI,\r\n\t\t\tcloseSSD: closeSSD,\r\n\t\t\tssdFocus: ssdFocus,\r\n\t\t\tTriggerSearch: TriggerSearch,\r\n\t\t\tssdClear: ssdClear,\r\n\t\t};\r\n\t});\r\n};\r\n// Added to close the select list if we click the prescription Iframe;\r\nwindow.addEventListener('DOMContentLoaded', event => {\r\n\tvar rootElement = document.querySelector('body');\r\n\trootElement.addEventListener(\r\n\t\t'click',\r\n\t\tfunction (event) {\r\n\t\t\tdocument.querySelector(\"iframe[src*='Prescriptions_CW']\") &&\r\n\t\t\t\tdocument\r\n\t\t\t\t\t.querySelector(\"iframe[src*='Prescriptions_CW']\")\r\n\t\t\t\t\t.contentWindow.document.addEventListener('click', e => {\r\n\t\t\t\t\t\te.stopPropagation();\r\n\t\t\t\t\t\tdocument.querySelector('.SearchSD')?.classList.remove('Open');\r\n\t\t\t\t\t\tvar allInput = document.querySelector('.SearchSD___input')?.children;\r\n\t\t\t\t\t\tfor (const element in allInput) {\r\n\t\t\t\t\t\t\treturn allInput[element].value != undefined ? (allInput[element].value = '') : null;\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t});\r\n\t\t},\r\n\t\ttrue\r\n\t);\r\n});\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/search-and-select/ssd-search.js?\n}");
+var SearchSelectDefine = (window.SearchSelectDefine = window.SearchSelectDefine || {});
+
+SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
+	$(function () {
+		var $SSDwidget = $('#' + config.SSDWidgetId); // SSDComponent map not used again
+		var $SSDComponent = $SSDwidget.find('.SearchSD'); // SSDSearch Component id for use in the function and manipulate classes
+		var $SSDComponentContent = $SSDComponent.find('.SearchSD_content'); // SSDcomponent content
+		var hasClone = config.HasClone; // HasClone variable input parameter value
+		var hasFavorite = config.HasFavorite; // HasFavorite variable input parameter value
+		var showClones = config.ShowClones; // ShowClones variable input parameter value
+		var letterLimit = config.LimitLetter; // Number of letter to enter before trigger the search action
+		var hasShield = config.HasShield;
+		var shieldTimeout = config.ShieldTimeout;
+		var inputLength = config.SearchInputLength;
+		var $widgetShield = $SSDComponent.find('.SearchSD--shield');
+		var searchTriggerTimer;
+		const $SSDClearButton = $SSDComponent.find('.SearchSD___remove');
+		const $SSDInputElement = $SSDComponent.find('.SearchSD___input input');
+
+		$SSDInputElement.attr('maxLength', inputLength);
+
+		var executeSearch = function () {
+			clearTimeout(searchTriggerTimer);
+			searchTriggerTimer = setTimeout(function () {
+				TriggerSearch($SSDComponent);
+			}, 700);
+		};
+
+		if (hasShield) {
+			window.setTimeout(function () {
+				$widgetShield.hide();
+			}, shieldTimeout);
+		}
+
+		/*  Returns a function, that, as long as it continues to be invoked, will not
+		 *   be triggered. The function will be called after it stops being called for
+		 *   N milliseconds. If `immediate` is passed, trigger the function on the
+		 *   leading edge, instead of the trailing.
+		 */
+		var debounce = function (func, wait, immediate) {
+			var timeout;
+			return function executedFunction() {
+				var context = this;
+				var args = arguments;
+
+				var later = function () {
+					timeout = null;
+					if (!immediate) func.apply(context, args);
+				};
+
+				var callNow = immediate && !timeout;
+				clearTimeout(timeout);
+				timeout = setTimeout(later, wait);
+				if (callNow) func.apply(context, args);
+			};
+		};
+
+		/****
+		 *   Reset Search UI to the initial state
+		 */
+		var resetUI = function ($SSDComponent) {
+			$SSDComponent.find('.SearchSD__inputWrapper').show();
+			$SSDComponent.find('.SearchSD_search_favoriteLink').hide();
+			$SSDComponent.find('.SearchSD___goToFavorite').hide();
+			$SSDComponent.find('.SearchSD__FavoriteActions').hide();
+			$SSDComponent.find('.SearchSD__FavoriteRemove').hide();
+			$SSDComponent.find('.SearchSD__cloneWrapper').hide();
+			$SSDComponent.find('.SearchSD__inputWrapper .SearchSD__return').hide();
+
+			if ($SSDInputElement.val().trim() === '') {
+				$SSDComponent.find('.SearchSD___remove').hide();
+			}
+
+			$SSDComponent.removeClass('showFavorite');
+			$SSDComponent.removeClass('showClone');
+		};
+
+		/*
+		 *
+		 *  Go to Favorites UI
+		 *  --  rest SSDcomponent
+		 *  --  show Favorite features
+		 *  --  remove class showClone if component have that class
+		 *  --  add class showFavorite to have component control
+		 *  --  addClass Open with slide
+		 */
+		var goToFavorites = function ($SSDComponent) {
+			resetUI($SSDComponent);
+
+			$SSDComponent.find('.SearchSD___input input').val('');
+			$SSDComponent.removeClass('Open');
+			$SSDComponent.removeClass('MultiSelectActive');
+			$SSDComponent.find('.SearchSD__return').hide();
+			$SSDComponent.find('.SearchSD__inputWrapper').hide();
+
+			if ($SSDComponent.hasClass('showClone')) {
+				$SSDComponent.removeClass('showClone');
+			}
+
+			$SSDComponent.find('.SearchSD_search_favoriteLink ').show();
+			$SSDComponent.find('.SearchSD__FavoriteRemove ').show();
+			$SSDComponent.find('.SearchSD__FavoriteActions').show();
+			$SSDComponent.addClass('showFavorite');
+			$SSDComponent.find('.SelectSD.hasFavorite > a').focus();
+			$SSDComponent.addClass('Open');
+
+			// loading show hide list
+			$SSDComponent.find('.SearchSD_contentList').hide();
+			$SSDComponent.find('.SearchSD__loading').show();
+			if ($SSDComponent.find('.SearchSD_showMore a').length > 0) {
+				$SSDComponent.find('.SearchSD_showMore').hide();
+			}
+		};
+
+		/**************
+		 *
+		 *  Go to Clone UI
+		 *  --  remove class Open
+		 *  -- Add ShowClone class
+		 *  -- SlideDown effect and add Open Class
+		 */
+		var goToClone = function ($SSDComponent) {
+			// loading show hide list
+			$SSDComponent.find('.SearchSD_contentList').hide();
+			$SSDComponent.find('.SearchSD__loading').show();
+			if ($SSDComponent.find('.SearchSD_showMore a').length > 0) {
+				$SSDComponent.find('.SearchSD_showMore').hide();
+			}
+
+			$SSDComponent.find('.SearchSD___input input').val('');
+			$SSDComponent.removeClass('Open');
+
+			if (!$SSDComponent.hasClass('showClone')) {
+				$SSDComponent.addClass('showClone');
+			}
+			$SSDComponent.addClass('Open');
+		};
+
+		/*
+		 * Return to search from favorite or clone
+		 */
+		var returnToSearch = function ($SSDComponent) {
+			// loading show hide list
+			$SSDComponent.find('.SearchSD_contentList').hide();
+			$SSDComponent.find('.SearchSD__loading').show();
+			if ($SSDComponent.find('.SearchSD_showMore a').length > 0) {
+				$SSDComponent.find('.SearchSD_showMore').hide();
+			}
+
+			resetUI($SSDComponent);
+			$SSDComponent.removeClass('showClone');
+			$SSDComponent.removeClass('showFavorite');
+			$SSDComponent.removeClass('Open');
+			$SSDComponent.removeClass('MultiSelectActive');
+
+			$SSDComponent.find('.SearchSD__inputWrapper .SearchSD__return').hide();
+
+			if ($SSDComponent.hasClass('hasClone')) {
+				$SSDComponent.addClass('hasClone');
+				$SSDComponent.find('.SearchSD__cloneWrapper').css('display', 'flex');
+			}
+			if ($SSDComponent.hasClass('hasFavorite')) {
+				$SSDComponent.addClass('hasFavorite');
+				$SSDComponent.find('.SearchSD_search_favoriteLink').show();
+			}
+		};
+
+		/*
+		 *   SSDClear closes SSDSearch container
+		 *   and clear ssd filter input
+		 */
+		var ssdClear = function ($SSDComponent) {
+			$SSDComponent.removeClass('Open');
+			$SSDComponent.find('.SearchSD___input input').val('');
+		};
+
+		/*
+		 *   CloseSSD closes SSDSearch container
+		 *   must remove hightlightSelection done by keyboard navigation
+		 */
+		var closeSSD = function ($SSDComponent) {
+			$SSDComponent.removeClass('Open');
+			$SSDComponentContent.slideUp('250');
+			$SSDComponent.find('.selected').removeClass('.selected');
+		};
+
+		/*
+		 *   Add Open class to SSDComponent
+		 *   if SSDComponent has class Open then focus
+		 *   makes open effect, check the characters inside the input to filter
+		 */
+		var ssdFocus = function ($SSDComponent) {
+			if (!$SSDComponent.hasClass('Open')) {
+				// loading show hide list
+				$SSDComponent.find('.SearchSD_contentList').hide();
+				$SSDComponent.find('.SearchSD__loading').show();
+				if ($SSDComponent.find('.SearchSD_showMore a').length > 0) {
+					$SSDComponent.find('.SearchSD_showMore').hide();
+				}
+
+				$SSDComponent.removeClass('Open');
+				$SSDComponent.removeClass('.showClone');
+				$SSDComponent.removeClass('.showFavorite');
+
+				if (!$SSDComponent.hasClass('Open')) {
+					$SSDComponent.find('.SearchLinkInput a').click();
+					$SSDComponent.addClass('Open');
+				}
+			}
+		};
+
+		/*
+		 *   When clicking clicking outside the component
+		 *   the SSD must close and return to initial state
+		 */
+		var ClickOut = function (e, $SSDComponent) {
+			if (!$SSDComponent.is(e.target) && $SSDComponent.has(e.target).length === 0) {
+				returnToSearch($SSDComponent);
+				$SSDComponent.removeClass('MultiSelectActive');
+			}
+		};
+
+		/*
+		 *   Triggers the link to initialize
+		 *   the database search based on current length of the string inserted on the input
+		 */
+		var TriggerSearch = function ($SSDComponent) {
+			var currentWord = $SSDComponent.find('.SearchSD___input input').val();
+			var currentCount = currentWord.length;
+			if (currentCount >= letterLimit || currentCount === 0) {
+				$SSDComponent.find('.SearchLinkInput > a').click();
+			}
+		};
+
+		/*
+		 *   Removes all favorite checked boxes
+		 *   and ends MultipleSelect
+		 */
+		var MultiUncheck = function ($SSDComponent) {
+			$checkBoxes = $SSDComponent.parent().find('.SelectSD__multiple > input[type="checkbox"]');
+			$SSDComponent.removeClass('MultiSelectActive');
+
+			$SSDComponent
+				.parent()
+				.find('.SelectSD__multiple > input[type="checkbox"]')
+				.each(function () {
+					$(this).prop('checked', false);
+				});
+		};
+
+		/*
+		 *   KeyBoard events up down and enter if not filter
+		 */
+		var keyboardEvents = function (e, $SSDComponent) {
+			if ($SSDComponent.hasClass('Open')) {
+				var currentSelected = $SSDComponentContent.find('.ListRecords > span.selected'); // Current selectable item
+				var $firstSelect = $SSDComponentContent.find('.ListRecords > span:first-child'); // First selectable item
+				var $lastSelect = $SSDComponentContent.find('.ListRecords > span:last-child'); // Last selectable item
+				var countSelected = currentSelected.length; // Number of selected item
+
+				if (e.which == 38) {
+					// if key pressed is up arrow
+					if (countSelected === 0) {
+						currentSelected = $lastSelect;
+						$lastSelect.addClass('selected');
+					} else {
+						currentSelected.removeClass('selected');
+						next = currentSelected.prev();
+
+						if (next.length > 0) {
+							currentSelected = next.addClass('selected');
+						} else {
+							currentSelected = currentSelected.last().addClass('selected');
+						}
+					}
+				} else if (e.which == 40) {
+					// if key pressed is down arrow
+					if (countSelected === 0) {
+						$firstSelect.addClass('selected');
+					} else {
+						next = currentSelected.next();
+						currentSelected.removeClass('selected');
+
+						if (next.length > 0) {
+							currentSelected = next.addClass('selected');
+						} else {
+							currentSelected = currentSelected.eq(0).addClass('selected');
+						}
+					}
+				} else if (e.which == 13) {
+					// if key pressed is enter
+					if (countSelected > 0) {
+						e.preventDefault();
+						currentSelected.find('.SelectSD .SelectSD_actionLink').click();
+						ssdClear($SSDComponent);
+
+						return true;
+					} else if ($SSDComponent.find('SearchSD___input input').is(':active') && countSelected === 0) {
+						e.preventDefault();
+						return true;
+					}
+				} else {
+					executeSearch();
+				}
+			}
+		};
+
+		/*
+		 *   The first step is to reset the seetings to default
+		 */
+		resetUI($SSDComponent);
+
+		/*
+		 *  Remove autoComplete from search input
+		 */
+		$SSDComponent.find('.SearchSD___input input').attr('autocomplete', 'off');
+
+		/*
+		 *   If SSD has Clone and the clone list is visible
+		 *   onclick "Clone previous medication" then
+		 *   remove Open and show items to clone list
+		 */
+		if (hasClone === 'True') {
+			$SSDComponent.addClass('hasClone');
+			$SSDComponent.find('.SearchSD__cloneWrapper').css('display', 'flex');
+		}
+
+		if (hasFavorite === 'True') {
+			$SSDComponent.addClass('hasFavorite');
+			$SSDComponent.find('.SearchSD_search_favoriteLink').show();
+		}
+
+		if ((hasClone === 'True') & (showClones === 'True')) {
+			$SSDComponent.find('.SearchSD_cloneWrapper').click(function () {
+				$SSDComponent.addClass('Open');
+			});
+		}
+
+		$SSDComponent.find('.SearchSD__FavoriteRemove').click(function () {
+			ssdClear($SSDComponent);
+			returnToSearch($SSDComponent);
+			debounce(TriggerSearch($SSDComponent), 550);
+			debounce($SSDComponent.find('.SearchSD___input input').focus(), 560);
+		});
+
+		$SSDComponent.find('.SearchSD__cloneWrapper').click(function () {
+			goToClone($SSDComponent);
+			$SSDComponent.find('.SearchSD___goToClone > a').click();
+		});
+
+		$SSDComponent.find('.SearchSD__inputWrapper').click(function () {
+			if ($SSDComponent.hasClass('showClone')) {
+				returnToSearch($SSDComponent);
+			}
+		});
+
+		$SSDComponent.find('.SearchSD__FavoriteActionsCancel').click(function () {
+			MultiUncheck($SSDComponent);
+		});
+
+		$SSDComponent.find('.SearchSD___input input').focus(function () {
+			debounce(ssdFocus($SSDComponent), 600);
+		});
+
+		$('body').mouseup(function (e) {
+			ClickOut(e, $SSDComponent);
+		});
+		/*
+		 *   KeyBoard events on key press
+		 */
+		$SSDComponent
+			.find('.SearchSD___input input')
+			.add($SSDComponent.find('.SelectSD_actionLink'))
+			.on('keyup', function (e) {
+				if (!e.which != 13) {
+					keyboardEvents(e, $SSDComponent);
+				}
+
+				if ($SSDInputElement.val().trim() === '') {
+					$SSDClearButton.animate({ opacity: 'hide' }, 300);
+				} else {
+					$SSDClearButton.animate({ opacity: 'show' }, 300);
+				}
+			});
+
+		/*
+		 *   Prevent form submission on enter,
+		 *   instead go to keyboard events to trigger
+		 *   the selection
+		 */
+		$($SSDComponent).on('keydown', function (e) {
+			if (e.which == 13) {
+				keyboardEvents(e, $SSDComponent);
+			}
+		});
+
+		$SSDComponent.find('.SearchSD___remove').click(function () {
+			ssdClear($SSDComponent);
+			debounce(returnToSearch($SSDComponent), 600);
+		});
+
+		$SSDComponent.find('.SearchSD_search_favoriteLink').click(function () {
+			ssdClear($SSDComponent);
+			goToFavorites($SSDComponent);
+			$SSDComponent.find('.SearchSD___goToFavorite > a').click();
+		});
+
+		$SSDComponent.find('.SearchSD__FavoriteActionsAdd > a').click(function () {
+			debounce(TriggerSearch($SSDComponent), 200);
+			debounce(returnToSearch($SSDComponent), 350);
+		});
+
+		/*
+		 *   On Ajax Request hide loading div if the SSD is open then show the
+		 *   ListRecords
+		 */
+		osAjaxBackend &&
+			osAjaxBackend.BindAfterAjaxRequest(function () {
+				if ($SSDComponent.hasClass('Open')) {
+					$SSDComponent.find('.SearchSD__loading').hide();
+					$SSDComponentContent.slideDown('1000', function () {
+						$SSDComponent.find('.SearchSD_contentList').show();
+						if ($SSDComponent.find('.SearchSD_showMore a').length > 0) {
+							$SSDComponent.find('.SearchSD_showMore').show();
+						}
+					});
+				}
+			});
+
+		$('form').append('<input type="submit" name="ssdInput" onclick="return false;"  style="display:none;" />');
+
+		window.SearchSelectDefine.SSDSearch = {
+			returnToSearch: returnToSearch,
+			resetUI: resetUI,
+			closeSSD: closeSSD,
+			ssdFocus: ssdFocus,
+			TriggerSearch: TriggerSearch,
+			ssdClear: ssdClear,
+		};
+	});
+};
+// Added to close the select list if we click the prescription Iframe;
+window.addEventListener('DOMContentLoaded', event => {
+	var rootElement = document.querySelector('body');
+	rootElement.addEventListener(
+		'click',
+		function (event) {
+			document.querySelector("iframe[src*='Prescriptions_CW']") &&
+				document
+					.querySelector("iframe[src*='Prescriptions_CW']")
+					.contentWindow.document.addEventListener('click', e => {
+						e.stopPropagation();
+						document.querySelector('.SearchSD')?.classList.remove('Open');
+						var allInput = document.querySelector('.SearchSD___input')?.children;
+						for (const element in allInput) {
+							return allInput[element].value != undefined ? (allInput[element].value = '') : null;
+						}
+					});
+		},
+		true
+	);
+});
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/searchable-client-side/scripts.js":
-/*!*******************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/searchable-client-side/scripts.js ***!
-  \*******************************************************************************/
 /***/ (function() {
 
-eval("{/* Component SearchClientSide */\r\n(function($, window, SapphireWidgets) {\r\n\tclass SearchClientSide {\r\n\t\tconstructor(config) {\r\n\t\t\tthis.options = {\r\n\t\t\t\t...config,\r\n\t\t\t};\r\n\r\n\t\t\tthis.onComponentInit();\r\n\r\n\t\t\t$(window).load(() => {\r\n\t\t\t\tosAjaxBackend &&\r\n\t\t\t\t\tosAjaxBackend.BindAfterAjaxRequest(() => {\r\n\t\t\t\t\t\tsetTimeout(() => {\r\n\t\t\t\t\t\t\t$('#' + this.options.inputId).trigger('change');\r\n\t\t\t\t\t\t}, 200);\r\n\t\t\t\t\t});\r\n\t\t\t});\r\n\t\t}\r\n\r\n\t\tonComponentInit() {\r\n\t\t\t$('#' + this.options.inputId).on('change keydown paste input', e => {\r\n\t\t\t\tif (e.keyCode === 13) {\r\n\t\t\t\t\te.preventDefault();\r\n\t\t\t\t} else {\r\n\t\t\t\t\tthis.searchClientSide(\r\n\t\t\t\t\t\tthis.options.inputId,\r\n\t\t\t\t\t\tthis.options.searchableElementSelector,\r\n\t\t\t\t\t\tthis.options.searchableChildSelector\r\n\t\t\t\t\t);\r\n\t\t\t\t}\r\n\t\t\t});\r\n\t\t}\r\n\r\n\t\tsearchClientSide(inputId, selector, childSelector) {\r\n\t\t\tif ($('#' + inputId).is(':visible')) {\r\n\t\t\t\tvar searchText = osjs('#' + inputId)\r\n\t\t\t\t\t.val()\r\n\t\t\t\t\t.toLowerCase();\r\n\t\t\t\tvar searchCounter = 0;\r\n\t\t\t\tvar selecion = osjs(selector);\r\n\r\n\t\t\t\tselecion.removeClass('searchNotFound');\r\n\t\t\t\tselecion.removeClass('searchFound');\r\n\t\t\t\tselecion.unhighlight();\r\n\r\n\t\t\t\tif (childSelector) {\r\n\t\t\t\t\tconst elementToSearch = osjs(childSelector);\r\n\t\t\t\t\telementToSearch.unhighlight();\r\n\t\t\t\t}\r\n\r\n\t\t\t\tif (searchText.length > 1) {\r\n\t\t\t\t\tselecion.each(function() {\r\n\t\t\t\t\t\tconst textToCompare = childSelector\r\n\t\t\t\t\t\t\t? $(this)\r\n\t\t\t\t\t\t\t\t\t.find(childSelector)\r\n\t\t\t\t\t\t\t\t\t.text()\r\n\t\t\t\t\t\t\t: this.innerText;\r\n\r\n\t\t\t\t\t\tif (\r\n\t\t\t\t\t\t\ttextToCompare\r\n\t\t\t\t\t\t\t\t.trim()\r\n\t\t\t\t\t\t\t\t.toLowerCase()\r\n\t\t\t\t\t\t\t\t.indexOf(searchText) > -1\r\n\t\t\t\t\t\t) {\r\n\t\t\t\t\t\t\tosjs(this).addClass('searchFound');\r\n\t\t\t\t\t\t\tsearchCounter++;\r\n\t\t\t\t\t\t\tosjs(this).highlight(searchText);\r\n\t\t\t\t\t\t} else {\r\n\t\t\t\t\t\t\tosjs(this).addClass('searchNotFound');\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t});\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n\r\n\tconst create = config => (window[config.widgetId] = new SearchClientSide(config));\r\n\r\n\tSapphireWidgets.SearchClientSide = {\r\n\t\tcreate,\r\n\t};\r\n})(jQuery, window, SapphireWidgets);\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/searchable-client-side/scripts.js?\n}");
+/* Component SearchClientSide */
+(function($, window, SapphireWidgets) {
+	class SearchClientSide {
+		constructor(config) {
+			this.options = {
+				...config,
+			};
+
+			this.onComponentInit();
+
+			$(window).load(() => {
+				osAjaxBackend &&
+					osAjaxBackend.BindAfterAjaxRequest(() => {
+						setTimeout(() => {
+							$('#' + this.options.inputId).trigger('change');
+						}, 200);
+					});
+			});
+		}
+
+		onComponentInit() {
+			$('#' + this.options.inputId).on('change keydown paste input', e => {
+				if (e.keyCode === 13) {
+					e.preventDefault();
+				} else {
+					this.searchClientSide(
+						this.options.inputId,
+						this.options.searchableElementSelector,
+						this.options.searchableChildSelector
+					);
+				}
+			});
+		}
+
+		searchClientSide(inputId, selector, childSelector) {
+			if ($('#' + inputId).is(':visible')) {
+				var searchText = osjs('#' + inputId)
+					.val()
+					.toLowerCase();
+				var searchCounter = 0;
+				var selecion = osjs(selector);
+
+				selecion.removeClass('searchNotFound');
+				selecion.removeClass('searchFound');
+				selecion.unhighlight();
+
+				if (childSelector) {
+					const elementToSearch = osjs(childSelector);
+					elementToSearch.unhighlight();
+				}
+
+				if (searchText.length > 1) {
+					selecion.each(function() {
+						const textToCompare = childSelector
+							? $(this)
+									.find(childSelector)
+									.text()
+							: this.innerText;
+
+						if (
+							textToCompare
+								.trim()
+								.toLowerCase()
+								.indexOf(searchText) > -1
+						) {
+							osjs(this).addClass('searchFound');
+							searchCounter++;
+							osjs(this).highlight(searchText);
+						} else {
+							osjs(this).addClass('searchNotFound');
+						}
+					});
+				}
+			}
+		}
+	}
+
+	const create = config => (window[config.widgetId] = new SearchClientSide(config));
+
+	SapphireWidgets.SearchClientSide = {
+		create,
+	};
+})(jQuery, window, SapphireWidgets);
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/section-expandable-custom/scripts.js":
-/*!**********************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/section-expandable-custom/scripts.js ***!
-  \**********************************************************************************/
 /***/ (function() {
 
-eval("{/* Component SectionExpandable */\r\n(function($, window, SapphireWidgets) {\r\n\tfunction SectionExpandableCustom() {\r\n\t\tvar that = this;\r\n\r\n\t\t// Object to save stats\r\n\t\tvar previewstat = [];\r\n\r\n\t\t// set click events\r\n\t\tfunction clickEvents(ob) {\r\n\t\t\t// store querys in a single var\r\n\t\t\tvar Section = $(ob).parent();\r\n\t\t\tvar SectionContent = Section.children('.SectionExpandableCustom_content');\r\n\r\n\t\t\t// get id\r\n\t\t\tvar id = Section.attr('id');\r\n\r\n\t\t\tvar tempHeight = 0;\r\n\r\n\t\t\t// has class expanded\r\n\t\t\tif (Section.hasClass('expanded')) {\r\n\t\t\t\t// Calc and set a fixed height, during this process, transitions are disabled\r\n\t\t\t\tSectionContent.addClass('noTransition');\r\n\t\t\t\tSectionContent.height(SectionContent.height());\r\n\t\t\t\tSectionContent[0].offsetHeight; // hack to force a repaint\r\n\t\t\t\tSectionContent.removeClass('noTransition');\r\n\r\n\t\t\t\t// Collapse content\r\n\t\t\t\tSectionContent.height(0);\r\n\t\t\t\tSection.removeClass('expanded');\r\n\t\t\t\tSectionContent.css('overflow', 'hidden');\r\n\r\n\t\t\t\t// Remove class, set height and save state\r\n\t\t\t\tpreviewstat[id]['client'] = false;\r\n\t\t\t} else {\r\n\t\t\t\t// Calc and set a fixed height\r\n\t\t\t\tSectionContent.height('auto');\r\n\t\t\t\ttempHeight = SectionContent.height();\r\n\t\t\t\tSectionContent.height(0);\r\n\t\t\t\tSectionContent.height(tempHeight);\r\n\t\t\t\tSectionContent.css('overflow', 'hidden');\r\n\r\n\t\t\t\t// remove class, set height and save state\r\n\t\t\t\tSection.addClass('expanded');\r\n\t\t\t\tpreviewstat[id]['client'] = true;\r\n\r\n\t\t\t\tif ($('.Page').hasClass('ie8') || $('.Page').hasClass('ie9')) {\r\n\t\t\t\t\tSectionContent.height('auto');\r\n\t\t\t\t\tSectionContent.css('overflow', 'visible');\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}\r\n\r\n\t\t// ajax refres function\r\n\t\tthat.ajaxRefresh = function() {\r\n\t\t\t// remove click events\r\n\t\t\t$('.SectionExpandable_headerCustom').off();\r\n\r\n\t\t\t// add stop prepagation\r\n\t\t\t$(\r\n\t\t\t\t'.SectionExpandable_headerCustom input, .SectionExpandable_headerCustom select, .SectionExpandable_headerCustom a'\r\n\t\t\t).click(function(event) {\r\n\t\t\t\tevent.stopPropagation();\r\n\t\t\t});\r\n\r\n\t\t\t// add new click events\r\n\t\t\t$('.SectionExpandable_headerCustom').on('click', function() {\r\n\t\t\t\tclickEvents(this);\r\n\t\t\t});\r\n\r\n\t\t\t// each all sections\r\n\t\t\t$('.SectionExpandableCustom').each(function() {\r\n\t\t\t\t// if new SectionExpandable then add to previewstat array\r\n\t\t\t\tif (previewstat[$(this).attr('id')] == null) {\r\n\t\t\t\t\t// add stat on array\r\n\t\t\t\t\tvar stat = false;\r\n\t\t\t\t\t// if open\r\n\t\t\t\t\tif ($(this).hasClass('expanded')) {\r\n\t\t\t\t\t\tstat = true;\r\n\t\t\t\t\t}\r\n\t\t\t\t\t// add row\r\n\t\t\t\t\tpreviewstat[$(this).attr('id')] = {\r\n\t\t\t\t\t\tclient: stat,\r\n\t\t\t\t\t\tserver: stat,\r\n\t\t\t\t\t};\r\n\t\t\t\t}\r\n\r\n\t\t\t\t// curent state (ajax state x initial state)\r\n\t\t\t\tvar curState = false;\r\n\r\n\t\t\t\t// check if start expandable\r\n\t\t\t\tif ($(this).hasClass('expanded')) {\r\n\t\t\t\t\tcurState = true;\r\n\t\t\t\t}\r\n\r\n\t\t\t\t// check if ajax != initial server\r\n\t\t\t\tif (curState != previewstat[$(this).attr('id')]['server']) {\r\n\t\t\t\t\t// curstate\r\n\t\t\t\t\tpreviewstat[$(this).attr('id')]['client'] = curState;\r\n\t\t\t\t\tpreviewstat[$(this).attr('id')]['server'] = curState;\r\n\t\t\t\t} else {\r\n\t\t\t\t\t// has class expanded\r\n\t\t\t\t\tif (previewstat[$(this).attr('id')]['client'] == false && $(this).hasClass('expanded')) {\r\n\t\t\t\t\t\t$(this).removeClass('expanded');\r\n\t\t\t\t\t\t$(this)\r\n\t\t\t\t\t\t\t.children('.SectionExpandableCustom_content')\r\n\t\t\t\t\t\t\t.height(0);\r\n\t\t\t\t\t} else if (previewstat[$(this).attr('id')]['client'] == true && !$(this).hasClass('expanded')) {\r\n\t\t\t\t\t\t$(this).addClass('expanded');\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\t\t\t});\r\n\t\t};\r\n\r\n\t\t// set events\r\n\t\tthat.init = function() {\r\n\t\t\t// each all sections to create array stat\r\n\t\t\t$('.SectionExpandableCustom').each(function() {\r\n\t\t\t\t// add stat on array\r\n\t\t\t\tvar stat = false;\r\n\r\n\t\t\t\t// if open\r\n\t\t\t\tif ($(this).hasClass('expanded')) {\r\n\t\t\t\t\tstat = true;\r\n\t\t\t\t}\r\n\r\n\t\t\t\t// add row\r\n\t\t\t\tpreviewstat[$(this).attr('id')] = {\r\n\t\t\t\t\tclient: stat,\r\n\t\t\t\t\tserver: stat,\r\n\t\t\t\t};\r\n\r\n\t\t\t\tif (\r\n\t\t\t\t\t$(this).hasClass('HideWhenEmpty') &&\r\n\t\t\t\t\t$(this)\r\n\t\t\t\t\t\t.find('.SectionExpandableCustom_content')\r\n\t\t\t\t\t\t.text().length === 0\r\n\t\t\t\t) {\r\n\t\t\t\t\t$(this).hide();\r\n\t\t\t\t}\r\n\r\n\t\t\t\t// hack to display a message when SectionExpandableCustom has no child items\r\n\t\t\t\tvar isEmpty = true;\r\n\t\t\t\t$(this)\r\n\t\t\t\t\t.find('.SectionExpandableCustom_content div, .SectionExpandableCustom_content span')\r\n\t\t\t\t\t.not('.SectionExpandableCustom_content--empty')\r\n\t\t\t\t\t.each(function() {\r\n\t\t\t\t\t\tif ($(this).text().length > 0) {\r\n\t\t\t\t\t\t\tisEmpty = false;\r\n\t\t\t\t\t\t\treturn false;\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t});\r\n\t\t\t\tif (!isEmpty) {\r\n\t\t\t\t\t$(this)\r\n\t\t\t\t\t\t.find('.SectionExpandableCustom_content--empty')\r\n\t\t\t\t\t\t.css({\r\n\t\t\t\t\t\t\tdisplay: 'none',\r\n\t\t\t\t\t\t});\r\n\t\t\t\t}\r\n\r\n\t\t\t\tvar $expandableInstance = $(this);\r\n\t\t\t\tvar $toggler = $(this).find('> .SectionExpandable-toggler');\r\n\t\t\t\tif ($toggler.length === 1) {\r\n\t\t\t\t\tvar $togglerState = false;\r\n\t\t\t\t\t$toggler.find('[data-labelvalue]').text($toggler.find('[data-labelshow]').data('labelshow'));\r\n\t\t\t\t\t$toggler.off('click').on('click', function(evt) {\r\n\t\t\t\t\t\tevt.stopPropagation();\r\n\t\t\t\t\t\t$togglerState = !$togglerState;\r\n\t\t\t\t\t\tif ($togglerState) {\r\n\t\t\t\t\t\t\t$expandableInstance.find('.SectionExpandable-toggled').show();\r\n\t\t\t\t\t\t\t$toggler.find('[data-labelvalue]').text($toggler.find('[data-labelhide]').data('labelhide'));\r\n\t\t\t\t\t\t} else {\r\n\t\t\t\t\t\t\t$expandableInstance.find('.SectionExpandable-toggled').hide();\r\n\t\t\t\t\t\t\t$toggler.find('[data-labelvalue]').text($toggler.find('[data-labelshow]').data('labelshow'));\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t});\r\n\t\t\t\t}\r\n\t\t\t});\r\n\r\n\t\t\t// add click events\r\n\t\t\t$('.SectionExpandable_headerCustom')\r\n\t\t\t\t.off('click')\r\n\t\t\t\t.on('click', function() {\r\n\t\t\t\t\tclickEvents(this);\r\n\t\t\t\t});\r\n\r\n\t\t\t// add stop prepagation\r\n\t\t\t$(\r\n\t\t\t\t'.SectionExpandable_headerCustom input, .SectionExpandable_headerCustom select, .SectionExpandable_headerCustom a'\r\n\t\t\t).click(function(event) {\r\n\t\t\t\tevent.stopPropagation();\r\n\t\t\t});\r\n\r\n\t\t\t// event ajax\r\n\t\t\tosAjaxBackend && osAjaxBackend.BindAfterAjaxRequest(that.ajaxRefresh);\r\n\t\t};\r\n\t}\r\n\r\n\tconst create = () => {\r\n\t\tconst expandable = new SectionExpandableCustom();\r\n\r\n\t\texpandable.init();\r\n\t};\r\n\r\n\tSapphireWidgets.SectionExpandable = {\r\n\t\tcreate,\r\n\t};\r\n})(jQuery, window, SapphireWidgets);\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/section-expandable-custom/scripts.js?\n}");
+/* Component SectionExpandable */
+(function($, window, SapphireWidgets) {
+	function SectionExpandableCustom() {
+		var that = this;
+
+		// Object to save stats
+		var previewstat = [];
+
+		// set click events
+		function clickEvents(ob) {
+			// store querys in a single var
+			var Section = $(ob).parent();
+			var SectionContent = Section.children('.SectionExpandableCustom_content');
+
+			// get id
+			var id = Section.attr('id');
+
+			var tempHeight = 0;
+
+			// has class expanded
+			if (Section.hasClass('expanded')) {
+				// Calc and set a fixed height, during this process, transitions are disabled
+				SectionContent.addClass('noTransition');
+				SectionContent.height(SectionContent.height());
+				SectionContent[0].offsetHeight; // hack to force a repaint
+				SectionContent.removeClass('noTransition');
+
+				// Collapse content
+				SectionContent.height(0);
+				Section.removeClass('expanded');
+				SectionContent.css('overflow', 'hidden');
+
+				// Remove class, set height and save state
+				previewstat[id]['client'] = false;
+			} else {
+				// Calc and set a fixed height
+				SectionContent.height('auto');
+				tempHeight = SectionContent.height();
+				SectionContent.height(0);
+				SectionContent.height(tempHeight);
+				SectionContent.css('overflow', 'hidden');
+
+				// remove class, set height and save state
+				Section.addClass('expanded');
+				previewstat[id]['client'] = true;
+
+				if ($('.Page').hasClass('ie8') || $('.Page').hasClass('ie9')) {
+					SectionContent.height('auto');
+					SectionContent.css('overflow', 'visible');
+				}
+			}
+		}
+
+		// ajax refres function
+		that.ajaxRefresh = function() {
+			// remove click events
+			$('.SectionExpandable_headerCustom').off();
+
+			// add stop prepagation
+			$(
+				'.SectionExpandable_headerCustom input, .SectionExpandable_headerCustom select, .SectionExpandable_headerCustom a'
+			).click(function(event) {
+				event.stopPropagation();
+			});
+
+			// add new click events
+			$('.SectionExpandable_headerCustom').on('click', function() {
+				clickEvents(this);
+			});
+
+			// each all sections
+			$('.SectionExpandableCustom').each(function() {
+				// if new SectionExpandable then add to previewstat array
+				if (previewstat[$(this).attr('id')] == null) {
+					// add stat on array
+					var stat = false;
+					// if open
+					if ($(this).hasClass('expanded')) {
+						stat = true;
+					}
+					// add row
+					previewstat[$(this).attr('id')] = {
+						client: stat,
+						server: stat,
+					};
+				}
+
+				// curent state (ajax state x initial state)
+				var curState = false;
+
+				// check if start expandable
+				if ($(this).hasClass('expanded')) {
+					curState = true;
+				}
+
+				// check if ajax != initial server
+				if (curState != previewstat[$(this).attr('id')]['server']) {
+					// curstate
+					previewstat[$(this).attr('id')]['client'] = curState;
+					previewstat[$(this).attr('id')]['server'] = curState;
+				} else {
+					// has class expanded
+					if (previewstat[$(this).attr('id')]['client'] == false && $(this).hasClass('expanded')) {
+						$(this).removeClass('expanded');
+						$(this)
+							.children('.SectionExpandableCustom_content')
+							.height(0);
+					} else if (previewstat[$(this).attr('id')]['client'] == true && !$(this).hasClass('expanded')) {
+						$(this).addClass('expanded');
+					}
+				}
+			});
+		};
+
+		// set events
+		that.init = function() {
+			// each all sections to create array stat
+			$('.SectionExpandableCustom').each(function() {
+				// add stat on array
+				var stat = false;
+
+				// if open
+				if ($(this).hasClass('expanded')) {
+					stat = true;
+				}
+
+				// add row
+				previewstat[$(this).attr('id')] = {
+					client: stat,
+					server: stat,
+				};
+
+				if (
+					$(this).hasClass('HideWhenEmpty') &&
+					$(this)
+						.find('.SectionExpandableCustom_content')
+						.text().length === 0
+				) {
+					$(this).hide();
+				}
+
+				// hack to display a message when SectionExpandableCustom has no child items
+				var isEmpty = true;
+				$(this)
+					.find('.SectionExpandableCustom_content div, .SectionExpandableCustom_content span')
+					.not('.SectionExpandableCustom_content--empty')
+					.each(function() {
+						if ($(this).text().length > 0) {
+							isEmpty = false;
+							return false;
+						}
+					});
+				if (!isEmpty) {
+					$(this)
+						.find('.SectionExpandableCustom_content--empty')
+						.css({
+							display: 'none',
+						});
+				}
+
+				var $expandableInstance = $(this);
+				var $toggler = $(this).find('> .SectionExpandable-toggler');
+				if ($toggler.length === 1) {
+					var $togglerState = false;
+					$toggler.find('[data-labelvalue]').text($toggler.find('[data-labelshow]').data('labelshow'));
+					$toggler.off('click').on('click', function(evt) {
+						evt.stopPropagation();
+						$togglerState = !$togglerState;
+						if ($togglerState) {
+							$expandableInstance.find('.SectionExpandable-toggled').show();
+							$toggler.find('[data-labelvalue]').text($toggler.find('[data-labelhide]').data('labelhide'));
+						} else {
+							$expandableInstance.find('.SectionExpandable-toggled').hide();
+							$toggler.find('[data-labelvalue]').text($toggler.find('[data-labelshow]').data('labelshow'));
+						}
+					});
+				}
+			});
+
+			// add click events
+			$('.SectionExpandable_headerCustom')
+				.off('click')
+				.on('click', function() {
+					clickEvents(this);
+				});
+
+			// add stop prepagation
+			$(
+				'.SectionExpandable_headerCustom input, .SectionExpandable_headerCustom select, .SectionExpandable_headerCustom a'
+			).click(function(event) {
+				event.stopPropagation();
+			});
+
+			// event ajax
+			osAjaxBackend && osAjaxBackend.BindAfterAjaxRequest(that.ajaxRefresh);
+		};
+	}
+
+	const create = () => {
+		const expandable = new SectionExpandableCustom();
+
+		expandable.init();
+	};
+
+	SapphireWidgets.SectionExpandable = {
+		create,
+	};
+})(jQuery, window, SapphireWidgets);
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/section-expandable-inside/scripts.js":
-/*!**********************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/section-expandable-inside/scripts.js ***!
-  \**********************************************************************************/
 /***/ (function() {
 
-eval("{/* Component SectionExpandableInside */\r\n(function($, window, SapphireWidgets) {\r\n\tfunction SectionExpandableInside() {\r\n\t\tvar that = this;\r\n\r\n\t\t// Object to save stats\r\n\t\tvar previewstat = [];\r\n\r\n\t\t// set click events\r\n\t\tfunction clickEvents(ob) {\r\n\t\t\t// store querys in a single var\r\n\t\t\tvar Section = $(ob).parent();\r\n\t\t\tvar SectionContent = Section.children('.SectionExpandableInside_content');\r\n\r\n\t\t\t// get id\r\n\t\t\tvar id = Section.attr('id');\r\n\r\n\t\t\tvar tempHeight = 0;\r\n\r\n\t\t\t// has class expanded\r\n\t\t\tif (Section.hasClass('expanded')) {\r\n\t\t\t\t// Calc and set a fixed height, during this process, transitions are disabled\r\n\t\t\t\tSectionContent.addClass('noTransition');\r\n\t\t\t\tSectionContent.height(SectionContent.height());\r\n\t\t\t\tSectionContent[0].offsetHeight; // hack to force a repaint\r\n\t\t\t\tSectionContent.removeClass('noTransition');\r\n\r\n\t\t\t\t// Collapse content\r\n\t\t\t\tSectionContent.height(0);\r\n\t\t\t\tSection.removeClass('expanded');\r\n\t\t\t\tSectionContent.css('overflow', 'hidden');\r\n\r\n\t\t\t\t// Remove class, set height and save state\r\n\t\t\t\tpreviewstat[id]['client'] = false;\r\n\t\t\t} else {\r\n\t\t\t\t// Calc and set a fixed height\r\n\t\t\t\tSectionContent.height('auto');\r\n\t\t\t\t// tempHeight = SectionContent.height();\r\n\t\t\t\t// SectionContent.height(0);\r\n\t\t\t\t// SectionContent.height(tempHeight);\r\n\t\t\t\tSectionContent.css('overflow', 'hidden');\r\n\r\n\t\t\t\t// remove class, set height and save state\r\n\t\t\t\tSection.addClass('expanded');\r\n\t\t\t\tpreviewstat[id]['client'] = true;\r\n\t\t\t}\r\n\t\t}\r\n\r\n\t\t// ajax refres function\r\n\t\tthat.ajaxRefresh = function() {\r\n\t\t\t// remove click events\r\n\t\t\t$('.SectionExpandableInside .SectionExpandableInside_header').off();\r\n\r\n\t\t\t// add stop prepagation\r\n\t\t\t$(\r\n\t\t\t\t'.SectionExpandableInside .SectionExpandableInside_header input, .SectionExpandableInside .SectionExpandableInside_header select, .SectionExpandableInside .SectionExpandableInside_header a'\r\n\t\t\t).click(function(event) {\r\n\t\t\t\tevent.stopPropagation();\r\n\t\t\t});\r\n\r\n\t\t\t// add new click events\r\n\t\t\t$('.SectionExpandableInside .SectionExpandableInside_header').on('click', function() {\r\n\t\t\t\tclickEvents(this);\r\n\t\t\t});\r\n\r\n\t\t\t// each all sections\r\n\t\t\t$('.SectionExpandableInside').each(function() {\r\n\t\t\t\t// if new SectionExpandable then add to previewstat array\r\n\t\t\t\tif (previewstat[$(this).attr('id')] == null) {\r\n\t\t\t\t\t// add stat on array\r\n\t\t\t\t\tvar stat = false;\r\n\t\t\t\t\t// if open\r\n\t\t\t\t\tif ($(this).hasClass('expanded')) {\r\n\t\t\t\t\t\tstat = true;\r\n\t\t\t\t\t}\r\n\t\t\t\t\t// add row\r\n\t\t\t\t\tpreviewstat[$(this).attr('id')] = { client: stat, server: stat };\r\n\t\t\t\t}\r\n\r\n\t\t\t\t// curent state (ajax state x initial state)\r\n\t\t\t\tvar curState = false;\r\n\r\n\t\t\t\t// check if start expandable\r\n\t\t\t\tif ($(this).hasClass('expanded')) {\r\n\t\t\t\t\tcurState = true;\r\n\t\t\t\t}\r\n\r\n\t\t\t\t// check if ajax != initial server\r\n\t\t\t\tif (curState != previewstat[$(this).attr('id')]['server']) {\r\n\t\t\t\t\t// curstate\r\n\t\t\t\t\tpreviewstat[$(this).attr('id')]['client'] = curState;\r\n\t\t\t\t\tpreviewstat[$(this).attr('id')]['server'] = curState;\r\n\t\t\t\t} else {\r\n\t\t\t\t\t// has class expanded\r\n\t\t\t\t\tif (previewstat[$(this).attr('id')]['client'] == false && $(this).hasClass('expanded')) {\r\n\t\t\t\t\t\t$(this).removeClass('expanded');\r\n\t\t\t\t\t\t$(this)\r\n\t\t\t\t\t\t\t.children('.SectionExpandableInside_content')\r\n\t\t\t\t\t\t\t.height(0);\r\n\t\t\t\t\t} else if (previewstat[$(this).attr('id')]['client'] == true && !$(this).hasClass('expanded')) {\r\n\t\t\t\t\t\t$(this).addClass('expanded');\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\t\t\t});\r\n\t\t};\r\n\r\n\t\t// set events\r\n\t\tthat.init = function() {\r\n\t\t\t// each all sections to create array stat\r\n\t\t\t$('.SectionExpandableInside').each(function() {\r\n\t\t\t\t// add stat on array\r\n\t\t\t\tvar stat = false;\r\n\r\n\t\t\t\t// if open\r\n\t\t\t\tif ($(this).hasClass('expanded')) {\r\n\t\t\t\t\tstat = true;\r\n\t\t\t\t}\r\n\r\n\t\t\t\t// add row\r\n\t\t\t\tpreviewstat[$(this).attr('id')] = { client: stat, server: stat };\r\n\t\t\t});\r\n\r\n\t\t\t// add click events\r\n\t\t\t$('.SectionExpandableInside .SectionExpandableInside_header')\r\n\t\t\t\t.off('click')\r\n\t\t\t\t.on('click', function() {\r\n\t\t\t\t\tclickEvents(this);\r\n\t\t\t\t});\r\n\r\n\t\t\t// add stop prepagation\r\n\t\t\t$(\r\n\t\t\t\t'.SectionExpandableInside .SectionExpandableInside_header input, .SectionExpandableInside .SectionExpandableInside_header select, .SectionExpandableInside .SectionExpandableInside_header a'\r\n\t\t\t).click(function(event) {\r\n\t\t\t\tevent.stopPropagation();\r\n\t\t\t});\r\n\r\n\t\t\t// event ajax\r\n\t\t\tosAjaxBackend && osAjaxBackend.BindAfterAjaxRequest(that.ajaxRefresh);\r\n\t\t};\r\n\t}\r\n\r\n\tconst setOpenCloseClass = id => {\r\n\t\tid.click(function() {\r\n\t\t\tif (id.parent().hasClass('expanded')) {\r\n\t\t\t\t$(this)\r\n\t\t\t\t\t.find('.HeaderIcon')\r\n\t\t\t\t\t.removeClass('open');\r\n\t\t\t\t$(this)\r\n\t\t\t\t\t.find('.HeaderIcon')\r\n\t\t\t\t\t.addClass('closed');\r\n\t\t\t} else {\r\n\t\t\t\t$(this)\r\n\t\t\t\t\t.find('.HeaderIcon')\r\n\t\t\t\t\t.removeClass('closed');\r\n\t\t\t\t$(this)\r\n\t\t\t\t\t.find('.HeaderIcon')\r\n\t\t\t\t\t.addClass('open');\r\n\t\t\t}\r\n\t\t});\r\n\t};\r\n\r\n\tconst create = () => {\r\n\t\tconst expandable = new SectionExpandableInside();\r\n\r\n\t\texpandable.init();\r\n\t};\r\n\r\n\tSapphireWidgets.SectionExpandableInside = {\r\n\t\tcreate,\r\n\t\tsetOpenCloseClass,\r\n\t};\r\n})(jQuery, window, SapphireWidgets);\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/section-expandable-inside/scripts.js?\n}");
+/* Component SectionExpandableInside */
+(function($, window, SapphireWidgets) {
+	function SectionExpandableInside() {
+		var that = this;
+
+		// Object to save stats
+		var previewstat = [];
+
+		// set click events
+		function clickEvents(ob) {
+			// store querys in a single var
+			var Section = $(ob).parent();
+			var SectionContent = Section.children('.SectionExpandableInside_content');
+
+			// get id
+			var id = Section.attr('id');
+
+			var tempHeight = 0;
+
+			// has class expanded
+			if (Section.hasClass('expanded')) {
+				// Calc and set a fixed height, during this process, transitions are disabled
+				SectionContent.addClass('noTransition');
+				SectionContent.height(SectionContent.height());
+				SectionContent[0].offsetHeight; // hack to force a repaint
+				SectionContent.removeClass('noTransition');
+
+				// Collapse content
+				SectionContent.height(0);
+				Section.removeClass('expanded');
+				SectionContent.css('overflow', 'hidden');
+
+				// Remove class, set height and save state
+				previewstat[id]['client'] = false;
+			} else {
+				// Calc and set a fixed height
+				SectionContent.height('auto');
+				// tempHeight = SectionContent.height();
+				// SectionContent.height(0);
+				// SectionContent.height(tempHeight);
+				SectionContent.css('overflow', 'hidden');
+
+				// remove class, set height and save state
+				Section.addClass('expanded');
+				previewstat[id]['client'] = true;
+			}
+		}
+
+		// ajax refres function
+		that.ajaxRefresh = function() {
+			// remove click events
+			$('.SectionExpandableInside .SectionExpandableInside_header').off();
+
+			// add stop prepagation
+			$(
+				'.SectionExpandableInside .SectionExpandableInside_header input, .SectionExpandableInside .SectionExpandableInside_header select, .SectionExpandableInside .SectionExpandableInside_header a'
+			).click(function(event) {
+				event.stopPropagation();
+			});
+
+			// add new click events
+			$('.SectionExpandableInside .SectionExpandableInside_header').on('click', function() {
+				clickEvents(this);
+			});
+
+			// each all sections
+			$('.SectionExpandableInside').each(function() {
+				// if new SectionExpandable then add to previewstat array
+				if (previewstat[$(this).attr('id')] == null) {
+					// add stat on array
+					var stat = false;
+					// if open
+					if ($(this).hasClass('expanded')) {
+						stat = true;
+					}
+					// add row
+					previewstat[$(this).attr('id')] = { client: stat, server: stat };
+				}
+
+				// curent state (ajax state x initial state)
+				var curState = false;
+
+				// check if start expandable
+				if ($(this).hasClass('expanded')) {
+					curState = true;
+				}
+
+				// check if ajax != initial server
+				if (curState != previewstat[$(this).attr('id')]['server']) {
+					// curstate
+					previewstat[$(this).attr('id')]['client'] = curState;
+					previewstat[$(this).attr('id')]['server'] = curState;
+				} else {
+					// has class expanded
+					if (previewstat[$(this).attr('id')]['client'] == false && $(this).hasClass('expanded')) {
+						$(this).removeClass('expanded');
+						$(this)
+							.children('.SectionExpandableInside_content')
+							.height(0);
+					} else if (previewstat[$(this).attr('id')]['client'] == true && !$(this).hasClass('expanded')) {
+						$(this).addClass('expanded');
+					}
+				}
+			});
+		};
+
+		// set events
+		that.init = function() {
+			// each all sections to create array stat
+			$('.SectionExpandableInside').each(function() {
+				// add stat on array
+				var stat = false;
+
+				// if open
+				if ($(this).hasClass('expanded')) {
+					stat = true;
+				}
+
+				// add row
+				previewstat[$(this).attr('id')] = { client: stat, server: stat };
+			});
+
+			// add click events
+			$('.SectionExpandableInside .SectionExpandableInside_header')
+				.off('click')
+				.on('click', function() {
+					clickEvents(this);
+				});
+
+			// add stop prepagation
+			$(
+				'.SectionExpandableInside .SectionExpandableInside_header input, .SectionExpandableInside .SectionExpandableInside_header select, .SectionExpandableInside .SectionExpandableInside_header a'
+			).click(function(event) {
+				event.stopPropagation();
+			});
+
+			// event ajax
+			osAjaxBackend && osAjaxBackend.BindAfterAjaxRequest(that.ajaxRefresh);
+		};
+	}
+
+	const setOpenCloseClass = id => {
+		id.click(function() {
+			if (id.parent().hasClass('expanded')) {
+				$(this)
+					.find('.HeaderIcon')
+					.removeClass('open');
+				$(this)
+					.find('.HeaderIcon')
+					.addClass('closed');
+			} else {
+				$(this)
+					.find('.HeaderIcon')
+					.removeClass('closed');
+				$(this)
+					.find('.HeaderIcon')
+					.addClass('open');
+			}
+		});
+	};
+
+	const create = () => {
+		const expandable = new SectionExpandableInside();
+
+		expandable.init();
+	};
+
+	SapphireWidgets.SectionExpandableInside = {
+		create,
+		setOpenCloseClass,
+	};
+})(jQuery, window, SapphireWidgets);
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/segmented-control/scripts.js":
-/*!**************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/segmented-control/scripts.js ***!
-  \**************************************************************************/
 /***/ (function() {
 
-eval("{/* Component SegmentedControl */\r\n(function($, window, document, SapphireWidgets) {\r\n\tconst create = function(config) {\r\n    $(document).ready(function() {\r\n      const $inputSegmented = $(`#${config.widgetId}`).find('.SegmentedControl');\r\n      const $labels = $(`#${config.widgetId}`).find('.SegmentedControl_Label');\r\n\r\n      if($inputSegmented){\r\n        if(config.hasError == true) {\r\n          $inputSegmented.addClass('Invalid');\r\n          Array.from($labels).forEach(label => {$(label).addClass('ColorRedText')});\r\n        }\r\n        else {\r\n          $inputSegmented.removeClass('Invalid');\r\n          Array.from($labels).forEach(label => {$(label).removeClass('ColorRedText')})\r\n        }\r\n      }\r\n    });\r\n  };\r\n\r\nSapphireWidgets.SegmentedControl = {\r\n  create,\r\n};\r\n})(jQuery, window, document, SapphireWidgets);\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/segmented-control/scripts.js?\n}");
+/* Component SegmentedControl */
+(function($, window, document, SapphireWidgets) {
+	const create = function(config) {
+    $(document).ready(function() {
+      const $inputSegmented = $(`#${config.widgetId}`).find('.SegmentedControl');
+      const $labels = $(`#${config.widgetId}`).find('.SegmentedControl_Label');
+
+      if($inputSegmented){
+        if(config.hasError == true) {
+          $inputSegmented.addClass('Invalid');
+          Array.from($labels).forEach(label => {$(label).addClass('ColorRedText')});
+        }
+        else {
+          $inputSegmented.removeClass('Invalid');
+          Array.from($labels).forEach(label => {$(label).removeClass('ColorRedText')})
+        }
+      }
+    });
+  };
+
+SapphireWidgets.SegmentedControl = {
+  create,
+};
+})(jQuery, window, document, SapphireWidgets);
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/select-system/scripts.js":
-/*!**********************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/select-system/scripts.js ***!
-  \**********************************************************************/
 /***/ (function() {
 
-eval("{/* Component SelectSystem */\r\nSapphireWidgets.SelectSystem = (config) => {\r\n\t$(function () {\r\n\t\tvar Select2Options = {};\r\n\t\tvar $WidgetIdentifier;\r\n\r\n\t\tif (config.WidgetId === '' && config.WidgetClass != '') {\r\n\t\t\t$WidgetIdentifier = $('.' + config.WidgetClass);\r\n\t\t} else {\r\n\t\t\t$WidgetIdentifier = $('#' + config.WidgetId);\r\n\t\t}\r\n\r\n\t\tif (config.IsRTL) {\r\n\t\t\tSelect2Options.dir = 'rtl';\r\n\t\t}\r\n\t\tSelect2Options.theme = 'default SelectSystem';\r\n\t\tSelect2Options.width = $WidgetIdentifier.hasClass('OSFillParent') ? '100%' : 'resolve'; // DE72304\r\n\r\n\t\t/*  \r\n\t\t\t\t\tChange select2 search display \r\n\t\t\t\t\t\t\t\t\t-Multiple Select2 search UI like Single Select2\r\n\t\t\t*/\r\n\t\t$.fn.select2.amd.define(\r\n\t\t\t'SearchLikeSingle',\r\n\t\t\t[\r\n\t\t\t\t'select2/utils',\r\n\t\t\t\t'select2/dropdown',\r\n\t\t\t\t'select2/dropdown/attachBody',\r\n\t\t\t\t'select2/dropdown/attachContainer',\r\n\t\t\t\t'select2/dropdown/search',\r\n\t\t\t\t'select2/dropdown/minimumResultsForSearch',\r\n\t\t\t],\r\n\t\t\tfunction (Utils, Dropdown, AttachBody, AttachContainer, Search, minimumResultsForSearch) {\r\n\t\t\t\tlet dropdownSearch = Utils.Decorate(Dropdown, Search);\r\n\t\t\t\tdropdownSearch.prototype.render = function () {\r\n\t\t\t\t\tvar $rendered = Dropdown.prototype.render.call(this);\r\n\t\t\t\t\t// Add ability for a placeholder in the search box\r\n\t\t\t\t\tlet placeholder = this.options.get('placeholderForSearch') || '';\r\n\t\t\t\t\tvar $search = $(\r\n\t\t\t\t\t\t'<span class=\"select2-search select2-search--dropdown\">' +\r\n\t\t\t\t\t\t'<input class=\"select2-search__field\" placeholder=\"' +\r\n\t\t\t\t\t\tplaceholder +\r\n\t\t\t\t\t\t'\" type=\"search\"' +\r\n\t\t\t\t\t\t' tabindex=\"-1\" autocomplete=\"off\" autocorrect=\"off\" autocapitalize=\"off\"' +\r\n\t\t\t\t\t\t' spellcheck=\"false\" role=\"textbox\" />' +\r\n\t\t\t\t\t\t'</span>'\r\n\t\t\t\t\t);\r\n\r\n\t\t\t\t\tthis.$searchContainer = $search;\r\n\t\t\t\t\tthis.$search = $search.find('input');\r\n\t\t\t\t\t$search.addClass('MultipleSelect');\r\n\r\n\t\t\t\t\t$rendered.prepend($search);\r\n\t\t\t\t\t$search.parent().addClass('MultipleSelect');\r\n\t\t\t\t\treturn $rendered;\r\n\t\t\t\t};\r\n\r\n\t\t\t\t// Decorate the dropdown+search with the containers\r\n\t\t\t\tlet adapter = Utils.Decorate(dropdownSearch, AttachContainer);\r\n\t\t\t\tadapter = Utils.Decorate(adapter, AttachBody);\r\n\r\n\t\t\t\treturn adapter;\r\n\t\t\t}\r\n\t\t);\r\n\r\n\t\t// Other possible values are inputTooLong, inputTooShort and maximumSelected (you can find in Select2 sources).\r\n\t\tSelect2Options.language = {\r\n\t\t\terrorLoading: function () {\r\n\t\t\t\treturn config.Texts.errorLoading ?? 'Results could not be loaded.';\r\n\t\t\t},\r\n\t\t\tloadingMore: function () {\r\n\t\t\t\treturn config.Texts.loadingMore ?? 'Loading more results…';\r\n\t\t\t},\r\n\t\t\tnoResults: function () {\r\n\t\t\t\treturn config.Texts.noResults ?? 'No results found.';\r\n\t\t\t},\r\n\t\t\tsearching: function () {\r\n\t\t\t\treturn config.Texts.searching ?? 'Searching…';\r\n\t\t\t},\r\n\t\t\tremoveAllItems: function () {\r\n\t\t\t\treturn config.Texts.removeAllItems ?? 'Remove all items';\r\n\t\t\t},\r\n\t\t};\r\n\r\n\t\tif (config.DropdownClass != '') {\r\n\t\t\tSelect2Options.dropdownCssClass = config.DropdownClass;\r\n\t\t}\r\n\r\n\t\tif (config.allowClear === 'True') {\r\n\t\t\tSelect2Options.allowClear = true;\r\n\t\t}\r\n\r\n\t\tif (config.MaximumLength != '') {\r\n\t\t\tSelect2Options.maximumInputLength = config.MaximumLength;\r\n\t\t}\r\n\r\n\t\tif (config.Texts.prompt != '') {\r\n\t\t\tSelect2Options.placeholder = config.Texts.prompt;\r\n\t\t}\r\n\r\n\t\tif (config.SelectType === 'Ajax') {\r\n\t\t\tSelect2Options.allowClear = false;\r\n\r\n\t\t\tSelect2Options.templateSelection = function (repo) {\r\n\t\t\t\tif (!repo.element) {\r\n\t\t\t\t\treturn config.Texts.prompt;\r\n\t\t\t\t}\r\n\r\n\t\t\t\treturn repo.full_name || repo.text;\r\n\t\t\t};\r\n\r\n\t\t\tSelect2Options.templateResult = function (repo) {\r\n\t\t\t\tif (repo.loading) {\r\n\t\t\t\t\treturn repo.text;\r\n\t\t\t\t}\r\n\t\t\t\tvar markup = '<div class=\"\"Clearfix\"\">' + '<div class=\"\"ThemeGrid_Width12\"\">' + repo.text + '</div>';\r\n\t\t\t\tif (repo.description) {\r\n\t\t\t\t\tmarkup += '<div class=\"\"OSAutoMarginTop\"\">' + repo.description + '</div>';\r\n\t\t\t\t}\r\n\t\t\t\tmarkup += '</div>';\r\n\t\t\t\treturn markup;\r\n\t\t\t};\r\n\r\n\t\t\tSelect2Options.ajax = {\r\n\t\t\t\turl: config.AjaxURL,\r\n\t\t\t\tdataType: 'json',\r\n\t\t\t\tdelay: config.AjaxDelay,\r\n\t\t\t\theaders: { AuthInternal: config.Header_Value },\r\n\t\t\t\tdata: function (params) {\r\n\t\t\t\t\tvar Select2AjaxOpt = {};\r\n\t\t\t\t\tvar SplitParameter = config.SearchExtraParam1.split(',');\r\n\t\t\t\t\tSelect2AjaxOpt.SearchParameter = params.term;\r\n\t\t\t\t\tSelect2AjaxOpt.Page = params.page || 1;\r\n\t\t\t\t\tSelect2AjaxOpt.PageAmount = config.PageAmount;\r\n\r\n\t\t\t\t\tSplitParameter.forEach(function (el) {\r\n\t\t\t\t\t\tvar splitText = el.split(':');\r\n\t\t\t\t\t\tSelect2AjaxOpt[splitText[0]] = splitText[1];\r\n\t\t\t\t\t});\r\n\r\n\t\t\t\t\treturn Select2AjaxOpt;\r\n\t\t\t\t},\r\n\t\t\t\tprocessResults: function (data, params) {\r\n\t\t\t\t\tparams.page = params.page || 1;\r\n\r\n\t\t\t\t\treturn {\r\n\t\t\t\t\t\tresults: data.items,\r\n\t\t\t\t\t\tpagination: {\r\n\t\t\t\t\t\t\tmore: params.page * config.PaginationSize < data.total_count,\r\n\t\t\t\t\t\t},\r\n\t\t\t\t\t};\r\n\t\t\t\t},\r\n\t\t\t\tcache: true,\r\n\t\t\t};\r\n\r\n\t\t\tSelect2Options.minimumInputLength = config.MinimumInputLenght;\r\n\r\n\t\t\tSelect2Options.escapeMarkup = function (markup) {\r\n\t\t\t\treturn markup;\r\n\t\t\t};\r\n\r\n\t\t\tif (config.IsMultiple) {\r\n\t\t\t\tSelect2Options.multiple = true;\r\n\t\t\t\tSelect2Options.containerCssClass = 'Select2Ajax Multiple';\r\n\t\t\t\tSelect2Options.dropdownCssClass = 'Select2Ajax Multiple';\r\n\t\t\t} else {\r\n\t\t\t\tSelect2Options.multiple = false;\r\n\t\t\t\tSelect2Options.containerCssClass = 'Select2Ajax';\r\n\t\t\t\tSelect2Options.dropdownCssClass = 'Select2Ajax';\r\n\t\t\t}\r\n\r\n\t\t\tSelect2Options.minimumResultsForSearch = 0;\r\n\t\t\tSelect2Options.tags = config.HasTags;\r\n\t\t\tSelect2Options.closeOnselect = true;\r\n\t\t}\r\n\r\n\t\tif (config.SelectType === 'Checkbox') {\r\n\t\t\tvar isAllSelected = false;\r\n\t\t\tif ($WidgetIdentifier[0].options.length === $WidgetIdentifier[0].selectedOptions.length) {\r\n\t\t\t\tisAllSelected = true;\r\n\t\t\t}\r\n\r\n\t\t\tif (config.WidgetId != '') {\r\n\t\t\t\toption = new Option(config.Texts.selectAll, 'All', true, isAllSelected);\r\n\t\t\t\t$WidgetIdentifier.prepend(option);\r\n\t\t\t\t$WidgetIdentifier.find('option:first-child').addClass('SelectedAll');\r\n\t\t\t}\r\n\t\t\tSelect2Options.multiple = true;\r\n\t\t\tSelect2Options.closeOnSelect = false;\r\n\t\t\tSelect2Options.allowHtml = false;\r\n\t\t\tSelect2Options.tags = false;\r\n\r\n\t\t\tif (config.HasSearch) {\r\n\t\t\t\tSelect2Options.dropdownAdapter = $.fn.select2.amd.require('SearchLikeSingle');\r\n\t\t\t} else {\r\n\t\t\t\tSelect2Options.minimumResultsForSearch = -1;\r\n\t\t\t}\r\n\r\n\t\t\tSelect2Options.containerCssClass = 'MultipleSelect';\r\n\t\t\tSelect2Options.dropdownCssClass = 'MultipleSelect';\r\n\t\t\tSelect2Options.templateSelection = function (result) {\r\n\t\t\t\tvar selectedOptionsList = $WidgetIdentifier.find('option:selected:not(\".SelectedAll\")');\r\n\t\t\t\tvar selectedOptions = selectedOptionsList.length;\r\n\t\t\t\tvar totalOptions = $WidgetIdentifier.find('option:not(\".SelectedAll\")').length;\r\n\r\n\t\t\t\tif (selectedOptions === 0) {\r\n\t\t\t\t\treturn config.Texts.prompt;\r\n\t\t\t\t\t//return 'Select an option';\r\n\t\t\t\t} else if (selectedOptions < 4) {\r\n\t\t\t\t\tvar activeValues = '';\r\n\t\t\t\t\tselectedOptionsList.each(function () {\r\n\t\t\t\t\t\tactiveValues = activeValues + ' ' + $(this)[0].innerText;\r\n\t\t\t\t\t});\r\n\t\t\t\t\tactiveValues = activeValues.replace(/,\\s*$/, '');\r\n\t\t\t\t\treturn activeValues;\r\n\t\t\t\t} else if (selectedOptions === totalOptions) {\r\n\t\t\t\t\treturn config.Texts.allSelected;\r\n\t\t\t\t} else {\r\n\t\t\t\t\treturn config.Texts.partialSelection\r\n\t\t\t\t\t\t.replace('{SelectedOptions}', selectedOptions)\r\n\t\t\t\t\t\t.replace('{TotalOptions}', totalOptions);\r\n\t\t\t\t}\r\n\t\t\t};\r\n\t\t}\r\n\r\n\t\tif (config.SelectType === 'HtmlOptions') {\r\n\t\t\tvar dataHtmlOption = [];\r\n\t\t\t$WidgetIdentifier.find('option').each(function (key, value) {\r\n\t\t\t\tvar optionObject = {\r\n\t\t\t\t\tid: $(this).val(),\r\n\t\t\t\t\ttext: $(this).text(),\r\n\t\t\t\t\thtml: $(this).text(),\r\n\t\t\t\t};\r\n\t\t\t\tdataHtmlOption.push(optionObject);\r\n\t\t\t});\r\n\r\n\t\t\tSelect2Options.containerCssClass = 'customSelect';\r\n\t\t\tSelect2Options.dropdownCssClass = 'dropdownCustom';\r\n\t\t\tSelect2Options.data = dataHtmlOption;\r\n\t\t\tSelect2Options.escapeMarkup = function (markup) {\r\n\t\t\t\treturn markup;\r\n\t\t\t};\r\n\t\t}\r\n\r\n\t\tif (config.SelectType === 'TagCustom') {\r\n\t\t\tSelect2Options.tags = config.HasTags;\r\n\t\t\tSelect2Options.containerCssClass = 'tagCustom';\r\n\t\t\tSelect2Options.dropdownCssClass = 'tagCustom';\r\n\t\t\t// According to documentation, this has been replaced with createTag, but this signature looks like for insertTag.\r\n\t\t\t// No sure how this is supposed to be. See https://select2.org/upgrading/migrating-from-35#renamed-createsearchchoice.\r\n\t\t\tSelect2Options.createSearchChoice = function (term, data) {\r\n\t\t\t\tif (\r\n\t\t\t\t\t$(data).filter(function () {\r\n\t\t\t\t\t\treturn this.text.localeCompare(term) === 0;\r\n\t\t\t\t\t}).length === 0\r\n\t\t\t\t) {\r\n\t\t\t\t\treturn {\r\n\t\t\t\t\t\tid: term,\r\n\t\t\t\t\t\ttext: term,\r\n\t\t\t\t\t};\r\n\t\t\t\t}\r\n\t\t\t};\r\n\r\n\r\n\t\t\t// Set up ResizeObserver to track height changes\r\n\t\t\tconst updateLineTimelineTitlePosition = () => {\r\n\t\t\t\tconst newHeight = 125 + $('.ResizableContainer').outerHeight();\r\n\t\t\t\tdocument.documentElement.style.setProperty('--line-title-top', newHeight + 'px');\r\n\t\t\t};\r\n\r\n\t\t\tconst resizeObserver = new ResizeObserver(() => {\r\n\t\t\t\tupdateLineTimelineTitlePosition();\r\n\t\t\t});\r\n\r\n\t\t\tconst $resizeContainer = $('.ResizableContainer');\r\n\t\t\tif ($resizeContainer.length) {\r\n\t\t\t\tresizeObserver.observe($resizeContainer[0]);\r\n\t\t\t}\r\n\t\t}\r\n\r\n\t\tif (config.SelectType === 'TagMultiple') {\r\n\t\t\tSelect2Options.tags = true;\r\n\t\t\tSelect2Options.containerCssClass = 'tagSystem';\r\n\t\t\tSelect2Options.dropdownCssClass = 'tagSystem';\r\n\t\t\tSelect2Options.createTag = function (params) {\r\n\t\t\t\tvar term = $.trim(params.term);\r\n\t\t\t\tif (term === '') {\r\n\t\t\t\t\treturn null;\r\n\t\t\t\t}\r\n\t\t\t\treturn {\r\n\t\t\t\t\tid: '#' + term,\r\n\t\t\t\t\ttext: term,\r\n\t\t\t\t\tnewTag: true,\r\n\t\t\t\t};\r\n\t\t\t};\r\n\t\t}\r\n\r\n\t\tif (!config.HasSearch) {\r\n\t\t\tSelect2Options.minimumResultsForSearch = -1;\r\n\t\t}\r\n\r\n\t\t$WidgetIdentifier.select2(Select2Options);\r\n\r\n\r\n\t\tif (!config.AutoHeight) {\r\n\t\t\tlet renderedElement = $WidgetIdentifier.next()[0];\r\n\t\t\trenderedElement.querySelector('.select2-selection__rendered').style.height = '35px';\r\n\t\t\trenderedElement.querySelector('.select2-selection__rendered').style.overflowY = 'overlay';\r\n\t\t}\r\n\r\n\r\n\t\tif (config.OnChange) {\r\n\t\t\t$WidgetIdentifier.on('change', config.OnChange);\r\n\t\t}\r\n\r\n\t\tif (config.SelectType === 'Checkbox') {\r\n\t\t\t$WidgetIdentifier.on('select2:select', function (e) {\r\n\t\t\t\tif (e.params.data.id === 'All') {\r\n\t\t\t\t\tvar selectedItems = [];\r\n\t\t\t\t\tvar allOptions = $WidgetIdentifier.find('option');\r\n\t\t\t\t\tallOptions.each(function () {\r\n\t\t\t\t\t\tselectedItems.push($(this).val());\r\n\t\t\t\t\t});\r\n\t\t\t\t\t$WidgetIdentifier.select2('destroy');\r\n\t\t\t\t\t$WidgetIdentifier.val(selectedItems).trigger('change');\r\n\t\t\t\t\t$WidgetIdentifier.select2(Select2Options);\r\n\t\t\t\t\t$WidgetIdentifier.select2('open');\r\n\t\t\t\t} else {\r\n\t\t\t\t\tvar selectedOptions = $WidgetIdentifier.find('option:selected').length;\r\n\t\t\t\t\tvar totalOptions = $WidgetIdentifier.find('option').length;\r\n\t\t\t\t\tif (\r\n\t\t\t\t\t\tselectedOptions === totalOptions - 1 &&\r\n\t\t\t\t\t\t$WidgetIdentifier.find('option:selected:first-child').length === 0\r\n\t\t\t\t\t) {\r\n\t\t\t\t\t\tvar selectedItems = [];\r\n\t\t\t\t\t\tvar allOptions = $WidgetIdentifier.find('option');\r\n\t\t\t\t\t\tallOptions.each(function () {\r\n\t\t\t\t\t\t\tselectedItems.push($(this).val());\r\n\t\t\t\t\t\t});\r\n\t\t\t\t\t\t$WidgetIdentifier.select2('destroy');\r\n\t\t\t\t\t\t$WidgetIdentifier.val(selectedItems).trigger('change');\r\n\t\t\t\t\t\t$WidgetIdentifier.select2(Select2Options);\r\n\t\t\t\t\t\t$WidgetIdentifier.select2('open');\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\t\t\t});\r\n\r\n\t\t\t$WidgetIdentifier.on('select2:unselect', function (e) {\r\n\t\t\t\tif (e.params.data.id === 'All') {\r\n\t\t\t\t\t$WidgetIdentifier.find('option').removeAttr('selected');\r\n\t\t\t\t\t$WidgetIdentifier.select2('destroy');\r\n\t\t\t\t\t$WidgetIdentifier.select2(Select2Options);\r\n\t\t\t\t\t$WidgetIdentifier.select2('open');\r\n\t\t\t\t\t$WidgetIdentifier.val('').trigger('change');\r\n\t\t\t\t} else {\r\n\t\t\t\t\t$WidgetIdentifier.find('option:first-child').removeAttr('selected');\r\n\t\t\t\t\t$WidgetIdentifier.select2(Select2Options);\r\n\t\t\t\t\t$WidgetIdentifier.select2('open');\r\n\t\t\t\t}\r\n\t\t\t});\r\n\t\t} else if (config.SelectType === 'Select2') {\r\n\t\t\t$WidgetIdentifier.on('select2:select', function (e) {\r\n\t\t\t\tif (e.target.selectedIndex !== 0) {\r\n\t\t\t\t\t$WidgetIdentifier.parent().addClass('SelectSystemFilter-Selected');\r\n\t\t\t\t} else {\r\n\t\t\t\t\t$WidgetIdentifier.parent().removeClass('SelectSystemFilter-Selected');\r\n\t\t\t\t}\r\n\t\t\t});\r\n\t\t} else if (config.SelectType === 'HtmlOptions' || config.SelectType === 'Ajax') {\r\n\t\t\t// Problem with the title is that it is always escaped, which looks bad when we have HTML there.\r\n\t\t\t// It should be possible to customize how title is built, but for this we need extra field in source data.\r\n\t\t\tconst removeSelectionTitle = function () {\r\n\t\t\t\t$WidgetIdentifier.next().find('.select2-selection__rendered').removeAttr('title');\r\n\t\t\t};\r\n\t\t\t$WidgetIdentifier.on('select2:select select2:unselect', removeSelectionTitle);\r\n\t\t\tremoveSelectionTitle();\r\n\t\t}\r\n\t});\r\n};\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/select-system/scripts.js?\n}");
+/* Component SelectSystem */
+SapphireWidgets.SelectSystem = (config) => {
+	$(function () {
+		var Select2Options = {};
+		var $WidgetIdentifier;
+
+		if (config.WidgetId === '' && config.WidgetClass != '') {
+			$WidgetIdentifier = $('.' + config.WidgetClass);
+		} else {
+			$WidgetIdentifier = $('#' + config.WidgetId);
+		}
+
+		if (config.IsRTL) {
+			Select2Options.dir = 'rtl';
+		}
+		Select2Options.theme = 'default SelectSystem';
+		Select2Options.width = $WidgetIdentifier.hasClass('OSFillParent') ? '100%' : 'resolve'; // DE72304
+
+		/*  
+					Change select2 search display 
+									-Multiple Select2 search UI like Single Select2
+			*/
+		$.fn.select2.amd.define(
+			'SearchLikeSingle',
+			[
+				'select2/utils',
+				'select2/dropdown',
+				'select2/dropdown/attachBody',
+				'select2/dropdown/attachContainer',
+				'select2/dropdown/search',
+				'select2/dropdown/minimumResultsForSearch',
+			],
+			function (Utils, Dropdown, AttachBody, AttachContainer, Search, minimumResultsForSearch) {
+				let dropdownSearch = Utils.Decorate(Dropdown, Search);
+				dropdownSearch.prototype.render = function () {
+					var $rendered = Dropdown.prototype.render.call(this);
+					// Add ability for a placeholder in the search box
+					let placeholder = this.options.get('placeholderForSearch') || '';
+					var $search = $(
+						'<span class="select2-search select2-search--dropdown">' +
+						'<input class="select2-search__field" placeholder="' +
+						placeholder +
+						'" type="search"' +
+						' tabindex="-1" autocomplete="off" autocorrect="off" autocapitalize="off"' +
+						' spellcheck="false" role="textbox" />' +
+						'</span>'
+					);
+
+					this.$searchContainer = $search;
+					this.$search = $search.find('input');
+					$search.addClass('MultipleSelect');
+
+					$rendered.prepend($search);
+					$search.parent().addClass('MultipleSelect');
+					return $rendered;
+				};
+
+				// Decorate the dropdown+search with the containers
+				let adapter = Utils.Decorate(dropdownSearch, AttachContainer);
+				adapter = Utils.Decorate(adapter, AttachBody);
+
+				return adapter;
+			}
+		);
+
+		// Other possible values are inputTooLong, inputTooShort and maximumSelected (you can find in Select2 sources).
+		Select2Options.language = {
+			errorLoading: function () {
+				return config.Texts.errorLoading ?? 'Results could not be loaded.';
+			},
+			loadingMore: function () {
+				return config.Texts.loadingMore ?? 'Loading more results…';
+			},
+			noResults: function () {
+				return config.Texts.noResults ?? 'No results found.';
+			},
+			searching: function () {
+				return config.Texts.searching ?? 'Searching…';
+			},
+			removeAllItems: function () {
+				return config.Texts.removeAllItems ?? 'Remove all items';
+			},
+		};
+
+		if (config.DropdownClass != '') {
+			Select2Options.dropdownCssClass = config.DropdownClass;
+		}
+
+		if (config.allowClear === 'True') {
+			Select2Options.allowClear = true;
+		}
+
+		if (config.MaximumLength != '') {
+			Select2Options.maximumInputLength = config.MaximumLength;
+		}
+
+		if (config.Texts.prompt != '') {
+			Select2Options.placeholder = config.Texts.prompt;
+		}
+
+		if (config.SelectType === 'Ajax') {
+			Select2Options.allowClear = false;
+
+			Select2Options.templateSelection = function (repo) {
+				if (!repo.element) {
+					return config.Texts.prompt;
+				}
+
+				return repo.full_name || repo.text;
+			};
+
+			Select2Options.templateResult = function (repo) {
+				if (repo.loading) {
+					return repo.text;
+				}
+				var markup = '<div class=""Clearfix"">' + '<div class=""ThemeGrid_Width12"">' + repo.text + '</div>';
+				if (repo.description) {
+					markup += '<div class=""OSAutoMarginTop"">' + repo.description + '</div>';
+				}
+				markup += '</div>';
+				return markup;
+			};
+
+			Select2Options.ajax = {
+				url: config.AjaxURL,
+				dataType: 'json',
+				delay: config.AjaxDelay,
+				headers: { AuthInternal: config.Header_Value },
+				data: function (params) {
+					var Select2AjaxOpt = {};
+					var SplitParameter = config.SearchExtraParam1.split(',');
+					Select2AjaxOpt.SearchParameter = params.term;
+					Select2AjaxOpt.Page = params.page || 1;
+					Select2AjaxOpt.PageAmount = config.PageAmount;
+
+					SplitParameter.forEach(function (el) {
+						var splitText = el.split(':');
+						Select2AjaxOpt[splitText[0]] = splitText[1];
+					});
+
+					return Select2AjaxOpt;
+				},
+				processResults: function (data, params) {
+					params.page = params.page || 1;
+
+					return {
+						results: data.items,
+						pagination: {
+							more: params.page * config.PaginationSize < data.total_count,
+						},
+					};
+				},
+				cache: true,
+			};
+
+			Select2Options.minimumInputLength = config.MinimumInputLenght;
+
+			Select2Options.escapeMarkup = function (markup) {
+				return markup;
+			};
+
+			if (config.IsMultiple) {
+				Select2Options.multiple = true;
+				Select2Options.containerCssClass = 'Select2Ajax Multiple';
+				Select2Options.dropdownCssClass = 'Select2Ajax Multiple';
+			} else {
+				Select2Options.multiple = false;
+				Select2Options.containerCssClass = 'Select2Ajax';
+				Select2Options.dropdownCssClass = 'Select2Ajax';
+			}
+
+			Select2Options.minimumResultsForSearch = 0;
+			Select2Options.tags = config.HasTags;
+			Select2Options.closeOnselect = true;
+		}
+
+		if (config.SelectType === 'Checkbox') {
+			var isAllSelected = false;
+			if ($WidgetIdentifier[0].options.length === $WidgetIdentifier[0].selectedOptions.length) {
+				isAllSelected = true;
+			}
+
+			if (config.WidgetId != '') {
+				option = new Option(config.Texts.selectAll, 'All', true, isAllSelected);
+				$WidgetIdentifier.prepend(option);
+				$WidgetIdentifier.find('option:first-child').addClass('SelectedAll');
+			}
+			Select2Options.multiple = true;
+			Select2Options.closeOnSelect = false;
+			Select2Options.allowHtml = false;
+			Select2Options.tags = false;
+
+			if (config.HasSearch) {
+				Select2Options.dropdownAdapter = $.fn.select2.amd.require('SearchLikeSingle');
+			} else {
+				Select2Options.minimumResultsForSearch = -1;
+			}
+
+			Select2Options.containerCssClass = 'MultipleSelect';
+			Select2Options.dropdownCssClass = 'MultipleSelect';
+			Select2Options.templateSelection = function (result) {
+				var selectedOptionsList = $WidgetIdentifier.find('option:selected:not(".SelectedAll")');
+				var selectedOptions = selectedOptionsList.length;
+				var totalOptions = $WidgetIdentifier.find('option:not(".SelectedAll")').length;
+
+				if (selectedOptions === 0) {
+					return config.Texts.prompt;
+					//return 'Select an option';
+				} else if (selectedOptions < 4) {
+					var activeValues = '';
+					selectedOptionsList.each(function () {
+						activeValues = activeValues + ' ' + $(this)[0].innerText;
+					});
+					activeValues = activeValues.replace(/,\s*$/, '');
+					return activeValues;
+				} else if (selectedOptions === totalOptions) {
+					return config.Texts.allSelected;
+				} else {
+					return config.Texts.partialSelection
+						.replace('{SelectedOptions}', selectedOptions)
+						.replace('{TotalOptions}', totalOptions);
+				}
+			};
+		}
+
+		if (config.SelectType === 'HtmlOptions') {
+			var dataHtmlOption = [];
+			$WidgetIdentifier.find('option').each(function (key, value) {
+				var optionObject = {
+					id: $(this).val(),
+					text: $(this).text(),
+					html: $(this).text(),
+				};
+				dataHtmlOption.push(optionObject);
+			});
+
+			Select2Options.containerCssClass = 'customSelect';
+			Select2Options.dropdownCssClass = 'dropdownCustom';
+			Select2Options.data = dataHtmlOption;
+			Select2Options.escapeMarkup = function (markup) {
+				return markup;
+			};
+		}
+
+		if (config.SelectType === 'TagCustom') {
+			Select2Options.tags = config.HasTags;
+			Select2Options.containerCssClass = 'tagCustom';
+			Select2Options.dropdownCssClass = 'tagCustom';
+			// According to documentation, this has been replaced with createTag, but this signature looks like for insertTag.
+			// No sure how this is supposed to be. See https://select2.org/upgrading/migrating-from-35#renamed-createsearchchoice.
+			Select2Options.createSearchChoice = function (term, data) {
+				if (
+					$(data).filter(function () {
+						return this.text.localeCompare(term) === 0;
+					}).length === 0
+				) {
+					return {
+						id: term,
+						text: term,
+					};
+				}
+			};
+
+
+			// Set up ResizeObserver to track height changes
+			const updateLineTimelineTitlePosition = () => {
+				const newHeight = 125 + $('.ResizableContainer').outerHeight();
+				document.documentElement.style.setProperty('--line-title-top', newHeight + 'px');
+			};
+
+			const resizeObserver = new ResizeObserver(() => {
+				updateLineTimelineTitlePosition();
+			});
+
+			const $resizeContainer = $('.ResizableContainer');
+			if ($resizeContainer.length) {
+				resizeObserver.observe($resizeContainer[0]);
+			}
+		}
+
+		if (config.SelectType === 'TagMultiple') {
+			Select2Options.tags = true;
+			Select2Options.containerCssClass = 'tagSystem';
+			Select2Options.dropdownCssClass = 'tagSystem';
+			Select2Options.createTag = function (params) {
+				var term = $.trim(params.term);
+				if (term === '') {
+					return null;
+				}
+				return {
+					id: '#' + term,
+					text: term,
+					newTag: true,
+				};
+			};
+		}
+
+		if (!config.HasSearch) {
+			Select2Options.minimumResultsForSearch = -1;
+		}
+
+		$WidgetIdentifier.select2(Select2Options);
+
+
+		if (!config.AutoHeight) {
+			let renderedElement = $WidgetIdentifier.next()[0];
+			renderedElement.querySelector('.select2-selection__rendered').style.height = '35px';
+			renderedElement.querySelector('.select2-selection__rendered').style.overflowY = 'overlay';
+		}
+
+
+		if (config.OnChange) {
+			$WidgetIdentifier.on('change', config.OnChange);
+		}
+
+		if (config.SelectType === 'Checkbox') {
+			$WidgetIdentifier.on('select2:select', function (e) {
+				if (e.params.data.id === 'All') {
+					var selectedItems = [];
+					var allOptions = $WidgetIdentifier.find('option');
+					allOptions.each(function () {
+						selectedItems.push($(this).val());
+					});
+					$WidgetIdentifier.select2('destroy');
+					$WidgetIdentifier.val(selectedItems).trigger('change');
+					$WidgetIdentifier.select2(Select2Options);
+					$WidgetIdentifier.select2('open');
+				} else {
+					var selectedOptions = $WidgetIdentifier.find('option:selected').length;
+					var totalOptions = $WidgetIdentifier.find('option').length;
+					if (
+						selectedOptions === totalOptions - 1 &&
+						$WidgetIdentifier.find('option:selected:first-child').length === 0
+					) {
+						var selectedItems = [];
+						var allOptions = $WidgetIdentifier.find('option');
+						allOptions.each(function () {
+							selectedItems.push($(this).val());
+						});
+						$WidgetIdentifier.select2('destroy');
+						$WidgetIdentifier.val(selectedItems).trigger('change');
+						$WidgetIdentifier.select2(Select2Options);
+						$WidgetIdentifier.select2('open');
+					}
+				}
+			});
+
+			$WidgetIdentifier.on('select2:unselect', function (e) {
+				if (e.params.data.id === 'All') {
+					$WidgetIdentifier.find('option').removeAttr('selected');
+					$WidgetIdentifier.select2('destroy');
+					$WidgetIdentifier.select2(Select2Options);
+					$WidgetIdentifier.select2('open');
+					$WidgetIdentifier.val('').trigger('change');
+				} else {
+					$WidgetIdentifier.find('option:first-child').removeAttr('selected');
+					$WidgetIdentifier.select2(Select2Options);
+					$WidgetIdentifier.select2('open');
+				}
+			});
+		} else if (config.SelectType === 'Select2') {
+			$WidgetIdentifier.on('select2:select', function (e) {
+				if (e.target.selectedIndex !== 0) {
+					$WidgetIdentifier.parent().addClass('SelectSystemFilter-Selected');
+				} else {
+					$WidgetIdentifier.parent().removeClass('SelectSystemFilter-Selected');
+				}
+			});
+		} else if (config.SelectType === 'HtmlOptions' || config.SelectType === 'Ajax') {
+			// Problem with the title is that it is always escaped, which looks bad when we have HTML there.
+			// It should be possible to customize how title is built, but for this we need extra field in source data.
+			const removeSelectionTitle = function () {
+				$WidgetIdentifier.next().find('.select2-selection__rendered').removeAttr('title');
+			};
+			$WidgetIdentifier.on('select2:select select2:unselect', removeSelectionTitle);
+			removeSelectionTitle();
+		}
+	});
+};
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/shift-container/scripts.js":
-/*!************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/shift-container/scripts.js ***!
-  \************************************************************************/
 /***/ (function() {
 
-eval("{/* Component ShiftContainer */\r\n(function($, window, document, SapphireWidgets) {\r\n\tlet shiftTimelineResizeTimer;\r\n\tlet $shiftContainerId = $();\r\n\r\n\tconst create = shiftContainerId => {\r\n\t\t// $('.ShiftCard_timeLine').css('visibility', 'hidden');\r\n\r\n\t\t$('.ShiftExpandable_container .ActionsMenu ').css('display', 'none');\r\n\r\n\t\t$shiftContainerId = $(shiftContainerId);\r\n\r\n\t\thasScrollBar();\r\n\t\thandleShiftTable();\r\n\r\n\t\t// setTimeout(function () {\r\n\t\t// \t$('.ShiftCard_timeLine').css('visibility', 'visible');\r\n\t\t// \t$('.ShiftExpandable_container .ActionsMenu ').css('display', 'block');\r\n\t\t// }, 1500);\r\n\r\n\t\t$('.ShiftExpandable__arrow')\r\n\t\t\t.off('mousedown')\r\n\t\t\t.on('mousedown', function() {\r\n\t\t\t\tsetTimeout(function() {\r\n\t\t\t\t\tredrawShiftTimeline();\r\n\t\t\t\t}, 1500);\r\n\t\t\t});\r\n\t};\r\n\r\n\tconst handleShiftTable = () => {\r\n\t\t$('.ShiftExpandable').each(function(index, el) {\r\n\t\t\tvar $elFlag = $(this)\r\n\t\t\t\t.parent()\r\n\t\t\t\t.find('.FlagLine');\r\n\t\t\tvar $elFlagTime = $(this)\r\n\t\t\t\t.parent()\r\n\t\t\t\t.find('.FlagLine_time');\r\n\t\t\tvar $columnFlag = $elFlag.data('column');\r\n\t\t\tvar $minutesFlag = $elFlag.data('minutes');\r\n\t\t\tvar $slots = $(this)\r\n\t\t\t\t.closest('.ShiftContainer')\r\n\t\t\t\t.find('.ShiftContainer_header')\r\n\t\t\t\t.find('.ShiftCellContent');\r\n\t\t\tvar $slotWidth = Math.round($slots.eq(0).width());\r\n\t\t\tvar minutesPosition = ($minutesFlag * $slotWidth) / 60;\r\n\r\n\t\t\t// handle current time flog horizontal positioning\r\n\t\t\tvar slotsPosition = [];\r\n\t\t\t$slots.each(function(index, el) {\r\n\t\t\t\tslotsPosition.push($(this).position().left);\r\n\t\t\t});\r\n\t\t\t$elFlag.css('left', slotsPosition[$columnFlag - 1] + minutesPosition);\r\n\t\t\t$elFlag.css('display', 'block');\r\n\t\t\tif ($columnFlag === $slots.length) {\r\n\t\t\t\t$elFlagTime.css({\r\n\t\t\t\t\tright: '1px',\r\n\t\t\t\t\tleft: 'auto',\r\n\t\t\t\t});\r\n\t\t\t}\r\n\r\n\t\t\t// handle cells that might span over several slots\r\n\t\t\t$(this)\r\n\t\t\t\t.find('.ShiftCard')\r\n\t\t\t\t.each(function(index, elRow) {\r\n\t\t\t\t\tvar rowHasSpannedCell = false;\r\n\t\t\t\t\t$(elRow)\r\n\t\t\t\t\t\t.find('.ShiftCellContent')\r\n\t\t\t\t\t\t.each(function(index, elCell) {\r\n\t\t\t\t\t\t\tvar colspan = $(elCell).data('colspan');\r\n\t\t\t\t\t\t\tif (colspan === slotsPosition.length || rowHasSpannedCell) {\r\n\t\t\t\t\t\t\t\t$(elCell).css({\r\n\t\t\t\t\t\t\t\t\tdisplay: 'inline-block',\r\n\t\t\t\t\t\t\t\t\tflex: '1 1 auto',\r\n\t\t\t\t\t\t\t\t});\r\n\t\t\t\t\t\t\t} else if (colspan > 1) {\r\n\t\t\t\t\t\t\t\trowHasSpannedCell = true;\r\n\t\t\t\t\t\t\t\t$(elCell).css({\r\n\t\t\t\t\t\t\t\t\tdisplay: 'inline-block',\r\n\t\t\t\t\t\t\t\t\tflex: 'none',\r\n\t\t\t\t\t\t\t\t\twidth: +(slotsPosition[colspan] - slotsPosition[0]) + 'px',\r\n\t\t\t\t\t\t\t\t});\r\n\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t});\r\n\t\t\t\t});\r\n\r\n\t\t\t// handle horizontal scroll behavior\r\n\t\t\tif (el.scrollWidth > el.clientWidth) {\r\n\t\t\t\t$(el).width(el.scrollWidth);\r\n\t\t\t\t$(this)\r\n\t\t\t\t\t.closest('.ShiftContainer')\r\n\t\t\t\t\t.find('.ShiftContainer_header')\r\n\t\t\t\t\t.width(el.scrollWidth);\r\n\t\t\t} else {\r\n\t\t\t\t$(el).width('auto');\r\n\t\t\t\t$(this)\r\n\t\t\t\t\t.closest('.ShiftContainer')\r\n\t\t\t\t\t.find('.ShiftContainer_header')\r\n\t\t\t\t\t.width('auto');\r\n\t\t\t}\r\n\t\t});\r\n\t};\r\n\r\n\tconst hasScrollBar = () => {\r\n\t\tvar $ScrollableDiv = $shiftContainerId.find('.ShiftExpandable_container');\r\n\t\tif ($shiftContainerId.find('.ShiftExpandable_container').length > 0) {\r\n\t\t\tif ($ScrollableDiv.get(0).scrollHeight > $ScrollableDiv.height()) {\r\n\t\t\t\tvar $lastCell = $shiftContainerId.find('.IsTimer:last-child');\r\n\t\t\t\t$lastCell.css('padding-right', '7px');\r\n\t\t\t}\r\n\t\t}\r\n\t};\r\n\r\n\tconst redrawShiftTimeline = () => {\r\n\t\tclearTimeout(shiftTimelineResizeTimer);\r\n\t\tshiftTimelineResizeTimer = setTimeout(function() {\r\n\t\t\thasScrollBar();\r\n\t\t\thandleShiftTable();\r\n\t\t}, 400);\r\n\t};\r\n\r\n\tconst checkScroll = () => {\r\n\t\tvar hContent = $('.Content').height();\r\n\t\tvar hWindow = $(window).height();\r\n\r\n\t\tif (hContent > hWindow) redrawShiftTimeline();\r\n\t};\r\n\r\n\tSapphireWidgets.ShiftContainer = {\r\n\t\tcreate,\r\n\t\tcheckScroll,\r\n\t\tredrawShiftTimeline,\r\n\t};\r\n})(jQuery, window, document, SapphireWidgets);\r\n\r\n$(window)\r\n\t.off('resize.GenericGallery')\r\n\t.on('resize.GenericGallery', function() {\r\n\t\t$('.ShiftCard_timeLine').css('visibility', 'hidden');\r\n\t\t$('.ShiftExpandable_container .ActionsMenu').css('display', 'none');\r\n\r\n\t\tSapphireWidgets.ShiftContainer.redrawShiftTimeline();\r\n\r\n\t\tosAjaxBackend && osAjaxBackend.BindAfterAjaxRequest(SapphireWidgets.ShiftContainer.redrawShiftTimeline);\r\n\r\n\t\tsetTimeout(SapphireWidgets.ShiftContainer.checkScroll, 1000);\r\n\r\n\t\tsetTimeout(function() {\r\n\t\t\t$('.ShiftCard_timeLine').css('visibility', 'visible');\r\n\t\t\t$('.ShiftExpandable_container .ActionsMenu').css('display', 'block');\r\n\t\t}, 1500);\r\n\t});\r\n\r\n$(window).load(function() {\r\n\tif (!!$('.ShiftContainer').length) {\r\n\t\t$('.ShiftCard_timeLine').css('visibility', 'hidden');\r\n\t\t$('.ShiftExpandable_container .ActionsMenu').css('display', 'none');\r\n\r\n\t\tsetTimeout(function() {\r\n\t\t\tSapphireWidgets.ShiftContainer.redrawShiftTimeline();\r\n\t\t}, 400);\r\n\r\n\t\tsetTimeout(SapphireWidgets.ShiftContainer.checkScroll, 500);\r\n\r\n\t\tsetTimeout(function() {\r\n\t\t\t$('.ShiftCard_timeLine').css('visibility', 'visible');\r\n\t\t\t$('.ShiftExpandable_container .ActionsMenu').css('display', 'block');\r\n\t\t}, 600);\r\n\r\n\t\t$('.navigation-control-item')\r\n\t\t\t.off('click')\r\n\t\t\t.on('click', function() {\r\n\t\t\t\t$('.ShiftCard_timeLine').css('visibility', 'hidden');\r\n\t\t\t\t$('.ShiftExpandable_container .ActionsMenu').css('display', 'none');\r\n\t\t\t});\r\n\r\n\t\t//Verify the scroll if tooltip opened\r\n\t\t$('.ShiftExpandable_container').on('scroll', function() {\r\n\t\t\tif ($('.tooltipster-base').is(':visible')) {\r\n\t\t\t\t$('.tooltipster-base').css('visibility', 'hidden');\r\n\t\t\t}\r\n\t\t});\r\n\r\n\t\tosAjaxBackend.BindAfterAjaxRequest(function() {\r\n\t\t\tsetTimeout(function() {\r\n\t\t\t\tSapphireWidgets.ShiftContainer.redrawShiftTimeline();\r\n\t\t\t}, 400);\r\n\r\n\t\t\tsetTimeout(SapphireWidgets.ShiftContainer.checkScroll, 500);\r\n\r\n\t\t\tsetTimeout(function() {\r\n\t\t\t\t$('.ShiftCard_timeLine').css('visibility', 'visible');\r\n\t\t\t\t$('.ShiftExpandable_container .ActionsMenu').css('display', 'block');\r\n\t\t\t}, 600);\r\n\r\n\t\t\t// SapphireWidgets.ShiftContainer.redrawShiftTimeline;\r\n\t\t});\r\n\t}\r\n});\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/shift-container/scripts.js?\n}");
+/* Component ShiftContainer */
+(function($, window, document, SapphireWidgets) {
+	let shiftTimelineResizeTimer;
+	let $shiftContainerId = $();
+
+	const create = shiftContainerId => {
+		// $('.ShiftCard_timeLine').css('visibility', 'hidden');
+
+		$('.ShiftExpandable_container .ActionsMenu ').css('display', 'none');
+
+		$shiftContainerId = $(shiftContainerId);
+
+		hasScrollBar();
+		handleShiftTable();
+
+		// setTimeout(function () {
+		// 	$('.ShiftCard_timeLine').css('visibility', 'visible');
+		// 	$('.ShiftExpandable_container .ActionsMenu ').css('display', 'block');
+		// }, 1500);
+
+		$('.ShiftExpandable__arrow')
+			.off('mousedown')
+			.on('mousedown', function() {
+				setTimeout(function() {
+					redrawShiftTimeline();
+				}, 1500);
+			});
+	};
+
+	const handleShiftTable = () => {
+		$('.ShiftExpandable').each(function(index, el) {
+			var $elFlag = $(this)
+				.parent()
+				.find('.FlagLine');
+			var $elFlagTime = $(this)
+				.parent()
+				.find('.FlagLine_time');
+			var $columnFlag = $elFlag.data('column');
+			var $minutesFlag = $elFlag.data('minutes');
+			var $slots = $(this)
+				.closest('.ShiftContainer')
+				.find('.ShiftContainer_header')
+				.find('.ShiftCellContent');
+			var $slotWidth = Math.round($slots.eq(0).width());
+			var minutesPosition = ($minutesFlag * $slotWidth) / 60;
+
+			// handle current time flog horizontal positioning
+			var slotsPosition = [];
+			$slots.each(function(index, el) {
+				slotsPosition.push($(this).position().left);
+			});
+			$elFlag.css('left', slotsPosition[$columnFlag - 1] + minutesPosition);
+			$elFlag.css('display', 'block');
+			if ($columnFlag === $slots.length) {
+				$elFlagTime.css({
+					right: '1px',
+					left: 'auto',
+				});
+			}
+
+			// handle cells that might span over several slots
+			$(this)
+				.find('.ShiftCard')
+				.each(function(index, elRow) {
+					var rowHasSpannedCell = false;
+					$(elRow)
+						.find('.ShiftCellContent')
+						.each(function(index, elCell) {
+							var colspan = $(elCell).data('colspan');
+							if (colspan === slotsPosition.length || rowHasSpannedCell) {
+								$(elCell).css({
+									display: 'inline-block',
+									flex: '1 1 auto',
+								});
+							} else if (colspan > 1) {
+								rowHasSpannedCell = true;
+								$(elCell).css({
+									display: 'inline-block',
+									flex: 'none',
+									width: +(slotsPosition[colspan] - slotsPosition[0]) + 'px',
+								});
+							}
+						});
+				});
+
+			// handle horizontal scroll behavior
+			if (el.scrollWidth > el.clientWidth) {
+				$(el).width(el.scrollWidth);
+				$(this)
+					.closest('.ShiftContainer')
+					.find('.ShiftContainer_header')
+					.width(el.scrollWidth);
+			} else {
+				$(el).width('auto');
+				$(this)
+					.closest('.ShiftContainer')
+					.find('.ShiftContainer_header')
+					.width('auto');
+			}
+		});
+	};
+
+	const hasScrollBar = () => {
+		var $ScrollableDiv = $shiftContainerId.find('.ShiftExpandable_container');
+		if ($shiftContainerId.find('.ShiftExpandable_container').length > 0) {
+			if ($ScrollableDiv.get(0).scrollHeight > $ScrollableDiv.height()) {
+				var $lastCell = $shiftContainerId.find('.IsTimer:last-child');
+				$lastCell.css('padding-right', '7px');
+			}
+		}
+	};
+
+	const redrawShiftTimeline = () => {
+		clearTimeout(shiftTimelineResizeTimer);
+		shiftTimelineResizeTimer = setTimeout(function() {
+			hasScrollBar();
+			handleShiftTable();
+		}, 400);
+	};
+
+	const checkScroll = () => {
+		var hContent = $('.Content').height();
+		var hWindow = $(window).height();
+
+		if (hContent > hWindow) redrawShiftTimeline();
+	};
+
+	SapphireWidgets.ShiftContainer = {
+		create,
+		checkScroll,
+		redrawShiftTimeline,
+	};
+})(jQuery, window, document, SapphireWidgets);
+
+$(window)
+	.off('resize.GenericGallery')
+	.on('resize.GenericGallery', function() {
+		$('.ShiftCard_timeLine').css('visibility', 'hidden');
+		$('.ShiftExpandable_container .ActionsMenu').css('display', 'none');
+
+		SapphireWidgets.ShiftContainer.redrawShiftTimeline();
+
+		osAjaxBackend && osAjaxBackend.BindAfterAjaxRequest(SapphireWidgets.ShiftContainer.redrawShiftTimeline);
+
+		setTimeout(SapphireWidgets.ShiftContainer.checkScroll, 1000);
+
+		setTimeout(function() {
+			$('.ShiftCard_timeLine').css('visibility', 'visible');
+			$('.ShiftExpandable_container .ActionsMenu').css('display', 'block');
+		}, 1500);
+	});
+
+$(window).load(function() {
+	if (!!$('.ShiftContainer').length) {
+		$('.ShiftCard_timeLine').css('visibility', 'hidden');
+		$('.ShiftExpandable_container .ActionsMenu').css('display', 'none');
+
+		setTimeout(function() {
+			SapphireWidgets.ShiftContainer.redrawShiftTimeline();
+		}, 400);
+
+		setTimeout(SapphireWidgets.ShiftContainer.checkScroll, 500);
+
+		setTimeout(function() {
+			$('.ShiftCard_timeLine').css('visibility', 'visible');
+			$('.ShiftExpandable_container .ActionsMenu').css('display', 'block');
+		}, 600);
+
+		$('.navigation-control-item')
+			.off('click')
+			.on('click', function() {
+				$('.ShiftCard_timeLine').css('visibility', 'hidden');
+				$('.ShiftExpandable_container .ActionsMenu').css('display', 'none');
+			});
+
+		//Verify the scroll if tooltip opened
+		$('.ShiftExpandable_container').on('scroll', function() {
+			if ($('.tooltipster-base').is(':visible')) {
+				$('.tooltipster-base').css('visibility', 'hidden');
+			}
+		});
+
+		osAjaxBackend.BindAfterAjaxRequest(function() {
+			setTimeout(function() {
+				SapphireWidgets.ShiftContainer.redrawShiftTimeline();
+			}, 400);
+
+			setTimeout(SapphireWidgets.ShiftContainer.checkScroll, 500);
+
+			setTimeout(function() {
+				$('.ShiftCard_timeLine').css('visibility', 'visible');
+				$('.ShiftExpandable_container .ActionsMenu').css('display', 'block');
+			}, 600);
+
+			// SapphireWidgets.ShiftContainer.redrawShiftTimeline;
+		});
+	}
+});
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/shift-table/shiftTable.js":
-/*!***********************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/shift-table/shiftTable.js ***!
-  \***********************************************************************/
 /***/ (function() {
 
-eval("{/* Component ShiftTable */\r\nSapphireWidgets.ShiftTable = widgetId => {\r\n\t$(document).ready(() => {\r\n\t\tsetTimeout(() => {\r\n\t\t\tconst $shiftTable = $(`#${widgetId}`);\r\n\t\t\tconst $headerCellList = $shiftTable.find('.ShiftTable__HeaderLabels .ShiftTableCell');\r\n\t\t\tconst $hourLine = $shiftTable.find('.HourLine');\r\n\r\n\t\t\tconst columnLine = $hourLine.data('column');\r\n\t\t\tconst minutesLine = $hourLine.data('minutes');\r\n\r\n\t\t\tconst cellWidth = $headerCellList.eq(0).width();\r\n\t\t\tconst minutesPosition = (cellWidth / 60) * minutesLine;\r\n\r\n\t\t\t// Handle current hour line horizontal positioning\r\n\t\t\tconst cellPosition = [];\r\n\r\n\t\t\t$headerCellList.each(function(index, el) {\r\n\t\t\t\tcellPosition.push($(this).position().left);\r\n\t\t\t});\r\n\r\n\t\t\t$hourLine.css('left', cellPosition[columnLine - 1] + minutesPosition);\r\n\t\t\t$hourLine.css('display', 'flex');\r\n\t\t}, 500);\r\n\t});\r\n};\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/shift-table/shiftTable.js?\n}");
+/* Component ShiftTable */
+SapphireWidgets.ShiftTable = widgetId => {
+	$(document).ready(() => {
+		setTimeout(() => {
+			const $shiftTable = $(`#${widgetId}`);
+			const $headerCellList = $shiftTable.find('.ShiftTable__HeaderLabels .ShiftTableCell');
+			const $hourLine = $shiftTable.find('.HourLine');
+
+			const columnLine = $hourLine.data('column');
+			const minutesLine = $hourLine.data('minutes');
+
+			const cellWidth = $headerCellList.eq(0).width();
+			const minutesPosition = (cellWidth / 60) * minutesLine;
+
+			// Handle current hour line horizontal positioning
+			const cellPosition = [];
+
+			$headerCellList.each(function(index, el) {
+				cellPosition.push($(this).position().left);
+			});
+
+			$hourLine.css('left', cellPosition[columnLine - 1] + minutesPosition);
+			$hourLine.css('display', 'flex');
+		}, 500);
+	});
+};
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/shift-table/shiftTableCard.js":
-/*!***************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/shift-table/shiftTableCard.js ***!
-  \***************************************************************************/
 /***/ (function() {
 
-eval("{/* Component ShiftTableCard */\r\nSapphireWidgets.ShiftTableCard = widgetId => {\r\n\tconst $component = $(`#${widgetId}`);\r\n\tconst $actions = $component.find('.MoreActions');\r\n\tconst hasActions = $actions.length > 0;\r\n\r\n\tif (hasActions) {\r\n\t\t$actions.on('click', e => {\r\n\t\t\te.stopPropagation();\r\n\r\n\t\t\t$('.ShiftTableCard').removeClass('ShiftTableCard--selected');\r\n\t\t\t$component.addClass('ShiftTableCard--selected');\r\n\r\n\t\t\twindow.addEventListener('click', onClickOutside);\r\n\t\t});\r\n\r\n\t\tconst onClickOutside = e => {\r\n\t\t\tconst $target = $(e.target);\r\n\r\n\t\t\tif (!e.target.className.includes($component) && !$target.parents($component).is($component)) {\r\n\t\t\t\t$component.removeClass('ShiftTableCard--selected');\r\n\r\n\t\t\t\twindow.removeEventListener('click', onClickOutside);\r\n\t\t\t}\r\n\t\t};\r\n\t}\r\n};\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/shift-table/shiftTableCard.js?\n}");
+/* Component ShiftTableCard */
+SapphireWidgets.ShiftTableCard = widgetId => {
+	const $component = $(`#${widgetId}`);
+	const $actions = $component.find('.MoreActions');
+	const hasActions = $actions.length > 0;
+
+	if (hasActions) {
+		$actions.on('click', e => {
+			e.stopPropagation();
+
+			$('.ShiftTableCard').removeClass('ShiftTableCard--selected');
+			$component.addClass('ShiftTableCard--selected');
+
+			window.addEventListener('click', onClickOutside);
+		});
+
+		const onClickOutside = e => {
+			const $target = $(e.target);
+
+			if (!e.target.className.includes($component) && !$target.parents($component).is($component)) {
+				$component.removeClass('ShiftTableCard--selected');
+
+				window.removeEventListener('click', onClickOutside);
+			}
+		};
+	}
+};
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/shift-table/shiftTableCardProgress.js":
-/*!***********************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/shift-table/shiftTableCardProgress.js ***!
-  \***********************************************************************************/
 /***/ (function() {
 
-eval("{SapphireWidgets.ShiftTableCardProgress = config => {\r\n\tconst DEFAULT_PADDING = 0;\r\n\tconst DEFAULT_CARD_HEIGHT = 56;\r\n\r\n\tconst setTableCardProgress = () => {\r\n\r\n\t\tconst cardProgresID = config.widgetId;\r\n\t\tconst shiftEndDateTime = config.shiftEndDateTime;\r\n\t\tconst shiftStartDateTime = config.shiftStartDateTime;\r\n\t\tconst slotBeginDateTime = config.slotBeginDateTime;\r\n\t\tconst slotFinalDateTime = config.slotFinalDateTime;\r\n\r\n\r\n\t\tconst $cardProgress = $('#' + cardProgresID);\r\n\t\tconst $shiftTable = $cardProgress.closest('.ShiftTable');\r\n\t\tconst $tableCellList = $shiftTable.find('.ShiftTable__Content .ShiftTableCell');\r\n\t\tconst $tableRowContent = $cardProgress.closest('.ShiftTableRow__Content');\r\n\t\tconst $tableCard = $tableRowContent.find('.ShiftTableCard');\r\n\t\tconst $cardProgressList = $tableRowContent.find('.ShiftTableCardProgress');\r\n\t\tconst $actions = $cardProgress.find('.MoreActions');\r\n\t\tconst hasActions = $actions.length > 0;\r\n\r\n\t\tconst cardsTotal = $tableCard.length;\r\n\r\n\t\tconst timeSlotWidth = $tableCellList[1].getBoundingClientRect().width;\r\n\r\n\t\tconst roundWidth = Math.round((timeSlotWidth + Number.EPSILON) * 100) / 100;\r\n\r\n\t\tconst cardPosition = computeCardPosition({\r\n\t\t\tshiftStartStr: shiftStartDateTime,\r\n\t\t\tshiftEndStr: shiftEndDateTime,\r\n\t\t\tslotStartStr: slotBeginDateTime,\r\n\t\t\tslotEndStr: slotFinalDateTime,\r\n\t\t\thourColWidthPx: roundWidth\r\n\t\t});\r\n\r\n\r\n\r\n\t\tconst direction = $('.Page').hasClass('AR') || $('.Page').hasClass('FA') ? 'right' : 'left';\r\n\r\n\t\t$cardProgress.css('max-width', 'unset');\r\n\t\t$cardProgress.css('width', `${cardPosition.width}px`);\r\n\t\t$cardProgress.css(direction, `${(cardPosition.left += DEFAULT_PADDING)}px`);\r\n\r\n\t\tif (cardsTotal > 0) {\r\n\t\t\tlet count = 0;\r\n\r\n\t\t\t$tableCard.each(function () {\r\n\t\t\t\tconst $this = $(this);\r\n\t\t\t\tconst isOverlaped = checkForOverlap($cardProgress[0], $this[0]);\r\n\r\n\t\t\t\tif (isOverlaped === true && count < $cardProgressList.length) {\r\n\t\t\t\t\t$cardProgress.css('top', $this[0].offsetTop + $cardProgress.height());\r\n\t\t\t\t}\r\n\r\n\t\t\t\tcount = count++;\r\n\t\t\t});\r\n\r\n\t\t\t$cardProgressList.each(function () {\r\n\t\t\t\tconst $this = $(this);\r\n\r\n\t\t\t\tconst helper = helperObj($this, $cardProgress, $cardProgressList);\r\n\r\n\t\t\t\tif (helper.isOverlaped) {\r\n\t\t\t\t\t$cardProgress.css('top', $this[0].offsetTop + 130);\r\n\t\t\t\t} else {\r\n\t\t\t\t\t$cardProgress.css('top', $tableRowContent.height() - DEFAULT_PADDING);\r\n\t\t\t\t}\r\n\t\t\t});\r\n\r\n\t\t\tconst offset = 4 + DEFAULT_CARD_HEIGHT + DEFAULT_PADDING * 2;\r\n\r\n\t\t\t$tableRowContent.height($cardProgressList.last().position().top + offset);\r\n\t\t} else {\r\n\r\n\r\n\t\t\t$cardProgressList.each(function () {\r\n\t\t\t\tthis.style.opacity = 1;\r\n\r\n\t\t\t\tconst $this = $(this);\r\n\t\t\t\tconst helper = helperObj($this, $cardProgress, $cardProgressList);\r\n\r\n\t\t\t\tif (helper.isOverlaped) {\r\n\t\t\t\t\tconst myRect = this.getBoundingClientRect();\r\n\t\t\t\t\tconst next = findNextSiblingWithClass(this, 'ShiftTableCardProgress');\r\n\r\n\t\t\t\t\tif (!next) return;\r\n\r\n\t\t\t\t\tconst nextRect = next.getBoundingClientRect();\r\n\r\n\t\t\t\t\tnext.style.top = this.offsetTop + myRect.height + 'px';\r\n\t\t\t\t\thelper.$shiftCard.height(this.offsetTop + myRect.height + nextRect.height);\r\n\r\n\t\t\t\t\t// const offset = DEFAULT_CARD_HEIGHT + DEFAULT_PADDING * 2;\r\n\t\t\t\t\t// $cardProgress.css('top', $cardProgress[0].offsetTop + offset + 'px');\r\n\t\t\t\t\t// helper.$shiftCard.height(helper.$shiftCard.height() + $this[0].offsetHeight);\r\n\t\t\t\t}\r\n\t\t\t});\r\n\t\t}\r\n\r\n\t\tsetTimeout(() => {\r\n\t\t\tif (timeSlotWidth !== $tableCellList[1].getBoundingClientRect().width) {\r\n\t\t\t\tsetTableCardProgress(config);\r\n\t\t\t}\r\n\t\t}, 500);\r\n\r\n\t\tif (hasActions) {\r\n\t\t\t$actions.on('click', e => {\r\n\t\t\t\te.stopPropagation();\r\n\t\t\t\t$cardProgress.addClass('ShiftTableCardProgress--selected');\r\n\t\t\t\twindow.addEventListener('click', onClickOutside);\r\n\t\t\t});\r\n\r\n\t\t\tconst onClickOutside = e => {\r\n\t\t\t\tconst $target = $(e.target);\r\n\r\n\t\t\t\tif (!e.target.className.includes($cardProgress) && !$target.parents($cardProgress).is($cardProgress)) {\r\n\t\t\t\t\t$cardProgress.removeClass('ShiftTableCardProgress--selected');\r\n\r\n\t\t\t\t\twindow.removeEventListener('click', onClickOutside);\r\n\t\t\t\t}\r\n\t\t\t};\r\n\t\t}\r\n\r\n\r\n\t};\r\n\r\n\r\n\tconst parseLocalDateTime = (str) => {\r\n\t\t// expects \"YYYY-MM-DD HH:mm\" (or \"YYYY-MM-DDTHH:mm\")\r\n\t\tconst s = str.trim().replace(\"T\", \" \");\r\n\t\tconst [datePart, timePart] = s.split(\" \");\r\n\t\tconst [y, m, d] = datePart.split(\"-\").map(Number);\r\n\t\tconst [hh, mm] = timePart.split(\":\").map(Number);\r\n\t\treturn new Date(y, m - 1, d, hh, mm, 0, 0); // local time\r\n\t}\r\n\r\n\tconst clampDate = (date, min, max) => {\r\n\t\treturn new Date(Math.min(Math.max(date.getTime(), min.getTime()), max.getTime()));\r\n\t}\r\n\r\n\tconst computeCardPosition = ({\r\n\t\tshiftStartStr,\r\n\t\tshiftEndStr,\r\n\t\tslotStartStr,\r\n\t\tslotEndStr,\r\n\t\thourColWidthPx\r\n\t}) => {\r\n\t\tconst gridStart = parseLocalDateTime(shiftStartStr);\r\n\t\tconst gridEnd = parseLocalDateTime(shiftEndStr);\r\n\t\tlet slotStart = parseLocalDateTime(slotStartStr);\r\n\t\tlet slotEnd = parseLocalDateTime(slotEndStr);\r\n\r\n\t\t// Handle inverted/invalid ranges\r\n\t\tif (slotEnd <= slotStart) return { left: 0, width: 0 };\r\n\r\n\t\t// Clamp slot to grid (optional but usually desirable)\r\n\t\tslotStart = clampDate(slotStart, gridStart, gridEnd);\r\n\t\tslotEnd = clampDate(slotEnd, gridStart, gridEnd);\r\n\r\n\t\tif (slotEnd <= slotStart) return { left: 0, width: 0 };\r\n\r\n\t\tconst pxPerMinute = hourColWidthPx / 60;\r\n\r\n\t\tconst minutesFromStart = (slotStart - gridStart) / 60000;\r\n\t\tconst durationMinutes = (slotEnd - slotStart) / 60000;\r\n\r\n\t\tconst left = minutesFromStart * pxPerMinute;\r\n\t\tconst width = durationMinutes * pxPerMinute;\r\n\r\n\t\treturn { left, width };\r\n\t}\r\n\r\n\tconst findPreviousSiblingWithClass = (element, className) => {\r\n\t\tlet prev = element?.previousElementSibling;\r\n\t\twhile (prev) {\r\n\t\t\tif (prev.classList.contains(className)) {\r\n\t\t\t\treturn prev;\r\n\t\t\t}\r\n\t\t\tprev = prev.previousElementSibling;\r\n\t\t}\r\n\t\treturn null;\r\n\t}\r\n\r\n\tconst findNextSiblingWithClass = (element, className) => {\r\n\t\tlet next = element?.nextElementSibling;\r\n\t\twhile (next) {\r\n\t\t\tif (next.classList.contains(className)) {\r\n\t\t\t\treturn next;\r\n\t\t\t}\r\n\t\t\tnext = next.nextElementSibling;\r\n\t\t}\r\n\t\treturn null;\r\n\t}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\tconst checkForOverlap = (el1, el2) => {\r\n\t\tconst bounds1 = el1.getBoundingClientRect();\r\n\t\tconst bounds2 = el2.getBoundingClientRect();\r\n\r\n\t\tconst firstIstLeftmost = bounds1.left <= bounds2.left;\r\n\t\tconst leftest = firstIstLeftmost ? bounds1 : bounds2;\r\n\t\tconst rightest = firstIstLeftmost ? bounds2 : bounds1;\r\n\r\n\t\t// Replace > to to >= if border overlap should count\r\n\t\tif (leftest.right > rightest.left) {\r\n\t\t\tconst firstIsTopmost = bounds1.top <= bounds2.top;\r\n\t\t\tconst topest = firstIsTopmost ? bounds1 : bounds2;\r\n\t\t\tconst bottomest = firstIsTopmost ? bounds2 : bounds1;\r\n\r\n\t\t\t// Replace > to >= if border should count\r\n\t\t\treturn topest.bottom > bottomest.top;\r\n\t\t} else return false;\r\n\t};\r\n\r\n\tconst helperObj = ($this, $cardProgress, $cardProgressList) => {\r\n\t\tconst $shiftCard = $this.closest('.ShiftTableRow__Content');\r\n\t\tlet isOverlaped = checkForOverlap($cardProgress[0], $this[0]);\r\n\t\tconst createdId = $cardProgress.attr('id');\r\n\t\tconst loopedId = $this.attr('id');\r\n\t\tconst $firstSlotCreated = $cardProgressList[0];\r\n\r\n\t\tisOverlaped = isOverlaped === true && createdId != loopedId && createdId != $firstSlotCreated.id;\r\n\r\n\t\treturn { $shiftCard, createdId, loopedId, $firstSlotCreated, isOverlaped };\r\n\t};\r\n\r\n\t$(document).ready(function () {\r\n\t\tsetTableCardProgress(config);\r\n\t});\r\n\r\n\t$(window).resize(function () {\r\n\t\tif (window[config.widgetId]) {\r\n\t\t\tclearTimeout(window[config.widgetId].resizedFinished);\r\n\r\n\r\n\t\t\tconst allShiftTableCardProgress = document.querySelectorAll('.ShiftTableCardProgress');\r\n\t\t\tallShiftTableCardProgress.forEach(element => {\r\n\t\t\t\telement.style.top = '';\r\n\t\t\t\telement.style.opacity = 0;\r\n\t\t\t});\r\n\r\n\t\t\twindow[config.widgetId].resizedFinished = setTimeout(function () {\r\n\t\t\t\tsetTableCardProgress(config);\r\n\t\t\t}, 250);\r\n\t\t}\r\n\t});\r\n};\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/shift-table/shiftTableCardProgress.js?\n}");
+SapphireWidgets.ShiftTableCardProgress = config => {
+	const DEFAULT_PADDING = 0;
+	const DEFAULT_CARD_HEIGHT = 56;
+
+	const setTableCardProgress = () => {
+
+		const cardProgresID = config.widgetId;
+		const shiftEndDateTime = config.shiftEndDateTime;
+		const shiftStartDateTime = config.shiftStartDateTime;
+		const slotBeginDateTime = config.slotBeginDateTime;
+		const slotFinalDateTime = config.slotFinalDateTime;
+
+
+		const $cardProgress = $('#' + cardProgresID);
+		const $shiftTable = $cardProgress.closest('.ShiftTable');
+		const $tableCellList = $shiftTable.find('.ShiftTable__Content .ShiftTableCell');
+		const $tableRowContent = $cardProgress.closest('.ShiftTableRow__Content');
+		const $tableCard = $tableRowContent.find('.ShiftTableCard');
+		const $cardProgressList = $tableRowContent.find('.ShiftTableCardProgress');
+		const $actions = $cardProgress.find('.MoreActions');
+		const hasActions = $actions.length > 0;
+
+		const cardsTotal = $tableCard.length;
+
+		const timeSlotWidth = $tableCellList[1].getBoundingClientRect().width;
+
+		const roundWidth = Math.round((timeSlotWidth + Number.EPSILON) * 100) / 100;
+
+		const cardPosition = computeCardPosition({
+			shiftStartStr: shiftStartDateTime,
+			shiftEndStr: shiftEndDateTime,
+			slotStartStr: slotBeginDateTime,
+			slotEndStr: slotFinalDateTime,
+			hourColWidthPx: roundWidth
+		});
+
+
+
+		const direction = $('.Page').hasClass('AR') || $('.Page').hasClass('FA') ? 'right' : 'left';
+
+		$cardProgress.css('max-width', 'unset');
+		$cardProgress.css('width', `${cardPosition.width}px`);
+		$cardProgress.css(direction, `${(cardPosition.left += DEFAULT_PADDING)}px`);
+
+		if (cardsTotal > 0) {
+			let count = 0;
+
+			$tableCard.each(function () {
+				const $this = $(this);
+				const isOverlaped = checkForOverlap($cardProgress[0], $this[0]);
+
+				if (isOverlaped === true && count < $cardProgressList.length) {
+					$cardProgress.css('top', $this[0].offsetTop + $cardProgress.height());
+				}
+
+				count = count++;
+			});
+
+			$cardProgressList.each(function () {
+				const $this = $(this);
+
+				const helper = helperObj($this, $cardProgress, $cardProgressList);
+
+				if (helper.isOverlaped) {
+					$cardProgress.css('top', $this[0].offsetTop + 130);
+				} else {
+					$cardProgress.css('top', $tableRowContent.height() - DEFAULT_PADDING);
+				}
+			});
+
+			const offset = 4 + DEFAULT_CARD_HEIGHT + DEFAULT_PADDING * 2;
+
+			$tableRowContent.height($cardProgressList.last().position().top + offset);
+		} else {
+
+
+			$cardProgressList.each(function () {
+				this.style.opacity = 1;
+
+				const $this = $(this);
+				const helper = helperObj($this, $cardProgress, $cardProgressList);
+
+				if (helper.isOverlaped) {
+					const myRect = this.getBoundingClientRect();
+					const next = findNextSiblingWithClass(this, 'ShiftTableCardProgress');
+
+					if (!next) return;
+
+					const nextRect = next.getBoundingClientRect();
+
+					next.style.top = this.offsetTop + myRect.height + 'px';
+					helper.$shiftCard.height(this.offsetTop + myRect.height + nextRect.height);
+
+					// const offset = DEFAULT_CARD_HEIGHT + DEFAULT_PADDING * 2;
+					// $cardProgress.css('top', $cardProgress[0].offsetTop + offset + 'px');
+					// helper.$shiftCard.height(helper.$shiftCard.height() + $this[0].offsetHeight);
+				}
+			});
+		}
+
+		setTimeout(() => {
+			if (timeSlotWidth !== $tableCellList[1].getBoundingClientRect().width) {
+				setTableCardProgress(config);
+			}
+		}, 500);
+
+		if (hasActions) {
+			$actions.on('click', e => {
+				e.stopPropagation();
+				$cardProgress.addClass('ShiftTableCardProgress--selected');
+				window.addEventListener('click', onClickOutside);
+			});
+
+			const onClickOutside = e => {
+				const $target = $(e.target);
+
+				if (!e.target.className.includes($cardProgress) && !$target.parents($cardProgress).is($cardProgress)) {
+					$cardProgress.removeClass('ShiftTableCardProgress--selected');
+
+					window.removeEventListener('click', onClickOutside);
+				}
+			};
+		}
+
+
+	};
+
+
+	const parseLocalDateTime = (str) => {
+		// expects "YYYY-MM-DD HH:mm" (or "YYYY-MM-DDTHH:mm")
+		const s = str.trim().replace("T", " ");
+		const [datePart, timePart] = s.split(" ");
+		const [y, m, d] = datePart.split("-").map(Number);
+		const [hh, mm] = timePart.split(":").map(Number);
+		return new Date(y, m - 1, d, hh, mm, 0, 0); // local time
+	}
+
+	const clampDate = (date, min, max) => {
+		return new Date(Math.min(Math.max(date.getTime(), min.getTime()), max.getTime()));
+	}
+
+	const computeCardPosition = ({
+		shiftStartStr,
+		shiftEndStr,
+		slotStartStr,
+		slotEndStr,
+		hourColWidthPx
+	}) => {
+		const gridStart = parseLocalDateTime(shiftStartStr);
+		const gridEnd = parseLocalDateTime(shiftEndStr);
+		let slotStart = parseLocalDateTime(slotStartStr);
+		let slotEnd = parseLocalDateTime(slotEndStr);
+
+		// Handle inverted/invalid ranges
+		if (slotEnd <= slotStart) return { left: 0, width: 0 };
+
+		// Clamp slot to grid (optional but usually desirable)
+		slotStart = clampDate(slotStart, gridStart, gridEnd);
+		slotEnd = clampDate(slotEnd, gridStart, gridEnd);
+
+		if (slotEnd <= slotStart) return { left: 0, width: 0 };
+
+		const pxPerMinute = hourColWidthPx / 60;
+
+		const minutesFromStart = (slotStart - gridStart) / 60000;
+		const durationMinutes = (slotEnd - slotStart) / 60000;
+
+		const left = minutesFromStart * pxPerMinute;
+		const width = durationMinutes * pxPerMinute;
+
+		return { left, width };
+	}
+
+	const findPreviousSiblingWithClass = (element, className) => {
+		let prev = element?.previousElementSibling;
+		while (prev) {
+			if (prev.classList.contains(className)) {
+				return prev;
+			}
+			prev = prev.previousElementSibling;
+		}
+		return null;
+	}
+
+	const findNextSiblingWithClass = (element, className) => {
+		let next = element?.nextElementSibling;
+		while (next) {
+			if (next.classList.contains(className)) {
+				return next;
+			}
+			next = next.nextElementSibling;
+		}
+		return null;
+	}
+
+
+
+
+
+
+
+	const checkForOverlap = (el1, el2) => {
+		const bounds1 = el1.getBoundingClientRect();
+		const bounds2 = el2.getBoundingClientRect();
+
+		const firstIstLeftmost = bounds1.left <= bounds2.left;
+		const leftest = firstIstLeftmost ? bounds1 : bounds2;
+		const rightest = firstIstLeftmost ? bounds2 : bounds1;
+
+		// Replace > to to >= if border overlap should count
+		if (leftest.right > rightest.left) {
+			const firstIsTopmost = bounds1.top <= bounds2.top;
+			const topest = firstIsTopmost ? bounds1 : bounds2;
+			const bottomest = firstIsTopmost ? bounds2 : bounds1;
+
+			// Replace > to >= if border should count
+			return topest.bottom > bottomest.top;
+		} else return false;
+	};
+
+	const helperObj = ($this, $cardProgress, $cardProgressList) => {
+		const $shiftCard = $this.closest('.ShiftTableRow__Content');
+		let isOverlaped = checkForOverlap($cardProgress[0], $this[0]);
+		const createdId = $cardProgress.attr('id');
+		const loopedId = $this.attr('id');
+		const $firstSlotCreated = $cardProgressList[0];
+
+		isOverlaped = isOverlaped === true && createdId != loopedId && createdId != $firstSlotCreated.id;
+
+		return { $shiftCard, createdId, loopedId, $firstSlotCreated, isOverlaped };
+	};
+
+	$(document).ready(function () {
+		setTableCardProgress(config);
+	});
+
+	$(window).resize(function () {
+		if (window[config.widgetId]) {
+			clearTimeout(window[config.widgetId].resizedFinished);
+
+
+			const allShiftTableCardProgress = document.querySelectorAll('.ShiftTableCardProgress');
+			allShiftTableCardProgress.forEach(element => {
+				element.style.top = '';
+				element.style.opacity = 0;
+			});
+
+			window[config.widgetId].resizedFinished = setTimeout(function () {
+				setTableCardProgress(config);
+			}, 250);
+		}
+	});
+};
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/shift-table/shiftTableHover.js":
-/*!****************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/shift-table/shiftTableHover.js ***!
-  \****************************************************************************/
 /***/ (function() {
 
-eval("{/* Component ShiftTableCardHover */\r\nSapphireWidgets.ShiftTableCardHover = widgetId => {\r\n\t$(document).ready(function() {\r\n\t\tconst $card = $(`#${widgetId}`);\r\n\t\tconst $cardContent = $card.find('.ShiftTableCardHover__Content');\r\n\r\n\t\t$cardContent.on('click', e => {\r\n\t\t\te.stopPropagation();\r\n\r\n\t\t\t$card.addClass('ShiftTableCardHover--selected');\r\n\r\n\t\t\twindow.addEventListener('click', onClickOutside);\r\n\t\t});\r\n\r\n\t\tconst onClickOutside = e => {\r\n\t\t\tconst $target = $(e.target);\r\n\r\n\t\t\tif (!e.target.className.includes($card) && !$target.parents($card).is($card)) {\r\n\t\t\t\t$card.removeClass('ShiftTableCardHover--selected');\r\n\r\n\t\t\t\twindow.removeEventListener('click', onClickOutside);\r\n\t\t\t}\r\n\t\t};\r\n\t});\r\n};\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/shift-table/shiftTableHover.js?\n}");
+/* Component ShiftTableCardHover */
+SapphireWidgets.ShiftTableCardHover = widgetId => {
+	$(document).ready(function() {
+		const $card = $(`#${widgetId}`);
+		const $cardContent = $card.find('.ShiftTableCardHover__Content');
+
+		$cardContent.on('click', e => {
+			e.stopPropagation();
+
+			$card.addClass('ShiftTableCardHover--selected');
+
+			window.addEventListener('click', onClickOutside);
+		});
+
+		const onClickOutside = e => {
+			const $target = $(e.target);
+
+			if (!e.target.className.includes($card) && !$target.parents($card).is($card)) {
+				$card.removeClass('ShiftTableCardHover--selected');
+
+				window.removeEventListener('click', onClickOutside);
+			}
+		};
+	});
+};
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/side-menu/scripts.js":
-/*!******************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/side-menu/scripts.js ***!
-  \******************************************************************/
 /***/ (function() {
 
-eval("{/* Component SideMenuStructure */\r\n(function($, window, SapphireWidgets) {\r\n\tclass SideMenu {\r\n\t\tconstructor(config) {\r\n\t\t\tthis.options = {\r\n\t\t\t\t...config,\r\n\t\t\t};\r\n\r\n\t\t\tthis.onComponentInit();\r\n\t\t}\r\n\r\n\t\tsetMainMenuWidth() {\r\n\t\t\t$(document).ready(() => {\r\n\t\t\t\tconst $sideBarIframe = $('.LayoutBase-iframesidebar.notExpandable');\r\n\r\n\t\t\t\tif ($sideBarIframe.length) {\r\n\t\t\t\t\tconst $mainMenu = $('.LayoutBase-MainMenu');\r\n\t\t\t\t\t$mainMenu.css({\r\n\t\t\t\t\t\twidth: 'calc(100% - 262px)',\r\n\t\t\t\t\t});\r\n\t\t\t\t}\r\n\t\t\t});\r\n\t\t}\r\n\r\n\t\topenCloseMenu(toOpen) {\r\n\t\t\tif (toOpen) {\r\n\t\t\t\tthis.$component.addClass('SideMenu--open');\r\n\r\n\t\t\t\t$('.LayoutBase-iframesidebar').css({\r\n\t\t\t\t\tzIndex: 0,\r\n\t\t\t\t});\r\n\t\t\t} else {\r\n\t\t\t\tthis.$component.removeClass('SideMenu--open');\r\n\r\n\t\t\t\t$('.LayoutBase-iframesidebar').css({\r\n\t\t\t\t\tzIndex: 70,\r\n\t\t\t\t});\r\n\t\t\t}\r\n\t\t}\r\n\r\n\t\twindowClick($component) {\r\n\t\t\t$(window)\r\n\t\t\t\t.off('click.SideMenuStructure')\r\n\t\t\t\t.on('click.SideMenuStructure', event => {\r\n\t\t\t\t\tconst isMenuItem = event.target.offsetParent && $(event.target.offsetParent).hasClass('MenuItem');\r\n\r\n\t\t\t\t\tif (!isMenuItem) {\r\n\t\t\t\t\t\t$component.find('.SideMenu__MenuItems .active').removeClass('active');\r\n\t\t\t\t\t\t$component.find('.SideMenu__MenuItems .show').removeClass('show');\r\n\r\n\t\t\t\t\t\t$(window).off('click.SideMenuStructure');\r\n\t\t\t\t\t}\r\n\t\t\t\t});\r\n\t\t}\r\n\r\n\t\tonComponentInit() {\r\n\t\t\tthis.setMainMenuWidth();\r\n\r\n\t\t\tthis.$component = $(`#${this.options.widgetId}`);\r\n\t\t\tthis.$trigger = this.$component.find('.SideMenu__Trigger');\r\n\t\t\tthis.$shield = this.$component.find('.SideMenu__Shield');\r\n\t\t\tthis.$closeButton = this.$component.find('.SideMenu__MenuClose');\r\n\t\t\tthis.$tabItem = this.$component.find('.SideMenu__TabItems .MenuItem');\r\n\t\t\tthis.$menuItem = this.$component.find('.SideMenu__MenuItems .MenuItem__ItemTitle');\r\n\t\t\tthis.$subItem = this.$component.find('.SideMenu__MenuItems .MenuItem_subItems');\r\n\t\t\tthis.$department = this.$component.find('.SideMenu__Tabs .DepartmentName');\r\n\r\n\t\t\t//this.$trigger.hide();\r\n\t\t\tthis.$department.hide();\r\n\r\n\t\t\tthis.$iframeContainer = this.$component.find('.iframeContainer');\r\n\t\t\tthis.$iframeContainer.append('<div class=\"lds-ring OI\"><div></div><div></div><div></div><div></div></div>');\r\n\t\t\tthis.$iframeContainer.find('iframe').load(() => {\r\n\t\t\t\tthis.$iframeContainer.find('.lds-ring').fadeOut();\r\n\r\n\t\t\t\tif (!this.$component.hasClass('SideMenu--tabsTheme')) {\r\n\t\t\t\t\t//this.$trigger.show();\r\n\t\t\t\t\tthis.$department.show();\r\n\t\t\t\t}\r\n\t\t\t});\r\n\r\n\t\t\tthis.$trigger.on('click', () => this.openCloseMenu(true));\r\n\t\t\tthis.$shield.on('click', () => this.openCloseMenu(false));\r\n\t\t\tthis.$closeButton.on('click', () => this.openCloseMenu(false));\r\n\r\n\t\t\tthis.$tabItem.on('click', event => {\r\n\t\t\t\tconst $target = $(event.currentTarget);\r\n\t\t\t\tconst $link = $target.find('.MenuItem_label a');\r\n\r\n\t\t\t\tif ($link.length) $link.get(0).click();\r\n\t\t\t});\r\n\r\n\t\t\tthis.$menuItem.on('click', event => {\r\n\t\t\t\tconst isIcon = event.target.className === 'icon icon-changedown';\r\n\t\t\t\tif (event.target !== event.currentTarget && !isIcon) return;\r\n\r\n\t\t\t\tconst $target = $(event.currentTarget).parent();\r\n\t\t\t\tconst $subItems = $target.find('.MenuItem_subItems');\r\n\t\t\t\tconst $link = $target.find('.MenuItem_label a');\r\n\r\n\t\t\t\tif ($link.length) $link.get(0).click();\r\n\r\n\t\t\t\tif ($target.hasClass('active')) {\r\n\t\t\t\t\t$target.removeClass('active');\r\n\t\t\t\t\t$subItems.removeClass('show');\r\n\t\t\t\t} else {\r\n\t\t\t\t\tthis.$component\r\n\t\t\t\t\t\t.find('.SideMenu__MenuItems .active')\r\n\t\t\t\t\t\t.not($target)\r\n\t\t\t\t\t\t.removeClass('active');\r\n\r\n\t\t\t\t\tthis.$component\r\n\t\t\t\t\t\t.find('.SideMenu__MenuItems .show')\r\n\t\t\t\t\t\t.not($target)\r\n\t\t\t\t\t\t.removeClass('show');\r\n\r\n\t\t\t\t\t$target.toggleClass('active');\r\n\t\t\t\t\t$subItems.toggleClass('show');\r\n\r\n\t\t\t\t\tif (this.$component.hasClass('SideMenu--tabsTheme')) {\r\n\t\t\t\t\t\tthis.windowClick(this.$component);\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\t\t\t});\r\n\r\n\t\t\tthis.$subItem.on('click', event => event.stopPropagation());\r\n\r\n\t\t\tthis.$component\r\n\t\t\t\t.find('.SideMenu__TabItems > div:empty')\r\n\t\t\t\t.parent()\r\n\t\t\t\t.hide();\r\n\t\t}\r\n\t}\r\n\r\n\tconst resizeTabs = ($component, $menuTabs, isRecursive) => {\r\n\t\tconst $menuTrigger = $component.find('.SideMenu__Trigger');\r\n\t\tconst headerWidth = $component.find('.SideMenu__Header').outerWidth();\r\n\t\tconst $menuItems = $menuTabs.find('.SideMenu__MenuItems');\r\n\t\tconst tabsWidth = $menuItems.length ? $menuItems.outerWidth() : $menuTabs.outerWidth();\r\n\r\n\t\tconst fixedValue = $(window.parent).width() < 1024 ? 180 : 196;\r\n\t\tlet hasItemToRemove = true;\r\n\r\n\t\tif (tabsWidth > 0 && tabsWidth + fixedValue > headerWidth && hasItemToRemove) {\r\n\t\t\tconst $moreOptions = $component.find('.SideMenu__Content');\r\n\t\t\tconst $lastItem = $menuTabs\r\n\t\t\t\t.find('.SideMenu__MenuItems .MenuItem')\r\n\t\t\t\t.last()\r\n\t\t\t\t.detach();\r\n\r\n\t\t\tif (!$moreOptions.find('.SideMenu__MenuItems').length) {\r\n\t\t\t\t$('<div class=\"SideMenu__MenuItems\"></div>').appendTo($moreOptions);\r\n\t\t\t}\r\n\r\n\t\t\tconst $menuItems = $moreOptions.find('.SideMenu__MenuItems');\r\n\t\t\t$lastItem.prependTo($menuItems);\r\n\r\n\t\t\t$menuTrigger.css('visibility', 'visible');\r\n\r\n\t\t\thasItemToRemove = !!$lastItem.length;\r\n\r\n\t\t\tresizeTabs($component, $menuTabs, !!$lastItem.length);\r\n\t\t} else if (!isRecursive) {\r\n\t\t\tconst $menuItems = $menuTabs.find('.SideMenu__MenuItems');\r\n\t\t\tlet $firstItem = $component.find('.SideMenu__Content .SideMenu__MenuItems .MenuItem').first();\r\n\r\n\t\t\tconst newLinkWidth = 140 * 1.16 + 16; // Font-size + padding between items (gap)\r\n\t\t\tconst newItemsWidth = newLinkWidth + $menuItems.outerWidth();\r\n\r\n\t\t\tif (newItemsWidth + fixedValue < headerWidth) {\r\n\t\t\t\t$firstItem = $firstItem.detach();\r\n\t\t\t\t$firstItem.appendTo($menuTabs.find('.SideMenu__MenuItems'));\r\n\r\n\t\t\t\tif ($component.find('.SideMenu__Content .SideMenu__MenuItems .MenuItem').length) {\r\n\t\t\t\t\tresizeTabs($component, $menuTabs);\r\n\t\t\t\t} else {\r\n\t\t\t\t\t$menuTrigger.css('visibility', 'hidden');\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}\r\n\t};\r\n\r\n\tconst setTabsTheme = () => {\r\n\t\t$(top.document).ready(function() {\r\n\t\t\t$('.SideMenu', window.parent.document).addClass('SideMenu--tabsTheme');\r\n\r\n\t\t\tconst $component = $('.SideMenu', window.parent.document);\r\n\t\t\tconst $menuTabs = $component.find('.SideMenu__Tabs');\r\n\r\n\t\t\t$menuTabs.find('> div:empty').hide();\r\n\r\n\t\t\tconst $items = $component.find('.SideMenu__MenuItems').detach();\r\n\t\t\t$items.appendTo($menuTabs);\r\n\r\n\t\t\t$(document).ready(function() {\r\n\t\t\t\tresizeTabs($component, $menuTabs, true);\r\n\t\t\t});\r\n\r\n\t\t\t$(window.parent).resize(function() {\r\n\t\t\t\tclearTimeout(window.resizedFinished);\r\n\t\t\t\twindow.resizedFinished = setTimeout(function() {\r\n\t\t\t\t\tresizeTabs($component, $menuTabs);\r\n\t\t\t\t}, 250);\r\n\t\t\t});\r\n\t\t});\r\n\t};\r\n\r\n\tconst create = config => (window[config.widgetId] = new SideMenu(config));\r\n\r\n\tSapphireWidgets.SideMenu = { create, setTabsTheme };\r\n})(jQuery, window, SapphireWidgets);\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/side-menu/scripts.js?\n}");
+/* Component SideMenuStructure */
+(function($, window, SapphireWidgets) {
+	class SideMenu {
+		constructor(config) {
+			this.options = {
+				...config,
+			};
+
+			this.onComponentInit();
+		}
+
+		setMainMenuWidth() {
+			$(document).ready(() => {
+				const $sideBarIframe = $('.LayoutBase-iframesidebar.notExpandable');
+
+				if ($sideBarIframe.length) {
+					const $mainMenu = $('.LayoutBase-MainMenu');
+					$mainMenu.css({
+						width: 'calc(100% - 262px)',
+					});
+				}
+			});
+		}
+
+		openCloseMenu(toOpen) {
+			if (toOpen) {
+				this.$component.addClass('SideMenu--open');
+
+				$('.LayoutBase-iframesidebar').css({
+					zIndex: 0,
+				});
+			} else {
+				this.$component.removeClass('SideMenu--open');
+
+				$('.LayoutBase-iframesidebar').css({
+					zIndex: 70,
+				});
+			}
+		}
+
+		windowClick($component) {
+			$(window)
+				.off('click.SideMenuStructure')
+				.on('click.SideMenuStructure', event => {
+					const isMenuItem = event.target.offsetParent && $(event.target.offsetParent).hasClass('MenuItem');
+
+					if (!isMenuItem) {
+						$component.find('.SideMenu__MenuItems .active').removeClass('active');
+						$component.find('.SideMenu__MenuItems .show').removeClass('show');
+
+						$(window).off('click.SideMenuStructure');
+					}
+				});
+		}
+
+		onComponentInit() {
+			this.setMainMenuWidth();
+
+			this.$component = $(`#${this.options.widgetId}`);
+			this.$trigger = this.$component.find('.SideMenu__Trigger');
+			this.$shield = this.$component.find('.SideMenu__Shield');
+			this.$closeButton = this.$component.find('.SideMenu__MenuClose');
+			this.$tabItem = this.$component.find('.SideMenu__TabItems .MenuItem');
+			this.$menuItem = this.$component.find('.SideMenu__MenuItems .MenuItem__ItemTitle');
+			this.$subItem = this.$component.find('.SideMenu__MenuItems .MenuItem_subItems');
+			this.$department = this.$component.find('.SideMenu__Tabs .DepartmentName');
+
+			//this.$trigger.hide();
+			this.$department.hide();
+
+			this.$iframeContainer = this.$component.find('.iframeContainer');
+			this.$iframeContainer.append('<div class="lds-ring OI"><div></div><div></div><div></div><div></div></div>');
+			this.$iframeContainer.find('iframe').load(() => {
+				this.$iframeContainer.find('.lds-ring').fadeOut();
+
+				if (!this.$component.hasClass('SideMenu--tabsTheme')) {
+					//this.$trigger.show();
+					this.$department.show();
+				}
+			});
+
+			this.$trigger.on('click', () => this.openCloseMenu(true));
+			this.$shield.on('click', () => this.openCloseMenu(false));
+			this.$closeButton.on('click', () => this.openCloseMenu(false));
+
+			this.$tabItem.on('click', event => {
+				const $target = $(event.currentTarget);
+				const $link = $target.find('.MenuItem_label a');
+
+				if ($link.length) $link.get(0).click();
+			});
+
+			this.$menuItem.on('click', event => {
+				const isIcon = event.target.className === 'icon icon-changedown';
+				if (event.target !== event.currentTarget && !isIcon) return;
+
+				const $target = $(event.currentTarget).parent();
+				const $subItems = $target.find('.MenuItem_subItems');
+				const $link = $target.find('.MenuItem_label a');
+
+				if ($link.length) $link.get(0).click();
+
+				if ($target.hasClass('active')) {
+					$target.removeClass('active');
+					$subItems.removeClass('show');
+				} else {
+					this.$component
+						.find('.SideMenu__MenuItems .active')
+						.not($target)
+						.removeClass('active');
+
+					this.$component
+						.find('.SideMenu__MenuItems .show')
+						.not($target)
+						.removeClass('show');
+
+					$target.toggleClass('active');
+					$subItems.toggleClass('show');
+
+					if (this.$component.hasClass('SideMenu--tabsTheme')) {
+						this.windowClick(this.$component);
+					}
+				}
+			});
+
+			this.$subItem.on('click', event => event.stopPropagation());
+
+			this.$component
+				.find('.SideMenu__TabItems > div:empty')
+				.parent()
+				.hide();
+		}
+	}
+
+	const resizeTabs = ($component, $menuTabs, isRecursive) => {
+		const $menuTrigger = $component.find('.SideMenu__Trigger');
+		const headerWidth = $component.find('.SideMenu__Header').outerWidth();
+		const $menuItems = $menuTabs.find('.SideMenu__MenuItems');
+		const tabsWidth = $menuItems.length ? $menuItems.outerWidth() : $menuTabs.outerWidth();
+
+		const fixedValue = $(window.parent).width() < 1024 ? 180 : 196;
+		let hasItemToRemove = true;
+
+		if (tabsWidth > 0 && tabsWidth + fixedValue > headerWidth && hasItemToRemove) {
+			const $moreOptions = $component.find('.SideMenu__Content');
+			const $lastItem = $menuTabs
+				.find('.SideMenu__MenuItems .MenuItem')
+				.last()
+				.detach();
+
+			if (!$moreOptions.find('.SideMenu__MenuItems').length) {
+				$('<div class="SideMenu__MenuItems"></div>').appendTo($moreOptions);
+			}
+
+			const $menuItems = $moreOptions.find('.SideMenu__MenuItems');
+			$lastItem.prependTo($menuItems);
+
+			$menuTrigger.css('visibility', 'visible');
+
+			hasItemToRemove = !!$lastItem.length;
+
+			resizeTabs($component, $menuTabs, !!$lastItem.length);
+		} else if (!isRecursive) {
+			const $menuItems = $menuTabs.find('.SideMenu__MenuItems');
+			let $firstItem = $component.find('.SideMenu__Content .SideMenu__MenuItems .MenuItem').first();
+
+			const newLinkWidth = 140 * 1.16 + 16; // Font-size + padding between items (gap)
+			const newItemsWidth = newLinkWidth + $menuItems.outerWidth();
+
+			if (newItemsWidth + fixedValue < headerWidth) {
+				$firstItem = $firstItem.detach();
+				$firstItem.appendTo($menuTabs.find('.SideMenu__MenuItems'));
+
+				if ($component.find('.SideMenu__Content .SideMenu__MenuItems .MenuItem').length) {
+					resizeTabs($component, $menuTabs);
+				} else {
+					$menuTrigger.css('visibility', 'hidden');
+				}
+			}
+		}
+	};
+
+	const setTabsTheme = () => {
+		$(top.document).ready(function() {
+			$('.SideMenu', window.parent.document).addClass('SideMenu--tabsTheme');
+
+			const $component = $('.SideMenu', window.parent.document);
+			const $menuTabs = $component.find('.SideMenu__Tabs');
+
+			$menuTabs.find('> div:empty').hide();
+
+			const $items = $component.find('.SideMenu__MenuItems').detach();
+			$items.appendTo($menuTabs);
+
+			$(document).ready(function() {
+				resizeTabs($component, $menuTabs, true);
+			});
+
+			$(window.parent).resize(function() {
+				clearTimeout(window.resizedFinished);
+				window.resizedFinished = setTimeout(function() {
+					resizeTabs($component, $menuTabs);
+				}, 250);
+			});
+		});
+	};
+
+	const create = config => (window[config.widgetId] = new SideMenu(config));
+
+	SapphireWidgets.SideMenu = { create, setTabsTheme };
+})(jQuery, window, SapphireWidgets);
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/sidebar/sidebar-structure.js":
-/*!**************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/sidebar/sidebar-structure.js ***!
-  \**************************************************************************/
 /***/ (function() {
 
-eval("{/* Component ISidebar */\r\n(function ($, window, document, SapphireWidgets) {\r\n\tvar create = function (config) {\r\n\t\twindow[config.widgetId] = new Sidebar(config);\r\n\t\tSapphireWidgets.Sidebar.widgetId = config.widgetId;\r\n\t};\r\n\r\n\tvar close = function () {\r\n\t\twindow[SapphireWidgets.Sidebar.widgetId].close();\r\n\t};\r\n\r\n\tvar Sidebar = function (config) {\r\n\t\tvar _this = this;\r\n\t\tthis.isExpandable = config.isExpandable;\r\n\t\tthis.$widget = $('#' + config.widgetId);\r\n\t\tthis.$sidebar = this.$widget.find('.ISidebar');\r\n\t\tthis.$sidebarMenu = this.$widget.find('.ISidebar-menu');\r\n\t\tthis.$sidebarMenuItem = this.$widget.find('.SidebarMenuItem');\r\n\t\tthis.$sidebarShield = this.$widget.find('.ISidebar-shield');\r\n\t\tthis.$sidebarContent = this.$widget.find('.ISidebar-content');\r\n\t\tthis.showLastViewed = false;\r\n\r\n\t\tthis.$sidebarContent.find('> div').each(function () {\r\n\t\t\tif ($(this).hasClass('PH') && $(this).text() === '') {\r\n\t\t\t\t$(this).remove();\r\n\t\t\t}\r\n\t\t});\r\n\t\tthis.attachEvents();\r\n\t\tif (!this.isExpandable) {\r\n\t\t\tthis.openMenuItem(0);\r\n\t\t}\r\n\t\t$(function () {\r\n\r\n\t\t\tif (!config.isExpandable) {\r\n\t\t\t\t$(`.${config.selectedTab}`).click();\r\n\t\t\t}\r\n\r\n\t\t\twindow.parent.$('.LayoutBase-iframesidebar .lds-ring').fadeOut();\r\n\r\n\t\t\tif (!this.isExpandable) {\r\n\t\t\t\t$('input[type=\"text\"]:visible')\r\n\t\t\t\t\t.eq(0)\r\n\t\t\t\t\t.focus();\r\n\t\t\t}\r\n\t\t});\r\n\r\n\t\t$(window).unload(function () {\r\n\t\t\twindow.parent.$('.LayoutBase-iframesidebar .lds-ring').fadeOut();\r\n\t\t});\r\n\t};\r\n\r\n\tSidebar.prototype.attachEvents = function () {\r\n\t\tvar _this = this;\r\n\t\tthis.$sidebarMenu.on('click', function (evt) {\r\n\t\t\tevt.stopPropagation();\r\n\t\t\tif (!_this.$sidebar.hasClass('open')) {\r\n\t\t\t\t_this.openMenuItem(0);\r\n\t\t\t}\r\n\t\t});\r\n\t\tthis.$sidebarMenuItem.on('click', function () {\r\n\t\t\tvar selectedPosition = $(this).index();\r\n\t\t\t_this.openMenuItem(selectedPosition);\r\n\t\t});\r\n\t\tthis.$sidebarShield.on('click', function () {\r\n\t\t\t_this.close();\r\n\t\t});\r\n\t\tthis.$sidebar.on('click', '.SearchSideBarFields .ButtonGroup_button:first-child', function () {\r\n\t\t\t_this.$sidebar\r\n\t\t\t\t.find('.FieldsSlider')\r\n\t\t\t\t.addClass('Tab1')\r\n\t\t\t\t.removeClass('Tab2');\r\n\t\t\t_this.setFieldFocus(_this.$sidebarContent.find('.TextInput:visible').eq(0));\r\n\t\t});\r\n\t\tthis.$sidebar.on('click', '.SearchSideBarFields .ButtonGroup_button:last-child', function () {\r\n\t\t\t_this.$sidebar\r\n\t\t\t\t.find('.FieldsSlider')\r\n\t\t\t\t.addClass('Tab2')\r\n\t\t\t\t.removeClass('Tab1');\r\n\t\t\t_this.setFieldFocus(_this.$sidebarContent.find('.TextInput:visible').eq(0));\r\n\t\t});\r\n\r\n\t\tthis.$sidebar.on('click', '.show-last-viewed', function () {\r\n\t\t\t_this.showLastViewed = !_this.showLastViewed;\r\n\r\n\t\t\tdocument.querySelector('.ISidebar').dataset.showlastviewed = _this.showLastViewed;\r\n\r\n\t\t\twindow.parent.document.querySelector('.LayoutBase-iframesidebar.notExpandable').dataset.showlastviewed =\r\n\t\t\t\t_this.showLastViewed;\r\n\r\n\t\t\tif (_this.showLastViewed) {\r\n\t\t\t\twindow.parent.document.querySelector('.LayoutBase-iframesidebar.notExpandable').style.width = '100%';\r\n\t\t\t} else {\r\n\t\t\t\t_this.close();\r\n\t\t\t}\r\n\t\t});\r\n\t};\r\n\r\n\tSidebar.prototype.openMenuItem = function (selectedPosition) {\r\n\t\tvar _this = this;\r\n\r\n\t\tthis.$sidebar\r\n\t\t\t.find('.SidebarMenuItem')\r\n\t\t\t.removeClass('active')\r\n\t\t\t.eq(selectedPosition)\r\n\t\t\t.addClass('active');\r\n\r\n\t\tthis.$sidebar\r\n\t\t\t.find('.ISidebar-content > .ISidebar-content-panel')\r\n\t\t\t.hide()\r\n\t\t\t.eq(selectedPosition)\r\n\t\t\t.show();\r\n\r\n\t\tthis.$sidebar.addClass('open');\r\n\r\n\t\t// console.log(this.$sidebar);\r\n\r\n\t\tif (window.parent.length && this.isExpandable) {\r\n\t\t\tdocument.querySelector('.ISidebar').dataset.showlastviewed = 'true';\r\n\t\t\twindow.parent.SapphireWidgets.LayoutBase.openSidebarIframe(0);\r\n\t\t}\r\n\r\n\t\tif (this.$sidebarContent.find('.TextInput:visible').length > 0) {\r\n\t\t\tthis.setFieldFocus(this.$sidebarContent.find('.TextInput:visible').eq(0));\r\n\t\t}\r\n\r\n\t\tif (window.parent.$('.select2-container--open').length) {\r\n\t\t\twindow.parent.$('.select2-hidden-accessible').select2('close');\r\n\t\t}\r\n\t};\r\n\r\n\tSidebar.prototype.setFieldFocus = function ($input) {\r\n\t\twindow.setTimeout(function () {\r\n\t\t\t$input.click().select();\r\n\t\t}, 250);\r\n\t};\r\n\r\n\tSidebar.prototype.close = function () {\r\n\t\tvar _this = this;\r\n\r\n\r\n\t\tif (window.parent.length) {\r\n\t\t\twindow.parent.SapphireWidgets.LayoutBase.closeSidebarIframe(0);\r\n\t\t\t_this.showLastViewed = false;\r\n\t\t\tdocument.querySelector('.ISidebar').dataset.showlastviewed = _this.showLastViewed;\r\n\t\t\twindow.parent.document.querySelector('.LayoutBase-iframesidebar').dataset.showlastviewed = _this.showLastViewed;\r\n\t\t}\r\n\t\tif (this.isExpandable) {\r\n\t\t\tthis.$sidebar.removeClass('open');\r\n\t\t\tthis.$sidebar.find('.SidebarMenuItem').removeClass('active');\r\n\t\t\tthis.$sidebar.find('.ISidebar-content > .ISidebar-content-panel').hide();\r\n\t\t}\r\n\t};\r\n\r\n\tSapphireWidgets.Sidebar = {\r\n\t\tcreate: create,\r\n\t\tclose: close,\r\n\t};\r\n})(jQuery, window, document, SapphireWidgets);\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/sidebar/sidebar-structure.js?\n}");
+/* Component ISidebar */
+(function ($, window, document, SapphireWidgets) {
+	var create = function (config) {
+		window[config.widgetId] = new Sidebar(config);
+		SapphireWidgets.Sidebar.widgetId = config.widgetId;
+	};
+
+	var close = function () {
+		window[SapphireWidgets.Sidebar.widgetId].close();
+	};
+
+	var Sidebar = function (config) {
+		var _this = this;
+		this.isExpandable = config.isExpandable;
+		this.$widget = $('#' + config.widgetId);
+		this.$sidebar = this.$widget.find('.ISidebar');
+		this.$sidebarMenu = this.$widget.find('.ISidebar-menu');
+		this.$sidebarMenuItem = this.$widget.find('.SidebarMenuItem');
+		this.$sidebarShield = this.$widget.find('.ISidebar-shield');
+		this.$sidebarContent = this.$widget.find('.ISidebar-content');
+		this.showLastViewed = false;
+
+		this.$sidebarContent.find('> div').each(function () {
+			if ($(this).hasClass('PH') && $(this).text() === '') {
+				$(this).remove();
+			}
+		});
+		this.attachEvents();
+		if (!this.isExpandable) {
+			this.openMenuItem(0);
+		}
+		$(function () {
+
+			if (!config.isExpandable) {
+				$(`.${config.selectedTab}`).click();
+			}
+
+			window.parent.$('.LayoutBase-iframesidebar .lds-ring').fadeOut();
+
+			if (!this.isExpandable) {
+				$('input[type="text"]:visible')
+					.eq(0)
+					.focus();
+			}
+		});
+
+		$(window).unload(function () {
+			window.parent.$('.LayoutBase-iframesidebar .lds-ring').fadeOut();
+		});
+	};
+
+	Sidebar.prototype.attachEvents = function () {
+		var _this = this;
+		this.$sidebarMenu.on('click', function (evt) {
+			evt.stopPropagation();
+			if (!_this.$sidebar.hasClass('open')) {
+				_this.openMenuItem(0);
+			}
+		});
+		this.$sidebarMenuItem.on('click', function () {
+			var selectedPosition = $(this).index();
+			_this.openMenuItem(selectedPosition);
+		});
+		this.$sidebarShield.on('click', function () {
+			_this.close();
+		});
+		this.$sidebar.on('click', '.SearchSideBarFields .ButtonGroup_button:first-child', function () {
+			_this.$sidebar
+				.find('.FieldsSlider')
+				.addClass('Tab1')
+				.removeClass('Tab2');
+			_this.setFieldFocus(_this.$sidebarContent.find('.TextInput:visible').eq(0));
+		});
+		this.$sidebar.on('click', '.SearchSideBarFields .ButtonGroup_button:last-child', function () {
+			_this.$sidebar
+				.find('.FieldsSlider')
+				.addClass('Tab2')
+				.removeClass('Tab1');
+			_this.setFieldFocus(_this.$sidebarContent.find('.TextInput:visible').eq(0));
+		});
+
+		this.$sidebar.on('click', '.show-last-viewed', function () {
+			_this.showLastViewed = !_this.showLastViewed;
+
+			document.querySelector('.ISidebar').dataset.showlastviewed = _this.showLastViewed;
+
+			window.parent.document.querySelector('.LayoutBase-iframesidebar.notExpandable').dataset.showlastviewed =
+				_this.showLastViewed;
+
+			if (_this.showLastViewed) {
+				window.parent.document.querySelector('.LayoutBase-iframesidebar.notExpandable').style.width = '100%';
+			} else {
+				_this.close();
+			}
+		});
+	};
+
+	Sidebar.prototype.openMenuItem = function (selectedPosition) {
+		var _this = this;
+
+		this.$sidebar
+			.find('.SidebarMenuItem')
+			.removeClass('active')
+			.eq(selectedPosition)
+			.addClass('active');
+
+		this.$sidebar
+			.find('.ISidebar-content > .ISidebar-content-panel')
+			.hide()
+			.eq(selectedPosition)
+			.show();
+
+		this.$sidebar.addClass('open');
+
+		// console.log(this.$sidebar);
+
+		if (window.parent.length && this.isExpandable) {
+			document.querySelector('.ISidebar').dataset.showlastviewed = 'true';
+			window.parent.SapphireWidgets.LayoutBase.openSidebarIframe(0);
+		}
+
+		if (this.$sidebarContent.find('.TextInput:visible').length > 0) {
+			this.setFieldFocus(this.$sidebarContent.find('.TextInput:visible').eq(0));
+		}
+
+		if (window.parent.$('.select2-container--open').length) {
+			window.parent.$('.select2-hidden-accessible').select2('close');
+		}
+	};
+
+	Sidebar.prototype.setFieldFocus = function ($input) {
+		window.setTimeout(function () {
+			$input.click().select();
+		}, 250);
+	};
+
+	Sidebar.prototype.close = function () {
+		var _this = this;
+
+
+		if (window.parent.length) {
+			window.parent.SapphireWidgets.LayoutBase.closeSidebarIframe(0);
+			_this.showLastViewed = false;
+			document.querySelector('.ISidebar').dataset.showlastviewed = _this.showLastViewed;
+			window.parent.document.querySelector('.LayoutBase-iframesidebar').dataset.showlastviewed = _this.showLastViewed;
+		}
+		if (this.isExpandable) {
+			this.$sidebar.removeClass('open');
+			this.$sidebar.find('.SidebarMenuItem').removeClass('active');
+			this.$sidebar.find('.ISidebar-content > .ISidebar-content-panel').hide();
+		}
+	};
+
+	SapphireWidgets.Sidebar = {
+		create: create,
+		close: close,
+	};
+})(jQuery, window, document, SapphireWidgets);
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/small-box-selectable/scripts.js":
-/*!*****************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/small-box-selectable/scripts.js ***!
-  \*****************************************************************************/
 /***/ (function() {
 
-eval("{SapphireWidgets.SmallBoxSelectable = function(config) {\r\n\tconst $component = $(`#${config.widgetId}`);\r\n\r\n\tif (config.selectOnClick) {\r\n\t\t$component.click(() => {\r\n\t\t\tconst $list = $('.SmallBoxList .SmallBoxSelectable').not($component);\r\n\r\n\t\t\t$list.removeClass('SmallBoxSelectable--selected');\r\n\t\t\t$component.toggleClass('SmallBoxSelectable--selected');\r\n\t\t});\r\n\t}\r\n};\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/small-box-selectable/scripts.js?\n}");
+SapphireWidgets.SmallBoxSelectable = function(config) {
+	const $component = $(`#${config.widgetId}`);
+
+	if (config.selectOnClick) {
+		$component.click(() => {
+			const $list = $('.SmallBoxList .SmallBoxSelectable').not($component);
+
+			$list.removeClass('SmallBoxSelectable--selected');
+			$component.toggleClass('SmallBoxSelectable--selected');
+		});
+	}
+};
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/spinner-horizontal/scripts.js":
-/*!***************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/spinner-horizontal/scripts.js ***!
-  \***************************************************************************/
 /***/ (function() {
 
-eval("{/* Component SpinnerHorizontal */\r\nSapphireWidgets.SpinnerHorizontal = {\r\n\tcreate: (config) => {\r\n\t\tconst $input = $(`#${config.widgetId} input`);\r\n\t\tconst $plus = $(`#${config.widgetId} a.Plus`);\r\n\t\tconst $minus = $(`#${config.widgetId} a.Minus`);\r\n\r\n\t\tlet val = $input.val();\r\n\r\n\t\tif (val <= +config.minValue) {\r\n\t\t\t$minus.attr('disabled', 'disabled');\r\n\t\t} else if (val >= +config.maxValue) {\r\n\t\t\t$plus.attr('disabled', 'disabled');\r\n\t\t}\r\n\r\n\t\t$input.on('change', function () {\r\n\t\t\tval = Math.abs(parseInt(this.value, 10) || +config.minValue);\r\n\t\t\t// Note that val can never be less than 1 because of the above\r\n\t\t\tif (val > +config.maxValue) {\r\n\t\t\t\tval = +config.maxValue;\r\n\t\t\t\tthis.value = val;\r\n\t\t\t\t$(`#${config.widgetId} a.NotifyOverflowMax`).click();\r\n\t\t\t} else if (val < +config.minValue) {\r\n\t\t\t\tval = +config.minValue;\r\n\t\t\t\tthis.value = val;\r\n\t\t\t\t$(`#${config.widgetId} a.NotifyOverflowMin`).click();\r\n\t\t\t} else {\r\n\t\t\t\tthis.value = val;\r\n\t\t\t}\r\n\r\n\t\t\tif (val <= +config.minValue) $minus.attr('disabled', 'disabled');\r\n\t\t\telse $minus.removeAttr('disabled');\r\n\r\n\t\t\tif (val >= +config.maxValue) $plus.attr('disabled', 'disabled');\r\n\t\t\telse $plus.removeAttr('disabled');\r\n\t\t});\r\n\t},\r\n\r\n\tincrement: function (elementId, minValue, maxValue, triggerOnChange) {\r\n\t\tvar _element = $(`#${elementId} input`);\r\n\t\tvar val = parseInt(_element.val());\r\n\t\tif (val == undefined || isNaN(val)) {\r\n\t\t\t_element.val(minValue);\r\n\t\t\tif (triggerOnChange) {\r\n\t\t\t\t_element.trigger('change');\r\n\t\t\t}\r\n\t\t\t$(`#${elementId} a.Minus`).attr('disabled', 'disabled');\r\n\t\t\t$(`#${elementId} a.Plus`).removeAttr('disabled');\r\n\t\t} else {\r\n\t\t\tif (val < maxValue) {\r\n\t\t\t\t_element.val(val + 1);\r\n\t\t\t\tif (triggerOnChange) {\r\n\t\t\t\t\t_element.trigger('change');\r\n\t\t\t\t}\r\n\t\t\t\t$(`#${elementId} a.Minus`).removeAttr('disabled');\r\n\t\t\t}\r\n\t\t\tif (parseInt(_element.val()) >= maxValue) {\r\n\t\t\t\t$(`#${elementId} a.Plus`).attr('disabled', 'disabled');\r\n\t\t\t}\r\n\t\t}\r\n\t},\r\n\r\n\tdecrement: function (elementId, minValue, triggerOnChange) {\r\n\t\tvar _element = $(`#${elementId} input`);\r\n\t\tvar val = parseInt(_element.val());\r\n\t\tif (val == undefined || isNaN(val)) {\r\n\t\t\t_element.val(minValue);\r\n\t\t\tif (triggerOnChange) {\r\n\t\t\t\t_element.trigger('change');\r\n\t\t\t}\r\n\t\t\t$(`#${elementId} a.Minus`).attr('disabled', 'disabled');\r\n\t\t\t$(`#${elementId} a.Plus`).removeAttr('disabled');\r\n\t\t} else {\r\n\t\t\tif (val > minValue) {\r\n\t\t\t\t_element.val(val - 1);\r\n\t\t\t\tif (triggerOnChange) {\r\n\t\t\t\t\t_element.trigger('change');\r\n\t\t\t\t}\r\n\t\t\t\t$(`#${elementId} a.Plus`).removeAttr('disabled');\r\n\t\t\t}\r\n\t\t\tif (parseInt(_element.val()) <= minValue) {\r\n\t\t\t\t$(`#${elementId} a.Minus`).attr('disabled', 'disabled');\r\n\t\t\t}\r\n\t\t}\r\n\t},\r\n};\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/spinner-horizontal/scripts.js?\n}");
+/* Component SpinnerHorizontal */
+SapphireWidgets.SpinnerHorizontal = {
+	create: (config) => {
+		const $input = $(`#${config.widgetId} input`);
+		const $plus = $(`#${config.widgetId} a.Plus`);
+		const $minus = $(`#${config.widgetId} a.Minus`);
+
+		let val = $input.val();
+
+		if (val <= +config.minValue) {
+			$minus.attr('disabled', 'disabled');
+		} else if (val >= +config.maxValue) {
+			$plus.attr('disabled', 'disabled');
+		}
+
+		$input.on('change', function () {
+			val = Math.abs(parseInt(this.value, 10) || +config.minValue);
+			// Note that val can never be less than 1 because of the above
+			if (val > +config.maxValue) {
+				val = +config.maxValue;
+				this.value = val;
+				$(`#${config.widgetId} a.NotifyOverflowMax`).click();
+			} else if (val < +config.minValue) {
+				val = +config.minValue;
+				this.value = val;
+				$(`#${config.widgetId} a.NotifyOverflowMin`).click();
+			} else {
+				this.value = val;
+			}
+
+			if (val <= +config.minValue) $minus.attr('disabled', 'disabled');
+			else $minus.removeAttr('disabled');
+
+			if (val >= +config.maxValue) $plus.attr('disabled', 'disabled');
+			else $plus.removeAttr('disabled');
+		});
+	},
+
+	increment: function (elementId, minValue, maxValue, triggerOnChange) {
+		var _element = $(`#${elementId} input`);
+		var val = parseInt(_element.val());
+		if (val == undefined || isNaN(val)) {
+			_element.val(minValue);
+			if (triggerOnChange) {
+				_element.trigger('change');
+			}
+			$(`#${elementId} a.Minus`).attr('disabled', 'disabled');
+			$(`#${elementId} a.Plus`).removeAttr('disabled');
+		} else {
+			if (val < maxValue) {
+				_element.val(val + 1);
+				if (triggerOnChange) {
+					_element.trigger('change');
+				}
+				$(`#${elementId} a.Minus`).removeAttr('disabled');
+			}
+			if (parseInt(_element.val()) >= maxValue) {
+				$(`#${elementId} a.Plus`).attr('disabled', 'disabled');
+			}
+		}
+	},
+
+	decrement: function (elementId, minValue, triggerOnChange) {
+		var _element = $(`#${elementId} input`);
+		var val = parseInt(_element.val());
+		if (val == undefined || isNaN(val)) {
+			_element.val(minValue);
+			if (triggerOnChange) {
+				_element.trigger('change');
+			}
+			$(`#${elementId} a.Minus`).attr('disabled', 'disabled');
+			$(`#${elementId} a.Plus`).removeAttr('disabled');
+		} else {
+			if (val > minValue) {
+				_element.val(val - 1);
+				if (triggerOnChange) {
+					_element.trigger('change');
+				}
+				$(`#${elementId} a.Plus`).removeAttr('disabled');
+			}
+			if (parseInt(_element.val()) <= minValue) {
+				$(`#${elementId} a.Minus`).attr('disabled', 'disabled');
+			}
+		}
+	},
+};
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/spinner-vertical/scripts.js":
-/*!*************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/spinner-vertical/scripts.js ***!
-  \*************************************************************************/
 /***/ (function() {
 
-eval("{/* Component SpinnerVertical */\r\n(function($, window, document, SapphireWidgets) {\r\n\tconst create = function(config) {\r\n\t\t$(document).ready(function() {\r\n\t\t\tconst $minusVertical = $(`#${config.widgetId}`).find('.MinusVertical');\r\n\t\t\tconst $inputSpinner = $(`#${config.widgetId} .SpinnerInputVertical input`);\r\n\r\n\t\t\t$inputSpinner.on('blur keyup input', function(event) {\r\n\t\t\t\tconst currentInputValue = $inputSpinner.val();\r\n\r\n\t\t\t\tif (config.numberList && event.type === 'blur') {\r\n\t\t\t\t\tconst inputValueInt = parseInt(currentInputValue);\r\n\t\t\t\t\tconst arrayToSpin = config.numberList;\r\n\t\t\t\t\tconst $errorMessage = $(`#${config.widgetId} .SpinnerErrorMessage`);\r\n\r\n\t\t\t\t\tif (config.hideErrorMessage == true && (isNaN(inputValueInt) || inputValueInt == 0))\r\n\t\t\t\t\t\t$errorMessage.css('display', 'none' );\r\n\t\t\t\t\t\telse if(arrayToSpin.indexOf(inputValueInt) === -1) {\r\n\t\t\t\t\t\t$errorMessage.css('display', 'block' );\r\n\t\t\t\t\t\t} else {\r\n\t\t\t\t\t\t$errorMessage.css('display', 'none' );\r\n\t\t\t\t\t\t}\r\n\t\t\t\t}\r\n\r\n\t\t\t\tif (currentInputValue < config.minValue) $minusVertical.addClass('DisabledSpin');\r\n\t\t\t\telse $minusVertical.removeClass('DisabledSpin');\r\n\t\t\t});\r\n\r\n\t\t\tif ($inputSpinner.val() <= config.minValue) {\r\n\t\t\t\t$minusVertical.addClass('DisabledSpin');\r\n\t\t\t}\r\n\r\n\t\t\tif (config.numberList && $inputSpinner.val() === '') {\r\n\t\t\t\tlet currentNumber = 0;\r\n\t\t\t\tconst arrayToSpin = config.numberList.split(',');\r\n\r\n\t\t\t\t$inputSpinner.val(arrayToSpin[currentNumber]);\r\n\t\t\t\t$minusVertical.addClass('DisabledSpin');\r\n\t\t\t}\r\n\r\n\t\t\tif (config.isCursorOnFocus) {\r\n\t\t\t\t$('body').on('focus', `#${config.inputID} input`, function() {\r\n\t\t\t\t\tvar that = this;\r\n\r\n\t\t\t\t\tsetTimeout(function() {\r\n\t\t\t\t\t\tthat.focus();\r\n\t\t\t\t\t\tvar val = that.value;\r\n\t\t\t\t\t\tthat.value = '';\r\n\t\t\t\t\t\tthat.value = val;\r\n\t\t\t\t\t}, 1);\r\n\t\t\t\t});\r\n\t\t\t}\r\n\r\n\t\t\tif (config.isInputEmpty) {\r\n\t\t\t\t$inputSpinner.attr('value', '');\r\n\t\t\t\t$minusVertical.addClass('DisabledSpin');\r\n\t\t\t} else {\r\n\t\t\t\t$inputSpinner.blur();\r\n\t\t\t}\r\n\t\t});\r\n\t};\r\n\r\n\tconst increment = (elementId, minValue, maxValue, triggerOnChange, triggerOnInput, listTospin = []) => {\r\n\t\tconst $spinner = $(elementId);\r\n\t\tlet $input = $spinner.find('input[type=\"text\"], input[type=\"number\"]').first();\r\n\r\n\t\tvar forceInteger = $(elementId).data('forceinteger') === 'True' ? true : false;\r\n\t\tvar currentValue = parseFloat($input.val());\r\n\t\tvar incrementUnit = 1;\r\n\t\tvar isDecimals = currentValue % 1 != 0;\r\n\t\tvar arraytospin = listTospin;\r\n\r\n\t\tconst $minusVertical = $(elementId).find('.MinusVertical');\r\n\t\tconst $plusVertical = $(elementId).find('.PlusVertical');\r\n\r\n\t\t$minusVertical.removeClass('DisabledSpin');\r\n\r\n\t\tif (arraytospin.length) {\r\n\t\t\tvar currentPosition = arraytospin.indexOf(parseInt($input.val()));\r\n\t\t\tvar maximumToSpin = arraytospin.lastIndexOf(arraytospin.slice(-1)[0]);\r\n\r\n\t\t\t$plusVertical.removeClass('DisabledSpin');\r\n\r\n\t\t\tif (maximumToSpin - 1 === currentPosition) {\r\n\t\t\t\tcurrentPosition = currentPosition + 1;\r\n\t\t\t\t$input.val(arraytospin[currentPosition]);\r\n\r\n\t\t\t\tif (triggerOnChange) $input.trigger('change');\r\n\t\t\t\tif (triggerOnInput) $input.trigger('input');\r\n\t\t\t} else if (maximumToSpin === currentPosition) {\r\n\t\t\t\tcurrentPosition = currentPosition % maximumToSpin;\r\n\t\t\t\t$input.val(arraytospin[currentPosition]);\r\n\r\n\t\t\t\ttriggerEvents($input, triggerOnChange, triggerOnInput);\r\n\t\t\t} else {\r\n\t\t\t\tcurrentPosition = (currentPosition + 1) % maximumToSpin;\r\n\t\t\t\t$input.val(arraytospin[currentPosition]);\r\n\r\n\t\t\t\ttriggerEvents($input, triggerOnChange, triggerOnInput);\r\n\t\t\t}\r\n\r\n\t\t\tif (currentPosition === maximumToSpin) $plusVertical.addClass('DisabledSpin');\r\n\t\t\tif (currentPosition === 0) $minusVertical.addClass('DisabledSpin');\r\n\r\n\t\t\t$spinner.find('.SpinnerErrorMessage').css('display', 'none');\r\n\t\t} else {\r\n\t\t\tif (parseFloat(currentValue) < minValue) {\r\n\t\t\t\t$minusVertical.addClass('DisabledSpin');\r\n\t\t\t} else {\r\n\t\t\t\t$minusVertical.removeClass('DisabledSpin');\r\n\t\t\t}\r\n\r\n\t\t\tif (!forceInteger && isDecimals) incrementUnit = parseFloat(0.1);\r\n\r\n\t\t\tif (currentValue === undefined || currentValue === '' || isNaN(parseFloat(currentValue))) {\r\n\t\t\t\t$input.val(minValue);\r\n\r\n\t\t\t\ttriggerEvents($input, triggerOnChange, triggerOnInput);\r\n\t\t\t} else {\r\n\t\t\t\tif (parseFloat(currentValue) < maxValue) {\r\n\t\t\t\t\tif (currentValue === 0 && !forceInteger) incrementUnit = parseFloat(0.1);\r\n\r\n\t\t\t\t\t$input.val(parseFloat((currentValue + incrementUnit).toFixed(1)));\r\n\r\n\t\t\t\t\ttriggerEvents($input, triggerOnChange, triggerOnInput);\r\n\r\n\t\t\t\t\t$minusVertical.removeAttr('disabled');\r\n\t\t\t\t} else {\r\n\t\t\t\t\t$plusVertical.attr('disabled', 'disabled');\r\n\t\t\t\t}\r\n\t\t\t}\r\n\r\n\t\t\tcheckDisabledStatus(elementId, parseFloat($input.val()), minValue, maxValue);\r\n\t\t}\r\n\t};\r\n\r\n\tconst decrement = (elementId, minValue, maxValue, triggerOnChange, triggerOnInput, listTospin = []) => {\r\n\t\tconst $spinner = $(elementId);\r\n\t\tconst $input = $spinner.find('input[type=\"text\"], input[type=\"number\"]').first();\r\n\r\n\t\tlet forceInteger = $(elementId).data('forceinteger') === 'True' ? true : false;\r\n\t\tlet currentValue = parseFloat($input.val());\r\n\t\tlet incrementUnit = 1;\r\n\t\tlet isDecimals = currentValue % 1 != 0;\r\n\t\tlet arraytospin = listTospin;\r\n\r\n\t\tconst $minusVertical = $(elementId).find('.MinusVertical');\r\n\t\tconst $plusVertical = $(elementId).find('.PlusVertical');\r\n\r\n\t\tif (arraytospin.length) {\r\n\t\t\tlet currentPosition = arraytospin.indexOf(parseInt($input.val()));\r\n\t\t\tlet maximumToSpin = arraytospin.lastIndexOf(arraytospin.slice(-1)[0]);\r\n\r\n\t\t\tif (currentPosition == 0) {\r\n\t\t\t\t$input.val(arraytospin[maximumToSpin]);\r\n\r\n\t\t\t\tif (triggerOnChange) $input.trigger('change');\r\n\t\t\t\tif (triggerOnInput) $input.trigger('input');\r\n\t\t\t} else {\r\n\t\t\t\tcurrentPosition = (currentPosition - 1) % maximumToSpin;\r\n\t\t\t\t$input.val(arraytospin[currentPosition]);\r\n\r\n\t\t\t\ttriggerEvents($input, triggerOnChange, triggerOnInput);\r\n\t\t\t}\r\n\r\n\t\t\t$spinner.find('.SpinnerErrorMessage').css('display', 'none');\r\n\t\t} else {\r\n\t\t\tif (!forceInteger && isDecimals) incrementUnit = parseFloat(0.1);\r\n\r\n\t\t\tif (currentValue === undefined || currentValue === '' || isNaN(parseFloat(currentValue))) {\r\n\t\t\t\t$input.val(minValue);\r\n\r\n\t\t\t\ttriggerEvents($input, triggerOnChange, triggerOnInput);\r\n\t\t\t} else {\r\n\t\t\t\tif (parseFloat(currentValue) > minValue) {\r\n\t\t\t\t\tif (currentValue === 1 && !forceInteger) incrementUnit = parseFloat(0.1);\r\n\r\n\t\t\t\t\t$input.val(parseFloat((currentValue - incrementUnit).toFixed(1)));\r\n\r\n\t\t\t\t\ttriggerEvents($input, triggerOnChange, triggerOnInput);\r\n\r\n\t\t\t\t\t$plusVertical.removeAttr('disabled');\r\n\t\t\t\t} else {\r\n\t\t\t\t\t$minusVertical.attr('disabled', 'disabled');\r\n\t\t\t\t}\r\n\t\t\t}\r\n\r\n\t\t\tcheckDisabledStatus(elementId, parseFloat($input.val()), minValue, maxValue);\r\n\t\t}\r\n\t};\r\n\r\n\tconst triggerEvents = (input, triggerOnChange, triggerOnInput) => {\r\n\t\tif (triggerOnChange) input.trigger('change');\r\n\t\tif (triggerOnInput) input.trigger('input');\r\n\t};\r\n\r\n\tconst checkDisabledStatus = (elementId, valueToCheck, minValue, maxValue) => {\r\n\t\tif (valueToCheck <= minValue) {\r\n\t\t\t$(elementId)\r\n\t\t\t\t.find('a.MinusVertical')\r\n\t\t\t\t.attr('disabled', 'disabled');\r\n\t\t} else {\r\n\t\t\t$(elementId)\r\n\t\t\t\t.find('a.MinusVertical')\r\n\t\t\t\t.removeAttr('disabled');\r\n\t\t}\r\n\t\tif (valueToCheck >= maxValue) {\r\n\t\t\t$(elementId)\r\n\t\t\t\t.find('a.PlusVertical')\r\n\t\t\t\t.attr('disabled', 'disabled');\r\n\t\t} else {\r\n\t\t\t$(elementId)\r\n\t\t\t\t.find('a.PlusVertical')\r\n\t\t\t\t.removeAttr('disabled');\r\n\t\t}\r\n\t};\r\n\r\n\tSapphireWidgets.SpinnerVertical = {\r\n\t\tcreate,\r\n\t\tincrement,\r\n\t\tdecrement,\r\n\t};\r\n})(jQuery, window, document, SapphireWidgets);\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/spinner-vertical/scripts.js?\n}");
+/* Component SpinnerVertical */
+(function($, window, document, SapphireWidgets) {
+	const create = function(config) {
+		$(document).ready(function() {
+			const $minusVertical = $(`#${config.widgetId}`).find('.MinusVertical');
+			const $inputSpinner = $(`#${config.widgetId} .SpinnerInputVertical input`);
+
+			$inputSpinner.on('blur keyup input', function(event) {
+				const currentInputValue = $inputSpinner.val();
+
+				if (config.numberList && event.type === 'blur') {
+					const inputValueInt = parseInt(currentInputValue);
+					const arrayToSpin = config.numberList;
+					const $errorMessage = $(`#${config.widgetId} .SpinnerErrorMessage`);
+
+					if (config.hideErrorMessage == true && (isNaN(inputValueInt) || inputValueInt == 0))
+						$errorMessage.css('display', 'none' );
+						else if(arrayToSpin.indexOf(inputValueInt) === -1) {
+						$errorMessage.css('display', 'block' );
+						} else {
+						$errorMessage.css('display', 'none' );
+						}
+				}
+
+				if (currentInputValue < config.minValue) $minusVertical.addClass('DisabledSpin');
+				else $minusVertical.removeClass('DisabledSpin');
+			});
+
+			if ($inputSpinner.val() <= config.minValue) {
+				$minusVertical.addClass('DisabledSpin');
+			}
+
+			if (config.numberList && $inputSpinner.val() === '') {
+				let currentNumber = 0;
+				const arrayToSpin = config.numberList.split(',');
+
+				$inputSpinner.val(arrayToSpin[currentNumber]);
+				$minusVertical.addClass('DisabledSpin');
+			}
+
+			if (config.isCursorOnFocus) {
+				$('body').on('focus', `#${config.inputID} input`, function() {
+					var that = this;
+
+					setTimeout(function() {
+						that.focus();
+						var val = that.value;
+						that.value = '';
+						that.value = val;
+					}, 1);
+				});
+			}
+
+			if (config.isInputEmpty) {
+				$inputSpinner.attr('value', '');
+				$minusVertical.addClass('DisabledSpin');
+			} else {
+				$inputSpinner.blur();
+			}
+		});
+	};
+
+	const increment = (elementId, minValue, maxValue, triggerOnChange, triggerOnInput, listTospin = []) => {
+		const $spinner = $(elementId);
+		let $input = $spinner.find('input[type="text"], input[type="number"]').first();
+
+		var forceInteger = $(elementId).data('forceinteger') === 'True' ? true : false;
+		var currentValue = parseFloat($input.val());
+		var incrementUnit = 1;
+		var isDecimals = currentValue % 1 != 0;
+		var arraytospin = listTospin;
+
+		const $minusVertical = $(elementId).find('.MinusVertical');
+		const $plusVertical = $(elementId).find('.PlusVertical');
+
+		$minusVertical.removeClass('DisabledSpin');
+
+		if (arraytospin.length) {
+			var currentPosition = arraytospin.indexOf(parseInt($input.val()));
+			var maximumToSpin = arraytospin.lastIndexOf(arraytospin.slice(-1)[0]);
+
+			$plusVertical.removeClass('DisabledSpin');
+
+			if (maximumToSpin - 1 === currentPosition) {
+				currentPosition = currentPosition + 1;
+				$input.val(arraytospin[currentPosition]);
+
+				if (triggerOnChange) $input.trigger('change');
+				if (triggerOnInput) $input.trigger('input');
+			} else if (maximumToSpin === currentPosition) {
+				currentPosition = currentPosition % maximumToSpin;
+				$input.val(arraytospin[currentPosition]);
+
+				triggerEvents($input, triggerOnChange, triggerOnInput);
+			} else {
+				currentPosition = (currentPosition + 1) % maximumToSpin;
+				$input.val(arraytospin[currentPosition]);
+
+				triggerEvents($input, triggerOnChange, triggerOnInput);
+			}
+
+			if (currentPosition === maximumToSpin) $plusVertical.addClass('DisabledSpin');
+			if (currentPosition === 0) $minusVertical.addClass('DisabledSpin');
+
+			$spinner.find('.SpinnerErrorMessage').css('display', 'none');
+		} else {
+			if (parseFloat(currentValue) < minValue) {
+				$minusVertical.addClass('DisabledSpin');
+			} else {
+				$minusVertical.removeClass('DisabledSpin');
+			}
+
+			if (!forceInteger && isDecimals) incrementUnit = parseFloat(0.1);
+
+			if (currentValue === undefined || currentValue === '' || isNaN(parseFloat(currentValue))) {
+				$input.val(minValue);
+
+				triggerEvents($input, triggerOnChange, triggerOnInput);
+			} else {
+				if (parseFloat(currentValue) < maxValue) {
+					if (currentValue === 0 && !forceInteger) incrementUnit = parseFloat(0.1);
+
+					$input.val(parseFloat((currentValue + incrementUnit).toFixed(1)));
+
+					triggerEvents($input, triggerOnChange, triggerOnInput);
+
+					$minusVertical.removeAttr('disabled');
+				} else {
+					$plusVertical.attr('disabled', 'disabled');
+				}
+			}
+
+			checkDisabledStatus(elementId, parseFloat($input.val()), minValue, maxValue);
+		}
+	};
+
+	const decrement = (elementId, minValue, maxValue, triggerOnChange, triggerOnInput, listTospin = []) => {
+		const $spinner = $(elementId);
+		const $input = $spinner.find('input[type="text"], input[type="number"]').first();
+
+		let forceInteger = $(elementId).data('forceinteger') === 'True' ? true : false;
+		let currentValue = parseFloat($input.val());
+		let incrementUnit = 1;
+		let isDecimals = currentValue % 1 != 0;
+		let arraytospin = listTospin;
+
+		const $minusVertical = $(elementId).find('.MinusVertical');
+		const $plusVertical = $(elementId).find('.PlusVertical');
+
+		if (arraytospin.length) {
+			let currentPosition = arraytospin.indexOf(parseInt($input.val()));
+			let maximumToSpin = arraytospin.lastIndexOf(arraytospin.slice(-1)[0]);
+
+			if (currentPosition == 0) {
+				$input.val(arraytospin[maximumToSpin]);
+
+				if (triggerOnChange) $input.trigger('change');
+				if (triggerOnInput) $input.trigger('input');
+			} else {
+				currentPosition = (currentPosition - 1) % maximumToSpin;
+				$input.val(arraytospin[currentPosition]);
+
+				triggerEvents($input, triggerOnChange, triggerOnInput);
+			}
+
+			$spinner.find('.SpinnerErrorMessage').css('display', 'none');
+		} else {
+			if (!forceInteger && isDecimals) incrementUnit = parseFloat(0.1);
+
+			if (currentValue === undefined || currentValue === '' || isNaN(parseFloat(currentValue))) {
+				$input.val(minValue);
+
+				triggerEvents($input, triggerOnChange, triggerOnInput);
+			} else {
+				if (parseFloat(currentValue) > minValue) {
+					if (currentValue === 1 && !forceInteger) incrementUnit = parseFloat(0.1);
+
+					$input.val(parseFloat((currentValue - incrementUnit).toFixed(1)));
+
+					triggerEvents($input, triggerOnChange, triggerOnInput);
+
+					$plusVertical.removeAttr('disabled');
+				} else {
+					$minusVertical.attr('disabled', 'disabled');
+				}
+			}
+
+			checkDisabledStatus(elementId, parseFloat($input.val()), minValue, maxValue);
+		}
+	};
+
+	const triggerEvents = (input, triggerOnChange, triggerOnInput) => {
+		if (triggerOnChange) input.trigger('change');
+		if (triggerOnInput) input.trigger('input');
+	};
+
+	const checkDisabledStatus = (elementId, valueToCheck, minValue, maxValue) => {
+		if (valueToCheck <= minValue) {
+			$(elementId)
+				.find('a.MinusVertical')
+				.attr('disabled', 'disabled');
+		} else {
+			$(elementId)
+				.find('a.MinusVertical')
+				.removeAttr('disabled');
+		}
+		if (valueToCheck >= maxValue) {
+			$(elementId)
+				.find('a.PlusVertical')
+				.attr('disabled', 'disabled');
+		} else {
+			$(elementId)
+				.find('a.PlusVertical')
+				.removeAttr('disabled');
+		}
+	};
+
+	SapphireWidgets.SpinnerVertical = {
+		create,
+		increment,
+		decrement,
+	};
+})(jQuery, window, document, SapphireWidgets);
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/split-button/scripts.js":
-/*!*********************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/split-button/scripts.js ***!
-  \*********************************************************************/
 /***/ (function() {
 
-eval("{/* Component SplitButton */\r\n(function($, window, document, SapphireWidgets) {\r\n\tvar create = function(config) {\r\n\t\twindow[config.widgetId] = new SplitButton(config);\r\n\t};\r\n\r\n\tvar SplitButton = function(config) {\r\n\t\tvar _this = this;\r\n\t\tthis.config = config;\r\n\t\tthis.$widget = $('#' + this.config.widgetId);\r\n\t\tthis.$button = this.$widget.find('.SplitButton-button');\r\n\t\tthis.$buttonLink = this.$button.find('> a');\r\n\t\tthis.$trigger = this.$widget.find('.SplitButton-trigger');\r\n\t\tthis.$actions = this.$widget.find('.SplitButton-actions');\r\n\t\tif (!!this.$actions.text()) {\r\n\t\t\tthis.$widget.find('> .SplitButton').addClass('hasTrigger');\r\n\t\t\tthis.buildActionsTrigger();\r\n\t\t}\r\n\t};\r\n\r\n\tSplitButton.prototype.buildActionsTrigger = function() {\r\n\t\tvar _this = this;\r\n\t\tvar classList = this.$buttonLink[0].classList.value;\r\n\t\tthis.$trigger.addClass(classList);\r\n\t\t$(function() {\r\n\t\t\t// inside a document ready due to sapphire popup binded events\r\n\t\t\tif (!_this.$trigger.hasClass('tooltipstered')) {\r\n\t\t\t\t_this.$trigger.tooltipster({\r\n\t\t\t\t\tarrow: true,\r\n\t\t\t\t\tcontent: $('<section/>').append(_this.$actions.clone(true)),\r\n\t\t\t\t\ttrigger: _this.config.triggerEvent,\r\n\t\t\t\t\tposition: _this.config.position,\r\n\t\t\t\t\tmaxWidth: _this.config.maxWidth,\r\n\t\t\t\t\ttheme: 'tooltipster-splitbutton Padding-' + _this.config.padding,\r\n\t\t\t\t});\r\n\t\t\t\t_this.$actions.remove();\r\n\t\t\t}\r\n\t\t});\r\n\t};\r\n\r\n\tSapphireWidgets.SplitButton = {\r\n\t\tcreate: create,\r\n\t};\r\n})(jQuery, window, document, SapphireWidgets);\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/split-button/scripts.js?\n}");
+/* Component SplitButton */
+(function($, window, document, SapphireWidgets) {
+	var create = function(config) {
+		window[config.widgetId] = new SplitButton(config);
+	};
+
+	var SplitButton = function(config) {
+		var _this = this;
+		this.config = config;
+		this.$widget = $('#' + this.config.widgetId);
+		this.$button = this.$widget.find('.SplitButton-button');
+		this.$buttonLink = this.$button.find('> a');
+		this.$trigger = this.$widget.find('.SplitButton-trigger');
+		this.$actions = this.$widget.find('.SplitButton-actions');
+		if (!!this.$actions.text()) {
+			this.$widget.find('> .SplitButton').addClass('hasTrigger');
+			this.buildActionsTrigger();
+		}
+	};
+
+	SplitButton.prototype.buildActionsTrigger = function() {
+		var _this = this;
+		var classList = this.$buttonLink[0].classList.value;
+		this.$trigger.addClass(classList);
+		$(function() {
+			// inside a document ready due to sapphire popup binded events
+			if (!_this.$trigger.hasClass('tooltipstered')) {
+				_this.$trigger.tooltipster({
+					arrow: true,
+					content: $('<section/>').append(_this.$actions.clone(true)),
+					trigger: _this.config.triggerEvent,
+					position: _this.config.position,
+					maxWidth: _this.config.maxWidth,
+					theme: 'tooltipster-splitbutton Padding-' + _this.config.padding,
+				});
+				_this.$actions.remove();
+			}
+		});
+	};
+
+	SapphireWidgets.SplitButton = {
+		create: create,
+	};
+})(jQuery, window, document, SapphireWidgets);
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/ssd-component-block/scripts.js":
-/*!****************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/ssd-component-block/scripts.js ***!
-  \****************************************************************************/
 /***/ (function() {
 
-eval("{var milisecondpassed = 0;\r\nvar stoptimer = true;\r\nvar myTimout  = null;\r\n\r\nfunction onKeydownFunction() {\r\n    milisecondpassed = 0;\r\n  \r\n    stoptimer=true;\r\n    clearInterval(myTimout);\r\n    myTimout = null;\r\n  };\r\n  \r\n  function onKeyUpFunction(elementToClick) {\r\n  stoptimer = false;\r\n  \r\n  if(milisecondpassed == 0 && myTimout==null){\r\n      myTimout = setInterval(\r\n        function() {\r\n          milisecondpassed+=100;\r\n         \r\n          if (milisecondpassed >= 400 && stoptimer==false) {\r\n            milisecondpassed = 0;\r\n            stoptimer=true;\r\n            clearInterval(myTimout);\r\n            myTimout = null;\r\n            elementToClick.click();\r\n          \r\n          }\r\n          else{\r\n            if(stoptimer==true){\r\n            clearInterval(myTimout);\r\n            myTimout = null;\r\n            }\r\n          }\r\n        }, 100);\r\n        if(stoptimer==true){\r\n            clearInterval(myTimout);\r\n            myTimout = null;\r\n        }\r\n    }\r\n    else{\r\n        if(stoptimer==true){\r\n            clearInterval(myTimout);\r\n            myTimout = null;\r\n        }   \r\n    }\r\n};\r\n\r\nif(typeof(ssdComponent) === 'undefined') {\r\n\r\n    ssdComponent = {\r\n        length: 0,\r\n        numberOfActive: 0,\r\n        isRTL: false,\r\n        id: '',\r\n        toDestroy: false,\r\n        onBlurDestroy: function() {\r\n            if (ssdComponent.id != '') {\r\n                var _ssdComponent = $('#' + ssdComponent.id);\r\n                var _wrapper = $('[data-ssd-placeholder=' + ssdComponent.id + ']');\r\n                if (ssdComponent.toDestroy) {\r\n                    _wrapper.find('.SSDListRefreshHandler').find('a.to-destroy').click();\r\n                    _wrapper.remove();\r\n                }\r\n                else {\r\n                     var _wrapper = $('[data-ssd-placeholder=' + ssdComponent.id + ']');\r\n                    _wrapper.find('input').val('');\r\n                    ssdComponent.blur();\r\n                }\r\n            }\r\n        },\r\n        focus: function(ssdComponentWidget) {\r\n            var _ssdComponentWidget = $(ssdComponentWidget).children('div.SSD-Wrapper:not(.Selected)');\r\n            \r\n            if(!_ssdComponentWidget.length)\r\n                return; //If this SSD-Wrapper is already Selected, return.\r\n            \r\n            if(ssdComponent.numberOfActive)\r\n                ssdComponent.blur(); //Blurs the other focused SSD's.\r\n            \r\n            ssdComponent.numberOfActive++;\r\n            if(!_ssdComponentWidget.parent().hasClass('SSDPopup')){\r\n                _ssdComponentWidget.children('.SSD-Component')\r\n                .css({\r\n                    'width': function() {\r\n                        return $(this).outerWidth();\r\n                    },\r\n                    'top': function() {\r\n                        return this.getBoundingClientRect().top + $(document).scrollTop();\r\n                    },\r\n                    'left': function() {\r\n                        if(ssdComponent.isRTL)\r\n                            return 'auto';\r\n                        return this.getBoundingClientRect().left;\r\n                    },\r\n                    'right': function() {\r\n                        if(ssdComponent.isRTL)\r\n                            return $(window).width() - $(this).outerWidth() - this.getBoundingClientRect().left;\r\n                        return 'auto';\r\n                    }\r\n                })\r\n                .children('.SSD-Bar').css({\r\n                    'width': function() {\r\n                        return $(this).outerWidth();\r\n                    }\r\n                })\r\n                .siblings('.SSD-List').attr('current-focus', 0);\r\n            }\r\n            else{\r\n                _ssdComponentWidget.children('.SSD-Component')\r\n                .css({\r\n                    'width': function() {\r\n                        return $(this).outerWidth();\r\n                    }\r\n                })\r\n                .children('.SSD-Bar').css({\r\n                    'width': function() {\r\n                        return $(this).outerWidth();\r\n                    }\r\n                })\r\n                .siblings('.SSD-List').attr('current-focus', 0);\r\n            }\r\n            \r\n            if(!_ssdComponentWidget.parent().hasClass('SSDPopup')){\r\n                _ssdComponentWidget.closest('form').append(_ssdComponentWidget);\r\n            }\r\n            _ssdComponentWidget.addClass('Positioned');\r\n            \r\n            setTimeout(\r\n                function() {\r\n                    _ssdComponentWidget.addClass('Selected');\r\n                }\r\n                , 1\r\n            );\r\n            \r\n        },\r\n        \r\n        \r\n        \r\n        blur: function() {\r\n            if(!ssdComponent.numberOfActive)\r\n                return;\r\n            \r\n            var _wrapper = $('div.SSD-Wrapper.Positioned.Selected');\r\n            \r\n            _wrapper.each(function() {\r\n                var parent = $('#' + $(this).attr('data-ssd-placeholder'));\r\n                parent.append($(this));\r\n            });\r\n            \r\n            _wrapper.removeClass('Positioned')\r\n            .children('.SSD-Component')\r\n                .css({\r\n                    'width': '',\r\n                    'top': '',\r\n                    'left': '',\r\n                    'right': ''\r\n                })\r\n                .removeClass('Searching Fixed KeyboardNav')\r\n            .children('.SSD-Bar').css({\r\n                'width': ''\r\n            });\r\n                \r\n            setTimeout(\r\n                function() {\r\n                    _wrapper.removeClass('Selected')\r\n                    .find('.SSD-Bar').each(function() {\r\n                        ssdComponent.tabsClear(this);\r\n                    });\r\n                }\r\n                , 1\r\n            );\r\n                \r\n            ssdComponent.numberOfActive--;\r\n            $(\".SSD_ListRecords span, .SSD_ListLine.ShowMore, .SSD_DeleteOnBlur\").remove();\r\n        },\r\n        resize: function() {\r\n            if(!ssdComponent.numberOfActive)\r\n                return; //If there's no SSD active, there's no need to resize it.\r\n            \r\n            var _ssdWrapper = $('div.SSD-Wrapper.Selected').first();\r\n            var _ssdComponentWidget = $('#' + _ssdWrapper.attr('data-ssd-placeholder'))[0];\r\n            var _ssdComponent = _ssdWrapper.children('.SSD-Component');\r\n            \r\n            if (typeof _ssdComponentWidget.getBoundingClientRect !== \"undefined\") {\r\n                _ssdComponent.css({\r\n                    'width': function() {\r\n                        return $(_ssdComponentWidget).width();\r\n                    }/*,\r\n                    'top': function() {\r\n                        return _ssdComponentWidget.getBoundingClientRect().top + $(document).scrollTop();\r\n                    },\r\n                    'left': function() {\r\n                        if(ssdComponent.isRTL)\r\n                            return 'auto';\r\n                        return _ssdComponentWidget.getBoundingClientRect().left;\r\n                    },\r\n                    'right': function() {\r\n                        if(ssdComponent.isRTL)\r\n                            return $(window).width() - $(_ssdComponentWidget).outerWidth() - _ssdComponentWidget.getBoundingClientRect().left;\r\n                        return 'auto';\r\n                    }*/\r\n                }).children('.SSD-Bar').css({\r\n                    'width': function() {\r\n                        return $(this).closest('.SSD-Component').innerWidth();\r\n                    }\r\n                });\r\n            }\r\n        },\r\n        tabSelect: function(ssdComponentWidget, ssdBar, selectedTab, isInputEvent) {\r\n            var _selectedTab = $(selectedTab);\r\n\r\n            if(ssdComponent.numberOfActive == 0) {\r\n                ssdComponent.focus(ssdComponentWidget);\r\n            }\r\n            \r\n            if(!_selectedTab.is('.Selected')) {\r\n                ssdComponent.tabsClear(ssdBar);\r\n                _selectedTab.addClass('Selected');\r\n            }\r\n            \r\n            ssdComponent.focusSelectedTab(ssdBar,isInputEvent);\r\n        },\r\n        focusSelectedTab: function(ssdBar,isInputEvent) {\r\n            // Selected tab is the Search input?\r\n            if(ssdBar.children('.SearchInput-Container.Selected').length) {\r\n                var elementToClick = ssdBar.siblings('.SSDListRefreshHandler').find('a:not(.to-destroy)');\r\n                \r\n                if(isInputEvent){\r\n                    onKeyUpFunction(elementToClick);\r\n                }\r\n                else{\r\n                    elementToClick.click();\r\n                }\r\n                ssdBar.find('.InputPlaceholder input[type=\"text\"]:not(:focus)').first().select().focus();\r\n                return;\r\n            }\r\n            \r\n            // Selected tab is the Short list?\r\n            if(ssdBar.children('.ShortListSelector-Container.Selected').length) {\r\n                ssdBar.find('.ShortListSelector-Container > a').focus();\r\n                return;\r\n            }\r\n        },\r\n        /*\r\n         * Method being called by user action js_ssdComponent_focusCurrentRow\r\n         */\r\n        focusCurrentRow: function() {\r\n            var _ssdComponent = $('div.SSD-Wrapper.Selected .SSD-Component').first();\r\n            var _ssdList = _ssdComponent.find('.SSD-List');\r\n            var _currentFocus = _ssdList.attr('current-focus');\r\n\r\n            _ssdComponent.addClass('KeyboardNav');\r\n            _ssdList.find('span.SSD_ListRecords > span:nth-child(' + _currentFocus + ')').addClass('focus');\r\n        },\r\n        tabsClear: function(ssdBar) {\r\n            $(ssdBar).children().removeClass('Selected');\r\n        },\r\n        searchIcon: function(event) {\r\n            ssdComponent.tabSelect(event.data.ssdComponentWidget, event.data.ssdBar, $(event.data.ssdBar).children('.SearchInput-Container'),false);\r\n        },\r\n        /*\r\n         * @name inputEvent\r\n         * @description \r\n         */\r\n        inputEvent: function(event) {\r\n            var _inputContainer = $(event.data.input).closest('.SearchInput-Container');\r\n            \r\n            ssdComponent.tabSelect(event.data.ssdComponentWidget, event.data.ssdBar, _inputContainer,true);\r\n            \r\n            if($(event.data.input).val() == '') {\r\n                _inputContainer.closest('.SSD-Component').removeClass('Searching');\r\n            }\r\n            else {\r\n                _inputContainer.closest('.SSD-Component').addClass('Searching');\r\n            }\r\n        },\r\n        keydownEvent: function(event) {\r\n           onKeydownFunction();          \r\n          \r\n        },\r\n        keyboardHandler: function(event) {\r\n            if(event.key == \"Shift\" || event.key == \"Control\")\r\n                return;\r\n\r\n            var _ssdComponent = $('div.SSD-Wrapper.Selected .SSD-Component').first();\r\n            var _ssdList = _ssdComponent.find('.SSD-List');\r\n\r\n            if(event.key == \"Enter\" && _ssdList.find('.SSD_ListLine.ShowMore.focus').length)\r\n                return;\r\n\r\n            if(event.key == \"Tab\") {\r\n                _ssdComponent.addClass('KeyboardNav');\r\n                return;\r\n            }\r\n            \r\n            if(event.key == \"ArrowUp\" || event.key == \"ArrowDown\") {\r\n                var _currentFocus = _ssdList.attr('current-focus');\r\n                var _selectedElement = $(null);\r\n                \r\n                if(_ssdList.find('.SSD_ListLine.ShowMore.focus').length) {\r\n                    _selectedElement = _ssdList.find('.SSD_ListLine.ShowMore.focus');\r\n                }\r\n                else if(_currentFocus > 0) {\r\n                    _selectedElement = _ssdList.find('span.SSD_ListRecords > span:nth-child(' + _currentFocus + ')');\r\n                }\r\n                \r\n                _ssdComponent.addClass('KeyboardNav')\r\n                \r\n                if(event.key == \"ArrowUp\") {\r\n                    if(_selectedElement.length) {\r\n                        \r\n                        if(_selectedElement.is('.SSD_ListLine.ShowMore.focus')) {\r\n                            _selectedElement.removeClass('focus');\r\n                            _selectedElement = _ssdList.find('span.SSD_ListRecords > span:last-child');\r\n                        }\r\n                        else {\r\n                            _selectedElement = _selectedElement.removeClass('focus').prev();\r\n                        }\r\n\r\n                        _currentFocus--;\r\n                    }\r\n                    else {\r\n                        _currentFocus = _ssdList.find('span.SSD_ListRecords > span').length;\r\n\r\n                        if(_ssdList.find('.SSD_ListLine.ShowMore').length) {\r\n                            _selectedElement = _ssdList.find('.SSD_ListLine.ShowMore');\r\n                            _currentFocus++;\r\n                        }\r\n                        else {\r\n                            _selectedElement = _ssdList.find('span.SSD_ListRecords > span:last-child');\r\n                        }\r\n                    }\r\n                }\r\n                \r\n                if(event.key == \"ArrowDown\") {\r\n                    if(_selectedElement.length) {\r\n                        \r\n                        if(_selectedElement.is('.SSD_ListLine.ShowMore.focus')) {\r\n                            _selectedElement.removeClass('focus');\r\n                            _selectedElement = $(null);\r\n                        }\r\n                        else {\r\n                            _selectedElement = _selectedElement.removeClass('focus').next();\r\n                            \r\n                            if(!_selectedElement.length && _ssdList.find('.SSD_ListLine.ShowMore').length) {\r\n                                _selectedElement = _ssdList.find('.SSD_ListLine.ShowMore');\r\n                            }\r\n                        }\r\n                        \r\n                        _currentFocus++;\r\n                    }\r\n                    else {\r\n                        _selectedElement = _ssdList.find('span.SSD_ListRecords > span:first-child');\r\n                        _currentFocus = 1;\r\n                    }\r\n                }\r\n                \r\n                _selectedElement.addClass('focus');\r\n                \r\n                if(!_selectedElement.length) {\r\n                    ssdComponent.focusSelectedTab(_ssdComponent.find('.SSD-Bar'),false);\r\n                    _currentFocus = 0;\r\n                }\r\n                else if (!_selectedElement.find('.SSD_ListLine.Disabled').length){\r\n                    _selectedElement.find('.ExpandControl > a').focus();\r\n                }\r\n                else {\r\n                    _ssdList.find('a.OtherControlLink').focus();\r\n                }\r\n                \r\n                _ssdList.attr('current-focus', _currentFocus);\r\n\r\n                return;\r\n            }\r\n            \r\n            ssdComponent.clearKeyboardNavStatus(_ssdComponent);\r\n        },\r\n        clearKeyboardNavStatus: function(ssdComponent) {\r\n            var _ssdComponent = $(ssdComponent);\r\n            var _ssdList = _ssdComponent.find('.SSD-List');\r\n\r\n            if(_ssdList.find('.SSD_ListLine.ShowMore.focus').length)\r\n                return;\r\n\r\n            _ssdComponent.removeClass('KeyboardNav');\r\n            _ssdList.attr('current-focus', 0)\r\n                .find('span.SSD_ListRecords > span.focus').removeClass('focus')\r\n                .find('.ExpandControl > a').blur();\r\n        },\r\n        scrollHandler: function() {\r\n            var _ssdComponent = $('div.SSD-Wrapper.Selected .SSD-Component').first();\r\n            if(Math.max(document.documentElement.clientWidth, window.innerWidth || 0) <= 1024){\r\n                if(_ssdComponent[0].getBoundingClientRect().top > $(\".toolbar-wrapper.Fixed\").outerHeight()) {\r\n                    _ssdComponent.removeClass('Fixed');\r\n                    return;\r\n                }else{\r\n                    $('.SSD-Wrapper.Selected > .SSD-Component.Fixed > .SSD-Bar').css('top', $(\".toolbar-wrapper.Fixed\").outerHeight() + 'px'); \r\n                    \r\n                    \r\n                }\r\n            }else{\r\n                /*Not Mobile apply fixed behaviour*/\r\n                if(_ssdComponent[0].getBoundingClientRect().top > ($('.TopPatientHeader').outerHeight(true) + $('.Header').outerHeight(true) + $(\".toolbar-wrapper\").outerHeight()+ $('.CTTASLevelAssessmentMainContainer').outerHeight(true) )) {\r\n                    _ssdComponent.removeClass('Fixed');\r\n                    return;\r\n                }else{\r\n                    $('.SSD-Wrapper.Selected > .SSD-Component.Fixed > .SSD-Bar').css('top',($('.TopPatientHeader').outerHeight(true) + $('.Header').outerHeight(true) + $(\".toolbar-wrapper\").outerHeight() + $('.CTTASLevelAssessmentMainContainer').outerHeight(true)) + 'px'); \r\n                }\r\n            }\r\n\r\n\r\n            _ssdComponent.addClass('Fixed');\r\n        },\r\n        destroy: function(_inputId) { /* Used to destroy a specific ssd component by receive the input identifier as parameter and determine the wrapper to remove. */\r\n            $('[data-ssd-placeholder=' + ssdComponent.id + ']').remove();\r\n        },\r\n        init: function(ssdComponentWidget,_toDestroy) {\r\n            ssdComponent.length++;\r\n            ssdComponent.numberOfActive = 0;\r\n            ssdComponent.isRTL = $('html').is('.rtl');\r\n            ssdComponent.toDestroy = _toDestroy;\r\n            if (typeof ssdComponentWidget != 'undefined') {\r\n                ssdComponent.id = $(ssdComponentWidget).attr('id');\r\n            }\r\n            var _ssdComponentWidget = $(ssdComponentWidget);\r\n            var _ssdComponent = _ssdComponentWidget.find('.SSD-Component');\r\n            var _ssdBar = _ssdComponent.children('.SSD-Bar').first();\r\n            var _searchIcon = _ssdBar.find('.SearchIcon').first();\r\n            var _input = _ssdBar.find('input[type=\"text\"]').first();\r\n            var _clearControl = _ssdBar.find('.ClearControl').first();\r\n            \r\n            _searchIcon.off('click').on('click', {\r\n                ssdComponentWidget: _ssdComponentWidget,\r\n                ssdBar: _ssdBar\r\n            }, ssdComponent.searchIcon);\r\n            \r\n            _ssdBar.children('div').off('click').on('click', {\r\n                ssdComponentWidget: _ssdComponentWidget,\r\n                ssdBar: _ssdBar\r\n            }, function(event) {\r\n                ssdComponent.tabSelect(event.data.ssdComponentWidget, event.data.ssdBar, this,false);\r\n            });\r\n            \r\n            _clearControl.off('click').on('click', ssdComponent.onBlurDestroy);\r\n            \r\n            _input.off('keyup').on('keyup', {\r\n                ssdComponentWidget: _ssdComponentWidget,\r\n                ssdBar: _ssdBar,\r\n                input: _input\r\n            }, ssdComponent.inputEvent);\r\n            \r\n            _input.off('keydown').on('keydown', {\r\n                ssdComponentWidget: _ssdComponentWidget,\r\n                ssdBar: _ssdBar,\r\n                input: _input\r\n            }, ssdComponent.keydownEvent);\r\n            \r\n            $(_ssdComponent).off('click').on('click', {\r\n                ssdComponent: _ssdComponent\r\n            }, function(event) {\r\n                ssdComponent.clearKeyboardNavStatus(event.data.ssdComponent);\r\n            });\r\n        }\r\n    }\r\n}\r\n\r\n$(document).ready(function() {\r\n    $(window).on('resize', function(event) {\r\n        ssdComponent.resize();\r\n    });\r\n    \r\n    $(document).on('click', function(event) {\r\n        if(!$(event.target).is(':visible')) { /* Clicks on hidden elements are dismissed. */\r\n            return;\r\n        }\r\n        \r\n        var e = $(event.target).closest('.SSD-Component');\r\n        \r\n        if(!e.length) { // User clicked outside the SSD-Component?\r\n            ssdComponent.onBlurDestroy();\r\n        }\r\n    });\r\n    \r\n    $(document).on('keydown', function(event) {\r\n        if(ssdComponent.numberOfActive > 0) {\r\n            if(event.keyCode == \"27\") { // User hit Escape\r\n                ssdComponent.onBlurDestroy();\r\n            }\r\n            if(event.key == \"ArrowUp\" || event.key == \"ArrowDown\") {\r\n                event.preventDefault();\r\n            }\r\n        }\r\n    });\r\n    \r\n    $(document).on('keyup', function(event) {\r\n        if(ssdComponent.numberOfActive > 0) { // If there's an SSD component active, go for Keyboard handler\r\n            ssdComponent.keyboardHandler(event);\r\n        }\r\n    });\r\n    \r\n    $(document).on('scroll', function() {\r\n        if(ssdComponent.numberOfActive > 0) { // If there's an SSD component active, go for scroll handler\r\n            ssdComponent.scrollHandler();\r\n        }\r\n    });\r\n});\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/ssd-component-block/scripts.js?\n}");
+var milisecondpassed = 0;
+var stoptimer = true;
+var myTimout  = null;
+
+function onKeydownFunction() {
+    milisecondpassed = 0;
+  
+    stoptimer=true;
+    clearInterval(myTimout);
+    myTimout = null;
+  };
+  
+  function onKeyUpFunction(elementToClick) {
+  stoptimer = false;
+  
+  if(milisecondpassed == 0 && myTimout==null){
+      myTimout = setInterval(
+        function() {
+          milisecondpassed+=100;
+         
+          if (milisecondpassed >= 400 && stoptimer==false) {
+            milisecondpassed = 0;
+            stoptimer=true;
+            clearInterval(myTimout);
+            myTimout = null;
+            elementToClick.click();
+          
+          }
+          else{
+            if(stoptimer==true){
+            clearInterval(myTimout);
+            myTimout = null;
+            }
+          }
+        }, 100);
+        if(stoptimer==true){
+            clearInterval(myTimout);
+            myTimout = null;
+        }
+    }
+    else{
+        if(stoptimer==true){
+            clearInterval(myTimout);
+            myTimout = null;
+        }   
+    }
+};
+
+if(typeof(ssdComponent) === 'undefined') {
+
+    ssdComponent = {
+        length: 0,
+        numberOfActive: 0,
+        isRTL: false,
+        id: '',
+        toDestroy: false,
+        onBlurDestroy: function() {
+            if (ssdComponent.id != '') {
+                var _ssdComponent = $('#' + ssdComponent.id);
+                var _wrapper = $('[data-ssd-placeholder=' + ssdComponent.id + ']');
+                if (ssdComponent.toDestroy) {
+                    _wrapper.find('.SSDListRefreshHandler').find('a.to-destroy').click();
+                    _wrapper.remove();
+                }
+                else {
+                     var _wrapper = $('[data-ssd-placeholder=' + ssdComponent.id + ']');
+                    _wrapper.find('input').val('');
+                    ssdComponent.blur();
+                }
+            }
+        },
+        focus: function(ssdComponentWidget) {
+            var _ssdComponentWidget = $(ssdComponentWidget).children('div.SSD-Wrapper:not(.Selected)');
+            
+            if(!_ssdComponentWidget.length)
+                return; //If this SSD-Wrapper is already Selected, return.
+            
+            if(ssdComponent.numberOfActive)
+                ssdComponent.blur(); //Blurs the other focused SSD's.
+            
+            ssdComponent.numberOfActive++;
+            if(!_ssdComponentWidget.parent().hasClass('SSDPopup')){
+                _ssdComponentWidget.children('.SSD-Component')
+                .css({
+                    'width': function() {
+                        return $(this).outerWidth();
+                    },
+                    'top': function() {
+                        return this.getBoundingClientRect().top + $(document).scrollTop();
+                    },
+                    'left': function() {
+                        if(ssdComponent.isRTL)
+                            return 'auto';
+                        return this.getBoundingClientRect().left;
+                    },
+                    'right': function() {
+                        if(ssdComponent.isRTL)
+                            return $(window).width() - $(this).outerWidth() - this.getBoundingClientRect().left;
+                        return 'auto';
+                    }
+                })
+                .children('.SSD-Bar').css({
+                    'width': function() {
+                        return $(this).outerWidth();
+                    }
+                })
+                .siblings('.SSD-List').attr('current-focus', 0);
+            }
+            else{
+                _ssdComponentWidget.children('.SSD-Component')
+                .css({
+                    'width': function() {
+                        return $(this).outerWidth();
+                    }
+                })
+                .children('.SSD-Bar').css({
+                    'width': function() {
+                        return $(this).outerWidth();
+                    }
+                })
+                .siblings('.SSD-List').attr('current-focus', 0);
+            }
+            
+            if(!_ssdComponentWidget.parent().hasClass('SSDPopup')){
+                _ssdComponentWidget.closest('form').append(_ssdComponentWidget);
+            }
+            _ssdComponentWidget.addClass('Positioned');
+            
+            setTimeout(
+                function() {
+                    _ssdComponentWidget.addClass('Selected');
+                }
+                , 1
+            );
+            
+        },
+        
+        
+        
+        blur: function() {
+            if(!ssdComponent.numberOfActive)
+                return;
+            
+            var _wrapper = $('div.SSD-Wrapper.Positioned.Selected');
+            
+            _wrapper.each(function() {
+                var parent = $('#' + $(this).attr('data-ssd-placeholder'));
+                parent.append($(this));
+            });
+            
+            _wrapper.removeClass('Positioned')
+            .children('.SSD-Component')
+                .css({
+                    'width': '',
+                    'top': '',
+                    'left': '',
+                    'right': ''
+                })
+                .removeClass('Searching Fixed KeyboardNav')
+            .children('.SSD-Bar').css({
+                'width': ''
+            });
+                
+            setTimeout(
+                function() {
+                    _wrapper.removeClass('Selected')
+                    .find('.SSD-Bar').each(function() {
+                        ssdComponent.tabsClear(this);
+                    });
+                }
+                , 1
+            );
+                
+            ssdComponent.numberOfActive--;
+            $(".SSD_ListRecords span, .SSD_ListLine.ShowMore, .SSD_DeleteOnBlur").remove();
+        },
+        resize: function() {
+            if(!ssdComponent.numberOfActive)
+                return; //If there's no SSD active, there's no need to resize it.
+            
+            var _ssdWrapper = $('div.SSD-Wrapper.Selected').first();
+            var _ssdComponentWidget = $('#' + _ssdWrapper.attr('data-ssd-placeholder'))[0];
+            var _ssdComponent = _ssdWrapper.children('.SSD-Component');
+            
+            if (typeof _ssdComponentWidget.getBoundingClientRect !== "undefined") {
+                _ssdComponent.css({
+                    'width': function() {
+                        return $(_ssdComponentWidget).width();
+                    }/*,
+                    'top': function() {
+                        return _ssdComponentWidget.getBoundingClientRect().top + $(document).scrollTop();
+                    },
+                    'left': function() {
+                        if(ssdComponent.isRTL)
+                            return 'auto';
+                        return _ssdComponentWidget.getBoundingClientRect().left;
+                    },
+                    'right': function() {
+                        if(ssdComponent.isRTL)
+                            return $(window).width() - $(_ssdComponentWidget).outerWidth() - _ssdComponentWidget.getBoundingClientRect().left;
+                        return 'auto';
+                    }*/
+                }).children('.SSD-Bar').css({
+                    'width': function() {
+                        return $(this).closest('.SSD-Component').innerWidth();
+                    }
+                });
+            }
+        },
+        tabSelect: function(ssdComponentWidget, ssdBar, selectedTab, isInputEvent) {
+            var _selectedTab = $(selectedTab);
+
+            if(ssdComponent.numberOfActive == 0) {
+                ssdComponent.focus(ssdComponentWidget);
+            }
+            
+            if(!_selectedTab.is('.Selected')) {
+                ssdComponent.tabsClear(ssdBar);
+                _selectedTab.addClass('Selected');
+            }
+            
+            ssdComponent.focusSelectedTab(ssdBar,isInputEvent);
+        },
+        focusSelectedTab: function(ssdBar,isInputEvent) {
+            // Selected tab is the Search input?
+            if(ssdBar.children('.SearchInput-Container.Selected').length) {
+                var elementToClick = ssdBar.siblings('.SSDListRefreshHandler').find('a:not(.to-destroy)');
+                
+                if(isInputEvent){
+                    onKeyUpFunction(elementToClick);
+                }
+                else{
+                    elementToClick.click();
+                }
+                ssdBar.find('.InputPlaceholder input[type="text"]:not(:focus)').first().select().focus();
+                return;
+            }
+            
+            // Selected tab is the Short list?
+            if(ssdBar.children('.ShortListSelector-Container.Selected').length) {
+                ssdBar.find('.ShortListSelector-Container > a').focus();
+                return;
+            }
+        },
+        /*
+         * Method being called by user action js_ssdComponent_focusCurrentRow
+         */
+        focusCurrentRow: function() {
+            var _ssdComponent = $('div.SSD-Wrapper.Selected .SSD-Component').first();
+            var _ssdList = _ssdComponent.find('.SSD-List');
+            var _currentFocus = _ssdList.attr('current-focus');
+
+            _ssdComponent.addClass('KeyboardNav');
+            _ssdList.find('span.SSD_ListRecords > span:nth-child(' + _currentFocus + ')').addClass('focus');
+        },
+        tabsClear: function(ssdBar) {
+            $(ssdBar).children().removeClass('Selected');
+        },
+        searchIcon: function(event) {
+            ssdComponent.tabSelect(event.data.ssdComponentWidget, event.data.ssdBar, $(event.data.ssdBar).children('.SearchInput-Container'),false);
+        },
+        /*
+         * @name inputEvent
+         * @description 
+         */
+        inputEvent: function(event) {
+            var _inputContainer = $(event.data.input).closest('.SearchInput-Container');
+            
+            ssdComponent.tabSelect(event.data.ssdComponentWidget, event.data.ssdBar, _inputContainer,true);
+            
+            if($(event.data.input).val() == '') {
+                _inputContainer.closest('.SSD-Component').removeClass('Searching');
+            }
+            else {
+                _inputContainer.closest('.SSD-Component').addClass('Searching');
+            }
+        },
+        keydownEvent: function(event) {
+           onKeydownFunction();          
+          
+        },
+        keyboardHandler: function(event) {
+            if(event.key == "Shift" || event.key == "Control")
+                return;
+
+            var _ssdComponent = $('div.SSD-Wrapper.Selected .SSD-Component').first();
+            var _ssdList = _ssdComponent.find('.SSD-List');
+
+            if(event.key == "Enter" && _ssdList.find('.SSD_ListLine.ShowMore.focus').length)
+                return;
+
+            if(event.key == "Tab") {
+                _ssdComponent.addClass('KeyboardNav');
+                return;
+            }
+            
+            if(event.key == "ArrowUp" || event.key == "ArrowDown") {
+                var _currentFocus = _ssdList.attr('current-focus');
+                var _selectedElement = $(null);
+                
+                if(_ssdList.find('.SSD_ListLine.ShowMore.focus').length) {
+                    _selectedElement = _ssdList.find('.SSD_ListLine.ShowMore.focus');
+                }
+                else if(_currentFocus > 0) {
+                    _selectedElement = _ssdList.find('span.SSD_ListRecords > span:nth-child(' + _currentFocus + ')');
+                }
+                
+                _ssdComponent.addClass('KeyboardNav')
+                
+                if(event.key == "ArrowUp") {
+                    if(_selectedElement.length) {
+                        
+                        if(_selectedElement.is('.SSD_ListLine.ShowMore.focus')) {
+                            _selectedElement.removeClass('focus');
+                            _selectedElement = _ssdList.find('span.SSD_ListRecords > span:last-child');
+                        }
+                        else {
+                            _selectedElement = _selectedElement.removeClass('focus').prev();
+                        }
+
+                        _currentFocus--;
+                    }
+                    else {
+                        _currentFocus = _ssdList.find('span.SSD_ListRecords > span').length;
+
+                        if(_ssdList.find('.SSD_ListLine.ShowMore').length) {
+                            _selectedElement = _ssdList.find('.SSD_ListLine.ShowMore');
+                            _currentFocus++;
+                        }
+                        else {
+                            _selectedElement = _ssdList.find('span.SSD_ListRecords > span:last-child');
+                        }
+                    }
+                }
+                
+                if(event.key == "ArrowDown") {
+                    if(_selectedElement.length) {
+                        
+                        if(_selectedElement.is('.SSD_ListLine.ShowMore.focus')) {
+                            _selectedElement.removeClass('focus');
+                            _selectedElement = $(null);
+                        }
+                        else {
+                            _selectedElement = _selectedElement.removeClass('focus').next();
+                            
+                            if(!_selectedElement.length && _ssdList.find('.SSD_ListLine.ShowMore').length) {
+                                _selectedElement = _ssdList.find('.SSD_ListLine.ShowMore');
+                            }
+                        }
+                        
+                        _currentFocus++;
+                    }
+                    else {
+                        _selectedElement = _ssdList.find('span.SSD_ListRecords > span:first-child');
+                        _currentFocus = 1;
+                    }
+                }
+                
+                _selectedElement.addClass('focus');
+                
+                if(!_selectedElement.length) {
+                    ssdComponent.focusSelectedTab(_ssdComponent.find('.SSD-Bar'),false);
+                    _currentFocus = 0;
+                }
+                else if (!_selectedElement.find('.SSD_ListLine.Disabled').length){
+                    _selectedElement.find('.ExpandControl > a').focus();
+                }
+                else {
+                    _ssdList.find('a.OtherControlLink').focus();
+                }
+                
+                _ssdList.attr('current-focus', _currentFocus);
+
+                return;
+            }
+            
+            ssdComponent.clearKeyboardNavStatus(_ssdComponent);
+        },
+        clearKeyboardNavStatus: function(ssdComponent) {
+            var _ssdComponent = $(ssdComponent);
+            var _ssdList = _ssdComponent.find('.SSD-List');
+
+            if(_ssdList.find('.SSD_ListLine.ShowMore.focus').length)
+                return;
+
+            _ssdComponent.removeClass('KeyboardNav');
+            _ssdList.attr('current-focus', 0)
+                .find('span.SSD_ListRecords > span.focus').removeClass('focus')
+                .find('.ExpandControl > a').blur();
+        },
+        scrollHandler: function() {
+            var _ssdComponent = $('div.SSD-Wrapper.Selected .SSD-Component').first();
+            if(Math.max(document.documentElement.clientWidth, window.innerWidth || 0) <= 1024){
+                if(_ssdComponent[0].getBoundingClientRect().top > $(".toolbar-wrapper.Fixed").outerHeight()) {
+                    _ssdComponent.removeClass('Fixed');
+                    return;
+                }else{
+                    $('.SSD-Wrapper.Selected > .SSD-Component.Fixed > .SSD-Bar').css('top', $(".toolbar-wrapper.Fixed").outerHeight() + 'px'); 
+                    
+                    
+                }
+            }else{
+                /*Not Mobile apply fixed behaviour*/
+                if(_ssdComponent[0].getBoundingClientRect().top > ($('.TopPatientHeader').outerHeight(true) + $('.Header').outerHeight(true) + $(".toolbar-wrapper").outerHeight()+ $('.CTTASLevelAssessmentMainContainer').outerHeight(true) )) {
+                    _ssdComponent.removeClass('Fixed');
+                    return;
+                }else{
+                    $('.SSD-Wrapper.Selected > .SSD-Component.Fixed > .SSD-Bar').css('top',($('.TopPatientHeader').outerHeight(true) + $('.Header').outerHeight(true) + $(".toolbar-wrapper").outerHeight() + $('.CTTASLevelAssessmentMainContainer').outerHeight(true)) + 'px'); 
+                }
+            }
+
+
+            _ssdComponent.addClass('Fixed');
+        },
+        destroy: function(_inputId) { /* Used to destroy a specific ssd component by receive the input identifier as parameter and determine the wrapper to remove. */
+            $('[data-ssd-placeholder=' + ssdComponent.id + ']').remove();
+        },
+        init: function(ssdComponentWidget,_toDestroy) {
+            ssdComponent.length++;
+            ssdComponent.numberOfActive = 0;
+            ssdComponent.isRTL = $('html').is('.rtl');
+            ssdComponent.toDestroy = _toDestroy;
+            if (typeof ssdComponentWidget != 'undefined') {
+                ssdComponent.id = $(ssdComponentWidget).attr('id');
+            }
+            var _ssdComponentWidget = $(ssdComponentWidget);
+            var _ssdComponent = _ssdComponentWidget.find('.SSD-Component');
+            var _ssdBar = _ssdComponent.children('.SSD-Bar').first();
+            var _searchIcon = _ssdBar.find('.SearchIcon').first();
+            var _input = _ssdBar.find('input[type="text"]').first();
+            var _clearControl = _ssdBar.find('.ClearControl').first();
+            
+            _searchIcon.off('click').on('click', {
+                ssdComponentWidget: _ssdComponentWidget,
+                ssdBar: _ssdBar
+            }, ssdComponent.searchIcon);
+            
+            _ssdBar.children('div').off('click').on('click', {
+                ssdComponentWidget: _ssdComponentWidget,
+                ssdBar: _ssdBar
+            }, function(event) {
+                ssdComponent.tabSelect(event.data.ssdComponentWidget, event.data.ssdBar, this,false);
+            });
+            
+            _clearControl.off('click').on('click', ssdComponent.onBlurDestroy);
+            
+            _input.off('keyup').on('keyup', {
+                ssdComponentWidget: _ssdComponentWidget,
+                ssdBar: _ssdBar,
+                input: _input
+            }, ssdComponent.inputEvent);
+            
+            _input.off('keydown').on('keydown', {
+                ssdComponentWidget: _ssdComponentWidget,
+                ssdBar: _ssdBar,
+                input: _input
+            }, ssdComponent.keydownEvent);
+            
+            $(_ssdComponent).off('click').on('click', {
+                ssdComponent: _ssdComponent
+            }, function(event) {
+                ssdComponent.clearKeyboardNavStatus(event.data.ssdComponent);
+            });
+        }
+    }
+}
+
+$(document).ready(function() {
+    $(window).on('resize', function(event) {
+        ssdComponent.resize();
+    });
+    
+    $(document).on('click', function(event) {
+        if(!$(event.target).is(':visible')) { /* Clicks on hidden elements are dismissed. */
+            return;
+        }
+        
+        var e = $(event.target).closest('.SSD-Component');
+        
+        if(!e.length) { // User clicked outside the SSD-Component?
+            ssdComponent.onBlurDestroy();
+        }
+    });
+    
+    $(document).on('keydown', function(event) {
+        if(ssdComponent.numberOfActive > 0) {
+            if(event.keyCode == "27") { // User hit Escape
+                ssdComponent.onBlurDestroy();
+            }
+            if(event.key == "ArrowUp" || event.key == "ArrowDown") {
+                event.preventDefault();
+            }
+        }
+    });
+    
+    $(document).on('keyup', function(event) {
+        if(ssdComponent.numberOfActive > 0) { // If there's an SSD component active, go for Keyboard handler
+            ssdComponent.keyboardHandler(event);
+        }
+    });
+    
+    $(document).on('scroll', function() {
+        if(ssdComponent.numberOfActive > 0) { // If there's an SSD component active, go for scroll handler
+            ssdComponent.scrollHandler();
+        }
+    });
+});
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/ssd-list-line/scripts.js":
-/*!**********************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/ssd-list-line/scripts.js ***!
-  \**********************************************************************/
 /***/ (function() {
 
-eval("{/* Component SSDListLine */\r\nSapphireWidgets.SSDListLine = {\r\n\ttoggle: (lineId, lineHandler = '') => {\r\n\t\tvar _line = $(lineId).is('.SSD_ListLine')\r\n\t\t\t? $(lineId)\r\n\t\t\t: $(lineId)\r\n\t\t\t\t\t.children('.SSD_ListLine')\r\n\t\t\t\t\t.first();\r\n\r\n\t\tif (!_line.length) return;\r\n\r\n\t\tvar _expandControl = $('.expand-control-custom-width');\r\n\r\n\t\tif (_expandControl.length != 0) {\r\n\t\t\t_expandControl.removeClass('expand-control-custom-width');\r\n\t\t\t_expandControl.css('width', '');\r\n\t\t}\r\n\r\n\t\tif (!_line.is('.Active')) {\r\n\t\t\tvar _lineHeader = _line\r\n\t\t\t\t.closest('div.SelectableList, .SelectableList-ListRecords')\r\n\t\t\t\t.find('div.SelectableList-Line.Active')\r\n\t\t\t\t.not(_line);\r\n\r\n\t\t\t_lineHeader.find('a[hide-action]').click();\r\n\t\t\t_lineHeader\r\n\t\t\t\t.removeClass('Active')\r\n\t\t\t\t.children('span')\r\n\t\t\t\t.hide(200);\r\n\t\t\t_line.addClass('Active');\r\n\r\n\t\t\tif ($(lineHandler).length) {\r\n\t\t\t\t$(lineHandler).click();\r\n\t\t\t}\r\n\t\t} else {\r\n\t\t\t_line.removeClass('Active');\r\n\t\t}\r\n\t},\r\n};\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/ssd-list-line/scripts.js?\n}");
+/* Component SSDListLine */
+SapphireWidgets.SSDListLine = {
+	toggle: (lineId, lineHandler = '') => {
+		var _line = $(lineId).is('.SSD_ListLine')
+			? $(lineId)
+			: $(lineId)
+					.children('.SSD_ListLine')
+					.first();
+
+		if (!_line.length) return;
+
+		var _expandControl = $('.expand-control-custom-width');
+
+		if (_expandControl.length != 0) {
+			_expandControl.removeClass('expand-control-custom-width');
+			_expandControl.css('width', '');
+		}
+
+		if (!_line.is('.Active')) {
+			var _lineHeader = _line
+				.closest('div.SelectableList, .SelectableList-ListRecords')
+				.find('div.SelectableList-Line.Active')
+				.not(_line);
+
+			_lineHeader.find('a[hide-action]').click();
+			_lineHeader
+				.removeClass('Active')
+				.children('span')
+				.hide(200);
+			_line.addClass('Active');
+
+			if ($(lineHandler).length) {
+				$(lineHandler).click();
+			}
+		} else {
+			_line.removeClass('Active');
+		}
+	},
+};
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/table-form/scripts.js":
-/*!*******************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/table-form/scripts.js ***!
-  \*******************************************************************/
 /***/ (function() {
 
-eval("{/* Component TableForm */\r\n(function($, window, SapphireWidgets) {\r\n\tconst addEmptyLine = config => {\r\n\t\tconst $list = $('.TableFormColumn:not(.TableFormColumn--editMode) .TableFormColumn__Fields > .ListRecords');\r\n\r\n\t\t$list.append('<div class=\"TableFormColumn__EmptyItem\"></div>');\r\n\t};\r\n\r\n\tconst removeEmptyLine = config => {\r\n\t\tconst $list = $('.TableFormColumn:not(.TableFormColumn--editMode) .TableFormColumn__Fields > .ListRecords');\r\n\r\n\t\t$list.each(function(index) {\r\n\t\t\t$(this)\r\n\t\t\t\t.find('> .TableFormColumn__EmptyItem:first')\r\n\t\t\t\t.remove();\r\n\t\t});\r\n\t};\r\n\r\n\tconst onComponentReload = widgetId => {\r\n\t\tconst $table = $(`#${widgetId}`);\r\n\t\tconst $editing = $table.find('.TableFormColumn--editMode');\r\n\r\n\t\tif ($editing.length) {\r\n\t\t\t$table.addClass('TableForm--scrollDisabled');\r\n\t\t} else {\r\n\t\t\t$table.removeClass('TableForm--scrollDisabled');\r\n\t\t}\r\n\t};\r\n\r\n\tSapphireWidgets.TableForm = { addEmptyLine, onComponentReload, removeEmptyLine };\r\n})(jQuery, window, SapphireWidgets);\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/table-form/scripts.js?\n}");
+/* Component TableForm */
+(function($, window, SapphireWidgets) {
+	const addEmptyLine = config => {
+		const $list = $('.TableFormColumn:not(.TableFormColumn--editMode) .TableFormColumn__Fields > .ListRecords');
+
+		$list.append('<div class="TableFormColumn__EmptyItem"></div>');
+	};
+
+	const removeEmptyLine = config => {
+		const $list = $('.TableFormColumn:not(.TableFormColumn--editMode) .TableFormColumn__Fields > .ListRecords');
+
+		$list.each(function(index) {
+			$(this)
+				.find('> .TableFormColumn__EmptyItem:first')
+				.remove();
+		});
+	};
+
+	const onComponentReload = widgetId => {
+		const $table = $(`#${widgetId}`);
+		const $editing = $table.find('.TableFormColumn--editMode');
+
+		if ($editing.length) {
+			$table.addClass('TableForm--scrollDisabled');
+		} else {
+			$table.removeClass('TableForm--scrollDisabled');
+		}
+	};
+
+	SapphireWidgets.TableForm = { addEmptyLine, onComponentReload, removeEmptyLine };
+})(jQuery, window, SapphireWidgets);
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/tabs-extended/scripts.js":
-/*!**********************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/tabs-extended/scripts.js ***!
-  \**********************************************************************/
 /***/ (function() {
 
-eval("{/* Component TabsExtended */\r\nSapphireWidgets.TabsExtended = function(config) {\r\n\t$(document).ready(function() {\r\n\t\tconst $component = $(`#${config.widgetId} .Tabs_Extended`);\r\n\t\tconst $tabHeader = $component.find('.Tabs_header');\r\n\t\tconst $tabContainer = $component.find('.TabsContainer');\r\n\t\tconst $tabs = $tabHeader.find('> .Tabs__tab');\r\n\t\tconst $tabsEnabled = $tabHeader.find('> .Tabs__tab:not(.disabled)');\r\n\t\tconst $tabsInput = $component.find('.Tabs_Input input');\r\n\t\tvar $calculatedTabs;\r\n\r\n\t\tif(config.useLastTabAsActions) {\r\n\t\t\t$calculatedTabs = $tabs.slice(0,-1);\r\n\t\t} else {\r\n\t\t\t$calculatedTabs = $tabs;\r\n\t\t}\r\n\t\t$calculatedTabs.each(function() {\r\n\t\t\tif ($(this).text() === '') {\r\n\t\t\t\t$(this).remove();\r\n\t\t\t}\r\n\t\t});\r\n\r\n\t\t$tabsEnabled.on('click', function() {\r\n\t\t\t$tabContainer.attr('activetab', $(this).attr('value'));\r\n\r\n\t\t\t$tabsInput.val($(this).attr('value'));\r\n\t\t\t$tabsInput.change();\r\n\t\t});\r\n\r\n\t\t$tabsEnabled.off('mousedown').on('mousedown', function(evt) {\r\n\t\t\tvar $tabsExtended = $(evt.target).closest('.Tabs_Extended');\r\n\t\t\t$tabsExtended.removeClass('isClosed');\r\n\t\t});\r\n\r\n\t\t$('.Tabs_Extended.HideActiveOnClick .Tabs_header')\r\n\t\t\t.off('mousedown')\r\n\t\t\t.on('mousedown', '.Tabs__tab.active', function(evt) {\r\n\t\t\t\tvar $tabsExtended = $(evt.target).closest('.Tabs_Extended');\r\n\t\t\t\tvar $tabsBody = $tabsExtended.find('.Tabs_body');\r\n\r\n\t\t\t\tif ($tabsBody.hasClass('Tabs_body--closed')) {\r\n\t\t\t\t\t$tabsBody.removeClass('Tabs_body--closed');\r\n\t\t\t\t\t$tabsExtended.removeClass('isClosed');\r\n\t\t\t\t} else {\r\n\t\t\t\t\t$tabsBody.addClass('Tabs_body--closed');\r\n\t\t\t\t\t$tabsExtended.addClass('isClosed');\r\n\t\t\t\t}\r\n\t\t\t});\r\n\r\n\t\t$tabHeader.find('.Tabs_Extended--disabled').each(function(index, el) {\r\n\t\t\t$(el)\r\n\t\t\t\t.parent()\r\n\t\t\t\t.css('cursor', 'default')\r\n\t\t\t\t.off('click');\r\n\t\t});\r\n\r\n\t\t$component.each(function(index, el) {\r\n\t\t\tif ($(el).hasClass('Tabs_Extended--closedonstart')) {\r\n\t\t\t\t$(el)\r\n\t\t\t\t\t.find('.Tabs_body')\r\n\t\t\t\t\t.addClass('Tabs_body--closed');\r\n\t\t\t\t$(el).addClass('isClosed');\r\n\t\t\t\t$(el).removeClass('Tabs_Extended--closedonstart');\r\n\t\t\t}\r\n\r\n\t\t\t$(el)\r\n\t\t\t\t.off('click')\r\n\t\t\t\t.on('click', '.Tabs_Extended--close', function(evt) {\r\n\t\t\t\t\t$(evt.target)\r\n\t\t\t\t\t\t.closest('.Tabs_body')\r\n\t\t\t\t\t\t.addClass('Tabs_body--closed');\r\n\t\t\t\t});\r\n\t\t});\r\n\r\n\t\tif (!config.tab1Enabled) $tabHeader.find('> .Tabs__tab[value=1]').addClass('disabled');\r\n\t\tif (!config.tab2Enabled) $tabHeader.find('> .Tabs__tab[value=2]').addClass('disabled');\r\n\t\tif (!config.tab3Enabled) $tabHeader.find('> .Tabs__tab[value=3]').addClass('disabled');\r\n\t\tif (!config.tab4Enabled) $tabHeader.find('> .Tabs__tab[value=4]').addClass('disabled');\r\n\t\tif (!config.tab5Enabled) $tabHeader.find('> .Tabs__tab[value=5]').addClass('disabled');\r\n\t});\r\n};\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/tabs-extended/scripts.js?\n}");
+/* Component TabsExtended */
+SapphireWidgets.TabsExtended = function(config) {
+	$(document).ready(function() {
+		const $component = $(`#${config.widgetId} .Tabs_Extended`);
+		const $tabHeader = $component.find('.Tabs_header');
+		const $tabContainer = $component.find('.TabsContainer');
+		const $tabs = $tabHeader.find('> .Tabs__tab');
+		const $tabsEnabled = $tabHeader.find('> .Tabs__tab:not(.disabled)');
+		const $tabsInput = $component.find('.Tabs_Input input');
+		var $calculatedTabs;
+
+		if(config.useLastTabAsActions) {
+			$calculatedTabs = $tabs.slice(0,-1);
+		} else {
+			$calculatedTabs = $tabs;
+		}
+		$calculatedTabs.each(function() {
+			if ($(this).text() === '') {
+				$(this).remove();
+			}
+		});
+
+		$tabsEnabled.on('click', function() {
+			$tabContainer.attr('activetab', $(this).attr('value'));
+
+			$tabsInput.val($(this).attr('value'));
+			$tabsInput.change();
+		});
+
+		$tabsEnabled.off('mousedown').on('mousedown', function(evt) {
+			var $tabsExtended = $(evt.target).closest('.Tabs_Extended');
+			$tabsExtended.removeClass('isClosed');
+		});
+
+		$('.Tabs_Extended.HideActiveOnClick .Tabs_header')
+			.off('mousedown')
+			.on('mousedown', '.Tabs__tab.active', function(evt) {
+				var $tabsExtended = $(evt.target).closest('.Tabs_Extended');
+				var $tabsBody = $tabsExtended.find('.Tabs_body');
+
+				if ($tabsBody.hasClass('Tabs_body--closed')) {
+					$tabsBody.removeClass('Tabs_body--closed');
+					$tabsExtended.removeClass('isClosed');
+				} else {
+					$tabsBody.addClass('Tabs_body--closed');
+					$tabsExtended.addClass('isClosed');
+				}
+			});
+
+		$tabHeader.find('.Tabs_Extended--disabled').each(function(index, el) {
+			$(el)
+				.parent()
+				.css('cursor', 'default')
+				.off('click');
+		});
+
+		$component.each(function(index, el) {
+			if ($(el).hasClass('Tabs_Extended--closedonstart')) {
+				$(el)
+					.find('.Tabs_body')
+					.addClass('Tabs_body--closed');
+				$(el).addClass('isClosed');
+				$(el).removeClass('Tabs_Extended--closedonstart');
+			}
+
+			$(el)
+				.off('click')
+				.on('click', '.Tabs_Extended--close', function(evt) {
+					$(evt.target)
+						.closest('.Tabs_body')
+						.addClass('Tabs_body--closed');
+				});
+		});
+
+		if (!config.tab1Enabled) $tabHeader.find('> .Tabs__tab[value=1]').addClass('disabled');
+		if (!config.tab2Enabled) $tabHeader.find('> .Tabs__tab[value=2]').addClass('disabled');
+		if (!config.tab3Enabled) $tabHeader.find('> .Tabs__tab[value=3]').addClass('disabled');
+		if (!config.tab4Enabled) $tabHeader.find('> .Tabs__tab[value=4]').addClass('disabled');
+		if (!config.tab5Enabled) $tabHeader.find('> .Tabs__tab[value=5]').addClass('disabled');
+	});
+};
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/tabular-list/scripts.js":
-/*!*********************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/tabular-list/scripts.js ***!
-  \*********************************************************************/
 /***/ (function() {
 
-eval("{/* Component TabularList */\r\n(function($, window, document, SapphireWidgets) {\r\n\tvar allTabularLists = [];\r\n\r\n\tvar create = function(config) {\r\n\t\twindow[config.tabularListId] = new TabularList(config);\r\n\t\tallTabularLists.push(window[config.tabularListId]);\r\n\r\n\t\t$(window).load(function() {\r\n\t\t\tvar allTabularLists = SapphireWidgets.TabularList.all();\r\n\t\t\tallTabularLists.forEach(function(element, i) {\r\n\t\t\t\telement.handleTabularListColumns();\r\n\t\t\t\telement.handleResponsiveClasses(200);\r\n\t\t\t});\r\n\t\t});\r\n\r\n\t\t$(window).on('resize.tabularlist', function() {\r\n\t\t\tvar allTabularLists = SapphireWidgets.TabularList.all();\r\n\t\t\tallTabularLists.forEach(function(element, i) {\r\n\t\t\t\telement.handleResponsiveClasses(200);\r\n\t\t\t});\r\n\t\t});\r\n\t};\r\n\r\n\tvar TabularList = function(config) {\r\n\t\tvar _this = this;\r\n\t\tthis.config = config;\r\n\t\tthis.tabularListResizeTimer = 0;\r\n\t\tthis.$widget = $('#' + config.tabularListId);\r\n\t\tthis.$widgetList = this.$widget.find('> .TabularList');\r\n\t\tthis.$widget.find('.TabularListRow').each(function(i, row) {\r\n\t\t\t_this.columnsCount = 0;\r\n\t\t\t$(row)\r\n\t\t\t\t.find('.TabularListRow-values .TabularListRow-item')\r\n\t\t\t\t.each(function(i, el) {\r\n\t\t\t\t\t$(el).addClass('TabularListColumn' + (i + 1));\r\n\t\t\t\t\t_this.columnsCount++;\r\n\t\t\t\t});\r\n\t\t});\r\n\t\tif (!!config.breakOn) {\r\n\t\t\tthis.breakOnOrder = parseInt(config.breakOn);\r\n\t\t} else {\r\n\t\t\tthis.breakOnOrder = 0;\r\n\t\t}\r\n\t\tthis.handleTabularListColumns();\r\n\t};\r\n\r\n\tTabularList.prototype.handleTabularListColumns = function() {\r\n\t\tif (this.config.columnsWidth === 'Auto') {\r\n\t\t\tif (this.$widgetList.width() > 1) {\r\n\t\t\t\tfor (i = 1; i <= this.columnsCount; i++) {\r\n\t\t\t\t\tvar maxWidthContent = Math.max.apply(\r\n\t\t\t\t\t\tnull,\r\n\t\t\t\t\t\tthis.$widget\r\n\t\t\t\t\t\t\t.find('.TabularListColumn' + i)\r\n\t\t\t\t\t\t\t.map(function() {\r\n\t\t\t\t\t\t\t\treturn $(this).outerWidth(true);\r\n\t\t\t\t\t\t\t})\r\n\t\t\t\t\t\t\t.get()\r\n\t\t\t\t\t);\r\n\t\t\t\t\tthis.$widget.find('.TabularListColumn' + i).width(maxWidthContent);\r\n\t\t\t\t\tthis.$widget.find('.TabularListColumn' + i).css('opacity', 1);\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}\r\n\t\tif (!!this.config.propertyMinWidth) {\r\n\t\t\tthis.$widget.find('.TabularListRow-property').css('min-width', convertInCSSValue(this.config.propertyMinWidth));\r\n\t\t}\r\n\t\tif (!!this.config.propertyMaxWidth) {\r\n\t\t\tthis.$widget.find('.TabularListRow-property').css('max-width', convertInCSSValue(this.config.propertyMaxWidth));\r\n\t\t}\r\n\t\tif (!!this.config.actionsMinWidth) {\r\n\t\t\tthis.$widget.find('.TabularListRow-actions').css('min-width', convertInCSSValue(this.config.actionsMinWidth));\r\n\t\t}\r\n\t\tif (!!this.config.actionsMaxWidth) {\r\n\t\t\tthis.$widget.find('.TabularListRow-actions').css('max-width', convertInCSSValue(this.config.actionsMaxWidth));\r\n\t\t}\r\n\t};\r\n\r\n\tTabularList.prototype.handleResponsiveClasses = function(timeout) {\r\n\t\tvar _this = this;\r\n\t\twindow.clearTimeout(this.tabularListResizeTimer);\r\n\t\tthis.tabularListResizeTimer = window.setTimeout(function() {\r\n\t\t\t_this.$widgetList.removeClass(function(index, className) {\r\n\t\t\t\treturn (className.match(/(^|\\s)screen-\\S+/g) || []).join(' ');\r\n\t\t\t});\r\n\r\n\t\t\t_this.$widgetList.removeClass('isBreaking');\r\n\r\n\t\t\tvar widgetWidth = _this.$widgetList.outerWidth(true);\r\n\t\t\tif (widgetWidth === 0) {\r\n\t\t\t\twidgetWidth = _this.$widgetList\r\n\t\t\t\t\t.parents(':visible')\r\n\t\t\t\t\t.eq(0)\r\n\t\t\t\t\t.outerWidth(true);\r\n\t\t\t}\r\n\r\n\t\t\tif (widgetWidth >= 1900) {\r\n\t\t\t\t_this.$widgetList.addClass('screen-DesktopHD');\r\n\t\t\t\tif (_this.breakOnOrder >= 6) {\r\n\t\t\t\t\t_this.$widgetList.addClass('isBreaking');\r\n\t\t\t\t}\r\n\t\t\t} else if (widgetWidth >= 1600) {\r\n\t\t\t\t_this.$widgetList.addClass('screen-DesktopBig');\r\n\t\t\t\tif (_this.breakOnOrder >= 5) {\r\n\t\t\t\t\t_this.$widgetList.addClass('isBreaking');\r\n\t\t\t\t}\r\n\t\t\t} else if (widgetWidth >= 1366) {\r\n\t\t\t\t_this.$widgetList.addClass('screen-Desktop');\r\n\t\t\t\tif (_this.breakOnOrder >= 4) {\r\n\t\t\t\t\t_this.$widgetList.addClass('isBreaking');\r\n\t\t\t\t}\r\n\t\t\t} else if (widgetWidth >= 1024) {\r\n\t\t\t\t_this.$widgetList.addClass('screen-DesktopSmall');\r\n\t\t\t\tif (_this.breakOnOrder >= 3) {\r\n\t\t\t\t\t_this.$widgetList.addClass('isBreaking');\r\n\t\t\t\t}\r\n\t\t\t} else if (widgetWidth >= 420) {\r\n\t\t\t\t_this.$widgetList.addClass('screen-Tablet');\r\n\t\t\t\tif (_this.breakOnOrder >= 2) {\r\n\t\t\t\t\t_this.$widgetList.addClass('isBreaking');\r\n\t\t\t\t}\r\n\t\t\t} else {\r\n\t\t\t\t_this.$widgetList.addClass('screen-Phone');\r\n\t\t\t\tif (_this.breakOnOrder >= 1) {\r\n\t\t\t\t\t_this.$widgetList.addClass('isBreaking');\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}, timeout);\r\n\t};\r\n\r\n\tSapphireWidgets.TabularList = {\r\n\t\tcreate: create,\r\n\t\tall: function() {\r\n\t\t\treturn allTabularLists;\r\n\t\t},\r\n\t};\r\n})(jQuery, window, document, SapphireWidgets);\r\n\r\nfunction convertInCSSValue(value_in) {\r\n\tvar returned;\r\n\tif (value_in.includes('px') || value_in.includes('%')) {\r\n\t\treturned = value_in;\r\n\t} else {\r\n\t\treturned = value_in + 'px';\r\n\t}\r\n\treturn returned;\r\n}\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/tabular-list/scripts.js?\n}");
+/* Component TabularList */
+(function($, window, document, SapphireWidgets) {
+	var allTabularLists = [];
+
+	var create = function(config) {
+		window[config.tabularListId] = new TabularList(config);
+		allTabularLists.push(window[config.tabularListId]);
+
+		$(window).load(function() {
+			var allTabularLists = SapphireWidgets.TabularList.all();
+			allTabularLists.forEach(function(element, i) {
+				element.handleTabularListColumns();
+				element.handleResponsiveClasses(200);
+			});
+		});
+
+		$(window).on('resize.tabularlist', function() {
+			var allTabularLists = SapphireWidgets.TabularList.all();
+			allTabularLists.forEach(function(element, i) {
+				element.handleResponsiveClasses(200);
+			});
+		});
+	};
+
+	var TabularList = function(config) {
+		var _this = this;
+		this.config = config;
+		this.tabularListResizeTimer = 0;
+		this.$widget = $('#' + config.tabularListId);
+		this.$widgetList = this.$widget.find('> .TabularList');
+		this.$widget.find('.TabularListRow').each(function(i, row) {
+			_this.columnsCount = 0;
+			$(row)
+				.find('.TabularListRow-values .TabularListRow-item')
+				.each(function(i, el) {
+					$(el).addClass('TabularListColumn' + (i + 1));
+					_this.columnsCount++;
+				});
+		});
+		if (!!config.breakOn) {
+			this.breakOnOrder = parseInt(config.breakOn);
+		} else {
+			this.breakOnOrder = 0;
+		}
+		this.handleTabularListColumns();
+	};
+
+	TabularList.prototype.handleTabularListColumns = function() {
+		if (this.config.columnsWidth === 'Auto') {
+			if (this.$widgetList.width() > 1) {
+				for (i = 1; i <= this.columnsCount; i++) {
+					var maxWidthContent = Math.max.apply(
+						null,
+						this.$widget
+							.find('.TabularListColumn' + i)
+							.map(function() {
+								return $(this).outerWidth(true);
+							})
+							.get()
+					);
+					this.$widget.find('.TabularListColumn' + i).width(maxWidthContent);
+					this.$widget.find('.TabularListColumn' + i).css('opacity', 1);
+				}
+			}
+		}
+		if (!!this.config.propertyMinWidth) {
+			this.$widget.find('.TabularListRow-property').css('min-width', convertInCSSValue(this.config.propertyMinWidth));
+		}
+		if (!!this.config.propertyMaxWidth) {
+			this.$widget.find('.TabularListRow-property').css('max-width', convertInCSSValue(this.config.propertyMaxWidth));
+		}
+		if (!!this.config.actionsMinWidth) {
+			this.$widget.find('.TabularListRow-actions').css('min-width', convertInCSSValue(this.config.actionsMinWidth));
+		}
+		if (!!this.config.actionsMaxWidth) {
+			this.$widget.find('.TabularListRow-actions').css('max-width', convertInCSSValue(this.config.actionsMaxWidth));
+		}
+	};
+
+	TabularList.prototype.handleResponsiveClasses = function(timeout) {
+		var _this = this;
+		window.clearTimeout(this.tabularListResizeTimer);
+		this.tabularListResizeTimer = window.setTimeout(function() {
+			_this.$widgetList.removeClass(function(index, className) {
+				return (className.match(/(^|\s)screen-\S+/g) || []).join(' ');
+			});
+
+			_this.$widgetList.removeClass('isBreaking');
+
+			var widgetWidth = _this.$widgetList.outerWidth(true);
+			if (widgetWidth === 0) {
+				widgetWidth = _this.$widgetList
+					.parents(':visible')
+					.eq(0)
+					.outerWidth(true);
+			}
+
+			if (widgetWidth >= 1900) {
+				_this.$widgetList.addClass('screen-DesktopHD');
+				if (_this.breakOnOrder >= 6) {
+					_this.$widgetList.addClass('isBreaking');
+				}
+			} else if (widgetWidth >= 1600) {
+				_this.$widgetList.addClass('screen-DesktopBig');
+				if (_this.breakOnOrder >= 5) {
+					_this.$widgetList.addClass('isBreaking');
+				}
+			} else if (widgetWidth >= 1366) {
+				_this.$widgetList.addClass('screen-Desktop');
+				if (_this.breakOnOrder >= 4) {
+					_this.$widgetList.addClass('isBreaking');
+				}
+			} else if (widgetWidth >= 1024) {
+				_this.$widgetList.addClass('screen-DesktopSmall');
+				if (_this.breakOnOrder >= 3) {
+					_this.$widgetList.addClass('isBreaking');
+				}
+			} else if (widgetWidth >= 420) {
+				_this.$widgetList.addClass('screen-Tablet');
+				if (_this.breakOnOrder >= 2) {
+					_this.$widgetList.addClass('isBreaking');
+				}
+			} else {
+				_this.$widgetList.addClass('screen-Phone');
+				if (_this.breakOnOrder >= 1) {
+					_this.$widgetList.addClass('isBreaking');
+				}
+			}
+		}, timeout);
+	};
+
+	SapphireWidgets.TabularList = {
+		create: create,
+		all: function() {
+			return allTabularLists;
+		},
+	};
+})(jQuery, window, document, SapphireWidgets);
+
+function convertInCSSValue(value_in) {
+	var returned;
+	if (value_in.includes('px') || value_in.includes('%')) {
+		returned = value_in;
+	} else {
+		returned = value_in + 'px';
+	}
+	return returned;
+}
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/tabular-scroll/scripts.js":
-/*!***********************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/tabular-scroll/scripts.js ***!
-  \***********************************************************************/
 /***/ (function() {
 
-eval("{/* Component TabularScroll */\r\n(function($, window, document, SapphireWidgets) {\r\n\tconst create = function(config) {\r\n\t\t$(document).ready(function() {\r\n\t\t\t$('.TabularScroll').each(function(i, el) {\r\n\t\t\t\tsetupTabularScroll($(el));\r\n\t\t\t});\r\n\t\t});\r\n\r\n\t\t$(window).load(function() {\r\n\t\t\tosAjaxBackend &&\r\n\t\t\t\tosAjaxBackend.BindAfterAjaxRequest(function() {\r\n\t\t\t\t\t$('.TabularScroll').each(function(i, el) {\r\n\t\t\t\t\t\tsetupTabularScroll($(el));\r\n\t\t\t\t\t\tresizeRows($(el));\r\n\t\t\t\t\t});\r\n\t\t\t\t});\r\n\t\t});\r\n\r\n\t\t$(window).on('resize.tabularscroll', function() {\r\n\t\t\t$('.TabularScroll').each(function(i, el) {\r\n\t\t\t\tvar $centerTable = $(el).find('.TabularScroll-center-table');\r\n\t\t\t\tvar tableWidth = $centerTable.find('table').width();\r\n\t\t\t\t$(el)\r\n\t\t\t\t\t.find('.TabularScroll-center .TopScrollDragger')\r\n\t\t\t\t\t.width(tableWidth);\r\n\t\t\t\tif ($centerTable[0].scrollWidth > $centerTable.width()) {\r\n\t\t\t\t\t$(el)\r\n\t\t\t\t\t\t.find('.TopScrollWrapper')\r\n\t\t\t\t\t\t.css('visibility', 'visible');\r\n\t\t\t\t} else {\r\n\t\t\t\t\t$(el)\r\n\t\t\t\t\t\t.find('.TopScrollWrapper')\r\n\t\t\t\t\t\t.css('visibility', 'hidden');\r\n\t\t\t\t}\r\n\t\t\t});\r\n\t\t});\r\n\t};\r\n\r\n\tconst setupTabularScroll = function($tabularScroll) {\r\n\t\tvar $topScrollWrapper = $tabularScroll.find('.TopScrollWrapper');\r\n\t\tvar $centerTable = $tabularScroll.find('.TabularScroll-center-table');\r\n\t\t$tabularScroll.find('.TopScrollWrapper').scroll(function() {\r\n\t\t\t$centerTable.scrollLeft($topScrollWrapper.scrollLeft());\r\n\t\t});\r\n\t\t$centerTable.scroll(function() {\r\n\t\t\t$topScrollWrapper.scrollLeft($centerTable.scrollLeft());\r\n\t\t});\r\n\t\t// similar to Resize\r\n\t\tvar tableWidth = $centerTable.find('table').width();\r\n\t\t$tabularScroll.find('.TabularScroll-center .TopScrollDragger').width(tableWidth);\r\n\t\tif ($centerTable[0].scrollWidth > $centerTable.width()) {\r\n\t\t\t$tabularScroll.find('.TopScrollWrapper').css('visibility', 'visible');\r\n\t\t} else {\r\n\t\t\t$tabularScroll.find('.TopScrollWrapper').css('visibility', 'hidden');\r\n\t\t}\r\n\t};\r\n\r\n\tconst resizeRows = function($tabularScroll) {\r\n\t\tlet arrrayHeight = [];\r\n\t\tconst $tableCenter = $tabularScroll.find('.TabularScroll-center-table table tbody');\r\n\t\tconst $tableRight = $tabularScroll.find('.TabularScroll-right .ListRecords');\r\n\t\tconst $tableLeft = $tabularScroll.find('.TabularScroll-left .ListRecords');\r\n\r\n\t\tarrrayHeight = $tableCenter\r\n\t\t\t.children('tr')\r\n\t\t\t.map(function() {\r\n\t\t\t\treturn $(this).height();\r\n\t\t\t})\r\n\t\t\t.get();\r\n\r\n\t\t$tableRight.children().each(function(index) {\r\n\t\t\t$(this).css('height', arrrayHeight[index] + 'px');\r\n\t\t});\r\n\r\n\t\t$tableLeft.children().each(function(index) {\r\n\t\t\t$(this).css('height', arrrayHeight[index] + 'px');\r\n\t\t});\r\n\t};\r\n\r\n\tSapphireWidgets.TabularScroll = { create };\r\n})(jQuery, window, document, SapphireWidgets);\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/tabular-scroll/scripts.js?\n}");
+/* Component TabularScroll */
+(function($, window, document, SapphireWidgets) {
+	const create = function(config) {
+		$(document).ready(function() {
+			$('.TabularScroll').each(function(i, el) {
+				setupTabularScroll($(el));
+			});
+		});
+
+		$(window).load(function() {
+			osAjaxBackend &&
+				osAjaxBackend.BindAfterAjaxRequest(function() {
+					$('.TabularScroll').each(function(i, el) {
+						setupTabularScroll($(el));
+						resizeRows($(el));
+					});
+				});
+		});
+
+		$(window).on('resize.tabularscroll', function() {
+			$('.TabularScroll').each(function(i, el) {
+				var $centerTable = $(el).find('.TabularScroll-center-table');
+				var tableWidth = $centerTable.find('table').width();
+				$(el)
+					.find('.TabularScroll-center .TopScrollDragger')
+					.width(tableWidth);
+				if ($centerTable[0].scrollWidth > $centerTable.width()) {
+					$(el)
+						.find('.TopScrollWrapper')
+						.css('visibility', 'visible');
+				} else {
+					$(el)
+						.find('.TopScrollWrapper')
+						.css('visibility', 'hidden');
+				}
+			});
+		});
+	};
+
+	const setupTabularScroll = function($tabularScroll) {
+		var $topScrollWrapper = $tabularScroll.find('.TopScrollWrapper');
+		var $centerTable = $tabularScroll.find('.TabularScroll-center-table');
+		$tabularScroll.find('.TopScrollWrapper').scroll(function() {
+			$centerTable.scrollLeft($topScrollWrapper.scrollLeft());
+		});
+		$centerTable.scroll(function() {
+			$topScrollWrapper.scrollLeft($centerTable.scrollLeft());
+		});
+		// similar to Resize
+		var tableWidth = $centerTable.find('table').width();
+		$tabularScroll.find('.TabularScroll-center .TopScrollDragger').width(tableWidth);
+		if ($centerTable[0].scrollWidth > $centerTable.width()) {
+			$tabularScroll.find('.TopScrollWrapper').css('visibility', 'visible');
+		} else {
+			$tabularScroll.find('.TopScrollWrapper').css('visibility', 'hidden');
+		}
+	};
+
+	const resizeRows = function($tabularScroll) {
+		let arrrayHeight = [];
+		const $tableCenter = $tabularScroll.find('.TabularScroll-center-table table tbody');
+		const $tableRight = $tabularScroll.find('.TabularScroll-right .ListRecords');
+		const $tableLeft = $tabularScroll.find('.TabularScroll-left .ListRecords');
+
+		arrrayHeight = $tableCenter
+			.children('tr')
+			.map(function() {
+				return $(this).height();
+			})
+			.get();
+
+		$tableRight.children().each(function(index) {
+			$(this).css('height', arrrayHeight[index] + 'px');
+		});
+
+		$tableLeft.children().each(function(index) {
+			$(this).css('height', arrrayHeight[index] + 'px');
+		});
+	};
+
+	SapphireWidgets.TabularScroll = { create };
+})(jQuery, window, document, SapphireWidgets);
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/timeline/scripts.js":
-/*!*****************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/timeline/scripts.js ***!
-  \*****************************************************************/
 /***/ (function() {
 
-eval("{/* Timeline Helpers */\r\nSapphireWidgets.TimelineCounterItems = function(titleItemID, label) {\r\n\t$(document).ready(function() {\r\n\t\tconst $section = $(`#${titleItemID}`).parents('.TimelineItemSection');\r\n\t\tconst $title = $section.find('.TimelineItemHeader a');\r\n\t\tconst $items = $section.find('.TimelineItem');\r\n\r\n\t\t$title.append($(`<div class='ColorGreyText TextLarge TextRegular'> (${$items.length})</div>`));\r\n\t});\r\n};\r\n\r\nSapphireWidgets.ScrollToEvent = function(elementId) {\r\n\tSapphireWidgets.LayoutBase.scrollToElement($(`#${elementId}:first`, window.top.document), 52);\r\n};\r\n\r\nSapphireWidgets.LineTimelineComponent = function(widgetId, hasContent, isExpandable) {\r\n\t$(document).ready(function() {\r\n\t\tconst $component = $(`#${widgetId}`);\r\n\r\n\t\tif (hasContent && isExpandable) {\r\n\t\t\tconst $expandableLink = $component.find('.LineTimeLine__Header');\r\n\t\t\tconst $actions = $component.find('.LineTimeLine__Actions');\r\n\r\n\t\t\t$expandableLink.click(() => {\r\n\t\t\t\t$component.toggleClass('LineTimeLine--expanded');\r\n\r\n\t\t\t\treturn false;\r\n\t\t\t});\r\n\r\n\t\t\t$actions.click(function(e) {\r\n\t\t\t\te.stopPropagation();\r\n\t\t\t});\r\n\t\t}\r\n\t});\r\n};\r\n\r\nSapphireWidgets.TimelinePageEvents = function(showMoreTimelineLink) {\r\n\t$(document).ready(function() {\r\n\t\t$(window)\r\n\t\t\t.off('scroll.Timeline')\r\n\t\t\t.on('scroll.Timeline', function() {\r\n\t\t\t\tif (window.scrollY === 0) {\r\n\t\t\t\t\tconst $item = $('.TimelineAnchor').first();\r\n\t\t\t\t\tconst $list = $('.TimelinePage__Navigation .ListRecords');\r\n\r\n\t\t\t\t\tselectItem($item.attr('id'));\r\n\t\t\t\t\tclearTimeout(window.scrollFinished);\r\n\r\n\t\t\t\t\t$list.scrollTop(0);\r\n\t\t\t\t} else {\r\n\t\t\t\t\tclearTimeout(window.scrollFinished);\r\n\t\t\t\t\twindow.scrollFinished = setTimeout(function() {\r\n\t\t\t\t\t\tlet id = 0;\r\n\r\n\t\t\t\t\t\t$('.TimelineAnchor').each(function(index) {\r\n\t\t\t\t\t\t\tif ($(window).scrollTop() + 190 >= $(this).offset().top) {\r\n\t\t\t\t\t\t\t\tid = $(this).attr('id');\r\n\r\n\t\t\t\t\t\t\t\tif (index == $('.TimelineAnchor').length - 1) selectItem(id);\r\n\t\t\t\t\t\t\t} else {\r\n\t\t\t\t\t\t\t\tselectItem(id, true);\r\n\r\n\t\t\t\t\t\t\t\twindow.lastItemID = id;\r\n\r\n\t\t\t\t\t\t\t\treturn false;\r\n\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t});\r\n\r\n\t\t\t\t\t\tif ($(document).height() - $(this).height() - 150 < $(this).scrollTop()) {\r\n\t\t\t\t\t\t\tconst $list = $('.TimelinePage__Navigation .ListRecords');\r\n\r\n\t\t\t\t\t\t\t$(`#${showMoreTimelineLink}`).click();\r\n\t\t\t\t\t\t\t$('.TimelinePage__Right .TimelinePage__LoadingMore').css('display', 'flex');\r\n\r\n\t\t\t\t\t\t\twindow.scrollListPosition = $list.scrollTop();\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t}, 100);\r\n\t\t\t\t}\r\n\r\n\t\t\t\tcheckEndOfPage();\r\n\t\t\t});\r\n\r\n\t\tinfiniteScrollList(showMoreTimelineLink);\r\n\t});\r\n};\r\n\r\nSapphireWidgets.TimelineRestoreEvents = function(showMoreTimelineLink) {\r\n\t$('.TimelinePage__Navigation .ListRecords').scrollTop(window.scrollListPosition);\r\n\t$('.TimelinePage__LoadingMore').css('display', 'none');\r\n\r\n\twindow.alreadyClicked = false;\r\n\r\n\tinfiniteScrollList(showMoreTimelineLink);\r\n\r\n\tif (window.lastItemID) selectItem(window.lastItemID);\r\n};\r\n\r\nfunction selectItem(id, scrollTo) {\r\n\tconst $navItem = $(`[data-item=event-${id}] .TimelineItem`);\r\n\r\n\t$('.TimelineItem.TimelineItem--active').removeClass('TimelineItem--active');\r\n\t$navItem.addClass('TimelineItem--active');\r\n\r\n\tif (scrollTo && $navItem.length) scrollToView($navItem);\r\n}\r\n\r\nfunction scrollToView(element) {\r\n\tconst $parentDiv = $('.TimelinePage__Navigation .ListRecords');\r\n\r\n\t$parentDiv.scrollTop(\r\n\t\t$parentDiv.scrollTop() + element.position().top - $parentDiv.height() / 2 + element.height() / 2\r\n\t);\r\n\r\n\treturn true;\r\n}\r\n\r\nfunction infiniteScrollList(showMoreNavLink, name) {\r\n\tconst $list = $('.TimelinePage__Navigation .ListRecords');\r\n\r\n\t$list.off('mousewheel.TimelineNav').on('mousewheel.TimelineNav', function() {\r\n\t\tconst listHeight = $list.height();\r\n\t\tconst scrollTop = $list.scrollTop();\r\n\t\tconst scrollHeight = $list.prop('scrollHeight');\r\n\r\n\t\tif (listHeight + scrollTop + 100 > scrollHeight && scrollTop > 0 && !window.alreadyClicked) {\r\n\t\t\tclearTimeout(window.scrollListFinished);\r\n\t\t\twindow.scrollListFinished = setTimeout(function() {\r\n\t\t\t\t$(`#${showMoreNavLink}`).click();\r\n\r\n\t\t\t\t$('.TimelinePage__LoadingMore').css('display', 'flex');\r\n\r\n\t\t\t\twindow.scrollListPosition = $list.scrollTop();\r\n\t\t\t\twindow.alreadyClicked = true;\r\n\t\t\t}, 100);\r\n\t\t}\r\n\t});\r\n}\r\n\r\nfunction checkEndOfPage() {\r\n\tif (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {\r\n\t\tconst $item = $('.TimelineAnchor').last();\r\n\t\twindow.lastItemID = $item.attr('id');\r\n\t}\r\n}\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/timeline/scripts.js?\n}");
+/* Timeline Helpers */
+SapphireWidgets.TimelineCounterItems = function(titleItemID, label) {
+	$(document).ready(function() {
+		const $section = $(`#${titleItemID}`).parents('.TimelineItemSection');
+		const $title = $section.find('.TimelineItemHeader a');
+		const $items = $section.find('.TimelineItem');
+
+		$title.append($(`<div class='ColorGreyText TextLarge TextRegular'> (${$items.length})</div>`));
+	});
+};
+
+SapphireWidgets.ScrollToEvent = function(elementId) {
+	SapphireWidgets.LayoutBase.scrollToElement($(`#${elementId}:first`, window.top.document), 52);
+};
+
+SapphireWidgets.LineTimelineComponent = function(widgetId, hasContent, isExpandable) {
+	$(document).ready(function() {
+		const $component = $(`#${widgetId}`);
+
+		if (hasContent && isExpandable) {
+			const $expandableLink = $component.find('.LineTimeLine__Header');
+			const $actions = $component.find('.LineTimeLine__Actions');
+
+			$expandableLink.click(() => {
+				$component.toggleClass('LineTimeLine--expanded');
+
+				return false;
+			});
+
+			$actions.click(function(e) {
+				e.stopPropagation();
+			});
+		}
+	});
+};
+
+SapphireWidgets.TimelinePageEvents = function(showMoreTimelineLink) {
+	$(document).ready(function() {
+		$(window)
+			.off('scroll.Timeline')
+			.on('scroll.Timeline', function() {
+				if (window.scrollY === 0) {
+					const $item = $('.TimelineAnchor').first();
+					const $list = $('.TimelinePage__Navigation .ListRecords');
+
+					selectItem($item.attr('id'));
+					clearTimeout(window.scrollFinished);
+
+					$list.scrollTop(0);
+				} else {
+					clearTimeout(window.scrollFinished);
+					window.scrollFinished = setTimeout(function() {
+						let id = 0;
+
+						$('.TimelineAnchor').each(function(index) {
+							if ($(window).scrollTop() + 190 >= $(this).offset().top) {
+								id = $(this).attr('id');
+
+								if (index == $('.TimelineAnchor').length - 1) selectItem(id);
+							} else {
+								selectItem(id, true);
+
+								window.lastItemID = id;
+
+								return false;
+							}
+						});
+
+						if ($(document).height() - $(this).height() - 150 < $(this).scrollTop()) {
+							const $list = $('.TimelinePage__Navigation .ListRecords');
+
+							$(`#${showMoreTimelineLink}`).click();
+							$('.TimelinePage__Right .TimelinePage__LoadingMore').css('display', 'flex');
+
+							window.scrollListPosition = $list.scrollTop();
+						}
+					}, 100);
+				}
+
+				checkEndOfPage();
+			});
+
+		infiniteScrollList(showMoreTimelineLink);
+	});
+};
+
+SapphireWidgets.TimelineRestoreEvents = function(showMoreTimelineLink) {
+	$('.TimelinePage__Navigation .ListRecords').scrollTop(window.scrollListPosition);
+	$('.TimelinePage__LoadingMore').css('display', 'none');
+
+	window.alreadyClicked = false;
+
+	infiniteScrollList(showMoreTimelineLink);
+
+	if (window.lastItemID) selectItem(window.lastItemID);
+};
+
+function selectItem(id, scrollTo) {
+	const $navItem = $(`[data-item=event-${id}] .TimelineItem`);
+
+	$('.TimelineItem.TimelineItem--active').removeClass('TimelineItem--active');
+	$navItem.addClass('TimelineItem--active');
+
+	if (scrollTo && $navItem.length) scrollToView($navItem);
+}
+
+function scrollToView(element) {
+	const $parentDiv = $('.TimelinePage__Navigation .ListRecords');
+
+	$parentDiv.scrollTop(
+		$parentDiv.scrollTop() + element.position().top - $parentDiv.height() / 2 + element.height() / 2
+	);
+
+	return true;
+}
+
+function infiniteScrollList(showMoreNavLink, name) {
+	const $list = $('.TimelinePage__Navigation .ListRecords');
+
+	$list.off('mousewheel.TimelineNav').on('mousewheel.TimelineNav', function() {
+		const listHeight = $list.height();
+		const scrollTop = $list.scrollTop();
+		const scrollHeight = $list.prop('scrollHeight');
+
+		if (listHeight + scrollTop + 100 > scrollHeight && scrollTop > 0 && !window.alreadyClicked) {
+			clearTimeout(window.scrollListFinished);
+			window.scrollListFinished = setTimeout(function() {
+				$(`#${showMoreNavLink}`).click();
+
+				$('.TimelinePage__LoadingMore').css('display', 'flex');
+
+				window.scrollListPosition = $list.scrollTop();
+				window.alreadyClicked = true;
+			}, 100);
+		}
+	});
+}
+
+function checkEndOfPage() {
+	if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
+		const $item = $('.TimelineAnchor').last();
+		window.lastItemID = $item.attr('id');
+	}
+}
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/trigger-iframe-tooltip/trigger-iframe-tooltip.js":
-/*!**********************************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/trigger-iframe-tooltip/trigger-iframe-tooltip.js ***!
-  \**********************************************************************************************/
 /***/ (function() {
 
-eval("{/* Component TriggerIframeTooltip */\r\n(function ($, window, document, SapphireWidgets) {\r\n\tvar create = function (config) {\r\n\t\tvar $elementId = $('#' + config.elementId);\r\n\r\n\t\t$elementId.addClass('tooltip');\r\n\r\n\t\tif (config.triggerId === 'click') $elementId.addClass('tooltipstered--pointer');\r\n\r\n\t\tconst widgetNotifyDiv = $.find('[data-iframetooltiptriggerid=\"' + config.elementId + '\"]');\r\n\t\tlet widgetNotifyId = '';\r\n\r\n\t\tif (widgetNotifyDiv.length === 1) {\r\n\t\t\twidgetNotifyId = $(widgetNotifyDiv).data('iframetooltipnotifyid');\r\n\t\t}\r\n\r\n\t\t$elementId.tooltipster({\r\n\t\t\tcontentAsHTML: true,\r\n\t\t\ttheme: config.theme,\r\n\t\t\tinteractive: true,\r\n\t\t\tposition: config.positionId,\r\n\t\t\ttrigger: config.triggerId,\r\n\t\t\tminWidth: config.minWidth,\r\n\t\t\tmaxWidth: config.maxWidth,\r\n\t\t\tzindex: config.zindex,\r\n\t\t\tonlyOne: true,\r\n\t\t\tcontent: `<iframe id=\"tooltipster-frame\" data-ui=\"iframe-tooltip\" src=\"${config.URL}\" style=\"border:none;\" data-iframetooltiptriggerid=\"${config.elementId}\" iframetooltipnotifyid=\"${widgetNotifyId}\"></iframe>`,\r\n\t\t\tfunctionReady: function (instance, helper) {\r\n\t\t\t\t$(helper).css({ visibility: 'hidden' });\r\n\r\n\t\t\t\tif (config.noPadding) $('.tooltipster-base').addClass('tooltipster-base--no-padding');\r\n\t\t\t\tif (config.customClass) $('.tooltipster-base').addClass(config.customClass);\r\n\r\n\t\t\t\tsetTimeout(function () {\r\n\t\t\t\t\t$('.tooltipster-base').css({\r\n\t\t\t\t\t\tvisibility: 'visible',\r\n\t\t\t\t\t\tminHeight: config.minHeight > 0 ? config.minHeight : 'auto',\r\n\t\t\t\t\t});\r\n\t\t\t\t}, 500);\r\n\r\n\t\t\t\t$('.tooltipster-content').prepend('<div class=\"TooltipsterLoading\"><div class=\"lds-ring\"><div></div></div>');\r\n\r\n\t\t\t\tlet _tooltipIframe = helper[0].querySelector('iframe');\r\n\t\t\t\tif (!!_tooltipIframe) {\r\n\t\t\t\t\t_tooltipIframe.addEventListener('load', function () {\r\n\t\t\t\t\t\t// Check if iframe is loaded\r\n\t\t\t\t\t\tif (_tooltipIframe.contentWindow.document.readyState === 'complete') {\r\n\t\t\t\t\t\t\t_tooltipIframe.contentWindow.document.body.classList.add('tooltipster-iframe-content');\r\n\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t$('.TooltipsterLoading').fadeOut(300, function () {\r\n\t\t\t\t\t\t\t\t$(this).remove();\r\n\t\t\t\t\t\t\t});\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t\telse {\r\n\t\t\t\t\t\t\tconsole.log('Tooltip iframe is still loading...');\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t});\r\n\t\t\t\t}\r\n\r\n\t\t\t\tconst isLeftOrRight = config.positionId === 'left' || config.positionId === 'right';\r\n\r\n\t\t\t\t// Set a fixed height in order to keep the arrow in the same position\r\n\t\t\t\tif (isLeftOrRight) {\r\n\t\t\t\t\tsetFixHeight();\r\n\r\n\t\t\t\t\t$(window)\r\n\t\t\t\t\t\t.off('scroll.Tooltip')\r\n\t\t\t\t\t\t.on('scroll.Tooltip', function () {\r\n\t\t\t\t\t\t\tsetTimeout(() => {\r\n\t\t\t\t\t\t\t\tsetFixHeight();\r\n\t\t\t\t\t\t\t}, 500);\r\n\t\t\t\t\t\t});\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\tfunctionAfter: function () {\r\n\t\t\t\t$(window).off('scroll.Tooltip');\r\n\t\t\t},\r\n\t\t});\r\n\t};\r\n\r\n\tconst setFixHeight = () => {\r\n\t\tconst $arrow = $('.tooltipster-arrow');\r\n\r\n\t\t$arrow.height($arrow.height());\r\n\t};\r\n\r\n\tSapphireWidgets.TriggerIframeTooltip = { create };\r\n})(jQuery, window, document, SapphireWidgets);\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/trigger-iframe-tooltip/trigger-iframe-tooltip.js?\n}");
+/* Component TriggerIframeTooltip */
+(function ($, window, document, SapphireWidgets) {
+	var create = function (config) {
+		var $elementId = $('#' + config.elementId);
+
+		$elementId.addClass('tooltip');
+
+		if (config.triggerId === 'click') $elementId.addClass('tooltipstered--pointer');
+
+		const widgetNotifyDiv = $.find('[data-iframetooltiptriggerid="' + config.elementId + '"]');
+		let widgetNotifyId = '';
+
+		if (widgetNotifyDiv.length === 1) {
+			widgetNotifyId = $(widgetNotifyDiv).data('iframetooltipnotifyid');
+		}
+
+		$elementId.tooltipster({
+			contentAsHTML: true,
+			theme: config.theme,
+			interactive: true,
+			position: config.positionId,
+			trigger: config.triggerId,
+			minWidth: config.minWidth,
+			maxWidth: config.maxWidth,
+			zindex: config.zindex,
+			onlyOne: true,
+			content: `<iframe id="tooltipster-frame" data-ui="iframe-tooltip" src="${config.URL}" style="border:none;" data-iframetooltiptriggerid="${config.elementId}" iframetooltipnotifyid="${widgetNotifyId}"></iframe>`,
+			functionReady: function (instance, helper) {
+				$(helper).css({ visibility: 'hidden' });
+
+				if (config.noPadding) $('.tooltipster-base').addClass('tooltipster-base--no-padding');
+				if (config.customClass) $('.tooltipster-base').addClass(config.customClass);
+
+				setTimeout(function () {
+					$('.tooltipster-base').css({
+						visibility: 'visible',
+						minHeight: config.minHeight > 0 ? config.minHeight : 'auto',
+					});
+				}, 500);
+
+				$('.tooltipster-content').prepend('<div class="TooltipsterLoading"><div class="lds-ring"><div></div></div>');
+
+				let _tooltipIframe = helper[0].querySelector('iframe');
+				if (!!_tooltipIframe) {
+					_tooltipIframe.addEventListener('load', function () {
+						// Check if iframe is loaded
+						if (_tooltipIframe.contentWindow.document.readyState === 'complete') {
+							_tooltipIframe.contentWindow.document.body.classList.add('tooltipster-iframe-content');
+							
+							$('.TooltipsterLoading').fadeOut(300, function () {
+								$(this).remove();
+							});
+						}
+						else {
+							console.log('Tooltip iframe is still loading...');
+						}
+					});
+				}
+
+				const isLeftOrRight = config.positionId === 'left' || config.positionId === 'right';
+
+				// Set a fixed height in order to keep the arrow in the same position
+				if (isLeftOrRight) {
+					setFixHeight();
+
+					$(window)
+						.off('scroll.Tooltip')
+						.on('scroll.Tooltip', function () {
+							setTimeout(() => {
+								setFixHeight();
+							}, 500);
+						});
+				}
+			},
+			functionAfter: function () {
+				$(window).off('scroll.Tooltip');
+			},
+		});
+	};
+
+	const setFixHeight = () => {
+		const $arrow = $('.tooltipster-arrow');
+
+		$arrow.height($arrow.height());
+	};
+
+	SapphireWidgets.TriggerIframeTooltip = { create };
+})(jQuery, window, document, SapphireWidgets);
+
 
 /***/ }),
 
 /***/ "./src/components/05-components/v3-pat/truncated-content/scripts.js":
-/*!**************************************************************************!*\
-  !*** ./src/components/05-components/v3-pat/truncated-content/scripts.js ***!
-  \**************************************************************************/
 /***/ (function() {
 
-eval("{/* Component TruncatedContent */\r\n(function($, window, document, SapphireWidgets) {\r\n\tconst create = function(config = {}) {\r\n\t\t$(document).ready(function() {\r\n\t\t\tvar $allTruncated = $([]);\r\n\t\t\tvar rootSelector = `#${config.widgetId}`;\r\n\t\t\tvar openerSelector = '.TruncatedContent--all';\r\n\t\t\tvar bodySelector = '.TruncatedContent--body';\r\n\r\n\t\t\t$(rootSelector).each(function() {\r\n\t\t\t\tvar $el = $(this);\r\n\t\t\t\t$allTruncated = $allTruncated.add($el);\r\n\t\t\t\tvar $elBody = $el.find(bodySelector);\r\n\t\t\t\tvar maxLines = $el.data('maxlines');\r\n\t\t\t\tvar lineHeight = window\r\n\t\t\t\t\t.getComputedStyle($el.find('> div')[0])\r\n\t\t\t\t\t.getPropertyValue('line-height')\r\n\t\t\t\t\t.replace('px', '');\r\n\t\t\t\tvar lineCount = Math.ceil($el.height() / lineHeight);\r\n\t\t\t\tif (lineCount > maxLines) {\r\n\t\t\t\t\t$elBody.css({\r\n\t\t\t\t\t\tmaxHeight: lineHeight * maxLines + 'px',\r\n\t\t\t\t\t});\r\n\t\t\t\t\tvar sentence = $el.data('additional').replace('{n}', lineCount - maxLines);\r\n\t\t\t\t\t$el.append('<p class=\"' + openerSelector.replace('.', '') + '\">' + sentence + '</p>');\r\n\t\t\t\t}\r\n\t\t\t});\r\n\r\n\t\t\t$(rootSelector).on('click', openerSelector, function() {\r\n\t\t\t\tvar el = $(this).closest(rootSelector);\r\n\t\t\t\topenTruncatedContent(el);\r\n\t\t\t});\r\n\r\n\t\t\topenTruncatedContent = function(el) {\r\n\t\t\t\t$(el)\r\n\t\t\t\t\t.find(bodySelector)\r\n\t\t\t\t\t.css('max-height', 'none');\r\n\t\t\t\t$(el)\r\n\t\t\t\t\t.find(openerSelector)\r\n\t\t\t\t\t.css('display', 'none');\r\n\t\t\t};\r\n\r\n\t\t\tif (window.frameElement && window.frameElement.id === 'tooltipster-frame') {\r\n\t\t\t\t$(rootSelector).off('click', openerSelector);\r\n\t\t\t\t$(openerSelector).addClass('in-tooltip');\r\n\t\t\t}\r\n\t\t});\r\n\t};\r\n\r\n\tSapphireWidgets.TruncatedContent = {\r\n\t\tcreate,\r\n\t\topen: function(el) {\r\n\t\t\topenTruncatedContent(el);\r\n\t\t},\r\n\t\topenAll: function() {\r\n\t\t\t$allTruncated.each(function() {\r\n\t\t\t\topenTruncatedContent($(this));\r\n\t\t\t});\r\n\t\t},\r\n\t};\r\n})(jQuery, window, document, SapphireWidgets);\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/05-components/v3-pat/truncated-content/scripts.js?\n}");
+/* Component TruncatedContent */
+(function($, window, document, SapphireWidgets) {
+	const create = function(config = {}) {
+		$(document).ready(function() {
+			var $allTruncated = $([]);
+			var rootSelector = `#${config.widgetId}`;
+			var openerSelector = '.TruncatedContent--all';
+			var bodySelector = '.TruncatedContent--body';
+
+			$(rootSelector).each(function() {
+				var $el = $(this);
+				$allTruncated = $allTruncated.add($el);
+				var $elBody = $el.find(bodySelector);
+				var maxLines = $el.data('maxlines');
+				var lineHeight = window
+					.getComputedStyle($el.find('> div')[0])
+					.getPropertyValue('line-height')
+					.replace('px', '');
+				var lineCount = Math.ceil($el.height() / lineHeight);
+				if (lineCount > maxLines) {
+					$elBody.css({
+						maxHeight: lineHeight * maxLines + 'px',
+					});
+					var sentence = $el.data('additional').replace('{n}', lineCount - maxLines);
+					$el.append('<p class="' + openerSelector.replace('.', '') + '">' + sentence + '</p>');
+				}
+			});
+
+			$(rootSelector).on('click', openerSelector, function() {
+				var el = $(this).closest(rootSelector);
+				openTruncatedContent(el);
+			});
+
+			openTruncatedContent = function(el) {
+				$(el)
+					.find(bodySelector)
+					.css('max-height', 'none');
+				$(el)
+					.find(openerSelector)
+					.css('display', 'none');
+			};
+
+			if (window.frameElement && window.frameElement.id === 'tooltipster-frame') {
+				$(rootSelector).off('click', openerSelector);
+				$(openerSelector).addClass('in-tooltip');
+			}
+		});
+	};
+
+	SapphireWidgets.TruncatedContent = {
+		create,
+		open: function(el) {
+			openTruncatedContent(el);
+		},
+		openAll: function() {
+			$allTruncated.each(function() {
+				openTruncatedContent($(this));
+			});
+		},
+	};
+})(jQuery, window, document, SapphireWidgets);
+
 
 /***/ }),
 
 /***/ "./src/components/08-pages/clinicianWorkArea.js":
-/*!******************************************************!*\
-  !*** ./src/components/08-pages/clinicianWorkArea.js ***!
-  \******************************************************/
 /***/ (function() {
 
-eval("{SapphireWidgets.ClinicianWorkArea = function(containerID) {\r\n\t$(document).ready(function() {\r\n\t\tconst $container = $(`#${containerID}`);\r\n\t\tconst $toggler = $container.find('.SectionExpandable-toggler');\r\n\r\n\t\tif ($toggler.length === 1) {\r\n\t\t\tlet $togglerState = false;\r\n\r\n\t\t\t$toggler.find('[data-labelvalue]').text($toggler.find('[data-labelshow]').data('labelshow'));\r\n\r\n\t\t\t$toggler.off('click').on('click', function(evt) {\r\n\t\t\t\tevt.stopPropagation();\r\n\r\n\t\t\t\tbuttonClick();\r\n\t\t\t});\r\n\r\n\t\t\tconst buttonClick = function() {\r\n\t\t\t\t$togglerState = !$togglerState;\r\n\r\n\t\t\t\tif ($togglerState) {\r\n\t\t\t\t\t$container.find('.SectionExpandable-toggled').show();\r\n\t\t\t\t\t$toggler.find('[data-labelvalue]').text($toggler.find('[data-labelhide]').data('labelhide'));\r\n\r\n\t\t\t\t\t$toggler.hide();\r\n\r\n\t\t\t\t\tconst $cancelButton = $('.SectionExpandable-toggled .ButtonCancelSearch');\r\n\t\t\t\t\t$cancelButton.click(() => buttonClick());\r\n\t\t\t\t} else {\r\n\t\t\t\t\t$container.find('.SectionExpandable-toggled').hide();\r\n\t\t\t\t\t$toggler.find('[data-labelvalue]').text($toggler.find('[data-labelshow]').data('labelshow'));\r\n\r\n\t\t\t\t\t$toggler.show();\r\n\r\n\t\t\t\t\tconst $cancelButton = $('.SectionExpandable-toggled .ButtonCancelSearch');\r\n\t\t\t\t\t$cancelButton.off('click');\r\n\t\t\t\t}\r\n\t\t\t};\r\n\t\t}\r\n\t});\r\n};\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/08-pages/clinicianWorkArea.js?\n}");
+SapphireWidgets.ClinicianWorkArea = function(containerID) {
+	$(document).ready(function() {
+		const $container = $(`#${containerID}`);
+		const $toggler = $container.find('.SectionExpandable-toggler');
+
+		if ($toggler.length === 1) {
+			let $togglerState = false;
+
+			$toggler.find('[data-labelvalue]').text($toggler.find('[data-labelshow]').data('labelshow'));
+
+			$toggler.off('click').on('click', function(evt) {
+				evt.stopPropagation();
+
+				buttonClick();
+			});
+
+			const buttonClick = function() {
+				$togglerState = !$togglerState;
+
+				if ($togglerState) {
+					$container.find('.SectionExpandable-toggled').show();
+					$toggler.find('[data-labelvalue]').text($toggler.find('[data-labelhide]').data('labelhide'));
+
+					$toggler.hide();
+
+					const $cancelButton = $('.SectionExpandable-toggled .ButtonCancelSearch');
+					$cancelButton.click(() => buttonClick());
+				} else {
+					$container.find('.SectionExpandable-toggled').hide();
+					$toggler.find('[data-labelvalue]').text($toggler.find('[data-labelshow]').data('labelshow'));
+
+					$toggler.show();
+
+					const $cancelButton = $('.SectionExpandable-toggled .ButtonCancelSearch');
+					$cancelButton.off('click');
+				}
+			};
+		}
+	});
+};
+
 
 /***/ }),
 
 /***/ "./src/components/08-pages/eSignature.js":
-/*!***********************************************!*\
-  !*** ./src/components/08-pages/eSignature.js ***!
-  \***********************************************/
 /***/ (function() {
 
-eval("{SapphireWidgets.QRCodeScanner = function(options) {\r\n\tHtml5Qrcode.getCameras()\r\n\t\t.then(devices => {\r\n\t\t\tif (devices && devices.length) startCamera(devices[0].id);\r\n\t\t})\r\n\t\t.catch(err => {\r\n\t\t\t// App doesn't have access to the camera...\r\n\r\n\t\t\tsetTimeout(() => {\r\n\t\t\t\tconst $checkbox = $('.AccessCodeOption');\r\n\r\n\t\t\t\t$checkbox.attr('checked', true).trigger('click');\r\n\t\t\t\t$('.LayoutScanCode').addClass('LayoutScanCode--modeOnlyCode');\r\n\r\n\t\t\t\t$('.LayoutScanCode__Splash').fadeOut(500);\r\n\t\t\t}, 500);\r\n\t\t});\r\n\r\n\tfunction startCamera(cameraID) {\r\n\t\tconst html5QrCode = new Html5Qrcode('qrreader');\r\n\t\tconst config = { fps: 5, qrbox: 250 };\r\n\r\n\t\tconst successCallback = response => {\r\n\t\t\tif ($('.ModeAccessCode').length) return;\r\n\r\n\t\t\t$('.ScanOverlay').addClass('ScanOverlay--correctCode');\r\n\r\n\t\t\tOsNotifyWidget(options.widgetFakeNotifyId, response);\r\n\r\n\t\t\t//setTimeout(() => html5QrCode.stop(), 1000);\r\n\t\t};\r\n\r\n\t\tconst errorCallback = response => {\r\n\t\t\t// console.error(response);\r\n\t\t};\r\n\r\n\t\thtml5QrCode\r\n\t\t\t.start({ facingMode: 'environment' }, config, successCallback, errorCallback)\r\n\t\t\t.then(() => {\r\n\t\t\t\tsetTimeout(() => $('.LayoutScanCode__Splash').fadeOut(500), 500);\r\n\t\t\t})\r\n\t\t\t.catch(err => {\r\n\t\t\t\tconsole.error(err);\r\n\t\t\t});\r\n\t}\r\n\r\n\tlet isPortrait = window.matchMedia('(orientation: portrait)').matches;\r\n\tlet isOrientarionChanged = false;\r\n\r\n\t$(window).on('orientationchange', function(event) {\r\n\t\tif ($('.ModeAccessCode').length) {\r\n\t\t\tisOrientarionChanged = window.matchMedia('(orientation: portrait)').matches;\r\n\t\t\tSapphireWidgets.IsOrientarionChanged = !(isPortrait ^ isOrientarionChanged);\r\n\r\n\t\t\treturn;\r\n\t\t}\r\n\r\n\t\twindow.location.reload();\r\n\t});\r\n};\r\n\r\nSapphireWidgets.OnModeChange = function() {\r\n\t$('.ScanOverlay').removeClass('ScanOverlay--correctCode');\r\n\t$('.ScanOverlay').removeClass('ScanOverlay--incorrectCode');\r\n\r\n\tif (SapphireWidgets.IsOrientarionChanged && !$('.ModeAccessCode').length) {\r\n\t\twindow.location.reload();\r\n\t}\r\n};\r\n\r\nSapphireWidgets.GoNextInput = function(currentInput, nextInputClass) {\r\n\tconst key = event.keyCode || event.charCode;\r\n\tconst isNumber = !isNaN(event.key) && !isNaN(parseFloat(event.key));\r\n\r\n\tconst $curr = $(currentInput);\r\n\tconst $next = $(`.${nextInputClass}`);\r\n\tconst $prev = $curr.prevAll('input').first();\r\n\r\n\tif (key === 8 || key === 46) {\r\n\t\t$prev.focus();\r\n\t\t$curr.removeClass('ColorAlphaBorder');\r\n\r\n\t\treturn;\r\n\t}\r\n\r\n\tif (isNumber) {\r\n\t\t$next.focus();\r\n\t\t$curr.addClass('ColorAlphaBorder');\r\n\t\t$('.ValidateInputButton').click();\r\n\t} else event.preventDefault();\r\n};\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/08-pages/eSignature.js?\n}");
+SapphireWidgets.QRCodeScanner = function(options) {
+	Html5Qrcode.getCameras()
+		.then(devices => {
+			if (devices && devices.length) startCamera(devices[0].id);
+		})
+		.catch(err => {
+			// App doesn't have access to the camera...
+
+			setTimeout(() => {
+				const $checkbox = $('.AccessCodeOption');
+
+				$checkbox.attr('checked', true).trigger('click');
+				$('.LayoutScanCode').addClass('LayoutScanCode--modeOnlyCode');
+
+				$('.LayoutScanCode__Splash').fadeOut(500);
+			}, 500);
+		});
+
+	function startCamera(cameraID) {
+		const html5QrCode = new Html5Qrcode('qrreader');
+		const config = { fps: 5, qrbox: 250 };
+
+		const successCallback = response => {
+			if ($('.ModeAccessCode').length) return;
+
+			$('.ScanOverlay').addClass('ScanOverlay--correctCode');
+
+			OsNotifyWidget(options.widgetFakeNotifyId, response);
+
+			//setTimeout(() => html5QrCode.stop(), 1000);
+		};
+
+		const errorCallback = response => {
+			// console.error(response);
+		};
+
+		html5QrCode
+			.start({ facingMode: 'environment' }, config, successCallback, errorCallback)
+			.then(() => {
+				setTimeout(() => $('.LayoutScanCode__Splash').fadeOut(500), 500);
+			})
+			.catch(err => {
+				console.error(err);
+			});
+	}
+
+	let isPortrait = window.matchMedia('(orientation: portrait)').matches;
+	let isOrientarionChanged = false;
+
+	$(window).on('orientationchange', function(event) {
+		if ($('.ModeAccessCode').length) {
+			isOrientarionChanged = window.matchMedia('(orientation: portrait)').matches;
+			SapphireWidgets.IsOrientarionChanged = !(isPortrait ^ isOrientarionChanged);
+
+			return;
+		}
+
+		window.location.reload();
+	});
+};
+
+SapphireWidgets.OnModeChange = function() {
+	$('.ScanOverlay').removeClass('ScanOverlay--correctCode');
+	$('.ScanOverlay').removeClass('ScanOverlay--incorrectCode');
+
+	if (SapphireWidgets.IsOrientarionChanged && !$('.ModeAccessCode').length) {
+		window.location.reload();
+	}
+};
+
+SapphireWidgets.GoNextInput = function(currentInput, nextInputClass) {
+	const key = event.keyCode || event.charCode;
+	const isNumber = !isNaN(event.key) && !isNaN(parseFloat(event.key));
+
+	const $curr = $(currentInput);
+	const $next = $(`.${nextInputClass}`);
+	const $prev = $curr.prevAll('input').first();
+
+	if (key === 8 || key === 46) {
+		$prev.focus();
+		$curr.removeClass('ColorAlphaBorder');
+
+		return;
+	}
+
+	if (isNumber) {
+		$next.focus();
+		$curr.addClass('ColorAlphaBorder');
+		$('.ValidateInputButton').click();
+	} else event.preventDefault();
+};
+
 
 /***/ }),
 
 /***/ "./src/components/08-pages/remoteAppointment.js":
-/*!******************************************************!*\
-  !*** ./src/components/08-pages/remoteAppointment.js ***!
-  \******************************************************/
 /***/ (function() {
 
-eval("{(function ($, window, SapphireWidgets) {\r\n\tconst create = () => {\r\n\t\tconst $widget = $('.RemoteAppointment');\r\n\t\tconst $header = $widget.find('.RemoteAppointment__Header');\r\n\t\tconst $minimize = $header.find('.Minimize');\r\n\t\tconst $smallSize = $header.find('.Small');\r\n\t\tconst $mediumSize = $header.find('.Medium');\r\n\t\tconst $fullScreen = $header.find('.FullScreen');\r\n\t\tconst $restoreWindow = $widget.find('.RemoteAppointment__RestoreWindow');\r\n\r\n\t\tlet isPreviousSmall = $smallSize.is(':visible');\r\n\r\n\t\t$minimize.click(() => {\r\n\t\t\tisPreviousSmall = $mediumSize.is(':visible');\r\n\r\n\t\t\t//$widget.draggable({ disabled: true });\r\n\r\n\t\t\t$widget.addClass('RemoteAppointment--minimized');\r\n\t\t\t$minimize.hide();\r\n\t\t\t$mediumSize.show();\r\n\r\n\t\t\t$widget.animate(minimizedPosition($header.height()));\r\n\t\t});\r\n\r\n\t\t$smallSize.click(() => {\r\n\t\t\t$widget.removeClass('RemoteAppointment--minimized');\r\n\t\t\t$minimize.show();\r\n\t\t\t$smallSize.hide();\r\n\t\t\t$mediumSize.show();\r\n\r\n\t\t\t$widget.animate({\r\n\t\t\t\ttop: '50%',\r\n\t\t\t\tright: '50%',\r\n\t\t\t\tleft: '50%',\r\n\t\t\t\twidth: '510px',\r\n\t\t\t\theight: '425px',\r\n\t\t\t});\r\n\t\t});\r\n\r\n\t\t$mediumSize.click(() => {\r\n\t\t\tconst isCallStarted = $widget.hasClass('RemoteAppointment--callStarted');\r\n\r\n\t\t\t//$widget.draggable('enable');\r\n\r\n\t\t\t$widget.removeClass('RemoteAppointment--minimized');\r\n\t\t\t$minimize.show();\r\n\t\t\t$mediumSize.hide();\r\n\t\t\tif (isCallStarted) $smallSize.show();\r\n\r\n\t\t\t$widget.animate({\r\n\t\t\t\ttop: '50%',\r\n\t\t\t\tright: '50%',\r\n\t\t\t\tleft: '50%',\r\n\t\t\t\twidth: isCallStarted ? '45vw' : '450px',\r\n\t\t\t\theight: isCallStarted ? '52vh' : '260px',\r\n\t\t\t});\r\n\t\t});\r\n\r\n\t\t$fullScreen.click(() => {\r\n\t\t\tconst iframe = document.querySelector('.RemoteAppointment iframe');\r\n\r\n\t\t\tif (iframe.requestFullscreen) {\r\n\t\t\t\tiframe.requestFullscreen();\r\n\t\t\t} else if (iframe.webkitRequestFullscreen) {\r\n\t\t\t\tiframe.webkitRequestFullscreen();\r\n\t\t\t}\r\n\t\t});\r\n\r\n\t\t$restoreWindow.click(() => {\r\n\t\t\tif (isPreviousSmall) $smallSize.click();\r\n\t\t\telse $mediumSize.click();\r\n\t\t});\r\n\r\n\t\t$(document).ready(function () {\r\n\t\t\t$widget.draggable({\r\n\t\t\t\tcontainment: 'window',\r\n\t\t\t\thandle: $header,\r\n\t\t\t\tscroll: false,\r\n\t\t\t\tsnap: true,\r\n\t\t\t\tiframeFix: true,\r\n\t\t\t});\r\n\r\n\t\t\tfakeAjaxRefresh();\r\n\t\t});\r\n\r\n\t\tcheckIframeLoaded();\r\n\t};\r\n\r\n\tconst minimizedPosition = (headerHeight = 48) => {\r\n\t\treturn {\r\n\t\t\ttop: $(window).height() - headerHeight - 16,\r\n\t\t\tright: '76px',\r\n\t\t\tleft: $(window).width() - 280 - 60 - 16,\r\n\t\t\twidth: '275px',\r\n\t\t\theight: '48px',\r\n\t\t};\r\n\t};\r\n\r\n\tconst resizeWhenJoin = () => {\r\n\t\tconst $widget = $('.RemoteAppointment');\r\n\t\tconst $smallSize = $widget.find('.Small');\r\n\r\n\t\t$smallSize.show();\r\n\t\t$widget.addClass('RemoteAppointment--callStarted');\r\n\r\n\t\t$widget.css({\r\n\t\t\theight: '52vh',\r\n\t\t\twidth: '45vw',\r\n\t\t});\r\n\r\n\t\tconst centerPx = ($(window.top).width() - $widget.width()) / 2;\r\n\r\n\t\t$widget.css({\r\n\t\t\tinset: `230px auto auto ${centerPx}px`,\r\n\t\t});\r\n\r\n\t\tlet timeout;\r\n\r\n\t\tfunction warning(e) {\r\n\t\t\ttimeout = setTimeout(function () {\r\n\t\t\t\t// Hack to keep the current tab selected if user doesn't go to another page\r\n\t\t\t\tconst iframeContents = window.top.$('.MainContent > iframe').contents();\r\n\t\t\t\tconst tabItems = iframeContents.find('.TabWrapper');\r\n\r\n\t\t\t\ttabItems.removeClass('Active');\r\n\t\t\t\ttabItems.first().addClass('Active');\r\n\t\t\t}, 1000);\r\n\r\n\t\t\treturn (e.returnValue = 'You are leaving the page');\r\n\t\t}\r\n\r\n\t\tfunction noTimeout() {\r\n\t\t\tclearTimeout(timeout);\r\n\t\t}\r\n\r\n\t\twindow.top.onbeforeunload = warning;\r\n\t\twindow.top.unload = noTimeout;\r\n\r\n\t\t/*window.top.addEventListener('beforeunload', function(e) {\r\n\t\t\te.preventDefault();\r\n\t\t\te.returnValue = '123';\r\n\t\t});*/\r\n\t};\r\n\r\n\tconst setInitialState = () => {\r\n\t\tconst $widget = $('.RemoteAppointment');\r\n\t\tconst $smallSize = $widget.find('.Small');\r\n\t\tconst $mediumSize = $widget.find('.Medium');\r\n\r\n\t\t$smallSize.hide();\r\n\t\t$mediumSize.hide();\r\n\t\t$widget.removeClass('RemoteAppointment--callStarted');\r\n\r\n\t\twindow.top.unload = null;\r\n\t\twindow.top.onbeforeunload = null;\r\n\r\n\t\t$('.RemoteAppointment').css({\r\n\t\t\tdisplay: 'initial',\r\n\t\t\tright: '22%',\r\n\t\t\ttop: '30%',\r\n\t\t\theight: '260px',\r\n\t\t\twidth: '450px',\r\n\t\t});\r\n\t};\r\n\r\n\tconst setModalMinimized = () => {\r\n\t\t// To use only inside Sapphire iFrame pages\r\n\t\tconst $modalRemoteAppt = window.top.$('.RemoteAppointment');\r\n\r\n\t\tif ($modalRemoteAppt.length) {\r\n\t\t\tconst $minimizeModal = $modalRemoteAppt.find('.Minimize');\r\n\t\t\t$minimizeModal.click();\r\n\t\t}\r\n\t};\r\n\r\n\tconst checkIframeLoaded = () => {\r\n\t\tconst iframe = document.getElementsByClassName('SapphireFrame')[0];\r\n\t\tconst iframeDoc = iframe.contentDocument || iframe.contentWindow.document;\r\n\r\n\t\tif (iframeDoc.readyState == 'complete') {\r\n\t\t\tiframe.contentWindow.onload = function () {\r\n\t\t\t\tsetInitialState();\r\n\t\t\t};\r\n\r\n\t\t\treturn;\r\n\t\t}\r\n\r\n\t\twindow.setTimeout(checkIframeLoaded, 100);\r\n\t};\r\n\r\n\tconst setCallStarted = () => { };\r\n\r\n\tconst fakeAjaxRefresh = () => {\r\n\t\t// Not sure what was the idea here, but it doesn't work because onbeforeunload only triggers the browser confirmation and ignores any code inside\r\n\t\t/*\r\n\t\tconst $iframe = $('.SapphireFrame');\r\n\r\n\t\t$iframe.on('load', function() {\r\n\t\t\t$iframe[0].contentWindow.onbeforeunload = function(e) {\r\n\t\t\t\t$('.Feedback_AjaxWait').show();\r\n\t\t\t};\r\n\r\n\t\t\t$('.Feedback_AjaxWait').hide();\r\n\t\t});*/\r\n\t};\r\n\r\n\tconst openModalLeaveContext = url => {\r\n\t\tSapphireWidgets.RemoteAppointment.leaveURL = url;\r\n\r\n\t\twindow.top.unload = null;\r\n\t\twindow.top.onbeforeunload = null;\r\n\r\n\t\t$('.OpenModalLeaveContext').click();\r\n\t};\r\n\r\n\tSapphireWidgets.RemoteAppointment = {\r\n\t\tcreate,\r\n\t\tresizeWhenJoin,\r\n\t\tsetCallStarted,\r\n\t\tsetInitialState,\r\n\t\tfakeAjaxRefresh,\r\n\t\tsetModalMinimized,\r\n\t\topenModalLeaveContext,\r\n\t};\r\n})(jQuery, window, SapphireWidgets);\r\n\n\n//# sourceURL=webpack://sapphire/./src/components/08-pages/remoteAppointment.js?\n}");
+(function ($, window, SapphireWidgets) {
+	const create = () => {
+		const $widget = $('.RemoteAppointment');
+		const $header = $widget.find('.RemoteAppointment__Header');
+		const $minimize = $header.find('.Minimize');
+		const $smallSize = $header.find('.Small');
+		const $mediumSize = $header.find('.Medium');
+		const $fullScreen = $header.find('.FullScreen');
+		const $restoreWindow = $widget.find('.RemoteAppointment__RestoreWindow');
+
+		let isPreviousSmall = $smallSize.is(':visible');
+
+		$minimize.click(() => {
+			isPreviousSmall = $mediumSize.is(':visible');
+
+			//$widget.draggable({ disabled: true });
+
+			$widget.addClass('RemoteAppointment--minimized');
+			$minimize.hide();
+			$mediumSize.show();
+
+			$widget.animate(minimizedPosition($header.height()));
+		});
+
+		$smallSize.click(() => {
+			$widget.removeClass('RemoteAppointment--minimized');
+			$minimize.show();
+			$smallSize.hide();
+			$mediumSize.show();
+
+			$widget.animate({
+				top: '50%',
+				right: '50%',
+				left: '50%',
+				width: '510px',
+				height: '425px',
+			});
+		});
+
+		$mediumSize.click(() => {
+			const isCallStarted = $widget.hasClass('RemoteAppointment--callStarted');
+
+			//$widget.draggable('enable');
+
+			$widget.removeClass('RemoteAppointment--minimized');
+			$minimize.show();
+			$mediumSize.hide();
+			if (isCallStarted) $smallSize.show();
+
+			$widget.animate({
+				top: '50%',
+				right: '50%',
+				left: '50%',
+				width: isCallStarted ? '45vw' : '450px',
+				height: isCallStarted ? '52vh' : '260px',
+			});
+		});
+
+		$fullScreen.click(() => {
+			const iframe = document.querySelector('.RemoteAppointment iframe');
+
+			if (iframe.requestFullscreen) {
+				iframe.requestFullscreen();
+			} else if (iframe.webkitRequestFullscreen) {
+				iframe.webkitRequestFullscreen();
+			}
+		});
+
+		$restoreWindow.click(() => {
+			if (isPreviousSmall) $smallSize.click();
+			else $mediumSize.click();
+		});
+
+		$(document).ready(function () {
+			$widget.draggable({
+				containment: 'window',
+				handle: $header,
+				scroll: false,
+				snap: true,
+				iframeFix: true,
+			});
+
+			fakeAjaxRefresh();
+		});
+
+		checkIframeLoaded();
+	};
+
+	const minimizedPosition = (headerHeight = 48) => {
+		return {
+			top: $(window).height() - headerHeight - 16,
+			right: '76px',
+			left: $(window).width() - 280 - 60 - 16,
+			width: '275px',
+			height: '48px',
+		};
+	};
+
+	const resizeWhenJoin = () => {
+		const $widget = $('.RemoteAppointment');
+		const $smallSize = $widget.find('.Small');
+
+		$smallSize.show();
+		$widget.addClass('RemoteAppointment--callStarted');
+
+		$widget.css({
+			height: '52vh',
+			width: '45vw',
+		});
+
+		const centerPx = ($(window.top).width() - $widget.width()) / 2;
+
+		$widget.css({
+			inset: `230px auto auto ${centerPx}px`,
+		});
+
+		let timeout;
+
+		function warning(e) {
+			timeout = setTimeout(function () {
+				// Hack to keep the current tab selected if user doesn't go to another page
+				const iframeContents = window.top.$('.MainContent > iframe').contents();
+				const tabItems = iframeContents.find('.TabWrapper');
+
+				tabItems.removeClass('Active');
+				tabItems.first().addClass('Active');
+			}, 1000);
+
+			return (e.returnValue = 'You are leaving the page');
+		}
+
+		function noTimeout() {
+			clearTimeout(timeout);
+		}
+
+		window.top.onbeforeunload = warning;
+		window.top.unload = noTimeout;
+
+		/*window.top.addEventListener('beforeunload', function(e) {
+			e.preventDefault();
+			e.returnValue = '123';
+		});*/
+	};
+
+	const setInitialState = () => {
+		const $widget = $('.RemoteAppointment');
+		const $smallSize = $widget.find('.Small');
+		const $mediumSize = $widget.find('.Medium');
+
+		$smallSize.hide();
+		$mediumSize.hide();
+		$widget.removeClass('RemoteAppointment--callStarted');
+
+		window.top.unload = null;
+		window.top.onbeforeunload = null;
+
+		$('.RemoteAppointment').css({
+			display: 'initial',
+			right: '22%',
+			top: '30%',
+			height: '260px',
+			width: '450px',
+		});
+	};
+
+	const setModalMinimized = () => {
+		// To use only inside Sapphire iFrame pages
+		const $modalRemoteAppt = window.top.$('.RemoteAppointment');
+
+		if ($modalRemoteAppt.length) {
+			const $minimizeModal = $modalRemoteAppt.find('.Minimize');
+			$minimizeModal.click();
+		}
+	};
+
+	const checkIframeLoaded = () => {
+		const iframe = document.getElementsByClassName('SapphireFrame')[0];
+		const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+
+		if (iframeDoc.readyState == 'complete') {
+			iframe.contentWindow.onload = function () {
+				setInitialState();
+			};
+
+			return;
+		}
+
+		window.setTimeout(checkIframeLoaded, 100);
+	};
+
+	const setCallStarted = () => { };
+
+	const fakeAjaxRefresh = () => {
+		// Not sure what was the idea here, but it doesn't work because onbeforeunload only triggers the browser confirmation and ignores any code inside
+		/*
+		const $iframe = $('.SapphireFrame');
+
+		$iframe.on('load', function() {
+			$iframe[0].contentWindow.onbeforeunload = function(e) {
+				$('.Feedback_AjaxWait').show();
+			};
+
+			$('.Feedback_AjaxWait').hide();
+		});*/
+	};
+
+	const openModalLeaveContext = url => {
+		SapphireWidgets.RemoteAppointment.leaveURL = url;
+
+		window.top.unload = null;
+		window.top.onbeforeunload = null;
+
+		$('.OpenModalLeaveContext').click();
+	};
+
+	SapphireWidgets.RemoteAppointment = {
+		create,
+		resizeWhenJoin,
+		setCallStarted,
+		setInitialState,
+		fakeAjaxRefresh,
+		setModalMinimized,
+		openModalLeaveContext,
+	};
+})(jQuery, window, SapphireWidgets);
+
 
 /***/ }),
 
 /***/ "./src/components/globals.js":
-/*!***********************************!*\
-  !*** ./src/components/globals.js ***!
-  \***********************************/
 /***/ (function() {
 
-eval("{//SapphireWidgets = window.SapphireWidgets = window.SapphireWidgets || {};\n\n//# sourceURL=webpack://sapphire/./src/components/globals.js?\n}");
+//SapphireWidgets = window.SapphireWidgets = window.SapphireWidgets || {};
 
 /***/ }),
 
 /***/ "./src/components/index.scss":
-/*!***********************************!*\
-  !*** ./src/components/index.scss ***!
-  \***********************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("{__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://sapphire/./src/components/index.scss?\n}");
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
 
 /***/ })
 
@@ -912,12 +10649,6 @@ eval("{__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-ext
 /******/ 		var cachedModule = __webpack_module_cache__[moduleId];
 /******/ 		if (cachedModule !== undefined) {
 /******/ 			return cachedModule.exports;
-/******/ 		}
-/******/ 		// Check if module exists (development only)
-/******/ 		if (__webpack_modules__[moduleId] === undefined) {
-/******/ 			var e = new Error("Cannot find module '" + moduleId + "'");
-/******/ 			e.code = 'MODULE_NOT_FOUND';
-/******/ 			throw e;
 /******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
@@ -951,11 +10682,14 @@ eval("{__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-ext
 /******/ 	}();
 /******/ 	
 /************************************************************************/
-/******/ 	
-/******/ 	// startup
-/******/ 	// Load entry module and return exports
-/******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/app.js");
-/******/ 	
+var __webpack_exports__ = {};
+// This entry needs to be wrapped in an IIFE because it needs to be isolated against other modules in the chunk.
+!function() {
+__webpack_require__("./src/components/index.scss");
+
+//Import all JS files
+const requireAll = r => r.keys().forEach(r);
+requireAll(__webpack_require__("./src/components sync recursive \\.js$"));
+}();
 /******/ })()
 ;

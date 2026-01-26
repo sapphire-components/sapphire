@@ -10,8 +10,11 @@ $back-top-speed-animation: 1s;
 	text-align: center;
 	text-transform: uppercase;
 	top: 90vh;
-	transition: width $back-top-speed-animation * 0.5 ease-in-out, margin $back-top-speed-animation * 0.5 ease-in-out,
-		border-radius $back-top-speed-animation * 0.25 ease-in-out, color $back-top-speed-animation * 0.25 ease-in-out;
+	transition:
+		width $back-top-speed-animation * 0.5 ease-in-out,
+		margin $back-top-speed-animation * 0.5 ease-in-out,
+		border-radius $back-top-speed-animation * 0.25 ease-in-out,
+		color $back-top-speed-animation * 0.25 ease-in-out;
 
 	&__Arrow {
 		border: none;
@@ -23,9 +26,12 @@ $back-top-speed-animation: 1s;
 		overflow: hidden;
 		position: absolute;
 		transform: translateX(-50%);
-		transition: width $back-top-speed-animation * 0.5 ease-in-out, margin $back-top-speed-animation * 0.5 ease-in-out,
+		transition:
+			width $back-top-speed-animation * 0.5 ease-in-out,
+			margin $back-top-speed-animation * 0.5 ease-in-out,
 			border-radius $back-top-speed-animation * 0.25 ease-in-out,
-			color $back-top-speed-animation * 0.25 ease-in-out $back-top-speed-animation * 0.25, opacity ease-in-out 1s;
+			color $back-top-speed-animation * 0.25 ease-in-out $back-top-speed-animation * 0.25,
+			opacity ease-in-out 1s;
 		width: 30px;
 
 		&:before {
@@ -65,9 +71,12 @@ $back-top-speed-animation: 1s;
 			border: 2px solid $regular-beta;
 			height: 30px;
 			opacity: 1;
-			transition: width $back-top-speed-animation * 0.5 ease-in-out, margin $back-top-speed-animation * 0.5 ease-in-out,
+			transition:
+				width $back-top-speed-animation * 0.5 ease-in-out,
+				margin $back-top-speed-animation * 0.5 ease-in-out,
 				border-radius $back-top-speed-animation * 0.25 ease-in-out,
-				color $back-top-speed-animation * 0.25 ease-in-out $back-top-speed-animation * 0.25, opacity ease-in-out 1s;
+				color $back-top-speed-animation * 0.25 ease-in-out $back-top-speed-animation * 0.25,
+				opacity ease-in-out 1s;
 
 			&:before {
 				animation: lineUp $back-top-speed-animation cubic-bezier(0, 0.6, 1, 0.4) infinite 0.5s;
