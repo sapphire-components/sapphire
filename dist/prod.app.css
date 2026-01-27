@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.274 || Generated: Mon Jan 26 2026 14:59:50 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.5.274 || Generated: Tue Jan 27 2026 13:39:29 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -9777,16 +9777,16 @@ div.ActionsMenu-item:last-child {
 }
 
 .badge-box {
-  flex-direction: row;
-  border-radius: 4px;
   border: solid 1px #d6d6d6;
+  border-radius: 4px;
   display: inline-flex;
+  flex-direction: row;
   height: 45px;
   text-align: center;
-  width: var(--width);
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  width: var(--width);
 }
 .badge-box-button {
   cursor: pointer;
@@ -9811,11 +9811,11 @@ div.ActionsMenu-item:last-child {
   border-left: solid 1px #d6d6d6;
 }
 .badge-box-content {
-  flex: 1;
-  padding: 4px;
-  min-width: 35px;
   display: flex;
+  flex: 1;
   flex-direction: column;
+  min-width: 35px;
+  padding: 4px;
 }
 .badge-box-above {
   align-items: center;
@@ -9844,6 +9844,13 @@ div.ActionsMenu-item:last-child {
 
 .badge-box[data-theme~=no-border] {
   border: none;
+}
+
+.badge-box-above[contenteditable=true] {
+  cursor: text;
+}
+.badge-box-above[contenteditable=true]:empty {
+  display: flex;
 }
 
 .badge-box[data-showcontrols=true] .badge-box-button {
