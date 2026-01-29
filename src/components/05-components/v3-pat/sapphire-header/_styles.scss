@@ -41,7 +41,7 @@
 		}
 
 		.AR & {
-			>a {
+			> a {
 				transform: rotate(90deg);
 			}
 		}
@@ -81,7 +81,7 @@
 	&-actions {
 		//flex: 1;
 
-		>div {
+		> div {
 			align-items: center;
 			display: flex;
 			gap: $sapphire-sizes--xsmall;
@@ -124,10 +124,10 @@
 						content: '\e627';
 					}
 				}
-			}
 
-			.IconDown {
-				display: none;
+				.IconDown {
+					display: none;
+				}
 			}
 
 			.DropdownMenu {
@@ -183,15 +183,14 @@
 	}
 
 	& .TransferInProgressBadge {
-		display: flex;
 		align-items: center;
-		height: $sapphire-sizes--largest;
 		background-color: $regular-red;
-		color: $regular-white;
-		padding: $sapphire-sizes--none $sapphire-sizes--small;
 		border-radius: $sapphire-sizes--xsmall;
+		color: $regular-white;
+		display: flex;
+		height: $sapphire-sizes--largest;
+		padding: $sapphire-sizes--none $sapphire-sizes--small;
 	}
-
 }
 
 .patient-details-layout--deprecated .SapphireHeader {
@@ -199,7 +198,7 @@
 }
 
 // UI Adjustments when Sidebar is always opened
-.LayoutBase-iframesidebar.notExpandable+.LayoutBase-header {
+.LayoutBase-iframesidebar.notExpandable + .LayoutBase-header {
 	.SapphireHeader {
 		.DropdownMenu {
 			left: auto;
@@ -243,7 +242,7 @@
 			margin-right: 0;
 		}
 
-		&[style*='display: none;']+.SapphireHeader-actions {
+		&[style*='display: none;'] + .SapphireHeader-actions {
 			flex-basis: 100%;
 		}
 	}
@@ -251,7 +250,7 @@
 	.SapphireHeader-actions {
 		flex-basis: 50%;
 
-		>div {
+		> div {
 			justify-content: flex-end;
 		}
 	}
