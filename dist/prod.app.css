@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.275 || Generated: Tue Jan 27 2026 13:40:46 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.5.276 || Generated: Thu Jan 29 2026 11:36:11 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -20828,7 +20828,7 @@ body.ResizeParentIframe .MainContent {
 .SapphireHeader-actions .IconDropdown .IconDropdown_button span.fa:before {
   content: "\e627";
 }
-.SapphireHeader-actions .IconDropdown .IconDown {
+.SapphireHeader-actions .IconDropdown .IconDropdown_button .IconDown {
   display: none;
 }
 .AR .SapphireHeader-actions .IconDropdown .DropdownMenu {
@@ -20873,13 +20873,13 @@ body.ResizeParentIframe .MainContent {
   transition: all 0.4s ease;
 }
 .SapphireHeader .TransferInProgressBadge {
-  display: flex;
   align-items: center;
-  height: 56px;
   background-color: #ff3e2d;
-  color: #fff;
-  padding: 0px 8px;
   border-radius: 4px;
+  color: #fff;
+  display: flex;
+  height: 56px;
+  padding: 0px 8px;
 }
 
 .patient-details-layout--deprecated .SapphireHeader {
