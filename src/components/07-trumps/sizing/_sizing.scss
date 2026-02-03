@@ -3,7 +3,7 @@
 	@for $value from $from through $to {
 		@if ($value % $step == 0) {
 			.height-#{$value} {
-				min-height: #{$value}px;
+				height: #{$value}px;
 			}
 		}
 	}
