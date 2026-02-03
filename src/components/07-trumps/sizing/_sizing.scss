@@ -1,0 +1,36 @@
+/* height */
+@mixin height-heights($from, $to, $step: 50) {
+	@for $value from $from through $to {
+		@if ($value % $step == 0) {
+			.height-#{$value} {
+				min-height: #{$value}px;
+			}
+		}
+	}
+}
+@include height-heights(100, 600);
+
+/* min-height */
+@mixin min-height-heights($from, $to, $step: 50) {
+	@for $value from $from through $to {
+		@if ($value % $step == 0) {
+			.min-height-#{$value} {
+				min-height: #{$value}px;
+			}
+		}
+	}
+}
+@include min-height-heights(100, 600);
+
+/* scroll */
+@mixin scroll-heights($from, $to, $step: 50) {
+	@for $value from $from through $to {
+		@if ($value % $step == 0) {
+			.scroll-#{$value} {
+				max-height: #{$value}px;
+				overflow-y: auto;
+			}
+		}
+	}
+}
+@include scroll-heights(100, 600);
