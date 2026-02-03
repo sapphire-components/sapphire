@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.277 || Generated: Tue Feb 03 2026 10:23:44 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.5.278 || Generated: Tue Feb 03 2026 10:48:56 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -32821,47 +32821,47 @@ ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover {
 
 /* height */
 .height-100 {
-  min-height: 100px;
+  height: 100px;
 }
 
 .height-150 {
-  min-height: 150px;
+  height: 150px;
 }
 
 .height-200 {
-  min-height: 200px;
+  height: 200px;
 }
 
 .height-250 {
-  min-height: 250px;
+  height: 250px;
 }
 
 .height-300 {
-  min-height: 300px;
+  height: 300px;
 }
 
 .height-350 {
-  min-height: 350px;
+  height: 350px;
 }
 
 .height-400 {
-  min-height: 400px;
+  height: 400px;
 }
 
 .height-450 {
-  min-height: 450px;
+  height: 450px;
 }
 
 .height-500 {
-  min-height: 500px;
+  height: 500px;
 }
 
 .height-550 {
-  min-height: 550px;
+  height: 550px;
 }
 
 .height-600 {
-  min-height: 600px;
+  height: 600px;
 }
 
 /* min-height */
