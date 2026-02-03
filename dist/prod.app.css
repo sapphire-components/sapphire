@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.276 || Generated: Thu Jan 29 2026 11:36:11 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.5.277 || Generated: Tue Feb 03 2026 10:23:44 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -9855,6 +9855,10 @@ div.ActionsMenu-item:last-child {
 
 .badge-box[data-showcontrols=true] .badge-box-button {
   display: grid;
+}
+
+.tippytooltip {
+  color: red;
 }
 
 .IconSignal {
@@ -32813,6 +32817,152 @@ ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover {
 }
 .SessionList .ListRecords .SessionList:last-of-type .SessionList_Header {
   border-bottom: none;
+}
+
+/* height */
+.height-100 {
+  min-height: 100px;
+}
+
+.height-150 {
+  min-height: 150px;
+}
+
+.height-200 {
+  min-height: 200px;
+}
+
+.height-250 {
+  min-height: 250px;
+}
+
+.height-300 {
+  min-height: 300px;
+}
+
+.height-350 {
+  min-height: 350px;
+}
+
+.height-400 {
+  min-height: 400px;
+}
+
+.height-450 {
+  min-height: 450px;
+}
+
+.height-500 {
+  min-height: 500px;
+}
+
+.height-550 {
+  min-height: 550px;
+}
+
+.height-600 {
+  min-height: 600px;
+}
+
+/* min-height */
+.min-height-100 {
+  min-height: 100px;
+}
+
+.min-height-150 {
+  min-height: 150px;
+}
+
+.min-height-200 {
+  min-height: 200px;
+}
+
+.min-height-250 {
+  min-height: 250px;
+}
+
+.min-height-300 {
+  min-height: 300px;
+}
+
+.min-height-350 {
+  min-height: 350px;
+}
+
+.min-height-400 {
+  min-height: 400px;
+}
+
+.min-height-450 {
+  min-height: 450px;
+}
+
+.min-height-500 {
+  min-height: 500px;
+}
+
+.min-height-550 {
+  min-height: 550px;
+}
+
+.min-height-600 {
+  min-height: 600px;
+}
+
+/* scroll */
+.scroll-100 {
+  max-height: 100px;
+  overflow-y: auto;
+}
+
+.scroll-150 {
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.scroll-200 {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.scroll-250 {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.scroll-300 {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.scroll-350 {
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.scroll-400 {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.scroll-450 {
+  max-height: 450px;
+  overflow-y: auto;
+}
+
+.scroll-500 {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.scroll-550 {
+  max-height: 550px;
+  overflow-y: auto;
+}
+
+.scroll-600 {
+  max-height: 600px;
+  overflow-y: auto;
 }
 
 .VerticalSeparatorHelper {
