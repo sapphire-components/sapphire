@@ -8,7 +8,7 @@
 		}
 	}
 }
-@include height-heights(100, 600);
+@include height-heights(100, 1000);
 
 /* min-height */
 @mixin min-height-heights($from, $to, $step: 50) {
@@ -20,7 +20,7 @@
 		}
 	}
 }
-@include min-height-heights(100, 600);
+@include min-height-heights(100, 1000);
 
 /* scroll */
 @mixin scroll-heights($from, $to, $step: 50) {
@@ -33,4 +33,4 @@
 		}
 	}
 }
-@include scroll-heights(100, 600);
+@include scroll-heights(100, 1000);
