@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.278 || Generated: Tue Feb 03 2026 10:48:56 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.5.279 || Generated: Wed Feb 04 2026 16:18:55 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -20429,6 +20429,10 @@ body.ResizeParentIframe .MainContent {
   padding: 0;
 }
 
+.InlineMenu-Wrapper iframe {
+  transition: none !important;
+}
+
 .CalendarWb {
   align-items: center;
   background-color: #fff;
@@ -32864,6 +32868,38 @@ ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover {
   height: 600px;
 }
 
+.height-650 {
+  height: 650px;
+}
+
+.height-700 {
+  height: 700px;
+}
+
+.height-750 {
+  height: 750px;
+}
+
+.height-800 {
+  height: 800px;
+}
+
+.height-850 {
+  height: 850px;
+}
+
+.height-900 {
+  height: 900px;
+}
+
+.height-950 {
+  height: 950px;
+}
+
+.height-1000 {
+  height: 1000px;
+}
+
 /* min-height */
 .min-height-100 {
   min-height: 100px;
@@ -32907,6 +32943,38 @@ ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover {
 
 .min-height-600 {
   min-height: 600px;
+}
+
+.min-height-650 {
+  min-height: 650px;
+}
+
+.min-height-700 {
+  min-height: 700px;
+}
+
+.min-height-750 {
+  min-height: 750px;
+}
+
+.min-height-800 {
+  min-height: 800px;
+}
+
+.min-height-850 {
+  min-height: 850px;
+}
+
+.min-height-900 {
+  min-height: 900px;
+}
+
+.min-height-950 {
+  min-height: 950px;
+}
+
+.min-height-1000 {
+  min-height: 1000px;
 }
 
 /* scroll */
@@ -32962,6 +33030,46 @@ ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover {
 
 .scroll-600 {
   max-height: 600px;
+  overflow-y: auto;
+}
+
+.scroll-650 {
+  max-height: 650px;
+  overflow-y: auto;
+}
+
+.scroll-700 {
+  max-height: 700px;
+  overflow-y: auto;
+}
+
+.scroll-750 {
+  max-height: 750px;
+  overflow-y: auto;
+}
+
+.scroll-800 {
+  max-height: 800px;
+  overflow-y: auto;
+}
+
+.scroll-850 {
+  max-height: 850px;
+  overflow-y: auto;
+}
+
+.scroll-900 {
+  max-height: 900px;
+  overflow-y: auto;
+}
+
+.scroll-950 {
+  max-height: 950px;
+  overflow-y: auto;
+}
+
+.scroll-1000 {
+  max-height: 1000px;
   overflow-y: auto;
 }
 
