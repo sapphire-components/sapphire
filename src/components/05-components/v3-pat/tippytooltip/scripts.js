@@ -5,8 +5,6 @@
 	let contentEl = null;
 
 	const create = (config) => {
-		console.log(config);
-
 		widgetEl = document.getElementById(config.runtimeId);
 		if (config.triggerId) {
 			triggerEl = document.getElementById(config.triggerId);

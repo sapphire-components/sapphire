@@ -1,0 +1,61 @@
+@use '../../../00-settings/borders' as *;
+@use '../../../00-settings/colors' as *;
+@use '../../../00-settings/fonts' as *;
+@use '../../../00-settings/sizes' as *;
+
+body.has-windowpanel-backdrop {
+	overflow: hidden;
+	scrollbar-gutter: stable;
+}
+
+.windowpanel-custom-content {
+	display: none;
+	.tippy-box & {
+		display: initial;
+	}
+}
+
+.tippy-box[data-theme='windowpanel'] {
+	background-color: $regular-white;
+	border-radius: $border-radius-medium;
+	color: $text-color-regular;
+	font-family: $font-family-latin-regular;
+	padding: $sapphire-sizes--xlarge;
+	.tippy-content {
+		padding: 0;
+	}
+}
+
+.windowpanel {
+	a.Button {
+		margin: 0;
+		&:focus-visible {
+			outline: 2px solid #00695c !important;
+			outline-offset: 2px;
+		}
+	}
+
+	text-align: center;
+
+	&-title {
+		margin-bottom: 20px;
+		&:empty {
+			display: none;
+		}
+	}
+
+	&-message,
+	&-content {
+		margin-bottom: 30px;
+		&:empty {
+			display: none;
+		}
+	}
+
+	&-actions {
+		align-items: center;
+		display: flex;
+		gap: 16px;
+		justify-content: center;
+	}
+}

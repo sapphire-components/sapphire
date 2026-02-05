@@ -41,7 +41,7 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
 
 		var _setBodyTop = function (top) {
 			_body.removeAttribute(DATA_BODY_RESIZE_ATTRIBUTE_NAME);
-			_body.style.marginTop = top + 'px';
+			//_body.style.marginTop = top + 'px';
 
 			if (top == 0) return;
 
