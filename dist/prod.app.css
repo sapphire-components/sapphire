@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.279 || Generated: Wed Feb 04 2026 16:18:55 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.5.280 || Generated: Thu Feb 05 2026 18:09:34 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -29930,6 +29930,58 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
   background-color: #fff;
   border: 1px solid #00ac94;
   color: #00ac94;
+}
+
+body.has-windowpanel-backdrop {
+  overflow: hidden;
+  scrollbar-gutter: stable;
+}
+
+.windowpanel-custom-content {
+  display: none;
+}
+.tippy-box .windowpanel-custom-content {
+  display: initial;
+}
+
+.tippy-box[data-theme=windowpanel] {
+  background-color: #fff;
+  border-radius: 8px;
+  color: #333;
+  font-family: "LatoRegular";
+  padding: 32px;
+}
+.tippy-box[data-theme=windowpanel] .tippy-content {
+  padding: 0;
+}
+
+.windowpanel a.Button {
+  margin: 0;
+}
+.windowpanel a.Button:focus-visible {
+  outline: 2px solid #00695c !important;
+  outline-offset: 2px;
+}
+.windowpanel {
+  text-align: center;
+}
+.windowpanel-title {
+  margin-bottom: 20px;
+}
+.windowpanel-title:empty {
+  display: none;
+}
+.windowpanel-message, .windowpanel-content {
+  margin-bottom: 30px;
+}
+.windowpanel-message:empty, .windowpanel-content:empty {
+  display: none;
+}
+.windowpanel-actions {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
 }
 
 .MultiAlignRight,
