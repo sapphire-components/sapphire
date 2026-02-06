@@ -1,28 +1,19 @@
 /* Component BadgeBox */
 (function ($, window, document, SapphireWidgets) {
-	let abovePlaceholderEl = null;
-	let maxValue = null;
-	let minValue = null;
-	let minusButtonEl = null;
-	let plusButtonEl = null;
-	let step = null;
-	let timeout = null;
-	let timeoutDelay = null;
-	let value = null;
-	let valueInputEl = null;
-	let widgetEl = null;
-
 	const create = (config) => {
-		widgetEl = document.getElementById(config.widgetId);
+		const widgetEl = document.getElementById(config.widgetId);
 
-		abovePlaceholderEl = widgetEl.querySelector('.badge-box-above');
-		maxValue = config.max;
-		minValue = config.min;
-		minusButtonEl = widgetEl.querySelector('.badge-box-button.minus');
-		plusButtonEl = widgetEl.querySelector('.badge-box-button.plus');
-		step = config.step;
-		timeoutDelay = config.timeoutDelay;
-		valueInputEl = widgetEl.querySelector('input[type="text"]');
+		const abovePlaceholderEl = widgetEl.querySelector('.badge-box-above');
+		const maxValue = config.max;
+		const minValue = config.min;
+		const minusButtonEl = widgetEl.querySelector('.badge-box-button.minus');
+		const plusButtonEl = widgetEl.querySelector('.badge-box-button.plus');
+		const step = config.step;
+		const timeoutDelay = config.timeoutDelay;
+		const valueInputEl = widgetEl.querySelector('input[type="text"]');
+
+		let timeout = null;
+		let value = null;
 
 		if (config.value !== '') {
 			value = config.value;
@@ -31,14 +22,12 @@
 
 			minusButtonEl.addEventListener('click', () => {
 				const currentNumeric = isNaN(parseFloat(value)) ? 0 : parseFloat(value);
-
 				value = currentNumeric - parseFloat(step);
 				render();
 			});
 
 			plusButtonEl.addEventListener('click', () => {
 				const currentNumeric = isNaN(parseFloat(value)) ? 0 : parseFloat(value);
-
 				value = currentNumeric + parseFloat(step);
 				render();
 			});
@@ -123,60 +112,60 @@
 				}
 			});
 		}
-	};
 
-	const render = (options) => {
-		const skipAbovePlaceholderUpdate = options && options.skipAbovePlaceholderUpdate;
+		const render = (options) => {
+			const skipAbovePlaceholderUpdate = options && options.skipAbovePlaceholderUpdate;
 
-		const isEmpty = value === '' || value === null || typeof value === 'undefined';
+			const isEmpty = value === '' || value === null || typeof value === 'undefined';
 
-		// Clamp only when we have a numeric value
-		if (!isEmpty) {
-			if (parseFloat(value) < parseFloat(minValue)) {
-				value = parseFloat(minValue);
+			// Clamp only when we have a numeric value
+			if (!isEmpty) {
+				if (parseFloat(value) < parseFloat(minValue)) {
+					value = parseFloat(minValue);
+				}
+				if (parseFloat(value) > parseFloat(maxValue)) {
+					value = parseFloat(maxValue);
+				}
 			}
-			if (parseFloat(value) > parseFloat(maxValue)) {
-				value = parseFloat(maxValue);
+
+			if (isEmpty) {
+				valueInputEl.value = '';
+				valueInputEl.setAttribute('value', '');
+
+				if (!skipAbovePlaceholderUpdate) {
+					abovePlaceholderEl.textContent = '';
+				}
+			} else {
+				valueInputEl.value = value;
+				valueInputEl.setAttribute('value', value);
+
+				if (!skipAbovePlaceholderUpdate) {
+					abovePlaceholderEl.textContent = value;
+				}
 			}
-		}
 
-		if (isEmpty) {
-			valueInputEl.value = '';
-			valueInputEl.setAttribute('value', '');
+			// For button state, treat empty as min value
+			const numericForButtons = isEmpty ? parseFloat(minValue) : parseFloat(value);
 
-			if (!skipAbovePlaceholderUpdate) {
-				abovePlaceholderEl.textContent = '';
+			if (numericForButtons <= parseFloat(minValue)) {
+				minusButtonEl.classList.add('is-disabled');
+			} else {
+				minusButtonEl.classList.remove('is-disabled');
 			}
-		} else {
-			valueInputEl.value = value;
-			valueInputEl.setAttribute('value', value);
 
-			if (!skipAbovePlaceholderUpdate) {
-				abovePlaceholderEl.textContent = value;
+			if (numericForButtons >= parseFloat(maxValue)) {
+				plusButtonEl.classList.add('is-disabled');
+			} else {
+				plusButtonEl.classList.remove('is-disabled');
 			}
-		}
 
-		// For button state, treat empty as min value
-		const numericForButtons = isEmpty ? parseFloat(minValue) : parseFloat(value);
-
-		if (numericForButtons <= parseFloat(minValue)) {
-			minusButtonEl.classList.add('is-disabled');
-		} else {
-			minusButtonEl.classList.remove('is-disabled');
-		}
-
-		if (numericForButtons >= parseFloat(maxValue)) {
-			plusButtonEl.classList.add('is-disabled');
-		} else {
-			plusButtonEl.classList.remove('is-disabled');
-		}
-
-		clearTimeout(timeout);
-
-		timeout = setTimeout(() => {
 			clearTimeout(timeout);
-			valueInputEl.dispatchEvent(new Event('change', { bubbles: true }));
-		}, timeoutDelay);
+
+			timeout = setTimeout(() => {
+				clearTimeout(timeout);
+				valueInputEl.dispatchEvent(new Event('change', { bubbles: true }));
+			}, timeoutDelay);
+		};
 	};
 
 	SapphireWidgets.BadgeBox = {
