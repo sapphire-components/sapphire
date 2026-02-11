@@ -1,0 +1,100 @@
+a:has(> .button-pending) {
+	display: inline-flex;
+	vertical-align: middle;
+}
+
+.button-pending {
+	align-items: center;
+	background-color: #00bfa5;
+	border-radius: 100px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-flex;
+	height: 2.572em;
+	line-height: 1;
+	padding: 0 16px;
+	position: relative;
+	vertical-align: middle;
+	width: max-content;
+
+	&-link {
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		a {
+			display: block;
+			height: 100%;
+			width: 100%;
+		}
+	}
+
+	&-icon {
+		height: 2.572em;
+		position: relative;
+		width: calc(2.572em - 8px);
+
+		.idle,
+		.done {
+			display: none;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		.pending {
+			animation: pulse-black 1s infinite;
+			background: rgba(59, 59, 59, 0.3);
+			border-radius: 50%;
+			box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+			display: none;
+			height: 16px;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%) scale(1);
+			width: 16px;
+		}
+	}
+	&-label {
+		user-select: none;
+	}
+}
+
+.button-pending[data-state='idle'] {
+	.button-pending-icon {
+		span.idle {
+			display: block;
+		}
+	}
+}
+
+.button-pending[data-state='pending'] {
+	.button-pending-icon {
+		span.pending {
+			display: block;
+		}
+	}
+}
+
+.button-pending[data-state='done'] {
+	.button-pending-icon {
+		span.done {
+			display: block;
+		}
+	}
+}
+
+@keyframes pulse-black {
+	0% {
+		box-shadow: 0 0 0 0 rgba(59, 59, 59, 0.4);
+		transform: translateY(-50%) scale(0.95);
+	}
+	70% {
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+		transform: translateY(-50%) scale(1);
+	}
+	100% {
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+		transform: translateY(-50%) scale(0.95);
+	}
+}

@@ -8,6 +8,7 @@ body.has-windowpanel-backdrop {
 	scrollbar-gutter: stable;
 }
 
+// hide the content from the screen and show it only when its placed inside the overlay panel
 .windowpanel-custom-content {
 	display: none;
 	.tippy-box & {
@@ -46,7 +47,6 @@ body.has-windowpanel-backdrop {
 
 	&-message,
 	&-content {
-		margin-bottom: 30px;
 		&:empty {
 			display: none;
 		}
@@ -57,5 +57,9 @@ body.has-windowpanel-backdrop {
 		display: flex;
 		gap: 16px;
 		justify-content: center;
+		padding-top: 30px;
+		&:empty {
+			display: none;
+		}
 	}
 }

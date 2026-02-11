@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.281 || Generated: Fri Feb 06 2026 15:36:24 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.5.281 || Generated: Wed Feb 11 2026 12:09:42 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -9774,87 +9774,6 @@ div.ActionsMenu-item:last-child {
   content: "\e699";
   font-family: "Sapphire-Icon-Font";
   font-size: 1.143em;
-}
-
-.badge-box {
-  border: solid 1px #d6d6d6;
-  border-radius: 4px;
-  display: inline-flex;
-  flex-direction: row;
-  height: 45px;
-  text-align: center;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  width: var(--width);
-}
-.badge-box-button {
-  cursor: pointer;
-  display: none;
-  font-size: 16px;
-  font-weight: 700;
-  place-items: center;
-  width: 25px;
-}
-.badge-box-button.is-disabled {
-  color: #d6d6d6;
-  cursor: not-allowed;
-  filter: grayscale(100%);
-  filter: grayscale(100%);
-  opacity: 0.5;
-  pointer-events: none;
-}
-.badge-box-button.minus {
-  border-right: solid 1px #d6d6d6;
-}
-.badge-box-button.plus {
-  border-left: solid 1px #d6d6d6;
-}
-.badge-box-content {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  min-width: 35px;
-  padding: 4px;
-}
-.badge-box-above {
-  align-items: center;
-  color: #333;
-  display: flex;
-  flex: 1;
-  font-size: 1.143em;
-  font-weight: 700;
-  justify-content: center;
-}
-.badge-box-above:empty {
-  display: none;
-}
-.badge-box-below {
-  align-items: center;
-  color: #777777;
-  display: flex;
-  flex: 1;
-  font-size: 0.643em;
-  font-weight: 700;
-  justify-content: center;
-}
-.badge-box-below:empty {
-  display: none;
-}
-
-.badge-box[data-theme~=no-border] {
-  border: none;
-}
-
-.badge-box-above[contenteditable=true] {
-  cursor: text;
-}
-.badge-box-above[contenteditable=true]:empty {
-  display: flex;
-}
-
-.badge-box[data-showcontrols=true] .badge-box-button {
-  display: grid;
 }
 
 .tippytooltip {
@@ -29932,6 +29851,175 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
   color: #00ac94;
 }
 
+.badge-box {
+  border: solid 1px #d6d6d6;
+  border-radius: 4px;
+  display: inline-flex;
+  flex-direction: row;
+  height: 45px;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  width: var(--width);
+}
+.badge-box-button {
+  cursor: pointer;
+  display: none;
+  font-size: 16px;
+  font-weight: 700;
+  place-items: center;
+  width: 25px;
+}
+.badge-box-button.is-disabled {
+  color: #d6d6d6;
+  cursor: not-allowed;
+  filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.5;
+  pointer-events: none;
+}
+.badge-box-button.minus {
+  border-right: solid 1px #d6d6d6;
+}
+.badge-box-button.plus {
+  border-left: solid 1px #d6d6d6;
+}
+.badge-box-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 35px;
+  padding: 4px;
+}
+.badge-box-above {
+  align-items: center;
+  color: #333;
+  display: flex;
+  flex: 1;
+  font-size: 1.143em;
+  font-weight: 700;
+  justify-content: center;
+}
+.badge-box-above:empty {
+  display: none;
+}
+.badge-box-below {
+  align-items: center;
+  color: #777777;
+  display: flex;
+  flex: 1;
+  font-size: 0.643em;
+  font-weight: 700;
+  justify-content: center;
+}
+.badge-box-below:empty {
+  display: none;
+}
+
+.badge-box[data-theme~=no-border] {
+  border: none;
+}
+
+.badge-box-above[contenteditable=true] {
+  cursor: text;
+}
+.badge-box-above[contenteditable=true]:empty {
+  display: flex;
+}
+
+.badge-box[data-showcontrols=true] .badge-box-button {
+  display: grid;
+}
+
+a:has(> .button-pending) {
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.button-pending {
+  align-items: center;
+  background-color: #00bfa5;
+  border-radius: 100px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  height: 2.572em;
+  line-height: 1;
+  padding: 0 16px;
+  position: relative;
+  vertical-align: middle;
+  width: -moz-max-content;
+  width: max-content;
+}
+.button-pending-link {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.button-pending-link a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.button-pending-icon {
+  height: 2.572em;
+  position: relative;
+  width: calc(2.572em - 8px);
+}
+.button-pending-icon .idle,
+.button-pending-icon .done {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.button-pending-icon .pending {
+  animation: pulse-black 1s infinite;
+  background: rgba(59, 59, 59, 0.3);
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgb(0, 0, 0);
+  display: none;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) scale(1);
+  width: 16px;
+}
+.button-pending-label {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.button-pending[data-state=idle] .button-pending-icon span.idle {
+  display: block;
+}
+
+.button-pending[data-state=pending] .button-pending-icon span.pending {
+  display: block;
+}
+
+.button-pending[data-state=done] .button-pending-icon span.done {
+  display: block;
+}
+
+@keyframes pulse-black {
+  0% {
+    box-shadow: 0 0 0 0 rgba(59, 59, 59, 0.4);
+    transform: translateY(-50%) scale(0.95);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    transform: translateY(-50%) scale(1);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    transform: translateY(-50%) scale(0.95);
+  }
+}
 body.has-windowpanel-backdrop {
   overflow: hidden;
   scrollbar-gutter: stable;
@@ -29971,9 +30059,6 @@ body.has-windowpanel-backdrop {
 .windowpanel-title:empty {
   display: none;
 }
-.windowpanel-message, .windowpanel-content {
-  margin-bottom: 30px;
-}
 .windowpanel-message:empty, .windowpanel-content:empty {
   display: none;
 }
@@ -29982,6 +30067,10 @@ body.has-windowpanel-backdrop {
   display: flex;
   gap: 16px;
   justify-content: center;
+  padding-top: 30px;
+}
+.windowpanel-actions:empty {
+  display: none;
 }
 
 .MultiAlignRight,

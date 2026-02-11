@@ -46,9 +46,6 @@
 @use 'v3-pat/actions-menu/styles' as *;
 @use 'v3-pat/appointment-icon/styles' as *;
 
-@use 'v3-pat/badge-box/styles' as *;
-@use 'v3-pat/badge-box/badge-box-variations' as *;
-
 @use 'v3-pat/tippytooltip/tippytooltip' as *;
 
 @use 'v3-pat/badges-tags/styles' as *;
@@ -184,4 +181,4 @@
 @use 'webpatterns/select/styles' as *;
 @use 'wizard' as *;
 
-@use 'v4/index' as *;
+@use 'v3-pat-2026/index' as *;

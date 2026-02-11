@@ -1,5 +1,7 @@
 class WindowPanel {
 	anchorEl = null;
+	bindedOpen = this.open.bind(this);
+	bindedResize = this.resize.bind(this);
 	closeOnEsc = null;
 	confirmationTemplate = null;
 	customContentEl = null;
@@ -26,15 +28,13 @@ class WindowPanel {
 		this.noEventLink = this.widgetEl.querySelector('.windowpanel-action.no');
 		this.yesEventLink = this.widgetEl.querySelector('.windowpanel-action.yes');
 
-		this.linkToOpen.addEventListener('click', () => {
-			this.open();
-		});
+		this.linkToOpen.removeEventListener('click', this.bindedOpen);
+		this.linkToOpen.addEventListener('click', this.bindedOpen);
 
 		if (initOptions.contentId) {
 			const source = document.getElementById(initOptions.contentId);
 			source.classList.add('windowpanel-custom-content');
 			this.customContentEl = source;
-			//source.remove();
 		}
 
 		this.confirmationTemplate = this.createTemplate(`
@@ -51,10 +51,12 @@ class WindowPanel {
 		`);
 
 		this.anchorEl = document.createElement('span');
+		this.anchorEl.style.left = '50%';
+		this.anchorEl.style.pointerEvents = 'none';
 		this.anchorEl.style.position = 'fixed';
 		this.anchorEl.style.top = '50%';
-		this.anchorEl.style.left = '50%';
-		document.body.appendChild(this.anchorEl);
+
+		window.top.document.body.appendChild(this.anchorEl);
 	}
 
 	open() {
@@ -86,15 +88,35 @@ class WindowPanel {
 			theme: 'windowpanel',
 			trigger: 'manual',
 			zIndex: 30,
+			placement: 'top',
+			popperOptions: {
+				modifiers: [
+					{
+						name: 'offset',
+						options: {
+							offset: ({ popper }) => [0, -(popper.height / 2)],
+						},
+					},
+				],
+			},
 			onShow: (instance) => {
 				if (this.minWidth) {
 					instance.popper.style.minWidth = `${this.minWidth}px`;
 				}
 			},
+			onMount(instance) {},
+			onShown(instance) {},
 			onHide: () => {},
 		});
 
 		this.tippyInstance.show();
+
+		//window.top.addEventListener('resize', this.bindedResize);
+	}
+
+	resize(event) {
+		console.log('resize', this);
+		this.tippyInstance.popperInstance?.update();
 	}
 
 	close() {
@@ -127,6 +149,10 @@ class WindowPanel {
 
 		if (this.customContentEl) {
 			fragment.querySelector('.windowpanel-content').appendChild(this.customContentEl);
+		}
+
+		if (fragment.querySelector('.windowpanel-actions').children.length === 0) {
+			fragment.querySelector('.windowpanel-actions').remove();
 		}
 
 		return fragment;

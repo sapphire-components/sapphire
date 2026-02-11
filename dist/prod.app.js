@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.281 || Generated: Fri Feb 06 2026 15:36:24 GMT+0000 (Western European Standard Time) */
+/*! prod.app.js || Version: 5.5.281 || Generated: Wed Feb 11 2026 12:09:42 GMT+0000 (Western European Standard Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -14,8 +14,10 @@ var map = {
 	"./05-components/layout/layout-popup.js": "./src/components/05-components/layout/layout-popup.js",
 	"./05-components/layout/layout-spam-guard.js": "./src/components/05-components/layout/layout-spam-guard.js",
 	"./05-components/layout/subLayoutLeft.js": "./src/components/05-components/layout/subLayoutLeft.js",
+	"./05-components/v3-pat-2026/badge-box/scripts.js": "./src/components/05-components/v3-pat-2026/badge-box/scripts.js",
+	"./05-components/v3-pat-2026/button-pending/script.js": "./src/components/05-components/v3-pat-2026/button-pending/script.js",
+	"./05-components/v3-pat-2026/window-panel/script.js": "./src/components/05-components/v3-pat-2026/window-panel/script.js",
 	"./05-components/v3-pat/actions-menu/scripts.js": "./src/components/05-components/v3-pat/actions-menu/scripts.js",
-	"./05-components/v3-pat/badge-box/scripts.js": "./src/components/05-components/v3-pat/badge-box/scripts.js",
 	"./05-components/v3-pat/button-link/scripts.js": "./src/components/05-components/v3-pat/button-link/scripts.js",
 	"./05-components/v3-pat/card-charts/scripts.js": "./src/components/05-components/v3-pat/card-charts/scripts.js",
 	"./05-components/v3-pat/collapsible-side-panel/scripts.js": "./src/components/05-components/v3-pat/collapsible-side-panel/scripts.js",
@@ -89,7 +91,6 @@ var map = {
 	"./05-components/v3-pat/tippytooltip/scripts.js": "./src/components/05-components/v3-pat/tippytooltip/scripts.js",
 	"./05-components/v3-pat/trigger-iframe-tooltip/trigger-iframe-tooltip.js": "./src/components/05-components/v3-pat/trigger-iframe-tooltip/trigger-iframe-tooltip.js",
 	"./05-components/v3-pat/truncated-content/scripts.js": "./src/components/05-components/v3-pat/truncated-content/scripts.js",
-	"./05-components/v4/WindowPanel/script.js": "./src/components/05-components/v4/WindowPanel/script.js",
 	"./08-pages/clinicianWorkArea.js": "./src/components/08-pages/clinicianWorkArea.js",
 	"./08-pages/eSignature.js": "./src/components/08-pages/eSignature.js",
 	"./08-pages/remoteAppointment.js": "./src/components/08-pages/remoteAppointment.js",
@@ -867,72 +868,7 @@ $(window).unload(function() {
 
 /***/ }),
 
-/***/ "./src/components/05-components/v3-pat/actions-menu/scripts.js":
-/***/ (function() {
-
-/* Component ActionsMenu */
-(function($, window, SapphireWidgets) {
-	var create = function(config) {
-		var $triggerElement = $('#' + config.triggerElement);
-		var $contentElement = $('#' + config.contentElement);
-
-		if ($contentElement.text().length < 1) {
-			$triggerElement.hide();
-		}
-
-		$(function() {
-			// inside a document ready due to sapphire popup binded events
-			window.setTimeout(function() {
-				var position = config.position;
-				if (config.locale === 'AR') {
-					switch (config.position) {
-						case 'right':
-							position = 'left';
-							break;
-						case 'left':
-							position = 'right';
-							break;
-						case 'bottom-left':
-							position = 'bottom-right';
-							break;
-						case 'bottom-right':
-							position = 'bottom-left';
-							break;
-						case 'top-left':
-							position = 'top-right';
-							break;
-						case 'top-right':
-							position = 'top-left';
-							break;
-					}
-				}
-				$triggerElement.tooltipster({
-					content: $('<section/>').append($contentElement.clone(true, true)),
-					trigger: config.triggerEvent,
-					position: position,
-					maxWidth: config.maxWidth,
-					theme:
-						'tooltipster-location--' +
-						config.location +
-						' ActionsMenu-tooltip Padding--' +
-						config.padding +
-						' Border--' +
-						config.border,
-				});
-				$contentElement.remove();
-			}, 500);
-		});
-	};
-
-	SapphireWidgets.ActionsMenu = {
-		create,
-	};
-})(jQuery, window, SapphireWidgets);
-
-
-/***/ }),
-
-/***/ "./src/components/05-components/v3-pat/badge-box/scripts.js":
+/***/ "./src/components/05-components/v3-pat-2026/badge-box/scripts.js":
 /***/ (function() {
 
 /* Component BadgeBox */
@@ -1109,6 +1045,426 @@ $(window).unload(function() {
 		create: create,
 	};
 })(jQuery, window, document, SapphireWidgets);
+
+
+/***/ }),
+
+/***/ "./src/components/05-components/v3-pat-2026/button-pending/script.js":
+/***/ (function() {
+
+class ButtonPending {
+	bindedClick = this.click.bind(this);
+	timeout = null;
+	initOptions = null;
+
+	constructor(initOptions) {
+		console.log(initOptions);
+		this.state = 'idle';
+		this.duration = initOptions.duration;
+		this.initOptions = initOptions;
+
+		this.widgetEl = document.getElementById(initOptions.runtimeId);
+
+		this.widgetIconEl = this.widgetEl.querySelector('.button-pending-icon');
+		this.widgetLinkEl = this.widgetEl.querySelector('.button-pending-link');
+		this.widgetLabelEl = this.widgetEl.querySelector('.button-pending-label');
+
+		let iconIdle = document.createElement('span');
+		iconIdle.classList.add('idle', 'icon', 'icon-1x', 'icon-play');
+		this.widgetIconEl.appendChild(iconIdle);
+
+		let iconPending = document.createElement('span');
+		iconPending.classList.add('pending');
+		this.widgetIconEl.appendChild(iconPending);
+
+		let iconDone = document.createElement('span');
+		iconDone.classList.add('done', 'icon', 'icon-1x', 'icon-success');
+		this.widgetIconEl.appendChild(iconDone);
+
+		this.widgetLinkEl.querySelector('a').textContent = '';
+
+		this.widgetLinkEl.addEventListener('click', this.bindedClick);
+
+		this.widgetEl._instance = this;
+		this.render();
+	}
+
+	click() {
+		if (this.timeout) {
+			clearTimeout(this.timeout);
+			this.timeout = null;
+		}
+
+		this.state = 'pending';
+		this.render();
+
+		this.timeout = setTimeout(() => {
+			this.state = 'done';
+			this.render();
+		}, this.duration * 1000);
+	}
+
+	setState(state_in) {
+		this.state = state_in;
+		this.render();
+	}
+
+	render() {
+		this.widgetEl.dataset.state = this.state;
+		this.widgetLabelEl.textContent = this.initOptions[this.state];
+	}
+}
+
+window.top.SapphireWidgets.ButtonPending = ButtonPending;
+
+
+/***/ }),
+
+/***/ "./src/components/05-components/v3-pat-2026/window-panel/script.js":
+/***/ (function() {
+
+class WindowPanel {
+	anchorEl = null;
+	bindedOpen = this.open.bind(this);
+	bindedResize = this.resize.bind(this);
+	closeOnEsc = null;
+	confirmationTemplate = null;
+	customContentEl = null;
+	initOptions = null;
+	keydownHandler = null;
+	linkToOpen = null;
+	minWidth = null;
+	noButton = null;
+	noEventLink = null;
+	panelEventHandler = null;
+	tippyInstance = null;
+	widgetEl = null;
+	yesButton = null;
+	yesEventLink = null;
+
+	constructor(initOptions) {
+		this.initOptions = initOptions;
+
+		this.widgetEl = document.getElementById(initOptions.runtimeId);
+
+		this.closeOnEsc = initOptions.closeOnEsc;
+		this.linkToOpen = this.widgetEl.querySelector('.windowpanel-linktoopen a');
+		this.minWidth = initOptions.minWidth;
+		this.noEventLink = this.widgetEl.querySelector('.windowpanel-action.no');
+		this.yesEventLink = this.widgetEl.querySelector('.windowpanel-action.yes');
+
+		this.linkToOpen.removeEventListener('click', this.bindedOpen);
+		this.linkToOpen.addEventListener('click', this.bindedOpen);
+
+		if (initOptions.contentId) {
+			const source = document.getElementById(initOptions.contentId);
+			source.classList.add('windowpanel-custom-content');
+			this.customContentEl = source;
+		}
+
+		this.confirmationTemplate = this.createTemplate(`
+			<div class="windowpanel">
+				<div class="windowpanel-title Heading3"></div>
+				<div class="windowpanel-message"></div>
+				<div class="windowpanel-content"></div>
+				<div class="windowpanel-actions">
+					<a href="#" class="ButtonLink" data-cancel-button ui="ButtonCancel"></a>
+					<a href="#" class="Button Third" data-no-button ui="ConfirmNo"></a>
+					<a href="#" class="Button SetAsValid" data-yes-button ui="ConfirmYes"></a>
+				</div>
+			</div>
+		`);
+
+		this.anchorEl = document.createElement('span');
+		this.anchorEl.style.left = '50%';
+		this.anchorEl.style.pointerEvents = 'none';
+		this.anchorEl.style.position = 'fixed';
+		this.anchorEl.style.top = '50%';
+
+		window.top.document.body.appendChild(this.anchorEl);
+	}
+
+	open() {
+		this.appendBackdrop();
+
+		const panel = this.createPanel({
+			cancelLabel: this.initOptions.cancelLabel,
+			message: this.initOptions.message,
+			noLabel: this.initOptions.noLabel,
+			title: this.initOptions.title,
+			yesLabel: this.initOptions.yesLabel,
+		});
+
+		this.cancelButton = panel.querySelector('[data-cancel-button]');
+		this.noButton = panel.querySelector('[data-no-button]');
+		this.yesButton = panel.querySelector('[data-yes-button]');
+
+		this.addEventListeners();
+		this.addKeydownListener();
+
+		this.tippyInstance = window.top.tippy(this.anchorEl, {
+			allowHTML: true,
+			appendTo: () => document.body,
+			arrow: false,
+			content: panel,
+			hideOnClick: false,
+			interactive: true,
+			maxWidth: '450px',
+			theme: 'windowpanel',
+			trigger: 'manual',
+			zIndex: 30,
+			placement: 'top',
+			popperOptions: {
+				modifiers: [
+					{
+						name: 'offset',
+						options: {
+							offset: ({ popper }) => [0, -(popper.height / 2)],
+						},
+					},
+				],
+			},
+			onShow: (instance) => {
+				if (this.minWidth) {
+					instance.popper.style.minWidth = `${this.minWidth}px`;
+				}
+			},
+			onMount(instance) {},
+			onShown(instance) {},
+			onHide: () => {},
+		});
+
+		this.tippyInstance.show();
+
+		//window.top.addEventListener('resize', this.bindedResize);
+	}
+
+	resize(event) {
+		console.log('resize', this);
+		this.tippyInstance.popperInstance?.update();
+	}
+
+	close() {
+		if (this.keydownHandler) {
+			window.removeEventListener('keydown', this.keydownHandler);
+			this.keydownHandler = null;
+		}
+		this.tippyInstance.hide();
+	}
+
+	createTemplate(html) {
+		const tpl = document.createElement('template');
+		tpl.innerHTML = html.trim();
+		return tpl;
+	}
+
+	createPanel({ cancelLabel, message, noLabel, title, yesLabel }) {
+		const fragment = this.confirmationTemplate.content.cloneNode(true);
+		fragment.querySelector('.windowpanel-title').textContent = title;
+		fragment.querySelector('.windowpanel-message').textContent = message;
+
+		const noBtn = fragment.querySelector('[data-no-button]');
+		noLabel === '' ? noBtn.remove() : (noBtn.textContent = noLabel);
+
+		const cancelBtn = fragment.querySelector('[data-cancel-button]');
+		cancelLabel === '' ? cancelBtn.remove() : (cancelBtn.textContent = cancelLabel);
+
+		const yesBtn = fragment.querySelector('[data-yes-button]');
+		yesLabel === '' ? yesBtn.remove() : (yesBtn.textContent = yesLabel);
+
+		if (this.customContentEl) {
+			fragment.querySelector('.windowpanel-content').appendChild(this.customContentEl);
+		}
+
+		if (fragment.querySelector('.windowpanel-actions').children.length === 0) {
+			fragment.querySelector('.windowpanel-actions').remove();
+		}
+
+		return fragment;
+	}
+
+	addEventListeners() {
+		if (this.panelEventHandler) {
+			window.removeEventListener(`windowpanel-${this.initOptions.identifier}`, this.panelEventHandler);
+		}
+
+		this.panelEventHandler = (event) => {
+			console.log('Event received!');
+			console.log(event.detail);
+			if (event.detail.action === 'YES' && this.yesEventLink) {
+				this.yesEventLink.click();
+			} else if (event.detail.action === 'NO' && this.noEventLink) {
+				this.noEventLink.click();
+			}
+		};
+
+		window.addEventListener(`windowpanel-${this.initOptions.identifier}`, this.panelEventHandler);
+
+		this.cancelButton?.addEventListener('click', (event) => {
+			event.preventDefault();
+			this.removeBackdrop();
+			this.close();
+		});
+
+		this.yesButton?.addEventListener('click', (event) => {
+			event.preventDefault();
+			this.broadcastCustomEvent(`windowpanel-${this.initOptions.identifier}`, { action: 'YES' });
+			this.removeBackdrop();
+			this.close();
+		});
+
+		this.noButton?.addEventListener('click', (event) => {
+			event.preventDefault();
+			this.broadcastCustomEvent(`windowpanel-${this.initOptions.identifier}`, { action: 'NO' });
+			this.removeBackdrop();
+			this.close();
+		});
+	}
+
+	addKeydownListener() {
+		if (this.keydownHandler) {
+			window.removeEventListener('keydown', this.keydownHandler);
+		}
+
+		this.keydownHandler = (event) => {
+			const isEscape = event.key === 'Escape' || event.key === 'Esc' || event.keyCode === 27;
+
+			if (isEscape && this.closeOnEsc) {
+				event.preventDefault();
+				this.removeBackdrop();
+				this.close();
+			}
+		};
+
+		window.addEventListener('keydown', this.keydownHandler);
+	}
+
+	broadcastCustomEvent(eventName, detail) {
+		const visited = new Set();
+
+		function visit(win) {
+			if (!win || visited.has(win)) return;
+			visited.add(win);
+
+			// Dispatch in this window
+			try {
+				win.dispatchEvent(new CustomEvent(eventName, { detail }));
+			} catch (_) {}
+
+			// Recurse into child frames
+			let frames;
+			try {
+				frames = win.frames; // may throw if cross-origin
+			} catch (_) {
+				return;
+			}
+
+			for (let i = 0; i < frames.length; i++) {
+				try {
+					visit(frames[i]);
+				} catch (_) {}
+			}
+		}
+
+		// Start at the top (or current if top not reachable)
+		let root = window;
+		try {
+			root = window.top;
+		} catch (_) {}
+
+		visit(root);
+	}
+
+	appendBackdrop() {
+		const el = document.createElement('div');
+		el.setAttribute('data-windowpanel-backdrop', '');
+		Object.assign(el.style, {
+			position: 'fixed',
+			inset: '0',
+			background: `rgba(0,0,0,0.35)`,
+			zIndex: 30,
+			pointerEvents: 'auto',
+			touchAction: 'none',
+		});
+		document.body.classList.add('has-windowpanel-backdrop');
+		document.body.appendChild(el);
+	}
+
+	removeBackdrop() {
+		const el = document.querySelector('[data-windowpanel-backdrop]');
+		if (el) {
+			el.remove();
+		}
+		document.body.classList.remove('has-windowpanel-backdrop');
+	}
+}
+
+window.top.SapphireWidgets.WindowPanel = WindowPanel;
+
+
+/***/ }),
+
+/***/ "./src/components/05-components/v3-pat/actions-menu/scripts.js":
+/***/ (function() {
+
+/* Component ActionsMenu */
+(function($, window, SapphireWidgets) {
+	var create = function(config) {
+		var $triggerElement = $('#' + config.triggerElement);
+		var $contentElement = $('#' + config.contentElement);
+
+		if ($contentElement.text().length < 1) {
+			$triggerElement.hide();
+		}
+
+		$(function() {
+			// inside a document ready due to sapphire popup binded events
+			window.setTimeout(function() {
+				var position = config.position;
+				if (config.locale === 'AR') {
+					switch (config.position) {
+						case 'right':
+							position = 'left';
+							break;
+						case 'left':
+							position = 'right';
+							break;
+						case 'bottom-left':
+							position = 'bottom-right';
+							break;
+						case 'bottom-right':
+							position = 'bottom-left';
+							break;
+						case 'top-left':
+							position = 'top-right';
+							break;
+						case 'top-right':
+							position = 'top-left';
+							break;
+					}
+				}
+				$triggerElement.tooltipster({
+					content: $('<section/>').append($contentElement.clone(true, true)),
+					trigger: config.triggerEvent,
+					position: position,
+					maxWidth: config.maxWidth,
+					theme:
+						'tooltipster-location--' +
+						config.location +
+						' ActionsMenu-tooltip Padding--' +
+						config.padding +
+						' Border--' +
+						config.border,
+				});
+				$contentElement.remove();
+			}, 500);
+		});
+	};
+
+	SapphireWidgets.ActionsMenu = {
+		create,
+	};
+})(jQuery, window, SapphireWidgets);
 
 
 /***/ }),
@@ -10388,264 +10744,6 @@ function checkEndOfPage() {
 		},
 	};
 })(jQuery, window, document, SapphireWidgets);
-
-
-/***/ }),
-
-/***/ "./src/components/05-components/v4/WindowPanel/script.js":
-/***/ (function() {
-
-class WindowPanel {
-	anchorEl = null;
-	closeOnEsc = null;
-	confirmationTemplate = null;
-	customContentEl = null;
-	initOptions = null;
-	keydownHandler = null;
-	linkToOpen = null;
-	minWidth = null;
-	noButton = null;
-	noEventLink = null;
-	panelEventHandler = null;
-	tippyInstance = null;
-	widgetEl = null;
-	yesButton = null;
-	yesEventLink = null;
-
-	constructor(initOptions) {
-		this.initOptions = initOptions;
-
-		this.widgetEl = document.getElementById(initOptions.runtimeId);
-
-		this.closeOnEsc = initOptions.closeOnEsc;
-		this.linkToOpen = this.widgetEl.querySelector('.windowpanel-linktoopen a');
-		this.minWidth = initOptions.minWidth;
-		this.noEventLink = this.widgetEl.querySelector('.windowpanel-action.no');
-		this.yesEventLink = this.widgetEl.querySelector('.windowpanel-action.yes');
-
-		this.linkToOpen.addEventListener('click', () => {
-			this.open();
-		});
-
-		if (initOptions.contentId) {
-			const source = document.getElementById(initOptions.contentId);
-			source.classList.add('windowpanel-custom-content');
-			this.customContentEl = source;
-			//source.remove();
-		}
-
-		this.confirmationTemplate = this.createTemplate(`
-			<div class="windowpanel">
-				<div class="windowpanel-title Heading3"></div>
-				<div class="windowpanel-message"></div>
-				<div class="windowpanel-content"></div>
-				<div class="windowpanel-actions">
-					<a href="#" class="ButtonLink" data-cancel-button ui="ButtonCancel"></a>
-					<a href="#" class="Button Third" data-no-button ui="ConfirmNo"></a>
-					<a href="#" class="Button SetAsValid" data-yes-button ui="ConfirmYes"></a>
-				</div>
-			</div>
-		`);
-
-		this.anchorEl = document.createElement('span');
-		this.anchorEl.style.position = 'fixed';
-		this.anchorEl.style.top = '50%';
-		this.anchorEl.style.left = '50%';
-		document.body.appendChild(this.anchorEl);
-	}
-
-	open() {
-		this.appendBackdrop();
-
-		const panel = this.createPanel({
-			cancelLabel: this.initOptions.cancelLabel,
-			message: this.initOptions.message,
-			noLabel: this.initOptions.noLabel,
-			title: this.initOptions.title,
-			yesLabel: this.initOptions.yesLabel,
-		});
-
-		this.cancelButton = panel.querySelector('[data-cancel-button]');
-		this.noButton = panel.querySelector('[data-no-button]');
-		this.yesButton = panel.querySelector('[data-yes-button]');
-
-		this.addEventListeners();
-		this.addKeydownListener();
-
-		this.tippyInstance = window.top.tippy(this.anchorEl, {
-			allowHTML: true,
-			appendTo: () => document.body,
-			arrow: false,
-			content: panel,
-			hideOnClick: false,
-			interactive: true,
-			maxWidth: '450px',
-			theme: 'windowpanel',
-			trigger: 'manual',
-			zIndex: 30,
-			onShow: (instance) => {
-				if (this.minWidth) {
-					instance.popper.style.minWidth = `${this.minWidth}px`;
-				}
-			},
-			onHide: () => {},
-		});
-
-		this.tippyInstance.show();
-	}
-
-	close() {
-		if (this.keydownHandler) {
-			window.removeEventListener('keydown', this.keydownHandler);
-			this.keydownHandler = null;
-		}
-		this.tippyInstance.hide();
-	}
-
-	createTemplate(html) {
-		const tpl = document.createElement('template');
-		tpl.innerHTML = html.trim();
-		return tpl;
-	}
-
-	createPanel({ cancelLabel, message, noLabel, title, yesLabel }) {
-		const fragment = this.confirmationTemplate.content.cloneNode(true);
-		fragment.querySelector('.windowpanel-title').textContent = title;
-		fragment.querySelector('.windowpanel-message').textContent = message;
-
-		const noBtn = fragment.querySelector('[data-no-button]');
-		noLabel === '' ? noBtn.remove() : (noBtn.textContent = noLabel);
-
-		const cancelBtn = fragment.querySelector('[data-cancel-button]');
-		cancelLabel === '' ? cancelBtn.remove() : (cancelBtn.textContent = cancelLabel);
-
-		const yesBtn = fragment.querySelector('[data-yes-button]');
-		yesLabel === '' ? yesBtn.remove() : (yesBtn.textContent = yesLabel);
-
-		if (this.customContentEl) {
-			fragment.querySelector('.windowpanel-content').appendChild(this.customContentEl);
-		}
-
-		return fragment;
-	}
-
-	addEventListeners() {
-		if (this.panelEventHandler) {
-			window.removeEventListener(`windowpanel-${this.initOptions.identifier}`, this.panelEventHandler);
-		}
-
-		this.panelEventHandler = (event) => {
-			console.log('Event received!');
-			console.log(event.detail);
-			if (event.detail.action === 'YES' && this.yesEventLink) {
-				this.yesEventLink.click();
-			} else if (event.detail.action === 'NO' && this.noEventLink) {
-				this.noEventLink.click();
-			}
-		};
-
-		window.addEventListener(`windowpanel-${this.initOptions.identifier}`, this.panelEventHandler);
-
-		this.cancelButton?.addEventListener('click', (event) => {
-			event.preventDefault();
-			this.removeBackdrop();
-			this.close();
-		});
-
-		this.yesButton?.addEventListener('click', (event) => {
-			event.preventDefault();
-			this.broadcastCustomEvent(`windowpanel-${this.initOptions.identifier}`, { action: 'YES' });
-			this.removeBackdrop();
-			this.close();
-		});
-
-		this.noButton?.addEventListener('click', (event) => {
-			event.preventDefault();
-			this.broadcastCustomEvent(`windowpanel-${this.initOptions.identifier}`, { action: 'NO' });
-			this.removeBackdrop();
-			this.close();
-		});
-	}
-
-	addKeydownListener() {
-		if (this.keydownHandler) {
-			window.removeEventListener('keydown', this.keydownHandler);
-		}
-
-		this.keydownHandler = (event) => {
-			const isEscape = event.key === 'Escape' || event.key === 'Esc' || event.keyCode === 27;
-
-			if (isEscape && this.closeOnEsc) {
-				event.preventDefault();
-				this.removeBackdrop();
-				this.close();
-			}
-		};
-
-		window.addEventListener('keydown', this.keydownHandler);
-	}
-
-	broadcastCustomEvent(eventName, detail) {
-		const visited = new Set();
-
-		function visit(win) {
-			if (!win || visited.has(win)) return;
-			visited.add(win);
-
-			// Dispatch in this window
-			try {
-				win.dispatchEvent(new CustomEvent(eventName, { detail }));
-			} catch (_) {}
-
-			// Recurse into child frames
-			let frames;
-			try {
-				frames = win.frames; // may throw if cross-origin
-			} catch (_) {
-				return;
-			}
-
-			for (let i = 0; i < frames.length; i++) {
-				try {
-					visit(frames[i]);
-				} catch (_) {}
-			}
-		}
-
-		// Start at the top (or current if top not reachable)
-		let root = window;
-		try {
-			root = window.top;
-		} catch (_) {}
-
-		visit(root);
-	}
-
-	appendBackdrop() {
-		const el = document.createElement('div');
-		el.setAttribute('data-windowpanel-backdrop', '');
-		Object.assign(el.style, {
-			position: 'fixed',
-			inset: '0',
-			background: `rgba(0,0,0,0.35)`,
-			zIndex: 30,
-			pointerEvents: 'auto',
-			touchAction: 'none',
-		});
-		document.body.classList.add('has-windowpanel-backdrop');
-		document.body.appendChild(el);
-	}
-
-	removeBackdrop() {
-		const el = document.querySelector('[data-windowpanel-backdrop]');
-		if (el) {
-			el.remove();
-		}
-		document.body.classList.remove('has-windowpanel-backdrop');
-	}
-}
-
-window.top.SapphireWidgets.WindowPanel = WindowPanel;
 
 
 /***/ }),
