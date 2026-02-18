@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.283 || Generated: Wed Feb 18 2026 14:42:28 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.5.283 || Generated: Wed Feb 18 2026 16:13:59 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -25425,6 +25425,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   padding-top: 33px;
 }
 .ShiftTable[data-stickyheader=true] .ShiftTable__Header {
+  left: calc(24px + var(--shifttable-horizontal-scroll) * -1);
   position: fixed;
   top: var(--shifttable-header-top);
   z-index: 3;

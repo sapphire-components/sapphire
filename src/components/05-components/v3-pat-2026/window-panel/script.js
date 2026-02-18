@@ -1,3 +1,5 @@
+console.log('WindowPanel exists', window.location.href);
+
 class WindowPanel {
 	anchorEl = null;
 	bindedOpen = this.open.bind(this);
@@ -79,7 +81,7 @@ class WindowPanel {
 
 		this.tippyInstance = window.top.tippy(this.anchorEl, {
 			allowHTML: true,
-			appendTo: () => document.body,
+			appendTo: () => window.top.document.body,
 			arrow: false,
 			content: panel,
 			hideOnClick: false,
@@ -261,16 +263,16 @@ class WindowPanel {
 			pointerEvents: 'auto',
 			touchAction: 'none',
 		});
-		document.body.classList.add('has-windowpanel-backdrop');
-		document.body.appendChild(el);
+		window.top.document.body.classList.add('has-windowpanel-backdrop');
+		window.top.document.body.appendChild(el);
 	}
 
 	removeBackdrop() {
-		const el = document.querySelector('[data-windowpanel-backdrop]');
+		const el = window.top.document.querySelector('[data-windowpanel-backdrop]');
 		if (el) {
 			el.remove();
 		}
-		document.body.classList.remove('has-windowpanel-backdrop');
+		window.top.document.body.classList.remove('has-windowpanel-backdrop');
 	}
 }
 

@@ -6,6 +6,8 @@ SapphireWidgets.ShiftTable = (widgetId) => {
 	$(document).ready(() => {
 		console.log('ShiftTable', widgetId);
 
+		const shiftTableEl = document.getElementById(widgetId);
+
 		function isInIframe() {
 			return window.self !== window.top;
 		}
@@ -38,22 +40,29 @@ SapphireWidgets.ShiftTable = (widgetId) => {
 			};
 		}
 
-		setTimeout(() => {
-			const shiftTableEl = document.getElementById(widgetId);
+		function calculateFloatingHeader() {
+			const rectContent = getElementTopWindowRect('.ShiftTable__Content');
+			const willBe = window.top.scrollY - rectContent.top + 12;
+			if (rectContent.outerTop <= topLimit) {
+				shiftTableEl.dataset.stickyheader = 'true';
+				shiftTableEl.style.setProperty('--shifttable-header-top', `${willBe}px`);
+			} else {
+				shiftTableEl.style.removeProperty('--shifttable-header-top');
+				shiftTableEl.dataset.stickyheader = 'false';
+			}
+		}
 
+		setTimeout(() => {
 			if (isInIframe()) {
 				window.top.addEventListener('scroll', () => {
-					const rectContent = getElementTopWindowRect('.ShiftTable__Content');
-					const willBe = window.top.scrollY - rectContent.top + 12;
-					if (rectContent.outerTop <= topLimit) {
-						shiftTableEl.dataset.stickyheader = 'true';
-						shiftTableEl.style.setProperty('--shifttable-header-top', `${willBe}px`);
-					} else {
-						shiftTableEl.style.removeProperty('--shifttable-header-top');
-						shiftTableEl.dataset.stickyheader = 'false';
-					}
+					calculateFloatingHeader();
 				});
 			}
+
+			shiftTableEl.addEventListener('scroll', () => {
+				const horizontalScroll = shiftTableEl.scrollLeft;
+				shiftTableEl.style.setProperty('--shifttable-horizontal-scroll', `${horizontalScroll}px`);
+			});
 
 			const resizeObserver = new ResizeObserver(() => {
 				const hourWidth = shiftTableEl.querySelector('.ShiftTableRow__Content .ShiftTableCell').getBoundingClientRect().width;
@@ -61,10 +70,12 @@ SapphireWidgets.ShiftTable = (widgetId) => {
 				const column = +shiftTableEl.querySelector('.HourLine').dataset.column;
 				const minutes = +shiftTableEl.querySelector('.HourLine').dataset.minutes;
 				const minutesConvertedtoPixels = (minutes * hourWidth) / 60;
-				const leftInPx = (column - 1) * hourWidth + minutesConvertedtoPixels + firstColumnWidth;
+				const leftInPx = (column - 1) * hourWidth + minutesConvertedtoPixels + firstColumnWidth + 24;
 				shiftTableEl.querySelector('.HourLine').style.left = `${leftInPx}px`;
 			});
 			resizeObserver.observe(shiftTableEl);
+
+			calculateFloatingHeader();
 		}, 500);
 	});
 };

@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.283 || Generated: Wed Feb 18 2026 14:42:28 GMT+0000 (Western European Standard Time) */
+/*! prod.app.js || Version: 5.5.283 || Generated: Wed Feb 18 2026 16:13:59 GMT+0000 (Western European Standard Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -1123,6 +1123,8 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 /***/ "./src/components/05-components/v3-pat-2026/window-panel/script.js":
 /***/ (function() {
 
+console.log('WindowPanel exists', window.location.href);
+
 class WindowPanel {
 	anchorEl = null;
 	bindedOpen = this.open.bind(this);
@@ -1204,7 +1206,7 @@ class WindowPanel {
 
 		this.tippyInstance = window.top.tippy(this.anchorEl, {
 			allowHTML: true,
-			appendTo: () => document.body,
+			appendTo: () => window.top.document.body,
 			arrow: false,
 			content: panel,
 			hideOnClick: false,
@@ -1386,16 +1388,16 @@ class WindowPanel {
 			pointerEvents: 'auto',
 			touchAction: 'none',
 		});
-		document.body.classList.add('has-windowpanel-backdrop');
-		document.body.appendChild(el);
+		window.top.document.body.classList.add('has-windowpanel-backdrop');
+		window.top.document.body.appendChild(el);
 	}
 
 	removeBackdrop() {
-		const el = document.querySelector('[data-windowpanel-backdrop]');
+		const el = window.top.document.querySelector('[data-windowpanel-backdrop]');
 		if (el) {
 			el.remove();
 		}
-		document.body.classList.remove('has-windowpanel-backdrop');
+		window.top.document.body.classList.remove('has-windowpanel-backdrop');
 	}
 }
 
@@ -8324,6 +8326,8 @@ SapphireWidgets.ShiftTable = (widgetId) => {
 	$(document).ready(() => {
 		console.log('ShiftTable', widgetId);
 
+		const shiftTableEl = document.getElementById(widgetId);
+
 		function isInIframe() {
 			return window.self !== window.top;
 		}
@@ -8356,22 +8360,29 @@ SapphireWidgets.ShiftTable = (widgetId) => {
 			};
 		}
 
-		setTimeout(() => {
-			const shiftTableEl = document.getElementById(widgetId);
+		function calculateFloatingHeader() {
+			const rectContent = getElementTopWindowRect('.ShiftTable__Content');
+			const willBe = window.top.scrollY - rectContent.top + 12;
+			if (rectContent.outerTop <= topLimit) {
+				shiftTableEl.dataset.stickyheader = 'true';
+				shiftTableEl.style.setProperty('--shifttable-header-top', `${willBe}px`);
+			} else {
+				shiftTableEl.style.removeProperty('--shifttable-header-top');
+				shiftTableEl.dataset.stickyheader = 'false';
+			}
+		}
 
+		setTimeout(() => {
 			if (isInIframe()) {
 				window.top.addEventListener('scroll', () => {
-					const rectContent = getElementTopWindowRect('.ShiftTable__Content');
-					const willBe = window.top.scrollY - rectContent.top + 12;
-					if (rectContent.outerTop <= topLimit) {
-						shiftTableEl.dataset.stickyheader = 'true';
-						shiftTableEl.style.setProperty('--shifttable-header-top', `${willBe}px`);
-					} else {
-						shiftTableEl.style.removeProperty('--shifttable-header-top');
-						shiftTableEl.dataset.stickyheader = 'false';
-					}
+					calculateFloatingHeader();
 				});
 			}
+
+			shiftTableEl.addEventListener('scroll', () => {
+				const horizontalScroll = shiftTableEl.scrollLeft;
+				shiftTableEl.style.setProperty('--shifttable-horizontal-scroll', `${horizontalScroll}px`);
+			});
 
 			const resizeObserver = new ResizeObserver(() => {
 				const hourWidth = shiftTableEl.querySelector('.ShiftTableRow__Content .ShiftTableCell').getBoundingClientRect().width;
@@ -8379,10 +8390,12 @@ SapphireWidgets.ShiftTable = (widgetId) => {
 				const column = +shiftTableEl.querySelector('.HourLine').dataset.column;
 				const minutes = +shiftTableEl.querySelector('.HourLine').dataset.minutes;
 				const minutesConvertedtoPixels = (minutes * hourWidth) / 60;
-				const leftInPx = (column - 1) * hourWidth + minutesConvertedtoPixels + firstColumnWidth;
+				const leftInPx = (column - 1) * hourWidth + minutesConvertedtoPixels + firstColumnWidth + 24;
 				shiftTableEl.querySelector('.HourLine').style.left = `${leftInPx}px`;
 			});
 			resizeObserver.observe(shiftTableEl);
+
+			calculateFloatingHeader();
 		}, 500);
 	});
 };
