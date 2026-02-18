@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.282 || Generated: Wed Feb 11 2026 12:17:02 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.5.282 || Generated: Wed Feb 18 2026 14:32:28 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -20343,6 +20343,7 @@ body.confirmation-opened {
 body.ResizeParentIframe {
   height: auto;
   overflow: visible;
+  width: 100%;
 }
 body.ResizeParentIframe .MainContent {
   padding: 0;
@@ -24636,7 +24637,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .ShiftGroupContent {
   border: 1px solid #d6d6d6;
   border-radius: 8px;
-  overflow: hidden;
+  overflow: unset;
 }
 .ShiftGroupContent__Header {
   align-items: stretch;
@@ -24790,6 +24791,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   overflow: hidden;
   position: absolute;
   z-index: 1;
+  min-width: 32px;
 }
 .ShiftTableCardProgress__Holder {
   display: flex;
@@ -24998,6 +25000,30 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
     width: unset;
   }
 }
+@container (max-width: 100px) {
+  .ShiftTableCardProgress__ActionButton a,
+  .ShiftTableCardProgress__ActionButton > .tooltipstered {
+    width: 24px !important;
+    height: 24px !important;
+  }
+  .ShiftTableCardProgress__Content {
+    padding: 4px;
+  }
+  .ShiftTableCardProgress__Footer {
+    font-size: 90%;
+  }
+  .hide-below-100 {
+    display: none;
+  }
+  .block-below-100 {
+    display: block;
+  }
+}
+@container (max-width: 50px) {
+  .hide-below-50 {
+    display: none;
+  }
+}
 .ShiftTableCardProgress--darkred .ShiftTableCardProgress__HeaderIcons {
   color: #b10100;
 }
@@ -25175,13 +25201,17 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   padding-right: 24px;
 }
 .ShiftTableRow__Left {
+  background-color: #f9f9f9;
   border-bottom: 1px solid #d6d6d6;
   border-right: 1px solid #d6d6d6;
   display: flex;
   flex-direction: column;
   gap: 4px;
+  left: 0;
   padding: 16px 24px 16px 0;
+  position: sticky;
   width: 400px;
+  z-index: 2;
 }
 .AR .ShiftTableRow__Left {
   border-left: 1px solid #d6d6d6;
@@ -25310,21 +25340,28 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   border-radius: 9999px;
 }
 .ShiftTable {
+  margin-bottom: 8px;
   overflow-x: auto;
   position: relative;
-  margin-bottom: 8px;
 }
 .ShiftTable::-webkit-scrollbar {
   background-color: transparent;
 }
 .ShiftTable__Header {
+  align-items: center;
+  background-color: #f3f3f3;
   display: flex;
-  padding-bottom: 8px;
+  height: 33px;
 }
 .ShiftTable__HeaderLeft {
   align-items: center;
   display: flex;
+  background-color: #f3f3f3;
+  height: 100%;
+  left: 0;
   min-width: 424px;
+  position: sticky;
+  z-index: 2;
 }
 .ShiftTable__HeaderTitle {
   color: #777777;
@@ -25354,7 +25391,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .ShiftTable__Content {
   min-width: -moz-fit-content;
   min-width: fit-content;
-  overflow: hidden;
+  overflow-x: unset;
+  overflow-y: unset;
   width: 100%;
 }
 .ShiftTable__Content .ListRecords > span {
@@ -25366,6 +25404,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .ShiftTable__CurrentHour .HourLine {
   background-color: #ff3e2d;
   bottom: 0;
+  display: flex;
   justify-content: center;
   position: absolute;
   top: 25px;
@@ -25380,6 +25419,18 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   height: 9px;
   margin-top: -4px;
   min-width: 9px;
+}
+
+.ShiftTable[data-stickyheader=true] {
+  padding-top: 33px;
+}
+.ShiftTable[data-stickyheader=true] .ShiftTable__Header {
+  position: fixed;
+  top: var(--shifttable-header-top);
+  z-index: 3;
+}
+.ShiftTable[data-stickyheader=true] .ShiftTable__HeaderLabels .ShiftTableCell {
+  width: var(--shifttable-hour-width);
 }
 
 .SideMenu {

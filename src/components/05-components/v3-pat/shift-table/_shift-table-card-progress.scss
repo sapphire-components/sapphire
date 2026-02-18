@@ -16,6 +16,7 @@
 	overflow: hidden;
 	position: absolute;
 	z-index: 1;
+	min-width: 32px;
 
 	&__Holder {
 		display: flex;
@@ -276,5 +277,31 @@
 		border-right: none;
 		padding: 4px;
 		width: unset;
+	}
+}
+
+@container (max-width: 100px) {
+	.ShiftTableCardProgress__ActionButton a,
+	.ShiftTableCardProgress__ActionButton > .tooltipstered {
+		width: 24px !important;
+		height: 24px !important;
+	}
+	.ShiftTableCardProgress__Content {
+		padding: 4px;
+	}
+	.ShiftTableCardProgress__Footer {
+		font-size: 90%;
+	}
+	.hide-below-100 {
+		display: none;
+	}
+	.block-below-100 {
+		display: block;
+	}
+}
+
+@container (max-width: 50px) {
+	.hide-below-50 {
+		display: none;
 	}
 }

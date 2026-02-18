@@ -10,7 +10,7 @@
 .ShiftGroupContent {
 	border: 1px solid $light-grey;
 	border-radius: $border-radius-medium;
-	overflow: hidden;
+	overflow: unset;
 
 	&__Header {
 		align-items: stretch;

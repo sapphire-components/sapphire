@@ -1,31 +1,34 @@
-@use '../../../00-settings/sizes' as *;
 @use '../../../00-settings/colors' as *;
 @use '../../../00-settings/fonts' as *;
-
-@use '../../../01-tools/scrollbar' as *;
-
+@use '../../../00-settings/sizes' as *;
 @use '../../../01-tools/flex-align' as *;
+@use '../../../01-tools/scrollbar' as *;
 
 .ShiftTable {
 	@include component-scroll-root;
-
+	margin-bottom: $sapphire-sizes--small;
 	overflow-x: auto;
 	position: relative;
-	margin-bottom: $sapphire-sizes--small;
 
 	&::-webkit-scrollbar {
 		background-color: transparent;
 	}
 
 	&__Header {
+		align-items: center;
+		background-color: #f3f3f3;
 		display: flex;
-		padding-bottom: $sapphire-sizes--small;
+		height: 33px;
 	}
 
 	&__HeaderLeft {
 		@include flex-center-vertically;
-
+		background-color: #f3f3f3;
+		height: 100%;
+		left: 0;
 		min-width: 424px;
+		position: sticky;
+		z-index: 2;
 	}
 
 	&__HeaderTitle {
@@ -59,13 +62,11 @@
 
 	&__Content {
 		min-width: fit-content;
-		overflow: hidden;
+		overflow-x: unset;
+		overflow-y: unset;
 		width: 100%;
-
 		.ListRecords > span {
 			display: block;
-			//margin-bottom: $sapphire-sizes--small; //-->Diogo Ribeiro: Removed as it was introducing margin between items in shit table content
-			
 			.TableRecords_ContentExpandable {
 				display: contents;
 			}
@@ -76,6 +77,7 @@
 		.HourLine {
 			background-color: $regular-red;
 			bottom: 0;
+			display: flex;
 			justify-content: center;
 			position: absolute;
 			top: 25px;
@@ -92,5 +94,19 @@
 				min-width: 9px;
 			}
 		}
+	}
+}
+
+.ShiftTable[data-stickyheader='true'] {
+	padding-top: 8px + 17px + 8px;
+
+	.ShiftTable__Header {
+		position: fixed;
+		top: var(--shifttable-header-top);
+		z-index: 3;
+	}
+
+	.ShiftTable__HeaderLabels .ShiftTableCell {
+		width: var(--shifttable-hour-width);
 	}
 }

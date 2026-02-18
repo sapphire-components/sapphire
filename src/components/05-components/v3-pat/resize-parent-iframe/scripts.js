@@ -16,7 +16,6 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
 			clearTimeout(mutationTimeout);
 
 			mutationTimeout = setTimeout(() => {
-				console.log('mutationHandler');
 				_clearBodyTop();
 				var _elementOutsideBodyTop = _checkAnyElementOutsideBodyTop();
 				if (_elementOutsideBodyTop != null) {

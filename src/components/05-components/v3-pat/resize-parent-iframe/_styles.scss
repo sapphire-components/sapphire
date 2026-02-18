@@ -1,15 +1,11 @@
 body.ResizeParentIframe {
 	height: auto;
 	overflow: visible;
-	// outline: 1px solid green !important;
+	width: 100%;
 
 	.MainContent {
 		padding: 0;
 	}
-}
-
-iframe {
-	// outline: 1px solid red !important;
 }
 
 .InlineMenu-Wrapper iframe {

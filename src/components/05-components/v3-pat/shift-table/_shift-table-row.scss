@@ -15,13 +15,17 @@
 	}
 
 	&__Left {
+		background-color: #f9f9f9;
 		border-bottom: 1px solid $light-grey;
 		border-right: 1px solid $light-grey;
 		display: flex;
 		flex-direction: column;
 		gap: $sapphire-sizes--xsmall;
+		left: 0;
 		padding: $sapphire-sizes--medium $sapphire-sizes--large $sapphire-sizes--medium 0;
+		position: sticky;
 		width: 400px;
+		z-index: 2;
 
 		.AR & {
 			border-left: 1px solid $light-grey;
