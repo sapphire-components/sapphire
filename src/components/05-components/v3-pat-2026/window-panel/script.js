@@ -1,5 +1,3 @@
-console.log('WindowPanel exists', window.location.href);
-
 class WindowPanel {
 	anchorEl = null;
 	bindedOpen = this.open.bind(this);
@@ -62,6 +60,9 @@ class WindowPanel {
 	}
 
 	open() {
+		console.log(window.document.body);
+		window.document.body.click();
+
 		this.appendBackdrop();
 
 		const panel = this.createPanel({

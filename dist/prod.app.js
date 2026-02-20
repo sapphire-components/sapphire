@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.284 || Generated: Wed Feb 18 2026 16:14:34 GMT+0000 (Western European Standard Time) */
+/*! prod.app.js || Version: 5.5.284 || Generated: Wed Feb 18 2026 17:04:46 GMT+0000 (Western European Standard Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -1122,8 +1122,6 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 
 /***/ "./src/components/05-components/v3-pat-2026/window-panel/script.js":
 /***/ (function() {
-
-console.log('WindowPanel exists', window.location.href);
 
 class WindowPanel {
 	anchorEl = null;

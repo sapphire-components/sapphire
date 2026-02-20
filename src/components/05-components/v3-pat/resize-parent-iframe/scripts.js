@@ -1,6 +1,8 @@
 var SapphireWidgets = (window.SapphireWidgets = window.SapphireWidgets || {});
 
 SapphireWidgets.ResizeParentIframe = function (options = {}) {
+	console.log('options', window.location.pathname, options);
+
 	$(window).load(function () {
 		const _body = document.body;
 		const _iframe = window.frameElement;

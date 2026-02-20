@@ -67,11 +67,14 @@ SapphireWidgets.ShiftTable = (widgetId) => {
 			const resizeObserver = new ResizeObserver(() => {
 				const hourWidth = shiftTableEl.querySelector('.ShiftTableRow__Content .ShiftTableCell').getBoundingClientRect().width;
 				shiftTableEl.style.setProperty('--shifttable-hour-width', `${hourWidth}px`);
-				const column = +shiftTableEl.querySelector('.HourLine').dataset.column;
-				const minutes = +shiftTableEl.querySelector('.HourLine').dataset.minutes;
-				const minutesConvertedtoPixels = (minutes * hourWidth) / 60;
-				const leftInPx = (column - 1) * hourWidth + minutesConvertedtoPixels + firstColumnWidth + 24;
-				shiftTableEl.querySelector('.HourLine').style.left = `${leftInPx}px`;
+
+				if (shiftTableEl.querySelector('.HourLine')) {
+					const column = +shiftTableEl.querySelector('.HourLine').dataset.column;
+					const minutes = +shiftTableEl.querySelector('.HourLine').dataset.minutes;
+					const minutesConvertedtoPixels = (minutes * hourWidth) / 60;
+					const leftInPx = (column - 1) * hourWidth + minutesConvertedtoPixels + firstColumnWidth + 24;
+					shiftTableEl.querySelector('.HourLine').style.left = `${leftInPx}px`;
+				}
 			});
 			resizeObserver.observe(shiftTableEl);
 
