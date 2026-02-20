@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.284 || Generated: Wed Feb 18 2026 17:04:46 GMT+0000 (Western European Standard Time) */
+/*! prod.app.js || Version: 5.5.285 || Generated: Fri Feb 20 2026 16:42:49 GMT+0000 (Western European Standard Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -1185,6 +1185,9 @@ class WindowPanel {
 	}
 
 	open() {
+		console.log(window.document.body);
+		window.document.body.click();
+
 		this.appendBackdrop();
 
 		const panel = this.createPanel({
@@ -5392,6 +5395,8 @@ __webpack_require__("./src/components/05-components/v3-pat/panel/sapphire-panel.
 var SapphireWidgets = (window.SapphireWidgets = window.SapphireWidgets || {});
 
 SapphireWidgets.ResizeParentIframe = function (options = {}) {
+	console.log('options', window.location.pathname, options);
+
 	$(window).load(function () {
 		const _body = document.body;
 		const _iframe = window.frameElement;
@@ -8385,11 +8390,14 @@ SapphireWidgets.ShiftTable = (widgetId) => {
 			const resizeObserver = new ResizeObserver(() => {
 				const hourWidth = shiftTableEl.querySelector('.ShiftTableRow__Content .ShiftTableCell').getBoundingClientRect().width;
 				shiftTableEl.style.setProperty('--shifttable-hour-width', `${hourWidth}px`);
-				const column = +shiftTableEl.querySelector('.HourLine').dataset.column;
-				const minutes = +shiftTableEl.querySelector('.HourLine').dataset.minutes;
-				const minutesConvertedtoPixels = (minutes * hourWidth) / 60;
-				const leftInPx = (column - 1) * hourWidth + minutesConvertedtoPixels + firstColumnWidth + 24;
-				shiftTableEl.querySelector('.HourLine').style.left = `${leftInPx}px`;
+
+				if (shiftTableEl.querySelector('.HourLine')) {
+					const column = +shiftTableEl.querySelector('.HourLine').dataset.column;
+					const minutes = +shiftTableEl.querySelector('.HourLine').dataset.minutes;
+					const minutesConvertedtoPixels = (minutes * hourWidth) / 60;
+					const leftInPx = (column - 1) * hourWidth + minutesConvertedtoPixels + firstColumnWidth + 24;
+					shiftTableEl.querySelector('.HourLine').style.left = `${leftInPx}px`;
+				}
 			});
 			resizeObserver.observe(shiftTableEl);
 
