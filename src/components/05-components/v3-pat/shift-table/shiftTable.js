@@ -1,10 +1,12 @@
 /* Component ShiftTable */
 SapphireWidgets.ShiftTable = (widgetId) => {
-	const topLimit = 190;
+	const topLimitWithIframe = 190;
+	const topLimitWithoutIframe = 173;
+	const headerTopWithoutIframe = 154;
 	const firstColumnWidth = 400;
 
 	$(document).ready(() => {
-		console.log('ShiftTable', widgetId);
+		// console.log('ShiftTable', widgetId);
 
 		const shiftTableEl = document.getElementById(widgetId);
 
@@ -20,7 +22,6 @@ SapphireWidgets.ShiftTable = (widgetId) => {
 
 			const iframeEl = window.frameElement;
 			if (!iframeEl) {
-				console.log('elRect', elRect);
 				return elRect;
 			}
 
@@ -42,22 +43,31 @@ SapphireWidgets.ShiftTable = (widgetId) => {
 
 		function calculateFloatingHeader() {
 			const rectContent = getElementTopWindowRect('.ShiftTable__Content');
-			const willBe = window.top.scrollY - rectContent.top + 12;
-			if (rectContent.outerTop <= topLimit) {
-				shiftTableEl.dataset.stickyheader = 'true';
-				shiftTableEl.style.setProperty('--shifttable-header-top', `${willBe}px`);
+			if (isInIframe()) {
+				const willBe = window.top.scrollY - rectContent.top + 12;
+				if (rectContent.outerTop <= topLimitWithIframe) {
+					shiftTableEl.dataset.stickyheader = 'true';
+					shiftTableEl.style.setProperty('--shifttable-header-top', `${willBe}px`);
+				} else {
+					shiftTableEl.style.removeProperty('--shifttable-header-top');
+					shiftTableEl.dataset.stickyheader = 'false';
+				}
 			} else {
-				shiftTableEl.style.removeProperty('--shifttable-header-top');
-				shiftTableEl.dataset.stickyheader = 'false';
+				const willBe = headerTopWithoutIframe;
+				if (window.scrollY >= topLimitWithoutIframe) {
+					shiftTableEl.dataset.stickyheader = 'true';
+					shiftTableEl.style.setProperty('--shifttable-header-top', `${willBe}px`);
+				} else {
+					shiftTableEl.style.removeProperty('--shifttable-header-top');
+					shiftTableEl.dataset.stickyheader = 'false';
+				}
 			}
 		}
 
 		setTimeout(() => {
-			if (isInIframe()) {
-				window.top.addEventListener('scroll', () => {
-					calculateFloatingHeader();
-				});
-			}
+			window.top.addEventListener('scroll', () => {
+				calculateFloatingHeader();
+			});
 
 			shiftTableEl.addEventListener('scroll', () => {
 				const horizontalScroll = shiftTableEl.scrollLeft;
