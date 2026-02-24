@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.5.287 || Generated: Tue Feb 24 2026 16:33:18 GMT+0000 (Western European Standard Time) */
+/*! prod.backoffice.css || Version: 5.5.288 || Generated: Tue Feb 24 2026 16:48:29 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -6630,13 +6630,13 @@ div[onclick] {
 }
 
 a.Link.Remove {
-  color: #FF3E2D;
+  color: #ff3e2d;
 }
 
 a.Link.Remove:hover,
 a.Link.Remove:active,
 a.Link.Remove:hover:active {
-  color: #FF3E2D;
+  color: #ff3e2d;
   text-decoration: none;
 }
 
@@ -6653,8 +6653,8 @@ a.Link.Remove:hover:active {
 
 .OSInlineClear {
   /* This style will never be used in runtime.
-  When applied in Service Studio, it will prevent the style 'OSInline' from being
-  automatically applied to divs and tables with widths != (fill parent) */
+   When applied in Service Studio, it will prevent the style 'OSInline' from being
+   automatically applied to divs and tables with widths != (fill parent) */
 }
 
 /*------------------------------------*\
@@ -7693,7 +7693,7 @@ input[readonly]:focus {
 }
 
 label.MandatoryLabel:after {
-  color: #BF1601;
+  color: #bf1601;
   content: "*";
   font-size: 22px;
   font-weight: normal;
@@ -8691,7 +8691,7 @@ a + a.Button {
 }
 
 .PanelById .PanelActions a:not(.Button) {
-  color: #5C5C5C;
+  color: #5c5c5c;
   font-size: 16px;
   font-weight: 600;
   line-height: 19px;
@@ -9751,7 +9751,7 @@ span.select2-selection__arrow:after {
   font-size: 12px;
   position: absolute;
   /* right: 8px;
-  top: 8px; */
+   top: 8px; */
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
@@ -9855,6 +9855,8 @@ span.select2-selection--single:focus,
   position: relative;
   vertical-align: middle;
   z-index: 1;
+  /*2*/
+  /*3*/
 }
 
 .layed .select2-container {
@@ -9901,6 +9903,7 @@ span.select2-selection--single:focus,
 
 .select2-dropdown {
   background-color: white;
+  background-image: none;
   border: 1px solid #aaa;
   border-radius: 4px;
   border-top-left-radius: 0;
@@ -10123,7 +10126,7 @@ span.select2-selection--single:focus,
 }
 
 .ToggleButton_label:after {
-  background-color: #00BFA5;
+  background-color: #00bfa5;
   border-radius: 20px;
   box-shadow: none;
   right: 27px;
@@ -10144,12 +10147,12 @@ span.select2-selection--single:focus,
 }
 
 .ToggleButton_label.changed {
-  background-color: #00BFA5;
+  background-color: #00bfa5;
 }
 
 /*ToggleControlItem*/
 .ToggleControl {
-  border: 1px solid #C9CDCE;
+  border: 1px solid #c9cdce;
   border: none;
   border-radius: 4px;
 }
@@ -10176,7 +10179,7 @@ span.select2-selection--single:focus,
 }
 
 .ToggleControlItem label {
-  border: 1px solid #56D3C2;
+  border: 1px solid #56d3c2;
   border-radius: 4px;
   color: #0d1d22;
   cursor: pointer;
@@ -10192,13 +10195,13 @@ span.select2-selection--single:focus,
 
 .ToggleControlItem label:hover,
 .ToggleControlItem label:focus {
-  background-color: #E6F3F5;
+  background-color: #e6f3f5;
   border-radius: 2px;
 }
 
 .ToggleControlItem > input[type=radio]:checked ~ label,
 .ToggleControlItem > input[type=checkbox]:checked ~ label {
-  background: #D8E6EC;
+  background: #d8e6ec;
   border-radius: 2px;
 }
 
@@ -10233,8 +10236,8 @@ span.select2-selection--single:focus,
 }
 
 .ToggleControlItem input[type=radio]:before {
-  background-color: #00BFA5;
-  border-color: #00BFA5;
+  background-color: #00bfa5;
+  border-color: #00bfa5;
   border-radius: 50%;
   border-style: solid;
   border-width: 1px;
@@ -10265,7 +10268,7 @@ span.select2-selection--single:focus,
 .ToggleControlItem input[type=radio]:checked ~ label {
   background: none;
   background-color: white;
-  border: 1px solid #00BFA5;
+  border: 1px solid #00bfa5;
   border-radius: 4px;
 }
 
@@ -11377,7 +11380,7 @@ a.ListNavigation_Next:link {
 }
 
 .Orange {
-  background-color: #FF7800;
+  background-color: #ff7800;
 }
 
 .Plum {
@@ -11676,7 +11679,7 @@ a.ListNavigation_Next:link {
 }
 
 .Page .Text_orange {
-  color: #FF7800;
+  color: #ff7800;
 }
 
 .Page .Text_plum {
@@ -12560,7 +12563,7 @@ button.ms-choice.open {
 }
 
 .LineWarns.BgRed {
-  background-color: #F9D5D5;
+  background-color: #f9d5d5;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-shadow: 0 1px 2px rgba(167, 166, 166, 0.65);
@@ -13316,7 +13319,7 @@ a.cke_dialog_ui_button_ok:hover {
 
 /*-----$9.13 Sapphire Patterns  > AlertBar -----------------------*/
 .AlertBar {
-  background-color: #FF7800;
+  background-color: #ff7800;
   color: #fff;
   left: 240px;
   padding: 10px 28px;
@@ -13343,7 +13346,7 @@ a.cke_dialog_ui_button_ok:hover {
 
 /*Button in AlertBar*/
 .AlertBar .AlertBar_Actions .Button.Small {
-  background-color: #FF7800;
+  background-color: #ff7800;
   border: 1px solid #fff;
   color: #fff;
   margin: 0;
@@ -13351,34 +13354,34 @@ a.cke_dialog_ui_button_ok:hover {
 }
 
 .AlertBar .AlertBar_Actions .Button.Small:hover {
-  background-color: #EE5244;
-  border: 1px solid #FFFFFF;
+  background-color: #ee5244;
+  border: 1px solid #ffffff;
 }
 
 .AlertBar .AlertBar_Actions .Button.Small:disabled {
-  border: 1px solid #FF3E2D;
-  color: #FF3E2D;
+  border: 1px solid #ff3e2d;
+  color: #ff3e2d;
 }
 
 .AlertBar .AlertBar_Actions .Button.Small:hover:active {
-  background-color: #FFFFFF;
-  border: 1px solid #FFFFFF;
-  color: #FF7800;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  color: #ff7800;
 }
 
 /*alertCard red*/
 .AlertBar.red {
-  background-color: #FF3E2D;
+  background-color: #ff3e2d;
 }
 
 /*Buttons*/
 .AlertBar.red .AlertBar_Actions .Button.Small {
-  background-color: #FF3E2D;
+  background-color: #ff3e2d;
 }
 
 .AlertBar.red .AlertBar_Actions .Button.Small:hover {
   background-color: #d42013;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
 }
 
 .AlertBar.red .AlertBar_Actions .Button.Small:disabled {
@@ -13387,24 +13390,24 @@ a.cke_dialog_ui_button_ok:hover {
 }
 
 .AlertBar.red .AlertBar_Actions .Button.Small:hover:active {
-  background-color: #FFFFFF;
-  border: 1px solid #FFFFFF;
-  color: #FF3E2D;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  color: #ff3e2d;
 }
 
 /*alertCard green*/
 .AlertBar.green {
-  background-color: #7CB342;
+  background-color: #7cb342;
 }
 
 /*Buttons*/
 .AlertBar.green .AlertBar_Actions .Button.Small {
-  background-color: #7CB342;
+  background-color: #7cb342;
 }
 
 .AlertBar.green .AlertBar_Actions .Button.Small:hover {
   background-color: #639131;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
 }
 
 .AlertBar.green .AlertBar_Actions .Button.Small:disabled {
@@ -13413,9 +13416,9 @@ a.cke_dialog_ui_button_ok:hover {
 }
 
 .AlertBar.green .AlertBar_Actions .Button.Small:hover:active {
-  background-color: #FFFFFF;
-  border: 1px solid #FFFFFF;
-  color: #7CB342;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  color: #7cb342;
 }
 
 /*-----$9.14 Sapphire Patterns  > StatusBadge -----------------------*/
@@ -13430,45 +13433,45 @@ a.cke_dialog_ui_button_ok:hover {
 }
 
 .StatusBadges.BadgeOrange {
-  background-color: #FF7800;
-  border: 1px solid #FF7800;
+  background-color: #ff7800;
+  border: 1px solid #ff7800;
   color: #fff;
 }
 
 .StatusBadges.BadgeYellow {
-  background-color: #E6E2AA;
-  border: 1px solid #E6E2AA;
-  color: #928D09;
+  background-color: #e6e2aa;
+  border: 1px solid #e6e2aa;
+  color: #928d09;
 }
 
 .StatusBadges.BadgeRed {
-  background-color: #FFDEDE;
-  border: 1px solid #FFDEDE;
-  color: #FF9496;
+  background-color: #ffdede;
+  border: 1px solid #ffdede;
+  color: #ff9496;
 }
 
 .StatusBadges.BadgeGreen {
-  background-color: #C2DEA8;
-  border: 1px solid #C2DEA8;
-  color: #4C762B;
+  background-color: #c2dea8;
+  border: 1px solid #c2dea8;
+  color: #4c762b;
 }
 
 .StatusBadges.BadgeGrey {
-  background-color: #C9CDCE;
-  border: 1px solid #C9CDCE;
-  color: #9A9A9A;
+  background-color: #c9cdce;
+  border: 1px solid #c9cdce;
+  color: #9a9a9a;
 }
 
 .StatusBadges.BadgeBlue {
-  background-color: #31708F;
-  border: 1px solid #31708F;
+  background-color: #31708f;
+  border: 1px solid #31708f;
   color: #fff;
 }
 
 .StatusBadges.BadgeWhite {
   background-color: #fff;
-  border: 1px solid #B6D882;
-  color: #B6D882;
+  border: 1px solid #b6d882;
+  color: #b6d882;
 }
 
 /*New Parameters StatusBadge*/
@@ -13481,43 +13484,43 @@ a.cke_dialog_ui_button_ok:hover {
 
 .StatusBadges.InvertBackground.BadgeGreen {
   background-color: #fff;
-  border: 1px solid #169C20;
-  color: #169C20;
+  border: 1px solid #169c20;
+  color: #169c20;
 }
 
 .StatusBadges.InvertBackground.BadgeYellow {
   background-color: #fff;
-  border: 1px solid #EAB62B;
-  color: #EAB62B;
+  border: 1px solid #eab62b;
+  color: #eab62b;
 }
 
 .StatusBadges.InvertBackground.BadgeGrey {
   background-color: #fff;
-  border: 1px solid #DAE0E4;
-  color: #DAE0E4;
+  border: 1px solid #dae0e4;
+  color: #dae0e4;
 }
 
 .StatusBadges.InvertBackground.BadgeBlue {
   background-color: #fff;
-  border: 1px solid #31708F;
-  color: #31708F;
+  border: 1px solid #31708f;
+  color: #31708f;
 }
 
 /*SmallHeight*/
 /*IconTextColor*/
 .StatusBadges.InvertBackground.IconTextRed,
 .StatusBadges.IconTextRed {
-  color: #CD1D02;
+  color: #cd1d02;
 }
 
 .StatusBadges.InvertBackground.IconTextBlack,
 .StatusBadges.IconTextBlack {
-  color: #0C1D22;
+  color: #0c1d22;
 }
 
 /*-----$9.15 Sapphire Patterns  > GroupList -----------------------*/
 .GroupList .GroupList_header {
-  color: #5C5C5C;
+  color: #5c5c5c;
   font-size: 14px;
   font-weight: 600;
   line-height: 22px;
@@ -13534,8 +13537,8 @@ a.cke_dialog_ui_button_ok:hover {
 }
 
 .GroupList .SectionExpandable_header {
-  background-color: #E9E9E9;
-  border: 1px solid #E9E9E9;
+  background-color: #e9e9e9;
+  border: 1px solid #e9e9e9;
 }
 
 .GroupList .ExpandableContainer_Title {
@@ -13547,7 +13550,7 @@ a.cke_dialog_ui_button_ok:hover {
 }
 
 .GroupList .SectionExpandable_content {
-  border: 1px solid #E9E9E9;
+  border: 1px solid #e9e9e9;
 }
 
 /*GtoupList inside ExpandableContainer*/
@@ -13561,7 +13564,7 @@ a.cke_dialog_ui_button_ok:hover {
 
 /*-----$9.16 Sapphire Patterns  > GroupListLine -----------------------*/
 .GroupListLine {
-  border-bottom: 1px solid #D6D6D6;
+  border-bottom: 1px solid #d6d6d6;
   display: flex;
   padding: 15px 25px;
   width: 100%;
@@ -13572,7 +13575,7 @@ a.cke_dialog_ui_button_ok:hover {
 }
 
 .GroupListLine_title {
-  border-right: 1px solid #D6D6D6;
+  border-right: 1px solid #d6d6d6;
   display: flex;
   flex-direction: row;
   min-width: 250px;
@@ -13601,8 +13604,8 @@ a.cke_dialog_ui_button_ok:hover {
 
 /*-----$10.2 NumberCircle-----------------------*/
 .NumberCircle {
-  background-color: #FF7800;
-  border: 1px solid #FF7800;
+  background-color: #ff7800;
+  border: 1px solid #ff7800;
   border-radius: 50%;
   color: #fff;
   font-size: 11px;
@@ -13867,11 +13870,11 @@ a.cke_dialog_ui_button_ok:hover {
 /**** Borders  *****/
 /** redborder **/
 .RedBorder {
-  border: 1px solid #FF3E2D;
+  border: 1px solid #ff3e2d;
 }
 
 .GrayBorder {
-  border: 1px solid #D6D6D6;
+  border: 1px solid #d6d6d6;
 }
 
 /*------------------------------------*\
@@ -13915,9 +13918,9 @@ a.cke_dialog_ui_button_ok:hover {
 }
 
 .Page .MainContent_Container {
+  background-color: #fff;
   margin-top: 20px;
   padding: 8px 24px;
-  background-color: #fff;
 }
 
 .Page .MainContent_Container.IsTransparent {
@@ -13953,8 +13956,8 @@ a.cke_dialog_ui_button_ok:hover {
 .Sidebar_logo {
   padding: 0 10px;
   position: relative;
-  width: 100%;
   text-align: center;
+  width: 100%;
 }
 
 .Sidebar_logo .icon {
@@ -14426,11 +14429,11 @@ div.time-picker li.selected {
 }
 
 .MandatoryField {
-  position: absolute;
   color: #bf1601;
   font-size: 13px;
   font-weight: bold;
   padding: 5px;
+  position: absolute;
 }
 
 /*Favorites BO*/
@@ -14501,7 +14504,7 @@ div.time-picker li.selected {
 }
 
 .ToolbarByTool .ListRecords > a > div {
-  background-color: #F7F4EF;
+  background-color: #f7f4ef;
   display: table-cell;
   padding: 10px;
   padding-bottom: 0;
@@ -14822,7 +14825,7 @@ pre {
 */
 .UploadBox {
   background-color: rgb(248, 248, 248);
-  border: 1px solid #CCCCCC;
+  border: 1px solid #cccccc;
   border-radius: 5px;
   font-weight: bold;
   padding: 5px 10px 5px 10px;
@@ -14855,7 +14858,7 @@ New SelectSystem rectification css
 }
 
 .bordercolor--darkgrey {
-  border-color: #7C7F7F;
+  border-color: #7c7f7f;
 }
 
 .bordercolor--red {
@@ -14871,11 +14874,11 @@ New SelectSystem rectification css
 }
 
 .bordercolor--primary {
-  border-color: #11455D;
+  border-color: #11455d;
 }
 
 .bordercolor--secondary {
-  border-color: #16979F;
+  border-color: #16979f;
 }
 
 .borderwidth--small {
@@ -15058,8 +15061,8 @@ input::-webkit-inner-spin-button {
 }
 
 .SpinnerInput_Container > a {
-  background-color: #FFF;
-  border: 1px solid #C8D8DC;
+  background-color: #fff;
+  border: 1px solid #c8d8dc;
   cursor: pointer;
   display: inline-block;
   height: 36px;
@@ -15182,8 +15185,8 @@ input::-webkit-inner-spin-button {
 
 .FA .SegmentedControlItem,
 .AR .SegmentedControlItem {
-  border-left: 1px solid #0DA2AA;
-  border-right: solid 1px #0DA2AA;
+  border-left: 1px solid #0da2aa;
+  border-right: solid 1px #0da2aa;
   margin-right: -1px;
 }
 
@@ -15206,7 +15209,7 @@ input::-webkit-inner-spin-button {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 5px;
   border-left: none;
-  border-right: solid 1px #0DA2AA;
+  border-right: solid 1px #0da2aa;
   border-top-left-radius: 0;
   border-top-right-radius: 5px;
 }
@@ -15223,7 +15226,7 @@ input::-webkit-inner-spin-button {
 .AR .SegmentedControlItem:last-child {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 0;
-  border-left: solid 1px #0DA2AA;
+  border-left: solid 1px #0da2aa;
   border-top-left-radius: 5px;
   border-top-right-radius: 0;
 }
@@ -15256,13 +15259,13 @@ input::-webkit-inner-spin-button {
 
 .SegmentedControlItem label:hover,
 .SegmentedControlItem label:focus {
-  background: #E6F3F5;
+  background: #e6f3f5;
 }
 
 .SegmentedControlItem > input[type=radio]:checked ~ label,
 .SegmentedControlItem > input[type=checkbox]:checked ~ label {
-  background: #0DA2AA;
-  color: #FFF;
+  background: #0da2aa;
+  color: #fff;
 }
 
 .SegmentedControlItem > input:disabled ~ label,
