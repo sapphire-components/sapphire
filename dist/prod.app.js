@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.285 || Generated: Fri Feb 20 2026 16:42:49 GMT+0000 (Western European Standard Time) */
+/*! prod.app.js || Version: 5.5.285 || Generated: Tue Feb 24 2026 11:25:35 GMT+0000 (Western European Standard Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -16,6 +16,7 @@ var map = {
 	"./05-components/layout/subLayoutLeft.js": "./src/components/05-components/layout/subLayoutLeft.js",
 	"./05-components/v3-pat-2026/badge-box/scripts.js": "./src/components/05-components/v3-pat-2026/badge-box/scripts.js",
 	"./05-components/v3-pat-2026/button-pending/script.js": "./src/components/05-components/v3-pat-2026/button-pending/script.js",
+	"./05-components/v3-pat-2026/window-navigate/script.js": "./src/components/05-components/v3-pat-2026/window-navigate/script.js",
 	"./05-components/v3-pat-2026/window-panel/script.js": "./src/components/05-components/v3-pat-2026/window-panel/script.js",
 	"./05-components/v3-pat/actions-menu/scripts.js": "./src/components/05-components/v3-pat/actions-menu/scripts.js",
 	"./05-components/v3-pat/button-link/scripts.js": "./src/components/05-components/v3-pat/button-link/scripts.js",
@@ -1116,6 +1117,25 @@ class ButtonPending {
 }
 
 window.top.SapphireWidgets.ButtonPending = ButtonPending;
+
+
+/***/ }),
+
+/***/ "./src/components/05-components/v3-pat-2026/window-navigate/script.js":
+/***/ (function() {
+
+/* Component WindowNavigate */
+(function ($, window, document, SapphireWidgets) {
+	const go = (config) => {
+		console.log('WindowNavigate go', config);
+		const targetWindow = config.top ? window.top : window;
+		targetWindow.location.assign(config.url);
+	};
+
+	SapphireWidgets.WindowNavigate = {
+		go: go,
+	};
+})(jQuery, window, document, SapphireWidgets);
 
 
 /***/ }),
@@ -5397,6 +5417,8 @@ var SapphireWidgets = (window.SapphireWidgets = window.SapphireWidgets || {});
 SapphireWidgets.ResizeParentIframe = function (options = {}) {
 	console.log('options', window.location.pathname, options);
 
+	const iframeMinHeight = options.minHeight || 0;
+
 	$(window).load(function () {
 		const _body = document.body;
 		const _iframe = window.frameElement;
@@ -5494,6 +5516,12 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
 					let _bodyHeight = _body.scrollHeight + _getBodyTop();
 					_bodyHeight += window.innerHeight - document.documentElement.clientHeight; // Adding scrollbar height in case it exists.
 					_iframe.style.height = _bodyHeight + 'px';
+
+					console.log('iframeMinHeight', iframeMinHeight, _bodyHeight);
+
+					if (iframeMinHeight > 0 && iframeMinHeight > _bodyHeight) {
+						_iframe.style.height = iframeMinHeight + 'px';
+					}
 				} catch (error) {
 					console.error('Error trying to resize parent iframe: ' + error.message);
 				}

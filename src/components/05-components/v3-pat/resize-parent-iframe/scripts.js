@@ -3,6 +3,8 @@ var SapphireWidgets = (window.SapphireWidgets = window.SapphireWidgets || {});
 SapphireWidgets.ResizeParentIframe = function (options = {}) {
 	console.log('options', window.location.pathname, options);
 
+	const iframeMinHeight = options.minHeight || 0;
+
 	$(window).load(function () {
 		const _body = document.body;
 		const _iframe = window.frameElement;
@@ -100,6 +102,12 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
 					let _bodyHeight = _body.scrollHeight + _getBodyTop();
 					_bodyHeight += window.innerHeight - document.documentElement.clientHeight; // Adding scrollbar height in case it exists.
 					_iframe.style.height = _bodyHeight + 'px';
+
+					console.log('iframeMinHeight', iframeMinHeight, _bodyHeight);
+
+					if (iframeMinHeight > 0 && iframeMinHeight > _bodyHeight) {
+						_iframe.style.height = iframeMinHeight + 'px';
+					}
 				} catch (error) {
 					console.error('Error trying to resize parent iframe: ' + error.message);
 				}
