@@ -1,11 +1,22 @@
 /* Component WindowNavigate */
 (function ($, window, document, SapphireWidgets) {
 	const go = (config) => {
-		console.log('WindowNavigate go', config);
 		const targetWindow = config.top ? window.top : window;
-		targetWindow.location.assign(config.url);
+		let finalUrl = config.url;
+		if (config.queryString) {
+			const params = JSON.parse(config.queryString);
+			const urlObj = new URL(finalUrl, targetWindow.location.origin);
+			if (Array.isArray(params)) {
+				params.forEach(({ Key, Value }) => {
+					if (Key != null && Value != null) {
+						urlObj.searchParams.append(Key, Value);
+					}
+				});
+			}
+			finalUrl = urlObj.toString();
+		}
+		targetWindow.location.assign(finalUrl);
 	};
-
 	SapphireWidgets.WindowNavigate = {
 		go: go,
 	};

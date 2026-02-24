@@ -121,7 +121,7 @@
 				top: 80px;
 				z-index: 2;
 
-				~.LayoutBase-secondary {
+				~ .LayoutBase-secondary {
 					display: none;
 				}
 			}
@@ -132,7 +132,7 @@
 			top: 80px;
 			display: flex;
 			border-bottom: 1px solid $light-grey;
-			z-index: 2;
+			z-index: 3; //it was 2. bumped after sticky first column in Administrations timeline
 
 			&.isFixed {
 				border-bottom: solid 2px $light-grey;
@@ -293,7 +293,7 @@
 			top: 79px;
 			z-index: 3;
 
-			&:not(:empty)+.LayoutBase-secondary {
+			&:not(:empty) + .LayoutBase-secondary {
 				top: 132px;
 			}
 		}
@@ -308,7 +308,7 @@
 		.TopInfo {
 			height: 100%;
 
-			>div.ContextButtons {
+			> div.ContextButtons {
 				@include flex-center-vertically();
 
 				height: 100%;
@@ -317,7 +317,7 @@
 				&.FlexColumn {
 					flex-direction: column;
 
-					>div {
+					> div {
 						text-align: right;
 						width: 100%;
 					}
@@ -345,7 +345,7 @@
 }
 
 .LayoutBase--sideMenu {
-	.LayoutBase-MainMenu:not(:empty)~.LayoutBase-header {
+	.LayoutBase-MainMenu:not(:empty) ~ .LayoutBase-header {
 		top: 60px;
 	}
 
@@ -384,7 +384,7 @@
 					visibility: hidden;
 				}
 
-				.Columns .Column>div {
+				.Columns .Column > div {
 					height: 90px;
 				}
 			}
@@ -614,8 +614,8 @@ body.LayoutBase .os-internal-ui-widget-overlay {
 
 // @TODO: is it possible to change this?
 .LayoutBase.Page .LayoutBase-Content-MainWorkArea .Content,
-.LayoutBase.Page .SystemWideSidebar~.PatientDetails_content .PatientDetails__MainWorkArea .Content,
-.LayoutBase.Page .PatientDetailsLayout .PatientDetails_content .PatientDetails__MainWorkArea>.Content {
+.LayoutBase.Page .SystemWideSidebar ~ .PatientDetails_content .PatientDetails__MainWorkArea .Content,
+.LayoutBase.Page .PatientDetailsLayout .PatientDetails_content .PatientDetails__MainWorkArea > .Content {
 	margin: 0;
 	padding-bottom: 0;
 	padding-left: 0;
@@ -625,39 +625,39 @@ body.LayoutBase .os-internal-ui-widget-overlay {
 }
 
 .AR.LayoutBase.Page .LayoutBase-Content-MainWorkArea .Content,
-.AR.LayoutBase.Page .SystemWideSidebar~.PatientDetails_content .PatientDetails__MainWorkArea .Content,
-.AR.LayoutBase.Page .PatientDetailsLayout .PatientDetails_content .PatientDetails__MainWorkArea>.Content {
+.AR.LayoutBase.Page .SystemWideSidebar ~ .PatientDetails_content .PatientDetails__MainWorkArea .Content,
+.AR.LayoutBase.Page .PatientDetailsLayout .PatientDetails_content .PatientDetails__MainWorkArea > .Content {
 	padding-left: 40px;
 	padding-right: 0;
 }
 
-.LayoutBase.Page .LayoutBase-iframesidebar.notExpandable~.LayoutBase-Content .LayoutBase-Content-MainWorkArea .Content {
+.LayoutBase.Page .LayoutBase-iframesidebar.notExpandable ~ .LayoutBase-Content .LayoutBase-Content-MainWorkArea .Content {
 	padding-right: 262px !important;
 }
 
-.AR.LayoutBase.Page .LayoutBase-iframesidebar.notExpandable~.LayoutBase-Content .LayoutBase-Content-MainWorkArea .Content {
+.AR.LayoutBase.Page .LayoutBase-iframesidebar.notExpandable ~ .LayoutBase-Content .LayoutBase-Content-MainWorkArea .Content {
 	padding-left: 262px !important;
 	padding-right: 0 !important;
 }
 
 .LayoutBase-iframesidebar.notExpandable ~ .LayoutBase-header,
 .LayoutBase-SystemWideSidebar.SystemWideSidebar.Open ~ .LayoutBase-header {
-    right: 262px;
-    width: auto;
+	right: 262px;
+	width: auto;
 	padding: 0;
 }
 
 .AR .LayoutBase-iframesidebar.notExpandable ~ .LayoutBase-header,
 .AR .LayoutBase-SystemWideSidebar.SystemWideSidebar.Open ~ .LayoutBase-header {
 	right: 0;
-    left: 262px;
+	left: 262px;
 }
 
 html .Page .PatientDetailsLayout {
 	padding-top: 0;
 }
 
-.LayoutBase-Content .LayoutBase-secondary .LayoutBase-secondary-aside>a .DisplayInlineBlock {
+.LayoutBase-Content .LayoutBase-secondary .LayoutBase-secondary-aside > a .DisplayInlineBlock {
 	display: block;
 }
 
@@ -667,11 +667,11 @@ html .Page .PatientDetailsLayout {
 
 .LayoutBase-secondary-aside .PendingItemsContainer.OSInline,
 .LayoutBase-secondary-aside .PendingItemsContainer.OSInline .OSInline,
-.LayoutBase-secondary-aside>div.OSInline,
+.LayoutBase-secondary-aside > div.OSInline,
 .LayoutBase-secondary-aside a .OSInline,
 .LayoutBase-secondary-aside .ToggleButton.OSInline,
-.LayoutBase-secondary-aside>span>a>.DisplayInlineBlock,
-.LayoutBase-secondary-aside>span>span>a>.DisplayInlineBlock {
+.LayoutBase-secondary-aside > span > a > .DisplayInlineBlock,
+.LayoutBase-secondary-aside > span > span > a > .DisplayInlineBlock {
 	display: block;
 }
 
@@ -798,7 +798,7 @@ html .Page .PatientDetailsLayout {
 	}
 }
 
-.LayoutBase-iframesidebar.notExpandable+.LayoutBase-Content.PatientDetails_content .LayoutBase--fixedActions {
+.LayoutBase-iframesidebar.notExpandable + .LayoutBase-Content.PatientDetails_content .LayoutBase--fixedActions {
 	width: calc(67% - (#{$sapphire-sizes--large} + 151px));
 }
 
