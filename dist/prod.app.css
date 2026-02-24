@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.286 || Generated: Tue Feb 24 2026 11:49:35 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.5.287 || Generated: Tue Feb 24 2026 16:33:18 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -5792,7 +5792,7 @@ div.Feedback_Message_Info span.lasa-term {
   top: 80px;
   display: flex;
   border-bottom: 1px solid #d6d6d6;
-  z-index: 2;
+  z-index: 3;
 }
 .LayoutBase-Content .LayoutBase-secondary.isFixed {
   border-bottom: solid 2px #d6d6d6;

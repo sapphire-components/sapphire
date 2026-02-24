@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.286 || Generated: Tue Feb 24 2026 11:49:35 GMT+0000 (Western European Standard Time) */
+/*! prod.app.js || Version: 5.5.287 || Generated: Tue Feb 24 2026 16:33:18 GMT+0000 (Western European Standard Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -1127,11 +1127,22 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 /* Component WindowNavigate */
 (function ($, window, document, SapphireWidgets) {
 	const go = (config) => {
-		console.log('WindowNavigate go', config);
 		const targetWindow = config.top ? window.top : window;
-		targetWindow.location.assign(config.url);
+		let finalUrl = config.url;
+		if (config.queryString) {
+			const params = JSON.parse(config.queryString);
+			const urlObj = new URL(finalUrl, targetWindow.location.origin);
+			if (Array.isArray(params)) {
+				params.forEach(({ Key, Value }) => {
+					if (Key != null && Value != null) {
+						urlObj.searchParams.append(Key, Value);
+					}
+				});
+			}
+			finalUrl = urlObj.toString();
+		}
+		targetWindow.location.assign(finalUrl);
 	};
-
 	SapphireWidgets.WindowNavigate = {
 		go: go,
 	};
