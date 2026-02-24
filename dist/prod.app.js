@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.288 || Generated: Tue Feb 24 2026 16:48:29 GMT+0000 (Western European Standard Time) */
+/*! prod.app.js || Version: 5.5.289 || Generated: Tue Feb 24 2026 17:42:45 GMT+0000 (Western European Standard Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -5426,7 +5426,7 @@ __webpack_require__("./src/components/05-components/v3-pat/panel/sapphire-panel.
 var SapphireWidgets = (window.SapphireWidgets = window.SapphireWidgets || {});
 
 SapphireWidgets.ResizeParentIframe = function (options = {}) {
-	console.log('options', window.location.pathname, options);
+	// console.log('options', window.location.pathname, options);
 
 	const iframeMinHeight = options.minHeight || 0;
 
@@ -5527,8 +5527,6 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
 					let _bodyHeight = _body.scrollHeight + _getBodyTop();
 					_bodyHeight += window.innerHeight - document.documentElement.clientHeight; // Adding scrollbar height in case it exists.
 					_iframe.style.height = _bodyHeight + 'px';
-
-					console.log('iframeMinHeight', iframeMinHeight, _bodyHeight);
 
 					if (iframeMinHeight > 0 && iframeMinHeight > _bodyHeight) {
 						_iframe.style.height = iframeMinHeight + 'px';
@@ -8362,11 +8360,13 @@ $(window).load(function() {
 
 /* Component ShiftTable */
 SapphireWidgets.ShiftTable = (widgetId) => {
-	const topLimit = 190;
+	const topLimitWithIframe = 190;
+	const topLimitWithoutIframe = 173;
+	const headerTopWithoutIframe = 154;
 	const firstColumnWidth = 400;
 
 	$(document).ready(() => {
-		console.log('ShiftTable', widgetId);
+		// console.log('ShiftTable', widgetId);
 
 		const shiftTableEl = document.getElementById(widgetId);
 
@@ -8382,7 +8382,6 @@ SapphireWidgets.ShiftTable = (widgetId) => {
 
 			const iframeEl = window.frameElement;
 			if (!iframeEl) {
-				console.log('elRect', elRect);
 				return elRect;
 			}
 
@@ -8404,22 +8403,31 @@ SapphireWidgets.ShiftTable = (widgetId) => {
 
 		function calculateFloatingHeader() {
 			const rectContent = getElementTopWindowRect('.ShiftTable__Content');
-			const willBe = window.top.scrollY - rectContent.top + 12;
-			if (rectContent.outerTop <= topLimit) {
-				shiftTableEl.dataset.stickyheader = 'true';
-				shiftTableEl.style.setProperty('--shifttable-header-top', `${willBe}px`);
+			if (isInIframe()) {
+				const willBe = window.top.scrollY - rectContent.top + 12;
+				if (rectContent.outerTop <= topLimitWithIframe) {
+					shiftTableEl.dataset.stickyheader = 'true';
+					shiftTableEl.style.setProperty('--shifttable-header-top', `${willBe}px`);
+				} else {
+					shiftTableEl.style.removeProperty('--shifttable-header-top');
+					shiftTableEl.dataset.stickyheader = 'false';
+				}
 			} else {
-				shiftTableEl.style.removeProperty('--shifttable-header-top');
-				shiftTableEl.dataset.stickyheader = 'false';
+				const willBe = headerTopWithoutIframe;
+				if (window.scrollY >= topLimitWithoutIframe) {
+					shiftTableEl.dataset.stickyheader = 'true';
+					shiftTableEl.style.setProperty('--shifttable-header-top', `${willBe}px`);
+				} else {
+					shiftTableEl.style.removeProperty('--shifttable-header-top');
+					shiftTableEl.dataset.stickyheader = 'false';
+				}
 			}
 		}
 
 		setTimeout(() => {
-			if (isInIframe()) {
-				window.top.addEventListener('scroll', () => {
-					calculateFloatingHeader();
-				});
-			}
+			window.top.addEventListener('scroll', () => {
+				calculateFloatingHeader();
+			});
 
 			shiftTableEl.addEventListener('scroll', () => {
 				const horizontalScroll = shiftTableEl.scrollLeft;
