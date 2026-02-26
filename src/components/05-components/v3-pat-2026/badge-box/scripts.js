@@ -2,21 +2,19 @@
 (function ($, window, document, SapphireWidgets) {
 	const create = (config) => {
 		const widgetEl = document.getElementById(config.widgetId);
-
 		const abovePlaceholderEl = widgetEl.querySelector('.badge-box-above');
-		const maxValue = config.max;
-		const minValue = config.min;
 		const minusButtonEl = widgetEl.querySelector('.badge-box-button.minus');
 		const plusButtonEl = widgetEl.querySelector('.badge-box-button.plus');
+		const valueInputEl = widgetEl.querySelector('input[type="text"]');
+		const maxValue = config.max;
+		const minValue = config.min;
 		const step = config.step;
 		const timeoutDelay = config.timeoutDelay;
-		const valueInputEl = widgetEl.querySelector('input[type="text"]');
 
 		let timeout = null;
-		let value = null;
+		let value = config.value;
 
-		if (config.value !== '') {
-			value = config.value;
+		if (config.isEditable) {
 			abovePlaceholderEl.contentEditable = true;
 			abovePlaceholderEl.textContent = value;
 
@@ -55,108 +53,77 @@
 						const rawValue = abovePlaceholderEl.textContent.trim();
 
 						// If cleared, still trigger render so bindings update
-						if (rawValue === '') {
-							value = '';
+						if (rawValue === '' || isNaN(rawValue)) {
+							value = minValue;
 							render();
 							return;
 						}
 
-						if (isNaN(rawValue)) {
-							return;
-						}
-
-						// Normalize to avoid leading zeros like 01, 001, etc.
-						const numericValue = parseFloat(rawValue);
-						const normalizedValue = `${numericValue}`;
-
-						value = normalizedValue;
-
-						// Only touch the DOM / caret when we actually changed the string (e.g. 01 -> 1)
-						if (normalizedValue !== rawValue) {
-							abovePlaceholderEl.textContent = normalizedValue;
-
-							const selection = window.getSelection();
-							const range = document.createRange();
-							const textNode = abovePlaceholderEl.firstChild;
-							const pos = textNode ? textNode.length : 0;
-
-							if (selection && range && textNode) {
-								range.setStart(textNode, pos);
-								range.collapse(true);
-								selection.removeAllRanges();
-								selection.addRange(range);
-							}
-						}
-
 						// Keep underlying value, input, and buttons in sync
-						render({ skipAbovePlaceholderUpdate: true });
+						render(rawValue);
 					}, 0);
 				}
 
 				if (event.key === 'ArrowUp') {
 					event.preventDefault();
-
-					const currentNumeric = isNaN(parseFloat(value)) ? parseFloat(minValue) : parseFloat(value);
-
-					value = currentNumeric + parseFloat(step);
+					value += step;
 					render();
 					event.stopPropagation();
 				} else if (event.key === 'ArrowDown') {
 					event.preventDefault();
-
-					const currentNumeric = isNaN(parseFloat(value)) ? parseFloat(minValue) : parseFloat(value);
-
-					value = currentNumeric - parseFloat(step);
+					value -= step;
 					render();
 					event.stopPropagation();
 				}
 			});
 		}
 
-		const render = (options) => {
-			const skipAbovePlaceholderUpdate = options && options.skipAbovePlaceholderUpdate;
-
-			const isEmpty = value === '' || value === null || typeof value === 'undefined';
-
-			// Clamp only when we have a numeric value
-			if (!isEmpty) {
-				if (parseFloat(value) < parseFloat(minValue)) {
-					value = parseFloat(minValue);
-				}
-				if (parseFloat(value) > parseFloat(maxValue)) {
-					value = parseFloat(maxValue);
-				}
+		const render = (inputValue) => {
+			if (inputValue) {
+				value = parseFloat(inputValue);
+			}
+			if (value === null || typeof value === 'undefined' || isNaN(value)) {
+				value = minValue;
+			} else if (value < minValue) {
+				value = minValue;
+			} else if (maxValue > minValue && value > maxValue) {
+				value = maxValue;
 			}
 
-			if (isEmpty) {
-				valueInputEl.value = '';
-				valueInputEl.setAttribute('value', '');
-
-				if (!skipAbovePlaceholderUpdate) {
-					abovePlaceholderEl.textContent = '';
-				}
-			} else {
-				valueInputEl.value = value;
-				valueInputEl.setAttribute('value', value);
-
-				if (!skipAbovePlaceholderUpdate) {
-					abovePlaceholderEl.textContent = value;
-				}
-			}
-
-			// For button state, treat empty as min value
-			const numericForButtons = isEmpty ? parseFloat(minValue) : parseFloat(value);
-
-			if (numericForButtons <= parseFloat(minValue)) {
+			if (value <= minValue) {
 				minusButtonEl.classList.add('is-disabled');
 			} else {
 				minusButtonEl.classList.remove('is-disabled');
 			}
 
-			if (numericForButtons >= parseFloat(maxValue)) {
+			if (maxValue > minValue && value >= maxValue) {
 				plusButtonEl.classList.add('is-disabled');
 			} else {
 				plusButtonEl.classList.remove('is-disabled');
+			}
+
+			valueInputEl.value = value;
+			valueInputEl.setAttribute('value', value);
+
+			if (!inputValue) {
+				abovePlaceholderEl.textContent = value;
+			} else {
+				// Only touch the DOM / caret when we modified the string (e.g. fixed it to minimum)
+				if (value.toString() !== inputValue) {
+					abovePlaceholderEl.textContent = value;
+
+					const selection = window.getSelection();
+					const range = document.createRange();
+					const textNode = abovePlaceholderEl.firstChild;
+					const pos = textNode ? textNode.length : 0;
+
+					if (selection && range && textNode) {
+						range.setStart(textNode, pos);
+						range.collapse(true);
+						selection.removeAllRanges();
+						selection.addRange(range);
+					}
+				}
 			}
 
 			clearTimeout(timeout);
