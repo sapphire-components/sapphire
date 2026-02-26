@@ -13,6 +13,7 @@
 	};
 
 	var DateTimeRangePicker = function (config) {
+		console.log('config', config);
 
 		this.config = config;
 		this.currentLocale = config.currentLocale;
@@ -39,9 +40,8 @@
 		// Just to force kuwait arabic version
 		if (this.currentLocale === 'AR') {
 			moment.locale('ar-kw');
-		}
-		else {
-			moment.locale(config.currentLocale)
+		} else {
+			moment.locale(config.currentLocale);
 		}
 
 		var options = {};
@@ -64,19 +64,15 @@
 
 			if (options.timePicker24Hour) {
 				this.config.formatInput = `${this.config.systemDateFormat} HH:mm`;
-				this.config.formatLabel = this.config.hasYearWhenText
-					? 'D MMM YYYY' + stringConnection + ' HH:mm'
-					: 'D MMM' + stringConnection + ' HH:mm';
+				this.config.formatLabel = this.config.hasYearWhenText ? 'D MMM YYYY' + stringConnection + ' HH:mm' : 'D MMM' + stringConnection + ' HH:mm';
 			} else {
 				this.config.formatInput = `${this.config.systemDateFormat} hh:mm A`;
-				this.config.formatLabel = this.config.hasYearWhenText
-					? 'D MMM YYYY' + stringConnection + ' hh:mm A'
-					: 'D MMM' + stringConnection + ' hh:mm A';
+				this.config.formatLabel = this.config.hasYearWhenText ? 'D MMM YYYY' + stringConnection + ' hh:mm A' : 'D MMM' + stringConnection + ' hh:mm A';
 			}
 		} else {
 			this.$widget.addClass('onlyDate');
 
-			//if (!this.config.attachToInput) 
+			//if (!this.config.attachToInput)
 			this.$input.prop('placeholder', 'DD-MM-YYYY');
 
 			this.config.formatInput = this.config.systemDateFormat;
@@ -87,9 +83,7 @@
 			this.$widget.addClass('rangeDates');
 		}
 
-		this.config.formatLabel = this.config.hasWeekDayNameWhenText
-			? 'ddd[, ]' + this.config.formatLabel
-			: this.config.formatLabel;
+		this.config.formatLabel = this.config.hasWeekDayNameWhenText ? 'ddd[, ]' + this.config.formatLabel : this.config.formatLabel;
 
 		options.locale = {
 			direction: config.isRTL ? 'rtl' : 'ltr',
@@ -104,26 +98,22 @@
 
 		const nulldDates = ['01-01-1900 00:00:00', '1900-01-01 00:00:00'];
 
-		if (config.endDate && !nulldDates.some(i => i === config.endDate)) {
+		if (config.endDate && !nulldDates.some((i) => i === config.endDate)) {
 			options.endDate = config.endDate;
 		}
 
-		if (config.maxDate && !nulldDates.some(i => i === config.maxDate)) {
+		if (config.maxDate && !nulldDates.some((i) => i === config.maxDate)) {
 			options.maxDate = config.maxDate;
 		}
 
-		if (config.minDate && !nulldDates.some(i => i === config.minDate)) {
+		if (config.minDate && !nulldDates.some((i) => i === config.minDate)) {
 			options.minDate = config.minDate;
 		}
 
 		if (config.DisabledWeekDays) {
 			var disabledWeekDays = config.DisabledWeekDays.split(',');
 			options.isInvalidDate = function (date) {
-				return disabledWeekDays.includes(
-					moment(date)
-						.day()
-						.toString()
-				);
+				return disabledWeekDays.includes(moment(date).day().toString());
 			};
 		}
 
@@ -226,11 +216,7 @@
 				_this.$calendar
 					.find('.calendar-table thead tr')
 					.eq(0)
-					.after(
-						'<tr><td colspan="7" class="DateTimeRangePicker-calendar-gotoday">' +
-						_this.config.goTodayLabel +
-						'</td></tr>'
-					);
+					.after('<tr><td colspan="7" class="DateTimeRangePicker-calendar-gotoday">' + _this.config.goTodayLabel + '</td></tr>');
 				if (_this.config.drops === 'up') {
 					_this.$calendar.css('top', _this.$calendar.offset().top - 24);
 				}
@@ -293,9 +279,9 @@
 			}
 		});
 
-		this.$input.on('cancel.daterangepicker', function (event, picker) { });
+		this.$input.on('cancel.daterangepicker', function (event, picker) {});
 
-		this.$input.on('outsideClick.daterangepicker', function (event, picker) { });
+		this.$input.on('outsideClick.daterangepicker', function (event, picker) {});
 
 		this.$input.on('timechanged.daterangepicker', function (event, picker) {
 			_this.isEmptyHour = false;
@@ -340,24 +326,12 @@
 		});
 		this.$calendar.on('click', '.DateTimeRangePicker-calendar-clear', function () {
 			if (_this.config.timePicker24Hour) {
-				_this.$calendar
-					.find('.hourselect')
-					.val('0')
-					.trigger('change');
+				_this.$calendar.find('.hourselect').val('0').trigger('change');
 			} else {
-				_this.$calendar
-					.find('.hourselect')
-					.val('12')
-					.trigger('change');
+				_this.$calendar.find('.hourselect').val('12').trigger('change');
 			}
-			_this.$calendar
-				.find('.minuteselect')
-				.val('0')
-				.trigger('change');
-			_this.$calendar
-				.find('.ampmselect')
-				.val('AM')
-				.trigger('change');
+			_this.$calendar.find('.minuteselect').val('0').trigger('change');
+			_this.$calendar.find('.ampmselect').val('AM').trigger('change');
 			_this.isEmptyHour = true;
 			_this.$timeHolder.css('opacity', 0.5);
 			_this.$calendar.find('.DateTimeRangePicker-calendar-clear').addClass('disabled');
@@ -447,31 +421,17 @@
 	};
 
 	DateTimeRangePicker.prototype.handleViewportPosition = function () {
-		if (
-			window.frameElement
-			&& (
-				$(window.frameElement.parentElement).hasClass('tooltipster-content')
-				|| $(window.frameElement.parentElement).hasClass('os-internal-ui-dialog-content')
-			)
-		) {
+		if (window.frameElement && ($(window.frameElement.parentElement).hasClass('tooltipster-content') || $(window.frameElement.parentElement).hasClass('os-internal-ui-dialog-content'))) {
 			return;
 		}
 
 		if (!this.isInViewport()) {
-
 			var coords = this.$calendar[0].getBoundingClientRect();
 			if (this.$calendar.hasClass('drop-up') && this.$calendar[0].getBoundingClientRect().top < 0) {
 				var point = window.scrollY + coords.bottom + this.$input.height() + 7;
-				this.$calendar
-					.removeClass('drop-up')
-					.addClass('drop-down')
-					.css('top', point);
-			}
-			else if (
-				!this.$calendar.hasClass('drop-up')
-				&& this.$calendar[0].getBoundingClientRect().bottom > (window.innerHeight || document.documentElement.clientHeight)
-			) {
-				if (!window.frameElement || (coords.height + this.$input.height() + 7) < document.body.offsetHeight) {
+				this.$calendar.removeClass('drop-up').addClass('drop-down').css('top', point);
+			} else if (!this.$calendar.hasClass('drop-up') && this.$calendar[0].getBoundingClientRect().bottom > (window.innerHeight || document.documentElement.clientHeight)) {
+				if (!window.frameElement || coords.height + this.$input.height() + 7 < document.body.offsetHeight) {
 					var point = window.scrollY + coords.top - coords.height - this.$input.height() - 7;
 					this.$calendar.addClass('drop-up').css('top', point);
 				}
@@ -481,9 +441,7 @@
 
 	DateTimeRangePicker.prototype.isInViewport = function () {
 		var bounding = this.$calendar[0].getBoundingClientRect();
-		return (
-			bounding.top >= 0 && bounding.bottom <= (window.innerHeight + 5 || document.documentElement.clientHeight + 5)
-		);
+		return bounding.top >= 0 && bounding.bottom <= (window.innerHeight + 5 || document.documentElement.clientHeight + 5);
 	};
 
 	DateTimeRangePicker.prototype.clear = function (sendNotification) {
@@ -522,21 +480,12 @@
 
 		if (sendDate || sendDate == undefined) {
 			if (this.isEmptyHour) {
-				OsNotifyWidget(
-					this.config.dateTimeRangePickerFakeNotifyId,
-					this.picker.startDate.format(`${this.config.systemDateFormat} [00:00:00]`) + '|' + this.isEmptyHour
-				);
+				OsNotifyWidget(this.config.dateTimeRangePickerFakeNotifyId, this.picker.startDate.format(`${this.config.systemDateFormat} [00:00:00]`) + '|' + this.isEmptyHour);
 			} else {
 				if (this.config.timePicker) {
-					OsNotifyWidget(
-						this.config.dateTimeRangePickerFakeNotifyId,
-						this.picker.startDate.format(`${this.config.systemDateFormat} HH:mm:ss`) + '|' + this.isEmptyHour
-					);
+					OsNotifyWidget(this.config.dateTimeRangePickerFakeNotifyId, this.picker.startDate.format(`${this.config.systemDateFormat} HH:mm:ss`) + '|' + this.isEmptyHour);
 				} else {
-					OsNotifyWidget(
-						this.config.dateTimeRangePickerFakeNotifyId,
-						this.picker.startDate.format(this.config.systemDateFormat) + '|' + this.isEmptyHour
-					);
+					OsNotifyWidget(this.config.dateTimeRangePickerFakeNotifyId, this.picker.startDate.format(this.config.systemDateFormat) + '|' + this.isEmptyHour);
 				}
 			}
 		} else {

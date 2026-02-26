@@ -33,8 +33,8 @@ $select-system-height: 36px;
 			}
 
 			&:after {
-				filter: grayscale(100%);
 				display: none;
+				filter: grayscale(100%);
 			}
 
 			.select2-selection__rendered {
@@ -85,7 +85,6 @@ $select-system-height: 36px;
 
 		&:after {
 			@include up-down-arrows;
-
 			background-color: transparent;
 			height: 12px;
 			right: 15px;
@@ -171,7 +170,6 @@ $select-system-height: 36px;
 			}
 
 			.select2-selection__choice {
-				width: auto;
 				background-color: $regular-zeta;
 				border: none;
 				border-radius: 0;
@@ -180,11 +178,12 @@ $select-system-height: 36px;
 				font-family: $font-family-latin-bold;
 				line-height: 22px;
 				margin-top: 4px;
+				overflow: hidden;
 				padding: 2px 25px 2px 15px;
 				position: relative;
-				white-space: nowrap;
 				text-overflow: ellipsis;
-				overflow: hidden;
+				white-space: nowrap;
+				width: auto;
 
 				> div {
 					max-width: 350px;
