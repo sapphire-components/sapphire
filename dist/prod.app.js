@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.291 || Generated: Thu Feb 26 2026 19:55:31 GMT+0300 (GMT+03:00) */
+/*! prod.app.js || Version: 5.5.292 || Generated: Fri Feb 27 2026 11:30:27 GMT+0300 (GMT+03:00) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -900,6 +900,12 @@ $(window).unload(function() {
 		if (config.isEditable) {
 			abovePlaceholderEl.contentEditable = true;
 			abovePlaceholderEl.textContent = value;
+			if (value <= minValue) {
+				minusButtonEl.classList.add('is-disabled');
+			}
+			if (maxValue > minValue && value >= maxValue) {
+				plusButtonEl.classList.add('is-disabled');
+			}
 
 			minusButtonEl.addEventListener('click', () => {
 				const currentNumeric = isNaN(parseFloat(value)) ? 0 : parseFloat(value);
@@ -978,43 +984,44 @@ $(window).unload(function() {
 			} else {
 				minusButtonEl.classList.remove('is-disabled');
 			}
-
 			if (maxValue > minValue && value >= maxValue) {
 				plusButtonEl.classList.add('is-disabled');
 			} else {
 				plusButtonEl.classList.remove('is-disabled');
 			}
 
-			valueInputEl.value = value;
-			valueInputEl.setAttribute('value', value);
-
 			if (!inputValue) {
 				abovePlaceholderEl.textContent = value;
-			} else {
+			} else if (value.toString() !== inputValue) {
 				// Only touch the DOM / caret when we modified the string (e.g. fixed it to minimum)
-				if (value.toString() !== inputValue) {
-					abovePlaceholderEl.textContent = value;
+				abovePlaceholderEl.textContent = value;
 
-					const selection = window.getSelection();
-					const range = document.createRange();
-					const textNode = abovePlaceholderEl.firstChild;
-					const pos = textNode ? textNode.length : 0;
+				const selection = window.getSelection();
+				const range = document.createRange();
+				const textNode = abovePlaceholderEl.firstChild;
+				const pos = textNode ? textNode.length : 0;
 
-					if (selection && range && textNode) {
-						range.setStart(textNode, pos);
-						range.collapse(true);
-						selection.removeAllRanges();
-						selection.addRange(range);
-					}
+				if (selection && range && textNode) {
+					range.setStart(textNode, pos);
+					range.collapse(true);
+					selection.removeAllRanges();
+					selection.addRange(range);
 				}
 			}
 
-			clearTimeout(timeout);
+			if (value != valueInputEl.value) {
+				valueInputEl.value = value;
+				valueInputEl.setAttribute('value', value);
 
-			timeout = setTimeout(() => {
-				clearTimeout(timeout);
-				valueInputEl.dispatchEvent(new Event('change', { bubbles: true }));
-			}, timeoutDelay);
+				// If there is already notification pending - don't start another one
+				if (timeout == null) {
+					timeout = setTimeout(() => {
+						clearTimeout(timeout);
+						timeout = null;
+						valueInputEl.dispatchEvent(new Event('change', { bubbles: true }));
+					}, timeoutDelay);
+				}
+			}
 		};
 	};
 
