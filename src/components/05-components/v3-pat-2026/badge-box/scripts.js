@@ -136,7 +136,6 @@
 						clearTimeout(timeout);
 						timeout = null;
 						valueInputEl.dispatchEvent(new Event('change', { bubbles: true }));
-						console.log('Event sent');
 					}, timeoutDelay);
 				}
 			}
