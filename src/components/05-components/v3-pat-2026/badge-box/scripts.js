@@ -17,6 +17,12 @@
 		if (config.isEditable) {
 			abovePlaceholderEl.contentEditable = true;
 			abovePlaceholderEl.textContent = value;
+			if (value <= minValue) {
+				minusButtonEl.classList.add('is-disabled');
+			}
+			if (maxValue > minValue && value >= maxValue) {
+				plusButtonEl.classList.add('is-disabled');
+			}
 
 			minusButtonEl.addEventListener('click', () => {
 				const currentNumeric = isNaN(parseFloat(value)) ? 0 : parseFloat(value);
@@ -95,43 +101,45 @@
 			} else {
 				minusButtonEl.classList.remove('is-disabled');
 			}
-
 			if (maxValue > minValue && value >= maxValue) {
 				plusButtonEl.classList.add('is-disabled');
 			} else {
 				plusButtonEl.classList.remove('is-disabled');
 			}
 
-			valueInputEl.value = value;
-			valueInputEl.setAttribute('value', value);
-
 			if (!inputValue) {
 				abovePlaceholderEl.textContent = value;
-			} else {
+			} else if (value.toString() !== inputValue) {
 				// Only touch the DOM / caret when we modified the string (e.g. fixed it to minimum)
-				if (value.toString() !== inputValue) {
-					abovePlaceholderEl.textContent = value;
+				abovePlaceholderEl.textContent = value;
 
-					const selection = window.getSelection();
-					const range = document.createRange();
-					const textNode = abovePlaceholderEl.firstChild;
-					const pos = textNode ? textNode.length : 0;
+				const selection = window.getSelection();
+				const range = document.createRange();
+				const textNode = abovePlaceholderEl.firstChild;
+				const pos = textNode ? textNode.length : 0;
 
-					if (selection && range && textNode) {
-						range.setStart(textNode, pos);
-						range.collapse(true);
-						selection.removeAllRanges();
-						selection.addRange(range);
-					}
+				if (selection && range && textNode) {
+					range.setStart(textNode, pos);
+					range.collapse(true);
+					selection.removeAllRanges();
+					selection.addRange(range);
 				}
 			}
 
-			clearTimeout(timeout);
+			if (value != valueInputEl.value) {
+				valueInputEl.value = value;
+				valueInputEl.setAttribute('value', value);
 
-			timeout = setTimeout(() => {
-				clearTimeout(timeout);
-				valueInputEl.dispatchEvent(new Event('change', { bubbles: true }));
-			}, timeoutDelay);
+				// If there is already notification pending - don't start another one
+				if (timeout == null) {
+					timeout = setTimeout(() => {
+						clearTimeout(timeout);
+						timeout = null;
+						valueInputEl.dispatchEvent(new Event('change', { bubbles: true }));
+						console.log('Event sent');
+					}, timeoutDelay);
+				}
+			}
 		};
 	};
 
