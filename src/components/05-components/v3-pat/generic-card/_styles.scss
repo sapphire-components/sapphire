@@ -43,9 +43,12 @@
 		border: 1px solid $light-grey;
 		border-radius: $border-radius-medium;
 		display: flex;
+		flex-wrap: wrap;
 		min-height: 56px;
 		overflow-x: clip;
-		flex-wrap: wrap;
+
+		> div {
+		}
 
 		&:not(.IsTransparent).PersonCard__content {
 			background-color: $regular-white;
@@ -119,9 +122,9 @@
 			}
 
 			.PersonCard__actions {
+				margin-left: auto;
 				padding: $sapphire-sizes--medium;
 				padding-left: 0;
-				margin-left: auto;
 			}
 		}
 
@@ -569,13 +572,13 @@
 		}
 
 		.PersonCard__headerLeftInfo {
-			border-top-right-radius: 0;
 			border-bottom-right-radius: 0;
+			border-top-right-radius: 0;
 		}
 
 		.PersonCard__content {
-			border-top-left-radius: 0;
 			border-bottom-left-radius: 0;
+			border-top-left-radius: 0;
 		}
 	}
 }

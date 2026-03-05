@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.292 || Generated: Fri Feb 27 2026 11:30:27 GMT+0300 (GMT+03:00) */
+/*! prod.app.css || Version: 5.5.292 || Generated: Thu Mar 05 2026 17:43:43 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -5913,7 +5913,7 @@ div.Feedback_Message_Info span.lasa-term {
   background-color: #fff;
   position: sticky;
   top: 79px;
-  z-index: 3;
+  z-index: 4;
 }
 .LayoutBase-Content .LayoutBase-emergency:not(:empty) + .LayoutBase-secondary {
   top: 132px;
@@ -14911,9 +14911,9 @@ div.CircledArrow {
   border: 1px solid #d6d6d6;
   border-radius: 8px;
   display: flex;
+  flex-wrap: wrap;
   min-height: 56px;
   overflow-x: clip;
-  flex-wrap: wrap;
 }
 .PersonCard_header:not(.IsTransparent).PersonCard__content {
   background-color: #fff;
@@ -15014,9 +15014,9 @@ div.CircledArrow {
   padding: 16px;
 }
 .PersonCard_header.MediumPadding .PersonCard__actions {
+  margin-left: auto;
   padding: 16px;
   padding-left: 0;
-  margin-left: auto;
 }
 .PersonCard_header.SmallPadding .PersonCard__actions,
 .PersonCard_header.SmallPadding .PersonCard__content,
@@ -15355,12 +15355,12 @@ div.CircledArrow {
   background-color: #ebebeb;
 }
 .PersonCard.PersonCard_ScheduleCanceled .PersonCard__headerLeftInfo {
-  border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
 }
 .PersonCard.PersonCard_ScheduleCanceled .PersonCard__content {
-  border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
 }
 
 .PersonExpandableDiv {

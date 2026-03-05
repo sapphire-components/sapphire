@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.292 || Generated: Fri Feb 27 2026 11:30:27 GMT+0300 (GMT+03:00) */
+/*! prod.app.js || Version: 5.5.292 || Generated: Thu Mar 05 2026 17:43:43 GMT+0000 (Western European Standard Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -1161,6 +1161,11 @@ class WindowPanel {
 
 		this.widgetEl = document.getElementById(initOptions.runtimeId);
 
+		if (!this.widgetEl) {
+			console.warn('WindowPanel element not found', initOptions.runtimeId);
+			return;
+		}
+
 		this.closeOnEsc = initOptions.closeOnEsc;
 		this.linkToOpen = this.widgetEl.querySelector('.windowpanel-linktoopen a');
 		this.minWidth = initOptions.minWidth;
@@ -2084,8 +2089,6 @@ SapphireWidgets.CardChartsPopup = () => {
 	};
 
 	var DateTimeRangePicker = function (config) {
-		console.log('config', config);
-
 		this.config = config;
 		this.currentLocale = config.currentLocale;
 
@@ -4682,7 +4685,8 @@ SapphireWidgets.ModalPopup = {
 		$(document).ready(function() {
 			// Use this code to append the component to the root body
 			// window.frameElement && $(window.frameElement).closest('.MainInteractiveCard-body').length > 0
-			if (false) {} else {
+			if (false) // removed by dead control flow
+{} else {
 				const $widget = $(`#${widgetId}`);
 				const $btnClose = $widget.find('.modalPopup_close');
 
@@ -8297,7 +8301,7 @@ SapphireWidgets.ShiftTable = (widgetId) => {
 	const firstColumnWidth = 400;
 
 	$(document).ready(() => {
-		// console.log('ShiftTable', widgetId);
+		console.log('Hello world', widgetId);
 
 		const shiftTableEl = document.getElementById(widgetId);
 
@@ -8366,7 +8370,10 @@ SapphireWidgets.ShiftTable = (widgetId) => {
 			});
 
 			const resizeObserver = new ResizeObserver(() => {
-				const hourWidth = shiftTableEl.querySelector('.ShiftTableRow__Content .ShiftTableCell').getBoundingClientRect().width;
+				const headerWidth = shiftTableEl.querySelector('.ShiftTable__HeaderLabels').getBoundingClientRect().width;
+				const numberOfHours = Array.from(shiftTableEl.querySelectorAll('.ShiftTable__HeaderLabels .ShiftTableCell')).length;
+				const hourWidth = headerWidth / numberOfHours;
+
 				shiftTableEl.style.setProperty('--shifttable-hour-width', `${hourWidth}px`);
 
 				if (shiftTableEl.querySelector('.HourLine')) {
@@ -9442,12 +9449,12 @@ SapphireWidgets.SpinnerHorizontal = {
 /***/ (function() {
 
 /* Component SplitButton */
-(function($, window, document, SapphireWidgets) {
-	var create = function(config) {
+(function ($, window, document, SapphireWidgets) {
+	var create = function (config) {
 		window[config.widgetId] = new SplitButton(config);
 	};
 
-	var SplitButton = function(config) {
+	var SplitButton = function (config) {
 		var _this = this;
 		this.config = config;
 		this.$widget = $('#' + this.config.widgetId);
@@ -9461,11 +9468,11 @@ SapphireWidgets.SpinnerHorizontal = {
 		}
 	};
 
-	SplitButton.prototype.buildActionsTrigger = function() {
+	SplitButton.prototype.buildActionsTrigger = function () {
 		var _this = this;
 		var classList = this.$buttonLink[0].classList.value;
 		this.$trigger.addClass(classList);
-		$(function() {
+		$(function () {
 			// inside a document ready due to sapphire popup binded events
 			if (!_this.$trigger.hasClass('tooltipstered')) {
 				_this.$trigger.tooltipster({
