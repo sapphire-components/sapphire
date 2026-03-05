@@ -6,7 +6,7 @@ SapphireWidgets.ShiftTable = (widgetId) => {
 	const firstColumnWidth = 400;
 
 	$(document).ready(() => {
-		// console.log('ShiftTable', widgetId);
+		console.log('Hello world', widgetId);
 
 		const shiftTableEl = document.getElementById(widgetId);
 
@@ -75,7 +75,10 @@ SapphireWidgets.ShiftTable = (widgetId) => {
 			});
 
 			const resizeObserver = new ResizeObserver(() => {
-				const hourWidth = shiftTableEl.querySelector('.ShiftTableRow__Content .ShiftTableCell').getBoundingClientRect().width;
+				const headerWidth = shiftTableEl.querySelector('.ShiftTable__HeaderLabels').getBoundingClientRect().width;
+				const numberOfHours = Array.from(shiftTableEl.querySelectorAll('.ShiftTable__HeaderLabels .ShiftTableCell')).length;
+				const hourWidth = headerWidth / numberOfHours;
+
 				shiftTableEl.style.setProperty('--shifttable-hour-width', `${hourWidth}px`);
 
 				if (shiftTableEl.querySelector('.HourLine')) {

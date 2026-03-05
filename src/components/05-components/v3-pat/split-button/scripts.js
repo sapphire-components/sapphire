@@ -1,10 +1,10 @@
 /* Component SplitButton */
-(function($, window, document, SapphireWidgets) {
-	var create = function(config) {
+(function ($, window, document, SapphireWidgets) {
+	var create = function (config) {
 		window[config.widgetId] = new SplitButton(config);
 	};
 
-	var SplitButton = function(config) {
+	var SplitButton = function (config) {
 		var _this = this;
 		this.config = config;
 		this.$widget = $('#' + this.config.widgetId);
@@ -18,11 +18,11 @@
 		}
 	};
 
-	SplitButton.prototype.buildActionsTrigger = function() {
+	SplitButton.prototype.buildActionsTrigger = function () {
 		var _this = this;
 		var classList = this.$buttonLink[0].classList.value;
 		this.$trigger.addClass(classList);
-		$(function() {
+		$(function () {
 			// inside a document ready due to sapphire popup binded events
 			if (!_this.$trigger.hasClass('tooltipstered')) {
 				_this.$trigger.tooltipster({

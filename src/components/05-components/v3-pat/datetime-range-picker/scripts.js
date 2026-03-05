@@ -13,8 +13,6 @@
 	};
 
 	var DateTimeRangePicker = function (config) {
-		console.log('config', config);
-
 		this.config = config;
 		this.currentLocale = config.currentLocale;
 
