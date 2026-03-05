@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.292 || Generated: Thu Mar 05 2026 17:43:43 GMT+0000 (Western European Standard Time) */
+/*! prod.app.js || Version: 5.5.293 || Generated: Thu Mar 05 2026 18:24:30 GMT+0000 (Western European Standard Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -8431,18 +8431,16 @@ SapphireWidgets.ShiftTableCard = widgetId => {
 /***/ "./src/components/05-components/v3-pat/shift-table/shiftTableCardProgress.js":
 /***/ (function() {
 
-SapphireWidgets.ShiftTableCardProgress = config => {
+SapphireWidgets.ShiftTableCardProgress = (config) => {
 	const DEFAULT_PADDING = 0;
 	const DEFAULT_CARD_HEIGHT = 56;
 
 	const setTableCardProgress = () => {
-
 		const cardProgresID = config.widgetId;
 		const shiftEndDateTime = config.shiftEndDateTime;
 		const shiftStartDateTime = config.shiftStartDateTime;
 		const slotBeginDateTime = config.slotBeginDateTime;
 		const slotFinalDateTime = config.slotFinalDateTime;
-
 
 		const $cardProgress = $('#' + cardProgresID);
 		const $shiftTable = $cardProgress.closest('.ShiftTable');
@@ -8464,10 +8462,8 @@ SapphireWidgets.ShiftTableCardProgress = config => {
 			shiftEndStr: shiftEndDateTime,
 			slotStartStr: slotBeginDateTime,
 			slotEndStr: slotFinalDateTime,
-			hourColWidthPx: roundWidth
+			hourColWidthPx: roundWidth,
 		});
-
-
 
 		const direction = $('.Page').hasClass('AR') || $('.Page').hasClass('FA') ? 'right' : 'left';
 
@@ -8505,11 +8501,7 @@ SapphireWidgets.ShiftTableCardProgress = config => {
 
 			$tableRowContent.height($cardProgressList.last().position().top + offset);
 		} else {
-
-
 			$cardProgressList.each(function () {
-				this.style.opacity = 1;
-
 				const $this = $(this);
 				const helper = helperObj($this, $cardProgress, $cardProgressList);
 
@@ -8538,13 +8530,13 @@ SapphireWidgets.ShiftTableCardProgress = config => {
 		}, 500);
 
 		if (hasActions) {
-			$actions.on('click', e => {
+			$actions.on('click', (e) => {
 				e.stopPropagation();
 				$cardProgress.addClass('ShiftTableCardProgress--selected');
 				window.addEventListener('click', onClickOutside);
 			});
 
-			const onClickOutside = e => {
+			const onClickOutside = (e) => {
 				const $target = $(e.target);
 
 				if (!e.target.className.includes($cardProgress) && !$target.parents($cardProgress).is($cardProgress)) {
@@ -8554,31 +8546,22 @@ SapphireWidgets.ShiftTableCardProgress = config => {
 				}
 			};
 		}
-
-
 	};
-
 
 	const parseLocalDateTime = (str) => {
 		// expects "YYYY-MM-DD HH:mm" (or "YYYY-MM-DDTHH:mm")
-		const s = str.trim().replace("T", " ");
-		const [datePart, timePart] = s.split(" ");
-		const [y, m, d] = datePart.split("-").map(Number);
-		const [hh, mm] = timePart.split(":").map(Number);
+		const s = str.trim().replace('T', ' ');
+		const [datePart, timePart] = s.split(' ');
+		const [y, m, d] = datePart.split('-').map(Number);
+		const [hh, mm] = timePart.split(':').map(Number);
 		return new Date(y, m - 1, d, hh, mm, 0, 0); // local time
-	}
+	};
 
 	const clampDate = (date, min, max) => {
 		return new Date(Math.min(Math.max(date.getTime(), min.getTime()), max.getTime()));
-	}
+	};
 
-	const computeCardPosition = ({
-		shiftStartStr,
-		shiftEndStr,
-		slotStartStr,
-		slotEndStr,
-		hourColWidthPx
-	}) => {
+	const computeCardPosition = ({ shiftStartStr, shiftEndStr, slotStartStr, slotEndStr, hourColWidthPx }) => {
 		const gridStart = parseLocalDateTime(shiftStartStr);
 		const gridEnd = parseLocalDateTime(shiftEndStr);
 		let slotStart = parseLocalDateTime(slotStartStr);
@@ -8602,7 +8585,7 @@ SapphireWidgets.ShiftTableCardProgress = config => {
 		const width = durationMinutes * pxPerMinute;
 
 		return { left, width };
-	}
+	};
 
 	const findPreviousSiblingWithClass = (element, className) => {
 		let prev = element?.previousElementSibling;
@@ -8613,7 +8596,7 @@ SapphireWidgets.ShiftTableCardProgress = config => {
 			prev = prev.previousElementSibling;
 		}
 		return null;
-	}
+	};
 
 	const findNextSiblingWithClass = (element, className) => {
 		let next = element?.nextElementSibling;
@@ -8624,13 +8607,7 @@ SapphireWidgets.ShiftTableCardProgress = config => {
 			next = next.nextElementSibling;
 		}
 		return null;
-	}
-
-
-
-
-
-
+	};
 
 	const checkForOverlap = (el1, el2) => {
 		const bounds1 = el1.getBoundingClientRect();
@@ -8671,11 +8648,9 @@ SapphireWidgets.ShiftTableCardProgress = config => {
 		if (window[config.widgetId]) {
 			clearTimeout(window[config.widgetId].resizedFinished);
 
-
 			const allShiftTableCardProgress = document.querySelectorAll('.ShiftTableCardProgress');
-			allShiftTableCardProgress.forEach(element => {
+			allShiftTableCardProgress.forEach((element) => {
 				element.style.top = '';
-				element.style.opacity = 0;
 			});
 
 			window[config.widgetId].resizedFinished = setTimeout(function () {
