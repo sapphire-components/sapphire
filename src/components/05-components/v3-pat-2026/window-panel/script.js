@@ -22,6 +22,11 @@ class WindowPanel {
 
 		this.widgetEl = document.getElementById(initOptions.runtimeId);
 
+		if (!this.widgetEl) {
+			console.warn('WindowPanel element not found', initOptions.runtimeId);
+			return;
+		}
+
 		this.closeOnEsc = initOptions.closeOnEsc;
 		this.linkToOpen = this.widgetEl.querySelector('.windowpanel-linktoopen a');
 		this.minWidth = initOptions.minWidth;
