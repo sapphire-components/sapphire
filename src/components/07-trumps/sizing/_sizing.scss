@@ -22,6 +22,18 @@
 }
 @include min-height-heights(100, 1000);
 
+/* min-width */
+@mixin min-width-value($from, $to, $step: 50) {
+	@for $value from $from through $to {
+		@if ($value % $step == 0) {
+			.min-width-#{$value} {
+				min-width: #{$value}px;
+			}
+		}
+	}
+}
+@include min-width-value(100, 1000);
+
 /* scroll */
 @mixin scroll-heights($from, $to, $step: 50) {
 	@for $value from $from through $to {

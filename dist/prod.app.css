@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.293 || Generated: Thu Mar 05 2026 18:24:30 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.5.293 || Generated: Fri Mar 06 2026 13:50:39 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -15240,7 +15240,8 @@ div.CircledArrow {
   gap: 16px;
 }
 .PersonCard__content > div {
-  flex-basis: 100%;
+  /*flex-basis: 100%;*/
+  flex: 0 0 auto;
   margin: 0;
 }
 .PersonCard__content > div:first-of-type {
@@ -33172,6 +33173,83 @@ ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover {
 
 .min-height-1000 {
   min-height: 1000px;
+}
+
+/* min-width */
+.min-width-100 {
+  min-width: 100px;
+}
+
+.min-width-150 {
+  min-width: 150px;
+}
+
+.min-width-200 {
+  min-width: 200px;
+}
+
+.min-width-250 {
+  min-width: 250px;
+}
+
+.min-width-300 {
+  min-width: 300px;
+}
+
+.min-width-350 {
+  min-width: 350px;
+}
+
+.min-width-400 {
+  min-width: 400px;
+}
+
+.min-width-450 {
+  min-width: 450px;
+}
+
+.min-width-500 {
+  min-width: 500px;
+}
+
+.min-width-550 {
+  min-width: 550px;
+}
+
+.min-width-600 {
+  min-width: 600px;
+}
+
+.min-width-650 {
+  min-width: 650px;
+}
+
+.min-width-700 {
+  min-width: 700px;
+}
+
+.min-width-750 {
+  min-width: 750px;
+}
+
+.min-width-800 {
+  min-width: 800px;
+}
+
+.min-width-850 {
+  min-width: 850px;
+}
+
+.min-width-900 {
+  min-width: 900px;
+}
+
+.min-width-950 {
+  min-width: 950px;
+}
+
+.min-width-1000 {
+  min-width: 1000px;
 }
 
 /* scroll */

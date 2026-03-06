@@ -428,7 +428,8 @@
 		gap: $sapphire-sizes--medium;
 
 		> div {
-			flex-basis: 100%;
+			/*flex-basis: 100%;*/
+			flex: 0 0 auto;
 			margin: 0;
 
 			&:first-of-type {
