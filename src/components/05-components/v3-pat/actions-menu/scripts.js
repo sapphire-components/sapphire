@@ -1,16 +1,17 @@
 /* Component ActionsMenu */
-(function($, window, SapphireWidgets) {
-	var create = function(config) {
+(function ($, window, SapphireWidgets) {
+	var create = function (config) {
 		var $triggerElement = $('#' + config.triggerElement);
 		var $contentElement = $('#' + config.contentElement);
 
 		if ($contentElement.text().length < 1) {
-			$triggerElement.hide();
+			//SPD-3219
+			//$triggerElement.hide();
 		}
 
-		$(function() {
+		$(function () {
 			// inside a document ready due to sapphire popup binded events
-			window.setTimeout(function() {
+			window.setTimeout(function () {
 				var position = config.position;
 				if (config.locale === 'AR') {
 					switch (config.position) {
@@ -39,13 +40,7 @@
 					trigger: config.triggerEvent,
 					position: position,
 					maxWidth: config.maxWidth,
-					theme:
-						'tooltipster-location--' +
-						config.location +
-						' ActionsMenu-tooltip Padding--' +
-						config.padding +
-						' Border--' +
-						config.border,
+					theme: 'tooltipster-location--' + config.location + ' ActionsMenu-tooltip Padding--' + config.padding + ' Border--' + config.border,
 				});
 				$contentElement.remove();
 			}, 500);
