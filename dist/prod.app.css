@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.295 || Generated: Tue Mar 10 2026 11:12:04 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.5.296 || Generated: Thu Mar 12 2026 10:05:23 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -29904,6 +29904,10 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
   color: #00ac94;
 }
 
+.badge-box[data-showcontrols=true] .badge-box-button {
+  display: grid;
+}
+
 .badge-box {
   border: solid 1px #d6d6d6;
   border-radius: 4px;
@@ -29979,10 +29983,6 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
 }
 .badge-box-above[contenteditable=true]:empty {
   display: flex;
-}
-
-.badge-box[data-showcontrols=true] .badge-box-button {
-  display: grid;
 }
 
 a:has(> .button-pending) {
@@ -30074,7 +30074,21 @@ a:has(> .button-pending) {
   }
 }
 .tippytooltip {
-  color: red;
+  outline: 1px solid red !important;
+}
+
+.tippy-box[data-padding=none] .tippy-content {
+  padding: 0;
+}
+
+.tippy-box[data-theme=white] {
+  background-color: #fff;
+  border: 1px solid #d6d6d6;
+  color: #333;
+}
+.tippy-box[data-theme=white] .tippy-arrow:before {
+  color: #fff;
+  filter: drop-shadow(0 0 0 #000);
 }
 
 body.has-windowpanel-backdrop {
@@ -30094,10 +30108,17 @@ body.has-windowpanel-backdrop {
   border-radius: 8px;
   color: #333;
   font-family: "LatoRegular";
-  padding: 32px;
 }
 .tippy-box[data-theme=windowpanel] .tippy-content {
   padding: 0;
+}
+
+.tippy-box[data-theme=windowpanel]:has(.windowpanel[data-padding=m]) {
+  padding: 16px;
+}
+
+.tippy-box[data-theme=windowpanel]:has(.windowpanel[data-padding=l]) {
+  padding: 24px;
 }
 
 .windowpanel a.Button {
@@ -30128,6 +30149,16 @@ body.has-windowpanel-backdrop {
 }
 .windowpanel-actions:empty {
   display: none;
+}
+
+.windowpanel-close {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .MultiAlignRight,
@@ -32421,6 +32452,126 @@ a.spam-blocked.Button {
 
 .NoMarginBottom {
   margin-bottom: 0px !important;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.display-contents {
+  display: contents;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.margin-none {
+  margin: 0px;
+}
+
+.padding-none {
+  padding: 0px;
+}
+
+.gap-none {
+  gap: 0px;
+}
+
+.margin-xxs {
+  margin: 2px;
+}
+
+.padding-xxs {
+  padding: 2px;
+}
+
+.gap-xxs {
+  gap: 2px;
+}
+
+.margin-xs {
+  margin: 4px;
+}
+
+.padding-xs {
+  padding: 4px;
+}
+
+.gap-xs {
+  gap: 4px;
+}
+
+.margin-s {
+  margin: 8px;
+}
+
+.padding-s {
+  padding: 8px;
+}
+
+.gap-s {
+  gap: 8px;
+}
+
+.margin-m {
+  margin: 16px;
+}
+
+.padding-m {
+  padding: 16px;
+}
+
+.gap-m {
+  gap: 16px;
+}
+
+.margin-l {
+  margin: 24px;
+}
+
+.padding-l {
+  padding: 24px;
+}
+
+.gap-l {
+  gap: 24px;
+}
+
+.margin-xl {
+  margin: 4px;
+}
+
+.padding-xl {
+  padding: 4px;
+}
+
+.gap-xl {
+  gap: 4px;
+}
+
+.margin-xxl {
+  margin: 48px;
+}
+
+.padding-xxl {
+  padding: 48px;
+}
+
+.gap-xxl {
+  gap: 48px;
+}
+
+.margin-xxxl {
+  margin: 56px;
+}
+
+.padding-xxxl {
+  padding: 56px;
+}
+
+.gap-xxxl {
+  gap: 56px;
 }
 
 .MultiPadding5 {
