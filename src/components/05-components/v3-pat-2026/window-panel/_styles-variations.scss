@@ -1,0 +1,17 @@
+@use '../../../00-settings/sizes' as *;
+
+.tippy-box[data-theme='windowpanel']:has(.windowpanel[data-padding='none']) {
+	padding: $sapphire-sizes--none;
+}
+
+.tippy-box[data-theme='windowpanel']:has(.windowpanel[data-padding='s']) {
+	padding: $sapphire-sizes--small;
+}
+
+.tippy-box[data-theme='windowpanel']:has(.windowpanel[data-padding='m']) {
+	padding: $sapphire-sizes--medium;
+}
+
+.tippy-box[data-theme='windowpanel']:has(.windowpanel[data-padding='l']) {
+	padding: $sapphire-sizes--large;
+}

@@ -26,14 +26,6 @@ body.has-windowpanel-backdrop {
 	}
 }
 
-.tippy-box[data-theme='windowpanel']:has(.windowpanel[data-padding='m']) {
-	padding: $sapphire-sizes--medium;
-}
-
-.tippy-box[data-theme='windowpanel']:has(.windowpanel[data-padding='l']) {
-	padding: $sapphire-sizes--large;
-}
-
 .windowpanel {
 	a.Button {
 		margin: 0;
