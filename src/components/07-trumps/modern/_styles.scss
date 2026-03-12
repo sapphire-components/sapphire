@@ -1,0 +1,37 @@
+@use '../../00-settings/sizes' as *;
+
+.display-flex {
+	display: flex;
+}
+
+.display-contents {
+	display: contents;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+$sizes: (
+	none: $sapphire-sizes--none,
+	xxs: $sapphire-sizes--xxsmall,
+	xs: $sapphire-sizes--xsmall,
+	s: $sapphire-sizes--small,
+	m: $sapphire-sizes--medium,
+	l: $sapphire-sizes--large,
+	xl: $sapphire-sizes--xsmall,
+	xxl: $sapphire-sizes--xxlarge,
+	xxxl: $sapphire-sizes--largest,
+);
+
+@each $name, $value in $sizes {
+	.margin-#{$name} {
+		margin: $value;
+	}
+	.padding-#{$name} {
+		padding: $value;
+	}
+	.gap-#{$name} {
+		gap: $value;
+	}
+}

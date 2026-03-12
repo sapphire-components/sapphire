@@ -1,4 +1,4 @@
-/*! prod.styleguide.js || Version: 5.5.295 || Generated: Fri Mar 06 2026 14:47:24 GMT+0000 (Hora padrão da Europa Ocidental) */
+/*! prod.styleguide.js || Version: 5.5.295 || Generated: Tue Mar 10 2026 11:12:04 GMT+0000 (Western European Standard Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -52,7 +52,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+// This entry needs to be wrapped in an IIFE because it needs to be isolated against other modules in the chunk.
 !function() {
 __webpack_require__("./src/styleguide/styles.scss");
 

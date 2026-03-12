@@ -5,6 +5,10 @@
 	let contentEl = null;
 
 	const create = (config) => {
+		console.log(config);
+
+		let incomingConfig = config.tippyConfig;
+
 		widgetEl = document.getElementById(config.runtimeId);
 		if (config.triggerId) {
 			triggerEl = document.getElementById(config.triggerId);
@@ -25,19 +29,25 @@
 			content = `<iframe data-ui="iframe-tooltip" src="${config.iframeURL}" style="border:none;"></iframe>`;
 		}
 
-		window.tippy(triggerEl, {
+		const tippyConfig = {
 			allowHTML: allowHTML,
-			appendTo: config.appendTo === '' ? () => document.body : config.appendTo,
-			arrow: config.arrow,
+			appendTo: incomingConfig.appendTo === '' ? () => document.body : incomingConfig.appendTo,
+			arrow: true,
 			content: content,
-			hideOnClick: config.hideOnClick,
-			interactive: config.interactive,
-			maxWidth: config.maxWidth,
-			placement: config.placement,
-			theme: config.theme,
-			trigger: config.trigger,
-			zIndex: config.zIndex,
-		});
+			hideOnClick: incomingConfig.hideOnClick,
+			interactive: incomingConfig.interactive,
+			maxWidth: incomingConfig.maxWidth,
+			placement: incomingConfig.placement,
+			theme: incomingConfig.theme,
+			trigger: incomingConfig.trigger,
+			zIndex: incomingConfig.zIndex,
+			onCreate(instance) {
+				const box = instance.popper.querySelector('.tippy-box');
+				box.dataset.padding = config.padding;
+			},
+		};
+
+		window.tippy(triggerEl, tippyConfig);
 	};
 
 	const render = (options) => {};

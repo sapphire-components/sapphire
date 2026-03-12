@@ -1,16 +1,18 @@
 class WindowPanel {
 	anchorEl = null;
 	bindedOpen = this.open.bind(this);
-	bindedResize = this.resize.bind(this);
+	closeButton = null;
 	closeOnEsc = null;
 	confirmationTemplate = null;
 	customContentEl = null;
+	hasClose = null;
 	initOptions = null;
 	keydownHandler = null;
 	linkToOpen = null;
 	minWidth = null;
 	noButton = null;
 	noEventLink = null;
+	padding = null;
 	panelEventHandler = null;
 	tippyInstance = null;
 	widgetEl = null;
@@ -27,17 +29,29 @@ class WindowPanel {
 			return;
 		}
 
+		this.closeButton = this.widgetEl.querySelector('.windowpanel-close');
+		this.closeEventLink = this.widgetEl.querySelector('.windowpanel-action.close');
 		this.closeOnEsc = initOptions.closeOnEsc;
+		this.hasClose = initOptions.hasClose;
 		this.linkToOpen = this.widgetEl.querySelector('.windowpanel-linktoopen a');
 		this.minWidth = initOptions.minWidth;
 		this.noEventLink = this.widgetEl.querySelector('.windowpanel-action.no');
+		this.padding = initOptions.padding;
 		this.yesEventLink = this.widgetEl.querySelector('.windowpanel-action.yes');
 
 		this.linkToOpen.removeEventListener('click', this.bindedOpen);
 		this.linkToOpen.addEventListener('click', this.bindedOpen);
 
+		if (!this.hasClose) {
+			this.closeButton.remove();
+		}
+
 		if (initOptions.contentId) {
 			const source = document.getElementById(initOptions.contentId);
+			if (!source) {
+				console.warn('WindowPanel content element not found. Make sure the runtime ContentId is generated before the WindowPanel widget is created.');
+				return;
+			}
 			source.classList.add('windowpanel-custom-content');
 			this.customContentEl = source;
 		}
@@ -65,7 +79,6 @@ class WindowPanel {
 	}
 
 	open() {
-		console.log(window.document.body);
 		window.document.body.click();
 
 		this.appendBackdrop();
@@ -77,6 +90,13 @@ class WindowPanel {
 			title: this.initOptions.title,
 			yesLabel: this.initOptions.yesLabel,
 		});
+
+		if (this.hasClose) {
+			this.closeButton.classList.remove('hidden');
+			panel.querySelector('.windowpanel').prepend(this.closeButton);
+		}
+
+		panel.querySelector('.windowpanel').dataset.padding = this.padding;
 
 		this.cancelButton = panel.querySelector('[data-cancel-button]');
 		this.noButton = panel.querySelector('[data-no-button]');
@@ -118,13 +138,6 @@ class WindowPanel {
 		});
 
 		this.tippyInstance.show();
-
-		//window.top.addEventListener('resize', this.bindedResize);
-	}
-
-	resize(event) {
-		console.log('resize', this);
-		this.tippyInstance.popperInstance?.update();
 	}
 
 	close() {
@@ -172,12 +185,12 @@ class WindowPanel {
 		}
 
 		this.panelEventHandler = (event) => {
-			console.log('Event received!');
-			console.log(event.detail);
 			if (event.detail.action === 'YES' && this.yesEventLink) {
 				this.yesEventLink.click();
 			} else if (event.detail.action === 'NO' && this.noEventLink) {
 				this.noEventLink.click();
+			} else if (event.detail.action === 'CLOSE' && this.closeEventLink) {
+				this.closeEventLink.click();
 			}
 		};
 
@@ -185,6 +198,7 @@ class WindowPanel {
 
 		this.cancelButton?.addEventListener('click', (event) => {
 			event.preventDefault();
+			this.broadcastCustomEvent(`windowpanel-${this.initOptions.identifier}`, { action: 'CLOSE' });
 			this.removeBackdrop();
 			this.close();
 		});
@@ -199,6 +213,13 @@ class WindowPanel {
 		this.noButton?.addEventListener('click', (event) => {
 			event.preventDefault();
 			this.broadcastCustomEvent(`windowpanel-${this.initOptions.identifier}`, { action: 'NO' });
+			this.removeBackdrop();
+			this.close();
+		});
+
+		this.closeButton?.addEventListener('click', (event) => {
+			event.preventDefault();
+			this.broadcastCustomEvent(`windowpanel-${this.initOptions.identifier}`, { action: 'CLOSE' });
 			this.removeBackdrop();
 			this.close();
 		});

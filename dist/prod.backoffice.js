@@ -1,16 +1,6 @@
-/*! prod.backoffice.js || Version: 5.5.295 || Generated: Fri Mar 06 2026 14:47:24 GMT+0000 (Hora padrão da Europa Ocidental) */
+/*! prod.backoffice.js || Version: 5.5.295 || Generated: Tue Mar 10 2026 11:12:04 GMT+0000 (Western European Standard Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
-
-/***/ "./src/backoffice/styles.scss":
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
 
 /***/ "./src/backoffice/01-components/layout/layout-backoffice.js":
 /***/ (function() {
@@ -105,6 +95,16 @@ $(document).ready(function () {
   $('input.Mandatory, select.Mandatory').parent().addClass('ListInputMandatory');*/
 
 });
+
+/***/ }),
+
+/***/ "./src/backoffice/styles.scss":
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
 
 /***/ }),
 
@@ -2434,7 +2434,7 @@ SapphireWidgets.SelectSystem = (config) => {
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+// This entry needs to be wrapped in an IIFE because it needs to be isolated against other modules in the chunk.
 !function() {
 __webpack_require__("./src/backoffice/styles.scss");
 

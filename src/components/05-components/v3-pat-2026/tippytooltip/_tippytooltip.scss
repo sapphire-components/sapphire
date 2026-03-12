@@ -1,0 +1,21 @@
+.tippytooltip {
+	outline: 1px solid red !important;
+}
+
+.tippy-box[data-padding='none'] {
+	.tippy-content {
+		padding: 0;
+	}
+}
+
+.tippy-box[data-theme='white'] {
+	background-color: #fff;
+	border: 1px solid #d6d6d6;
+	color: #333;
+	.tippy-arrow {
+		&:before {
+			color: #fff;
+			filter: drop-shadow(0 0 0 #000);
+		}
+	}
+}

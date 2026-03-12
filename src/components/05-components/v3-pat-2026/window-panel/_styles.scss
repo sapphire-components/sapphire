@@ -21,10 +21,17 @@ body.has-windowpanel-backdrop {
 	border-radius: $border-radius-medium;
 	color: $text-color-regular;
 	font-family: $font-family-latin-regular;
-	padding: $sapphire-sizes--xlarge;
 	.tippy-content {
 		padding: 0;
 	}
+}
+
+.tippy-box[data-theme='windowpanel']:has(.windowpanel[data-padding='m']) {
+	padding: $sapphire-sizes--medium;
+}
+
+.tippy-box[data-theme='windowpanel']:has(.windowpanel[data-padding='l']) {
+	padding: $sapphire-sizes--large;
 }
 
 .windowpanel {
@@ -35,23 +42,19 @@ body.has-windowpanel-backdrop {
 			outline-offset: 2px;
 		}
 	}
-
 	text-align: center;
-
 	&-title {
 		margin-bottom: 20px;
 		&:empty {
 			display: none;
 		}
 	}
-
 	&-message,
 	&-content {
 		&:empty {
 			display: none;
 		}
 	}
-
 	&-actions {
 		align-items: center;
 		display: flex;
@@ -62,4 +65,12 @@ body.has-windowpanel-backdrop {
 			display: none;
 		}
 	}
+}
+
+.windowpanel-close {
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	top: 0;
+	user-select: none;
 }
