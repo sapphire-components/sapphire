@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.296 || Generated: Thu Mar 12 2026 10:05:23 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.5.297 || Generated: Thu Mar 12 2026 11:24:58 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -30113,14 +30113,6 @@ body.has-windowpanel-backdrop {
   padding: 0;
 }
 
-.tippy-box[data-theme=windowpanel]:has(.windowpanel[data-padding=m]) {
-  padding: 16px;
-}
-
-.tippy-box[data-theme=windowpanel]:has(.windowpanel[data-padding=l]) {
-  padding: 24px;
-}
-
 .windowpanel a.Button {
   margin: 0;
 }
@@ -30159,6 +30151,22 @@ body.has-windowpanel-backdrop {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+}
+
+.tippy-box[data-theme=windowpanel]:has(.windowpanel[data-padding=none]) {
+  padding: 0px;
+}
+
+.tippy-box[data-theme=windowpanel]:has(.windowpanel[data-padding=s]) {
+  padding: 8px;
+}
+
+.tippy-box[data-theme=windowpanel]:has(.windowpanel[data-padding=m]) {
+  padding: 16px;
+}
+
+.tippy-box[data-theme=windowpanel]:has(.windowpanel[data-padding=l]) {
+  padding: 24px;
 }
 
 .MultiAlignRight,
