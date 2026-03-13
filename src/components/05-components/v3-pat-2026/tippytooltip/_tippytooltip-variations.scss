@@ -1,0 +1,25 @@
+@use '../../../00-settings/sizes' as *;
+
+.tippy-box[data-padding='none'] {
+	.tippy-content {
+		padding: 0;
+	}
+}
+
+.tippy-box[data-padding='s'] {
+	.tippy-content {
+		padding: $sapphire-sizes--small;
+	}
+}
+
+.tippy-box[data-padding='m'] {
+	.tippy-content {
+		padding: $sapphire-sizes--medium;
+	}
+}
+
+.tippy-box[data-padding='l'] {
+	.tippy-content {
+		padding: $sapphire-sizes--large;
+	}
+}

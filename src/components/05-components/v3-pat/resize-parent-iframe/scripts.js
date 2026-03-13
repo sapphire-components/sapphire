@@ -6,6 +6,11 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
 	const iframeMinHeight = options.minHeight || 0;
 
 	$(window).load(function () {
+		if (isInsideTippyContent()) {
+			console.log('is inside tippy content');
+			return;
+		}
+
 		const _body = document.body;
 		const _iframe = window.frameElement;
 		const DATA_BODY_RESIZE_ATTRIBUTE_NAME = 'data-resize-parent-iframe-top';
@@ -146,4 +151,13 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
 
 		resize();
 	});
+
+	function isInsideTippyContent() {
+		try {
+			const frame = window.frameElement;
+			return frame && frame.closest('.tippy-content') !== null;
+		} catch (e) {
+			return false;
+		}
+	}
 };

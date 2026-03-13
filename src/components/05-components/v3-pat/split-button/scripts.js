@@ -23,6 +23,7 @@
 		const classList = this.$buttonLink[0].classList.value;
 
 		const trigger = this.$trigger[0];
+		const isInIframe = window.self !== window.top;
 		const result = findAncestorWithInlineMarginTop(trigger, 4);
 
 		this.$trigger.addClass(classList);
@@ -37,9 +38,11 @@
 					maxWidth: _this.config.maxWidth,
 					theme: 'tooltipster-splitbutton Padding-' + _this.config.padding,
 					functionReady: function (instance, helper) {
-						if (result.found) {
-							const overlay = helper[0];
-							overlay.style.marginTop = `${result.value}`;
+						if (isInIframe) {
+							if (result.found) {
+								const overlay = helper[0];
+								overlay.style.marginTop = `${result.value}`;
+							}
 						}
 					},
 				});
