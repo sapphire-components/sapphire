@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.297 || Generated: Thu Mar 12 2026 11:24:58 GMT+0000 (Western European Standard Time) */
+/*! prod.app.js || Version: 5.5.298 || Generated: Fri Mar 13 2026 16:38:42 GMT+0000 (Western European Standard Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -1114,8 +1114,6 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 	let contentEl = null;
 
 	const create = (config) => {
-		console.log(config);
-
 		let incomingConfig = config.tippyConfig;
 
 		widgetEl = document.getElementById(config.runtimeId);
@@ -1138,6 +1136,14 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 			content = `<iframe data-ui="iframe-tooltip" src="${config.iframeURL}" style="border:none;"></iframe>`;
 		}
 
+		if (config.width > config.tippyConfig.maxWidth) {
+			config.tippyConfig.maxWidth = config.width;
+		}
+
+		if (config.tippyConfig.trigger.includes('click')) {
+			triggerEl.style.cursor = 'pointer';
+		}
+
 		const tippyConfig = {
 			allowHTML: allowHTML,
 			appendTo: incomingConfig.appendTo === '' ? () => document.body : incomingConfig.appendTo,
@@ -1154,12 +1160,70 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 				const box = instance.popper.querySelector('.tippy-box');
 				box.dataset.padding = config.padding;
 			},
+			onMount(instance) {
+				console.log(tippyConfig);
+
+				const box = instance.popper.querySelector('.tippy-box');
+
+				if (config.height > 0) {
+					box.style.height = `${config.height}px`;
+				}
+
+				if (config.iframeURL) {
+					const iframe = instance.popper.querySelector('iframe');
+					iframe.setAttribute('scrolling', 'no');
+					iframe.style.height = '';
+					iframe.addEventListener('load', () => {
+						try {
+							const doc = iframe.contentDocument || iframe.contentWindow.document;
+							if (doc) {
+								const body = doc.body;
+								const html = doc.documentElement;
+								const height = Math.max(body ? body.scrollHeight : 0, html ? html.scrollHeight : 0);
+								if (height > 0) {
+									iframe.style.height = `${height}px`;
+								}
+
+								let scheduled = false;
+								let timeout;
+
+								const mutationObserver = new MutationObserver(() => {
+									if (scheduled) return;
+									clearTimeout(timeout);
+									scheduled = true;
+									requestAnimationFrame(() => {
+										scheduled = false;
+										timeout = setTimeout(() => {
+											notifyParentHeight();
+										}, 500);
+									});
+								});
+
+								mutationObserver.observe(body, {
+									childList: true,
+									subtree: true,
+								});
+
+								const notifyParentHeight = () => {
+									iframe.style.height = '';
+									const height = Math.max(body ? body.scrollHeight : 0, html ? html.scrollHeight : 0);
+									if (height > 0) {
+										iframe.style.height = `${height}px`;
+										instance.popperInstance.update();
+									}
+								};
+							}
+						} catch (e) {
+							// Silent fail for cross-origin iframes
+						}
+						instance.popperInstance.update();
+					});
+				}
+			},
 		};
 
 		window.tippy(triggerEl, tippyConfig);
 	};
-
-	const render = (options) => {};
 
 	SapphireWidgets.TippyTooltip = {
 		create: create,
@@ -5447,6 +5511,11 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
 	const iframeMinHeight = options.minHeight || 0;
 
 	$(window).load(function () {
+		if (isInsideTippyContent()) {
+			console.log('is inside tippy content');
+			return;
+		}
+
 		const _body = document.body;
 		const _iframe = window.frameElement;
 		const DATA_BODY_RESIZE_ATTRIBUTE_NAME = 'data-resize-parent-iframe-top';
@@ -5587,6 +5656,15 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
 
 		resize();
 	});
+
+	function isInsideTippyContent() {
+		try {
+			const frame = window.frameElement;
+			return frame && frame.closest('.tippy-content') !== null;
+		} catch (e) {
+			return false;
+		}
+	}
 };
 
 
@@ -9529,6 +9607,7 @@ SapphireWidgets.SpinnerHorizontal = {
 		const classList = this.$buttonLink[0].classList.value;
 
 		const trigger = this.$trigger[0];
+		const isInIframe = window.self !== window.top;
 		const result = findAncestorWithInlineMarginTop(trigger, 4);
 
 		this.$trigger.addClass(classList);
@@ -9543,9 +9622,11 @@ SapphireWidgets.SpinnerHorizontal = {
 					maxWidth: _this.config.maxWidth,
 					theme: 'tooltipster-splitbutton Padding-' + _this.config.padding,
 					functionReady: function (instance, helper) {
-						if (result.found) {
-							const overlay = helper[0];
-							overlay.style.marginTop = `${result.value}`;
+						if (isInIframe) {
+							if (result.found) {
+								const overlay = helper[0];
+								overlay.style.marginTop = `${result.value}`;
+							}
 						}
 					},
 				});

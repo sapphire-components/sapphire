@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.297 || Generated: Thu Mar 12 2026 11:24:58 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.5.298 || Generated: Fri Mar 13 2026 16:38:42 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -30073,14 +30073,6 @@ a:has(> .button-pending) {
     transform: translateY(-50%) scale(0.95);
   }
 }
-.tippytooltip {
-  outline: 1px solid red !important;
-}
-
-.tippy-box[data-padding=none] .tippy-content {
-  padding: 0;
-}
-
 .tippy-box[data-theme=white] {
   background-color: #fff;
   border: 1px solid #d6d6d6;
@@ -30089,6 +30081,22 @@ a:has(> .button-pending) {
 .tippy-box[data-theme=white] .tippy-arrow:before {
   color: #fff;
   filter: drop-shadow(0 0 0 #000);
+}
+
+.tippy-box[data-padding=none] .tippy-content {
+  padding: 0;
+}
+
+.tippy-box[data-padding=s] .tippy-content {
+  padding: 8px;
+}
+
+.tippy-box[data-padding=m] .tippy-content {
+  padding: 16px;
+}
+
+.tippy-box[data-padding=l] .tippy-content {
+  padding: 24px;
 }
 
 body.has-windowpanel-backdrop {
