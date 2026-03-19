@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.298 || Generated: Fri Mar 13 2026 16:38:42 GMT+0000 (Western European Standard Time) */
+/*! prod.app.js || Version: 5.5.299 || Generated: Thu Mar 19 2026 10:39:36 GMT+0000 (Western European Standard Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -1109,12 +1109,13 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 
 /* Component TippyTooltip */
 (function ($, window, document, SapphireWidgets) {
-	let widgetEl = null;
-	let triggerEl = null;
-	let contentEl = null;
-
 	const create = (config) => {
-		let incomingConfig = config.tippyConfig;
+		const incomingConfig = config.tippyConfig;
+		let contentEl = null;
+		let linkClose = null;
+		let linkOpen = null;
+		let triggerEl = null;
+		let widgetEl = null;
 
 		widgetEl = document.getElementById(config.runtimeId);
 		if (config.triggerId) {
@@ -1127,6 +1128,9 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 		} else {
 			contentEl = widgetEl.querySelector('.tippytooltip-content');
 		}
+
+		linkClose = widgetEl.querySelector('.tippytooltip-link-close');
+		linkOpen = widgetEl.querySelector('.tippytooltip-link-open');
 
 		let allowHTML = false;
 		let content = contentEl;
@@ -1161,19 +1165,29 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 				box.dataset.padding = config.padding;
 			},
 			onMount(instance) {
-				console.log(tippyConfig);
-
 				const box = instance.popper.querySelector('.tippy-box');
+
+				box.dataset.triggerid = triggerEl.id;
+				box.dataset.widgetid = config.runtimeId;
 
 				if (config.height > 0) {
 					box.style.height = `${config.height}px`;
+				}
+
+				if (config.minHeight > 0) {
+					box.style.minHeight = `${config.minHeight}px`;
 				}
 
 				if (config.iframeURL) {
 					const iframe = instance.popper.querySelector('iframe');
 					iframe.setAttribute('scrolling', 'no');
 					iframe.style.height = '';
+
+					box.insertAdjacentHTML('afterbegin', '<div class="tippytooltip-loading"><div class="lds-ring"><div></div></div>');
+
 					iframe.addEventListener('load', () => {
+						box.querySelector('.tippytooltip-loading')?.remove();
+
 						try {
 							const doc = iframe.contentDocument || iframe.contentWindow.document;
 							if (doc) {
@@ -1187,7 +1201,7 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 								let scheduled = false;
 								let timeout;
 
-								const mutationObserver = new MutationObserver(() => {
+								const mutationObserver = new MutationObserver((args) => {
 									if (scheduled) return;
 									clearTimeout(timeout);
 									scheduled = true;
@@ -1200,6 +1214,8 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 								});
 
 								mutationObserver.observe(body, {
+									attributes: true,
+									attributeFilter: ['style'],
 									childList: true,
 									subtree: true,
 								});
@@ -1219,14 +1235,40 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 						instance.popperInstance.update();
 					});
 				}
+
+				linkOpen.click();
+			},
+			onHide(instance) {
+				linkClose.click();
 			},
 		};
 
 		window.tippy(triggerEl, tippyConfig);
 	};
 
+	const emitCustomString = (incoming) => {
+		const isInIframe = window.self !== window.top;
+
+		if (isInIframe) {
+			const frameElement = window.frameElement;
+			const tippyBox = frameElement.closest('.tippy-box');
+			const widgetId = tippyBox.dataset.widgetid;
+			const widgetEl = window.parent.document.getElementById(widgetId);
+			const linkCustomString = widgetEl.querySelector('.tippytooltip-link-customstring');
+			const customStringEl = widgetEl.querySelector('.tippytooltip-customstring');
+			customStringEl.value = incoming;
+			linkCustomString.click();
+		}
+	};
+
+	hideAll = () => {
+		window.tippy.hideAll();
+	};
+
 	SapphireWidgets.TippyTooltip = {
 		create: create,
+		emitCustomString: emitCustomString,
+		hideAll: hideAll,
 	};
 })(jQuery, window, document, SapphireWidgets);
 
@@ -1286,6 +1328,7 @@ class WindowPanel {
 	widgetEl = null;
 	yesButton = null;
 	yesEventLink = null;
+	yesIcon = null;
 
 	constructor(initOptions) {
 		this.initOptions = initOptions;
@@ -1306,6 +1349,7 @@ class WindowPanel {
 		this.noEventLink = this.widgetEl.querySelector('.windowpanel-action.no');
 		this.padding = initOptions.padding;
 		this.yesEventLink = this.widgetEl.querySelector('.windowpanel-action.yes');
+		this.yesIcon = initOptions.yesIcon;
 
 		this.linkToOpen.removeEventListener('click', this.bindedOpen);
 		this.linkToOpen.addEventListener('click', this.bindedOpen);
@@ -1332,7 +1376,7 @@ class WindowPanel {
 				<div class="windowpanel-actions">
 					<a href="#" class="ButtonLink" data-cancel-button ui="ButtonCancel"></a>
 					<a href="#" class="Button Third" data-no-button ui="ConfirmNo"></a>
-					<a href="#" class="Button SetAsValid" data-yes-button ui="ConfirmYes"></a>
+					<a href="#" class="Button" data-yes-button ui="ConfirmYes"></a>
 				</div>
 			</div>
 		`);
@@ -1434,7 +1478,12 @@ class WindowPanel {
 		cancelLabel === '' ? cancelBtn.remove() : (cancelBtn.textContent = cancelLabel);
 
 		const yesBtn = fragment.querySelector('[data-yes-button]');
-		yesLabel === '' ? yesBtn.remove() : (yesBtn.textContent = yesLabel);
+		if (yesLabel === '') {
+			yesBtn.remove();
+		} else {
+			yesBtn.textContent = yesLabel;
+			yesBtn.classList.add(this.yesIcon);
+		}
 
 		if (this.customContentEl) {
 			fragment.querySelector('.windowpanel-content').appendChild(this.customContentEl);
@@ -5512,7 +5561,6 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
 
 	$(window).load(function () {
 		if (isInsideTippyContent()) {
-			console.log('is inside tippy content');
 			return;
 		}
 

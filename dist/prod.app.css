@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.298 || Generated: Fri Mar 13 2026 16:38:42 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.5.299 || Generated: Thu Mar 19 2026 10:39:36 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -30073,6 +30073,26 @@ a:has(> .button-pending) {
     transform: translateY(-50%) scale(0.95);
   }
 }
+.tippytooltip {
+  display: inline-flex;
+}
+.tippytooltip .tippytooltip-link-open,
+.tippytooltip .tippytooltip-link-close,
+.tippytooltip .tippytooltip-link-customstring,
+.tippytooltip input.tippytooltip-customstring {
+  display: none;
+}
+
+.tippy-box .tippytooltip-loading {
+  height: 50px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  z-index: 2;
+}
+
 .tippy-box[data-theme=white] {
   background-color: #fff;
   border: 1px solid #d6d6d6;
@@ -32555,15 +32575,15 @@ a.spam-blocked.Button {
 }
 
 .margin-xl {
-  margin: 4px;
+  margin: 32px;
 }
 
 .padding-xl {
-  padding: 4px;
+  padding: 32px;
 }
 
 .gap-xl {
-  gap: 4px;
+  gap: 32px;
 }
 
 .margin-xxl {
