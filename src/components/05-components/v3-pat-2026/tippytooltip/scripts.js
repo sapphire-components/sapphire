@@ -1,11 +1,12 @@
 /* Component TippyTooltip */
 (function ($, window, document, SapphireWidgets) {
-	let widgetEl = null;
-	let triggerEl = null;
-	let contentEl = null;
-
 	const create = (config) => {
-		let incomingConfig = config.tippyConfig;
+		const incomingConfig = config.tippyConfig;
+		let contentEl = null;
+		let linkClose = null;
+		let linkOpen = null;
+		let triggerEl = null;
+		let widgetEl = null;
 
 		widgetEl = document.getElementById(config.runtimeId);
 		if (config.triggerId) {
@@ -18,6 +19,9 @@
 		} else {
 			contentEl = widgetEl.querySelector('.tippytooltip-content');
 		}
+
+		linkClose = widgetEl.querySelector('.tippytooltip-link-close');
+		linkOpen = widgetEl.querySelector('.tippytooltip-link-open');
 
 		let allowHTML = false;
 		let content = contentEl;
@@ -52,19 +56,29 @@
 				box.dataset.padding = config.padding;
 			},
 			onMount(instance) {
-				console.log(tippyConfig);
-
 				const box = instance.popper.querySelector('.tippy-box');
+
+				box.dataset.triggerid = triggerEl.id;
+				box.dataset.widgetid = config.runtimeId;
 
 				if (config.height > 0) {
 					box.style.height = `${config.height}px`;
+				}
+
+				if (config.minHeight > 0) {
+					box.style.minHeight = `${config.minHeight}px`;
 				}
 
 				if (config.iframeURL) {
 					const iframe = instance.popper.querySelector('iframe');
 					iframe.setAttribute('scrolling', 'no');
 					iframe.style.height = '';
+
+					box.insertAdjacentHTML('afterbegin', '<div class="tippytooltip-loading"><div class="lds-ring"><div></div></div>');
+
 					iframe.addEventListener('load', () => {
+						box.querySelector('.tippytooltip-loading')?.remove();
+
 						try {
 							const doc = iframe.contentDocument || iframe.contentWindow.document;
 							if (doc) {
@@ -78,7 +92,7 @@
 								let scheduled = false;
 								let timeout;
 
-								const mutationObserver = new MutationObserver(() => {
+								const mutationObserver = new MutationObserver((args) => {
 									if (scheduled) return;
 									clearTimeout(timeout);
 									scheduled = true;
@@ -91,6 +105,8 @@
 								});
 
 								mutationObserver.observe(body, {
+									attributes: true,
+									attributeFilter: ['style'],
 									childList: true,
 									subtree: true,
 								});
@@ -110,13 +126,39 @@
 						instance.popperInstance.update();
 					});
 				}
+
+				linkOpen.click();
+			},
+			onHide(instance) {
+				linkClose.click();
 			},
 		};
 
 		window.tippy(triggerEl, tippyConfig);
 	};
 
+	const emitCustomString = (incoming) => {
+		const isInIframe = window.self !== window.top;
+
+		if (isInIframe) {
+			const frameElement = window.frameElement;
+			const tippyBox = frameElement.closest('.tippy-box');
+			const widgetId = tippyBox.dataset.widgetid;
+			const widgetEl = window.parent.document.getElementById(widgetId);
+			const linkCustomString = widgetEl.querySelector('.tippytooltip-link-customstring');
+			const customStringEl = widgetEl.querySelector('.tippytooltip-customstring');
+			customStringEl.value = incoming;
+			linkCustomString.click();
+		}
+	};
+
+	hideAll = () => {
+		window.tippy.hideAll();
+	};
+
 	SapphireWidgets.TippyTooltip = {
 		create: create,
+		emitCustomString: emitCustomString,
+		hideAll: hideAll,
 	};
 })(jQuery, window, document, SapphireWidgets);

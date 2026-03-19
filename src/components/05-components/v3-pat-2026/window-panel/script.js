@@ -18,6 +18,7 @@ class WindowPanel {
 	widgetEl = null;
 	yesButton = null;
 	yesEventLink = null;
+	yesIcon = null;
 
 	constructor(initOptions) {
 		this.initOptions = initOptions;
@@ -38,6 +39,7 @@ class WindowPanel {
 		this.noEventLink = this.widgetEl.querySelector('.windowpanel-action.no');
 		this.padding = initOptions.padding;
 		this.yesEventLink = this.widgetEl.querySelector('.windowpanel-action.yes');
+		this.yesIcon = initOptions.yesIcon;
 
 		this.linkToOpen.removeEventListener('click', this.bindedOpen);
 		this.linkToOpen.addEventListener('click', this.bindedOpen);
@@ -64,7 +66,7 @@ class WindowPanel {
 				<div class="windowpanel-actions">
 					<a href="#" class="ButtonLink" data-cancel-button ui="ButtonCancel"></a>
 					<a href="#" class="Button Third" data-no-button ui="ConfirmNo"></a>
-					<a href="#" class="Button SetAsValid" data-yes-button ui="ConfirmYes"></a>
+					<a href="#" class="Button" data-yes-button ui="ConfirmYes"></a>
 				</div>
 			</div>
 		`);
@@ -166,7 +168,12 @@ class WindowPanel {
 		cancelLabel === '' ? cancelBtn.remove() : (cancelBtn.textContent = cancelLabel);
 
 		const yesBtn = fragment.querySelector('[data-yes-button]');
-		yesLabel === '' ? yesBtn.remove() : (yesBtn.textContent = yesLabel);
+		if (yesLabel === '') {
+			yesBtn.remove();
+		} else {
+			yesBtn.textContent = yesLabel;
+			yesBtn.classList.add(this.yesIcon);
+		}
 
 		if (this.customContentEl) {
 			fragment.querySelector('.windowpanel-content').appendChild(this.customContentEl);

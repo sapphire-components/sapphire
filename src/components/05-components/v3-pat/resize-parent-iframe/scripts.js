@@ -7,7 +7,6 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
 
 	$(window).load(function () {
 		if (isInsideTippyContent()) {
-			console.log('is inside tippy content');
 			return;
 		}
 
