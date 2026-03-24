@@ -26,6 +26,14 @@
 			onlyOne: true,
 			content: `<iframe id="tooltipster-frame" data-ui="iframe-tooltip" src="${config.URL}" style="border:none;" data-iframetooltiptriggerid="${config.elementId}" iframetooltipnotifyid="${widgetNotifyId}"></iframe>`,
 			functionReady: function (instance, helper) {
+				const layout = document.querySelector('.LayoutBlank');
+				const isInsideIframe = window.self !== window.top;
+				if (!!layout && isInsideIframe) {
+					const distanceToWindowTop = layout?.getBoundingClientRect()?.top;
+					const overlay = helper[0];
+					overlay.style.marginTop = `${-distanceToWindowTop}px`;
+				}
+
 				$(helper).css({ visibility: 'hidden' });
 
 				if (config.noPadding) $('.tooltipster-base').addClass('tooltipster-base--no-padding');
@@ -46,12 +54,11 @@
 						// Check if iframe is loaded
 						if (_tooltipIframe.contentWindow.document.readyState === 'complete') {
 							_tooltipIframe.contentWindow.document.body.classList.add('tooltipster-iframe-content');
-							
+
 							$('.TooltipsterLoading').fadeOut(300, function () {
 								$(this).remove();
 							});
-						}
-						else {
+						} else {
 							console.log('Tooltip iframe is still loading...');
 						}
 					});
