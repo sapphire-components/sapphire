@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.299 || Generated: Thu Mar 19 2026 10:39:36 GMT+0000 (Western European Standard Time) */
+/*! prod.app.js || Version: 5.5.300 || Generated: Tue Mar 24 2026 11:03:59 GMT+0000 (Western European Standard Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -10831,6 +10831,14 @@ function checkEndOfPage() {
 			onlyOne: true,
 			content: `<iframe id="tooltipster-frame" data-ui="iframe-tooltip" src="${config.URL}" style="border:none;" data-iframetooltiptriggerid="${config.elementId}" iframetooltipnotifyid="${widgetNotifyId}"></iframe>`,
 			functionReady: function (instance, helper) {
+				const layout = document.querySelector('.LayoutBlank');
+				const isInsideIframe = window.self !== window.top;
+				if (!!layout && isInsideIframe) {
+					const distanceToWindowTop = layout?.getBoundingClientRect()?.top;
+					const overlay = helper[0];
+					overlay.style.marginTop = `${-distanceToWindowTop}px`;
+				}
+
 				$(helper).css({ visibility: 'hidden' });
 
 				if (config.noPadding) $('.tooltipster-base').addClass('tooltipster-base--no-padding');
@@ -10851,12 +10859,11 @@ function checkEndOfPage() {
 						// Check if iframe is loaded
 						if (_tooltipIframe.contentWindow.document.readyState === 'complete') {
 							_tooltipIframe.contentWindow.document.body.classList.add('tooltipster-iframe-content');
-							
+
 							$('.TooltipsterLoading').fadeOut(300, function () {
 								$(this).remove();
 							});
-						}
-						else {
+						} else {
 							console.log('Tooltip iframe is still loading...');
 						}
 					});
