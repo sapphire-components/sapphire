@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.300 || Generated: Tue Mar 24 2026 11:03:59 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.5.301 || Generated: Thu Mar 26 2026 18:48:40 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -6043,6 +6043,11 @@ div.Feedback_Message_Info span.lasa-term {
 .AR .LayoutBase--fixedActions {
   margin-left: 0;
   margin-right: -24px;
+}
+
+body.ResizeParentIframe .LayoutBase--fixedActions {
+  width: 100%;
+  margin-inline: 0;
 }
 
 .LayoutBase--menuFixed .LayoutBase-Wrapper .LayoutBase-MainMenu {
@@ -16765,40 +16770,44 @@ div.menu-inline-wrapper {
 }
 
 div.menu-inline-wrapper > div.menu-inline {
-  position: absolute;
-  z-index: 2;
   background-color: #fff;
-  box-shadow: 0 1px 1px #c5cacd;
   border: 1px solid #ddd;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
-  -servicestudio-position: static;
+  box-shadow: 0 1px 1px #c5cacd;
   -servicestudio-min-height: 100px;
+  -servicestudio-position: static;
+  position: absolute;
+  z-index: 2;
 }
 
 div.menu-inline-wrapper > div.menu-inline > div.menu-inline-balloon {
-  display: block;
-  position: absolute;
-  -servicestudio-position: static;
-  height: 1px;
-  width: 1px;
   border: solid 12px transparent;
   border-bottom: solid 12px #c5cacd;
-  top: -24px;
+  display: block;
+  height: 1px;
   left: 5px;
+  -servicestudio-position: static;
+  position: absolute;
+  top: -24px;
+  width: 1px;
 }
 
 div.menu-inline-wrapper > div.menu-inline > div.menu-inline-balloon:after {
-  content: "";
-  display: block;
-  position: absolute;
-  -servicestudio-position: static;
-  height: 1px;
-  width: 1px;
   border: solid 11px transparent;
   border-bottom: solid 10px #fff;
-  top: -9px;
+  content: "";
+  display: block;
+  height: 1px;
   left: -11px;
+  -servicestudio-position: static;
+  position: absolute;
+  top: -9px;
+  width: 1px;
+}
+
+iframe[data-theme~=full-height] {
+  min-height: calc(var(--parent-height) - var(--iframe-top) - 1px);
 }
 
 .InputLASA .InputLASA-label {
