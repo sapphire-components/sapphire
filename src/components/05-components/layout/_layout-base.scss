@@ -475,6 +475,13 @@
 	}
 }
 
+body.ResizeParentIframe {
+	.LayoutBase--fixedActions {
+		width: 100%;
+		margin-inline: 0;
+	}
+}
+
 .LayoutBase--menuFixed {
 	.LayoutBase-Wrapper .LayoutBase-MainMenu {
 		position: fixed;

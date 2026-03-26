@@ -9,6 +9,7 @@ class WindowPanel {
 	initOptions = null;
 	keydownHandler = null;
 	linkToOpen = null;
+	maxWidth = null;
 	minWidth = null;
 	noButton = null;
 	noEventLink = null;
@@ -23,6 +24,8 @@ class WindowPanel {
 	constructor(initOptions) {
 		this.initOptions = initOptions;
 
+		console.log(initOptions);
+
 		this.widgetEl = document.getElementById(initOptions.runtimeId);
 
 		if (!this.widgetEl) {
@@ -35,6 +38,7 @@ class WindowPanel {
 		this.closeOnEsc = initOptions.closeOnEsc;
 		this.hasClose = initOptions.hasClose;
 		this.linkToOpen = this.widgetEl.querySelector('.windowpanel-linktoopen a');
+		this.maxWidth = initOptions.maxWidth;
 		this.minWidth = initOptions.minWidth;
 		this.noEventLink = this.widgetEl.querySelector('.windowpanel-action.no');
 		this.padding = initOptions.padding;
@@ -114,7 +118,7 @@ class WindowPanel {
 			content: panel,
 			hideOnClick: false,
 			interactive: true,
-			maxWidth: '450px',
+			maxWidth: this.maxWidth,
 			theme: 'windowpanel',
 			trigger: 'manual',
 			zIndex: 30,

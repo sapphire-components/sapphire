@@ -18,6 +18,8 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
 
 		_body.classList.add('ResizeParentIframe');
 
+		const iframeTheme = _iframe.dataset.theme || '';
+
 		let mutationTimeout = null;
 
 		var _mutationHandler = function (mutations) {
@@ -82,9 +84,55 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
 			return _topMostElement;
 		};
 
+		let iframeRect = _iframe.getBoundingClientRect();
+		let parentPageHeight = getParentPageHeight();
+		let parentViewportHeight = window.parent.innerHeight;
+
+		window.parent.addEventListener('scroll', updateFixedActionsOnScroll, { passive: true });
+		window.parent.addEventListener('resize', updateFixedActionsOnResize);
+
+		function updateIframeDimensions() {
+			iframeRect = _iframe.getBoundingClientRect();
+			parentPageHeight = getParentPageHeight();
+			parentViewportHeight = window.parent.innerHeight;
+		}
+
+		function resetIframeCSSProperties() {
+			_iframe.style.setProperty('--iframe-top', `${iframeRect.top}px`);
+			_iframe.style.setProperty('--parent-height', `${parentPageHeight}px`);
+			_iframe.style.setProperty('--parent-viewport-height', `${parentViewportHeight}px`);
+		}
+
+		function resetFixedActionsPosition() {
+			const layoutBaseFixedActions = document.querySelector('.LayoutBase--fixedActions');
+			if (layoutBaseFixedActions) {
+				const bottomInsideIframe = parentViewportHeight - iframeRect.top;
+				const top = Math.max(0, bottomInsideIframe - layoutBaseFixedActions.offsetHeight);
+				layoutBaseFixedActions.style.top = `${top}px`;
+				layoutBaseFixedActions.style.bottom = 'unset';
+			}
+		}
+
+		function updateFixedActionsOnScroll() {
+			updateIframeDimensions();
+			resetFixedActionsPosition();
+		}
+
+		function updateFixedActionsOnResize() {
+			updateIframeDimensions();
+			resetIframeCSSProperties();
+			resetFixedActionsPosition();
+		}
+
 		var resize = function (addedNodes) {
 			if (_iframe) {
 				try {
+					_iframe.style.removeProperty('--parent-height');
+					_iframe.style.removeProperty('--iframe-top');
+
+					updateIframeDimensions();
+					resetIframeCSSProperties();
+
 					if (_iframe.id === 'tooltipster-frame') {
 						if (options.resizeWidth) {
 							const _contentDocument = _iframe.contentDocument;
@@ -109,6 +157,10 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
 
 					if (iframeMinHeight > 0 && iframeMinHeight > _bodyHeight) {
 						_iframe.style.height = iframeMinHeight + 'px';
+					}
+
+					if (iframeTheme.includes('full-height')) {
+						_iframe.style.removeProperty('height');
 					}
 				} catch (error) {
 					console.error('Error trying to resize parent iframe: ' + error.message);
@@ -158,5 +210,12 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
 		} catch (e) {
 			return false;
 		}
+	}
+
+	function getParentPageHeight() {
+		const doc = window.parent.document;
+		const body = doc.body;
+		const html = doc.documentElement;
+		return Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
 	}
 };
