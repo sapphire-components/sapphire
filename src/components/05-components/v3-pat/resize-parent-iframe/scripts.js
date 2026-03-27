@@ -109,12 +109,12 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
 				console.log('iframeRect.bottom', iframeRect.bottom);
 				console.log('parentViewportHeight', parentViewportHeight);
 
-				if (iframeRect.bottom < parentViewportHeight) {
+				if (iframeRect.bottom + 16 < parentViewportHeight) {
 					layoutBaseFixedActions.style.bottom = 0;
 					layoutBaseFixedActions.style.marginLeft = 0;
 					layoutBaseFixedActions.style.position = 'static';
 					layoutBaseFixedActions.style.top = `unset`;
-					layoutBaseFixedActions.style.display = 'none';
+					layoutBaseFixedActions.style.opacity = 0.2;
 				} else {
 					const bottomInsideIframe = parentViewportHeight - iframeRect.top;
 					const top = Math.max(0, bottomInsideIframe - layoutBaseFixedActions.offsetHeight);
@@ -122,7 +122,7 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
 					layoutBaseFixedActions.style.marginLeft = '-40px';
 					layoutBaseFixedActions.style.position = 'fixed';
 					layoutBaseFixedActions.style.top = `${top}px`;
-					layoutBaseFixedActions.style.display = 'block';
+					layoutBaseFixedActions.style.opacity = 1;
 				}
 			}
 		}
@@ -171,10 +171,6 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
 
 					if (iframeMinHeight > 0 && iframeMinHeight > _bodyHeight) {
 						_iframe.style.height = iframeMinHeight + 'px';
-					}
-
-					if (iframeTheme.includes('full-height')) {
-						_iframe.style.removeProperty('height');
 					}
 				} catch (error) {
 					console.error('Error trying to resize parent iframe: ' + error.message);

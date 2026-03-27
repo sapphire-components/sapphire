@@ -48,3 +48,11 @@ div.menu-inline-wrapper > div.menu-inline > div.menu-inline-balloon:after {
 	top: -9px;
 	width: 1px;
 }
+
+.InlineMenu-Wrapper iframe {
+	transition: none !important;
+}
+
+.InlineMenu-Wrapper iframe[data-theme~='full-height'] {
+	overflow-y: hidden;
+}

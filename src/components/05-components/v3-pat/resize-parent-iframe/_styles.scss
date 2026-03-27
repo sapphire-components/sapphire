@@ -8,6 +8,6 @@ body.ResizeParentIframe {
 	}
 }
 
-.InlineMenu-Wrapper iframe {
-	transition: none !important;
+html:has(body.ResizeParentIframe[data-theme~='full-height']) {
+	overflow-y: hidden;
 }

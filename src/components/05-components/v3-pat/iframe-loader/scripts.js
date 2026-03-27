@@ -212,7 +212,7 @@ $.fn.menuInline = function (notifyId, type, isFullWidth = false, actionsClass, _
 
 			if (type == typeINLINE) {
 				popupDiv = $("<div class='iframe-loading' style='text-align: center;'></div>").appendTo(wrapper);
-				_iframe = $('<iframe scrolling="auto" frameborder="0" src="javascript:void(0);" style="width: ' + (isFullWidth ? '100%' : '0') + '; height: 0;" />');
+				_iframe = $('<iframe data-theme="' + theme + '" scrolling="auto" frameborder="0" src="javascript:void(0);" style="width: ' + (isFullWidth ? '100%' : '0') + '; height: 0;" />');
 
 				if (dataId) {
 					_iframe.attr('data-id', dataId);
