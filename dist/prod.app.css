@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.302 || Generated: Fri Mar 27 2026 12:11:47 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.5.303 || Generated: Fri Mar 27 2026 13:36:44 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -16806,6 +16806,14 @@ div.menu-inline-wrapper > div.menu-inline > div.menu-inline-balloon:after {
   width: 1px;
 }
 
+.InlineMenu-Wrapper iframe {
+  transition: none !important;
+}
+
+.InlineMenu-Wrapper iframe[data-theme~=full-height] {
+  overflow-y: hidden;
+}
+
 .InputLASA .InputLASA-label {
   background-color: #fff;
   border: 1px solid #d6d6d6;
@@ -20351,8 +20359,8 @@ body.ResizeParentIframe .MainContent {
   padding: 0;
 }
 
-.InlineMenu-Wrapper iframe {
-  transition: none !important;
+html:has(body.ResizeParentIframe[data-theme~=full-height]) {
+  overflow-y: hidden;
 }
 
 .CalendarWb {

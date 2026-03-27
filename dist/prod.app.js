@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.302 || Generated: Fri Mar 27 2026 12:11:47 GMT+0000 (Western European Standard Time) */
+/*! prod.app.js || Version: 5.5.303 || Generated: Fri Mar 27 2026 13:36:44 GMT+0000 (Western European Standard Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -3811,7 +3811,7 @@ $.fn.menuInline = function (notifyId, type, isFullWidth = false, actionsClass, _
 
 			if (type == typeINLINE) {
 				popupDiv = $("<div class='iframe-loading' style='text-align: center;'></div>").appendTo(wrapper);
-				_iframe = $('<iframe scrolling="auto" frameborder="0" src="javascript:void(0);" style="width: ' + (isFullWidth ? '100%' : '0') + '; height: 0;" />');
+				_iframe = $('<iframe data-theme="' + theme + '" scrolling="auto" frameborder="0" src="javascript:void(0);" style="width: ' + (isFullWidth ? '100%' : '0') + '; height: 0;" />');
 
 				if (dataId) {
 					_iframe.attr('data-id', dataId);
@@ -5694,12 +5694,12 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
 				console.log('iframeRect.bottom', iframeRect.bottom);
 				console.log('parentViewportHeight', parentViewportHeight);
 
-				if (iframeRect.bottom < parentViewportHeight) {
+				if (iframeRect.bottom + 16 < parentViewportHeight) {
 					layoutBaseFixedActions.style.bottom = 0;
 					layoutBaseFixedActions.style.marginLeft = 0;
 					layoutBaseFixedActions.style.position = 'static';
 					layoutBaseFixedActions.style.top = `unset`;
-					layoutBaseFixedActions.style.display = 'none';
+					layoutBaseFixedActions.style.opacity = 0.2;
 				} else {
 					const bottomInsideIframe = parentViewportHeight - iframeRect.top;
 					const top = Math.max(0, bottomInsideIframe - layoutBaseFixedActions.offsetHeight);
@@ -5707,7 +5707,7 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
 					layoutBaseFixedActions.style.marginLeft = '-40px';
 					layoutBaseFixedActions.style.position = 'fixed';
 					layoutBaseFixedActions.style.top = `${top}px`;
-					layoutBaseFixedActions.style.display = 'block';
+					layoutBaseFixedActions.style.opacity = 1;
 				}
 			}
 		}
@@ -5756,10 +5756,6 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
 
 					if (iframeMinHeight > 0 && iframeMinHeight > _bodyHeight) {
 						_iframe.style.height = iframeMinHeight + 'px';
-					}
-
-					if (iframeTheme.includes('full-height')) {
-						_iframe.style.removeProperty('height');
 					}
 				} catch (error) {
 					console.error('Error trying to resize parent iframe: ' + error.message);
