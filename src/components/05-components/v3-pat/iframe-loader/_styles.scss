@@ -48,7 +48,3 @@ div.menu-inline-wrapper > div.menu-inline > div.menu-inline-balloon:after {
 	top: -9px;
 	width: 1px;
 }
-
-iframe[data-theme~='full-height'] {
-	min-height: calc(var(--parent-height) - var(--iframe-top) - 1px);
-}

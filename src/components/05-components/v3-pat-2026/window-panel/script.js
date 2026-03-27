@@ -134,6 +134,8 @@ class WindowPanel {
 				],
 			},
 			onShow: (instance) => {
+				console.log(this.initOptions);
+
 				if (this.minWidth) {
 					instance.popper.style.minWidth = `${this.minWidth}px`;
 				}

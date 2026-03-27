@@ -4,21 +4,21 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
 	// console.log('options', window.location.pathname, options);
 
 	const iframeMinHeight = options.minHeight || 0;
+	const _iframe = window.frameElement;
+	const _body = document.body;
+	const iframeTheme = _iframe.dataset.theme || '';
+
+	_body.classList.add('ResizeParentIframe');
+	_body.dataset.theme = iframeTheme;
 
 	$(window).load(function () {
 		if (isInsideTippyContent()) {
 			return;
 		}
 
-		const _body = document.body;
-		const _iframe = window.frameElement;
 		const DATA_BODY_RESIZE_ATTRIBUTE_NAME = 'data-resize-parent-iframe-top';
 		const DATA_ELEMENT_CAUSED_BODY_OFFSET = 'data-element-caused-body-offset';
 		const RESIZE_TOP_OFFSET = 5;
-
-		_body.classList.add('ResizeParentIframe');
-
-		const iframeTheme = _iframe.dataset.theme || '';
 
 		let mutationTimeout = null;
 
@@ -106,10 +106,24 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
 		function resetFixedActionsPosition() {
 			const layoutBaseFixedActions = document.querySelector('.LayoutBase--fixedActions');
 			if (layoutBaseFixedActions) {
-				const bottomInsideIframe = parentViewportHeight - iframeRect.top;
-				const top = Math.max(0, bottomInsideIframe - layoutBaseFixedActions.offsetHeight);
-				layoutBaseFixedActions.style.top = `${top}px`;
-				layoutBaseFixedActions.style.bottom = 'unset';
+				console.log('iframeRect.bottom', iframeRect.bottom);
+				console.log('parentViewportHeight', parentViewportHeight);
+
+				if (iframeRect.bottom < parentViewportHeight) {
+					layoutBaseFixedActions.style.bottom = 0;
+					layoutBaseFixedActions.style.marginLeft = 0;
+					layoutBaseFixedActions.style.position = 'static';
+					layoutBaseFixedActions.style.top = `unset`;
+					layoutBaseFixedActions.style.display = 'none';
+				} else {
+					const bottomInsideIframe = parentViewportHeight - iframeRect.top;
+					const top = Math.max(0, bottomInsideIframe - layoutBaseFixedActions.offsetHeight);
+					layoutBaseFixedActions.style.bottom = 'unset';
+					layoutBaseFixedActions.style.marginLeft = '-40px';
+					layoutBaseFixedActions.style.position = 'fixed';
+					layoutBaseFixedActions.style.top = `${top}px`;
+					layoutBaseFixedActions.style.display = 'block';
+				}
 			}
 		}
 
@@ -217,5 +231,19 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
 		const body = doc.body;
 		const html = doc.documentElement;
 		return Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+	}
+
+	function getContentHeight() {
+		const iframe = window.frameElement;
+		iframe.style.removeProperty('height');
+		const html = document.documentElement;
+		const body = document.body;
+		return Math.max(body.scrollHeight, body.offsetHeight, html.scrollHeight, html.offsetHeight, html.clientHeight);
+	}
+
+	function updateOwnIframeHeight() {
+		const iframe = window.frameElement;
+		if (!iframe) return;
+		iframe.style.height = `${getContentHeight()}px`;
 	}
 };
