@@ -1,100 +1,100 @@
-/*! prod.backoffice.js || Version: 5.5.303 || Generated: Fri Mar 27 2026 13:36:44 GMT+0000 (Western European Standard Time) */
+/*! prod.backoffice.js || Version: 5.5.303 || Generated: Fri Mar 27 2026 14:38:14 GMT+0000 (Western European Standard Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/backoffice/01-components/layout/layout-backoffice.js":
 /***/ (function() {
 
+SapphireWidgets = window.SapphireWidgets = window.SapphireWidgets || {};
+
+const style = document.createElement('style');
+style.textContent = `
+.select2 .select2-selection::after {
+  background-image: url(${window.location.origin}/Sapphire_Resources/img/upDownArrows.png);
+}
+`;
+document.head.appendChild(style);
+
 $(document).ready(function () {
+	var regex = RegExp('Layout');
+	var wordList = $('.Page')
+		.attr('class')
+		.split(' ')
+		.filter((elem, index) => {
+			return regex.test(elem);
+		});
+	$('.ViewStateCounter > div').append(' ' + wordList);
 
+	var isDesktop = $('.Page').hasClass('desktop');
+	var isPhone = $('.Page').hasClass('phone');
+	var UseSidebar = $('.Sidebar').css('display') != 'none';
 
-  var regex = RegExp("Layout");
-  var wordList = $('.Page').attr('class').split(" ").filter((elem, index) => {
-    return regex.test(elem);
-  })
-  $('.ViewStateCounter > div').append(' ' + wordList);
+	if (isPhone) $('.Others_Menu ').detach().prependTo('.Application_Menu');
 
+	// open responsive menu
+	$('a.Header_ButtonMenu').click(function () {
+		// if opened
+		if ($('.Page').hasClass('active')) {
+			$('.Page').removeClass('active');
+		} else {
+			$('.Page').addClass('active');
+		}
 
-  var isDesktop = $(".Page").hasClass("desktop");
-  var isPhone = $(".Page").hasClass("phone");
-  var UseSidebar = $(".Sidebar").css("display") != "none";
+		return false;
+	});
 
-  if (isPhone) $(".Others_Menu ").detach().prependTo(".Application_Menu");
+	// close resposive menu when click out
+	$('.Page.tablet > .Content').click(function () {
+		$('.Page').removeClass('active');
+	});
 
-  // open responsive menu
-  $("a.Header_ButtonMenu").click(function () {
+	// Open sidebar
+	$('a.Header_ButtonSidebar').click(function () {
+		// if open
+		if ($('.Sidebar').hasClass('open')) {
+			$('.Sidebar').removeClass('open');
+		} else {
+			$('.Sidebar').addClass('open');
+		}
 
-    // if opened
-    if ($(".Page").hasClass("active")) {
-      $(".Page").removeClass("active");
-    } else {
-      $(".Page").addClass("active");
-    }
+		return false;
+	});
 
-    return false;
-  });
+	// if sidebar
+	if (UseSidebar) {
+		$('.Page').addClass('UseSidebar');
+	} else {
+		// if fade active
+		if ($('.Page').hasClass('UseHeaderFade')) {
+			$header = $('.Header');
+			$titleHeight = $('.Title_Section').outerHeight();
+			var $headerBackground = $('.Header_background');
 
+			var alpha = 0;
+			var lastComma = '';
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > $headerHeight) {
+					$headerBackground.fadeIn();
+				} else {
+					$headerBackground.fadeOut();
+				}
+			});
+		}
+	}
 
-  // close resposive menu when click out
-  $(".Page.tablet > .Content").click(function () {
-    $(".Page").removeClass("active");
-  });
-
-  // Open sidebar
-  $("a.Header_ButtonSidebar").click(function () {
-
-    // if open
-    if ($(".Sidebar").hasClass("open")) {
-      $(".Sidebar").removeClass("open");
-    } else {
-      $(".Sidebar").addClass("open");
-    }
-
-    return false;
-  });
-
-
-  // if sidebar
-  if (UseSidebar) {
-    $(".Page").addClass("UseSidebar");
-  } else {
-
-    // if fade active
-    if ($(".Page").hasClass("UseHeaderFade")) {
-
-      $header = $('.Header');
-      $titleHeight = $(".Title_Section").outerHeight();
-      var $headerBackground = $('.Header_background');
-
-      var alpha = 0;
-      var lastComma = "";
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > $headerHeight) {
-          $headerBackground.fadeIn();
-        } else {
-          $headerBackground.fadeOut();
-        }
-      });
-
-    }
-  }
-
-  $(window).scroll(function () {
-    /*     $('.Page thead th').css('top',$('.MainContent_others').outerHeight());
+	$(window).scroll(function () {
+		/*     $('.Page thead th').css('top',$('.MainContent_others').outerHeight());
          $('.MainContent_others').css('padding-top','20px');*/
+	});
 
-  });
+	$('.Menu_TopMenu').on('click', 'a', function () {
+		$(this).blur();
+	});
 
-  $('.Menu_TopMenu').on('click', 'a', function () {
-    $(this).blur();
-  });
-
-
-
-  /* caj: solves the * in mandatory 
+	/* caj: solves the * in mandatory 
   $('input.Mandatory, select.Mandatory').parent().addClass('ListInputMandatory');*/
-
 });
+
 
 /***/ }),
 
@@ -2437,16 +2437,6 @@ var __webpack_exports__ = {};
 // This entry needs to be wrapped in an IIFE because it needs to be isolated against other modules in the chunk.
 !function() {
 __webpack_require__("./src/backoffice/styles.scss");
-
-SapphireWidgets = window.SapphireWidgets = window.SapphireWidgets || {};
-
-const style = document.createElement('style');
-style.textContent = `
-.select2 .select2-selection::after {
-  background-image: url(${window.location.origin}/Sapphire_Resources/img/upDownArrows.png);
-}
-`;
-document.head.appendChild(style);
 
 __webpack_require__("./src/backoffice/01-components/layout/layout-backoffice.js");
 
