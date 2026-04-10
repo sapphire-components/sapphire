@@ -22,14 +22,10 @@
 }
 
 .LotCodeCard {
-    display: inline-block;
-    vertical-align: bottom;
-    max-width: 8vw;
-		overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.LayoutPopup .LotCodeCard{
-    max-width: 12vw;
+	display: inline-block;
+	max-width: 6em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	vertical-align: bottom;
+	white-space: nowrap;
 }
