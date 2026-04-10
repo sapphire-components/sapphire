@@ -22,20 +22,20 @@ body.has-windowpanel-backdrop {
 	color: $text-color-regular;
 	font-family: $font-family-latin-regular;
 	.tippy-content {
+		height: 100%;
 		padding: 0;
 	}
 }
 
 .windowpanel {
-	a.Button {
-		margin: 0;
-		&:focus-visible {
-			outline: 2px solid #00695c !important;
-			outline-offset: 2px;
-		}
-	}
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	max-height: 100vh;
+
 	text-align: center;
 	&-title {
+		flex: 0 0 auto;
 		margin-bottom: 20px;
 		&:empty {
 			display: none;
@@ -43,6 +43,11 @@ body.has-windowpanel-backdrop {
 	}
 	&-message,
 	&-content {
+		flex: 1 1 auto;
+		min-height: 0;
+		overflow-y: auto;
+		overscroll-behavior: contain;
+		scrollbar-width: thin;
 		&:empty {
 			display: none;
 		}
@@ -50,11 +55,20 @@ body.has-windowpanel-backdrop {
 	&-actions {
 		align-items: center;
 		display: flex;
+		flex: 0 0 auto;
 		gap: 16px;
 		justify-content: center;
 		padding-top: 30px;
 		&:empty {
 			display: none;
+		}
+	}
+
+	a.Button {
+		margin: 0;
+		&:focus-visible {
+			outline: 2px solid #00695c !important;
+			outline-offset: 2px;
 		}
 	}
 }
