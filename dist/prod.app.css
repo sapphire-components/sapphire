@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.304 || Generated: Fri Mar 27 2026 15:19:08 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.5.305 || Generated: Fri Apr 10 2026 13:55:12 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -30151,24 +30151,30 @@ body.has-windowpanel-backdrop {
   font-family: "LatoRegular";
 }
 .tippy-box[data-theme=windowpanel] .tippy-content {
+  height: 100%;
   padding: 0;
 }
 
-.windowpanel a.Button {
-  margin: 0;
-}
-.windowpanel a.Button:focus-visible {
-  outline: 2px solid #00695c !important;
-  outline-offset: 2px;
-}
 .windowpanel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-height: 100vh;
   text-align: center;
 }
 .windowpanel-title {
+  flex: 0 0 auto;
   margin-bottom: 20px;
 }
 .windowpanel-title:empty {
   display: none;
+}
+.windowpanel-message, .windowpanel-content {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
 }
 .windowpanel-message:empty, .windowpanel-content:empty {
   display: none;
@@ -30176,12 +30182,20 @@ body.has-windowpanel-backdrop {
 .windowpanel-actions {
   align-items: center;
   display: flex;
+  flex: 0 0 auto;
   gap: 16px;
   justify-content: center;
   padding-top: 30px;
 }
 .windowpanel-actions:empty {
   display: none;
+}
+.windowpanel a.Button {
+  margin: 0;
+}
+.windowpanel a.Button:focus-visible {
+  outline: 2px solid #00695c !important;
+  outline-offset: 2px;
 }
 
 .windowpanel-close {
