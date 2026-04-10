@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.304 || Generated: Fri Mar 27 2026 15:19:08 GMT+0000 (Western European Standard Time) */
+/*! prod.app.js || Version: 5.5.305 || Generated: Fri Apr 10 2026 13:55:12 GMT+0100 (Western European Summer Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -1314,6 +1314,7 @@ class WindowPanel {
 	closeButton = null;
 	closeOnEsc = null;
 	confirmationTemplate = null;
+	contentMaxHeight = null;
 	customContentEl = null;
 	hasClose = null;
 	initOptions = null;
@@ -1334,8 +1335,6 @@ class WindowPanel {
 	constructor(initOptions) {
 		this.initOptions = initOptions;
 
-		console.log(initOptions);
-
 		this.widgetEl = document.getElementById(initOptions.runtimeId);
 
 		if (!this.widgetEl) {
@@ -1346,6 +1345,7 @@ class WindowPanel {
 		this.closeButton = this.widgetEl.querySelector('.windowpanel-close');
 		this.closeEventLink = this.widgetEl.querySelector('.windowpanel-action.close');
 		this.closeOnEsc = initOptions.closeOnEsc;
+		this.contentMaxHeight = initOptions.contentMaxHeight;
 		this.hasClose = initOptions.hasClose;
 		this.linkToOpen = this.widgetEl.querySelector('.windowpanel-linktoopen a');
 		this.maxWidth = initOptions.maxWidth;
@@ -1444,10 +1444,11 @@ class WindowPanel {
 				],
 			},
 			onShow: (instance) => {
-				console.log(this.initOptions);
-
 				if (this.minWidth) {
 					instance.popper.style.minWidth = `${this.minWidth}px`;
+				}
+				if (this.contentMaxHeight) {
+					instance.popper.querySelector('.windowpanel-content').style.maxHeight = `${this.contentMaxHeight}px`;
 				}
 			},
 			onMount(instance) {},
