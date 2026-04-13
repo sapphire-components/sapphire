@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.305 || Generated: Fri Apr 10 2026 13:55:12 GMT+0100 (Western European Summer Time) */
+/*! prod.app.js || Version: 5.5.306 || Generated: Mon Apr 13 2026 14:57:39 GMT+0300 (GMT+03:00) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -4911,8 +4911,7 @@ SapphireWidgets.ModalPopup = {
 		$(document).ready(function() {
 			// Use this code to append the component to the root body
 			// window.frameElement && $(window.frameElement).closest('.MainInteractiveCard-body').length > 0
-			if (false) // removed by dead control flow
-{} else {
+			if (false) {} else {
 				const $widget = $(`#${widgetId}`);
 				const $btnClose = $widget.find('.modalPopup_close');
 
