@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.307 || Generated: Mon Apr 13 2026 15:40:06 GMT+0300 (GMT+03:00) */
+/*! prod.app.js || Version: 5.5.308 || Generated: Tue Apr 14 2026 18:13:59 GMT+0100 (Western European Summer Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -244,6 +244,9 @@ document.head.appendChild(style);
 		this.setupWindowEvents();
 		this.$iframeSidebar.append('<div class="lds-ring 1"><div></div><div></div><div></div><div></div></div>');
 
+		const pageEl = document.querySelector('.Page');
+		if (pageEl.classList.contains('ar')) pageEl.classList.add('AR');
+
 		$(function () {
 			$('body').addClass('LayoutBase');
 			if (_this.isTopWindow) {
@@ -288,10 +291,13 @@ document.head.appendChild(style);
 	};
 
 	LayoutBase.prototype.handleLayoutTopPadding = function () {
-
-		this.$spacer.stop().animate({
-			height: this.contentThreshold,
-		}, 0, 'linear');
+		this.$spacer.stop().animate(
+			{
+				height: this.contentThreshold,
+			},
+			0,
+			'linear',
+		);
 
 		if (this.$topfixedContent.length === 1) {
 			this.$topfixedContent.css({
@@ -299,7 +305,6 @@ document.head.appendChild(style);
 				top: this.topfixedContentThreshold + 'px',
 			});
 		}
-
 	};
 
 	LayoutBase.prototype.handleLayoutBottomPadding = function () {
@@ -328,8 +333,7 @@ document.head.appendChild(style);
 		this.topfixedContentThreshold = mainMenuHeight + headerBodyHeight;
 		this.contentThreshold = mainMenuHeight + headerBodyHeight + topfixedContentHeight;
 		this.emergencyThreshold = mainMenuHeight + headerBodyHeight + topfixedContentHeight + primaryMenuHeight;
-		this.secondaryThreshold =
-			mainMenuHeight + headerBodyHeight + topfixedContentHeight + primaryMenuHeight + emergencyHeight;
+		this.secondaryThreshold = mainMenuHeight + headerBodyHeight + topfixedContentHeight + primaryMenuHeight + emergencyHeight;
 	};
 
 	LayoutBase.prototype.getThresholds = function () {
@@ -343,7 +347,7 @@ document.head.appendChild(style);
 
 	LayoutBase.prototype.openSidebarIframe = function (duration_in) {
 		var duration = duration_in >= 0 ? duration_in : 100;
-		this.$iframeSidebar.animate({ width: '100%', }, duration);
+		this.$iframeSidebar.animate({ width: '100%' }, duration);
 		$('body').css('overflow-y', 'scroll').click();
 	};
 
@@ -354,7 +358,7 @@ document.head.appendChild(style);
 			{
 				width: targetWidth,
 			},
-			duration
+			duration,
 		);
 		$('body').css('overflow-y', 'scroll');
 	};
@@ -387,12 +391,16 @@ document.head.appendChild(style);
 
 /* Component LayoutBlank */
 $(function () {
+	const pageEl = document.querySelector('.Page');
+	if (pageEl.classList.contains('ar')) pageEl.classList.add('AR');
+
 	if (window.frameElement) {
 		if (!!$(this.frameElement).closest('.MainInteractiveCard').length) {
 			$('.LayoutBlank.Page').addClass('MainInteractiveCard');
 		}
 	}
 });
+
 
 /***/ }),
 
@@ -4911,7 +4919,8 @@ SapphireWidgets.ModalPopup = {
 		$(document).ready(function() {
 			// Use this code to append the component to the root body
 			// window.frameElement && $(window.frameElement).closest('.MainInteractiveCard-body').length > 0
-			if (false) {} else {
+			if (false) // removed by dead control flow
+{} else {
 				const $widget = $(`#${widgetId}`);
 				const $btnClose = $widget.find('.modalPopup_close');
 
