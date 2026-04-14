@@ -62,6 +62,9 @@
 		this.setupWindowEvents();
 		this.$iframeSidebar.append('<div class="lds-ring 1"><div></div><div></div><div></div><div></div></div>');
 
+		const pageEl = document.querySelector('.Page');
+		if (pageEl.classList.contains('ar')) pageEl.classList.add('AR');
+
 		$(function () {
 			$('body').addClass('LayoutBase');
 			if (_this.isTopWindow) {
@@ -106,10 +109,13 @@
 	};
 
 	LayoutBase.prototype.handleLayoutTopPadding = function () {
-
-		this.$spacer.stop().animate({
-			height: this.contentThreshold,
-		}, 0, 'linear');
+		this.$spacer.stop().animate(
+			{
+				height: this.contentThreshold,
+			},
+			0,
+			'linear',
+		);
 
 		if (this.$topfixedContent.length === 1) {
 			this.$topfixedContent.css({
@@ -117,7 +123,6 @@
 				top: this.topfixedContentThreshold + 'px',
 			});
 		}
-
 	};
 
 	LayoutBase.prototype.handleLayoutBottomPadding = function () {
@@ -146,8 +151,7 @@
 		this.topfixedContentThreshold = mainMenuHeight + headerBodyHeight;
 		this.contentThreshold = mainMenuHeight + headerBodyHeight + topfixedContentHeight;
 		this.emergencyThreshold = mainMenuHeight + headerBodyHeight + topfixedContentHeight + primaryMenuHeight;
-		this.secondaryThreshold =
-			mainMenuHeight + headerBodyHeight + topfixedContentHeight + primaryMenuHeight + emergencyHeight;
+		this.secondaryThreshold = mainMenuHeight + headerBodyHeight + topfixedContentHeight + primaryMenuHeight + emergencyHeight;
 	};
 
 	LayoutBase.prototype.getThresholds = function () {
@@ -161,7 +165,7 @@
 
 	LayoutBase.prototype.openSidebarIframe = function (duration_in) {
 		var duration = duration_in >= 0 ? duration_in : 100;
-		this.$iframeSidebar.animate({ width: '100%', }, duration);
+		this.$iframeSidebar.animate({ width: '100%' }, duration);
 		$('body').css('overflow-y', 'scroll').click();
 	};
 
@@ -172,7 +176,7 @@
 			{
 				width: targetWidth,
 			},
-			duration
+			duration,
 		);
 		$('body').css('overflow-y', 'scroll');
 	};
