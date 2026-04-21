@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.309 || Generated: Tue Apr 21 2026 12:13:18 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.310 || Generated: Tue Apr 21 2026 14:13:32 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -16998,12 +16998,6 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   margin: 0;
 }
 
-.AR .DropdownMenu, .AR .InputWithList__List,
-.FA .DropdownMenu,
-.FA .InputWithList__List {
-  left: auto;
-  right: 0;
-}
 .AR .DropdownMenu a, .AR .InputWithList__List a,
 .AR .DropdownMenu div,
 .AR .InputWithList__List div,
@@ -21690,9 +21684,9 @@ div.List-Star > div[unselected] {
   border-bottom-right-radius: 0;
 }
 .SearchSD.hasSideContent .SearchSD_search .SearchSD__inputWrapper {
-  border-bottom-right-radius: 0;
-  border-right-color: transparent;
-  border-top-right-radius: 0;
+  border-start-end-radius: 0;
+  border-end-end-radius: 0;
+  border-inline-end-color: transparent;
   width: 100%;
 }
 .SearchSD.hasSideContent .SearchSD__SideContentWrapper {
@@ -21700,8 +21694,8 @@ div.List-Star > div[unselected] {
   display: flex;
   background-color: #fff;
   border: 1px solid #d6d6d6;
-  border-bottom-right-radius: 24px;
-  border-top-right-radius: 24px;
+  border-start-end-radius: 24px;
+  border-end-end-radius: 24px;
   color: #00ac94;
   cursor: pointer;
   gap: 8px;
