@@ -109,13 +109,13 @@ $searchsd-small-size-base: 36px;
 	//The side content uses similar styles as the clone option, need to check if code can be improved to avoid duplicated styles
 	&.hasSideContent {
 		&.Open {
-            .SearchSD_search {
-                .SearchSD__SideContentWrapper {
-                    border-bottom-right-radius: 0;
-                }
-            }
-        }
-		
+			.SearchSD_search {
+				.SearchSD__SideContentWrapper {
+					border-bottom-right-radius: 0;
+				}
+			}
+		}
+
 		.SearchSD_search {
 			.SearchSD__inputWrapper {
 				border-bottom-right-radius: 0;
@@ -124,7 +124,7 @@ $searchsd-small-size-base: 36px;
 				width: 100%;
 			}
 		}
-		
+
 		.SearchSD__SideContentWrapper {
 			align-items: center;
 			display: flex;
@@ -137,9 +137,9 @@ $searchsd-small-size-base: 36px;
 			gap: 8px;
 			padding: 0 16px;
 
-			.DropdownMenu {
-                left: -16px; //a hack to avoid the dropdown being clipped by the MainInteractiveCard content overflow
-            }
+			.DropdownMenu:not(.arrangeHorizontal) {
+				left: -16px; //a hack to avoid the dropdown being clipped by the MainInteractiveCard content overflow
+			}
 		}
 	}
 
@@ -400,8 +400,6 @@ $searchsd-small-size-base: 36px;
 				border-color: $regular-alpha;
 			}
 		}
-
-		
 	}
 
 	.SearchSD_content {
@@ -430,7 +428,9 @@ $searchsd-small-size-base: 36px;
 
 		span.ListRecords span.selected .SelectSD {
 			background-color: $regular-white;
-			box-shadow: inset 0px 0px 0px 1px $regular-beta, 0px 0px 5px 0px $regular-beta;
+			box-shadow:
+				inset 0px 0px 0px 1px $regular-beta,
+				0px 0px 5px 0px $regular-beta;
 			position: relative;
 		}
 

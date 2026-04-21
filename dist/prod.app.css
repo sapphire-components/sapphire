@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.308 || Generated: Tue Apr 14 2026 18:13:59 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.308 || Generated: Tue Apr 21 2026 10:28:00 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -5312,7 +5312,9 @@ a.LinkReset:link, a.LinkReset:visited {
   background-position: right 14px center;
   background-repeat: no-repeat;
   color: #333;
-  padding: 0 35px 0 16px;
+  padding-block: 0;
+  padding-inline-end: 35px;
+  padding-inline-start: 16px;
 }
 .DropdownFilter {
   border-radius: 100px;
@@ -5344,63 +5346,31 @@ a.LinkReset:link, a.LinkReset:visited {
   border-left: 3px solid #ff3e2d !important;
 }
 
-.AR .Dropdown, .AR .Page .FormField select, .Page .FormField .AR select,
-.AR .LayoutPopup .FormField select,
-.LayoutPopup .FormField .AR select,
-.AR .LayoutBlank .FormField select,
-.LayoutBlank .FormField .AR select,
-.AR .LayoutBase .FormField select,
-.LayoutBase .FormField .AR select,
-.FA .Dropdown,
-.FA .Page .FormField select,
-.Page .FormField .FA select,
-.FA .LayoutPopup .FormField select,
-.LayoutPopup .FormField .FA select,
-.FA .LayoutBlank .FormField select,
-.LayoutBlank .FormField .FA select,
-.FA .LayoutBase .FormField select,
-.LayoutBase .FormField .FA select {
+body .Page.AR .Dropdown, body .Page.AR .FormField select,
+.LayoutPopup .FormField body .Page.AR select,
+.LayoutBlank .FormField body .Page.AR select,
+.LayoutBase .FormField body .Page.AR select,
+body .Page.FA .Dropdown,
+body .Page.FA .FormField select,
+.LayoutPopup .FormField body .Page.FA select,
+.LayoutBlank .FormField body .Page.FA select,
+.LayoutBase .FormField body .Page.FA select {
   background-position: left 14px center;
   background-repeat: no-repeat;
   font-family: "TajawalRegular";
   font-size: 15px;
   line-height: 19px;
-  padding: 5px 16px 5px 36px;
 }
-.AR .Dropdown:disabled, .AR .Page .FormField select:disabled, .Page .FormField .AR select:disabled,
-.AR .LayoutPopup .FormField select:disabled,
-.LayoutPopup .FormField .AR select:disabled,
-.AR .LayoutBlank .FormField select:disabled,
-.LayoutBlank .FormField .AR select:disabled,
-.AR .LayoutBase .FormField select:disabled,
-.LayoutBase .FormField .AR select:disabled,
-.FA .Dropdown:disabled,
-.FA .Page .FormField select:disabled,
-.Page .FormField .FA select:disabled,
-.FA .LayoutPopup .FormField select:disabled,
-.LayoutPopup .FormField .FA select:disabled,
-.FA .LayoutBlank .FormField select:disabled,
-.LayoutBlank .FormField .FA select:disabled,
-.FA .LayoutBase .FormField select:disabled,
-.LayoutBase .FormField .FA select:disabled {
-  background-position: left 0 center;
-}
-.AR .LineContent .Dropdown, .AR .LineContent .Page .FormField select, .Page .FormField .AR .LineContent select,
-.AR .LineContent .LayoutPopup .FormField select,
-.LayoutPopup .FormField .AR .LineContent select,
-.AR .LineContent .LayoutBlank .FormField select,
-.LayoutBlank .FormField .AR .LineContent select,
-.AR .LineContent .LayoutBase .FormField select,
-.LayoutBase .FormField .AR .LineContent select,
-.FA .LineContent .Dropdown,
-.FA .LineContent .Page .FormField select,
-.Page .FormField .FA .LineContent select,
-.FA .LineContent .LayoutPopup .FormField select,
-.LayoutPopup .FormField .FA .LineContent select,
-.FA .LineContent .LayoutBlank .FormField select,
-.LayoutBlank .FormField .FA .LineContent select,
-.FA .LineContent .LayoutBase .FormField select,
-.LayoutBase .FormField .FA .LineContent select {
+body .Page.AR .LineContent .Dropdown, body .Page.AR .LineContent .FormField select, body .Page.AR .FormField .LineContent select,
+.LayoutPopup .FormField body .Page.AR .LineContent select,
+.LayoutBlank .FormField body .Page.AR .LineContent select,
+.LayoutBase .FormField body .Page.AR .LineContent select,
+body .Page.FA .LineContent .Dropdown,
+body .Page.FA .LineContent .FormField select,
+body .Page.FA .FormField .LineContent select,
+.LayoutPopup .FormField body .Page.FA .LineContent select,
+.LayoutBlank .FormField body .Page.FA .LineContent select,
+.LayoutBase .FormField body .Page.FA .LineContent select {
   padding: 5px 5px 5px 5px;
 }
 
@@ -23337,7 +23307,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   border-radius: 4px;
   line-height: 0;
   min-height: 36px;
-  padding-right: 36px;
+  padding-right: 26px;
   transition: all 0.1s ease-in;
 }
 .select2 .select2-selection:hover {
@@ -23399,7 +23369,7 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .select2 .select2-selection .select2-selection__rendered {
   color: #333;
   line-height: 36px;
-  padding: 0 8px;
+  padding: 0 16px;
 }
 .select2 .select2-selection .select2-selection__rendered .select2-search {
   height: calc(36px - 2px);

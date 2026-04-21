@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.5.308 || Generated: Tue Apr 14 2026 18:13:59 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.5.308 || Generated: Tue Apr 21 2026 10:28:00 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -4724,7 +4724,7 @@ body.confirmation-opened {
   border-radius: 4px;
   line-height: 0;
   min-height: 36px;
-  padding-right: 36px;
+  padding-right: 26px;
   transition: all 0.1s ease-in;
 }
 .select2 .select2-selection:hover {
@@ -4786,7 +4786,7 @@ body.confirmation-opened {
 .select2 .select2-selection .select2-selection__rendered {
   color: #333;
   line-height: 36px;
-  padding: 0 8px;
+  padding: 0 16px;
 }
 .select2 .select2-selection .select2-selection__rendered .select2-search {
   height: calc(36px - 2px);

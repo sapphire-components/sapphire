@@ -9,7 +9,9 @@
 	background-position: right 14px center;
 	background-repeat: no-repeat;
 	color: $dark-grey;
-	padding: 0 35px 0 $sapphire-sizes--medium;
+	padding-block: 0;
+	padding-inline-end: 35px;
+	padding-inline-start: 16px;
 
 	&Filter {
 		border-radius: 100px;
@@ -37,19 +39,14 @@
 	}
 }
 
-.AR,
-.FA {
+body .Page.AR,
+body .Page.FA {
 	.Dropdown {
 		background-position: left 14px center;
 		background-repeat: no-repeat;
 		font-family: $font-family-arabic-regular;
 		font-size: 15px;
 		line-height: 19px;
-		padding: 5px $sapphire-sizes--medium 5px 36px;
-
-		&:disabled {
-			background-position: left 0 center;
-		}
 	}
 
 	.LineContent .Dropdown {

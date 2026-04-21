@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.308 || Generated: Tue Apr 14 2026 18:13:59 GMT+0100 (Western European Summer Time) */
+/*! prod.app.js || Version: 5.5.308 || Generated: Tue Apr 21 2026 10:28:00 GMT+0100 (Western European Summer Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -125,10 +125,13 @@ webpackContext.id = "./src/components sync recursive \\.js$";
 
 SapphireWidgets = window.SapphireWidgets = window.SapphireWidgets || {};
 
-const style = document.createElement("style");
+const style = document.createElement('style');
 style.textContent = `
 .select2 .select2-selection::after {
   background-image: url(${window.location.origin}/Sapphire_Resources/img/upDownArrows.png);
+}
+.Dropdown {
+	background-image: url(${window.location.origin}/Sapphire_Resources/img/upDownArrows.png)!important;
 }
 `;
 document.head.appendChild(style);
