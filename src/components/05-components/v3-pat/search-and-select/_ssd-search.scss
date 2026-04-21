@@ -118,9 +118,9 @@ $searchsd-small-size-base: 36px;
 
 		.SearchSD_search {
 			.SearchSD__inputWrapper {
-				border-bottom-right-radius: 0;
-				border-right-color: transparent;
-				border-top-right-radius: 0;
+				border-start-end-radius: 0;
+				border-end-end-radius: 0;
+				border-inline-end-color: transparent;
 				width: 100%;
 			}
 		}
@@ -130,8 +130,8 @@ $searchsd-small-size-base: 36px;
 			display: flex;
 			background-color: #fff;
 			border: 1px solid #d6d6d6;
-			border-bottom-right-radius: 24px;
-			border-top-right-radius: 24px;
+			border-start-end-radius: 24px;
+			border-end-end-radius: 24px;
 			color: #00ac94;
 			cursor: pointer;
 			gap: 8px;
@@ -336,6 +336,7 @@ $searchsd-small-size-base: 36px;
 						box-shadow: none;
 						height: 100%;
 						padding: 0 $searchsd-size-base;
+
 						// width: 95%;
 
 						&::placeholder {

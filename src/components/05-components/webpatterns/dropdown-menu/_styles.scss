@@ -110,8 +110,8 @@
 .AR,
 .FA {
 	.DropdownMenu {
-		left: auto;
-		right: 0;
+		// left: auto;
+		// right: 0;
 
 		a,
 		div {
@@ -120,9 +120,8 @@
 	}
 }
 
-.MoreActions{
-
-	.DropdownMenu{
+.MoreActions {
+	.DropdownMenu {
 		right: 0;
 		left: auto;
 	}
