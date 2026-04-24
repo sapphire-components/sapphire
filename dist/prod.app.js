@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.310 || Generated: Tue Apr 21 2026 14:13:32 GMT+0100 (Western European Summer Time) */
+/*! prod.app.js || Version: 5.5.311 || Generated: Fri Apr 24 2026 12:20:52 GMT+0100 (Western European Summer Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -8634,7 +8634,7 @@ SapphireWidgets.ShiftTable = (widgetId) => {
 	const firstColumnWidth = 400;
 
 	$(document).ready(() => {
-		console.log('Hello world', widgetId);
+		console.log('Ready');
 
 		const shiftTableEl = document.getElementById(widgetId);
 
@@ -8670,6 +8670,7 @@ SapphireWidgets.ShiftTable = (widgetId) => {
 		}
 
 		function calculateFloatingHeader() {
+			console.log('calculateFloatingHeader');
 			const rectContent = getElementTopWindowRect('.ShiftTable__Content');
 			if (isInIframe()) {
 				const willBe = window.top.scrollY - rectContent.top + 12;
@@ -8692,6 +8693,22 @@ SapphireWidgets.ShiftTable = (widgetId) => {
 			}
 		}
 
+		function calculateHourWidth() {
+			const headerWidth = shiftTableEl.querySelector('.ShiftTable__HeaderLabels').getBoundingClientRect().width;
+			const numberOfHours = Array.from(shiftTableEl.querySelectorAll('.ShiftTable__HeaderLabels .ShiftTableCell')).length;
+			const hourWidth = headerWidth / numberOfHours;
+
+			shiftTableEl.style.setProperty('--shifttable-hour-width', `${hourWidth}px`);
+
+			if (shiftTableEl.querySelector('.HourLine')) {
+				const column = +shiftTableEl.querySelector('.HourLine').dataset.column;
+				const minutes = +shiftTableEl.querySelector('.HourLine').dataset.minutes;
+				const minutesConvertedtoPixels = (minutes * hourWidth) / 60;
+				const leftInPx = (column - 1) * hourWidth + minutesConvertedtoPixels + firstColumnWidth + 24;
+				shiftTableEl.querySelector('.HourLine').style.left = `${leftInPx}px`;
+			}
+		}
+
 		setTimeout(() => {
 			window.top.addEventListener('scroll', () => {
 				calculateFloatingHeader();
@@ -8703,21 +8720,31 @@ SapphireWidgets.ShiftTable = (widgetId) => {
 			});
 
 			const resizeObserver = new ResizeObserver(() => {
-				const headerWidth = shiftTableEl.querySelector('.ShiftTable__HeaderLabels').getBoundingClientRect().width;
-				const numberOfHours = Array.from(shiftTableEl.querySelectorAll('.ShiftTable__HeaderLabels .ShiftTableCell')).length;
-				const hourWidth = headerWidth / numberOfHours;
-
-				shiftTableEl.style.setProperty('--shifttable-hour-width', `${hourWidth}px`);
-
-				if (shiftTableEl.querySelector('.HourLine')) {
-					const column = +shiftTableEl.querySelector('.HourLine').dataset.column;
-					const minutes = +shiftTableEl.querySelector('.HourLine').dataset.minutes;
-					const minutesConvertedtoPixels = (minutes * hourWidth) / 60;
-					const leftInPx = (column - 1) * hourWidth + minutesConvertedtoPixels + firstColumnWidth + 24;
-					shiftTableEl.querySelector('.HourLine').style.left = `${leftInPx}px`;
-				}
+				console.log('ResizeObserver');
+				calculateHourWidth();
 			});
 			resizeObserver.observe(shiftTableEl);
+
+			let mutationTimeoutId;
+			const mutationObserver = new MutationObserver((mutations) => {
+				clearTimeout(mutationTimeoutId);
+				console.log('MutationObserver');
+
+				mutationTimeoutId = setTimeout(() => {
+					const progressEls = shiftTableEl.querySelectorAll('.ShiftTableCardProgress');
+					progressEls.forEach((el) => {
+						console.log('Possible width change');
+						calculateHourWidth();
+						el._instance.setTableCardProgress();
+					});
+				}, 500);
+			});
+			mutationObserver.observe(shiftTableEl, {
+				subtree: true,
+				childList: true,
+				attributes: true,
+				attributeFilter: ['style', 'class'],
+			});
 
 			calculateFloatingHeader();
 		}, 500);
@@ -8768,7 +8795,11 @@ SapphireWidgets.ShiftTableCardProgress = (config) => {
 	const DEFAULT_PADDING = 0;
 	const DEFAULT_CARD_HEIGHT = 56;
 
+	console.log('config', config);
+	console.log('window[config.widgetId] 1', window[config.widgetId]);
+
 	const setTableCardProgress = () => {
+		console.log('setTableCardProgress ShiftTableCardProgress');
 		const cardProgresID = config.widgetId;
 		const shiftEndDateTime = config.shiftEndDateTime;
 		const shiftStartDateTime = config.shiftStartDateTime;
@@ -8973,12 +9004,20 @@ SapphireWidgets.ShiftTableCardProgress = (config) => {
 		return { $shiftCard, createdId, loopedId, $firstSlotCreated, isOverlaped };
 	};
 
+	const cardProgressEl = document.getElementById(config.widgetId);
+	cardProgressEl._instance = {
+		setTableCardProgress: setTableCardProgress,
+	};
+
 	$(document).ready(function () {
 		setTableCardProgress(config);
 	});
 
 	$(window).resize(function () {
+		console.log('window[config.widgetId] 2', window[config.widgetId]);
 		if (window[config.widgetId]) {
+			console.log('window Resize ShiftTableCardProgress');
+
 			clearTimeout(window[config.widgetId].resizedFinished);
 
 			const allShiftTableCardProgress = document.querySelectorAll('.ShiftTableCardProgress');
@@ -8988,7 +9027,7 @@ SapphireWidgets.ShiftTableCardProgress = (config) => {
 
 			window[config.widgetId].resizedFinished = setTimeout(function () {
 				setTableCardProgress(config);
-			}, 250);
+			}, 600);
 		}
 	});
 };
