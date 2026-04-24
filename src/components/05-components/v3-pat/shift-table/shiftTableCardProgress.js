@@ -2,7 +2,11 @@ SapphireWidgets.ShiftTableCardProgress = (config) => {
 	const DEFAULT_PADDING = 0;
 	const DEFAULT_CARD_HEIGHT = 56;
 
+	console.log('config', config);
+	console.log('window[config.widgetId] 1', window[config.widgetId]);
+
 	const setTableCardProgress = () => {
+		console.log('setTableCardProgress ShiftTableCardProgress');
 		const cardProgresID = config.widgetId;
 		const shiftEndDateTime = config.shiftEndDateTime;
 		const shiftStartDateTime = config.shiftStartDateTime;
@@ -207,12 +211,20 @@ SapphireWidgets.ShiftTableCardProgress = (config) => {
 		return { $shiftCard, createdId, loopedId, $firstSlotCreated, isOverlaped };
 	};
 
+	const cardProgressEl = document.getElementById(config.widgetId);
+	cardProgressEl._instance = {
+		setTableCardProgress: setTableCardProgress,
+	};
+
 	$(document).ready(function () {
 		setTableCardProgress(config);
 	});
 
 	$(window).resize(function () {
+		console.log('window[config.widgetId] 2', window[config.widgetId]);
 		if (window[config.widgetId]) {
+			console.log('window Resize ShiftTableCardProgress');
+
 			clearTimeout(window[config.widgetId].resizedFinished);
 
 			const allShiftTableCardProgress = document.querySelectorAll('.ShiftTableCardProgress');
@@ -222,7 +234,7 @@ SapphireWidgets.ShiftTableCardProgress = (config) => {
 
 			window[config.widgetId].resizedFinished = setTimeout(function () {
 				setTableCardProgress(config);
-			}, 250);
+			}, 600);
 		}
 	});
 };
