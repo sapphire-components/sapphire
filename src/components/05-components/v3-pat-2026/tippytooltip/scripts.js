@@ -26,16 +26,17 @@
 		let allowHTML = false;
 		let content = contentEl;
 
+		if (config.width > incomingConfig.maxWidth) {
+			incomingConfig.maxWidth = config.width;
+		}
+
 		if (config.iframeURL) {
 			allowHTML = true;
-			content = `<iframe data-ui="iframe-tooltip" src="${config.iframeURL}" style="border:none;"></iframe>`;
+			content = `<iframe data-ui="iframe-tooltip" src="${config.iframeURL}" style="border:none; width:100%;"></iframe>`;
+			incomingConfig.maxWidth = 1024;
 		}
 
-		if (config.width > config.tippyConfig.maxWidth) {
-			config.tippyConfig.maxWidth = config.width;
-		}
-
-		if (config.tippyConfig.trigger.includes('click')) {
+		if (incomingConfig.trigger.includes('click')) {
 			triggerEl.style.cursor = 'pointer';
 		}
 
@@ -81,10 +82,19 @@
 
 						try {
 							const doc = iframe.contentDocument || iframe.contentWindow.document;
+
 							if (doc) {
+								const styles = window.getComputedStyle(box.querySelector('.tippy-content'));
+								const horizontalPadding = parseFloat(styles.paddingLeft) + parseFloat(styles.paddingRight);
+
+								const iframeContentWidth = doc.documentElement.scrollWidth + horizontalPadding;
+
+								box.style.width = `${iframeContentWidth}px`;
+
 								const body = doc.body;
 								const html = doc.documentElement;
 								const height = Math.max(body ? body.scrollHeight : 0, html ? html.scrollHeight : 0);
+
 								if (height > 0) {
 									iframe.style.height = `${height}px`;
 								}

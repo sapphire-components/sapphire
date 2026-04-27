@@ -15,7 +15,11 @@ SapphireWidgets.ShiftTableCardProgress = (config) => {
 
 		const $cardProgress = $('#' + cardProgresID);
 		const $shiftTable = $cardProgress.closest('.ShiftTable');
+
+		const $hoursRowCellList = $shiftTable.find('.ShiftTable__HeaderLabels .ShiftTableCell');
+
 		const $tableCellList = $shiftTable.find('.ShiftTable__Content .ShiftTableCell');
+
 		const $tableRowContent = $cardProgress.closest('.ShiftTableRow__Content');
 		const $tableCard = $tableRowContent.find('.ShiftTableCard');
 		const $cardProgressList = $tableRowContent.find('.ShiftTableCardProgress');
@@ -24,7 +28,7 @@ SapphireWidgets.ShiftTableCardProgress = (config) => {
 
 		const cardsTotal = $tableCard.length;
 
-		const timeSlotWidth = $tableCellList[1].getBoundingClientRect().width;
+		const timeSlotWidth = $hoursRowCellList[1].getBoundingClientRect().width;
 
 		const roundWidth = Math.round((timeSlotWidth + Number.EPSILON) * 100) / 100;
 
