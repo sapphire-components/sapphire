@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.311 || Generated: Fri Apr 24 2026 12:20:52 GMT+0100 (Western European Summer Time) */
+/*! prod.app.js || Version: 5.5.312 || Generated: Mon Apr 27 2026 17:23:47 GMT+0100 (Western European Summer Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -1146,16 +1146,17 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 		let allowHTML = false;
 		let content = contentEl;
 
+		if (config.width > incomingConfig.maxWidth) {
+			incomingConfig.maxWidth = config.width;
+		}
+
 		if (config.iframeURL) {
 			allowHTML = true;
-			content = `<iframe data-ui="iframe-tooltip" src="${config.iframeURL}" style="border:none;"></iframe>`;
+			content = `<iframe data-ui="iframe-tooltip" src="${config.iframeURL}" style="border:none; width:100%;"></iframe>`;
+			incomingConfig.maxWidth = 1024;
 		}
 
-		if (config.width > config.tippyConfig.maxWidth) {
-			config.tippyConfig.maxWidth = config.width;
-		}
-
-		if (config.tippyConfig.trigger.includes('click')) {
+		if (incomingConfig.trigger.includes('click')) {
 			triggerEl.style.cursor = 'pointer';
 		}
 
@@ -1201,10 +1202,19 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 
 						try {
 							const doc = iframe.contentDocument || iframe.contentWindow.document;
+
 							if (doc) {
+								const styles = window.getComputedStyle(box.querySelector('.tippy-content'));
+								const horizontalPadding = parseFloat(styles.paddingLeft) + parseFloat(styles.paddingRight);
+
+								const iframeContentWidth = doc.documentElement.scrollWidth + horizontalPadding;
+
+								box.style.width = `${iframeContentWidth}px`;
+
 								const body = doc.body;
 								const html = doc.documentElement;
 								const height = Math.max(body ? body.scrollHeight : 0, html ? html.scrollHeight : 0);
+
 								if (height > 0) {
 									iframe.style.height = `${height}px`;
 								}
@@ -8808,7 +8818,11 @@ SapphireWidgets.ShiftTableCardProgress = (config) => {
 
 		const $cardProgress = $('#' + cardProgresID);
 		const $shiftTable = $cardProgress.closest('.ShiftTable');
+
+		const $hoursRowCellList = $shiftTable.find('.ShiftTable__HeaderLabels .ShiftTableCell');
+
 		const $tableCellList = $shiftTable.find('.ShiftTable__Content .ShiftTableCell');
+
 		const $tableRowContent = $cardProgress.closest('.ShiftTableRow__Content');
 		const $tableCard = $tableRowContent.find('.ShiftTableCard');
 		const $cardProgressList = $tableRowContent.find('.ShiftTableCardProgress');
@@ -8817,7 +8831,7 @@ SapphireWidgets.ShiftTableCardProgress = (config) => {
 
 		const cardsTotal = $tableCard.length;
 
-		const timeSlotWidth = $tableCellList[1].getBoundingClientRect().width;
+		const timeSlotWidth = $hoursRowCellList[1].getBoundingClientRect().width;
 
 		const roundWidth = Math.round((timeSlotWidth + Number.EPSILON) * 100) / 100;
 
