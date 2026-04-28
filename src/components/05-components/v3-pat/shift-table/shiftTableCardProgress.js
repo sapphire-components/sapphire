@@ -98,11 +98,11 @@ SapphireWidgets.ShiftTableCardProgress = (config) => {
 			});
 		}
 
-		setTimeout(() => {
-			if (timeSlotWidth !== $tableCellList[1].getBoundingClientRect().width) {
-				setTableCardProgress(config);
-			}
-		}, 500);
+		// setTimeout(() => {
+		// 	if (timeSlotWidth !== $tableCellList[1].getBoundingClientRect().width) {
+		// 		setTableCardProgress(config);
+		// 	}
+		// }, 500);
 
 		if (hasActions) {
 			$actions.on('click', (e) => {
