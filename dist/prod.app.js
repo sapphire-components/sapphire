@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.312 || Generated: Mon Apr 27 2026 17:23:47 GMT+0100 (Western European Summer Time) */
+/*! prod.app.js || Version: 5.5.313 || Generated: Tue Apr 28 2026 14:02:54 GMT+0100 (Western European Summer Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -8901,11 +8901,11 @@ SapphireWidgets.ShiftTableCardProgress = (config) => {
 			});
 		}
 
-		setTimeout(() => {
-			if (timeSlotWidth !== $tableCellList[1].getBoundingClientRect().width) {
-				setTableCardProgress(config);
-			}
-		}, 500);
+		// setTimeout(() => {
+		// 	if (timeSlotWidth !== $tableCellList[1].getBoundingClientRect().width) {
+		// 		setTableCardProgress(config);
+		// 	}
+		// }, 500);
 
 		if (hasActions) {
 			$actions.on('click', (e) => {
