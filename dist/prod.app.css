@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.313 || Generated: Tue Apr 28 2026 14:02:54 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.314 || Generated: Thu Apr 30 2026 09:46:25 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -15207,7 +15207,6 @@ div.CircledArrow {
   gap: 16px;
 }
 .PersonCard__content > div {
-  /*flex-basis: 100%;*/
   flex: 0 0 auto;
   margin: 0;
 }
@@ -15555,6 +15554,11 @@ a .PersonCard_expandable {
 .PersonCard[data-background="26"] .PersonCard__content,
 .PersonCard[data-background="26"] .PersonCard__actions {
   background-color: #fce3e3;
+}
+
+.PersonCard[data-theme=children-equal] .PersonCard__content > div {
+  flex: unset;
+  flex-basis: 100%;
 }
 
 .GenericGallery .GenericGallery-content {
@@ -31925,6 +31929,10 @@ span[id$=FakeNotify_block] {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.font-weight-bold {
+  font-weight: bold;
 }
 
 .Card .Gallery .GalleryWrapper {
