@@ -1,13 +1,11 @@
 @use 'sass:color';
 
+@use '../../../../assets/variables' as *;
 @use '../../../00-settings/borders' as *;
 @use '../../../00-settings/colors' as *;
-@use '../../../00-settings/sizes' as *;
-@use '../../../../assets/variables' as *;
 @use '../../../00-settings/fonts' as *;
-
+@use '../../../00-settings/sizes' as *;
 @use '../../../01-tools/arrow-button' as *;
-
 @use '../../../01-tools/flex-align' as *;
 
 /* stylelint-disable no-descending-specificity */
@@ -428,7 +426,6 @@
 		gap: $sapphire-sizes--medium;
 
 		> div {
-			/*flex-basis: 100%;*/
 			flex: 0 0 auto;
 			margin: 0;
 
@@ -850,5 +847,12 @@ a {
 	.PersonCard__content,
 	.PersonCard__actions {
 		background-color: $light-red;
+	}
+}
+
+.PersonCard[data-theme='children-equal'] {
+	.PersonCard__content > div {
+		flex: unset;
+		flex-basis: 100%;
 	}
 }
