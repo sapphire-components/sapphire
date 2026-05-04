@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.314 || Generated: Thu Apr 30 2026 09:46:25 GMT+0100 (Western European Summer Time) */
+/*! prod.app.js || Version: 5.5.315 || Generated: Mon May 04 2026 18:13:00 GMT+0100 (Western European Summer Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -1204,20 +1204,35 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 							const doc = iframe.contentDocument || iframe.contentWindow.document;
 
 							if (doc) {
-								const styles = window.getComputedStyle(box.querySelector('.tippy-content'));
-								const horizontalPadding = parseFloat(styles.paddingLeft) + parseFloat(styles.paddingRight);
-
-								const iframeContentWidth = doc.documentElement.scrollWidth + horizontalPadding;
-
-								box.style.width = `${iframeContentWidth}px`;
-
+								const tippyContent = box.querySelector('.tippy-content');
 								const body = doc.body;
 								const html = doc.documentElement;
-								const height = Math.max(body ? body.scrollHeight : 0, html ? html.scrollHeight : 0);
 
-								if (height > 0) {
-									iframe.style.height = `${height}px`;
-								}
+								const getHorizontalPadding = () => {
+									const styles = window.getComputedStyle(tippyContent);
+									return parseFloat(styles.paddingLeft) + parseFloat(styles.paddingRight);
+								};
+
+								const notifyParentSize = () => {
+									// Reset both dimensions so the content can report its natural size,
+									// then re-measure and reapply. Mirrors how height is handled.
+									iframe.style.height = '';
+									box.style.width = '';
+
+									const width = (html ? html.scrollWidth : 0) + getHorizontalPadding();
+									if (width > 0) {
+										box.style.width = `${width}px`;
+									}
+
+									const height = Math.max(body ? body.scrollHeight : 0, html ? html.scrollHeight : 0);
+									if (height > 0) {
+										iframe.style.height = `${height}px`;
+									}
+
+									instance.popperInstance?.update();
+								};
+
+								notifyParentSize();
 
 								let scheduled = false;
 								let timeout;
@@ -1229,7 +1244,7 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 									requestAnimationFrame(() => {
 										scheduled = false;
 										timeout = setTimeout(() => {
-											notifyParentHeight();
+											notifyParentSize();
 										}, 500);
 									});
 								});
@@ -1240,15 +1255,6 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 									childList: true,
 									subtree: true,
 								});
-
-								const notifyParentHeight = () => {
-									iframe.style.height = '';
-									const height = Math.max(body ? body.scrollHeight : 0, html ? html.scrollHeight : 0);
-									if (height > 0) {
-										iframe.style.height = `${height}px`;
-										instance.popperInstance.update();
-									}
-								};
 							}
 						} catch (e) {
 							// Silent fail for cross-origin iframes
@@ -5836,19 +5842,19 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
 		return Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
 	}
 
-	function getContentHeight() {
-		const iframe = window.frameElement;
-		iframe.style.removeProperty('height');
-		const html = document.documentElement;
-		const body = document.body;
-		return Math.max(body.scrollHeight, body.offsetHeight, html.scrollHeight, html.offsetHeight, html.clientHeight);
-	}
+	// function getContentHeight() {
+	// 	const iframe = window.frameElement;
+	// 	iframe.style.removeProperty('height');
+	// 	const html = document.documentElement;
+	// 	const body = document.body;
+	// 	return Math.max(body.scrollHeight, body.offsetHeight, html.scrollHeight, html.offsetHeight, html.clientHeight);
+	// }
 
-	function updateOwnIframeHeight() {
-		const iframe = window.frameElement;
-		if (!iframe) return;
-		iframe.style.height = `${getContentHeight()}px`;
-	}
+	// function updateOwnIframeHeight() {
+	// 	const iframe = window.frameElement;
+	// 	if (!iframe) return;
+	// 	iframe.style.height = `${getContentHeight()}px`;
+	// }
 };
 
 
@@ -8743,7 +8749,7 @@ SapphireWidgets.ShiftTable = (widgetId) => {
 				mutationTimeoutId = setTimeout(() => {
 					const progressEls = shiftTableEl.querySelectorAll('.ShiftTableCardProgress');
 					progressEls.forEach((el) => {
-						console.log('Possible width change');
+						// console.log('Possible width change');
 						calculateHourWidth();
 						el._instance.setTableCardProgress();
 					});
@@ -8805,11 +8811,11 @@ SapphireWidgets.ShiftTableCardProgress = (config) => {
 	const DEFAULT_PADDING = 0;
 	const DEFAULT_CARD_HEIGHT = 56;
 
-	console.log('config', config);
-	console.log('window[config.widgetId] 1', window[config.widgetId]);
+	// console.log('config', config);
+	// console.log('window[config.widgetId] 1', window[config.widgetId]);
 
 	const setTableCardProgress = () => {
-		console.log('setTableCardProgress ShiftTableCardProgress');
+		// console.log('setTableCardProgress ShiftTableCardProgress');
 		const cardProgresID = config.widgetId;
 		const shiftEndDateTime = config.shiftEndDateTime;
 		const shiftStartDateTime = config.shiftStartDateTime;
@@ -9028,9 +9034,9 @@ SapphireWidgets.ShiftTableCardProgress = (config) => {
 	});
 
 	$(window).resize(function () {
-		console.log('window[config.widgetId] 2', window[config.widgetId]);
+		// console.log('window[config.widgetId] 2', window[config.widgetId]);
 		if (window[config.widgetId]) {
-			console.log('window Resize ShiftTableCardProgress');
+			// console.log('window Resize ShiftTableCardProgress');
 
 			clearTimeout(window[config.widgetId].resizedFinished);
 
