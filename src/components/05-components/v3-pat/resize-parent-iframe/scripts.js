@@ -229,17 +229,17 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
 		return Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
 	}
 
-	function getContentHeight() {
-		const iframe = window.frameElement;
-		iframe.style.removeProperty('height');
-		const html = document.documentElement;
-		const body = document.body;
-		return Math.max(body.scrollHeight, body.offsetHeight, html.scrollHeight, html.offsetHeight, html.clientHeight);
-	}
+	// function getContentHeight() {
+	// 	const iframe = window.frameElement;
+	// 	iframe.style.removeProperty('height');
+	// 	const html = document.documentElement;
+	// 	const body = document.body;
+	// 	return Math.max(body.scrollHeight, body.offsetHeight, html.scrollHeight, html.offsetHeight, html.clientHeight);
+	// }
 
-	function updateOwnIframeHeight() {
-		const iframe = window.frameElement;
-		if (!iframe) return;
-		iframe.style.height = `${getContentHeight()}px`;
-	}
+	// function updateOwnIframeHeight() {
+	// 	const iframe = window.frameElement;
+	// 	if (!iframe) return;
+	// 	iframe.style.height = `${getContentHeight()}px`;
+	// }
 };

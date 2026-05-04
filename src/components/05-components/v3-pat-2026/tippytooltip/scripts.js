@@ -84,20 +84,35 @@
 							const doc = iframe.contentDocument || iframe.contentWindow.document;
 
 							if (doc) {
-								const styles = window.getComputedStyle(box.querySelector('.tippy-content'));
-								const horizontalPadding = parseFloat(styles.paddingLeft) + parseFloat(styles.paddingRight);
-
-								const iframeContentWidth = doc.documentElement.scrollWidth + horizontalPadding;
-
-								box.style.width = `${iframeContentWidth}px`;
-
+								const tippyContent = box.querySelector('.tippy-content');
 								const body = doc.body;
 								const html = doc.documentElement;
-								const height = Math.max(body ? body.scrollHeight : 0, html ? html.scrollHeight : 0);
 
-								if (height > 0) {
-									iframe.style.height = `${height}px`;
-								}
+								const getHorizontalPadding = () => {
+									const styles = window.getComputedStyle(tippyContent);
+									return parseFloat(styles.paddingLeft) + parseFloat(styles.paddingRight);
+								};
+
+								const notifyParentSize = () => {
+									// Reset both dimensions so the content can report its natural size,
+									// then re-measure and reapply. Mirrors how height is handled.
+									iframe.style.height = '';
+									box.style.width = '';
+
+									const width = (html ? html.scrollWidth : 0) + getHorizontalPadding();
+									if (width > 0) {
+										box.style.width = `${width}px`;
+									}
+
+									const height = Math.max(body ? body.scrollHeight : 0, html ? html.scrollHeight : 0);
+									if (height > 0) {
+										iframe.style.height = `${height}px`;
+									}
+
+									instance.popperInstance?.update();
+								};
+
+								notifyParentSize();
 
 								let scheduled = false;
 								let timeout;
@@ -109,7 +124,7 @@
 									requestAnimationFrame(() => {
 										scheduled = false;
 										timeout = setTimeout(() => {
-											notifyParentHeight();
+											notifyParentSize();
 										}, 500);
 									});
 								});
@@ -120,15 +135,6 @@
 									childList: true,
 									subtree: true,
 								});
-
-								const notifyParentHeight = () => {
-									iframe.style.height = '';
-									const height = Math.max(body ? body.scrollHeight : 0, html ? html.scrollHeight : 0);
-									if (height > 0) {
-										iframe.style.height = `${height}px`;
-										instance.popperInstance.update();
-									}
-								};
 							}
 						} catch (e) {
 							// Silent fail for cross-origin iframes

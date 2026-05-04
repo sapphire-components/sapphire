@@ -105,7 +105,7 @@ SapphireWidgets.ShiftTable = (widgetId) => {
 				mutationTimeoutId = setTimeout(() => {
 					const progressEls = shiftTableEl.querySelectorAll('.ShiftTableCardProgress');
 					progressEls.forEach((el) => {
-						console.log('Possible width change');
+						// console.log('Possible width change');
 						calculateHourWidth();
 						el._instance.setTableCardProgress();
 					});
