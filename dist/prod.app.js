@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.315 || Generated: Mon May 04 2026 18:13:00 GMT+0100 (Western European Summer Time) */
+/*! prod.app.js || Version: 5.5.316 || Generated: Tue May 05 2026 11:21:22 GMT+0100 (Western European Summer Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -1214,8 +1214,7 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 								};
 
 								const notifyParentSize = () => {
-									// Reset both dimensions so the content can report its natural size,
-									// then re-measure and reapply. Mirrors how height is handled.
+									console.log('notifyParentSize');
 									iframe.style.height = '';
 									box.style.width = '';
 
@@ -1224,10 +1223,16 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 										box.style.width = `${width}px`;
 									}
 
-									const height = Math.max(body ? body.scrollHeight : 0, html ? html.scrollHeight : 0);
+									console.log('body.scrollHeight', body.scrollHeight);
+									console.log('html.scrollHeight', html.scrollHeight);
+									// const height = Math.max(body ? body.scrollHeight : 0, html ? html.scrollHeight : 0);
+									const height = body ? body.scrollHeight : 0;
 									if (height > 0) {
 										iframe.style.height = `${height}px`;
 									}
+
+									console.log('width', width);
+									console.log('height', height);
 
 									instance.popperInstance?.update();
 								};
