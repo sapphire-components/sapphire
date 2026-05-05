@@ -32,7 +32,7 @@
 
 		if (config.iframeURL) {
 			allowHTML = true;
-			content = `<iframe data-ui="iframe-tooltip" src="${config.iframeURL}" style="border:none; width:100%;"></iframe>`;
+			content = `<iframe data-ui="iframe-tooltip" src="${config.iframeURL}" style="display:block; border:none; width:100%;"></iframe>`;
 			incomingConfig.maxWidth = 1024;
 		}
 
@@ -103,16 +103,11 @@
 										box.style.width = `${width}px`;
 									}
 
-									console.log('body.scrollHeight', body.scrollHeight);
-									console.log('html.scrollHeight', html.scrollHeight);
 									// const height = Math.max(body ? body.scrollHeight : 0, html ? html.scrollHeight : 0);
 									const height = body ? body.scrollHeight : 0;
 									if (height > 0) {
 										iframe.style.height = `${height}px`;
 									}
-
-									console.log('width', width);
-									console.log('height', height);
 
 									instance.popperInstance?.update();
 								};
@@ -127,10 +122,11 @@
 									clearTimeout(timeout);
 									scheduled = true;
 									requestAnimationFrame(() => {
+										console.log('mutationObserver', args);
 										scheduled = false;
 										timeout = setTimeout(() => {
 											notifyParentSize();
-										}, 500);
+										}, 100);
 									});
 								});
 
