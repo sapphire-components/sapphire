@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.316 || Generated: Tue May 05 2026 11:21:22 GMT+0100 (Western European Summer Time) */
+/*! prod.app.js || Version: 5.5.317 || Generated: Tue May 05 2026 11:47:15 GMT+0100 (Western European Summer Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -1152,7 +1152,7 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 
 		if (config.iframeURL) {
 			allowHTML = true;
-			content = `<iframe data-ui="iframe-tooltip" src="${config.iframeURL}" style="border:none; width:100%;"></iframe>`;
+			content = `<iframe data-ui="iframe-tooltip" src="${config.iframeURL}" style="display:block; border:none; width:100%;"></iframe>`;
 			incomingConfig.maxWidth = 1024;
 		}
 
@@ -1223,16 +1223,11 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 										box.style.width = `${width}px`;
 									}
 
-									console.log('body.scrollHeight', body.scrollHeight);
-									console.log('html.scrollHeight', html.scrollHeight);
 									// const height = Math.max(body ? body.scrollHeight : 0, html ? html.scrollHeight : 0);
 									const height = body ? body.scrollHeight : 0;
 									if (height > 0) {
 										iframe.style.height = `${height}px`;
 									}
-
-									console.log('width', width);
-									console.log('height', height);
 
 									instance.popperInstance?.update();
 								};
@@ -1247,10 +1242,11 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 									clearTimeout(timeout);
 									scheduled = true;
 									requestAnimationFrame(() => {
+										console.log('mutationObserver', args);
 										scheduled = false;
 										timeout = setTimeout(() => {
 											notifyParentSize();
-										}, 500);
+										}, 100);
 									});
 								});
 
