@@ -1,0 +1,87 @@
+.hourpicker2 {
+	display: flex;
+	width: 100%;
+
+	&-input {
+		position: relative;
+		&:before {
+			color: #00bfa5;
+			content: '\e62a';
+			font-family: 'Sapphire-Icon-Font';
+			font-size: 1.143em;
+			position: absolute;
+			right: 10px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+
+	&-clear {
+		display: block;
+		height: 20px;
+		width: 20px;
+		&:before {
+			color: #00ac94;
+			content: '\e604';
+			cursor: pointer;
+			display: inline-block;
+			font-family: 'Sapphire-Icon-Font';
+			font-size: inherit;
+			-webkit-font-smoothing: antialiased;
+			font-style: normal;
+			font-variant: normal;
+			font-weight: normal;
+			margin: 0 10px;
+			text-transform: none;
+			transform: rotateZ(45deg);
+		}
+	}
+
+	input[type='text'] {
+		width: 100%;
+	}
+
+	&-overlay {
+		background: #fff;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+		display: none;
+		left: 0;
+		max-height: 200px;
+		overflow-y: auto;
+		position: absolute;
+		top: calc(100% + 4px);
+		width: 100%;
+		z-index: 1000;
+
+		&.is-open {
+			display: block;
+		}
+
+		&.is-above {
+			bottom: calc(100% + 4px);
+			top: auto;
+		}
+
+		&-list {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		&-item {
+			cursor: pointer;
+			padding: 8px 12px;
+
+			&:hover {
+				background: #f5f5f5;
+			}
+
+			&.is-active {
+				background: #e0f7f3;
+				color: #00ac94;
+			}
+		}
+	}
+}
