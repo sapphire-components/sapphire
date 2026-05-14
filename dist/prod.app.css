@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.318 || Generated: Thu May 14 2026 14:19:17 GMT+0300 (GMT+03:00) */
+/*! prod.app.css || Version: 5.5.319 || Generated: Thu May 14 2026 15:30:40 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -30189,6 +30189,84 @@ body.has-windowpanel-backdrop {
 
 .tippy-box[data-theme=windowpanel]:has(.windowpanel[data-padding=l]) {
   padding: 24px;
+}
+
+.hourpicker2 {
+  display: flex;
+  width: 100%;
+}
+.hourpicker2-input {
+  position: relative;
+}
+.hourpicker2-input:before {
+  color: #00bfa5;
+  content: "\e62a";
+  font-family: "Sapphire-Icon-Font";
+  font-size: 1.143em;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.hourpicker2-clear {
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+.hourpicker2-clear:before {
+  color: #00ac94;
+  content: "\e604";
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Sapphire-Icon-Font";
+  font-size: inherit;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin: 0 10px;
+  text-transform: none;
+  transform: rotateZ(45deg);
+}
+.hourpicker2 input[type=text] {
+  width: 100%;
+}
+.hourpicker2-overlay {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: none;
+  left: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  position: absolute;
+  top: calc(100% + 4px);
+  width: 100%;
+  z-index: 1000;
+}
+.hourpicker2-overlay.is-open {
+  display: block;
+}
+.hourpicker2-overlay.is-above {
+  bottom: calc(100% + 4px);
+  top: auto;
+}
+.hourpicker2-overlay-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.hourpicker2-overlay-item {
+  cursor: pointer;
+  padding: 8px 12px;
+}
+.hourpicker2-overlay-item:hover {
+  background: #f5f5f5;
+}
+.hourpicker2-overlay-item.is-active {
+  background: #e0f7f3;
+  color: #00ac94;
 }
 
 .MultiAlignRight,
