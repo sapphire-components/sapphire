@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.319 || Generated: Thu May 14 2026 15:30:40 GMT+0100 (Western European Summer Time) */
+/*! prod.app.js || Version: 5.5.320 || Generated: Thu May 14 2026 17:55:15 GMT+0100 (Western European Summer Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -1134,34 +1134,36 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 			...config,
 		};
 
-		console.log('options', options);
-
 		const widgetEl = document.getElementById(config.widgetId);
 		const inputWrapperEl = widgetEl.querySelector('.hourpicker2-input');
-		const inputEl = inputWrapperEl.querySelector('input');
+
 		const clearEl = widgetEl.querySelector('.hourpicker2-clear');
+		const inputEl = inputWrapperEl.querySelector('input');
+
+		// Single commit-point: writes the value and notifies listeners. Both
+		// `input` (for reactive bindings) and `change` (the native "value
+		// committed" signal) are dispatched. Skipped when the value is unchanged.
+		const commitValue = (v) => {
+			if (inputEl.value === v) return;
+
+			inputEl.value = v;
+
+			console.log(`commitValue -> ${inputEl.value} -> ${v}`);
+
+			// inputEl.dispatchEvent(new Event('input', { bubbles: true }));
+			// inputEl.dispatchEvent(new Event('change', { bubbles: true }));
+		};
 
 		if (clearEl) {
 			clearEl.addEventListener('mousedown', (e) => {
 				e.preventDefault(); // keep input focus so overlay state stays consistent
-				inputEl.value = '';
-				inputEl.dispatchEvent(new Event('input', { bubbles: true }));
+				commitValue('');
 			});
 		}
 
 		const format24h = options.format24h === true || options.format24h === 'true';
 
 		// --- Time helpers ---------------------------------------------------
-
-		// Parse "HH:MM" (24h) to minutes-of-day. Used for min/max options.
-		const parseTime = (s) => {
-			const m = /^(\d{1,2}):(\d{2})$/.exec(String(s ?? '').trim());
-			if (!m) return null;
-			const h = parseInt(m[1], 10);
-			const min = parseInt(m[2], 10);
-			if (h > 23 || min > 59) return null;
-			return h * 60 + min;
-		};
 
 		// Format minutes-of-day to the current display format.
 		const formatTime = (mins) => {
@@ -1174,11 +1176,9 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 			return `${String(h12).padStart(2, '0')}:${mm} ${period}`;
 		};
 
-		const minMins = parseTime(options.min) ?? 0;
-		const maxMins = parseTime(options.max) ?? 23 * 60 + 59;
-
 		// Loose parse: accepts forms like "4", "04", "430", "1430", "4:30",
-		// "4 pm", "12am", "12:30 PM". Returns minutes-of-day or null if no digits.
+		// "4 pm", "12am", "12:30 PM", "8 AM", "6 PM". Returns minutes-of-day
+		// or null if no digits.
 		const parseLoose = (raw) => {
 			if (!raw) return null;
 			const s = String(raw).toUpperCase();
@@ -1213,18 +1213,21 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 			return h * 60 + m;
 		};
 
-		// Commit on Enter / blur: reinterpret the typed value, clamp to [min, max],
-		// and write back the canonical display format. Empty stays empty; garbage
-		// (no digits) is cleared.
-		const commit = () => {
-			const mins = parseLoose(inputEl.value);
-			if (mins === null) {
-				if (inputEl.value !== '') inputEl.value = '';
-				return;
-			}
+		const minMins = parseLoose(options.min) ?? 0;
+		const maxMins = parseLoose(options.max) ?? 23 * 60 + 59;
+
+		// Parse a raw value, clamp to [min, max], and return the canonical display
+		// form. Empty / no-digits -> ''.
+		const canonicalize = (raw) => {
+			const mins = parseLoose(raw);
+			if (mins === null) return '';
 			const clamped = Math.max(minMins, Math.min(maxMins, mins));
-			inputEl.value = formatTime(clamped);
+			return formatTime(clamped);
 		};
+
+		// Commit on Enter / blur: canonicalize whatever the user typed and fire
+		// input/change so listeners react.
+		const commit = () => commitValue(canonicalize(inputEl.value));
 
 		// Raw allowed characters during typing: digits, ':', space, A/P/M.
 		const ALLOWED_CHAR = /[\d: aApPmM]/;
@@ -1243,9 +1246,12 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 		// Strip disallowed characters from paste/drop/IME without canonicalizing.
 		inputEl.addEventListener('input', () => {
 			const cleaned = inputEl.value.replace(DISALLOWED_RE, '');
+
 			if (cleaned !== inputEl.value) {
 				inputEl.value = cleaned;
 				inputEl.setSelectionRange(cleaned.length, cleaned.length);
+				// } else {
+				// 	commitValue(cleaned);
 			}
 		});
 
@@ -1274,7 +1280,7 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 				li.textContent = t;
 				li.addEventListener('mousedown', (e) => {
 					e.preventDefault(); // keep focus, avoid blur-close race
-					inputEl.value = t;
+					commitValue(t);
 					closeOverlay();
 				});
 				listEl.appendChild(li);
@@ -1336,6 +1342,12 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 				if (e.key === 'Escape' || e.key === 'Enter') closeOverlay();
 			});
 		}
+
+		// Initial canonicalization: seed from options.value if the input is empty,
+		// then format whatever is there. Set directly (no input/change dispatch)
+		// since this is mount-time normalization, not a user-driven commit.
+		if (!inputEl.value && options.value) inputEl.value = options.value;
+		if (inputEl.value) inputEl.value = canonicalize(inputEl.value);
 	};
 
 	SapphireWidgets.HourPicker2 = {
