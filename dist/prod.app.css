@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.317 || Generated: Tue May 05 2026 11:47:15 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.318 || Generated: Thu May 14 2026 14:19:17 GMT+0300 (GMT+03:00) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -26606,6 +26606,15 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   line-height: 34px;
   text-align: center;
 }
+.SpinnerInput_Container > a.Minus:before {
+  content: "\e68f";
+}
+.SpinnerInput_Container > a.Minus.Delete:before {
+  content: "\e617";
+}
+.SpinnerInput_Container > a.Plus:before {
+  content: "\e698";
+}
 .SpinnerInput_Container .SpinnerInput input[type] {
   border-radius: 0;
   padding: 0 2px;
@@ -26619,14 +26628,8 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
 .SpinnerInput_Container .Minus {
   border-radius: 4px 0 0 4px;
 }
-.SpinnerInput_Container .Minus:before {
-  content: "\e68f";
-}
 .SpinnerInput_Container .Plus {
   border-radius: 0 4px 4px 0;
-}
-.SpinnerInput_Container .Plus:before {
-  content: "\e698";
 }
 
 .FA .SpinnerInput_Container .SpinnerInput input.Mandatory,

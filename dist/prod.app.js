@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.317 || Generated: Tue May 05 2026 11:47:15 GMT+0100 (Western European Summer Time) */
+/*! prod.app.js || Version: 5.5.318 || Generated: Thu May 14 2026 14:19:17 GMT+0300 (GMT+03:00) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -4674,21 +4674,27 @@ SapphireWidgets.MultipleSelectionButton = function(WrapperId) {
 /* Component ConfirmationPanel3Options ConfirmationPanel same javascript code*/
 
 SapphireWidgets.ConfirmationPanel = {
-	isAnyPanelOpened: function() {
+	isAnyPanelOpened: function () {
 		return $('body').hasClass('PanelOpened') && $('.PanelContainer:visible').length;
 	},
 
-	togglePanel: function(PanelId) {
+	togglePanel: function (PanelId) {
 		if (!OsValidatorOnSubmit()) return;
 
 		if (!SapphireWidgets.ConfirmationPanel.isAnyPanelOpened()) {
 			$('body').addClass('PanelOpened');
 			$('#' + PanelId).fadeIn(140);
 
-			setTimeout(function() {
+			setTimeout(function () {
 				$('#' + PanelId)
 					.find('.PanelContainer')
 					.slideToggle(150);
+
+				// Something (probably SpamGuard, but not sure) sometimes makes the button disabled after first use, this is the workaround
+				$('#' + PanelId)
+					.find('[cancel-button]')
+					.removeAttr('disabled')
+					.css('pointer-events', '');
 			}, 100);
 
 			if (window.frameElement) {
@@ -4697,23 +4703,23 @@ SapphireWidgets.ConfirmationPanel = {
 		}
 	},
 
-	closePanel: function(PanelId) {
+	closePanel: function (PanelId) {
 		$('body').removeClass('PanelOpened');
 		$('#' + PanelId).fadeOut(140);
 
-		setTimeout(function() {
+		setTimeout(function () {
 			$('#' + PanelId)
 				.find('.PanelContainer')
 				.slideUp(150);
 		}, 100);
 	},
 
-	setPanelBehavior: function() {
-		$('.Panel[confirmation-panel-trigger-elementid]').each(function() {
+	setPanelBehavior: function () {
+		$('.Panel[confirmation-panel-trigger-elementid]').each(function () {
 			var this_panel = $(this);
 			$('#' + this_panel.attr('confirmation-panel-trigger-elementid') + '')
 				.off('click')
-				.on('click', function() {
+				.on('click', function () {
 					SapphireWidgets.ConfirmationPanel.togglePanel(this_panel.attr('id'));
 					return false;
 				});
@@ -4721,7 +4727,7 @@ SapphireWidgets.ConfirmationPanel = {
 	},
 };
 
-$(document).ready(function() {
+$(document).ready(function () {
 	SapphireWidgets.ConfirmationPanel.setPanelBehavior();
 	if (osAjaxBackend.EventHandlers.AfterAjaxRequest.toString().indexOf('setPanelBehavior') == -1) {
 		osAjaxBackend.BindAfterAjaxRequest(SapphireWidgets.ConfirmationPanel.setPanelBehavior);
@@ -4939,8 +4945,7 @@ SapphireWidgets.ModalPopup = {
 		$(document).ready(function() {
 			// Use this code to append the component to the root body
 			// window.frameElement && $(window.frameElement).closest('.MainInteractiveCard-body').length > 0
-			if (false) // removed by dead control flow
-{} else {
+			if (false) {} else {
 				const $widget = $(`#${widgetId}`);
 				const $btnClose = $widget.find('.modalPopup_close');
 
@@ -9500,83 +9505,86 @@ SapphireWidgets.SpinnerHorizontal = {
 		const $plus = $(`#${config.widgetId} a.Plus`);
 		const $minus = $(`#${config.widgetId} a.Minus`);
 
-		let val = $input.val();
-
-		if (val <= +config.minValue) {
-			$minus.attr('disabled', 'disabled');
-		} else if (val >= +config.maxValue) {
-			$plus.attr('disabled', 'disabled');
+		function getValue() {
+			var val = parseInt($input.val());
+			if (val == undefined || isNaN(val)) {
+				val = +config.minValue;
+			}
+			return val;
 		}
 
-		$input.on('change', function () {
-			val = Math.abs(parseInt(this.value, 10) || +config.minValue);
-			// Note that val can never be less than 1 because of the above
+		function updateButtons(val) {
+			if (val <= +config.minValue) {
+				if (config.deleteWhenMin) {
+					$minus.addClass('Delete');
+				} else {
+					$minus.attr('disabled', 'disabled');
+				}
+			} else {
+				if (config.deleteWhenMin) {
+					$minus.removeClass('Delete');
+				} else {
+					$minus.removeAttr('disabled');
+				}
+			}
+			if (val >= +config.maxValue) {
+				$plus.attr('disabled', 'disabled');
+			} else {
+				$plus.removeAttr('disabled');
+			}
+		}
+
+		$input.on('input', function () {
+			let val = getValue();
 			if (val > +config.maxValue) {
 				val = +config.maxValue;
 				this.value = val;
 				$(`#${config.widgetId} a.NotifyOverflowMax`).click();
+				if (config.triggerOnChange) {
+					$input.trigger('change');
+				}
 			} else if (val < +config.minValue) {
 				val = +config.minValue;
 				this.value = val;
 				$(`#${config.widgetId} a.NotifyOverflowMin`).click();
-			} else {
-				this.value = val;
+				if (config.triggerOnChange) {
+					$input.trigger('change');
+				}
 			}
-
-			if (val <= +config.minValue) $minus.attr('disabled', 'disabled');
-			else $minus.removeAttr('disabled');
-
-			if (val >= +config.maxValue) $plus.attr('disabled', 'disabled');
-			else $plus.removeAttr('disabled');
+			updateButtons(val);
 		});
-	},
 
-	increment: function (elementId, minValue, maxValue, triggerOnChange) {
-		var _element = $(`#${elementId} input`);
-		var val = parseInt(_element.val());
-		if (val == undefined || isNaN(val)) {
-			_element.val(minValue);
-			if (triggerOnChange) {
-				_element.trigger('change');
-			}
-			$(`#${elementId} a.Minus`).attr('disabled', 'disabled');
-			$(`#${elementId} a.Plus`).removeAttr('disabled');
-		} else {
-			if (val < maxValue) {
-				_element.val(val + 1);
-				if (triggerOnChange) {
-					_element.trigger('change');
+		$plus.click(function () {
+			var val = getValue();
+			if (val < +config.maxValue) {
+				val++;
+				$input.val(val);
+				if (config.triggerOnChange) {
+					$input.trigger('change');
 				}
-				$(`#${elementId} a.Minus`).removeAttr('disabled');
 			}
-			if (parseInt(_element.val()) >= maxValue) {
-				$(`#${elementId} a.Plus`).attr('disabled', 'disabled');
-			}
-		}
-	},
+			updateButtons(val);
+		});
 
-	decrement: function (elementId, minValue, triggerOnChange) {
-		var _element = $(`#${elementId} input`);
-		var val = parseInt(_element.val());
-		if (val == undefined || isNaN(val)) {
-			_element.val(minValue);
-			if (triggerOnChange) {
-				_element.trigger('change');
-			}
-			$(`#${elementId} a.Minus`).attr('disabled', 'disabled');
-			$(`#${elementId} a.Plus`).removeAttr('disabled');
-		} else {
-			if (val > minValue) {
-				_element.val(val - 1);
-				if (triggerOnChange) {
-					_element.trigger('change');
+		$minus.click(function () {
+			if (config.deleteWhenMin) {
+				if ($minus.hasClass('Delete')) {
+					$(`#${config.widgetId} a.NotifyDelete`).click();
+					return;
 				}
-				$(`#${elementId} a.Plus`).removeAttr('disabled');
 			}
-			if (parseInt(_element.val()) <= minValue) {
-				$(`#${elementId} a.Minus`).attr('disabled', 'disabled');
+			var val = getValue();
+			if (val > +config.minValue) {
+				val--;
+				$input.val(val);
+				if (config.triggerOnChange) {
+					$input.trigger('change');
+				}
 			}
-		}
+			updateButtons(val);
+		});
+
+		updateButtons(getValue());
 	},
 };
 
