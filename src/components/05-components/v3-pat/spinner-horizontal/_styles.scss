@@ -34,7 +34,7 @@
 		}
 
 		// &[disabled] + .SpinnerInput input[type] {
-		// 	pointer-events: none;
+		// 	pointer-events: none;pointer-events
 		// }
 
 		&.Plus:before,
@@ -44,6 +44,15 @@
 			font-size: 1.429em;
 			line-height: 34px;
 			text-align: center;
+		}
+		&.Minus:before {
+			content: '\e68f';
+		}
+		&.Minus.Delete:before {
+			content: '\e617';
+		}
+		&.Plus:before {
+			content: '\e698';
 		}
 	}
 
@@ -62,18 +71,10 @@
 
 	.Minus {
 		border-radius: $border-radius-default 0 0 $border-radius-default;
-
-		&:before {
-			content: '\e68f';
-		}
 	}
 
 	.Plus {
 		border-radius: 0 $border-radius-default $border-radius-default 0;
-
-		&:before {
-			content: '\e698';
-		}
 	}
 }
 
