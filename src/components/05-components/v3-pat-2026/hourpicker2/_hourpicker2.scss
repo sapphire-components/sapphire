@@ -19,21 +19,28 @@
 	&-clear {
 		display: block;
 		height: 20px;
+		inset-inline-end: -22px;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
 		width: 20px;
+
 		&:before {
 			color: #00ac94;
 			content: '\e604';
 			cursor: pointer;
-			display: inline-block;
+			display: grid;
 			font-family: 'Sapphire-Icon-Font';
 			font-size: inherit;
 			-webkit-font-smoothing: antialiased;
 			font-style: normal;
 			font-variant: normal;
 			font-weight: normal;
-			margin: 0 10px;
+			height: 20px;
+			place-items: center;
 			text-transform: none;
 			transform: rotateZ(45deg);
+			width: 20px;
 		}
 	}
 
@@ -84,4 +91,8 @@
 			}
 		}
 	}
+}
+
+.hourpicker2[data-hasclear='true'] {
+	padding-inline-end: 25px;
 }
