@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.322 || Generated: Fri May 15 2026 09:22:57 GMT+0100 (Western European Summer Time) */
+/*! prod.app.js || Version: 5.5.323 || Generated: Fri May 15 2026 15:31:29 GMT+0100 (Western European Summer Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -1141,16 +1141,26 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 		const inputEl = inputWrapperEl.querySelector('input');
 		inputEl.placeholder = options.placeholder;
 
+		// allowType=false locks the input so the only entry path is the overlay.
+		// Default (undefined / '' / true) keeps typing enabled.
+		const allowType = options.allowType !== false && options.allowType !== 'false';
+		if (!allowType) inputEl.readOnly = true;
+
 		const commitValue = (v) => {
 			if (inputEl.value === v) return;
 			inputEl.value = v;
 			console.log(`commitValue -> ${inputEl.value} -> ${v}`);
 		};
 
+		// Assigned by the overlay block (if hasOverlay). Lets earlier handlers
+		// such as the clear button close the overlay without forward refs.
+		let closeOverlay = () => {};
+
 		if (clearEl) {
 			clearEl.addEventListener('mousedown', (e) => {
 				e.preventDefault(); // keep input focus so overlay state stays consistent
 				commitValue('');
+				closeOverlay();
 			});
 		}
 
@@ -1320,14 +1330,14 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 				window.addEventListener('scroll', positionOverlay, true);
 			};
 
-			function closeOverlay() {
+			closeOverlay = () => {
 				if (!isOpen) return;
 				isOpen = false;
 				overlayEl.classList.remove('is-open');
 				document.removeEventListener('mousedown', handleOutside);
 				window.removeEventListener('resize', positionOverlay);
 				window.removeEventListener('scroll', positionOverlay, true);
-			}
+			};
 
 			inputEl.addEventListener('focus', openOverlay);
 			inputEl.addEventListener('click', openOverlay);
