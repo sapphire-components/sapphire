@@ -7,6 +7,7 @@
 			hasOverlay: '',
 			max: '23:59',
 			min: '00:00',
+			placeholder: '',
 			step: 30,
 			value: '',
 			widgetId: '',
@@ -15,22 +16,14 @@
 
 		const widgetEl = document.getElementById(config.widgetId);
 		const inputWrapperEl = widgetEl.querySelector('.hourpicker2-input');
-
 		const clearEl = widgetEl.querySelector('.hourpicker2-clear');
 		const inputEl = inputWrapperEl.querySelector('input');
+		inputEl.placeholder = options.placeholder;
 
-		// Single commit-point: writes the value and notifies listeners. Both
-		// `input` (for reactive bindings) and `change` (the native "value
-		// committed" signal) are dispatched. Skipped when the value is unchanged.
 		const commitValue = (v) => {
 			if (inputEl.value === v) return;
-
 			inputEl.value = v;
-
 			console.log(`commitValue -> ${inputEl.value} -> ${v}`);
-
-			// inputEl.dispatchEvent(new Event('input', { bubbles: true }));
-			// inputEl.dispatchEvent(new Event('change', { bubbles: true }));
 		};
 
 		if (clearEl) {

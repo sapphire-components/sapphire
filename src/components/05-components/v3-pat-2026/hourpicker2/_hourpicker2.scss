@@ -38,8 +38,10 @@
 			font-weight: normal;
 			height: 20px;
 			place-items: center;
+			pointer-events: none;
 			text-transform: none;
 			transform: rotateZ(45deg);
+			user-select: none;
 			width: 20px;
 		}
 	}
