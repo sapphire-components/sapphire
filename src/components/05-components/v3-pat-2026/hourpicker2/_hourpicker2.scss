@@ -17,6 +17,7 @@
 	}
 
 	&-clear {
+		cursor: pointer;
 		display: block;
 		height: 20px;
 		inset-inline-end: -22px;
@@ -60,6 +61,8 @@
 		max-height: 200px;
 		overflow-y: auto;
 		position: absolute;
+		scroll-behavior: smooth;
+		scrollbar-width: thin;
 		top: calc(100% + 4px);
 		width: 100%;
 		z-index: 1000;
