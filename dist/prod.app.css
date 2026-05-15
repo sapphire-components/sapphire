@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.321 || Generated: Fri May 15 2026 09:09:16 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.322 || Generated: Fri May 15 2026 09:22:57 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -30209,6 +30209,7 @@ body.has-windowpanel-backdrop {
   transform: translateY(-50%);
 }
 .hourpicker2-clear {
+  cursor: pointer;
   display: block;
   height: 20px;
   inset-inline-end: -22px;
@@ -30251,6 +30252,8 @@ body.has-windowpanel-backdrop {
   max-height: 200px;
   overflow-y: auto;
   position: absolute;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
   top: calc(100% + 4px);
   width: 100%;
   z-index: 1000;
