@@ -49,6 +49,11 @@
 
 	input[type='text'] {
 		width: 100%;
+		&[readonly] {
+			background-color: #fff;
+			color: #333;
+			cursor: default;
+		}
 	}
 
 	&-overlay {
