@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.320 || Generated: Thu May 14 2026 17:55:15 GMT+0100 (Western European Summer Time) */
+/*! prod.app.js || Version: 5.5.321 || Generated: Fri May 15 2026 09:09:16 GMT+0100 (Western European Summer Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -1128,6 +1128,7 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 			hasOverlay: '',
 			max: '23:59',
 			min: '00:00',
+			placeholder: '',
 			step: 30,
 			value: '',
 			widgetId: '',
@@ -1136,22 +1137,14 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 
 		const widgetEl = document.getElementById(config.widgetId);
 		const inputWrapperEl = widgetEl.querySelector('.hourpicker2-input');
-
 		const clearEl = widgetEl.querySelector('.hourpicker2-clear');
 		const inputEl = inputWrapperEl.querySelector('input');
+		inputEl.placeholder = options.placeholder;
 
-		// Single commit-point: writes the value and notifies listeners. Both
-		// `input` (for reactive bindings) and `change` (the native "value
-		// committed" signal) are dispatched. Skipped when the value is unchanged.
 		const commitValue = (v) => {
 			if (inputEl.value === v) return;
-
 			inputEl.value = v;
-
 			console.log(`commitValue -> ${inputEl.value} -> ${v}`);
-
-			// inputEl.dispatchEvent(new Event('input', { bubbles: true }));
-			// inputEl.dispatchEvent(new Event('change', { bubbles: true }));
 		};
 
 		if (clearEl) {
