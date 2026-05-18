@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.323 || Generated: Fri May 15 2026 15:31:29 GMT+0100 (Western European Summer Time) */
+/*! prod.app.js || Version: 5.5.324 || Generated: Mon May 18 2026 11:25:03 GMT+0300 (GMT+03:00) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -4180,9 +4180,7 @@ $.fn.menuInline = function (notifyId, type, isFullWidth = false, actionsClass, _
 		$('#' + config.labelId).addClass('OSFillParent');
 
 		SapphireWidgets.MarkWordsFromList.switchView(config);
-		window.setTimeout(function () {
-			SapphireWidgets.MarkWordsFromList.updateLabel(config);
-		}, 250);
+		SapphireWidgets.MarkWordsFromList.updateLabel(config);
 
 		$('#' + config.labelId).on('click', function () {
 			SapphireWidgets.MarkWordsFromList.switchView(config, true, true);
@@ -4202,16 +4200,16 @@ $.fn.menuInline = function (notifyId, type, isFullWidth = false, actionsClass, _
 	};
 
 	var updateLabel = function (config) {
-		var input = $('#' + config.inputId);
-		var label = $('#' + config.labelId);
-		if (input.val()) {
-			label.text(input.val()).css('color', '');
-			window.setTimeout(function () {
+		window.setTimeout(function () {
+			var input = $('#' + config.inputId);
+			var label = $('#' + config.labelId);
+			if (input.val()) {
+				label.text(input.val()).css('color', '');
 				SapphireWidgets.MarkWordsFromList.applyMarking({ target: config.labelId });
-			}, 250);
-		} else {
-			label.text(input.prop('placeholder')).css('color', '#999');
-		}
+			} else {
+				label.text(input.prop('placeholder')).css('color', '#999');
+			}
+		}, 250);
 	};
 
 	var switchView = function (config, showInput, focusInput) {
@@ -5191,8 +5189,7 @@ SapphireWidgets.ModalPopup = {
 		$(document).ready(function() {
 			// Use this code to append the component to the root body
 			// window.frameElement && $(window.frameElement).closest('.MainInteractiveCard-body').length > 0
-			if (false) // removed by dead control flow
-{} else {
+			if (false) {} else {
 				const $widget = $(`#${widgetId}`);
 				const $btnClose = $widget.find('.modalPopup_close');
 
