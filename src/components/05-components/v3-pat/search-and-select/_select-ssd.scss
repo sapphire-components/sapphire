@@ -83,6 +83,7 @@
 			display: inline-flex;
 			font-size: $font-size-normal;
 			margin-right: $sapphire-sizes--small;
+			white-space: pre-wrap;
 		}
 
 		.SelectSD__contentICD {
@@ -151,7 +152,9 @@
 			.SelectSD__action {
 				.icon {
 					border: none;
-					box-shadow: inset 0px 0px 0px 1px $regular-beta, 0px 0px 8px 0px $regular-beta;
+					box-shadow:
+						inset 0px 0px 0px 1px $regular-beta,
+						0px 0px 8px 0px $regular-beta;
 				}
 			}
 		}
