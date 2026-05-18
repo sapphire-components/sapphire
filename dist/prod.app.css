@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.325 || Generated: Mon May 18 2026 16:59:54 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.326 || Generated: Mon May 18 2026 19:01:38 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -22327,6 +22327,7 @@ div.List-Star > div[unselected] {
   display: inline-flex;
   font-size: 1em;
   margin-right: 8px;
+  white-space: pre-wrap;
 }
 .SelectSD .SelectSD_contentWrapper .SelectSD__contentICD {
   color: #adadad;
@@ -30238,6 +30239,14 @@ body.has-windowpanel-backdrop {
      -moz-user-select: none;
           user-select: none;
   width: 20px;
+}
+.hourpicker2-toemit[type] {
+  border: none;
+  display: none;
+  font-size: 12px;
+  padding: 0;
+  pointer-events: none;
+  transition: none;
 }
 .hourpicker2 input[type=text] {
   width: 100%;

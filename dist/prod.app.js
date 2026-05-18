@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.325 || Generated: Mon May 18 2026 16:59:54 GMT+0100 (Western European Summer Time) */
+/*! prod.app.js || Version: 5.5.326 || Generated: Mon May 18 2026 19:01:38 GMT+0100 (Western European Summer Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -1120,6 +1120,53 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 /***/ (function() {
 
 (function ($, window, document, SapphireWidgets) {
+	// Loose parse: accepts forms like "4", "04", "430", "1430", "4:30",
+	// "4 pm", "12am", "12:30 PM", "8 AM", "6 PM". Returns minutes-of-day
+	// or null if no digits.
+	const parseLoose = (raw) => {
+		if (!raw) return null;
+		const s = String(raw).toUpperCase();
+
+		let period = null;
+		if (s.indexOf('P') >= 0) period = 'PM';
+		else if (s.indexOf('A') >= 0) period = 'AM';
+
+		const digits = (s.match(/\d/g) || []).join('');
+		if (digits.length === 0) return null;
+
+		let hStr, mStr;
+		if (digits.length <= 2) {
+			hStr = digits;
+			mStr = '0';
+		} else if (digits.length === 3) {
+			hStr = digits.slice(0, 1);
+			mStr = digits.slice(1);
+		} else {
+			hStr = digits.slice(0, 2);
+			mStr = digits.slice(2, 4);
+		}
+
+		let h = parseInt(hStr, 10);
+		let m = parseInt(mStr, 10);
+
+		if (period === 'PM' && h < 12) h += 12;
+		else if (period === 'AM' && h === 12) h = 0;
+
+		if (h > 23) h = 23;
+		if (m > 59) m = 59;
+		return h * 60 + m;
+	};
+
+	// Convert a loose time string ("3 pm", "4:25 PM", "830", "1430") into
+	// strict 24h "HH:MM". Returns '' when the input has no digits.
+	const to24h = (raw) => {
+		const mins = parseLoose(raw);
+		if (mins === null) return '';
+		const h = Math.floor(mins / 60);
+		const m = mins % 60;
+		return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}`;
+	};
+
 	const create = (config) => {
 		const options = {
 			allowType: '',
@@ -1137,8 +1184,11 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 
 		const widgetEl = document.getElementById(config.widgetId);
 		const inputWrapperEl = widgetEl.querySelector('.hourpicker2-input');
+
 		const clearEl = widgetEl.querySelector('.hourpicker2-clear');
 		const inputEl = inputWrapperEl.querySelector('input');
+		const inputToEmitEl = widgetEl.querySelector('.hourpicker2-toemit');
+
 		inputEl.placeholder = options.placeholder;
 
 		// allowType=false locks the input so the only entry path is the overlay.
@@ -1149,7 +1199,9 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 		const commitValue = (v) => {
 			if (inputEl.value === v) return;
 			inputEl.value = v;
-			console.log(`commitValue -> ${inputEl.value} -> ${v}`);
+			inputToEmitEl.value = to24h(v);
+			inputToEmitEl.dispatchEvent(new Event('change'), { bubbles: true });
+			console.log(`commitValue -> ${inputEl.value} -> ${v} -> ${to24h(v)}`);
 		};
 
 		// Assigned by the overlay block (if hasOverlay). Lets earlier handlers
@@ -1177,43 +1229,6 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 			const period = h < 12 ? 'AM' : 'PM';
 			const h12 = h % 12 === 0 ? 12 : h % 12;
 			return `${String(h12).padStart(2, '0')}:${mm} ${period}`;
-		};
-
-		// Loose parse: accepts forms like "4", "04", "430", "1430", "4:30",
-		// "4 pm", "12am", "12:30 PM", "8 AM", "6 PM". Returns minutes-of-day
-		// or null if no digits.
-		const parseLoose = (raw) => {
-			if (!raw) return null;
-			const s = String(raw).toUpperCase();
-
-			let period = null;
-			if (s.indexOf('P') >= 0) period = 'PM';
-			else if (s.indexOf('A') >= 0) period = 'AM';
-
-			const digits = (s.match(/\d/g) || []).join('');
-			if (digits.length === 0) return null;
-
-			let hStr, mStr;
-			if (digits.length <= 2) {
-				hStr = digits;
-				mStr = '0';
-			} else if (digits.length === 3) {
-				hStr = digits.slice(0, 1);
-				mStr = digits.slice(1);
-			} else {
-				hStr = digits.slice(0, 2);
-				mStr = digits.slice(2, 4);
-			}
-
-			let h = parseInt(hStr, 10);
-			let m = parseInt(mStr, 10);
-
-			if (period === 'PM' && h < 12) h += 12;
-			else if (period === 'AM' && h === 12) h = 0;
-
-			if (h > 23) h = 23;
-			if (m > 59) m = 59;
-			return h * 60 + m;
 		};
 
 		const minMins = parseLoose(options.min) ?? 0;
@@ -1253,8 +1268,6 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 			if (cleaned !== inputEl.value) {
 				inputEl.value = cleaned;
 				inputEl.setSelectionRange(cleaned.length, cleaned.length);
-				// } else {
-				// 	commitValue(cleaned);
 			}
 		});
 
@@ -1355,6 +1368,7 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 
 	SapphireWidgets.HourPicker2 = {
 		create: create,
+		to24h: to24h,
 	};
 })(jQuery, window, document, SapphireWidgets);
 
