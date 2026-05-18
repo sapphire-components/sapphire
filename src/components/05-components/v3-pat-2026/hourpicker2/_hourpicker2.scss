@@ -106,3 +106,11 @@
 .hourpicker2[data-hasclear='true'] {
 	padding-inline-end: 25px;
 }
+
+.hourpicker2[data-ismandatory='true'] {
+	.hourpicker2-input {
+		input[type='text'] {
+			border-left: 3px solid #00ac94;
+		}
+	}
+}
