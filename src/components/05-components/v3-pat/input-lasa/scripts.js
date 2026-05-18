@@ -6,9 +6,7 @@
 		$('#' + config.labelId).addClass('OSFillParent');
 
 		SapphireWidgets.MarkWordsFromList.switchView(config);
-		window.setTimeout(function () {
-			SapphireWidgets.MarkWordsFromList.updateLabel(config);
-		}, 250);
+		SapphireWidgets.MarkWordsFromList.updateLabel(config);
 
 		$('#' + config.labelId).on('click', function () {
 			SapphireWidgets.MarkWordsFromList.switchView(config, true, true);
@@ -28,16 +26,16 @@
 	};
 
 	var updateLabel = function (config) {
-		var input = $('#' + config.inputId);
-		var label = $('#' + config.labelId);
-		if (input.val()) {
-			label.text(input.val()).css('color', '');
-			window.setTimeout(function () {
+		window.setTimeout(function () {
+			var input = $('#' + config.inputId);
+			var label = $('#' + config.labelId);
+			if (input.val()) {
+				label.text(input.val()).css('color', '');
 				SapphireWidgets.MarkWordsFromList.applyMarking({ target: config.labelId });
-			}, 250);
-		} else {
-			label.text(input.prop('placeholder')).css('color', '#999');
-		}
+			} else {
+				label.text(input.prop('placeholder')).css('color', '#999');
+			}
+		}, 250);
 	};
 
 	var switchView = function (config, showInput, focusInput) {
