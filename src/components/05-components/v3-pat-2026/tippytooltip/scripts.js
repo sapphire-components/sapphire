@@ -20,6 +20,10 @@
 			contentEl = widgetEl.querySelector('.tippytooltip-content');
 		}
 
+		widgetEl.addEventListener('click', (event) => {
+			event.stopPropagation();
+		});
+
 		linkClose = widgetEl.querySelector('.tippytooltip-link-close');
 		linkOpen = widgetEl.querySelector('.tippytooltip-link-open');
 
