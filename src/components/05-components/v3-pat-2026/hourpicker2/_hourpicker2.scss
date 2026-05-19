@@ -9,8 +9,8 @@
 			content: '\e62a';
 			font-family: 'Sapphire-Icon-Font';
 			font-size: 1.143em;
+			inset-inline-end: 10px;
 			position: absolute;
-			right: 10px;
 			top: 50%;
 			transform: translateY(-50%);
 		}
@@ -77,6 +77,7 @@
 		position: absolute;
 		scroll-behavior: smooth;
 		scrollbar-width: thin;
+		text-align: center;
 		top: calc(100% + 4px);
 		width: 100%;
 		z-index: 1000;
@@ -119,7 +120,7 @@
 .hourpicker2[data-ismandatory='true'] {
 	.hourpicker2-input {
 		input[type='text'] {
-			border-left: 3px solid #00ac94;
+			border-inline-start: 3px solid #00ac94;
 		}
 	}
 }

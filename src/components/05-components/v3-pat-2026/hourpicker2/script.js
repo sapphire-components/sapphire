@@ -76,9 +76,12 @@
 		if (!allowType) inputEl.readOnly = true;
 
 		const commitValue = (v) => {
-			if (inputEl.value === v) return;
+			console.log(`will commitValue... -> ${v}`);
+
+			// if (inputEl.value === v) return;
 			inputEl.value = v;
 			inputToEmitEl.value = to24h(v);
+
 			inputToEmitEl.dispatchEvent(new Event('change'), { bubbles: true });
 			console.log(`commitValue -> ${inputEl.value} -> ${v} -> ${to24h(v)}`);
 		};
