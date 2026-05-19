@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.326 || Generated: Mon May 18 2026 19:01:38 GMT+0100 (Western European Summer Time) */
+/*! prod.app.js || Version: 5.5.327 || Generated: Tue May 19 2026 12:09:02 GMT+0100 (Western European Summer Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -1197,9 +1197,12 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 		if (!allowType) inputEl.readOnly = true;
 
 		const commitValue = (v) => {
-			if (inputEl.value === v) return;
+			console.log(`will commitValue... -> ${v}`);
+
+			// if (inputEl.value === v) return;
 			inputEl.value = v;
 			inputToEmitEl.value = to24h(v);
+
 			inputToEmitEl.dispatchEvent(new Event('change'), { bubbles: true });
 			console.log(`commitValue -> ${inputEl.value} -> ${v} -> ${to24h(v)}`);
 		};
@@ -9039,22 +9042,21 @@ SapphireWidgets.ShiftTable = (widgetId) => {
 /***/ (function() {
 
 /* Component ShiftTableCard */
-SapphireWidgets.ShiftTableCard = widgetId => {
+SapphireWidgets.ShiftTableCard = (widgetId) => {
 	const $component = $(`#${widgetId}`);
 	const $actions = $component.find('.MoreActions');
 	const hasActions = $actions.length > 0;
 
 	if (hasActions) {
-		$actions.on('click', e => {
-			e.stopPropagation();
+		// Code removed after TippyTooltip implementation
+		// $actions.on('click', (e) => {
+		// 	e.stopPropagation();
+		// 	$('.ShiftTableCard').removeClass('ShiftTableCard--selected');
+		// 	$component.addClass('ShiftTableCard--selected');
+		// 	window.addEventListener('click', onClickOutside);
+		// });
 
-			$('.ShiftTableCard').removeClass('ShiftTableCard--selected');
-			$component.addClass('ShiftTableCard--selected');
-
-			window.addEventListener('click', onClickOutside);
-		});
-
-		const onClickOutside = e => {
+		const onClickOutside = (e) => {
 			const $target = $(e.target);
 
 			if (!e.target.className.includes($component) && !$target.parents($component).is($component)) {
