@@ -76,14 +76,20 @@
 		if (!allowType) inputEl.readOnly = true;
 
 		const commitValue = (v) => {
-			console.log(`will commitValue... -> ${v}`);
+			console.log(`will commitValue -> [${v}]`);
 
-			// if (inputEl.value === v) return;
 			inputEl.value = v;
-			inputToEmitEl.value = to24h(v);
 
-			inputToEmitEl.dispatchEvent(new Event('change'), { bubbles: true });
-			console.log(`commitValue -> ${inputEl.value} -> ${v} -> ${to24h(v)}`);
+			if (to24h(v) === '') {
+				inputToEmitEl.value = '--';
+			} else {
+				inputToEmitEl.value = to24h(v);
+			}
+
+			setTimeout(() => {
+				inputToEmitEl.dispatchEvent(new Event('change'), { bubbles: true });
+				console.log(`commitValue -> [${inputEl.value}] -> [${inputToEmitEl.value}] -> [${to24h(inputToEmitEl.value)}]`);
+			}, 0);
 		};
 
 		// Assigned by the overlay block (if hasOverlay). Lets earlier handlers
