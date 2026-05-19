@@ -11,6 +11,13 @@
 		widgetEl = document.getElementById(config.runtimeId);
 		if (config.triggerId) {
 			triggerEl = document.getElementById(config.triggerId);
+			const wrapper = document.createElement('div');
+			wrapper.style.display = 'contents';
+			triggerEl.parentNode.insertBefore(wrapper, triggerEl);
+			wrapper.appendChild(triggerEl);
+			wrapper.addEventListener('click', (event) => {
+				event.stopPropagation();
+			});
 		} else {
 			triggerEl = widgetEl.querySelector('.tippytooltip-trigger');
 		}
