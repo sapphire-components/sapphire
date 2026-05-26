@@ -12,6 +12,7 @@
 		if (config.triggerId) {
 			triggerEl = document.getElementById(config.triggerId);
 			const wrapper = document.createElement('div');
+			widgetEl.style.display = 'contents';
 			wrapper.style.display = 'contents';
 			triggerEl.parentNode.insertBefore(wrapper, triggerEl);
 			wrapper.appendChild(triggerEl);
