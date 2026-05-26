@@ -11,14 +11,18 @@
 		widgetEl = document.getElementById(config.runtimeId);
 		if (config.triggerId) {
 			triggerEl = document.getElementById(config.triggerId);
-			const wrapper = document.createElement('div');
 			widgetEl.style.display = 'contents';
-			wrapper.style.display = 'contents';
-			triggerEl.parentNode.insertBefore(wrapper, triggerEl);
-			wrapper.appendChild(triggerEl);
-			wrapper.addEventListener('click', (event) => {
+
+			const parent = triggerEl.parentNode;
+			console.log('parent', parent);
+			parent.addEventListener('click', (event) => {
 				event.stopPropagation();
 			});
+
+			// const wrapper = document.createElement('div');
+			//wrapper.style.display = 'contents';
+			// triggerEl.parentNode.insertBefore(wrapper, triggerEl);
+			// wrapper.appendChild(triggerEl);
 		} else {
 			triggerEl = widgetEl.querySelector('.tippytooltip-trigger');
 		}
