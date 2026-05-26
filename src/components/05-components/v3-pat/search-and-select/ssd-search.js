@@ -17,6 +17,20 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 		const $SSDClearButton = $SSDComponent.find('.SearchSD___remove');
 		const $SSDInputElement = $SSDComponent.find('.SearchSD___input input');
 
+		/**/
+		const clickCooldown = new WeakMap();
+		function clickWithCooldown(linkEl, cooldownMs = 1000) {
+			if (!(linkEl instanceof HTMLAnchorElement)) return;
+			const now = Date.now();
+			const lastClick = clickCooldown.get(linkEl) || 0;
+			if (now - lastClick < cooldownMs) {
+				return; // ignore repeated click
+			}
+			clickCooldown.set(linkEl, now);
+			linkEl.click();
+		}
+		/**/
+
 		$SSDInputElement.attr('maxLength', inputLength);
 
 		var executeSearch = function () {
@@ -203,7 +217,10 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 				$SSDComponent.removeClass('.showFavorite');
 
 				if (!$SSDComponent.hasClass('Open')) {
-					$SSDComponent.find('.SearchLinkInput a').click();
+					const link = $SSDComponent.find('.SearchLinkInput a')[0];
+					// console.log(new Date(), 'SearchLinkInput a click', link);
+					clickWithCooldown(link);
+					//$SSDComponent.find('.SearchLinkInput a').click();
 					$SSDComponent.addClass('Open');
 				}
 			}
@@ -228,7 +245,10 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 			var currentWord = $SSDComponent.find('.SearchSD___input input').val();
 			var currentCount = currentWord.length;
 			if (currentCount >= letterLimit || currentCount === 0) {
-				$SSDComponent.find('.SearchLinkInput > a').click();
+				const link = $SSDComponent.find('.SearchLinkInput > a')[0];
+				// console.log(new Date(), 'SearchLinkInput > a click', link);
+				clickWithCooldown(link);
+				//$SSDComponent.find('.SearchLinkInput > a').click();
 			}
 		};
 
@@ -440,23 +460,21 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 	});
 };
 // Added to close the select list if we click the prescription Iframe;
-window.addEventListener('DOMContentLoaded', event => {
+window.addEventListener('DOMContentLoaded', (event) => {
 	var rootElement = document.querySelector('body');
 	rootElement.addEventListener(
 		'click',
 		function (event) {
 			document.querySelector("iframe[src*='Prescriptions_CW']") &&
-				document
-					.querySelector("iframe[src*='Prescriptions_CW']")
-					.contentWindow.document.addEventListener('click', e => {
-						e.stopPropagation();
-						document.querySelector('.SearchSD')?.classList.remove('Open');
-						var allInput = document.querySelector('.SearchSD___input')?.children;
-						for (const element in allInput) {
-							return allInput[element].value != undefined ? (allInput[element].value = '') : null;
-						}
-					});
+				document.querySelector("iframe[src*='Prescriptions_CW']").contentWindow.document.addEventListener('click', (e) => {
+					e.stopPropagation();
+					document.querySelector('.SearchSD')?.classList.remove('Open');
+					var allInput = document.querySelector('.SearchSD___input')?.children;
+					for (const element in allInput) {
+						return allInput[element].value != undefined ? (allInput[element].value = '') : null;
+					}
+				});
 		},
-		true
+		true,
 	);
 });

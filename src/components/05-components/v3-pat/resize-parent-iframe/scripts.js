@@ -106,8 +106,8 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
 		function resetFixedActionsPosition() {
 			const layoutBaseFixedActions = document.querySelector('.LayoutBase--fixedActions');
 			if (layoutBaseFixedActions) {
-				console.log('iframeRect.bottom', iframeRect.bottom);
-				console.log('parentViewportHeight', parentViewportHeight);
+				// console.log('iframeRect.bottom', iframeRect.bottom);
+				// console.log('parentViewportHeight', parentViewportHeight);
 
 				if (iframeRect.bottom + 16 < parentViewportHeight) {
 					layoutBaseFixedActions.style.bottom = 0;
