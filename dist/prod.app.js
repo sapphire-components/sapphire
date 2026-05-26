@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.330 || Generated: Tue May 19 2026 18:21:52 GMT+0100 (Western European Summer Time) */
+/*! prod.app.js || Version: 5.5.331 || Generated: Tue May 26 2026 10:12:01 GMT+0100 (Western European Summer Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -6,7 +6,7 @@
 /***/ (function(module) {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"name":"sapphire","version":"5.5.330","description":"Styles and scripts for Sapphire HMS design system.","keywords":["design system","sapphire","hms","style guide","patterns","css","javascript"],"homepage":"https://dev.nordicplatforms.com/StyleGuideV2_UI/Instructions.aspx","repository":{"type":"git","url":"https://github.com/sapphire-components/sapphire"},"author":{"name":"António Carvalho","email":"antonio.carvalho@outsystems.com","url":"https://www.linkedin.com/in/carvalhoantonio/"},"scripts":{"dev":"set NODE_ENV=development && webpack-dev-server --config webpack.dev.js","prod":"set NODE_ENV=production && webpack --config webpack.prod.js","new:build":"npm run prod && git add . && git commit -m \\"New Release\\" --allow-empty && git push origin main","release:patch":"release-it patch --ci","release:minor":"release-it minor --git.requireBranch=main && npm run new:build","release:major":"release-it major --git.requireBranch=main && npm run new:build"},"license":"ISC","devDependencies":{"autoprefixer":"^10.4.23","clean-webpack-plugin":"^4.0.0","css-loader":"^7.1.2","dotenv-cli":"^11.0.0","eslint":"^9.39.2","eslint-config-prettier":"^10.1.8","eslint-plugin-prettier":"^5.5.5","mini-css-extract-plugin":"^2.10.0","postcss-loader":"^8.2.0","prettier":"^3.8.1","prettier-stylelint":"^0.4.2","release-it":"^19.2.4","sass":"^1.97.3","sass-loader":"^16.0.6","style-loader":"^4.0.0","stylelint":"^17.0.0","stylelint-config-standard-scss":"^17.0.0","stylelint-order":"^7.0.1","terser-webpack-plugin":"^5.3.16","webpack":"^5.104.1","webpack-cli":"^6.0.1","webpack-dev-middleware":"^7.4.5","webpack-dev-server":"^5.2.3","webpack-hot-middleware":"^2.26.1","webpack-merge":"^6.0.1"}}');
+module.exports = /*#__PURE__*/JSON.parse('{"name":"sapphire","version":"5.5.331","description":"Styles and scripts for Sapphire HMS design system.","keywords":["design system","sapphire","hms","style guide","patterns","css","javascript"],"homepage":"https://dev.nordicplatforms.com/StyleGuideV2_UI/Instructions.aspx","repository":{"type":"git","url":"https://github.com/sapphire-components/sapphire"},"author":{"name":"António Carvalho","email":"antonio.carvalho@outsystems.com","url":"https://www.linkedin.com/in/carvalhoantonio/"},"scripts":{"dev":"set NODE_ENV=development && webpack-dev-server --config webpack.dev.js","prod":"set NODE_ENV=production && webpack --config webpack.prod.js","new:build":"npm run prod && git add . && git commit -m \\"New Release\\" --allow-empty && git push origin main","release:patch":"release-it patch --ci","release:minor":"release-it minor --git.requireBranch=main && npm run new:build","release:major":"release-it major --git.requireBranch=main && npm run new:build"},"license":"ISC","devDependencies":{"autoprefixer":"^10.4.23","clean-webpack-plugin":"^4.0.0","css-loader":"^7.1.2","dotenv-cli":"^11.0.0","eslint":"^9.39.2","eslint-config-prettier":"^10.1.8","eslint-plugin-prettier":"^5.5.5","mini-css-extract-plugin":"^2.10.0","postcss-loader":"^8.2.0","prettier":"^3.8.1","prettier-stylelint":"^0.4.2","release-it":"^19.2.4","sass":"^1.97.3","sass-loader":"^16.0.6","style-loader":"^4.0.0","stylelint":"^17.0.0","stylelint-config-standard-scss":"^17.0.0","stylelint-order":"^7.0.1","terser-webpack-plugin":"^5.3.16","webpack":"^5.104.1","webpack-cli":"^6.0.1","webpack-dev-middleware":"^7.4.5","webpack-dev-server":"^5.2.3","webpack-hot-middleware":"^2.26.1","webpack-merge":"^6.0.1"}}');
 
 /***/ }),
 
@@ -144,6 +144,47 @@ style.textContent = `
 }
 `;
 document.head.appendChild(style);
+
+hideAllOverlays = (initiatorWindow) => {
+	window.document.querySelectorAll('iframe').forEach((iframe, index) => {
+		const iframeWindow = iframe.contentWindow;
+		const iframeDocument = iframe.contentDocument || iframeWindow.document;
+
+		if (!iframeDocument?.body) return;
+
+		iframeWindow.hideAllOverlays(window);
+	});
+
+	if (initiatorWindow === window) {
+		return;
+	}
+
+	window.document.body.dispatchEvent(
+		new MouseEvent('click', {
+			bubbles: true,
+			cancelable: true,
+		}),
+	);
+
+	window.document.body.dispatchEvent(
+		new MouseEvent('mouseup', {
+			bubbles: true,
+			cancelable: true,
+		}),
+	);
+
+	document.querySelectorAll('.DateTimeRangePicker').forEach((element) => {
+		window[element.id].picker.hide();
+	});
+};
+
+document.body.addEventListener('click', (event) => {
+	if (event.isTrusted) {
+		try {
+			window.top.hideAllOverlays(window);
+		} catch (error) {}
+	}
+});
 
 
 /***/ }),
@@ -6022,8 +6063,8 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
 		function resetFixedActionsPosition() {
 			const layoutBaseFixedActions = document.querySelector('.LayoutBase--fixedActions');
 			if (layoutBaseFixedActions) {
-				console.log('iframeRect.bottom', iframeRect.bottom);
-				console.log('parentViewportHeight', parentViewportHeight);
+				// console.log('iframeRect.bottom', iframeRect.bottom);
+				// console.log('parentViewportHeight', parentViewportHeight);
 
 				if (iframeRect.bottom + 16 < parentViewportHeight) {
 					layoutBaseFixedActions.style.bottom = 0;
@@ -7390,6 +7431,20 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 		const $SSDClearButton = $SSDComponent.find('.SearchSD___remove');
 		const $SSDInputElement = $SSDComponent.find('.SearchSD___input input');
 
+		/**/
+		const clickCooldown = new WeakMap();
+		function clickWithCooldown(linkEl, cooldownMs = 1000) {
+			if (!(linkEl instanceof HTMLAnchorElement)) return;
+			const now = Date.now();
+			const lastClick = clickCooldown.get(linkEl) || 0;
+			if (now - lastClick < cooldownMs) {
+				return; // ignore repeated click
+			}
+			clickCooldown.set(linkEl, now);
+			linkEl.click();
+		}
+		/**/
+
 		$SSDInputElement.attr('maxLength', inputLength);
 
 		var executeSearch = function () {
@@ -7576,7 +7631,10 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 				$SSDComponent.removeClass('.showFavorite');
 
 				if (!$SSDComponent.hasClass('Open')) {
-					$SSDComponent.find('.SearchLinkInput a').click();
+					const link = $SSDComponent.find('.SearchLinkInput a')[0];
+					// console.log(new Date(), 'SearchLinkInput a click', link);
+					clickWithCooldown(link);
+					//$SSDComponent.find('.SearchLinkInput a').click();
 					$SSDComponent.addClass('Open');
 				}
 			}
@@ -7601,7 +7659,10 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 			var currentWord = $SSDComponent.find('.SearchSD___input input').val();
 			var currentCount = currentWord.length;
 			if (currentCount >= letterLimit || currentCount === 0) {
-				$SSDComponent.find('.SearchLinkInput > a').click();
+				const link = $SSDComponent.find('.SearchLinkInput > a')[0];
+				// console.log(new Date(), 'SearchLinkInput > a click', link);
+				clickWithCooldown(link);
+				//$SSDComponent.find('.SearchLinkInput > a').click();
 			}
 		};
 
@@ -7813,24 +7874,22 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 	});
 };
 // Added to close the select list if we click the prescription Iframe;
-window.addEventListener('DOMContentLoaded', event => {
+window.addEventListener('DOMContentLoaded', (event) => {
 	var rootElement = document.querySelector('body');
 	rootElement.addEventListener(
 		'click',
 		function (event) {
 			document.querySelector("iframe[src*='Prescriptions_CW']") &&
-				document
-					.querySelector("iframe[src*='Prescriptions_CW']")
-					.contentWindow.document.addEventListener('click', e => {
-						e.stopPropagation();
-						document.querySelector('.SearchSD')?.classList.remove('Open');
-						var allInput = document.querySelector('.SearchSD___input')?.children;
-						for (const element in allInput) {
-							return allInput[element].value != undefined ? (allInput[element].value = '') : null;
-						}
-					});
+				document.querySelector("iframe[src*='Prescriptions_CW']").contentWindow.document.addEventListener('click', (e) => {
+					e.stopPropagation();
+					document.querySelector('.SearchSD')?.classList.remove('Open');
+					var allInput = document.querySelector('.SearchSD___input')?.children;
+					for (const element in allInput) {
+						return allInput[element].value != undefined ? (allInput[element].value = '') : null;
+					}
+				});
 		},
-		true
+		true,
 	);
 });
 
