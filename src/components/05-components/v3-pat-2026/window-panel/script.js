@@ -25,26 +25,27 @@ class WindowPanel {
 	constructor(initOptions) {
 		this.initOptions = initOptions;
 
-		this.widgetEl = document.getElementById(initOptions.runtimeId);
+		console.log('initOptions', this.initOptions, window.location.pathname);
+
+		this.widgetEl = document.getElementById(this.initOptions.runtimeId);
 
 		if (!this.widgetEl) {
-			console.warn('WindowPanel element not found', initOptions.runtimeId);
+			console.warn('WindowPanel element not found', this.initOptions.runtimeId, window.location.pathname);
 			return;
 		}
 
 		this.closeButton = this.widgetEl.querySelector('.windowpanel-close');
 		this.closeEventLink = this.widgetEl.querySelector('.windowpanel-action.close');
-		this.closeOnEsc = initOptions.closeOnEsc;
-		this.contentMaxHeight = initOptions.contentMaxHeight;
-		this.hasClose = initOptions.hasClose;
+		this.closeOnEsc = this.initOptions.closeOnEsc;
+		this.contentMaxHeight = this.initOptions.contentMaxHeight;
+		this.hasClose = this.initOptions.hasClose;
 		this.linkToOpen = this.widgetEl.querySelector('.windowpanel-linktoopen a');
-		this.maxWidth = initOptions.maxWidth;
-		this.minWidth = initOptions.minWidth;
+		this.maxWidth = this.initOptions.maxWidth;
+		this.minWidth = this.initOptions.minWidth;
 		this.noEventLink = this.widgetEl.querySelector('.windowpanel-action.no');
-		this.padding = initOptions.padding;
+		this.padding = this.initOptions.padding;
 		this.yesEventLink = this.widgetEl.querySelector('.windowpanel-action.yes');
-		this.yesIcon = initOptions.yesIcon;
-
+		this.yesIcon = this.initOptions.yesIcon;
 		this.linkToOpen.removeEventListener('click', this.bindedOpen);
 		this.linkToOpen.addEventListener('click', this.bindedOpen);
 
@@ -52,8 +53,8 @@ class WindowPanel {
 			this.closeButton.remove();
 		}
 
-		if (initOptions.contentId) {
-			const source = document.getElementById(initOptions.contentId);
+		if (this.initOptions.contentId) {
+			const source = document.getElementById(this.initOptions.contentId);
 			if (!source) {
 				console.warn('WindowPanel content element not found. Make sure the runtime ContentId is generated before the WindowPanel widget is created.');
 				return;
@@ -317,4 +318,4 @@ class WindowPanel {
 	}
 }
 
-window.top.SapphireWidgets.WindowPanel = WindowPanel;
+window.SapphireWidgets.WindowPanel = WindowPanel;
