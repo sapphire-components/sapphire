@@ -11,60 +11,63 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
+/* hideAllOverlays */
 hideAllOverlays = (initiatorWindow) => {
-	//console.log(new Date(), 'hideAllOverlays', window.location.pathname);
+	console.log('---> hideAllOverlays', window.location.pathname, initiatorWindow.location.pathname);
 
-	// window.document.querySelectorAll('iframe').forEach((iframe, index) => {
-	// 	const iframeWindow = iframe.contentWindow;
-	// 	const iframeDocument = iframe.contentDocument || iframeWindow.document;
-	// 	if (!iframeDocument?.body) return;
-	// 	iframeWindow.hideAllOverlays(window);
-	// });
+	document.querySelectorAll('iframe').forEach((iframe) => {
+		const iframeWindow = iframe.contentWindow;
+		const iframeDocument = iframe.contentDocument || iframeWindow.document;
+		if (!iframeDocument?.body) return;
+		mark('iframe found', iframeWindow.location.pathname);
+		iframeWindow.hideAllOverlays(initiatorWindow);
+	});
 
-	if (initiatorWindow === window) {
-		//console.log('exiting...', window.location.pathname);
+	if (initiatorWindow.location.pathname === window.location.pathname) {
+		console.log('exiting...', window.location.pathname);
+
 		return;
 	}
 
-	// window.document.body.dispatchEvent(
-	// 	new MouseEvent('click', {
-	// 		bubbles: true,
-	// 		cancelable: true,
-	// 	}),
-	// );
+	window.document.body.dispatchEvent(
+		new MouseEvent('click', {
+			bubbles: true,
+			cancelable: true,
+		}),
+	);
 
-	// window.document.body.dispatchEvent(
-	// 	new MouseEvent('mouseup', {
-	// 		bubbles: true,
-	// 		cancelable: true,
-	// 	}),
-	// );
+	window.document.body.dispatchEvent(
+		new MouseEvent('mouseup', {
+			bubbles: true,
+			cancelable: true,
+		}),
+	);
 
-	// document.querySelectorAll('.DateTimeRangePicker').forEach((element) => {
-	// 	window[element.id].picker.hide();
-	// });
+	document.querySelectorAll('.DateTimeRangePicker').forEach((element) => {
+		window[element.id].picker.hide();
+	});
 };
 
 document.body.addEventListener('click', (event) => {
-	// if (event.target.closest('.windowpanel-linktoopen')) {
-	// 	console.log('you clicked on a window open', event.target);
-	// 	const targetLink = event.target.closest('a');
-	// 	console.log('targetLink.initialized', !!targetLink.dataset.initialized);
-	// 	if (!!targetLink.dataset.initialized) {
-	// 		return;
-	// 	} else {
-	// 		console.log('programatically opening window panel', window.location.pathname);
-	// 		window.minhacena.init();
-	// 		//window.minhacena.open();
-	// 	}
-	// }
-	// if (event.isTrusted) {
-	// 	const isInsideSearchSD = event.target.closest('.SearchSD');
-	// 	if (isInsideSearchSD) {
-	// 		return;
-	// 	}
-	// 	try {
-	// 		window.top.hideAllOverlays(window);
-	// 	} catch (error) {}
-	// }
+	if (event.isTrusted) {
+		const isInsideSearchSD = event.target.closest('.SearchSD');
+		if (isInsideSearchSD) {
+			console.log('isInsideSearchSD', event.target);
+			return;
+		}
+		try {
+			mark('initiator click', window.location.pathname);
+			window.top.hideAllOverlays(window);
+		} catch (error) {}
+	}
 });
+
+const mark = (() => {
+	let last = performance.now();
+	return (label = '', pathname) => {
+		const now = performance.now();
+		const diff = now - last;
+		console.log(`${label} | +${diff.toFixed(2)}ms | ${now.toFixed(2)}ms | ${pathname}`);
+		last = now;
+	};
+})();
