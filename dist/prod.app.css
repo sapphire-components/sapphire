@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.336 || Generated: Thu May 28 2026 18:48:37 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.337 || Generated: Fri May 29 2026 10:14:01 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -22274,13 +22274,13 @@ div.List-Star > div[unselected] {
   background-color: #fff;
   width: 100%;
 }
-.SelectSD .SelectSD--disabled {
+.SelectSD .SelectSD--disable, .SelectSD.SelectSD--disabled {
   pointer-events: none;
 }
-.SelectSD .SelectSD--disabled .SelectSD_actionLink {
+.SelectSD .SelectSD--disable .SelectSD_actionLink, .SelectSD.SelectSD--disabled .SelectSD_actionLink {
   opacity: 0.5;
 }
-.SelectSD .SelectSD--disabled .SelectSD__starLink {
+.SelectSD .SelectSD--disable .SelectSD__starLink, .SelectSD.SelectSD--disabled .SelectSD__starLink {
   pointer-events: all;
 }
 .SelectSD .SelectSD__Header {
