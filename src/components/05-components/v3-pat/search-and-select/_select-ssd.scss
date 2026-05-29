@@ -9,7 +9,8 @@
 	background-color: $regular-white;
 	width: 100%;
 
-	.SelectSD--disabled {
+	.SelectSD--disable,
+	&.SelectSD--disabled {
 		pointer-events: none;
 
 		.SelectSD_actionLink {
