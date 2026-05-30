@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.5.339 || Generated: Fri May 29 2026 15:56:00 GMT+0100 (Hora de verão da Europa Ocidental) */
+/*! prod.backoffice.css || Version: 5.5.340 || Generated: Sat May 30 2026 16:56:12 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -4058,16 +4058,6 @@ body {
 }
 
 /* UI TimePicker CSS - HourPicker */
-div.ui-timepicker-container {
-  background-color: #fff;
-  border: 1px solid #d6d6d6;
-  border-radius: 4px;
-  font-size: 1em;
-  margin-top: 4px;
-  min-width: 130px;
-  z-index: 1 !important;
-  /* RTL Adjustments - UI Timepicker */
-}
 div.ui-timepicker-container ::-webkit-scrollbar {
   box-sizing: border-box;
   height: 7px;
@@ -4081,6 +4071,15 @@ div.ui-timepicker-container ::-webkit-scrollbar-thumb {
   border: 5px solid #d6d6d6;
   border-radius: 4px;
 }
+div.ui-timepicker-container {
+  background-color: #fff;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  font-size: 1em;
+  margin-top: 4px;
+  min-width: 130px;
+  z-index: 1 !important;
+}
 div.ui-timepicker-container .ui-state-hover {
   background-color: #f2fffd;
   border-color: transparent;
@@ -4088,6 +4087,9 @@ div.ui-timepicker-container .ui-state-hover {
 div.ui-timepicker-container .ui-corner-all {
   cursor: pointer;
   text-decoration: none;
+}
+div.ui-timepicker-container {
+  /* RTL Adjustments - UI Timepicker */
 }
 div.ui-timepicker-container.rtl .ui-timepicker-viewport {
   list-style: none;
@@ -4097,11 +4099,11 @@ div.ui-timepicker-container.rtl.ui-timepicker-no-scrollbar .ui-timepicker-viewpo
   padding-right: 0 !important;
 }
 
-.IconVertical {
-  min-width: 50px;
-}
 .IconVertical:hover {
   text-decoration: none;
+}
+.IconVertical {
+  min-width: 50px;
 }
 .IconVertical.iconBorder {
   padding: 0 5px 0 10px;
@@ -4169,9 +4171,6 @@ div.ui-timepicker-container.rtl.ui-timepicker-no-scrollbar .ui-timepicker-viewpo
   text-decoration: none;
 }
 
-.iconHorizontal {
-  font-size: 1em;
-}
 .iconHorizontal_icon {
   color: #00ac94;
   font-weight: 600;
@@ -4222,6 +4221,9 @@ div.ui-timepicker-container.rtl.ui-timepicker-no-scrollbar .ui-timepicker-viewpo
 }
 .iconHorizontal_label.LabelColorDarkGrey {
   color: #333;
+}
+.iconHorizontal {
+  font-size: 1em;
 }
 .iconHorizontal.iconBorder {
   padding: 0 5px 0 10px;
@@ -5810,7 +5812,6 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
 
 .InlineFlex, .InlineFlexEnd, .InlineFlexStart, .InlineFlexSpaceEvenly, .InlineFlexSpaceBetween, .InlineFlexSpaceAround, .InlineFlexCenterHorizontal, .InlineFlexCenterVertical, .InlineFlexCenterFull {
   display: flex;
-  display: inline-flex;
 }
 .InlineFlexCenterFull {
   align-items: center;
@@ -5837,10 +5838,12 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
 .InlineFlexEnd {
   justify-content: flex-end;
 }
+.InlineFlex, .InlineFlexEnd, .InlineFlexStart, .InlineFlexSpaceEvenly, .InlineFlexSpaceBetween, .InlineFlexSpaceAround, .InlineFlexCenterHorizontal, .InlineFlexCenterVertical, .InlineFlexCenterFull {
+  display: inline-flex;
+}
 
 .FlexColumn, .FlexColumnEnd, .FlexColumnStart, .FlexColumnSpaceEvenly, .FlexColumnSpaceBetween, .FlexColumnSpaceAround, .FlexColumnCenterHorizontal, .FlexColumnCenterVertical, .FlexColumnCenterFull {
   display: flex;
-  flex-direction: column;
 }
 .FlexColumnCenterFull {
   align-items: center;
@@ -5866,6 +5869,9 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
 }
 .FlexColumnEnd {
   justify-content: flex-end;
+}
+.FlexColumn, .FlexColumnEnd, .FlexColumnStart, .FlexColumnSpaceEvenly, .FlexColumnSpaceBetween, .FlexColumnSpaceAround, .FlexColumnCenterHorizontal, .FlexColumnCenterVertical, .FlexColumnCenterFull {
+  flex-direction: column;
 }
 
 .FlexList, .FlexListLargeGap, .FlexListMediumGap, .FlexListSmallGap, .FlexListXSmallGap {
@@ -5956,9 +5962,6 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
   flex-basis: 10%;
 }
 
-.Scrollable {
-  overflow: auto;
-}
 .Scrollable::-webkit-scrollbar {
   background-color: #fff;
   height: 14px;
@@ -5970,17 +5973,15 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
   border: 4px solid rgba(0, 0, 0, 0);
   border-radius: 9999px;
 }
+.Scrollable {
+  overflow: auto;
+}
 .Scrollable::before {
   content: "";
   display: block;
   height: 1px;
 }
 
-.ScrollableContainer {
-  overflow: auto;
-  margin-right: -8px;
-  padding-right: 8px;
-}
 .ScrollableContainer::-webkit-scrollbar {
   background-color: #fff;
   height: 14px;
@@ -5991,6 +5992,9 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
   background-clip: padding-box;
   border: 4px solid rgba(0, 0, 0, 0);
   border-radius: 9999px;
+}
+.ScrollableContainer {
+  overflow: auto;
 }
 .ScrollableContainer::before {
   content: "";
@@ -6003,10 +6007,11 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
   padding-left: 8px;
   padding-right: auto;
 }
-
-.ScrollableWhite {
-  overflow: auto;
+.ScrollableContainer {
+  margin-right: -8px;
+  padding-right: 8px;
 }
+
 .ScrollableWhite::-webkit-scrollbar {
   background-color: transparent;
   height: 14px;
@@ -6020,6 +6025,9 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
   background-clip: padding-box;
   border: 4px solid rgba(0, 0, 0, 0);
   border-radius: 9999px;
+}
+.ScrollableWhite {
+  overflow: auto;
 }
 .ScrollableWhite::before {
   content: "";
@@ -6109,8 +6117,6 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
 
 .Page .Text {
   /* Colors */
-  /* Sizes */
-  /* General */
 }
 .Page .Text_sapphireBlue, .Page .mainBlue1-tx {
   color: fuchsia;
@@ -6235,6 +6241,9 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
 .Page .Text_darkYellow {
   color: #c19323;
 }
+.Page .Text {
+  /* Sizes */
+}
 .Page .Text_09em {
   font-size: 0.9em;
 }
@@ -6315,6 +6324,9 @@ div.WizardParent > div div.WizardStep::after, div.WizardParent > div div.WizardS
 }
 .Page .Text_Size90 {
   font-size: 90px;
+}
+.Page .Text {
+  /* General */
 }
 .Page .Text_uppercase {
   text-transform: uppercase;
