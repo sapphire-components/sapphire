@@ -25,8 +25,6 @@ class WindowPanel {
 	constructor(initOptions) {
 		this.initOptions = initOptions;
 
-		console.log('initOptions', this.initOptions, window.location.pathname);
-
 		this.widgetEl = document.getElementById(this.initOptions.runtimeId);
 
 		if (!this.widgetEl) {
