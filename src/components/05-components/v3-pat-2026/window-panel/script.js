@@ -210,6 +210,7 @@ class WindowPanel {
 		window.addEventListener(`windowpanel-${this.initOptions.identifier}`, this.panelEventHandler);
 
 		this.cancelButton?.addEventListener('click', (event) => {
+			console.log('cancelButton clicked');
 			event.preventDefault();
 			this.broadcastCustomEvent(`windowpanel-${this.initOptions.identifier}`, { action: 'CLOSE' });
 			this.removeBackdrop();
@@ -217,6 +218,7 @@ class WindowPanel {
 		});
 
 		this.yesButton?.addEventListener('click', (event) => {
+			console.log('yesButton clicked');
 			event.preventDefault();
 			this.broadcastCustomEvent(`windowpanel-${this.initOptions.identifier}`, { action: 'YES' });
 			this.removeBackdrop();
@@ -224,6 +226,7 @@ class WindowPanel {
 		});
 
 		this.noButton?.addEventListener('click', (event) => {
+			console.log('noButton clicked');
 			event.preventDefault();
 			this.broadcastCustomEvent(`windowpanel-${this.initOptions.identifier}`, { action: 'NO' });
 			this.removeBackdrop();
@@ -231,6 +234,7 @@ class WindowPanel {
 		});
 
 		this.closeButton?.addEventListener('click', (event) => {
+			console.log('closeButton clicked');
 			event.preventDefault();
 			this.broadcastCustomEvent(`windowpanel-${this.initOptions.identifier}`, { action: 'CLOSE' });
 			this.removeBackdrop();
@@ -257,6 +261,7 @@ class WindowPanel {
 	}
 
 	broadcastCustomEvent(eventName, detail) {
+		console.log('broadcastCustomEvent', eventName, detail);
 		const visited = new Set();
 
 		function visit(win) {
