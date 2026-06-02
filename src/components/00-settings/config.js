@@ -45,13 +45,13 @@ hideAllOverlays = (initiatorWindow) => {
 };
 
 document.body.addEventListener('click', (event) => {
-	if (event.isTrusted) {
-		const isInsideSearchSD = event.target.closest('.SearchSD');
-		if (isInsideSearchSD) {
-			return;
-		}
-		try {
-			window.top.hideAllOverlays(window);
-		} catch (error) {}
-	}
+	// if (event.isTrusted) {
+	// 	const isInsideSearchSD = event.target.closest('.SearchSD');
+	// 	if (isInsideSearchSD) {
+	// 		return;
+	// 	}
+	// 	try {
+	// 		window.top.hideAllOverlays(window);
+	// 	} catch (error) {}
+	// }
 });
