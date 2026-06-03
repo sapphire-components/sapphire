@@ -222,6 +222,7 @@ a.Button.ReferralLetter:before,
 a.Button.Remarks:before,
 a.Button.Remove:before,
 a.Button.Reopen:before,
+a.Button.Reorder:before,
 a.Button.Reports:before,
 a.Button.ResetQueue:before,
 a.Button.ReturnStock:before,
@@ -1329,6 +1330,10 @@ a.Button.Reopen:before {
 	content: '\e678';
 }
 
+a.Button.Reorder:before {
+	content: '\e967';
+}
+
 a.Button.Reports:before {
 	content: '\e63d';
 }
@@ -1816,6 +1821,7 @@ a.Button.RespiratoryRate:before {
 .AR a.Button.Remarks:before,
 .AR a.Button.Remove:before,
 .AR a.Button.Reopen:before,
+.AR a.Button.Reorder:before,
 .AR a.Button.Reports:before,
 .AR a.Button.ResetQueue:before,
 .AR a.Button.ReturnStock:before,
@@ -2101,6 +2107,7 @@ a.Button.RespiratoryRate:before {
 .FA a.Button.Remarks:before,
 .FA a.Button.Remove:before,
 .FA a.Button.Reopen:before,
+.FA a.Button.Reorder:before,
 .FA a.Button.Reports:before,
 .FA a.Button.ResetQueue:before,
 .FA a.Button.ReturnStock:before,
