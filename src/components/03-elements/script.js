@@ -53,7 +53,6 @@
 		if (textAreaInput.scrollHeight == 0) {
 			textAreaInput.style.height = '70px';
 		} else {
-			textAreaInput.style.height = 'auto';
 			textAreaInput.style.height = textAreaInput.scrollHeight + 'px';
 		}
 	}
