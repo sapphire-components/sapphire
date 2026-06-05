@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.344 || Generated: Thu Jun 04 2026 10:23:39 GMT+0100 (Western European Summer Time) */
+/*! prod.app.js || Version: 5.5.344 || Generated: Fri Jun 05 2026 10:47:09 GMT+0100 (Western European Summer Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -178,17 +178,19 @@ hideAllOverlays = (initiatorWindow) => {
 	});
 };
 
-// document.body.addEventListener('click', (event) => {
-// 	if (event.isTrusted) {
-// 		const isInsideSearchSD = event.target.closest('.SearchSD');
-// 		if (isInsideSearchSD) {
-// 			return;
-// 		}
-// 		try {
-// 			window.top.hideAllOverlays(window);
-// 		} catch (error) {}
-// 	}
-// });
+document.addEventListener('DOMContentLoaded', function () {
+	document.body.addEventListener('click', (event) => {
+		if (event.isTrusted) {
+			const isInsideSearchSD = event.target.closest('.SearchSD');
+			if (isInsideSearchSD) {
+				return;
+			}
+			try {
+				window.top.hideAllOverlays(window);
+			} catch (error) {}
+		}
+	});
+});
 
 
 /***/ }),
