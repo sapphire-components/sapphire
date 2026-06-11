@@ -5,8 +5,11 @@ SapphireWidgets.ResizeParentIframe = function (options = {}) {
 
 	const iframeMinHeight = options.minHeight || 0;
 	const _iframe = window.frameElement;
+	if (!_iframe) {
+		return;
+	}
 	const _body = document.body;
-	const iframeTheme = _iframe.dataset.theme || '';
+	const iframeTheme = _iframe.dataset?.theme || '';
 
 	_body.classList.add('ResizeParentIframe');
 	_body.dataset.theme = iframeTheme;
