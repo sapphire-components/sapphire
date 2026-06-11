@@ -1,4 +1,4 @@
-/*! prod.backoffice.js || Version: 5.5.346 || Generated: Fri Jun 05 2026 17:25:01 GMT+0300 (GMT+03:00) */
+/*! prod.backoffice.js || Version: 5.5.347 || Generated: Thu Jun 11 2026 14:40:33 GMT+0100 (Western European Summer Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -166,7 +166,6 @@ __webpack_require__.r(__webpack_exports__);
 		if (textAreaInput.scrollHeight == 0) {
 			textAreaInput.style.height = '70px';
 		} else {
-			textAreaInput.style.height = 'auto';
 			textAreaInput.style.height = textAreaInput.scrollHeight + 'px';
 		}
 	}

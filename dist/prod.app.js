@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.346 || Generated: Fri Jun 05 2026 17:25:01 GMT+0300 (GMT+03:00) */
+/*! prod.app.js || Version: 5.5.347 || Generated: Thu Jun 11 2026 14:40:33 GMT+0100 (Western European Summer Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -6,7 +6,7 @@
 /***/ (function(module) {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"name":"sapphire","version":"5.5.346","description":"Styles and scripts for Sapphire HMS design system.","keywords":["design system","sapphire","hms","style guide","patterns","css","javascript"],"homepage":"https://dev.nordicplatforms.com/StyleGuideV2_UI/Instructions.aspx","repository":{"type":"git","url":"https://github.com/sapphire-components/sapphire"},"author":{"name":"António Carvalho","email":"antonio.carvalho@outsystems.com","url":"https://www.linkedin.com/in/carvalhoantonio/"},"scripts":{"dev":"set NODE_ENV=development && webpack-dev-server --config webpack.dev.js","prod":"set NODE_ENV=production && webpack --config webpack.prod.js","new:build":"npm run prod && git add . && git commit -m \\"New Release\\" --allow-empty && git push origin main","release:patch":"release-it patch --ci","release:minor":"release-it minor --git.requireBranch=main && npm run new:build","release:major":"release-it major --git.requireBranch=main && npm run new:build"},"license":"ISC","devDependencies":{"autoprefixer":"^10.4.23","clean-webpack-plugin":"^4.0.0","css-loader":"^7.1.2","dotenv-cli":"^11.0.0","eslint":"^9.39.2","eslint-config-prettier":"^10.1.8","eslint-plugin-prettier":"^5.5.5","mini-css-extract-plugin":"^2.10.0","postcss-loader":"^8.2.0","prettier":"^3.8.1","prettier-stylelint":"^0.4.2","release-it":"^19.2.4","sass":"^1.97.3","sass-loader":"^16.0.6","style-loader":"^4.0.0","stylelint":"^17.0.0","stylelint-config-standard-scss":"^17.0.0","stylelint-order":"^7.0.1","terser-webpack-plugin":"^5.3.16","webpack":"^5.104.1","webpack-cli":"^6.0.1","webpack-dev-middleware":"^7.4.5","webpack-dev-server":"^5.2.3","webpack-hot-middleware":"^2.26.1","webpack-merge":"^6.0.1"}}');
+module.exports = /*#__PURE__*/JSON.parse('{"name":"sapphire","version":"5.5.347","description":"Styles and scripts for Sapphire HMS design system.","keywords":["design system","sapphire","hms","style guide","patterns","css","javascript"],"homepage":"https://dev.nordicplatforms.com/StyleGuideV2_UI/Instructions.aspx","repository":{"type":"git","url":"https://github.com/sapphire-components/sapphire"},"author":{"name":"António Carvalho","email":"antonio.carvalho@outsystems.com","url":"https://www.linkedin.com/in/carvalhoantonio/"},"scripts":{"dev":"set NODE_ENV=development && webpack-dev-server --config webpack.dev.js","prod":"set NODE_ENV=production && webpack --config webpack.prod.js","new:build":"npm run prod && git add . && git commit -m \\"New Release\\" --allow-empty && git push origin main","release:patch":"release-it patch --ci","release:minor":"release-it minor --git.requireBranch=main && npm run new:build","release:major":"release-it major --git.requireBranch=main && npm run new:build"},"license":"ISC","devDependencies":{"autoprefixer":"^10.4.23","clean-webpack-plugin":"^4.0.0","css-loader":"^7.1.2","dotenv-cli":"^11.0.0","eslint":"^9.39.2","eslint-config-prettier":"^10.1.8","eslint-plugin-prettier":"^5.5.5","mini-css-extract-plugin":"^2.10.0","postcss-loader":"^8.2.0","prettier":"^3.8.1","prettier-stylelint":"^0.4.2","release-it":"^19.2.4","sass":"^1.97.3","sass-loader":"^16.0.6","style-loader":"^4.0.0","stylelint":"^17.0.0","stylelint-config-standard-scss":"^17.0.0","stylelint-order":"^7.0.1","terser-webpack-plugin":"^5.3.16","webpack":"^5.104.1","webpack-cli":"^6.0.1","webpack-dev-middleware":"^7.4.5","webpack-dev-server":"^5.2.3","webpack-hot-middleware":"^2.26.1","webpack-merge":"^6.0.1"}}');
 
 /***/ }),
 
@@ -178,19 +178,19 @@ hideAllOverlays = (initiatorWindow) => {
 	});
 };
 
-document.addEventListener('DOMContentLoaded', function () {
-	document.body.addEventListener('click', (event) => {
-		if (event.isTrusted) {
-			const isInsideSearchSD = event.target.closest('.SearchSD');
-			if (isInsideSearchSD) {
-				return;
-			}
-			try {
-				window.top.hideAllOverlays(window);
-			} catch (error) {}
-		}
-	});
-});
+// document.addEventListener('DOMContentLoaded', function () {
+// 	document.body.addEventListener('click', (event) => {
+// 		if (event.isTrusted) {
+// 			const isInsideSearchSD = event.target.closest('.SearchSD');
+// 			if (isInsideSearchSD) {
+// 				return;
+// 			}
+// 			try {
+// 				window.top.hideAllOverlays(window);
+// 			} catch (error) {}
+// 		}
+// 	});
+// });
 
 
 /***/ }),
@@ -253,7 +253,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		if (textAreaInput.scrollHeight == 0) {
 			textAreaInput.style.height = '70px';
 		} else {
-			textAreaInput.style.height = 'auto';
 			textAreaInput.style.height = textAreaInput.scrollHeight + 'px';
 		}
 	}
@@ -5323,7 +5322,8 @@ SapphireWidgets.ModalPopup = {
 		$(document).ready(function() {
 			// Use this code to append the component to the root body
 			// window.frameElement && $(window.frameElement).closest('.MainInteractiveCard-body').length > 0
-			if (false) {} else {
+			if (false) // removed by dead control flow
+{} else {
 				const $widget = $(`#${widgetId}`);
 				const $btnClose = $widget.find('.modalPopup_close');
 
