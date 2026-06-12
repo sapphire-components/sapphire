@@ -44,6 +44,8 @@ hideAllOverlays = (initiatorWindow) => {
 	});
 };
 
+// WARNING! This was causing issues with TriggerIframeTooltip (SPD-5508) and was impossible to find (it was disabled not by me).
+
 // document.addEventListener('DOMContentLoaded', function () {
 // 	document.body.addEventListener('click', (event) => {
 // 		if (event.isTrusted) {
