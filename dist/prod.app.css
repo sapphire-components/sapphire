@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.347 || Generated: Thu Jun 11 2026 14:40:33 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.348 || Generated: Tue Jun 16 2026 10:15:51 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -19684,7 +19684,7 @@ body.confirmation-opened {
   align-items: center;
   display: flex;
   font-family: "LatoBold";
-  height: 22px;
+  min-height: 22px;
 }
 .PrescriptionCard__Title .PrescriptionCard___CompareIcon {
   padding: 0 2px;
