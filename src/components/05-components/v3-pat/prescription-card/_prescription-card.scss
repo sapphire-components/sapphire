@@ -91,7 +91,7 @@ $color-unknown-light: color.adjust($body-color, $lightness: 3%);
 		@include flex-center-vertically();
 
 		font-family: $font-family-latin-bold;
-		height: 22px;
+		min-height: 22px;
 
 		.PrescriptionCard___CompareIcon {
 			padding: 0 $sapphire-sizes--xxsmall;
