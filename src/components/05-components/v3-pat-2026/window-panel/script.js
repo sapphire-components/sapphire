@@ -48,7 +48,7 @@ class WindowPanel {
 		this.linkToOpen.addEventListener('click', this.bindedOpen);
 
 		if (!this.hasClose) {
-			this.closeButton.remove();
+			this.closeButton?.remove();
 		}
 
 		if (this.initOptions.contentId) {
