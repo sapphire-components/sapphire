@@ -2,6 +2,7 @@
 
 /* SapphireIcon */
 .icon {
+	-servicestudio-display: inline-block;
 	font-family: $font-family-icons;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -11,8 +12,6 @@
 	line-height: 1;
 	speak: none;
 	text-transform: none;
-
-	-servicestudio-display: inline-block;
 }
 
 .icon:before {
@@ -1158,6 +1157,14 @@
 
 .icon-rate-change:before {
 	content: '\e966';
+}
+
+.icon-reschedule-back:before {
+	content: '\e969';
+}
+
+.icon-reschedule-forward:before {
+	content: '\e96f';
 }
 
 /* Regular icon sizes */

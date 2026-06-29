@@ -212,6 +212,8 @@ a.Button.Prescription:before,
 a.Button.Previous:before,
 a.Button.Printer:before,
 a.Button.RateChange:before,
+a.Button.RescheduleBack:before,
+a.Button.RescheduleForward:before,
 a.Button.ReleaseBedWhite:before,
 a.Button.ReopenVisit:before,
 a.Button.Request:before,
@@ -1606,6 +1608,14 @@ a.Button.RespiratoryRate:before {
 	content: '\e95a';
 }
 
+a.Button.RescheduleBack:before {
+	content: '\e969';
+}
+
+a.Button.RescheduleForward:before {
+	content: '\e96f';
+}
+
 .AR a.Button.Add:before,
 .AR a.Button.AddPatient:before,
 .AR a.Button.Attention:before,
@@ -1811,6 +1821,8 @@ a.Button.RespiratoryRate:before {
 .AR a.Button.Previous:before,
 .AR a.Button.Printer:before,
 .AR a.Button.RateChange:before,
+.AR a.Button.RescheduleBack:before,
+.AR a.Button.RescheduleForward:before,
 .AR a.Button.ReleaseBedWhite:before,
 .AR a.Button.ReopenVisit:before,
 .AR a.Button.Request:before,
@@ -2097,6 +2109,8 @@ a.Button.RespiratoryRate:before {
 .FA a.Button.Previous:before,
 .FA a.Button.Printer:before,
 .FA a.Button.RateChange:before,
+.FA a.Button.RescheduleBack:before,
+.FA a.Button.RescheduleForward:before,
 .FA a.Button.ReleaseBedWhite:before,
 .FA a.Button.ReopenVisit:before,
 .FA a.Button.Request:before,
