@@ -1,7 +1,7 @@
 var SearchSelectDefine = (window.SearchSelectDefine = window.SearchSelectDefine || {});
 
 SapphireWidgets.SelectSSD = function SSDSelectSetup(config) {
-	$(function() {
+	$(function () {
 		var $SSDselectId = $('#' + config.SSDSelectId);
 		var isMultiple = config.isMultiple;
 
@@ -12,7 +12,153 @@ SapphireWidgets.SelectSSD = function SSDSelectSetup(config) {
 		if (Componentinputlength > 0) {
 			$SSDselectId.find('.SelectSD__contentTitle').highlight($ComponentSSDinput.val(), {
 				className: 'SelectSD-searched-term',
-				caseSensitive: false,
+				caseSensitive: false,var SearchSelectDefine = (window.SearchSelectDefine = window.SearchSelectDefine || {});
+
+				SapphireWidgets.SelectSSD = function SSDSelectSetup(config) {
+					$(function () {
+						var $SSDselectId = $('#' + config.SSDSelectId);
+						var isMultiple = config.isMultiple;
+				
+						var $ComponentSSD = $SSDselectId.closest('.SearchSD');
+						var $ComponentSSDinput = $ComponentSSD.find('.SearchSD___input input');
+						var Componentinputlength = $ComponentSSDinput.val().length;
+				
+						if (Componentinputlength > 0) {
+							$SSDselectId.find('.SelectSD__contentTitle').highlight($ComponentSSDinput.val(), {
+								className: 'SelectSD-searched-term',
+								caseSensitive: false,
+								wordsOnly: false,
+							});
+						}
+				
+						var $favoritesSearchInput = $ComponentSSD.find('.SearchSD_filterfavorites input');
+				
+						if ($favoritesSearchInput.length) {
+							var favoritesSearchLength = $favoritesSearchInput.val().length;
+				
+							if (config.HasFavorite === 'True' && favoritesSearchLength > 0) {
+								$SSDselectId.find('.SelectSD__contentTitle').highlight($favoritesSearchInput.val(), {
+									className: 'SelectSD-searched-term',
+									caseSensitive: false,
+									wordsOnly: false,
+								});
+							}
+						}
+				
+						var OpenConfirmPopup = function ($SSDselectId) {
+							$ComponentSSD = $SSDselectId.closest('.SearchSD');
+							$PopupID = $ComponentSSD.siblings('.SSDPopupWrapper');
+				
+							$PopupID.fadeIn('fast', function () {
+								$ComponentSSD.addClass('Dont_Close');
+								$PopupID
+									.find('.SSDpopupOk')
+									.off('click')
+									.on('click', function () {
+										$PopupID.fadeOut('fast', function () {
+											$SSDselectId.find('.SelectSD__starTrigger > a').click();
+											setTimeout(function () {
+												$ComponentSSD.removeClass('Dont_Close');
+											}, 500);
+										});
+									});
+				
+								$PopupID
+									.find('.SSDpopupCancel')
+									.off('click')
+									.on('click', function () {
+										$PopupID.fadeOut('fast', function () {
+											setTimeout(function () {
+												$ComponentSSD.removeClass('Dont_Close');
+											}, 500);
+										});
+									});
+							});
+						};
+				
+						var SSDCheckBoxSelect = function ($widgetId) {
+							var checkBoxCount = 0;
+							if (isMultiple === 'True') {
+								checkBoxCount = $widgetId.closest('.SearchSD.showFavorite').find('.SelectSD__multiple > input[type="checkbox"]:checked').length;
+				
+								$allListcard = $widgetId.closest('.SearchSD_content');
+				
+								if (checkBoxCount > 0) {
+									$widgetId.closest('.SearchSD.showFavorite').addClass('MultiSelectActive');
+									$widgetId.closest('.SearchSD_content .SelectSD').each(function () {
+										$(this).find('.SelectSD_contentWrapper').off('click');
+										$(this).find('.SelectSD_actionLink').off('click');
+									});
+								} else {
+									$widgetId.closest('.SearchSD.showFavorite').removeClass('MultiSelectActive');
+									$widgetId.closest('.SearchSD_content .SelectSD ').each(function () {
+										$(this)
+											.find('.SelectSD_contentWrapper')
+											.on('click', function (e) {
+												$(this).find('.LineActionLINK > a').click();
+											});
+										$(this)
+											.find('.SelectSD_actionLink')
+											.on('click', function (e) {
+												$(this).find('.LineActionLINK > a').click();
+											});
+									});
+								}
+							}
+						};
+				
+						if (isMultiple === 'True') {
+							$SSDselectId.find('.SelectSD__multiple > input').click(function () {
+								SSDCheckBoxSelect($SSDselectId);
+							});
+						}
+				
+						$SSDselectId.find('.SelectSD__starLink').on('click', function (e) {
+							if (!$SSDselectId.find('.SelectSD .SelectSD__starWrapper').hasClass('starDisabled')) {
+								if ($SSDselectId.find('.SelectSD .SelectSD__starWrapper').hasClass('starSelected')) {
+									const widgetElement = $ComponentSSD[0];
+									const next = widgetElement.nextElementSibling;
+									const hasWindowPanel = next?.querySelector('.windowpanel') !== null;
+				
+									const lineElement = $SSDselectId[0];
+									const lineActionTrigger = lineElement.querySelector('.SelectSD__starTrigger a');
+				
+									widgetElement.dataset.linefavoriteid = lineActionTrigger.id;
+				
+									if (hasWindowPanel) {
+										let linkToOpen = next.querySelector('.windowpanel-linktoopen a');
+										linkToOpen.click();
+									} else {
+										OpenConfirmPopup($SSDselectId);
+									}
+								} else {
+									$SSDselectId.find('.SelectSD__starTrigger > a').click();
+								}
+							}
+						});
+				
+						$SSDselectId.find('.SelectSD_contentWrapper').on('click', function (e) {
+							$ComponentSSD = $SSDselectId.closest('.SearchSD');
+							$SSDselectId.find('.LineActionLINK > a').click();
+							if (!$ComponentSSD.hasClass('MultiSelectActive')) {
+								SearchSelectDefine.SSDSearch.returnToSearch($SSDselectId.closest('.SearchSD'));
+								SearchSelectDefine.SSDSearch.closeSSD($SSDselectId.closest('.SearchSD'));
+							}
+				
+							$ComponentSSDinput.val('');
+						});
+				
+						$SSDselectId.find('.SelectSD_actionLink').on('click', function (e) {
+							$ComponentSSD = $SSDselectId.closest('.SearchSD');
+							$SSDselectId.find('.LineActionLINK > a').click();
+							if (!$ComponentSSD.hasClass('MultiSelectActive')) {
+								SearchSelectDefine.SSDSearch.returnToSearch($SSDselectId.closest('.SearchSD'));
+								SearchSelectDefine.SSDSearch.closeSSD($SSDselectId.closest('.SearchSD'));
+							}
+						});
+					});
+				};
+				
 				wordsOnly: false,
 			});
 		}
@@ -31,20 +177,20 @@ SapphireWidgets.SelectSSD = function SSDSelectSetup(config) {
 			}
 		}
 
-		var OpenConfirmPopup = function($SSDselectId) {
+		var OpenConfirmPopup = function ($SSDselectId) {
 			$ComponentSSD = $SSDselectId.closest('.SearchSD');
 			$PopupID = $ComponentSSD.siblings('.SSDPopupWrapper');
 
-			$PopupID.fadeIn('fast', function() {
+			$PopupID.fadeIn('fast', function () {
 				$ComponentSSD.addClass('Dont_Close');
 				$PopupID
 					.find('.SSDpopupOk')
 					.off('click')
-					.on('click', function() {
-						$PopupID.fadeOut('fast', function() {
+					.on('click', function () {
+						$PopupID.fadeOut('fast', function () {
 							$SSDselectId.find('.SelectSD__starTrigger > a').click();
-							setTimeout(function() {
-								$ComponentSSD.removeClass('Dont_Close')
+							setTimeout(function () {
+								$ComponentSSD.removeClass('Dont_Close');
 							}, 500);
 						});
 					});
@@ -52,51 +198,41 @@ SapphireWidgets.SelectSSD = function SSDSelectSetup(config) {
 				$PopupID
 					.find('.SSDpopupCancel')
 					.off('click')
-					.on('click', function() {
-						$PopupID.fadeOut('fast', function() {
-							setTimeout(function() {
-								$ComponentSSD.removeClass('Dont_Close')
+					.on('click', function () {
+						$PopupID.fadeOut('fast', function () {
+							setTimeout(function () {
+								$ComponentSSD.removeClass('Dont_Close');
 							}, 500);
 						});
 					});
 			});
 		};
 
-		var SSDCheckBoxSelect = function($widgetId) {
+		var SSDCheckBoxSelect = function ($widgetId) {
 			var checkBoxCount = 0;
 			if (isMultiple === 'True') {
-				checkBoxCount = $widgetId
-					.closest('.SearchSD.showFavorite')
-					.find('.SelectSD__multiple > input[type="checkbox"]:checked').length;
+				checkBoxCount = $widgetId.closest('.SearchSD.showFavorite').find('.SelectSD__multiple > input[type="checkbox"]:checked').length;
 
 				$allListcard = $widgetId.closest('.SearchSD_content');
 
 				if (checkBoxCount > 0) {
 					$widgetId.closest('.SearchSD.showFavorite').addClass('MultiSelectActive');
-					$widgetId.closest('.SearchSD_content .SelectSD').each(function() {
-						$(this)
-							.find('.SelectSD_contentWrapper')
-							.off('click');
-						$(this)
-							.find('.SelectSD_actionLink')
-							.off('click');
+					$widgetId.closest('.SearchSD_content .SelectSD').each(function () {
+						$(this).find('.SelectSD_contentWrapper').off('click');
+						$(this).find('.SelectSD_actionLink').off('click');
 					});
 				} else {
 					$widgetId.closest('.SearchSD.showFavorite').removeClass('MultiSelectActive');
-					$widgetId.closest('.SearchSD_content .SelectSD ').each(function() {
+					$widgetId.closest('.SearchSD_content .SelectSD ').each(function () {
 						$(this)
 							.find('.SelectSD_contentWrapper')
-							.on('click', function(e) {
-								$(this)
-									.find('.LineActionLINK > a')
-									.click();
+							.on('click', function (e) {
+								$(this).find('.LineActionLINK > a').click();
 							});
 						$(this)
 							.find('.SelectSD_actionLink')
-							.on('click', function(e) {
-								$(this)
-									.find('.LineActionLINK > a')
-									.click();
+							.on('click', function (e) {
+								$(this).find('.LineActionLINK > a').click();
 							});
 					});
 				}
@@ -104,22 +240,36 @@ SapphireWidgets.SelectSSD = function SSDSelectSetup(config) {
 		};
 
 		if (isMultiple === 'True') {
-			$SSDselectId.find('.SelectSD__multiple > input').click(function() {
+			$SSDselectId.find('.SelectSD__multiple > input').click(function () {
 				SSDCheckBoxSelect($SSDselectId);
 			});
 		}
 
-		$SSDselectId.find('.SelectSD__starLink').on('click', function(e) {
+		$SSDselectId.find('.SelectSD__starLink').on('click', function (e) {
 			if (!$SSDselectId.find('.SelectSD .SelectSD__starWrapper').hasClass('starDisabled')) {
 				if ($SSDselectId.find('.SelectSD .SelectSD__starWrapper').hasClass('starSelected')) {
-					OpenConfirmPopup($SSDselectId);
+					const widgetElement = $ComponentSSD[0];
+					const next = widgetElement.nextElementSibling;
+					const hasWindowPanel = next?.querySelector('.windowpanel') !== null;
+
+					const lineElement = $SSDselectId[0];
+					const lineActionTrigger = lineElement.querySelector('.SelectSD__starTrigger a');
+
+					widgetElement.dataset.linefavoriteid = lineActionTrigger.id;
+
+					if (hasWindowPanel) {
+						let linkToOpen = next.querySelector('.windowpanel-linktoopen a');
+						linkToOpen.click();
+					} else {
+						OpenConfirmPopup($SSDselectId);
+					}
 				} else {
 					$SSDselectId.find('.SelectSD__starTrigger > a').click();
 				}
 			}
 		});
 
-		$SSDselectId.find('.SelectSD_contentWrapper').on('click', function(e) {
+		$SSDselectId.find('.SelectSD_contentWrapper').on('click', function (e) {
 			$ComponentSSD = $SSDselectId.closest('.SearchSD');
 			$SSDselectId.find('.LineActionLINK > a').click();
 			if (!$ComponentSSD.hasClass('MultiSelectActive')) {
@@ -130,7 +280,7 @@ SapphireWidgets.SelectSSD = function SSDSelectSetup(config) {
 			$ComponentSSDinput.val('');
 		});
 
-		$SSDselectId.find('.SelectSD_actionLink').on('click', function(e) {
+		$SSDselectId.find('.SelectSD_actionLink').on('click', function (e) {
 			$ComponentSSD = $SSDselectId.closest('.SearchSD');
 			$SSDselectId.find('.LineActionLINK > a').click();
 			if (!$ComponentSSD.hasClass('MultiSelectActive')) {

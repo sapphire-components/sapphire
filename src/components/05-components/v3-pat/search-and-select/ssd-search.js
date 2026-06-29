@@ -459,6 +459,19 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 		};
 	});
 };
+
+SapphireWidgets.SSDSearch.clickFavoriteTrigger = function (wrapperId) {
+	const wrapperElement = document.getElementById(wrapperId);
+
+	console.log('wrapperElement', wrapperElement);
+
+	const lineFavoriteId = wrapperElement.dataset.linefavoriteid;
+
+	console.log('lineFavoriteId', document.getElementById(lineFavoriteId));
+
+	document.getElementById(lineFavoriteId).click();
+};
+
 // Added to close the select list if we click the prescription Iframe;
 window.addEventListener('DOMContentLoaded', (event) => {
 	var rootElement = document.querySelector('body');
