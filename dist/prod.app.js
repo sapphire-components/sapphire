@@ -1,14 +1,131 @@
-/*! prod.app.js || Version: 5.5.349 || Generated: Mon Jun 29 2026 16:12:39 GMT+0300 (Eastern European Summer Time) */
+/*! prod.app.js || Version: 5.5.350 || Generated: Mon Jun 29 2026 15:10:35 GMT+0100 (Western European Summer Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/components/index.scss":
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ "./package.json":
+/***/ (function(module) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
+module.exports = /*#__PURE__*/JSON.parse('{"name":"sapphire","version":"5.5.350","description":"Styles and scripts for Sapphire HMS design system.","keywords":["design system","sapphire","hms","style guide","patterns","css","javascript"],"homepage":"https://dev.nordicplatforms.com/StyleGuideV2_UI/Instructions.aspx","repository":{"type":"git","url":"https://github.com/sapphire-components/sapphire"},"author":{"name":"António Carvalho","email":"antonio.carvalho@outsystems.com","url":"https://www.linkedin.com/in/carvalhoantonio/"},"scripts":{"dev":"set NODE_ENV=development && webpack-dev-server --config webpack.dev.js","prod":"set NODE_ENV=production && webpack --config webpack.prod.js","new:build":"npm run prod && git add . && git commit -m \\"New Release\\" --allow-empty && git push origin main","release:patch":"release-it patch --ci","release:minor":"release-it minor --git.requireBranch=main && npm run new:build","release:major":"release-it major --git.requireBranch=main && npm run new:build"},"license":"ISC","devDependencies":{"autoprefixer":"^10.4.23","clean-webpack-plugin":"^4.0.0","css-loader":"^7.1.2","dotenv-cli":"^11.0.0","eslint":"^9.39.2","eslint-config-prettier":"^10.1.8","eslint-plugin-prettier":"^5.5.5","mini-css-extract-plugin":"^2.10.0","postcss-loader":"^8.2.0","prettier":"^3.8.1","prettier-stylelint":"^0.4.2","release-it":"^19.2.4","sass":"^1.97.3","sass-loader":"^16.0.6","style-loader":"^4.0.0","stylelint":"^17.0.0","stylelint-config-standard-scss":"^17.0.0","stylelint-order":"^7.0.1","terser-webpack-plugin":"^5.3.16","webpack":"^5.104.1","webpack-cli":"^6.0.1","webpack-dev-middleware":"^7.4.5","webpack-dev-server":"^5.2.3","webpack-hot-middleware":"^2.26.1","webpack-merge":"^6.0.1"}}');
 
+/***/ }),
+
+/***/ "./src/components sync recursive \\.js$":
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var map = {
+	"./00-settings/config.js": "./src/components/00-settings/config.js",
+	"./03-elements/script.js": "./src/components/03-elements/script.js",
+	"./05-components/globals.js": "./src/components/05-components/globals.js",
+	"./05-components/layout/layout-base.js": "./src/components/05-components/layout/layout-base.js",
+	"./05-components/layout/layout-blank.js": "./src/components/05-components/layout/layout-blank.js",
+	"./05-components/layout/layout-emergency.js": "./src/components/05-components/layout/layout-emergency.js",
+	"./05-components/layout/layout-popup.js": "./src/components/05-components/layout/layout-popup.js",
+	"./05-components/layout/layout-spam-guard.js": "./src/components/05-components/layout/layout-spam-guard.js",
+	"./05-components/layout/subLayoutLeft.js": "./src/components/05-components/layout/subLayoutLeft.js",
+	"./05-components/v3-pat-2026/badge-box/scripts.js": "./src/components/05-components/v3-pat-2026/badge-box/scripts.js",
+	"./05-components/v3-pat-2026/button-pending/script.js": "./src/components/05-components/v3-pat-2026/button-pending/script.js",
+	"./05-components/v3-pat-2026/hourpicker2/script.js": "./src/components/05-components/v3-pat-2026/hourpicker2/script.js",
+	"./05-components/v3-pat-2026/tippytooltip/scripts.js": "./src/components/05-components/v3-pat-2026/tippytooltip/scripts.js",
+	"./05-components/v3-pat-2026/window-navigate/script.js": "./src/components/05-components/v3-pat-2026/window-navigate/script.js",
+	"./05-components/v3-pat-2026/window-panel/script.js": "./src/components/05-components/v3-pat-2026/window-panel/script.js",
+	"./05-components/v3-pat/actions-menu/scripts.js": "./src/components/05-components/v3-pat/actions-menu/scripts.js",
+	"./05-components/v3-pat/button-link/scripts.js": "./src/components/05-components/v3-pat/button-link/scripts.js",
+	"./05-components/v3-pat/card-charts/scripts.js": "./src/components/05-components/v3-pat/card-charts/scripts.js",
+	"./05-components/v3-pat/collapsible-side-panel/scripts.js": "./src/components/05-components/v3-pat/collapsible-side-panel/scripts.js",
+	"./05-components/v3-pat/comp-line/scripts.js": "./src/components/05-components/v3-pat/comp-line/scripts.js",
+	"./05-components/v3-pat/country-phone/scripts.js": "./src/components/05-components/v3-pat/country-phone/scripts.js",
+	"./05-components/v3-pat/data-tables/scripts.js": "./src/components/05-components/v3-pat/data-tables/scripts.js",
+	"./05-components/v3-pat/datetime-range-picker/scripts.js": "./src/components/05-components/v3-pat/datetime-range-picker/scripts.js",
+	"./05-components/v3-pat/drag-drop/scripts.js": "./src/components/05-components/v3-pat/drag-drop/scripts.js",
+	"./05-components/v3-pat/dropdown-categories/scripts.js": "./src/components/05-components/v3-pat/dropdown-categories/scripts.js",
+	"./05-components/v3-pat/dropzone/dropzone.js": "./src/components/05-components/v3-pat/dropzone/dropzone.js",
+	"./05-components/v3-pat/expandable-link/scripts.js": "./src/components/05-components/v3-pat/expandable-link/scripts.js",
+	"./05-components/v3-pat/fullscreen-tabs-wrapper/scripts.js": "./src/components/05-components/v3-pat/fullscreen-tabs-wrapper/scripts.js",
+	"./05-components/v3-pat/generic-card/scripts.js": "./src/components/05-components/v3-pat/generic-card/scripts.js",
+	"./05-components/v3-pat/generic-gallery/scripts.js": "./src/components/05-components/v3-pat/generic-gallery/scripts.js",
+	"./05-components/v3-pat/generic-grid/scripts.js": "./src/components/05-components/v3-pat/generic-grid/scripts.js",
+	"./05-components/v3-pat/horizontal-toolbar/scripts.js": "./src/components/05-components/v3-pat/horizontal-toolbar/scripts.js",
+	"./05-components/v3-pat/hour-picker/scripts.js": "./src/components/05-components/v3-pat/hour-picker/scripts.js",
+	"./05-components/v3-pat/iframe-loader/scripts.js": "./src/components/05-components/v3-pat/iframe-loader/scripts.js",
+	"./05-components/v3-pat/input-lasa/scripts.js": "./src/components/05-components/v3-pat/input-lasa/scripts.js",
+	"./05-components/v3-pat/input-with-clear/scripts.js": "./src/components/05-components/v3-pat/input-with-clear/scripts.js",
+	"./05-components/v3-pat/input-with-list/scripts.js": "./src/components/05-components/v3-pat/input-with-list/scripts.js",
+	"./05-components/v3-pat/line-add/scripts.js": "./src/components/05-components/v3-pat/line-add/scripts.js",
+	"./05-components/v3-pat/line-details-expand-box/script.js": "./src/components/05-components/v3-pat/line-details-expand-box/script.js",
+	"./05-components/v3-pat/location-box/scripts.js": "./src/components/05-components/v3-pat/location-box/scripts.js",
+	"./05-components/v3-pat/main-interactive-card/scripts.js": "./src/components/05-components/v3-pat/main-interactive-card/scripts.js",
+	"./05-components/v3-pat/menu-bar/scripts.js": "./src/components/05-components/v3-pat/menu-bar/scripts.js",
+	"./05-components/v3-pat/multiple-selection-button/scripts.js": "./src/components/05-components/v3-pat/multiple-selection-button/scripts.js",
+	"./05-components/v3-pat/panel/confirmation-panel.js": "./src/components/05-components/v3-pat/panel/confirmation-panel.js",
+	"./05-components/v3-pat/panel/confirmation-popup.js": "./src/components/05-components/v3-pat/panel/confirmation-popup.js",
+	"./05-components/v3-pat/panel/modal-popup.js": "./src/components/05-components/v3-pat/panel/modal-popup.js",
+	"./05-components/v3-pat/panel/panel-by-id-notify.js": "./src/components/05-components/v3-pat/panel/panel-by-id-notify.js",
+	"./05-components/v3-pat/panel/panel-by-id.js": "./src/components/05-components/v3-pat/panel/panel-by-id.js",
+	"./05-components/v3-pat/panel/popup-menu.js": "./src/components/05-components/v3-pat/panel/popup-menu.js",
+	"./05-components/v3-pat/panel/sapphire-panel.js": "./src/components/05-components/v3-pat/panel/sapphire-panel.js",
+	"./05-components/v3-pat/panel/scripts.js": "./src/components/05-components/v3-pat/panel/scripts.js",
+	"./05-components/v3-pat/patient-call-cancel/patient-call-cancel-structure.js": "./src/components/05-components/v3-pat/patient-call-cancel/patient-call-cancel-structure.js",
+	"./05-components/v3-pat/patient-call-cancel/patient-call-cancel.js": "./src/components/05-components/v3-pat/patient-call-cancel/patient-call-cancel.js",
+	"./05-components/v3-pat/prescription-card/scripts.js": "./src/components/05-components/v3-pat/prescription-card/scripts.js",
+	"./05-components/v3-pat/prescription-expandable/scripts.js": "./src/components/05-components/v3-pat/prescription-expandable/scripts.js",
+	"./05-components/v3-pat/resize-parent-iframe/scripts.js": "./src/components/05-components/v3-pat/resize-parent-iframe/scripts.js",
+	"./05-components/v3-pat/sapphire-header/scripts.js": "./src/components/05-components/v3-pat/sapphire-header/scripts.js",
+	"./05-components/v3-pat/sapphire-popup/scripts.js": "./src/components/05-components/v3-pat/sapphire-popup/scripts.js",
+	"./05-components/v3-pat/sapphire-radio-button/scripts.js": "./src/components/05-components/v3-pat/sapphire-radio-button/scripts.js",
+	"./05-components/v3-pat/scales/scale-main-structure.js": "./src/components/05-components/v3-pat/scales/scale-main-structure.js",
+	"./05-components/v3-pat/scales/toggle-item-control.js": "./src/components/05-components/v3-pat/scales/toggle-item-control.js",
+	"./05-components/v3-pat/search-and-select/select-ssd.js": "./src/components/05-components/v3-pat/search-and-select/select-ssd.js",
+	"./05-components/v3-pat/search-and-select/ssd-search.js": "./src/components/05-components/v3-pat/search-and-select/ssd-search.js",
+	"./05-components/v3-pat/searchable-client-side/scripts.js": "./src/components/05-components/v3-pat/searchable-client-side/scripts.js",
+	"./05-components/v3-pat/section-expandable-custom/scripts.js": "./src/components/05-components/v3-pat/section-expandable-custom/scripts.js",
+	"./05-components/v3-pat/section-expandable-inside/scripts.js": "./src/components/05-components/v3-pat/section-expandable-inside/scripts.js",
+	"./05-components/v3-pat/segmented-control/scripts.js": "./src/components/05-components/v3-pat/segmented-control/scripts.js",
+	"./05-components/v3-pat/select-system/scripts.js": "./src/components/05-components/v3-pat/select-system/scripts.js",
+	"./05-components/v3-pat/shift-container/scripts.js": "./src/components/05-components/v3-pat/shift-container/scripts.js",
+	"./05-components/v3-pat/shift-table/shiftTable.js": "./src/components/05-components/v3-pat/shift-table/shiftTable.js",
+	"./05-components/v3-pat/shift-table/shiftTableCard.js": "./src/components/05-components/v3-pat/shift-table/shiftTableCard.js",
+	"./05-components/v3-pat/shift-table/shiftTableCardProgress.js": "./src/components/05-components/v3-pat/shift-table/shiftTableCardProgress.js",
+	"./05-components/v3-pat/shift-table/shiftTableHover.js": "./src/components/05-components/v3-pat/shift-table/shiftTableHover.js",
+	"./05-components/v3-pat/side-menu/scripts.js": "./src/components/05-components/v3-pat/side-menu/scripts.js",
+	"./05-components/v3-pat/sidebar/sidebar-structure.js": "./src/components/05-components/v3-pat/sidebar/sidebar-structure.js",
+	"./05-components/v3-pat/small-box-selectable/scripts.js": "./src/components/05-components/v3-pat/small-box-selectable/scripts.js",
+	"./05-components/v3-pat/spinner-horizontal/scripts.js": "./src/components/05-components/v3-pat/spinner-horizontal/scripts.js",
+	"./05-components/v3-pat/spinner-vertical/scripts.js": "./src/components/05-components/v3-pat/spinner-vertical/scripts.js",
+	"./05-components/v3-pat/split-button/scripts.js": "./src/components/05-components/v3-pat/split-button/scripts.js",
+	"./05-components/v3-pat/ssd-component-block/scripts.js": "./src/components/05-components/v3-pat/ssd-component-block/scripts.js",
+	"./05-components/v3-pat/ssd-list-line/scripts.js": "./src/components/05-components/v3-pat/ssd-list-line/scripts.js",
+	"./05-components/v3-pat/table-form/scripts.js": "./src/components/05-components/v3-pat/table-form/scripts.js",
+	"./05-components/v3-pat/tabs-extended/scripts.js": "./src/components/05-components/v3-pat/tabs-extended/scripts.js",
+	"./05-components/v3-pat/tabular-list/scripts.js": "./src/components/05-components/v3-pat/tabular-list/scripts.js",
+	"./05-components/v3-pat/tabular-scroll/scripts.js": "./src/components/05-components/v3-pat/tabular-scroll/scripts.js",
+	"./05-components/v3-pat/timeline/scripts.js": "./src/components/05-components/v3-pat/timeline/scripts.js",
+	"./05-components/v3-pat/trigger-iframe-tooltip/trigger-iframe-tooltip.js": "./src/components/05-components/v3-pat/trigger-iframe-tooltip/trigger-iframe-tooltip.js",
+	"./05-components/v3-pat/truncated-content/scripts.js": "./src/components/05-components/v3-pat/truncated-content/scripts.js",
+	"./08-pages/clinicianWorkArea.js": "./src/components/08-pages/clinicianWorkArea.js",
+	"./08-pages/eSignature.js": "./src/components/08-pages/eSignature.js",
+	"./08-pages/remoteAppointment.js": "./src/components/08-pages/remoteAppointment.js"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./src/components sync recursive \\.js$";
 
 /***/ }),
 
@@ -5207,7 +5324,8 @@ SapphireWidgets.ModalPopup = {
 		$(document).ready(function() {
 			// Use this code to append the component to the root body
 			// window.frameElement && $(window.frameElement).closest('.MainInteractiveCard-body').length > 0
-			if (false) {} else {
+			if (false) // removed by dead control flow
+{} else {
 				const $widget = $(`#${widgetId}`);
 				const $btnClose = $widget.find('.modalPopup_close');
 
@@ -7193,7 +7311,7 @@ SapphireWidgets.ToggleItemControl = () => {
 var SearchSelectDefine = (window.SearchSelectDefine = window.SearchSelectDefine || {});
 
 SapphireWidgets.SelectSSD = function SSDSelectSetup(config) {
-	$(function() {
+	$(function () {
 		var $SSDselectId = $('#' + config.SSDSelectId);
 		var isMultiple = config.isMultiple;
 
@@ -7223,20 +7341,20 @@ SapphireWidgets.SelectSSD = function SSDSelectSetup(config) {
 			}
 		}
 
-		var OpenConfirmPopup = function($SSDselectId) {
+		var OpenConfirmPopup = function ($SSDselectId) {
 			$ComponentSSD = $SSDselectId.closest('.SearchSD');
 			$PopupID = $ComponentSSD.siblings('.SSDPopupWrapper');
 
-			$PopupID.fadeIn('fast', function() {
+			$PopupID.fadeIn('fast', function () {
 				$ComponentSSD.addClass('Dont_Close');
 				$PopupID
 					.find('.SSDpopupOk')
 					.off('click')
-					.on('click', function() {
-						$PopupID.fadeOut('fast', function() {
+					.on('click', function () {
+						$PopupID.fadeOut('fast', function () {
 							$SSDselectId.find('.SelectSD__starTrigger > a').click();
-							setTimeout(function() {
-								$ComponentSSD.removeClass('Dont_Close')
+							setTimeout(function () {
+								$ComponentSSD.removeClass('Dont_Close');
 							}, 500);
 						});
 					});
@@ -7244,51 +7362,41 @@ SapphireWidgets.SelectSSD = function SSDSelectSetup(config) {
 				$PopupID
 					.find('.SSDpopupCancel')
 					.off('click')
-					.on('click', function() {
-						$PopupID.fadeOut('fast', function() {
-							setTimeout(function() {
-								$ComponentSSD.removeClass('Dont_Close')
+					.on('click', function () {
+						$PopupID.fadeOut('fast', function () {
+							setTimeout(function () {
+								$ComponentSSD.removeClass('Dont_Close');
 							}, 500);
 						});
 					});
 			});
 		};
 
-		var SSDCheckBoxSelect = function($widgetId) {
+		var SSDCheckBoxSelect = function ($widgetId) {
 			var checkBoxCount = 0;
 			if (isMultiple === 'True') {
-				checkBoxCount = $widgetId
-					.closest('.SearchSD.showFavorite')
-					.find('.SelectSD__multiple > input[type="checkbox"]:checked').length;
+				checkBoxCount = $widgetId.closest('.SearchSD.showFavorite').find('.SelectSD__multiple > input[type="checkbox"]:checked').length;
 
 				$allListcard = $widgetId.closest('.SearchSD_content');
 
 				if (checkBoxCount > 0) {
 					$widgetId.closest('.SearchSD.showFavorite').addClass('MultiSelectActive');
-					$widgetId.closest('.SearchSD_content .SelectSD').each(function() {
-						$(this)
-							.find('.SelectSD_contentWrapper')
-							.off('click');
-						$(this)
-							.find('.SelectSD_actionLink')
-							.off('click');
+					$widgetId.closest('.SearchSD_content .SelectSD').each(function () {
+						$(this).find('.SelectSD_contentWrapper').off('click');
+						$(this).find('.SelectSD_actionLink').off('click');
 					});
 				} else {
 					$widgetId.closest('.SearchSD.showFavorite').removeClass('MultiSelectActive');
-					$widgetId.closest('.SearchSD_content .SelectSD ').each(function() {
+					$widgetId.closest('.SearchSD_content .SelectSD ').each(function () {
 						$(this)
 							.find('.SelectSD_contentWrapper')
-							.on('click', function(e) {
-								$(this)
-									.find('.LineActionLINK > a')
-									.click();
+							.on('click', function (e) {
+								$(this).find('.LineActionLINK > a').click();
 							});
 						$(this)
 							.find('.SelectSD_actionLink')
-							.on('click', function(e) {
-								$(this)
-									.find('.LineActionLINK > a')
-									.click();
+							.on('click', function (e) {
+								$(this).find('.LineActionLINK > a').click();
 							});
 					});
 				}
@@ -7296,22 +7404,36 @@ SapphireWidgets.SelectSSD = function SSDSelectSetup(config) {
 		};
 
 		if (isMultiple === 'True') {
-			$SSDselectId.find('.SelectSD__multiple > input').click(function() {
+			$SSDselectId.find('.SelectSD__multiple > input').click(function () {
 				SSDCheckBoxSelect($SSDselectId);
 			});
 		}
 
-		$SSDselectId.find('.SelectSD__starLink').on('click', function(e) {
+		$SSDselectId.find('.SelectSD__starLink').on('click', function (e) {
 			if (!$SSDselectId.find('.SelectSD .SelectSD__starWrapper').hasClass('starDisabled')) {
 				if ($SSDselectId.find('.SelectSD .SelectSD__starWrapper').hasClass('starSelected')) {
-					OpenConfirmPopup($SSDselectId);
+					const widgetElement = $ComponentSSD[0];
+					const next = widgetElement.nextElementSibling;
+					const hasWindowPanel = next?.querySelector('.windowpanel') !== null;
+
+					const lineElement = $SSDselectId[0];
+					const lineActionTrigger = lineElement.querySelector('.SelectSD__starTrigger a');
+
+					widgetElement.dataset.linefavoriteid = lineActionTrigger.id;
+
+					if (hasWindowPanel) {
+						let linkToOpen = next.querySelector('.windowpanel-linktoopen a');
+						linkToOpen.click();
+					} else {
+						OpenConfirmPopup($SSDselectId);
+					}
 				} else {
 					$SSDselectId.find('.SelectSD__starTrigger > a').click();
 				}
 			}
 		});
 
-		$SSDselectId.find('.SelectSD_contentWrapper').on('click', function(e) {
+		$SSDselectId.find('.SelectSD_contentWrapper').on('click', function (e) {
 			$ComponentSSD = $SSDselectId.closest('.SearchSD');
 			$SSDselectId.find('.LineActionLINK > a').click();
 			if (!$ComponentSSD.hasClass('MultiSelectActive')) {
@@ -7322,7 +7444,7 @@ SapphireWidgets.SelectSSD = function SSDSelectSetup(config) {
 			$ComponentSSDinput.val('');
 		});
 
-		$SSDselectId.find('.SelectSD_actionLink').on('click', function(e) {
+		$SSDselectId.find('.SelectSD_actionLink').on('click', function (e) {
 			$ComponentSSD = $SSDselectId.closest('.SearchSD');
 			$SSDselectId.find('.LineActionLINK > a').click();
 			if (!$ComponentSSD.hasClass('MultiSelectActive')) {
@@ -7800,6 +7922,19 @@ SapphireWidgets.SSDSearch = function SSDsearchSetup(config) {
 		};
 	});
 };
+
+SapphireWidgets.SSDSearch.clickFavoriteTrigger = function (wrapperId) {
+	const wrapperElement = document.getElementById(wrapperId);
+
+	console.log('wrapperElement', wrapperElement);
+
+	const lineFavoriteId = wrapperElement.dataset.linefavoriteid;
+
+	console.log('lineFavoriteId', document.getElementById(lineFavoriteId));
+
+	document.getElementById(lineFavoriteId).click();
+};
+
 // Added to close the select list if we click the prescription Iframe;
 window.addEventListener('DOMContentLoaded', (event) => {
 	var rootElement = document.querySelector('body');
@@ -11823,130 +11958,13 @@ SapphireWidgets.GoNextInput = function(currentInput, nextInputClass) {
 
 /***/ }),
 
-/***/ "./src/components sync recursive \\.js$":
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-var map = {
-	"./00-settings/config.js": "./src/components/00-settings/config.js",
-	"./03-elements/script.js": "./src/components/03-elements/script.js",
-	"./05-components/globals.js": "./src/components/05-components/globals.js",
-	"./05-components/layout/layout-base.js": "./src/components/05-components/layout/layout-base.js",
-	"./05-components/layout/layout-blank.js": "./src/components/05-components/layout/layout-blank.js",
-	"./05-components/layout/layout-emergency.js": "./src/components/05-components/layout/layout-emergency.js",
-	"./05-components/layout/layout-popup.js": "./src/components/05-components/layout/layout-popup.js",
-	"./05-components/layout/layout-spam-guard.js": "./src/components/05-components/layout/layout-spam-guard.js",
-	"./05-components/layout/subLayoutLeft.js": "./src/components/05-components/layout/subLayoutLeft.js",
-	"./05-components/v3-pat-2026/badge-box/scripts.js": "./src/components/05-components/v3-pat-2026/badge-box/scripts.js",
-	"./05-components/v3-pat-2026/button-pending/script.js": "./src/components/05-components/v3-pat-2026/button-pending/script.js",
-	"./05-components/v3-pat-2026/hourpicker2/script.js": "./src/components/05-components/v3-pat-2026/hourpicker2/script.js",
-	"./05-components/v3-pat-2026/tippytooltip/scripts.js": "./src/components/05-components/v3-pat-2026/tippytooltip/scripts.js",
-	"./05-components/v3-pat-2026/window-navigate/script.js": "./src/components/05-components/v3-pat-2026/window-navigate/script.js",
-	"./05-components/v3-pat-2026/window-panel/script.js": "./src/components/05-components/v3-pat-2026/window-panel/script.js",
-	"./05-components/v3-pat/actions-menu/scripts.js": "./src/components/05-components/v3-pat/actions-menu/scripts.js",
-	"./05-components/v3-pat/button-link/scripts.js": "./src/components/05-components/v3-pat/button-link/scripts.js",
-	"./05-components/v3-pat/card-charts/scripts.js": "./src/components/05-components/v3-pat/card-charts/scripts.js",
-	"./05-components/v3-pat/collapsible-side-panel/scripts.js": "./src/components/05-components/v3-pat/collapsible-side-panel/scripts.js",
-	"./05-components/v3-pat/comp-line/scripts.js": "./src/components/05-components/v3-pat/comp-line/scripts.js",
-	"./05-components/v3-pat/country-phone/scripts.js": "./src/components/05-components/v3-pat/country-phone/scripts.js",
-	"./05-components/v3-pat/data-tables/scripts.js": "./src/components/05-components/v3-pat/data-tables/scripts.js",
-	"./05-components/v3-pat/datetime-range-picker/scripts.js": "./src/components/05-components/v3-pat/datetime-range-picker/scripts.js",
-	"./05-components/v3-pat/drag-drop/scripts.js": "./src/components/05-components/v3-pat/drag-drop/scripts.js",
-	"./05-components/v3-pat/dropdown-categories/scripts.js": "./src/components/05-components/v3-pat/dropdown-categories/scripts.js",
-	"./05-components/v3-pat/dropzone/dropzone.js": "./src/components/05-components/v3-pat/dropzone/dropzone.js",
-	"./05-components/v3-pat/expandable-link/scripts.js": "./src/components/05-components/v3-pat/expandable-link/scripts.js",
-	"./05-components/v3-pat/fullscreen-tabs-wrapper/scripts.js": "./src/components/05-components/v3-pat/fullscreen-tabs-wrapper/scripts.js",
-	"./05-components/v3-pat/generic-card/scripts.js": "./src/components/05-components/v3-pat/generic-card/scripts.js",
-	"./05-components/v3-pat/generic-gallery/scripts.js": "./src/components/05-components/v3-pat/generic-gallery/scripts.js",
-	"./05-components/v3-pat/generic-grid/scripts.js": "./src/components/05-components/v3-pat/generic-grid/scripts.js",
-	"./05-components/v3-pat/horizontal-toolbar/scripts.js": "./src/components/05-components/v3-pat/horizontal-toolbar/scripts.js",
-	"./05-components/v3-pat/hour-picker/scripts.js": "./src/components/05-components/v3-pat/hour-picker/scripts.js",
-	"./05-components/v3-pat/iframe-loader/scripts.js": "./src/components/05-components/v3-pat/iframe-loader/scripts.js",
-	"./05-components/v3-pat/input-lasa/scripts.js": "./src/components/05-components/v3-pat/input-lasa/scripts.js",
-	"./05-components/v3-pat/input-with-clear/scripts.js": "./src/components/05-components/v3-pat/input-with-clear/scripts.js",
-	"./05-components/v3-pat/input-with-list/scripts.js": "./src/components/05-components/v3-pat/input-with-list/scripts.js",
-	"./05-components/v3-pat/line-add/scripts.js": "./src/components/05-components/v3-pat/line-add/scripts.js",
-	"./05-components/v3-pat/line-details-expand-box/script.js": "./src/components/05-components/v3-pat/line-details-expand-box/script.js",
-	"./05-components/v3-pat/location-box/scripts.js": "./src/components/05-components/v3-pat/location-box/scripts.js",
-	"./05-components/v3-pat/main-interactive-card/scripts.js": "./src/components/05-components/v3-pat/main-interactive-card/scripts.js",
-	"./05-components/v3-pat/menu-bar/scripts.js": "./src/components/05-components/v3-pat/menu-bar/scripts.js",
-	"./05-components/v3-pat/multiple-selection-button/scripts.js": "./src/components/05-components/v3-pat/multiple-selection-button/scripts.js",
-	"./05-components/v3-pat/panel/confirmation-panel.js": "./src/components/05-components/v3-pat/panel/confirmation-panel.js",
-	"./05-components/v3-pat/panel/confirmation-popup.js": "./src/components/05-components/v3-pat/panel/confirmation-popup.js",
-	"./05-components/v3-pat/panel/modal-popup.js": "./src/components/05-components/v3-pat/panel/modal-popup.js",
-	"./05-components/v3-pat/panel/panel-by-id-notify.js": "./src/components/05-components/v3-pat/panel/panel-by-id-notify.js",
-	"./05-components/v3-pat/panel/panel-by-id.js": "./src/components/05-components/v3-pat/panel/panel-by-id.js",
-	"./05-components/v3-pat/panel/popup-menu.js": "./src/components/05-components/v3-pat/panel/popup-menu.js",
-	"./05-components/v3-pat/panel/sapphire-panel.js": "./src/components/05-components/v3-pat/panel/sapphire-panel.js",
-	"./05-components/v3-pat/panel/scripts.js": "./src/components/05-components/v3-pat/panel/scripts.js",
-	"./05-components/v3-pat/patient-call-cancel/patient-call-cancel-structure.js": "./src/components/05-components/v3-pat/patient-call-cancel/patient-call-cancel-structure.js",
-	"./05-components/v3-pat/patient-call-cancel/patient-call-cancel.js": "./src/components/05-components/v3-pat/patient-call-cancel/patient-call-cancel.js",
-	"./05-components/v3-pat/prescription-card/scripts.js": "./src/components/05-components/v3-pat/prescription-card/scripts.js",
-	"./05-components/v3-pat/prescription-expandable/scripts.js": "./src/components/05-components/v3-pat/prescription-expandable/scripts.js",
-	"./05-components/v3-pat/resize-parent-iframe/scripts.js": "./src/components/05-components/v3-pat/resize-parent-iframe/scripts.js",
-	"./05-components/v3-pat/sapphire-header/scripts.js": "./src/components/05-components/v3-pat/sapphire-header/scripts.js",
-	"./05-components/v3-pat/sapphire-popup/scripts.js": "./src/components/05-components/v3-pat/sapphire-popup/scripts.js",
-	"./05-components/v3-pat/sapphire-radio-button/scripts.js": "./src/components/05-components/v3-pat/sapphire-radio-button/scripts.js",
-	"./05-components/v3-pat/scales/scale-main-structure.js": "./src/components/05-components/v3-pat/scales/scale-main-structure.js",
-	"./05-components/v3-pat/scales/toggle-item-control.js": "./src/components/05-components/v3-pat/scales/toggle-item-control.js",
-	"./05-components/v3-pat/search-and-select/select-ssd.js": "./src/components/05-components/v3-pat/search-and-select/select-ssd.js",
-	"./05-components/v3-pat/search-and-select/ssd-search.js": "./src/components/05-components/v3-pat/search-and-select/ssd-search.js",
-	"./05-components/v3-pat/searchable-client-side/scripts.js": "./src/components/05-components/v3-pat/searchable-client-side/scripts.js",
-	"./05-components/v3-pat/section-expandable-custom/scripts.js": "./src/components/05-components/v3-pat/section-expandable-custom/scripts.js",
-	"./05-components/v3-pat/section-expandable-inside/scripts.js": "./src/components/05-components/v3-pat/section-expandable-inside/scripts.js",
-	"./05-components/v3-pat/segmented-control/scripts.js": "./src/components/05-components/v3-pat/segmented-control/scripts.js",
-	"./05-components/v3-pat/select-system/scripts.js": "./src/components/05-components/v3-pat/select-system/scripts.js",
-	"./05-components/v3-pat/shift-container/scripts.js": "./src/components/05-components/v3-pat/shift-container/scripts.js",
-	"./05-components/v3-pat/shift-table/shiftTable.js": "./src/components/05-components/v3-pat/shift-table/shiftTable.js",
-	"./05-components/v3-pat/shift-table/shiftTableCard.js": "./src/components/05-components/v3-pat/shift-table/shiftTableCard.js",
-	"./05-components/v3-pat/shift-table/shiftTableCardProgress.js": "./src/components/05-components/v3-pat/shift-table/shiftTableCardProgress.js",
-	"./05-components/v3-pat/shift-table/shiftTableHover.js": "./src/components/05-components/v3-pat/shift-table/shiftTableHover.js",
-	"./05-components/v3-pat/side-menu/scripts.js": "./src/components/05-components/v3-pat/side-menu/scripts.js",
-	"./05-components/v3-pat/sidebar/sidebar-structure.js": "./src/components/05-components/v3-pat/sidebar/sidebar-structure.js",
-	"./05-components/v3-pat/small-box-selectable/scripts.js": "./src/components/05-components/v3-pat/small-box-selectable/scripts.js",
-	"./05-components/v3-pat/spinner-horizontal/scripts.js": "./src/components/05-components/v3-pat/spinner-horizontal/scripts.js",
-	"./05-components/v3-pat/spinner-vertical/scripts.js": "./src/components/05-components/v3-pat/spinner-vertical/scripts.js",
-	"./05-components/v3-pat/split-button/scripts.js": "./src/components/05-components/v3-pat/split-button/scripts.js",
-	"./05-components/v3-pat/ssd-component-block/scripts.js": "./src/components/05-components/v3-pat/ssd-component-block/scripts.js",
-	"./05-components/v3-pat/ssd-list-line/scripts.js": "./src/components/05-components/v3-pat/ssd-list-line/scripts.js",
-	"./05-components/v3-pat/table-form/scripts.js": "./src/components/05-components/v3-pat/table-form/scripts.js",
-	"./05-components/v3-pat/tabs-extended/scripts.js": "./src/components/05-components/v3-pat/tabs-extended/scripts.js",
-	"./05-components/v3-pat/tabular-list/scripts.js": "./src/components/05-components/v3-pat/tabular-list/scripts.js",
-	"./05-components/v3-pat/tabular-scroll/scripts.js": "./src/components/05-components/v3-pat/tabular-scroll/scripts.js",
-	"./05-components/v3-pat/timeline/scripts.js": "./src/components/05-components/v3-pat/timeline/scripts.js",
-	"./05-components/v3-pat/trigger-iframe-tooltip/trigger-iframe-tooltip.js": "./src/components/05-components/v3-pat/trigger-iframe-tooltip/trigger-iframe-tooltip.js",
-	"./05-components/v3-pat/truncated-content/scripts.js": "./src/components/05-components/v3-pat/truncated-content/scripts.js",
-	"./08-pages/clinicianWorkArea.js": "./src/components/08-pages/clinicianWorkArea.js",
-	"./08-pages/eSignature.js": "./src/components/08-pages/eSignature.js",
-	"./08-pages/remoteAppointment.js": "./src/components/08-pages/remoteAppointment.js"
-};
-
-
-function webpackContext(req) {
-	var id = webpackContextResolve(req);
-	return __webpack_require__(id);
-}
-function webpackContextResolve(req) {
-	if(!__webpack_require__.o(map, req)) {
-		var e = new Error("Cannot find module '" + req + "'");
-		e.code = 'MODULE_NOT_FOUND';
-		throw e;
-	}
-	return map[req];
-}
-webpackContext.keys = function webpackContextKeys() {
-	return Object.keys(map);
-};
-webpackContext.resolve = webpackContextResolve;
-module.exports = webpackContext;
-webpackContext.id = "./src/components sync recursive \\.js$";
-
-/***/ }),
-
-/***/ "./package.json":
-/***/ (function(module) {
+/***/ "./src/components/index.scss":
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"name":"sapphire","version":"5.5.349","description":"Styles and scripts for Sapphire HMS design system.","keywords":["design system","sapphire","hms","style guide","patterns","css","javascript"],"homepage":"https://dev.nordicplatforms.com/StyleGuideV2_UI/Instructions.aspx","repository":{"type":"git","url":"https://github.com/sapphire-components/sapphire"},"author":{"name":"António Carvalho","email":"antonio.carvalho@outsystems.com","url":"https://www.linkedin.com/in/carvalhoantonio/"},"scripts":{"dev":"set NODE_ENV=development && webpack-dev-server --config webpack.dev.js","prod":"set NODE_ENV=production && webpack --config webpack.prod.js","new:build":"npm run prod && git add . && git commit -m \\"New Release\\" --allow-empty && git push origin main","release:patch":"release-it patch --ci","release:minor":"release-it minor --git.requireBranch=main && npm run new:build","release:major":"release-it major --git.requireBranch=main && npm run new:build"},"license":"ISC","devDependencies":{"autoprefixer":"^10.4.23","clean-webpack-plugin":"^4.0.0","css-loader":"^7.1.2","dotenv-cli":"^11.0.0","eslint":"^9.39.2","eslint-config-prettier":"^10.1.8","eslint-plugin-prettier":"^5.5.5","mini-css-extract-plugin":"^2.10.0","postcss-loader":"^8.2.0","prettier":"^3.8.1","prettier-stylelint":"^0.4.2","release-it":"^19.2.4","sass":"^1.97.3","sass-loader":"^16.0.6","style-loader":"^4.0.0","stylelint":"^17.0.0","stylelint-config-standard-scss":"^17.0.0","stylelint-order":"^7.0.1","terser-webpack-plugin":"^5.3.16","webpack":"^5.104.1","webpack-cli":"^6.0.1","webpack-dev-middleware":"^7.4.5","webpack-dev-server":"^5.2.3","webpack-hot-middleware":"^2.26.1","webpack-merge":"^6.0.1"}}');
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
 
 /***/ })
 

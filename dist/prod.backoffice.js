@@ -1,16 +1,6 @@
-/*! prod.backoffice.js || Version: 5.5.349 || Generated: Mon Jun 29 2026 16:12:39 GMT+0300 (Eastern European Summer Time) */
+/*! prod.backoffice.js || Version: 5.5.350 || Generated: Mon Jun 29 2026 15:10:35 GMT+0100 (Western European Summer Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
-
-/***/ "./src/backoffice/styles.scss":
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
 
 /***/ "./src/backoffice/01-components/layout/layout-backoffice.js":
 /***/ (function() {
@@ -104,6 +94,16 @@ $(document).ready(function () {
 	/* caj: solves the * in mandatory 
   $('input.Mandatory, select.Mandatory').parent().addClass('ListInputMandatory');*/
 });
+
+
+/***/ }),
+
+/***/ "./src/backoffice/styles.scss":
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
 
 
 /***/ }),
