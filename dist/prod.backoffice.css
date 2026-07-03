@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.5.352 || Generated: Thu Jul 02 2026 12:55:49 GMT+0100 (Western European Summer Time) */
+/*! prod.backoffice.css || Version: 5.5.352 || Generated: Fri Jul 03 2026 12:26:22 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -4712,6 +4712,7 @@ body.confirmation-opened {
 }
 
 .select2 {
+  font-family: "LatoRegular";
   width: 100%;
 }
 .select2.select2-container--disabled .select2-selection[aria-disabled=true] {
