@@ -1,12 +1,22 @@
 /* Component ShiftTable */
 SapphireWidgets.ShiftTable = (widgetId) => {
 	const topLimitWithIframe = 190;
-	const topLimitWithoutIframe = 173;
-	const headerTopWithoutIframe = 154;
 	const firstColumnWidth = 400;
 
+	let topLimitWithoutIframe = document.querySelector('.WorklistPageHeader')?.getBoundingClientRect().bottom || 173;
+	if (topLimitWithoutIframe < 173) {
+		topLimitWithoutIframe = 173;
+	}
+
+	let headerTopWithoutIframe = document.querySelector('.ShiftTable__Header')?.getBoundingClientRect().top || 154;
+	if (headerTopWithoutIframe < 154) {
+		headerTopWithoutIframe = 154;
+	}
+
+	console.log(topLimitWithoutIframe, headerTopWithoutIframe);
+
 	$(document).ready(() => {
-		console.log('Ready');
+		// console.log('Ready');
 
 		const shiftTableEl = document.getElementById(widgetId);
 
@@ -42,7 +52,7 @@ SapphireWidgets.ShiftTable = (widgetId) => {
 		}
 
 		function calculateFloatingHeader() {
-			console.log('calculateFloatingHeader');
+			// console.log('calculateFloatingHeader');
 			const rectContent = getElementTopWindowRect('.ShiftTable__Content');
 			if (isInIframe()) {
 				const willBe = window.top.scrollY - rectContent.top + 12;
@@ -55,7 +65,7 @@ SapphireWidgets.ShiftTable = (widgetId) => {
 				}
 			} else {
 				const willBe = headerTopWithoutIframe;
-				if (window.scrollY >= topLimitWithoutIframe) {
+				if (window.scrollY + (headerTopWithoutIframe - 16) >= topLimitWithoutIframe) {
 					shiftTableEl.dataset.stickyheader = 'true';
 					shiftTableEl.style.setProperty('--shifttable-header-top', `${willBe}px`);
 				} else {
@@ -92,7 +102,7 @@ SapphireWidgets.ShiftTable = (widgetId) => {
 			});
 
 			const resizeObserver = new ResizeObserver(() => {
-				console.log('ResizeObserver');
+				// console.log('ResizeObserver');
 				calculateHourWidth();
 			});
 			resizeObserver.observe(shiftTableEl);
@@ -100,7 +110,7 @@ SapphireWidgets.ShiftTable = (widgetId) => {
 			let mutationTimeoutId;
 			const mutationObserver = new MutationObserver((mutations) => {
 				clearTimeout(mutationTimeoutId);
-				console.log('MutationObserver');
+				// console.log('MutationObserver');
 
 				mutationTimeoutId = setTimeout(() => {
 					const progressEls = shiftTableEl.querySelectorAll('.ShiftTableCardProgress');

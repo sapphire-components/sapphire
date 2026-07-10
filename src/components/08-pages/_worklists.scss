@@ -9,7 +9,7 @@
 	padding-top: $sapphire-sizes--large;
 	position: sticky;
 	top: 64px;
-	z-index: 2;
+	z-index: 3;
 }
 
 .WorklistPageContent {
@@ -53,16 +53,13 @@
 	}
 	//worklists item detail panel
 	.CollapsibleSidePanel__PanelFooter .ReverseList {
+		background-color: #f9f9f9;
 		display: flex;
 		flex-direction: column;
 		max-height: 200px;
-		background-color: #F9F9F9;
 	}
 
 	.CollapsibleSidePanel__PanelFooter .ReverseList.Scrollable::-webkit-scrollbar {
-		background-color: #F9F9F9;
+		background-color: #f9f9f9;
 	}
-
-
 }
-
