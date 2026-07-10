@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.352 || Generated: Fri Jul 03 2026 12:26:22 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.353 || Generated: Fri Jul 10 2026 13:11:32 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -34742,7 +34742,7 @@ ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover {
   padding-top: 24px;
   position: sticky;
   top: 64px;
-  z-index: 2;
+  z-index: 3;
 }
 
 .WorklistPageContent .ShiftTableRow {
@@ -34773,13 +34773,13 @@ ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover {
   overflow-x: hidden;
 }
 .WorklistPageContent .CollapsibleSidePanel__PanelFooter .ReverseList {
+  background-color: #f9f9f9;
   display: flex;
   flex-direction: column;
   max-height: 200px;
-  background-color: #F9F9F9;
 }
 .WorklistPageContent .CollapsibleSidePanel__PanelFooter .ReverseList.Scrollable::-webkit-scrollbar {
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
 }
 
 /* stock-movements-page CSS, needs to be reviewed! */
