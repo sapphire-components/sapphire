@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.353 || Generated: Fri Jul 10 2026 13:11:32 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.354 || Generated: Tue Jul 21 2026 17:43:48 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -7113,7 +7113,7 @@ a.SpecialityButtonForward {
   border-left: 1px solid #d6d6d6;
   max-width: 430px;
   min-height: calc(100vh - 64px);
-  z-index: 2;
+  z-index: 3;
 }
 .SubLayoutLeftPanel--isFixedToTop {
   padding-left: 232px;
