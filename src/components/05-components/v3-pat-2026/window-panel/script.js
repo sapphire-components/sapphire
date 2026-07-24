@@ -1,4 +1,6 @@
 class WindowPanel {
+	static instances = new Map();
+
 	anchorEl = null;
 	bindedOpen = this.open.bind(this);
 	closeButton = null;
@@ -7,6 +9,7 @@ class WindowPanel {
 	contentMaxHeight = null;
 	customContentEl = null;
 	hasClose = null;
+	identifier = null;
 	initOptions = null;
 	keydownHandler = null;
 	linkToOpen = null;
@@ -24,12 +27,19 @@ class WindowPanel {
 
 	constructor(initOptions) {
 		this.initOptions = initOptions;
+		this.identifier = this.initOptions.identifier || null;
 
 		this.widgetEl = document.getElementById(this.initOptions.runtimeId);
 
 		if (!this.widgetEl) {
 			console.warn('WindowPanel element not found', this.initOptions.runtimeId, window.location.pathname);
 			return;
+		}
+
+		if (this.identifier) {
+			this.widgetEl.dataset.identifier = this.identifier;
+			this.widgetEl._windowPanel = this;
+			WindowPanel.instances.set(this.identifier, this);
 		}
 
 		this.closeButton = this.widgetEl.querySelector('.windowpanel-close');
@@ -153,7 +163,32 @@ class WindowPanel {
 			window.removeEventListener('keydown', this.keydownHandler);
 			this.keydownHandler = null;
 		}
-		this.tippyInstance.hide();
+		this.removeBackdrop();
+		this.tippyInstance?.hide();
+	}
+
+	static get(identifier) {
+		return WindowPanel.instances.get(identifier) ?? null;
+	}
+
+	static open(identifier) {
+		const instance = WindowPanel.get(identifier);
+		if (!instance) {
+			console.warn('WindowPanel not found for identifier', identifier);
+			return null;
+		}
+		instance.open();
+		return instance;
+	}
+
+	static close(identifier) {
+		const instance = WindowPanel.get(identifier);
+		if (!instance) {
+			console.warn('WindowPanel not found for identifier', identifier);
+			return null;
+		}
+		instance.close();
+		return instance;
 	}
 
 	createTemplate(html) {
@@ -210,7 +245,6 @@ class WindowPanel {
 		window.addEventListener(`windowpanel-${this.initOptions.identifier}`, this.panelEventHandler);
 
 		this.cancelButton?.addEventListener('click', (event) => {
-			console.log('cancelButton clicked');
 			event.preventDefault();
 			this.broadcastCustomEvent(`windowpanel-${this.initOptions.identifier}`, { action: 'CLOSE' });
 			this.removeBackdrop();
@@ -218,7 +252,6 @@ class WindowPanel {
 		});
 
 		this.yesButton?.addEventListener('click', (event) => {
-			console.log('yesButton clicked');
 			event.preventDefault();
 			this.broadcastCustomEvent(`windowpanel-${this.initOptions.identifier}`, { action: 'YES' });
 			this.removeBackdrop();
@@ -226,7 +259,6 @@ class WindowPanel {
 		});
 
 		this.noButton?.addEventListener('click', (event) => {
-			console.log('noButton clicked');
 			event.preventDefault();
 			this.broadcastCustomEvent(`windowpanel-${this.initOptions.identifier}`, { action: 'NO' });
 			this.removeBackdrop();
@@ -234,7 +266,6 @@ class WindowPanel {
 		});
 
 		this.closeButton?.addEventListener('click', (event) => {
-			console.log('closeButton clicked');
 			event.preventDefault();
 			this.broadcastCustomEvent(`windowpanel-${this.initOptions.identifier}`, { action: 'CLOSE' });
 			this.removeBackdrop();
@@ -261,7 +292,6 @@ class WindowPanel {
 	}
 
 	broadcastCustomEvent(eventName, detail) {
-		console.log('broadcastCustomEvent', eventName, detail);
 		const visited = new Set();
 
 		function visit(win) {
