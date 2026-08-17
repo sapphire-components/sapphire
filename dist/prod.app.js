@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.357 || Generated: Mon Aug 17 2026 16:27:51 GMT+0100 (Western European Summer Time) */
+/*! prod.app.js || Version: 5.5.357 || Generated: Mon Aug 17 2026 16:48:30 GMT+0100 (Western European Summer Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -416,7 +416,7 @@ $(function () {
 /***/ (function() {
 
 /* Component LayoutPopup */
-(function($, window, document, SapphireWidgets) {
+(function ($, window, document, SapphireWidgets) {
 	var popupWidth;
 	var popupMinWidth;
 	var popupHeight;
@@ -434,12 +434,12 @@ $(function () {
 
 	const BODY_PADDING_TOP_BOTTOM = 32;
 
-	const create = function(config) {
+	const create = function (config) {
 		SapphireWidgets.LayoutPopup.config = config;
 		popupSize = SapphireWidgets.LayoutPopup.config.PopupSize;
 		paddingBody = config.noContentPadding ? 0 : BODY_PADDING_TOP_BOTTOM;
 
-		$(function() {
+		$(function () {
 			$('body').addClass('LayoutPopup'); // because datetimerangepicker is attached to body
 
 			if (SapphireWidgets.LayoutPopup.config.isTouch) {
@@ -447,13 +447,10 @@ $(function () {
 				$('body').addClass('isTouch'); // because select2 is attached to body
 			}
 
-			var observer = new MutationObserver(function(mutations) {
-				mutations.forEach(function(mutation, index) {
+			var observer = new MutationObserver(function (mutations) {
+				mutations.forEach(function (mutation, index) {
 					// Avoid to redraw the dialog if it is one the following popups
-					if (
-						SapphireWidgets.PopupsToAvoidMutations &&
-						SapphireWidgets.PopupsToAvoidMutations.some(e => $(`.${e}`).length)
-					) {
+					if (SapphireWidgets.PopupsToAvoidMutations && SapphireWidgets.PopupsToAvoidMutations.some((e) => $(`.${e}`).length)) {
 						return false;
 					}
 
@@ -470,13 +467,13 @@ $(function () {
 			$('body').css('visibility', 'hidden');
 		});
 
-		$(window).load(function() {
+		$(window).load(function () {
 			$(this.frameElement).css({
 				width: '100%',
 				height: '100%',
 			});
 
-			setTimeout(function() {
+			setTimeout(function () {
 				resizeDialog();
 				resizeContent();
 				$('body').css('visibility', 'visible');
@@ -487,21 +484,21 @@ $(function () {
 
 		$(window.parent)
 			.off('resize.LayoutPopup')
-			.on('resize.LayoutPopup', function() {
+			.on('resize.LayoutPopup', function () {
 				redrawDialogWindow();
 			});
 	};
 
-	const redrawDialogWindow = function() {
+	const redrawDialogWindow = function () {
 		clearTimeout(layoutPopupResizeTimer);
-		layoutPopupResizeTimer = setTimeout(function() {
+		layoutPopupResizeTimer = setTimeout(function () {
 			resizeDialog();
 			resizeContent();
 			$('body').css('visibility', 'visible');
 		}, 300);
 	};
 
-	const resizeDialog = function() {
+	const resizeDialog = function () {
 		if (SapphireWidgets.LayoutPopup.config.hasClose) {
 			window.parent.$('.os-internal-ui-dialog-titlebar').show();
 
@@ -509,7 +506,11 @@ $(function () {
 				const $closeButton = window.parent.$('.os-internal-ui-dialog-titlebar-close');
 
 				$closeButton.removeAttr('href');
-				$closeButton.off('click').on('click', () => window.top._iframePopup.SapphireWidgets.SapphirePopup.close());
+				$closeButton.off('click').on('click', () => {
+					const virtualCloseLink = document.querySelector('.LayoutPopup__close');
+					virtualCloseLink.click();
+					window.top._iframePopup.SapphireWidgets.SapphirePopup.close();
+				});
 			}
 		}
 
@@ -532,7 +533,7 @@ $(function () {
 		});
 	};
 
-	const resizeContent = function() {
+	const resizeContent = function () {
 		var $body = $('.LayoutPopup__body__content');
 		var contentScrollTop = $body.scrollTop();
 
@@ -544,9 +545,7 @@ $(function () {
 			});
 		}
 
-		let bodyContent = paddingBody
-			? $('.LayoutPopup__body__content')[0].scrollHeight
-			: $('.LayoutPopup__body__content').height();
+		let bodyContent = paddingBody ? $('.LayoutPopup__body__content')[0].scrollHeight : $('.LayoutPopup__body__content').height();
 
 		var headerHeight = $('.LayoutPopup__header').innerHeight() || 0;
 		var introHeight = $('.LayoutPopup__intro').innerHeight() || 0;
@@ -619,15 +618,15 @@ $(function () {
 		$body.scrollTop(contentScrollTop);
 	};
 
-	const increaseHeight = function(diference) {
+	const increaseHeight = function (diference) {
 		$osPopupContent.height($osPopupContent.height() + diference);
 	};
 
-	const scrollToElement = function($element) {
+	const scrollToElement = function ($element) {
 		var $targetElement = $element;
 		if (!!$targetElement.length) {
 			var scrollToOffsetInterval;
-			scrollToOffsetInterval = setInterval(function() {
+			scrollToOffsetInterval = setInterval(function () {
 				clearInterval(scrollToOffsetInterval);
 				var headerHeight = $('.LayoutPopup__header').outerHeight(true) || 0;
 				var introHeight = $('.LayoutPopup__intro').outerHeight(true) || 0;
@@ -676,9 +675,7 @@ $(function () {
 
 			popupWidth = parseInt(windowWidth * popupWidthPercentage);
 			popupMinHeight = 100;
-			popupMaxHeight = SapphireWidgets.LayoutPopup.config.isTouch
-				? parseInt(windowHeight * 0.9)
-				: parseInt(windowHeight * 0.7);
+			popupMaxHeight = SapphireWidgets.LayoutPopup.config.isTouch ? parseInt(windowHeight * 0.9) : parseInt(windowHeight * 0.7);
 
 			if (SapphireWidgets.LayoutPopup.config.isFixedHeight) popupHeight = popupMaxHeight;
 			else popupHeight = window.parent.$('.os-internal-Popup.os-internal-ui-dialog').outerHeight();
@@ -707,7 +704,7 @@ $(function () {
 	};
 })(jQuery, window, document, SapphireWidgets);
 
-$(window).unload(function() {
+$(window).unload(function () {
 	if (!!$('.LayoutPopup').length) {
 		window.top.$('body').css({
 			overflowY: 'scroll',
