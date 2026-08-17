@@ -103,7 +103,7 @@
 				}
 
 				.BadgeCustom__Label {
-					color: $dark-grey;
+					// color: $dark-grey; removed to allow the input parameter text color, to work
 				}
 			}
 		}
