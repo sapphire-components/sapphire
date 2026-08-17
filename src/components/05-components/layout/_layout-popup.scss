@@ -9,8 +9,8 @@
 @use '../../02-generic/headings' as *;
 
 .LayoutPopup {
-	width: 100%;
 	background-color: $regular-white;
+	width: 100%;
 
 	&.SmallPopup {
 		.LayoutPopup__body__sidebar {
@@ -110,6 +110,10 @@
 
 	&_wrapper {
 		width: 100%;
+	}
+
+	&__close {
+		display: none;
 	}
 }
 

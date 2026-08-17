@@ -12,17 +12,10 @@
 		if (config.triggerId) {
 			triggerEl = document.getElementById(config.triggerId);
 			widgetEl.style.display = 'contents';
-
 			const parent = triggerEl.parentNode;
-			console.log('parent', parent);
 			parent.addEventListener('click', (event) => {
 				event.stopPropagation();
 			});
-
-			// const wrapper = document.createElement('div');
-			//wrapper.style.display = 'contents';
-			// triggerEl.parentNode.insertBefore(wrapper, triggerEl);
-			// wrapper.appendChild(triggerEl);
 		} else {
 			triggerEl = widgetEl.querySelector('.tippytooltip-trigger');
 		}
