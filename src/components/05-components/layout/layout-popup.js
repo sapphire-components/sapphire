@@ -88,9 +88,12 @@
 			if (window.top._iframePopup != undefined || false) {
 				const $closeButton = window.parent.$('.os-internal-ui-dialog-titlebar-close');
 
+				console.log('closeButton', $closeButton);
+
 				$closeButton.removeAttr('href');
 				$closeButton.off('click').on('click', () => {
 					const virtualCloseLink = document.querySelector('.LayoutPopup__close');
+					console.log('virtualCloseLink', virtualCloseLink);
 					virtualCloseLink.click();
 					window.top._iframePopup.SapphireWidgets.SapphirePopup.close();
 				});
