@@ -20,7 +20,15 @@
 			var scrollToOffsetInterval;
 
 			scrollToOffsetInterval = setInterval(function () {
-				if (window[SapphireWidgets.LayoutBase.widgetId].getThresholds().secondaryThreshold > 0) {
+				let layoutBaseInstance;
+				if (window.self !== window.top) {
+					const topLayoutWidgetId = window.top.SapphireWidgets.LayoutBase.widgetId;
+					layoutBaseInstance = window.top[topLayoutWidgetId];
+				} else {
+					layoutBaseInstance = window[SapphireWidgets.LayoutBase.widgetId];
+				}
+
+				if (layoutBaseInstance.getThresholds().secondaryThreshold > 0) {
 					clearInterval(scrollToOffsetInterval);
 
 					let targetElementOffsetTop = $targetElement.offset().top;

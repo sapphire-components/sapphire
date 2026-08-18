@@ -49,15 +49,24 @@
 			triggerEl.style.cursor = 'pointer';
 		}
 
+		let placement = incomingConfig.placement;
+		let arrow = true;
+		if (incomingConfig.placement === 'centered') {
+			arrow = false;
+			placement = 'top';
+		} else {
+			placement = incomingConfig.placement;
+		}
+
 		const tippyConfig = {
 			allowHTML: allowHTML,
 			appendTo: incomingConfig.appendTo === '' ? () => document.body : incomingConfig.appendTo,
-			arrow: true,
+			arrow: arrow,
 			content: content,
 			hideOnClick: incomingConfig.hideOnClick,
 			interactive: incomingConfig.interactive,
 			maxWidth: incomingConfig.maxWidth,
-			placement: incomingConfig.placement,
+			placement: placement,
 			theme: incomingConfig.theme,
 			trigger: incomingConfig.trigger,
 			zIndex: incomingConfig.zIndex,
@@ -151,6 +160,10 @@
 						}
 						instance.popperInstance.update();
 					});
+				}
+
+				if (incomingConfig.placement === 'centered') {
+					instance.popper.classList.add('tippy-centered');
 				}
 
 				linkOpen.click();
