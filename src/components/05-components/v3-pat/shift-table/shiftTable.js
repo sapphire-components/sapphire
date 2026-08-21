@@ -13,7 +13,7 @@ SapphireWidgets.ShiftTable = (widgetId) => {
 		headerTopWithoutIframe = 154;
 	}
 
-	console.log(topLimitWithoutIframe, headerTopWithoutIframe);
+	// console.log(topLimitWithoutIframe, headerTopWithoutIframe);
 
 	$(document).ready(() => {
 		// console.log('Ready');

@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.362 || Generated: Tue Aug 18 2026 16:31:16 GMT+0100 (Western European Summer Time) */
+/*! prod.app.js || Version: 5.5.362 || Generated: Fri Aug 21 2026 14:01:36 GMT+0100 (Western European Summer Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -1482,7 +1482,6 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 								};
 
 								const notifyParentSize = () => {
-									console.log('notifyParentSize');
 									iframe.style.height = '';
 									box.style.width = '';
 
@@ -1510,7 +1509,6 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 									clearTimeout(timeout);
 									scheduled = true;
 									requestAnimationFrame(() => {
-										console.log('mutationObserver', args);
 										scheduled = false;
 										timeout = setTimeout(() => {
 											notifyParentSize();
@@ -9006,7 +9004,7 @@ SapphireWidgets.ShiftTable = (widgetId) => {
 		headerTopWithoutIframe = 154;
 	}
 
-	console.log(topLimitWithoutIframe, headerTopWithoutIframe);
+	// console.log(topLimitWithoutIframe, headerTopWithoutIframe);
 
 	$(document).ready(() => {
 		// console.log('Ready');

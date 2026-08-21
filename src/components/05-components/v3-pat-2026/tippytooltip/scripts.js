@@ -112,7 +112,6 @@
 								};
 
 								const notifyParentSize = () => {
-									console.log('notifyParentSize');
 									iframe.style.height = '';
 									box.style.width = '';
 
@@ -140,7 +139,6 @@
 									clearTimeout(timeout);
 									scheduled = true;
 									requestAnimationFrame(() => {
-										console.log('mutationObserver', args);
 										scheduled = false;
 										timeout = setTimeout(() => {
 											notifyParentSize();
