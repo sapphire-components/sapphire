@@ -9,14 +9,14 @@
 	@include shadow-xsmall;
 
 	background-color: $regular-white;
-	border: 1px solid $light-grey;
 	border-radius: $border-radius-default;
+	border: 1px solid $light-grey;
 	container-type: inline-size;
 	max-width: 0;
-	min-width: 32px;
 	overflow: hidden;
 	position: absolute;
 	z-index: 1;
+	min-width: 32px;
 
 	&__Holder {
 		display: flex;
@@ -130,7 +130,7 @@
 
 	&__FooterRight {
 		@include flex-center-vertically;
-		flex-wrap: wrap;
+
 		gap: $sapphire-sizes--medium;
 	}
 
@@ -185,7 +185,8 @@
 				border: none;
 				height: 4px;
 
-				.ProgressBar__animation { // :(
+				.ProgressBar__animation {
+					background-color: $regular-green !important; // :(
 				}
 			}
 
@@ -303,6 +304,4 @@
 	.hide-below-50 {
 		display: none;
 	}
-};
-					background-color: $regular-green !important
-}}}}}
+}
