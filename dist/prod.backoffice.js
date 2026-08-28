@@ -1,6 +1,16 @@
-/*! prod.backoffice.js || Version: 5.5.365 || Generated: Thu Aug 27 2026 14:56:09 GMT+0300 (GMT+03:00) */
+/*! prod.backoffice.js || Version: 5.5.366 || Generated: Fri Aug 28 2026 09:42:20 GMT+0100 (Western European Summer Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/backoffice/styles.scss":
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
 
 /***/ "./src/backoffice/01-components/layout/layout-backoffice.js":
 /***/ (function() {
@@ -94,16 +104,6 @@ $(document).ready(function () {
 	/* caj: solves the * in mandatory 
   $('input.Mandatory, select.Mandatory').parent().addClass('ListInputMandatory');*/
 });
-
-
-/***/ }),
-
-/***/ "./src/backoffice/styles.scss":
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
 
 
 /***/ }),
@@ -1292,7 +1292,7 @@ var RichWidgets_Popup_Editor_notifyWidget;
 	let POPUP_NOTIFY_WIDGET;
 	let POPUP_PARENT_URL;
 
-	const create = config => {
+	const create = (config) => {
 		if (config.ignoreIframe) isInsideIframe = false;
 
 		$().ready(function ($) {
@@ -1302,7 +1302,7 @@ var RichWidgets_Popup_Editor_notifyWidget;
 
 			try {
 				linkWidget = $(linkQuery).get(0);
-			} catch (e) { }
+			} catch (e) {}
 
 			if (typeof linkWidget == 'undefined') {
 				//Case the widget is inexistent or invisible, it will show no errors.
@@ -1317,25 +1317,15 @@ var RichWidgets_Popup_Editor_notifyWidget;
 
 			if (typeof linkHref == 'undefined' || linkHref == '' || linkHref == '#' || linkHref.indexOf('javascript:') == 0) {
 				try {
-					window.OsHandleException(
-						new Error('Popup link id must be the id of a Link or Button Widget with Method Navigate.'),
-						outsystems.osErrorCodes.SystemJavascriptError,
-						'Popup_Editor'
-					);
-				} catch (e) { }
+					window.OsHandleException(new Error('Popup link id must be the id of a Link or Button Widget with Method Navigate.'), outsystems.osErrorCodes.SystemJavascriptError, 'Popup_Editor');
+				} catch (e) {}
 
 				return;
 			}
 
 			// Remove the existing on-click event
 			if (isAButton) {
-				linkWidget.setAttribute(
-					'onclick',
-					linkWidget
-						.getAttribute('onclick')
-						.toString()
-						.replace('window.location.href=', 'return false;window.location.href=')
-				);
+				linkWidget.setAttribute('onclick', linkWidget.getAttribute('onclick').toString().replace('window.location.href=', 'return false;window.location.href='));
 			}
 
 			// If there's a confirmation message, store in an attribute the result
@@ -1345,10 +1335,7 @@ var RichWidgets_Popup_Editor_notifyWidget;
 					linkWidget
 						.getAttribute('onclick')
 						.toString()
-						.replace(
-							'if( ret != true )',
-							"$('" + linkQuery + "').get(0).setAttribute('confirmed', ret); if( ret != true )"
-						)
+						.replace('if( ret != true )', "$('" + linkQuery + "').get(0).setAttribute('confirmed', ret); if( ret != true )"),
 				);
 			}
 
@@ -1363,10 +1350,7 @@ var RichWidgets_Popup_Editor_notifyWidget;
 
 				// Check if the clicked link is disabled
 				if (linkWidget.getAttribute('disabled') != null) {
-					var linkDisabled = linkWidget
-						.getAttribute('disabled')
-						.toString()
-						.toLowerCase();
+					var linkDisabled = linkWidget.getAttribute('disabled').toString().toLowerCase();
 
 					if (linkDisabled == 'disabled' || linkDisabled.indexOf('true') != -1) {
 						return false;
@@ -1494,14 +1478,9 @@ var RichWidgets_Popup_Editor_notifyWidget;
 
 			let oldHeight;
 			if (isInsideIframe) {
-				oldHeight = window.top
-					.$(divToPopup)
-					.parents('.os-internal-Popup')
-					.outerHeight();
+				oldHeight = window.top.$(divToPopup).parents('.os-internal-Popup').outerHeight();
 			} else {
-				oldHeight = $(divToPopup)
-					.parents('.os-internal-Popup')
-					.outerHeight();
+				oldHeight = $(divToPopup).parents('.os-internal-Popup').outerHeight();
 			}
 
 			let width = setWidth == -1 ? $(innerDoc).width() : setWidth;
@@ -1518,9 +1497,7 @@ var RichWidgets_Popup_Editor_notifyWidget;
 			if (window.innerWidth < width) {
 				// only set the class if the origin is the same
 				if (sameOrigin) {
-					$(innerDoc)
-						.find('body')
-						.addClass('Responsive');
+					$(innerDoc).find('body').addClass('Responsive');
 					width = window.innerWidth - 20; // 10px "padding" effect, to keep the popup look and feel on top of content
 				}
 			}
@@ -1539,15 +1516,10 @@ var RichWidgets_Popup_Editor_notifyWidget;
 
 			//Hide ECT
 			if (isInsideIframe) {
-				window.top
-					.$(innerDoc)
-					.find('.ECT_FeedbackContainer')
-					.hide();
+				window.top.$(innerDoc).find('.ECT_FeedbackContainer').hide();
 				var divPopupOuterWindow = window.top.$(divToPopup).parents('.os-internal-Popup');
 			} else {
-				$(innerDoc)
-					.find('.ECT_FeedbackContainer')
-					.hide();
+				$(innerDoc).find('.ECT_FeedbackContainer').hide();
 				var divPopupOuterWindow = $(divToPopup).parents('.os-internal-Popup');
 			}
 
@@ -1565,10 +1537,7 @@ var RichWidgets_Popup_Editor_notifyWidget;
 				animateFinal.width = width;
 			}
 
-			if (
-				divPopupOuterWindow.width() == animateFinal.width &&
-				divPopupOuterWindow.height() == animateFinal.height - ($.browser.msie ? 1 : 0)
-			) {
+			if (divPopupOuterWindow.width() == animateFinal.width && divPopupOuterWindow.height() == animateFinal.height - ($.browser.msie ? 1 : 0)) {
 				$('.os-internal-ui-dialog-content>.LayoutPopup-loading').hide();
 				$(divToPopup).height(height - ($.browser.msie ? 1 : 0)); // restore size
 				return true; // nothing to do...
@@ -1583,17 +1552,10 @@ var RichWidgets_Popup_Editor_notifyWidget;
 				setTimeout(function () {
 					if (isInsideIframe) {
 						window.top.$('.os-internal-ui-dialog-titlebar-close-no-title').css('display', 'block');
-						window.top
-							.$(divToPopup)
-							.find('iframe')
-							.height('100%')
-							.width(animateFinal.width);
+						window.top.$(divToPopup).find('iframe').height('100%').width(animateFinal.width);
 					} else {
 						$('.os-internal-ui-dialog-titlebar-close-no-title').css('display', 'block');
-						$(divToPopup)
-							.find('iframe')
-							.height('100%')
-							.width(animateFinal.width);
+						$(divToPopup).find('iframe').height('100%').width(animateFinal.width);
 					}
 				}, 13);
 			};
@@ -1627,7 +1589,6 @@ var RichWidgets_Popup_Editor_notifyWidget;
 	};
 
 	const close = () => {
-
 		let popupToClose;
 		let popupContainer;
 
@@ -1649,7 +1610,7 @@ var RichWidgets_Popup_Editor_notifyWidget;
 		//}, 0);
 	};
 
-	const getLinkHREF = widget => {
+	const getLinkHREF = (widget) => {
 		let linkHref;
 		let isAButton = false;
 
@@ -1673,12 +1634,14 @@ var RichWidgets_Popup_Editor_notifyWidget;
 					}
 				}
 			}
-		} catch (e) { }
+		} catch (e) {}
 
 		return [linkHref, isAButton];
 	};
 
 	const openPopup = (divToPopup, divPleaseWait, loadTargetPage, event, config) => {
+		SapphireWidgets?.TippyTooltip?.hideAll();
+
 		// Destroy any previous dialog
 		close(null);
 
@@ -1739,7 +1702,6 @@ var RichWidgets_Popup_Editor_notifyWidget;
 			width: config.setWidth == -1 ? POPUP_INITIAL_WIDTH : config.setWidth,
 			zIndex: POPUP_WINDOW_INDEX,
 			close: function () {
-
 				// If the popup is closed before it is resized (ESC) we need to set the processing event to false.
 				$.data(event.target, 'os-internal-processing', false);
 
@@ -1750,8 +1712,7 @@ var RichWidgets_Popup_Editor_notifyWidget;
 					_dialog.find('iframe').empty();
 					_dialog.empty();
 
-					document.querySelectorAll('.SapphirePopup').forEach(el => el.remove());
-
+					document.querySelectorAll('.SapphirePopup').forEach((el) => el.remove());
 				}, 13);
 			},
 		});
@@ -2439,6 +2400,12 @@ SapphireWidgets.SelectSystem = (config) => {
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
+/******/ 		if (!(moduleId in __webpack_modules__)) {
+/******/ 			delete __webpack_module_cache__[moduleId];
+/******/ 			var e = new Error("Cannot find module '" + moduleId + "'");
+/******/ 			e.code = 'MODULE_NOT_FOUND';
+/******/ 			throw e;
+/******/ 		}
 /******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
 /******/ 	
 /******/ 		// Return the exports of the module
