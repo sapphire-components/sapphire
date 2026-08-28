@@ -171,7 +171,9 @@
 			},
 		};
 
-		window.tippy(triggerEl, tippyConfig);
+		setTimeout(() => {
+			window.tippy(triggerEl, tippyConfig);
+		}, config.createTimeout);
 	};
 
 	const emitCustomString = (incoming) => {
