@@ -288,8 +288,16 @@
 	};
 })(jQuery, window, document, SapphireWidgets);
 
-$(window).unload(function () {
-	if (!!$('.LayoutPopup').length) {
+// $(window).unload(function () {
+// 	if (!!$('.LayoutPopup').length) {
+// 		window.top.$('body').css({
+// 			overflowY: 'scroll',
+// 		});
+// 	}
+// });
+
+$(window).on('pagehide', function () {
+	if ($('.LayoutPopup').length) {
 		window.top.$('body').css({
 			overflowY: 'scroll',
 		});

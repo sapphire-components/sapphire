@@ -30,7 +30,6 @@
 			this.openMenuItem(0);
 		}
 		$(function () {
-
 			if (!config.isExpandable) {
 				$(`.${config.selectedTab}`).click();
 			}
@@ -38,13 +37,15 @@
 			window.parent.$('.LayoutBase-iframesidebar .lds-ring').fadeOut();
 
 			if (!this.isExpandable) {
-				$('input[type="text"]:visible')
-					.eq(0)
-					.focus();
+				$('input[type="text"]:visible').eq(0).focus();
 			}
 		});
 
-		$(window).unload(function () {
+		// $(window).unload(function () {
+		// 	window.parent.$('.LayoutBase-iframesidebar .lds-ring').fadeOut();
+		// });
+
+		$(window).on('pagehide', function () {
 			window.parent.$('.LayoutBase-iframesidebar .lds-ring').fadeOut();
 		});
 	};
@@ -65,17 +66,11 @@
 			_this.close();
 		});
 		this.$sidebar.on('click', '.SearchSideBarFields .ButtonGroup_button:first-child', function () {
-			_this.$sidebar
-				.find('.FieldsSlider')
-				.addClass('Tab1')
-				.removeClass('Tab2');
+			_this.$sidebar.find('.FieldsSlider').addClass('Tab1').removeClass('Tab2');
 			_this.setFieldFocus(_this.$sidebarContent.find('.TextInput:visible').eq(0));
 		});
 		this.$sidebar.on('click', '.SearchSideBarFields .ButtonGroup_button:last-child', function () {
-			_this.$sidebar
-				.find('.FieldsSlider')
-				.addClass('Tab2')
-				.removeClass('Tab1');
+			_this.$sidebar.find('.FieldsSlider').addClass('Tab2').removeClass('Tab1');
 			_this.setFieldFocus(_this.$sidebarContent.find('.TextInput:visible').eq(0));
 		});
 
@@ -84,8 +79,7 @@
 
 			document.querySelector('.ISidebar').dataset.showlastviewed = _this.showLastViewed;
 
-			window.parent.document.querySelector('.LayoutBase-iframesidebar.notExpandable').dataset.showlastviewed =
-				_this.showLastViewed;
+			window.parent.document.querySelector('.LayoutBase-iframesidebar.notExpandable').dataset.showlastviewed = _this.showLastViewed;
 
 			if (_this.showLastViewed) {
 				window.parent.document.querySelector('.LayoutBase-iframesidebar.notExpandable').style.width = '100%';
@@ -98,17 +92,9 @@
 	Sidebar.prototype.openMenuItem = function (selectedPosition) {
 		var _this = this;
 
-		this.$sidebar
-			.find('.SidebarMenuItem')
-			.removeClass('active')
-			.eq(selectedPosition)
-			.addClass('active');
+		this.$sidebar.find('.SidebarMenuItem').removeClass('active').eq(selectedPosition).addClass('active');
 
-		this.$sidebar
-			.find('.ISidebar-content > .ISidebar-content-panel')
-			.hide()
-			.eq(selectedPosition)
-			.show();
+		this.$sidebar.find('.ISidebar-content > .ISidebar-content-panel').hide().eq(selectedPosition).show();
 
 		this.$sidebar.addClass('open');
 
@@ -136,7 +122,6 @@
 
 	Sidebar.prototype.close = function () {
 		var _this = this;
-
 
 		if (window.parent.length) {
 			window.parent.SapphireWidgets.LayoutBase.closeSidebarIframe(0);
