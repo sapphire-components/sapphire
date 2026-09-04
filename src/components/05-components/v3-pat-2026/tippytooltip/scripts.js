@@ -121,7 +121,7 @@
 									}
 
 									// const height = Math.max(body ? body.scrollHeight : 0, html ? html.scrollHeight : 0);
-									const height = body ? body.scrollHeight : 0;
+									const height = body ? body.offsetHeight : 0;
 									if (height > 0) {
 										iframe.style.height = `${height}px`;
 									}
