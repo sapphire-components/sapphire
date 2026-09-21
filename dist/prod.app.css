@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.371 || Generated: Mon Sep 21 2026 08:33:01 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.372 || Generated: Mon Sep 21 2026 10:01:21 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -18351,6 +18351,10 @@ body ul.os-internal-ui-autocomplete a.os-internal-ui-state-hover strong {
   flex: none;
   margin-left: 0;
   text-align: right;
+  width: 100%;
+}
+
+.MainInteractiveCard-header-text-title .ellipsis-line {
   width: 100%;
 }
 
