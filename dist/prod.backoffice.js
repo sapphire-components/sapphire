@@ -1,6 +1,16 @@
-/*! prod.backoffice.js || Version: 5.5.369 || Generated: Fri Sep 04 2026 14:07:59 GMT+0300 (GMT+03:00) */
+/*! prod.backoffice.js || Version: 5.5.370 || Generated: Mon Sep 21 2026 08:27:23 GMT+0100 (Western European Summer Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/backoffice/styles.scss":
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
 
 /***/ "./src/backoffice/01-components/layout/layout-backoffice.js":
 /***/ (function() {
@@ -94,16 +104,6 @@ $(document).ready(function () {
 	/* caj: solves the * in mandatory 
   $('input.Mandatory, select.Mandatory').parent().addClass('ListInputMandatory');*/
 });
-
-
-/***/ }),
-
-/***/ "./src/backoffice/styles.scss":
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
 
 
 /***/ }),
@@ -2400,6 +2400,12 @@ SapphireWidgets.SelectSystem = (config) => {
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
+/******/ 		if (!(moduleId in __webpack_modules__)) {
+/******/ 			delete __webpack_module_cache__[moduleId];
+/******/ 			var e = new Error("Cannot find module '" + moduleId + "'");
+/******/ 			e.code = 'MODULE_NOT_FOUND';
+/******/ 			throw e;
+/******/ 		}
 /******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
 /******/ 	
 /******/ 		// Return the exports of the module
