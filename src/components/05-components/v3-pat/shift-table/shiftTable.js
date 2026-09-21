@@ -1,5 +1,10 @@
 /* Component ShiftTable */
+
 SapphireWidgets.ShiftTable = (widgetId) => {
+	window.top.scrollTo(0, 0);
+
+	document.querySelector('.ShiftTable').style.opacity = 0.5;
+
 	const topLimitWithIframe = 190;
 	const firstColumnWidth = 400;
 
@@ -13,13 +18,11 @@ SapphireWidgets.ShiftTable = (widgetId) => {
 		headerTopWithoutIframe = 154;
 	}
 
-	// console.log(topLimitWithoutIframe, headerTopWithoutIframe);
+	console.log('init');
+
+	console.log(topLimitWithoutIframe, headerTopWithoutIframe);
 
 	$(document).ready(() => {
-		// console.log('Ready');
-
-		const shiftTableEl = document.getElementById(widgetId);
-
 		function isInIframe() {
 			return window.self !== window.top;
 		}
@@ -53,6 +56,10 @@ SapphireWidgets.ShiftTable = (widgetId) => {
 
 		function calculateFloatingHeader() {
 			// console.log('calculateFloatingHeader');
+
+			const shiftTableEl = document.getElementById(widgetId);
+			const shiftTableHeaderEl = shiftTableEl.querySelector('.ShiftTable__Header');
+
 			const rectContent = getElementTopWindowRect('.ShiftTable__Content');
 			if (isInIframe()) {
 				const willBe = window.top.scrollY - rectContent.top + 12;
@@ -64,18 +71,14 @@ SapphireWidgets.ShiftTable = (widgetId) => {
 					shiftTableEl.dataset.stickyheader = 'false';
 				}
 			} else {
-				const willBe = headerTopWithoutIframe;
-				if (window.scrollY + (headerTopWithoutIframe - 16) >= topLimitWithoutIframe) {
-					shiftTableEl.dataset.stickyheader = 'true';
-					shiftTableEl.style.setProperty('--shifttable-header-top', `${willBe}px`);
-				} else {
-					shiftTableEl.style.removeProperty('--shifttable-header-top');
-					shiftTableEl.dataset.stickyheader = 'false';
-				}
+				shiftTableHeaderEl.style.position = 'sticky';
+				shiftTableHeaderEl.style.top = `${window.scrollY}px`;
 			}
 		}
 
 		function calculateHourWidth() {
+			const shiftTableEl = document.getElementById(widgetId);
+
 			const headerWidth = shiftTableEl.querySelector('.ShiftTable__HeaderLabels').getBoundingClientRect().width;
 			const numberOfHours = Array.from(shiftTableEl.querySelectorAll('.ShiftTable__HeaderLabels .ShiftTableCell')).length;
 			const hourWidth = headerWidth / numberOfHours;
@@ -92,9 +95,16 @@ SapphireWidgets.ShiftTable = (widgetId) => {
 		}
 
 		setTimeout(() => {
-			window.top.addEventListener('scroll', () => {
-				calculateFloatingHeader();
-			});
+			const shiftTableEl = document.getElementById(widgetId);
+
+			document.querySelector('.ShiftTable').style.opacity = 1;
+
+			if (!window.top.document.documentElement.hasAttribute('data-shifttable-binded')) {
+				window.top.document.documentElement.dataset.shifttableBinded = 'true';
+				window.top.addEventListener('scroll', () => {
+					calculateFloatingHeader();
+				});
+			}
 
 			shiftTableEl.addEventListener('scroll', () => {
 				const horizontalScroll = shiftTableEl.scrollLeft;
@@ -102,7 +112,6 @@ SapphireWidgets.ShiftTable = (widgetId) => {
 			});
 
 			const resizeObserver = new ResizeObserver(() => {
-				// console.log('ResizeObserver');
 				calculateHourWidth();
 			});
 			resizeObserver.observe(shiftTableEl);
@@ -129,6 +138,6 @@ SapphireWidgets.ShiftTable = (widgetId) => {
 			});
 
 			calculateFloatingHeader();
-		}, 500);
+		}, 250);
 	});
 };
