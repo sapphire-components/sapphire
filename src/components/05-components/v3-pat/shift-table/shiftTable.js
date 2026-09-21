@@ -1,7 +1,7 @@
 /* Component ShiftTable */
 
 SapphireWidgets.ShiftTable = (widgetId) => {
-	window.top.scrollTo(0, 0);
+	// window.top.scrollTo(0, 0);
 
 	document.querySelector('.ShiftTable').style.opacity = 0.5;
 
