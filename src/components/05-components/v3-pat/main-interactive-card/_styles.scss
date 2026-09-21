@@ -622,3 +622,9 @@ $card-medium-size-base: $sapphire-sizes--largest + 30px;
 		}
 	}
 }
+
+.MainInteractiveCard-header-text-title {
+	.ellipsis-line {
+		width: 100%;
+	}
+}
