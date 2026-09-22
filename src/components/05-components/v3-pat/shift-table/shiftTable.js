@@ -1,7 +1,7 @@
 /* Component ShiftTable */
 
-SapphireWidgets.ShiftTable = (widgetId) => {
-	// window.top.scrollTo(0, 0);
+SapphireWidgets.ShiftTable = (widgetId, topLimit) => {
+	const windowScrollYLimit = topLimit;
 
 	document.querySelector('.ShiftTable').style.opacity = 0.5;
 
@@ -18,9 +18,7 @@ SapphireWidgets.ShiftTable = (widgetId) => {
 		headerTopWithoutIframe = 154;
 	}
 
-	console.log('init');
-
-	console.log(topLimitWithoutIframe, headerTopWithoutIframe);
+	console.log('ShiftTable init');
 
 	$(document).ready(() => {
 		function isInIframe() {
@@ -72,7 +70,14 @@ SapphireWidgets.ShiftTable = (widgetId) => {
 				}
 			} else {
 				shiftTableHeaderEl.style.position = 'sticky';
-				shiftTableHeaderEl.style.top = `${window.scrollY}px`;
+				shiftTableHeaderEl.style.zIndex = 4;
+
+				console.log('window.scrollY', window.scrollY, 'windowScrollYLimit', windowScrollYLimit);
+				if (window.scrollY <= windowScrollYLimit) {
+					shiftTableHeaderEl.style.top = 0;
+				} else {
+					shiftTableHeaderEl.style.top = `${window.scrollY - windowScrollYLimit}px`;
+				}
 			}
 		}
 
