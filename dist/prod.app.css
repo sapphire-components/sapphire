@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.373 || Generated: Tue Sep 22 2026 17:55:39 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.374 || Generated: Mon Sep 28 2026 15:48:43 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -30150,31 +30150,31 @@ body.has-windowpanel-backdrop {
   padding: 0;
 }
 
-.windowpanel {
+.tippy-content .windowpanel {
   display: flex;
   flex-direction: column;
   height: 100%;
   max-height: 100vh;
   text-align: center;
 }
-.windowpanel-title {
+.tippy-content .windowpanel-title {
   flex: 0 0 auto;
   margin-bottom: 20px;
 }
-.windowpanel-title:empty {
+.tippy-content .windowpanel-title:empty {
   display: none;
 }
-.windowpanel-message, .windowpanel-content {
+.tippy-content .windowpanel-message, .tippy-content .windowpanel-content {
   flex: 1 1 auto;
   min-height: 0;
   overflow-y: auto;
   overscroll-behavior: contain;
   scrollbar-width: thin;
 }
-.windowpanel-message:empty, .windowpanel-content:empty {
+.tippy-content .windowpanel-message:empty, .tippy-content .windowpanel-content:empty {
   display: none;
 }
-.windowpanel-actions {
+.tippy-content .windowpanel-actions {
   align-items: center;
   display: flex;
   flex: 0 0 auto;
@@ -30182,13 +30182,13 @@ body.has-windowpanel-backdrop {
   justify-content: center;
   padding-top: 30px;
 }
-.windowpanel-actions:empty {
+.tippy-content .windowpanel-actions:empty {
   display: none;
 }
-.windowpanel a.Button {
+.tippy-content .windowpanel a.Button {
   margin: 0;
 }
-.windowpanel a.Button:focus-visible {
+.tippy-content .windowpanel a.Button:focus-visible {
   outline: 2px solid #00695c !important;
   outline-offset: 2px;
 }
