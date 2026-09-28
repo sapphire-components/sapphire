@@ -112,8 +112,8 @@
 								};
 
 								const notifyParentSize = () => {
-									iframe.style.height = '';
-									box.style.width = '';
+									iframe.style.height = '0px';
+									box.style.width = '0px';
 
 									const width = (html ? html.scrollWidth : 0) + getHorizontalPadding();
 									if (width > 0) {
@@ -121,10 +121,22 @@
 									}
 
 									// const height = Math.max(body ? body.scrollHeight : 0, html ? html.scrollHeight : 0);
-									const height = body ? body.offsetHeight : 0;
+									// const height = body ? body.offsetHeight : 0;
+
+									const height = Math.max(doc.body.scrollHeight, doc.documentElement.scrollHeight);
+
+									console.log({
+										bodyScrollHeight: body?.scrollHeight,
+										bodyOffsetHeight: body?.offsetHeight,
+										htmlScrollHeight: html?.scrollHeight,
+										htmlOffsetHeight: html?.offsetHeight,
+									});
+
 									if (height > 0) {
 										iframe.style.height = `${height}px`;
 									}
+
+									console.log('notifyParentSize', height);
 
 									instance.popperInstance?.update();
 								};
@@ -135,6 +147,7 @@
 								let timeout;
 
 								const mutationObserver = new MutationObserver((args) => {
+									console.log('mutationObserver', args);
 									if (scheduled) return;
 									clearTimeout(timeout);
 									scheduled = true;
