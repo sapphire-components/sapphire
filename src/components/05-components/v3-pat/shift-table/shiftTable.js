@@ -1,7 +1,7 @@
 /* Component ShiftTable */
 
 SapphireWidgets.ShiftTable = (widgetId, topLimit) => {
-	const windowScrollYLimit = topLimit;
+	const windowScrollYLimit = 175; // topLimit;
 
 	document.querySelector('.ShiftTable').style.opacity = 0.5;
 
@@ -60,6 +60,14 @@ SapphireWidgets.ShiftTable = (widgetId, topLimit) => {
 
 			const rectContent = getElementTopWindowRect('.ShiftTable__Content');
 			if (isInIframe()) {
+				console.log('in iframe window.top.scrollY', window.top.scrollY, 'windowScrollYLimit', windowScrollYLimit);
+
+				if (window.top.scrollY >= windowScrollYLimit) {
+					shiftTableHeaderEl.style.position = 'sticky';
+					shiftTableHeaderEl.style.top = `${window.top.scrollY - windowScrollYLimit}px`;
+				}
+
+				/*
 				const willBe = window.top.scrollY - rectContent.top + 12;
 				if (rectContent.outerTop <= topLimitWithIframe) {
 					shiftTableEl.dataset.stickyheader = 'true';
@@ -68,11 +76,11 @@ SapphireWidgets.ShiftTable = (widgetId, topLimit) => {
 					shiftTableEl.style.removeProperty('--shifttable-header-top');
 					shiftTableEl.dataset.stickyheader = 'false';
 				}
+				*/
 			} else {
 				shiftTableHeaderEl.style.position = 'sticky';
 				shiftTableHeaderEl.style.zIndex = 4;
 
-				console.log('window.scrollY', window.scrollY, 'windowScrollYLimit', windowScrollYLimit);
 				if (window.scrollY <= windowScrollYLimit) {
 					shiftTableHeaderEl.style.top = 0;
 				} else {
