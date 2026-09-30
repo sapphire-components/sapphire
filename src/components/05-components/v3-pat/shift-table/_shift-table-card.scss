@@ -1,13 +1,10 @@
-@use 'sass:color';
-
-@use '../../../00-settings/colors' as *;
 @use '../../../00-settings/borders' as *;
-@use '../../../00-settings/sizes' as *;
+@use '../../../00-settings/colors' as *;
 @use '../../../00-settings/fonts' as *;
-
+@use '../../../00-settings/sizes' as *;
 @use '../../../01-tools/box-shadow' as *;
-
 @use '../../../01-tools/flex-align' as *;
+@use 'sass:color';
 
 .ShiftTableCard {
 	@include shadow-xsmall;
@@ -82,9 +79,9 @@
 			gap: $sapphire-sizes--xsmall;
 			line-height: 0;
 
-			&:hover {
-				color: $dark-grey;
-			}
+			// &:hover {
+			// 	color: $dark-grey;
+			// }
 		}
 	}
 

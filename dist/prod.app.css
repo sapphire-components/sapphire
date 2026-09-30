@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.375 || Generated: Mon Sep 28 2026 17:53:18 GMT+0100 (Western European Summer Time) */
+/*! prod.app.css || Version: 5.5.375 || Generated: Wed Sep 30 2026 17:58:20 GMT+0100 (Western European Summer Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -16088,7 +16088,7 @@ div.Toolbar__MoreOptions--open .Toolbar__MoreOptionsList {
   min-width: 200px;
   padding: 8px 0;
   right: 0;
-  z-index: 2;
+  z-index: 4;
 }
 div.Toolbar__MoreOptionsIcon {
   display: flex;
@@ -25112,9 +25112,6 @@ div.SSD_ListLine > div.LineHeader div.List-ToggleButton > div .icon {
   display: flex;
   gap: 4px;
   line-height: 0;
-}
-.ShiftTableCard__FooterNotes > div:first-of-type:hover {
-  color: #333;
 }
 .ShiftTableCard__FooterInfo, .ShiftTableCard__FooterNotes {
   color: #777777;

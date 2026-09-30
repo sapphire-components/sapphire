@@ -100,7 +100,7 @@ div.Toolbar {
 					}
 				}
 			}
-			
+
 			// Menu items are initially hidden and made visible by JS after loading is finished
 			> a {
 				display: none;
@@ -155,7 +155,7 @@ div.Toolbar {
 				min-width: 200px;
 				padding: $sapphire-sizes--small 0;
 				right: 0;
-				z-index: 2;
+				z-index: 4;
 			}
 		}
 	}

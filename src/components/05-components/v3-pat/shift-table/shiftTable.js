@@ -18,7 +18,7 @@ SapphireWidgets.ShiftTable = (widgetId, topLimit) => {
 		headerTopWithoutIframe = 154;
 	}
 
-	console.log('ShiftTable init');
+	// console.log('ShiftTable init');
 
 	$(document).ready(() => {
 		function isInIframe() {
@@ -60,7 +60,7 @@ SapphireWidgets.ShiftTable = (widgetId, topLimit) => {
 
 			const rectContent = getElementTopWindowRect('.ShiftTable__Content');
 			if (isInIframe()) {
-				console.log('in iframe window.top.scrollY', window.top.scrollY, 'windowScrollYLimit', windowScrollYLimit);
+				// console.log('in iframe window.top.scrollY', window.top.scrollY, 'windowScrollYLimit', windowScrollYLimit);
 
 				if (window.top.scrollY >= windowScrollYLimit) {
 					shiftTableHeaderEl.style.position = 'sticky';

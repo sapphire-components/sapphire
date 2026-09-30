@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.375 || Generated: Mon Sep 28 2026 17:53:18 GMT+0100 (Western European Summer Time) */
+/*! prod.app.js || Version: 5.5.375 || Generated: Wed Sep 30 2026 17:58:20 GMT+0100 (Western European Summer Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -1491,7 +1491,7 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 
 								const notifyParentSize = () => {
 									iframe.style.height = '0px';
-									box.style.width = '0px';
+									box.style.width = '';
 
 									const width = (html ? html.scrollWidth : 0) + getHorizontalPadding();
 									if (width > 0) {
@@ -1503,18 +1503,18 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 
 									const height = Math.max(doc.body.scrollHeight, doc.documentElement.scrollHeight);
 
-									console.log({
-										bodyScrollHeight: body?.scrollHeight,
-										bodyOffsetHeight: body?.offsetHeight,
-										htmlScrollHeight: html?.scrollHeight,
-										htmlOffsetHeight: html?.offsetHeight,
-									});
+									// console.log({
+									// 	bodyScrollHeight: body?.scrollHeight,
+									// 	bodyOffsetHeight: body?.offsetHeight,
+									// 	htmlScrollHeight: html?.scrollHeight,
+									// 	htmlOffsetHeight: html?.offsetHeight,
+									// });
 
 									if (height > 0) {
 										iframe.style.height = `${height}px`;
 									}
 
-									console.log('notifyParentSize', height);
+									// console.log('notifyParentSize', height);
 
 									instance.popperInstance?.update();
 								};
@@ -1525,7 +1525,7 @@ window.top.SapphireWidgets.ButtonPending = ButtonPending;
 								let timeout;
 
 								const mutationObserver = new MutationObserver((args) => {
-									console.log('mutationObserver', args);
+									// console.log('mutationObserver', args);
 									if (scheduled) return;
 									clearTimeout(timeout);
 									scheduled = true;
@@ -8993,7 +8993,7 @@ SapphireWidgets.ShiftTable = (widgetId, topLimit) => {
 		headerTopWithoutIframe = 154;
 	}
 
-	console.log('ShiftTable init');
+	// console.log('ShiftTable init');
 
 	$(document).ready(() => {
 		function isInIframe() {
@@ -9035,7 +9035,7 @@ SapphireWidgets.ShiftTable = (widgetId, topLimit) => {
 
 			const rectContent = getElementTopWindowRect('.ShiftTable__Content');
 			if (isInIframe()) {
-				console.log('in iframe window.top.scrollY', window.top.scrollY, 'windowScrollYLimit', windowScrollYLimit);
+				// console.log('in iframe window.top.scrollY', window.top.scrollY, 'windowScrollYLimit', windowScrollYLimit);
 
 				if (window.top.scrollY >= windowScrollYLimit) {
 					shiftTableHeaderEl.style.position = 'sticky';
