@@ -1,168 +1,121 @@
 /* Component SectionExpandableInside */
-(function($, window, SapphireWidgets) {
+(function ($, window, SapphireWidgets) {
 	function SectionExpandableInside() {
-		var that = this;
+		const that = this;
 
-		// Object to save stats
-		var previewstat = [];
+		// This will store expanded state of each section so that they can be restored after Ajax refresh.
+		// There will be pairs of booleans: 'client' (result of user action) and 'server' (initial state).
+		const previewstat = [];
 
-		// set click events
-		function clickEvents(ob) {
-			// store querys in a single var
-			var Section = $(ob).parent();
-			var SectionContent = Section.children('.SectionExpandableInside_content');
+		function handleClick(source) {
+			let section = $(source).parent();
+			let sectionContent = section.children('.SectionExpandableInside_content');
+			let id = section.attr('id');
 
-			// get id
-			var id = Section.attr('id');
-
-			var tempHeight = 0;
-
-			// has class expanded
-			if (Section.hasClass('expanded')) {
+			if (section.hasClass('expanded')) {
+				// Not sure what this hack is for, but it seems to work fine without it
 				// Calc and set a fixed height, during this process, transitions are disabled
-				SectionContent.addClass('noTransition');
-				SectionContent.height(SectionContent.height());
-				SectionContent[0].offsetHeight; // hack to force a repaint
-				SectionContent.removeClass('noTransition');
+				//sectionContent.addClass('noTransition');
+				//sectionContent.height(sectionContent.height());
+				//sectionContent[0].offsetHeight; // hack to force a repaint
+				//sectionContent.removeClass('noTransition');
 
 				// Collapse content
-				SectionContent.height(0);
-				Section.removeClass('expanded');
-				SectionContent.css('overflow', 'hidden');
-
-				// Remove class, set height and save state
+				section.removeClass('expanded');
+				sectionContent.height(0);
 				previewstat[id]['client'] = false;
 			} else {
-				// Calc and set a fixed height
-				SectionContent.height('auto');
-				// tempHeight = SectionContent.height();
-				// SectionContent.height(0);
-				// SectionContent.height(tempHeight);
-				SectionContent.css('overflow', 'hidden');
-
-				// remove class, set height and save state
-				Section.addClass('expanded');
+				// Show content
+				section.addClass('expanded');
+				sectionContent.height('auto');
 				previewstat[id]['client'] = true;
 			}
 		}
 
-		// ajax refres function
-		that.ajaxRefresh = function() {
+		that.handleAjaxRefresh = function () {
 			// remove click events
 			$('.SectionExpandableInside .SectionExpandableInside_header').off();
 
 			// add stop prepagation
 			$(
-				'.SectionExpandableInside .SectionExpandableInside_header input, .SectionExpandableInside .SectionExpandableInside_header select, .SectionExpandableInside .SectionExpandableInside_header a'
-			).click(function(event) {
+				'.SectionExpandableInside .SectionExpandableInside_header input, .SectionExpandableInside .SectionExpandableInside_header select, .SectionExpandableInside .SectionExpandableInside_header a',
+			).click(function (event) {
 				event.stopPropagation();
 			});
 
 			// add new click events
-			$('.SectionExpandableInside .SectionExpandableInside_header').on('click', function() {
-				clickEvents(this);
+			$('.SectionExpandableInside .SectionExpandableInside_header').on('click', function () {
+				handleClick(this);
 			});
 
-			// each all sections
-			$('.SectionExpandableInside').each(function() {
-				// if new SectionExpandable then add to previewstat array
-				if (previewstat[$(this).attr('id')] == null) {
-					// add stat on array
-					var stat = false;
-					// if open
-					if ($(this).hasClass('expanded')) {
-						stat = true;
-					}
-					// add row
-					previewstat[$(this).attr('id')] = { client: stat, server: stat };
-				}
+			$('.SectionExpandableInside').each(function () {
+				let id = $(this).attr('id');
+				let curState = $(this).hasClass('expanded');
 
-				// curent state (ajax state x initial state)
-				var curState = false;
-
-				// check if start expandable
-				if ($(this).hasClass('expanded')) {
-					curState = true;
-				}
-
-				// check if ajax != initial server
-				if (curState != previewstat[$(this).attr('id')]['server']) {
-					// curstate
-					previewstat[$(this).attr('id')]['client'] = curState;
-					previewstat[$(this).attr('id')]['server'] = curState;
-				} else {
-					// has class expanded
-					if (previewstat[$(this).attr('id')]['client'] == false && $(this).hasClass('expanded')) {
-						$(this).removeClass('expanded');
-						$(this)
-							.children('.SectionExpandableInside_content')
-							.height(0);
-					} else if (previewstat[$(this).attr('id')]['client'] == true && !$(this).hasClass('expanded')) {
-						$(this).addClass('expanded');
+				if (previewstat[id] == null) {
+					// If a new SectionExpandable was added - add an entry to the list
+					previewstat[id] = { client: curState, server: curState };
+				} else if (curState != previewstat[id]['server']) {
+					// If initial state was changed - it takes priority over client state,
+					// otherwise we won't be able to force expand the section, for example
+					previewstat[id]['server'] = curState;
+					previewstat[id]['client'] = curState;
+				} else if (previewstat[id]['client'] != curState) {
+					// If client state is different from server, e.g. user expanded the section -
+					// restore that so it looks like refresh did not impact it
+					if (curState) {
+						// Collapse
+						$(this).removeClass('expanded').children('.SectionExpandableInside_content').height(0);
+					} else {
+						// Expand
+						$(this).addClass('expanded').children('.SectionExpandableInside_content').height(auto);
 					}
 				}
 			});
 		};
 
-		// set events
-		that.init = function() {
-			// each all sections to create array stat
-			$('.SectionExpandableInside').each(function() {
-				// add stat on array
-				var stat = false;
-
-				// if open
-				if ($(this).hasClass('expanded')) {
-					stat = true;
-				}
-
-				// add row
+		that.init = function () {
+			$('.SectionExpandableInside').each(function () {
+				let stat = $(this).hasClass('expanded');
 				previewstat[$(this).attr('id')] = { client: stat, server: stat };
 			});
 
-			// add click events
 			$('.SectionExpandableInside .SectionExpandableInside_header')
 				.off('click')
-				.on('click', function() {
-					clickEvents(this);
+				.on('click', function () {
+					handleClick(this);
 				});
 
 			// add stop prepagation
 			$(
-				'.SectionExpandableInside .SectionExpandableInside_header input, .SectionExpandableInside .SectionExpandableInside_header select, .SectionExpandableInside .SectionExpandableInside_header a'
-			).click(function(event) {
+				'.SectionExpandableInside .SectionExpandableInside_header input, .SectionExpandableInside .SectionExpandableInside_header select, .SectionExpandableInside .SectionExpandableInside_header a',
+			).click(function (event) {
 				event.stopPropagation();
 			});
 
 			// event ajax
-			osAjaxBackend && osAjaxBackend.BindAfterAjaxRequest(that.ajaxRefresh);
+			osAjaxBackend && osAjaxBackend.BindAfterAjaxRequest(that.handleAjaxRefresh);
 		};
 	}
 
-	const setOpenCloseClass = id => {
-		id.click(function() {
+	const setOpenCloseClass = (id) => {
+		id.click(function () {
 			if (id.parent().hasClass('expanded')) {
-				$(this)
-					.find('.HeaderIcon')
-					.removeClass('open');
-				$(this)
-					.find('.HeaderIcon')
-					.addClass('closed');
+				$(this).find('.HeaderIcon').removeClass('open').addClass('closed');
 			} else {
-				$(this)
-					.find('.HeaderIcon')
-					.removeClass('closed');
-				$(this)
-					.find('.HeaderIcon')
-					.addClass('open');
+				$(this).find('.HeaderIcon').removeClass('closed').addClass('open');
 			}
 		});
 	};
 
-	const create = () => {
-		const expandable = new SectionExpandableInside();
+	let instance = null;
 
-		expandable.init();
+	const create = () => {
+		// It must be singleton because it stores information about all expandable sections
+		if (instance == null) {
+			instance = new SectionExpandableInside();
+			instance.init();
+		}
 	};
 
 	SapphireWidgets.SectionExpandableInside = {
