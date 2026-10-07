@@ -1,14 +1,131 @@
-/*! prod.app.js || Version: 5.5.376 || Generated: Wed Sep 30 2026 17:59:20 GMT+0100 (Western European Summer Time) */
+/*! prod.app.js || Version: 5.5.377 || Generated: Wed Oct 07 2026 11:09:27 GMT+0300 (GMT+03:00) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/components/index.scss":
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ "./package.json":
+/***/ (function(module) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
+module.exports = /*#__PURE__*/JSON.parse('{"name":"sapphire","version":"5.5.377","description":"Styles and scripts for Sapphire HMS design system.","keywords":["design system","sapphire","hms","style guide","patterns","css","javascript"],"homepage":"https://dev.nordicplatforms.com/StyleGuideV2_UI/Instructions.aspx","repository":{"type":"git","url":"https://github.com/sapphire-components/sapphire"},"author":{"name":"António Carvalho","email":"antonio.carvalho@outsystems.com","url":"https://www.linkedin.com/in/carvalhoantonio/"},"scripts":{"dev":"set NODE_ENV=development && webpack-dev-server --config webpack.dev.js","prod":"set NODE_ENV=production && webpack --config webpack.prod.js","new:build":"npm run prod && git add . && git commit -m \\"New Release\\" --allow-empty && git push origin main","release:patch":"release-it patch --ci","release:minor":"release-it minor --git.requireBranch=main && npm run new:build","release:major":"release-it major --git.requireBranch=main && npm run new:build"},"license":"ISC","devDependencies":{"autoprefixer":"^10.4.23","clean-webpack-plugin":"^4.0.0","css-loader":"^7.1.2","dotenv-cli":"^11.0.0","eslint":"^9.39.2","eslint-config-prettier":"^10.1.8","eslint-plugin-prettier":"^5.5.5","mini-css-extract-plugin":"^2.10.0","postcss-loader":"^8.2.0","prettier":"^3.8.1","prettier-stylelint":"^0.4.2","release-it":"^19.2.4","sass":"^1.97.3","sass-loader":"^16.0.6","style-loader":"^4.0.0","stylelint":"^17.0.0","stylelint-config-standard-scss":"^17.0.0","stylelint-order":"^7.0.1","terser-webpack-plugin":"^5.3.16","webpack":"^5.104.1","webpack-cli":"^6.0.1","webpack-dev-middleware":"^7.4.5","webpack-dev-server":"^5.2.3","webpack-hot-middleware":"^2.26.1","webpack-merge":"^6.0.1"}}');
 
+/***/ }),
+
+/***/ "./src/components sync recursive \\.js$":
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var map = {
+	"./00-settings/config.js": "./src/components/00-settings/config.js",
+	"./03-elements/script.js": "./src/components/03-elements/script.js",
+	"./05-components/globals.js": "./src/components/05-components/globals.js",
+	"./05-components/layout/layout-base.js": "./src/components/05-components/layout/layout-base.js",
+	"./05-components/layout/layout-blank.js": "./src/components/05-components/layout/layout-blank.js",
+	"./05-components/layout/layout-emergency.js": "./src/components/05-components/layout/layout-emergency.js",
+	"./05-components/layout/layout-popup.js": "./src/components/05-components/layout/layout-popup.js",
+	"./05-components/layout/layout-spam-guard.js": "./src/components/05-components/layout/layout-spam-guard.js",
+	"./05-components/layout/subLayoutLeft.js": "./src/components/05-components/layout/subLayoutLeft.js",
+	"./05-components/v3-pat-2026/badge-box/scripts.js": "./src/components/05-components/v3-pat-2026/badge-box/scripts.js",
+	"./05-components/v3-pat-2026/button-pending/script.js": "./src/components/05-components/v3-pat-2026/button-pending/script.js",
+	"./05-components/v3-pat-2026/hourpicker2/script.js": "./src/components/05-components/v3-pat-2026/hourpicker2/script.js",
+	"./05-components/v3-pat-2026/tippytooltip/scripts.js": "./src/components/05-components/v3-pat-2026/tippytooltip/scripts.js",
+	"./05-components/v3-pat-2026/window-navigate/script.js": "./src/components/05-components/v3-pat-2026/window-navigate/script.js",
+	"./05-components/v3-pat-2026/window-panel/script.js": "./src/components/05-components/v3-pat-2026/window-panel/script.js",
+	"./05-components/v3-pat/actions-menu/scripts.js": "./src/components/05-components/v3-pat/actions-menu/scripts.js",
+	"./05-components/v3-pat/button-link/scripts.js": "./src/components/05-components/v3-pat/button-link/scripts.js",
+	"./05-components/v3-pat/card-charts/scripts.js": "./src/components/05-components/v3-pat/card-charts/scripts.js",
+	"./05-components/v3-pat/collapsible-side-panel/scripts.js": "./src/components/05-components/v3-pat/collapsible-side-panel/scripts.js",
+	"./05-components/v3-pat/comp-line/scripts.js": "./src/components/05-components/v3-pat/comp-line/scripts.js",
+	"./05-components/v3-pat/country-phone/scripts.js": "./src/components/05-components/v3-pat/country-phone/scripts.js",
+	"./05-components/v3-pat/data-tables/scripts.js": "./src/components/05-components/v3-pat/data-tables/scripts.js",
+	"./05-components/v3-pat/datetime-range-picker/scripts.js": "./src/components/05-components/v3-pat/datetime-range-picker/scripts.js",
+	"./05-components/v3-pat/drag-drop/scripts.js": "./src/components/05-components/v3-pat/drag-drop/scripts.js",
+	"./05-components/v3-pat/dropdown-categories/scripts.js": "./src/components/05-components/v3-pat/dropdown-categories/scripts.js",
+	"./05-components/v3-pat/dropzone/dropzone.js": "./src/components/05-components/v3-pat/dropzone/dropzone.js",
+	"./05-components/v3-pat/expandable-link/scripts.js": "./src/components/05-components/v3-pat/expandable-link/scripts.js",
+	"./05-components/v3-pat/fullscreen-tabs-wrapper/scripts.js": "./src/components/05-components/v3-pat/fullscreen-tabs-wrapper/scripts.js",
+	"./05-components/v3-pat/generic-card/scripts.js": "./src/components/05-components/v3-pat/generic-card/scripts.js",
+	"./05-components/v3-pat/generic-gallery/scripts.js": "./src/components/05-components/v3-pat/generic-gallery/scripts.js",
+	"./05-components/v3-pat/generic-grid/scripts.js": "./src/components/05-components/v3-pat/generic-grid/scripts.js",
+	"./05-components/v3-pat/horizontal-toolbar/scripts.js": "./src/components/05-components/v3-pat/horizontal-toolbar/scripts.js",
+	"./05-components/v3-pat/hour-picker/scripts.js": "./src/components/05-components/v3-pat/hour-picker/scripts.js",
+	"./05-components/v3-pat/iframe-loader/scripts.js": "./src/components/05-components/v3-pat/iframe-loader/scripts.js",
+	"./05-components/v3-pat/input-lasa/scripts.js": "./src/components/05-components/v3-pat/input-lasa/scripts.js",
+	"./05-components/v3-pat/input-with-clear/scripts.js": "./src/components/05-components/v3-pat/input-with-clear/scripts.js",
+	"./05-components/v3-pat/input-with-list/scripts.js": "./src/components/05-components/v3-pat/input-with-list/scripts.js",
+	"./05-components/v3-pat/line-add/scripts.js": "./src/components/05-components/v3-pat/line-add/scripts.js",
+	"./05-components/v3-pat/line-details-expand-box/script.js": "./src/components/05-components/v3-pat/line-details-expand-box/script.js",
+	"./05-components/v3-pat/location-box/scripts.js": "./src/components/05-components/v3-pat/location-box/scripts.js",
+	"./05-components/v3-pat/main-interactive-card/scripts.js": "./src/components/05-components/v3-pat/main-interactive-card/scripts.js",
+	"./05-components/v3-pat/menu-bar/scripts.js": "./src/components/05-components/v3-pat/menu-bar/scripts.js",
+	"./05-components/v3-pat/multiple-selection-button/scripts.js": "./src/components/05-components/v3-pat/multiple-selection-button/scripts.js",
+	"./05-components/v3-pat/panel/confirmation-panel.js": "./src/components/05-components/v3-pat/panel/confirmation-panel.js",
+	"./05-components/v3-pat/panel/confirmation-popup.js": "./src/components/05-components/v3-pat/panel/confirmation-popup.js",
+	"./05-components/v3-pat/panel/modal-popup.js": "./src/components/05-components/v3-pat/panel/modal-popup.js",
+	"./05-components/v3-pat/panel/panel-by-id-notify.js": "./src/components/05-components/v3-pat/panel/panel-by-id-notify.js",
+	"./05-components/v3-pat/panel/panel-by-id.js": "./src/components/05-components/v3-pat/panel/panel-by-id.js",
+	"./05-components/v3-pat/panel/popup-menu.js": "./src/components/05-components/v3-pat/panel/popup-menu.js",
+	"./05-components/v3-pat/panel/sapphire-panel.js": "./src/components/05-components/v3-pat/panel/sapphire-panel.js",
+	"./05-components/v3-pat/panel/scripts.js": "./src/components/05-components/v3-pat/panel/scripts.js",
+	"./05-components/v3-pat/patient-call-cancel/patient-call-cancel-structure.js": "./src/components/05-components/v3-pat/patient-call-cancel/patient-call-cancel-structure.js",
+	"./05-components/v3-pat/patient-call-cancel/patient-call-cancel.js": "./src/components/05-components/v3-pat/patient-call-cancel/patient-call-cancel.js",
+	"./05-components/v3-pat/prescription-card/scripts.js": "./src/components/05-components/v3-pat/prescription-card/scripts.js",
+	"./05-components/v3-pat/prescription-expandable/scripts.js": "./src/components/05-components/v3-pat/prescription-expandable/scripts.js",
+	"./05-components/v3-pat/resize-parent-iframe/scripts.js": "./src/components/05-components/v3-pat/resize-parent-iframe/scripts.js",
+	"./05-components/v3-pat/sapphire-header/scripts.js": "./src/components/05-components/v3-pat/sapphire-header/scripts.js",
+	"./05-components/v3-pat/sapphire-popup/scripts.js": "./src/components/05-components/v3-pat/sapphire-popup/scripts.js",
+	"./05-components/v3-pat/sapphire-radio-button/scripts.js": "./src/components/05-components/v3-pat/sapphire-radio-button/scripts.js",
+	"./05-components/v3-pat/scales/scale-main-structure.js": "./src/components/05-components/v3-pat/scales/scale-main-structure.js",
+	"./05-components/v3-pat/scales/toggle-item-control.js": "./src/components/05-components/v3-pat/scales/toggle-item-control.js",
+	"./05-components/v3-pat/search-and-select/select-ssd.js": "./src/components/05-components/v3-pat/search-and-select/select-ssd.js",
+	"./05-components/v3-pat/search-and-select/ssd-search.js": "./src/components/05-components/v3-pat/search-and-select/ssd-search.js",
+	"./05-components/v3-pat/searchable-client-side/scripts.js": "./src/components/05-components/v3-pat/searchable-client-side/scripts.js",
+	"./05-components/v3-pat/section-expandable-custom/scripts.js": "./src/components/05-components/v3-pat/section-expandable-custom/scripts.js",
+	"./05-components/v3-pat/section-expandable-inside/scripts.js": "./src/components/05-components/v3-pat/section-expandable-inside/scripts.js",
+	"./05-components/v3-pat/segmented-control/scripts.js": "./src/components/05-components/v3-pat/segmented-control/scripts.js",
+	"./05-components/v3-pat/select-system/scripts.js": "./src/components/05-components/v3-pat/select-system/scripts.js",
+	"./05-components/v3-pat/shift-container/scripts.js": "./src/components/05-components/v3-pat/shift-container/scripts.js",
+	"./05-components/v3-pat/shift-table/shiftTable.js": "./src/components/05-components/v3-pat/shift-table/shiftTable.js",
+	"./05-components/v3-pat/shift-table/shiftTableCard.js": "./src/components/05-components/v3-pat/shift-table/shiftTableCard.js",
+	"./05-components/v3-pat/shift-table/shiftTableCardProgress.js": "./src/components/05-components/v3-pat/shift-table/shiftTableCardProgress.js",
+	"./05-components/v3-pat/shift-table/shiftTableHover.js": "./src/components/05-components/v3-pat/shift-table/shiftTableHover.js",
+	"./05-components/v3-pat/side-menu/scripts.js": "./src/components/05-components/v3-pat/side-menu/scripts.js",
+	"./05-components/v3-pat/sidebar/sidebar-structure.js": "./src/components/05-components/v3-pat/sidebar/sidebar-structure.js",
+	"./05-components/v3-pat/small-box-selectable/scripts.js": "./src/components/05-components/v3-pat/small-box-selectable/scripts.js",
+	"./05-components/v3-pat/spinner-horizontal/scripts.js": "./src/components/05-components/v3-pat/spinner-horizontal/scripts.js",
+	"./05-components/v3-pat/spinner-vertical/scripts.js": "./src/components/05-components/v3-pat/spinner-vertical/scripts.js",
+	"./05-components/v3-pat/split-button/scripts.js": "./src/components/05-components/v3-pat/split-button/scripts.js",
+	"./05-components/v3-pat/ssd-component-block/scripts.js": "./src/components/05-components/v3-pat/ssd-component-block/scripts.js",
+	"./05-components/v3-pat/ssd-list-line/scripts.js": "./src/components/05-components/v3-pat/ssd-list-line/scripts.js",
+	"./05-components/v3-pat/table-form/scripts.js": "./src/components/05-components/v3-pat/table-form/scripts.js",
+	"./05-components/v3-pat/tabs-extended/scripts.js": "./src/components/05-components/v3-pat/tabs-extended/scripts.js",
+	"./05-components/v3-pat/tabular-list/scripts.js": "./src/components/05-components/v3-pat/tabular-list/scripts.js",
+	"./05-components/v3-pat/tabular-scroll/scripts.js": "./src/components/05-components/v3-pat/tabular-scroll/scripts.js",
+	"./05-components/v3-pat/timeline/scripts.js": "./src/components/05-components/v3-pat/timeline/scripts.js",
+	"./05-components/v3-pat/trigger-iframe-tooltip/trigger-iframe-tooltip.js": "./src/components/05-components/v3-pat/trigger-iframe-tooltip/trigger-iframe-tooltip.js",
+	"./05-components/v3-pat/truncated-content/scripts.js": "./src/components/05-components/v3-pat/truncated-content/scripts.js",
+	"./08-pages/clinicianWorkArea.js": "./src/components/08-pages/clinicianWorkArea.js",
+	"./08-pages/eSignature.js": "./src/components/08-pages/eSignature.js",
+	"./08-pages/remoteAppointment.js": "./src/components/08-pages/remoteAppointment.js"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./src/components sync recursive \\.js$";
 
 /***/ }),
 
@@ -5270,8 +5387,7 @@ SapphireWidgets.ModalPopup = {
 		$(document).ready(function() {
 			// Use this code to append the component to the root body
 			// window.frameElement && $(window.frameElement).closest('.MainInteractiveCard-body').length > 0
-			if (false) // removed by dead control flow
-{} else {
+			if (false) {} else {
 				const $widget = $(`#${widgetId}`);
 				const $btnClose = $widget.find('.modalPopup_close');
 
@@ -8174,170 +8290,123 @@ window.addEventListener('DOMContentLoaded', (event) => {
 /***/ (function() {
 
 /* Component SectionExpandableInside */
-(function($, window, SapphireWidgets) {
+(function ($, window, SapphireWidgets) {
 	function SectionExpandableInside() {
-		var that = this;
+		const that = this;
 
-		// Object to save stats
-		var previewstat = [];
+		// This will store expanded state of each section so that they can be restored after Ajax refresh.
+		// There will be pairs of booleans: 'client' (result of user action) and 'server' (initial state).
+		const previewstat = [];
 
-		// set click events
-		function clickEvents(ob) {
-			// store querys in a single var
-			var Section = $(ob).parent();
-			var SectionContent = Section.children('.SectionExpandableInside_content');
+		function handleClick(source) {
+			let section = $(source).parent();
+			let sectionContent = section.children('.SectionExpandableInside_content');
+			let id = section.attr('id');
 
-			// get id
-			var id = Section.attr('id');
-
-			var tempHeight = 0;
-
-			// has class expanded
-			if (Section.hasClass('expanded')) {
+			if (section.hasClass('expanded')) {
+				// Not sure what this hack is for, but it seems to work fine without it
 				// Calc and set a fixed height, during this process, transitions are disabled
-				SectionContent.addClass('noTransition');
-				SectionContent.height(SectionContent.height());
-				SectionContent[0].offsetHeight; // hack to force a repaint
-				SectionContent.removeClass('noTransition');
+				//sectionContent.addClass('noTransition');
+				//sectionContent.height(sectionContent.height());
+				//sectionContent[0].offsetHeight; // hack to force a repaint
+				//sectionContent.removeClass('noTransition');
 
 				// Collapse content
-				SectionContent.height(0);
-				Section.removeClass('expanded');
-				SectionContent.css('overflow', 'hidden');
-
-				// Remove class, set height and save state
+				section.removeClass('expanded');
+				sectionContent.height(0);
 				previewstat[id]['client'] = false;
 			} else {
-				// Calc and set a fixed height
-				SectionContent.height('auto');
-				// tempHeight = SectionContent.height();
-				// SectionContent.height(0);
-				// SectionContent.height(tempHeight);
-				SectionContent.css('overflow', 'hidden');
-
-				// remove class, set height and save state
-				Section.addClass('expanded');
+				// Show content
+				section.addClass('expanded');
+				sectionContent.height('auto');
 				previewstat[id]['client'] = true;
 			}
 		}
 
-		// ajax refres function
-		that.ajaxRefresh = function() {
+		that.handleAjaxRefresh = function () {
 			// remove click events
 			$('.SectionExpandableInside .SectionExpandableInside_header').off();
 
 			// add stop prepagation
 			$(
-				'.SectionExpandableInside .SectionExpandableInside_header input, .SectionExpandableInside .SectionExpandableInside_header select, .SectionExpandableInside .SectionExpandableInside_header a'
-			).click(function(event) {
+				'.SectionExpandableInside .SectionExpandableInside_header input, .SectionExpandableInside .SectionExpandableInside_header select, .SectionExpandableInside .SectionExpandableInside_header a',
+			).click(function (event) {
 				event.stopPropagation();
 			});
 
 			// add new click events
-			$('.SectionExpandableInside .SectionExpandableInside_header').on('click', function() {
-				clickEvents(this);
+			$('.SectionExpandableInside .SectionExpandableInside_header').on('click', function () {
+				handleClick(this);
 			});
 
-			// each all sections
-			$('.SectionExpandableInside').each(function() {
-				// if new SectionExpandable then add to previewstat array
-				if (previewstat[$(this).attr('id')] == null) {
-					// add stat on array
-					var stat = false;
-					// if open
-					if ($(this).hasClass('expanded')) {
-						stat = true;
-					}
-					// add row
-					previewstat[$(this).attr('id')] = { client: stat, server: stat };
-				}
+			$('.SectionExpandableInside').each(function () {
+				let id = $(this).attr('id');
+				let curState = $(this).hasClass('expanded');
 
-				// curent state (ajax state x initial state)
-				var curState = false;
-
-				// check if start expandable
-				if ($(this).hasClass('expanded')) {
-					curState = true;
-				}
-
-				// check if ajax != initial server
-				if (curState != previewstat[$(this).attr('id')]['server']) {
-					// curstate
-					previewstat[$(this).attr('id')]['client'] = curState;
-					previewstat[$(this).attr('id')]['server'] = curState;
-				} else {
-					// has class expanded
-					if (previewstat[$(this).attr('id')]['client'] == false && $(this).hasClass('expanded')) {
-						$(this).removeClass('expanded');
-						$(this)
-							.children('.SectionExpandableInside_content')
-							.height(0);
-					} else if (previewstat[$(this).attr('id')]['client'] == true && !$(this).hasClass('expanded')) {
-						$(this).addClass('expanded');
+				if (previewstat[id] == null) {
+					// If a new SectionExpandable was added - add an entry to the list
+					previewstat[id] = { client: curState, server: curState };
+				} else if (curState != previewstat[id]['server']) {
+					// If initial state was changed - it takes priority over client state,
+					// otherwise we won't be able to force expand the section, for example
+					previewstat[id]['server'] = curState;
+					previewstat[id]['client'] = curState;
+				} else if (previewstat[id]['client'] != curState) {
+					// If client state is different from server, e.g. user expanded the section -
+					// restore that so it looks like refresh did not impact it
+					if (curState) {
+						// Collapse
+						$(this).removeClass('expanded').children('.SectionExpandableInside_content').height(0);
+					} else {
+						// Expand
+						$(this).addClass('expanded').children('.SectionExpandableInside_content').height(auto);
 					}
 				}
 			});
 		};
 
-		// set events
-		that.init = function() {
-			// each all sections to create array stat
-			$('.SectionExpandableInside').each(function() {
-				// add stat on array
-				var stat = false;
-
-				// if open
-				if ($(this).hasClass('expanded')) {
-					stat = true;
-				}
-
-				// add row
+		that.init = function () {
+			$('.SectionExpandableInside').each(function () {
+				let stat = $(this).hasClass('expanded');
 				previewstat[$(this).attr('id')] = { client: stat, server: stat };
 			});
 
-			// add click events
 			$('.SectionExpandableInside .SectionExpandableInside_header')
 				.off('click')
-				.on('click', function() {
-					clickEvents(this);
+				.on('click', function () {
+					handleClick(this);
 				});
 
 			// add stop prepagation
 			$(
-				'.SectionExpandableInside .SectionExpandableInside_header input, .SectionExpandableInside .SectionExpandableInside_header select, .SectionExpandableInside .SectionExpandableInside_header a'
-			).click(function(event) {
+				'.SectionExpandableInside .SectionExpandableInside_header input, .SectionExpandableInside .SectionExpandableInside_header select, .SectionExpandableInside .SectionExpandableInside_header a',
+			).click(function (event) {
 				event.stopPropagation();
 			});
 
 			// event ajax
-			osAjaxBackend && osAjaxBackend.BindAfterAjaxRequest(that.ajaxRefresh);
+			osAjaxBackend && osAjaxBackend.BindAfterAjaxRequest(that.handleAjaxRefresh);
 		};
 	}
 
-	const setOpenCloseClass = id => {
-		id.click(function() {
+	const setOpenCloseClass = (id) => {
+		id.click(function () {
 			if (id.parent().hasClass('expanded')) {
-				$(this)
-					.find('.HeaderIcon')
-					.removeClass('open');
-				$(this)
-					.find('.HeaderIcon')
-					.addClass('closed');
+				$(this).find('.HeaderIcon').removeClass('open').addClass('closed');
 			} else {
-				$(this)
-					.find('.HeaderIcon')
-					.removeClass('closed');
-				$(this)
-					.find('.HeaderIcon')
-					.addClass('open');
+				$(this).find('.HeaderIcon').removeClass('closed').addClass('open');
 			}
 		});
 	};
 
-	const create = () => {
-		const expandable = new SectionExpandableInside();
+	let instance = null;
 
-		expandable.init();
+	const create = () => {
+		// It must be singleton because it stores information about all expandable sections
+		if (instance == null) {
+			instance = new SectionExpandableInside();
+			instance.init();
+		}
 	};
 
 	SapphireWidgets.SectionExpandableInside = {
@@ -11882,130 +11951,13 @@ SapphireWidgets.GoNextInput = function(currentInput, nextInputClass) {
 
 /***/ }),
 
-/***/ "./src/components sync recursive \\.js$":
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-var map = {
-	"./00-settings/config.js": "./src/components/00-settings/config.js",
-	"./03-elements/script.js": "./src/components/03-elements/script.js",
-	"./05-components/globals.js": "./src/components/05-components/globals.js",
-	"./05-components/layout/layout-base.js": "./src/components/05-components/layout/layout-base.js",
-	"./05-components/layout/layout-blank.js": "./src/components/05-components/layout/layout-blank.js",
-	"./05-components/layout/layout-emergency.js": "./src/components/05-components/layout/layout-emergency.js",
-	"./05-components/layout/layout-popup.js": "./src/components/05-components/layout/layout-popup.js",
-	"./05-components/layout/layout-spam-guard.js": "./src/components/05-components/layout/layout-spam-guard.js",
-	"./05-components/layout/subLayoutLeft.js": "./src/components/05-components/layout/subLayoutLeft.js",
-	"./05-components/v3-pat-2026/badge-box/scripts.js": "./src/components/05-components/v3-pat-2026/badge-box/scripts.js",
-	"./05-components/v3-pat-2026/button-pending/script.js": "./src/components/05-components/v3-pat-2026/button-pending/script.js",
-	"./05-components/v3-pat-2026/hourpicker2/script.js": "./src/components/05-components/v3-pat-2026/hourpicker2/script.js",
-	"./05-components/v3-pat-2026/tippytooltip/scripts.js": "./src/components/05-components/v3-pat-2026/tippytooltip/scripts.js",
-	"./05-components/v3-pat-2026/window-navigate/script.js": "./src/components/05-components/v3-pat-2026/window-navigate/script.js",
-	"./05-components/v3-pat-2026/window-panel/script.js": "./src/components/05-components/v3-pat-2026/window-panel/script.js",
-	"./05-components/v3-pat/actions-menu/scripts.js": "./src/components/05-components/v3-pat/actions-menu/scripts.js",
-	"./05-components/v3-pat/button-link/scripts.js": "./src/components/05-components/v3-pat/button-link/scripts.js",
-	"./05-components/v3-pat/card-charts/scripts.js": "./src/components/05-components/v3-pat/card-charts/scripts.js",
-	"./05-components/v3-pat/collapsible-side-panel/scripts.js": "./src/components/05-components/v3-pat/collapsible-side-panel/scripts.js",
-	"./05-components/v3-pat/comp-line/scripts.js": "./src/components/05-components/v3-pat/comp-line/scripts.js",
-	"./05-components/v3-pat/country-phone/scripts.js": "./src/components/05-components/v3-pat/country-phone/scripts.js",
-	"./05-components/v3-pat/data-tables/scripts.js": "./src/components/05-components/v3-pat/data-tables/scripts.js",
-	"./05-components/v3-pat/datetime-range-picker/scripts.js": "./src/components/05-components/v3-pat/datetime-range-picker/scripts.js",
-	"./05-components/v3-pat/drag-drop/scripts.js": "./src/components/05-components/v3-pat/drag-drop/scripts.js",
-	"./05-components/v3-pat/dropdown-categories/scripts.js": "./src/components/05-components/v3-pat/dropdown-categories/scripts.js",
-	"./05-components/v3-pat/dropzone/dropzone.js": "./src/components/05-components/v3-pat/dropzone/dropzone.js",
-	"./05-components/v3-pat/expandable-link/scripts.js": "./src/components/05-components/v3-pat/expandable-link/scripts.js",
-	"./05-components/v3-pat/fullscreen-tabs-wrapper/scripts.js": "./src/components/05-components/v3-pat/fullscreen-tabs-wrapper/scripts.js",
-	"./05-components/v3-pat/generic-card/scripts.js": "./src/components/05-components/v3-pat/generic-card/scripts.js",
-	"./05-components/v3-pat/generic-gallery/scripts.js": "./src/components/05-components/v3-pat/generic-gallery/scripts.js",
-	"./05-components/v3-pat/generic-grid/scripts.js": "./src/components/05-components/v3-pat/generic-grid/scripts.js",
-	"./05-components/v3-pat/horizontal-toolbar/scripts.js": "./src/components/05-components/v3-pat/horizontal-toolbar/scripts.js",
-	"./05-components/v3-pat/hour-picker/scripts.js": "./src/components/05-components/v3-pat/hour-picker/scripts.js",
-	"./05-components/v3-pat/iframe-loader/scripts.js": "./src/components/05-components/v3-pat/iframe-loader/scripts.js",
-	"./05-components/v3-pat/input-lasa/scripts.js": "./src/components/05-components/v3-pat/input-lasa/scripts.js",
-	"./05-components/v3-pat/input-with-clear/scripts.js": "./src/components/05-components/v3-pat/input-with-clear/scripts.js",
-	"./05-components/v3-pat/input-with-list/scripts.js": "./src/components/05-components/v3-pat/input-with-list/scripts.js",
-	"./05-components/v3-pat/line-add/scripts.js": "./src/components/05-components/v3-pat/line-add/scripts.js",
-	"./05-components/v3-pat/line-details-expand-box/script.js": "./src/components/05-components/v3-pat/line-details-expand-box/script.js",
-	"./05-components/v3-pat/location-box/scripts.js": "./src/components/05-components/v3-pat/location-box/scripts.js",
-	"./05-components/v3-pat/main-interactive-card/scripts.js": "./src/components/05-components/v3-pat/main-interactive-card/scripts.js",
-	"./05-components/v3-pat/menu-bar/scripts.js": "./src/components/05-components/v3-pat/menu-bar/scripts.js",
-	"./05-components/v3-pat/multiple-selection-button/scripts.js": "./src/components/05-components/v3-pat/multiple-selection-button/scripts.js",
-	"./05-components/v3-pat/panel/confirmation-panel.js": "./src/components/05-components/v3-pat/panel/confirmation-panel.js",
-	"./05-components/v3-pat/panel/confirmation-popup.js": "./src/components/05-components/v3-pat/panel/confirmation-popup.js",
-	"./05-components/v3-pat/panel/modal-popup.js": "./src/components/05-components/v3-pat/panel/modal-popup.js",
-	"./05-components/v3-pat/panel/panel-by-id-notify.js": "./src/components/05-components/v3-pat/panel/panel-by-id-notify.js",
-	"./05-components/v3-pat/panel/panel-by-id.js": "./src/components/05-components/v3-pat/panel/panel-by-id.js",
-	"./05-components/v3-pat/panel/popup-menu.js": "./src/components/05-components/v3-pat/panel/popup-menu.js",
-	"./05-components/v3-pat/panel/sapphire-panel.js": "./src/components/05-components/v3-pat/panel/sapphire-panel.js",
-	"./05-components/v3-pat/panel/scripts.js": "./src/components/05-components/v3-pat/panel/scripts.js",
-	"./05-components/v3-pat/patient-call-cancel/patient-call-cancel-structure.js": "./src/components/05-components/v3-pat/patient-call-cancel/patient-call-cancel-structure.js",
-	"./05-components/v3-pat/patient-call-cancel/patient-call-cancel.js": "./src/components/05-components/v3-pat/patient-call-cancel/patient-call-cancel.js",
-	"./05-components/v3-pat/prescription-card/scripts.js": "./src/components/05-components/v3-pat/prescription-card/scripts.js",
-	"./05-components/v3-pat/prescription-expandable/scripts.js": "./src/components/05-components/v3-pat/prescription-expandable/scripts.js",
-	"./05-components/v3-pat/resize-parent-iframe/scripts.js": "./src/components/05-components/v3-pat/resize-parent-iframe/scripts.js",
-	"./05-components/v3-pat/sapphire-header/scripts.js": "./src/components/05-components/v3-pat/sapphire-header/scripts.js",
-	"./05-components/v3-pat/sapphire-popup/scripts.js": "./src/components/05-components/v3-pat/sapphire-popup/scripts.js",
-	"./05-components/v3-pat/sapphire-radio-button/scripts.js": "./src/components/05-components/v3-pat/sapphire-radio-button/scripts.js",
-	"./05-components/v3-pat/scales/scale-main-structure.js": "./src/components/05-components/v3-pat/scales/scale-main-structure.js",
-	"./05-components/v3-pat/scales/toggle-item-control.js": "./src/components/05-components/v3-pat/scales/toggle-item-control.js",
-	"./05-components/v3-pat/search-and-select/select-ssd.js": "./src/components/05-components/v3-pat/search-and-select/select-ssd.js",
-	"./05-components/v3-pat/search-and-select/ssd-search.js": "./src/components/05-components/v3-pat/search-and-select/ssd-search.js",
-	"./05-components/v3-pat/searchable-client-side/scripts.js": "./src/components/05-components/v3-pat/searchable-client-side/scripts.js",
-	"./05-components/v3-pat/section-expandable-custom/scripts.js": "./src/components/05-components/v3-pat/section-expandable-custom/scripts.js",
-	"./05-components/v3-pat/section-expandable-inside/scripts.js": "./src/components/05-components/v3-pat/section-expandable-inside/scripts.js",
-	"./05-components/v3-pat/segmented-control/scripts.js": "./src/components/05-components/v3-pat/segmented-control/scripts.js",
-	"./05-components/v3-pat/select-system/scripts.js": "./src/components/05-components/v3-pat/select-system/scripts.js",
-	"./05-components/v3-pat/shift-container/scripts.js": "./src/components/05-components/v3-pat/shift-container/scripts.js",
-	"./05-components/v3-pat/shift-table/shiftTable.js": "./src/components/05-components/v3-pat/shift-table/shiftTable.js",
-	"./05-components/v3-pat/shift-table/shiftTableCard.js": "./src/components/05-components/v3-pat/shift-table/shiftTableCard.js",
-	"./05-components/v3-pat/shift-table/shiftTableCardProgress.js": "./src/components/05-components/v3-pat/shift-table/shiftTableCardProgress.js",
-	"./05-components/v3-pat/shift-table/shiftTableHover.js": "./src/components/05-components/v3-pat/shift-table/shiftTableHover.js",
-	"./05-components/v3-pat/side-menu/scripts.js": "./src/components/05-components/v3-pat/side-menu/scripts.js",
-	"./05-components/v3-pat/sidebar/sidebar-structure.js": "./src/components/05-components/v3-pat/sidebar/sidebar-structure.js",
-	"./05-components/v3-pat/small-box-selectable/scripts.js": "./src/components/05-components/v3-pat/small-box-selectable/scripts.js",
-	"./05-components/v3-pat/spinner-horizontal/scripts.js": "./src/components/05-components/v3-pat/spinner-horizontal/scripts.js",
-	"./05-components/v3-pat/spinner-vertical/scripts.js": "./src/components/05-components/v3-pat/spinner-vertical/scripts.js",
-	"./05-components/v3-pat/split-button/scripts.js": "./src/components/05-components/v3-pat/split-button/scripts.js",
-	"./05-components/v3-pat/ssd-component-block/scripts.js": "./src/components/05-components/v3-pat/ssd-component-block/scripts.js",
-	"./05-components/v3-pat/ssd-list-line/scripts.js": "./src/components/05-components/v3-pat/ssd-list-line/scripts.js",
-	"./05-components/v3-pat/table-form/scripts.js": "./src/components/05-components/v3-pat/table-form/scripts.js",
-	"./05-components/v3-pat/tabs-extended/scripts.js": "./src/components/05-components/v3-pat/tabs-extended/scripts.js",
-	"./05-components/v3-pat/tabular-list/scripts.js": "./src/components/05-components/v3-pat/tabular-list/scripts.js",
-	"./05-components/v3-pat/tabular-scroll/scripts.js": "./src/components/05-components/v3-pat/tabular-scroll/scripts.js",
-	"./05-components/v3-pat/timeline/scripts.js": "./src/components/05-components/v3-pat/timeline/scripts.js",
-	"./05-components/v3-pat/trigger-iframe-tooltip/trigger-iframe-tooltip.js": "./src/components/05-components/v3-pat/trigger-iframe-tooltip/trigger-iframe-tooltip.js",
-	"./05-components/v3-pat/truncated-content/scripts.js": "./src/components/05-components/v3-pat/truncated-content/scripts.js",
-	"./08-pages/clinicianWorkArea.js": "./src/components/08-pages/clinicianWorkArea.js",
-	"./08-pages/eSignature.js": "./src/components/08-pages/eSignature.js",
-	"./08-pages/remoteAppointment.js": "./src/components/08-pages/remoteAppointment.js"
-};
-
-
-function webpackContext(req) {
-	var id = webpackContextResolve(req);
-	return __webpack_require__(id);
-}
-function webpackContextResolve(req) {
-	if(!__webpack_require__.o(map, req)) {
-		var e = new Error("Cannot find module '" + req + "'");
-		e.code = 'MODULE_NOT_FOUND';
-		throw e;
-	}
-	return map[req];
-}
-webpackContext.keys = function webpackContextKeys() {
-	return Object.keys(map);
-};
-webpackContext.resolve = webpackContextResolve;
-module.exports = webpackContext;
-webpackContext.id = "./src/components sync recursive \\.js$";
-
-/***/ }),
-
-/***/ "./package.json":
-/***/ (function(module) {
+/***/ "./src/components/index.scss":
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"name":"sapphire","version":"5.5.376","description":"Styles and scripts for Sapphire HMS design system.","keywords":["design system","sapphire","hms","style guide","patterns","css","javascript"],"homepage":"https://dev.nordicplatforms.com/StyleGuideV2_UI/Instructions.aspx","repository":{"type":"git","url":"https://github.com/sapphire-components/sapphire"},"author":{"name":"António Carvalho","email":"antonio.carvalho@outsystems.com","url":"https://www.linkedin.com/in/carvalhoantonio/"},"scripts":{"dev":"set NODE_ENV=development && webpack-dev-server --config webpack.dev.js","prod":"set NODE_ENV=production && webpack --config webpack.prod.js","new:build":"npm run prod && git add . && git commit -m \\"New Release\\" --allow-empty && git push origin main","release:patch":"release-it patch --ci","release:minor":"release-it minor --git.requireBranch=main && npm run new:build","release:major":"release-it major --git.requireBranch=main && npm run new:build"},"license":"ISC","devDependencies":{"autoprefixer":"^10.4.23","clean-webpack-plugin":"^4.0.0","css-loader":"^7.1.2","dotenv-cli":"^11.0.0","eslint":"^9.39.2","eslint-config-prettier":"^10.1.8","eslint-plugin-prettier":"^5.5.5","mini-css-extract-plugin":"^2.10.0","postcss-loader":"^8.2.0","prettier":"^3.8.1","prettier-stylelint":"^0.4.2","release-it":"^19.2.4","sass":"^1.97.3","sass-loader":"^16.0.6","style-loader":"^4.0.0","stylelint":"^17.0.0","stylelint-config-standard-scss":"^17.0.0","stylelint-order":"^7.0.1","terser-webpack-plugin":"^5.3.16","webpack":"^5.104.1","webpack-cli":"^6.0.1","webpack-dev-middleware":"^7.4.5","webpack-dev-server":"^5.2.3","webpack-hot-middleware":"^2.26.1","webpack-merge":"^6.0.1"}}');
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
 
 /***/ })
 
@@ -12029,12 +11981,6 @@ module.exports = /*#__PURE__*/JSON.parse('{"name":"sapphire","version":"5.5.376"
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
-/******/ 		if (!(moduleId in __webpack_modules__)) {
-/******/ 			delete __webpack_module_cache__[moduleId];
-/******/ 			var e = new Error("Cannot find module '" + moduleId + "'");
-/******/ 			e.code = 'MODULE_NOT_FOUND';
-/******/ 			throw e;
-/******/ 		}
 /******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
 /******/ 	
 /******/ 		// Return the exports of the module
