@@ -133,6 +133,7 @@
 			display: flex;
 			border-bottom: 1px solid $light-grey;
 			z-index: 3; //it was 2. bumped after sticky first column in Administrations timeline
+			            // Earlier it was also 5, which caused SPD-6332
 
 			&.isFixed {
 				border-bottom: solid 2px $light-grey;
