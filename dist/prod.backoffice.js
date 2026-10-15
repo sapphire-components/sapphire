@@ -1,4 +1,4 @@
-/*! prod.backoffice.js || Version: 5.5.377 || Generated: Wed Oct 07 2026 11:09:27 GMT+0300 (GMT+03:00) */
+/*! prod.backoffice.js || Version: 5.5.378 || Generated: Thu Oct 15 2026 13:38:35 GMT+0300 (GMT+03:00) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 

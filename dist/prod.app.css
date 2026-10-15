@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.377 || Generated: Wed Oct 07 2026 11:09:27 GMT+0300 (GMT+03:00) */
+/*! prod.app.css || Version: 5.5.378 || Generated: Thu Oct 15 2026 13:38:35 GMT+0300 (GMT+03:00) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -2187,15 +2187,7 @@ a.Button.RescheduleForward:before {
 .FA a.Button.XRay:before,
 .FA a.Button.View:before,
 .FA a.Button.WristBand:before,
-.FA a.Button.Warning:before,
-a.Button.Temperature:before,
-a.Button.Bento:before,
-a.Button.Scales:before,
-a.Button.Sign:before,
-a.Button.BloodTubes2:before,
-a.Button.Attach:before,
-a.Button.Warning2:before,
-a.Button.Video:before {
+.FA a.Button.Warning:before {
   margin-left: 0.5715rem;
   margin-right: auto;
 }
