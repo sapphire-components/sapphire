@@ -159,6 +159,8 @@
 		}
 		if (this.isSelectable) {
 			this.$selectTrigger.off('click').on('click', function (e) {
+				console.warn(e);
+
 				if (_this.$selectPlaceholder.find('a:not(.windowpanel-action)').length === 1) {
 					_this.$selectPlaceholder.find('a').click();
 				} else {
