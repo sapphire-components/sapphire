@@ -159,12 +159,10 @@
 		}
 		if (this.isSelectable) {
 			this.$selectTrigger.off('click').on('click', function (e) {
-				console.warn(e);
-
 				if (_this.$selectPlaceholder.find('a:not(.windowpanel-action)').length === 1) {
-					_this.$selectPlaceholder.find('a').click();
+					_this.$selectPlaceholder.find('a')[0].click();
 				} else {
-					console.warn('You need 1 link in this placeholder.');
+					console.warn('You need 1 single link, without .windowpanel-action class, in this placeholder.');
 				}
 			});
 		}
