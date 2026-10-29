@@ -471,6 +471,11 @@
 			height: 100%;
 			justify-content: flex-end;
 		}
+
+		// SPD-6436
+		&:has(> [style*='display:none']):not(:has(> :not([style*='display:none']))) {
+			display: none;
+		}
 	}
 
 	&__Complementary {
