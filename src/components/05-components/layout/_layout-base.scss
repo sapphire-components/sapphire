@@ -132,8 +132,8 @@
 			top: 80px;
 			display: flex;
 			border-bottom: 1px solid $light-grey;
-			z-index: 3; //it was 2. bumped after sticky first column in Administrations timeline
-			            // Earlier it was also 5, which caused SPD-6332
+			z-index: 3; // it was 2. bumped after sticky first column in Administrations timeline
+			// Earlier it was also 5, which caused SPD-6332
 
 			&.isFixed {
 				border-bottom: solid 2px $light-grey;
@@ -820,4 +820,12 @@ html .Page .PatientDetailsLayout {
 	&[data-showlastviewed='true'] {
 		width: 100%;
 	}
+}
+
+body.PanelOpened .LayoutBase-Content .LayoutBase-secondary {
+	z-index: 1;
+}
+
+body.PanelOpened .LayoutBase-header {
+	z-index: 1;
 }

@@ -53,7 +53,11 @@
 		if (textAreaInput.scrollHeight == 0) {
 			textAreaInput.style.height = '70px';
 		} else {
-			textAreaInput.style.height = textAreaInput.scrollHeight + 'px';
+			if (textAreaInput.classList.contains('scroll-100')) {
+				textAreaInput.style.height = '100px';
+			} else {
+				textAreaInput.style.height = textAreaInput.scrollHeight + 'px';
+			}
 		}
 	}
 })(jQuery, window, document, SapphireWidgets);
