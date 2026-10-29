@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.383 || Generated: Thu Oct 29 2026 10:37:16 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.5.384 || Generated: Thu Oct 29 2026 11:44:50 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -6305,6 +6305,14 @@ html .Page .PatientDetailsLayout {
 }
 .LayoutBase-iframesidebar.notExpandable[data-showlastviewed=true] {
   width: 100%;
+}
+
+body.PanelOpened .LayoutBase-Content .LayoutBase-secondary {
+  z-index: 1;
+}
+
+body.PanelOpened .LayoutBase-header {
+  z-index: 1;
 }
 
 .LayoutBlank.Page {

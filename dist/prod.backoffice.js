@@ -1,4 +1,4 @@
-/*! prod.backoffice.js || Version: 5.5.383 || Generated: Thu Oct 29 2026 10:37:16 GMT+0000 (Western European Standard Time) */
+/*! prod.backoffice.js || Version: 5.5.384 || Generated: Thu Oct 29 2026 11:44:50 GMT+0000 (Western European Standard Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -166,7 +166,11 @@ $(document).ready(function () {
 		if (textAreaInput.scrollHeight == 0) {
 			textAreaInput.style.height = '70px';
 		} else {
-			textAreaInput.style.height = textAreaInput.scrollHeight + 'px';
+			if (textAreaInput.classList.contains('scroll-100')) {
+				textAreaInput.style.height = '100px';
+			} else {
+				textAreaInput.style.height = textAreaInput.scrollHeight + 'px';
+			}
 		}
 	}
 })(jQuery, window, document, SapphireWidgets);
@@ -1211,19 +1215,17 @@ SapphireWidgets.ConfirmationPopup = {
 
 /* Component PanelByID */
 SapphireWidgets.PanelById = {
-	isAnyPanelOpenedDeprecated: function() {
+	isAnyPanelOpenedDeprecated: function () {
 		return $('body').hasClass('PanelOpened');
 	},
 
-	toggleButton: function(id) {
-		const $toggleButton = $(`#${id}`).parents('.ToggleButton').length
-			? $(`#${id}`).parents('.ToggleButton')
-			: $(`#${id}`);
+	toggleButton: function (id) {
+		const $toggleButton = $(`#${id}`).parents('.ToggleButton').length ? $(`#${id}`).parents('.ToggleButton') : $(`#${id}`);
 
 		$toggleButton.click();
 	},
 
-	togglePanelById: function(Id) {
+	togglePanelById: function (Id) {
 		const $toggleButton = $(`#${Id}`).parents('.ToggleButton');
 		const $panel = $toggleButton.parent().children('.Panel');
 		const $panelContainer = $panel.children('.PanelContainer');
@@ -1239,17 +1241,14 @@ SapphireWidgets.PanelById = {
 			try {
 				if (typeof justDragged !== 'undefined') {
 					if (justDragged == false) {
-						$('.PanelByIdNew_PanelContainer')
-							.css('margin-left', panelMarginLeft)
-							.css('left', panelLeft)
-							.addClass(panelArrowClass);
+						$('.PanelByIdNew_PanelContainer').css('margin-left', panelMarginLeft).css('left', panelLeft).addClass(panelArrowClass);
 					}
 				}
 			} catch (e) {
 				console.log(e);
 			}
 
-			setTimeout(function() {
+			setTimeout(function () {
 				$panelBackground.fadeIn(80);
 
 				$toggleButton.click();

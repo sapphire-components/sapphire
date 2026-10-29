@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.383 || Generated: Thu Oct 29 2026 10:37:16 GMT+0000 (Western European Standard Time) */
+/*! prod.app.js || Version: 5.5.384 || Generated: Thu Oct 29 2026 11:44:50 GMT+0000 (Western European Standard Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -138,7 +138,11 @@ hideAllOverlays = (initiatorWindow) => {
 		if (textAreaInput.scrollHeight == 0) {
 			textAreaInput.style.height = '70px';
 		} else {
-			textAreaInput.style.height = textAreaInput.scrollHeight + 'px';
+			if (textAreaInput.classList.contains('scroll-100')) {
+				textAreaInput.style.height = '100px';
+			} else {
+				textAreaInput.style.height = textAreaInput.scrollHeight + 'px';
+			}
 		}
 	}
 })(jQuery, window, document, SapphireWidgets);
@@ -5356,19 +5360,17 @@ SapphireWidgets.PanelByIdNotify = {
 
 /* Component PanelByID */
 SapphireWidgets.PanelById = {
-	isAnyPanelOpenedDeprecated: function() {
+	isAnyPanelOpenedDeprecated: function () {
 		return $('body').hasClass('PanelOpened');
 	},
 
-	toggleButton: function(id) {
-		const $toggleButton = $(`#${id}`).parents('.ToggleButton').length
-			? $(`#${id}`).parents('.ToggleButton')
-			: $(`#${id}`);
+	toggleButton: function (id) {
+		const $toggleButton = $(`#${id}`).parents('.ToggleButton').length ? $(`#${id}`).parents('.ToggleButton') : $(`#${id}`);
 
 		$toggleButton.click();
 	},
 
-	togglePanelById: function(Id) {
+	togglePanelById: function (Id) {
 		const $toggleButton = $(`#${Id}`).parents('.ToggleButton');
 		const $panel = $toggleButton.parent().children('.Panel');
 		const $panelContainer = $panel.children('.PanelContainer');
@@ -5384,17 +5386,14 @@ SapphireWidgets.PanelById = {
 			try {
 				if (typeof justDragged !== 'undefined') {
 					if (justDragged == false) {
-						$('.PanelByIdNew_PanelContainer')
-							.css('margin-left', panelMarginLeft)
-							.css('left', panelLeft)
-							.addClass(panelArrowClass);
+						$('.PanelByIdNew_PanelContainer').css('margin-left', panelMarginLeft).css('left', panelLeft).addClass(panelArrowClass);
 					}
 				}
 			} catch (e) {
 				console.log(e);
 			}
 
-			setTimeout(function() {
+			setTimeout(function () {
 				$panelBackground.fadeIn(80);
 
 				$toggleButton.click();
@@ -11933,7 +11932,7 @@ webpackContext.id = "./src/components sync recursive \\.js$";
 /***/ (function(module) {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"name":"sapphire","version":"5.5.383","description":"Styles and scripts for Sapphire HMS design system.","keywords":["design system","sapphire","hms","style guide","patterns","css","javascript"],"homepage":"https://dev.nordicplatforms.com/StyleGuideV2_UI/Instructions.aspx","repository":{"type":"git","url":"https://github.com/sapphire-components/sapphire"},"author":{"name":"António Carvalho","email":"antonio.carvalho@outsystems.com","url":"https://www.linkedin.com/in/carvalhoantonio/"},"scripts":{"dev":"set NODE_ENV=development && webpack-dev-server --config webpack.dev.js","prod":"set NODE_ENV=production && webpack --config webpack.prod.js","new:build":"npm run prod && git add . && git commit -m \\"New Release\\" --allow-empty && git push origin main","release:patch":"release-it patch --ci","release:minor":"release-it minor --git.requireBranch=main && npm run new:build","release:major":"release-it major --git.requireBranch=main && npm run new:build"},"license":"ISC","devDependencies":{"autoprefixer":"^10.4.23","clean-webpack-plugin":"^4.0.0","css-loader":"^7.1.2","dotenv-cli":"^11.0.0","eslint":"^9.39.2","eslint-config-prettier":"^10.1.8","eslint-plugin-prettier":"^5.5.5","mini-css-extract-plugin":"^2.10.0","postcss-loader":"^8.2.0","prettier":"^3.8.1","prettier-stylelint":"^0.4.2","release-it":"^19.2.4","sass":"^1.97.3","sass-loader":"^16.0.6","style-loader":"^4.0.0","stylelint":"^17.0.0","stylelint-config-standard-scss":"^17.0.0","stylelint-order":"^7.0.1","terser-webpack-plugin":"^5.3.16","webpack":"^5.104.1","webpack-cli":"^6.0.1","webpack-dev-middleware":"^7.4.5","webpack-dev-server":"^5.2.3","webpack-hot-middleware":"^2.26.1","webpack-merge":"^6.0.1"}}');
+module.exports = /*#__PURE__*/JSON.parse('{"name":"sapphire","version":"5.5.384","description":"Styles and scripts for Sapphire HMS design system.","keywords":["design system","sapphire","hms","style guide","patterns","css","javascript"],"homepage":"https://dev.nordicplatforms.com/StyleGuideV2_UI/Instructions.aspx","repository":{"type":"git","url":"https://github.com/sapphire-components/sapphire"},"author":{"name":"António Carvalho","email":"antonio.carvalho@outsystems.com","url":"https://www.linkedin.com/in/carvalhoantonio/"},"scripts":{"dev":"set NODE_ENV=development && webpack-dev-server --config webpack.dev.js","prod":"set NODE_ENV=production && webpack --config webpack.prod.js","new:build":"npm run prod && git add . && git commit -m \\"New Release\\" --allow-empty && git push origin main","release:patch":"release-it patch --ci","release:minor":"release-it minor --git.requireBranch=main && npm run new:build","release:major":"release-it major --git.requireBranch=main && npm run new:build"},"license":"ISC","devDependencies":{"autoprefixer":"^10.4.23","clean-webpack-plugin":"^4.0.0","css-loader":"^7.1.2","dotenv-cli":"^11.0.0","eslint":"^9.39.2","eslint-config-prettier":"^10.1.8","eslint-plugin-prettier":"^5.5.5","mini-css-extract-plugin":"^2.10.0","postcss-loader":"^8.2.0","prettier":"^3.8.1","prettier-stylelint":"^0.4.2","release-it":"^19.2.4","sass":"^1.97.3","sass-loader":"^16.0.6","style-loader":"^4.0.0","stylelint":"^17.0.0","stylelint-config-standard-scss":"^17.0.0","stylelint-order":"^7.0.1","terser-webpack-plugin":"^5.3.16","webpack":"^5.104.1","webpack-cli":"^6.0.1","webpack-dev-middleware":"^7.4.5","webpack-dev-server":"^5.2.3","webpack-hot-middleware":"^2.26.1","webpack-merge":"^6.0.1"}}');
 
 /***/ })
 
