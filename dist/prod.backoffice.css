@@ -1,4 +1,4 @@
-/*! prod.backoffice.css || Version: 5.5.385 || Generated: Thu Oct 29 2026 14:40:11 GMT+0000 (Western European Standard Time) */
+/*! prod.backoffice.css || Version: 5.5.386 || Generated: Fri Oct 30 2026 13:00:59 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -3544,7 +3544,7 @@ body {
   position: relative;
 }
 .DateTimeRangePicker-input input[type=text] {
-  padding-right: 25px;
+  padding-right: 25px !important;
 }
 .DateTimeRangePicker-placeholder {
   display: block;
@@ -3576,8 +3576,7 @@ body {
   font-family: "Sapphire-Icon-Font";
   position: absolute;
   right: 9px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 8px;
 }
 .DateTimeRangePicker-hidden input[type=text] {
   border: none !important;
