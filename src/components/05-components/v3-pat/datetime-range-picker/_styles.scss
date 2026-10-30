@@ -64,7 +64,7 @@ $date-time-size-base: 40px;
 		position: relative;
 
 		input[type='text'] {
-			padding-right: 25px;
+			padding-right: 25px !important;
 		}
 	}
 
@@ -105,8 +105,9 @@ $date-time-size-base: 40px;
 			font-family: $font-family-icons;
 			position: absolute;
 			right: 9px;
-			top: 50%;
-			transform: translateY(-50%);
+			top: 8px;
+			// top: 50%;
+			// transform: translateY(-50%);
 		}
 	}
 
