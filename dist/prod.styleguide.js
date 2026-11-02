@@ -1,4 +1,4 @@
-/*! prod.styleguide.js || Version: 5.5.386 || Generated: Fri Oct 30 2026 13:00:59 GMT+0000 (Western European Standard Time) */
+/*! prod.styleguide.js || Version: 5.5.387 || Generated: Mon Nov 02 2026 16:08:34 GMT+0300 (GMT+03:00) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -32,12 +32,6 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
-/******/ 		if (!(moduleId in __webpack_modules__)) {
-/******/ 			delete __webpack_module_cache__[moduleId];
-/******/ 			var e = new Error("Cannot find module '" + moduleId + "'");
-/******/ 			e.code = 'MODULE_NOT_FOUND';
-/******/ 			throw e;
-/******/ 		}
 /******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
 /******/ 	
 /******/ 		// Return the exports of the module
