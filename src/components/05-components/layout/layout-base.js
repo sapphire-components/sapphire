@@ -13,7 +13,34 @@
 		window[SapphireWidgets.LayoutBase.widgetId].closeSidebarIframe(duration);
 	};
 
+	// Finds the document that should actually scroll to reveal `element`, and the element's
+	// top position inside that document. When the element is inside an iframe that does not
+	// scroll by itself (auto-height iframe), it climbs to the parent window(s), adding each
+	// iframe's offset, until it reaches a document that can scroll (or the top window).
+	var getScrollTarget = function (element) {
+		let doc = element.ownerDocument || document;
+		let win = doc.defaultView || window;
+		let top = element.getBoundingClientRect().top;
+
+		const canScroll = function (d) {
+			const root = d.scrollingElement || d.documentElement;
+			const overflowY = (d.defaultView || window).getComputedStyle(d.documentElement).overflowY;
+			if (overflowY === 'hidden' || overflowY === 'clip') return false;
+			return root.scrollHeight - root.clientHeight > 1;
+		};
+
+		while (win !== win.parent && win.frameElement && !canScroll(doc)) {
+			top += win.frameElement.getBoundingClientRect().top;
+			win = win.parent;
+			doc = win.document;
+		}
+
+		return { scrollDocument: doc, top: top + win.pageYOffset };
+	};
+
 	var scrollToElement = function ($element, offset = 0) {
+		console.log('scrollToElement', $element[0], offset);
+
 		var $targetElement = $element;
 
 		if (!!$targetElement.length) {
@@ -31,17 +58,22 @@
 				if (layoutBaseInstance.getThresholds().secondaryThreshold > 0) {
 					clearInterval(scrollToOffsetInterval);
 
-					let targetElementOffsetTop = $targetElement.offset().top;
+					const { scrollDocument, top } = getScrollTarget($targetElement[0]);
+					const $scrollDoc = $(scrollDocument);
 
-					const isEmergency = !!$('.LayoutBase-emergency').text();
+					const $emergency = $scrollDoc.find('.LayoutBase-emergency');
+					const isEmergency = !!$emergency.text();
 
-					const headerHeight = $('.SapphireHeader').height();
-					const secondaryHeight = $('.LayoutBase-secondary').outerHeight();
-					const emergencyHeight = isEmergency ? $('.LayoutBase-emergency').height() : 0;
+					const headerHeight = $scrollDoc.find('.SapphireHeader').height() || 0;
+					const secondaryHeight = $scrollDoc.find('.LayoutBase-secondary').outerHeight() || 0;
+					const emergencyHeight = isEmergency ? $emergency.height() || 0 : 0;
 
-					targetElementOffsetTop = targetElementOffsetTop - (headerHeight + secondaryHeight + emergencyHeight);
+					const targetElementOffsetTop = top - (headerHeight + secondaryHeight + emergencyHeight);
 
-					$('body, html').scrollTop(targetElementOffsetTop - 16);
+					$scrollDoc
+						.find('body')
+						.add(scrollDocument.documentElement)
+						.scrollTop(targetElementOffsetTop - 16);
 				}
 			}, 250);
 		}
