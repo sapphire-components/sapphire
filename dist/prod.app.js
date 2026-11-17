@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.388 || Generated: Fri Nov 13 2026 14:17:41 GMT+0000 (Western European Standard Time) */
+/*! prod.app.js || Version: 5.5.389 || Generated: Tue Nov 17 2026 14:56:55 GMT+0000 (Western European Standard Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -178,7 +178,34 @@ console.log(`%cSapphire | ${packageVersion} | ${window.location.pathname}`, styl
 		window[SapphireWidgets.LayoutBase.widgetId].closeSidebarIframe(duration);
 	};
 
+	// Finds the document that should actually scroll to reveal `element`, and the element's
+	// top position inside that document. When the element is inside an iframe that does not
+	// scroll by itself (auto-height iframe), it climbs to the parent window(s), adding each
+	// iframe's offset, until it reaches a document that can scroll (or the top window).
+	var getScrollTarget = function (element) {
+		let doc = element.ownerDocument || document;
+		let win = doc.defaultView || window;
+		let top = element.getBoundingClientRect().top;
+
+		const canScroll = function (d) {
+			const root = d.scrollingElement || d.documentElement;
+			const overflowY = (d.defaultView || window).getComputedStyle(d.documentElement).overflowY;
+			if (overflowY === 'hidden' || overflowY === 'clip') return false;
+			return root.scrollHeight - root.clientHeight > 1;
+		};
+
+		while (win !== win.parent && win.frameElement && !canScroll(doc)) {
+			top += win.frameElement.getBoundingClientRect().top;
+			win = win.parent;
+			doc = win.document;
+		}
+
+		return { scrollDocument: doc, top: top + win.pageYOffset };
+	};
+
 	var scrollToElement = function ($element, offset = 0) {
+		console.log('scrollToElement', $element[0], offset);
+
 		var $targetElement = $element;
 
 		if (!!$targetElement.length) {
@@ -196,17 +223,22 @@ console.log(`%cSapphire | ${packageVersion} | ${window.location.pathname}`, styl
 				if (layoutBaseInstance.getThresholds().secondaryThreshold > 0) {
 					clearInterval(scrollToOffsetInterval);
 
-					let targetElementOffsetTop = $targetElement.offset().top;
+					const { scrollDocument, top } = getScrollTarget($targetElement[0]);
+					const $scrollDoc = $(scrollDocument);
 
-					const isEmergency = !!$('.LayoutBase-emergency').text();
+					const $emergency = $scrollDoc.find('.LayoutBase-emergency');
+					const isEmergency = !!$emergency.text();
 
-					const headerHeight = $('.SapphireHeader').height();
-					const secondaryHeight = $('.LayoutBase-secondary').outerHeight();
-					const emergencyHeight = isEmergency ? $('.LayoutBase-emergency').height() : 0;
+					const headerHeight = $scrollDoc.find('.SapphireHeader').height() || 0;
+					const secondaryHeight = $scrollDoc.find('.LayoutBase-secondary').outerHeight() || 0;
+					const emergencyHeight = isEmergency ? $emergency.height() || 0 : 0;
 
-					targetElementOffsetTop = targetElementOffsetTop - (headerHeight + secondaryHeight + emergencyHeight);
+					const targetElementOffsetTop = top - (headerHeight + secondaryHeight + emergencyHeight);
 
-					$('body, html').scrollTop(targetElementOffsetTop - 16);
+					$scrollDoc
+						.find('body')
+						.add(scrollDocument.documentElement)
+						.scrollTop(targetElementOffsetTop - 16);
 				}
 			}, 250);
 		}
@@ -11932,7 +11964,7 @@ webpackContext.id = "./src/components sync recursive \\.js$";
 /***/ (function(module) {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"name":"sapphire","version":"5.5.388","description":"Styles and scripts for Sapphire HMS design system.","keywords":["design system","sapphire","hms","style guide","patterns","css","javascript"],"homepage":"https://dev.nordicplatforms.com/StyleGuideV2_UI/Instructions.aspx","repository":{"type":"git","url":"https://github.com/sapphire-components/sapphire"},"author":{"name":"António Carvalho","email":"antonio.carvalho@outsystems.com","url":"https://www.linkedin.com/in/carvalhoantonio/"},"scripts":{"dev":"set NODE_ENV=development && webpack-dev-server --config webpack.dev.js","prod":"set NODE_ENV=production && webpack --config webpack.prod.js","new:build":"npm run prod && git add . && git commit -m \\"New Release\\" --allow-empty && git push origin main","release:patch":"release-it patch --ci","release:minor":"release-it minor --git.requireBranch=main && npm run new:build","release:major":"release-it major --git.requireBranch=main && npm run new:build"},"license":"ISC","devDependencies":{"autoprefixer":"^10.4.23","clean-webpack-plugin":"^4.0.0","css-loader":"^7.1.2","dotenv-cli":"^11.0.0","eslint":"^9.39.2","eslint-config-prettier":"^10.1.8","eslint-plugin-prettier":"^5.5.5","mini-css-extract-plugin":"^2.10.0","postcss-loader":"^8.2.0","prettier":"^3.8.1","prettier-stylelint":"^0.4.2","release-it":"^19.2.4","sass":"^1.97.3","sass-loader":"^16.0.6","style-loader":"^4.0.0","stylelint":"^17.0.0","stylelint-config-standard-scss":"^17.0.0","stylelint-order":"^7.0.1","terser-webpack-plugin":"^5.3.16","webpack":"^5.104.1","webpack-cli":"^6.0.1","webpack-dev-middleware":"^7.4.5","webpack-dev-server":"^5.2.3","webpack-hot-middleware":"^2.26.1","webpack-merge":"^6.0.1"}}');
+module.exports = /*#__PURE__*/JSON.parse('{"name":"sapphire","version":"5.5.389","description":"Styles and scripts for Sapphire HMS design system.","keywords":["design system","sapphire","hms","style guide","patterns","css","javascript"],"homepage":"https://dev.nordicplatforms.com/StyleGuideV2_UI/Instructions.aspx","repository":{"type":"git","url":"https://github.com/sapphire-components/sapphire"},"author":{"name":"António Carvalho","email":"antonio.carvalho@outsystems.com","url":"https://www.linkedin.com/in/carvalhoantonio/"},"scripts":{"dev":"set NODE_ENV=development && webpack-dev-server --config webpack.dev.js","prod":"set NODE_ENV=production && webpack --config webpack.prod.js","new:build":"npm run prod && git add . && git commit -m \\"New Release\\" --allow-empty && git push origin main","release:patch":"release-it patch --ci","release:minor":"release-it minor --git.requireBranch=main && npm run new:build","release:major":"release-it major --git.requireBranch=main && npm run new:build"},"license":"ISC","devDependencies":{"autoprefixer":"^10.4.23","clean-webpack-plugin":"^4.0.0","css-loader":"^7.1.2","dotenv-cli":"^11.0.0","eslint":"^9.39.2","eslint-config-prettier":"^10.1.8","eslint-plugin-prettier":"^5.5.5","mini-css-extract-plugin":"^2.10.0","postcss-loader":"^8.2.0","prettier":"^3.8.1","prettier-stylelint":"^0.4.2","release-it":"^19.2.4","sass":"^1.97.3","sass-loader":"^16.0.6","style-loader":"^4.0.0","stylelint":"^17.0.0","stylelint-config-standard-scss":"^17.0.0","stylelint-order":"^7.0.1","terser-webpack-plugin":"^5.3.16","webpack":"^5.104.1","webpack-cli":"^6.0.1","webpack-dev-middleware":"^7.4.5","webpack-dev-server":"^5.2.3","webpack-hot-middleware":"^2.26.1","webpack-merge":"^6.0.1"}}');
 
 /***/ })
 
