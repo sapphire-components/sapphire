@@ -1,4 +1,4 @@
-/*! prod.app.js || Version: 5.5.391 || Generated: Thu Nov 19 2026 10:52:42 GMT+0000 (Western European Standard Time) */
+/*! prod.app.js || Version: 5.5.392 || Generated: Thu Nov 19 2026 12:17:59 GMT+0000 (Western European Standard Time) */
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -11469,44 +11469,53 @@ function checkEndOfPage() {
 /***/ "./src/components/08-pages/clinicianWorkArea.js":
 /***/ (function() {
 
-SapphireWidgets.ClinicianWorkArea = function(containerID) {
-	$(document).ready(function() {
+SapphireWidgets.ClinicianWorkArea = function (containerID) {
+	$(document).ready(function () {
 		const $container = $(`#${containerID}`);
-		const $toggler = $container.find('.SectionExpandable-toggler');
 
-		if ($toggler.length === 1) {
-			let $togglerState = false;
+		if ($container.find('.SectionExpandable-toggler').length !== 1) return;
 
+		// OutSystems ajax refreshes (e.g. saving a Quick Note) replace inner nodes,
+		// so elements are always re-queried instead of cached.
+		const getToggler = () => $container.find('.SectionExpandable-toggler');
+		const getContent = () => $container.find('.SectionExpandable-toggled');
+
+		let togglerState = false;
+
+		const reset = function () {
+			const $toggler = getToggler();
+
+			togglerState = false;
+
+			getContent().hide();
 			$toggler.find('[data-labelvalue]').text($toggler.find('[data-labelshow]').data('labelshow'));
+			$toggler.show();
+		};
 
-			$toggler.off('click').on('click', function(evt) {
+		const open = function () {
+			const $toggler = getToggler();
+
+			togglerState = true;
+
+			getContent().show();
+			$toggler.find('[data-labelvalue]').text($toggler.find('[data-labelhide]').data('labelhide'));
+			$toggler.hide();
+		};
+
+		// Delegated handlers survive ajax refreshes of the toggler / content / cancel button
+		$container
+			.off('click.clinicianWorkArea')
+			.on('click.clinicianWorkArea', '.SectionExpandable-toggler', function (evt) {
 				evt.stopPropagation();
+				togglerState ? reset() : open();
+			})
+			.on('click.clinicianWorkArea', '.SectionExpandable-toggled .ButtonCancelSearch', reset);
 
-				buttonClick();
-			});
+		// Expose global reset
+		SapphireWidgets.ClinicianWorkAreaReset = reset;
 
-			const buttonClick = function() {
-				$togglerState = !$togglerState;
-
-				if ($togglerState) {
-					$container.find('.SectionExpandable-toggled').show();
-					$toggler.find('[data-labelvalue]').text($toggler.find('[data-labelhide]').data('labelhide'));
-
-					$toggler.hide();
-
-					const $cancelButton = $('.SectionExpandable-toggled .ButtonCancelSearch');
-					$cancelButton.click(() => buttonClick());
-				} else {
-					$container.find('.SectionExpandable-toggled').hide();
-					$toggler.find('[data-labelvalue]').text($toggler.find('[data-labelshow]').data('labelshow'));
-
-					$toggler.show();
-
-					const $cancelButton = $('.SectionExpandable-toggled .ButtonCancelSearch');
-					$cancelButton.off('click');
-				}
-			};
-		}
+		// Initial state
+		reset();
 	});
 };
 
@@ -11966,7 +11975,7 @@ webpackContext.id = "./src/components sync recursive \\.js$";
 /***/ (function(module) {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"name":"sapphire","version":"5.5.391","description":"Styles and scripts for Sapphire HMS design system.","keywords":["design system","sapphire","hms","style guide","patterns","css","javascript"],"homepage":"https://dev.nordicplatforms.com/StyleGuideV2_UI/Instructions.aspx","repository":{"type":"git","url":"https://github.com/sapphire-components/sapphire"},"author":{"name":"António Carvalho","email":"antonio.carvalho@outsystems.com","url":"https://www.linkedin.com/in/carvalhoantonio/"},"scripts":{"dev":"set NODE_ENV=development && webpack-dev-server --config webpack.dev.js","prod":"set NODE_ENV=production && webpack --config webpack.prod.js","new:build":"npm run prod && git add . && git commit -m \\"New Release\\" --allow-empty && git push origin main","release:patch":"release-it patch --ci","release:minor":"release-it minor --git.requireBranch=main && npm run new:build","release:major":"release-it major --git.requireBranch=main && npm run new:build"},"license":"ISC","devDependencies":{"autoprefixer":"^10.4.23","clean-webpack-plugin":"^4.0.0","css-loader":"^7.1.2","dotenv-cli":"^11.0.0","eslint":"^9.39.2","eslint-config-prettier":"^10.1.8","eslint-plugin-prettier":"^5.5.5","mini-css-extract-plugin":"^2.10.0","postcss-loader":"^8.2.0","prettier":"^3.8.1","prettier-stylelint":"^0.4.2","release-it":"^19.2.4","sass":"^1.97.3","sass-loader":"^16.0.6","style-loader":"^4.0.0","stylelint":"^17.0.0","stylelint-config-standard-scss":"^17.0.0","stylelint-order":"^7.0.1","terser-webpack-plugin":"^5.3.16","webpack":"^5.104.1","webpack-cli":"^6.0.1","webpack-dev-middleware":"^7.4.5","webpack-dev-server":"^5.2.3","webpack-hot-middleware":"^2.26.1","webpack-merge":"^6.0.1"}}');
+module.exports = /*#__PURE__*/JSON.parse('{"name":"sapphire","version":"5.5.392","description":"Styles and scripts for Sapphire HMS design system.","keywords":["design system","sapphire","hms","style guide","patterns","css","javascript"],"homepage":"https://dev.nordicplatforms.com/StyleGuideV2_UI/Instructions.aspx","repository":{"type":"git","url":"https://github.com/sapphire-components/sapphire"},"author":{"name":"António Carvalho","email":"antonio.carvalho@outsystems.com","url":"https://www.linkedin.com/in/carvalhoantonio/"},"scripts":{"dev":"set NODE_ENV=development && webpack-dev-server --config webpack.dev.js","prod":"set NODE_ENV=production && webpack --config webpack.prod.js","new:build":"npm run prod && git add . && git commit -m \\"New Release\\" --allow-empty && git push origin main","release:patch":"release-it patch --ci","release:minor":"release-it minor --git.requireBranch=main && npm run new:build","release:major":"release-it major --git.requireBranch=main && npm run new:build"},"license":"ISC","devDependencies":{"autoprefixer":"^10.4.23","clean-webpack-plugin":"^4.0.0","css-loader":"^7.1.2","dotenv-cli":"^11.0.0","eslint":"^9.39.2","eslint-config-prettier":"^10.1.8","eslint-plugin-prettier":"^5.5.5","mini-css-extract-plugin":"^2.10.0","postcss-loader":"^8.2.0","prettier":"^3.8.1","prettier-stylelint":"^0.4.2","release-it":"^19.2.4","sass":"^1.97.3","sass-loader":"^16.0.6","style-loader":"^4.0.0","stylelint":"^17.0.0","stylelint-config-standard-scss":"^17.0.0","stylelint-order":"^7.0.1","terser-webpack-plugin":"^5.3.16","webpack":"^5.104.1","webpack-cli":"^6.0.1","webpack-dev-middleware":"^7.4.5","webpack-dev-server":"^5.2.3","webpack-hot-middleware":"^2.26.1","webpack-merge":"^6.0.1"}}');
 
 /***/ })
 
