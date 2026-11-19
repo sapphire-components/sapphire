@@ -205,7 +205,7 @@
 	};
 
 	hideAll = () => {
-		window.tippy.hideAll();
+		window.tippy?.hideAll();
 	};
 
 	SapphireWidgets.TippyTooltip = {
