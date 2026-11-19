@@ -1,7 +1,9 @@
 /* Component LayoutBlank */
 $(function () {
-	const pageEl = document.querySelector('.Page');
-	if (pageEl.classList.contains('ar')) pageEl.classList.add('AR');
+	const pageEl = document.querySelector('.Page') || document.documentElement;
+	if (pageEl.classList.contains('ar')) {
+		pageEl.classList.add('AR');
+	}
 
 	if (window.frameElement) {
 		if (!!$(this.frameElement).closest('.MainInteractiveCard').length) {
