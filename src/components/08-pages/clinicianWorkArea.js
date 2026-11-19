@@ -1,40 +1,49 @@
-SapphireWidgets.ClinicianWorkArea = function(containerID) {
-	$(document).ready(function() {
+SapphireWidgets.ClinicianWorkArea = function (containerID) {
+	$(document).ready(function () {
 		const $container = $(`#${containerID}`);
-		const $toggler = $container.find('.SectionExpandable-toggler');
 
-		if ($toggler.length === 1) {
-			let $togglerState = false;
+		if ($container.find('.SectionExpandable-toggler').length !== 1) return;
 
+		// OutSystems ajax refreshes (e.g. saving a Quick Note) replace inner nodes,
+		// so elements are always re-queried instead of cached.
+		const getToggler = () => $container.find('.SectionExpandable-toggler');
+		const getContent = () => $container.find('.SectionExpandable-toggled');
+
+		let togglerState = false;
+
+		const reset = function () {
+			const $toggler = getToggler();
+
+			togglerState = false;
+
+			getContent().hide();
 			$toggler.find('[data-labelvalue]').text($toggler.find('[data-labelshow]').data('labelshow'));
+			$toggler.show();
+		};
 
-			$toggler.off('click').on('click', function(evt) {
+		const open = function () {
+			const $toggler = getToggler();
+
+			togglerState = true;
+
+			getContent().show();
+			$toggler.find('[data-labelvalue]').text($toggler.find('[data-labelhide]').data('labelhide'));
+			$toggler.hide();
+		};
+
+		// Delegated handlers survive ajax refreshes of the toggler / content / cancel button
+		$container
+			.off('click.clinicianWorkArea')
+			.on('click.clinicianWorkArea', '.SectionExpandable-toggler', function (evt) {
 				evt.stopPropagation();
+				togglerState ? reset() : open();
+			})
+			.on('click.clinicianWorkArea', '.SectionExpandable-toggled .ButtonCancelSearch', reset);
 
-				buttonClick();
-			});
+		// Expose global reset
+		SapphireWidgets.ClinicianWorkAreaReset = reset;
 
-			const buttonClick = function() {
-				$togglerState = !$togglerState;
-
-				if ($togglerState) {
-					$container.find('.SectionExpandable-toggled').show();
-					$toggler.find('[data-labelvalue]').text($toggler.find('[data-labelhide]').data('labelhide'));
-
-					$toggler.hide();
-
-					const $cancelButton = $('.SectionExpandable-toggled .ButtonCancelSearch');
-					$cancelButton.click(() => buttonClick());
-				} else {
-					$container.find('.SectionExpandable-toggled').hide();
-					$toggler.find('[data-labelvalue]').text($toggler.find('[data-labelshow]').data('labelshow'));
-
-					$toggler.show();
-
-					const $cancelButton = $('.SectionExpandable-toggled .ButtonCancelSearch');
-					$cancelButton.off('click');
-				}
-			};
-		}
+		// Initial state
+		reset();
 	});
 };
