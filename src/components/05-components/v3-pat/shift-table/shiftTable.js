@@ -1,24 +1,23 @@
 /* Component ShiftTable */
 
 SapphireWidgets.ShiftTable = (widgetId, topLimit) => {
-	const windowScrollYLimit = 175; // topLimit;
+	const windowScrollYLimit = topLimit;
 
 	document.querySelector('.ShiftTable').style.opacity = 0.5;
 
-	const topLimitWithIframe = 190;
 	const firstColumnWidth = 400;
 
-	let topLimitWithoutIframe = document.querySelector('.WorklistPageHeader')?.getBoundingClientRect().bottom || 173;
-	if (topLimitWithoutIframe < 173) {
-		topLimitWithoutIframe = 173;
-	}
+	// let topLimitWithoutIframe = document.querySelector('.WorklistPageHeader')?.getBoundingClientRect().bottom || 173;
+	// if (topLimitWithoutIframe < 173) {
+	// 	topLimitWithoutIframe = 173;
+	// }
 
-	let headerTopWithoutIframe = document.querySelector('.ShiftTable__Header')?.getBoundingClientRect().top || 154;
-	if (headerTopWithoutIframe < 154) {
-		headerTopWithoutIframe = 154;
-	}
+	// let headerTopWithoutIframe = document.querySelector('.ShiftTable__Header')?.getBoundingClientRect().top || 154;
+	// if (headerTopWithoutIframe < 154) {
+	// 	headerTopWithoutIframe = 154;
+	// }
 
-	// console.log('ShiftTable init');
+	console.log('ShiftTable init', windowScrollYLimit);
 
 	$(document).ready(() => {
 		function isInIframe() {
@@ -53,39 +52,27 @@ SapphireWidgets.ShiftTable = (widgetId, topLimit) => {
 		}
 
 		function calculateFloatingHeader() {
-			// console.log('calculateFloatingHeader');
-
 			const shiftTableEl = document.getElementById(widgetId);
 			const shiftTableHeaderEl = shiftTableEl.querySelector('.ShiftTable__Header');
 
 			const rectContent = getElementTopWindowRect('.ShiftTable__Content');
 			if (isInIframe()) {
-				// console.log('in iframe window.top.scrollY', window.top.scrollY, 'windowScrollYLimit', windowScrollYLimit);
-
 				if (window.top.scrollY >= windowScrollYLimit) {
 					shiftTableHeaderEl.style.position = 'sticky';
 					shiftTableHeaderEl.style.top = `${window.top.scrollY - windowScrollYLimit}px`;
-				}
-
-				/*
-				const willBe = window.top.scrollY - rectContent.top + 12;
-				if (rectContent.outerTop <= topLimitWithIframe) {
-					shiftTableEl.dataset.stickyheader = 'true';
-					shiftTableEl.style.setProperty('--shifttable-header-top', `${willBe}px`);
 				} else {
-					shiftTableEl.style.removeProperty('--shifttable-header-top');
-					shiftTableEl.dataset.stickyheader = 'false';
+					shiftTableHeaderEl.style.position = 'static';
+					shiftTableHeaderEl.style.removeProperty('top');
 				}
-				*/
 			} else {
 				shiftTableHeaderEl.style.position = 'sticky';
 				shiftTableHeaderEl.style.zIndex = 4;
 
-				if (window.scrollY <= windowScrollYLimit) {
-					shiftTableHeaderEl.style.top = 0;
-				} else {
-					shiftTableHeaderEl.style.top = `${window.scrollY - windowScrollYLimit}px`;
-				}
+				const shiftTableRect = shiftTableEl.getBoundingClientRect();
+				const maxOffset = shiftTableRect.height - shiftTableHeaderEl.offsetHeight;
+				const offset = Math.min(Math.max(0, windowScrollYLimit - shiftTableRect.top), maxOffset);
+
+				shiftTableHeaderEl.style.top = `${offset}px`;
 			}
 		}
 
