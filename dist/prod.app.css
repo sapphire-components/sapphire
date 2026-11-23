@@ -1,4 +1,4 @@
-/*! prod.app.css || Version: 5.5.393 || Generated: Fri Nov 20 2026 13:33:28 GMT+0000 (Western European Standard Time) */
+/*! prod.app.css || Version: 5.5.394 || Generated: Mon Nov 23 2026 10:29:01 GMT+0000 (Western European Standard Time) */
 @charset "UTF-8";
 /* stylelint-disable CssSyntaxError */
 /* Font base: 14px */
@@ -6799,8 +6799,8 @@ a.SpecialityButtonForward {
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  padding: 8px 0;
   min-width: 300px;
+  padding: 8px 0;
 }
 .ListLinks a:link {
   align-items: center;
@@ -6815,6 +6815,14 @@ a.SpecialityButtonForward {
 }
 .ListLinks a:link .icon {
   font-size: 1.143em;
+}
+
+body:has(.Page[data-theme=background-transparent]) {
+  background-color: transparent !important;
+}
+
+.Page[data-theme=background-transparent] {
+  background-color: transparent !important;
 }
 
 .Page.login-page {
