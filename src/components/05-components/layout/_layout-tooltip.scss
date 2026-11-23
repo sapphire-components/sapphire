@@ -51,8 +51,8 @@
 	background-color: $regular-white;
 	display: flex;
 	flex-direction: column;
-	padding: $sapphire-sizes--small 0;
 	min-width: 300px;
+	padding: $sapphire-sizes--small 0;
 
 	a:link {
 		@include flex-center-vertically;
@@ -70,4 +70,12 @@
 			font-size: $font-size-heading4;
 		}
 	}
+}
+
+body:has(.Page[data-theme='background-transparent']) {
+	background-color: transparent !important;
+}
+
+.Page[data-theme='background-transparent'] {
+	background-color: transparent !important;
 }
